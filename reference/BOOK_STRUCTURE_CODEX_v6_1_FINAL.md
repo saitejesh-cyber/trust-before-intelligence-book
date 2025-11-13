@@ -556,7 +556,7 @@
 - Adoption: 78% (90 days)
 - Uptime: 99.7%
 
-**Personas:** Dr. Sarah Cedao (CMIO), Marcus Williams (VP Data), Jamie Rodriguez (Dir IT), Alex Patel (CFO)
+**Personas:** Sarah Cedao (CTO), Marcus Williams (CDO), Jamie Rodriguez (Dir IT), Krish Yadav (CFO)
 
 **Agents:** Care Coordination (82/100), Clinical Documentation (87/100), Revenue Cycle (91/100)
 
