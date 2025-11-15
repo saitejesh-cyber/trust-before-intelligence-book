@@ -396,22 +396,22 @@ The paradigm shift Karpathy describes manifests as concrete architectural differ
 
 ```mermaid
 graph LR
-    subgraph bi["<b>❌ BI ERA (1990-2020)</b>"]
+    subgraph bi["<b>❌ BI ERA</b><br/><b>(1990-2020)</b>"]
         direction TB
-        BI1["<b>Batch ETL</b><br/><b>8-24 hour lag</b>"]
-        BI2["<b>Data Warehouse</b><br/><b>OLAP Cubes</b>"]
-        BI3["<b>BI Dashboards</b><br/><b>Fixed queries</b>"]
-        BI4["<b>Human Analysts</b><br/><b>Manual decisions</b>"]
+        BI1["<b>Batch ETL</b><br/>8-24 hour lag"]
+        BI2["<b>Data Warehouse</b><br/>OLAP Cubes"]
+        BI3["<b>BI Dashboards</b><br/>Fixed queries"]
+        BI4["<b>Human Analysts</b><br/>Manual decisions"]
         
         BI1 --> BI2 --> BI3 --> BI4
     end
     
-    subgraph agent["<b>✅ AGENT ERA (2023-Present)</b>"]
+    subgraph agent["<b>✅ AGENT ERA</b><br/><b>(2023-Present)</b>"]
         direction TB
-        A1["<b>Real-Time Streaming</b><br/><b>Sub-30s freshness</b>"]
-        A2["<b>Multi-Modal Storage</b><br/><b>Vector + Graph + RDBMS</b>"]
-        A3["<b>Intelligence Orchestration</b><br/><b>Natural language queries</b>"]
-        A4["<b>Autonomous Agents</b><br/><b>Instant decisions</b>"]
+        A1["<b>Real-Time</b><br/><b>Streaming</b><br/>Sub-30s freshness"]
+        A2["<b>Multi-Modal</b><br/><b>Storage</b><br/>Vector + Graph<br/>+ RDBMS"]
+        A3["<b>Intelligence</b><br/><b>Orchestration</b><br/>Natural language<br/>queries"]
+        A4["<b>Autonomous</b><br/><b>Agents</b><br/>Instant decisions"]
         
         A1 --> A2 --> A3 --> A4
     end
