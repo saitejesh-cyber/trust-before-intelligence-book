@@ -1,11 +1,11 @@
 # CHAPTER 1 MAPPING DOCUMENT
 ## "Why 95% of Agent Pilots Fail"
 
-**Version:** 1.4  
-**Date:** November 13, 2025  
+**Version:** 1.5  
+**Date:** November 14, 2025  
 **Status:** 🎯 READY FOR REFACTORING  
 **Target File:** `manuscript/02_chapter_1_why_agents_fail.md`  
-**Compliant With:** Book Structure Codex v6.3, Book Codex Master v2.4
+**Compliant With:** Book Structure Codex v6.4, Book Codex Master v2.5
 
 ---
 
@@ -424,6 +424,7 @@ Structure:
    - Free assessment at colaberry.ai/assessment or aiXcelerator.ai/assess
    - Takes 15 minutes, provides immediate score (0-100)
    - Identifies your specific gaps (like Echo's 28/100)
+   - **Optional reference:** "For comprehensive agent readiness gap analysis beyond this chapter's crisis overview, see Appendix G: The Agent Readiness Gap Diagnostic"
 
 3. **Bridge to Chapter 2** (200w, Kim voice)
    - "Sarah left that board meeting with a directive and a deadline"
@@ -914,9 +915,9 @@ Structure:
 ### Required Source Documents
 - âœ… `chapter_00_complete.md` (legacy Chapter 0 - crisis statistics)
 - âœ… `chapter_1_complete.md` (legacy Chapter 1 - Karpathy, paradigm shift)
-- âœ… `BOOK_STRUCTURE_CODEX_v6_3_TRANSPARENT.md` (structure specifications)
-- âœ… `BOOK_CODEX_MASTER_v2_4_TRANSPARENT.md` (Moore-Kim pattern)
-- âœ… Echo canonical data (from Book Structure Codex v6.3, line 670)
+- âœ… `BOOK_STRUCTURE_CODEX_v6_4_ASCII_CLEAN.md` (structure specifications)
+- âœ… `BOOK_CODEX_MASTER_v2_5_ASCII_CLEAN.md` (Moore-Kim pattern)
+- âœ… Echo canonical data (from Book Structure Codex v6.4, line 670)
 - âœ… `4749_Deloitte_Trust_ID_Workforce_AI_Report_Q3_2025.pdf`
 - âœ… `The_State_of_AI__Global_Survey_2025___McKinsey.pdf`
 - âœ… `The_real_barrier_to_AI_adoption_isn_t_technology_it_s_trust_.pdf`
@@ -1008,6 +1009,7 @@ Structure:
 | 1.2 | November 12, 2025 | **PERSONA CORRECTIONS:** Updated Echo personas to match canonical data: (1) Sarah Cedao title corrected from "Dr. Sarah Cedao (CMIO)" to "Sarah Cedao, CTO", (2) CFO name corrected from "Alex Patel" to "Krish Yadav", (3) Added explicit note that CEO and board members remain unnamed per Moore/Kim pattern (consistent with existing chapters 0-4). | Claude |
 | 1.3 | November 12, 2025 | **MARCUS WILLIAMS TITLE UPDATE:** Changed Marcus Williams from "VP Data & Analytics" to "CDO (Chief Data Officer)" for organizational realism and stronger narrative authority. Creates peer C-level collaboration between CTO (Sarah - technology/infrastructure) and CDO (Marcus - data strategy/architecture), better reflects Echo's size (4 hospitals, 12K employees), and strengthens Marcus's voice when advocating for data readiness investment. | Claude |
 | 1.4 | November 13, 2025 | **CODEX v6.3 & v2.4 COMPLIANCE UPDATE:** (1) Corrected version number from 1.0 to 1.4, (2) Added Book Identity section with canonical title "Trust Before Intelligence", (3) Updated codex references from v6.1/v2.2 to v6.3/v2.4 (T=TRANSPARENT versions), (4) Added compliance statement to header, (5) Updated Echo canonical data reference to v6.3 line 670. Document already had excellent Architecture of Trust positioning, persona consistency (from v1.2/v1.3), and comprehensive content strategy. Mapping document now fully compliant with latest codex standards. | Claude |
+| 1.5 | November 14, 2025 | **CODEX v6.4 & v2.5 UPDATE:** (1) Updated codex references to v6.4 (LINKEDIN POLL INTEGRATION) and v2.5, (2) Updated filename references from TRANSPARENT to ASCII_CLEAN versions, (3) Updated Echo canonical data reference to v6.4 line 670, (4) Optional enhancement: Added reference to Appendix G (Agent Readiness Gap Diagnostic) in Section 5 for comprehensive readiness analysis. Chapter 1 specifications unchanged in v6.4—all content strategy, word counts, structure, and quality standards remain 100% valid. Update is administrative only to maintain current codex compliance. | Claude |
 
 ---
 

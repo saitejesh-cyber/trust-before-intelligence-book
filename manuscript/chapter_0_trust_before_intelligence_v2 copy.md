@@ -4,8 +4,8 @@
 **Subtitle:** Why 95% of Agent Projects Fail—and the Architecture Blueprint That Fixes Infrastructure in 90 Days  
 **Author:** Ram Katamaraja, CEO of Colaberry Inc.  
 **Publisher:** Colaberry Press  
-**Version:** 2.1 (Metrics Refinement Edition)  
-**Date:** November 14, 2025
+**Version:** 2.0 (Architecture of Trust Edition)  
+**Date:** November 13, 2025
 
 ---
 
@@ -153,7 +153,7 @@ The Architecture of Trust provides that blueprint. Like a building requires stru
 2. **7-Layer Architecture** - How to build it (technical blueprint)
 3. **GOALS™** - How to measure success (operational targets)
 
-These aren't separate frameworks you implement independently. They're three pillars of a unified architecture, each supporting and validating the others. INPACT™ defines the six agent needs that must be fulfilled to be trusted. The 7-Layer Architecture prescribes the technical infrastructure to fulfill those six agent needs. GOALS™ dives the operational efficiency metrics so that both pillars remain structurally sound in production.
+These aren't separate frameworks you implement independently. They're three pillars of a unified architecture, each supporting and validating the others. INPACT™ defines the outcomes your agents must deliver. The 7-Layer Architecture prescribes the technical infrastructure to achieve those outcomes. GOALS™ validates that both pillars remain structurally sound in production.
 
 Let's explore each pillar of the architecture.
 
@@ -227,19 +227,19 @@ Think of these layers as the structural elements of a building. Each layer serve
 
 **Layer 1 - Data Storage Foundation:** Hybrid storage for different data types—relational databases for transactional data, vector databases for embeddings, graph databases for relationships. Echo had strong relational storage but no vector or graph capabilities.
 
-**Layer 2 - Real-Time Data Fabric:** Change data capture (CDC) and streaming pipelines to eliminate batch delays. This layer delivers the "Instant" need from INPACT™. Echo's overnight ETL jobs violated this layer—agents need real-time data, not yesterday's snapshots.
+**Layer 2 - Real-Time Data Fabric:** Change data capture (CDC) and streaming pipelines to eliminate batch delays. This layer delivers the "Instant" requirement from INPACT™. Echo's overnight ETL jobs violated this layer—agents need real-time data, not yesterday's snapshots.
 
-**Layer 3 - Normalized Schema & Semantic Layer:** Business-friendly abstractions over technical schemas. This layer enables the "Natural" need—translating "patient's last three visits" into the SQL joins across seven tables. Echo's cryptic table names (`TBL_PT_ENC_DTL`) blocked natural language understanding.
+**Layer 3 - Normalized Schema & Semantic Layer:** Business-friendly abstractions over technical schemas. This layer enables the "Natural" requirement—translating "patient's last three visits" into the SQL joins across seven tables. Echo's cryptic table names (`TBL_PT_ENC_DTL`) blocked natural language understanding.
 
-**Layer 4 - Contextual Knowledge Graph:** Relationships between entities (patients, providers, encounters, diagnoses) modeled explicitly. This layer delivers the "Contextual" need agents can traverse relationships across domains. Echo's siloed systems prevented this integration.
+**Layer 4 - Contextual Knowledge Graph:** Relationships between entities (patients, providers, encounters, diagnoses) modeled explicitly. This layer delivers the "Contextual" requirement—agents can traverse relationships across domains. Echo's siloed systems prevented this integration.
 
 **Layer 5 - Intelligence Orchestration & Retrieval:** RAG (Retrieval-Augmented Generation) systems, prompt engineering, and LLM orchestration. This layer connects AI models to the infrastructure layers below. Echo had this layer partially—they had GPT-4 access but no RAG system.
 
-**Layer 6 - Policy & Permission Mesh:** Attribute-based access control (ABAC) with contextual evaluation, plus observability for monitoring and alerting. This layer delivers both "Permitted" and "Transparent" needs from INPACT™. Echo's static RBAC failed contextual authorization, and their incomplete audit logs violated transparency.
+**Layer 6 - Policy & Permission Mesh:** Attribute-based access control (ABAC) with contextual evaluation, plus observability for monitoring and alerting. This layer delivers both "Permitted" and "Transparent" requirements from INPACT™. Echo's static RBAC failed contextual authorization, and their incomplete audit logs violated transparency.
 
-**Layer 7 - Agent Orchestration:** Multi-agent coordination, feedback loops for continuous learning, and human-in-the-loop integration. This layer delivers the "Adaptive" need agents learn from corrections. Echo had no feedback mechanism at all.
+**Layer 7 - Agent Orchestration:** Multi-agent coordination, feedback loops for continuous learning, and human-in-the-loop integration. This layer delivers the "Adaptive" requirement—agents learn from corrections. Echo had no feedback mechanism at all.
 
-Each layer maps to INPACT™ needs. Layer 2 fulfills Instant. Layers 3-4 fulfills Natural and Contextual. Layer 6 fulfills Permitted and Transparent. Layer 7 fulfills Adaptive. The 7-Layer Architecture is the second pillar of the Architecture of Trust—the technical blueprint for fulfilling the needs defined by the first pillar.
+Each layer maps to INPACT™ needs. Layer 2 enables Instant. Layers 3-4 enable Natural and Contextual. Layer 6 enables Permitted and Transparent. Layer 7 enables Adaptive. The 7-Layer Architecture is the second pillar of the Architecture of Trust—the technical blueprint for fulfilling the requirements defined by the first pillar.
 
 ### Pillar 3: GOALS™ - How to Measure Success
 
@@ -267,9 +267,9 @@ GOALS™ is the third pillar of the Architecture of Trust—the operational fram
 
 These aren't three separate frameworks to implement independently. They're three pillars of a unified architecture, each reinforcing the others:
 
-- **INPACT™ → 7-Layer:** Needs drive architecture decisions. "Instant" (I) requires Layer 2 real-time fabric. "Natural" (N) requires Layers 3-4 semantic and graph layers.
+- **INPACT™ → 7-Layer:** Requirements drive architecture decisions. "Instant" (I) requires Layer 2 real-time fabric. "Natural" (N) requires Layers 3-4 semantic and graph layers.
 
-- **7-Layer → GOALS™:** Infrastructure fulfills measurement. Layer 6 observability fulfills GOALS™ monitoring. Layer 2 data fabric fulfills GOALS™ soundness validation.
+- **7-Layer → GOALS™:** Infrastructure enables measurement. Layer 6 observability enables GOALS™ monitoring. Layer 2 data fabric enables GOALS™ soundness validation.
 
 - **GOALS™ → INPACT™:** Measurement validates trust. Governance (G) confirms Permitted (P) fulfillment. Observability (O) validates Transparent (T) compliance.
 
@@ -279,7 +279,7 @@ graph TB
     
     INPACT["<b>PILLAR 1: INPACT™</b><br/><b>What Agents Need</b><br/>Instant • Natural • Permitted<br/>Adaptive • Contextual • Transparent"]
     
-    Layers["<b>PILLAR 2: 7-LAYER ARCHITECTURE</b><br/><b>How to Build It</b><br/><b>Foundation:</b> Storage • Real-Time • Semantic<br/><b>Intelligence:</b> Knowledge • Orchestration<br/><b>Control:</b> Policy • Agent Layer"]
+    Layers["<b>PILLAR 2: 7-LAYER ARCHITECTURE</b><br/><b>How to Build It</b><br/>Storage → Real-Time → Semantic<br/>Knowledge → Intelligence<br/>Policy → Orchestration"]
     
     GOALS["<b>PILLAR 3: GOALS™</b><br/><b>How to Measure Success</b><br/>Governance • Observability<br/>Accessibility • Language • Soundness"]
     
@@ -314,8 +314,8 @@ This architecture rests on three pillars working in harmony. Each pillar support
 From infrastructure chaos to agent-ready in 10 weeks. Not because they found a magic tool or hired consultants—because they followed an architecture that integrated proven frameworks into a coherent system.
 
 **The investment:** $1.23M (60% of their failed pilot cost)  
-**The return:** 209% ROI, 4.2-month payback period  
-**The result:** Trust earned through architecture
+**The return:** 477% ROI, 2.4-month payback period  
+**The result:** Trust earned through architecture, not algorithms
 
 The remainder of this book builds this architecture, pillar by pillar:
 
@@ -349,15 +349,11 @@ Sarah Cedao needed an architecture. Chapter 1 shows you why infrastructure isn't
 - **ABAC:** Attribute-Based Access Control
 - **CDC:** Change Data Capture
 - **CDO:** Chief Data Officer
-- **CFO:** Chief Financial Officer
 - **CTO:** Chief Technology Officer
-- **EHR:** Electronic Health Record
 - **ETL:** Extract, Transform, Load
-- **HBR:** Harvard Business Review
 - **HIPAA:** Health Insurance Portability and Accountability Act
 - **HITL:** Human-in-the-Loop
 - **LLM:** Large Language Model
-- **MIT:** Massachusetts Institute of Technology
 - **RAG:** Retrieval-Augmented Generation
 - **RBAC:** Role-Based Access Control
 - **ROI:** Return on Investment
