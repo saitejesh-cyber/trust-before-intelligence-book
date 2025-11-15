@@ -4,8 +4,8 @@
 **Subtitle:** Why 95% of Agent Projects Fail—and the Architecture Blueprint That Fixes Infrastructure in 90 Days  
 **Author:** Ram Katamaraja, CEO of Colaberry Inc.  
 **Publisher:** Colaberry Press  
-**Version:** 2.1 (Metrics Refinement Edition)  
-**Date:** November 14, 2025
+**Version:** 2.2 (Codex Compliance Edition)  
+**Date:** November 15, 2025
 
 ---
 
@@ -66,15 +66,15 @@ Then came the CEO's request: "Can we deploy an AI agent for patient scheduling b
 
 Sarah's team spent the next six months and **$2 million** building three pilot agents. What they delivered was technically functional—the code ran, the agents responded, the infrastructure didn't crash. But functional isn't the same as usable, and usable isn't the same as trusted.
 
-1. **Patient Scheduling Agent**: Response time 9-13 seconds (patients hung up waiting). Query understanding 40-60% (constant need for rephrasing). No dynamic authorization (HIPAA compliance failed when the agent couldn't distinguish between a nurse checking her patient's schedule during her shift versus at 3 AM from home).
+1. **Care Coordination Agent**: Response time 9-13 seconds (patients hung up waiting). Query understanding 40-60% (constant need for rephrasing). No dynamic authorization (HIPAA compliance failed when the agent couldn't distinguish between a nurse checking her patient's schedule during her shift versus at 3 AM from home).
 
 2. **Clinical Documentation Agent**: Could only access data from yesterday because overnight batch ETL jobs ran at 2 AM (emergency room physicians needed current visit context, not yesterday's notes). Couldn't understand medical terminology consistently—"MI" sometimes meant myocardial infarction, sometimes meant mitral insufficiency, sometimes triggered error messages. No audit trail for regulatory review meant they couldn't use it for any clinical decisions that required documentation.
 
 3. **Revenue Cycle Agent**: Siloed in the billing system, it could see claims but not clinical context. When claims were denied, it couldn't cross-reference diagnosis codes with actual visit notes to identify documentation gaps. Static role-based access prevented it from dynamically authorizing access based on current patient relationships—a billing specialist who transferred to a different department still had access to her old patients' financial data.
 
-**All three pilots failed.** Not in the dramatic way of systems crashing or data breaches—they failed in the slow, grinding way of tools nobody wants to use. Physicians stopped asking the clinical agent questions after the fifth rephrasing attempt. Patients hung up on the scheduling agent and called the human line instead. Billing specialists manually processed claims because the agent couldn't see what they needed.
+**All three pilots failed.** Not in the dramatic way of systems crashing or data breaches—they failed in the slow, grinding way of tools nobody wants to use. Physicians stopped asking the clinical agent questions after the fifth rephrasing attempt. Patients hung up on the care coordination agent and called the human line instead. Billing specialists manually processed claims because the agent couldn't see what they needed.
 
-The board meeting was brutal. Six months of work, $2 million spent, zero production deployments. The CFO, Krish Yadav, asked the question everyone was thinking: "If we have a state-of-the-art data warehouse, a modern data lake, and ML infrastructure that won awards, why can't we make a simple scheduling agent work?"
+The board meeting was brutal. Six months of work, $2 million spent, zero production deployments. The CFO, Krish Yadav, asked the question everyone was thinking: "If we have a state-of-the-art data warehouse, a modern data lake, and ML infrastructure that won awards, why can't we make a simple care coordination agent work?"
 
 The CEO set a deadline: "Fix this in 90 days or we're shelving AI for another year."
 
@@ -90,7 +90,7 @@ That's when Marcus Williams, Echo's Chief Data Officer, discovered the INPACT™
 
 **A - Adaptive (3/6):** No feedback loops existed. When agents got queries wrong, there was no mechanism to learn from corrections. Model performance drifted over time with no detection or retraining workflows. Quarterly manual reviews were their only "improvement" process.
 
-**C - Contextual (2/6):** Each system was a silo. The scheduling agent couldn't see clinical history. The documentation agent couldn't access billing status. Weekly batch jobs moved data between systems—agents needed real-time cross-domain integration.
+**C - Contextual (2/6):** Each system was a silo. The care coordination agent couldn't see clinical history. The documentation agent couldn't access billing status. Weekly batch jobs moved data between systems—agents needed real-time cross-domain integration.
 
 **T - Transparent (2/6):** Incomplete audit logs violated HIPAA Section 164.312(b). When agents made recommendations, clinicians couldn't see the reasoning. When errors occurred, no trace existed to diagnose root causes. Transparency was theoretical, not technical.
 
@@ -125,13 +125,13 @@ graph LR
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
     style HumanEra fill:#f5f5f5,stroke:#808080,stroke-width:2px
-    style H1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style H2 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style H3 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style AgentEra fill:#e8f5e9,stroke:#00897b,stroke-width:2px
-    style A1 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A3 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style H1 fill:#ffffff,stroke:#DC143C,stroke-width:2px,color:#b71c1c
+    style H2 fill:#ffffff,stroke:#DC143C,stroke-width:2px,color:#b71c1c
+    style H3 fill:#ffffff,stroke:#DC143C,stroke-width:2px,color:#b71c1c
+    style AgentEra fill:#e8f5e9,stroke:#20B2AA,stroke-width:2px
+    style A1 fill:#ffffff,stroke:#20B2AA,stroke-width:2px,color:#004d40
+    style A2 fill:#ffffff,stroke:#20B2AA,stroke-width:2px,color:#004d40
+    style A3 fill:#ffffff,stroke:#20B2AA,stroke-width:2px,color:#004d40
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
@@ -171,7 +171,7 @@ Through analysis of 40+ enterprise implementations, we've identified six essenti
 
 **A - Adaptive:** Continuous learning from feedback. Echo's quarterly reviews meant agents couldn't improve in real-time. When agents misunderstand queries or make errors, they must learn immediately—not wait months for manual retraining.
 
-**C - Contextual:** Integration across domains and time. Echo's agents were siloed—scheduling couldn't see clinical history, documentation couldn't access billing data. Agents need unified context spanning all relevant systems and incorporating historical patterns.
+**C - Contextual:** Integration across domains and time. Echo's agents were siloed—care coordination couldn't see clinical history, documentation couldn't access billing data. Agents need unified context spanning all relevant systems and incorporating historical patterns.
 
 **T - Transparent:** Complete auditability and explainability. Echo's incomplete audit logs violated HIPAA. When agents make recommendations, users need to see: What data was accessed? What logic was applied? Why this answer? Transparency isn't optional in regulated industries—it's legally required.
 
