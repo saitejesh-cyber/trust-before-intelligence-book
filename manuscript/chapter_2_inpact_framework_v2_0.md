@@ -40,7 +40,7 @@ graph TB
         PILLAR3 -->|<b>Drives operational efficiency</b>| PILLAR1
     end
     
-    FOUNDATION["<b>FOUNDATION</b><br/><b>The Architecture of Trust</b>"]
+    FOUNDATION["<b>FOUNDATION</b><br/><b>The Architecture of Trust - Three Integrated Pillars</b>"]
     
     FOUNDATION --> ARCH
     
