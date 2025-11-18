@@ -3,9 +3,10 @@
 **Book:** Trust Before Intelligence  
 **Subtitle:** Why 95% of Agent Projects Fail—and the Architecture Blueprint That Fixes Infrastructure in 90 Days  
 **Author:** Ram Katamaraja, CEO of Colaberry Inc.  
-**Version:** 2.7 | November 17, 2025
+**Version:** 2.8 | November 17, 2025
 
 **Version History:**
+- **v2.8** (November 17, 2025): Fixed Diagram 1 emoji rendering - removed 📉 and ⚠️ emojis from subgraph headers as they don't render consistently across all platforms. Headers now read "TRUST COLLAPSE (Feb-July 2025)" and "ROOT CAUSE ANALYSIS" in plain text.
 - **v2.7** (November 17, 2025): Fixed Diagram 5 header cutoff - moved "(6 months)" from header into TOTAL box content as "6-month pilots". Header now reads "ECHO'S $2M INVESTMENT" without parenthetical to prevent text cutoff.
 - **v2.6** (November 17, 2025): Fixed Diagram 5 rendering - shortened all labels to prevent text cutoff, removed emojis from subgraph headers (💰, ❌, 📊), compressed content ("$2,000,000" → "$2M", "adoption" → "adopt", "HIPAA violation" → "HIPAA", "Not agent-ready" → "Not ready"). Removed "direction TB" declarations and second-line headers. Result: More compact layout, all text fully visible.
 - **v2.5** (November 17, 2025): Fixed rendering issues in Diagrams 1 and 4. Diagram 1: Shortened labels (Feb vs February, Agent vs Agentic AI), removed subtitle from header, added source caption. Diagram 4: Converted two-line subgraph headers to single-line format, removed emojis from headers to prevent text cutoff. All diagrams now display fully without any text overlap or cutoff issues.
@@ -125,7 +126,7 @@ graph TB
         FEB --> MAR --> MAY --> JUL
     end
     
-    subgraph analysis["<b>⚠️ ROOT CAUSE ANALYSIS</b>"]
+    subgraph analysis["<b>ROOT CAUSE ANALYSIS</b>"]
         direction TB
         
         CAUSE["<b>Infrastructure Failure</b><br/>INPACT™ needs<br/>systematically unfulfilled"]
