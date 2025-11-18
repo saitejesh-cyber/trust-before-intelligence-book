@@ -279,7 +279,7 @@ graph TB
     
     INPACT["<b>PILLAR 1: INPACT™</b><br/><b>What Agents Need</b><br/>Instant • Natural • Permitted<br/>Adaptive • Contextual • Transparent"]
     
-    Layers["<b>PILLAR 2: 7-LAYER ARCHITECTURE</b><br/><b>How to Build It</b><br/><b>Foundation:</b> Storage • Real-Time • Semantic<br/><b>Intelligence:</b> Knowledge • Orchestration<br/><b>Control:</b> Policy • Agent Layer"]
+    Layers["<b>PILLAR 2: 7-LAYER ARCHITECTURE</b><br/><b>How to Build It</b><br/><b>Foundation:</b> Storage • Real-Time • Semantic • Intelligence • Governance • Observability • Orchestration"]
     
     GOALS["<b>PILLAR 3: GOALS™</b><br/><b>How to Measure Success</b><br/>Governance • Observability<br/>Accessibility • Language • Soundness"]
     
