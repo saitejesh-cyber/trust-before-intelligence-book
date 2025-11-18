@@ -111,7 +111,7 @@ The data is stark:
 
 ```mermaid
 graph TB
-    subgraph timeline["<b>📉 TRUST COLLAPSE (Feb-July 2025)</b>"]
+    subgraph timeline["<b>TRUST COLLAPSE (Feb-July 2025)</b>"]
         direction LR
         
         FEB["<b>Feb 2025</b><br/>Agent: 78%<br/>GenAI: 82%"]
