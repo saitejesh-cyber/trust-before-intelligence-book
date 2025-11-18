@@ -322,6 +322,21 @@ Results: 87% overall accuracy (44 percentage point improvement). Simple queries:
 
 ---
 
+### ✅ Progress Check: Speed & Understanding
+
+**What You've Learned (2 of 6 needs complete - 33% through Part 3):**
+
+- **Instant (I):** Agents need sub-2-second responses with fresh data. Echo transformed from 9-13 seconds (92% abandonment) to 1.8 seconds (8% abandonment) using real-time CDC, query-optimized storage, and semantic caching.
+- **Natural (N):** Agents need semantic understanding to map natural language to data structures. Echo improved from 43% accuracy to 87% using business glossaries, entity resolution, and RAG with embeddings.
+
+**Why It Matters:** Speed and accuracy are the foundation. Without instant responses, users abandon before seeing results. Without natural language understanding, agents can't answer questions correctly. These two needs must be fulfilled before users will even try your agents.
+
+**Coming Next:** Security (Permitted), learning (Adaptive), context (Contextual), and transparency—the needs that enable production deployment and continuous improvement.
+
+**Reading Progress:** 40% complete through Part 3 | 4 more needs remaining | ~12 minutes left in this section
+
+---
+
 ### P – Permitted: Security Builds Safety
 
 **The User Need**
@@ -505,6 +520,21 @@ Results: Feedback automated and comprehensive. Root cause under 24 hours (95% im
 
 ---
 
+### ✅ Progress Check: Security & Learning
+
+**What You've Learned (4 of 6 needs complete - 67% through Part 3):**
+
+- **Permitted (P):** Agents need dynamic authorization with ABAC evaluating permissions per query in <10ms. Echo moved from HIPAA violations (static RBAC, single service account) to compliant (context-aware policies, complete audit trails, HITL escalation for 8% of decisions).
+- **Adaptive (A):** Agents need continuous learning from every interaction. Echo transformed from quarterly reviews (3-day root cause analysis) to real-time observability (<24-hour fixes, automated feedback loops, learning from human corrections).
+
+**Why It Matters:** Security enables production deployment—without ABAC and audit trails, you can't deploy agents in regulated industries. Learning enables continuous improvement—without observability and feedback loops, agents degrade over time instead of getting better.
+
+**Coming Next:** Context assembly across systems and transparency for compliance—the final two needs that complete the INPACT™ framework.
+
+**Reading Progress:** 67% complete through Part 3 | 2 more needs remaining | ~6 minutes left in this section
+
+---
+
 ### C – Contextual: Completeness Builds Accuracy
 
 **The User Need**
@@ -660,6 +690,21 @@ Results: Complete audit trails meeting healthcare compliance. Physicians confide
 **Impact on HITL:** Physicians reviewing prior authorizations with transparent reasoning average 3 minutes review time (down from 8 minutes reconstructing agent logic manually). Approval rate 78% accepted without modification because physicians trust transparent recommendations. Modification 16% and rejection 6% provide feedback improving agent learning.
 
 **Measuring Success:** Score 1 = no audit beyond database logs, compliance violations. Score 6 = universal transparency with ML audit analysis, real-time explainability, automated compliance reporting. Echo moved from 2/6 to 5/6.
+
+---
+
+### ✅ Progress Check: Context & Trust Complete
+
+**What You've Learned (6 of 6 needs complete - 100% through Part 3):**
+
+- **Contextual (C):** Agents need complete cross-system context assembled in real-time. Echo transformed from siloed systems (10-12 second manual integration, 73% success rate) to unified fabric (1.6 second automated assembly, 96% success, zero marginal cost for new sources).
+- **Transparent (T):** Agents need complete audit trails with explainability. Echo moved from opaque decisions (database logs only, HIPAA failures) to full transparency (trace IDs, business context, reasoning chains, HITL verification enabled).
+
+**Why It Matters:** Context enables accurate answers—without cross-system integration, agents can't answer clinically relevant questions. Transparency enables trust and compliance—without explainability and audit trails, users won't trust recommendations and auditors won't approve deployment.
+
+**All Six INPACT™ Needs Now Complete:** You understand what agents need (Instant, Natural, Permitted, Adaptive, Contextual, Transparent), why traditional infrastructure fails each need, and how Echo addressed each dimension systematically. These needs define requirements for the 7-Layer Architecture you'll build in Chapters 4-7.
+
+**Coming Next:** Part 4 shows how Sarah used INPACT™ to prioritize her transformation roadmap, sequencing improvements based on dependencies and business impact.
 
 ---
 
