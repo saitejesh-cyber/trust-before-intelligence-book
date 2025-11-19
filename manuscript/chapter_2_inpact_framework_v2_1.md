@@ -4,7 +4,7 @@
 **Subtitle:** Why 95% of Agent Projects Fail—and the Architecture Blueprint That Fixes Infrastructure in 90 Days  
 **Author:** Ram Katamaraja, CEO, Colaberry Inc.  
 **Chapter:** 2 of 12  
-**Version:** 2.2 CORRECTED DIAGRAMS 2 & 3  
+**Version:** 2.5 FIXED ALL DIAGRAM VISIBILITY ISSUES  
 **Date:** November 18, 2025  
 **Target:** 7,500 words | 15 pages | ~30 minutes reading time
 
@@ -134,30 +134,28 @@ INPACT™ assessment quantifies infrastructure readiness using a 1-6 scoring sys
 
 ```mermaid
 graph TB
-    subgraph LEFT["<b>STEP 1: ASSESS 6 DIMENSIONS</b><br/>(Score each: 1-6 points)"]
-        I["<b>I</b> - Instant<br/>Real-time data"]
-        N["<b>N</b> - Natural<br/>Semantic understanding"]
-        P["<b>P</b> - Permitted<br/>Dynamic authorization"]
-        A["<b>A</b> - Adaptive<br/>Continuous learning"]
-        C["<b>C</b> - Contextual<br/>Cross-system integration"]
-        T["<b>T</b> - Transparent<br/>Audit & explainability"]
+    TITLE["<b>INPACT™ ASSESSMENT METHODOLOGY</b>"]
+    
+    TITLE --> ASSESS
+    
+    subgraph ASSESS["<b>STEP 1: ASSESS 6 DIMENSIONS (1-6 points each)</b>"]
+        DIMS["<b>I</b> Instant | <b>N</b> Natural | <b>P</b> Permitted<br/><b>A</b> Adaptive | <b>C</b> Contextual | <b>T</b> Transparent"]
     end
     
-    LEFT --> CALC["<b>STEP 2: CALCULATE</b><br/>Sum: 6 dimensions × 6 = 36 max<br/>Convert: (score/36) × 100<br/><br/><b>Example:</b> 22/36 = 61/100"]
+    ASSESS --> CALC["<b>STEP 2: CALCULATE</b><br/><b>Sum: 6 dimensions × 6 = 36 max</b><br/><b>Convert: (score/36) × 100</b>"]
     
-    CALC --> DECISION{"<b>STEP 3: EVALUATE</b><br/>Score ≥ 85/100?"}
+    CALC --> DECISION{"<b>STEP 3: EVALUATE</b><br/><b>Score ≥ 85/100?</b>"}
     
-    DECISION -->|<b>YES</b>| READY["<b>✅ AGENT-READY</b><br/>Production approved<br/>Sustainable adoption"]
+    DECISION -->|<b>YES</b>| READY["<b>✅ AGENT-READY</b><br/><b>Production approved</b><br/><b>Sustainable adoption</b>"]
     
-    DECISION -->|<b>NO</b>| GAPS["<b>⚠️ GAPS FOUND</b><br/>Roadmap needed<br/>High risk"]
+    DECISION -->|<b>NO</b>| GAPS["<b>⚠️ GAPS FOUND</b><br/><b>Roadmap needed</b><br/><b>High risk</b>"]
     
-    style LEFT fill:#e0f2f1,stroke:#00897b,stroke-width:2px
-    style I fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style N fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style P fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style C fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style T fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    COPYRIGHT["<b>© 2025 Colaberry Inc.</b>"]
+    
+    style TITLE fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    
+    style ASSESS fill:#e0f2f1,stroke:#00897b,stroke-width:3px
+    style DIMS fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
     
     style CALC fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
     style DECISION fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
@@ -165,8 +163,7 @@ graph TB
     style READY fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     style GAPS fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
     
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style COPYRIGHT fill:#ffffff,stroke:none,color:#666666
 ```
 
 **Score 1-2 (Critical/Weak):** Infrastructure blocks agent deployment. Major capability gaps would cause compliance failures or user abandonment.
@@ -240,14 +237,14 @@ graph TB
     
     style TITLE fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
     
-    style BEFORE fill:#fff5f5,stroke:#c62828,stroke-width:2px
+    style BEFORE fill:#fff5f5,stroke:#c62828,stroke-width:2px,color:#b71c1c
     style B_SCORE fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
     style B_DIMS fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
     style B_STATUS fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
     
     style TRANSFORM fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
     
-    style AFTER fill:#f0fff0,stroke:#00897b,stroke-width:2px
+    style AFTER fill:#f0fff0,stroke:#00897b,stroke-width:2px,color:#004d40
     style A_SCORE fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     style A_DIMS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style A_STATUS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
@@ -342,12 +339,12 @@ graph TB
         style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px
     end
     
-    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px
+    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
     style A1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
     style B1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
     style C1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
     
-    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px
+    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
     style B2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
     style C2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
@@ -412,12 +409,12 @@ graph TB
         style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px
     end
     
-    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px
+    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
     style A1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
     style B1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
     style C1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
     
-    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px
+    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
     style B2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
     style C2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
@@ -481,11 +478,11 @@ graph TB
         style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px
     end
     
-    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px
+    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
     style A1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
     style B1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
     
-    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px
+    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
     style B2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
     style C2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
@@ -548,12 +545,12 @@ graph TB
         style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px
     end
     
-    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px
+    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
     style A1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
     style B1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
     style C1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
     
-    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px
+    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
     style B2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
     style C2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
@@ -617,11 +614,11 @@ graph TB
         style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px
     end
     
-    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px
+    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
     style A1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
     style B1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
     
-    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px
+    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
     style B2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
     style C2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
@@ -685,11 +682,11 @@ graph TB
         style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px
     end
     
-    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px
+    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
     style A1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
     style B1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
     
-    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px
+    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
     style B2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
     style C2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
