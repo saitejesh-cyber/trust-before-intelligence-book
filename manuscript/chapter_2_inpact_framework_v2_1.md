@@ -4,7 +4,7 @@
 **Subtitle:** Why 95% of Agent Projects Fail—and the Architecture Blueprint That Fixes Infrastructure in 90 Days  
 **Author:** Ram Katamaraja, CEO, Colaberry Inc.  
 **Chapter:** 2 of 12  
-**Version:** 2.1 WITH REFACTORED CONTENT  
+**Version:** 2.2 CORRECTED DIAGRAMS 2 & 3  
 **Date:** November 18, 2025  
 **Target:** 7,500 words | 15 pages | ~30 minutes reading time
 
@@ -134,31 +134,24 @@ INPACT™ assessment quantifies infrastructure readiness using a 1-6 scoring sys
 
 ```mermaid
 graph TB
-    TITLE["<b>INPACT™ ASSESSMENT: 3-STEP PROCESS</b>"]
-    
-    TITLE --> STEP1
-    
-    subgraph STEP1["<b>STEP 1: ASSESS SIX DIMENSIONS</b>"]
-        direction LR
-        I["<b>Instant (I)</b><br/>Score: 1-6"]
-        N["<b>Natural (N)</b><br/>Score: 1-6"]
-        P["<b>Permitted (P)</b><br/>Score: 1-6"]
-        A["<b>Adaptive (A)</b><br/>Score: 1-6"]
-        C["<b>Contextual (C)</b><br/>Score: 1-6"]
-        T["<b>Transparent (T)</b><br/>Score: 1-6"]
+    subgraph LEFT["<b>STEP 1: ASSESS 6 DIMENSIONS</b><br/>(Score each: 1-6 points)"]
+        I["<b>I</b> - Instant<br/>Real-time data"]
+        N["<b>N</b> - Natural<br/>Semantic understanding"]
+        P["<b>P</b> - Permitted<br/>Dynamic authorization"]
+        A["<b>A</b> - Adaptive<br/>Continuous learning"]
+        C["<b>C</b> - Contextual<br/>Cross-system integration"]
+        T["<b>T</b> - Transparent<br/>Audit & explainability"]
     end
     
-    STEP1 --> STEP2["<b>STEP 2: CALCULATE TOTAL SCORE</b><br/><br/>Sum all dimensions: 6 × 6 points = <b>36 maximum</b><br/><br/>Convert to percentage: <b>(score/36) × 100</b><br/><br/>Example: 22/36 = 0.61 × 100 = <b>61/100</b>"]
+    LEFT --> CALC["<b>STEP 2: CALCULATE</b><br/>Sum: 6 dimensions × 6 = 36 max<br/>Convert: (score/36) × 100<br/><br/><b>Example:</b> 22/36 = 61/100"]
     
-    STEP2 --> STEP3{"<b>STEP 3: EVALUATE READINESS</b><br/><br/>Is score ≥ 85/100?<br/>(31/36 points minimum)"}
+    CALC --> DECISION{"<b>STEP 3: EVALUATE</b><br/>Score ≥ 85/100?"}
     
-    STEP3 -->|<b>YES: Score ≥ 85/100</b>| READY["<b>✅ AGENT-READY</b><br/><br/>• Production deployment approved<br/>• Sustainable adoption expected<br/>• Manageable risk profile<br/>• Continuous improvement foundation"]
+    DECISION -->|<b>YES</b>| READY["<b>✅ AGENT-READY</b><br/>Production approved<br/>Sustainable adoption"]
     
-    STEP3 -->|<b>NO: Score < 85/100</b>| GAPS["<b>⚠️ INFRASTRUCTURE GAPS</b><br/><br/>• High abandonment risk<br/>• Infrastructure blocks deployment<br/>• Prioritized roadmap needed<br/>• Gap analysis required"]
+    DECISION -->|<b>NO</b>| GAPS["<b>⚠️ GAPS FOUND</b><br/>Roadmap needed<br/>High risk"]
     
-    style TITLE fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    
-    style STEP1 fill:#e0f2f1,stroke:#00897b,stroke-width:3px
+    style LEFT fill:#e0f2f1,stroke:#00897b,stroke-width:2px
     style I fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
     style N fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
     style P fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
@@ -166,11 +159,11 @@ graph TB
     style C fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
     style T fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
     
-    style STEP2 fill:#fff3e0,stroke:#f57c00,stroke-width:3px,color:#e65100
-    style STEP3 fill:#fff3e0,stroke:#f57c00,stroke-width:4px,color:#e65100
+    style CALC fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style DECISION fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
     
-    style READY fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:4px
-    style GAPS fill:#b71c1c,color:#ffffff,stroke:#c62828,stroke-width:4px
+    style READY fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style GAPS fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     style Copyright fill:#ffffff,stroke:none,color:#666666
@@ -218,47 +211,48 @@ graph TB
     TITLE --> BEFORE
     
     subgraph BEFORE["<b>WEEK 0: NOT AGENT-READY (28/100)</b>"]
-        B_SCORE["<b>Overall Score: 28/100</b><br/>(22 out of 36 points)"]
+        B_SCORE["<b>Overall Score: 28/100</b><br/><b>(22 out of 36 points)</b>"]
         
-        B_DIMS["<b>Dimension Breakdown:</b><br/>• Instant (I) = 3/6 🔴<br/>• Natural (N) = 4/6 🟡<br/>• Permitted (P) = 3/6 🔴<br/>• Adaptive (A) = 3/6 🔴<br/>• Contextual (C) = 6/6 ✅<br/>• Transparent (T) = 3/6 🔴"]
+        B_DIMS["<b>Dimension Breakdown:</b><br/><b>I=3/6 🔴 | N=4/6 🟡 | P=3/6 🔴</b><br/><b>A=3/6 🔴 | C=6/6 ✅ | T=3/6 🔴</b>"]
         
-        B_STATUS["<b>Status: Infrastructure Blocks Deployment</b><br/>• 5 critical gaps (only Contextual at 6/6)<br/>• High user abandonment risk<br/>• Compliance concerns (HIPAA)<br/>• Cannot proceed to production"]
+        B_STATUS["<b>Infrastructure Blocks Deployment</b><br/><b>• 5 critical gaps • Compliance risk</b><br/><b>• Cannot proceed to production</b>"]
         
         B_SCORE --> B_DIMS
         B_DIMS --> B_STATUS
     end
     
-    BEFORE --> TRANSFORM["<b>⬇️ 90-DAY TRANSFORMATION ROADMAP ⬇️</b><br/><br/>Investment: <b>$1.23M</b><br/>Timeline: <b>10 weeks (70 days)</b><br/>Sequence: <b>I → N+P → C → A+T</b><br/>Approach: Phased 7-layer implementation"]
+    BEFORE --> TRANSFORM["<b>⬇️ 90-DAY TRANSFORMATION ROADMAP ⬇️</b><br/><b>Investment: $1.23M | Timeline: 10 weeks</b><br/><b>Sequence: I → N+P → C → A+T</b>"]
     
     TRANSFORM --> AFTER
     
-    subgraph AFTER["<b>WEEK 10: AGENT-READY (85/100)</b>"]
-        A_SCORE["<b>Overall Score: 85/100</b><br/>(31 out of 36 points)"]
+    subgraph AFTER["<b>WEEK 10: PRODUCTION-READY (85/100)</b>"]
+        A_SCORE["<b>Overall Score: 85/100</b><br/><b>(31 out of 36 points)</b>"]
         
-        A_DIMS["<b>Dimension Breakdown:</b><br/>• Instant (I) = 5/6 ✅<br/>• Natural (N) = 5/6 ✅<br/>• Permitted (P) = 5/6 ✅<br/>• Adaptive (A) = 5/6 ✅<br/>• Contextual (C) = 6/6 ✅<br/>• Transparent (T) = 5/6 ✅"]
+        A_DIMS["<b>Dimension Breakdown:</b><br/><b>I=5/6 ✅ | N=5/6 ✅ | P=5/6 ✅</b><br/><b>A=5/6 ✅ | C=6/6 ✅ | T=5/6 ✅</b>"]
         
-        A_STATUS["<b>Status: Production-Ready Deployment</b><br/>• All dimensions ≥5/6 (strong capability)<br/>• Sustainable adoption foundation<br/>• Manageable risk profile<br/>• <b>ROI achieved: 477% over 3 years</b>"]
+        A_STATUS["<b>Production-Ready Deployment</b><br/><b>• All dimensions ≥5/6 (strong)</b><br/><b>• ROI: 209% Year 1 | Payback: 3.9 months</b>"]
         
         A_SCORE --> A_DIMS
         A_DIMS --> A_STATUS
     end
     
+    COPYRIGHT["<b>© 2025 Colaberry Inc.</b>"]
+    
     style TITLE fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
     
-    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:4px
-    style B_SCORE fill:#b71c1c,color:#ffffff,stroke:#c62828,stroke-width:3px
-    style B_DIMS fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style B_STATUS fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style BEFORE fill:#fff5f5,stroke:#c62828,stroke-width:2px
+    style B_SCORE fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
+    style B_DIMS fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style B_STATUS fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
     
-    style TRANSFORM fill:#fff3e0,stroke:#f57c00,stroke-width:4px,color:#e65100
+    style TRANSFORM fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
     
-    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:4px
-    style A_SCORE fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px
-    style A_DIMS fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A_STATUS fill:#00897b,color:#ffffff,stroke:#004d40,stroke-width:2px
+    style AFTER fill:#f0fff0,stroke:#00897b,stroke-width:2px
+    style A_SCORE fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style A_DIMS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A_STATUS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style COPYRIGHT fill:#ffffff,stroke:none,color:#666666
 ```
 
 ---
