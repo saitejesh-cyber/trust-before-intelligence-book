@@ -133,8 +133,13 @@ INPACT™ assessment quantifies infrastructure readiness using a 1-6 scoring sys
 **Diagram 2: INPACT™ Assessment Methodology—From Dimensions to Decision**
 
 ```mermaid
-graph LR
-    subgraph ASSESS["<b>STEP 1: ASSESS</b>"]
+graph TB
+    TITLE["<b>INPACT™ ASSESSMENT: 3-STEP PROCESS</b>"]
+    
+    TITLE --> STEP1
+    
+    subgraph STEP1["<b>STEP 1: ASSESS SIX DIMENSIONS</b>"]
+        direction LR
         I["<b>Instant (I)</b><br/>Score: 1-6"]
         N["<b>Natural (N)</b><br/>Score: 1-6"]
         P["<b>Permitted (P)</b><br/>Score: 1-6"]
@@ -143,15 +148,17 @@ graph LR
         T["<b>Transparent (T)</b><br/>Score: 1-6"]
     end
     
-    ASSESS --> CALC["<b>STEP 2: CALCULATE</b><br/>Sum: 6 dimensions × 6 points<br/>=36 points maximum<br/><br/>Convert:<br/>(score/36) × 100"]
+    STEP1 --> STEP2["<b>STEP 2: CALCULATE TOTAL SCORE</b><br/><br/>Sum all dimensions: 6 × 6 points = <b>36 maximum</b><br/><br/>Convert to percentage: <b>(score/36) × 100</b><br/><br/>Example: 22/36 = 0.61 × 100 = <b>61/100</b>"]
     
-    CALC --> DECISION{"<b>STEP 3: DECISION</b><br/>Score ≥ 85/100?"}
+    STEP2 --> STEP3{"<b>STEP 3: EVALUATE READINESS</b><br/><br/>Is score ≥ 85/100?<br/>(31/36 points minimum)"}
     
-    DECISION -->|<b>YES: ≥85/100</b>| READY["<b>AGENT-READY</b><br/>Production deployment<br/>Sustainable adoption<br/>Manageable risk"]
+    STEP3 -->|<b>YES: Score ≥ 85/100</b>| READY["<b>✅ AGENT-READY</b><br/><br/>• Production deployment approved<br/>• Sustainable adoption expected<br/>• Manageable risk profile<br/>• Continuous improvement foundation"]
     
-    DECISION -->|<b>NO: <85/100</b>| GAPS["<b>GAP ANALYSIS</b><br/>High abandonment risk<br/>Infrastructure gaps<br/>Prioritized roadmap needed"]
+    STEP3 -->|<b>NO: Score < 85/100</b>| GAPS["<b>⚠️ INFRASTRUCTURE GAPS</b><br/><br/>• High abandonment risk<br/>• Infrastructure blocks deployment<br/>• Prioritized roadmap needed<br/>• Gap analysis required"]
     
-    style ASSESS fill:#e0f2f1,stroke:#00897b,stroke-width:2px
+    style TITLE fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    
+    style STEP1 fill:#e0f2f1,stroke:#00897b,stroke-width:3px
     style I fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
     style N fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
     style P fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
@@ -159,11 +166,11 @@ graph LR
     style C fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
     style T fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
     
-    style CALC fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style DECISION fill:#fff3e0,stroke:#f57c00,stroke-width:3px,color:#e65100
+    style STEP2 fill:#fff3e0,stroke:#f57c00,stroke-width:3px,color:#e65100
+    style STEP3 fill:#fff3e0,stroke:#f57c00,stroke-width:4px,color:#e65100
     
-    style READY fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px
-    style GAPS fill:#b71c1c,color:#ffffff,stroke:#c62828,stroke-width:3px
+    style READY fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:4px
+    style GAPS fill:#b71c1c,color:#ffffff,stroke:#c62828,stroke-width:4px
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     style Copyright fill:#ffffff,stroke:none,color:#666666
@@ -205,37 +212,49 @@ The transformation roadmap began there.
 **Diagram 3: Echo Health's INPACT™ Transformation—28/100 to 85/100 in 10 Weeks**
 
 ```mermaid
-graph LR
-    subgraph BEFORE["<b>WEEK 0: NOT READY</b><br/>Echo Health Assessment"]
-        B_SCORE["<b>28/100</b><br/>(22/36 points)"]
-        B_I["I=3 🔴"]
-        B_N["N=4 🟡"]
-        B_P["P=3 🔴"]
-        B_A["A=3 🔴"]
-        B_C["C=6 ✅"]
-        B_T["T=3 🔴"]
-        B_STATUS["<b>5 Critical Gaps</b><br/>High abandonment risk<br/>Infrastructure blocks deployment"]
+graph TB
+    TITLE["<b>ECHO HEALTH'S INFRASTRUCTURE TRANSFORMATION</b>"]
+    
+    TITLE --> BEFORE
+    
+    subgraph BEFORE["<b>WEEK 0: NOT AGENT-READY (28/100)</b>"]
+        B_SCORE["<b>Overall Score: 28/100</b><br/>(22 out of 36 points)"]
+        
+        B_DIMS["<b>Dimension Breakdown:</b><br/>• Instant (I) = 3/6 🔴<br/>• Natural (N) = 4/6 🟡<br/>• Permitted (P) = 3/6 🔴<br/>• Adaptive (A) = 3/6 🔴<br/>• Contextual (C) = 6/6 ✅<br/>• Transparent (T) = 3/6 🔴"]
+        
+        B_STATUS["<b>Status: Infrastructure Blocks Deployment</b><br/>• 5 critical gaps (only Contextual at 6/6)<br/>• High user abandonment risk<br/>• Compliance concerns (HIPAA)<br/>• Cannot proceed to production"]
+        
+        B_SCORE --> B_DIMS
+        B_DIMS --> B_STATUS
     end
     
-    BEFORE -->|<b>90-DAY ROADMAP</b><br/>$1.23M Investment<br/>I→N+P→C→A+T Sequence| AFTER
+    BEFORE --> TRANSFORM["<b>⬇️ 90-DAY TRANSFORMATION ROADMAP ⬇️</b><br/><br/>Investment: <b>$1.23M</b><br/>Timeline: <b>10 weeks (70 days)</b><br/>Sequence: <b>I → N+P → C → A+T</b><br/>Approach: Phased 7-layer implementation"]
     
-    subgraph AFTER["<b>WEEK 10: AGENT-READY</b><br/>Echo Health Assessment"]
-        A_SCORE["<b>85/100</b><br/>(31/36 points)"]
-        A_I["I=5 ✅"]
-        A_N["N=5 ✅"]
-        A_P["P=5 ✅"]
-        A_A["A=5 ✅"]
-        A_C["C=6 ✅"]
-        A_T["T=5 ✅"]
-        A_STATUS["<b>All Dimensions ≥5</b><br/>Production-ready<br/>Sustainable adoption<br/><b>477% ROI</b>"]
+    TRANSFORM --> AFTER
+    
+    subgraph AFTER["<b>WEEK 10: AGENT-READY (85/100)</b>"]
+        A_SCORE["<b>Overall Score: 85/100</b><br/>(31 out of 36 points)"]
+        
+        A_DIMS["<b>Dimension Breakdown:</b><br/>• Instant (I) = 5/6 ✅<br/>• Natural (N) = 5/6 ✅<br/>• Permitted (P) = 5/6 ✅<br/>• Adaptive (A) = 5/6 ✅<br/>• Contextual (C) = 6/6 ✅<br/>• Transparent (T) = 5/6 ✅"]
+        
+        A_STATUS["<b>Status: Production-Ready Deployment</b><br/>• All dimensions ≥5/6 (strong capability)<br/>• Sustainable adoption foundation<br/>• Manageable risk profile<br/>• <b>ROI achieved: 477% over 3 years</b>"]
+        
+        A_SCORE --> A_DIMS
+        A_DIMS --> A_STATUS
     end
     
-    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:3px
+    style TITLE fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    
+    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:4px
     style B_SCORE fill:#b71c1c,color:#ffffff,stroke:#c62828,stroke-width:3px
+    style B_DIMS fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
     style B_STATUS fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
     
-    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:3px
+    style TRANSFORM fill:#fff3e0,stroke:#f57c00,stroke-width:4px,color:#e65100
+    
+    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:4px
     style A_SCORE fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px
+    style A_DIMS fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
     style A_STATUS fill:#00897b,color:#ffffff,stroke:#004d40,stroke-width:2px
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
