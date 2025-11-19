@@ -4,8 +4,8 @@
 **Subtitle:** Why 95% of Agent Projects Fail—and the Architecture Blueprint That Fixes Infrastructure in 90 Days  
 **Author:** Ram Katamaraja, CEO, Colaberry Inc.  
 **Chapter:** 2 of 12  
-**Version:** 3.3 ADDED DIAGRAM 1.6 (INFRASTRUCTURE→TRUST)  
-**Date:** November 18, 2025  
+**Version:** 3.4 BOXED DIAGRAM 3 + RENUMBERED ALL DIAGRAMS  
+**Date:** November 19, 2025  
 **Target:** 7,500 words | 15 pages | ~30 minutes reading time
 
 ---
@@ -76,7 +76,7 @@ Tony Robbins built an empire on one insight: humans have six core needs—certai
 
 **AI agents follow the same pattern.** They don't need psychological fulfillment—they need architectural fulfillment.
 
-**Diagram 1.5: Human Needs → Agent Needs Parallel**
+**Diagram 2: Human Needs → Agent Needs Parallel**
 
 ```mermaid
 graph TB
@@ -179,28 +179,31 @@ Traditional enterprise software could require trust: "You must use this ERP syst
 
 **Trust emerges when infrastructure consistently fulfills needs:**
 
-**Diagram 1.6: From Infrastructure Fulfillment to Trust**
+**Diagram 3: 6 INPACT™ Needs Fulfilled Agent**
 
 ```mermaid
 graph TB
-    I["<b>I - Instant</b><br/><b>Users trust responses are current</b>"]
-    N["<b>N - Natural</b><br/><b>Users trust agent understands</b>"]
-    P["<b>P - Permitted</b><br/><b>Users trust agent respects boundaries</b>"]
-    A["<b>A - Adaptive</b><br/><b>Users trust agent learns & improves</b>"]
-    C["<b>C - Contextual</b><br/><b>Users trust agent sees complete picture</b>"]
-    T["<b>T - Transparent</b><br/><b>Users trust agent's reasoning</b>"]
-    
-    TRUST["<b>✅ TRUSTED AGENT</b><br/><b>Users Delegate with Confidence</b>"]
-    
-    I --> TRUST
-    N --> TRUST
-    P --> TRUST
-    A --> TRUST
-    C --> TRUST
-    T --> TRUST
+    subgraph BOX["<b>6 INPACT™ NEEDS FULFILLED AGENT</b>"]
+        I["<b>I - Instant</b><br/><b>Users trust responses are current</b>"]
+        N["<b>N - Natural</b><br/><b>Users trust agent understands</b>"]
+        P["<b>P - Permitted</b><br/><b>Users trust agent respects boundaries</b>"]
+        A["<b>A - Adaptive</b><br/><b>Users trust agent learns & improves</b>"]
+        C["<b>C - Contextual</b><br/><b>Users trust agent sees complete picture</b>"]
+        T["<b>T - Transparent</b><br/><b>Users trust agent's reasoning</b>"]
+        
+        TRUST["<b>✅ TRUSTED INPACT™ AGENT</b><br/><b>Users Delegate with Confidence</b>"]
+        
+        I --> TRUST
+        N --> TRUST
+        P --> TRUST
+        A --> TRUST
+        C --> TRUST
+        T --> TRUST
+    end
     
     COPYRIGHT["<b>© 2025 Colaberry Inc.</b>"]
     
+    style BOX fill:#f0fff0,stroke:#00897b,stroke-width:3px
     style I fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style N fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style P fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
@@ -235,7 +238,7 @@ The six needs interconnect through architecture. Instant (I) requires real-time 
 
 INPACT™ assessment quantifies infrastructure readiness using a 1-6 scoring system per dimension, creating a 36-point maximum (6 dimensions × 6 points). Convert to 100-point scale: (score/36) × 100.
 
-**Diagram 2: INPACT™ Assessment Methodology—From Dimensions to Decision**
+**Diagram 4: INPACT™ Assessment Methodology—From Dimensions to Decision**
 
 ```mermaid
 graph TB
@@ -308,7 +311,7 @@ Krish studied the breakdown. "What's the production threshold?"
 
 The transformation roadmap began there.
 
-**Diagram 3: Echo Health's INPACT™ Transformation—28/100 to 85/100 in 10 Weeks**
+**Diagram 5: Echo Health's INPACT™ Transformation—28/100 to 85/100 in 10 Weeks**
 
 ```mermaid
 graph TB
@@ -424,7 +427,7 @@ Every second of latency costs trust. A patient calls to schedule. The agent quer
 
 **The Infrastructure Gap**
 
-**Diagram 4: Analytics Era Batch vs. Agent Era Real-Time Response**
+**Diagram 6: Analytics Era Batch vs. Agent Era Real-Time Response**
 
 ```mermaid
 graph TB
@@ -494,7 +497,7 @@ Research shows GPT-4 achieves 73% execution accuracy on complex database schemas
 
 **The Infrastructure Gap**
 
-**Diagram 5: Analytics Era Manual Translation vs. Agent Era Semantic Understanding**
+**Diagram 7: Analytics Era Manual Translation vs. Agent Era Semantic Understanding**
 
 ```mermaid
 graph TB
@@ -564,7 +567,7 @@ Traditional role-based access control (RBAC) operates at table level: grant all 
 
 **The Infrastructure Gap**
 
-**Diagram 6: RBAC Era Static Roles vs. ABAC Era Dynamic Policies**
+**Diagram 8: RBAC Era Static Roles vs. ABAC Era Dynamic Policies**
 
 ```mermaid
 graph TB
@@ -630,7 +633,7 @@ Manual quarterly retraining creates 3-month windows where agents operate with de
 
 **The Infrastructure Gap**
 
-**Diagram 7: Manual Era Quarterly Retraining vs. Adaptive Era Continuous Learning**
+**Diagram 9: Manual Era Quarterly Retraining vs. Adaptive Era Continuous Learning**
 
 ```mermaid
 graph TB
@@ -700,7 +703,7 @@ Agents operating on single-system data provide incomplete answers: "You have an 
 
 **The Infrastructure Gap**
 
-**Diagram 8: Siloed Era Single-System vs. Contextual Era Cross-System Integration**
+**Diagram 10: Siloed Era Single-System vs. Contextual Era Cross-System Integration**
 
 ```mermaid
 graph TB
@@ -768,7 +771,7 @@ Without transparency, physicians override 70% of agent recommendations—not bec
 
 **The Infrastructure Gap**
 
-**Diagram 9: Black-Box Era Opaque Decisions vs. Transparent Era Explainable Reasoning**
+**Diagram 11: Black-Box Era Opaque Decisions vs. Transparent Era Explainable Reasoning**
 
 ```mermaid
 graph TB
