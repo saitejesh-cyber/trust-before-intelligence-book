@@ -127,7 +127,7 @@ Section 5: INPACT(TM) Scoring & Bridge
 
 **Movement 5 (Summary):**
 - "INPACT(TM) is now established as Pillar 1 of the Architecture of Trust"
-- "Chapter 3 explores why transforming BI-era infrastructure to fulfill these needs is challenging"
+- "Chapter 3 reveals the seven infrastructure gaps between BI-era and Agent-era--explaining why transformation is necessary"
 - "Chapters 4-7 build Pillar 2: the 7-Layer Architecture that delivers on these needs"
 
 ### Cross-Pillar References
@@ -146,7 +146,7 @@ Section 5: INPACT(TM) Scoring & Bridge
 
 **Bridge to Chapter 3:**
 - "INPACT(TM) shows us WHAT agents need. But HOW do we transform existing BI infrastructure to deliver it?"
-- "Chapter 3 explores the BI-to-Agent transformation challenge that sets up the need for our 7-Layer Architecture"
+- "Chapter 3 reveals the seven infrastructure gaps between BI-Era and Agent-Era--and why transformation, not retrofitting, is the answer"
 
 ### Success Criteria
 By end of chapter, reader should:

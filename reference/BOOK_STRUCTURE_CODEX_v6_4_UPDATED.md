@@ -1,10 +1,10 @@
 # BOOK STRUCTURE CODEX v6.4 (LINKEDIN POLL INTEGRATION)
 ## Trust Before Intelligence - Executive Production Guide
 
-**Version:** 6.4 (LINKEDIN POLL INTEGRATION)  
-**Date:** November 14, 2025  
-**Title Finalized:** November 13, 2025  
-**Target:** 328-333 pages | 162,000-166,000 words | 20 weeks to completion  
+**Version:** 6.4 (LINKEDIN POLL INTEGRATION) 
+**Date:** November 14, 2025 
+**Title Finalized:** November 13, 2025 
+**Target:** 328-333 pages | 162,000-166,000 words | 20 weeks to completion 
 **Audience:** CDOs, CTOs, VPs Data & Analytics
 
 **Change in v6.4:** LinkedIn poll insights integrated. Part II title updated to "The 95% Solution". Three new appendices added (F: Trust Patterns, G: Agent Readiness Gap, H: Day Zero Preparedness) totaling 18-23 pages. Main chapters unchanged. Companion: BOOK_CODEX_MASTER v3.0.
@@ -13,8 +13,8 @@
 
 ## BOOK IDENTITY
 
-**Title:** Trust Before Intelligence  
-**Subtitle:** Why 95% of Agent Projects Fail--and the Architecture Blueprint That Fixes Infrastructure in 90 Days  
+**Title:** Trust Before Intelligence 
+**Subtitle:** Why 95% of Agent Projects Fail--and the Architecture Blueprint That Fixes Infrastructure in 90 Days 
 **Author:** Ram Katamaraja, CEO, Colaberry Inc.
 
 **Core Promise:** Transform data chaos into agent-ready infrastructure in 90 days using proven frameworks (INPACT(TM), GOALS(TM), 7-Layer Architecture).
@@ -129,28 +129,28 @@ Each major chapter should reference:
 **Structure:**
 
 1. **The Crisis** (2p)
-   - 95% failure rate (MIT NANDA)
-   - Trust collapse: -64% in agentic AI (Deloitte TrustID(R) Q3 2025)
-   - Assessment CTA: "Measure your readiness first"
+ - 95% failure rate (MIT NANDA)
+ - Trust collapse: -64% in agentic AI (Deloitte TrustID(R) Q3 2025)
+ - Assessment CTA: "Measure your readiness first"
 
-2. **Meet Echo Health Systems** (2p) Ã¢â€ Â MOVED UP
-   - Dr. Sarah Cedao, CMIO: "We spent $2M. Nothing works."
-   - 28/100 INPACT(TM) score (failing)
-   - Pedagogical disclaimer: fictional case, real patterns
-   - "Sarah needed a framework. So do you."
+2. **Meet Echo Health Systems** (2p) -> MOVED UP
+ - Dr. Sarah Cedao, CMIO: "We spent $2M. Nothing works."
+ - 28/100 INPACT(TM) score (failing)
+ - Pedagogical disclaimer: fictional case, real patterns
+ - "Sarah needed a framework. So do you."
 
-3. **The Architecture of Trust** (5p) Ã¢â€ Â RENAMED FROM "The Three Frameworks"
-   - **Introduction** (1p): "Architecture of Trust" concept - three pillars working together
-   - **INPACT(TM)** (1.5p): Six needs agents must fulfill (I-N-P-A-C-T) - Pillar 1
-   - **7-Layer Architecture** (1.5p): What to build (Storage -> Orchestration) - Pillar 2
-   - **GOALS(TM)** (1p): How to maintain it (G-O-A-L-S) - Pillar 3
-   - Each framed as: "This is what Sarah used"
+3. **The Architecture of Trust** (5p) -> RENAMED FROM "The Three Frameworks"
+ - **Introduction** (1p): "Architecture of Trust" concept - three pillars working together
+ - **INPACT(TM)** (1.5p): Six needs agents must fulfill (I-N-P-A-C-T) - Pillar 1
+ - **7-Layer Architecture** (1.5p): What to build (Storage -> Orchestration) - Pillar 2
+ - **GOALS(TM)** (1p): How to maintain it (G-O-A-L-S) - Pillar 3
+ - Each framed as: "This is what Sarah used"
 
 4. **Framework Integration Map** (1p)
-   - **TRIAD DIAGRAM:** Full Architecture of Trust diagram showing three pillars
-   - Integration: INPACT(TM) Ã¢â€ Â-> 7-Layer Ã¢â€ Â-> GOALS(TM) Ã¢â€ Â-> 90-Day Roadmap
-   - Echo's journey: 28 -> 85/100 in 10 weeks
-   - "These aren't separate frameworks--they're an integrated architecture"
+ - **TRIAD DIAGRAM:** Full Architecture of Trust diagram showing three pillars
+ - Integration: INPACT(TM) ->-> 7-Layer ->-> GOALS(TM) ->-> 90-Day Roadmap
+ - Echo's journey: 28 -> 85/100 in 10 weeks
+ - "These aren't separate frameworks--they're an integrated architecture"
 
 **Refactoring:** Use 5,000 words from existing Ch 0 (9,463w), trim theory, add Architecture of Trust framing, add Echo upfront
 
@@ -161,27 +161,27 @@ Each major chapter should reference:
 ### CHAPTER 1: WHY 95% OF AGENT PILOTS FAIL (20 pages)
 
 **Content:**
-1. **The Human-AI Trust Gap** (5p) Ã¢â€ Â RENAMED
-   - Deloitte: -64% trust in agentic AI (Feb-July 2025)
-   - McKinsey: 57% of orgs not ready
-   - Two trust dimensions:
-     - Communicative: "Can I trust what it says?" (accuracy)
-     - Experiential: "Can I trust it to do its job?" (competence)
+1. **The Human-AI Trust Gap** (5p) -> RENAMED
+ - Deloitte: -64% trust in agentic AI (Feb-July 2025)
+ - McKinsey: 57% of orgs not ready
+ - Two trust dimensions:
+ - Communicative: "Can I trust what it says?" (accuracy)
+ - Experiential: "Can I trust it to do its job?" (competence)
 
 2. **Technology Works, Infrastructure Doesn't** (5p)
-   - LLMs proven (GPT-4, Claude)
-   - RAG proven (Pinecone, ChromaDB)
-   - Problem: Data isn't agent-ready
+ - LLMs proven (GPT-4, Claude)
+ - RAG proven (Pinecone, ChromaDB)
+ - Problem: Data isn't agent-ready
 
 3. **The Infrastructure Readiness Gap** (6p)
-   - BI-era vs Agent-era comparison table
-   - Six failure patterns (preview INPACT(TM))
-   - Real enterprise examples (healthcare focus)
+ - BI-era vs Agent-era comparison table
+ - Six failure patterns (preview INPACT(TM))
+ - Real enterprise examples (healthcare focus)
 
 4. **Sarah's $2M Wake-Up Call** (4p)
-   - Echo's three failing pilots
-   - Board pressure, CEO deadline
-   - Discovery: "Fix data first, then deploy agents"
+ - Echo's three failing pilots
+ - Board pressure, CEO deadline
+ - Discovery: "Fix data first, then deploy agents"
 
 **Refactoring:** Use 10,000 words from existing Ch 1 (21,890w), move technical depth to Ch 4-7
 
@@ -193,64 +193,64 @@ Each major chapter should reference:
 
 **Content:**
 1. **Framework Introduction** (2p)
-   - **TRIAD DIAGRAM:** Show Architecture of Trust with INPACT(TM) highlighted
-   - "This chapter explores the first pillar of the Architecture of Trust..."
-   - Origin: 50+ deployments, 50,000+ daily interactions
-   - Trust = all six needs fulfilled
-   - How INPACT(TM) drives requirements for 7-Layer Architecture
-   - Trademark notice
+ - **TRIAD DIAGRAM:** Show Architecture of Trust with INPACT(TM) highlighted
+ - "This chapter explores the first pillar of the Architecture of Trust..."
+ - Origin: 50+ deployments, 50,000+ daily interactions
+ - Trust = all six needs fulfilled
+ - How INPACT(TM) drives requirements for 7-Layer Architecture
+ - Trademark notice
 
 2. **The Six Needs** (18p, 3p each)
-   
-   **I - Instant:** Sub-second response
-   - User need, why it matters, BI gap, architecture fix (-> Layer 2), Echo example, metrics
-   
-   **N - Natural:** Business language understanding
-   - Same structure (-> Layers 3-4)
-   
-   **P - Permitted:** Role-based authorization
-   - Same structure (-> Layer 6)
-   
-   **A - Adaptive:** Self-improving with feedback
-   - Same structure (-> Layer 7)
-   
-   **C - Contextual:** Multi-source knowledge synthesis
-   - Same structure (-> Layers 4-5)
-   
-   **T - Transparent:** Explainable, auditable, transparent, HITL Ã¢â€ Â ADDED HITL
-   - User need: "Show me why + let me escalate to human"
-   - HITL workflows: automatic escalation for high-risk decisions
-   - Echo example: Revenue agent requires human approval for claims >$10K
-   - Architecture fix (-> Layer 6 + GOALS(TM) Observability)
+ 
+ **I - Instant:** Sub-second response
+ - User need, why it matters, BI gap, architecture fix (-> Layer 2), Echo example, metrics
+ 
+ **N - Natural:** Business language understanding
+ - Same structure (-> Layers 3-4)
+ 
+ **P - Permitted:** Role-based authorization
+ - Same structure (-> Layer 6)
+ 
+ **A - Adaptive:** Self-improving with feedback
+ - Same structure (-> Layer 7)
+ 
+ **C - Contextual:** Multi-source knowledge synthesis
+ - Same structure (-> Layers 4-5)
+ 
+ **T - Transparent:** Explainable, auditable, transparent, HITL -> ADDED HITL
+ - User need: "Show me why + let me escalate to human"
+ - HITL workflows: automatic escalation for high-risk decisions
+ - Echo example: Revenue agent requires human approval for claims >$10K
+ - Architecture fix (-> Layer 6 + GOALS(TM) Observability)
 
 3. **INPACT(TM) Scoring** (2p)
-   - 1-6 scale per dimension (6-36 total, normalized to 28-100)
-   - Echo's 28/100 diagnosis
-   - Bridge: "Now let's build what Sarah needed"
+ - 1-6 scale per dimension (6-36 total, normalized to 28-100)
+ - Echo's 28/100 diagnosis
+ - Bridge: "Now let's build what Sarah needed"
 
 **Refactoring:** Use 11,000 words from existing Ch 2 (16,047w), expand HITL in T dimension
 
 ---
 
-### CHAPTER 3: FROM BI-ERA TO AGENT-ERA (18 pages)
+### CHAPTER 3: FROM BI-ERA TO AGENT-ERA: SEVEN GAPS (18 pages)
 
 **Content:**
 1. **The BI Era (1990-2020)** (4p)
-   - Batch, overnight ETL, SQL-centric, human queries
+ - Batch, overnight ETL, SQL-centric, human queries
 
 2. **The Agent Era (2020+)** (4p)
-   - Real-time, streaming, semantic, autonomous
+ - Real-time, streaming, semantic, autonomous
 
 3. **Why Retrofitting Fails** (6p)
-   - Seven infrastructure gaps
-   - Technical debt cost
-   - Migration vs transformation decision
+ - Seven infrastructure gaps
+ - Technical debt cost
+ - Migration vs transformation decision
 
 4. **Echo's Transformation Decision** (4p)
-   - 28/100 assessment results
-   - Board approval: $1.23M budget
-   - Commitment: 90-day transformation
-   - Bridge: "Here's how Sarah built it, layer by layer"
+ - 28/100 assessment results
+ - Board approval: $1.23M budget
+ - Commitment: 90-day transformation
+ - Bridge: "Here's how Sarah built it, layer by layer"
 
 **Refactoring:** Use 9,000 words from existing Ch 3 (19,455w), move technical detail to Ch 4-7
 
@@ -266,65 +266,65 @@ Each major chapter should reference:
 
 **Content:**
 1. **Architecture Introduction** (opening in Layer 1 section)
-   - **TRIAD DIAGRAM:** Show Architecture of Trust with 7-Layer pillar highlighted
-   - "We now build the second pillar: the technical architecture..."
-   - How these foundation layers enable INPACT(TM) Instant and Contextual dimensions
-   - Bridge from requirements (INPACT(TM)) to implementation (7-Layers)
+ - **TRIAD DIAGRAM:** Show Architecture of Trust with 7-Layer pillar highlighted
+ - "We now build the second pillar: the technical architecture..."
+ - How these foundation layers enable INPACT(TM) Instant and Contextual dimensions
+ - Bridge from requirements (INPACT(TM)) to implementation (7-Layers)
 
 2. **Layer 1: Multi-Modal Storage** (10p)
-   - SQL (PostgreSQL, SQL Server)
-   - NoSQL (MongoDB, Cassandra)
-   - Blob (Azure Blob, S3)
-   - Vector (Pinecone, Weaviate)
-   - Graph (Neo4j, Amazon Neptune)
-   - Echo choices + rationale
-   - INPACT(TM) connection: Enables Contextual (C) multi-source synthesis
+ - SQL (PostgreSQL, SQL Server)
+ - NoSQL (MongoDB, Cassandra)
+ - Blob (Azure Blob, S3)
+ - Vector (Pinecone, Weaviate)
+ - Graph (Neo4j, Amazon Neptune)
+ - Echo choices + rationale
+ - INPACT(TM) connection: Enables Contextual (C) multi-source synthesis
 
 3. **Layer 2: Real-Time Data Fabric** (8p)
-   - CDC: Debezium
-   - Streaming: Kafka
-   - Processing: Kafka Streams, Flink
-   - Echo: Debezium + Confluent Cloud
-   - INPACT(TM) connection: Enables Instant (I) sub-second response
+ - CDC: Debezium
+ - Streaming: Kafka
+ - Processing: Kafka Streams, Flink
+ - Echo: Debezium + Confluent Cloud
+ - INPACT(TM) connection: Enables Instant (I) sub-second response
 
 4. **Integration Patterns** (2p)
-   - Layer 1-2 data flow
-   - Echo's Week 1-4 build
-   - "With the foundation laid, we build upward..."
+ - Layer 1-2 data flow
+ - Echo's Week 1-4 build
+ - "With the foundation laid, we build upward..."
 
 **Refactoring:** Use 4,036 words from existing Ch 4 + 6,000 words from Ch 1 technical sections = ~10,000 words total
 
 ---
 
 ### CHAPTER 5: INTELLIGENCE LAYERS (24 pages)
-**"Semantic Understanding, RAG, and LLM Integration"** Ã¢â€ Â RENAMED
+**"Semantic Understanding, RAG, and LLM Integration"** -> RENAMED
 
 **Content:**
 1. **Layer 3: Semantic Layer** (10p)
-   - Business glossary, ontologies
-   - Semantic modeling (dbt)
-   - Data catalog (Alation)
-   - Entity resolution
-   - Echo: Patient, Provider, Claim entities
+ - Business glossary, ontologies
+ - Semantic modeling (dbt)
+ - Data catalog (Alation)
+ - Entity resolution
+ - Echo: Patient, Provider, Claim entities
 
 2. **Layer 4: RAG Infrastructure** (8p)
-   - Embeddings (OpenAI text-embedding-3-large)
-   - Chunking strategies
-   - Vector indexing (Pinecone)
-   - Reranking (Cohere)
-   - Hybrid search
-   - Echo's RAG pipeline
+ - Embeddings (OpenAI text-embedding-3-large)
+ - Chunking strategies
+ - Vector indexing (Pinecone)
+ - Reranking (Cohere)
+ - Hybrid search
+ - Echo's RAG pipeline
 
-3. **LLM Selection & Integration** (4p) Ã¢â€ Â NEW
-   - LLMs vs SLMs (GPT-4 vs Llama 3)
-   - Selection criteria: accuracy, cost, latency
-   - Prompt engineering patterns
-   - Echo choice: Azure OpenAI GPT-4 (enterprise SLA, HIPAA compliance)
+3. **LLM Selection & Integration** (4p) -> NEW
+ - LLMs vs SLMs (GPT-4 vs Llama 3)
+ - Selection criteria: accuracy, cost, latency
+ - Prompt engineering patterns
+ - Echo choice: Azure OpenAI GPT-4 (enterprise SLA, HIPAA compliance)
 
-4. **Model Context Protocol (MCP)** (2p) Ã¢â€ Â NEW
-   - Anthropic's tool-use protocol
-   - Multi-agent communication
-   - Echo roadmap: MCP adoption (Month 6)
+4. **Model Context Protocol (MCP)** (2p) -> NEW
+ - Anthropic's tool-use protocol
+ - Multi-agent communication
+ - Echo roadmap: MCP adoption (Month 6)
 
 **Refactoring:** Use 8,000 words refactored + 4,000 words new (LLM/MCP sections)
 
@@ -335,24 +335,24 @@ Each major chapter should reference:
 
 **Content:**
 1. **Layer 5: Governance** (10p)
-   - RBAC and ABAC
-   - Policy engines (OPA)
-   - HITL workflow patterns Ã¢â€ Â EXPANDED
-   - Audit trails
-   - HIPAA compliance
-   - Echo: OPA + role-based policies + HITL for high-risk decisions
+ - RBAC and ABAC
+ - Policy engines (OPA)
+ - HITL workflow patterns -> EXPANDED
+ - Audit trails
+ - HIPAA compliance
+ - Echo: OPA + role-based policies + HITL for high-risk decisions
 
 2. **Layer 6: Observability** (8p)
-   - Distributed tracing (OpenTelemetry)
-   - Logging strategies
-   - Metrics (Datadog)
-   - HITL monitoring Ã¢â€ Â ADDED: Track escalation rate, response time
-   - Echo's observability stack
+ - Distributed tracing (OpenTelemetry)
+ - Logging strategies
+ - Metrics (Datadog)
+ - HITL monitoring -> ADDED: Track escalation rate, response time
+ - Echo's observability stack
 
 3. **Trust Through Transparency** (2p)
-   - Citation systems
-   - Explainability
-   - HITL as trust mechanism
+ - Citation systems
+ - Explainability
+ - HITL as trust mechanism
 
 **Refactoring:** Use 6,000 words refactored + 4,000 words new (HITL expansion)
 
@@ -363,27 +363,27 @@ Each major chapter should reference:
 
 **Content:**
 1. **Layer 7: Orchestration** (6p)
-   - LangGraph architecture
-   - Agent design patterns
-   - Multi-agent coordination
-   - State management, error handling
+ - LangGraph architecture
+ - Agent design patterns
+ - Multi-agent coordination
+ - State management, error handling
 
-2. **Conversational AI Interfaces** (4p) Ã¢â€ Â NEW
-   - Voice: ElevenLabs, Azure Speech
-   - Real-time: Agora.io, Twilio
-   - Chatbot frameworks: Rasa
-   - Echo example: Voice-enabled care coordination (Month 6 roadmap)
+2. **Conversational AI Interfaces** (4p) -> NEW
+ - Voice: ElevenLabs, Azure Speech
+ - Real-time: Agora.io, Twilio
+ - Chatbot frameworks: Rasa
+ - Echo example: Voice-enabled care coordination (Month 6 roadmap)
 
 3. **Echo's Three Agents** (6p)
-   - Care Coordination Agent (82/100)
-   - Clinical Documentation Agent (87/100)
-   - Revenue Cycle Agent (91/100)
-   - Agent-specific HITL patterns
+ - Care Coordination Agent (82/100)
+ - Clinical Documentation Agent (87/100)
+ - Revenue Cycle Agent (91/100)
+ - Agent-specific HITL patterns
 
 4. **Integration Across All Layers** (4p)
-   - End-to-end data flow diagram
-   - Echo's Week 9-10 deployment
-   - Bridge: "Now let's maintain what Sarah built"
+ - End-to-end data flow diagram
+ - Echo's Week 9-10 deployment
+ - Bridge: "Now let's maintain what Sarah built"
 
 **Refactoring:** Use 5,000 words refactored + 5,000 words new (conversational AI)
 
@@ -398,46 +398,46 @@ Each major chapter should reference:
 
 **Content:**
 1. **Framework Introduction** (2p)
-   - **TRIAD DIAGRAM:** Show complete Architecture of Trust with all three pillars
-   - "The third pillar ensures lasting stability..."
-   - "With INPACT(TM) defining needs and 7-Layers providing infrastructure, GOALS(TM) validates ongoing trust"
-   - Five operational targets
-   - Continuous discipline vs one-time build
-   - How GOALS(TM) validates both INPACT(TM) fulfillment and 7-Layer performance
-   - Trademark notice
+ - **TRIAD DIAGRAM:** Show complete Architecture of Trust with all three pillars
+ - "The third pillar ensures lasting stability..."
+ - "With INPACT(TM) defining needs and 7-Layers providing infrastructure, GOALS(TM) validates ongoing trust"
+ - Five operational targets
+ - Continuous discipline vs one-time build
+ - How GOALS(TM) validates both INPACT(TM) fulfillment and 7-Layer performance
+ - Trademark notice
 
 2. **The Five GOALS** (15p, 3p each)
-   
-   **G - Governance:** Policy, RBAC, audit, HITL workflows Ã¢â€ Â HITL ADDED
-   - HITL as governance mechanism
-   - Echo: HITL escalation policies
-   - Architecture connection: Validates Permitted (P in INPACT(TM)) + Layer 6 effectiveness
-   
-   **O - Observability:** Monitoring, logging, tracing, HITL metrics Ã¢â€ Â HITL ADDED
-   - Track: escalation rate, response time, override rate
-   - Echo: HITL dashboard
-   - Architecture connection: Validates Transparent (T in INPACT(TM)) + Layer 6 operations
-   
-   **A - Accessibility:** Latency, availability, freshness
-   - Architecture connection: Validates Instant (I in INPACT(TM)) + Layers 1-2 performance
-   
-   **L - Language:** Semantic accuracy, entity resolution
-   - Architecture connection: Validates Natural (N in INPACT(TM)) + Layers 3-5 effectiveness
-   
-   **S - Soundness:** Quality, drift detection, HITL feedback Ã¢â€ Â HITL ADDED
-   - HITL as quality control loop
-   - Echo: Physician edits improve Clinical Documentation Agent
-   - Architecture connection: Validates Adaptive (A) and Contextual (C in INPACT(TM))
+ 
+ **G - Governance:** Policy, RBAC, audit, HITL workflows -> HITL ADDED
+ - HITL as governance mechanism
+ - Echo: HITL escalation policies
+ - Architecture connection: Validates Permitted (P in INPACT(TM)) + Layer 6 effectiveness
+ 
+ **O - Observability:** Monitoring, logging, tracing, HITL metrics -> HITL ADDED
+ - Track: escalation rate, response time, override rate
+ - Echo: HITL dashboard
+ - Architecture connection: Validates Transparent (T in INPACT(TM)) + Layer 6 operations
+ 
+ **A - Accessibility:** Latency, availability, freshness
+ - Architecture connection: Validates Instant (I in INPACT(TM)) + Layers 1-2 performance
+ 
+ **L - Language:** Semantic accuracy, entity resolution
+ - Architecture connection: Validates Natural (N in INPACT(TM)) + Layers 3-5 effectiveness
+ 
+ **S - Soundness:** Quality, drift detection, HITL feedback -> HITL ADDED
+ - HITL as quality control loop
+ - Echo: Physician edits improve Clinical Documentation Agent
+ - Architecture connection: Validates Adaptive (A) and Contextual (C in INPACT(TM))
 
 3. **GOALS Interdependence** (2p)
-   - How goals cascade
-   - Echo's Month 8 incident (semantic drift cascaded across all five)
-   - "The three pillars work together--degradation in one affects all"
+ - How goals cascade
+ - Echo's Month 8 incident (semantic drift cascaded across all five)
+ - "The three pillars work together--degradation in one affects all"
 
 4. **Integration with INPACT(TM) and 7-Layers** (1p)
-   - Complete Architecture of Trust map
-   - How GOALS(TM) closes the loop: validates -> informs improvements -> maintains trust
-   - Bridge to assessment: "Now measure all three pillars..."
+ - Complete Architecture of Trust map
+ - How GOALS(TM) closes the loop: validates -> informs improvements -> maintains trust
+ - Bridge to assessment: "Now measure all three pillars..."
 
 **Refactoring:** Use 5,000 words refactored + 5,000 words new (HITL integration + Architecture connections)
 
@@ -448,29 +448,29 @@ Each major chapter should reference:
 
 **Content:**
 1. **Assessment Methodology** (4p)
-   - Scoring: 1-6 per dimension, 28-100 normalized
-   - Evaluation criteria
-   - Data collection
-   - Stakeholder interviews
+ - Scoring: 1-6 per dimension, 28-100 normalized
+ - Evaluation criteria
+ - Data collection
+ - Stakeholder interviews
 
 2. **Online Assessment Tool** (6p)
-   - Walkthrough: colaberry.ai/assessment
-   - Question categories (36 questions, 6 per dimension)
-   - Automated scoring engine
-   - Gap analysis report
-   - Prioritization matrix
+ - Walkthrough: colaberry.ai/assessment
+ - Question categories (36 questions, 6 per dimension)
+ - Automated scoring engine
+ - Gap analysis report
+ - Prioritization matrix
 
 3. **Echo's Assessment Journey** (6p)
-   - Week 0: 28/100 (dimension breakdown)
-   - Week 4: 52/100 (foundation layers complete)
-   - Week 8: 72/100 (intelligence layers live)
-   - Week 11: 85/100 (agents in production)
+ - Week 0: 28/100 (dimension breakdown)
+ - Week 4: 52/100 (foundation layers complete)
+ - Week 8: 72/100 (intelligence layers live)
+ - Week 11: 85/100 (agents in production)
 
 4. **Interpreting Your Results** (2p)
-   - Score ranges: 28-40 (not ready), 40-60 (foundation), 60-80 (good), 80-100 (excellent)
-   - Gap prioritization
-   - Custom roadmap generation
-   - Bridge: "Now build your 90-day plan"
+ - Score ranges: 28-40 (not ready), 40-60 (foundation), 60-80 (good), 80-100 (excellent)
+ - Gap prioritization
+ - Custom roadmap generation
+ - Bridge: "Now build your 90-day plan"
 
 **Refactoring:** Use 4,000 words refactored + 5,000 words new (tool walkthrough)
 
@@ -481,42 +481,42 @@ Each major chapter should reference:
 
 **Content:**
 1. **Roadmap Overview** (3p)
-   - Four phases
-   - Success criteria
-   - Risk management
-   - Change management
+ - Four phases
+ - Success criteria
+ - Risk management
+ - Change management
 
 2. **Phase 1: Foundation (Weeks 1-4)** (6p)
-   - Layers 1-2 build
-   - Team structure (data engineers, DBAs)
-   - Vendor selection (build vs buy decisions)
-   - Echo's foundation: $492K, 4 weeks
-   - Checkpoint: 52/100 INPACT(TM)
+ - Layers 1-2 build
+ - Team structure (data engineers, DBAs)
+ - Vendor selection (build vs buy decisions)
+ - Echo's foundation: $492K, 4 weeks
+ - Checkpoint: 52/100 INPACT(TM)
 
 3. **Phase 2: Intelligence (Weeks 5-8)** (6p)
-   - Layers 3-4 build
-   - Semantic modeling
-   - RAG pipeline setup
-   - Echo's intelligence: $369K, 4 weeks
-   - Checkpoint: 72/100 INPACT(TM)
+ - Layers 3-4 build
+ - Semantic modeling
+ - RAG pipeline setup
+ - Echo's intelligence: $369K, 4 weeks
+ - Checkpoint: 72/100 INPACT(TM)
 
 4. **Phase 3: Trust & Deploy (Weeks 9-10)** (6p)
-   - Layers 5-7 build
-   - First agent deployment (Care Coordination)
-   - HITL workflows activated
-   - Echo's deployment: $246K, 2 weeks
-   - Checkpoint: 85/100 INPACT(TM)
+ - Layers 5-7 build
+ - First agent deployment (Care Coordination)
+ - HITL workflows activated
+ - Echo's deployment: $246K, 2 weeks
+ - Checkpoint: 85/100 INPACT(TM)
 
 5. **Phase 4: Operations (Week 11+)** (4p)
-   - Production handoff
-   - Monitoring, incident response
-   - Continuous improvement (1-2% weekly gains)
-   - Echo's operational maturity
+ - Production handoff
+ - Monitoring, incident response
+ - Continuous improvement (1-2% weekly gains)
+ - Echo's operational maturity
 
 6. **90-Day Tracker** (3p)
-   - 7-tab tracker: Weekly Progress, INPACT(TM), GOALS(TM), Build Status, Risks, Stakeholders, Budget
-   - Access: colaberry.ai/90-day-tracker
-   - Weekly review rituals
+ - 7-tab tracker: Weekly Progress, INPACT(TM), GOALS(TM), Build Status, Risks, Stakeholders, Budget
+ - Access: colaberry.ai/90-day-tracker
+ - Weekly review rituals
 
 **Refactoring:** Use 10,000 words refactored (from Ch 3 + tracker) + 4,000 words new (week-by-week expansion)
 
@@ -529,31 +529,31 @@ Each major chapter should reference:
 
 **Content:**
 1. **Selection Framework** (4p)
-   - Assessment drives selection
-   - Build vs buy vs partner
-   - Budget tiers: Starter ($200K), Growth ($500K), Enterprise ($1M+)
-   - Risk management
+ - Assessment drives selection
+ - Build vs buy vs partner
+ - Budget tiers: Starter ($200K), Growth ($500K), Enterprise ($1M+)
+ - Risk management
 
 2. **Layer-by-Layer Selection** (14p, 2p per layer)
-   - Layer 1: SQL (Postgres vs SQL Server), Vector (Pinecone vs Weaviate), Graph (Neo4j)
-   - Layer 2: CDC (Debezium vs Fivetran), Streaming (Kafka vs Pulsar)
-   - Layer 3: Semantic (dbt vs Informatica), Catalog (Alation vs Collibra)
-   - Layer 4: Embeddings (OpenAI vs Cohere), Vector DB (Pinecone vs ChromaDB)
-   - Layer 5: Governance (OPA vs Casbin), Audit (custom vs Immuta)
-   - Layer 6: Observability (Datadog vs New Relic), Tracing (OpenTelemetry)
-   - Layer 7: Orchestration (LangGraph vs LangChain vs LlamaIndex)
-   
-   Each layer: Top vendors, evaluation criteria, budget range, Echo's choice + why
+ - Layer 1: SQL (Postgres vs SQL Server), Vector (Pinecone vs Weaviate), Graph (Neo4j)
+ - Layer 2: CDC (Debezium vs Fivetran), Streaming (Kafka vs Pulsar)
+ - Layer 3: Semantic (dbt vs Informatica), Catalog (Alation vs Collibra)
+ - Layer 4: Embeddings (OpenAI vs Cohere), Vector DB (Pinecone vs ChromaDB)
+ - Layer 5: Governance (OPA vs Casbin), Audit (custom vs Immuta)
+ - Layer 6: Observability (Datadog vs New Relic), Tracing (OpenTelemetry)
+ - Layer 7: Orchestration (LangGraph vs LangChain vs LlamaIndex)
+ 
+ Each layer: Top vendors, evaluation criteria, budget range, Echo's choice + why
 
 3. **Vendor Evaluation** (2p)
-   - RFP templates
-   - Scoring rubrics
-   - POC approach
+ - RFP templates
+ - Scoring rubrics
+ - POC approach
 
 4. **Echo's Complete Stack** (2p)
-   - Full tech stack summary
-   - Total: $1.23M investment
-   - Bridge: "Now run it in production"
+ - Full tech stack summary
+ - Total: $1.23M investment
+ - Bridge: "Now run it in production"
 
 **Refactoring:** Use 8,000 words refactored + 3,000 words new (selection methodology)
 
@@ -564,35 +564,35 @@ Each major chapter should reference:
 
 **Content:**
 1. **Production Readiness** (6p)
-   - Readiness checklist (15 criteria)
-   - Go-live criteria
-   - Launch planning
-   - Echo's Week 10 go-live
+ - Readiness checklist (15 criteria)
+ - Go-live criteria
+ - Launch planning
+ - Echo's Week 10 go-live
 
 2. **MLOps for Agents** (6p)
-   - Model versioning (semantic versioning for prompts)
-   - A/B testing agents (50/50 traffic split)
-   - Prompt management (PromptLayer, LangSmith)
-   - Cost optimization (caching, quantization)
-   - Echo: $0.12/query -> $0.04/query via caching
+ - Model versioning (semantic versioning for prompts)
+ - A/B testing agents (50/50 traffic split)
+ - Prompt management (PromptLayer, LangSmith)
+ - Cost optimization (caching, quantization)
+ - Echo: $0.12/query -> $0.04/query via caching
 
 3. **Monitoring & Incident Response** (4p)
-   - SLA definition (99.5% uptime, <2s P95 latency)
-   - Alert strategy (PagerDuty integration)
-   - Incident triage (P0/P1/P2)
-   - Post-mortem process
+ - SLA definition (99.5% uptime, <2s P95 latency)
+ - Alert strategy (PagerDuty integration)
+ - Incident triage (P0/P1/P2)
+ - Post-mortem process
 
 4. **Continuous Improvement** (3p)
-   - Weekly improvement cycle
-   - Feedback loops (HITL corrections)
-   - Drift detection
-   - Echo: 1-2% weekly accuracy gains
+ - Weekly improvement cycle
+ - Feedback loops (HITL corrections)
+ - Drift detection
+ - Echo: 1-2% weekly accuracy gains
 
 5. **AIXcelerator Platform** (3p)
-   - Five components: Multi-Agent Core, MCP Server, Agent Syndication, Governance Engine, Assessment
-   - How it accelerates: 90 days -> 45 days
-   - 50,000+ daily interactions, 40+ deployments
-   - Access: aiXcelerator.ai
+ - Five components: Multi-Agent Core, MCP Server, Agent Syndication, Governance Engine, Assessment
+ - How it accelerates: 90 days -> 45 days
+ - 50,000+ daily interactions, 40+ deployments
+ - Access: aiXcelerator.ai
 
 **Refactoring:** Use 6,000 words refactored + 5,000 words new (MLOps + AIXcelerator)
 
@@ -803,8 +803,8 @@ Each major chapter should reference:
 - Week 19: Appendices (assemble + templates)
 - Week 20: Front/Back + full review + VERT
 
-**Completion:** April 2026  
-**Publisher:** June 2026  
+**Completion:** April 2026 
+**Publisher:** June 2026 
 **Publication:** Q3 2026
 
 ---
@@ -812,12 +812,12 @@ Each major chapter should reference:
 ## QUALITY STANDARDS
 
 **TCC Compliance:**
-ÃƒÂ¢Ã…"... Evidence <18 months  
-ÃƒÂ¢Ã…"... Working URLs  
-ÃƒÂ¢Ã…"... 80%+ Tier 1-2 sources  
-ÃƒÂ¢Ã…"... Healthcare-only examples  
-ÃƒÂ¢Ã…"... Echo consistency  
-ÃƒÂ¢Ã…"... Fictional disclaimer
+AfAE'A,cAfEUR|"... Evidence <18 months 
+AfAE'A,cAfEUR|"... Working URLs 
+AfAE'A,cAfEUR|"... 80%+ Tier 1-2 sources 
+AfAE'A,cAfEUR|"... Healthcare-only examples 
+AfAE'A,cAfEUR|"... Echo consistency 
+AfAE'A,cAfEUR|"... Fictional disclaimer
 
 **VERT Certification:**
 - Target: GREEN (9.0+/10) all chapters
@@ -862,16 +862,16 @@ Each major chapter should reference:
 
 ## DOCUMENT CONTROL
 
-**Version:** 6.3 (T=TRANSPARENT)  
-**Status:** Ã°Å¸"' PRODUCTION  
-**Owner:** Ram Katamaraja  
+**Version:** 6.3 (T=TRANSPARENT) 
+**Status:** Af degreesA..."' PRODUCTION 
+**Owner:** Ram Katamaraja 
 **Last Updated:** November 13, 2025
 
 **Changes from v6.2 (November 13, 2025):**
 1. **Title/Subtitle Finalized:** 
-   - Previous: "Why 95% of AI Agent Projects Fail--and 3 Frameworks, Right Infrastructure, and 90-Day Fix"
-   - Current: "Why 95% of Agent Projects Fail--and the Architecture Blueprint That Fixes Infrastructure in 90 Days"
-   - Reason: More concise, emphasizes "architecture blueprint" (key differentiator), removes redundant "3 Frameworks"
+ - Previous: "Why 95% of AI Agent Projects Fail--and 3 Frameworks, Right Infrastructure, and 90-Day Fix"
+ - Current: "Why 95% of Agent Projects Fail--and the Architecture Blueprint That Fixes Infrastructure in 90 Days"
+ - Reason: More concise, emphasizes "architecture blueprint" (key differentiator), removes redundant "3 Frameworks"
 
 **Changes from v6.0:**
 1. Subtitle revised (95% emphasis, "projects" not "agents")
@@ -886,7 +886,7 @@ Each major chapter should reference:
 
 ---
 
-**(c) 2025 Colaberry Inc. All Rights Reserved.**  
+**(c) 2025 Colaberry Inc. All Rights Reserved.** 
 **INPACT(TM) and GOALS(TM) are trademarks of Colaberry Inc.**
 
 **END OF BOOK STRUCTURE CODEX v6.3 FINAL**

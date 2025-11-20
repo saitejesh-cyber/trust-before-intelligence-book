@@ -549,7 +549,7 @@ Structure:
 | Chapter | Reference Type | Content to Support |
 |---------|---------------|-------------------|
 | **Chapter 2** | Direct continuation | "Chapter 1 showed WHY agents fail; now we detail the INPACT(TM) framework..." |
-| **Chapter 3** | Era transition | "Chapter 1 showed agents need different infrastructure; here's the shift..." |
+| **Chapter 3** | Era transition | "Chapter 1 showed agents need different infrastructure; Chapter 3 reveals the seven gaps..." |
 | **All technical chapters (4-7)** | Failure prevention | "Chapter 1 showed the [X] failure pattern; this layer prevents it..." |
 | **Chapter 10** | 90-day roadmap | "Sarah's 90-day deadline (Chapter 1) required systematic transformation..." |
 
@@ -559,7 +559,7 @@ Structure:
 - "You've seen why 95% fail (trust crisis + infrastructure gaps). Chapter 2 shows the INPACT(TM) framework that Sarah used - the six agent needs in complete detail, with scoring rubrics, implementation patterns, and Echo's transformation journey from 28/100 to 85/100."
 
 **To Chapter 3:**
-- "Chapter 1 showed that BI-era infrastructure can't support agent needs. Chapter 3 explains the fundamental shift: from batch to real-time, from SQL to semantic, from static to dynamic. This is the paradigm change every enterprise must navigate."
+- "Chapter 1 showed that BI-era infrastructure can't support agent needs. Chapter 3 explains the fundamental shift through seven specific infrastructure gaps: from batch to real-time, from SQL to semantic, from static to dynamic. These seven gaps define the paradigm change every enterprise must navigate."
 
 **Back-reference to Chapter 0:**
 - Chapter 0 introduced INPACT(TM) and Echo's 28/100 score
