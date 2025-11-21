@@ -4,7 +4,7 @@
 **Subtitle:** Why 95% of Agent Projects Fail--and the Architecture Blueprint That Fixes Infrastructure in 90 Days 
 **Author:** Ram Katamaraja, CEO, Colaberry Inc. 
 **Chapter:** 3 of 12 
-**Version:** 2.3 FINAL (Editorial Comments Resolved) 
+**Version:** 2.4 CODEX COMPLIANT (Diagrams Simplified) 
 **Date:** November 20, 2025 
 **Target:** 4,500 words | 9 pages | ~18 minutes reading time
 
@@ -97,43 +97,43 @@ He identifies three distinct eras:
 
 ```mermaid
 graph LR
- subgraph sw1["<b>SOFTWARE 1.0</b>"]
- direction TB
- prog1["<b>Programming</b><br/><i>(1950s-2010s)</i><br/>Explicit instructions<br/>C++, Java, Python"]
- infra1["<b>Infrastructure</b><br/>Data warehouses<br/>Batch ETL, BI dashboards"]
- prog1 --> infra1
- end
-
- subgraph sw2["<b>SOFTWARE 2.0</b>"]
- direction TB
- prog2["<b>Programming</b><br/><i>(2010s-2023)</i><br/>Curate datasets<br/>Train ML models"]
- infra2["<b>Infrastructure</b><br/>Added ML layers<br/>MLOps, registries"]
- prog2 --> infra2
- end
-
- subgraph sw3["<b>SOFTWARE 3.0</b>"]
- direction TB
- prog3["<b>Programming</b><br/><i>(2023-Present)</i><br/>Natural language<br/>In-context learning"]
- infra3["<b>NEW Infrastructure</b><br/>Vector DBs, real-time<br/>Semantic layers, ABAC"]
- prog3 --> infra3
- end
-
- sw1 -.->|"<b>Added ML</b>"| sw2
- sw2 -.->|"<b>PARADIGM SHIFT</b>"| sw3
-
- style sw1 fill:#f9f9f9,stroke:#666666,stroke-width:2px
- style sw2 fill:#fff9e6,stroke:#f57c00,stroke-width:2px
- style sw3 fill:#e0f2f1,stroke:#00897b,stroke-width:3px
- style prog1 fill:#f9f9f9,stroke:#666666,stroke-width:2px
- style infra1 fill:#f9f9f9,stroke:#666666,stroke-width:2px
- style prog2 fill:#fff9e6,stroke:#f57c00,stroke-width:2px
- style infra2 fill:#fff9e6,stroke:#f57c00,stroke-width:2px
- style prog3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px
- style infra3 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
- 
- CR["(c) 2025 Colaberry Inc."]
- style CR fill:none,stroke:none,color:#999999
+    subgraph SW1["<b>SOFTWARE 1.0</b>"]
+        P1["<b>Explicit Code</b><br/>C++, Java, Python"]
+        I1["<b>BI Infrastructure</b><br/>Batch ETL, Warehouses"]
+        P1 --> I1
+    end
+    
+    subgraph SW2["<b>SOFTWARE 2.0</b>"]
+        P2["<b>ML Models</b><br/>Curate & Train"]
+        I2["<b>ML Infrastructure</b><br/>MLOps, Registries"]
+        P2 --> I2
+    end
+    
+    subgraph SW3["<b>SOFTWARE 3.0</b>"]
+        P3["<b>Natural Language</b><br/>In-Context Learning"]
+        I3["<b>Agent Infrastructure</b><br/>Real-time, Vectors, ABAC"]
+        P3 --> I3
+    end
+    
+    SW1 -.->|"<b>Added ML</b>"| SW2
+    SW2 -.->|"<b>PARADIGM SHIFT</b>"| SW3
+    
+    style SW1 fill:#f9f9f9,stroke:#666666,stroke-width:2px
+    style SW2 fill:#fff9e6,stroke:#f57c00,stroke-width:2px
+    style SW3 fill:#f0fff0,stroke:#00897b,stroke-width:2px
+    
+    style P1 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style I1 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style P2 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#000000
+    style I2 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#000000
+    style P3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style I3 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    
+    CR["<b>© 2025 Colaberry Inc.</b>"]
+    style CR fill:#ffffff,stroke:none,color:#666666
 ```
+
+**Evolution:** Software 1.0 (explicit code) → 2.0 (ML models) → 3.0 (natural language agents). Each era required fundamentally different infrastructure.
 
 The challenge: running Software 3.0 agents on Software 1.0 infrastructure is like running cloud-native microservices on mainframe batch processing. The assumptions don't align.
 
@@ -169,44 +169,44 @@ Capturing that learning requires feedback loops, validation mechanisms, and cont
 
 ```mermaid
 graph LR
- subgraph bi["<b>BI ERA</b>"]
- direction TB
- BI1["<b>Batch ETL</b><br/>8-24 hour lag"]
- BI2["<b>Data Warehouse</b><br/>OLAP cubes"]
- BI3["<b>Dashboards</b><br/>Fixed queries"]
- BI4["<b>Human Analysts</b><br/>Manual decisions"]
- 
- BI1 --> BI2 --> BI3 --> BI4
- end
- 
- subgraph agent["<b>AGENT ERA</b>"]
- direction TB
- A1["<b>Real-Time</b><br/>Sub-30s freshness"]
- A2["<b>Multi-Modal</b><br/>Vector + Graph + SQL"]
- A3["<b>Semantic + RAG</b><br/>Natural language"]
- A4["<b>Autonomous Agents</b><br/>Instant decisions"]
- 
- A1 --> A2 --> A3 --> A4
- end
- 
- BI4 -.->|"<b>Paradigm Evolution</b>"| A4
- 
- style bi fill:#fff5f5,stroke:#c62828,stroke-width:3px
- style agent fill:#f0fff0,stroke:#00897b,stroke-width:3px
- 
- style BI1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
- style BI2 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
- style BI3 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
- style BI4 fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
- 
- style A1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
- style A2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
- style A3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
- style A4 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    subgraph BI["<b>BI ERA</b>"]
+        B1["<b>Batch ETL</b><br/>8-24 hour lag"]
+        B2["<b>Data Warehouse</b><br/>OLAP cubes"]
+        B3["<b>Dashboards</b><br/>Fixed queries"]
+        B4["<b>Human Analysts</b><br/>Manual decisions"]
+        
+        B1 --> B2 --> B3 --> B4
+    end
+    
+    subgraph AGENT["<b>AGENT ERA</b>"]
+        A1["<b>Real-Time</b><br/>Sub-30s freshness"]
+        A2["<b>Multi-Modal</b><br/>Vector + Graph + SQL"]
+        A3["<b>Semantic + RAG</b><br/>Natural language"]
+        A4["<b>Autonomous Agents</b><br/>Instant decisions"]
+        
+        A1 --> A2 --> A3 --> A4
+    end
+    
+    B4 -.->|"<b>Paradigm Evolution</b>"| A4
+    
+    style BI fill:#fff5f5,stroke:#c62828,stroke-width:2px
+    style AGENT fill:#f0fff0,stroke:#00897b,stroke-width:2px
+    
+    style B1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style B2 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style B3 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style B4 fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
+    
+    style A1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A4 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
 
- CR["(c) 2025 Colaberry Inc."]
- style CR fill:none,stroke:none,color:#999999
+    CR["<b>© 2025 Colaberry Inc.</b>"]
+    style CR fill:#ffffff,stroke:none,color:#666666
 ```
+
+**Contrast:** BI systems optimize for batch processing and human analysis. Agent systems require real-time data, multi-modal storage, and autonomous decision-making.
 
 **Key differences:**
 
@@ -433,21 +433,17 @@ Each infrastructure gap requires a specific architectural layer:
 
 ```mermaid
 graph LR
-    TITLE["<b>SEVEN INFRASTRUCTURE GAPS -> INPACT(TM) NEEDS -> 7-LAYER ARCHITECTURE</b>"]
-    
     subgraph GAPS["<b>7 INFRASTRUCTURE GAPS</b>"]
-        direction TB
-        G1["<b>Gap 1:</b> Real-Time Data<br/>Overnight batch ETL<br/>8-24 hour staleness"]
-        G2["<b>Gap 2:</b> Semantic Understanding<br/>SQL schemas only<br/>No business language"]
-        G3["<b>Gap 3:</b> Intelligent Retrieval<br/>Keyword search only<br/>No context awareness"]
-        G4["<b>Gap 4:</b> Dynamic Permissions<br/>Static RBAC<br/>No context evaluation"]
-        G5["<b>Gap 5:</b> Reasoning Observability<br/>Query logs only<br/>No reasoning traces"]
-        G6["<b>Gap 6:</b> Multi-Agent Coordination<br/>Single-user systems<br/>No orchestration"]
-        G7["<b>Gap 7:</b> Multi-Modal Storage<br/>Relational only<br/>No vectors/graphs"]
+        G1["<b>Gap 1:</b> Real-Time Data"]
+        G2["<b>Gap 2:</b> Semantic Understanding"]
+        G3["<b>Gap 3:</b> Intelligent Retrieval"]
+        G4["<b>Gap 4:</b> Dynamic Permissions"]
+        G5["<b>Gap 5:</b> Reasoning Observability"]
+        G6["<b>Gap 6:</b> Multi-Agent Coordination"]
+        G7["<b>Gap 7:</b> Multi-Modal Storage"]
     end
     
     subgraph NEEDS["<b>INPACT(TM) NEEDS</b>"]
-        direction TB
         N1["<b>I</b> - Instant"]
         N2["<b>N</b> - Natural"]
         N3["<b>P</b> - Permitted"]
@@ -459,7 +455,6 @@ graph LR
     end
     
     subgraph LAYERS["<b>7-LAYER ARCHITECTURE</b>"]
-        direction TB
         L1["<b>Layers 1-2:</b><br/>Storage + Real-Time"]
         L3["<b>Layer 3:</b><br/>Semantic Layer"]
         L4["<b>Layer 4:</b><br/>RAG + Retrieval"]
@@ -468,34 +463,28 @@ graph LR
         L7["<b>Layer 7:</b><br/>Orchestration"]
     end
     
-    %% Gap to Need Mappings
-    G1 -->|"Requires"| N1
-    G1 -->|"Requires"| N5
-    G2 -->|"Requires"| N2
-    G3 -->|"Requires"| N2
-    G3 -->|"Requires"| N5
-    G4 -->|"Requires"| N3
-    G5 -->|"Requires"| N6
-    G5 -->|"Requires"| N4
-    G6 -->|"Requires all"| N1
-    G6 -->|"at scale"| N2
-    G7 -->|"Requires"| N5
+    G1 -->|"<b>Requires</b>"| N1
+    G1 -->|"<b>Requires</b>"| N5
+    G2 -->|"<b>Requires</b>"| N2
+    G3 -->|"<b>Requires</b>"| N2
+    G3 -->|"<b>Requires</b>"| N5
+    G4 -->|"<b>Requires</b>"| N3
+    G5 -->|"<b>Requires</b>"| N6
+    G5 -->|"<b>Requires</b>"| N4
+    G6 -->|"<b>Requires all</b>"| N1
+    G6 -->|"<b>at scale</b>"| N2
+    G7 -->|"<b>Requires</b>"| N5
     
-    %% Need to Layer Mappings
-    N1 -->|"Solved by"| L1
-    N2 -->|"Solved by"| L3
-    N2 -->|"Solved by"| L4
-    N3 -->|"Solved by"| L5
-    N4 -->|"Solved by"| L6
-    N5 -->|"Solved by"| L1
-    N5 -->|"Solved by"| L4
-    N6 -->|"Solved by"| L6
+    N1 -->|"<b>Solved by</b>"| L1
+    N2 -->|"<b>Solved by</b>"| L3
+    N2 -->|"<b>Solved by</b>"| L4
+    N3 -->|"<b>Solved by</b>"| L5
+    N4 -->|"<b>Solved by</b>"| L6
+    N5 -->|"<b>Solved by</b>"| L1
+    N5 -->|"<b>Solved by</b>"| L4
+    N6 -->|"<b>Solved by</b>"| L6
     
-    %% Title styling
-    style TITLE fill:#004d40,color:#ffffff,stroke:#00897b,stroke-width:4px,font-size:16px
-    
-    %% Styling - GAPS (Red - Problems)
-    style GAPS fill:#fff5f5,stroke:#c62828,stroke-width:3px,color:#b71c1c
+    style GAPS fill:#fff5f5,stroke:#c62828,stroke-width:2px
     style G1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
     style G2 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
     style G3 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
@@ -504,8 +493,7 @@ graph LR
     style G6 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
     style G7 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
     
-    %% Styling - NEEDS (Neutral - Requirements)
-    style NEEDS fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style NEEDS fill:#f9f9f9,stroke:#666666,stroke-width:2px
     style N1 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
     style N2 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
     style N3 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
@@ -513,8 +501,7 @@ graph LR
     style N5 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
     style N6 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
     
-    %% Styling - LAYERS (Teal - Solutions)
-    style LAYERS fill:#f0fff0,stroke:#00897b,stroke-width:3px,color:#004d40
+    style LAYERS fill:#f0fff0,stroke:#00897b,stroke-width:2px
     style L1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style L3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style L4 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
@@ -522,10 +509,11 @@ graph LR
     style L6 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style L7 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     
-    %% Copyright (MANDATORY)
-    CR["(c) 2025 Colaberry Inc."]
-    style CR fill:none,stroke:none,color:#999999
+    CR["<b>© 2025 Colaberry Inc.</b>"]
+    style CR fill:#ffffff,stroke:none,color:#666666
 ```
+
+**The mapping:** Seven gaps in BI infrastructure create six INPACT(TM) requirement violations, which are solved by seven architectural layers.
 
 **The mapping shows:**
 - **Left (Red):** Seven infrastructure gaps from BI-era systems
