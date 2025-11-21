@@ -12,7 +12,7 @@
 
 ## The Question Chapter 2 Left Unanswered
 
-Chapter 2 established what agents need: INPACT(TM)--six requirements for infrastructure to earn user trust. Echo Health scored 28/100, failing five of six dimensions.
+Chapter 2 established what agents need: INPACT™--six requirements for infrastructure to earn user trust. Echo Health scored 28/100, failing five of six dimensions.
 
 **But why did Echo's infrastructure fail?**
 
@@ -121,7 +121,7 @@ graph LR
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
     era1 -.->|<b>Added ML</b>| era2
-    era2 -.->|<b>PARADIGM SHIFT</b>| era3
+    era2 -.->|<b>PARADIGM SHIFT <br> Requires INPACT™ </b>| era3
     
     %% Era 1 - Neutral/Gray (Old)
     style P1 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
@@ -237,7 +237,7 @@ BI thinking is batch, human-mediated, report-oriented. Agent thinking is real-ti
 
 ### Why Echo's Excellence Became Inadequacy
 
-Monday morning, April 2024. Sarah Cedao reviewed Echo's INPACT(TM) assessment: 28/100. Five dimensions critical or weak. One moderate.
+Monday morning, April 2024. Sarah Cedao reviewed Echo's INPACT™ assessment: 28/100. Five dimensions critical or weak. One moderate.
 
 But **which specific infrastructure gaps caused each failure?** And why couldn't middleware bridge them?
 
@@ -253,7 +253,7 @@ Agents need to reason across SQL (appointments, labs), vector (clinical note emb
 
 Different modalities need different storage.
 
-**INPACT(TM) need blocked:** Contextual (C) 
+**INPACT™ need blocked:** Contextual (C) 
 **Why middleware won't fix:** Cannot retrofit vector similarity onto SQL Server. Different indexing algorithms. 
 **Healthcare impact:** Cannot find "similar patients" requiring vector, graph, and SQL queries combined.
 
@@ -263,7 +263,7 @@ BI systems refresh overnight. Informatica ETL runs at 8 PM, completes by 6 AM. F
 
 For agents, overnight batch is catastrophic. The 9:47 AM appointment cancellation won't appear until tomorrow. At 10:00 AM, the agent books an already-taken slot.
 
-**INPACT(TM) needs blocked:** Instant (I), Contextual (C) 
+**INPACT™ needs blocked:** Instant (I), Contextual (C) 
 **Why middleware won't fix:** APIs on stale data return stale answers faster. True real-time requires Change Data Capture at the source. 
 **Healthcare impact:** Patients see outdated schedules, book unavailable slots, call back frustrated.
 
@@ -275,7 +275,7 @@ When agents see "Which diabetic patients are overdue for HbA1c tests?", they mus
 
 Without semantic understanding, accuracy drops to 40-60%.
 
-**INPACT(TM) need blocked:** Natural (N) 
+**INPACT™ need blocked:** Natural (N) 
 **Why middleware won't fix:** Business knowledge lives in tribal knowledge, not metadata. Semantic layers require curated glossaries, ontologies, entity resolution. 
 **Healthcare impact:** Simple questions require complex joins across cryptic tables.
 
@@ -285,7 +285,7 @@ BI uses SQL for exact matches: `WHERE dx_code = 'E11.9'`. This fails for "patien
 
 SQL cannot find semantic similarities. Agents need vector search.
 
-**INPACT(TM) needs blocked:** Natural (N), Contextual (C) 
+**INPACT™ needs blocked:** Natural (N), Contextual (C) 
 **Why middleware won't fix:** Vector search requires embedding models, vector databases with specialized indexes (HNSW, IVF), reranking algorithms. Cannot bolt onto SQL Server. 
 **Healthcare impact:** Agents miss relevant cases, return incomplete results.
 
@@ -297,7 +297,7 @@ Agents need ABAC: "Dr. Smith can see Patient 10243 because Patient 10243 is assi
 
 Runtime evaluation of user + resource + environment + policy rules.
 
-**INPACT(TM) need blocked:** Permitted (P) 
+**INPACT™ need blocked:** Permitted (P) 
 **Why middleware won't fix:** ABAC requires policy engines (OPA), attribute stores (who's assigned to whom), dynamic masking. RBAC tables cannot evaluate complex runtime policies. 
 **Healthcare impact:** Agents either over-retrieve (HIPAA violations) or under-retrieve (incomplete context).
 
@@ -309,7 +309,7 @@ Agents need observability of: which documents were retrieved, what confidence sc
 
 When agents err, BI logs cannot diagnose why.
 
-**INPACT(TM) needs blocked:** Transparent (T), Adaptive (A) 
+**INPACT™ needs blocked:** Transparent (T), Adaptive (A) 
 **Why middleware won't fix:** LLM observability requires distributed tracing with trace IDs, capturing embeddings, prompts, completions, token counts, latency breakdowns. 
 **Healthcare impact:** Cannot explain why agent recommended Dr. Smith vs Dr. Jones.
 
@@ -321,7 +321,7 @@ Agents scheduling complex appointments need: Scheduling Agent (find slots), Clin
 
 These must coordinate, handle failures gracefully, maintain conversational state.
 
-**INPACT(TM) need blocked:** All needs at scale 
+**INPACT™ need blocked:** All needs at scale 
 **Why middleware won't fix:** Orchestration requires state management, routing logic, error handling, conversation memory. BI orchestrates batch ETL jobs, not autonomous agents making real-time decisions. 
 **Healthcare impact:** Appointments booked before authorization confirmed.
 
@@ -368,7 +368,7 @@ Build 7-layer agent-ready architecture systematically.
 **Transform when:**
 - Production agents required (not just pilots)
 - Scale exceeds 1,000 queries/day
-- INPACT(TM) score below 50/100
+- INPACT™ score below 50/100
 - Long-term agent strategy exists
 
 **Echo's reality:** 28/100 score, 3,000+ daily queries projected, production agents required for patient care. **Clear case for transformation.**
@@ -439,7 +439,7 @@ Sarah's private thought: **"We didn't fail. The world changed. BI-era infrastruc
 
 Each infrastructure gap requires a specific architectural layer:
 
-**Diagram 3.3: Seven Infrastructure Gaps -> INPACT(TM) Needs -> 7-Layer Architecture**
+**Diagram 3.3: Seven Infrastructure Gaps -> INPACT™ Needs -> 7-Layer Architecture**
 
 ```mermaid
 graph LR
@@ -532,12 +532,12 @@ graph LR
 
 **The mapping shows:**
 - **Left (Red):** Seven infrastructure gaps from BI-era systems
-- **Middle (Gray):** INPACT(TM) needs that each gap violates  
+- **Middle (Gray):** INPACT™ needs that each gap violates  
 - **Right (Teal):** Seven architectural layers that solve each gap
 
-**Key insight:** Miss one layer, agents fail. Build all seven, fulfill all six INPACT(TM) needs.
+**Key insight:** Miss one layer, agents fail. Build all seven, fulfill all six INPACT™ needs.
 
-| Gap | INPACT(TM) Need | Layer | Solution |
+| Gap | INPACT™ Need | Layer | Solution |
 |-----|--------------|-------|----------|
 | **Gap 1: Multi-modal storage** | Contextual (C) | 1 | Vector + Graph + SQL |
 | **Gap 2: Real-time data** | Instant (I), Contextual (C) | 2 | CDC + Streaming |
@@ -547,7 +547,7 @@ graph LR
 | **Gap 6: Reasoning observability** | Transparent (T), Adaptive (A) | 6 | Distributed tracing |
 | **Gap 7: Multi-agent coordination** | All needs at scale | 7 | Orchestration framework |
 
-**Key insight:** Miss one layer, agents fail. Build all seven, fulfill all six INPACT(TM) needs.
+**Key insight:** Miss one layer, agents fail. Build all seven, fulfill all six INPACT™ needs.
 
 ### Echo's Three-Phase Roadmap
 
@@ -561,7 +561,7 @@ Build Layers 1-2: Multi-Modal Storage + Real-Time Data Fabric
 - Kafka streaming operational
 - Pinecone vector database provisioned
 
-**INPACT(TM) progression:** 28 -> 42/100
+**INPACT™ progression:** 28 -> 42/100
 - Instant (I): 1 -> 4 (real-time data, faster queries)
 - Contextual (C): 3 -> 4 (better multi-source storage)
 
@@ -578,7 +578,7 @@ Build Layers 3-6: Semantic + RAG + Governance + Observability
 - OPA policy engine with ABAC rules
 - OpenTelemetry + Datadog observability
 
-**INPACT(TM) progression:** 42 -> 65/100
+**INPACT™ progression:** 42 -> 65/100
 - Natural (N): 2 -> 5 (semantic layer working)
 - Permitted (P): 1 -> 5 (ABAC operational)
 - Transparent (T): 1 -> 4 (reasoning visible)
@@ -595,7 +595,7 @@ Build Layer 7: Orchestration + Deploy Care Coordination Agent
 - Human-in-the-loop workflows
 - First production agent live
 
-**INPACT(TM) progression:** 65 -> 85/100
+**INPACT™ progression:** 65 -> 85/100
 - Adaptive (A): 2 -> 5 (feedback loops operational)
 - All dimensions optimized through final tuning
 
@@ -607,9 +607,9 @@ Build Layer 7: Orchestration + Deploy Care Coordination Agent
 
 Chapters 0-3 established the problem and Pillar 1:
 
-**Chapter 0:** Introduced INPACT(TM)--six agent needs users demand 
+**Chapter 0:** Introduced INPACT™--six agent needs users demand 
 **Chapter 1:** Showed 7-Layer Architecture at high level 
-**Chapter 2:** Deep-dived each INPACT(TM) need with Echo's transformation 
+**Chapter 2:** Deep-dived each INPACT™ need with Echo's transformation 
 **Chapter 3:** Revealed why BI infrastructure fails and transformation is necessary
 
 **Chapters 4-7 build Pillar 2 systematically:**
@@ -626,7 +626,7 @@ Dynamic permissions, reasoning transparency, audit compliance. From HIPAA violat
 **Chapter 7: Orchestration Layer** 
 Multi-agent coordination, production patterns. From isolated pilots to production deployment.
 
-**Chapter 8** introduces **Pillar 3 (GOALS(TM))**--how to measure operational success and maintain excellence.
+**Chapter 8** introduces **Pillar 3 (GOALS™)**--how to measure operational success and maintain excellence.
 
 **Chapters 9-10** provide the implementation roadmap--your 90-day transformation blueprint.
 
@@ -634,9 +634,9 @@ Multi-agent coordination, production patterns. From isolated pilots to productio
 
 Sarah's team had the blueprint. The Architecture of Trust--three integrated pillars--provided the roadmap:
 
-**Pillar 1 (INPACT(TM))** defined what agents need (Chapters 0, 2). 
+**Pillar 1 (INPACT™)** defined what agents need (Chapters 0, 2). 
 **Pillar 2 (7-Layer Architecture)** specifies how to build it (Chapters 1, 4-7). 
-**Pillar 3 (GOALS(TM))** establishes how to measure success (Chapter 8).
+**Pillar 3 (GOALS™)** establishes how to measure success (Chapter 8).
 
 Chapter 3 revealed why transformation is necessary: BI-era infrastructure cannot support agent-era requirements. Seven specific gaps require seven specific layers.
 
