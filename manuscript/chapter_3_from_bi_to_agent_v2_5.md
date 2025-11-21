@@ -87,31 +87,31 @@ Andrej Karpathy, former Director of AI at Tesla and co-founder of OpenAI, explai
 
 He identifies three distinct eras:
 
-**Software 1.0:** Explicit logic in C++, Java, Python. BI infrastructure was built here--rigid schemas, predefined queries, deterministic outputs.
+**Software 1.0: (1950s-2010s)** Explicit logic in C++, Java, Python. BI infrastructure was built here--rigid schemas, predefined queries, deterministic outputs.
 
-**Software 2.0:** Neural networks where "code" became learned weights. Enterprises adopted this selectively (computer vision, recommendations) but as point solutions within Software 1.0 architectures.
+**Software 2.0: (2010s-2023)** Neural networks where "code" became learned weights. Enterprises adopted this selectively (computer vision, recommendations) but as point solutions within Software 1.0 architectures.
 
-**Software 3.0:** Large Language Models programmable in natural language. As Karpathy emphasizes: "Software 3.0 is eating Software 1.0/2.0"--existing software will be rewritten.
+**Software 3.0: (2023-Present)** Large Language Models programmable in natural language. As Karpathy emphasizes: "Software 3.0 is eating Software 1.0/2.0"--existing software will be rewritten.
 
 **Diagram 3.1: Software 1.0 to 3.0 Evolution**
 
 ```mermaid
 graph LR
-    subgraph era1["<b>SOFTWARE 1.0</b><br/><b>(1950s-2010s)</b>"]
+    subgraph era1["<b>SOFTWARE 1.0</b>"]
         direction TB
         P1["<b>Programming</b><br/><b>(1950s-2010s)</b><br/><b>Explicit instructions</b><br/><b>C++, Java, Python</b>"]
         I1["<b>Infrastructure</b><br/><b>Data warehouses</b><br/><b>Batch ETL, BI dashboards</b>"]
         P1 --> I1
     end
     
-    subgraph era2["<b>SOFTWARE 2.0</b><br/><b>(2010s-2023)</b>"]
+    subgraph era2["<b>SOFTWARE 2.0</b>"]
         direction TB
         P2["<b>Programming</b><br/><b>(2010s-2023)</b><br/><b>Curate datasets</b><br/><b>Train ML models</b>"]
         I2["<b>Infrastructure</b><br/><b>Added ML layers</b><br/><b>MLOps, registries</b>"]
         P2 --> I2
     end
     
-    subgraph era3["<b>SOFTWARE 3.0</b><br/><b>(2023-Present)</b>"]
+    subgraph era3["<b>SOFTWARE 3.0</b>"]
         direction TB
         P3["<b>Programming</b><br/><b>(2023-Present)</b><br/><b>Natural language</b><br/><b>In-context learning</b>"]
         I3["<b>NEW Infrastructure</b><br/><b>Vector DBs, real-time</b><br/><b>Semantic layers, ABAC</b>"]
