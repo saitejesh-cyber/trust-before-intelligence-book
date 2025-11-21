@@ -184,7 +184,7 @@ graph TB
     
     Shift["<b>PARADIGM EVOLUTION</b>"]
     
-    subgraph new["<b>AGENT-ERA:AUTONOMOUS SYSTEMS</b>"]
+    subgraph new["<b>AGENT-ERA:AUTONOMOUS   SYSTEMS</b>"]
         direction LR
         N1["<b>Real-Time</b><br/><b>Sub-30s freshness</b>"]
         N2["<b>Multi-Modal</b><br/><b>Vector + Graph + SQL</b>"]
