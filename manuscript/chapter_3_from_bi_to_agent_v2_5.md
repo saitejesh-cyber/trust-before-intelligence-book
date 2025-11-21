@@ -5,7 +5,7 @@
 **Author:** Ram Katamaraja, CEO, Colaberry Inc. 
 **Chapter:** 3 of 12 
 **Version:** 2.5 ALIGNED (Gap Numbering Aligned 1-to-1 with 7-Layer Architecture) 
-**Date:** November 20, 2025 
+**Date:** November 21, 2025 
 **Target:** 4,500 words | 9 pages | ~18 minutes reading time
 
 ---
@@ -233,6 +233,19 @@ BI thinking is batch, human-mediated, report-oriented. Agent thinking is real-ti
 
 ---
 
+**📍 CHECKPOINT: The Paradigm Shift Is Complete**
+
+✅ **BI-era infrastructure** was built for batch processing, human decision-making, and dashboard-driven analytics over 30 years (1990-2020)  
+✅ **Agent-era infrastructure** requires real-time data, autonomous decision-making, and conversational interfaces—fundamentally different requirements  
+✅ **Echo's $8M investment** in excellent BI infrastructure became inadequate not because it failed, but because agents operate under completely different constraints than human analysts  
+⭐ **Next:** We'll examine the seven specific gaps that caused Echo's 28/100 INPACT™ score—and why each gap maps to a distinct architectural layer
+
+**Reading Time Remaining:** ~12 minutes
+
+**Your Quick Check:** Can you explain why batch ETL that worked perfectly for dashboard users fails completely for conversational agents?
+
+---
+
 ## Part 2: The Seven Gaps
 
 ### Why Echo's Excellence Became Inadequacy
@@ -372,6 +385,23 @@ Build 7-layer agent-ready architecture systematically.
 - Long-term agent strategy exists
 
 **Echo's reality:** 28/100 score, 3,000+ daily queries projected, production agents required for patient care. **Clear case for transformation.**
+
+---
+
+**📍 CHECKPOINT: Seven Gaps Mapped to Seven Layers**
+
+✅ **Gap 1 (Storage):** Static schemas can't handle agent-generated unstructured data → Layer 1: Polyglot Storage  
+✅ **Gap 2 (Real-Time):** Batch ETL creates 24-hour latency → Layer 2: Real-Time Data Streams  
+✅ **Gap 3 (Semantics):** Business logic trapped in reports → Layer 3: Semantic Integration  
+✅ **Gap 4 (Understanding):** SQL can't process natural language → Layer 4: Intelligence & RAG  
+✅ **Gap 5 (Permissions):** Static RBAC can't enforce dynamic context → Layer 5: Trust & Governance  
+✅ **Gap 6 (Observability):** BI monitoring doesn't track agent behavior → Layer 6: Agent Observability  
+✅ **Gap 7 (Orchestration):** No infrastructure for multi-step agent workflows → Layer 7: Agent Runtime  
+⭐ **Next:** Sarah faces the critical decision—should Echo bridge these gaps with middleware or transform the architecture?
+
+**Reading Time Remaining:** ~6 minutes
+
+**Your Quick Check:** Which of the seven gaps affects your organization most critically right now?
 
 ---
 
