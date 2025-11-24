@@ -22,7 +22,7 @@ This chapter begins Part II: "The 95% Solution—Building the Seven Layers That 
 
 **This chapter builds the foundation: Layers 1 and 2.**
 
-### The Architecture of Trust
+**Diagram 1: The Architecture of Trust—Three Integrated Pillars**
 
 ```mermaid
 graph TB
@@ -34,8 +34,8 @@ graph TB
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
-    INPACT -->|<b>Defines</b>| ARCH
-    ARCH -->|<b>Enables</b>| GOALS
+    INPACT -->|<b>Agent needs fulfilled by</b>| ARCH
+    ARCH -->|<b>Infrastructure enables</b>| GOALS
     ARCH -.->|<b>You Are Here</b>| FOUNDATION
     
     style INPACT fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
@@ -55,17 +55,19 @@ Foundation equals data availability and accessibility. Before agents can underst
 
 **Layer 2 (Real-Time Data Fabric):** Fresh data always available. Overnight ETL creates 8-24 hour lag between operational reality and agent perception. Real-time CDC and streaming architectures ensure agents query current state, not yesterday's snapshot.
 
+**Diagram 2: 7-Layer Agent-Ready Architecture—Foundation Highlighted**
+
 ```mermaid
 graph TB
-    L7["<b>Layer 7: Control Plane</b><br/><b>Orchestration & Workflow</b>"]
-    L6["<b>Layer 6: Observability</b><br/><b>Monitoring & Governance</b>"]
-    L5["<b>Layer 5: Governance</b><br/><b>Dynamic Permissions</b>"]
+    L7["<b>Layer 7: Control Plane</b><br/><b>Multi-Agent Orchestration</b>"]
+    L6["<b>Layer 6: Observability</b><br/><b>Tracing & Audit</b>"]
+    L5["<b>Layer 5: Governance</b><br/><b>Dynamic Access Control</b>"]
     L4["<b>Layer 4: Intelligence</b><br/><b>LLM + RAG Pipeline</b>"]
-    L3["<b>Layer 3: Semantic Layer</b><br/><b>Business Logic</b>"]
+    L3["<b>Layer 3: Semantic</b><br/><b>Business Context</b>"]
     
     subgraph "<b>🏗️ FOUNDATION (Chapter 4)</b>"
         L2["<b>Layer 2: Real-Time Data</b><br/><b>CDC & Streaming</b>"]
-        L1["<b>Layer 1: Multi-Modal Storage</b><br/><b>8 Foundation + 3 Phase 2</b>"]
+        L1["<b>Layer 1: Multi-Modal Storage</b><br/><b>8 Foundation Categories</b>"]
     end
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
@@ -214,15 +216,17 @@ Sarah turned to the next concern. "Data freshness. Show me the ETL timeline."
 
 Swapna pulled up the pipeline diagram. "Overnight batch. Operational databases—Epic for EHR, Workday for HR, Cerner for labs—run continuously. Our reporting database refreshes at 2 AM via ETL. During business hours, data lags 8-24 hours behind operational reality."
 
+**Diagram 3: Batch ETL Creates Patient Safety Risk**
+
 ```mermaid
 graph LR
-    subgraph "<b>❌ Week 0: Batch ETL Problem</b>"
+    subgraph "<b>❌ Week 0: Batch ETL</b>"
         OPS["<b>Operational Systems</b><br/><b>Epic, Cerner, Workday</b><br/><b>Real-time updates</b>"]
         ETL["<b>⏰ 2 AM ETL</b><br/><b>Overnight batch</b><br/><b>24-hour cycle</b>"]
         REPORT["<b>Reporting Database</b><br/><b>Stale by afternoon</b><br/><b>8-24 hour lag</b>"]
     end
     
-    RISK["<b>⚠️ Patient Safety Risk</b><br/><b>Medication orders invisible for 12+ hours</b>"]
+    RISK["<b>⚠️ Patient Safety Risk</b><br/><b>Medication orders</b><br/><b>invisible 12+ hours</b>"]
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
@@ -314,38 +318,36 @@ The team was ready to build.
 
 Layer 1 provides eleven distinct storage categories, each optimized for specific agent query patterns. Production AI deployments in 2024-2025 typically use 7-9 storage categories; Echo selected all 11 to meet healthcare's comprehensive requirements.
 
+**Diagram 4: Layer 1 Multi-Modal Storage—11 Categories by Function**
+
 ```mermaid
 graph TB
-    TITLE["<b>Layer 1: Multi-Modal Storage</b><br/><b>8 Foundation Categories (Phase 1)</b>"]
+    TITLE["<b>Layer 1: Multi-Modal Storage</b><br/><b>8 Foundation + 3 Phase 2</b>"]
     
-    subgraph "<b>Structured Data (3 types)</b>"
+    subgraph "<b>Row 1: Core Data Storage (6 types)</b>"
         S1["<b>1. RDBMS</b><br/><b>Transactions</b>"]
         S2["<b>2. NoSQL</b><br/><b>Flexible schema</b>"]
+        AI1["<b>3. Vector DB</b><br/><b>Embeddings</b>"]
+        AI2["<b>4. Graph DB</b><br/><b>Relationships</b>"]
+        SP1["<b>7. Object Storage</b><br/><b>Unstructured</b>"]
         S3["<b>10. Lakehouse</b><br/><b>Analytics</b>"]
     end
     
-    subgraph "<b>AI/ML Data (4 types)</b>"
-        AI1["<b>3. Vector DB</b><br/><b>Embeddings</b>"]
-        AI2["<b>4. Graph DB</b><br/><b>Relationships</b>"]
+    subgraph "<b>Row 2: ML & Performance (5 types)</b>"
         AI3["<b>5. Model Registry</b><br/><b>ML models</b>"]
         AI4["<b>6. Feature Store</b><br/><b>ML features</b>"]
-    end
-    
-    subgraph "<b>Specialized (4 types)</b>"
-        SP1["<b>7. Object Storage</b><br/><b>Unstructured</b>"]
         SP2["<b>8. Time-Series</b><br/><b>IoT/metrics</b>"]
         SP3["<b>9. Search Index</b><br/><b>Full-text</b>"]
         SP4["<b>11. Cache Layer</b><br/><b>Performance</b>"]
     end
     
-    OUTPUT["<b>✅ Each Query → Right Storage</b><br/><b>Optimized Performance</b>"]
+    OUTPUT["<b>✅ Each Query → Right Storage</b>"]
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
-    TITLE --> S1 & S2 & S3
-    TITLE --> AI1 & AI2 & AI3 & AI4
-    TITLE --> SP1 & SP2 & SP3 & SP4
-    S1 & S2 & S3 & AI1 & AI2 & AI3 & AI4 & SP1 & SP2 & SP3 & SP4 --> OUTPUT
+    TITLE --> S1 & S2 & AI1 & AI2 & SP1 & S3
+    S1 & S2 & AI1 & AI2 & SP1 & S3 --> AI3 & AI4 & SP2 & SP3 & SP4
+    AI3 & AI4 & SP2 & SP3 & SP4 --> OUTPUT
     
     style TITLE fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     style S1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
@@ -619,26 +621,28 @@ Echo started with SQL Server only. Here's what failed:
 
 Layer 2 provides sub-30 second data freshness through change data capture (CDC), event streaming, and stream processing. Replaces overnight batch ETL with continuous real-time synchronization.
 
+**Diagram 5: Layer 2 Real-Time Data Fabric—CDC to Agents**
+
 ```mermaid
-graph TB
+graph LR
     SOURCE["<b>Operational Systems</b><br/><b>EHR, Scheduling, Labs</b>"]
     
-    subgraph "<b>Layer 2: Real-Time Data Fabric</b>"
-        CDC["<b>Change Data Capture</b><br/><b>Debezium CDC</b>"]
-        KAFKA["<b>Event Streaming</b><br/><b>Apache Kafka</b>"]
-        PROCESS["<b>Stream Processing</b><br/><b>Flink & Windowing</b>"]
+    subgraph "<b>Layer 2: Real-Time Data</b>"
+        CDC["<b>CDC</b><br/><b>Debezium</b>"]
+        KAFKA["<b>Streaming</b><br/><b>Kafka</b>"]
+        PROCESS["<b>Processing</b><br/><b>Flink</b>"]
     end
     
-    STORAGE["<b>Layer 1: Multi-Modal Storage</b><br/><b>Vector, Graph, Time-Series</b>"]
-    AGENTS["<b>✅ Agents Query Current State</b><br/><b>< 30 Second Freshness</b>"]
+    STORAGE["<b>Layer 1 Storage</b>"]
+    AGENTS["<b>✅ Agents</b><br/><b>< 30s Fresh</b>"]
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
-    SOURCE -->|<b>Database changes</b>| CDC
-    CDC -->|<b>JSON events</b>| KAFKA
-    KAFKA -->|<b>Consume streams</b>| PROCESS
-    PROCESS -->|<b>Store processed</b>| STORAGE
-    STORAGE -.->|<b>Real-time queries</b>| AGENTS
+    SOURCE -->|<b>Changes</b>| CDC
+    CDC -->|<b>Events</b>| KAFKA
+    KAFKA -->|<b>Streams</b>| PROCESS
+    PROCESS -->|<b>Store</b>| STORAGE
+    STORAGE -.->|<b>Query</b>| AGENTS
     
     style SOURCE fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
     style CDC fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
@@ -726,6 +730,8 @@ workday.providers.credentials
 - **INPACT™ Impact:** Contextual +0.5 (enriched context improves search relevance)
 
 ### Training vs. Inference: Different Latency Requirements
+
+**Diagram 6: Real-Time Inference vs. Batch Training Paths**
 
 ```mermaid
 graph LR
@@ -832,36 +838,33 @@ async def stream_clinical_response(query, patient_context):
 
 ### The Build Timeline
 
+**Diagram 7: Echo's Week 1-4 Foundation Build Timeline**
+
 ```mermaid
-graph TB
-    START["<b>Week 0: Baseline</b><br/><b>28/100 INPACT™</b>"]
+graph LR
+    START["<b>Week 0</b><br/><b>28/100</b>"]
     
-    subgraph "<b>Week 1-2: Layer 1 Storage</b>"
-        W1["<b>Vector + Graph + NoSQL</b><br/><b>Core AI storage</b>"]
-        W2["<b>Object + Model Registry</b><br/><b>ML infrastructure</b>"]
+    subgraph "<b>Week 1-2: Layer 1</b>"
+        W1["<b>Storage Deploy</b><br/><b>Vector, Graph, NoSQL</b>"]
     end
     
-    subgraph "<b>Week 3-4: Layer 2 Real-Time</b>"
-        W3["<b>CDC + Kafka Setup</b><br/><b>Streaming pipeline</b>"]
-        W4["<b>Stream Processing</b><br/><b>Flink deployment</b>"]
+    MILESTONE1["<b>🎯 24x Faster</b>"]
+    
+    subgraph "<b>Week 3-4: Layer 2</b>"
+        W2["<b>Real-Time Deploy</b><br/><b>CDC, Kafka, Flink</b>"]
     end
     
-    MILESTONE1["<b>🎯 Week 2 Victory</b><br/><b>Graph queries 24x faster</b>"]
-    MILESTONE2["<b>🎯 Week 4 Victory</b><br/><b>Sepsis 4.2hrs earlier</b>"]
+    MILESTONE2["<b>🎯 4.2hr Earlier</b>"]
     
-    END["<b>Week 4 Complete</b><br/><b>42/100 INPACT™ (+14)</b>"]
+    END["<b>Week 4</b><br/><b>42/100</b>"]
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
-    START --> W1 --> W2 --> MILESTONE1
-    MILESTONE1 --> W3 --> W4 --> MILESTONE2
-    MILESTONE2 --> END
+    START --> W1 --> MILESTONE1 --> W2 --> MILESTONE2 --> END
     
     style START fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
     style W1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style W2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style W3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style W4 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style MILESTONE1 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
     style MILESTONE2 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
     style END fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
@@ -956,48 +959,40 @@ Medical director's reaction: "This is why we're building agents. Not to replace 
 
 ### INPACT™ Score Progression
 
+**Diagram 8: Foundation Impact—Week 0 to Week 4 INPACT™ Transformation**
+
 ```mermaid
 graph TB
-    BEFORE["<b>Week 0 Baseline</b><br/><b>28/100 INPACT Score</b>"]
-    AFTER["<b>Week 4 Foundation</b><br/><b>42/100 INPACT Score</b>"]
+    BEFORE["<b>❌ Week 0: 28/100</b>"]
+    AFTER["<b>✅ Week 4: 42/100 (+14)</b>"]
     
-    subgraph "<b>❌ Week 0 Dimensions</b>"
-        B1["<b>Instant: 3/6</b><br/><b>Slow queries</b>"]
-        B2["<b>Natural: 2/6</b><br/><b>Keyword only</b>"]
-        B3["<b>Permitted: 4/6</b><br/><b>Basic RBAC</b>"]
-        B4["<b>Adaptive: 1/6</b><br/><b>No versioning</b>"]
-        B5["<b>Contextual: 2/6</b><br/><b>Siloed data</b>"]
-        B6["<b>Transparent: 2/6</b><br/><b>Basic logs</b>"]
+    subgraph "<b>Improved by Foundation (+7 points)</b>"
+        A1["<b>Instant: 3→5 (+2)</b><br/><b>Cache + real-time</b>"]
+        A4["<b>Adaptive: 1→3 (+2)</b><br/><b>Feature store</b>"]
+        A5["<b>Contextual: 2→4 (+2)</b><br/><b>Multi-modal</b>"]
+        A6["<b>Transparent: 2→3 (+1)</b><br/><b>Lineage</b>"]
     end
     
-    subgraph "<b>✅ Week 4 Dimensions</b>"
-        A1["<b>Instant: 5/6 (+2)</b><br/><b>Cache layer</b>"]
-        A2["<b>Natural: 2/6 (—)</b><br/><b>Needs Layer 3</b>"]
-        A3["<b>Permitted: 4/6 (—)</b><br/><b>Needs Layer 7</b>"]
-        A4["<b>Adaptive: 3/6 (+2)</b><br/><b>Feature store</b>"]
-        A5["<b>Contextual: 4/6 (+2)</b><br/><b>Multi-modal</b>"]
-        A6["<b>Transparent: 3/6 (+1)</b><br/><b>Complete lineage</b>"]
+    subgraph "<b>Requires Later Layers (no change)</b>"
+        B2["<b>Natural: 2→2 (—)</b><br/><b>Needs Layer 3</b>"]
+        B3["<b>Permitted: 4→4 (—)</b><br/><b>Needs Layer 5</b>"]
     end
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
-    BEFORE --> B1 & B2 & B3 & B4 & B5 & B6
-    AFTER --> A1 & A2 & A3 & A4 & A5 & A6
+    BEFORE --> A1 & A4 & A5 & A6
+    BEFORE --> B2 & B3
+    A1 & A4 & A5 & A6 --> AFTER
+    B2 & B3 --> AFTER
     
     style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
     style AFTER fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style B1 fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#b71c1c
-    style B2 fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#b71c1c
-    style B3 fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#b71c1c
-    style B4 fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#b71c1c
-    style B5 fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#b71c1c
-    style B6 fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#b71c1c
     style A1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style A4 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style A5 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style A6 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style B2 fill:#f9f9f9,stroke:#666666,stroke-width:1px,color:#666666
+    style B3 fill:#f9f9f9,stroke:#666666,stroke-width:1px,color:#666666
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
