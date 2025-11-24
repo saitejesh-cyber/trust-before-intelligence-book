@@ -65,7 +65,7 @@ graph TB
     L4["<b>Layer 4: Intelligence</b><br/><b>LLM + RAG Pipeline</b>"]
     L3["<b>Layer 3: Semantic</b><br/><b>Business Context</b>"]
     
-    subgraph "<b>🏗️ FOUNDATION (Chapter 4)</b>"
+    subgraph "<b>🏗️ FOUNDATION</b>"
         L2["<b>Layer 2: Real-Time Data</b><br/><b>CDC & Streaming</b>"]
         L1["<b>Layer 1: Multi-Modal Storage</b><br/><b>8 Foundation Categories</b>"]
     end
@@ -324,43 +324,43 @@ Layer 1 provides eleven distinct storage categories, each optimized for specific
 graph TB
     TITLE["<b>Layer 1: Multi-Modal Storage</b><br/><b>8 Foundation + 3 Phase 2</b>"]
     
-    subgraph "<b>Row 1: Core Data Storage (6 types)</b>"
+    subgraph "<b>Row 1 (6 types)</b>"
         S1["<b>1. RDBMS</b><br/><b>Transactions</b>"]
-        S2["<b>2. NoSQL</b><br/><b>Flexible schema</b>"]
-        AI1["<b>3. Vector DB</b><br/><b>Embeddings</b>"]
-        AI2["<b>4. Graph DB</b><br/><b>Relationships</b>"]
-        SP1["<b>7. Object Storage</b><br/><b>Unstructured</b>"]
-        S3["<b>10. Lakehouse</b><br/><b>Analytics</b>"]
+        S2["<b>2. NoSQL</b><br/><b>Documents</b>"]
+        S3["<b>3. Vector DB</b><br/><b>Embeddings</b>"]
+        S4["<b>4. Graph DB</b><br/><b>Relationships</b>"]
+        S5["<b>5. Object Store</b><br/><b>Unstructured</b>"]
+        S6["<b>6. Lakehouse</b><br/><b>Analytics</b>"]
     end
     
-    subgraph "<b>Row 2: ML & Performance (5 types)</b>"
-        AI3["<b>5. Model Registry</b><br/><b>ML models</b>"]
-        AI4["<b>6. Feature Store</b><br/><b>ML features</b>"]
-        SP2["<b>8. Time-Series</b><br/><b>IoT/metrics</b>"]
-        SP3["<b>9. Search Index</b><br/><b>Full-text</b>"]
-        SP4["<b>11. Cache Layer</b><br/><b>Performance</b>"]
+    subgraph "<b>Row 2 (5 types)</b>"
+        S7["<b>7. Model Registry</b><br/><b>ML models</b>"]
+        S8["<b>8. Feature Store</b><br/><b>ML features</b>"]
+        S9["<b>9. Time-Series</b><br/><b>IoT/metrics</b>"]
+        S10["<b>10. Search Index</b><br/><b>Full-text</b>"]
+        S11["<b>11. Cache Layer</b><br/><b>Performance</b>"]
     end
     
-    OUTPUT["<b>✅ Each Query → Right Storage</b>"]
+    OUTPUT["<b>✅ Right Storage for Each Query</b>"]
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
-    TITLE --> S1 & S2 & AI1 & AI2 & SP1 & S3
-    S1 & S2 & AI1 & AI2 & SP1 & S3 --> AI3 & AI4 & SP2 & SP3 & SP4
-    AI3 & AI4 & SP2 & SP3 & SP4 --> OUTPUT
+    TITLE --> S1 & S2 & S3 & S4 & S5 & S6
+    S1 & S2 & S3 & S4 & S5 & S6 --> S7 & S8 & S9 & S10 & S11
+    S7 & S8 & S9 & S10 & S11 --> OUTPUT
     
     style TITLE fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     style S1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style S2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style S3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style AI1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style AI2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style AI3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style AI4 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style SP1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style SP2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style SP3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style SP4 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S4 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S5 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S6 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S7 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S8 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S9 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S10 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S11 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style OUTPUT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
@@ -966,14 +966,14 @@ graph TB
     BEFORE["<b>❌ Week 0: 28/100</b>"]
     AFTER["<b>✅ Week 4: 42/100 (+14)</b>"]
     
-    subgraph "<b>Improved by Foundation (+7 points)</b>"
+    subgraph "<b>Improved (+7 points)</b>"
         A1["<b>Instant: 3→5 (+2)</b><br/><b>Cache + real-time</b>"]
         A4["<b>Adaptive: 1→3 (+2)</b><br/><b>Feature store</b>"]
         A5["<b>Contextual: 2→4 (+2)</b><br/><b>Multi-modal</b>"]
         A6["<b>Transparent: 2→3 (+1)</b><br/><b>Lineage</b>"]
     end
     
-    subgraph "<b>Requires Later Layers (no change)</b>"
+    subgraph "<b>Needs Later Layers</b>"
         B2["<b>Natural: 2→2 (—)</b><br/><b>Needs Layer 3</b>"]
         B3["<b>Permitted: 4→4 (—)</b><br/><b>Needs Layer 5</b>"]
     end
