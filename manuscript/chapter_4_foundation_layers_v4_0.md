@@ -67,7 +67,7 @@ graph TB
     
     subgraph "<b>🏗️ FOUNDATION</b>"
         L2["<b>Layer 2: Real-Time Data</b><br/><b>CDC & Streaming</b>"]
-        L1["<b>Layer 1: Multi-Modal Storage</b><br/><b>8 Foundation Categories</b>"]
+        L1["<b>Layer 1: Multi-Modal Storage</b><br/><b>8 Phase 1 Categories</b>"]
     end
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
@@ -105,7 +105,7 @@ Chapter 3 identified seven infrastructure gaps preventing agent deployment. Chap
 
 **Specific Solutions:**
 
-- **Gap 1 (Multi-Modal Storage):** RDBMS-only architecture can't handle vectors, graphs, or unstructured data → Layer 1 solves with eleven distinct categories
+- **Gap 1 (Multi-Modal Storage):** RDBMS-only architecture can't handle vectors, graphs, or unstructured data → Layer 1 solves with eight foundation categories in Phase 1 (expanding to eleven total categories when Phase 2 adds vector database and semantic search infrastructure)
 - **Gap 2 (Real-Time Data):** Overnight ETL creates 8-24 hour lag → Layer 2 solves with CDC and streaming (sub-30 second freshness)
 
 Without foundation, intelligence layers fail:
@@ -185,6 +185,22 @@ Chapter 3's seven infrastructure gaps revealed the failures of BI-era architectu
 Chapters 5-7 address the remaining five gaps (semantic understanding, intelligent retrieval, dynamic permissions, observability, orchestration). But those depend on foundation. You cannot build semantic understanding on stale data. You cannot implement intelligence without vector and graph storage. You cannot deploy governance without proper data access patterns.
 
 **Foundation first. Intelligence second. Let's build.**
+
+---
+
+## 🔍 Checkpoint 1: Foundation Architecture Established
+
+**What we've covered so far:**
+
+✅ **The Architecture of Trust:** Three integrated pillars working together—INPACT™ (agent needs), 7-Layer Architecture (infrastructure blueprint), GOALS™ (operational targets). This chapter builds the foundation: Layers 1-2.
+
+✅ **Gap-to-Layer Mapping:** Chapter 3 identified seven infrastructure gaps. Chapter 4 addresses Gaps 1-2: Multi-Modal Storage (Gap 1) and Real-Time Data (Gap 2). Foundation layers directly enable intelligence layers above.
+
+✅ **Echo's Transformation Journey:** Week 0 (28/100) → Week 4 (42/100) → Week 7 (67/100) → Week 10 (85/100). This chapter covers Week 0-4, building the foundation that makes intelligence possible.
+
+**Key insight so far:** Foundation equals data availability and accessibility. Before agents can understand language or generate intelligent responses, they need the right storage for each query pattern and fresh data always available.
+
+**Coming next:** Echo's foundation challenge—Sarah's team must choose technologies wisely while managing constraints. We'll see how they navigated the decision process before building began.
 
 ---
 
@@ -309,6 +325,22 @@ The team documented their constraints—boundaries within which technology decis
 **For detailed technology selection criteria, product comparisons with INPACT™ + GOALS™ scoring, healthcare-specific guidance, and budget-tier recommendations across all storage and real-time data technologies, see Appendix A: Technology Selection Guide (Sections 2.1-2.2).**
 
 The team was ready to build.
+
+---
+
+## 🔍 Checkpoint 2: Foundation Strategy Set
+
+**What we've covered since Checkpoint 1:**
+
+✅ **Echo's Baseline State:** 28/100 INPACT™ score. SQL Server only for storage (no vectors, graphs, documents). 24-hour batch ETL creating unacceptable staleness. Strong BI infrastructure inadequate for agents.
+
+✅ **Technology Selection Constraints:** Healthcare compliance (HIPAA/HITECH/FDA), Azure-native preference for support, managed services over DIY for 90-day timeline, open-source where strategic (avoid vendor lock-in).
+
+✅ **The Foundation Decision:** Sarah's team committed to Layers 1-2 first. Phase 1 (Weeks 1-4) investment: $470K. Parallel workstreams for speed. Weekly milestones for accountability.
+
+**Key insight so far:** Technology choices must balance compliance, cost, capability, and timeline. Echo chose proven solutions over bleeding-edge, managed services over self-hosting, and multi-vendor over single-vendor to meet their 90-day deadline.
+
+**Coming next:** Layer 1 (Multi-Modal Storage) technical deep-dive—eleven distinct storage categories, each optimized for specific query patterns. We'll see what each category provides and why agents need them all.
 
 ---
 
@@ -658,6 +690,22 @@ graph LR
 
 ---
 
+## 🔍 Checkpoint 3: Multi-Modal Storage Complete
+
+**What we've covered since Checkpoint 2:**
+
+✅ **Layer 1 Architecture:** Eight foundation categories operational in Phase 1—RDBMS (SQL Server), NoSQL (MongoDB), Graph (Neo4j), Model Registry (MLflow), Object Storage (Azure Blob), Lakehouse (Databricks), Cache (Redis), Time-Series (InfluxDB). Vector database and semantic search infrastructure added in Phase 2 (Chapter 5).
+
+✅ **Storage-to-Query Pattern Mapping:** Patient records → RDBMS for ACID transactions. Provider relationships → Graph for traversal. Clinical notes → NoSQL for flexibility. Medical imaging → Object storage for scale. ML models → Model registry for versioning. Real-time vitals → Time-series for performance.
+
+✅ **INPACT™ Foundation Impact:** Multi-modal storage improves Contextual (C) dimension—agents access diverse data types. Cache improves Instant (I) dimension—sub-second response times. Model registry improves Adaptive (A) dimension—controlled ML deployment.
+
+**Key insight so far:** One-size-fits-all storage (RDBMS-only) forces compromises. Agents need specialized storage for each query pattern—vector search for semantics, graph traversal for relationships, time-series for IoT. Right tool for the right job.
+
+**Coming next:** Layer 2 (Real-Time Data Fabric) ensures these diverse storage systems always contain fresh data, eliminating the 8-24 hour staleness problem from overnight batch ETL.
+
+---
+
 ## SECTION 4: LAYER 2—REAL-TIME DATA FABRIC
 
 ### What It Is
@@ -877,6 +925,24 @@ async def stream_clinical_response(query, patient_context):
 
 ---
 
+## 🔍 Checkpoint 4: Real-Time Data Fabric Complete
+
+**What we've covered since Checkpoint 3:**
+
+✅ **Layer 2 Architecture:** CDC (Change Data Capture) replacing overnight batch ETL. Streaming pipelines (Kafka/Event Hub) processing 6.1M daily events. Sub-30 second freshness across all storage categories. 43 tables monitored with real-time replication.
+
+✅ **Real-Time Impact on Clinical Operations:** Medication interaction alerts reduced from 12+ hour batch delay to 8.2 seconds real-time. Sepsis prediction model latency dropped from 72 hours to <30 seconds. Provider availability updates instant, not next-day.
+
+✅ **INPACT™ Real-Time Impact:** Layer 2 improves Instant (I) dimension—data freshness <30 seconds. Improves Transparent (T) dimension—audit trails capture all changes. Improves Adaptive (A) dimension—feature store enables real-time ML.
+
+✅ **Foundation Layers Complete:** Layers 1-2 improved Echo's INPACT™ score from 28/100 to 42/100 (+14 points). Foundation dimensions (I, A, C, T) improved. Natural (N) and Permitted (P) dimensions require intelligence and governance layers (Chapters 5-6).
+
+**Key insight so far:** Multi-modal storage (Layer 1) provides diverse data access. Real-time fabric (Layer 2) ensures data is always fresh. Together, they create the foundation that intelligence layers depend on. Without foundation, intelligence layers cannot function.
+
+**Coming next:** Echo's Week 1-4 implementation journey—how Sarah's team built these foundation layers in parallel workstreams with weekly milestones, risks managed, and measurable progress.
+
+---
+
 ## SECTION 5: ECHO'S WEEK 1-4 BUILD
 
 ### The Build Timeline
@@ -1053,6 +1119,24 @@ graph TB
 
 ---
 
+## 🔍 Checkpoint 5: Foundation Build Journey Complete
+
+**What we've covered since Checkpoint 4:**
+
+✅ **Echo's 4-Week Execution:** Week 1 (Infrastructure provisioning), Week 2 (CDC deployment begins), Week 3 (Storage integration testing), Week 4 (Real-time validation, foundation operational). Parallel workstreams maximized speed without compromising quality.
+
+✅ **Technology Choices Validated:** Neo4j graph database processing 847 provider relationships with 24× query improvement (8.2s → 340ms). InfluxDB time-series handling 460K vitals/hour. Redis cache achieving 89% hit rate, reducing LLM costs $12.2K/month.
+
+✅ **Risk Management in Action:** Weekly stakeholder reviews caught issues early. Compliance checkpoints ensured HIPAA alignment. Technical milestones gated next-phase investment. Sarah's leadership balanced speed with governance.
+
+✅ **Measurable Progress:** INPACT™ score improved 28 → 42 (+14 points). Foundation operational costs: $24.6K/month, offset by $16.2K/month verified savings (cache + lakehouse consolidation). Net operational cost: $8.4K/month for foundation.
+
+**Key insight so far:** Foundation deployment is systematic, not chaotic. Parallel workstreams with weekly milestones, clear ownership, risk management, and measurable progress. Echo built Layers 1-2 in 4 weeks because they planned carefully and executed systematically.
+
+**Coming next:** Foundation status review and investment summary—complete metrics, ROI analysis, and the bridge to Chapter 5 (Intelligence Layers). Foundation complete, now we build intelligence.
+
+---
+
 ## SECTION 6: FOUNDATION COMPLETE
 
 Friday afternoon, Week 4. Sarah convened the leadership team for foundation review.
@@ -1076,7 +1160,7 @@ Friday afternoon, Week 4. Sarah convened the leadership team for foundation revi
 |-------|-------|--------|-----------|------------------|
 | **Phase 1: Foundation** | 1-4 | 1-2 | **$470K** | **This Chapter** |
 | **Phase 2: Intelligence** | 5-7 | 3-4 | **$380K** | Chapter 5 |
-| **Phase 3: Governance** | 8-10 | 5-6-7 | **$380K** | Chapters 6-7 |
+| **Phase 3: Trust & Orchestration** | 8-10 | 5-6-7 | **$380K** | Chapter 6 |
 
 **Phase 1 Investment Detail (This Chapter):**
 
@@ -1091,7 +1175,7 @@ Friday afternoon, Week 4. Sarah convened the leadership team for foundation revi
 - Annual: $295,200
 - Net after verified savings: $100,800/year (cache + consolidation savings of $194,400)
 
-**Phases 2-3:** See Chapters 5-7 for detailed investment breakdowns and operational costs. Complete project economics in Appendix E.
+**Phases 2-3:** See Chapters 5-6 for detailed investment breakdowns and operational costs. Complete project economics in Appendix E.
 - **Net operational:** $377,400/year
 
 **Total Year 1 Investment:**
@@ -1163,17 +1247,17 @@ Chapter 5 begins the intelligence build.
 - **Diagrams:** 8 (Architecture of Trust, 7-Layer, Overnight ETL Problem, Real-Time Flow, INPACT Score, 11 Storage Grid, Training vs. Inference, Week 1-4 Timeline)
 - **Tables:** 4 (Storage Selection, INPACT Progression, Foundation Status, Investment Summary)
 - **Code Examples:** 1 (Python streaming)
-- **Storage Categories Covered:** 11 distinct categories with full detail
+- **Storage Categories Covered:** 8 Phase 1 categories detailed (11 total system categories including Phase 2 vector/semantic additions)
 - **INPACT™ Score Progression:** 28/100 → 42/100 documented
 - **Echo Timeline:** Week 0 → Week 4 complete narrative
-- **Budget:** $498K foundation investment fully detailed
+- **Budget:** $470K foundation investment fully detailed
 
 **Quality Standards Met:**
 - ✅ Evidence-based (citations for all major claims)
 - ✅ Healthcare context throughout (Echo Health Systems)
 - ✅ Colaberry Mermaid Design Codex (all 9 diagrams compliant)
 - ✅ Moore-Kim 5-Movement Pattern (80% technical Moore, 20% narrative Kim)
-- ✅ Echo Canonical Data Consistent (28→42 score, $498K budget, Week 1-4 timeline)
+- ✅ Echo Canonical Data Consistent (28→42 score, $470K budget, Week 1-4 timeline)
 - ✅ INPACT™ Integration (every storage type mapped to dimensions)
 
 **Integration Ready:**
