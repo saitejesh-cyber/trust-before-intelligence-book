@@ -277,44 +277,35 @@ Think of the semantic layer as a universal translator between human language and
 **Diagram 4: Layer 3—Semantic Layer Architecture**
 
 ```mermaid
-flowchart LR
-    TITLE["<b>Layer 3: Semantic Layer</b>"]
+flowchart TB
+    NL["<b>Natural Language</b><br/>'High-risk diabetic patients'"]
     
-    NL["<b>Natural Language</b><br/>'High-risk diabetic<br/>patients'"]
-    
-    PARSE["<b>Semantic Parser</b><br/><b>Extract intent & entities</b>"]
-    
-    GLOSS["<b>Business Glossary</b><br/><b>2,400 clinical terms</b>"]
-    
-    subgraph resolve["<b>Entity Resolution</b>"]
-        E1["<b>EHR</b><br/><b>patient_mrn</b>"]
-        E2["<b>Claims</b><br/><b>member_id</b>"]
-        E3["<b>Lab</b><br/><b>specimen_id</b>"]
+    subgraph PARSE_ROW["<b>Parse & Enrich</b>"]
+        direction LR
+        PARSE["<b>Semantic Parser</b>"] --> GLOSS["<b>Business Glossary</b><br/><b>2,400 terms</b>"]
     end
     
-    GOLD["<b>Golden ID</b><br/><b>patient_master_id</b>"]
+    subgraph RESOLVE_ROW["<b>Entity Resolution</b>"]
+        direction LR
+        E1["<b>EHR</b>"] --> GOLD["<b>Golden ID</b>"]
+        E2["<b>Claims</b>"] --> GOLD
+        E3["<b>Lab</b>"] --> GOLD
+    end
     
-    ONTO["<b>Clinical Ontology</b><br/><b>SNOMED, ICD-10, LOINC</b>"]
+    subgraph OUTPUT_ROW["<b>Output</b>"]
+        direction LR
+        ONTO["<b>Clinical Ontology</b><br/><b>SNOMED/ICD/LOINC</b>"] --> RESULT["<b>✅ Unified Query</b>"]
+    end
     
-    RESULT["<b>✅ Unified Query</b><br/><b>Semantic + structural</b>"]
-    
-    TITLE -.-> NL
-    NL --> PARSE
-    PARSE --> GLOSS
-    GLOSS --> resolve
-    E1 --> GOLD
-    E2 --> GOLD
-    E3 --> GOLD
-    GOLD --> ONTO
-    ONTO --> RESULT
+    NL --> PARSE_ROW
+    PARSE_ROW --> RESOLVE_ROW
+    RESOLVE_ROW --> OUTPUT_ROW
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
-    style TITLE fill:#00897b,color:#ffffff,stroke:#004d40,stroke-width:3px
     style NL fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
     style PARSE fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style GLOSS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style resolve fill:#fafafa,stroke:#00897b,stroke-width:2px,color:#000000
     style E1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style E2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style E3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
@@ -516,19 +507,7 @@ For data cataloging, Echo implemented [Alation](https://www.alation.com) to prov
 
 ---
 
-## 🔍 Checkpoint 1: Semantic Understanding Complete
-
-**What we've covered so far:**
-
-✅ **Layer 3 (Semantic Layer):** Business language understanding through business glossary (2,400 terms), entity resolution (94.2% patient accuracy, 98.1% provider accuracy), and healthcare ontology integration (SNOMED[3], ICD-10[4], LOINC[5]).
-
-✅ **Echo's Investment:** $90,000 for Layer 3 deployment (Week 5), including dbt Cloud[1], Alation, Senzing, and clinical ontology mapping.
-
-✅ **INPACT™ Impact:** Natural (N) improved from 2/6 to 4/6—agents can now understand "high-risk diabetic patients" and translate to precise queries.
-
-**Key insight:** Semantic understanding is prerequisite to intelligence. Before agents can retrieve and reason, they must comprehend what users are asking. Layer 3 provides the vocabulary; Layer 4 provides the reasoning.
-
-**Coming next:** Layer 4 completes the intelligence capability with seven-stage RAG+LLM pipeline.
+**Layer 3 Complete:** Semantic understanding operational—2,400 terms, 94%+ entity resolution, full ontology integration. Investment: $90K. INPACT™ Natural (N): 2/6 → 4/6. Now Layer 4 adds reasoning.
 
 ---
 
@@ -620,7 +599,7 @@ graph LR
     
     subgraph parallel["<b>Parallel Retrieval Strategies</b>"]
         VEC["<b>Vector Search</b><br/><b>Pinecone</b><br/><b>Semantic similarity</b>"]
-        KEY["<b>Keyword Search</b><br/><b>Elasticsearch</b><br/><b>Exact matching</b>"]
+        KEY["<b>Keyword Search</b><br/><b>Azure Search</b><br/><b>Exact matching</b>"]
         GRAPH["<b>Graph Traversal</b><br/><b>Neo4j</b><br/><b>Relationships</b>"]
     end
     
@@ -658,7 +637,7 @@ The HNSW (Hierarchical Navigable Small World) algorithm, introduced by Malkov an
 
 Healthcare documents require semantic-aware chunking. Echo split progress notes by SOAP sections, discharge summaries by clinical headings, lab reports by test panels, with 15% overlap using sentence-aware boundaries to preserve clinical meaning.
 
-Echo integrated [Elasticsearch](https://www.elastic.co) for keyword search running parallel with Pinecone. Reciprocal Rank Fusion (RRF) combines rankings from multiple strategies, giving documents appearing in multiple results higher scores.[11] The RRF algorithm, introduced by Cormack, Clarke, and Buettcher in 2009, uses the formula 1/(k+rank) where k=60 is the empirically optimal constant, enabling effective rank aggregation without hyperparameter tuning.[11]
+Echo integrated [Azure Cognitive Search](https://azure.microsoft.com/en-us/products/ai-services/cognitive-search) for keyword search running parallel with Pinecone. Reciprocal Rank Fusion (RRF) combines rankings from multiple strategies, giving documents appearing in multiple results higher scores.[11] The RRF algorithm, introduced by Cormack, Clarke, and Buettcher in 2009, uses the formula 1/(k+rank) where k=60 is the empirically optimal constant, enabling effective rank aggregation without hyperparameter tuning.[11]
 
 > **📖 For complete hybrid retrieval specifications including RRF formulas and optimization procedures, see Appendix E.2.**
 
@@ -676,43 +655,27 @@ Retrieved and reranked results must be assembled into coherent context within th
 
 ### Universal Context Architecture: Seven-Stream Synthesis
 
-But what exactly should that context contain? Echo's intelligence pipeline doesn't just retrieve documents; it orchestrates retrieval across seven distinct context dimensions, assembling complete situational awareness for every agent interaction.
+Echo's intelligence pipeline doesn't just retrieve documents; it orchestrates retrieval across seven distinct context dimensions, assembling complete situational awareness for every agent interaction.
 
-**Universal context infrastructure** is the architectural capability to synthesize any combination of context types in real-time, delivering complete contextual understanding regardless of how many context dimensions are required.
-
-#### The Seven Context Types
-
-Healthcare agents need seven simultaneous perspectives:
-
-**1. User Context:** Who is asking? Information about the clinician—role, permissions, specialty, preferences, workflow patterns. When Dr. Chen asks about "my diabetic patients," user context resolves "my" to her provider NPI[7] and filters by her access permissions.
-
-**2. Task Context:** What are they trying to accomplish? Current objective—goal, constraints, required outputs, success criteria. When a query arrives during a 15-minute appointment, task context ensures concise responses rather than comprehensive reviews.
-
-**3. Data Context:** What facts are relevant? Documents and structured information—patient demographics, encounter history, lab results, medications. Traditional RAG territory, but just one of seven streams.
-
-**4. Environmental Context:** Where and when? Time of day, location (inpatient/outpatient/telehealth), device type, input modality, time constraints. Response timing and format adapt to context.
-
-**5. Business Context:** What rules apply? Organizational policies, clinical protocols, compliance requirements, reimbursement rules, quality metrics. Ensures recommendations align with formulary restrictions and care protocols.
-
-**6. Tooling Context:** What actions are possible? Available APIs, system integrations, actionable capabilities. Prevents agents from suggesting actions they cannot execute.
-
-**7. History Context:** What happened before? Longitudinal information—previous encounters, medication changes, past agent interactions, decision patterns, outcomes.
+| Context Type | What It Provides | Example |
+|--------------|------------------|---------|
+| **User** | Who is asking (role, permissions, specialty) | "my patients" → Dr. Chen's provider NPI |
+| **Task** | Current objective and constraints | 15-min appointment → concise response |
+| **Data** | Relevant documents and structured info | Patient labs, medications, encounters |
+| **Environmental** | Where/when (location, device, time) | Inpatient vs. telehealth formatting |
+| **Business** | Policies, protocols, compliance rules | Formulary restrictions, care protocols |
+| **Tooling** | Available APIs and actions | Prevents suggesting unavailable actions |
+| **History** | Longitudinal patterns and outcomes | Previous encounters, decision patterns |
 
 #### Architectural Implementation
 
 Echo deployed seven Pinecone namespaces—one per context type—with specialized retrieval strategies for each dimension.[13] Each namespace uses optimized chunking: business context chunks are larger (1,500 tokens) because policies need full context; data context chunks are smaller (600 tokens) because clinical notes need precision.
 
-#### Real-Time Synthesis Engine
-
-Echo's synthesis engine orchestrates six-stage pipeline within <400ms: Query Analysis (50ms), Parallel Retrieval across seven namespaces (180ms), Relevance Scoring (40ms), Deduplication (30ms), Priority Assembly (60ms), Token Optimization (40ms). Echo's median: 312ms (78% of budget).
-
-#### Context Completeness Scoring
-
-Echo monitors universal context completeness—percentage of required context types successfully retrieved. Incomplete context triggers degraded service modes. Echo's results: 98% average completeness across all query types, 312ms median assembly time, <0.3% context-related failures.
+Echo's synthesis engine orchestrates retrieval within <400ms: Query Analysis (50ms), Parallel Retrieval across seven namespaces (180ms), Relevance Scoring (40ms), Deduplication (30ms), Priority Assembly (60ms), Token Optimization (40ms). Echo's median: 312ms.
 
 **INPACT™ Impact:** Universal context enables Natural (N) through business language translation, Contextual (C) through complete situational awareness, and Adaptive (A) through automatic response adjustment.
 
-> **📖 For complete namespace configurations, synthesis pipeline specifications, and cost breakdowns, see Appendix E.1: Universal Context Architecture Deep-Dive.**
+> **📖 For complete namespace configurations and synthesis pipeline specifications, see Appendix E.1.**
 
 ### Confidence Handling and Hallucination Prevention
 
@@ -880,7 +843,7 @@ Agent responses were slow (3-8 seconds), frequently wrong (53% error rate), and 
 |-----------|------------|---------------|
 | **Vector Database** | Pinecone[13] | 10M embeddings, p50=42ms |
 | **Embeddings** | OpenAI text-embedding-3-large[15] | 3,072 dimensions |
-| **Keyword Search** | Elasticsearch | Integrated |
+| **Keyword Search** | Azure Cognitive Search | Integrated |
 | **Graph Retrieval** | Neo4j | 847 concept traversals |
 | **Reranking** | Cohere Rerank[14] | Top-5 selection |
 | **Context Assembly** | LlamaIndex | 800-token chunks, 15% overlap |
@@ -991,7 +954,15 @@ Thursday brought first semantic query success: "Show me Dr. Martinez's schedule"
 
 Week 6 focused on intelligent retrieval. Document chunking and embedding generation took 72 hours across three OpenAI accounts[15]—8.2 million document chunks reaching 10 million with historical data.
 
-By Thursday, the vector index was live. First retrieval test: query about "medication interactions for diabetes and hypertension" returned relevant clinical notes within 67ms.
+By Thursday, the vector index was live. First retrieval test demonstrated the transformation:
+
+> **Week 0 (SQL full-text):** "Find cases clinically similar to patient #127834" → 2.8 seconds, keyword matches only (finds 'diabetes' but misses 'uncontrolled blood sugar').
+>
+> **Week 6 (Pinecone semantic):** Same query → 42ms, semantic matches (finds all glucose control issues regardless of exact wording).
+>
+> **67x faster. Infinitely more relevant.**
+
+"This enables RAG," Swapna explained. "Before invoking the LLM, we retrieve semantically similar cases as context. The model sees patterns from analogous patients. Better clinical reasoning, grounded in actual data."
 
 Friday's integration milestone: hybrid retrieval operational. Vector search, keyword search, and graph traversal running in parallel, results fused via RRF.[11]
 
@@ -1002,21 +973,26 @@ Friday's integration milestone: hybrid retrieval operational. Vector search, key
 - Retrieval latency: p50=42ms, p95=67ms
 - Hybrid retrieval recall@10: 0.91
 
----
+### Week 6 Victory: Feature Store Consistency
 
-## 🔍 Checkpoint: Intelligence Build Progress
+The Databricks-Tecton integration announcement[20] simplified Echo's roadmap. Rather than deploying a separate feature store platform, Swapna's team enabled Tecton capabilities directly within their existing Databricks workspace—same lakehouse, same governance, new capability.
 
-**What we've accomplished in Weeks 5-6:**
+The data science team's chronic pain point was finally solved. "30-day readmission risk" had been calculated three different ways:
+- Sepsis model (Python, scikit-learn, 14 features)
+- Discharge planning agent (SQL stored procedure, 11 features)  
+- Utilization dashboard (DAX calculated column, 9 features)
 
-✅ **Week 5 (Layer 3 Complete):** Semantic infrastructure operational with 2,400 business terms, entity resolution achieving 94.2% patient accuracy and 98.1% provider accuracy, complete clinical ontology integration (SNOMED[3], ICD-10[4], LOINC[5]). Agents can now understand "high-risk diabetic patients" and translate to precise queries.
+Same metric, three conflicting implementations. When the sepsis model predicted 23% readmission risk but the dashboard showed 17%, clinicians lost trust.
 
-✅ **Week 6 (Layer 4 Stages 1-5 Complete):** RAG pipeline deployed with 10.2 million document chunks indexed in Pinecone[13], hybrid retrieval achieving 0.91 recall@10, reranking with Cohere[14], context assembly within token windows. Retrieval latency: 42ms median.
+With Tecton on Databricks: single feature definition in Python. All three consumers use identical logic. No drift. No additional vendor. Foundation investment paying forward.
 
-✅ **Current Status:** INPACT™ score tracking toward 67/100 target. Semantic understanding + intelligent retrieval infrastructure complete.
+"Trust Before Intelligence," Sarah observed. "Consistent definitions before sophisticated models."
 
-**What remains:** Week 7 completes intelligence with LLM integration, multi-model routing, and semantic cache activation.
-
-**Reading Time Remaining:** ~6 minutes
+**Feature Store Metrics:**
+- Feature definitions migrated: 47
+- Consumers unified: 3 (model, agent, dashboard)
+- Definition drift eliminated: 100%
+- Setup time: 5 days (no new vendor onboarding)
 
 ---
 
@@ -1112,12 +1088,17 @@ gantt
     Business Glossary (2,400 terms)    :done, w5a, 2024-11-04, 5d
     Entity Resolution Deployment       :done, w5b, 2024-11-04, 5d
     dbt Semantic Models               :done, w5c, 2024-11-06, 3d
+    Clinical Ontology Mapping         :done, w5d, 2024-11-07, 2d
     
     section Layer 4 (Stages 1-5)
     Document Chunking                 :done, w6a, 2024-11-11, 3d
     Embedding Generation              :done, w6b, 2024-11-11, 4d
     Vector DB Deployment              :done, w6c, 2024-11-13, 2d
-    Hybrid Retrieval Integration      :done, w6d, 2024-11-14, 2d
+    Search Index (Azure)              :done, w6d, 2024-11-13, 2d
+    Feature Store (Tecton)            :done, w6e, 2024-11-14, 2d
+    Hybrid Retrieval Integration      :done, w6f, 2024-11-15, 2d
+    Reranking (Cohere)                :done, w6g, 2024-11-15, 1d
+    Context Assembly                  :done, w6h, 2024-11-15, 1d
     
     section Layer 4 (Stages 6-7)
     LLM Integration                   :done, w7a, 2024-11-18, 2d
@@ -1382,6 +1363,10 @@ Chapter 6 completes the 7-Layer Architecture, making intelligent agents producti
 [17] Office of the National Coordinator for Health IT. (2024). "Interoperability Standards Advisory." https://www.healthit.gov/isa/
 
 [18] Internet Engineering Task Force. (1981). "RFC 791: Internet Protocol." https://datatracker.ietf.org/doc/html/rfc791
+
+[19] Regmi, S. K., & Aryal, S. (2024). "Semantic Caching for Retrieval-Augmented Generation Systems." https://arxiv.org/abs/2409.02878
+
+[20] Databricks. (2025). "Tecton is Joining Databricks to Power Real-Time Data for Personalized AI Agents." https://www.databricks.com/blog/tecton-joining-databricks-power-real-time-data-personalized-ai-agents
 
 ---
 
