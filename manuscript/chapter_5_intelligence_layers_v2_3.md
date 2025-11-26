@@ -199,23 +199,17 @@ Swapna nodded to Jamie Rodriguez, who displayed the Phase 2 architecture diagram
 **Diagram 3: Echo's Intelligence Challenge—Current State vs. Target State**
 
 ```mermaid
-graph LR
-    subgraph "<b>❌ CURRENT STATE (Week 4)</b>"
-        C_Q["<b>User Query</b><br/>'Dr. Martinez'"]
-        C_SQL["<b>Direct SQL</b><br/><b>No semantic mapping</b>"]
-        C_RES["<b>847 Records</b><br/><b>Unfiltered</b>"]
-        C_FAIL["<b>❌ 47% Accuracy</b><br/><b>Agent confused</b>"]
-        
-        C_Q --> C_SQL --> C_RES --> C_FAIL
+graph TB
+    subgraph CURRENT["<b>❌ CURRENT STATE (Week 4)</b>"]
+        direction LR
+        C_Q["<b>User Query</b><br/>'Dr. Martinez'"] --> C_SQL["<b>Direct SQL</b><br/><b>No semantic</b>"] --> C_RES["<b>847 Records</b><br/><b>Unfiltered</b>"] --> C_FAIL["<b>❌ 47%</b>"]
     end
     
-    subgraph "<b>✅ TARGET STATE (Week 7)</b>"
-        T_Q["<b>User Query</b><br/>'Dr. Martinez'"]
-        T_SEM["<b>Layer 3: Semantic</b><br/><b>Entity resolution</b>"]
-        T_RAG["<b>Layer 4: RAG+LLM</b><br/><b>Intelligent retrieval</b>"]
-        T_WIN["<b>✅ 85%+ Accuracy</b><br/><b>Grounded response</b>"]
-        
-        T_Q --> T_SEM --> T_RAG --> T_WIN
+    CURRENT -->|<b>Intelligence Layers</b>| TARGET
+    
+    subgraph TARGET["<b>✅ TARGET STATE (Week 7)</b>"]
+        direction LR
+        T_Q["<b>User Query</b><br/>'Dr. Martinez'"] --> T_SEM["<b>Layer 3</b><br/><b>Semantic</b>"] --> T_RAG["<b>Layer 4</b><br/><b>RAG+LLM</b>"] --> T_WIN["<b>✅ 95%+</b>"]
     end
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
@@ -395,38 +389,27 @@ The difference is transformational. Enterprise AI implementations show that sema
 
 ```mermaid
 graph TB
-    subgraph "<b>❌ KEYWORD SEARCH (Before Layer 3)</b>"
-        K_Q["<b>Query: 'diabetes patients'</b>"]
-        K_MATCH["<b>String Matching</b><br/><b>LIKE '%diabetes%'</b>"]
-        K_MISS1["<b>❌ Missed: 'DM Type 2'</b>"]
-        K_MISS2["<b>❌ Missed: 'glycemic control'</b>"]
-        K_MISS3["<b>❌ Missed: 'E11.9'</b>"]
-        K_RESULT["<b>40-60% Recall</b><br/><b>Incomplete results</b>"]
-        
-        K_Q --> K_MATCH
-        K_MATCH --> K_MISS1
-        K_MATCH --> K_MISS2
-        K_MATCH --> K_MISS3
-        K_MISS1 --> K_RESULT
+    subgraph KEYWORD["<b>❌ KEYWORD SEARCH (Before Layer 3)</b>"]
+        direction LR
+        K_Q["<b>Query: 'diabetes patients'</b>"] --> K_MATCH["<b>String Matching</b><br/><b>LIKE '%diabetes%'</b>"]
+        K_MATCH --> K_MISS1["<b>❌ Missed: 'DM Type 2'</b>"]
+        K_MATCH --> K_MISS2["<b>❌ Missed: 'glycemic control'</b>"]
+        K_MATCH --> K_MISS3["<b>❌ Missed: 'E11.9'</b>"]
+        K_MISS1 --> K_RESULT["<b>40-60% Recall</b><br/><b>Incomplete results</b>"]
         K_MISS2 --> K_RESULT
         K_MISS3 --> K_RESULT
     end
     
-    subgraph "<b>✅ SEMANTIC SEARCH (With Layer 3)</b>"
-        S_Q["<b>Query: 'diabetes patients'</b>"]
-        S_RESOLVE["<b>Semantic Resolution</b><br/><b>Concept expansion</b>"]
-        S_HIT1["<b>✅ Diabetes mellitus</b>"]
-        S_HIT2["<b>✅ DM Type 1, Type 2</b>"]
-        S_HIT3["<b>✅ E08-E13 codes</b>"]
-        S_HIT4["<b>✅ Glycemic disorders</b>"]
-        S_RESULT["<b>85%+ Recall</b><br/><b>Complete results</b>"]
-        
-        S_Q --> S_RESOLVE
-        S_RESOLVE --> S_HIT1
-        S_RESOLVE --> S_HIT2
-        S_RESOLVE --> S_HIT3
-        S_RESOLVE --> S_HIT4
-        S_HIT1 --> S_RESULT
+    KEYWORD -->|<b>Layer 3 Transforms</b>| SEMANTIC
+    
+    subgraph SEMANTIC["<b>✅ SEMANTIC SEARCH (With Layer 3)</b>"]
+        direction LR
+        S_Q["<b>Query: 'diabetes patients'</b>"] --> S_RESOLVE["<b>Semantic Resolution</b><br/><b>Concept expansion</b>"]
+        S_RESOLVE --> S_HIT1["<b>✅ Diabetes mellitus</b>"]
+        S_RESOLVE --> S_HIT2["<b>✅ DM Type 1, Type 2</b>"]
+        S_RESOLVE --> S_HIT3["<b>✅ E08-E13 codes</b>"]
+        S_RESOLVE --> S_HIT4["<b>✅ Glycemic disorders</b>"]
+        S_HIT1 --> S_RESULT["<b>85%+ Recall</b><br/><b>Complete results</b>"]
         S_HIT2 --> S_RESULT
         S_HIT3 --> S_RESULT
         S_HIT4 --> S_RESULT
@@ -561,37 +544,33 @@ Layer 4 is the complete intelligence pipeline—the system that transforms user 
 
 ```mermaid
 graph TB
-    TITLE["<b>Layer 4: Intelligence (RAG + LLM)</b>"]
+    Q["<b>User Query</b><br/>'High-risk diabetic patients'"]
     
-    Q["<b>User Query</b><br/>'High-risk diabetic<br/>patients needing follow-up'"]
-    
-    subgraph pipeline["<b>7-Stage Intelligence Pipeline</b>"]
-        S1["<b>Stage 1: Query Understanding</b><br/><b>Intent + entity extraction</b>"]
-        S2["<b>Stage 2: Embedding Generation</b><br/><b>text-embedding-3-large</b>"]
-        S3["<b>Stage 3: Hybrid Retrieval</b><br/><b>Vector + Keyword + Graph</b>"]
-        S4["<b>Stage 4: Reranking</b><br/><b>Cohere Rerank</b>"]
-        S5["<b>Stage 5: Context Assembly</b><br/><b>Token optimization</b>"]
-        S6["<b>Stage 6: LLM Generation</b><br/><b>Claude / GPT-4</b>"]
-        S7["<b>Stage 7: Semantic Cache</b><br/><b>85% hit rate</b>"]
+    subgraph ROW1["<b>Retrieval</b>"]
+        direction LR
+        S1["<b>1. Query</b>"] --> S2["<b>2. Embed</b>"] --> S3["<b>3. Retrieve</b>"]
     end
     
-    RESULT["<b>✅ Grounded Response</b><br/><b>With citations</b>"]
+    subgraph ROW2["<b>Processing</b>"]
+        direction LR
+        S4["<b>4. Rerank</b>"] --> S5["<b>5. Context</b>"]
+    end
     
-    TITLE -.-> Q
-    Q --> S1
-    S1 --> S2
-    S2 --> S3
-    S3 --> S4
-    S4 --> S5
-    S5 --> S6
-    S6 --> S7
-    S7 --> RESULT
+    subgraph ROW3["<b>Generation</b>"]
+        direction LR
+        S6["<b>6. LLM</b>"] --> S7["<b>7. Cache</b>"]
+    end
+    
+    RESULT["<b>✅ Grounded Response</b>"]
+    
+    Q --> ROW1
+    ROW1 --> ROW2
+    ROW2 --> ROW3
+    ROW3 --> RESULT
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
-    style TITLE fill:#00897b,color:#ffffff,stroke:#004d40,stroke-width:3px
     style Q fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style pipeline fill:#fafafa,stroke:#00897b,stroke-width:2px,color:#000000
     style S1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style S2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style S3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
@@ -1194,38 +1173,30 @@ graph LR
 
 ```mermaid
 graph TB
-    USER["<b>User Query</b><br/>'Find high-risk diabetic patients<br/>who need intervention'"]
+    USER["<b>User Query</b><br/>'Find high-risk diabetic patients'"]
     
     subgraph L3["<b>Layer 3: Semantic</b>"]
-        GLOSS["<b>Business Glossary</b><br/><b>2,400 terms</b>"]
-        ENTITY["<b>Entity Resolution</b><br/><b>Golden IDs</b>"]
-        ONTO["<b>Ontology</b><br/><b>SNOMED/ICD/LOINC</b>"]
+        direction LR
+        GLOSS["<b>Glossary</b>"] --> ENTITY["<b>Entity Resolution</b>"] --> ONTO["<b>Ontology</b>"]
     end
     
     subgraph L4["<b>Layer 4: Intelligence</b>"]
-        EMBED["<b>Embeddings</b><br/><b>3,072 dimensions</b>"]
-        HYBRID["<b>Hybrid Retrieval</b><br/><b>Vector+Keyword+Graph</b>"]
-        RERANK["<b>Reranking</b><br/><b>Cohere</b>"]
-        LLM["<b>Multi-LLM</b><br/><b>Claude/GPT-4/Llama</b>"]
-        CACHE["<b>Semantic Cache</b><br/><b>85% hit rate</b>"]
+        direction LR
+        EMBED["<b>Embed</b>"] --> HYBRID["<b>Retrieve</b>"] --> RERANK["<b>Rerank</b>"] --> LLM["<b>LLM</b>"] --> CACHE["<b>Cache</b>"]
     end
     
-    RESPONSE["<b>✅ Grounded Response</b><br/><b>23 patients, ranked by urgency</b><br/><b>With citations</b>"]
+    RESPONSE["<b>✅ Grounded Response</b>"]
     
-    USER --> GLOSS
-    GLOSS --> ENTITY --> ONTO
-    ONTO --> EMBED
-    EMBED --> HYBRID --> RERANK --> LLM --> CACHE
-    CACHE --> RESPONSE
+    USER --> L3
+    L3 --> L4
+    L4 --> RESPONSE
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
     style USER fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style L3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style GLOSS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style ENTITY fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style ONTO fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L4 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style EMBED fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style HYBRID fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style RERANK fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
