@@ -487,7 +487,7 @@ graph TB
     style C2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:#ffffff,stroke:none,color:#757575
+    style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
 Echo's agent took 9-13 seconds to respond. Appointment availability queries hit data warehouses refreshed overnight via batch ETL. By 10 AM, data was 8+ hours stale. The database was cold—no indexes optimized for agent patterns, no caching. Every request forced table scans.
@@ -572,7 +572,7 @@ Natural language understanding requires three capabilities: **Semantic layer** (
 
 Week 0: 347 cryptic table names, no glossary, 43% query accuracy, clinical staff frustrated.
 
-Week 7 after implementing Layers 3-4-5: Semantic layer with 847 clinical concepts mapped to database schema. Vector database (Pinecone) with embedding models encoding medical terminology relationships [9]. Retrieval system providing top-5 relevant examples per query type.
+Week 7 after implementing Layers 3-4-5: Semantic layer with 2,400 clinical concepts mapped to database schema. Vector database (Pinecone) with embedding models encoding medical terminology relationships [9]. Retrieval system providing top-5 relevant examples per query type.
 
 Results: Query accuracy improved from 43% to 87% (103% improvement). Simple queries: 78% → 96%. Moderate queries: 51% → 89%. Complex queries: 31% → 78%. "Diabetic HbA1c overdue" query: found all 34 patients, zero false positives.
 

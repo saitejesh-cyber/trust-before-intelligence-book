@@ -59,7 +59,7 @@ Foundation equals data availability and accessibility. Before agents can underst
 
 ```mermaid
 graph TB
-    L7["<b>Layer 7: Control Plane</b><br/><b>Multi-Agent Orchestration</b>"]
+    L7["<b>Layer 7: Orchestration</b><br/><b>Multi-Agent Coordination</b>"]
     L6["<b>Layer 6: Observability</b><br/><b>Tracing & Audit</b>"]
     L5["<b>Layer 5: Governance</b><br/><b>Dynamic Access Control</b>"]
     L4["<b>Layer 4: Intelligence</b><br/><b>LLM + RAG Pipeline</b>"]
@@ -99,7 +99,7 @@ Chapter 3 identified seven infrastructure gaps preventing agent deployment. Chap
 | **Gap 4** | Intelligent Retrieval | Layer 4: Intelligence | Chapter 5 |
 | **Gap 5** | Dynamic Permissions | Layer 5: Governance | Chapter 6 |
 | **Gap 6** | Reasoning Observability | Layer 6: Observability | Chapter 6 |
-| **Gap 7** | Multi-Agent Coordination | Layer 7: Orchestration | Chapter 7 |
+| **Gap 7** | Multi-Agent Coordination | Layer 7: Orchestration | Chapter 6 |
 
 **This Chapter's Scope:** Layers 1-2 build the foundation that enables intelligence (Chapters 5), governance (Chapter 6), and orchestration (Chapter 7).
 

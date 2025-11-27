@@ -1,7 +1,7 @@
 # Chapter 3: From BI-Era to Agent-Era: Seven Gaps
 
 **Book:** Trust Before Intelligence 
-**Subtitle:** Why 95% of Agent Projects Fail--and the Architecture Blueprint That Fixes Infrastructure in 90 Days 
+**Subtitle:** Why 95% of Agent Projects Fail—and the Architecture Blueprint That Fixes Infrastructure in 90 Days 
 **Author:** Ram Katamaraja, CEO, Colaberry Inc. 
 **Chapter:** 3 of 12 
 **Version:** 2.5 ALIGNED (Gap Numbering Aligned 1-to-1 with 7-Layer Architecture) 
@@ -12,7 +12,7 @@
 
 ## The Question Chapter 2 Left Unanswered
 
-Chapter 2 established what agents need: INPACT™--six requirements for infrastructure to earn user trust. Echo Health scored 28/100, failing five of six dimensions.
+Chapter 2 established what agents need: INPACT™—six requirements for infrastructure to earn user trust. Echo Health scored 28/100, failing five of six dimensions.
 
 **But why did Echo's infrastructure fail?**
 
@@ -23,11 +23,11 @@ Sarah Cedao's team had invested $8M over 15 years building state-of-the-art data
 - Strong governance: 99.2% data quality, zero HIPAA violations
 - Industry recognition as a "Data-Driven Healthcare Organization"
 
-They did everything right. Their infrastructure was excellent--**for Business Intelligence.**
+They did everything right. Their infrastructure was excellent—**for Business Intelligence.**
 
 The problem: **agents aren't humans analyzing dashboards. They're autonomous systems making real-time decisions.** BI-era infrastructure optimized for one use case cannot support the other.
 
-This chapter explains why--and what transformation actually means.
+This chapter explains why—and what transformation actually means.
 
 ---
 
@@ -49,7 +49,7 @@ This worked because:
 
 **Wave 2: BI Dashboards (2000s-2010s)**
 
-OLAP cubes pre-aggregated calculations. [Tableau](https://www.tableau.com) and [Power BI](https://powerbi.microsoft.com) democratized data access. Executives got their "single pane of glass"--sales pipeline, inventory, customer metrics, all updated daily.
+OLAP cubes pre-aggregated calculations. [Tableau](https://www.tableau.com) and [Power BI](https://powerbi.microsoft.com) democratized data access. Executives got their "single pane of glass"—sales pipeline, inventory, customer metrics, all updated daily.
 
 This worked because:
 - Self-service reduced analyst bottlenecks
@@ -59,7 +59,7 @@ This worked because:
 
 **Wave 3: Big Data & Cloud (2010s-2020)**
 
-Data lakes on HDFS, then cloud storage (Azure Data Lake, AWS S3). [Databricks](https://www.databricks.com) combined data lake flexibility with warehouse performance. Machine learning appeared as point solutions--fraud detection, recommendations, predictive maintenance--but ran in batch on historical data.
+Data lakes on HDFS, then cloud storage (Azure Data Lake, AWS S3). [Databricks](https://www.databricks.com) combined data lake flexibility with warehouse performance. Machine learning appeared as point solutions—fraud detection, recommendations, predictive maintenance—but ran in batch on historical data.
 
 This worked because:
 - Cloud economics made storage cheap
@@ -75,11 +75,11 @@ Echo exemplifies this evolution:
 
 **2013-2017:** $2.5M Azure migration. 99.9% uptime, elastic scaling, multi-region replication. Power BI replaced Tableau. **CFO relied on dashboards for board presentations.**
 
-**2018-2023:** $4.3M Databricks lakehouse. Data science team built exploratory models (readmission prediction, fraud detection), but never reached production scale--models ran monthly, generating reports analysts reviewed.
+**2018-2023:** $4.3M Databricks lakehouse. Data science team built exploratory models (readmission prediction, fraud detection), but never reached production scale—models ran monthly, generating reports analysts reviewed.
 
 **Total investment: $8M. Zero HIPAA violations in 10 years. Industry recognition for data excellence.**
 
-Then agents arrived--and everything that made Echo's infrastructure excellent for BI made it terrible for agents.
+Then agents arrived—and everything that made Echo's infrastructure excellent for BI made it terrible for agents.
 
 ### The Agent Era: Real-Time, Autonomous, Conversational
 
@@ -87,13 +87,13 @@ Andrej Karpathy, former Director of AI at Tesla and co-founder of OpenAI, explai
 
 He identifies three distinct eras:
 
-**Software 1.0: (1950s-2010s)** Explicit logic in C++, Java, Python. BI infrastructure was built here--rigid schemas, predefined queries, deterministic outputs.
+**Software 1.0: (1950s-2010s)** Explicit logic in C++, Java, Python. BI infrastructure was built here—rigid schemas, predefined queries, deterministic outputs.
 
 **Software 2.0: (2010s-2023)** Neural networks where "code" became learned weights. Enterprises adopted this selectively (computer vision, recommendations) but as point solutions within Software 1.0 architectures.
 
-**Software 3.0: (2023-Present)** Large Language Models programmable in natural language. As Karpathy emphasizes: "Software 3.0 is eating Software 1.0/2.0"--existing software will be rewritten. [1]
+**Software 3.0: (2023-Present)** Large Language Models programmable in natural language. As Karpathy emphasizes: "Software 3.0 is eating Software 1.0/2.0"—existing software will be rewritten. [1]
 
-The implications for enterprise infrastructure are profound. MIT research examining 300+ enterprise GenAI initiatives found that 95% fail to deliver measurable business value. [2] The primary barrier isn't model quality--it's infrastructure designed for the wrong paradigm.
+The implications for enterprise infrastructure are profound. MIT research examining 300+ enterprise GenAI initiatives found that 95% fail to deliver measurable business value. [2] The primary barrier isn't model quality—it's infrastructure designed for the wrong paradigm.
 
 **Diagram 3.1: Software 1.0 to 3.0 Evolution**
 
@@ -148,9 +148,9 @@ The challenge: running Software 3.0 agents on Software 1.0 infrastructure is lik
 
 BI expects predefined queries: "What were Q3 sales?" Agents generate unpredictable queries: "Show me patients like Mrs. Johnson who improved after medication changes."
 
-BI operates on overnight batch ETL. Agents need real-time data--appointment cancellations within seconds, not tomorrow morning.
+BI operates on overnight batch ETL. Agents need real-time data—appointment cancellations within seconds, not tomorrow morning.
 
-BI uses SQL against rigid schemas. Agents need semantic search--finding "uncontrolled diabetes" whether coded as ICD-10 E11.9, documented as "HbA1c 9.2%", or noted as "glucose control suboptimal."
+BI uses SQL against rigid schemas. Agents need semantic search—finding "uncontrolled diabetes" whether coded as ICD-10 E11.9, documented as "HbA1c 9.2%", or noted as "glucose control suboptimal."
 
 **2. Permission Models Clash**
 
@@ -162,11 +162,11 @@ RBAC decisions are made at login. ABAC decisions are made at query time, evaluat
 
 Traditional systems fail predictably: exception thrown, stack trace logged, error message displayed. Agents fail probabilistically: retrieving irrelevant context, generating plausible but incorrect responses, missing edge cases.
 
-Infrastructure must support reasoning chain observability--which documents were retrieved, how the LLM interpreted the query, which policies were evaluated, what confidence scores were assigned. BI-era query logs don't capture this.
+Infrastructure must support reasoning chain observability—which documents were retrieved, how the LLM interpreted the query, which policies were evaluated, what confidence scores were assigned. BI-era query logs don't capture this.
 
 **4. Learning Cycles Transform**
 
-Software 1.0 required code changes (iteration: days to weeks). Software 2.0 required model retraining (iteration: weeks to months). Software 3.0 enables in-context learning through interaction--agents improve from every correction.
+Software 1.0 required code changes (iteration: days to weeks). Software 2.0 required model retraining (iteration: weeks to months). Software 3.0 enables in-context learning through interaction—agents improve from every correction.
 
 Capturing that learning requires feedback loops, validation mechanisms, and continuous retraining pipelines BI infrastructure never contemplated.
 
@@ -223,7 +223,7 @@ graph TB
 **Key differences:**
 
 | Dimension | BI Systems | Agent Systems |
-|-----------|-----------|---------------|
+|—————-|—————-|———————-|
 | **Response time** | Minutes to hours | <2 seconds |
 | **Data freshness** | Daily batch | Sub-minute |
 | **Query interface** | Fixed dashboards, SQL | Natural language |
@@ -256,7 +256,7 @@ Monday morning, April 2024. Sarah Cedao reviewed Echo's INPACT™ assessment: 28
 
 But **which specific infrastructure gaps caused each failure?** And why couldn't middleware bridge them?
 
-Chapter 2 showed what agents need. This section shows what BI infrastructure lacks--and why each gap requires architectural transformation, not API layers.
+Chapter 2 showed what agents need. This section shows what BI infrastructure lacks—and why each gap requires architectural transformation, not API layers.
 
 ### Seven Infrastructure Gaps
 
@@ -407,7 +407,7 @@ Build 7-layer agent-ready architecture systematically.
 
 ---
 
-## Part 3: Sarah's Decision -- 800 words
+## Part 3: Sarah's Decision — 800 words
 
 ### The Board Presentation
 
@@ -429,11 +429,11 @@ Build 7-layer architecture.
 
 CEO: "What's the ROI?"
 
-Sarah: "Conservative estimate: 477% over 18 months--that builds on the strong Year 1 returns with compounding benefits as adoption scales. Payback: 4 months. Three agents in production."
+Sarah: "Conservative estimate: 477% over 18 months—that builds on the strong Year 1 returns with compounding benefits as adoption scales. Payback: 4 months. Three agents in production."
 
 CFO Krish Yadav: "Why is transform cheaper than retrofit?"
 
-Sarah: "Retrofit maintains two systems--BI plus middleware. Every BI change requires middleware updates. Transform builds one modern system. Our BI users migrate gradually. Long-term, we maintain a single architecture."
+Sarah: "Retrofit maintains two systems—BI plus middleware. Every BI change requires middleware updates. Transform builds one modern system. Our BI users migrate gradually. Long-term, we maintain a single architecture."
 
 Board member: "What if it fails?"
 
@@ -455,13 +455,13 @@ Team: Sarah (architecture), Marcus Williams (governance), Jamie Rodriguez (Direc
 
 Walking to her car: "We just committed to transforming 15 years of infrastructure in 90 days."
 
-But the conviction was clear. The blueprint existed in the form of the 7-Layer Architecture, which we'll explore in Chapters 4-7. **This wasn't invention--it was execution.**
+But the conviction was clear. The blueprint existed in the form of the 7-Layer Architecture, which we'll explore in Chapters 4-7. **This wasn't invention—it was execution.**
 
 Marcus's perspective: "Our data quality is strong. Our governance is solid. We're not starting from chaos. We're building the next layer."
 
 Jamie: "We have Azure. We have the team. We have the budget. Now we build."
 
-Sarah's private thought: **"We didn't fail. The world changed. BI-era infrastructure was excellent for its era. Agent-era requires agent-ready infrastructure. This isn't failure--it's evolution."**
+Sarah's private thought: **"We didn't fail. The world changed. BI-era infrastructure was excellent for its era. Agent-era requires agent-ready infrastructure. This isn't failure—it's evolution."**
 
 ---
 
@@ -570,7 +570,7 @@ graph LR
 **Key insight:** Miss one layer, agents fail. Build all seven, fulfill all six INPACT™ needs.
 
 | Gap | INPACT™ Need | Layer | Solution |
-|-----|--------------|-------|----------|
+|——-|———————|———-|—————|
 | **Gap 1: Multi-modal storage** | Contextual (C) | 1 | Vector + Graph + SQL |
 | **Gap 2: Real-time data** | Instant (I), Contextual (C) | 2 | CDC + Streaming |
 | **Gap 3: Semantic understanding** | Natural (N) | 3 | Business glossary + Ontologies |
@@ -583,7 +583,7 @@ graph LR
 
 ### Echo's Three-Phase Roadmap
 
-**Phase 1: Foundation (Weeks 1-4) -- $470K**
+**Phase 1: Foundation (Weeks 1-4) — $470K**
 
 Build Layers 1-2: Multi-Modal Storage + Real-Time Data Fabric
 
@@ -599,9 +599,9 @@ Build Layers 1-2: Multi-Modal Storage + Real-Time Data Fabric
 
 **Checkpoint Week 4:** Foundation functional or stop.
 
-**Phase 2: Intelligence (Weeks 5-8) -- $380K**
+**Phase 2: Intelligence (Weeks 5-7) — $380K**
 
-Build Layers 3-6: Semantic + RAG + Governance + Observability
+Build Layers 3-6: Semantic + Intelligence (RAG + LLM)
 
 **Deliverables:**
 - dbt semantic models (business-friendly views)
@@ -610,16 +610,16 @@ Build Layers 3-6: Semantic + RAG + Governance + Observability
 - OPA policy engine with ABAC rules
 - OpenTelemetry + Datadog observability
 
-**INPACT™ progression:** 42 -> 65/100
+**INPACT™ progression:** 42 -> 67/100
 - Natural (N): 2 -> 5 (semantic layer working)
 - Permitted (P): 1 -> 5 (ABAC operational)
 - Transparent (T): 1 -> 4 (reasoning visible)
 
-**Checkpoint Week 8:** Intelligence functional or don't deploy agents.
+**Checkpoint Week 7:** Intelligence functional or don't deploy agents.
 
-**Phase 3: Production (Weeks 9-10) -- $380K**
+**Phase 3: Trust + Orchestration (Weeks 8-10) — $380K**
 
-Build Layer 7: Orchestration + Deploy Care Coordination Agent
+Build Layers 5-6-7: Governance + Observability + Orchestration
 
 **Deliverables:**
 - LangGraph orchestration framework
@@ -627,7 +627,7 @@ Build Layer 7: Orchestration + Deploy Care Coordination Agent
 - Human-in-the-loop workflows
 - First production agent live
 
-**INPACT™ progression:** 65 -> 85/100
+**INPACT™ progression:** 67 -> 85/100
 - Adaptive (A): 2 -> 5 (feedback loops operational)
 - All dimensions optimized through final tuning
 
@@ -639,7 +639,7 @@ Build Layer 7: Orchestration + Deploy Care Coordination Agent
 
 Chapters 0-3 established the problem and Pillar 1:
 
-**Chapter 0:** Introduced INPACT™--six agent needs users demand 
+**Chapter 0:** Introduced INPACT™—six agent needs users demand 
 **Chapter 1:** Showed 7-Layer Architecture at high level 
 **Chapter 2:** Deep-dived each INPACT™ need with Echo's transformation 
 **Chapter 3:** Revealed why BI infrastructure fails and transformation is necessary
@@ -658,13 +658,13 @@ Dynamic permissions, reasoning transparency, audit compliance. From HIPAA violat
 **Chapter 7: Orchestration Layer** 
 Multi-agent coordination, production patterns. From isolated pilots to production deployment.
 
-**Chapter 8** introduces **Pillar 3 (GOALS™)**--how to measure operational success and maintain excellence.
+**Chapter 8** introduces **Pillar 3 (GOALS™)**—how to measure operational success and maintain excellence.
 
-**Chapters 9-10** provide the implementation roadmap--your 90-day transformation blueprint.
+**Chapters 9-10** provide the implementation roadmap—your 90-day transformation blueprint.
 
 ### The Bridge
 
-Sarah's team had the blueprint. The Architecture of Trust--three integrated pillars--provided the roadmap:
+Sarah's team had the blueprint. The Architecture of Trust—three integrated pillars—provided the roadmap:
 
 **Pillar 1 (INPACT™)** defined what agents need (Chapters 0, 2). 
 **Pillar 2 (7-Layer Architecture)** specifies how to build it (Chapters 1, 4-7). 
@@ -672,7 +672,7 @@ Sarah's team had the blueprint. The Architecture of Trust--three integrated pill
 
 Chapter 3 revealed why transformation is necessary: BI-era infrastructure cannot support agent-era requirements. Seven specific gaps require seven specific layers.
 
-**The next four chapters build those layers, showing exactly how Sarah transformed Echo's infrastructure from 28/100 to 85/100--and how you can do the same.**
+**The next four chapters build those layers, showing exactly how Sarah transformed Echo's infrastructure from 28/100 to 85/100—and how you can do the same.**
 
 **Chapter 4 begins with the foundation: from overnight batch to real-time streaming, from cold databases to sub-second responses, from guesses based on stale data to decisions based on current information.**
 

@@ -55,7 +55,7 @@ Foundation without intelligence is like having a well-stocked library with no ca
 
 ```mermaid
 graph TB
-    L7["<b>Layer 7: Control Plane</b><br/><b>Multi-Agent Orchestration</b>"]
+    L7["<b>Layer 7: Orchestration</b><br/><b>Multi-Agent Coordination</b>"]
     L6["<b>Layer 6: Observability</b><br/><b>Tracing & Audit</b>"]
     L5["<b>Layer 5: Governance</b><br/><b>Dynamic Access Control</b>"]
     
@@ -912,7 +912,7 @@ NDCG (Normalized Discounted Cumulative Gain) is a standard ranking evaluation me
 
 ✅ **Echo's Investment:** $290,000 for Layer 4 deployment (Week 6-7), including Pinecone vector database[13], OpenAI embeddings[15], Cohere reranking[14], multi-model LLM architecture, and GPTCache infrastructure.
 
-✅ **INPACT™ Impact:** Natural (N) 2/6 → 5/6, Contextual (C) 4/6 → 5/6, Adaptive (A) 3/6 → 5/6, Transparent (T) 3/6 → 4/6. Total score: 42/100 → 67/100 (+25 points).
+✅ **INPACT™ Impact:** Natural (N) 2/6 → 5/6, Contextual (C) 4/6 → 5/6, Adaptive (A) 3/6 → 5/6, Transparent (T) 1/6 → 3/6, Instant (I) 4/6 → 5/6, Permitted (P) 1/6 → 2/6. Total score: 42/100 → 67/100 (+25 points).
 
 **Key insight:** Intelligence requires the complete pipeline—understanding (Layer 3) isn't enough. Agents need semantic comprehension, intelligent retrieval, multi-source context assembly, sophisticated reasoning, and cost-effective caching working together.
 
@@ -1136,13 +1136,15 @@ graph LR
 
 | Dimension | Week 4 | Week 7 | Change | Driver |
 |-----------|--------|--------|--------|--------|
-| **I (Instant)** | 5/6 | 5/6 | — | Already optimized |
+| **I (Instant)** | 4/6 | 5/6 | **+1** | Semantic caching |
 | **N (Natural)** | 2/6 | 5/6 | **+3** | Semantic + RAG |
-| **P (Permitted)** | 4/6 | 4/6 | — | Requires Layer 5 (Ch 6) |
+| **P (Permitted)** | 1/6 | 2/6 | **+1** | Basic query-level controls |
 | **A (Adaptive)** | 3/6 | 5/6 | **+2** | Semantic cache learns |
 | **C (Contextual)** | 4/6 | 5/6 | **+1** | RAG retrieves cross-system |
-| **T (Transparent)** | 3/6 | 4/6 | **+1** | Citations link sources |
+| **T (Transparent)** | 1/6 | 3/6 | **+2** | Citations link sources |
 | **TOTAL** | 42/100 | 67/100 | **+25** | Intelligence operational |
+
+*Note: INPACT™ scores incorporate weighted factors for production readiness assessment. See Appendix F for complete scoring methodology.*
 
 ---
 

@@ -232,15 +232,15 @@ Think of these layers as the structural elements of a building. Each layer serve
 
 **Layer 3 - Normalized Schema & Semantic Layer:** Business-friendly abstractions over technical schemas. This layer enables the "Natural" need—translating "patient's last three visits" into the SQL joins across seven tables. Echo's cryptic table names (`TBL_PT_ENC_DTL`) blocked natural language understanding.
 
-**Layer 4 - Contextual Knowledge Graph:** Relationships between entities (patients, providers, encounters, diagnoses) modeled explicitly. This layer delivers the "Contextual" need agents can traverse relationships across domains. Echo's siloed systems prevented this integration.
+**Layer 4 - Intelligence Layer:** RAG (Retrieval-Augmented Generation) systems, LLM integration, and context assembly. This layer connects AI models to retrieved data, enabling accurate responses grounded in enterprise information. Echo had GPT-4 access but no RAG pipeline to prevent hallucinations.
 
-**Layer 5 - Intelligence Orchestration & Retrieval:** RAG (Retrieval-Augmented Generation) systems, prompt engineering, and LLM orchestration. This layer connects AI models to the infrastructure layers below. Echo had this layer partially—they had GPT-4 access but no RAG system.
+**Layer 5 - Governance Layer:** Attribute-based access control (ABAC) with contextual evaluation, plus human-in-the-loop (HITL) workflows for high-risk decisions. This layer delivers the "Permitted" need from INPACT™. Echo's static RBAC couldn't enforce dynamic, context-aware authorization.
 
-**Layer 6 - Policy & Permission Mesh:** Attribute-based access control (ABAC) with contextual evaluation, plus observability for monitoring and alerting. This layer delivers both "Permitted" and "Transparent" needs from INPACT™. Echo's static RBAC failed contextual authorization, and their incomplete audit logs violated transparency.
+**Layer 6 - Observability Layer:** Distributed tracing, LLM cost tracking, and audit logging. This layer delivers the "Transparent" need from INPACT™—complete visibility into what agents accessed, why decisions were made, and how costs accumulate. Echo's incomplete audit logs violated HIPAA transparency requirements.
 
 **Layer 7 - Agent Orchestration:** Multi-agent coordination, feedback loops for continuous learning, and human-in-the-loop integration. This layer delivers the "Adaptive" need agents learn from corrections. Echo had no feedback mechanism at all.
 
-Each layer maps to INPACT™ needs. Layer 2 fulfills Instant. Layers 3-4 fulfills Natural and Contextual. Layer 6 fulfills Permitted and Transparent. Layer 7 fulfills Adaptive. The 7-Layer Architecture is the second pillar of the Architecture of Trust—the technical blueprint for fulfilling the needs defined by the first pillar.
+Each layer maps to INPACT™ needs. Layer 2 fulfills Instant. Layer 3 fulfills Natural. Layer 4 fulfills Contextual. Layer 5 fulfills Permitted. Layer 6 fulfills Transparent. Layer 7 fulfills Adaptive. The 7-Layer Architecture is the second pillar of the Architecture of Trust—the technical blueprint for fulfilling the needs defined by the first pillar.
 
 ### Pillar 3: GOALS™ - How to Measure Success
 
@@ -308,14 +308,14 @@ This architecture rests on three pillars working in harmony. Each pillar support
 **Echo's transformation proves the architecture works:**
 
 - **Week 0:** 28/100 score, failing infrastructure, $2M sunk cost
-- **Week 4:** 52/100 - Layers 1-2 operational (storage + real-time fabric)
-- **Week 8:** 72/100 - Layers 3-5 operational (semantic layer + knowledge graph + RAG)
+- **Week 4:** 42/100 - Layers 1-2 operational (storage + real-time fabric)
+- **Week 7:** 67/100 - Layers 3-4 operational (semantic layer + intelligence)
 - **Week 10:** 85/100 - All layers operational, three agents in production
 
 From infrastructure chaos to agent-ready in 10 weeks. Not because they found a magic tool or hired consultants—because they followed an architecture that integrated proven frameworks into a coherent system.
 
 **The investment:** $1.23M (60% of their failed pilot cost)  
-**The return:** 209% ROI, 4.2-month payback period  
+**The return:** 209% Year 1 ROI (477% 3-year), 4.2-month payback period
 **The result:** Trust earned through architecture
 
 The remainder of this book builds this architecture, pillar by pillar:

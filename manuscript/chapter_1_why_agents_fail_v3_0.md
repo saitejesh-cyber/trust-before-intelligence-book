@@ -150,7 +150,7 @@ graph TB
     style CAUSE fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style RESULT fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
     
-    CR["<b>© 2025 Colaberry Inc.</b>"]
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
     style CR fill:none,stroke:none,color:#999999
 ```
 
@@ -425,7 +425,7 @@ graph LR
     style prog3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style infra3 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
 
-    CR["© 2025 Colaberry Inc."]
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
     style CR fill:none,stroke:none,color:#999999
 ```
 
@@ -505,7 +505,7 @@ graph LR
     style delivers fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
 
     CR["© 2025 Colaberry Inc."]
-    style CR fill:none,stroke:none,color:#999999
+    style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
 Most enterprises attempt to deploy Software 3.0 agents on unaugmented Software 1.0 infrastructure, creating the INPACT™ gap that drives the 95% pilot failure rate. The solution isn't replacing existing systems—it's augmenting them with agent-ready layers.
@@ -821,12 +821,12 @@ That weekend, Sarah had discovered the INPACT™ assessment tool. She completed 
 
 **Echo Health INPACT™ Score: 28/100**
 
-**I - Instant:** 2/6 → Overnight ETL, 8-24 hour data lag  
-**N - Natural:** 3/6 → No semantic layer, cryptic table names  
+**I - Instant:** 1/6 → Overnight ETL, 8-24 hour data lag  
+**N - Natural:** 2/6 → No semantic layer, cryptic table names  
 **P - Permitted:** 1/6 → Static RBAC, no dynamic authorization  
-**A - Adaptive:** 3/6 → No feedback loops, quarterly reviews only  
-**C - Contextual:** 2/6 → Siloed systems, no cross-domain synthesis  
-**T - Transparent:** 2/6 → Basic query logs, no reasoning chain capture
+**A - Adaptive:** 2/6 → No feedback loops, quarterly reviews only  
+**C - Contextual:** 3/6 → Siloed systems, no cross-domain synthesis  
+**T - Transparent:** 1/6 → Basic query logs, no reasoning chain capture
 
 **28 out of 100.** Not even close to the 70+ required for agent deployments to succeed.
 
