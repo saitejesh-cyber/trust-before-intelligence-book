@@ -399,7 +399,7 @@ The compliance audit failed catastrophically. The agent used one service account
 
 **HIPAA penalty exposure: $50,000+ per violation [2].** With 3,000+ daily agent interactions, the risk was existential.
 
-**What's needed:** Attribute-based access control (ABAC) evaluating permissions per query based on user identity, data sensitivity, action type, and environmental context [3]. Dynamic masking protecting sensitive fields. Complete audit trails with trace IDs connecting human users through agent actions to data access. Policy evaluation in under 10ms without breaking response times.
+**What's needed:** Attribute-based access control (ABAC) layered on existing RBAC, evaluating permissions per query based on user identity, data sensitivity, action type, and environmental context [3]. Dynamic masking protecting sensitive fields. Complete audit trails with trace IDs connecting human users through agent actions to data access. Policy evaluation in under 10ms without breaking response times.
 
 **Instant (I): Why Score 1/6 Kills Adoption**
 
@@ -588,7 +588,7 @@ Results: Query accuracy improved from 43% to 87% (103% improvement). Simple quer
 
 Healthcare faces regulations where inability to prove proper authorization results in penalties—HIPAA audits require demonstrating that every data access was authorized, attributable to a specific human, and auditable with complete justification [2].
 
-Traditional role-based access control (RBAC) operates at table level: grant all patient records or none. Modern agents require attribute-based access control (ABAC): Patient 10243's appointment can be viewed by Patient 10243 themselves, physicians assigned to their case, schedulers in their region, and administrators with auditable justification [3].
+Role-based access control (RBAC) operates at table level: grant all patient records or none. Modern agents require contextual ABAC layered on this RBAC foundation: Patient 10243's appointment can be viewed by Patient 10243 themselves, physicians assigned to their case, schedulers in their region, and administrators with auditable justification [3].
 
 **The Infrastructure Gap**
 

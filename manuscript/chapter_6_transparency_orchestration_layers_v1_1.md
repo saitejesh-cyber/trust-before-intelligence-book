@@ -5,7 +5,7 @@
 **Subtitle:** Why 95% of Agent Projects Fail—and the Architecture Blueprint That Fixes Infrastructure in 90 Days  
 **Author:** Ram Katamaraja, CEO, Colaberry Inc.  
 **Chapter Length:** ~11,000 words (22 pages)  
-**Version:** 1.1 (RBAC+ABAC Hybrid Framing)  
+**Version:** 1.3 (RBAC+ABAC Hybrid Architecture Final)  
 **Date:** November 27, 2025
 
 ---
@@ -235,9 +235,11 @@ The call ended. Sarah turned to Marcus and Jamie.
 
 ### What It Is
 
-Layer 5 provides policy-based authorization and audit infrastructure—the capability to control what agents can do based on context rather than static role assignments.
+Layer 5 provides policy-based authorization and audit infrastructure—the capability to control what agents can do by adding contextual evaluation to existing role-based permissions.
 
-Traditional access control operates on identity: a physician role grants access to patient records, period. Agent-era access control operates on context: a physician role grants access to their assigned patients' records during clinical hours from approved locations for clinically justified purposes. The difference is the difference between a master key and a smart lock.
+Traditional role-based access control operates on identity: a physician role grants access to patient records. Agent-era access control preserves this foundation and adds contextual evaluation: that same physician role grants access to their assigned patients' records during clinical hours from approved locations for clinically justified purposes.
+
+**The Architecture Principle:** RBAC grants the badge; ABAC decides if you can use it right now.
 
 This contextual evaluation requires four capabilities:
 
@@ -328,7 +330,7 @@ valid_patient_relationship {
 
 OPA evaluates approximately 10,000 decisions per second with sub-millisecond latency when deployed as a sidecar. This performance enables policy evaluation on every agent request without meaningful impact on user experience. The Rego language supports complex conditional logic including temporal constraints, geographic restrictions, and relationship-based access patterns.
 
-**ABAC Implementation:** NIST Special Publication 800-162 defines the ABAC standard that modern policy engines implement.[2] The four-factor model—Subject, Resource, Action, Context—enables policies that traditional RBAC cannot express.
+**ABAC Implementation:** NIST Special Publication 800-162 defines the ABAC standard that modern policy engines implement.[2] The four-factor model—Subject, Resource, Action, Context—extends role-based permissions with contextual policies that RBAC alone cannot express. NIST guidance recognizes that RBAC and ABAC are complementary rather than competing approaches—RBAC can be viewed as ABAC with "role" as the primary attribute, and organizations typically implement hybrid RBAC+ABAC architectures that preserve role-based foundations while adding contextual evaluation.
 
 **Subject Attributes:** Beyond role, ABAC evaluates department affiliation, credential status, training completion, license validity, and real-time employment status. A physician whose license expired yesterday should not access patient records today, even if their role assignment hasn't updated.
 
@@ -390,7 +392,7 @@ Echo's pre-transformation authorization relied on Epic's native RBAC—a solid f
 The limitations of RBAC alone became apparent through several scenarios that emerged during pilot testing:
 
 **Scenario 1: The After-Hours Access**
-A physician accessed a celebrity patient's records at 2 AM from a home IP address. The access was legitimate—the physician was on-call and the patient had called with symptoms. But the system couldn't distinguish this legitimate emergency access from a privacy breach. RBAC said "physician can access patient records." It couldn't ask "why is this physician accessing this patient at this time from this location?"
+A physician accessed a celebrity patient's records at 2 AM from a home IP address. The access was legitimate—the physician was on-call and the patient had called with symptoms. But the system couldn't distinguish this legitimate emergency access from a privacy breach. RBAC correctly authorized the physician's access to patient records. What was missing: contextual evaluation asking "why is this physician accessing this patient at this time from this location?"
 
 **Scenario 2: The Bulk Query**
 A clinical researcher asked the agent to "summarize diabetes treatment patterns across our patient population." The query would access thousands of patient records. RBAC authorized the access—the researcher had appropriate credentials. But the query represented a fundamentally different risk profile than individual patient lookups. Same authorization decision, vastly different implications.
@@ -398,7 +400,7 @@ A clinical researcher asked the agent to "summarize diabetes treatment patterns 
 **Scenario 3: The Cross-Department Access**
 An emergency department physician needed to review a patient's psychiatric history for suicide risk assessment. Epic's RBAC blocked the access—psychiatric records required mental health department credentials. The physician called the records department, waited 20 minutes for manual override, and eventually got the information. The authorization model prioritized data protection over clinical urgency.
 
-When Echo deployed its clinical agent in pilot testing, the limitations became immediately apparent. A physician asking "show me the lab results for John Smith" received immediate access. The same physician asking "show me all opioid prescriptions in the emergency department this month" also received immediate access—despite the second query representing a fundamentally different access pattern with different risk implications.
+When Echo deployed its clinical agent in pilot testing, these gaps in contextual evaluation became immediately apparent. A physician asking "show me the lab results for John Smith" received immediate access. The same physician asking "show me all opioid prescriptions in the emergency department this month" also received immediate access—despite the second query representing a fundamentally different access pattern with different risk implications.
 
 The most concerning gap appeared with medication queries. Echo's agent could retrieve drug interaction information and suggest dosing adjustments. But the underlying authorization made no distinction between querying information about acetaminophen interactions and querying information about Warfarin interactions. Both received identical treatment—immediate response with no escalation.
 
@@ -1482,7 +1484,7 @@ The transformation journey covered ten weeks and closed seven infrastructure gap
 
 [2] National Institute of Standards and Technology. (2014). "Guide to Attribute Based Access Control (ABAC) Definition and Considerations." NIST Special Publication 800-162. https://csrc.nist.gov/publications/detail/sp/800-162/final
 
-[3] Cloud Native Computing Foundation. (2024). "OpenTelemetry." https://opentelemetry.io
+[3] Cloud Native Computing Foundation. (2024). "OpenTelemetry." https://opentelemetry.io/docs/concepts/instrumentation/
 
 [4] Anthropic. (2024). "Claude Pricing." https://www.anthropic.com/pricing
 

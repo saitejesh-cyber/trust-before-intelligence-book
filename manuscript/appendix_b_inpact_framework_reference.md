@@ -3,8 +3,8 @@
 
 **Purpose:** Quick reference for the INPACTÃ¢â€žÂ¢ Framework introduced in Chapter 0  
 **Use:** Measure agent trust during implementation (Chapters 3-12)  
-**Date:** November 8, 2025  
-**Version:** 1.0
+**Date:** November 27, 2025  
+**Version:** 1.1 (RBAC+ABAC Hybrid Framing)
 
 ---
 
@@ -129,9 +129,9 @@ The INPACTâ„¢ framework identifies six architectural requirements agents mus
 
 ### P - Permitted: Security Builds Safety
 
-**What It Means:** Agents must enforce dynamic, context-aware authorization (not static roles)
+**What It Means:** Agents must enforce dynamic, context-aware authorization (RBAC baseline + contextual ABAC layer)
 
-**Why It Matters:** Agents accessing data they shouldn't violates compliance (HIPAA, GDPR) and erodes trust. Static RBAC isn't sufficientÃ¢â‚¬â€agents need ABAC (Attribute-Based Access Control).
+**Why It Matters:** Agents accessing data they shouldn't violates compliance (HIPAA, GDPR) and erodes trust. RBAC alone isn't sufficient—agents need ABAC (Attribute-Based Access Control) layered on role-based permissions.
 
 **Target Metrics:**
 - **Minimum:** ABAC policies operational, <10ms evaluation
@@ -140,7 +140,7 @@ The INPACTâ„¢ framework identifies six architectural requirements agents mus
 
 **Scoring (1-6):**
 - **1:** No access controls - Dangerous
-- **2:** Static RBAC only - Inadequate for agents
+- **2:** RBAC only (no contextual layer) - Inadequate for agents
 - **3:** Basic ABAC - Policies defined but not comprehensive
 - **4:** ABAC operational - <10ms evaluation, policies tested
 - **5:** ABAC + audit - 100% data access logged
@@ -527,7 +527,7 @@ Each INPACTâ„¢ need is fulfilled by specific architectural layers. For examp
 
 ## INPACTÃ¢â€žÂ¢ Glossary
 
-**ABAC:** Attribute-Based Access Control - Dynamic authorization based on user attributes, resource attributes, and context (vs static roles)
+**ABAC:** Attribute-Based Access Control - Contextual authorization layer evaluating user attributes, resource attributes, and context, layered on top of RBAC
 
 **Adaptive:** Continuous learning and improvement (vs quarterly reviews or static models)
 

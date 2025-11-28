@@ -319,7 +319,7 @@ Then Krish, the CFO: "Walk me through the math, Sarah. Two million dollars. Six 
 
 A board member leaned forward. "But you said Echo has excellent data infrastructure. We've invested millions over the past decade. SQL Server data warehouse. Azure data lake. Databricks. You've won data excellence awards."
 
-"For BI and analytics," Sarah said. "We built infrastructure that's brilliant at putting information in front of humans who make decisions. But agents need something fundamentally different. They need data that's current within seconds, not hours. They need to understand business language, not just SQL. They need dynamic authorization, not static roles. Our infrastructure—as sophisticated as it is—wasn't designed for autonomous agents."
+"For BI and analytics," Sarah said. "We built infrastructure that's brilliant at putting information in front of humans who make decisions. But agents need something fundamentally different. They need data that's current within seconds, not hours. They need to understand business language, not just SQL. They need contextual authorization layered on their existing roles. Our infrastructure—as sophisticated as it is—wasn't designed for autonomous agents."
 
 The CEO's expression was unreadable. "Other health systems are deploying scheduling agents. Clinical documentation is being automated. Why can't we do what our competitors are doing?"
 
@@ -882,7 +882,7 @@ Rate your infrastructure's capability for each INPACT™ dimension (1=failing, 6
 
 - **Instant (I):** Agent query response time (target: <2 seconds)
 - **Natural (N):** Business language understanding without extensive training
-- **Permitted (P):** Context-aware access control beyond static roles
+- **Permitted (P):** Context-aware access control layered on role-based permissions
 - **Adaptive (A):** Real-time learning from user feedback
 - **Contextual (C):** Unified access across siloed systems
 - **Transparent (T):** Observable agent reasoning chains
