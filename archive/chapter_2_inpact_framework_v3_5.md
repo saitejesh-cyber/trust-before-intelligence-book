@@ -4,8 +4,8 @@
 **Subtitle:** Why 95% of Agent Projects Fail—and the Architecture Blueprint That Fixes Infrastructure in 90 Days  
 **Author:** Ram Katamaraja, CEO, Colaberry Inc.  
 **Chapter:** 2 of 12  
-**Version:** 3.5 SCORING FORMAT + PILOT INVESTMENT + DIAGRAM 2 UPDATES + CHECKPOINTS  
-**Date:** November 19, 2025  
+**Version:** 3.6 RBAC+ABAC HYBRID FRAMING  
+**Date:** November 27, 2025  
 **Target:** 7,500 words | 15 pages | ~30 minutes reading time
 
 ---
@@ -180,7 +180,7 @@ graph TB
 
 **The crucial difference:** Humans advocate for their own needs. When humans need certainty, they ask for clarification. When they need connection, they build relationships.
 
-**Agents cannot advocate for themselves.** They depend entirely on infrastructure to fulfill their needs. An agent can't request real-time data when batch ETL is all that's available. It can't negotiate for dynamic permissions when static RBAC is all that exists.
+**Agents cannot advocate for themselves.** They depend entirely on infrastructure to fulfill their needs. An agent can't request real-time data when batch ETL is all that's available. It can't negotiate for dynamic permissions when RBAC alone is all that exists.
 
 **This is why INPACT™ focuses on infrastructure capabilities, not agent features.** The framework defines what infrastructure must provide. Trust emerges as the outcome when infrastructure systematically fulfills all six needs.
 
@@ -309,7 +309,7 @@ Monday morning, conference room 3B. Sarah Cedao pulled up the INPACT™ assessme
 
 **I (Instant): 1/6** (critical - batch only)  
 **N (Natural): 2/6** (weak - minimal semantic)  
-**P (Permitted): 1/6** (critical - static RBAC)  
+**P (Permitted): 1/6** (critical - RBAC only)  
 **A (Adaptive): 2/6** (weak - no feedback)  
 **C (Contextual): 3/6** (moderate - EHR integration exists but limited)  
 **T (Transparent): 1/6** (critical - no audit trails)  
@@ -431,7 +431,7 @@ The board approved. Week 12 target: 85/100 with first production agent deployed.
 
 ✅ Echo assessed at 28/100—five critical infrastructure gaps blocking agent deployment  
 ✅ The 85/100 threshold emerged from industry research as minimum for production readiness  
-✅ Two critical dimensions explained: Instant (I) needs real-time data, Permitted (P) needs dynamic ABAC  
+✅ Two critical dimensions explained: Instant (I) needs real-time data, Permitted (P) needs contextual ABAC on RBAC  
 ✅ Dependencies force implementation sequence—can't build authorization on batch data  
 ⭐ **Next:** Deep dive into all six INPACT™ needs with Echo's transformation details
 
@@ -592,11 +592,11 @@ Traditional role-based access control (RBAC) operates at table level: grant all 
 
 **The Infrastructure Gap**
 
-**Diagram 8: RBAC Era Static Roles vs. ABAC Era Dynamic Policies**
+**Diagram 8: From RBAC Baseline to RBAC + Contextual ABAC**
 
 ```mermaid
 graph TB
-    subgraph ERA1["<b>RBAC: Static</b>"]
+    subgraph ERA1["<b>RBAC Only</b>"]
         direction LR
         A1["<b>User = Scheduler<br/>Role Granted</b>"] --> B1["<b>Access ALL<br/>Patient Records</b>"]
         B1 --> D1["<b>HIPAA<br/>Violation</b>"]
@@ -604,9 +604,9 @@ graph TB
         style D1 fill:#b71c1c,color:#ffffff,stroke:#c62828,stroke-width:3px
     end
     
-    ERA1 -.->|<b>Evolution</b>| ERA2
+    ERA1 -.->|<b>Add Context Layer</b>| ERA2
     
-    subgraph ERA2["<b>ABAC: Dynamic</b>"]
+    subgraph ERA2["<b>RBAC + ABAC</b>"]
         direction LR
         A2["<b>User + Context<br/>Per-Query Eval</b>"] --> B2["<b>Policy<br/>Engine OPA</b>"]
         B2 --> C2["<b>Dynamic<br/>Masking</b>"]
@@ -636,7 +636,7 @@ Dynamic authorization requires three capabilities: **ABAC policy engine** (Layer
 
 **Echo's Transformation**
 
-Week 0: Static RBAC, single service account, HIPAA violations, deployment blocked.
+Week 0: RBAC only, single service account, HIPAA violations, deployment blocked.
 
 Week 8 after implementing Layer 6: Open Policy Agent (OPA) deployed with 47 granular policies [11]. Dynamic masking implemented at query execution. Trace IDs connecting user→agent→query→data. Escalation workflows for sensitive data access.
 
@@ -644,14 +644,14 @@ Results: HIPAA compliance restored. Policy evaluation: 6ms average (sub-10ms req
 
 **Specific scenario:** Scheduler requests "show all appointments for Dr. Martinez today." Pre-ABAC: agent returned ALL fields including diagnoses, medications, insurance details (HIPAA violation). Post-ABAC: agent dynamically masked sensitive fields, returned only appointment_time, patient_name, reason_for_visit. Audit trail: scheduler_id→agent_request_id→policy_evaluated→fields_returned.
 
-**Measuring Success:** Score 1 = static RBAC, no masking, compliance failures. Score 6 = ABAC with sub-10ms evaluation, dynamic masking, zero violations. Echo moved from 1/6 to 5/6.
+**Measuring Success:** Score 1 = RBAC only, no masking, compliance failures. Score 6 = RBAC + ABAC with sub-10ms evaluation, dynamic masking, zero violations. Echo moved from 1/6 to 5/6.
 
 ---
 **📍 CHECKPOINT: First Three INPACT™ Needs**
 
 ✅ **Instant (I)** requires real-time data infrastructure—batch processing creates 24-hour lag that destroys trust  
 ✅ **Natural (N)** demands semantic layers mapping business language to technical schemas—87% accuracy vs 43%  
-✅ **Permitted (P)** needs dynamic ABAC policies, not static roles—HIPAA compliance restored with 6ms evaluation  
+✅ **Permitted (P)** needs contextual ABAC layered on RBAC—HIPAA compliance restored with 6ms evaluation  
 ⭐ **Next:** The final three needs—Adaptive learning, Contextual integration, and Transparent reasoning
 
 **Reading Time Remaining:** ~18 minutes

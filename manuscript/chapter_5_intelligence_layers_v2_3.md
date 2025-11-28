@@ -182,7 +182,7 @@ Krish Yadav's face on screen showed careful attention. "What's the cost of intel
 
 "Tight but workable," Swapna replied. "Largest costs are LLM APIs and vector database. We've architected for efficiency—semantic caching will reduce LLM costs by 80-85% once operational."
 
-Sarah walked to the whiteboard. "The business problem: We promised the board agent-ready infrastructure by Week 10. INPACT™ score of 80/100 or higher. We're at 42. The gap is 38 points."
+Sarah walked to the whiteboard. "The business problem: We promised the board agent-ready infrastructure by Week 10. INPACT™ score of 85/100 or higher. We're at 42. The gap is 43 points."
 
 She drew a simple progression:
 

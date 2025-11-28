@@ -4,7 +4,7 @@
 **Subtitle:** Why 95% of Agent Projects Fail—and the Architecture Blueprint That Fixes Infrastructure in 90 Days  
 **Author:** Ram Katamaraja, CEO of Colaberry Inc.  
 **Publisher:** Colaberry Press  
-**Version:** 2.2 (Codex Compliance Edition)  
+**Version:** 2.3 (RBAC+ABAC Hybrid Framing)  
 **Date:** November 15, 2025
 
 ---
@@ -70,7 +70,7 @@ Sarah's team spent the next six months and **$2 million** building three pilot a
 
 2. **Clinical Documentation Agent**: Could only access data from yesterday because overnight batch ETL jobs ran at 2 AM (emergency room physicians needed current visit context, not yesterday's notes). Couldn't understand medical terminology consistently—"MI" sometimes meant myocardial infarction, sometimes meant mitral insufficiency, sometimes triggered error messages. No audit trail for regulatory review meant they couldn't use it for any clinical decisions that required documentation.
 
-3. **Revenue Cycle Agent**: Siloed in the billing system, it could see claims but not clinical context. When claims were denied, it couldn't cross-reference diagnosis codes with actual visit notes to identify documentation gaps. Static role-based access prevented it from dynamically authorizing access based on current patient relationships—a billing specialist who transferred to a different department still had access to her old patients' financial data.
+3. **Revenue Cycle Agent**: Siloed in the billing system, it could see claims but not clinical context. When claims were denied, it couldn't cross-reference diagnosis codes with actual visit notes to identify documentation gaps. Role-based access alone prevented it from dynamically authorizing access based on current patient relationships—a billing specialist who transferred to a different department still had access to her old patients' financial data.
 
 **All three pilots failed.** Not in the dramatic way of systems crashing or data breaches—they failed in the slow, grinding way of tools nobody wants to use. Physicians stopped asking the clinical agent questions after the fifth rephrasing attempt. Patients hung up on the care coordination agent and called the human line instead. Billing specialists manually processed claims because the agent couldn't see what they needed.
 
@@ -86,7 +86,7 @@ That's when Marcus Williams, Echo's Chief Data Officer, discovered the INPACT™
 
 **N - Natural (2/6):** Understanding rate of 40-60% stemmed from cryptic table names like `TBL_PT_ENC_DTL` and undocumented column relationships. No semantic layer existed to translate "patient's last three visits" into the complex joins required across seven tables.
 
-**P - Permitted (1/6):** Static role-based access control (RBAC) couldn't handle dynamic contexts. A nurse authorized to view Patient A's records during her shift shouldn't access them at 3 AM from home. HIPAA requires this contextual authorization, but Echo's fifteen-year-old permission system couldn't deliver it.
+**P - Permitted (1/6):** Role-based access control (RBAC) alone couldn't handle dynamic contexts. A nurse authorized to view Patient A's records during her shift shouldn't access them at 3 AM from home. HIPAA requires this contextual authorization, but Echo's fifteen-year-old permission system had no ABAC layer to evaluate context.
 
 **A - Adaptive (2/6):** No feedback loops existed. When agents got queries wrong, there was no mechanism to learn from corrections. Model performance drifted over time with no detection or retraining workflows. Quarterly manual reviews were their only "improvement" process.
 
@@ -168,7 +168,7 @@ Through analysis of 40+ enterprise implementations, we've identified six essenti
 
 **N - Natural:** Understanding user intent in natural language. When Echo's agents understood only 40-60% of queries, users gave up after multiple rephrasings. Natural language understanding requires semantic layers that map business terminology to technical schemas.
 
-**P - Permitted:** Dynamic, context-aware authorization. Static role-based access fails in agent scenarios. Echo's HIPAA violations occurred because their system couldn't enforce "Nurse A can access Patient X's data during her shift, but not at 3 AM from home." Agents need attribute-based access control (ABAC) with contextual evaluation.
+**P - Permitted:** Dynamic, context-aware authorization. Role-based access alone is insufficient for agent scenarios. Echo's HIPAA violations occurred because their system couldn't enforce "Nurse A can access Patient X's data during her shift, but not at 3 AM from home." Agents need attribute-based access control (ABAC) layered on RBAC to evaluate context in real-time.
 
 **A - Adaptive:** Continuous learning from feedback. Echo's quarterly reviews meant agents couldn't improve in real-time. When agents misunderstand queries or make errors, they must learn immediately—not wait months for manual retraining.
 
@@ -234,7 +234,7 @@ Think of these layers as the structural elements of a building. Each layer serve
 
 **Layer 4 - Intelligence Layer:** RAG (Retrieval-Augmented Generation) systems, LLM integration, and context assembly. This layer connects AI models to retrieved data, enabling accurate responses grounded in enterprise information. Echo had GPT-4 access but no RAG pipeline to prevent hallucinations.
 
-**Layer 5 - Governance Layer:** Attribute-based access control (ABAC) with contextual evaluation, plus human-in-the-loop (HITL) workflows for high-risk decisions. This layer delivers the "Permitted" need from INPACT™. Echo's static RBAC couldn't enforce dynamic, context-aware authorization.
+**Layer 5 - Governance Layer:** Attribute-based access control (ABAC) layered on existing role-based permissions, plus human-in-the-loop (HITL) workflows for high-risk decisions. This layer delivers the "Permitted" need from INPACT™. Echo's RBAC defined who could access what; ABAC adds when, where, and why—the contextual intelligence agents require.
 
 **Layer 6 - Observability Layer:** Distributed tracing, LLM cost tracking, and audit logging. This layer delivers the "Transparent" need from INPACT™—complete visibility into what agents accessed, why decisions were made, and how costs accumulate. Echo's incomplete audit logs violated HIPAA transparency requirements.
 
