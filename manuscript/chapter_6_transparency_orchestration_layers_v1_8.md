@@ -40,8 +40,8 @@ graph TB
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
-    P1 -->|<b>Defines needs</b>| P2
-    P2 -->|<b>Enables operations</b>| P3
+    P1 -->|<b>Agent needs fulfilled by</b>| P2
+    P2 -->|<b>Infrastructure enables</b>| P3
     P2 -.->|<b>You Are Here</b>| BUILD
     
     style P1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
@@ -73,7 +73,7 @@ The three-week build timeline—Week 8 Governance, Week 9 Observability, Week 10
 
 ```mermaid
 graph TB
-    subgraph "<b>TRANSPARENCY + ORCHESTRATION</b>"
+    subgraph "<b>TRUST LAYERS (Ch 6)</b>"
         L7["<b>Layer 7: Orchestration</b><br/><b>Multi-Agent Coordination</b>"]
         L6["<b>Layer 6: Observability</b><br/><b>Tracing & Monitoring</b>"]
         L5["<b>Layer 5: Governance</b><br/><b>ABAC + HITL</b>"]
@@ -264,32 +264,26 @@ This contextual evaluation requires four capabilities:
 ```mermaid
 graph TB
     subgraph "<b>LAYER 5: GOVERNANCE</b>"
-        Query["<b>Agent Query</b><br/><b>Access Request</b>"]
+        subgraph "<b>ROW 1: EVALUATION</b>"
+            Query["<b>Agent Query</b>"]
+            ABAC["<b>ABAC Evaluation</b>"]
+            OPA["<b>OPA Policy Engine</b>"]
+            Risk{{"<b>Risk?</b>"}}
+        end
         
-        ABAC["<b>ABAC Evaluation</b><br/><b>👤 Subject</b><br/><b>📋 Resource</b><br/><b>⚡ Action</b><br/><b>📍 Context</b>"]
-        
-        OPA["<b>OPA Policy Engine</b><br/><b>200+ Rules</b>"]
-        
-        Risk{{"<b>Risk Score?</b>"}}
-        
-        Auto["<b>✓ Auto-Approve</b><br/><b>Risk < 7</b>"]
-        HITL["<b>⚠️ HITL Escalation</b><br/><b>Risk ≥ 7</b>"]
-        
-        Human["<b>Human Review</b><br/><b>Approve/Reject</b>"]
-        
-        Audit["<b>📊 Audit Log</b><br/><b>Complete Trail</b>"]
+        subgraph "<b>ROW 2: DECISION & AUDIT</b>"
+            Auto["<b>✓ Auto-Approve</b><br/><b>Risk < 7</b>"]
+            HITL["<b>⚠️ HITL</b><br/><b>Risk ≥ 7</b>"]
+            Human["<b>Human Review</b>"]
+            Audit["<b>📊 Audit Log</b>"]
+        end
     end
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
-    Query --> ABAC
-    ABAC --> OPA
-    OPA --> Risk
-    Risk -->|<b>Low Risk</b>| Auto
-    Risk -->|<b>High Risk</b>| HITL
-    HITL --> Human
-    Auto --> Audit
-    Human --> Audit
+    Query --> ABAC --> OPA --> Risk
+    Risk -->|<b>Low</b>| Auto --> Audit
+    Risk -->|<b>High</b>| HITL --> Human --> Audit
     
     style Query fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
     style ABAC fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
@@ -298,7 +292,7 @@ graph TB
     style Auto fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     style HITL fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
     style Human fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style Audit fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Audit fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
@@ -436,23 +430,22 @@ Echo deployed Layer 5 across Week 8-9 with the following architecture:
 
 ```mermaid
 graph TB
-    subgraph "<b>SYNCHRONOUS HITL</b>"
-        S1["<b>⚠️ High-Risk Request</b><br/><b>Medication Prescription</b>"]
-        S2["<b>⏸️ BLOCKED</b><br/><b>Awaiting Approval</b>"]
-        S3["<b>👨‍⚕️ Human Review</b><br/><b>Clinician Decides</b>"]
-        S4["<b>✓ Execute</b>"]
-    end
-    
-    subgraph "<b>ASYNCHRONOUS HITL</b>"
-        A1["<b>⚡ Time-Sensitive</b><br/><b>Appointment Scheduling</b>"]
-        A2["<b>📋 Provisional</b><br/><b>Pending Review</b>"]
-        A3["<b>👁️ Background Review</b><br/><b>Within 24 Hours</b>"]
-    end
-    
-    subgraph "<b>POST-HOC HITL</b>"
-        P1["<b>📊 Low-Risk Query</b><br/><b>Information Lookup</b>"]
-        P2["<b>✓ Immediate Execute</b>"]
-        P3["<b>📝 Audit Log</b><br/><b>Compliance Review</b>"]
+    subgraph "<b>HITL ESCALATION PATTERNS</b>"
+        subgraph "<b>SYNCHRONOUS (Blocks Until Approved)</b>"
+            S1["<b>⚠️ High-Risk Request</b>"]
+            S2["<b>⏸️ BLOCKED</b>"]
+            S3["<b>👨‍⚕️ Human Review</b>"]
+            S4["<b>✓ Execute</b>"]
+        end
+        
+        subgraph "<b>ASYNCHRONOUS & POST-HOC</b>"
+            A1["<b>⚡ Time-Sensitive</b>"]
+            A2["<b>📋 Provisional</b>"]
+            A3["<b>👁️ Review Later</b>"]
+            P1["<b>📊 Low-Risk</b>"]
+            P2["<b>✓ Execute</b>"]
+            P3["<b>📝 Audit Log</b>"]
+        end
     end
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
@@ -614,41 +607,28 @@ This opacity creates three operational challenges:
 **Diagram 7: Echo's Seven-Layer Service Map**
 
 ```mermaid
-graph LR
+graph TB
     subgraph "<b>ECHO SERVICE MAP</b>"
-        subgraph "<b>User Interface</b>"
-            UI["<b>Clinical Portal</b><br/><b>P95: 4.2s</b>"]
+        subgraph "<b>ROW 1: ENTRY → TRUST</b>"
+            UI["<b>Portal (4.2s)</b>"]
+            L7["<b>L7: Orchestrate (180ms)</b>"]
+            L6["<b>L6: Observe (12ms)</b>"]
+            L5["<b>L5: Govern (8ms)</b>"]
         end
         
-        subgraph "<b>Orchestration Layer</b>"
-            L7["<b>Layer 7</b><br/><b>LangGraph Supervisor</b><br/><b>P95: 180ms</b>"]
-        end
-        
-        subgraph "<b>Transparency Layers</b>"
-            L6["<b>Layer 6</b><br/><b>Observability</b><br/><b>P95: 12ms</b>"]
-            L5["<b>Layer 5</b><br/><b>Governance</b><br/><b>P95: 8ms</b>"]
-        end
-        
-        subgraph "<b>Intelligence Layers</b>"
-            L4["<b>Layer 4</b><br/><b>RAG + LLM</b><br/><b>P95: 2.8s</b>"]
-            L3["<b>Layer 3</b><br/><b>Semantic</b><br/><b>P95: 340ms</b>"]
-        end
-        
-        subgraph "<b>Foundation Layers</b>"
-            L2["<b>Layer 2</b><br/><b>Real-Time</b><br/><b>P95: 28ms</b>"]
-            L1["<b>Layer 1</b><br/><b>Storage</b><br/><b>P95: 45ms</b>"]
+        subgraph "<b>ROW 2: INTELLIGENCE → DATA</b>"
+            L4["<b>L4: RAG+LLM (2.8s)</b>"]
+            L3["<b>L3: Semantic (340ms)</b>"]
+            L2["<b>L2: Stream (28ms)</b>"]
+            L1["<b>L1: Store (45ms)</b>"]
         end
     end
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
-    UI -->|<b>Query</b>| L7
-    L7 -->|<b>Trace</b>| L6
-    L7 -->|<b>AuthZ</b>| L5
-    L7 -->|<b>Reason</b>| L4
-    L4 -->|<b>Resolve</b>| L3
-    L3 -->|<b>Stream</b>| L2
-    L2 -->|<b>Fetch</b>| L1
+    UI --> L7 --> L6
+    L7 --> L5
+    L7 --> L4 --> L3 --> L2 --> L1
     
     style UI fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
     style L7 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
@@ -946,7 +926,7 @@ The room was silent for a moment. Then Jamie grinned. "Architecture complete."
 graph TB
     Query["<b>📝 Discharge Query</b><br/><b>Schedule, Review, Verify</b>"]
     
-    Supervisor["<b>🎯 Supervisor</b><br/><b>Intent: Care + Clinical + Revenue</b>"]
+    Supervisor["<b>🎯 Supervisor</b><br/><b>Routes to 3 Agents</b>"]
     
     subgraph "<b>PARALLEL EXECUTION (2.3s)</b>"
         Care["<b>👥 Care Agent</b><br/><b>Follow-up: Tue 10 AM</b><br/><b>PT Eval: Thu 2 PM</b>"]
@@ -1112,13 +1092,13 @@ gantt
 
 ```mermaid
 graph LR
-    subgraph "<b>Week 7: Intelligence Complete</b>"
+    subgraph "<b>Week 7</b>"
         W7["<b>TOTAL: 67/100</b>"]
     end
     
     Arrow["<b>→</b><br/><b>+18 pts</b>"]
     
-    subgraph "<b>Week 10: Architecture Complete</b>"
+    subgraph "<b>Week 10</b>"
         W10["<b>TOTAL: 85/100</b>"]
     end
     
@@ -1234,8 +1214,8 @@ graph TB
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
-    P1 -->|<b>Defines requirements</b>| P2
-    P2 -->|<b>Enables operations</b>| P3
+    P1 -->|<b>Agent needs fulfilled by</b>| P2
+    P2 -->|<b>Infrastructure enables</b>| P3
     P2 -.->|<b>Delivers</b>| Result
     
     style P1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
