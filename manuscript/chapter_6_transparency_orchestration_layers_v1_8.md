@@ -431,14 +431,14 @@ Echo deployed Layer 5 across Week 8-9 with the following architecture:
 ```mermaid
 graph TB
     subgraph "<b>HITL ESCALATION PATTERNS</b>"
-        subgraph "<b>SYNCHRONOUS (Blocks Until Approved)</b>"
+        subgraph "<b>SYNC (Blocking)</b>"
             S1["<b>⚠️ High-Risk Request</b>"]
             S2["<b>⏸️ BLOCKED</b>"]
             S3["<b>👨‍⚕️ Human Review</b>"]
             S4["<b>✓ Execute</b>"]
         end
         
-        subgraph "<b>ASYNCHRONOUS & POST-HOC</b>"
+        subgraph "<b>ASYNC & POST-HOC</b>"
             A1["<b>⚡ Time-Sensitive</b>"]
             A2["<b>📋 Provisional</b>"]
             A3["<b>👁️ Review Later</b>"]
