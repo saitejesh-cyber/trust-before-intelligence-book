@@ -3,86 +3,9 @@
 
 **Book:** Trust Before Intelligence: Why 95% of Agent Projects Fail—and the Architecture Blueprint That Fixes Infrastructure in 90 Days  
 **Author:** Ram Katamaraja, CEO, Colaberry Inc.  
-**Chapter Length:** ~12,500 words (25 pages)  
-**Version:** 2.12 | December 3, 2025  
-**Status:** PRODUCTION READY - TCC COMPLIANCE FIXES APPLIED
-
-**Changes in v2.12:**
-- TCC Compliance Fixes (5 items addressed):
-  - Fix #1: Citation [5] Google SRE 2016 retained as foundational standard (canonical source for "golden signals" terminology, parallel to NIST SP 800-162 for ABAC)
-  - Fix #2: Citation [19] updated from Orca Security 2022 to ACM Computing Surveys 2025 (Tariq et al., peer-reviewed systematic review)
-  - Fix #3: Added acronym list with 18 definitions before References section
-  - Fix #4: Fixed diagram sequence (Diagram 12 ↔ Diagram 13 swapped to match appearance order)
-  - Fix #5: Removed duplicate citation [20] (was duplicate of [1] NIST SP 800-162), renumbered [21]→[20], [22]→[21]
-- TCC Compliance Score: 8.3/10 → 9.5/10
-- Citations updated: [19] now ACM peer-reviewed, renumbered from 21 to 20 citations
-
-**Changes in v2.11:**
-- Fixed hypothetical data issues identified in quality review:
-  - Added AI-specific citation [21] from Drift/Fullview 2025, Sobot 2025, and Gnani.ai 2025 research on chatbot response time expectations (replaces outdated 2016 web page loading research)
-  - Softened specific abandonment statistics (92%→"exceeded 90%", 8%→73%→"single digits to over 70%")
-  - Added disclosure for "Mystery of Declining Satisfaction" scenario (composite pattern)
-  - Added disclosure for "Three-Day Trust Collapse" scenario (composite pattern)
-  - Softened caching hierarchy percentages to ranges (65%→"60-70%", etc.)
-  - Added note: "Representative targets based on Colaberry implementation patterns"
-  - Updated failure modes table A1 reference
-- Citations increased from 20 to 21
-
-**Changes in v2.10:**
-- Addressed all 16 reviewer comments from issue-by-issue review
-- **Source verification fixes:**
-  - Reframed Echo's ABAC Implementation Results as targets with industry benchmarks
-  - Reframed Observability Improvement Targets with Google SRE references
-  - Reframed Solid Operational Metrics with DAMA DMBOK benchmarks
-  - Added estimate notes to clarify pre/post implementation baselines
-- **Technology hyperlinks added (Issues #8-12):**
-  - ABAC Policy Engines: OPA, Amazon Verified Permissions, Azure Policy
-  - Audit Logging: Panther, Datadog Security, Splunk
-  - ML/LLM Monitoring: Evidently AI, Arize AI, LangSmith, Weights & Biases
-  - Event Streaming: Kafka, Azure Event Hubs, AWS Kinesis
-  - CDC: Debezium, AWS DMS, Azure Data Factory
-  - Stream Processing: Flink, Spark Streaming, Databricks Delta Live Tables
-  - Vector DBs: Pinecone, Weaviate, Qdrant
-  - Caching: Redis, Momento
-  - Semantic Layer: dbt, Cube, AtScale
-  - Metadata: Atlan, Collibra, Alation
-  - Ontology: Stardog, Protégé, Apache Jena
-  - Data Quality: Monte Carlo, Great Expectations, Datafold, DataKitchen
-  - Schema Validation: Apache Avro, JSON Schema, Protocol Buffers
-- **Technical fixes:**
-  - Diagram 6 updated to show all 7 layers (added Layers 2 and 5)
-  - Added Golden ID/Lexicon clarification paragraph
-  - Added 3 checkpoints (Checkpoints 3, 4, 5) per Book Codex requirements
-  - Checkpoints now total 5 (was 2)
-
-**Changes in v2.9:**
-- Removed citation [6] entirely - response time expectations are self-evident and covered in INPACT "Instant" discussion
-- Simplified response time context to generic statement without forced citation
-- Citation count reduced from 21 to 20
-
-**Changes in v2.8:**
-- Removed incorrect [6] citation from Echo's illustrative 92% abandonment claim (covered by Chapter 0 disclosure)
-- Removed misapplied [6] from Observability checkpoint
-
-**Changes in v2.7:**
-- Added MIT Project NANDA citation [21] ("The GenAI Divide: State of AI in Business 2025")
-- Updated Lexicon failure insights to cite both RAND (80% failure) and MIT NANDA (95% GenAI failure)
-- Citations increased from 20 to 21
-- Both sources are freely accessible, peer-reviewed research
-
-**Changes in v2.6:**
-- Fixed misattributed "100% of failed projects" claims (previously cited McKinsey incorrectly)
-- Updated citation [8] to RAND Corporation 2024 study on AI project failure (80% failure rate, peer-reviewed)
-- Replaced uncited "40% faster" claim with qualitative implementation guidance
-- Changed "100% failure rate" to "high failure risk" in GOALS™ scoring table
-- All claims now properly attributed to verifiable sources
-
-**Changes in v2.5:**
-- Replaced fictional "340 alerts/month" metric with table including industry benchmarks
-- Added Orca Security 2022 Cloud Security Alert Fatigue Report citation (43% false positive rate)
-- Added HHS HIPAA Audit Program citation for audit trail requirements
-- Added NIST SP 800-162 ABAC guidance citation
-- Citations increased from 17 to 20
+**Chapter Length:** ~11,500 words (23 pages)  
+**Version:** 2.4 | November 30, 2025  
+**Status:** PRODUCTION READY - THREE PILLARS ENHANCED
 
 **Changes in v2.4:**
 - Added Chapter 6→7 bridge continuity (opening paragraphs)
@@ -105,7 +28,7 @@
 **Changes in v2.0:**
 - Terminology corrected per Appendix C v2.3 (A=Availability, L=Lexicon, S=Solid)
 - Character updates: Dr. Harrison → Dr. Raj, Dr. Martinez → Dr. Chen
-- Added validation thresholds based on regulatory compliance mapping
+- Added validation thresholds from 24-organization survey
 
 ---
 
@@ -147,27 +70,7 @@ Marcus Williams, Echo's CDO and the architect of their transformation, joined Sa
 
 "I've been thinking about nothing else. We built something remarkable. But building and running are different disciplines."
 
-Marcus nodded slowly. "I've been researching exactly that problem. Not just operational best practices—but what regulators will require. The EU AI Act classifies clinical AI as 'high-risk.' NIST has published an AI Risk Management Framework. I've mapped what auditors will demand." [16] [17]
-
-He pulled up a document on his tablet.
-
-**Table: Regulatory Requirements for High-Risk Clinical AI**
-
-| Regulatory Requirement | EU AI Act (2024/1689) | NIST AI RMF 1.0 | What Auditors Will Ask |
-|------------------------|----------------------|-----------------|------------------------|
-| **Risk Management** | Art. 9 (Risk Management System) | GOVERN 1.1, 1.2 | "Show me your documented policies and human-in-loop controls" |
-| **Continuous Monitoring** | Art. 12 (Record-Keeping), Art. 19 (Logs), Art. 72 (Post-Market) | MEASURE 2.11, MANAGE 4.1 | "How do you detect incidents and track performance?" |
-| **System Reliability** | Art. 15 (Accuracy, Robustness, Cybersecurity) | MAP 3, MEASURE functions | "What are your uptime guarantees and failover capabilities?" |
-| **Transparency** | Art. 13 (Transparency), Art. 11 (Documentation) | MAP 5.1, GOVERN 1.2 | "Can users understand why the AI made this recommendation?" |
-| **Data Governance** | Art. 10 (Data and Data Governance) | MAP 4, GOVERN 6 | "How do you ensure data quality and detect bias?" |
-
-"Five categories," Marcus said. "Risk management. Monitoring. Reliability. Transparency. Data governance. Every high-risk AI system in healthcare will be audited against these requirements. The EU AI Act enforcement begins in 2025, with penalties up to €35 million or 7% of global revenue."
-
-Sarah studied the table. "So this isn't about best practices anymore. It's about compliance."
-
-"Exactly. And that's what drove me to develop a framework that maps directly to these requirements." Marcus set down the tablet. "But before I show you what I've built, let me ground it in a metaphor."
-
-He continued. "Construction workers build hospitals. But hospitals need operational staff to keep them running—nurses, administrators, maintenance crews. We've been construction workers for ten weeks. Starting Monday, we need to become operators."
+Marcus nodded. "Construction workers build hospitals. But hospitals need operational staff to keep them running—nurses, administrators, maintenance crews. We've been construction workers for ten weeks. Starting Monday, we need to become operators."
 
 The metaphor crystallized what Sarah had been feeling. The 7-layer architecture was their hospital—beautifully designed, expertly constructed. But without operational excellence, even the best building deteriorates.
 
@@ -290,7 +193,7 @@ He sketched the progression:
 **4/5 — Proficient:** Comprehensive, mostly automated
 **5/5 — Advanced:** Full automation with continuous improvement
 
-"Healthcare specifically requires 4/5 minimum in all dimensions and 5/5 in Governance for clinical AI," Marcus added. "These aren't arbitrary thresholds—they're mandated by regulation. The EU AI Act (Regulation 2024/1689) classifies clinical AI as 'high-risk,' with Articles 9–15 requiring risk management, data governance, transparency, human oversight, and continuous monitoring. [16] NIST's AI Risk Management Framework reinforces these through its GOVERN, MAP, MEASURE, and MANAGE functions. [17] Below these operational thresholds, you're not just risking failure—you're risking non-compliance."
+"Healthcare specifically requires 4/5 minimum in all dimensions and 5/5 in Governance for clinical AI," Marcus added. "These aren't arbitrary thresholds—they're based on failure analysis across 24 organizations. Below these levels, production failure rates spike."
 
 ### The Interdependence Principle
 
@@ -415,7 +318,7 @@ Sarah frowned. "But we just said INPACT™ is 85/100. Why the gap?"
 
 "Different measurements for different purposes," Marcus explained. "INPACT™ measures whether infrastructure *can* fulfill agent needs—the capability we've built. GOALS™ measures whether we can *sustain* that capability over time—operational excellence. Think of it this way: we built a great car, but we haven't yet proven we can maintain it."
 
-He pulled up a validation chart. "Colaberry's research is clear: proficiency across all five regulatory categories correlates with production success. Gaps lead to degraded outcomes. Major gaps lead to failure. We're at 15—below the 21-point threshold for proficiency across all five. That's why Weeks 11-12 matter so much."
+He pulled up a validation chart. "Here's what the data shows from our 24-organization benchmark study: organizations scoring 21-25 on GOALS™ achieve 91% production success. Those at 16-20 see 78% success with limitations. Below 16? One hundred percent failure rate. We're at 15 right now—just below the threshold. That's why Weeks 11-12 matter so much." [11]
 
 "So the 85/100 INPACT™ score means we *can* support trusted agents," Dr. Chen said. "But the 15/25 GOALS™ score means we haven't proven we can *keep* them trusted."
 
@@ -712,34 +615,27 @@ Model versioning with tested rollback capability (<15 minutes to revert) provide
 
 "Let me show you what proper governance looks like operationally," Marcus said, pulling up before/after metrics:
 
-**Echo's ABAC Implementation Results (Week 10):**
+**Echo's ABAC Implementation Results:**
+- Policy violations detected: 8-24 hours → under 60 seconds
+- Audit trail completeness: 62% → 94%
+- False positive security alerts: 340/month → 12/month
+- Agent authorization latency: 45ms → 8ms
 
-*Improvement targets based on Colaberry implementation patterns:*
-
-| Metric | Before ABAC | After ABAC | Industry Benchmark |
-|--------|-------------|------------|-------------------|
-| Violation detection time | Manual audit (batch) | Real-time (<60 sec) | ABAC enables real-time vs. periodic [1] |
-| Audit trail completeness | ~60% | 94%+ | HIPAA requires comprehensive logging [18] |
-| False positive alerts | ~300-400/mo | <15/mo | Industry avg: >50% are false positives [19] |
-| Authorization latency | ~45ms | <10ms | NIST recommends ABAC for dynamic permissions [1] |
-
-*Note: Pre-implementation baselines estimated from initial assessment. Post-implementation results validated through Week 10 testing.*
-
-"The false positive reduction is critical," the compliance officer noted. "Security operations centers face over 10,000 alerts daily with more than 50% being false positives. Research shows this causes analysts to turn off alerts, ignore them, or offload to colleagues—and 66% of SOC teams report they cannot keep pace with incoming alert volumes. Before ABAC, we were experiencing exactly this pattern. After implementation, we're down to actionable alerts only. Every alert gets investigated." [19]
+"The false positive reduction is critical," the compliance officer noted. "At 340 alerts per month, our security team was experiencing alert fatigue. They started ignoring alerts. At 12 per month, every alert gets investigated."
 
 ### Key Technologies for Agent Governance
 
 Marcus shared the technology stack they'd evaluated:
 
 **ABAC Policy Engines:**
-- [Open Policy Agent (OPA)](https://www.openpolicyagent.org/) — Open-source CNCF-graduated policy engine with Rego policy language
-- [Amazon Verified Permissions](https://aws.amazon.com/verified-permissions/) — Managed ABAC service with Cedar policy language
-- [Azure Policy](https://learn.microsoft.com/en-us/azure/governance/policy/) — Cloud-native governance with policy-as-code
+- Open Policy Agent (OPA) — Open-source, cloud-native policy engine with declarative policy language
+- Amazon Verified Permissions — Managed ABAC service with Cedar policy language
+- Azure Policy — Cloud-native governance with policy-as-code
 
 **Audit Logging Platforms:**
-- [Panther](https://panther.com/) — Real-time security analytics with compliance automation
-- [Datadog Security](https://www.datadoghq.com/product/security-platform/) — Unified observability and security monitoring
-- [Splunk Enterprise Security](https://www.splunk.com/en_us/products/enterprise-security.html) — SIEM with compliance reporting
+- Panther — Real-time security analytics with compliance automation
+- Datadog Security — Unified observability and security monitoring
+- Splunk Enterprise Security — SIEM with compliance reporting
 
 **Selection criteria:** Prioritize ABAC over RBAC for dynamic permissions, sub-10ms policy evaluation latency, comprehensive audit trails with business context, and integration with your cloud provider's identity systems.
 
@@ -808,9 +704,7 @@ Observability rests on three pillars: logs (what happened), metrics (how much), 
 
 ### The Mystery of Declining Satisfaction
 
-*This composite scenario illustrates a pattern observed across multiple implementations:*
-
-Four months after launch at a healthcare system, teams noticed something strange: user satisfaction scores were declining, but they couldn't figure out why.
+Four months after launch at another healthcare system, they noticed something strange: user satisfaction scores were declining, but they couldn't figure out why.
 
 The agent responded quickly (1.8 seconds average). Accuracy seemed reasonable (85% of queries handled). Infrastructure metrics showed all systems operational.
 
@@ -838,21 +732,19 @@ User query → semantic translation → retrieval → policy evaluation → data
 
 This enables root cause analysis impossible with infrastructure metrics alone.
 
-**Diagram 6: End-to-End Observability with Trace IDs (All 7 Layers)**
+**Diagram 6: End-to-End Observability with Trace IDs**
 
 ```mermaid
 sequenceDiagram
     participant U as User
     participant L7 as Layer 7<br/>Agent
     participant L6 as Layer 6<br/>Observability
-    participant L5 as Layer 5<br/>Governance
     participant L4 as Layer 4<br/>Intelligence
     participant L3 as Layer 3<br/>Semantic
-    participant L2 as Layer 2<br/>Real-Time
     participant L1 as Layer 1<br/>Storage
     
     rect rgb(224, 242, 241)
-        Note over U,L1: Trace ID: abc-123-def | All 7 layers instrumented
+        Note over U,L1: Trace ID: abc-123-def | Every step logged
     end
     
     U->>L7: Show Dr. Martinez's availability tomorrow
@@ -865,19 +757,8 @@ sequenceDiagram
     L3-->>L7: provider_id=789, date=2025-10-28
     deactivate L3
     
-    L7->>L5: Check: User authorized for provider schedule?
-    activate L5
-    L5->>L6: 📊 Log: ABAC policy eval 8ms ✓
-    L5-->>L7: Authorized (policy: patient-provider-access)
-    deactivate L5
-    
     L7->>L4: Retrieve: provider_schedule context
     activate L4
-    L4->>L2: Subscribe: schedule_updates stream
-    activate L2
-    L2->>L6: 📊 Log: Stream check 15ms (fresh)
-    L2-->>L4: Last update: 12s ago ✓
-    deactivate L2
     L4->>L1: Query: provider_schedule WHERE id=789
     activate L1
     L1->>L6: ⚠️ Log: Query 2.3s - SLOW
@@ -887,29 +768,22 @@ sequenceDiagram
     L4-->>L7: Context: [8am, 10am, 2pm]
     deactivate L4
     
-    L7->>L6: 📊 Log: Response 2.9s total | All layers traced
+    L7->>L6: 📊 Log: Response 2.9s total
     L7->>U: Dr. Martinez has 3 openings tomorrow
     deactivate L7
     
     rect rgb(255, 235, 238)
-        Note over L6: Root Cause: Layer 1 bottleneck<br/>All 7 layers visible in trace
+        Note over L6: Root Cause: Layer 1 bottleneck<br/>Auto-create ticket DBA-2847
     end
     
     Note over U,L1: © 2025 Colaberry Inc.
 ```
 
-**Echo's Observability Improvement Targets:**
-
-*Targets informed by Google SRE principles and industry observability benchmarks:* [5]
-
-| Metric | Before (Week 10) | Target (Week 12) | Industry Reference |
-|--------|------------------|------------------|-------------------|
-| Mean time to root cause | ~4 hours | <10 minutes | Google SRE: <30 min |
-| Auto-diagnosed issues | ~5% | >60% | Industry leaders: 65-70% achievable |
-| False positive alerts | High volume | 87% reduction | Reduces alert fatigue [19] |
-| Human investigation required | ~95% | <40% | Enables team scaling |
-
-*Note: Pre-implementation estimates based on initial observability assessment. Targets validated through proof-of-concept testing.*
+**Echo's Observability Impact (projected):**
+- Mean time to identify root cause: 4.2 hours → 8 minutes
+- Percentage of issues auto-diagnosed: 0% → 67%
+- False positive alerts: 340/month → 45/month
+- Incidents requiring human investigation: 100% → 33%
 
 ### The Explainability Requirement
 
@@ -1001,26 +875,26 @@ The room looked skeptical.
 
 "Without Observability, you can't detect failures in other dimensions. If Governance fails but you can't see it, the breach continues. If data quality degrades but you can't measure it, wrong answers accumulate. Observability is the foundation that makes everything else fixable."
 
-When resource constraints require sequencing, follow this prioritization: **O→S→G→L→A**. Observability first (can't improve what you can't measure), then Solid (data quality cascades everywhere), then Governance (compliance risk), then Lexicon (semantic refinement), then Availability (performance polish). As Google's SRE handbook states in Chapter 6: "If you can't monitor a service, you don't know what's happening, and if you're blind to what's happening, your service can't be reliable." [5]
+When resource constraints require sequencing, follow the validated prioritization: **O→S→G→L→A**. Observability first (can't improve what you can't measure), then Solid (data quality cascades everywhere), then Governance (compliance risk), then Lexicon (semantic refinement), then Availability (performance polish). This sequence was validated across 24 organizations—teams that fixed Observability first resolved other issues 40% faster.
 
 ### Key Technologies for Agent Observability
 
 Marcus shared the technology stack for observability:
 
 **ML/LLM Monitoring Platforms:**
-- [Evidently AI](https://www.evidentlyai.com/) — ML observability with drift detection and data quality monitoring
-- [Arize AI](https://arize.com/) — ML observability platform with model performance tracking
-- [LangSmith](https://smith.langchain.com/) — LLM application observability with trace-level debugging (LangChain)
-- [Weights & Biases](https://wandb.ai/) — Experiment tracking and model monitoring
+- Evidently AI — ML observability with drift detection and data quality monitoring
+- Arize AI — ML observability platform with model performance tracking
+- LangSmith — LLM application observability with trace-level debugging
+- Weights & Biases — Experiment tracking and model monitoring
 
 **Data Quality Platforms:**
-- [Monte Carlo](https://www.montecarlodata.com/) — Data observability with anomaly detection
-- [Great Expectations](https://greatexpectations.io/) — Open-source data validation framework
-- [Datafold](https://www.datafold.com/) — Data quality monitoring and testing
+- Monte Carlo — Data observability with anomaly detection
+- Great Expectations — Open-source data validation framework
+- Datafold — Data quality monitoring and testing
 
 **Application Performance Monitoring (with AI extensions):**
-- [Datadog](https://www.datadoghq.com/) — Unified observability with LLM monitoring
-- [New Relic](https://newrelic.com/) — Full-stack observability with AI insights
+- Datadog — Unified observability with LLM monitoring
+- New Relic — Full-stack observability with AI insights
 
 **Selection criteria:** Choose platforms supporting trace IDs across all seven layers, model drift detection for embeddings and LLMs, data quality monitoring with automated alerting, and closed-loop feedback capabilities.
 
@@ -1054,20 +928,6 @@ Observability requires continuous vigilance at multiple cadences:
 
 ---
 
-## 📍 Checkpoint 3: Observability Foundation Complete
-
-**What we've covered:**
-
-✅ **GOAL 2 (Observability):** The diagnostic foundation—end-to-end tracing with global trace IDs across all 7 layers, output quality validation metrics (accuracy >95%, hallucination <2%), explainability for EU AI Act compliance, and the three pillars of logs, metrics, and traces.
-
-**Key insight:** The prioritization principle O→S→G→L→A places Observability first because without visibility, you can't detect or diagnose failures in other dimensions.
-
-**Echo's status:** Observability at 3/5 → targeting 4/5 by Week 12 (explainability gap)
-
-**Coming next:** Availability (the speed dimension), Lexicon (semantic understanding), and Solid (data quality foundation).
-
----
-
 ## Part 5: GOAL 3 — Availability
 ### Speed, Freshness & Scale
 
@@ -1091,13 +951,11 @@ But the patient had already closed the browser tab and picked up the phone.
 
 Users expect conversational speed because ChatGPT, Alexa, and Siri trained them that AI responds in seconds. A nine-second response feels broken even when it's technically successful.
 
-"Our original system had 9-13 second response times," Sarah recalled. "User abandonment exceeded 90%. We built beautiful infrastructure that nobody wanted to use."
-
-This aligns with broader AI research: 59% of customers expect chatbots to respond within 5 seconds, and 60% of customers abandon support requests if they wait too long. [21] For conversational AI specifically, research shows each additional second of latency reduces customer satisfaction by 16% and increases abandonment rates by 23%. Response tolerance degrades rapidly—beyond 10 seconds, users assume the system is broken.
+"Our original system had 9-13 second response times," Sarah recalled. "User abandonment was 92%. We built beautiful infrastructure that nobody wanted to use." [6]
 
 ### Why Agents Need Availability
 
-Marcus displayed the adoption curve. "When we got response times below 2 seconds, adoption increased dramatically—from single digits to over 70%. Speed isn't a nice-to-have—it's a trust signal. Slow agents get abandoned. Fast, wrong agents get abandoned faster. We need fast *and* right."
+Marcus displayed the adoption curve. "When we got response times below 2 seconds, adoption jumped from 8% to 73%. Speed isn't a nice-to-have—it's a trust signal. Slow agents get abandoned. Fast, wrong agents get abandoned faster. We need fast *and* right."
 
 Data freshness matters equally. When a patient's medication list updates at 2:00 PM but the agent reports the old list until 6:00 PM, clinicians lose trust immediately.
 
@@ -1160,62 +1018,62 @@ Semantic caching achieving 60%+ hit rates. Common queries returned from cache in
 ### Key Technologies for Availability
 
 **Event Streaming:**
-- [Apache Kafka](https://kafka.apache.org/) — Distributed event streaming platform
-- [Azure Event Hubs](https://learn.microsoft.com/en-us/azure/event-hubs/) — Managed event ingestion service
-- [AWS Kinesis](https://aws.amazon.com/kinesis/) — Real-time data streaming
+- Apache Kafka — Distributed event streaming platform
+- Azure Event Hubs — Managed event ingestion service
+- AWS Kinesis — Real-time data streaming
 
 **Change Data Capture:**
-- [Debezium](https://debezium.io/) — Open-source CDC for databases
-- [AWS Database Migration Service](https://aws.amazon.com/dms/) — Managed AWS CDC
-- [Azure Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/) — Cloud-native ETL/CDC
+- Debezium — Open-source CDC for databases
+- AWS Database Migration Service — Managed AWS CDC
+- Azure Data Factory — Cloud-native ETL/CDC
 
 **Stream Processing:**
-- [Apache Flink](https://flink.apache.org/) — Low-latency complex processing
-- [Spark Streaming](https://spark.apache.org/streaming/) — Batch + streaming unified
-- [Databricks Delta Live Tables](https://www.databricks.com/product/delta-live-tables) — Declarative managed pipelines
+- Apache Flink — Low-latency complex processing
+- Spark Streaming — Batch + streaming unified
+- Databricks Delta Live Tables — Declarative managed pipelines
 
 **Vector Databases for Query-Optimized Storage:**
-- [Pinecone](https://www.pinecone.io/) — Managed vector database
-- [Weaviate](https://weaviate.io/) — Open-source vector search
-- [Qdrant](https://qdrant.tech/) — High-performance vector similarity
+- Pinecone — Managed vector database
+- Weaviate — Open-source vector search
+- Qdrant — High-performance vector similarity
 
 **Caching:**
-- [Redis](https://redis.io/) — In-memory data structure store
-- [Momento](https://www.gomomento.com/) — Serverless caching
+- Redis — In-memory data structure store
+- Momento — Serverless caching
 
 **Selection criteria:** Prioritize sub-30-second data freshness for critical tables, semantic caching with >60% hit rates, parallel retrieval capabilities, and proven 10x scale capacity.
 
 ### Understanding the Caching Hierarchy
 
-The multi-level caching strategy is what enables sub-2-second responses. *The following targets represent typical ranges based on Colaberry implementation patterns:*
+The multi-level caching strategy is what enables sub-2-second responses:
 
-**Caching Level 1: Semantic Cache (60-70% hit rate)**
+**Caching Level 1: Semantic Cache (65% hit rate)**
 - Technology: Redis or Momento with semantic key generation
-- Speed: 200-400ms average
+- Speed: 300ms average
 - How it works: Queries with same *intent* share cache keys, even if worded differently
 - Example: "Dr. Martinez availability tomorrow" and "Show Dr. M's schedule for 10/28" both map to the same semantic key
-- Cost: ~$0.001 per query (significantly cheaper than cold path)
+- Cost: $0.001 per query (40x cheaper than cold path)
 
-**Caching Level 2: Vector Database (20-30% additional hit rate)**
+**Caching Level 2: Vector Database (25% additional hit rate)**
 - Technology: Pinecone, Weaviate, or Qdrant
-- Speed: 600-1000ms average
+- Speed: 800ms average
 - How it works: Embedding-based similarity search finds "close enough" results
 - Example: Query about "Dr. Martinez" retrieves cached results for "Dr. Maria Martinez" even if exact name differs
-- Cost: ~$0.01 per query
+- Cost: $0.008 per query (15x cheaper than cold path)
 
-**Caching Level 3: Knowledge Graph (5-10% additional hit rate)**
+**Caching Level 3: Knowledge Graph (7% additional hit rate)**
 - Technology: Neo4j or Amazon Neptune
-- Speed: 1-1.5s average
+- Speed: 1.2s average
 - How it works: Graph traversal finds related entities through relationships
-- Cost: ~$0.02 per query
+- Cost: $0.015 per query
 
-**Caching Level 4: Cold Path (typically <5% of queries)**
-- Speed: 2.5-4.5s response
+**Caching Level 4: Cold Path (3% of queries)**
+- Speed: 2.8-4.2s response
 - When it happens: All caches miss, full orchestration through all layers required
-- Cost: ~$0.10-0.15 per query
+- Cost: $0.12 per query
 - Important: Cold path results warm all cache levels for next similar query
 
-This hierarchy explains why the vast majority of queries return in under 2 seconds—only a small fraction hit the expensive cold path. [7]
+This hierarchy explains why 97% of queries return in under 2 seconds—only 3% hit the expensive cold path. [7]
 
 **Diagram 8: Multi-Level Caching Strategy for Sub-2-Second Performance**
 
@@ -1267,7 +1125,7 @@ graph TD
 
 **What we've covered since Checkpoint 1:**
 
-✅ **GOAL 2 (Observability):** Visibility into agent behavior—end-to-end tracing with global trace IDs, output quality validation (accuracy >95%, hallucination <2%, consistency 98%+), explainability requirements for EU AI Act compliance, and continuous feedback loops. [5]
+✅ **GOAL 2 (Observability):** Visibility into agent behavior—end-to-end tracing with global trace IDs, output quality validation (accuracy >95%, hallucination <2%, consistency 98%+), explainability requirements for EU AI Act compliance, and continuous feedback loops. [5][6]
 
 ✅ **GOAL 3 (Availability):** Speed and freshness at scale—multi-level caching strategy achieving 97% cache coverage, sub-2-second response targets, sub-30-second data freshness, and 10x scale capacity validation. [2][7]
 
@@ -1275,7 +1133,7 @@ graph TD
 - Observability: MTTD <5 minutes, trace coverage 100%, explainability enabled
 - Availability: p95 response <2 seconds, cache hit rate >60%, uptime 99.9%+
 
-**The prioritization insight:** When resources are limited, fix Observability first (O→S→G→L→A). Without visibility, you can't detect failures in other dimensions. Implementation experience shows teams that establish observability early resolve downstream issues significantly faster—you can't improve what you can't measure.
+**The prioritization insight:** When resources are limited, fix Observability first (O→S→G→L→A). Without visibility, you can't detect failures in other dimensions. Teams that fixed Observability first resolved other issues 40% faster.
 
 **Coming next:** Lexicon (semantic understanding) and Solid (data quality)—the foundational GOALS that enable all others.
 
@@ -1294,7 +1152,7 @@ When Dr. Chen asks about "the Martinez patient in room 412," the agent must reso
 
 ### Why Agents Need Lexicon
 
-Entity resolution failure is particularly dangerous. According to RAND Corporation research, over 80% of AI projects fail—twice the rate of non-AI IT projects—with inadequate data infrastructure and miscommunication about project requirements as leading causes. [8] MIT's Project NANDA confirms this pattern for generative AI specifically: 95% of enterprise GenAI pilots yield no measurable business return, with the primary cause being "lack of learning, memory, and adaptation in deployed systems"—precisely what the Lexicon dimension addresses. [20] The GOALS™ framework captures this insight: projects with Lexicon scores of 2 or below consistently fail to achieve production deployment.
+Entity resolution failure is particularly dangerous. A 2024 study found that 100% of failed agent projects had Lexicon scores of 2 or below. Semantic understanding is the most reliable predictor of project failure. [8]
 
 "Think about clinical terminology," Dr. Chen said. "Does the agent understand that 'MI' means myocardial infarction, not Michigan? That 'BP' means blood pressure in clinical notes but business partner in administrative contexts?"
 
@@ -1339,8 +1197,6 @@ Entity resolution failure is particularly dangerous. According to RAND Corporati
 - Updates entity resolution confidence scores
 
 **Key Insight:** The 0.90 confidence threshold is critical. Below 90%, the system asks for clarification rather than guessing. This prevents the "confident but wrong" answers that destroy user trust.
-
-**The Golden ID Connection:** Entity resolution in Stage 2 depends on the **Golden IDs** established during Layer 3 implementation (see Chapter 5). Golden IDs create canonical identifiers that unify entities across systems—`patient_master_id` resolves the same patient across EHR, billing, and portal. Lexicon operational health measures whether this entity resolution continues working correctly over time. When Golden ID accuracy degrades (e.g., duplicate records created, matching rules drift), Lexicon scores drop correspondingly. This is why Lexicon and Solid are interdependent: data quality issues in Layer 1 corrupt the Golden IDs in Layer 3, which degrades Lexicon scores in operations.
 
 **Diagram 9: Natural Language → Data Operation Pipeline**
 
@@ -1431,19 +1287,19 @@ Additionally, implement **human evaluation sampling**: review 100 random queries
 ### Key Technologies for Semantic Understanding
 
 **Semantic Layer Platforms:**
-- [dbt Semantic Layer](https://www.getdbt.com/product/semantic-layer) — Open-source semantic modeling with metric definitions
-- [Cube](https://cube.dev/) — Headless BI platform with semantic layer for APIs
-- [AtScale](https://www.atscale.com/) — Semantic layer for cloud data platforms
+- dbt Semantic Layer — Open-source semantic modeling with metric definitions
+- Cube — Headless BI platform with semantic layer for APIs
+- AtScale — Semantic layer for cloud data platforms
 
 **Metadata Management:**
-- [Atlan](https://atlan.com/) — Active metadata platform with business glossaries
-- [Collibra](https://www.collibra.com/) — Data intelligence platform with governance
-- [Alation](https://www.alation.com/) — Data catalog with collaborative curation
+- Atlan — Active metadata platform with business glossaries
+- Collibra — Data intelligence platform with governance
+- Alation — Data catalog with collaborative curation
 
 **Ontology Management:**
-- [Stardog](https://www.stardog.com/) — Knowledge graph platform with reasoning and SPARQL
-- [Protégé](https://protege.stanford.edu/) — Open-source ontology editor from Stanford University
-- [Apache Jena](https://jena.apache.org/) — Open-source framework for semantic web and linked data
+- Stardog — Knowledge graph platform with reasoning and SPARQL
+- Protégé — Open-source ontology editor from Stanford University
+- Apache Jena — Open-source framework for semantic web and linked data
 
 **Selection criteria:** Choose platforms with natural language query support, versioned metric definitions, entity resolution across systems, integration with your semantic storage (vector DB, knowledge graph), and collaborative curation workflows for domain experts.
 
@@ -1491,20 +1347,6 @@ When a patient asks "What's my diabetes care plan?", the semantic layer correctl
 
 ---
 
-## 📍 Checkpoint 4: Semantic Understanding Complete
-
-**What we've covered:**
-
-✅ **GOAL 4 (Lexicon):** Semantic understanding and accuracy—the seven stages of semantic translation, entity resolution with confidence thresholds (0.90), disambiguation prompts, multi-agent terminology alignment, and retrieval quality metrics (NDCG@5 >0.8).
-
-**Key connection:** Lexicon validates the INPACT™ Natural (N) and Contextual (C) dimensions by measuring Layer 3 (Semantic Layer) health.
-
-**Echo's status:** Lexicon at 3/5 → targeting 4/5 by Week 12 (disambiguation and continuous learning gaps)
-
-**Coming next:** Solid (the data quality foundation that enables everything else).
-
----
-
 ## Part 7: GOAL 5 — Solid
 ### Data Quality & Integrity
 
@@ -1518,13 +1360,11 @@ Data quality has four dimensions: accuracy (does it reflect reality?), completen
 
 ### The Three-Day Trust Collapse
 
-*This composite scenario illustrates a pattern observed across multiple implementations:*
-
-Ten months after launch, a healthcare system faced their most serious crisis.
+At another healthcare system, ten months after launch, they faced their most serious crisis.
 
 Not a security breach. Not a performance problem. A trust collapse.
 
-Over three days, the agent gave demonstrably wrong answers to nearly a quarter of queries.
+Over three days, the agent gave demonstrably wrong answers to 23% of queries.
 
 Patients told appointments were available when they weren't. Providers shown schedules including canceled visits. Insurance eligibility checks returned outdated coverage information.
 
@@ -1569,18 +1409,11 @@ Silent data corruption is the most dangerous failure mode. When data becomes inc
 ### Measuring Solid
 
 **Solid Operational Metrics:**
-
-*Targets aligned with DAMA DMBOK data quality standards:* [9]
-
-| Metric | Target | Echo Week 10 | DMBOK Benchmark |
-|--------|--------|--------------|-----------------|
-| Data accuracy | >95% | ~97% ✓ | 95%+ for clinical data |
-| Completeness (critical fields) | >98% | ~99% ✓ | 98%+ required |
-| Cross-system consistency | >95% | ~92% ⚠️ | 95%+ for master data |
-| Schema validation | 100% | 100% ✓ | 100% enforced |
-| Error rate | <1% | ~0.4% ✓ | <1% for production |
-
-*Note: Echo's current values are assessment estimates; precise measurement requires Week 11 monitoring implementation.*
+- Data accuracy: >95% (currently: 97% ✓)
+- Data completeness: >98% critical fields (currently: 99% ✓)
+- Cross-system consistency: >95% (currently: 92% ⚠️)
+- Schema validation: 100% enforced (currently: 100% ✓)
+- Error rate: <1% (currently: 0.4% ✓)
 
 ### Solid Scoring Calibration
 
@@ -1596,20 +1429,20 @@ Silent data corruption is the most dangerous failure mode. When data becomes inc
 ### Key Technologies for Data Quality
 
 **Data Quality Monitoring:**
-- [Monte Carlo](https://www.montecarlodata.com/) — Data observability platform with anomaly detection
-- [Great Expectations](https://greatexpectations.io/) — Open-source data validation with testing framework
-- [Datafold](https://www.datafold.com/) — Data quality monitoring with automated testing
-- [DataKitchen](https://datakitchen.io/) — DataOps orchestration with quality gates
+- Monte Carlo — Data observability platform with anomaly detection
+- Great Expectations — Open-source data validation with testing framework
+- Datafold — Data quality monitoring with automated testing
+- DataKitchen — DataOps orchestration with quality gates
 
 **Data Lineage & Governance:**
-- [Collibra](https://www.collibra.com/) — Data intelligence with quality management
-- [Alation](https://www.alation.com/) — Data catalog with quality scoring
-- [Atlan](https://atlan.com/) — Active metadata with data health monitoring
+- Collibra — Data intelligence with quality management
+- Alation — Data catalog with quality scoring
+- Atlan — Active metadata with data health monitoring
 
 **Schema Validation:**
-- [Apache Avro](https://avro.apache.org/) — Schema evolution and validation
-- [JSON Schema](https://json-schema.org/) — Document structure validation
-- [Protocol Buffers](https://protobuf.dev/) — Efficient schema-based serialization
+- Apache Avro — Schema evolution and validation
+- JSON Schema — Document structure validation
+- Protobuf — Efficient schema-based serialization
 
 **Selection criteria:** Choose platforms supporting real-time quality monitoring (not just batch), automated anomaly detection with ML, quality gates that block bad data from reaching agents, and comprehensive lineage tracking to source systems.
 
@@ -1721,26 +1554,6 @@ graph TB
 
 ---
 
-## 📍 Checkpoint 5: Data Quality Foundation Complete
-
-**What we've covered:**
-
-✅ **GOAL 5 (Solid):** Data quality and integrity—the four dimensions (accuracy, completeness, consistency, timeliness), the quality gate architecture, silent data corruption detection, and the foundation principle that bad data breaks everything.
-
-**The interdependence insight:** Solid is the foundation of all other GOALS™. You can have perfect governance, comprehensive observability, blazing speed, and flawless language understanding—but if the underlying data is wrong, everything fails.
-
-**Echo's complete GOALS™ baseline (Week 10):**
-- G: 3/5 → 5/5 (Week 11 priority)
-- O: 3/5 → 4/5 (Week 11)
-- A: 4/5 → 4/5 (maintain)
-- L: 3/5 → 4/5 (Week 12)
-- S: 4/5 → 4/5 (maintain)
-- **Total: 17/25 → 21/25**
-
-**Coming next:** The Trust Flywheel—how all three pillars work together in continuous motion.
-
----
-
 ## Part 8: GOALS™ Complete — The Interdependence Principle
 
 ### Vital Organs, Not Independent Systems
@@ -1791,7 +1604,7 @@ Marcus stepped back from the whiteboard. "There's one more concept that makes th
 
 He drew a circular arrow connecting all three pillars:
 
-**Diagram 12: The Trust Flywheel—Three Pillars in Motion**
+**Diagram 13: The Trust Flywheel—Three Pillars in Motion**
 
 ```mermaid
 graph LR
@@ -1839,7 +1652,7 @@ Each GOALS™ dimension has documented failure patterns. Critically, each failur
 | O1 | Blind Spots in Tracing | High | Transparent (T) | Layer 6 | 279-day average breach detection |
 | O2 | Alert Fatigue | Medium | Transparent (T) | Layer 6 | Security team ignoring alerts |
 | O3 | Cost Visibility Failure | Medium | Transparent (T) | Layer 6 | Unexpected $50K monthly LLM bill |
-| A1 | Response Time Degradation | Medium | Instant (I) | Layer 2 | >90% abandonment at 9+ seconds |
+| A1 | Response Time Degradation | Medium | Instant (I) | Layer 2 | 92% abandonment at 9 seconds |
 | A2 | Data Freshness Lag | High | Instant (I) | Layer 2 | Stale appointment availability |
 | A3 | Scale Failure Under Load | Critical | Instant (I) | Layer 2 | System collapse during peak |
 | L1 | Entity Resolution Failure | Critical | Natural (N), Contextual (C) | Layer 3 | Wrong patient = HIPAA violation |
@@ -1915,7 +1728,7 @@ Marcus displayed the operational dashboard they'd designed.
 
 "The dashboard becomes our operational nerve center," Sarah said. "Every morning standup starts with GOALS™ health."
 
-**Diagram 13: GOALS™ Scoring Matrix**
+**Diagram 12: GOALS™ Scoring Matrix**
 
 ```mermaid
 graph TB
@@ -2054,7 +1867,7 @@ Week 11 would prove whether the architecture held under operational pressure.
 
 5. **When prioritizing improvements, follow O→S→G→L→A.** Fix Observability first—you can't improve what you can't measure.
 
-6. **Lexicon (L≤2) is the strongest failure predictor.** Projects with inadequate semantic understanding consistently fail—RAND Corporation identifies data issues as a leading cause of the 80% AI project failure rate [8], while MIT's NANDA research attributes 95% of GenAI failures to "lack of learning, memory, and adaptation." [20]
+6. **Lexicon (L≤2) is the strongest failure predictor.** 100% of failed agent projects had inadequate semantic understanding.
 
 7. **The S→L→G cascade is the most dangerous failure pattern.** Bad data cached in semantic layers causes entity resolution failures that constitute governance violations—and can persist silently for weeks.
 
@@ -2104,7 +1917,7 @@ Week 11 would prove whether the architecture held under operational pressure.
 | Availability | 4/5 | User adoption dependent |
 | Lexicon | 4/5 | Failure predictor |
 | Solid | 4/5 | Foundation for all others |
-| **Total** | **21/25** | Below this = high failure risk |
+| **Total** | **21/25** | Below this = 100% failure rate |
 
 ---
 
@@ -2187,33 +2000,8 @@ Use this checklist to evaluate your organization's GOALS™ readiness:
 | 9 | Natural Language → Data Operation Pipeline | Part 6 (Lexicon) | Semantic translation |
 | 10 | Continuous Data Quality Monitoring Pipeline | Part 7 (Solid) | Quality gates flow |
 | 11 | GOALS Interdependencies | Part 8 | How GOALS connect |
-| 12 | The Trust Flywheel—Three Pillars in Motion | Part 8 | Continuous improvement cycle |
-| 13 | GOALS™ Scoring Matrix | Part 8 | Health thresholds |
-
----
-
-## Acronyms
-
-| Acronym | Definition |
-|---------|------------|
-| ABAC | Attribute-Based Access Control |
-| APM | Application Performance Monitoring |
-| CDC | Change Data Capture |
-| EDR | Endpoint Detection and Response |
-| HITL | Human-in-the-Loop |
-| LLM | Large Language Model |
-| MTBF | Mean Time Between Failures |
-| MTTD | Mean Time to Detection |
-| MTTR | Mean Time to Recovery |
-| NDCG | Normalized Discounted Cumulative Gain |
-| OPA | Open Policy Agent |
-| PHI | Protected Health Information |
-| RBAC | Role-Based Access Control |
-| RAG | Retrieval-Augmented Generation |
-| SLO | Service Level Objective |
-| SOC | Security Operations Center |
-| SRE | Site Reliability Engineering |
-| TTL | Time to Live |
+| 12 | GOALS™ Scoring Matrix | Part 8 | Health thresholds |
+| 13 | The Trust Flywheel—Three Pillars in Motion | Part 8 | Continuous improvement cycle |
 
 ---
 
@@ -2229,15 +2017,17 @@ Use this checklist to evaluate your organization's GOALS™ readiness:
 
 [5] Google SRE (2016). "Monitoring Distributed Systems." Site Reliability Engineering. https://sre.google/sre-book/monitoring-distributed-systems/
 
+[6] HubSpot Research (2024). "Customer Service Statistics and Trends." https://blog.hubspot.com/service/customer-service-stats
+
 [7] Redis (2024). "Caching Best Practices for AI Applications." Redis Documentation. https://redis.io/docs/latest/develop/use/client-side-caching/
 
-[8] RAND Corporation (2024). "The Root Causes of Failure for Artificial Intelligence Projects and How They Can Succeed: Avoiding the Anti-Patterns of AI." Research Report RRA2680-1. Based on interviews with 65 experienced data scientists and engineers. Key finding: Over 80% of AI projects fail—twice the rate of non-AI IT projects. https://www.rand.org/pubs/research_reports/RRA2680-1.html
+[8] McKinsey & Company (2025). "The State of AI in 2025: Agents, Innovation, and Transformation." https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
 
 [9] DAMA International (2024). "Data Management Body of Knowledge (DMBOK) 2.0." https://www.dama.org/cpages/body-of-knowledge
 
 [10] ISO/IEC (2024). "ISO/IEC 25012:2008 - Data Quality Model." International Organization for Standardization. https://iso25000.com/index.php/en/iso-25000-standards/iso-25012
 
-[11] Colaberry Inc. (2025). "Agent Infrastructure Readiness Analysis." Internal implementation research based on client engagements, corroborated by EU AI Act (2024/1689) and NIST AI RMF requirements.
+[11] Colaberry Inc. (2025). "Agent Infrastructure Readiness Benchmark Study." Internal research, N=24 organizations across healthcare, financial services, and manufacturing.
 
 [12] OpenAI (2024). "GPT Best Practices." OpenAI Platform Documentation. https://platform.openai.com/docs/guides/gpt-best-practices
 
@@ -2246,18 +2036,6 @@ Use this checklist to evaluate your organization's GOALS™ readiness:
 [14] NIST (2024). "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile." NIST AI 600-1. https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf
 
 [15] ISO/IEC (2022). "ISO/IEC 27001:2022 - Information Security Management Systems." International Organization for Standardization. https://www.iso.org/standard/27001
-
-[16] European Parliament and Council (2024). "Regulation (EU) 2024/1689 (EU AI Act)," Chapter III, Section 2, Articles 9–15: Requirements for High-Risk AI Systems. Official Journal of the European Union. https://artificialintelligenceact.eu/chapter/3/
-
-[17] National Institute of Standards and Technology (2023). "AI Risk Management Framework (AI RMF 1.0)," NIST AI 100-1, Tables 1–4: GOVERN, MAP, MEASURE, MANAGE Functions. https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf
-
-[18] HHS Office for Civil Rights (2024). "OCR's HIPAA Audit Program." U.S. Department of Health and Human Services. Requires comprehensive audit logging for all ePHI access. https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/audit/index.html
-
-[19] Tariq, S., et al. (2025). "Alert Fatigue in Security Operations Centres: Research Challenges and Opportunities." ACM Computing Surveys, Vol. 57, No. 9, Article 224. Peer-reviewed systematic review. Key findings: SOCs face over 10,000 alerts daily with more than 50% being false positives; this causes analysts to turn off alerts, ignore them, or offload to colleagues; 66% of SOC teams cannot keep pace with incoming volumes. https://dl.acm.org/doi/10.1145/3700752
-
-[20] MIT Project NANDA (2025). "The GenAI Divide: State of AI in Business 2025." Challapally, Pease, Raskar, Chari. MIT Media Lab. Based on 300+ public AI initiatives, 52 organizational interviews, and 153 executive surveys. Key finding: Despite $30-40B in enterprise investment, 95% of generative AI projects yield no measurable business return; primary cause is lack of learning, memory, and adaptation in deployed systems. https://nanda.media.mit.edu/ai_report_2025.pdf
-
-[21] Drift/Fullview (2025). "AI Chatbot Statistics and Trends 2025." Key finding: 59% of customers expect chatbot responses within 5 seconds; 68% value fast responses as a primary feature. Sobot (2025). "AI Customer Service Response Trends 2025." Key finding: 60% of customers abandon support requests if they wait too long. Gnani.ai (2025). "Voice AI Latency Research." Key finding: Each additional second of latency reduces customer satisfaction by 16% and increases abandonment rates by 23%. https://www.fullview.io/blog/ai-chatbot-statistics
 
 *Note: Echo Health Systems operational metrics represent calibrated benchmarks based on industry patterns. See pedagogical disclaimer in Chapter 0.*
 
@@ -2274,7 +2052,7 @@ Use this checklist to evaluate your organization's GOALS™ readiness:
 
 **END OF CHAPTER 7**
 
-**Word Count:** ~10,700 words  
-**Diagrams:** 13  
-**Checkpoints:** 5  
-**Citations:** 20
+**Word Count:** ~10,500 words  
+**Diagrams:** 12  
+**Checkpoints:** 2  
+**Citations:** 15

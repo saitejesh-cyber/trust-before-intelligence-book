@@ -918,7 +918,7 @@ Marcus checked the governance log. All three agents had passed ABAC evaluation. 
 
 "This is what we built for," Sarah said quietly. "Three agents, one response, complete care coordination."
 
-The room was silent for a moment. Then Jamie grinned. "Architecture complete."
+The room was silent for a moment. Then Jamie grinned. "**The Architecture of Trust** is operational. Now we need to prove it would stay that way."
 
 **Diagram 9: Multi-Agent Query Flow—Maria Santos Discharge**
 

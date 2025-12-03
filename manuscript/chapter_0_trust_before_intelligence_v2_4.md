@@ -266,7 +266,7 @@ GOALS™ is the third pillar of the Architecture of Trust—the operational fram
 
 ## Framework Integration: The Architecture of Trust in Action
 
-These aren't three separate frameworks to implement independently. They're three pillars of a unified architecture, each reinforcing the others:
+This integration creates what we call "The Architecture of Trust" — not three separate frameworks, but three pillars of a unified structure, each reinforcing the others:
 
 - **INPACT™ → 7-Layer:** Needs drive architecture decisions. "Instant" (I) requires Layer 2 real-time fabric. "Natural" (N) requires Layers 3-4 semantic and graph layers.
 
@@ -304,6 +304,12 @@ graph TB
 **Figure 0.3: The Architecture of Trust Triad—Three Pillars Working Together**
 
 This architecture rests on three pillars working in harmony. Each pillar supports and validates the others. INPACT™ defines what agents need—those needs drive 7-Layer architecture decisions. The 7-Layer Architecture shows how to build infrastructure that delivers INPACT™ needs. GOALS™ validates that both pillars remain structurally sound as the system scales to production.
+
+**The Trust Equation:**
+
+> **TRUSTED AGENTS = INPACT™ + 7-Layer Architecture + GOALS™**
+
+This equation captures the book's thesis. Chapters 1-2 define INPACT™—what agents need. Chapters 3-6 construct the 7-Layer Architecture—how to build it. Chapters 7-8 establish GOALS™—how to sustain it. By Chapter 8, Echo proves all three.
 
 **Echo's transformation proves the architecture works:**
 
