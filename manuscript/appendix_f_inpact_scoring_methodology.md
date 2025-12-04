@@ -407,7 +407,7 @@
 - Permitted 2/6 = **deployment blocker**: HIPAA audit failure, regulatory risk, cannot deploy regardless of other scores
 
 **Business Impact:**
-- Correct choice: Deployed on schedule with compliance approval, 85/100 overall score
+- Correct choice: Deployed on schedule with compliance approval, 86/100 overall score
 - Wrong choice: Would have 87/100 score but missed HIPAA deadline → blocked deployment despite better MLOps
 
 **Post-Deployment Roadmap:**
@@ -471,7 +471,7 @@ For each dimension:
 
 ### For Communication
 
-**With Executives:** Use total score (28/100 → 85/100) and threshold language ("production-ready at 85+")  
+**With Executives:** Use total score (28/100 → 86/100) and threshold language ("production-ready at 86+")  
 **With Board:** Use prioritization rationale (compliance → adoption → optimization)  
 **With Technical Teams:** Use dimension-specific rubrics to define "done"
 

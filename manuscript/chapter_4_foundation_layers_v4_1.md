@@ -2,13 +2,43 @@
 ## The Architecture of Trust: Foundation Layers
 
 **Book:** Trust Before Intelligence  
-**Subtitle:** Why 95% of Agent Projects Fail—and the Architecture Blueprint That Fixes Infrastructure in 90 Days  
+**Subtitle:** Why 95% of AI Projects Fail—3 Frameworks, 90-Day Fix  
 **Author:** Ram Katamaraja, CEO, Colaberry Inc.  
 **Chapter Length:** ~9,500 words (19 pages)  
 **Version:** 4.1 (Added Gantt timeline diagrams; removed Phase 2 content - Pinecone, Tecton moved to Chapter 5)  
 **Date:** November 26, 2025
 
 ---
+
+<!-- CHAPTER OPENING GRAPHIC -->
+<div style="display: flex; justify-content: center; gap: 20px; margin: 30px 0; flex-wrap: wrap;">
+
+<div style="flex: 1; max-width: 280px; background: linear-gradient(180deg, #fff5f5 0%, #ffebee 100%); border: 3px solid #c62828; border-radius: 10px; padding: 20px;">
+<h3 style="text-align: center; color: #b71c1c; border-bottom: 2px solid #c62828; padding-bottom: 10px; margin-top: 0;">❌ WITHOUT LAYERS 1-2</h3>
+<ul style="list-style: none; padding: 0; margin: 0;">
+<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">Siloed databases — No unified access</li>
+<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">Overnight batch ETL — Stale data</li>
+<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">No vector storage — No semantic search</li>
+<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">Minutes to query — Users abandon</li>
+</ul>
+</div>
+
+<div style="flex: 1; max-width: 280px; background: linear-gradient(180deg, #e0f2f1 0%, #b2dfdb 100%); border: 3px solid #00897b; border-radius: 10px; padding: 20px;">
+<h3 style="text-align: center; color: #004d40; border-bottom: 2px solid #00897b; padding-bottom: 10px; margin-top: 0;">✅ WITH LAYERS 1-2</h3>
+<ul style="list-style: none; padding: 0; margin: 0;">
+<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;"><strong>Layer 1:</strong> Unified multi-modal storage</li>
+<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;"><strong>Layer 2:</strong> Sub-second freshness</li>
+<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;">Vector + Graph ready</li>
+<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;">Under 2s response — Users trust</li>
+</ul>
+</div>
+
+</div>
+
+<div style="background: linear-gradient(135deg, #e0f2f1, #f0fff0); border-left: 5px solid #00897b; padding: 15px 20px; margin: 0 0 30px 0; border-radius: 0 8px 8px 0;">
+<strong style="color: #00695c;">Key Takeaway:</strong> Foundation first. Without Layers 1-2, nothing else works.
+</div>
+<!-- END CHAPTER OPENING GRAPHIC -->
 
 ## SECTION 1: ARCHITECTURE INTRODUCTION
 

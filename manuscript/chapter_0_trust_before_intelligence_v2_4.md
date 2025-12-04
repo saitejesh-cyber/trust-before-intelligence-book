@@ -1,7 +1,7 @@
 # Chapter 0: Trust Before Intelligence
 
 **Book:** Trust Before Intelligence  
-**Subtitle:** Why 95% of Agent Projects Fail—and the Architecture Blueprint That Fixes Infrastructure in 90 Days  
+**Subtitle:** Why 95% of AI Projects Fail—3 Frameworks, 90-Day Fix  
 **Author:** Ram Katamaraja, CEO of Colaberry Inc.  
 **Publisher:** Colaberry Press  
 **Version:** 2.4 (GOALS™ Terminology Update)  
@@ -15,6 +15,43 @@
 **Key Takeaway:** Understanding the Architecture of Trust—three integrated pillars that separate the 5% who succeed from the 95% who fail
 
 ---
+
+<!-- CHAPTER OPENING GRAPHIC -->
+<div style="display: flex; justify-content: center; gap: 20px; margin: 30px 0; flex-wrap: wrap;">
+
+<div style="flex: 1; max-width: 280px; background: linear-gradient(180deg, #fff5f5 0%, #ffebee 100%); border: 3px solid #c62828; border-radius: 10px; padding: 20px;">
+<h3 style="text-align: center; color: #b71c1c; border-bottom: 2px solid #c62828; padding-bottom: 10px; margin-top: 0;">❌ BEFORE: WEEK 0</h3>
+<ul style="list-style: none; padding: 0; margin: 0;">
+<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">3 Failed Pilots</li>
+<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">$2M Spent</li>
+<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">0 Production Agents</li>
+<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">9-13s Response Time</li>
+<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">INPACT™: 28/100</li>
+</ul>
+</div>
+
+<div style="flex: 0 0 100px; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(180deg, #fafafa 0%, #f0f0f0 100%); border: 3px solid #666; border-radius: 10px; padding: 15px;">
+<h3 style="color: #333; margin: 0; font-size: 1.1em;">90 DAYS</h3>
+<div style="font-size: 2.5em; color: #666; margin: 10px 0;">➡️</div>
+</div>
+
+<div style="flex: 1; max-width: 280px; background: linear-gradient(180deg, #e0f2f1 0%, #b2dfdb 100%); border: 3px solid #00897b; border-radius: 10px; padding: 20px;">
+<h3 style="text-align: center; color: #004d40; border-bottom: 2px solid #00897b; padding-bottom: 10px; margin-top: 0;">✅ AFTER: WEEK 12</h3>
+<ul style="list-style: none; padding: 0; margin: 0;">
+<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;">3 Production Agents</li>
+<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;">$1.23M → 477% ROI</li>
+<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;">50,000 Daily Queries</li>
+<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;">1.6s Response Time</li>
+<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;">INPACT™: 89/100</li>
+</ul>
+</div>
+
+</div>
+
+<div style="background: linear-gradient(135deg, #e0f2f1, #f0fff0); border-left: 5px solid #00897b; padding: 15px 20px; margin: 0 0 30px 0; border-radius: 0 8px 8px 0;">
+<strong style="color: #00695c;">Key Takeaway:</strong> <em style="color: #004d40;">"Fix this in 90 days or we're shelving AI."</em> — Dr. Arun Raj, Board Chair
+</div>
+<!-- END CHAPTER OPENING GRAPHIC -->
 
 ## The Crisis: When $40 Billion Can't Buy Trust
 
@@ -62,7 +99,7 @@ Twenty-eight.
 
 Echo Health was a mid-sized regional health system with an impressive footprint: 4 hospitals, 23 outpatient clinics, 847 physicians, 12,000 employees, and 340,000 annual patient encounters. Over fifteen years, Sarah's team had built what they believed was a sophisticated data infrastructure—a pristine SQL Server data warehouse, Azure data lake, Databricks for ML workloads, and strong governance throughout. They had won awards for data excellence at each stage.
 
-Then came the CEO's request: "Can we deploy an AI agent for patient scheduling by Q3?"
+Then came the request from Dr. Arun Raj, Echo's Board Chair. A former cardiologist who had served as CEO before transitioning to the board three years ago, Dr. Raj had a gift for cutting through technical complexity to operational reality. "Can we deploy an AI agent for patient scheduling by Q3?"
 
 Sarah's team spent the next six months and **$2 million** building three pilot agents. What they delivered was technically functional—the code ran, the agents responded, the infrastructure didn't crash. But functional isn't the same as usable, and usable isn't the same as trusted.
 
@@ -76,7 +113,7 @@ Sarah's team spent the next six months and **$2 million** building three pilot a
 
 The board meeting was brutal. Six months of work, $2 million spent, zero production deployments. The CFO, Krish Yadav, asked the question everyone was thinking: "If we have a state-of-the-art data warehouse, a modern data lake, and ML infrastructure that won awards, why can't we make a simple care coordination agent work?"
 
-The CEO set a deadline: "Fix this in 90 days or we're shelving AI for another year."
+Dr. Raj set a deadline: "Fix this in 90 days or we're shelving AI for another year."
 
 Sarah knew the problem wasn't talent—her team was excellent. It wasn't budget—$2 million proved they were willing to invest. It wasn't technology—the AI models themselves were sophisticated. The problem was architectural. Everything they'd built served human decision-makers beautifully, but agents weren't humans.
 
@@ -316,7 +353,7 @@ This equation captures the book's thesis. Chapters 1-2 define INPACT™—what a
 - **Week 0:** 28/100 score, failing infrastructure, $2M sunk cost
 - **Week 4:** 42/100 - Layers 1-2 operational (storage + real-time fabric)
 - **Week 7:** 67/100 - Layers 3-4 operational (semantic layer + intelligence)
-- **Week 10:** 85/100 - All layers operational, three agents in production
+- **Week 10:** 86/100 - All layers operational, three agents in production
 
 From infrastructure chaos to agent-ready in 10 weeks. Not because they found a magic tool or hired consultants—because they followed an architecture that integrated proven frameworks into a coherent system.
 

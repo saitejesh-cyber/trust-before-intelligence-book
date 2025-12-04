@@ -1,7 +1,7 @@
 # Chapter 3: From BI-Era to Agent-Era: Seven Gaps
 
 **Book:** Trust Before Intelligence 
-**Subtitle:** Why 95% of Agent Projects Fail—and the Architecture Blueprint That Fixes Infrastructure in 90 Days 
+**Subtitle:** Why 95% of AI Projects Fail—3 Frameworks, 90-Day Fix 
 **Author:** Ram Katamaraja, CEO, Colaberry Inc. 
 **Chapter:** 3 of 12 
 **Version:** 2.5 ALIGNED (Gap Numbering Aligned 1-to-1 with 7-Layer Architecture) 
@@ -9,6 +9,45 @@
 **Target:** 4,500 words | 9 pages | ~18 minutes reading time
 
 ---
+
+<!-- CHAPTER OPENING GRAPHIC -->
+<div style="display: flex; justify-content: center; gap: 20px; margin: 30px 0; flex-wrap: wrap;">
+
+<div style="flex: 1; max-width: 240px; background: linear-gradient(180deg, #fff5f5 0%, #ffebee 100%); border: 3px solid #c62828; border-radius: 10px; padding: 20px;">
+<h3 style="text-align: center; color: #b71c1c; border-bottom: 2px solid #c62828; padding-bottom: 10px; margin-top: 0;">❌ DAY 0</h3>
+<ul style="list-style: none; padding: 0; margin: 0;">
+<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">INPACT™: 28/100</li>
+<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">No framework</li>
+<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">No roadmap</li>
+<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">"Where do we start?"</li>
+</ul>
+</div>
+
+<div style="flex: 1; max-width: 240px; background: linear-gradient(180deg, #fff9e6 0%, #fff3cd 100%); border: 3px solid #f57c00; border-radius: 10px; padding: 20px;">
+<h3 style="text-align: center; color: #e65100; border-bottom: 2px solid #f57c00; padding-bottom: 10px; margin-top: 0;">🟠 THREE PHASES</h3>
+<ul style="list-style: none; padding: 0; margin: 0;">
+<li style="background: #ffe0b2; color: #e65100; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #f57c00;"><strong>Phase 1:</strong> Foundation (Wk 1-4)</li>
+<li style="background: #ffe0b2; color: #e65100; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #f57c00;"><strong>Phase 2:</strong> Intelligence (Wk 5-7)</li>
+<li style="background: #ffe0b2; color: #e65100; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #f57c00;"><strong>Phase 3:</strong> Trust Layers (Wk 8-10)</li>
+</ul>
+</div>
+
+<div style="flex: 1; max-width: 240px; background: linear-gradient(180deg, #e0f2f1 0%, #b2dfdb 100%); border: 3px solid #00897b; border-radius: 10px; padding: 20px;">
+<h3 style="text-align: center; color: #004d40; border-bottom: 2px solid #00897b; padding-bottom: 10px; margin-top: 0;">✅ DAY 90</h3>
+<ul style="list-style: none; padding: 0; margin: 0;">
+<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;">INPACT™: 86/100</li>
+<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;">7 Layers Complete</li>
+<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;">3 Agents Live</li>
+<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;">Production Ready</li>
+</ul>
+</div>
+
+</div>
+
+<div style="background: linear-gradient(135deg, #e0f2f1, #f0fff0); border-left: 5px solid #00897b; padding: 15px 20px; margin: 0 0 30px 0; border-radius: 0 8px 8px 0;">
+<strong style="color: #00695c;">Key Takeaway:</strong> 90 days. Three phases. Systematic transformation.
+</div>
+<!-- END CHAPTER OPENING GRAPHIC -->
 
 ## The Question Chapter 2 Left Unanswered
 

@@ -2,13 +2,43 @@
 ## The Architecture of Trust: Intelligence Layers
 
 **Book:** Trust Before Intelligence  
-**Subtitle:** Why 95% of Agent Projects Fail—and the Architecture Blueprint That Fixes Infrastructure in 90 Days  
+**Subtitle:** Why 95% of AI Projects Fail—3 Frameworks, 90-Day Fix  
 **Author:** Ram Katamaraja, CEO, Colaberry Inc.  
 **Chapter Length:** ~10,500 words (21 pages)  
 **Version:** 2.3 (Citation-Enhanced)  
 **Date:** November 26, 2025
 
 ---
+
+<!-- CHAPTER OPENING GRAPHIC -->
+<div style="display: flex; justify-content: center; gap: 20px; margin: 30px 0; flex-wrap: wrap;">
+
+<div style="flex: 1; max-width: 280px; background: linear-gradient(180deg, #fff5f5 0%, #ffebee 100%); border: 3px solid #c62828; border-radius: 10px; padding: 20px;">
+<h3 style="text-align: center; color: #b71c1c; border-bottom: 2px solid #c62828; padding-bottom: 10px; margin-top: 0;">❌ WITHOUT LAYERS 3-4</h3>
+<ul style="list-style: none; padding: 0; margin: 0;">
+<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">"My doctor" — Which doctor?</li>
+<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">"MI" — Heart attack or valve?</li>
+<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">No business context — Raw data only</li>
+<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">12% clarification rate — Friction</li>
+</ul>
+</div>
+
+<div style="flex: 1; max-width: 280px; background: linear-gradient(180deg, #e0f2f1 0%, #b2dfdb 100%); border: 3px solid #00897b; border-radius: 10px; padding: 20px;">
+<h3 style="text-align: center; color: #004d40; border-bottom: 2px solid #00897b; padding-bottom: 10px; margin-top: 0;">✅ WITH LAYERS 3-4</h3>
+<ul style="list-style: none; padding: 0; margin: 0;">
+<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;"><strong>Layer 3:</strong> Entity resolution 97%</li>
+<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;"><strong>Layer 4:</strong> Context-aware RAG</li>
+<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;">Healthcare terminology mapped</li>
+<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;">4.8% clarification — Natural</li>
+</ul>
+</div>
+
+</div>
+
+<div style="background: linear-gradient(135deg, #e0f2f1, #f0fff0); border-left: 5px solid #00897b; padding: 15px 20px; margin: 0 0 30px 0; border-radius: 0 8px 8px 0;">
+<strong style="color: #00695c;">Key Takeaway:</strong> Intelligence requires understanding. Layers 3-4 give agents semantic awareness.
+</div>
+<!-- END CHAPTER OPENING GRAPHIC -->
 
 ## PART 1: INTELLIGENCE ARCHITECTURE INTRODUCTION
 
@@ -182,14 +212,14 @@ Krish Yadav's face on screen showed careful attention. "What's the cost of intel
 
 "Tight but workable," Swapna replied. "Largest costs are LLM APIs and vector database. We've architected for efficiency—semantic caching will reduce LLM costs by 80-85% once operational."
 
-Sarah walked to the whiteboard. "The business problem: We promised the board agent-ready infrastructure by Week 10. INPACT™ score of 85/100 or higher. We're at 42. The gap is 43 points."
+Sarah walked to the whiteboard. "The business problem: We promised the board agent-ready infrastructure by Week 10. INPACT™ score of 86/100 or higher. We're at 42. The gap is 43 points."
 
 She drew a simple progression:
 
 ```
 Week 4: 42/100 (Foundation complete)
 Week 7: 67/100 (Intelligence complete) → +25 points
-Week 10: 85/100 (Governance + Orchestration) → +18 points
+Week 10: 86/100 (Governance + Orchestration) → +18 points
 ```
 
 "Phase 2 is the steepest climb. We need 25 points in three weeks. That means intelligence layers must work, not just exist. Walk me through the plan."
@@ -1263,7 +1293,7 @@ Without Layer 5 (Governance), the intelligent response creates a compliance viol
 | Phase 2: Intelligence | 5-7 | 3-4 | 42 → 67 | **Chapter 5 ✓** |
 | Phase 3: Trust + Orchestration | 8-10 | 5-6-7 | 67 → 85 | Chapter 6 |
 
-At Week 7, Echo has covered 70% of the journey from 28/100 to 85/100. The final 18 points require governance, observability, and orchestration—completing the architecture.
+At Week 7, Echo has covered 70% of the journey from 28/100 to 86/100. The final 18 points require governance, observability, and orchestration—completing the architecture.
 
 Chapter 6 completes the 7-Layer Architecture, making intelligent agents production-ready.
 

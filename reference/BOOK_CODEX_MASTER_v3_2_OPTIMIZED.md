@@ -95,7 +95,7 @@ First principles identifies **what** agents need. Giants' shoulders shows **how*
 - Legacy: Epic EHR, SQL Server, Informatica, Tableau
 
 **Transformation:**
-- Week 0: Readiness 28/100 → Week 10: 85/100 (threshold: 80/100)
+- Week 0: Readiness 28/100 → Week 10: 86/100 (threshold: 80/100)
 - Investment: $1.23M over 10 weeks
 
 **Year 1 Outcomes:**
@@ -473,7 +473,7 @@ Patterns proven (40% → 75%) but refinable based on evidence from Chapters 2-12
 
 **Characters:** Sarah (CTO), Marcus (CDO), Jamie (IT Director), Krish (CFO)
 
-**Metrics:** $1.23M investment → $3.8M value | 28/100 → 85/100 readiness | 209% ROI, 3.9mo payback
+**Metrics:** $1.23M investment → $3.8M value | 28/100 → 86/100 readiness | 209% ROI, 3.9mo payback
 
 **Tech After:** Databricks, Redis+Trino, dbt, Neo4j, Collibra, AIXcelerator, OpenAI+Anthropic
 

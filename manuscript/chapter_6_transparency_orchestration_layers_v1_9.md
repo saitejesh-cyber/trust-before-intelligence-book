@@ -2,13 +2,43 @@
 ## The Architecture of Trust: Transparency + Orchestration Layers
 
 **Book:** Trust Before Intelligence  
-**Subtitle:** Why 95% of Agent Projects Fail—and the Architecture Blueprint That Fixes Infrastructure in 90 Days  
+**Subtitle:** Why 95% of AI Projects Fail—3 Frameworks, 90-Day Fix  
 **Author:** Ram Katamaraja, CEO, Colaberry Inc.  
 **Chapter Length:** ~10,200 words (20 pages)  
 **Version:** 1.9 (GOALS™ Terminology Update)  
 **Date:** November 28, 2025
 
 ---
+
+<!-- CHAPTER OPENING GRAPHIC -->
+<div style="display: flex; justify-content: center; gap: 20px; margin: 30px 0; flex-wrap: wrap;">
+
+<div style="flex: 1; max-width: 280px; background: linear-gradient(180deg, #fff5f5 0%, #ffebee 100%); border: 3px solid #c62828; border-radius: 10px; padding: 20px;">
+<h3 style="text-align: center; color: #b71c1c; border-bottom: 2px solid #c62828; padding-bottom: 10px; margin-top: 0;">❌ WITHOUT LAYERS 5-6-7</h3>
+<ul style="list-style: none; padding: 0; margin: 0;">
+<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">No dynamic access — HIPAA risk</li>
+<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">Black box AI — No explainability</li>
+<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">Single-agent only — No coordination</li>
+<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">"I don't trust it" — Blocked</li>
+</ul>
+</div>
+
+<div style="flex: 1; max-width: 280px; background: linear-gradient(180deg, #e0f2f1 0%, #b2dfdb 100%); border: 3px solid #00897b; border-radius: 10px; padding: 20px;">
+<h3 style="text-align: center; color: #004d40; border-bottom: 2px solid #00897b; padding-bottom: 10px; margin-top: 0;">✅ WITH LAYERS 5-6-7</h3>
+<ul style="list-style: none; padding: 0; margin: 0;">
+<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;"><strong>Layer 5:</strong> Governance + HITL</li>
+<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;"><strong>Layer 6:</strong> Full trace + audit</li>
+<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;"><strong>Layer 7:</strong> Multi-agent orchestration</li>
+<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;">"I can verify it" — Trust earned</li>
+</ul>
+</div>
+
+</div>
+
+<div style="background: linear-gradient(135deg, #e0f2f1, #f0fff0); border-left: 5px solid #00897b; padding: 15px 20px; margin: 0 0 30px 0; border-radius: 0 8px 8px 0;">
+<strong style="color: #00695c;">Key Takeaway:</strong> Trust requires transparency. Layers 5-6-7 make AI verifiable.
+</div>
+<!-- END CHAPTER OPENING GRAPHIC -->
 
 ## PART 1: TRANSPARENCY + ORCHESTRATION ARCHITECTURE INTRODUCTION
 
@@ -211,7 +241,7 @@ Marcus made a note. "We should track HITL latency as a key metric. If escalation
 
 "Agreed." Sarah stepped back from the whiteboard. "Any blockers I should know about?"
 
-Jamie set down his coffee cup. "Datadog contract is ready to sign. Been negotiating for two weeks—they know we're serious. OpenTelemetry instrumentation is already partially in place from Layer 4—we added basic tracing for RAG pipeline debugging. Extending it to all seven layers is incremental work, not greenfield."
+Jamie set down her coffee cup. "Datadog contract is ready to sign. Been negotiating for two weeks—they know we're serious. OpenTelemetry instrumentation is already partially in place from Layer 4—we added basic tracing for RAG pipeline debugging. Extending it to all seven layers is incremental work, not greenfield."
 
 "LangGraph is the unknown," Marcus admitted. "We've prototyped with it, but production multi-agent coordination is new territory. The framework is solid, but our experience is limited. I'm allocating extra testing time in Week 10."
 

@@ -109,6 +109,38 @@
 
 ---
 
+<!-- CHAPTER OPENING GRAPHIC -->
+<div style="display: flex; justify-content: center; gap: 20px; margin: 30px 0; flex-wrap: wrap;">
+
+<div style="flex: 1; max-width: 280px; background: linear-gradient(180deg, #fff9e6 0%, #fff3cd 100%); border: 3px solid #f57c00; border-radius: 10px; padding: 20px;">
+<h3 style="text-align: center; color: #e65100; border-bottom: 2px solid #f57c00; padding-bottom: 10px; margin-top: 0;">🟠 BUILD COMPLETE (Week 10)</h3>
+<ul style="list-style: none; padding: 0; margin: 0;">
+<li style="background: #ffe0b2; color: #e65100; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #f57c00;">Architecture: Done ✓</li>
+<li style="background: #ffe0b2; color: #e65100; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #f57c00;">INPACT™: 86/100 ✓</li>
+<li style="background: #ffe0b2; color: #e65100; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #f57c00;">7 Layers: Complete ✓</li>
+<li style="background: #ffe0b2; color: #e65100; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #f57c00;"><em>"How do you know it stays trustworthy?"</em></li>
+</ul>
+</div>
+
+<div style="flex: 1; max-width: 280px; background: linear-gradient(180deg, #e0f2f1 0%, #b2dfdb 100%); border: 3px solid #00897b; border-radius: 10px; padding: 20px;">
+<h3 style="text-align: center; color: #004d40; border-bottom: 2px solid #00897b; padding-bottom: 10px; margin-top: 0;">✅ OPERATE CONTINUOUSLY</h3>
+<ul style="list-style: none; padding: 0; margin: 0;">
+<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;"><strong>G</strong> — Governance: 5/5</li>
+<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;"><strong>O</strong> — Observability: 4/5</li>
+<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;"><strong>A</strong> — Availability: 4/5</li>
+<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;"><strong>L</strong> — Lexicon: 4/5</li>
+<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;"><strong>S</strong> — Solid: 4/5</li>
+<li style="background: #00695c; color: #ffffff; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #004d40;"><strong>Total: 21/25</strong></li>
+</ul>
+</div>
+
+</div>
+
+<div style="background: linear-gradient(135deg, #e0f2f1, #f0fff0); border-left: 5px solid #00897b; padding: 15px 20px; margin: 0 0 30px 0; border-radius: 0 8px 8px 0;">
+<strong style="color: #00695c;">Key Takeaway:</strong> <em>"Building is a 90-day project. Operating is forever."</em> — Dr. Arun Raj
+</div>
+<!-- END CHAPTER OPENING GRAPHIC -->
+
 ## Part 1: The Architecture Is Complete. Now What?
 
 ### The Second Pillar Complete
@@ -127,13 +159,13 @@ But architecture alone doesn't create trust. Buildings need maintenance. Vehicle
 
 Sarah Cedao stood at the window of Echo Health's technology center, watching the sun set over the campus. Behind her, the conference room still held the energy of celebration.
 
-All seven layers operational. Every infrastructure gap closed. INPACT™ score: 85/100. $1.23M invested—under the original budget with contingency preserved. Ten weeks of focused execution.
+All seven layers operational. Every infrastructure gap closed. INPACT™ score: 86/100. $1.23M invested—under the original budget with contingency preserved. Ten weeks of focused execution.
 
 The architecture was complete.
 
 But Dr. Raj's question from Monday's status briefing still echoed: "How do you know it stays trustworthy?"
 
-Dr. Arun Raj, Echo's Chief Medical Information Officer and clinical liaison to the board, had spent fifteen years as a practicing cardiologist before moving into health IT leadership. He had a gift for asking questions that cut through technical complexity to the heart of operational reality.
+Dr. Arun Raj, Echo's Board Chair, had spent fifteen years as a practicing cardiologist before moving into health IT leadership, then served as CEO for a decade before transitioning to the board. He had a gift for asking questions that cut through technical complexity to the heart of operational reality. It was Dr. Raj who had set the 90-day deadline after the failed pilots. Now, ten weeks in, he wanted to know not just what they'd built—but whether it would last.
 
 Sarah had answered with architecture—layers, integrations, security controls. Dr. Raj had nodded politely, then asked again: "I understand what you built. But how do you know it *keeps working* six months from now? A year from now?"
 
@@ -266,13 +298,13 @@ Sarah synthesized what she was hearing into a formula:
 > **TRUSTED AGENTS = INPACT™ (What They Need) + 7-Layer (How You Build) + GOALS™ (How You Sustain)**
 
 "For Echo, that means:"
-- **INPACT™:** 85/100 capability achieved
+- **INPACT™:** 86/100 capability achieved
 - **7-Layer:** 7/7 layers operational  
 - **GOALS™:** Target 21/25 for sustainability
 
 "All three must be in place," she said. "Capability without sustainability degrades. Infrastructure without measurement is blind. Measurement without architecture has nothing to measure."
 
-Sarah studied the diagram. "So our 85/100 INPACT™ score measures *capability*—what our infrastructure can do. But we need a different metric for *sustainability*—our ability to maintain that capability."
+Sarah studied the diagram. "So our 86/100 INPACT™ score measures *capability*—what our infrastructure can do. But we need a different metric for *sustainability*—our ability to maintain that capability."
 
 "Exactly. And that's what GOALS™ provides."
 
@@ -326,7 +358,7 @@ He traced the connections:
 
 Sarah gathered her extended team in the large conference room. Marcus Williams, CDO. Dr. Chen, clinical liaison. The engineering leads from each layer team. The compliance officer. The data quality manager.
 
-"We built something remarkable," Sarah began. "In ten weeks, we went from a 28/100 INPACT™ score to 85/100. We constructed all seven layers of agent-ready infrastructure. We stayed under budget with contingency preserved."
+"We built something remarkable," Sarah began. "In ten weeks, we went from a 28/100 INPACT™ score to 86/100. We constructed all seven layers of agent-ready infrastructure. We stayed under budget with contingency preserved."
 
 **Diagram 2: Echo's 90-Day Journey—Architecture Complete**
 
@@ -349,7 +381,7 @@ graph LR
     end
     
     subgraph NOW["<b>Week 10 Status</b>"]
-        COMPLETE["<b>✅ Architecture Complete</b><br/><b>INPACT™: 85/100</b><br/><b>$1.23M Invested</b>"]
+        COMPLETE["<b>✅ Architecture Complete</b><br/><b>INPACT™: 86/100</b><br/><b>$1.23M Invested</b>"]
     end
     
     W1 --> W2
@@ -411,13 +443,13 @@ Marcus stood and displayed the framework on the conference room screen.
 
 Marcus pulled up preliminary numbers. "Based on our Week 10 status, I'd estimate we're at about 75% GOALS™ health—that's 15 out of 25 possible points."
 
-Sarah frowned. "But we just said INPACT™ is 85/100. Why the gap?"
+Sarah frowned. "But we just said INPACT™ is 86/100. Why the gap?"
 
 "Different measurements for different purposes," Marcus explained. "INPACT™ measures whether infrastructure *can* fulfill agent needs—the capability we've built. GOALS™ measures whether we can *sustain* that capability over time—operational excellence. Think of it this way: we built a great car, but we haven't yet proven we can maintain it."
 
 He pulled up a validation chart. "Colaberry's research is clear: proficiency across all five regulatory categories correlates with production success. Gaps lead to degraded outcomes. Major gaps lead to failure. We're at 15—below the 21-point threshold for proficiency across all five. That's why Weeks 11-12 matter so much."
 
-"So the 85/100 INPACT™ score means we *can* support trusted agents," Dr. Chen said. "But the 15/25 GOALS™ score means we haven't proven we can *keep* them trusted."
+"So the 86/100 INPACT™ score means we *can* support trusted agents," Dr. Chen said. "But the 15/25 GOALS™ score means we haven't proven we can *keep* them trusted."
 
 "Exactly. The 10-point gap represents operational discipline we haven't yet established. By Week 12, we need GOALS™ at 21 or above."
 
@@ -431,11 +463,11 @@ graph TB
     subgraph DASHBOARD["<b>GOALS™ Health Dashboard - Week 10</b>"]
         TITLE["<b>Overall Health: 15/25</b><br/><b>Status: Below Production Threshold</b>"]
         
-        G["<b>G - Governance</b><br/><b>3/5 ðŸŸ¡</b><br/><b>Audit coverage gap</b>"]
-        O["<b>O - Observability</b><br/><b>3/5 ðŸŸ¡</b><br/><b>Need explainability</b>"]
-        A["<b>A - Availability</b><br/><b>4/5 ðŸŸ¢</b><br/><b>Scale testing needed</b>"]
-        L["<b>L - Lexicon</b><br/><b>2/5 ðŸŸ </b><br/><b>Disambiguation gap</b>"]
-        S["<b>S - Solid</b><br/><b>3/5 ðŸŸ¡</b><br/><b>Cross-system consistency</b>"]
+        G["<b>G - Governance</b><br/><b>3/5 🟡</b><br/><b>Audit coverage gap</b>"]
+        O["<b>O - Observability</b><br/><b>3/5 🟡</b><br/><b>Need explainability</b>"]
+        A["<b>A - Availability</b><br/><b>4/5 🟢</b><br/><b>Scale testing needed</b>"]
+        L["<b>L - Lexicon</b><br/><b>2/5 🟠</b><br/><b>Disambiguation gap</b>"]
+        S["<b>S - Solid</b><br/><b>3/5 🟡</b><br/><b>Cross-system consistency</b>"]
     end
     
     TITLE --> G
@@ -509,11 +541,11 @@ Traditional RBAC asks one question: "What role does this user have?"
 
 Dynamic ABAC asks five questions simultaneously:
 
-- **ðŸ‘¤ Who:** Patient ID 12345 requesting data (not just "a patient role")
-- **ðŸ“‹ What:** Specific table and columns being accessed (lab_results, not all patient data)
-- **ðŸ“… When:** Timestamp and business context (normal business hours vs. suspicious 3am access)
-- **ðŸ“± Where:** Access channel and location (mobile app from registered device vs. unknown location)
-- **ðŸŽ¯ Why:** Business justification (patient self-access vs. administrative lookup)
+- **👤 Who:** Patient ID 12345 requesting data (not just "a patient role")
+- **📋 What:** Specific table and columns being accessed (lab_results, not all patient data)
+- **📅 When:** Timestamp and business context (normal business hours vs. suspicious 3am access)
+- **📱 Where:** Access channel and location (mobile app from registered device vs. unknown location)
+- **🎯 Why:** Business justification (patient self-access vs. administrative lookup)
 
 These five dimensions enable policies that are dynamically evaluated in real-time, achieving the sub-10ms latency agents require while maintaining HIPAA's "minimum necessary" compliance standard. [1]
 
@@ -639,7 +671,7 @@ graph TB
     CHECK -->|<b>No</b>| EXECUTE
     CHECK -->|<b>Yes</b>| APPROVE["<b>⏸️¸ Human Approval</b>"]
     HITL -->|<b>High risk</b>| APPROVE
-    HONL -->|<b>High stakes</b>| MONITOR["<b>ðŸ‘ï¸ Human Monitor</b>"]
+    HONL -->|<b>High stakes</b>| MONITOR["<b>👁ï¸ Human Monitor</b>"]
     MANUAL -->|<b>Critical</b>| INFORM["<b>ℹ️¸ Information Only</b>"]
     
     APPROVE -->|<b>Approved</b>| EXECUTE
@@ -767,7 +799,7 @@ Dr. Chen nodded. "I'll work with the clinical staff on HITL workflows. We need t
 
 ---
 
-## ðŸ“ Checkpoint 1: Governance Foundation Complete
+## 🔖 Checkpoint 1: Governance Foundation Complete
 
 **What we've covered:**
 
@@ -847,17 +879,17 @@ sequenceDiagram
     
     U->>L7: Show Dr. Martinez's availability tomorrow
     activate L7
-    L7->>L6: ðŸ“Š Log: Query received (trace: abc-123-def)
+    L7->>L6: 📊 Log: Query received (trace: abc-123-def)
     
     L7->>L3: Translate: Dr. Martinez + availability
     activate L3
-    L3->>L6: ðŸ“Š Log: Semantic translation 0.3s
+    L3->>L6: 📊 Log: Semantic translation 0.3s
     L3-->>L7: provider_id=789, date=2025-10-28
     deactivate L3
     
     L7->>L5: Check: User authorized for provider schedule?
     activate L5
-    L5->>L6: ðŸ“Š Log: ABAC policy eval 8ms ✓
+    L5->>L6: 📊 Log: ABAC policy eval 8ms ✓
     L5-->>L7: Authorized (policy: patient-provider-access)
     deactivate L5
     
@@ -865,7 +897,7 @@ sequenceDiagram
     activate L4
     L4->>L2: Subscribe: schedule_updates stream
     activate L2
-    L2->>L6: ðŸ“Š Log: Stream check 15ms (fresh)
+    L2->>L6: 📊 Log: Stream check 15ms (fresh)
     L2-->>L4: Last update: 12s ago ✓
     deactivate L2
     L4->>L1: Query: provider_schedule WHERE id=789
@@ -877,7 +909,7 @@ sequenceDiagram
     L4-->>L7: Context: [8am, 10am, 2pm]
     deactivate L4
     
-    L7->>L6: ðŸ“Š Log: Response 2.9s total | All layers traced
+    L7->>L6: 📊 Log: Response 2.9s total | All layers traced
     L7->>U: Dr. Martinez has 3 openings tomorrow
     deactivate L7
     
@@ -909,7 +941,7 @@ EU AI Act Article 13 requires transparency for high-risk AI systems—which incl
 
 **Explainability Metrics:**
 
-- **Confidence calibration:** When an agent says it's 90% confident, it should be correct 85-95% of the time. Track calibration curves monthly, recalibrating when drift exceeds Â±5%.
+- **Confidence calibration:** When an agent says it's 90% confident, it should be correct 85-95% of the time. Track calibration curves monthly, recalibrating when drift exceeds ±5%.
 - **Trace completeness:** 100% of responses include full lineage—which data sources, which policies applied, which models generated the response.
 - **Response justification:** Every recommendation includes reasoning. Not just "approved" but "approved because HbA1c >7.0 AND insurance covers program AND patient engagement score 85."
 
@@ -1029,7 +1061,7 @@ Observability requires continuous vigilance at multiple cadences:
 
 ---
 
-## ðŸ“ Checkpoint 2: Observability Foundation Complete
+## 🔖 Checkpoint 2: Observability Foundation Complete
 
 **What we've covered:**
 
@@ -1216,7 +1248,7 @@ graph TD
 
 ---
 
-## ðŸ“ Checkpoint 3: Availability Foundation Complete
+## 🔖 Checkpoint 3: Availability Foundation Complete
 
 **What we've covered since Checkpoint 2:**
 
@@ -1428,7 +1460,7 @@ When a patient asks "What's my diabetes care plan?", the semantic layer correctl
 
 ---
 
-## ðŸ“ Checkpoint 4: Semantic Understanding Complete
+## 🔖 Checkpoint 4: Semantic Understanding Complete
 
 **What we've covered:**
 
@@ -1644,7 +1676,7 @@ graph TB
 
 ---
 
-## ðŸ“ Checkpoint 5: Data Quality Foundation Complete
+## 🔖 Checkpoint 5: Data Quality Foundation Complete
 
 **What we've covered:**
 
@@ -1843,11 +1875,11 @@ Marcus displayed the operational dashboard they'd designed.
 ```mermaid
 graph TB
     subgraph SCORING["<b>GOALS™ Health Scoring (5-Point Scale)</b>"]
-        EXCELLENT["<b>5/5: ðŸŸ¢ EXCELLENT</b><br/><b>Production-ready</b><br/><b>Continuous improvement</b>"]
-        GOOD["<b>4/5: ðŸŸ¢ GOOD</b><br/><b>Healthy operations</b><br/><b>Monitor trends</b>"]
-        ADEQUATE["<b>3/5: ðŸŸ¡ ADEQUATE</b><br/><b>Functional</b><br/><b>Improvement needed</b>"]
-        NEEDS["<b>2/5: ðŸŸ  NEEDS WORK</b><br/><b>Gaps present</b><br/><b>Action required</b>"]
-        CRITICAL["<b>1/5: ðŸ”´ CRITICAL</b><br/><b>Major gaps</b><br/><b>Immediate intervention</b>"]
+        EXCELLENT["<b>5/5: 🟢 EXCELLENT</b><br/><b>Production-ready</b><br/><b>Continuous improvement</b>"]
+        GOOD["<b>4/5: 🟢 GOOD</b><br/><b>Healthy operations</b><br/><b>Monitor trends</b>"]
+        ADEQUATE["<b>3/5: 🟡 ADEQUATE</b><br/><b>Functional</b><br/><b>Improvement needed</b>"]
+        NEEDS["<b>2/5: 🟠 NEEDS WORK</b><br/><b>Gaps present</b><br/><b>Action required</b>"]
+        CRITICAL["<b>1/5: 🔴 CRITICAL</b><br/><b>Major gaps</b><br/><b>Immediate intervention</b>"]
     end
     
     THRESHOLD["<b>Healthcare Threshold: 21/25</b><br/><b>G=5, O/A/L/S ≥4</b>"]
@@ -1896,7 +1928,7 @@ What remained was execution.
 
 "Chapter 7 taught us what operational excellence looks like," Sarah said as the meeting concluded. "Chapter 8 will show us achieving it. Two weeks to prove we can not only build agent-ready infrastructure—but sustain it."
 
-Marcus gathered his materials. "The architecture got us to 85/100 INPACT™. Operational discipline will get us to 21/25 GOALS™. And that's when we'll be ready for production."
+Marcus gathered his materials. "The architecture got us to 86/100 INPACT™. Operational discipline will get us to 21/25 GOALS™. And that's when we'll be ready for production."
 
 Dr. Chen stood. "I'll have the clinical team ready for HITL workflow optimization tomorrow. They understand what's at stake."
 
@@ -1969,7 +2001,7 @@ Week 11 would prove whether the architecture held under operational pressure.
 
 1. **The Architecture of Trust requires all three pillars.** INPACT™ defines what agents need (capability). The 7-Layer Architecture fulfills those needs (infrastructure). GOALS™ validates fulfillment is sustained (operations). Missing any pillar means missing trust.
 
-2. **INPACT™ measures capability; GOALS™ measures sustainability.** An 85/100 INPACT™ score means your infrastructure *can* support trusted agents. A 21/25 GOALS™ score means you can *sustain* that capability over time.
+2. **INPACT™ measures capability; GOALS™ measures sustainability.** An 86/100 INPACT™ score means your infrastructure *can* support trusted agents. A 21/25 GOALS™ score means you can *sustain* that capability over time.
 
 3. **The five GOALS™ are interdependent.** Governance, Observability, Availability, Lexicon, and Solid work together like vital organs. Weakness in one cascades to the others.
 
