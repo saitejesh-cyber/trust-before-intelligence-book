@@ -11,33 +11,39 @@
 ---
 
 <!-- CHAPTER OPENING GRAPHIC -->
-<div style="display: flex; justify-content: center; gap: 20px; margin: 30px 0; flex-wrap: wrap;">
 
-<div style="flex: 1; max-width: 280px; background: linear-gradient(180deg, #fff5f5 0%, #ffebee 100%); border: 3px solid #c62828; border-radius: 10px; padding: 20px;">
-<h3 style="text-align: center; color: #b71c1c; border-bottom: 2px solid #c62828; padding-bottom: 10px; margin-top: 0;">❌ WITHOUT LAYERS 3-4</h3>
-<ul style="list-style: none; padding: 0; margin: 0;">
-<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">"My doctor" — Which doctor?</li>
-<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">"MI" — Heart attack or valve?</li>
-<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">No business context — Raw data only</li>
-<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">12% clarification rate — Friction</li>
-</ul>
-</div>
+```mermaid
+graph LR
+    subgraph BEFORE["❌ WITHOUT LAYERS 3-4"]
+        B1["My doctor — Which doctor?"]
+        B2["MI — Heart attack or valve?"]
+        B3["No business context — Raw data only"]
+        B4["12% clarification rate — Friction"]
+    end
+    
+    subgraph AFTER["✅ WITH LAYERS 3-4"]
+        A1["Layer 3: Entity resolution 97%"]
+        A2["Layer 4: Context-aware RAG"]
+        A3["Healthcare terminology mapped"]
+        A4["4.8% clarification — Natural"]
+    end
+    
+    BEFORE --> AFTER
+    
+    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style B1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style B2 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style B3 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style B4 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style A2 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style A3 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style A4 fill:#b2dfdb,stroke:#00897b,color:#004d40
+```
 
-<div style="flex: 1; max-width: 280px; background: linear-gradient(180deg, #e0f2f1 0%, #b2dfdb 100%); border: 3px solid #00897b; border-radius: 10px; padding: 20px;">
-<h3 style="text-align: center; color: #004d40; border-bottom: 2px solid #00897b; padding-bottom: 10px; margin-top: 0;">✅ WITH LAYERS 3-4</h3>
-<ul style="list-style: none; padding: 0; margin: 0;">
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;"><strong>Layer 3:</strong> Entity resolution 97%</li>
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;"><strong>Layer 4:</strong> Context-aware RAG</li>
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;">Healthcare terminology mapped</li>
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;">4.8% clarification — Natural</li>
-</ul>
-</div>
+> **Key Takeaway:** Intelligence requires understanding. Layers 3-4 give agents semantic awareness.
 
-</div>
-
-<div style="background: linear-gradient(135deg, #e0f2f1, #f0fff0); border-left: 5px solid #00897b; padding: 15px 20px; margin: 0 0 30px 0; border-radius: 0 8px 8px 0;">
-<strong style="color: #00695c;">Key Takeaway:</strong> Intelligence requires understanding. Layers 3-4 give agents semantic awareness.
-</div>
 <!-- END CHAPTER OPENING GRAPHIC -->
 
 ## PART 1: INTELLIGENCE ARCHITECTURE INTRODUCTION
@@ -1417,8 +1423,8 @@ Chapter 6 completes the 7-Layer Architecture, making intelligent agents producti
 - **Cross-references to Appendix E:** 5 strategic placements
 
 **Quality Standards Met:**
-- ✅ TCC Compliant (evidence-based, healthcare context)
-- ✅ TCC-033 Citation Tier Distribution: 50% Tier 1, 22% Tier 2, 28% Tier 3
+- ✅ Evidence-based, healthcare context
+- ✅ Citation Tier Distribution: 50% Tier 1, 22% Tier 2, 28% Tier 3
 - ✅ Colaberry Mermaid Design Codex compliant
 - ✅ Moore-Kim 5-Movement Pattern (80% technical, 20% narrative)
 - ✅ Echo Canonical Data Consistent

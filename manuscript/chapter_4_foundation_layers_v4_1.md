@@ -11,33 +11,39 @@
 ---
 
 <!-- CHAPTER OPENING GRAPHIC -->
-<div style="display: flex; justify-content: center; gap: 20px; margin: 30px 0; flex-wrap: wrap;">
 
-<div style="flex: 1; max-width: 280px; background: linear-gradient(180deg, #fff5f5 0%, #ffebee 100%); border: 3px solid #c62828; border-radius: 10px; padding: 20px;">
-<h3 style="text-align: center; color: #b71c1c; border-bottom: 2px solid #c62828; padding-bottom: 10px; margin-top: 0;">❌ WITHOUT LAYERS 1-2</h3>
-<ul style="list-style: none; padding: 0; margin: 0;">
-<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">Siloed databases — No unified access</li>
-<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">Overnight batch ETL — Stale data</li>
-<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">No vector storage — No semantic search</li>
-<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">Minutes to query — Users abandon</li>
-</ul>
-</div>
+```mermaid
+graph LR
+    subgraph BEFORE["❌ WITHOUT LAYERS 1-2"]
+        B1["Siloed databases — No unified access"]
+        B2["Overnight batch ETL — Stale data"]
+        B3["No vector storage — No semantic search"]
+        B4["Minutes to query — Users abandon"]
+    end
+    
+    subgraph AFTER["✅ WITH LAYERS 1-2"]
+        A1["Layer 1: Unified multi-modal storage"]
+        A2["Layer 2: Sub-second freshness"]
+        A3["Vector + Graph ready"]
+        A4["Under 2s response — Users trust"]
+    end
+    
+    BEFORE --> AFTER
+    
+    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style B1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style B2 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style B3 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style B4 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style A2 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style A3 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style A4 fill:#b2dfdb,stroke:#00897b,color:#004d40
+```
 
-<div style="flex: 1; max-width: 280px; background: linear-gradient(180deg, #e0f2f1 0%, #b2dfdb 100%); border: 3px solid #00897b; border-radius: 10px; padding: 20px;">
-<h3 style="text-align: center; color: #004d40; border-bottom: 2px solid #00897b; padding-bottom: 10px; margin-top: 0;">✅ WITH LAYERS 1-2</h3>
-<ul style="list-style: none; padding: 0; margin: 0;">
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;"><strong>Layer 1:</strong> Unified multi-modal storage</li>
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;"><strong>Layer 2:</strong> Sub-second freshness</li>
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;">Vector + Graph ready</li>
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;">Under 2s response — Users trust</li>
-</ul>
-</div>
+> **Key Takeaway:** Foundation first. Without Layers 1-2, nothing else works.
 
-</div>
-
-<div style="background: linear-gradient(135deg, #e0f2f1, #f0fff0); border-left: 5px solid #00897b; padding: 15px 20px; margin: 0 0 30px 0; border-radius: 0 8px 8px 0;">
-<strong style="color: #00695c;">Key Takeaway:</strong> Foundation first. Without Layers 1-2, nothing else works.
-</div>
 <!-- END CHAPTER OPENING GRAPHIC -->
 
 ## SECTION 1: ARCHITECTURE INTRODUCTION

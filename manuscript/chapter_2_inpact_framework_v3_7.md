@@ -11,37 +11,47 @@
 ---
 
 <!-- CHAPTER OPENING GRAPHIC -->
-<div style="display: flex; justify-content: center; gap: 20px; margin: 30px 0; flex-wrap: wrap;">
 
-<div style="flex: 1; max-width: 280px; background: linear-gradient(180deg, #fff5f5 0%, #ffebee 100%); border: 3px solid #c62828; border-radius: 10px; padding: 20px;">
-<h3 style="text-align: center; color: #b71c1c; border-bottom: 2px solid #c62828; padding-bottom: 10px; margin-top: 0;">❌ WITHOUT INPACT™</h3>
-<ul style="list-style: none; padding: 0; margin: 0;">
-<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">"Why is this so slow?"</li>
-<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">"It doesn't understand me"</li>
-<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">"Who authorized this?"</li>
-<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">"It keeps making mistakes"</li>
-<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">"It doesn't know context"</li>
-<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">"I don't trust it"</li>
-</ul>
-</div>
+```mermaid
+graph LR
+    subgraph BEFORE["❌ WITHOUT INPACT™"]
+        B1["Why is this so slow?"]
+        B2["It doesn't understand me"]
+        B3["Who authorized this?"]
+        B4["It keeps making mistakes"]
+        B5["It doesn't know context"]
+        B6["I don't trust it"]
+    end
+    
+    subgraph AFTER["✅ WITH INPACT™"]
+        A1["I — Instant: Under 2 seconds"]
+        A2["N — Natural: 97% comprehension"]
+        A3["P — Permitted: Dynamic access"]
+        A4["A — Adaptive: Learns from feedback"]
+        A5["C — Contextual: Cross-system aware"]
+        A6["T — Transparent: Full audit trail"]
+    end
+    
+    BEFORE --> AFTER
+    
+    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style B1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style B2 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style B3 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style B4 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style B5 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style B6 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style A2 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style A3 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style A4 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style A5 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style A6 fill:#b2dfdb,stroke:#00897b,color:#004d40
+```
 
-<div style="flex: 1; max-width: 280px; background: linear-gradient(180deg, #e0f2f1 0%, #b2dfdb 100%); border: 3px solid #00897b; border-radius: 10px; padding: 20px;">
-<h3 style="text-align: center; color: #004d40; border-bottom: 2px solid #00897b; padding-bottom: 10px; margin-top: 0;">✅ WITH INPACT™</h3>
-<ul style="list-style: none; padding: 0; margin: 0;">
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;"><strong>I</strong> — Instant: Under 2 seconds</li>
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;"><strong>N</strong> — Natural: 97% comprehension</li>
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;"><strong>P</strong> — Permitted: Dynamic access</li>
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;"><strong>A</strong> — Adaptive: Learns from feedback</li>
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;"><strong>C</strong> — Contextual: Cross-system aware</li>
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;"><strong>T</strong> — Transparent: Full audit trail</li>
-</ul>
-</div>
+> **Key Takeaway:** Six infrastructure needs. One framework. Trust.
 
-</div>
-
-<div style="background: linear-gradient(135deg, #e0f2f1, #f0fff0); border-left: 5px solid #00897b; padding: 15px 20px; margin: 0 0 30px 0; border-radius: 0 8px 8px 0;">
-<strong style="color: #00695c;">Key Takeaway:</strong> Six infrastructure needs. One framework. Trust.
-</div>
 <!-- END CHAPTER OPENING GRAPHIC -->
 
 ## Part 1: Framework Introduction (1,540 words)

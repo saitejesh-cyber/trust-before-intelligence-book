@@ -5,7 +5,7 @@
 **Author:** Ram Katamaraja, CEO, Colaberry Inc.  
 **Chapter Length:** ~10,500 words (19 pages)  
 **Version:** 1.1 | November 30, 2025  
-**Status:** FIRST DRAFT (TCC Compliant)
+**Status:** FIRST DRAFT
 
 **Chapter Role:**
 - Completes Pillar 3 (GOALS™ Framework) in production
@@ -22,42 +22,49 @@
 ---
 
 <!-- CHAPTER OPENING GRAPHIC -->
-<div style="display: flex; justify-content: center; gap: 20px; margin: 30px 0; flex-wrap: wrap;">
 
-<div style="flex: 1; max-width: 240px; background: linear-gradient(180deg, #fff5f5 0%, #ffebee 100%); border: 3px solid #c62828; border-radius: 10px; padding: 20px;">
-<h3 style="text-align: center; color: #b71c1c; border-bottom: 2px solid #c62828; padding-bottom: 10px; margin-top: 0;">❌ WEEK 0</h3>
-<ul style="list-style: none; padding: 0; margin: 0;">
-<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">INPACT™: 28/100</li>
-<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">GOALS™: 0/25</li>
-<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">Agents: 0</li>
-<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;"><em>"Fix this in 90 days"</em></li>
-</ul>
-</div>
+```mermaid
+graph LR
+    subgraph BEFORE["❌ WEEK 0"]
+        B1["INPACT™: 28/100"]
+        B2["GOALS™: 0/25"]
+        B3["Agents: 0"]
+        B4["Fix this in 90 days"]
+    end
+    
+    subgraph PILLARS["THREE PILLARS"]
+        P1["INPACT™ — What agents need"]
+        P2["7-Layer — How to build it"]
+        P3["GOALS™ — How to measure"]
+    end
+    
+    subgraph AFTER["✅ WEEK 12"]
+        A1["INPACT™: 89/100"]
+        A2["GOALS™: 21/25"]
+        A3["Agents: 3 Live"]
+        A4["Something we can trust"]
+    end
+    
+    BEFORE --> PILLARS --> AFTER
+    
+    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style PILLARS fill:#00695c,stroke:#004d40,stroke-width:2px,color:#ffffff
+    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style B1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style B2 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style B3 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style B4 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style P1 fill:#00796b,stroke:#004d40,color:#ffffff
+    style P2 fill:#00796b,stroke:#004d40,color:#ffffff
+    style P3 fill:#00796b,stroke:#004d40,color:#ffffff
+    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style A2 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style A3 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style A4 fill:#b2dfdb,stroke:#00897b,color:#004d40
+```
 
-<div style="flex: 1; max-width: 240px; background: linear-gradient(180deg, #00796b 0%, #004d40 100%); border: 3px solid #004d40; border-radius: 10px; padding: 20px;">
-<h3 style="text-align: center; color: #ffffff; border-bottom: 2px solid #4db6ac; padding-bottom: 10px; margin-top: 0;">THREE PILLARS</h3>
-<ul style="list-style: none; padding: 0; margin: 0;">
-<li style="background: rgba(255,255,255,0.15); color: #ffffff; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #4db6ac;"><strong>INPACT™</strong><br/>What agents need</li>
-<li style="background: rgba(255,255,255,0.15); color: #ffffff; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #4db6ac;"><strong>7-Layer</strong><br/>How to build it</li>
-<li style="background: rgba(255,255,255,0.15); color: #ffffff; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #4db6ac;"><strong>GOALS™</strong><br/>How to measure</li>
-</ul>
-</div>
+> **Key Takeaway:** *"You've answered my question—and built something we can trust."* — Dr. Arun Raj, Board Chair
 
-<div style="flex: 1; max-width: 240px; background: linear-gradient(180deg, #e0f2f1 0%, #b2dfdb 100%); border: 3px solid #00897b; border-radius: 10px; padding: 20px;">
-<h3 style="text-align: center; color: #004d40; border-bottom: 2px solid #00897b; padding-bottom: 10px; margin-top: 0;">✅ WEEK 12</h3>
-<ul style="list-style: none; padding: 0; margin: 0;">
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;">INPACT™: 89/100</li>
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;">GOALS™: 21/25</li>
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;">Agents: 3 Live</li>
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;"><em>"Something we can trust"</em></li>
-</ul>
-</div>
-
-</div>
-
-<div style="background: linear-gradient(135deg, #e0f2f1, #f0fff0); border-left: 5px solid #00897b; padding: 15px 20px; margin: 0 0 30px 0; border-radius: 0 8px 8px 0;">
-<strong style="color: #00695c;">Key Takeaway:</strong> <em>"You've answered my question—and built something we can trust."</em> — Dr. Arun Raj, Board Chair
-</div>
 <!-- END CHAPTER OPENING GRAPHIC -->
 
 ## Part 1: Operations Begin

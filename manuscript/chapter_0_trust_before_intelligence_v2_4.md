@@ -17,40 +17,49 @@
 ---
 
 <!-- CHAPTER OPENING GRAPHIC -->
-<div style="display: flex; justify-content: center; gap: 20px; margin: 30px 0; flex-wrap: wrap;">
 
-<div style="flex: 1; max-width: 280px; background: linear-gradient(180deg, #fff5f5 0%, #ffebee 100%); border: 3px solid #c62828; border-radius: 10px; padding: 20px;">
-<h3 style="text-align: center; color: #b71c1c; border-bottom: 2px solid #c62828; padding-bottom: 10px; margin-top: 0;">❌ BEFORE: WEEK 0</h3>
-<ul style="list-style: none; padding: 0; margin: 0;">
-<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">3 Failed Pilots</li>
-<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">$2M Spent</li>
-<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">0 Production Agents</li>
-<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">9-13s Response Time</li>
-<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">INPACT™: 28/100</li>
-</ul>
-</div>
+```mermaid
+graph LR
+    subgraph BEFORE["❌ BEFORE: WEEK 0"]
+        B1["3 Failed Pilots"]
+        B2["$2M Spent"]
+        B3["0 Production Agents"]
+        B4["9-13s Response Time"]
+        B5["INPACT™: 28/100"]
+    end
+    
+    subgraph TRANSFORM["90 DAYS"]
+        T1["➡️"]
+    end
+    
+    subgraph AFTER["✅ AFTER: WEEK 12"]
+        A1["3 Production Agents"]
+        A2["$1.23M → 477% ROI"]
+        A3["50,000 Daily Queries"]
+        A4["1.6s Response Time"]
+        A5["INPACT™: 89/100"]
+    end
+    
+    BEFORE --> TRANSFORM --> AFTER
+    
+    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
+    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style B1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style B2 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style B3 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style B4 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style B5 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style T1 fill:#f5f5f5,stroke:#666666,color:#333333
+    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style A2 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style A3 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style A4 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style A5 fill:#b2dfdb,stroke:#00897b,color:#004d40
+```
 
-<div style="flex: 0 0 100px; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(180deg, #fafafa 0%, #f0f0f0 100%); border: 3px solid #666; border-radius: 10px; padding: 15px;">
-<h3 style="color: #333; margin: 0; font-size: 1.1em;">90 DAYS</h3>
-<div style="font-size: 2.5em; color: #666; margin: 10px 0;">➡️</div>
-</div>
+> **Key Takeaway:** *"Fix this in 90 days or we're shelving AI."* — Dr. Arun Raj, Board Chair
 
-<div style="flex: 1; max-width: 280px; background: linear-gradient(180deg, #e0f2f1 0%, #b2dfdb 100%); border: 3px solid #00897b; border-radius: 10px; padding: 20px;">
-<h3 style="text-align: center; color: #004d40; border-bottom: 2px solid #00897b; padding-bottom: 10px; margin-top: 0;">✅ AFTER: WEEK 12</h3>
-<ul style="list-style: none; padding: 0; margin: 0;">
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;">3 Production Agents</li>
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;">$1.23M → 477% ROI</li>
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;">50,000 Daily Queries</li>
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;">1.6s Response Time</li>
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;">INPACT™: 89/100</li>
-</ul>
-</div>
-
-</div>
-
-<div style="background: linear-gradient(135deg, #e0f2f1, #f0fff0); border-left: 5px solid #00897b; padding: 15px 20px; margin: 0 0 30px 0; border-radius: 0 8px 8px 0;">
-<strong style="color: #00695c;">Key Takeaway:</strong> <em style="color: #004d40;">"Fix this in 90 days or we're shelving AI."</em> — Dr. Arun Raj, Board Chair
-</div>
 <!-- END CHAPTER OPENING GRAPHIC -->
 
 ## The Crisis: When $40 Billion Can't Buy Trust

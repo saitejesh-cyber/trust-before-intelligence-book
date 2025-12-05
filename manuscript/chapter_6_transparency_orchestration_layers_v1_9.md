@@ -11,33 +11,39 @@
 ---
 
 <!-- CHAPTER OPENING GRAPHIC -->
-<div style="display: flex; justify-content: center; gap: 20px; margin: 30px 0; flex-wrap: wrap;">
 
-<div style="flex: 1; max-width: 280px; background: linear-gradient(180deg, #fff5f5 0%, #ffebee 100%); border: 3px solid #c62828; border-radius: 10px; padding: 20px;">
-<h3 style="text-align: center; color: #b71c1c; border-bottom: 2px solid #c62828; padding-bottom: 10px; margin-top: 0;">❌ WITHOUT LAYERS 5-6-7</h3>
-<ul style="list-style: none; padding: 0; margin: 0;">
-<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">No dynamic access — HIPAA risk</li>
-<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">Black box AI — No explainability</li>
-<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">Single-agent only — No coordination</li>
-<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">"I don't trust it" — Blocked</li>
-</ul>
-</div>
+```mermaid
+graph LR
+    subgraph BEFORE["❌ WITHOUT LAYERS 5-6-7"]
+        B1["No dynamic access — HIPAA risk"]
+        B2["Black box AI — No explainability"]
+        B3["Single-agent only — No coordination"]
+        B4["I don't trust it — Blocked"]
+    end
+    
+    subgraph AFTER["✅ WITH LAYERS 5-6-7"]
+        A1["Layer 5: Governance + HITL"]
+        A2["Layer 6: Full trace + audit"]
+        A3["Layer 7: Multi-agent orchestration"]
+        A4["I can verify it — Trust earned"]
+    end
+    
+    BEFORE --> AFTER
+    
+    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style B1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style B2 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style B3 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style B4 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style A2 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style A3 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style A4 fill:#b2dfdb,stroke:#00897b,color:#004d40
+```
 
-<div style="flex: 1; max-width: 280px; background: linear-gradient(180deg, #e0f2f1 0%, #b2dfdb 100%); border: 3px solid #00897b; border-radius: 10px; padding: 20px;">
-<h3 style="text-align: center; color: #004d40; border-bottom: 2px solid #00897b; padding-bottom: 10px; margin-top: 0;">✅ WITH LAYERS 5-6-7</h3>
-<ul style="list-style: none; padding: 0; margin: 0;">
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;"><strong>Layer 5:</strong> Governance + HITL</li>
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;"><strong>Layer 6:</strong> Full trace + audit</li>
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;"><strong>Layer 7:</strong> Multi-agent orchestration</li>
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;">"I can verify it" — Trust earned</li>
-</ul>
-</div>
+> **Key Takeaway:** Trust requires transparency. Layers 5-6-7 make AI verifiable.
 
-</div>
-
-<div style="background: linear-gradient(135deg, #e0f2f1, #f0fff0); border-left: 5px solid #00897b; padding: 15px 20px; margin: 0 0 30px 0; border-radius: 0 8px 8px 0;">
-<strong style="color: #00695c;">Key Takeaway:</strong> Trust requires transparency. Layers 5-6-7 make AI verifiable.
-</div>
 <!-- END CHAPTER OPENING GRAPHIC -->
 
 ## PART 1: TRANSPARENCY + ORCHESTRATION ARCHITECTURE INTRODUCTION
@@ -1445,13 +1451,13 @@ The transformation journey covered ten weeks and closed seven infrastructure gap
 - **Diagrams:** 13 (all Colaberry Mermaid Design Codex compliant)
 - **Tables:** 8
 - **Checkpoints:** 4 (Book Codex compliant)
-- **Citations:** 18 (TCC-033 compliant, sequentially ordered)
+- **Citations:** 18 (sequentially ordered)
 - **INPACT™ Score Progression:** 67/100 → 85/100 documented
 - **Architecture Status:** COMPLETE (all 7 layers operational)
 
 **Quality Standards Met:**
-- ✅ TCC Compliant (evidence-based, healthcare context)
-- ✅ TCC-033 Citation Tier Distribution: 56% Tier 1, 22% Tier 2, 22% Tier 3
+- ✅ Evidence-based, healthcare context
+- ✅ Citation Tier Distribution: 56% Tier 1, 22% Tier 2, 22% Tier 3
 - ✅ Colaberry Mermaid Design Codex compliant
 - ✅ Echo Canonical Data Consistent
 - ✅ Agent Development Clarification (retrofitted from $2M pilots)

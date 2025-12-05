@@ -5,16 +5,15 @@
 **Author:** Ram Katamaraja, CEO, Colaberry Inc.  
 **Chapter Length:** ~12,500 words (25 pages)  
 **Version:** 3.0 | December 3, 2025  
-**Status:** PRODUCTION READY - TCC COMPLIANCE FIXES APPLIED
+**Status:** PRODUCTION READY
 
 **Changes in v3.0:**
-- TCC Compliance Fixes (5 items addressed):
+- Compliance Fixes (5 items addressed):
   - Fix #1: Citation [5] Google SRE 2016 retained as foundational standard (canonical source for "golden signals" terminology, parallel to NIST SP 800-162 for ABAC)
   - Fix #2: Citation [19] updated from Orca Security 2022 to ACM Computing Surveys 2025 (Tariq et al., peer-reviewed systematic review)
   - Fix #3: Added acronym list with 18 definitions before References section
   - Fix #4: Fixed diagram sequence (Diagram 12 ↔ Diagram 13 swapped to match appearance order)
   - Fix #5: Removed duplicate citation [20] (was duplicate of [1] NIST SP 800-162), renumbered [21]→[20], [22]→[21]
-- TCC Compliance Score: 8.3/10 → 9.5/10
 - Citations updated: [19] now ACM peer-reviewed, renumbered from 21 to 20 citations
 
 **Changes in v2.11:**
@@ -110,35 +109,43 @@
 ---
 
 <!-- CHAPTER OPENING GRAPHIC -->
-<div style="display: flex; justify-content: center; gap: 20px; margin: 30px 0; flex-wrap: wrap;">
 
-<div style="flex: 1; max-width: 280px; background: linear-gradient(180deg, #fff9e6 0%, #fff3cd 100%); border: 3px solid #f57c00; border-radius: 10px; padding: 20px;">
-<h3 style="text-align: center; color: #e65100; border-bottom: 2px solid #f57c00; padding-bottom: 10px; margin-top: 0;">🟠 BUILD COMPLETE (Week 10)</h3>
-<ul style="list-style: none; padding: 0; margin: 0;">
-<li style="background: #ffe0b2; color: #e65100; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #f57c00;">Architecture: Done ✓</li>
-<li style="background: #ffe0b2; color: #e65100; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #f57c00;">INPACT™: 86/100 ✓</li>
-<li style="background: #ffe0b2; color: #e65100; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #f57c00;">7 Layers: Complete ✓</li>
-<li style="background: #ffe0b2; color: #e65100; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #f57c00;"><em>"How do you know it stays trustworthy?"</em></li>
-</ul>
-</div>
+```mermaid
+graph LR
+    subgraph BEFORE["🟠 BUILD COMPLETE - Week 10"]
+        B1["Architecture: Done ✓"]
+        B2["INPACT™: 86/100 ✓"]
+        B3["7 Layers: Complete ✓"]
+        B4["How do you know it stays trustworthy?"]
+    end
+    
+    subgraph AFTER["✅ OPERATE CONTINUOUSLY"]
+        A1["G — Governance: 5/5"]
+        A2["O — Observability: 4/5"]
+        A3["A — Availability: 4/5"]
+        A4["L — Lexicon: 4/5"]
+        A5["S — Solid: 4/5"]
+        A6["Total: 21/25"]
+    end
+    
+    BEFORE --> AFTER
+    
+    style BEFORE fill:#fff3cd,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style B1 fill:#ffe0b2,stroke:#f57c00,color:#e65100
+    style B2 fill:#ffe0b2,stroke:#f57c00,color:#e65100
+    style B3 fill:#ffe0b2,stroke:#f57c00,color:#e65100
+    style B4 fill:#ffe0b2,stroke:#f57c00,color:#e65100
+    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style A2 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style A3 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style A4 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style A5 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style A6 fill:#00695c,stroke:#004d40,color:#ffffff
+```
 
-<div style="flex: 1; max-width: 280px; background: linear-gradient(180deg, #e0f2f1 0%, #b2dfdb 100%); border: 3px solid #00897b; border-radius: 10px; padding: 20px;">
-<h3 style="text-align: center; color: #004d40; border-bottom: 2px solid #00897b; padding-bottom: 10px; margin-top: 0;">✅ OPERATE CONTINUOUSLY</h3>
-<ul style="list-style: none; padding: 0; margin: 0;">
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;"><strong>G</strong> — Governance: 5/5</li>
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;"><strong>O</strong> — Observability: 4/5</li>
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;"><strong>A</strong> — Availability: 4/5</li>
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;"><strong>L</strong> — Lexicon: 4/5</li>
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;"><strong>S</strong> — Solid: 4/5</li>
-<li style="background: #00695c; color: #ffffff; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #004d40;"><strong>Total: 21/25</strong></li>
-</ul>
-</div>
+> **Key Takeaway:** *"Building is a 90-day project. Operating is forever."* — Dr. Arun Raj
 
-</div>
-
-<div style="background: linear-gradient(135deg, #e0f2f1, #f0fff0); border-left: 5px solid #00897b; padding: 15px 20px; margin: 0 0 30px 0; border-radius: 0 8px 8px 0;">
-<strong style="color: #00695c;">Key Takeaway:</strong> <em>"Building is a 90-day project. Operating is forever."</em> — Dr. Arun Raj
-</div>
 <!-- END CHAPTER OPENING GRAPHIC -->
 
 ## Part 1: The Architecture Is Complete. Now What?
@@ -211,7 +218,7 @@ The metaphor crystallized what Sarah had been feeling. The 7-layer architecture 
 
 Sarah turned to face him. "You've been thinking about this."
 
-"I've developed a framework for thinking about this systematically," Marcus said. "I call it GOALS—Governance, Observability, Availability, Lexicon, and Solid." [12]
+"I've developed a framework for thinking about this systematically," Marcus said. "I call it GOALS™—Governance, Observability, Availability, Lexicon, and Solid." [12]
 
 He walked to the whiteboard and sketched five interconnected circles.
 
@@ -775,7 +782,7 @@ The orchestrator must enforce permissions for each agent independently while mai
 
 ### Why Governance Comes First
 
-Governance is first not because it's most important—all five GOALS matter equally—but because governance failures have immediate, severe consequences.
+Governance is first not because it's most important—all five GOALS™ matter equally—but because governance failures have immediate, severe consequences.
 
 A performance degradation in Availability frustrates users.
 
@@ -1259,7 +1266,7 @@ graph TD
 
 **Echo's status:** Availability at 4/5 → maintaining through Week 12 (scale validation needed)
 
-**Coming next:** Lexicon (semantic understanding) and Solid (data quality)—the foundational GOALS that enable all others.
+**Coming next:** Lexicon (semantic understanding) and Solid (data quality)—the foundational GOALS™ that enable all others.
 
 ---
 
@@ -1511,7 +1518,7 @@ The agent was doing exactly what it was designed to do—providing fast, natural
 
 ### Why Solid Is the Foundation
 
-This is why solid is the foundation of all other GOALS.
+This is why solid is the foundation of all other GOALS™.
 
 You can have perfect governance, comprehensive observability, blazing speed, and flawless language understanding—but if the underlying data is wrong, everything fails.
 

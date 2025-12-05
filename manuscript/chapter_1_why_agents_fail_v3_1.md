@@ -14,44 +14,51 @@
 - **v2.6** (November 17, 2025): Fixed Diagram 5 rendering - shortened all labels to prevent text cutoff, removed emojis from subgraph headers (💰, ❌, 📊), compressed content ("$2,000,000" → "$2M", "adoption" → "adopt", "HIPAA violation" → "HIPAA", "Not agent-ready" → "Not ready"). Removed "direction TB" declarations and second-line headers. Result: More compact layout, all text fully visible.
 - **v2.5** (November 17, 2025): Fixed rendering issues in Diagrams 1 and 4. Diagram 1: Shortened labels (Feb vs February, Agent vs Agentic AI), removed subtitle from header, added source caption. Diagram 4: Converted two-line subgraph headers to single-line format, removed emojis from headers to prevent text cutoff. All diagrams now display fully without any text overlap or cutoff issues.
 - **v2.4** (November 17, 2025): Fixed Diagram 1 rendering issue - shortened month names and removed subtitle to prevent text overlap. Added caption with Deloitte source attribution. All other diagrams unchanged.
-- **v2.3** (November 17, 2025): Added 2 strategic diagrams for perfect part-to-diagram alignment. NEW Diagram 1 (Trust Collapse Timeline) visualizes Deloitte -64% trust data in Part 1. NEW Diagram 5 (Echo's Three Failing Pilots) creates visual scoreboard in Part 4. Fixed Diagram 4 (formerly Diagram 3) Codex compliance: corrected colors #ffcdd2 → #ffebee, added visible copyright, reduced box content to 3-line max, simplified structure. All 5 diagrams achieve ⭐⭐⭐⭐⭐ Colaberry Mermaid Diagram Design Codex v1.0 certification. Chapter maintains zero hallucinations, full TCC compliance, preserves all narrative integrity and audience focus (CDOs, CTOs, board-level decision makers).
+- **v2.3** (November 17, 2025): Added 2 strategic diagrams for perfect part-to-diagram alignment. NEW Diagram 1 (Trust Collapse Timeline) visualizes Deloitte -64% trust data in Part 1. NEW Diagram 5 (Echo's Three Failing Pilots) creates visual scoreboard in Part 4. Fixed Diagram 4 (formerly Diagram 3) Codex compliance: corrected colors #ffcdd2 → #ffebee, added visible copyright, reduced box content to 3-line max, simplified structure. All 5 diagrams achieve ⭐⭐⭐⭐⭐ Colaberry Mermaid Diagram Design Codex v1.0 certification. Chapter maintains zero hallucinations, preserves all narrative integrity and audience focus (CDOs, CTOs, board-level decision makers).
 - **v2.2** (November 16, 2025): Previous stable version
 
 ---
 
 <!-- CHAPTER OPENING GRAPHIC -->
-<div style="display: flex; justify-content: center; gap: 20px; margin: 30px 0; flex-wrap: wrap;">
 
-<div style="flex: 1; max-width: 280px; background: linear-gradient(180deg, #fff5f5 0%, #ffebee 100%); border: 3px solid #c62828; border-radius: 10px; padding: 20px;">
-<h3 style="text-align: center; color: #b71c1c; border-bottom: 2px solid #c62828; padding-bottom: 10px; margin-top: 0;">❌ WHAT THEY BUILT</h3>
-<ul style="list-style: none; padding: 0; margin: 0;">
-<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">Batch ETL — Overnight updates</li>
-<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">Static Dashboards — Human-mediated</li>
-<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">Role-Based Access — Fixed permissions</li>
-<li style="background: #ffcdd2; color: #b71c1c; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #c62828;">Manual Review — No real-time audit</li>
-</ul>
-</div>
+```mermaid
+graph LR
+    subgraph BEFORE["❌ WHAT THEY BUILT"]
+        B1["Batch ETL — Overnight updates"]
+        B2["Static Dashboards — Human-mediated"]
+        B3["Role-Based Access — Fixed permissions"]
+        B4["Manual Review — No real-time audit"]
+    end
+    
+    subgraph GAP["THE GAP"]
+        G1["≠"]
+    end
+    
+    subgraph AFTER["✅ WHAT AGENTS NEED"]
+        A1["Instant — Under 2s response"]
+        A2["Natural — Semantic understanding"]
+        A3["Permitted — Dynamic authorization"]
+        A4["Transparent — Complete audit trail"]
+    end
+    
+    BEFORE --> GAP --> AFTER
+    
+    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style GAP fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
+    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style B1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style B2 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style B3 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style B4 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style G1 fill:#f5f5f5,stroke:#666666,color:#333333
+    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style A2 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style A3 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style A4 fill:#b2dfdb,stroke:#00897b,color:#004d40
+```
 
-<div style="flex: 0 0 100px; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(180deg, #fafafa 0%, #f0f0f0 100%); border: 3px solid #666; border-radius: 10px; padding: 15px;">
-<h3 style="color: #333; margin: 0; font-size: 1.1em;">THE GAP</h3>
-<div style="font-size: 2.5em; color: #666; margin: 10px 0;">≠</div>
-</div>
+> **Key Takeaway:** The infrastructure gap IS the trust gap. BI-era systems cannot fulfill agent needs.
 
-<div style="flex: 1; max-width: 280px; background: linear-gradient(180deg, #e0f2f1 0%, #b2dfdb 100%); border: 3px solid #00897b; border-radius: 10px; padding: 20px;">
-<h3 style="text-align: center; color: #004d40; border-bottom: 2px solid #00897b; padding-bottom: 10px; margin-top: 0;">✅ WHAT AGENTS NEED</h3>
-<ul style="list-style: none; padding: 0; margin: 0;">
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;">Instant — Under 2s response</li>
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;">Natural — Semantic understanding</li>
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;">Permitted — Dynamic authorization</li>
-<li style="background: #80cbc4; color: #004d40; padding: 10px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #00897b;">Transparent — Complete audit trail</li>
-</ul>
-</div>
-
-</div>
-
-<div style="background: linear-gradient(135deg, #e0f2f1, #f0fff0); border-left: 5px solid #00897b; padding: 15px 20px; margin: 0 0 30px 0; border-radius: 0 8px 8px 0;">
-<strong style="color: #00695c;">Key Takeaway:</strong> The infrastructure gap IS the trust gap. BI-era systems cannot fulfill agent needs.
-</div>
 <!-- END CHAPTER OPENING GRAPHIC -->
 
 ## The 9:47 AM Cancellation
