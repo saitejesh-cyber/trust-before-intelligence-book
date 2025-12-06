@@ -5,8 +5,8 @@
 **Subtitle:** Why 95% of AI Projects Fail—3 Frameworks, 90-Day Fix  
 **Author:** Ram Katamaraja, CEO, Colaberry Inc.  
 **Chapter Length:** ~10,200 words (20 pages)  
-**Version:** 1.9 (GOALS™ Terminology Update)  
-**Date:** November 28, 2025
+**Version:** 1.9 (ROI Timeline Correction: 18-month → 3-year)  
+**Date:** December 5, 2025
 
 ---
 
@@ -1277,7 +1277,7 @@ Krish Yadav, Echo's CFO, reviewed the numbers Friday evening:
 
 **Investment:** $932,000 actual against $1.23M budget  
 **First-Year Value:** $3.8M (209% ROI)  
-**18-Month Projected Value:** $5.87M (477% ROI)  
+**Three-Year Projected Value:** $7.1M (477% ROI)  
 **Break-even Timeline:** 10 weeks post-deployment
 
 "We spent $298,000 less than projected," Krish noted. "And the architecture is production-ready two weeks ahead of the board presentation. That never happens."
