@@ -10,41 +10,42 @@
 
 ---
 
-<!-- CHAPTER OPENING GRAPHIC -->
+**Diagram 0: Intelligence Layers — Why Layers 3-4 Enable Understanding**
 
 ```mermaid
-graph LR
-    subgraph BEFORE["❌ WITHOUT LAYERS 3-4"]
-        B1["My doctor — Which doctor?"]
-        B2["MI — Heart attack or valve?"]
-        B3["No business context — Raw data only"]
-        B4["12% clarification rate — Friction"]
+flowchart LR
+    subgraph WITHOUT["<b>❌ WITHOUT LAYERS 3-4</b>"]
+        W1["<b>'My doctor'</b><br/><b>Which doctor?</b>"]
+        W2["<b>'MI'</b><br/><b>Heart attack or valve?</b>"]
+        W3["<b>No business context</b><br/><b>Raw data only</b>"]
+        W4["<b>12% clarification rate</b><br/><b>Friction</b>"]
     end
-    
-    subgraph AFTER["✅ WITH LAYERS 3-4"]
-        A1["Layer 3: Entity resolution 97%"]
-        A2["Layer 4: Context-aware RAG"]
-        A3["Healthcare terminology mapped"]
-        A4["4.8% clarification — Natural"]
+
+    subgraph WITH["<b>✅ WITH LAYERS 3-4</b>"]
+        L3["<b>Layer 3:</b><br/><b>Entity resolution 97%</b>"]
+        L4["<b>Layer 4:</b><br/><b>Context-aware RAG</b>"]
+        H["<b>Healthcare terminology</b><br/><b>mapped</b>"]
+        N["<b>4.8% clarification</b><br/><b>Natural</b>"]
     end
-    
-    BEFORE --> AFTER
-    
-    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style B1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style B2 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style B3 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style B4 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style A2 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style A3 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style A4 fill:#b2dfdb,stroke:#00897b,color:#004d40
+
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+
+    WITHOUT -.->|"<b>Transform</b>"| WITH
+
+    style WITHOUT fill:#fff5f5,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style W1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style W2 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style W3 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style W4 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style WITH fill:#f0fff0,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L4 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style H fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style N fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
 > **Key Takeaway:** Intelligence requires understanding. Layers 3-4 give agents semantic awareness.
-
-<!-- END CHAPTER OPENING GRAPHIC -->
 
 ## PART 1: INTELLIGENCE ARCHITECTURE INTRODUCTION
 
@@ -149,11 +150,11 @@ At Week 4 (end of Chapter 4), Echo's INPACT™ score was 42/100:
 | Dimension | Score | Status |
 |-----------|-------|--------|
 | **I (Instant)** | 4/6 | ✓ Cache + real-time operational |
-| **N (Natural)** | 2/6 | ✗ No semantic understanding |
-| **P (Permitted)** | 1/6 | ✗ Requires governance layer |
+| **N (Natural)** | 2/6 | ✓ No semantic understanding |
+| **P (Permitted)** | 1/6 | ✓ Requires governance layer |
 | **A (Adaptive)** | 3/6 | Model registry + feature store |
 | **C (Contextual)** | 4/6 | Multi-modal, needs retrieval |
-| **T (Transparent)** | 1/6 | ✗ Requires observability layer |
+| **T (Transparent)** | 1/6 | ✓ Requires observability layer |
 
 The Natural dimension scored 2/6 because Echo's infrastructure could not:
 - Translate natural language to data queries
@@ -195,20 +196,20 @@ She traced the failure mode:
 
 ```
 User Query: "Dr. Martinez's appointments"
-     ↓
+     →
 Natural Language → Direct SQL Generation (GPT-4)
-     ↓  
+     →  
 SELECT * FROM providers WHERE name LIKE '%Martinez%'
-     ↓
+     →
 Hits 3 systems independently:
   - EHR: 312 records with provider_id containing 'Martinez'
   - Credentialing: 245 records with physician_name containing 'Martinez'
   - Scheduling: 290 records with provider matching 'Martinez'
-     ↓
+     →
 Returns 847 unfiltered, unresolved records
-     ↓
+     →
 Agent cannot determine which records refer to the same provider
-     ↓
+     →
 Response: "Which Dr. Martinez do you mean? Please provide provider_id."
 ```
 
@@ -280,11 +281,11 @@ Sarah stood. "Phase 2 approved. Let's make the data intelligent."
 
 ---
 
-## 🔍 Checkpoint: The Intelligence Challenge
+## 📍 Checkpoint: The Intelligence Challenge
 
 **What we've covered so far:**
 
-✅ **Architecture Context:** Foundation layers complete (INPACT™ 42/100), but scheduling agent fails 53% of queries—data availability ≠ understanding.
+✅ **Architecture Context:** Foundation layers complete (INPACT™ 42/100), but scheduling agent fails 53% of queries—data availability ≥ understanding.
 
 ✅ **The Business Problem:** Agents receive queries like "Dr. Martinez's appointments" and return 847 unfiltered records across three systems. Without semantic understanding, agents cannot resolve "Dr. Martinez" to a single provider identity. Without intelligent retrieval, agents cannot find and assemble relevant context.
 
@@ -529,7 +530,7 @@ For data cataloging, Echo implemented [Alation](https://www.alation.com) to prov
 
 **Layer 3 primarily fulfills Natural (N):** Enabling business language understanding—"diabetes follow-up patients" translates to precise queries without SQL knowledge.
 
-> **📖 For complete technology evaluation criteria and implementation details, see Appendix E.3: Technology Selection Methodology.**
+> **📓 For complete technology evaluation criteria and implementation details, see Appendix DA-4, Section H.3: Technology Selection Methodology.**
 
 ### Operational Metrics
 
@@ -609,7 +610,7 @@ Anthropic's production RAG guidance explains that well-implemented retrieval arc
 
 Query understanding extracts intent, entities, and constraints from natural language—enabling "Show me Dr. Martinez's high-risk patients" to become executable logic. Components include intent classification (search/command/question), entity extraction (patients, providers, conditions), constraint identification (filters, ranges), and query reformulation for optimal retrieval.
 
-> **📖 For complete stage-by-stage specifications and model configurations, see Appendix E.2: RAG Pipeline Detailed Specifications.**
+> **📓 For complete stage-by-stage specifications and model configurations, see Appendix DA-4, Section H.2: RAG Pipeline Detailed Specifications.**
 
 ### Stage 2: Embedding Generation
 
@@ -675,7 +676,7 @@ Healthcare documents require semantic-aware chunking. Echo split progress notes 
 
 Echo integrated [Azure Cognitive Search](https://azure.microsoft.com/en-us/products/ai-services/cognitive-search) for keyword search running parallel with Pinecone. Reciprocal Rank Fusion (RRF) combines rankings from multiple strategies, giving documents appearing in multiple results higher scores.[11] The RRF algorithm, introduced by Cormack, Clarke, and Buettcher in 2009, uses the formula 1/(k+rank) where k=60 is the empirically optimal constant, enabling effective rank aggregation without hyperparameter tuning.[11]
 
-> **📖 For complete hybrid retrieval specifications including RRF formulas and optimization procedures, see Appendix E.2.**
+> **📓 For complete hybrid retrieval specifications including RRF formulas and optimization procedures, see Appendix DA-4, Section H.2.**
 
 ### Stage 4: Reranking
 
@@ -687,7 +688,7 @@ Echo implemented [Cohere Rerank](https://docs.cohere.com/docs/rerank-overview) w
 
 Retrieved and reranked results must be assembled into coherent context within the LLM's token window while maximizing information density. Challenges include token limits (GPT-4 Turbo: 128K, Claude 3: 200K), relevance ordering (most important first), citation tracking (each chunk links to source), and deduplication (consolidate overlapping content).
 
-> **📖 For complete context assembly specifications and token optimization strategies, see Appendix E.2.**
+> **📓 For complete context assembly specifications and token optimization strategies, see Appendix DA-4, Section H.2.**
 
 ### Universal Context Architecture: Seven-Stream Synthesis
 
@@ -711,7 +712,7 @@ Echo's synthesis engine orchestrates retrieval within <400ms: Query Analysis (50
 
 **INPACT™ Impact:** Universal context enables Natural (N) through business language translation, Contextual (C) through complete situational awareness, and Adaptive (A) through automatic response adjustment.
 
-> **📖 For complete namespace configurations and synthesis pipeline specifications, see Appendix E.1.**
+> **📓 For complete namespace configurations and synthesis pipeline specifications, see Appendix DA-4, Section H.1.**
 
 ### Confidence Handling and Hallucination Prevention
 
@@ -917,7 +918,7 @@ Supporting contributions:
 - **T (Transparent):** Citation mechanisms with confidence scores
 - **I (Instant):** Semantic caching reduces latency to milliseconds
 
-> **📖 For complete operational metrics calculation methodologies and monitoring configurations, see Appendix E.4.**
+> **📓 For complete operational metrics calculation methodologies and monitoring configurations, see Appendix DA-4, Section H.4.**
 
 ### Operational Metrics
 
@@ -934,7 +935,7 @@ NDCG (Normalized Discounted Cumulative Gain) is a standard ranking evaluation me
 
 ---
 
-## 🔍 Checkpoint 2: Intelligence Layers Complete
+## 📍 Checkpoint 2: Intelligence Layers Complete
 
 **What we've covered since Checkpoint 1:**
 
@@ -1180,7 +1181,7 @@ graph LR
 | **T (Transparent)** | 1/6 | 3/6 | **+2** | Citations link sources |
 | **TOTAL** | 42/100 | 67/100 | **+25** | Intelligence operational |
 
-*Note: INPACT™ scores incorporate weighted factors for production readiness assessment. See Appendix F for complete scoring methodology.*
+*Note: INPACT™ scores incorporate weighted factors for production readiness assessment. See Appendix DA-5 for complete scoring methodology.*
 
 ---
 
@@ -1420,11 +1421,11 @@ Chapter 6 completes the 7-Layer Architecture, making intelligent agents producti
 - **Tables:** 14
 - **Citations:** 18 (9× increase from v2.0)
 - **INPACT™ Score Progression:** 42/100 → 67/100 documented
-- **Cross-references to Appendix E:** 5 strategic placements
+- **Cross-references to Appendix DA-4:** 5 strategic placements
 
 **Quality Standards Met:**
-- ✅ Evidence-based, healthcare context
-- ✅ Citation Tier Distribution: 50% Tier 1, 22% Tier 2, 28% Tier 3
+- ✅ TCC Compliant (evidence-based, healthcare context)
+- ✅ TCC-033 Citation Tier Distribution: 50% Tier 1, 22% Tier 2, 28% Tier 3
 - ✅ Colaberry Mermaid Design Codex compliant
 - ✅ Moore-Kim 5-Movement Pattern (80% technical, 20% narrative)
 - ✅ Echo Canonical Data Consistent

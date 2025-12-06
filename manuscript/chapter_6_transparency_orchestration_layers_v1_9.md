@@ -5,46 +5,47 @@
 **Subtitle:** Why 95% of AI Projects Fail—3 Frameworks, 90-Day Fix  
 **Author:** Ram Katamaraja, CEO, Colaberry Inc.  
 **Chapter Length:** ~10,200 words (20 pages)  
-**Version:** 1.9 (ROI Timeline Correction: 18-month → 3-year)  
-**Date:** December 5, 2025
+**Version:** 1.9 (GOALS™ Terminology Update)  
+**Date:** November 28, 2025
 
 ---
 
-<!-- CHAPTER OPENING GRAPHIC -->
+**Diagram 0: Transparency + Orchestration Layers — Why Layers 5-6-7 Complete Trust**
 
 ```mermaid
-graph LR
-    subgraph BEFORE["❌ WITHOUT LAYERS 5-6-7"]
-        B1["No dynamic access — HIPAA risk"]
-        B2["Black box AI — No explainability"]
-        B3["Single-agent only — No coordination"]
-        B4["I don't trust it — Blocked"]
+flowchart LR
+    subgraph WITHOUT["<b>❌ WITHOUT LAYERS 5-6-7</b>"]
+        W1["<b>No dynamic access</b><br/><b>HIPAA risk</b>"]
+        W2["<b>Black box AI</b><br/><b>No explainability</b>"]
+        W3["<b>Single-agent only</b><br/><b>No coordination</b>"]
+        W4["<b>'I don't trust it'</b><br/><b>Blocked</b>"]
     end
-    
-    subgraph AFTER["✅ WITH LAYERS 5-6-7"]
-        A1["Layer 5: Governance + HITL"]
-        A2["Layer 6: Full trace + audit"]
-        A3["Layer 7: Multi-agent orchestration"]
-        A4["I can verify it — Trust earned"]
+
+    subgraph WITH["<b>✅ WITH LAYERS 5-6-7</b>"]
+        L5["<b>Layer 5:</b><br/><b>Governance + HITL</b>"]
+        L6["<b>Layer 6:</b><br/><b>Full trace + audit</b>"]
+        L7["<b>Layer 7:</b><br/><b>Multi-agent orchestration</b>"]
+        T["<b>'I can verify it'</b><br/><b>Trust earned</b>"]
     end
-    
-    BEFORE --> AFTER
-    
-    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style B1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style B2 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style B3 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style B4 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style A2 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style A3 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style A4 fill:#b2dfdb,stroke:#00897b,color:#004d40
+
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+
+    WITHOUT -.->|"<b>Transform</b>"| WITH
+
+    style WITHOUT fill:#fff5f5,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style W1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style W2 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style W3 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style W4 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style WITH fill:#f0fff0,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L5 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L6 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L7 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style T fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
 > **Key Takeaway:** Trust requires transparency. Layers 5-6-7 make AI verifiable.
-
-<!-- END CHAPTER OPENING GRAPHIC -->
 
 ## PART 1: TRANSPARENCY + ORCHESTRATION ARCHITECTURE INTRODUCTION
 
@@ -69,7 +70,7 @@ graph TB
     subgraph "<b>THE ARCHITECTURE OF TRUST</b>"
         P1["<b>PILLAR 1</b><br/><b>INPACT™</b><br/><b>What Agents Need</b><br/><b>✓ Complete</b>"]
         P2["<b>PILLAR 2</b><br/><b>7-Layer Architecture</b><br/><b>What to Build</b><br/><b>⚡ Completing Now</b>"]
-        P3["<b>PILLAR 3</b><br/><b>GOALS™</b><br/><b>How to Operate</b><br/><b>○ Next</b>"]
+        P3["<b>PILLAR 3</b><br/><b>GOALS™</b><br/><b>How to Operate</b><br/><b>⊹ Next</b>"]
     end
     
     BUILD["<b>🔧 Chapter 6 Builds Here</b><br/><b>Layers 5-6-7</b><br/><b>Transparency + Orchestration</b>"]
@@ -309,7 +310,7 @@ graph TB
         
         subgraph "<b>ROW 2: DECISION & AUDIT</b>"
             Auto["<b>✓ Auto-Approve</b><br/><b>Risk < 7</b>"]
-            HITL["<b>⚠️ HITL</b><br/><b>Risk ≥ 7</b>"]
+            HITL["<b>⚠ï¸ HITL</b><br/><b>Risk ≥ 7</b>"]
             Human["<b>Human Review</b>"]
             Audit["<b>📊 Audit Log</b>"]
         end
@@ -383,16 +384,16 @@ Pattern selection depends on reversibility, urgency, and risk magnitude.
 
 ```mermaid
 graph TB
-    Query["<b>🔍 Agent Request</b><br/><b>Access Needed</b>"]
+    Query["<b>📍 Agent Request</b><br/><b>Access Needed</b>"]
     
     subgraph "<b>ABAC EVALUATION</b>"
-        S["<b>👤 SUBJECT</b><br/><b>Who is asking?</b><br/><b>Role, Dept, Credentials</b>"]
-        R["<b>📋 RESOURCE</b><br/><b>What data?</b><br/><b>Classification, Sensitivity</b>"]
+        S["<b>💤 SUBJECT</b><br/><b>Who is asking?</b><br/><b>Role, Dept, Credentials</b>"]
+        R["<b>📝 RESOURCE</b><br/><b>What data?</b><br/><b>Classification, Sensitivity</b>"]
         A["<b>⚡ ACTION</b><br/><b>What operation?</b><br/><b>Read, Write, Export</b>"]
         C["<b>📍 CONTEXT</b><br/><b>When/Where?</b><br/><b>Time, Location, Device</b>"]
     end
     
-    Policy["<b>🎯 Policy Decision</b><br/><b>Risk Score 0-10</b>"]
+    Policy["<b>🤝 Policy Decision</b><br/><b>Risk Score 0-10</b>"]
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
@@ -468,19 +469,19 @@ Echo deployed Layer 5 across Week 8-9 with the following architecture:
 graph TB
     subgraph "<b>HITL ESCALATION PATTERNS</b>"
         subgraph "<b>SYNC (Blocking)</b>"
-            S1["<b>⚠️ High-Risk Request</b>"]
-            S2["<b>⏸️ BLOCKED</b>"]
-            S3["<b>👨‍⚕️ Human Review</b>"]
+            S1["<b>⚠ï¸ High-Risk Request</b>"]
+            S2["<b>⏸ï¸ BLOCKED</b>"]
+            S3["<b>⏱•⚕️ Human Review</b>"]
             S4["<b>✓ Execute</b>"]
         end
         
         subgraph "<b>ASYNC & POST-HOC</b>"
             A1["<b>⚡ Time-Sensitive</b>"]
-            A2["<b>📋 Provisional</b>"]
+            A2["<b>📝 Provisional</b>"]
             A3["<b>👁️ Review Later</b>"]
             P1["<b>📊 Low-Risk</b>"]
             P2["<b>✓ Execute</b>"]
-            P3["<b>📝 Audit Log</b>"]
+            P3["<b>📍 Audit Log</b>"]
         end
     end
     
@@ -798,15 +799,15 @@ graph TB
     subgraph "<b>LAYER 7: ORCHESTRATION</b>"
         Query["<b>Multi-Domain Query</b><br/><b>Complex Care Request</b>"]
         
-        Supervisor["<b>🎯 Supervisor Agent</b><br/><b>LangGraph Coordinator</b>"]
+        Supervisor["<b>🤝 Supervisor Agent</b><br/><b>LangGraph Coordinator</b>"]
         
         Intent{{"<b>Intent Classification</b>"}}
         
         Care["<b>👥 Care Coordination</b><br/><b>Scheduling, Follow-up</b>"]
         Clinical["<b>🏥 Clinical Documentation</b><br/><b>Records, Medications</b>"]
-        Revenue["<b>💰 Revenue Cycle</b><br/><b>Insurance, Auth</b>"]
+        Revenue["<b>🔐 Revenue Cycle</b><br/><b>Insurance, Auth</b>"]
         
-        State["<b>📦 Shared State</b><br/><b>Patient Context</b>"]
+        State["<b>🔍 Shared State</b><br/><b>Patient Context</b>"]
         
         Synthesis["<b>✨ Response Synthesis</b><br/><b>Unified Answer</b>"]
     end
@@ -960,17 +961,17 @@ The room was silent for a moment. Then Jamie grinned. "**The Architecture of Tru
 
 ```mermaid
 graph TB
-    Query["<b>📝 Discharge Query</b><br/><b>Schedule, Review, Verify</b>"]
+    Query["<b>📍 Discharge Query</b><br/><b>Schedule, Review, Verify</b>"]
     
-    Supervisor["<b>🎯 Supervisor</b><br/><b>Routes to 3 Agents</b>"]
+    Supervisor["<b>🤝 Supervisor</b><br/><b>Routes to 3 Agents</b>"]
     
     subgraph "<b>PARALLEL EXECUTION (2.3s)</b>"
         Care["<b>👥 Care Agent</b><br/><b>Follow-up: Tue 10 AM</b><br/><b>PT Eval: Thu 2 PM</b>"]
         Clinical["<b>🏥 Clinical Agent</b><br/><b>3 Medications</b><br/><b>No Interactions</b>"]
-        Revenue["<b>💰 Revenue Agent</b><br/><b>UHC PPO Verified</b><br/><b>$45 Copay</b>"]
+        Revenue["<b>🔐 Revenue Agent</b><br/><b>UHC PPO Verified</b><br/><b>$45 Copay</b>"]
     end
     
-    State["<b>📦 Shared State</b><br/><b>Patient: Maria Santos</b><br/><b>MRN: 78234156</b>"]
+    State["<b>🔍 Shared State</b><br/><b>Patient: Maria Santos</b><br/><b>MRN: 78234156</b>"]
     
     Response["<b>✨ Unified Response</b><br/><b>Complete Discharge Prep</b><br/><b>4.2 Seconds Total</b>"]
     
@@ -1246,7 +1247,7 @@ graph TB
         P3["<b>PILLAR 3: GOALS™</b><br/><b>How to Operate</b><br/><b>5 Operational Pillars</b><br/><b>→ Chapter 7</b>"]
     end
     
-    Result["<b>🎯 Production Ready</b><br/><b>85/100 INPACT™</b><br/><b>$932K Investment</b><br/><b>70 Days</b>"]
+    Result["<b>🤝 Production Ready</b><br/><b>85/100 INPACT™</b><br/><b>$932K Investment</b><br/><b>70 Days</b>"]
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
@@ -1277,7 +1278,7 @@ Krish Yadav, Echo's CFO, reviewed the numbers Friday evening:
 
 **Investment:** $932,000 actual against $1.23M budget  
 **First-Year Value:** $3.8M (209% ROI)  
-**Three-Year Projected Value:** $7.1M (477% ROI)  
+**18-Month Projected Value:** $5.87M (477% ROI)  
 **Break-even Timeline:** 10 weeks post-deployment
 
 "We spent $298,000 less than projected," Krish noted. "And the architecture is production-ready two weeks ahead of the board presentation. That never happens."
@@ -1431,7 +1432,7 @@ The transformation journey covered ten weeks and closed seven infrastructure gap
 
 [14] Redis. (2024). "Redis Documentation." https://redis.io/docs/latest/integrate/redis-data-integration/data-pipelines/transform-examples/redis-expiration-example/
 
-[15] Jacovi, A., Marasović, A., Miller, T., & Goldberg, Y. (2021). "Formalizing Trust in Artificial Intelligence: Prerequisites, Causes and Goals of Human Trust in AI." *Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency*, 624-635. https://arxiv.org/abs/2010.07487
+[15] Jacovi, A., MarasoviÄ‡, A., Miller, T., & Goldberg, Y. (2021). "Formalizing Trust in Artificial Intelligence: Prerequisites, Causes and Goals of Human Trust in AI." *Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency*, 624-635. https://arxiv.org/abs/2010.07487
 
 [16] Gao, Y., Xiong, Y., Gao, X., et al. (2024). "Retrieval-Augmented Generation for Large Language Models: A Survey." *arXiv preprint arXiv:2312.10997*. https://arxiv.org/abs/2312.10997
 
@@ -1451,13 +1452,13 @@ The transformation journey covered ten weeks and closed seven infrastructure gap
 - **Diagrams:** 13 (all Colaberry Mermaid Design Codex compliant)
 - **Tables:** 8
 - **Checkpoints:** 4 (Book Codex compliant)
-- **Citations:** 18 (sequentially ordered)
+- **Citations:** 18 (TCC-033 compliant, sequentially ordered)
 - **INPACT™ Score Progression:** 67/100 → 85/100 documented
 - **Architecture Status:** COMPLETE (all 7 layers operational)
 
 **Quality Standards Met:**
-- ✅ Evidence-based, healthcare context
-- ✅ Citation Tier Distribution: 56% Tier 1, 22% Tier 2, 22% Tier 3
+- ✅ TCC Compliant (evidence-based, healthcare context)
+- ✅ TCC-033 Citation Tier Distribution: 56% Tier 1, 22% Tier 2, 22% Tier 3
 - ✅ Colaberry Mermaid Design Codex compliant
 - ✅ Echo Canonical Data Consistent
 - ✅ Agent Development Clarification (retrofitted from $2M pilots)

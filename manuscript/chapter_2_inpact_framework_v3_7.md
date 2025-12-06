@@ -10,49 +10,50 @@
 
 ---
 
-<!-- CHAPTER OPENING GRAPHIC -->
+**Diagram 0: The INPACT™ Framework — Six Infrastructure Needs for Agent Trust**
 
 ```mermaid
-graph LR
-    subgraph BEFORE["❌ WITHOUT INPACT™"]
-        B1["Why is this so slow?"]
-        B2["It doesn't understand me"]
-        B3["Who authorized this?"]
-        B4["It keeps making mistakes"]
-        B5["It doesn't know context"]
-        B6["I don't trust it"]
+flowchart LR
+    subgraph WITHOUT["<b>❌ WITHOUT INPACT™</b>"]
+        W1["<b>'Why is this so slow?'</b>"]
+        W2["<b>'It doesn't understand me'</b>"]
+        W3["<b>'Who authorized this?'</b>"]
+        W4["<b>'It keeps making mistakes'</b>"]
+        W5["<b>'It doesn't know context'</b>"]
+        W6["<b>'I don't trust it'</b>"]
     end
-    
-    subgraph AFTER["✅ WITH INPACT™"]
-        A1["I — Instant: Under 2 seconds"]
-        A2["N — Natural: 97% comprehension"]
-        A3["P — Permitted: Dynamic access"]
-        A4["A — Adaptive: Learns from feedback"]
-        A5["C — Contextual: Cross-system aware"]
-        A6["T — Transparent: Full audit trail"]
+
+    subgraph WITH["<b>✅ WITH INPACT™</b>"]
+        I["<b>I — Instant</b><br/><b>Under 2 seconds</b>"]
+        N["<b>N — Natural</b><br/><b>97% comprehension</b>"]
+        P["<b>P — Permitted</b><br/><b>Dynamic access</b>"]
+        A["<b>A — Adaptive</b><br/><b>Learns from feedback</b>"]
+        C["<b>C — Contextual</b><br/><b>Cross-system aware</b>"]
+        T["<b>T — Transparent</b><br/><b>Full audit trail</b>"]
     end
-    
-    BEFORE --> AFTER
-    
-    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style B1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style B2 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style B3 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style B4 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style B5 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style B6 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style A2 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style A3 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style A4 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style A5 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style A6 fill:#b2dfdb,stroke:#00897b,color:#004d40
+
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+
+    WITHOUT -.->|"<b>Transform</b>"| WITH
+
+    style WITHOUT fill:#fff5f5,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style W1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style W2 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style W3 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style W4 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style W5 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style W6 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style WITH fill:#f0fff0,stroke:#00897b,stroke-width:2px,color:#004d40
+    style I fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style N fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style P fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style C fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style T fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
 > **Key Takeaway:** Six infrastructure needs. One framework. Trust.
-
-<!-- END CHAPTER OPENING GRAPHIC -->
 
 ## Part 1: Framework Introduction (1,540 words)
 
@@ -486,7 +487,7 @@ The board approved. Week 12 target: 86/100 with first production agent deployed.
 
 ## Part 3: The Six Needs (4,225 words)
 
-### I – Instant: Speed Builds Confidence
+### I — Instant: Speed Builds Confidence
 
 **The User Need**
 
@@ -556,7 +557,7 @@ Results: 1.8 second average response (82% improvement), under 30-second data fre
 
 ---
 
-### N – Natural: Understanding Builds Connection
+### N — Natural: Understanding Builds Connection
 
 **The User Need**
 
@@ -626,7 +627,7 @@ Results: Query accuracy improved from 43% to 87% (103% improvement). Simple quer
 
 ---
 
-### P – Permitted: Authorization Builds Safety
+### P — Permitted: Authorization Builds Safety
 
 **The User Need**
 
@@ -703,7 +704,7 @@ Results: HIPAA compliance restored. Policy evaluation: 6ms average (sub-10ms req
 **Your Framework Quick Check:** Of these three needs (Instant, Natural, Permitted), which represents your organization's biggest gap?
 ---
 
-### A – Adaptive: Learning Builds Reliability
+### A — Adaptive: Learning Builds Reliability
 
 **The User Need**
 
@@ -773,7 +774,7 @@ Results: Drift detection latency: 48 hours (was 3 months). Retraining cycle: 3 d
 
 ---
 
-### C – Contextual: Integration Builds Completeness
+### C — Contextual: Integration Builds Completeness
 
 **The User Need**
 
@@ -841,7 +842,7 @@ Results: Query completeness: 40% → 92% (130% improvement). Systems integrated:
 
 ---
 
-### T – Transparent: Explainability Builds Confidence
+### T — Transparent: Explainability Builds Confidence
 
 **The User Need**
 
@@ -931,7 +932,7 @@ INPACT™ assessment produces actionable insights across six dimensions. Each di
 
 **Practical Use:** Assessment identifies specific infrastructure gaps preventing agent readiness. Echo's 28/100 revealed five critical dimensions (scores 1-2/6), one moderate strength (Contextual at 3/6), and a clear roadmap: prioritize Instant, Natural, Permitted first (highest impact, foundational dependencies).
 
-Complete assessment methodology and diagnostic tool available at colaberry.ai/assessment. Appendix A provides technology selection guidance across 138+ evaluated products.
+Complete assessment methodology and diagnostic tool available at colaberry.ai/assessment. Appendix DA-1 provides technology selection guidance across 138+ evaluated products.
 
 ### Which Need to Fix First?
 

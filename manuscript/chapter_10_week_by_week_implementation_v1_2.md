@@ -8,38 +8,41 @@
 
 ```mermaid
 graph LR
-    subgraph BEFORE["❌ AD-HOC PROJECTS"]
+    subgraph BEFORE["<b>❌ AD-HOC PROJECTS</b>"]
         B1["<b>No clear timeline</b>"]
         B2["<b>Unknown costs</b>"]
         B3["<b>Scope creep</b>"]
         B4["<b>Missed dependencies</b>"]
     end
     
-    subgraph TRANSFORM["90-DAY ROADMAP"]
+    subgraph TRANSFORM["<b>90-DAY ROADMAP</b>"]
         T1["<b>Structured Phases</b>"]
     end
     
-    subgraph AFTER["✅ SYSTEMATIC TRANSFORMATION"]
+    subgraph AFTER["<b>✅ SYSTEMATIC TRANSFORMATION</b>"]
         A1["<b>Week-by-week plan</b>"]
         A2["<b>Defined costs</b>"]
         A3["<b>Clear checkpoints</b>"]
         A4["<b>Sequenced layers</b>"]
     end
     
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
     BEFORE --> TRANSFORM --> AFTER
     
-    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style BEFORE fill:#fff5f5,stroke:#c62828,stroke-width:2px,color:#b71c1c
     style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
-    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style B1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style B2 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style B3 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style B4 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style T1 fill:#f5f5f5,stroke:#666666,color:#333333
-    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style A2 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style A3 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style A4 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style AFTER fill:#f0fff0,stroke:#00897b,stroke-width:2px,color:#004d40
+    style B1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style B2 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style B3 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style B4 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style T1 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
+    style A1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A4 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
 > **Key Takeaway:** Ninety days from assessment to production. Week-by-week structure eliminates guesswork.
@@ -1574,7 +1577,7 @@ The board approved. Echo's 90-day transformation was complete.
 
 **Investment Summary (Complete):**
 
-Echo's $1.23M implementation across 10 weeks achieved +58 INPACT™ points (28→86). *For complete investment breakdown by phase and metrics, see Appendix M (Quick Reference Card).*
+Echo's $1.23M implementation across 10 weeks achieved +58 INPACT™ points (28→86). *For complete investment breakdown by phase and metrics, see Appendix E (Quick Reference Card).*
 
 *Note: Weeks 11-12 validation costs included in Phase 3 budget. Ongoing operations: $52K/month recurring.*
 
@@ -1900,7 +1903,7 @@ Chapter 11 answers these questions with a comprehensive technology selection gui
 
 **Echo's Complete Journey:**
 
-Echo progressed from 28/100 to 89/100 INPACT™ score across 12 weeks, transforming 47-second queries into 1.8-second responses with 96%+ accuracy. *For complete metrics and progression detail, see Appendix M (Quick Reference Card).*
+Echo progressed from 28/100 to 89/100 INPACT™ score across 12 weeks, transforming 47-second queries into 1.8-second responses with 96%+ accuracy. *For complete metrics and progression detail, see Appendix E (Quick Reference Card).*
 
 ---
 

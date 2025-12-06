@@ -8,38 +8,41 @@
 
 ```mermaid
 graph LR
-    subgraph BEFORE["❌ WORKS ON MY MACHINE"]
+    subgraph BEFORE["<b>❌ WORKS ON MY MACHINE</b>"]
         B1["<b>Ad-hoc monitoring</b>"]
         B2["<b>Reactive firefighting</b>"]
         B3["<b>Manual processes</b>"]
         B4["<b>Performance drift</b>"]
     end
     
-    subgraph TRANSFORM["PRODUCTION READINESS"]
-        T1["<b>15 Criteria<br/>+ GOALS™</b>"]
+    subgraph TRANSFORM["<b>PRODUCTION READINESS</b>"]
+        T1["<b>15 Criteria</b><br/><b>+ GOALS™</b>"]
     end
     
-    subgraph AFTER["✅ OPERATIONS EXCELLENCE"]
+    subgraph AFTER["<b>✅ OPERATIONS EXCELLENCE</b>"]
         A1["<b>Proactive observability</b>"]
         A2["<b>Structured incidents</b>"]
         A3["<b>MLOps automation</b>"]
         A4["<b>Continuous improvement</b>"]
     end
     
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
     BEFORE --> TRANSFORM --> AFTER
     
-    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style BEFORE fill:#fff5f5,stroke:#c62828,stroke-width:2px,color:#b71c1c
     style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
-    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style B1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style B2 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style B3 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style B4 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style T1 fill:#f5f5f5,stroke:#666666,color:#333333
-    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style A2 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style A3 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style A4 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style AFTER fill:#f0fff0,stroke:#00897b,stroke-width:2px,color:#004d40
+    style B1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style B2 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style B3 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style B4 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style T1 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
+    style A1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A4 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
 > **Key Takeaway:** Building is easy. Operating at scale requires systematic excellence.
@@ -228,7 +231,7 @@ Production operations require ongoing attention across all three pillars. Rather
 - **INPACT™ monitoring metrics and alert thresholds:** Chapter 9, Part 4 provides the definitive INPACT™ interpretation guide with dimension-specific targets.
 - **Layer ownership and team responsibilities:** Chapter 10, Parts 2-4 document team compositions and layer assignments by phase.
 - **GOALS™ operational cadence:** Chapter 7, Part 5 establishes daily, weekly, and monthly GOALS™ rhythms.
-- **Complete metrics reference:** Appendix M (Quick Reference Card) consolidates all canonical metrics.
+- **Complete metrics reference:** Appendix E (Quick Reference Card) consolidates all canonical metrics.
 
 The sections below focus on what's unique to production operations: go-live planning, MLOps practices, incident response, and continuous improvement.
 
@@ -1279,7 +1282,7 @@ Whether you build from scratch following the patterns in Chapters 4-12 or accele
 
 Trust before intelligence. Architecture before agents. The three pillars are yours.
 
-*For Echo's complete metrics and progression, see Appendix M (Quick Reference Card).*
+*For Echo's complete metrics and progression, see Appendix E (Quick Reference Card).*
 
 ---
 
@@ -1293,7 +1296,7 @@ Trust before intelligence. Architecture before agents. The three pillars are you
 | Part 4 | Continuous Improvement | Weekly cycles, feedback loops, drift detection |
 | Part 5 | AIXcelerator | Platform overview, access paths |
 
-*For complete canonical metrics (investment, ROI, timeline), see Appendix M (Quick Reference Card).*
+*For complete canonical metrics (investment, ROI, timeline), see Appendix E (Quick Reference Card).*
 
 ---
 

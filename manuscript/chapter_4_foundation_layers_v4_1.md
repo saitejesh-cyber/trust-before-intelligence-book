@@ -10,41 +10,42 @@
 
 ---
 
-<!-- CHAPTER OPENING GRAPHIC -->
+**Diagram 0: Foundation Layers — Why Layers 1-2 Are Prerequisites**
 
 ```mermaid
-graph LR
-    subgraph BEFORE["❌ WITHOUT LAYERS 1-2"]
-        B1["Siloed databases — No unified access"]
-        B2["Overnight batch ETL — Stale data"]
-        B3["No vector storage — No semantic search"]
-        B4["Minutes to query — Users abandon"]
+flowchart LR
+    subgraph WITHOUT["<b>❌ WITHOUT LAYERS 1-2</b>"]
+        W1["<b>Siloed databases</b><br/><b>No unified access</b>"]
+        W2["<b>Overnight batch ETL</b><br/><b>Stale data</b>"]
+        W3["<b>No vector storage</b><br/><b>No semantic search</b>"]
+        W4["<b>Minutes to query</b><br/><b>Users abandon</b>"]
     end
-    
-    subgraph AFTER["✅ WITH LAYERS 1-2"]
-        A1["Layer 1: Unified multi-modal storage"]
-        A2["Layer 2: Sub-second freshness"]
-        A3["Vector + Graph ready"]
-        A4["Under 2s response — Users trust"]
+
+    subgraph WITH["<b>✅ WITH LAYERS 1-2</b>"]
+        L1["<b>Layer 1:</b><br/><b>Unified multi-modal storage</b>"]
+        L2["<b>Layer 2:</b><br/><b>Sub-second freshness</b>"]
+        V["<b>Vector + Graph ready</b>"]
+        T["<b>Under 2s response</b><br/><b>Users trust</b>"]
     end
-    
-    BEFORE --> AFTER
-    
-    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style B1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style B2 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style B3 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style B4 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style A2 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style A3 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style A4 fill:#b2dfdb,stroke:#00897b,color:#004d40
+
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+
+    WITHOUT -.->|"<b>Transform</b>"| WITH
+
+    style WITHOUT fill:#fff5f5,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style W1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style W2 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style W3 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style W4 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style WITH fill:#f0fff0,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style V fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style T fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
 > **Key Takeaway:** Foundation first. Without Layers 1-2, nothing else works.
-
-<!-- END CHAPTER OPENING GRAPHIC -->
 
 ## SECTION 1: ARCHITECTURE INTRODUCTION
 
@@ -224,7 +225,7 @@ Chapters 5-7 address the remaining five gaps (semantic understanding, intelligen
 
 ---
 
-## 🔍 Checkpoint 1: Foundation Architecture Established
+## 📍 Checkpoint 1: Foundation Architecture Established
 
 **What we've covered so far:**
 
@@ -348,7 +349,7 @@ The team documented their constraints—boundaries within which technology decis
 
 **Phase 2 and Phase 3** add intelligence-specific storage (Pinecone vector DB, semantic search index) and governance infrastructure. See Chapters 5-7 for detailed breakdowns.
 
-**Operational Costs** (separate from $1.23M implementation): Foundation layers require $24,600/month ongoing. *(See Appendix E for complete breakdown including Phases 2-3)*
+**Operational Costs** (separate from $1.23M implementation): Foundation layers require $24,600/month ongoing. *(See Appendix D for complete breakdown including Phases 2-3)*
 
 **Compliance:** HIPAA, HITECH, state privacy regulations. Every storage technology required Business Associate Agreement (BAA). Encryption at rest (AES-256) and in transit (TLS 1.2+) mandatory. Seven-year retention for medical records. Audit logging for all data access. Decision: Exclude vendors without healthcare BAA or HIPAA-compliant deployment path.
 
@@ -358,13 +359,13 @@ The team documented their constraints—boundaries within which technology decis
 
 "These constraints eliminate 80% of technology options before we even evaluate," Sarah observed. "That's good. Decision paralysis kills projects. Clear constraints accelerate decisions."
 
-**For detailed technology selection criteria, product comparisons with INPACT™ + GOALS™ scoring, healthcare-specific guidance, and budget-tier recommendations across all storage and real-time data technologies, see Appendix A: Technology Selection Guide (Sections 2.1-2.2).**
+**For detailed technology selection criteria, product comparisons with INPACT™ + GOALS™ scoring, healthcare-specific guidance, and budget-tier recommendations across all storage and real-time data technologies, see Appendix DA-1: Technology Selection Guide (Sections 2.1-2.2).**
 
 The team was ready to build.
 
 ---
 
-## 🔍 Checkpoint 2: Foundation Strategy Set
+## 📍 Checkpoint 2: Foundation Strategy Set
 
 **What we've covered since Checkpoint 1:**
 
@@ -716,11 +717,11 @@ graph LR
 - Transparent: 2/6 → 2/6 (unchanged, requires Layer 2 lineage)
 - **Week 2 total: 32/100 (+4 points from Layer 1 alone)**
 
-**Technology Selection Note:** Echo's vendor selections (Pinecone, Neo4j, MongoDB, Tecton, etc.) reflect their specific constraints (Azure-first, HIPAA compliance, 4-week timeline). Your organization's optimal choices may differ based on cloud platform, budget tier, team expertise, and compliance requirements. For comprehensive vendor comparisons with INPACT™ + GOALS™ scoring, alternative options, and decision criteria for each storage category, see **Appendix A, Section 2.1: Layer 1 Multi-Modal Storage.**
+**Technology Selection Note:** Echo's vendor selections (Pinecone, Neo4j, MongoDB, Tecton, etc.) reflect their specific constraints (Azure-first, HIPAA compliance, 4-week timeline). Your organization's optimal choices may differ based on cloud platform, budget tier, team expertise, and compliance requirements. For comprehensive vendor comparisons with INPACT™ + GOALS™ scoring, alternative options, and decision criteria for each storage category, see **Appendix DA-1, Section 2.1: Layer 1 Multi-Modal Storage.**
 
 ---
 
-## 🔍 Checkpoint 3: Multi-Modal Storage Complete
+## 📍 Checkpoint 3: Multi-Modal Storage Complete
 
 **What we've covered since Checkpoint 2:**
 
@@ -951,11 +952,11 @@ async def stream_clinical_response(query, patient_context):
 - Transparent: 2/6 → 3/6 (+1, event log provides complete lineage)
 - **Week 4 total: 42/100 (+10 points from Layer 2)**
 
-**Technology Selection Note:** Echo's real-time fabric choices (Debezium CDC, Confluent Cloud Kafka, Apache Flink on Databricks) reflect their Azure-first strategy and managed services preference. Alternative architectures include AWS-native (Kinesis + DMS), Google Cloud-native (Pub/Sub + Datastream), or open-source (self-hosted Kafka + Flink). For comprehensive CDC, streaming, and event processing vendor comparisons, see **Appendix A, Section 2.2: Layer 2 Real-Time Data Fabric.**
+**Technology Selection Note:** Echo's real-time fabric choices (Debezium CDC, Confluent Cloud Kafka, Apache Flink on Databricks) reflect their Azure-first strategy and managed services preference. Alternative architectures include AWS-native (Kinesis + DMS), Google Cloud-native (Pub/Sub + Datastream), or open-source (self-hosted Kafka + Flink). For comprehensive CDC, streaming, and event processing vendor comparisons, see **Appendix DA-1, Section 2.2: Layer 2 Real-Time Data Fabric.**
 
 ---
 
-## 🔍 Checkpoint 4: Real-Time Data Fabric Complete
+## 📍 Checkpoint 4: Real-Time Data Fabric Complete
 
 **What we've covered since Checkpoint 3:**
 
@@ -1155,7 +1156,7 @@ graph TB
 
 ---
 
-## 🔍 Checkpoint 5: Foundation Build Journey Complete
+## 📍 Checkpoint 5: Foundation Build Journey Complete
 
 **What we've covered since Checkpoint 4:**
 
@@ -1211,7 +1212,7 @@ Friday afternoon, Week 4. Sarah convened the leadership team for foundation revi
 - Annual: $295,200
 - Net after verified savings: $100,800/year (cache + consolidation savings of $194,400)
 
-**Phases 2-3:** See Chapters 5-6 for detailed investment breakdowns and operational costs. Complete project economics in Appendix E.
+**Phases 2-3:** See Chapters 5-6 for detailed investment breakdowns and operational costs. Complete project economics in Appendix D.
 - **Net operational:** $377,400/year
 
 **Total Year 1 Investment:**
@@ -1219,7 +1220,7 @@ Friday afternoon, Week 4. Sarah convened the leadership team for foundation revi
 - Net operations (12 months): $377,400 (ongoing)
 - **Year 1 Total: $1,607,400**
 
-**Note:** These costs reflect Echo's specific context (mid-size healthcare system, Azure-native, managed services preference, 10-week accelerated timeline, HIPAA compliance). The $1.23M is the complete implementation budget for Weeks 1-10 covering all seven layers. Operational costs are separate and ongoing. Your organization's costs will vary based on scale, existing infrastructure, team expertise, cloud platform, vendor negotiations, and timeline requirements. For detailed budget methodology, phase-by-phase breakdowns, cost drivers (technology 56%, services 31%, staff 13%), ROI calculations, and sensitivity analysis, see **Appendix E: Budget Methodology.**
+**Note:** These costs reflect Echo's specific context (mid-size healthcare system, Azure-native, managed services preference, 10-week accelerated timeline, HIPAA compliance). The $1.23M is the complete implementation budget for Weeks 1-10 covering all seven layers. Operational costs are separate and ongoing. Your organization's costs will vary based on scale, existing infrastructure, team expertise, cloud platform, vendor negotiations, and timeline requirements. For detailed budget methodology, phase-by-phase breakdowns, cost drivers (technology 56%, services 31%, staff 13%), ROI calculations, and sensitivity analysis, see **Appendix D: Budget Methodology.**
 
 ### ROI Analysis: Foundation Value Delivery
 
@@ -1245,10 +1246,10 @@ Friday afternoon, Week 4. Sarah convened the leadership team for foundation revi
 - **Foundation Year 1 total: $570,800**
 - **Payback from verified savings alone: 29 months**
 
-**Full Project ROI** (all three phases, including operational benefits): See Appendix E for complete analysis showing 477% ROI and 10-week payback when operational improvements are quantified.
+**Full Project ROI** (all three phases, including operational benefits): See Appendix D for complete analysis showing 477% ROI and 10-week payback when operational improvements are quantified.
 - **Payback period: 30.8 months** (2.6 years) on foundation alone
 
-However, this calculation covers only Phase 1 foundation. Phases 2-3 (Weeks 5-10) add intelligence and governance layers, enabling complete agent deployment. Full project ROI (all three phases) shows 477% return and 10-week payback when operational improvements are quantified (see Appendix E).
+However, this calculation covers only Phase 1 foundation. Phases 2-3 (Weeks 5-10) add intelligence and governance layers, enabling complete agent deployment. Full project ROI (all three phases) shows 477% return and 10-week payback when operational improvements are quantified (see Appendix D).
 
 ### Bridge to Chapter 5: Intelligence Layers
 

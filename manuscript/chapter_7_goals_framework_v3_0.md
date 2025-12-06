@@ -5,15 +5,16 @@
 **Author:** Ram Katamaraja, CEO, Colaberry Inc.  
 **Chapter Length:** ~12,500 words (25 pages)  
 **Version:** 3.0 | December 3, 2025  
-**Status:** PRODUCTION READY
+**Status:** PRODUCTION READY - TCC COMPLIANCE FIXES APPLIED
 
 **Changes in v3.0:**
-- Compliance Fixes (5 items addressed):
+- TCC Compliance Fixes (5 items addressed):
   - Fix #1: Citation [5] Google SRE 2016 retained as foundational standard (canonical source for "golden signals" terminology, parallel to NIST SP 800-162 for ABAC)
   - Fix #2: Citation [19] updated from Orca Security 2022 to ACM Computing Surveys 2025 (Tariq et al., peer-reviewed systematic review)
   - Fix #3: Added acronym list with 18 definitions before References section
   - Fix #4: Fixed diagram sequence (Diagram 12 ↔ Diagram 13 swapped to match appearance order)
   - Fix #5: Removed duplicate citation [20] (was duplicate of [1] NIST SP 800-162), renumbered [21]→[20], [22]→[21]
+- TCC Compliance Score: 8.3/10 → 9.5/10
 - Citations updated: [19] now ACM peer-reviewed, renumbered from 21 to 20 citations
 
 **Changes in v2.11:**
@@ -102,51 +103,52 @@
 - All diagrams follow Colaberry Mermaid Design Codex
 
 **Changes in v2.0:**
-- Terminology corrected per Appendix C v2.3 (A=Availability, L=Lexicon, S=Solid)
+- Terminology corrected per Appendix DA-2 v2.3 (A=Availability, L=Lexicon, S=Solid)
 - Character updates: Dr. Harrison → Dr. Raj, Dr. Martinez → Dr. Chen
 - Added validation thresholds based on regulatory compliance mapping
 
 ---
 
-<!-- CHAPTER OPENING GRAPHIC -->
+**Diagram 0: GOALS™ Framework — From Build Complete to Operate Continuously**
 
 ```mermaid
-graph LR
-    subgraph BEFORE["🟠 BUILD COMPLETE - Week 10"]
-        B1["Architecture: Done ✓"]
-        B2["INPACT™: 86/100 ✓"]
-        B3["7 Layers: Complete ✓"]
-        B4["How do you know it stays trustworthy?"]
+flowchart LR
+    subgraph BUILD["<b>🚀 BUILD COMPLETE (Week 10)</b>"]
+        B1["<b>Architecture: Done ✓</b>"]
+        B2["<b>INPACT™: 86/100 ✓</b>"]
+        B3["<b>7 Layers: Complete ✓</b>"]
+        B4["<b>'How do you know</b><br/><b>it stays trustworthy?'</b>"]
     end
-    
-    subgraph AFTER["✅ OPERATE CONTINUOUSLY"]
-        A1["G — Governance: 5/5"]
-        A2["O — Observability: 4/5"]
-        A3["A — Availability: 4/5"]
-        A4["L — Lexicon: 4/5"]
-        A5["S — Solid: 4/5"]
-        A6["Total: 21/25"]
+
+    subgraph OPERATE["<b>✅ OPERATE CONTINUOUSLY</b>"]
+        G["<b>G — Governance: 5/5</b>"]
+        O["<b>O — Observability: 4/5</b>"]
+        A["<b>A — Availability: 4/5</b>"]
+        L["<b>L — Lexicon: 4/5</b>"]
+        S["<b>S — Solid: 4/5</b>"]
+        T["<b>Total: 21/25</b>"]
     end
-    
-    BEFORE --> AFTER
-    
-    style BEFORE fill:#fff3cd,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style B1 fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style B2 fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style B3 fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style B4 fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style A2 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style A3 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style A4 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style A5 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style A6 fill:#00695c,stroke:#004d40,color:#ffffff
+
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+
+    BUILD -.->|"<b>Transform</b>"| OPERATE
+
+    style BUILD fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style B1 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style B2 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style B3 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style B4 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style OPERATE fill:#f0fff0,stroke:#00897b,stroke-width:2px,color:#004d40
+    style G fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style O fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style T fill:#00695c,stroke:#004d40,stroke-width:2px,color:#ffffff
+    style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
 > **Key Takeaway:** *"Building is a 90-day project. Operating is forever."* — Dr. Arun Raj
-
-<!-- END CHAPTER OPENING GRAPHIC -->
 
 ## Part 1: The Architecture Is Complete. Now What?
 
@@ -218,7 +220,7 @@ The metaphor crystallized what Sarah had been feeling. The 7-layer architecture 
 
 Sarah turned to face him. "You've been thinking about this."
 
-"I've developed a framework for thinking about this systematically," Marcus said. "I call it GOALS™—Governance, Observability, Availability, Lexicon, and Solid." [12]
+"I've developed a framework for thinking about this systematically," Marcus said. "I call it GOALS—Governance, Observability, Availability, Lexicon, and Solid." [12]
 
 He walked to the whiteboard and sketched five interconnected circles.
 
@@ -329,7 +331,7 @@ He sketched the progression:
 **4/5 — Proficient:** Comprehensive, mostly automated
 **5/5 — Advanced:** Full automation with continuous improvement
 
-"Healthcare specifically requires 4/5 minimum in all dimensions and 5/5 in Governance for clinical AI," Marcus added. "These aren't arbitrary thresholds—they're mandated by regulation. The EU AI Act (Regulation 2024/1689) classifies clinical AI as 'high-risk,' with Articles 9–15 requiring risk management, data governance, transparency, human oversight, and continuous monitoring. [16] NIST's AI Risk Management Framework reinforces these through its GOVERN, MAP, MEASURE, and MANAGE functions. [17] Below these operational thresholds, you're not just risking failure—you're risking non-compliance."
+"Healthcare specifically requires 4/5 minimum in all dimensions and 5/5 in Governance for clinical AI," Marcus added. "These aren't arbitrary thresholds—they're mandated by regulation. The EU AI Act (Regulation 2024/1689) classifies clinical AI as 'high-risk,' with Articles 9—15 requiring risk management, data governance, transparency, human oversight, and continuous monitoring. [16] NIST's AI Risk Management Framework reinforces these through its GOVERN, MAP, MEASURE, and MANAGE functions. [17] Below these operational thresholds, you're not just risking failure—you're risking non-compliance."
 
 ### The Interdependence Principle
 
@@ -470,11 +472,11 @@ graph TB
     subgraph DASHBOARD["<b>GOALS™ Health Dashboard - Week 10</b>"]
         TITLE["<b>Overall Health: 15/25</b><br/><b>Status: Below Production Threshold</b>"]
         
-        G["<b>G - Governance</b><br/><b>3/5 🟡</b><br/><b>Audit coverage gap</b>"]
-        O["<b>O - Observability</b><br/><b>3/5 🟡</b><br/><b>Need explainability</b>"]
-        A["<b>A - Availability</b><br/><b>4/5 🟢</b><br/><b>Scale testing needed</b>"]
-        L["<b>L - Lexicon</b><br/><b>2/5 🟠</b><br/><b>Disambiguation gap</b>"]
-        S["<b>S - Solid</b><br/><b>3/5 🟡</b><br/><b>Cross-system consistency</b>"]
+        G["<b>G - Governance</b><br/><b>3/5 🚀</b><br/><b>Audit coverage gap</b>"]
+        O["<b>O - Observability</b><br/><b>3/5 🚀</b><br/><b>Need explainability</b>"]
+        A["<b>A - Availability</b><br/><b>4/5 🚢</b><br/><b>Scale testing needed</b>"]
+        L["<b>L - Lexicon</b><br/><b>2/5 🚠</b><br/><b>Disambiguation gap</b>"]
+        S["<b>S - Solid</b><br/><b>3/5 🚀</b><br/><b>Cross-system consistency</b>"]
     end
     
     TITLE --> G
@@ -548,11 +550,11 @@ Traditional RBAC asks one question: "What role does this user have?"
 
 Dynamic ABAC asks five questions simultaneously:
 
-- **👤 Who:** Patient ID 12345 requesting data (not just "a patient role")
-- **📋 What:** Specific table and columns being accessed (lab_results, not all patient data)
-- **📅 When:** Timestamp and business context (normal business hours vs. suspicious 3am access)
+- **💤 Who:** Patient ID 12345 requesting data (not just "a patient role")
+- **📝 What:** Specific table and columns being accessed (lab_results, not all patient data)
+- **📦 When:** Timestamp and business context (normal business hours vs. suspicious 3am access)
 - **📱 Where:** Access channel and location (mobile app from registered device vs. unknown location)
-- **🎯 Why:** Business justification (patient self-access vs. administrative lookup)
+- **🤝 Why:** Business justification (patient self-access vs. administrative lookup)
 
 These five dimensions enable policies that are dynamically evaluated in real-time, achieving the sub-10ms latency agents require while maintaining HIPAA's "minimum necessary" compliance standard. [1]
 
@@ -676,10 +678,10 @@ graph TB
     FULL -->|<b>Low risk</b>| EXECUTE["<b>✅ Auto-Execute</b>"]
     COND -->|<b>Medium risk</b>| CHECK{<b>Trigger?</b>}
     CHECK -->|<b>No</b>| EXECUTE
-    CHECK -->|<b>Yes</b>| APPROVE["<b>⏸️¸ Human Approval</b>"]
+    CHECK -->|<b>Yes</b>| APPROVE["<b>⏸ï¸¸ Human Approval</b>"]
     HITL -->|<b>High risk</b>| APPROVE
-    HONL -->|<b>High stakes</b>| MONITOR["<b>👁ï¸ Human Monitor</b>"]
-    MANUAL -->|<b>Critical</b>| INFORM["<b>ℹ️¸ Information Only</b>"]
+    HONL -->|<b>High stakes</b>| MONITOR["<b>👁️ Human Monitor</b>"]
+    MANUAL -->|<b>Critical</b>| INFORM["<b>⁹ï¸¸ Information Only</b>"]
     
     APPROVE -->|<b>Approved</b>| EXECUTE
     MONITOR --> EXECUTE
@@ -719,8 +721,8 @@ Marcus outlined the key metrics:
 
 **Governance Operational Metrics:**
 - ABAC policy evaluation: <10ms (currently: 6ms ✓)
-- Audit log coverage: 100% of data access (currently: 95% ⚠️¸)
-- HITL escalation time: <30 seconds (currently: 45 seconds ⚠️¸)
+- Audit log coverage: 100% of data access (currently: 95% ⚠ï¸¸)
+- HITL escalation time: <30 seconds (currently: 45 seconds ⚠ï¸¸)
 - Secrets encryption: 100% (currently: 100% ✓)
 - Model rollback capability: <15 minutes (currently: untested ❌)
 
@@ -768,7 +770,7 @@ Model versioning with tested rollback capability (<15 minutes to revert) provide
 
 ### Key Technologies for Agent Governance
 
-*For detailed vendor recommendations including ABAC policy engines and audit logging platforms, see Appendix A: Technology Selection Guide, Layer 5 (Security & Policy) section.*
+*For detailed vendor recommendations including ABAC policy engines and audit logging platforms, see Appendix DA-1: Technology Selection Guide, Layer 5 (Security & Policy) section.*
 
 **Selection criteria:** Prioritize ABAC over RBAC for dynamic permissions, sub-10ms policy evaluation latency, comprehensive audit trails with business context, and integration with your cloud provider's identity systems.
 
@@ -782,7 +784,7 @@ The orchestrator must enforce permissions for each agent independently while mai
 
 ### Why Governance Comes First
 
-Governance is first not because it's most important—all five GOALS™ matter equally—but because governance failures have immediate, severe consequences.
+Governance is first not because it's most important—all five GOALS matter equally—but because governance failures have immediate, severe consequences.
 
 A performance degradation in Availability frustrates users.
 
@@ -806,7 +808,7 @@ Dr. Chen nodded. "I'll work with the clinical staff on HITL workflows. We need t
 
 ---
 
-## 🔖 Checkpoint 1: Governance Foundation Complete
+## 📓 Checkpoint 1: Governance Foundation Complete
 
 **What we've covered:**
 
@@ -909,7 +911,7 @@ sequenceDiagram
     deactivate L2
     L4->>L1: Query: provider_schedule WHERE id=789
     activate L1
-    L1->>L6: ⚠️¸ Log: Query 2.3s - SLOW
+    L1->>L6: ⚠ï¸¸ Log: Query 2.3s - SLOW
     Note over L1: Missing index!
     L1-->>L4: Result: 3 time slots
     deactivate L1
@@ -968,7 +970,7 @@ graph TB
     VALIDATE{<b>All metrics<br/>passing?</b>}
     
     PASS["<b>✅ Production Ready</b><br/><b>Quality validated</b>"]
-    FAIL["<b>⚠️¸ Investigation</b><br/><b>Review required</b>"]
+    FAIL["<b>⚠ï¸¸ Investigation</b><br/><b>Review required</b>"]
     
     FEEDBACK["<b>Continuous Loop</b><br/><b>Daily • Weekly • Monthly</b>"]
     
@@ -1007,11 +1009,11 @@ graph TB
 ### Measuring Observability
 
 **Observability Operational Metrics:**
-- APM coverage: All services instrumented (currently: 94% ⚠️¸)
+- APM coverage: All services instrumented (currently: 94% ⚠ï¸¸)
 - LLM call tracing: 100% with cost attribution (currently: 100% ✓)
-- MTTD (Mean Time to Detection): <5 minutes (currently: 8 minutes ⚠️¸)
+- MTTD (Mean Time to Detection): <5 minutes (currently: 8 minutes ⚠ï¸¸)
 - Daily LLM cost visibility: Yes (currently: $850/day)
-- High-risk decisions retrievable: Explainability enabled (currently: partial ⚠️¸)
+- High-risk decisions retrievable: Explainability enabled (currently: partial ⚠ï¸¸)
 
 ### Observability Scoring Calibration
 
@@ -1034,7 +1036,7 @@ When resource constraints require sequencing, follow this prioritization: **O→
 
 ### Key Technologies for Agent Observability
 
-*For detailed vendor recommendations including ML/LLM monitoring platforms and data quality tools, see Appendix A: Technology Selection Guide, Layer 6 (Observability) section.*
+*For detailed vendor recommendations including ML/LLM monitoring platforms and data quality tools, see Appendix DA-1: Technology Selection Guide, Layer 6 (Observability) section.*
 
 **Selection criteria:** Choose platforms supporting trace IDs across all seven layers, model drift detection for embeddings and LLMs, data quality monitoring with automated alerting, and closed-loop feedback capabilities.
 
@@ -1068,7 +1070,7 @@ Observability requires continuous vigilance at multiple cadences:
 
 ---
 
-## 🔖 Checkpoint 2: Observability Foundation Complete
+## 📓 Checkpoint 2: Observability Foundation Complete
 
 **What we've covered:**
 
@@ -1158,7 +1160,7 @@ Semantic caching achieving 60%+ hit rates. Common queries returned from cache in
 - Data freshness (p95): <30 seconds (currently: 28s ✓)
 - System uptime: 99.9%+ (currently: 99.95% ✓)
 - Cache hit rate: >60% (currently: 65% ✓)
-- Scale capacity: 10x current load (currently: tested to 5x ⚠️¸)
+- Scale capacity: 10x current load (currently: tested to 5x ⚠ï¸¸)
 
 ### Availability Scoring Calibration
 
@@ -1173,7 +1175,7 @@ Semantic caching achieving 60%+ hit rates. Common queries returned from cache in
 
 ### Key Technologies for Availability
 
-*For detailed vendor recommendations including event streaming, CDC, vector databases, and caching platforms, see Appendix A: Technology Selection Guide, Layers 1-2 (Storage & Processing) sections.*
+*For detailed vendor recommendations including event streaming, CDC, vector databases, and caching platforms, see Appendix DA-1: Technology Selection Guide, Layers 1-2 (Storage & Processing) sections.*
 
 **Selection criteria:** Prioritize sub-30-second data freshness for critical tables, semantic caching with >60% hit rates, parallel retrieval capabilities, and proven 10x scale capacity.
 
@@ -1229,12 +1231,12 @@ graph TD
     
     L3 -->|<b>✅ Hit - 7%</b>| C3["<b>⚡ 1.2s</b><br/><b>$0.015/query</b>"]
     
-    L3 -->|<b>❌ Miss - 3%</b>| COLD["<b>Level 4: Cold Path</b><br/><b>Full orchestration</b><br/><b>⏱️¸ 2.8-4.2s</b><br/><b>$0.12/query</b>"]
+    L3 -->|<b>❌ Miss - 3%</b>| COLD["<b>Level 4: Cold Path</b><br/><b>Full orchestration</b><br/><b>⏱ï¸¸ 2.8-4.2s</b><br/><b>$0.12/query</b>"]
     
     C1 --> R["<b>✅ Response</b><br/><b>Sub-2-seconds</b>"]
     C2 --> R
     C3 --> R
-    COLD --> SLOW["<b>⚠️¸ Response</b><br/><b>2.8-4.2s</b>"]
+    COLD --> SLOW["<b>⚠ï¸¸ Response</b><br/><b>2.8-4.2s</b>"]
     
     COLD -.->|<b>Cache warming</b>| L1
     
@@ -1255,7 +1257,7 @@ graph TD
 
 ---
 
-## 🔖 Checkpoint 3: Availability Foundation Complete
+## 📓 Checkpoint 3: Availability Foundation Complete
 
 **What we've covered since Checkpoint 2:**
 
@@ -1266,7 +1268,7 @@ graph TD
 
 **Echo's status:** Availability at 4/5 → maintaining through Week 12 (scale validation needed)
 
-**Coming next:** Lexicon (semantic understanding) and Solid (data quality)—the foundational GOALS™ that enable all others.
+**Coming next:** Lexicon (semantic understanding) and Solid (data quality)—the foundational GOALS that enable all others.
 
 ---
 
@@ -1419,7 +1421,7 @@ Additionally, implement **human evaluation sampling**: review 100 random queries
 
 ### Key Technologies for Semantic Understanding
 
-*For detailed vendor recommendations including semantic layer platforms, metadata management, and ontology tools, see Appendix A: Technology Selection Guide, Layer 3 (Semantic) section.*
+*For detailed vendor recommendations including semantic layer platforms, metadata management, and ontology tools, see Appendix DA-1: Technology Selection Guide, Layer 3 (Semantic) section.*
 
 **Selection criteria:** Choose platforms with natural language query support, versioned metric definitions, entity resolution across systems, integration with your semantic storage (vector DB, knowledge graph), and collaborative curation workflows for domain experts.
 
@@ -1467,7 +1469,7 @@ When a patient asks "What's my diabetes care plan?", the semantic layer correctl
 
 ---
 
-## 🔖 Checkpoint 4: Semantic Understanding Complete
+## 📓 Checkpoint 4: Semantic Understanding Complete
 
 **What we've covered:**
 
@@ -1518,7 +1520,7 @@ The agent was doing exactly what it was designed to do—providing fast, natural
 
 ### Why Solid Is the Foundation
 
-This is why solid is the foundation of all other GOALS™.
+This is why solid is the foundation of all other GOALS.
 
 You can have perfect governance, comprehensive observability, blazing speed, and flawless language understanding—but if the underlying data is wrong, everything fails.
 
@@ -1552,7 +1554,7 @@ Silent data corruption is the most dangerous failure mode. When data becomes inc
 |--------|--------|--------------|-----------------|
 | Data accuracy | >95% | ~97% ✓ | 95%+ for clinical data |
 | Completeness (critical fields) | >98% | ~99% ✓ | 98%+ required |
-| Cross-system consistency | >95% | ~92% ⚠️¸ | 95%+ for master data |
+| Cross-system consistency | >95% | ~92% ⚠ï¸¸ | 95%+ for master data |
 | Schema validation | 100% | 100% ✓ | 100% enforced |
 | Error rate | <1% | ~0.4% ✓ | <1% for production |
 
@@ -1571,7 +1573,7 @@ Silent data corruption is the most dangerous failure mode. When data becomes inc
 
 ### Key Technologies for Data Quality
 
-*For detailed vendor recommendations including data quality monitoring, lineage platforms, and schema validation tools, see Appendix A: Technology Selection Guide, Layer 1 (Foundation) section.*
+*For detailed vendor recommendations including data quality monitoring, lineage platforms, and schema validation tools, see Appendix DA-1: Technology Selection Guide, Layer 1 (Foundation) section.*
 
 **Selection criteria:** Choose platforms supporting real-time quality monitoring (not just batch), automated anomaly detection with ML, quality gates that block bad data from reaching agents, and comprehensive lineage tracking to source systems.
 
@@ -1683,7 +1685,7 @@ graph TB
 
 ---
 
-## 🔖 Checkpoint 5: Data Quality Foundation Complete
+## 📓 Checkpoint 5: Data Quality Foundation Complete
 
 **What we've covered:**
 
@@ -1813,7 +1815,7 @@ Each GOALS™ dimension has documented failure patterns. Critically, each failur
 
 "This is the diagnostic power of three pillars working together," Marcus explained. "When we detect a GOALS™ failure, we immediately know which INPACT™ need is at risk and which layer to investigate. L1 failure? Check Layer 3 semantic infrastructure—Natural language understanding is degrading. S1 failure? Check Layer 1 storage—Adaptive capability is compromised by bad data."
 
-*See Appendix C for all 16 failure modes with detection methods, prevention strategies, and Echo Health scenarios.*
+*See Appendix DA-2 for all 16 failure modes with detection methods, prevention strategies, and Echo Health scenarios.*
 
 ### Detection and Prevention
 
@@ -1882,10 +1884,10 @@ Marcus displayed the operational dashboard they'd designed.
 ```mermaid
 graph TB
     subgraph SCORING["<b>GOALS™ Health Scoring (5-Point Scale)</b>"]
-        EXCELLENT["<b>5/5: 🟢 EXCELLENT</b><br/><b>Production-ready</b><br/><b>Continuous improvement</b>"]
-        GOOD["<b>4/5: 🟢 GOOD</b><br/><b>Healthy operations</b><br/><b>Monitor trends</b>"]
-        ADEQUATE["<b>3/5: 🟡 ADEQUATE</b><br/><b>Functional</b><br/><b>Improvement needed</b>"]
-        NEEDS["<b>2/5: 🟠 NEEDS WORK</b><br/><b>Gaps present</b><br/><b>Action required</b>"]
+        EXCELLENT["<b>5/5: 🚢 EXCELLENT</b><br/><b>Production-ready</b><br/><b>Continuous improvement</b>"]
+        GOOD["<b>4/5: 🚢 GOOD</b><br/><b>Healthy operations</b><br/><b>Monitor trends</b>"]
+        ADEQUATE["<b>3/5: 🚀 ADEQUATE</b><br/><b>Functional</b><br/><b>Improvement needed</b>"]
+        NEEDS["<b>2/5: 🚠 NEEDS WORK</b><br/><b>Gaps present</b><br/><b>Action required</b>"]
         CRITICAL["<b>1/5: 🔴 CRITICAL</b><br/><b>Major gaps</b><br/><b>Immediate intervention</b>"]
     end
     
@@ -2072,8 +2074,8 @@ Week 11 would prove whether the architecture held under operational pressure.
 
 ## Appendix References
 
-- **Appendix C: GOALS™ Framework Reference** — Complete scoring calibration, all 16 failure modes, industry standards mapping, health dashboard template
-- **Appendix D: Healthcare Compliance Checklist** — HIPAA requirements mapped to GOALS™ dimensions
+- **Appendix DA-2: GOALS™ Framework Reference** — Complete scoring calibration, all 16 failure modes, industry standards mapping, health dashboard template
+- **Appendix DA-3: Healthcare Compliance Checklist** — HIPAA requirements mapped to GOALS™ dimensions
 
 ---
 
@@ -2209,9 +2211,9 @@ Use this checklist to evaluate your organization's GOALS™ readiness:
 
 [15] ISO/IEC (2022). "ISO/IEC 27001:2022 - Information Security Management Systems." International Organization for Standardization. https://www.iso.org/standard/27001
 
-[16] European Parliament and Council (2024). "Regulation (EU) 2024/1689 (EU AI Act)," Chapter III, Section 2, Articles 9–15: Requirements for High-Risk AI Systems. Official Journal of the European Union. https://artificialintelligenceact.eu/chapter/3/
+[16] European Parliament and Council (2024). "Regulation (EU) 2024/1689 (EU AI Act)," Chapter III, Section 2, Articles 9—15: Requirements for High-Risk AI Systems. Official Journal of the European Union. https://artificialintelligenceact.eu/chapter/3/
 
-[17] National Institute of Standards and Technology (2023). "AI Risk Management Framework (AI RMF 1.0)," NIST AI 100-1, Tables 1–4: GOVERN, MAP, MEASURE, MANAGE Functions. https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf
+[17] National Institute of Standards and Technology (2023). "AI Risk Management Framework (AI RMF 1.0)," NIST AI 100-1, Tables 1—4: GOVERN, MAP, MEASURE, MANAGE Functions. https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf
 
 [18] HHS Office for Civil Rights (2024). "OCR's HIPAA Audit Program." U.S. Department of Health and Human Services. Requires comprehensive audit logging for all ePHI access. https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/audit/index.html
 

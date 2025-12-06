@@ -12,38 +12,41 @@
 
 ```mermaid
 graph LR
-    subgraph BEFORE["❌ WITHOUT ASSESSMENT"]
+    subgraph BEFORE["<b>❌ WITHOUT ASSESSMENT</b>"]
         B1["<b>Where do we start?</b>"]
         B2["<b>Multiple consultants</b>"]
         B3["<b>Contradictory advice</b>"]
         B4["<b>Months of analysis</b>"]
     end
     
-    subgraph TRANSFORM["INPACT™"]
+    subgraph TRANSFORM["<b>INPACT™</b>"]
         T1["<b>36 Questions</b>"]
     end
     
-    subgraph AFTER["✅ WITH INPACT™ ASSESSMENT"]
+    subgraph AFTER["<b>✅ WITH INPACT™ ASSESSMENT</b>"]
         A1["<b>Clear 0-100 score</b>"]
         A2["<b>One unified framework</b>"]
         A3["<b>Dimension-by-dimension clarity</b>"]
         A4["<b>30-minute assessment</b>"]
     end
     
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
     BEFORE --> TRANSFORM --> AFTER
     
-    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style BEFORE fill:#fff5f5,stroke:#c62828,stroke-width:2px,color:#b71c1c
     style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
-    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style B1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style B2 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style B3 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style B4 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style T1 fill:#f5f5f5,stroke:#666666,color:#333333
-    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style A2 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style A3 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style A4 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style AFTER fill:#f0fff0,stroke:#00897b,stroke-width:2px,color:#004d40
+    style B1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style B2 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style B3 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style B4 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style T1 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
+    style A1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A4 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
 > **Key Takeaway:** One assessment. Six dimensions. Complete clarity on where to invest.
@@ -1101,7 +1104,7 @@ Each score increase reflected specific infrastructure achievements:
 
 **86→89 (+3 points, Weeks 11-12)**: Operations phase refined and matured feedback loops. C and T dimensions reached 6 (excellent).
 
-*For complete metrics at each milestone, see Appendix M (Quick Reference Card).*
+*For complete metrics at each milestone, see Appendix E (Quick Reference Card).*
 
 ---
 
