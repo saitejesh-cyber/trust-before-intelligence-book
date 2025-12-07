@@ -19,25 +19,21 @@
 <!-- CHAPTER OPENING GRAPHIC -->
 
 ```mermaid
+
 graph LR
     subgraph BEFORE["❌ BEFORE: WEEK 0"]
-        B1["3 Failed Pilots"]
-        B2["$2M Spent"]
-        B3["0 Production Agents"]
-        B4["9-13s Response Time"]
-        B5["INPACT™: 28/100"]
+        direction TB
+        B1["3 Failed Pilots<br/>$2M Spent<br/>0 Production Agents<br/>9-13s Response Time<br/>INPACT™: 28/100"]
     end
     
     subgraph TRANSFORM["90 DAYS"]
+        direction TB
         T1["➡️"]
     end
     
     subgraph AFTER["✅ AFTER: WEEK 12"]
-        A1["3 Production Agents"]
-        A2["$1.23M → 477% ROI"]
-        A3["50,000 Daily Queries"]
-        A4["1.6s Response Time"]
-        A5["INPACT™: 89/100"]
+        direction TB
+        A1["3 Production Agents<br/>$1.23M → 477% ROI<br/>50,000 Daily Queries<br/>1.6s Response Time<br/>INPACT™: 89/100"]
     end
     
     BEFORE --> TRANSFORM --> AFTER
@@ -46,16 +42,9 @@ graph LR
     style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
     style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style B1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style B2 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style B3 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style B4 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style B5 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
     style T1 fill:#f5f5f5,stroke:#666666,color:#333333
     style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style A2 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style A3 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style A4 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style A5 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    
 ```
 
 > **Key Takeaway:** *"Fix this in 90 days or we're shelving AI."* — Dr. Arun Raj, Board Chair
