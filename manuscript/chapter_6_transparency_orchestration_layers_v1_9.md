@@ -13,36 +13,32 @@
 **Diagram 0: Transparency + Orchestration Layers — Why Layers 5-6-7 Complete Trust**
 
 ```mermaid
-flowchart LR
-    subgraph WITHOUT["<b>❌ WITHOUT LAYERS 5-6-7</b>"]
-        W1["<b>No dynamic access</b><br/><b>HIPAA risk</b>"]
-        W2["<b>Black box AI</b><br/><b>No explainability</b>"]
-        W3["<b>Single-agent only</b><br/><b>No coordination</b>"]
-        W4["<b>'I don't trust it'</b><br/><b>Blocked</b>"]
+
+graph LR
+    subgraph WITHOUT["WITHOUT LAYERS 5-6-7"]
+        direction TB
+        W1["No dynamic access<br/>HIPAA risk<br/><br/>Black box AI<br/>No explainability<br/><br/>Single-agent only<br/>No coordination<br/><br/>'I don't trust it'<br/>Blocked"]
     end
-
-    subgraph WITH["<b>✅ WITH LAYERS 5-6-7</b>"]
-        L5["<b>Layer 5:</b><br/><b>Governance + HITL</b>"]
-        L6["<b>Layer 6:</b><br/><b>Full trace + audit</b>"]
-        L7["<b>Layer 7:</b><br/><b>Multi-agent orchestration</b>"]
-        T["<b>'I can verify it'</b><br/><b>Trust earned</b>"]
+    
+    subgraph TRANSFORM["TRANSFORM"]
+        direction TB
+        T1["→"]
     end
+    
+    subgraph WITH["WITH LAYERS 5-6-7"]
+        direction TB
+        L1["Layer 5:<br/>Governance + HITL<br/><br/>Layer 6:<br/>Full trace + audit<br/><br/>Layer 7:<br/>Multi-agent<br/>orchestration<br/><br/>'I can verify it'<br/>Trust earned"]
+    end
+    
+    WITHOUT --> TRANSFORM --> WITH
+    
+    style WITHOUT fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
+    style WITH fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style W1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style T1 fill:#f5f5f5,stroke:#666666,color:#333333
+    style L1 fill:#b2dfdb,stroke:#00897b,color:#004d40
 
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-
-    WITHOUT -.->|"<b>Transform</b>"| WITH
-
-    style WITHOUT fill:#fff5f5,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style W1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style W2 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style W3 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style W4 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style WITH fill:#f0fff0,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L5 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L6 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L7 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style T fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
 > **Key Takeaway:** Trust requires transparency. Layers 5-6-7 make AI verifiable.
