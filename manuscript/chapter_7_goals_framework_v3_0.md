@@ -112,40 +112,32 @@
 **Diagram 0: GOALS™ Framework — From Build Complete to Operate Continuously**
 
 ```mermaid
-flowchart LR
-    subgraph BUILD["<b>🚀 BUILD COMPLETE (Week 10)</b>"]
-        B1["<b>Architecture: Done ✓</b>"]
-        B2["<b>INPACT™: 86/100 ✓</b>"]
-        B3["<b>7 Layers: Complete ✓</b>"]
-        B4["<b>'How do you know</b><br/><b>it stays trustworthy?'</b>"]
+
+graph LR
+    subgraph BUILD["BUILD COMPLETE - WEEK 10"]
+        direction TB
+        B1["Architecture: Done<br/><br/>INPACT™: 86/100<br/><br/>7 Layers: Complete<br/><br/>'How do you know<br/>it stays trustworthy?'"]
     end
-
-    subgraph OPERATE["<b>✅ OPERATE CONTINUOUSLY</b>"]
-        G["<b>G — Governance: 5/5</b>"]
-        O["<b>O — Observability: 4/5</b>"]
-        A["<b>A — Availability: 4/5</b>"]
-        L["<b>L — Lexicon: 4/5</b>"]
-        S["<b>S — Solid: 4/5</b>"]
-        T["<b>Total: 21/25</b>"]
+    
+    subgraph TRANSFORM["TRANSFORM"]
+        direction TB
+        T1["→"]
     end
-
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-
-    BUILD -.->|"<b>Transform</b>"| OPERATE
-
+    
+    subgraph OPERATE["OPERATE CONTINUOUSLY"]
+        direction TB
+        O1["G — Governance: 5/5<br/><br/>O — Observability: 4/5<br/><br/>A — Availability: 4/5<br/><br/>L — Lexicon: 4/5<br/><br/>S — Solid: 4/5<br/><br/>Total: 21/25"]
+    end
+    
+    BUILD --> TRANSFORM --> OPERATE
+    
     style BUILD fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style B1 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style B2 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style B3 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style B4 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style OPERATE fill:#f0fff0,stroke:#00897b,stroke-width:2px,color:#004d40
-    style G fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style O fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style S fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style T fill:#00695c,stroke:#004d40,stroke-width:2px,color:#ffffff
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
+    style OPERATE fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style B1 fill:#ffe0b2,stroke:#f57c00,color:#e65100
+    style T1 fill:#f5f5f5,stroke:#666666,color:#333333
+    style O1 fill:#b2dfdb,stroke:#00897b,color:#004d40
+
 ```
 
 > **Key Takeaway:** *"Building is a 90-day project. Operating is forever."* — Dr. Arun Raj
