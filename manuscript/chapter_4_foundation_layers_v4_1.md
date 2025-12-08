@@ -13,36 +13,32 @@
 **Diagram 0: Foundation Layers — Why Layers 1-2 Are Prerequisites**
 
 ```mermaid
-flowchart LR
-    subgraph WITHOUT["<b>❌ WITHOUT LAYERS 1-2</b>"]
-        W1["<b>Siloed databases</b><br/><b>No unified access</b>"]
-        W2["<b>Overnight batch ETL</b><br/><b>Stale data</b>"]
-        W3["<b>No vector storage</b><br/><b>No semantic search</b>"]
-        W4["<b>Minutes to query</b><br/><b>Users abandon</b>"]
+
+graph LR
+    subgraph WITHOUT["WITHOUT LAYERS 1-2"]
+        direction TB
+        W1["Siloed databases<br/>No unified access<br/><br/>Overnight batch ETL<br/>Stale data<br/><br/>No vector storage<br/>No semantic search<br/><br/>Minutes to query<br/>Users abandon"]
     end
-
-    subgraph WITH["<b>✅ WITH LAYERS 1-2</b>"]
-        L1["<b>Layer 1:</b><br/><b>Unified multi-modal storage</b>"]
-        L2["<b>Layer 2:</b><br/><b>Sub-second freshness</b>"]
-        V["<b>Vector + Graph ready</b>"]
-        T["<b>Under 2s response</b><br/><b>Users trust</b>"]
+    
+    subgraph TRANSFORM["TRANSFORM"]
+        direction TB
+        T1["→"]
     end
+    
+    subgraph WITH["WITH LAYERS 1-2"]
+        direction TB
+        L1["Layer 1:<br/>Unified multi-modal<br/>storage<br/><br/>Layer 2:<br/>Sub-second freshness<br/><br/>Vector + Graph ready<br/><br/>Under 2s response<br/>Users trust"]
+    end
+    
+    WITHOUT --> TRANSFORM --> WITH
+    
+    style WITHOUT fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
+    style WITH fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style W1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style T1 fill:#f5f5f5,stroke:#666666,color:#333333
+    style L1 fill:#b2dfdb,stroke:#00897b,color:#004d40
 
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-
-    WITHOUT -.->|"<b>Transform</b>"| WITH
-
-    style WITHOUT fill:#fff5f5,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style W1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style W2 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style W3 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style W4 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style WITH fill:#f0fff0,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style V fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style T fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
 > **Key Takeaway:** Foundation first. Without Layers 1-2, nothing else works.
