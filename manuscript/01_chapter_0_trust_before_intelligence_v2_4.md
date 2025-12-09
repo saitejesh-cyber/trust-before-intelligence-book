@@ -140,38 +140,35 @@ Everything Echo built served human decision-makers beautifully. Data warehouses 
 The paradigm had shifted beneath them.
 
 ```mermaid
+
 graph LR
-    subgraph HumanEra["<b>HUMAN ERA</b>"]
-        H1["<b>Data</b><br/><b>Historical Reports</b>"]
-        H2["<b>Interface</b><br/><b>Visual Dashboards</b>"]
-        H3["<b>Action</b><br/><b>Humans Decide & Act</b>"]
-        
-        H1 --> H2
-        H2 --> H3
+    subgraph HumanEra["HUMAN ERA"]
+        direction TB
+        H1["Data<br/>Historical Reports<br/><br/>Interface<br/>Visual Dashboards<br/><br/>Action<br/>Humans Decide & Act"]
     end
     
-    subgraph AgentEra["<b>AGENT ERA</b>"]
-        A1["<b>Data</b><br/><b>Real-Time Context</b>"]
-        A2["<b>Interface</b><br/><b>Natural Language</b>"]
-        A3["<b>Action</b><br/><b>Agents Act, Humans Oversee</b>"]
-        
-        A1 --> A2
-        A2 --> A3
+    subgraph TRANSFORM["PARADIGM SHIFT"]
+        direction TB
+        T1["→"]
     end
     
-    HumanEra -.->|<b>Paradigm Shift</b>| AgentEra
+    subgraph AgentEra["AI AGENT ERA"]
+        direction TB
+        A1["Data<br/>Real-Time Context<br/><br/>Interface<br/>Natural Language<br/><br/>Action<br/>Agents Act,<br/>Humans Oversee"]
+    end
     
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    Copyright["© 2025 Colaberry Inc."]
     
-    style HumanEra fill:#f5f5f5,stroke:#808080,stroke-width:2px
-    style H1 fill:#ffffff,stroke:#DC143C,stroke-width:2px,color:#b71c1c
-    style H2 fill:#ffffff,stroke:#DC143C,stroke-width:2px,color:#b71c1c
-    style H3 fill:#ffffff,stroke:#DC143C,stroke-width:2px,color:#b71c1c
-    style AgentEra fill:#e8f5e9,stroke:#20B2AA,stroke-width:2px
-    style A1 fill:#ffffff,stroke:#20B2AA,stroke-width:2px,color:#004d40
-    style A2 fill:#ffffff,stroke:#20B2AA,stroke-width:2px,color:#004d40
-    style A3 fill:#ffffff,stroke:#20B2AA,stroke-width:2px,color:#004d40
+    HumanEra --> TRANSFORM --> AgentEra
+    
+    style HumanEra fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
+    style AgentEra fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style H1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style T1 fill:#f5f5f5,stroke:#666666,color:#333333
+    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
     style Copyright fill:#ffffff,stroke:none,color:#666666
+
 ```
 
 **Figure 0.1: The Infrastructure Paradigm Shift—From Human-Era BI to Agent-Era Architecture**
@@ -330,7 +327,7 @@ graph TB
     
     Title --> PILLARS
     
-    INPACT -.->|"NEEDS Fulfilled by"| Layers
+    INPACT -.->|"Needs Fulfilled by"| Layers
     Layers -.->|"Enables Operations"| GOALS
     GOALS -.->|"Drives Trust"| INPACT
     
