@@ -13,7 +13,7 @@ graph LR
     
     subgraph PHASES["7 LAYERS - 3 PHASES"]
         direction TB
-        P1["Phase 1: Foundation<br/>Weeks 1-4<br/><br/>Phase 2: Intelligence<br/>Weeks 5-7<br/><br/>Phase 3: Trust Layers<br/>Weeks 8-10"]
+        P1["Phase 1: Foundation<br/>Layers 1,2<br/><br/>Phase 2: Intelligence<br/>Layers 3,4<br/><br/>Phase 3: Trust Layers 5,6<br/> Orchestration Layer 7"]
     end
     
     subgraph AFTER["DAY 70"]
