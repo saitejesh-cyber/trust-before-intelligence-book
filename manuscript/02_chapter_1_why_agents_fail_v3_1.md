@@ -577,14 +577,14 @@ This isn't about replacing data warehouses or abandoning BI dashboards. It's abo
 
 **BI-Era vs. Agent-Era: INPACT™ Need Fulfillment**
 
-**Diagram 4: BI Era vs INPACT™-Ready Agent Era**
+**Diagram 4: Human Era vs INPACT™-Ready Agent Era**
 
 ```mermaid
 %%{init: {'theme':'base', 'themeVariables': {'fontSize':'14px'}}}%%
 
 graph LR
     %% BI ERA (1990-2020) - Red Subgraph
-    subgraph BI["<b>BI ERA (1990-2020) - Cannot Fulfill INPACT™</b>"]
+    subgraph BI["<b>Human ERA (1990-2020) <br/> Cannot Fulfill INPACT™</b>"]
         direction TB
         ETL["<b>Batch ETL</b><br/>8-24 hour lag<br/>❌ Fails Instant (I)"]
         DW["<b>Data Warehouse</b><br/>SQL schemas<br/>❌ Fails Natural (N)"]
@@ -597,7 +597,7 @@ graph LR
     BI -.->|"<b>⚡ PARADIGM SHIFT</b><br/>Must fulfill INPACT™"| AGENT
     
     %% AGENT ERA (2023-) - Green Subgraph
-    subgraph AGENT["<b>AGENT ERA (2023-Present) - Fulfills All INPACT™</b>"]
+    subgraph AGENT["<b>AGENT ERA (2023-Present) <br/> Fulfills All INPACT™</b>"]
         direction TB
         STREAM["<b>Real-Time Streaming</b><br/>Sub-5s freshness<br/>✅ Instant (I)"]
         SEMANTIC["<b>Semantic Layer</b><br/>Business language<br/>✅ Natural (N)"]
