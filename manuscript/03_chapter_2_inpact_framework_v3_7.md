@@ -368,7 +368,7 @@ The transformation roadmap began there.
 
 ```mermaid
 graph TB
-    TITLE["<b>ECHO HEALTH'S<br/>INFRASTRUCTURE TRANSFORMATION</b>"]
+    TITLE["<b>ECHO HEALTH'S<br/>INFRASTRUCTURE<br/>TRANSFORMATION</b>"]
     
     TITLE --> BEFORE
     
@@ -383,7 +383,7 @@ graph TB
         B_DIMS --> B_STATUS
     end
     
-    BEFORE --> TRANSFORM["<b>90-DAY<br/>TRANSFORMATION ROADMAP</b><br/><b>Investment: $1.23M </b><br/><b> Timeline: 10 weeks</b><br/><b>Sequence: </b><br/><b>I → N+P → C → A+T</b>"]
+    BEFORE --> TRANSFORM["<b>90-DAY TRANSFORMATION<br/>ROADMAP</b><br/><b>Investment: $1.23M </b><br/><b> Timeline: 10 weeks</b><br/><b>Sequence: </b><br/><b>I → N+P → C → A+T</b>"]
     
     TRANSFORM --> AFTER
     
