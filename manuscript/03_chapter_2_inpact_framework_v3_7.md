@@ -133,7 +133,7 @@ Tony Robbins built an empire on one insight: humans have six core needs—certai
 
 ```mermaid
 graph TB
-    TITLE["<b>HUMAN (Tony Robbins) → AGENT (INPACT™) PARALLEL</b>"]
+    TITLE["<b>HUMAN (Tony Robbins) → <br/>AGENT (INPACT™) PARALLEL</b>"]
     
     TITLE --> ROW
     
