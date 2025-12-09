@@ -27,7 +27,7 @@ graph LR
     
     subgraph WITH["WITH INPACT™"]
         direction TB
-        I1["I — Instant<br/>Under 2 seconds<br/><br/>N — Natural<br/>97% comprehension<br/><br/>P — Permitted<br/>Dynamic access<br/><br/>A — Adaptive<br/>Learns from feedback<br/><br/>C — Contextual<br/>Cross-system aware<br/><br/>T — Transparent<br/>Full audit trail</br></br><b>I TRUST it</b>"]
+        I1["I — Instant<br/>Under 2 seconds<br/><br/>N — Natural<br/>97% comprehension<br/><br/>P — Permitted<br/>Dynamic access<br/><br/>A — Adaptive<br/>Learns from feedback<br/><br/>C — Contextual<br/>Cross-system aware<br/><br/>T — Transparent<br/>Full audit trail</br></br><b>I trust it</b>"]
     end
     
     WITHOUT --> TRANSFORM --> WITH
@@ -61,31 +61,37 @@ Chapter 1 revealed why 95% of enterprise AI agent projects fail—not from inade
 **Diagram 1: The Architecture of Trust—Three Integrated Pillars**
 
 ```mermaid
+
+
 graph TB
-    subgraph ARCH["<b>Three Integrated Pillars</b>"]
-        PILLAR1["<b>PILLAR 1: INPACT™</b><br/><b>What Agents Need</b><br/><b>I·N·P·A·C·T</b><br/><b>Instant • Natural • Permitted</b><br/><b>Adaptive • Contextual • Transparent</b>"]
+    Title["ARCHITECTURE OF TRUST<br/>Three Integrated Pillars"]
+    
+    subgraph PILLARS[" "]
+        direction LR
+        INPACT["PILLAR 1: INPACT™<br/><br/>What Agents Need?<br/><br/><b>I</b>nstant<br/><b>N</b>atural<br/><b>P</b>ermitted<br/><b>A</b>daptive<br/><b>C</b>ontextual<br/><b>T</b>ransparent"]
         
-        PILLAR2["<b>PILLAR 2: 7-LAYER</b><br/><b>How to Build It</b><br/><b>Storage → Real-Time → Semantic</b><br/><b>→ Intelligence → Governance</b><br/><b>→ Observability → Orchestration</b>"]
+        Layers["PILLAR 2: 7-LAYERS<br/>Infrastructure<br/><br/>How to Build TRUST?<br/><br/>Storage<br/>Real-Time<br/>Semantic<br/>Intelligence<br/>Governance<br/>Observability<br/>Orchestration"]
         
-        PILLAR3["<b>PILLAR 3: GOALS™</b><br/><b>How to Measure Success</b><br/><b>G·O·A·L·S</b><br/><b>Governance • Observability</b><br/><b>Availability • Lexicon • Solid</b>"]
-        
-        PILLAR1 -->|<b>Agent needs fulfilled by</b>| PILLAR2
-        PILLAR2 -->|<b>Infrastructure enables</b>| PILLAR3
-        PILLAR3 -->|<b>Drives operational efficiency</b>| PILLAR1
+        GOALS["PILLAR 3: GOALS™<br/><br/>How to Measure TRUST?<br/><br/><b>G</b>overnance<br/><b>O</b>bservability<br/><b>A</b>vailability<br/><b>L</b>exicon<br/><b>S</b>olid"]
     end
     
-    FOUNDATION["<b>FOUNDATION</b><br/><b>THE ARCHITECTURE OF TRUST</b>"]
+    Copyright["© 2025 Colaberry Inc."]
     
-    FOUNDATION --> ARCH
+    Title --> PILLARS
     
-    style ARCH fill:#f0fff0,stroke:#00897b,stroke-width:3px
-    style PILLAR1 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:4px
-    style PILLAR2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style PILLAR3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style FOUNDATION fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    INPACT -.->|"Needs Fulfilled by"| Layers
+    Layers -.->|"Enables Operations"| GOALS
+    GOALS -.->|"Drives Trust"| INPACT
     
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    style Title fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style PILLARS fill:none,stroke:none
+    style INPACT fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Layers fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style GOALS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style Copyright fill:#ffffff,stroke:none,color:#666666
+
+
+
 ```
 
 **This chapter builds Pillar 1 completely.** You'll understand what agents need, why traditional infrastructure fails each need, and how Echo Health transformed from 28/100 readiness to 86/100 in ten weeks.
