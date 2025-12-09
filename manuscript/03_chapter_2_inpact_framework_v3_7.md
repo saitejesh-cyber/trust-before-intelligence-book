@@ -85,7 +85,7 @@ graph TB
     
     style Title fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     style PILLARS fill:none,stroke:none
-    style INPACT fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style INPACT fill:#f57c00,stroke:#e65100,stroke-width:3px,color:#ffffff
     style Layers fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style GOALS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style Copyright fill:#ffffff,stroke:none,color:#666666
