@@ -372,22 +372,22 @@ graph TB
     
     TITLE --> BEFORE
     
-    subgraph BEFORE["<b>WEEK 0:<br/> NOT AGENT-READY (28/100)</b>"]
+    subgraph BEFORE["<b>WEEK 0: SCORE =28/100</b>"]
         B_SCORE["<b>Overall Score: 28/100</b><br/><b>(10 out of 36 points)</b>"]
         
         B_DIMS["<b>Dimension Breakdown:</b><br/><b>I=1/6 🔴 | N=2/6 🔴 </b><br/><b>P=1/6 🔴 | A=2/6 🔴</b><br/> C=3/6 🟡 | T=1/6 🔴</b>"]
         
-        B_STATUS["<b>Infrastructure Deployment</b><br/><b>• 5 critical gaps </b><br/><b>• Compliance risk</b><br/><b>• Cannot proceed to prod</b>"]
+        B_STATUS["<b>Not Production Ready</b><br/><b>• 5 critical gaps </b><br/><b>• Compliance risk</b><br/><b>• Cannot proceed to prod</b>"]
         
         B_SCORE --> B_DIMS
         B_DIMS --> B_STATUS
     end
     
-    BEFORE --> TRANSFORM["<b>⬇️ 90-DAY TRANSFORMATION ROADMAP ⬇️</b><br/><b>Investment: $1.23M | Timeline: 10 weeks</b><br/><b>Sequence: I → N+P → C → A+T</b>"]
+    BEFORE --> TRANSFORM["<b>⬇️ 90-DAY<br/> TRANSFORMATION ROADMAP ⬇️</b><br/><b>Investment: $1.23M </b><br/><b> Timeline: 10 weeks</b><br/><b>Sequence: </b><br/><b>I → N+P → C → A+T</b>"]
     
     TRANSFORM --> AFTER
     
-    subgraph AFTER["<b>WEEK 10:<br/> PRODUCTION-READY (86/100)</b>"]
+    subgraph AFTER["<b>WEEK 10:<br/> SCORE = 86/100</b>"]
         A_SCORE["<b>Overall Score: 86/100</b><br/><b>(31 out of 36 points)</b>"]
         
         A_DIMS["<b>Dimension Breakdown:</b><br/><b>I=5/6 ✅ | N=5/6 ✅ </b><br/><b> P=5/6 ✅ | A=5/6 ✅</b><br/><b>C=6/6 ✅ | T=5/6 ✅</b>"]
