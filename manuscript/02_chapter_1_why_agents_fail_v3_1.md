@@ -647,45 +647,48 @@ Two weeks after the board meeting, Sarah Cedao sat in her office reviewing the f
 **Diagram 5: Echo's Three Failing Pilots - The $2M Wake-Up Call**
 
 ```mermaid
+
 graph TB
-    subgraph investment["<b>ECHO'S $2M INVESTMENT</b>"]
-        TOTAL["<b>Total: $2M</b><br/>6-month pilots<br/>Three vendors"]
+    subgraph investment["ECHO'S $2M INVESTMENT"]
+        TOTAL["Total: $2M<br/>6-month pilots<br/>Three vendors"]
     end
     
-    subgraph pilots["<b>THREE FAILING PILOTS</b>"]
-        P1["<b>P1: Scheduling</b><br/>$650K • 8% adopt<br/>❌ Instant (I)"]
+    subgraph pilots["THREE FAILING PILOTS"]
+        P1["P1: Scheduling<br/>$650K - 8% adopt<br/><b>Fails Instant (I)</b>"]
         
-        P2["<b>P2: Documentation</b><br/>$720K • 12% adopt<br/>❌ N, C, T"]
+        P2["P2: Documentation<br/>$720K - 12% adopt<br/><b>Fails N, C, T</b>"]
         
-        P3["<b>P3: Revenue Cycle</b><br/>$630K • HIPAA<br/>❌ Permitted (P)"]
+        P3["P3: Revenue Cycle<br/>$630K - HIPAA blocked<br/><b>Fails Permitted (P)</b>"]
         
         P1 -.-> P2 -.-> P3
     end
     
-    subgraph outcome["<b>CRITICAL OUTCOME</b>"]
-        SCORE["<b>INPACT™ Score</b><br/>28 out of 100<br/>⚠ Not ready"]
+    subgraph outcome["CRITICAL OUTCOME"]
+        SCORE["INPACT™ Score<br/>28 out of 100<br/>Not ready"]
         
-        DECISION["<b>Board Decision</b><br/>90-day ultimatum<br/>Transform or cancel"]
+        DECISION["Board Decision<br/>90-day ultimatum<br/>Transform or cancel"]
         
         SCORE --> DECISION
     end
     
     investment --> pilots --> outcome
     
-    style investment fill:#f9f9f9,stroke:#666666,stroke-width:3px
+    Copyright["© 2025 Colaberry Inc."]
+    
+    style investment fill:#f9f9f9,stroke:#666666,stroke-width:3px,color:#333333
     style TOTAL fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
     
-    style pilots fill:#fff5f5,stroke:#c62828,stroke-width:3px
-    style P1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style P2 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style pilots fill:#ffebee,stroke:#c62828,stroke-width:3px,color:#b71c1c
+    style P1 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style P2 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
     style P3 fill:#990000,stroke:#b71c1c,stroke-width:3px,color:#ffffff
     
-    style outcome fill:#fff9e6,stroke:#f57c00,stroke-width:3px
-    style SCORE fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style outcome fill:#fff9e6,stroke:#f57c00,stroke-width:3px,color:#e65100
+    style SCORE fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
     style DECISION fill:#f57c00,stroke:#e65100,stroke-width:3px,color:#ffffff
     
-    CR["<b>© 2025 Colaberry Inc.</b>"]
-    style CR fill:none,stroke:none,color:#999999
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+
 ```
 
 The visual pattern was unmistakable: three independent failures, three different vendors, but one systematic cause—infrastructure's inability to fulfill INPACT™ needs across all six dimensions. Each pilot's detailed analysis would reveal the specific need failures that drove abandonment.
