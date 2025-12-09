@@ -509,92 +509,99 @@ Each infrastructure gap requires a specific architectural layer:
 **Diagram 3.3: Seven Infrastructure Gaps -> INPACT™ Needs -> 7-Layer Architecture**
 
 ```mermaid
+
 graph LR
-    subgraph gaps["<b>7 INFRASTRUCTURE GAPS</b>"]
+    subgraph gaps["7 INFRASTRUCTURE GAPS"]
         direction TB
-        G1["<b>Gap 1: Multi-Modal</b><br/><b>Storage</b><br/>Relational only<br/>No vectors/graphs"]
-        G2["<b>Gap 2: Real-Time Data</b><br/><b>Overnight batch ETL</b><br/>8-24 hour staleness"]
-        G3["<b>Gap 3: Semantic</b><br/><b>Understanding</b><br/>SQL schemas only<br/>No business language"]
-        G4["<b>Gap 4: Intelligent</b><br/><b>Retrieval</b><br/>Keyword search only<br/>No context awareness"]
-        G5["<b>Gap 5: Dynamic</b><br/><b>Permissions</b><br/>Static RBAC<br/>No context evaluation"]
-        G6["<b>Gap 6: Reasoning</b><br/><b>Observability</b><br/>Query logs only<br/>No reasoning traces"]
-        G7["<b>Gap 7: Multi-Agent</b><br/><b>Coordination</b><br/>Single-user systems<br/>No orchestration"]
+        G1["Gap 1: Multi-Modal<br/>Storage<br/>Relational only<br/>No vectors/graphs"]
+        G2["Gap 2: Real-Time Data<br/>Overnight batch ETL<br/>8-24 hour staleness"]
+        G3["Gap 3: Semantic<br/>Understanding<br/>SQL schemas only<br/>No business language"]
+        G4["Gap 4: Intelligent<br/>Retrieval<br/>Keyword search only<br/>No context awareness"]
+        G5["Gap 5: Dynamic<br/>Permissions<br/>Static RBAC<br/>No context evaluation"]
+        G6["Gap 6: Reasoning<br/>Observability<br/>Query logs only<br/>No reasoning traces"]
+        G7["Gap 7: Multi-Agent<br/>Coordination<br/>Single-user systems<br/>No orchestration"]
     end
     
-    subgraph needs["<b>INPACT™ NEEDS</b>"]
+    subgraph needs["INPACT™ NEEDS"]
         direction TB
-        N1["<b>I - Instant</b>"]
-        N2["<b>N - Natural</b>"]
-        N3["<b>P - Permitted</b>"]
-        N4["<b>A - Adaptive</b>"]
-        N5["<b>C - Contextual</b>"]
-        N6["<b>T - Transparent</b>"]
+        N1["I - Instant"]
+        N2["N - Natural"]
+        N3["P - Permitted"]
+        N4["A - Adaptive"]
+        N5["C - Contextual"]
+        N6["T - Transparent"]
     end
     
-    subgraph layers["<b>7-LAYER ARCHITECTURE</b>"]
+    subgraph layers["7-LAYER ARCHITECTURE"]
         direction TB
-        L1["<b>Layer 1</b><br/><b>Storage</b><br/>Multi-Modal Data"]
-        L2["<b>Layer 2</b><br/><b>Real-Time</b><br/>CDC, Streaming"]
-        L3["<b>Layer 3</b><br/><b>Semantic Layer</b><br/>Business Glossary"]
-        L4["<b>Layer 4</b><br/><b>Intelligence</b><br/>RAG + Retrieval<br/>Vector Search"]
-        L5["<b>Layer 5</b><br/><b>Governance</b><br/>ABAC, Policies"]
-        L6["<b>Layer 6</b><br/><b>Observability</b><br/>Distributed Tracing"]
-        L7["<b>Layer 7</b><br/><b>Orchestration</b><br/>Multi-Agent Framework"]
+        L1["Layer 1<br/>Storage<br/>Multi-Modal Data"]
+        L2["Layer 2<br/>Real-Time<br/>CDC, Streaming"]
+        L3["Layer 3<br/>Semantic Layer<br/>Business Glossary"]
+        L4["Layer 4<br/>Intelligence<br/>RAG + Retrieval<br/>Vector Search"]
+        L5["Layer 5<br/>Governance<br/>ABAC, Policies"]
+        L6["Layer 6<br/>Observability<br/>Distributed Tracing"]
+        L7["Layer 7<br/>Orchestration<br/>Multi-Agent Framework"]
     end
     
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    Copyright["© 2025 Colaberry Inc."]
     
     %% Gap to Need connections
-    G1 -.->|<b>Requires</b>| N5
-    G2 -.->|<b>Requires</b>| N1
-    G2 -.->|<b>Requires</b>| N5
-    G3 -.->|<b>Requires</b>| N2
-    G4 -.->|<b>Requires</b>| N2
-    G4 -.->|<b>Requires</b>| N5
-    G5 -.->|<b>Requires</b>| N3
-    G6 -.->|<b>Requires</b>| N4
-    G6 -.->|<b>Requires</b>| N6
-    G7 -.->|<b>at scale</b>| N1
-    G7 -.->|<b>Requires</b>| N2
+    G1 -.->|"Requires"| N5
+    G2 -.->|"Requires"| N1
+    G2 -.->|"Requires"| N5
+    G3 -.->|"Requires"| N2
+    G4 -.->|"Requires"| N2
+    G4 -.->|"Requires"| N5
+    G5 -.->|"Requires"| N3
+    G6 -.->|"Requires"| N4
+    G6 -.->|"Requires"| N6
+    G7 -.->|"at scale"| N1
+    G7 -.->|"Requires"| N2
+    G7 -.->|"Requires"| N4
     
     %% Need to Layer connections
-    N1 -.->|<b>Solved by</b>| L2
-    N2 -.->|<b>Solved by</b>| L3
-    N2 -.->|<b>Solved by</b>| L4
-    N3 -.->|<b>Solved by</b>| L5
-    N4 -.->|<b>Solved by</b>| L6
-    N5 -.->|<b>Solved by</b>| L1
-    N5 -.->|<b>Solved by</b>| L4
-    N6 -.->|<b>Solved by</b>| L6
+    N1 -.->|"Solved by"| L2
+    N2 -.->|"Solved by"| L3
+    N2 -.->|"Solved by"| L4
+    N3 -.->|"Solved by"| L5
+    N4 -.->|"Solved by"| L6
+    N4 -.->|"Solved by"| L7
+    N5 -.->|"Solved by"| L1
+    N5 -.->|"Solved by"| L4
+    N6 -.->|"Solved by"| L6
     
     %% Styling - GAPS (Red - Problems)
-    style G1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style G2 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style G3 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style G4 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style G5 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style G6 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style G7 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style gaps fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style G1 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style G2 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style G3 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style G4 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style G5 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style G6 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style G7 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
     
     %% Styling - NEEDS (Neutral - Requirements)
-    style N1 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style N2 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style N3 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style N4 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style N5 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style N6 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style needs fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style N1 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
+    style N2 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
+    style N3 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
+    style N4 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
+    style N5 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
+    style N6 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
     
     %% Styling - LAYERS (Teal - Solutions)
-    style L1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L4 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L5 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L6 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L7 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style layers fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L1 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L2 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L3 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L4 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L5 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L6 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L7 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
     
     %% Copyright
     style Copyright fill:#ffffff,stroke:none,color:#666666
+
 ```
 
 **The mapping shows:**
