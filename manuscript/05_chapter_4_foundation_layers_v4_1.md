@@ -74,7 +74,7 @@ graph TB
     subgraph INDICATOR[" "]
         direction LR
         Spacer1[" "]
-        YouAreHere["YOU ARE HERE<br/>Layers 1-2 Build Here"]
+        YouAreHere["<b>YOU ARE HERE</b><br/>Layers 1-2 Build Here"]
         Spacer2[" "]
     end
     
@@ -292,13 +292,13 @@ Swapna pulled up the pipeline diagram. "Overnight batch. Operational databases�
 
 ```mermaid
 graph LR
-    subgraph "<b>❌ Week 0: Batch ETL</b>"
-        OPS["<b>Operational Systems</b><br/><b>Epic, Cerner, Workday</b><br/><b>Real-time updates</b>"]
-        ETL["<b>⏰ 2 AM ETL</b><br/><b>Overnight batch</b><br/><b>24-hour cycle</b>"]
-        REPORT["<b>Reporting Database</b><br/><b>Stale by afternoon</b><br/><b>8-24 hour lag</b>"]
+    subgraph "<b>Week 0: Batch ETL</b>"
+        OPS["<b>Operational Systems</b><br/>Epic, Cerner, Workday<br/>Real-time updates"]
+        ETL["<b>2 AM ETL</b><br/>Overnight batch<br/>24-hour cycle"]
+        REPORT["<b>Reporting Database</b><br/>Stale by afternoon<br/>8-24 hour lag"]
     end
     
-    RISK["<b>⚠️ Patient Safety Risk</b><br/><b>Medication orders</b><br/><b>invisible 12+ hours</b>"]
+    RISK["<b>Patient Safety Risk</b><br/>Medication orders<br/>invisible 12+ hours"]
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
