@@ -17,7 +17,7 @@
 graph LR
     subgraph WITHOUT["WITHOUT INPACT™"]
         direction TB
-        W1["'Why is this so slow?'<br/><br/>'It doesn't understand me'<br/><br/>'Who authorized this?'<br/><br/>'It keeps making mistakes'<br/><br/>'It doesn't know context'<br/><br/>'I don't trust it'"]
+        W1["Why is this so slow?<br/><br/>It doesn't understand me<br/><br/>Who authorized this?<br/><br/>It keeps making mistakes<br/><br/>It doesn't know context<br/><br/><b>I don't trust it</b>"]
     end
     
     subgraph TRANSFORM["TRANSFORM"]
@@ -27,7 +27,7 @@ graph LR
     
     subgraph WITH["WITH INPACT™"]
         direction TB
-        I1["I — Instant<br/>Under 2 seconds<br/><br/>N — Natural<br/>97% comprehension<br/><br/>P — Permitted<br/>Dynamic access<br/><br/>A — Adaptive<br/>Learns from feedback<br/><br/>C — Contextual<br/>Cross-system aware<br/><br/>T — Transparent<br/>Full audit trail"]
+        I1["I — Instant<br/>Under 2 seconds<br/><br/>N — Natural<br/>97% comprehension<br/><br/>P — Permitted<br/>Dynamic access<br/><br/>A — Adaptive<br/>Learns from feedback<br/><br/>C — Contextual<br/>Cross-system aware<br/><br/>T — Transparent<br/>Full audit trail</br></br><b>I TRUST it</b>"]
     end
     
     WITHOUT --> TRANSFORM --> WITH
