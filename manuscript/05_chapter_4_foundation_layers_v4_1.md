@@ -411,7 +411,7 @@ Layer 1 provides eleven distinct storage categories, each optimized for specific
 ```mermaid
 
 graph TB
-    TITLE["LAYER 1:<br/>MULTI-MODAL<br/>STORAGE<br/>11 Categories"]
+    TITLE["LAYER 1:<br/><b>MULTI-MODAL</b><br/><b>STORAGE</b><br/>11 Categories"]
     
     subgraph FOUNDATION["Foundation (8 Types)"]
         direction TB
@@ -660,7 +660,7 @@ Echo started with SQL Server only. Here's what failed:
 
 ```mermaid
 graph LR
-    subgraph "<b>❌ Week 0: Single-Modal</b>"
+    subgraph "<b>Week 0: Single-Modal</b>"
         OLD["<b>SQL Server Only</b><br/><b>All queries, one DB</b>"]
         P1["<b>Vector: 15-20s</b>"]
         P2["<b>Graph: 8.2s</b>"]
@@ -668,9 +668,9 @@ graph LR
         P4["<b>ML: Spreadsheets</b>"]
     end
     
-    TRANSFORM["<b>🔄 4 Weeks</b>"]
+    TRANSFORM["<b>4 Weeks</b>"]
     
-    subgraph "<b>✅ Week 4: Multi-Modal</b>"
+    subgraph "<b>Week 4: Multi-Modal</b>"
         NEW["<b>8 Categories</b><br/><b>Right tool, right job</b>"]
         S1["<b>Vector: 42ms</b>"]
         S2["<b>Graph: 340ms</b>"]
