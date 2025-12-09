@@ -137,21 +137,21 @@ graph LR
     subgraph era1["<b>SOFTWARE 1.0</b>"]
         direction TB
         P1["<b>Programming</b><br/><b>(1950s-2010s)</b><br/>Explicit instructions<br/>C++, Java, Python"]
-        I1["<b>Infrastructure</b><br/><b>Data warehouses</b><br/><b>Batch ETL, BI dashboards</b>"]
+        I1["<b>Infrastructure</b><br/>Data warehouses<br/>Batch ETL, BI dashboards"]
         P1 --> I1
     end
     
     subgraph era2["<b>SOFTWARE 2.0</b>"]
         direction TB
         P2["<b>Programming</b><br/><b>(2010s-2023)</b><br/>Curate datasets<br/>Train ML models"]
-        I2["<b>Infrastructure</b><br/><b>Added ML layers</b><br/><b>MLOps, registries</b>"]
+        I2["<b>Infrastructure</b><br/>Added ML layers<br/>MLOps, registries"]
         P2 --> I2
     end
     
     subgraph era3["<b>SOFTWARE 3.0</b>"]
         direction TB
         P3["<b>Programming</b><br/><b>(2023-Present)</b><br/>Natural language<br/>In-context learning"]
-        I3["<b>NEW Infrastructure</b><br/><b>Vector DBs, real-time</b><br/><b>Semantic layers, ABAC</b>"]
+        I3["<b>NEW Infrastructure</b><br/>Vector DBs, real-time<br/>Semantic layers, ABAC"]
         P3 --> I3
     end
     
