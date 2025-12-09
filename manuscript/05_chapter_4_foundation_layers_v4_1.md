@@ -17,7 +17,7 @@
 graph LR
     subgraph WITHOUT["WITHOUT LAYERS 1-2"]
         direction TB
-        W1["Siloed databases<br/>No unified access<br/><br/>Overnight batch ETL<br/>Stale data<br/><br/>No vector storage<br/>No semantic search<br/><br/>Minutes to query<br/>Users abandon"]
+        W1["Siloed databases<br/>No unified access<br/><br/>Overnight batch ETL<br/>Stale data<br/><br/>No vector storage<br/>No semantic search<br/><br/><b>Minutes to query<br/>Users abandon</b>"]
     end
     
     subgraph TRANSFORM["TRANSFORM"]
@@ -27,7 +27,7 @@ graph LR
     
     subgraph WITH["WITH LAYERS 1-2"]
         direction TB
-        L1["Layer 1:<br/>Unified multi-modal<br/>storage<br/><br/>Layer 2:<br/>Sub-second freshness<br/><br/>Vector + Graph ready<br/><br/>Under 2s response<br/>Users trust"]
+        L1["Layer 1:<br/>Unified multi-modal<br/>storage<br/><br/>Layer 2:<br/>Sub-second freshness<br/><br/>Vector + Graph ready<br/><br/><b>Under 2s response<br/>Users trust</b>"]
     end
     
     WITHOUT --> TRANSFORM --> WITH
