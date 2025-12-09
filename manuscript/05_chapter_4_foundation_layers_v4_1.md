@@ -14,6 +14,51 @@
 
 ```mermaid
 
+graph LR
+    subgraph WITHOUT["WITHOUT LAYERS 1-2"]
+        direction TB
+        W1["Siloed databases<br/>No unified access<br/><br/>Overnight batch ETL<br/>Stale data<br/><br/>No vector storage<br/>No semantic search<br/><br/><b>Minutes to query<br/>Users abandon</b>"]
+    end
+    
+    subgraph TRANSFORM["TRANSFORM"]
+        direction TB
+        T1["→"]
+    end
+    
+    subgraph WITH["WITH LAYERS 1-2"]
+        direction TB
+        L1["Layer 1:<br/>Unified multi-modal<br/>storage<br/><br/>Layer 2:<br/>Sub-second freshness<br/><br/>Vector + Graph ready<br/><br/><b>Under 2s response<br/>Users trust</b>"]
+    end
+    
+    WITHOUT --> TRANSFORM --> WITH
+    
+    style WITHOUT fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
+    style WITH fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style W1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style T1 fill:#f5f5f5,stroke:#666666,color:#333333
+    style L1 fill:#b2dfdb,stroke:#00897b,color:#004d40
+
+```
+
+> **Key Takeaway:** Foundation first. Without Layers 1-2, nothing else works.
+
+## SECTION 1: ARCHITECTURE INTRODUCTION
+
+Three chapters prepared us for this moment.
+
+Chapter 0 introduced the Architecture of Trust—three integrated pillars working together to transform infrastructure chaos into agent-ready systems. Chapter 1 diagnosed why 95% of agent projects fail: the trust gap between what executives expect and what infrastructure delivers. Chapter 2 defined what agents need through INPACT™—six dimensions separating trusted agents from those that fail. Chapter 3 revealed why traditional BI infrastructure cannot deliver those needs, exposing seven specific gaps.
+
+**Now we build.**
+
+This chapter begins Part II: "The 95% Solution—Building the Seven Layers That Work." Chapters 4-7 construct the 7-Layer Architecture layer by layer, transforming diagnosis into deployment, problems into solutions, gaps into capabilities.
+
+**This chapter builds the foundation: Layers 1 and 2.**
+
+**Diagram 1: The Architecture of Trust—Three Integrated Pillars**
+
+```mermaid
+
 graph TB
     Title["ARCHITECTURE OF TRUST<br/>Three Integrated Pillars"]
     
@@ -53,43 +98,7 @@ graph TB
     style Spacer2 fill:none,stroke:none,color:transparent
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
-```
 
-> **Key Takeaway:** Foundation first. Without Layers 1-2, nothing else works.
-
-## SECTION 1: ARCHITECTURE INTRODUCTION
-
-Three chapters prepared us for this moment.
-
-Chapter 0 introduced the Architecture of Trust—three integrated pillars working together to transform infrastructure chaos into agent-ready systems. Chapter 1 diagnosed why 95% of agent projects fail: the trust gap between what executives expect and what infrastructure delivers. Chapter 2 defined what agents need through INPACT™—six dimensions separating trusted agents from those that fail. Chapter 3 revealed why traditional BI infrastructure cannot deliver those needs, exposing seven specific gaps.
-
-**Now we build.**
-
-This chapter begins Part II: "The 95% Solution—Building the Seven Layers That Work." Chapters 4-7 construct the 7-Layer Architecture layer by layer, transforming diagnosis into deployment, problems into solutions, gaps into capabilities.
-
-**This chapter builds the foundation: Layers 1 and 2.**
-
-**Diagram 1: The Architecture of Trust—Three Integrated Pillars**
-
-```mermaid
-graph TB
-    INPACT["<b>INPACT™ Framework</b><br/><b>6 Agent Needs</b>"]
-    ARCH["<b>7-Layer Architecture</b><br/><b>Infrastructure Blueprint</b>"]
-    GOALS["<b>GOALS™ Framework</b><br/><b>5 Operational Pillars</b>"]
-    
-    FOUNDATION["<b>📍 Chapters 4-7 Build Here</b><br/><b>Layer-by-Layer Implementation</b>"]
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    
-    INPACT -->|<b>Agent needs fulfilled by</b>| ARCH
-    ARCH -->|<b>Infrastructure enables</b>| GOALS
-    ARCH -.->|<b>You Are Here</b>| FOUNDATION
-    
-    style INPACT fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style ARCH fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style GOALS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style FOUNDATION fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
 ### Why Foundation Matters
