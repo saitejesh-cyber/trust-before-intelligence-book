@@ -14,30 +14,44 @@
 
 ```mermaid
 
-graph LR
-    subgraph WITHOUT["WITHOUT LAYERS 1-2"]
-        direction TB
-        W1["Siloed databases<br/>No unified access<br/><br/>Overnight batch ETL<br/>Stale data<br/><br/>No vector storage<br/>No semantic search<br/><br/><b>Minutes to query<br/>Users abandon</b>"]
+graph TB
+    Title["ARCHITECTURE OF TRUST<br/>Three Integrated Pillars"]
+    
+    subgraph PILLARS[" "]
+        direction LR
+        INPACT["`PILLAR 1: INPACT™<br/><br/>What Agents Need?<br/><br/>**I**nstant<br/>**N**atural<br/>**P**ermitted<br/>**A**daptive<br/>**C**ontextual<br/>**T**ransparent`"]
+        
+        Layers["PILLAR 2: 7-LAYERS<br/>Infrastructure<br/><br/>How to Build TRUST?<br/><br/>Storage<br/>Real-Time<br/>Semantic<br/>Intelligence<br/>Governance<br/>Observability<br/>Orchestration"]
+        
+        GOALS["`PILLAR 3: GOALS™<br/><br/>How to Measure TRUST?<br/><br/>**G**overnance<br/>**O**bservability<br/>**A**vailability<br/>**L**exicon<br/>**S**olid`"]
     end
     
-    subgraph TRANSFORM["TRANSFORM"]
-        direction TB
-        T1["→"]
+    subgraph INDICATOR[" "]
+        direction LR
+        Spacer1[" "]
+        YouAreHere["YOU ARE HERE<br/>Layers 1-2 Build Here"]
+        Spacer2[" "]
     end
     
-    subgraph WITH["WITH LAYERS 1-2"]
-        direction TB
-        L1["Layer 1:<br/>Unified multi-modal<br/>storage<br/><br/>Layer 2:<br/>Sub-second freshness<br/><br/>Vector + Graph ready<br/><br/><b>Under 2s response<br/>Users trust</b>"]
-    end
+    Copyright["© 2025 Colaberry Inc."]
     
-    WITHOUT --> TRANSFORM --> WITH
+    Title --> PILLARS
+    PILLARS <--> INDICATOR
     
-    style WITHOUT fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
-    style WITH fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style W1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style T1 fill:#f5f5f5,stroke:#666666,color:#333333
-    style L1 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    INPACT -.->|"Needs Fulfilled by"| Layers
+    Layers -.->|"Enables Operations"| GOALS
+    GOALS -.->|"Drives Trust"| INPACT
+
+    style Title fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style PILLARS fill:none,stroke:none
+    style INDICATOR fill:none,stroke:none
+    style INPACT fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Layers fill:#f57c00,stroke:#e65100,stroke-width:3px,color:#ffffff
+    style GOALS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Spacer1 fill:none,stroke:none,color:transparent
+    style YouAreHere fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style Spacer2 fill:none,stroke:none,color:transparent
+    style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
 
