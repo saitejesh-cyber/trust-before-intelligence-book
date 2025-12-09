@@ -160,7 +160,7 @@ graph TB
             A6["<b>T - Transparent</b><br/>Explainable value<br/>Delivery"]
         end
         
-        TRUST["<b>✅ TRUSTED AGENT</b><br/><b>Infrastructure Fulfills All Needs</b>"]
+        TRUST["<b>✅ TRUSTED AGENT</b><br/><b>Infrastructure Fulfills <br/>All 6 Needs</b>"]
         
         H1 -.->|<b>Parallels</b>| A1
         H2 -.->|<b>Parallels</b>| A2
