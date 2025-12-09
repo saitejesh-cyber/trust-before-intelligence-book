@@ -237,14 +237,14 @@ Traditional enterprise software could require trust: "You must use this ERP syst
 ```mermaid
 graph TB
     subgraph BOX["<b>INPACT™ AGENT</b>"]
-        I["<b>I - Instant</b><br/><b>Users trust responses are current</b>"]
-        N["<b>N - Natural</b><br/><b>Users trust agent understands</b>"]
-        P["<b>P - Permitted</b><br/><b>Users trust agent respects boundaries</b>"]
-        A["<b>A - Adaptive</b><br/><b>Users trust agent learns & improves</b>"]
-        C["<b>C - Contextual</b><br/><b>Users trust agent sees complete picture</b>"]
-        T["<b>T - Transparent</b><br/><b>Users trust agent's reasoning</b>"]
+        I["<b>I - Instant</b><br/><b>Users trust responses<br/> are current</b>"]
+        N["<b>N - Natural</b><br/><b>Users trust agent<br/> understands</b>"]
+        P["<b>P - Permitted</b><br/><b>Users trust agent<br/> respects boundaries</b>"]
+        A["<b>A - Adaptive</b><br/><b>Users trust agent<br/> learns & improves</b>"]
+        C["<b>C - Contextual</b><br/><b>Users trust agent<br/> sees complete picture</b>"]
+        T["<b>T - Transparent</b><br/><b>Users trust agent's<br/> reasoning</b>"]
         
-        TRUST["<b>✅ TRUSTED AGENT</b><br/><b>Users Delegate with Confidence</b>"]
+        TRUST["<b>✅ TRUSTED AGENT</b><br/><b>Users<br/> Collaborate & Delegate<br/> with Confidence</b>"]
         
         I --> TRUST
         N --> TRUST
