@@ -499,47 +499,47 @@ When enterprises attempt agent deployments on BI-era infrastructure, critical mi
 **Diagram 3: INPACT™ Need Failures Drive 95% Failure Rate**
 
 ```mermaid
-graph LR
-    subgraph challenge["<b>⚠  THE PROBLEM</b>"]
+
+graph TB
+    subgraph PROBLEM["THE PROBLEM"]
         direction TB
+        current["60% of Enterprises<br/>Software 1.0 Infrastructure<br/>Cannot fulfill INPACT™"]
         
-        current["<b>60% of Enterprises</b><br/>Software 1.0 Infrastructure<br/>❌ Cannot fulfill INPACT™"]
+        attempting["Attempting to Deploy<br/>Software 3.0 Agents<br/>Require INPACT™ fulfillment"]
         
-        attempting["<b>Attempting to Deploy</b><br/>Software 3.0 Agents<br/>✅ Require INPACT™ fulfillment"]
+        gap["INPACT™ Gap<br/>No I, N, P, A, C, or T<br/>No middleware fix possible"]
         
-        gap["<b>INPACT™ Gap</b><br/>No I, N, P, A, C, or T<br/>No middleware fix possible"]
-        
-        result["<b>❌ 95% Failure Rate</b><br/>Trust collapse across<br/>all six dimensions"]
+        result["95% Failure Rate<br/>Trust collapse across<br/>all six dimensions"]
         
         current --> gap
         attempting --> gap
         gap --> result
     end
     
-    subgraph solution["<b>✅  THE SOLUTION</b>"]
+    subgraph SOLUTION["THE SOLUTION"]
         direction TB
+        transform["INPACT™-Ready Architecture<br/>Infrastructure that fulfills<br/>all six needs systematically"]
         
-        transform["<b>INPACT™-Ready Architecture</b><br/>Infrastructure that fulfills<br/>all six needs systematically"]
-        
-        delivers["<b>Delivers Results</b><br/>85+ INPACT™ score<br/>Production-ready reliability"]
+        delivers["Delivers Results<br/>85+ INPACT™ score<br/>Production-ready reliability"]
         
         transform --> delivers
     end
     
-    result -.->|"<b>Requires Transformation</b>"| transform
-
-    style challenge fill:#fff5f5,stroke:#c62828,stroke-width:3px,color:#b71c1c
-    style current fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style attempting fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    result -.->|"Requires Transformation"| transform
+    
+    Copyright["© 2025 Colaberry Inc."]
+    
+    style PROBLEM fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style current fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style attempting fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
     style gap fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
     style result fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
     
-    style solution fill:#f0fff0,stroke:#00897b,stroke-width:3px,color:#004d40
-    style transform fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style SOLUTION fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style transform fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
     style delivers fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-
-    CR["© 2025 Colaberry Inc."]
     style Copyright fill:#ffffff,stroke:none,color:#666666
+
 ```
 
 Most enterprises attempt to deploy Software 3.0 agents on unaugmented Software 1.0 infrastructure, creating the INPACT™ gap that drives the 95% pilot failure rate. The solution isn't replacing existing systems—it's augmenting them with agent-ready layers.
