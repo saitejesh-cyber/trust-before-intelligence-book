@@ -40,6 +40,8 @@ This glossary provides definitions for acronyms and key terms used throughout *T
 
 - **ICD-10:** International Classification of Diseases, 10th Revision — A medical classification system used globally for coding diagnoses and procedures.
 
+- **IDC:** International Data Corporation — A global market intelligence and advisory firm specializing in information technology, telecommunications, and consumer technology research.
+
 - **LLM:** Large Language Model — AI models trained on vast text datasets capable of understanding and generating human-like text. Examples include GPT-4, Claude, and Gemini.
 
 - **MIT:** Massachusetts Institute of Technology — Research university whose NANDA initiative produced the "State of AI in Business 2025" report cited in this book.
@@ -47,6 +49,10 @@ This glossary provides definitions for acronyms and key terms used throughout *T
 - **ML:** Machine Learning — A subset of artificial intelligence where systems learn patterns from data rather than being explicitly programmed.
 
 - **MLOps:** Machine Learning Operations — Practices for deploying, monitoring, and maintaining machine learning models in production environments.
+
+- **NIST:** National Institute of Standards and Technology — U.S. federal agency that develops technology standards and guidelines, including cybersecurity frameworks and ABAC specifications (SP 800-162).
+
+- **OPA:** Open Policy Agent — An open-source policy engine that enables unified, context-aware policy enforcement across the stack, commonly used for ABAC implementation.
 
 - **RAG:** Retrieval-Augmented Generation — An AI architecture that combines information retrieval with text generation, grounding LLM responses in retrieved enterprise data to reduce hallucinations.
 
