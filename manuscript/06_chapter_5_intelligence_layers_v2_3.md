@@ -1172,13 +1172,13 @@ gantt
 
 ```mermaid
 graph LR
-    subgraph "<b>Week 4: Foundation Complete</b>"
+    subgraph "<b>Week 4:Foundation Layer</b>"
         W4_TOTAL["<b>TOTAL: 42/100</b>"]
     end
     
     ARROW["<b>→</b><br/><b>+25 pts</b>"]
     
-    subgraph "<b>Week 7: Intelligence Complete</b>"
+    subgraph "<b>Week 7:Intelligence Layer</b>"
         W7_TOTAL["<b>TOTAL: 67/100</b>"]
     end
     
@@ -1227,7 +1227,7 @@ graph TB
         EMBED["<b>Embed</b>"] --> HYBRID["<b>Retrieve</b>"] --> RERANK["<b>Rerank</b>"] --> LLM["<b>LLM</b>"] --> CACHE["<b>Cache</b>"]
     end
     
-    RESPONSE["<b>✅ Grounded Response</b>"]
+    RESPONSE["<b>Grounded Response</b>"]
     
     USER --> L3
     L3 --> L4
