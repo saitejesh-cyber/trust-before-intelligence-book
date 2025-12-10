@@ -32,11 +32,15 @@ This glossary provides definitions for acronyms and key terms used throughout *T
 
 - **ETL:** Extract, Transform, Load — A data integration process that extracts data from source systems, transforms it into a consistent format, and loads it into a target system (typically a data warehouse).
 
+- **FHIR:** Fast Healthcare Interoperability Resources — A standard for exchanging healthcare information electronically, developed by HL7 International.
+
 - **GenAI:** Generative Artificial Intelligence — AI systems capable of generating new content (text, images, code) based on patterns learned from training data.
 
 - **GPT:** Generative Pre-trained Transformer — A type of large language model architecture developed by OpenAI, trained on vast text datasets to generate human-like text.
 
 - **HBR:** Harvard Business Review — A management magazine published by Harvard Business Publishing.
+
+- **HNSW:** Hierarchical Navigable Small World — A graph-based algorithm for approximate nearest neighbor search, commonly used in vector databases for efficient similarity search.
 
 - **HIPAA:** Health Insurance Portability and Accountability Act — U.S. legislation that provides data privacy and security provisions for safeguarding medical information.
 
@@ -48,13 +52,21 @@ This glossary provides definitions for acronyms and key terms used throughout *T
 
 - **LLM:** Large Language Model — AI models trained on vast text datasets capable of understanding and generating human-like text. Examples include GPT-4, Claude, and Gemini.
 
+- **LOINC:** Logical Observation Identifiers Names and Codes — A universal standard for identifying medical laboratory observations, clinical documents, and other health measurements.
+
 - **MIT:** Massachusetts Institute of Technology — Research university whose NANDA initiative produced the "State of AI in Business 2025" report cited in this book.
 
 - **ML:** Machine Learning — A subset of artificial intelligence where systems learn patterns from data rather than being explicitly programmed.
 
 - **MLOps:** Machine Learning Operations — Practices for deploying, monitoring, and maintaining machine learning models in production environments.
 
+- **MRN:** Medical Record Number — A unique identifier assigned to a patient within a healthcare organization's system.
+
+- **NDCG:** Normalized Discounted Cumulative Gain — A measure of ranking quality used to evaluate search and recommendation systems.
+
 - **NIST:** National Institute of Standards and Technology — U.S. federal agency that develops technology standards and guidelines, including cybersecurity frameworks and ABAC specifications (SP 800-162).
+
+- **NPI:** National Provider Identifier — A unique 10-digit identification number for healthcare providers in the United States, required by HIPAA.
 
 - **OPA:** Open Policy Agent — An open-source policy engine that enables unified, context-aware policy enforcement across the stack, commonly used for ABAC implementation.
 
@@ -64,7 +76,11 @@ This glossary provides definitions for acronyms and key terms used throughout *T
 
 - **ROI:** Return on Investment — A financial metric measuring the profitability of an investment, calculated as (Net Benefit / Cost) × 100%.
 
+- **RRF:** Reciprocal Rank Fusion — A method for combining multiple ranked lists into a single ranking, commonly used in hybrid search systems.
+
 - **SQL:** Structured Query Language — A programming language used for managing and querying relational databases.
+
+- **TTL:** Time To Live — A mechanism that limits the lifespan of data in a cache or network, after which the data expires and must be refreshed.
 
 ---
 
