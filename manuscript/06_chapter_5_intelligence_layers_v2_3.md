@@ -73,7 +73,7 @@ graph TB
     subgraph INDICATOR[" "]
         direction LR
         Spacer1[" "]
-        YouAreHere["<b>YOU ARE HERE</b><br/>Layers 3-4 Semantic + Intelligence Build Here"]
+        YouAreHere["<b>YOU ARE HERE</b><br/>Layers 3 Semantic <br/> Layer 4: Intelligence<br/> Built Here"]
         Spacer2[" "]
     end
     
