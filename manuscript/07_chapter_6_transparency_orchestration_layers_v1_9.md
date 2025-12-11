@@ -1307,10 +1307,7 @@ graph TB
     subgraph INDICATOR[" "]
         direction LR
         Spacer1[" "]
-        YouAreHere["<b>YOU ARE HERE</b><br/>Production Ready
-<br/>85/100 INPACT™
-<br/>$932K Investment
-<br/>70 Days <br/> 7-Layers Built Here"]
+        YouAreHere["<b>YOU ARE HERE</b><br/>Production Ready<br/>85/100 INPACT™<br/>$932K Investment<br/>70 Days <br/> 7-Layers Built Here"]
         Spacer2[" "]
     end
     
