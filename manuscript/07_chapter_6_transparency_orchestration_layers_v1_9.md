@@ -1285,29 +1285,56 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-**Diagram 13: The Architecture of Trust—All Pillars Complete**
+**Diagram 13: The Architecture of Trust— Two Pillars Complete**
 
 ```mermaid
+
+
+
+
 graph TB
-    subgraph "<b>THE ARCHITECTURE OF TRUST - COMPLETE</b>"
-        P1["<b>PILLAR 1: INPACT™</b><br/><b>What Agents Need</b><br/><b>6 Dimensions Defined</b><br/><b>✓ Chapter 2</b>"]
-        P2["<b>PILLAR 2: 7-LAYER</b><br/><b>What to Build</b><br/><b>7 Layers Operational</b><br/><b>✓ Chapters 4-6</b>"]
-        P3["<b>PILLAR 3: GOALS™</b><br/><b>How to Operate</b><br/><b>5 Operational Pillars</b><br/><b>→ Chapter 7</b>"]
+    Title["ARCHITECTURE OF TRUST<br/>Three Integrated Pillars"]
+    
+    subgraph PILLARS[" "]
+        direction LR
+        INPACT["`PILLAR 1: INPACT™<br/><br/>What Agents Need?<br/><br/>**I**nstant<br/>**N**atural<br/>**P**ermitted<br/>**A**daptive<br/>**C**ontextual<br/>**T**ransparent`"]
+        
+        Layers["PILLAR 2: 7-LAYERS<br/>Infrastructure<br/><br/>How to Build TRUST?<br/><br/>Storage<br/>Real-Time<br/>Semantic<br/>Intelligence<br/>Governance<br/>Observability<br/>Orchestration"]
+        
+        GOALS["`PILLAR 3: GOALS™<br/><br/>How to Measure TRUST?<br/><br/>**G**overnance<br/>**O**bservability<br/>**A**vailability<br/>**L**exicon<br/>**S**olid`"]
     end
     
-    Result["<b>🤝 Production Ready</b><br/><b>85/100 INPACT™</b><br/><b>$932K Investment</b><br/><b>70 Days</b>"]
+    subgraph INDICATOR[" "]
+        direction LR
+        Spacer1[" "]
+        YouAreHere["<b>YOU ARE HERE</b><br/>Production Ready
+<br/>85/100 INPACT™
+<br/>$932K Investment
+<br/>70 Days <br/> 7-Layers Built Here"]
+        Spacer2[" "]
+    end
     
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    Copyright["© 2025 Colaberry Inc."]
     
-    P1 -->|<b>Agent needs fulfilled by</b>| P2
-    P2 -->|<b>Infrastructure enables</b>| P3
-    P2 -.->|<b>Delivers</b>| Result
+    Title --> PILLARS
+    PILLARS <--> INDICATOR
     
-    style P1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style P2 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style P3 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style Result fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    INPACT -.->|"Needs Fulfilled by"| Layers
+    Layers -.->|"Enables Operations"| GOALS
+    GOALS -.->|"Drives Trust"| INPACT
+
+    style Title fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style PILLARS fill:none,stroke:none
+    style INDICATOR fill:none,stroke:none
+    style INPACT fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Layers fill:#f57c00,stroke:#e65100,stroke-width:3px,color:#ffffff
+    style GOALS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Spacer1 fill:none,stroke:none,color:transparent
+    style YouAreHere fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style Spacer2 fill:none,stroke:none,color:transparent
     style Copyright fill:#ffffff,stroke:none,color:#666666
+
+
 ```
 
 ### What Echo Achieved
