@@ -24,6 +24,8 @@ This glossary provides definitions for acronyms and key terms used throughout *T
 
 - **CMS:** Centers for Medicare & Medicaid Services — U.S. federal agency that administers Medicare, Medicaid, and the Children's Health Insurance Program.
 
+- **CNCF:** Cloud Native Computing Foundation — An open-source foundation that hosts critical cloud infrastructure projects including Kubernetes, OpenTelemetry, and Open Policy Agent.
+
 - **CTO:** Chief Technology Officer — Executive responsible for technology strategy, infrastructure, and technical operations.
 
 - **DM2:** Diabetes Mellitus Type 2 — A chronic metabolic condition characterized by insulin resistance; commonly referenced in clinical documentation.
@@ -33,6 +35,8 @@ This glossary provides definitions for acronyms and key terms used throughout *T
 - **ETL:** Extract, Transform, Load — A data integration process that extracts data from source systems, transforms it into a consistent format, and loads it into a target system (typically a data warehouse).
 
 - **FHIR:** Fast Healthcare Interoperability Resources — A standard for exchanging healthcare information electronically, developed by HL7 International.
+
+- **FDA:** Food and Drug Administration — U.S. federal agency responsible for protecting public health through regulation of food, drugs, medical devices, and AI/ML-based medical software.
 
 - **GenAI:** Generative Artificial Intelligence — AI systems capable of generating new content (text, images, code) based on patterns learned from training data.
 
@@ -69,6 +73,8 @@ This glossary provides definitions for acronyms and key terms used throughout *T
 - **NPI:** National Provider Identifier — A unique 10-digit identification number for healthcare providers in the United States, required by HIPAA.
 
 - **OPA:** Open Policy Agent — An open-source policy engine that enables unified, context-aware policy enforcement across the stack, commonly used for ABAC implementation.
+
+- **PHI:** Protected Health Information — Any individually identifiable health information held or transmitted by a covered entity, protected under HIPAA regulations.
 
 - **RAG:** Retrieval-Augmented Generation — An AI architecture that combines information retrieval with text generation, grounding LLM responses in retrieved enterprise data to reduce hallucinations.
 
