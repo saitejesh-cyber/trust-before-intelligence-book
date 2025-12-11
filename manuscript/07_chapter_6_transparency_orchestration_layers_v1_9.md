@@ -609,49 +609,53 @@ This comprehensive visibility requires four capabilities:
 **Diagram 6: Layer 6 Observability Architecture**
 
 ```mermaid
+
 graph TB
-    subgraph "<b>LAYER 6: OBSERVABILITY</b>"
-        Query["<b>Agent Query</b><br/><b>Trace ID Generated</b>"]
+    subgraph LAYER6["LAYER 6: OBSERVABILITY"]
+        direction TB
+        Query["Agent Query<br/>Trace ID Generated"]
         
-        L1["<b>Layer 1</b><br/><b>Storage</b>"]
-        L3["<b>Layer 3</b><br/><b>Semantic</b>"]
-        L4["<b>Layer 4</b><br/><b>RAG + LLM</b>"]
-        L5["<b>Layer 5</b><br/><b>Governance</b>"]
+        subgraph LAYERS["INSTRUMENTED LAYERS"]
+            direction LR
+            L1["L1: Storage"]
+            L3["L3: Semantic"]
+            L4["L4: RAG+LLM"]
+            L5["L5: Governance"]
+        end
         
-        OTEL["<b>OpenTelemetry</b><br/><b>Distributed Tracing</b>"]
+        subgraph COLLECTION["COLLECTION"]
+            direction LR
+            OTEL["OpenTelemetry<br/>Distributed Tracing"]
+            LLM["LLM Cost Tracker<br/>$0.06/query avg"]
+        end
         
-        LLM["<b>LLM Cost Tracker</b><br/><b>$0.06/query avg</b>"]
-        
-        DD["<b>Datadog APM</b><br/><b>Dashboards & Alerts</b>"]
-        
-        Metrics["<b>📊 Metrics</b><br/><b>Latency, Quality, Cost</b>"]
+        DD["Datadog APM<br/>Dashboards & Alerts"]
+        Metrics["Metrics<br/>Latency, Quality, Cost"]
     end
     
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    Copyright["© 2025 Colaberry Inc."]
     
-    Query --> L1
-    Query --> L3
-    Query --> L4
-    Query --> L5
-    L1 --> OTEL
-    L3 --> OTEL
-    L4 --> OTEL
+    Query --> LAYERS
+    LAYERS --> OTEL
     L4 --> LLM
-    L5 --> OTEL
     OTEL --> DD
     LLM --> DD
     DD --> Metrics
     
+    style LAYER6 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
     style Query fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style L1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L4 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L5 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style LAYERS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L1 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L3 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L4 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L5 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style COLLECTION fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style OTEL fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style LLM fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style LLM fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
     style DD fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style Metrics fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Metrics fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
     style Copyright fill:#ffffff,stroke:none,color:#666666
+
 ```
 
 ### Why Agents Need Observability
