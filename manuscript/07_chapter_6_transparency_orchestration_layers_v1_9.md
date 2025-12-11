@@ -17,7 +17,7 @@
 graph LR
     subgraph WITHOUT["WITHOUT LAYERS 5-6-7"]
         direction TB
-        W1["No dynamic access<br/>HIPAA risk<br/><br/>Black box AI<br/>No explainability<br/><br/>Single-agent only<br/>No coordination<br/><br/><b>I don't trust it<br/>Blocked</b>"]
+        W1["No dynamic access<br/>HIPAA risk<br/><br/>Black box AI<br/>No explainability<br/><br/>Single-agent only<br/>No coordination<br/><br/><b>'I don't trust it'<br/>Blocked</b>"]
     end
     
     subgraph TRANSFORM["TRANSFORM"]
@@ -27,7 +27,7 @@ graph LR
     
     subgraph WITH["WITH LAYERS 5-6-7"]
         direction TB
-        L1["Layer 5:<br/>Governance + HITL<br/><br/>Layer 6:<br/>Full trace + audit<br/><br/>Layer 7:<br/>Multi-agent<br/>orchestration<br/><br/><b>I can verify it<br/>Trust earned</b>"]
+        L1["Layer 5:<br/>Governance + HITL<br/><br/>Layer 6:<br/>Full trace + audit<br/><br/>Layer 7:<br/>Multi-agent<br/>orchestration<br/><br/><b>'I can verify it'<br/>Trust earned</b>"]
     end
     
     WITHOUT --> TRANSFORM --> WITH
@@ -418,7 +418,7 @@ Pattern selection depends on reversibility, urgency, and risk magnitude.
 
 ```mermaid
 graph TB
-    Query["<b>📍 Agent Request</b><br/><b>Access Needed</b>"]
+    Query["<b>Agent Request</b><br/><b>Access Needed</b>"]
     
     subgraph "<b>ABAC EVALUATION</b>"
         S["<b>💤 SUBJECT</b><br/><b>Who is asking?</b><br/><b>Role, Dept, Credentials</b>"]
@@ -500,42 +500,39 @@ Echo deployed Layer 5 across Week 8-9 with the following architecture:
 **Diagram 5: HITL Escalation Patterns**
 
 ```mermaid
-graph TB
-    subgraph "<b>HITL ESCALATION PATTERNS</b>"
-        subgraph "<b>SYNC (Blocking)</b>"
-            S1["<b>⚠ï¸ High-Risk Request</b>"]
-            S2["<b>⏸ï¸ BLOCKED</b>"]
-            S3["<b>⏱•⚕️ Human Review</b>"]
-            S4["<b>✓ Execute</b>"]
+
+graph LR
+    subgraph HITL["HITL ESCALATION PATTERNS"]
+        direction LR
+        subgraph SYNC["SYNC (Blocking)"]
+            direction LR
+            S1["High-Risk<br/>Request"] --> S2["BLOCKED"] --> S3["Human<br/>Review"] --> S4["Execute"]
         end
         
-        subgraph "<b>ASYNC & POST-HOC</b>"
-            A1["<b>⚡ Time-Sensitive</b>"]
-            A2["<b>📝 Provisional</b>"]
-            A3["<b>👁️ Review Later</b>"]
-            P1["<b>📊 Low-Risk</b>"]
-            P2["<b>✓ Execute</b>"]
-            P3["<b>📍 Audit Log</b>"]
+        subgraph ASYNC["ASYNC & POST-HOC"]
+            direction LR
+            A1["Time-Sensitive"] --> A2["Provisional"] --> A3["Review Later"]
+            P1["Low-Risk"] --> P2["Execute"] --> P3["Audit Log"]
         end
     end
     
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    Copyright["© 2025 Colaberry Inc."]
     
-    S1 --> S2 --> S3 --> S4
-    A1 --> A2 --> A3
-    P1 --> P2 --> P3
-    
-    style S1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style S2 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style S3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style HITL fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style SYNC fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style ASYNC fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S1 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style S2 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style S3 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
     style S4 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style A1 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style A2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A1 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style A2 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A3 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
     style P1 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
     style P2 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style P3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style P3 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
     style Copyright fill:#ffffff,stroke:none,color:#666666
+
 ```
 
 ### The Warfarin Moment
