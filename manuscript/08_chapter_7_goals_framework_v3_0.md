@@ -387,9 +387,9 @@ graph TB
         
         subgraph PHASE3["Trust (Weeks 8-10)"]
             direction LR
-            W5["Week 8<br/>Layer 5: Governance"]
-            W6["Week 9<br/>Layer 6: Observability"]
-            W7["Week 10<br/>Layer 7: Orchestration"]
+            W5["Week 8<br/>Layer 5: Governance<br/>Security & HITL"]
+            W6["Week 9<br/>Layer 6: Observability<br/>Tracing & Monitoring"]
+            W7["Week 10<br/>Layer 7: Orchestration<br/>Multi-Agent Coordination"]
             W5 --> W6 --> W7
         end
     end
@@ -468,7 +468,7 @@ He pulled up a validation chart. "Colaberry's research is clear: proficiency acr
 ```mermaid
 graph TB
     subgraph DASHBOARD["<b>GOALS™ Health Dashboard - Week 10</b>"]
-        TITLE["<b>Overall Health: 15/25</b><br/><b>Status: Below Production Threshold</b>"]
+        TITLE["<b>Overall Health: 15/25</b><br/><b>Status: Below <br/>Production Threshold</b>"]
         
         G["<b>G - Governance</b><br/><b>3/5 🚀</b><br/><b>Audit coverage gap</b>"]
         O["<b>O - Observability</b><br/><b>3/5 🚀</b><br/><b>Need explainability</b>"]
@@ -566,7 +566,7 @@ graph LR
         R2["<b>Check Role</b>"]
         R3["<b>Role = Patient</b>"]
         R4["<b>Grant Broad Access</b>"]
-        R5["<b>❌ Violates minimum necessary</b>"]
+        R5["<b>Violates minimum <br/>necessary access</b>"]
         
         TITLE1 --> R1
         R1 --> R2
@@ -580,10 +580,10 @@ graph LR
     subgraph NEW["<b>Agent Era: ABAC</b>"]
         TITLE2["<b>Attribute-Based Access Control</b>"]
         A1["<b>User Request</b>"]
-        A2["<b>Context Eval</b><br/><b>Who • What • When • Where • Why</b>"]
+        A2["<b>Context Eval</b><br/><b>Who • What • When <br/> Where • Why</b>"]
         A3["<b>Dynamic Policy</b>"]
         A4["<b>Filter Rows</b>"]
-        A5["<b>✅ Sub-10ms secure access</b>"]
+        A5["<b>Sub-10ms secure access</b>"]
         
         TITLE2 --> A1
         A1 --> A2

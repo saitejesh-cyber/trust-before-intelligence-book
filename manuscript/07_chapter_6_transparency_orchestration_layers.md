@@ -20,7 +20,7 @@ graph LR
     
     subgraph WITH["WITH LAYERS 5-6-7"]
         direction TB
-        L1["Layer 5:<br/>Governance + HITL<br/><br/>Layer 6:<br/>Full trace + audit<br/><br/>Layer 7:<br/>Multi-agent<br/>orchestration<br/><br/><b>'I can verify it'<br/>Trust earned</b>"]
+        L1["Layer 5:<br/>Governance<br/> Security + HITL<br/><br/>Layer 6:<br/>Observability<br/>Full trace + audit<br/><br/>Layer 7:<br/>orchestration<br/>Multi-agent coordination<br/><br/><b>'I can verify it'<br/>Trust earned</b>"]
     end
     
     WITHOUT --> TRANSFORM --> WITH
