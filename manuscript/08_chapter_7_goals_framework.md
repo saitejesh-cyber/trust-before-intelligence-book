@@ -613,10 +613,10 @@ Marcus outlined the key metrics:
 
 **Governance Operational Metrics:**
 - ABAC policy evaluation: <10ms (currently: 6ms ✓)
-- Audit log coverage: 100% of data access (currently: 95% ⚠ï¸¸)
-- HITL escalation time: <30 seconds (currently: 45 seconds ⚠ï¸¸)
-- Secrets encryption: 100% (currently: 100% ✓)
-- Model rollback capability: <15 minutes (currently: untested ❌)
+- Audit log coverage: 100% of data access (currently: 95%)
+- HITL escalation time: <30 seconds (currently: 45 seconds)
+- Secrets encryption: 100% (currently: 100%)
+- Model rollback capability: <15 minutes (currently: untested)
 
 "The audit coverage gap concerns me," the compliance officer said. "What's missing?"
 
@@ -901,11 +901,11 @@ graph TB
 ### Measuring Observability
 
 **Observability Operational Metrics:**
-- APM coverage: All services instrumented (currently: 94% ⚠ï¸¸)
-- LLM call tracing: 100% with cost attribution (currently: 100% ✓)
-- MTTD (Mean Time to Detection): <5 minutes (currently: 8 minutes ⚠ï¸¸)
+- APM coverage: All services instrumented (currently: 94%)
+- LLM call tracing: 100% with cost attribution (currently: 100%)
+- MTTD (Mean Time to Detection): <5 minutes (currently: 8 minutes)
 - Daily LLM cost visibility: Yes (currently: $850/day)
-- High-risk decisions retrievable: Explainability enabled (currently: partial ⚠ï¸¸)
+- High-risk decisions retrievable: Explainability enabled (currently: partial)
 
 ### Observability Scoring Calibration
 
@@ -1048,11 +1048,11 @@ Semantic caching achieving 60%+ hit rates. Common queries returned from cache in
 ### Measuring Availability
 
 **Availability Operational Metrics:**
-- Agent response time (p95): <2 seconds (currently: 1.8s ✓)
-- Data freshness (p95): <30 seconds (currently: 28s ✓)
-- System uptime: 99.9%+ (currently: 99.95% ✓)
-- Cache hit rate: >60% (currently: 65% ✓)
-- Scale capacity: 10x current load (currently: tested to 5x ⚠ï¸¸)
+- Agent response time (p95): <2 seconds (currently: 1.8s)
+- Data freshness (p95): <30 seconds (currently: 28s)
+- System uptime: 99.9%+ (currently: 99.95%)
+- Cache hit rate: >60% (currently: 65%)
+- Scale capacity: 10x current load (currently: tested to 5x)
 
 ### Availability Scoring Calibration
 
@@ -1444,11 +1444,11 @@ Silent data corruption is the most dangerous failure mode. When data becomes inc
 
 | Metric | Target | Echo Week 10 | DMBOK Benchmark |
 |--------|--------|--------------|-----------------|
-| Data accuracy | >95% | ~97% ✓ | 95%+ for clinical data |
-| Completeness (critical fields) | >98% | ~99% ✓ | 98%+ required |
-| Cross-system consistency | >95% | ~92% ⚠ï¸¸ | 95%+ for master data |
-| Schema validation | 100% | 100% ✓ | 100% enforced |
-| Error rate | <1% | ~0.4% ✓ | <1% for production |
+| Data accuracy | >95% | ~97% | 95%+ for clinical data |
+| Completeness (critical fields) | >98% | ~99% | 98%+ required |
+| Cross-system consistency | >95% | ~92% | 95%+ for master data |
+| Schema validation | 100% | 100% | 100% enforced |
+| Error rate | <1% | ~0.4% | <1% for production |
 
 *Note: Echo's current values are assessment estimates; precise measurement requires Week 11 monitoring implementation.*
 

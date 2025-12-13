@@ -28,17 +28,17 @@
 graph LR
     subgraph BEFORE["WEEK 0"]
         direction TB
-        B1["INPACT™: 28/100<br/><br/>GOALS™: 0/25<br/><br/>Agents: 0<br/><br/>Fix this in 90 days"]
+        B1["INPACT™: 28/100<br/><br/>GOALS™: 0/25<br/><br/>Agents: 0<br/><br/><b>Fix this in 90 days</b>"]
     end
     
     subgraph PILLARS["THREE PILLARS"]
         direction TB
-        P1["INPACT™<br/>What agents need<br/><br/>7-Layer<br/>How to build it<br/><br/>GOALS™<br/>How to measure"]
+        P1["<b>INPACT™</b><br/>What agents need<br/><br/><b>7-Layers</b><br/>How to build it<br/><br/><b>GOALS™</b><br/>How to measure"]
     end
     
     subgraph AFTER["WEEK 12"]
         direction TB
-        A1["INPACT™: 89/100<br/><br/>GOALS™: 21/25<br/><br/>Agents: 3 Live<br/><br/>Something we can trust"]
+        A1["INPACT™: 89/100<br/><br/>GOALS™: 21/25<br/><br/>Agents: 3 Live<br/><br/><b>Architecture we can trust</b>"]
     end
     
     BEFORE --> PILLARS --> AFTER
