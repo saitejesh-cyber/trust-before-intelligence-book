@@ -967,8 +967,8 @@ graph TB
     
     VALIDATE{<b>All metrics<br/>passing?</b>}
     
-    PASS["<b>✅ Production Ready</b><br/><b>Quality validated</b>"]
-    FAIL["<b>⚠ï¸¸ Investigation</b><br/><b>Review required</b>"]
+    PASS["<b>Production Ready</b><br/><b>Quality validated</b>"]
+    FAIL["<b>Investigation</b><br/><b>Review required</b>"]
     
     FEEDBACK["<b>Continuous Loop</b><br/><b>Daily • Weekly • Monthly</b>"]
     
@@ -1229,12 +1229,12 @@ graph TD
     
     L3 -->|<b>✅ Hit - 7%</b>| C3["<b>⚡ 1.2s</b><br/><b>$0.015/query</b>"]
     
-    L3 -->|<b>❌ Miss - 3%</b>| COLD["<b>Level 4: Cold Path</b><br/><b>Full orchestration</b><br/><b>⏱ï¸¸ 2.8-4.2s</b><br/><b>$0.12/query</b>"]
+    L3 -->|<b>❌ Miss - 3%</b>| COLD["<b>Level 4: Cold Path</b><br/><b>Full orchestration</b><br/><b>2.8-4.2s</b><br/><b>$0.12/query</b>"]
     
-    C1 --> R["<b>✅ Response</b><br/><b>Sub-2-seconds</b>"]
+    C1 --> R["<b>Response</b><br/><b>Sub-2-seconds</b>"]
     C2 --> R
     C3 --> R
-    COLD --> SLOW["<b>⚠ï¸¸ Response</b><br/><b>2.8-4.2s</b>"]
+    COLD --> SLOW["<b>Response</b><br/><b>2.8-4.2s</b>"]
     
     COLD -.->|<b>Cache warming</b>| L1
     
@@ -1352,9 +1352,9 @@ graph TB
         P3B["<b>Validate Quality:</b><br/><b>NDCG@5 >0.8</b>"]
     end
     
-    CLARIFY["<b>❌ Clarification</b><br/><b>Confidence < 0.90</b>"]
+    CLARIFY["<b>Clarification</b><br/><b>Confidence < 0.90</b>"]
     
-    RESULT["<b>✅ Natural Response:</b><br/><b>Dr. Martinez has 5 openings</b>"]
+    RESULT["<b>Natural Response:</b><br/><b>Dr. Martinez has 5 openings</b>"]
     
     L4 --> P1
     P1 --> P2
@@ -1639,9 +1639,9 @@ graph TB
     Q4 --> GATE
     Q5 --> GATE
     
-    GATE -->|<b>✅ Pass - 98%</b>| STORAGE["<b>Agent-Ready Storage</b><br/><b>Validated data only</b>"]
+    GATE -->|<b>Pass - 98%</b>| STORAGE["<b>Agent-Ready Storage</b><br/><b>Validated data only</b>"]
     
-    GATE -->|<b>❌ Fail - 2%</b>| QUARANTINE["<b>Data Quarantine</b><br/><b>Block from agents</b><br/><b>Create ticket</b>"]
+    GATE -->|<b>Fail - 2%</b>| QUARANTINE["<b>Data Quarantine</b><br/><b>Block from agents</b><br/><b>Create ticket</b>"]
     
     STORAGE --> AGENTS["<b>AI Agents</b><br/><b>Trust score: 98%+</b>"]
     
