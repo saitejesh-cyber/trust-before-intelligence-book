@@ -1138,28 +1138,43 @@ Echo invested $380K and three weeks to build trust infrastructure. The payoff: P
 **Diagram: Trust Layer Stack**
 
 ```mermaid
-graph TD
-    subgraph ORCH["ORCHESTRATION (L7)"]
-        O1["<b>Multi-Agent<br/>Coordination</b>"]
-        O2["<b>Intent<br/>Routing</b>"]
+
+graph TB
+    subgraph TRUST["TRUST LAYERS (L5-L7)"]
+        direction TB
+        subgraph ROW1[" "]
+            direction LR
+            subgraph ORCH["L7: ORCHESTRATION"]
+                O1["Multi-Agent<br/>Coordination"]
+                O2["Intent<br/>Routing"]
+            end
+            
+            subgraph OBS["L6: OBSERVABILITY"]
+                B1["Audit Trails"]
+                B2["Tracing"]
+            end
+        end
+        
+        subgraph ROW2[" "]
+            direction LR
+            subgraph GOV["L5: GOVERNANCE"]
+                G1["ABAC Policies"]
+                G2["HITL Workflows"]
+                G3["HIPAA Controls"]
+            end
+            
+            B3["Explainability"]
+        end
     end
     
-    subgraph OBS["OBSERVABILITY (L6 Complete)"]
-        B1["<b>Full Audit Trails</b>"]
-        B2["<b>Tracing</b>"]
-        B3["<b>Explainability</b>"]
-    end
+    Copyright["© 2025 Colaberry Inc."]
     
-    subgraph GOV["GOVERNANCE (L5)"]
-        G1["<b>ABAC Policies</b>"]
-        G2["<b>HITL Workflows</b>"]
-        G3["<b>HIPAA Controls</b>"]
-    end
+    ORCH --> OBS
+    ROW1 --> ROW2
     
-    ORCH --> OBS --> GOV
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    
+    style TRUST fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
+    style ROW1 fill:none,stroke:none
+    style ROW2 fill:none,stroke:none
     style ORCH fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c
     style OBS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style GOV fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#880e4f
@@ -1172,6 +1187,7 @@ graph TD
     style G2 fill:#f8bbd9,stroke:#c2185b,color:#880e4f
     style G3 fill:#f8bbd9,stroke:#c2185b,color:#880e4f
     style Copyright fill:#ffffff,stroke:none,color:#666666
+
 ```
 
 **Layers Built:**
@@ -1663,36 +1679,43 @@ The 90-Day Tracker System consists of seven interconnected sheets:
 **Diagram: Seven-Tab Tracker System**
 
 ```mermaid
-graph TD
-    subgraph EXECUTIVE["EXECUTIVE VIEW"]
-        T1["<b>Tab 1</b><br/><b>Weekly Progress</b>"]
+
+graph RL
+    subgraph TRACKER["90-DAY TRACKER STRUCTURE"]
+        direction RL
+        subgraph EXECUTIVE["EXECUTIVE VIEW"]
+            T1["Tab 1: Weekly Progress"]
+        end
+        
+        subgraph FEEDS[" "]
+            direction TB
+            subgraph PILLARS["THREE PILLARS"]
+                direction RL
+                T2["Tab 2: INPACT™ Tracker"]
+                T3["Tab 3: GOALS™ Dashboard"]
+                T4["Tab 4: 7-Layer Status"]
+            end
+            
+            subgraph OPS["OPERATIONS"]
+                direction RL
+                T5["Tab 5: Risk & Blocker Log"]
+                T6["Tab 6: Communication Log"]
+                T7["Tab 7: Budget Tracker"]
+            end
+        end
     end
     
-    subgraph PILLARS["THREE PILLARS"]
-        T2["<b>Tab 2</b><br/><b>INPACT™ Tracker</b>"]
-        T3["<b>Tab 3</b><br/><b>GOALS™ Dashboard</b>"]
-        T4["<b>Tab 4</b><br/><b>7-Layer Status</b>"]
-    end
+    Copyright["© 2025 Colaberry Inc."]
     
-    subgraph OPS["OPERATIONS"]
-        T5["<b>Tab 5</b><br/><b>Risk & Blocker Log</b>"]
-        T6["<b>Tab 6</b><br/><b>Communication Log</b>"]
-        T7["<b>Tab 7</b><br/><b>Budget Tracker</b>"]
-    end
-    
-    T2 --> T1
-    T3 --> T1
-    T4 --> T1
-    T5 --> T1
-    T6 --> T1
-    T7 --> T1
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    
+    PILLARS --> T1
+    OPS --> T1
+
+    style TRACKER fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
     style EXECUTIVE fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style FEEDS fill:none,stroke:none
     style PILLARS fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
     style OPS fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style T1 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style T1 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     style T2 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
     style T3 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
     style T4 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
@@ -1700,6 +1723,7 @@ graph TD
     style T6 fill:#ffe0b2,stroke:#f57c00,color:#e65100
     style T7 fill:#ffe0b2,stroke:#f57c00,color:#e65100
     style Copyright fill:#ffffff,stroke:none,color:#666666
+
 ```
 
 | Tab | Purpose | Update Frequency |

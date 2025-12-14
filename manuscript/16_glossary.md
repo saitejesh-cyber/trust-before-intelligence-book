@@ -96,6 +96,8 @@ This glossary provides definitions for acronyms and key terms used throughout *T
 
 - **PHI:** Protected Health Information — Any individually identifiable health information held or transmitted by a covered entity, protected under HIPAA regulations.
 
+- **P95:** 95th Percentile — A statistical measure indicating the value below which 95% of observations fall, commonly used for latency and performance metrics.
+
 - **RAG:** Retrieval-Augmented Generation — An AI architecture that combines information retrieval with text generation, grounding LLM responses in retrieved enterprise data to reduce hallucinations.
 
 - **RBAC:** Role-Based Access Control — An authorization model that assigns permissions based on user roles (e.g., "nurse," "billing specialist") rather than individual user attributes.
@@ -113,6 +115,8 @@ This glossary provides definitions for acronyms and key terms used throughout *T
 - **SRE:** Site Reliability Engineering — A discipline that applies software engineering principles to infrastructure and operations, pioneered by Google to ensure system reliability.
 
 - **TTL:** Time To Live — A mechanism that limits the lifespan of data in a cache or network, after which the data expires and must be refreshed.
+
+- **UAT:** User Acceptance Testing — The final phase of software testing where actual users validate that the system meets their requirements before production deployment.
 
 ---
 
