@@ -18,8 +18,8 @@ graph LR
         direction TB
         T1["Structured Phases"]
     end
-    
-    subgraph AFTER["TRANSFORM SYSTEMATICALLY"]
+
+    subgraph AFTER["SYSTEMS TRANSFORMATION"]
         direction TB
         A1["Week-by-week plan<br/><br/>Defined costs<br/><br/>Clear checkpoints<br/><br/><b>Operational Excellence</b>"]
     end
@@ -94,27 +94,32 @@ Echo's transformation followed four distinct phases, each building on the previo
 **Diagram: The 90-Day Four-Phase Roadmap**
 
 ```mermaid
-graph TD
-    subgraph PHASE1["PHASE 1: FOUNDATION"]
-        P1["<b>Weeks 1-4</b><br/><b>L1 Storage +<br/> L2 Data Fabric</b><br/><b>$470K · 28→42 pts</b>"]
+
+graph LR
+    subgraph JOURNEY["90-DAY TRANSFORMATION"]
+        direction LR
+        subgraph PHASE1["PHASE 1: FOUNDATION"]
+            P1["Weeks 1-4<br/>L1 Storage +<br/> L2 Data Fabric<br/>$470K · 28→42 pts"]
+        end
+        
+        subgraph PHASE2["PHASE 2: INTELLIGENCE"]
+            P2["Weeks 5-7<br/>L3 Semantic +<br/> L4 Retrieval<br/>$380K · 42→67 pts"]
+        end
+        
+        subgraph PHASE3["PHASE 3: TRUST"]
+            P3["Weeks 8-10<br/>L5 Governance +<br/> L7 Orchestration<br/>$250K · 67→86 pts"]
+        end
+        
+        subgraph PHASE4["PHASE 4: OPERATIONS"]
+            P4["Weeks 11-12<br/>L6 Observability +<br/> GOALS™<br/>$130K · 86→89 pts"]
+        end
     end
     
-    subgraph PHASE2["PHASE 2: INTELLIGENCE"]
-        P2["<b>Weeks 5-7</b><br/><b>L3 Semantic +<br/> L4 Retrieval</b><br/><b>$380K · 42→67 pts</b>"]
-    end
-    
-    subgraph PHASE3["PHASE 3: TRUST"]
-        P3["<b>Weeks 8-10</b><br/><b>L5 Governance +<br/> L7 Orchestration</b><br/><b>$250K · 67→86 pts</b>"]
-    end
-    
-    subgraph PHASE4["PHASE 4: OPERATIONS"]
-        P4["<b>Weeks 11-12</b><br/><b>L6 Observability +<br/> GOALS™</b><br/><b>$130K · 86→89 pts</b>"]
-    end
+    Copyright["© 2025 Colaberry Inc."]
     
     P1 --> P2 --> P3 --> P4
     
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    
+    style JOURNEY fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
     style PHASE1 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
     style PHASE2 fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
     style PHASE3 fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#880e4f
@@ -124,6 +129,7 @@ graph TD
     style P3 fill:#f8bbd9,stroke:#c2185b,color:#880e4f
     style P4 fill:#b2dfdb,stroke:#00897b,color:#004d40
     style Copyright fill:#ffffff,stroke:none,color:#666666
+
 ```
 
 **Phase 1: Foundation (Weeks 1-4)**
