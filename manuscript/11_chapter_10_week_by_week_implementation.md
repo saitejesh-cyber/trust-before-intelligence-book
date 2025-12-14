@@ -106,11 +106,11 @@ graph LR
         end
         
         subgraph PHASE3["PHASE 3: TRUST"]
-            P3["Weeks 8-10<br/>L5 Governance +<br/> L7 Orchestration<br/>$250K · 67→86 pts"]
+            P3["Weeks 8-10<br/>L5-L6-L7<br/>Governance + Orchestration<br/>$82K · 67→86 pts"]
         end
         
         subgraph PHASE4["PHASE 4: OPERATIONS"]
-            P4["Weeks 11-12<br/>L6 Observability +<br/> GOALS™<br/>$130K · 86→89 pts"]
+            P4["Weeks 11-12<br/>Validation +<br/> GOALS™<br/>$50K · 86→89 pts"]
         end
     end
     
@@ -137,7 +137,7 @@ graph LR
 |-----------|--------|
 | **Build** | Layer 1 (Multi-Modal Storage) + Layer 2 (Real-Time Data Fabric) |
 | **Also** | Layer 6 foundation (Observability—start measuring before building) |
-| **Cost** | $470K (38% of implementation budget) |
+| **Cost** | $470K budgeted / $468K actual |
 | **Team** | 2 senior data engineers, 1 cloud architect, CDC specialists |
 | **INPACT™ Target** | 28→42 (+14 points) |
 | **Primary Focus** | Data freshness (<30 seconds), query performance, observability baseline |
@@ -149,7 +149,7 @@ Phase 1 establishes the foundation everything else depends on. Without real-time
 | Attribute | Detail |
 |-----------|--------|
 | **Build** | Layer 3 (Unified Semantic Layer) + Layer 4 (Intelligent Retrieval) + Layer 5 (start) |
-| **Cost** | $380K (31% of implementation budget) |
+| **Cost** | $380K budgeted / $392K actual |
 | **Team** | 2 ML engineers, 1 clinical SME, semantic layer specialists |
 | **INPACT™ Target** | 42→67 (+25 points) |
 | **Primary Focus** | NLU accuracy (target: 85%), semantic layer coverage, RAG pipeline |
@@ -161,7 +161,7 @@ Phase 2 gives agents the ability to understand and reason. The semantic layer tr
 | Attribute | Detail |
 |-----------|--------|
 | **Build** | Layer 5 (Agent-Aware Governance) + Layer 6 (complete) + Layer 7 (Orchestration) |
-| **Cost** | $380K (31% of implementation budget) |
+| **Cost** | $380K budgeted / $82K actual (leveraged open-source tools) |
 | **Team** | 2 security engineers, 2 DevOps engineers, 1 compliance officer |
 | **INPACT™ Target** | 67→86 (+19 points) |
 | **Primary Focus** | ABAC policies, HITL workflows, audit trails, multi-agent coordination |
@@ -176,21 +176,31 @@ Echo's 10-week implementation achieved 86/100 INPACT™ score—production-ready
 |-----------|--------|
 | **Validate** | All 7 layers operational, GOALS™ excellence |
 | **Activities** | UAT with 50 nurses, edge case resolution, production cutover |
+| **Cost** | $50K (UAT facilitation, compliance sign-off, staff) |
 | **INPACT™ Result** | 86→89 (+3 points through operational refinement) |
 | **Primary Focus** | User Acceptance Testing, production readiness validation |
 
-Phase 4 validates everything works together. Real users test real scenarios. Edge cases surface and get resolved. Echo achieved 94% UAT success rate and production approval. Operations costs become ongoing monthly recurring expenses ($52K/month) covered separately from implementation.
+**Budget: $50K**
+
+| Category | Amount | Components |
+|----------|--------|------------|
+| Technology | $5K | UAT environment, additional monitoring |
+| Services | $30K | UAT facilitation ($15K), compliance sign-off ($10K), training materials ($5K) |
+| Staff | $15K | Dedicated UAT support, documentation |
+
+Phase 4 validates everything works together. Real users test real scenarios. Edge cases surface and get resolved. Echo achieved 94% UAT success rate and production approval. Ongoing operations ($52K/month) are covered separately as recurring expenses. See Chapter 12 for complete operations guide.
 
 **Investment Summary**
 
-| Phase | Weeks | Layers | Cost | INPACT™ Gain | Cumulative |
-|-------|-------|--------|------|--------------|------------|
-| Foundation | 1-4 | L1-L2, L6 start | $470K | +14 (28→42) | 42/100 |
-| Intelligence | 5-7 | L3-L5 start | $380K | +25 (42→67) | 67/100 |
-| Trust | 8-10 | L5-L7 | $380K | +19 (67→86) | 86/100 |
-| **Total Implementation** | **10** | **All 7** | **$1.23M** | **+58** | **86/100** |
+| Phase | Weeks | Layers | Budgeted | Actual | INPACT™ Gain | Cumulative |
+|-------|-------|--------|----------|--------|--------------|------------|
+| Foundation | 1-4 | L1-L2 | $470K | $468K | +14 (28→42) | 42/100 |
+| Intelligence | 5-7 | L3-L4 | $380K | $392K | +25 (42→67) | 67/100 |
+| Trust | 8-10 | L5-L6-L7 | $380K | $82K | +19 (67→86) | 86/100 |
+| Operations | 11-12 | Validation | — | $50K | +3 (86→89) | 89/100 |
+| **Total** | **12** | **All 7** | **$1.23M** | **$992K** | **+61** | **89/100** |
 
-*Note: Weeks 11-12 validation and ongoing operations covered by monthly recurring costs ($52K/month). See Chapter 12 for complete operations guide.*
+*Note: Phase 3 achieved significant savings by leveraging open-source OPA (vs. commercial Styra), reusing existing Datadog infrastructure from Phase 1, and retrofitting pilot agents rather than building new ones. The $238K buffer (19% under budget) was preserved for contingency and future enhancements. Ongoing operations: $52K/month recurring. See Chapter 12 for complete operations guide.*
 
 ---
 
@@ -198,7 +208,7 @@ Phase 4 validates everything works together. Real users test real scenarios. Edg
 
 ✅ 90-day transformation = 10 weeks building + 2 weeks validating  
 ✅ Four phases map to seven architecture layers with clear budgets  
-✅ Echo invested $1.23M to move from 28/100 to 86/100 INPACT™  
+✅ Echo invested $992K of $1.23M budget to reach 89/100 INPACT™ (19% under budget)  
 ⭐️ **Next:** How Echo managed risks that threatened derailment
 
 **Reading Time Remaining:** ~35 minutes
@@ -1126,7 +1136,7 @@ Marcus Williams summarized the Phase 2 achievement: "Three weeks ago, our system
 
 Phase 3 transforms intelligent agents into trustworthy agents. The foundation delivers fresh data. The intelligence layers understand questions and generate accurate answers. But without governance, observability, and orchestration, agents remain too risky for production deployment.
 
-Echo invested $380K and three weeks to build trust infrastructure. The payoff: P (Permitted) and T (Transparent) dimensions reached production-ready levels, and the INPACT™ score climbed from 67/100 to 86/100—crossing the threshold for regulated healthcare deployment.
+Echo invested $82K and three weeks to build trust infrastructure—coming in significantly under the $380K budget by leveraging open-source governance tools (OPA), reusing existing observability infrastructure from Phase 1, and efficiently retrofitting the pilot agents. The payoff: P (Permitted) and T (Transparent) dimensions reached production-ready levels, and the INPACT™ score climbed from 67/100 to 86/100—crossing the threshold for regulated healthcare deployment.
 
 ---
 
@@ -1203,13 +1213,15 @@ graph TB
 | Compliance Officer | 1 | HIPAA validation, audit preparation |
 | ML Engineers | 1 | HITL workflows, orchestration logic |
 
-**Budget: $380K**
+**Budget: $380K Budgeted | $82K Actual**
 
-| Category | Amount | Components |
-|----------|--------|------------|
-| Technology | $170K | LangSmith ($80K), OPA/Styra ($40K), Audit infrastructure ($30K), HITL platform ($20K) |
-| Services | $130K | ABAC policy design ($50K), HIPAA audit prep ($40K), observability tuning ($40K) |
-| Staff | $80K | Internal team time allocation |
+| Category | Budgeted | Actual | Components (Actual) |
+|----------|----------|--------|---------------------|
+| Technology | $170K | $33K | OPA open-source, Datadog (existing), Redis state ($6K), LangGraph integration ($27K) |
+| Services | $130K | $34K | Policy design ($15K), HIPAA audit prep ($12K), integration testing ($7K) |
+| Staff | $80K | $15K | Internal team time allocation (leveraged Phase 1-2 team) |
+
+*Phase 3 achieved 78% savings by: (1) selecting open-source OPA over commercial Styra ($40K saved), (2) leveraging Datadog infrastructure established in Phase 1 ($50K saved), (3) retrofitting existing pilot agents rather than building new orchestration ($100K+ saved), and (4) cross-training the Phase 1-2 team to handle Phase 3 work ($65K staff savings). See Chapter 6 for detailed implementation narrative.*
 
 *For technology selection rationale and alternatives, see Chapter 11, Parts 2.5-2.7.*
 
@@ -1490,14 +1502,14 @@ Phase 3 ends with the most critical checkpoint—production authorization. Witho
 
 **Budget Status:**
 
-| Category | Planned | Actual | Variance |
-|----------|---------|--------|----------|
-| Technology | $170K | $168K | -$2K (under) |
-| Services | $130K | $142K | +$12K (HIPAA prep) |
-| Staff | $80K | $78K | -$2K (under) |
-| **Total** | **$380K** | **$388K** | **+$8K (2% over)** |
+| Category | Budgeted | Actual | Variance |
+|----------|----------|--------|----------|
+| Technology | $170K | $33K | -$137K (80% under) |
+| Services | $130K | $34K | -$96K (74% under) |
+| Staff | $80K | $15K | -$65K (81% under) |
+| **Total** | **$380K** | **$82K** | **-$298K (78% under budget)** |
 
-The $8K overage came from additional HIPAA audit preparation—the compliance firm identified documentation gaps that required remediation before the external audit scheduled for Month 4.
+Phase 3 delivered full functionality at 22% of budgeted cost. Key savings came from open-source adoption (OPA vs. Styra), infrastructure reuse (Datadog from Phase 1), and efficient team cross-training. The $298K savings contributed to the overall project buffer.
 
 **Phase 3 Go/No-Go Decision:**
 
@@ -1517,7 +1529,7 @@ Dr. Chen, Echo's clinical liaison, summarized the Phase 3 achievement: "Ten week
 
 **🔍 CHECKPOINT: What We've Covered So Far**
 
-✅ Phase 3 builds Layers 5-7 (Governance + Observability + Orchestration) for $380K  
+✅ Phase 3 builds Layers 5-7 (Governance + Observability + Orchestration) for $82K (78% under $380K budget)  
 ✅ INPACT™ improvement: 67→86/100 (+19 points in 3 weeks)  
 ✅ Key deliverables: ABAC policies, HITL workflows, multi-agent coordination  
 ⭐️ **Next:** Phase 4 validates everything works in production
@@ -1635,9 +1647,18 @@ The board approved. Echo's 90-day transformation was complete.
 
 **Investment Summary (Complete):**
 
-Echo's $1.23M implementation across 10 weeks achieved +58 INPACT™ points (28→86). *For complete investment breakdown by phase and metrics, see Appendix E (Quick Reference Card).*
+Echo's $992K implementation across 12 weeks achieved +61 INPACT™ points (28→89)—19% under the $1.23M approved budget. *For complete investment breakdown by phase and metrics, see Appendix E (Quick Reference Card).*
 
-*Note: Weeks 11-12 validation costs included in Phase 3 budget. Ongoing operations: $52K/month recurring.*
+**Phase 4 Budget Status:**
+
+| Category | Budgeted | Actual | Variance |
+|----------|----------|--------|----------|
+| Technology | $5K | $4K | -$1K |
+| Services | $30K | $32K | +$2K |
+| Staff | $15K | $14K | -$1K |
+| **Total** | **$50K** | **$50K** | **On budget** |
+
+*Ongoing operations: $52K/month recurring. See Chapter 12 for complete operations guide.*
 
 **What Chapter 12 Covers:**
 
@@ -1654,7 +1675,7 @@ Phase 4 operations details appear in Chapter 12, including:
 
 ✅ All four phases deliver 28→86/100 INPACT™ transformation in 10 weeks  
 ✅ Phase 4 validates with real users — UAT + production pilot  
-✅ $1.23M investment yields 477% ROI over 3 years  
+✅ $992K actual investment (19% under $1.23M budget) yields 477% ROI over 3 years  
 ⭐️ **Next:** The tracking system that kept Echo on course
 
 **Reading Time Remaining:** ~8 minutes
@@ -1915,12 +1936,14 @@ The Budget Tracker monitors spend against plan by category and week.
 
 **Echo's Final Budget:**
 
-| Category | Planned | Actual | Variance |
-|----------|---------|--------|----------|
-| Technology | $690K | $698K | +1.2% |
-| Services | $380K | $392K | +3.2% |
-| Staff | $160K | $158K | -1.3% |
-| **Total** | **$1.23M** | **$1.248M** | **+1.5%** |
+| Category | Budgeted | Actual | Variance |
+|----------|----------|--------|----------|
+| Technology | $690K | $505K | -26.8% |
+| Services | $380K | $326K | -14.2% |
+| Staff | $160K | $161K | +0.6% |
+| **Total** | **$1.23M** | **$992K** | **-19.4%** |
+
+*Echo completed the full 12-week transformation 19% under budget. Primary savings came from Phase 3 open-source adoption and infrastructure reuse. The $238K buffer was preserved for contingency and future enhancements.*
 
 ---
 
@@ -1967,11 +1990,11 @@ Chapter 11 answers these questions with a comprehensive technology selection gui
 
 | Part | Content | Key Takeaway |
 |------|---------|--------------|
-| **Part 1** | Roadmap overview | Four phases, $1.23M, 86/100 target |
-| **Part 2** | Phase 1 (Weeks 1-4) | Foundation: 28→42, $470K |
-| **Part 3** | Phase 2 (Weeks 5-7) | Intelligence: 42→67, $380K |
-| **Part 4** | Phase 3 (Weeks 8-10) | Trust: 67→86, $380K |
-| **Part 5** | Phase 4 (Weeks 11-12) | Operations: 86→89, validation |
+| **Part 1** | Roadmap overview | Four phases, $1.23M budget, $992K actual |
+| **Part 2** | Phase 1 (Weeks 1-4) | Foundation: 28→42, $468K actual |
+| **Part 3** | Phase 2 (Weeks 5-7) | Intelligence: 42→67, $392K actual |
+| **Part 4** | Phase 3 (Weeks 8-10) | Trust: 67→86, $82K actual (78% under budget) |
+| **Part 5** | Phase 4 (Weeks 11-12) | Operations: 86→89, $50K validation |
 | **Part 6** | 90-Day Tracker | Seven sheets for implementation tracking |
 
 **Echo's Complete Journey:**

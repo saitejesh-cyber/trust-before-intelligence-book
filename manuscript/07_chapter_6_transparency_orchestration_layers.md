@@ -1224,7 +1224,7 @@ graph LR
 | Layer 7: Orchestration | $33,000 | $33,000 |
 | **Phase 3 Total** | **$82,000** | **$82,000** |
 
-**Cumulative Investment:** $932,000 of $1.23M budget (76% utilized, $298,000 buffer remaining)
+**Cumulative Investment:** $942,000 of $1.23M budget (77% utilized). Phase 4 validation (~$50K) and $238K buffer remaining for contingency.
 
 ---
 
@@ -1300,7 +1300,7 @@ graph TB
     subgraph INDICATOR[" "]
         direction LR
         Spacer1[" "]
-        YouAreHere["<b>YOU ARE HERE</b><br/>Production Ready<br/>85/100 INPACT™<br/>$932K Investment<br/>70 Days <br/> 7-Layers Built Here"]
+        YouAreHere["<b>YOU ARE HERE</b><br/>Production Ready<br/>85/100 INPACT™<br/>$942K Investment<br/>70 Days <br/> 7-Layers Built Here"]
         Spacer2[" "]
     end
     
@@ -1341,7 +1341,7 @@ The gaps identified in Chapter 3 are all resolved. All seven layers operational.
 
 Krish Yadav, Echo's CFO, reviewed the numbers Friday evening:
 
-**Investment:** $932,000 actual against $1.23M budget  
+**Investment:** $942,000 actual against $1.23M budget (23% under, with Phase 4 validation pending)  
 **First-Year Value:** $3.8M (209% ROI)  
 **18-Month Projected Value:** $5.87M (477% ROI)  
 **Break-even Timeline:** 10 weeks post-deployment
@@ -1388,13 +1388,13 @@ The transformation journey covered ten weeks and closed seven infrastructure gap
 **Foundation Phase (Weeks 1-4):**
 - Gap 1 (Multi-Modal Storage): From fragmented data silos to unified eight-category storage
 - Gap 2 (Real-Time Data): From batch processing with day-old data to 28-second freshness
-- Investment: $470,000
+- Investment: $470,000 budgeted / $468,000 actual
 - INPACT™: 28 → 42 (+14 points)
 
 **Intelligence Phase (Weeks 5-7):**
 - Gap 3 (Semantic Understanding): From schema-dependent queries to natural language with 2,400 clinical terms
 - Gap 4 (Intelligent Retrieval): From keyword search to 7-stage RAG pipeline with 85% cache hit rate
-- Investment: $380,000
+- Investment: $380,000 budgeted / $392,000 actual
 - INPACT™: 42 → 67 (+25 points)
 
 **Transparency + Orchestration Phase (Weeks 8-10):**
@@ -1404,11 +1404,12 @@ The transformation journey covered ten weeks and closed seven infrastructure gap
 - Investment: $82,000
 - INPACT™: 67 → 85 (+18 points)
 
-**Total Transformation:**
-- Investment: $932,000 of $1.23M budget (76% utilized)
+**Total Transformation (Through Week 10):**
+- Investment: $942,000 actual of $1.23M budget (77% utilized)
 - Timeline: 70 days (10 weeks)
 - INPACT™: 28 → 85 (+57 points)
 - Gaps: 7 → 0 (all resolved)
+- Phase 4 validation (Weeks 11-12): ~$50K pending
 
 **All Seven Gaps Closed:**
 
@@ -1427,7 +1428,7 @@ The transformation journey covered ten weeks and closed seven infrastructure gap
 | Metric | Week 0 | Week 10 | Improvement |
 |--------|--------|---------|-------------|
 | **INPACT™ Score** | 28/100 | 85/100 | +57 points |
-| **Total Investment** | $0 | $932,000 | On budget |
+| **Total Investment** | $0 | $942,000 | 23% under budget |
 | **Architecture Layers** | 0/7 | 7/7 | Complete |
 | **Gaps Remaining** | 7 | 0 | All resolved |
 

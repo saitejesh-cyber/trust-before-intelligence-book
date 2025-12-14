@@ -54,7 +54,7 @@ But architecture alone doesn't create trust. Buildings need maintenance. Vehicle
 
 Sarah Cedao stood at the window of Echo Health's technology center, watching the sun set over the campus. Behind her, the conference room still held the energy of celebration.
 
-All seven layers operational. Every infrastructure gap closed. INPACT™ score: 86/100. $1.23M invested—under the original budget with contingency preserved. Ten weeks of focused execution.
+All seven layers operational. Every infrastructure gap closed. INPACT™ score: 86/100. $992K invested—19% under the $1.23M budget with $238K contingency preserved. Ten weeks of focused execution.
 
 The architecture was complete.
 
@@ -256,7 +256,7 @@ He traced the connections:
 
 Sarah gathered her extended team in the large conference room. Marcus Williams, CDO. Dr. Chen, clinical liaison. The engineering leads from each layer team. The compliance officer. The data quality manager.
 
-"We built something remarkable," Sarah began. "In ten weeks, we went from a 28/100 INPACT™ score to 86/100. We constructed all seven layers of agent-ready infrastructure. We stayed under budget with contingency preserved."
+"We built something remarkable," Sarah began. "In ten weeks, we went from a 28/100 INPACT™ score to 86/100. We constructed all seven layers of agent-ready infrastructure. We came in at $942K through Week 10—23% under our $1.23M budget."
 
 **Diagram 3: Echo's 90-Day Journey—Architecture Complete**
 
@@ -288,7 +288,7 @@ graph TB
         end
     end
     
-    COMPLETE["Architecture Complete<br/>INPACT™: 86/100 | $1.23M Invested"]
+    COMPLETE["Architecture Complete<br/>INPACT™: 86/100 | $942K Invested"]
     
     Copyright["© 2025 Colaberry Inc."]
     

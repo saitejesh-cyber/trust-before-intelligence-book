@@ -1034,7 +1034,7 @@ graph TB
             G2["<b>G5 O4 A4 L4 S4</b>"]
         end
         
-        RESULT["<b>3 AGENTS IN PRODUCTION</b><br/><b>477% ROI | 87% Satisfaction</b><br/><b>$1.23M Investment</b>"]
+        RESULT["<b>3 AGENTS IN PRODUCTION</b><br/><b>477% ROI | 87% Satisfaction</b><br/><b>$992K Investment</b>"]
     end
     
     P1 --> RESULT
@@ -1118,7 +1118,7 @@ graph TB
 |--------|-------|---------|---------|--------|
 | INPACT™ Score | 28/100 | 86/100 | 89/100 | +61 points |
 | GOALS™ Score | N/A | 15/25 | 21/25 | +6 points |
-| Investment | — | $1.23M | $1.23M | Under budget |
+| Investment | — | $942K | $992K | 19% under $1.23M budget |
 | ROI | — | — | 477% | Validated |
 | Agents Live | 0 | 0 | 3 | Production |
 | User Satisfaction | N/A | N/A | 87% | Above target |
@@ -1131,7 +1131,7 @@ Dr. Raj stood. "The board approves production deployment. You've answered my que
 
 The Echo journey was complete.
 
-Ninety days. $1.23 million invested. Three agents in production, delivering real value to clinicians, coordinators, and billing staff every day.
+Ninety days. $992K invested—19% under the $1.23M budget. Three agents in production, delivering real value to clinicians, coordinators, and billing staff every day.
 
 But Echo Health Systems wasn't unique. They started where most organizations are—legacy infrastructure, siloed data, failed AI attempts, skeptical stakeholders.
 
