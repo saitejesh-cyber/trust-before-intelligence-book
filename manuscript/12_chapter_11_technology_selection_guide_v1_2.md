@@ -11,7 +11,7 @@
  graph LR
     subgraph BEFORE["VENDOR HYPE"]
         direction TB
-        B1["Feature-driven choices<br/><br/>Integration afterthought<br/><br/>Mismatched capabilities<br/><br/>Compliance gaps"]
+        B1["Feature-driven choices<br/><br/>Integration afterthought<br/><br/>Mismatched capabilities<br/><br/><b>Compliance gaps</b>"]
     end
     
     subgraph TRANSFORM["THREE-PILLAR TEST"]
@@ -21,7 +21,7 @@
     
     subgraph AFTER["VALIDATED STACK"]
         direction TB
-        A1["Need-driven selection<br/><br/>Layer-by-layer fit<br/><br/>Unified architecture<br/><br/>Built-in compliance"]
+        A1["Need-driven selection<br/><br/>Layer-by-layer fit<br/><br/>Unified architecture<br/><br/><b>Built-in compliance</b>"]
     end
     
     BEFORE --> TRANSFORM --> AFTER
@@ -86,19 +86,19 @@ Every technology in Echo's stack passed the same evaluation. Three pillars, weig
 
 ```mermaid
 graph TD
-    subgraph VENDOR["VENDOR UNDER EVALUATION"]
+    subgraph VENDOR["VENDOR EVALUATION"]
         V["<b>Technology<br/>Candidate</b>"]
     end
     
-    subgraph PILLAR1["PILLAR 1: INPACT™ (40%)"]
+    subgraph PILLAR1["PILLAR 1:INPACT™(40%)"]
         P1["<b>Agent Needs</b><br/><b>6 Dimensions</b>"]
     end
     
-    subgraph PILLAR2["PILLAR 2: ARCHITECTURE (30%)"]
+    subgraph PILLAR2["PILLAR 2:ARCHITECTURE(30%)"]
         P2["<b>Layer Fit</b><br/><b>7-Layer Integration</b>"]
     end
     
-    subgraph PILLAR3["PILLAR 3: GOALS™ (30%)"]
+    subgraph PILLAR3["PILLAR 3:GOALS™(30%)"]
         P3["<b>Operations</b><br/><b>5 Dimensions</b>"]
     end
     
@@ -229,27 +229,36 @@ Not every component requires a vendor purchase. The Architecture of Trust suppor
 **Diagram: Build vs Buy vs Partner Decision Flow**
 
 ```mermaid
-graph TD
-    START["<b>Component<br/>Needed</b>"]
+
+graph LR
+    START["Component<br/>Needed"]
     
-    Q1{"<b>Competitive<br/>differentiator?</b>"}
-    Q2{"<b>Proven vendor<br/>solutions exist?</b>"}
-    Q3{"<b>Team has<br/>expertise?</b>"}
+    subgraph DECISIONS[" "]
+        direction TB
+        Q1{"Competitive<br/>differentiator?"}
+        Q2{"Proven vendor<br/>solutions exist?"}
+        Q3{"Team has<br/>expertise?"}
+    end
     
-    BUILD["<b>BUILD</b><br/><b>Custom Dev</b><br/><b>5-10%</b>"]
-    BUY["<b>BUY</b><br/><b>SaaS/Cloud</b><br/><b>85-90%</b>"]
-    PARTNER["<b>PARTNER</b><br/><b>Consulting</b><br/><b>0-5%</b>"]
+    subgraph OUTCOMES[" "]
+        direction TB
+        BUILD["BUILD<br/>Custom Dev<br/>5-10%"]
+        BUY["BUY<br/>SaaS/Cloud<br/>85-90%"]
+        PARTNER["PARTNER<br/>Consulting<br/>0-5%"]
+    end
+    
+    Copyright["© 2025 Colaberry Inc."]
     
     START --> Q1
-    Q1 -->|<b>Yes</b>| BUILD
-    Q1 -->|<b>No</b>| Q2
-    Q2 -->|<b>Yes</b>| BUY
-    Q2 -->|<b>No</b>| Q3
-    Q3 -->|<b>Yes</b>| BUILD
-    Q3 -->|<b>No</b>| PARTNER
+    Q1 -->|"Yes"| BUILD
+    Q1 -->|"No"| Q2
+    Q2 -->|"Yes"| BUY
+    Q2 -->|"No"| Q3
+    Q3 -->|"Yes"| BUILD
+    Q3 -->|"No"| PARTNER
     
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    
+    style DECISIONS fill:none,stroke:none
+    style OUTCOMES fill:none,stroke:none
     style START fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
     style Q1 fill:#fff9c4,stroke:#f9a825,stroke-width:2px,color:#f57f17
     style Q2 fill:#fff9c4,stroke:#f9a825,stroke-width:2px,color:#f57f17
@@ -258,6 +267,7 @@ graph TD
     style BUY fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style PARTNER fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
     style Copyright fill:#ffffff,stroke:none,color:#666666
+
 ```
 
 **Build (Custom Development) — 5-10% of Stack**
