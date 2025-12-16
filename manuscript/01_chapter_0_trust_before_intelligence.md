@@ -9,7 +9,7 @@
 graph LR
     subgraph BEFORE["BEFORE: WEEK 0"]
         direction TB
-        B1["3 Failed Pilots<br/>$2M Spent<br/>0 Production Agents<br/>9-13s Response Time<br/>INPACT™ Score: 28/100"]
+        B1["3 Failed Pilots<br/>$2M Spent<br/>0 Production Agents<br/>9–13s Response Time<br/>INPACT™ Score: 28/100"]
     end
     
     subgraph TRANSFORM["90 DAYS"]
@@ -25,13 +25,13 @@ graph LR
     Copyright["© 2025 Colaberry Inc."]
     
     BEFORE --> TRANSFORM --> AFTER
-    
-    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
-    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style B1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style T1 fill:#f5f5f5,stroke:#666666,color:#333333
-    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
+
+    style BEFORE fill:#FBEAEA,stroke:#EB898B,stroke-width:2px,color:#7A1F22
+    style B1 fill:#F6D1CE,stroke:#EB898B,stroke-width:2px,color:#7A1F22
+    style TRANSFORM fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+    style T1 fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+    style AFTER fill:#E6F3F6,stroke:#0FB67D,stroke-width:2px,color:#003322
+    style A1 fill:#14D793,stroke:#0FB67D,stroke-width:2px,color:#003322
     style Copyright fill:#ffffff,stroke:none,color:#666666
     
 ```
@@ -145,12 +145,12 @@ graph LR
     
     HumanEra --> TRANSFORM --> AgentEra
     
-    style HumanEra fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
-    style AgentEra fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style H1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style T1 fill:#f5f5f5,stroke:#666666,color:#333333
-    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style HumanEra fill:#FBEAEA,stroke:#EB898B,stroke-width:2px,color:#7A1F22
+    style H1 fill:#F6D1CE,stroke:#EB898B,stroke-width:2px,color:#7A1F22
+    style TRANSFORM fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+    style T1 fill:#4478A6,stroke:#32738C,color:#ffffff
+    style AgentEra fill:#E6F3F6,stroke:#32738C,stroke-width:2px,color:#00323D
+    style A1 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
@@ -217,14 +217,14 @@ graph TB
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
-    style HITL fill:#f0fff0,stroke:#00897b,stroke-width:2px
-    style I fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style N fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style P fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style C fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style T fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style Trust fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style HITL fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style I fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style N fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style P fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style A fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style C fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style T fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style Trust fill:#14D793,color:#003322,stroke:#0FB67D,stroke-width:3px
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
@@ -294,7 +294,6 @@ This integration creates what we call "The Architecture of Trust" — not three 
 - **GOALS™ → INPACT™:** Measurement validates trust. Governance (G) confirms Permitted (P) fulfillment. Observability (O) validates Transparent (T) compliance.
 
 ```mermaid
-
 graph TB
     Title["ARCHITECTURE OF TRUST<br/>Three Integrated Pillars"]
     
@@ -315,11 +314,11 @@ graph TB
     Layers -.->|"Enables Operations"| GOALS
     GOALS -.->|"Drives Trust"| INPACT
     
-    style Title fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Title fill:#0D0D0D,color:#ffffff,stroke:#30838C,stroke-width:3px
     style PILLARS fill:none,stroke:none
-    style INPACT fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style Layers fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style GOALS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style INPACT fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style Layers fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style GOALS fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
