@@ -94,7 +94,7 @@ graph TD
         P1["<b>Agent Needs</b><br/><b>6 Dimensions</b>"]
     end
     
-    subgraph PILLAR2["PILLAR2:ARCHITECTURE(30%)"]
+    subgraph PILLAR2["PILLAR 2:ARCHITECTURE(30%)"]
         P2["<b>Layer Fit</b><br/><b>7-Layer Integration</b>"]
     end
     
