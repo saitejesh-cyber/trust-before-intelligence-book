@@ -22,13 +22,13 @@ graph LR
     end
     
     BEFORE --> PHASES --> AFTER
-    
-    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style PHASES fill:#fff3cd,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style B1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style P1 fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
+
+    style BEFORE fill:#FBEAEA,stroke:#EB898B,stroke-width:2px
+    style B1 fill:#F6D1CE,stroke:#EB898B,stroke-width:2px,color:#7A1F22
+    style PHASES fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style P1 fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style AFTER fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style A1 fill:#30838C,stroke:#0D0D0D,stroke-width:3px,color:#ffffff
 
 ```
 
@@ -144,24 +144,28 @@ graph LR
         I3["<b>NEW Infrastructure</b><br/>Vector DBs, real-time<br/>Semantic layers, ABAC"]
         P3 --> I3
     end
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    
+
     era1 -.->|<b>Added ML</b>| era2
-    era2 -.->|<b>PARADIGM SHIFT <br> Requires INPACT™ </b>| era3
-    
-    %% Era 1 - Neutral/Gray (Old)
-    style P1 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style I1 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    
-    %% Era 2 - Orange (Transition/ML Addition)
-    style P2 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style I2 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
-    
-    %% Era 3 - Teal (Modern/Agent-Ready)
-    style P3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style I3 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    
+    era2 -.->|<b>PARADIGM SHIFT<br/>Requires INPACT™</b>| era3
+
+
+    %% SOFTWARE 1.0 — Problems / Old Approach (CORAL)
+    style era1 fill:#FBEAEA,stroke:#EB898B,stroke-width:2px
+    style P1 fill:#F6D1CE,stroke:#EB898B,stroke-width:2px,color:#7A1F22
+    style I1 fill:#F6D1CE,stroke:#EB898B,stroke-width:2px,color:#7A1F22
+
+    %% SOFTWARE 2.0 — Intermediate / Transition (MUTED BLUE)
+    style era2 fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style P2 fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+    style I2 fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+
+    %% SOFTWARE 3.0 — Solution / Modern (TEAL)
+    style era3 fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style P3 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style I3 fill:#30838C,stroke:#0D0D0D,stroke-width:3px,color:#ffffff
+
+    %% COPYRIGHT — Neutral
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
@@ -220,28 +224,29 @@ graph TB
         
         N1 --> N2 --> N3 --> N4
     end
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    
+
     old -.->|<b>Must Transform</b>| Shift
     Shift -.->|<b>To Enable</b>| new
-    
-    %% BI-Era (Red - Problems/Old Approach)
-    style O1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style O2 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style O3 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style O4 fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
-    
-    %% Agent-Era (Teal - Solutions/Modern Approach)
-    style N1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style N2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style N3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style N4 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    
-    %% Transition Element
-    style Shift fill:#fff9e6,stroke:#f57c00,stroke-width:3px,color:#e65100
-    
-    %% Copyright
+
+    %% BI ERA — Problems / Failures (CORAL)
+    style old fill:#FBEAEA,stroke:#EB898B,stroke-width:2px
+    style O1 fill:#F6D1CE,stroke:#EB898B,stroke-width:2px,color:#7A1F22
+    style O2 fill:#F6D1CE,stroke:#EB898B,stroke-width:2px,color:#7A1F22
+    style O3 fill:#F6D1CE,stroke:#EB898B,stroke-width:2px,color:#7A1F22
+    style O4 fill:#EB898B,color:#ffffff,stroke:#7A1F22,stroke-width:3px
+
+    %% TRANSITION — Neutral / Informative (LIGHT CYAN)
+    style Shift fill:#7FD5E8,stroke:#32738C,stroke-width:3px,color:#00323D
+
+    %% AGENT ERA — Solutions / Modern (TEAL)
+    style new fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style N1 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style N2 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style N3 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style N4 fill:#30838C,color:#ffffff,stroke:#0D0D0D,stroke-width:3px
+
+    %% COPYRIGHT — Neutral
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
@@ -532,64 +537,62 @@ graph LR
         L6["Layer 6<br/>Observability<br/>Distributed Tracing"]
         L7["Layer 7<br/>Orchestration<br/>Multi-Agent Framework"]
     end
-    
-    Copyright["© 2025 Colaberry Inc."]
-    
-    %% Gap to Need connections
-    G1 -.->|"Requires"| N5
-    G2 -.->|"Requires"| N1
-    G2 -.->|"Requires"| N5
-    G3 -.->|"Requires"| N2
-    G4 -.->|"Requires"| N2
-    G4 -.->|"Requires"| N5
-    G5 -.->|"Requires"| N3
-    G6 -.->|"Requires"| N4
-    G6 -.->|"Requires"| N6
-    G7 -.->|"at scale"| N1
-    G7 -.->|"Requires"| N2
-    G7 -.->|"Requires"| N4
-    
-    %% Need to Layer connections
-    N1 -.->|"Solved by"| L2
-    N2 -.->|"Solved by"| L3
-    N2 -.->|"Solved by"| L4
-    N3 -.->|"Solved by"| L5
-    N4 -.->|"Solved by"| L6
-    N4 -.->|"Solved by"| L7
-    N5 -.->|"Solved by"| L1
-    N5 -.->|"Solved by"| L4
-    N6 -.->|"Solved by"| L6
-    
-    %% Styling - GAPS (Red - Problems)
-    style gaps fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style G1 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style G2 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style G3 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style G4 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style G5 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style G6 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style G7 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    
-    %% Styling - NEEDS (Neutral - Requirements)
-    style needs fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style N1 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
-    style N2 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
-    style N3 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
-    style N4 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
-    style N5 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
-    style N6 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
-    
-    %% Styling - LAYERS (Teal - Solutions)
-    style layers fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L1 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L2 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L3 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L4 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L5 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L6 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L7 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    
-    %% Copyright
+
+    G1 -.->|Requires| N5
+    G2 -.->|Requires| N1
+    G2 -.->|Requires| N5
+    G3 -.->|Requires| N2
+    G4 -.->|Requires| N2
+    G4 -.->|Requires| N5
+    G5 -.->|Requires| N3
+    G6 -.->|Requires| N4
+    G6 -.->|Requires| N6
+    G7 -.->|At scale| N1
+    G7 -.->|Requires| N2
+    G7 -.->|Requires| N4
+
+    N1 -.->|Solved by| L2
+    N2 -.->|Solved by| L3
+    N2 -.->|Solved by| L4
+    N3 -.->|Solved by| L5
+    N4 -.->|Solved by| L6
+    N4 -.->|Solved by| L7
+    N5 -.->|Solved by| L1
+    N5 -.->|Solved by| L4
+    N6 -.->|Solved by| L6
+
+
+    %% GAPS — Coral (Problems)
+    style gaps fill:#FBEAEA,stroke:#EB898B,stroke-width:2px
+    style G1 fill:#F6D1CE,stroke:#EB898B,stroke-width:2px,color:#7A1F22
+    style G2 fill:#F6D1CE,stroke:#EB898B,stroke-width:2px,color:#7A1F22
+    style G3 fill:#F6D1CE,stroke:#EB898B,stroke-width:2px,color:#7A1F22
+    style G4 fill:#F6D1CE,stroke:#EB898B,stroke-width:2px,color:#7A1F22
+    style G5 fill:#F6D1CE,stroke:#EB898B,stroke-width:2px,color:#7A1F22
+    style G6 fill:#F6D1CE,stroke:#EB898B,stroke-width:2px,color:#7A1F22
+    style G7 fill:#F6D1CE,stroke:#EB898B,stroke-width:2px,color:#7A1F22
+
+    %% NEEDS — Light Cyan (Neutral Requirements)
+    style needs fill:#E6F6FA,stroke:#7FD5E8,stroke-width:2px
+    style N1 fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style N2 fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style N3 fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style N4 fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style N5 fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style N6 fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+
+    %% LAYERS — Teal (Solutions)
+    style layers fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style L1 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style L2 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style L3 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style L4 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style L5 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style L6 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style L7 fill:#30838C,stroke:#0D0D0D,stroke-width:3px,color:#ffffff
+
+    %% COPYRIGHT
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
