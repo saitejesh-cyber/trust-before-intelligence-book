@@ -77,7 +77,7 @@ Production readiness isn't a feeling—it's a measurable state. Echo validated a
 
 ```mermaid
 
-graph LR
+graph TB
     subgraph INPACT["PILLAR 1: INPACT™"]
         I1["1. Score ≥ 80<br/>2. Response < 5s<br/>3. NLU ≥ 85%<br/>4. Escalation < 15%<br/>5. Audit 100%"]
     end
