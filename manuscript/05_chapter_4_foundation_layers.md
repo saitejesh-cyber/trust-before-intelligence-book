@@ -25,12 +25,13 @@ graph LR
     
     WITHOUT --> TRANSFORM --> WITH
     
-    style WITHOUT fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
-    style WITH fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style W1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style T1 fill:#f5f5f5,stroke:#666666,color:#333333
-    style L1 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style WITHOUT fill:#FBEAEA,stroke:#EB898B,stroke-width:2px
+    style W1 fill:#F6D1CE,stroke:#EB898B,stroke-width:2px,color:#7A1F22
+    style TRANSFORM fill:#E6F6FA,stroke:#7FD5E8,stroke-width:2px
+    style T1 fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style WITH fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style L1 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+
 
 ```
 
@@ -80,14 +81,14 @@ graph TB
     Layers -.->|"Enables Operations"| GOALS
     GOALS -.->|"Drives Trust"| INPACT
 
-    style Title fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Title fill:#0D0D0D,color:#ffffff,stroke:#30838C,stroke-width:3px
     style PILLARS fill:none,stroke:none
     style INDICATOR fill:none,stroke:none
-    style INPACT fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style Layers fill:#f57c00,stroke:#e65100,stroke-width:3px,color:#ffffff
-    style GOALS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style INPACT fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style Layers fill:#30838C,stroke:#0D0D0D,stroke-width:3px,color:#ffffff
+    style GOALS fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
     style Spacer1 fill:none,stroke:none,color:transparent
-    style YouAreHere fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style YouAreHere fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
     style Spacer2 fill:none,stroke:none,color:transparent
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
@@ -108,13 +109,13 @@ Foundation equals data availability and accessibility. Before agents can underst
 
 ```mermaid
 graph TB
-    L7["<b>Layer 7: Orchestration</b><br/><b>Multi-Agent Coordination</b>"]
-    L6["<b>Layer 6: Observability</b><br/><b>Tracing & Audit</b>"]
-    L5["<b>Layer 5: Governance</b><br/><b>Dynamic Access Control</b>"]
-    L4["<b>Layer 4: Intelligence</b><br/><b>LLM + RAG Pipeline</b>"]
-    L3["<b>Layer 3: Semantic</b><br/><b>Business Context</b>"]
+    L7["<b>Layer 7: Orchestration</b><br/>Multi-Agent Coordination"]
+    L6["<b>Layer 6: Observability</b><br/>Tracing & Audit"]
+    L5["<b>Layer 5: Governance</b><br/>Dynamic Access Control"]
+    L4["<b>Layer 4: Intelligence</b><br/>LLM + RAG Pipeline"]
+    L3["<b>Layer 3: Semantic</b><br/>Business Context"]
     
-    subgraph "<b>🏗️ FOUNDATION</b>"
+    subgraph FOUNDATION["🏗️ FOUNDATION"]
         L2["<b>Layer 2: Real-Time Data</b><br/><b>CDC & Streaming</b>"]
         L1["<b>Layer 1: Multi-Modal Storage</b><br/><b>8 Phase 1 Categories</b>"]
     end
@@ -123,14 +124,15 @@ graph TB
     
     L7 --> L6 --> L5 --> L4 --> L3
     L3 --> L2 --> L1
-    
-    style L7 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style L6 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style L5 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style L4 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style L3 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style L2 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style L1 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+
+    style L7 fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style L6 fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style L5 fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style L4 fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style L3 fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style L2 fill:#30838C,color:#ffffff,stroke:#0D0D0D,stroke-width:3px
+    style L1 fill:#30838C,color:#ffffff,stroke:#0D0D0D,stroke-width:3px
+    style FOUNDATION fill:#E6F3F6,stroke:#32738C,stroke-width:2px
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
@@ -285,7 +287,8 @@ Swapna pulled up the pipeline diagram. "Overnight batch. Operational databases�
 
 ```mermaid
 graph LR
-    subgraph "<b>Week 0: Batch ETL</b>"
+    subgraph ERA1["<b>Week 0: Batch ETL</b>"]
+        direction LR
         OPS["<b>Operational Systems</b><br/>Epic, Cerner, Workday<br/>Real-time updates"]
         ETL["<b>2 AM ETL</b><br/>Overnight batch<br/>24-hour cycle"]
         REPORT["<b>Reporting Database</b><br/>Stale by afternoon<br/>8-24 hour lag"]
@@ -298,11 +301,12 @@ graph LR
     OPS -->|<b>Continuous changes</b>| ETL
     ETL -->|<b>Batch load</b>| REPORT
     REPORT -.->|<b>Agents query stale data</b>| RISK
-    
-    style OPS fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style ETL fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
-    style REPORT fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style RISK fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
+
+    style ERA1 fill:#FBEAEA,stroke:#EB898B,stroke-width:2px
+    style OPS fill:#F6D1CE,stroke:#EB898B,stroke-width:2px,color:#7A1F22
+    style REPORT fill:#F6D1CE,stroke:#EB898B,stroke-width:2px,color:#7A1F22
+    style ETL fill:#EB898B,color:#ffffff,stroke:#7A1F22,stroke-width:3px
+    style RISK fill:#0D0D0D,color:#ffffff,stroke:#30838C,stroke-width:3px
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
@@ -431,21 +435,21 @@ graph TB
     
     TITLE --> FOUNDATION --> PHASE2 <--> OUTPUT
     
-    style TITLE fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style FOUNDATION fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style PHASE2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style S1 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style S2 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style S3 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style S4 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style S5 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style S6 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style S7 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style S8 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style S9 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style S10 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style S11 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style OUTPUT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style TITLE fill:#30838C,color:#ffffff,stroke:#0D0D0D,stroke-width:3px
+    style FOUNDATION fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style PHASE2 fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style S1 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style S2 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style S3 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style S4 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style S5 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style S6 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style S7 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style S8 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style S9 fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+    style S10 fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+    style S11 fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+    style OUTPUT fill:#14D793,color:#003322,stroke:#0FB67D,stroke-width:2px
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
@@ -688,19 +692,19 @@ graph LR
     NEW --> S3
     NEW --> S4
 
-    style BEFORE fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style OLD fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
-    style P1 fill:#ffcdd2,stroke:#c62828,stroke-width:1px,color:#b71c1c
-    style P2 fill:#ffcdd2,stroke:#c62828,stroke-width:1px,color:#b71c1c
-    style P3 fill:#ffcdd2,stroke:#c62828,stroke-width:1px,color:#b71c1c
-    style P4 fill:#ffcdd2,stroke:#c62828,stroke-width:1px,color:#b71c1c
-    style TRANSFORM fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style AFTER fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style NEW fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style S1 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style S2 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style S3 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style S4 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style BEFORE fill:#FBEAEA,stroke:#EB898B,stroke-width:2px
+    style OLD fill:#EB898B,color:#ffffff,stroke:#7A1F22,stroke-width:3px
+    style P1 fill:#F6D1CE,stroke:#EB898B,stroke-width:2px,color:#7A1F22
+    style P2 fill:#F6D1CE,stroke:#EB898B,stroke-width:2px,color:#7A1F22
+    style P3 fill:#F6D1CE,stroke:#EB898B,stroke-width:2px,color:#7A1F22
+    style P4 fill:#F6D1CE,stroke:#EB898B,stroke-width:2px,color:#7A1F22
+    style TRANSFORM fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style AFTER fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style NEW fill:#30838C,color:#ffffff,stroke:#0D0D0D,stroke-width:3px
+    style S1 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style S2 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style S3 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style S4 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
@@ -778,7 +782,7 @@ Layer 2 provides sub-30 second data freshness through change data capture (CDC),
 
 graph LR
     SOURCE["<b>Operational Systems</b><br/>EHR, Scheduling, Labs"]
-    
+
     subgraph LAYER2["<b>Layer 2: Real-Time Data</b>"]
         direction TB
         CDC["CDC: Debezium"]
@@ -793,13 +797,13 @@ graph LR
     
     SOURCE -->|"Changes"| LAYER2
     LAYER2 -->|"Store"| OUTCOME
-    
-    style SOURCE fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style LAYER2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style CDC fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style KAFKA fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style PROCESS fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style OUTCOME fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+
+    style SOURCE fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style LAYER2 fill:#E6F3F6,stroke:#32738C,stroke-width:2px,color:#00323D
+    style CDC fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style KAFKA fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style PROCESS fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style OUTCOME fill:#14D793,stroke:#0FB67D,stroke-width:2px,color:#003322
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
@@ -886,13 +890,15 @@ workday.providers.credentials
 
 ```mermaid
 graph LR
-    subgraph "<b>Real-Time Inference Path</b>"
+    subgraph RT["<b>Real-Time Inference Path</b>"]
+        direction LR
         I1["<b>User Query</b>"]
-        I2["<b>Real-Time CDC</b><br/><b>< 30s lag</b>"]
-        I3["<b>Agent Response</b><br/><b>< 3s total</b>"]
+        I2["<b>Real-Time CDC</b><br/>&lt; 30s lag"]
+        I3["<b>Agent Response</b><br/>&lt; 3s total"]
     end
     
-    subgraph "<b>Batch Training Path</b>"
+    subgraph BT["<b>Batch Training Path</b>"]
+        direction LR
         T1["<b>Historical Data</b>"]
         T2["<b>Overnight ETL</b><br/><b>OK for batch</b>"]
         T3["<b>Model Training</b><br/><b>Hours/days OK</b>"]
@@ -905,13 +911,15 @@ graph LR
     I1 --> I2 --> STORAGE --> I3
     T1 --> T2 --> STORAGE --> T3
     
-    style I1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style I2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style I3 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style T1 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style T2 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style T3 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style STORAGE fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style RT fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style BT fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style I1 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style I2 fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style I3 fill:#14D793,stroke:#0FB67D,stroke-width:2px,color:#003322
+    style T1 fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style T2 fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style T3 fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style STORAGE fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
@@ -1055,11 +1063,11 @@ graph LR
     
     week0 --> ARROW --> week4
     
-    style week0 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style W0 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style ARROW fill:#ffffff,stroke:none,color:#004d40
-    style week4 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style W4 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style week0 fill:#FBEAEA,stroke:#EB898B,stroke-width:2px
+    style W0 fill:#EB898B,color:#ffffff,stroke:#7A1F22,stroke-width:3px
+    style ARROW fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style week4 fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style W4 fill:#30838C,color:#ffffff,stroke:#0D0D0D,stroke-width:3px
 ```
 
 *© 2025 Colaberry Inc.*
@@ -1141,16 +1149,18 @@ graph TB
     BEFORE["<b>Week 0: 28/100</b>"]
     AFTER["<b>Week 4: 42/100 (+14)</b>"]
     
-    subgraph "<b>Improved (+7 points)</b>"
-        A1["<b>Instant: 3→5 (+2)</b><br/><b>Cache + real-time</b>"]
-        A4["<b>Adaptive: 1→3 (+2)</b><br/><b>Feature store</b>"]
-        A5["<b>Contextual: 2→4 (+2)</b><br/><b>Multi-modal</b>"]
-        A6["<b>Transparent: 2→3 (+1)</b><br/><b>Lineage</b>"]
+    subgraph IMPROVED["<b>Improved (+7 points)</b>"]
+        direction TB
+        A1["<b>Instant: 3→5 (+2)</b><br/>Cache + real-time"]
+        A4["<b>Adaptive: 1→3 (+2)</b><br/>Feature store"]
+        A5["<b>Contextual: 2→4 (+2)</b><br/>Multi-modal"]
+        A6["<b>Transparent: 2→3 (+1)</b><br/>Lineage"]
     end
     
-    subgraph "<b>Needs Later Layers</b>"
-        B2["<b>Natural: 2→2 (—)</b><br/><b>Needs Layer 3</b>"]
-        B3["<b>Permitted: 4→4 (—)</b><br/><b>Needs Layer 5</b>"]
+    subgraph LATER["<b>Needs Later Layers</b>"]
+        direction TB
+        B2["<b>Natural</b><br/>2 → 2 (—)<br/>Needs Layer 3"]
+        B3["<b>Permitted</b><br/>4 → 4 (—)<br/>Needs Layer 5"]
     end
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
@@ -1160,14 +1170,16 @@ graph TB
     A1 & A4 & A5 & A6 --> AFTER
     B2 & B3 --> AFTER
     
-    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style AFTER fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style A1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A4 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A5 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A6 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style B2 fill:#f9f9f9,stroke:#666666,stroke-width:1px,color:#666666
-    style B3 fill:#f9f9f9,stroke:#666666,stroke-width:1px,color:#666666
+    style BEFORE fill:#EB898B,color:#ffffff,stroke:#7A1F22,stroke-width:3px
+    style IMPROVED fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style A1 fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style A4 fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style A5 fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style A6 fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style LATER fill:#ffffff,stroke:#666666,stroke-width:2px
+    style B2 fill:#ffffff,stroke:#666666,stroke-width:2px,color:#000000
+    style B3 fill:#ffffff,stroke:#666666,stroke-width:2px,color:#000000
+    style AFTER fill:#30838C,color:#ffffff,stroke:#0D0D0D,stroke-width:3px
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
