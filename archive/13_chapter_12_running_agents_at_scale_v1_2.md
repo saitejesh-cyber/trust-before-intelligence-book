@@ -1,5 +1,7 @@
 # Chapter 12: Running Agents at Scale
 
+**Version 1.3 — Corrected December 2025**
+
 **The GOALS™ Operations Chapter — Three Pillars in Production**
 
 ---
@@ -49,7 +51,7 @@ graph LR
 
 ### 1.1 The Production Readiness Decision
 
-You've completed the hardest part. Chapters 4-6 built the architecture layer by layer. Chapter 10 executed the 90-day roadmap. Chapter 11 selected technologies for each layer. Your INPACT™ score has climbed from wherever you started toward the 80+ threshold that signals agent-readiness.
+You've completed the hardest part. Chapters 4-6 built the architecture layer by layer. Chapter 10 executed the 90-day roadmap. Chapter 11 selected technologies for each layer. Your INPACT™ score has climbed from wherever you started toward the 86+ threshold that signals agent-readiness.
 
 But building isn't operating. The gap between "architecture complete" and "production ready" has derailed more agent initiatives than infrastructure gaps ever did. Organizations celebrate Week 10 architecture milestones only to stumble in Week 11 pilots. The Architecture of Trust needs operational excellence to deliver sustained value.
 
@@ -77,9 +79,9 @@ Production readiness isn't a feeling—it's a measurable state. Echo validated a
 
 ```mermaid
 
-graph TB
+graph LR
     subgraph INPACT["PILLAR 1: INPACT™"]
-        I1["1. Score ≥ 80<br/>2. Response < 5s<br/>3. NLU ≥ 85%<br/>4. Escalation < 15%<br/>5. Audit 100%"]
+        I1["1. Score ≥ 86<br/>2. Response < 5s<br/>3. NLU ≥ 85%<br/>4. Escalation < 15%<br/>5. Audit 100%"]
     end
     
     subgraph ARCH["PILLAR 2: ARCHITECTURE"]
@@ -115,17 +117,17 @@ These criteria validate that your infrastructure genuinely meets agent needs:
 
 | # | Criterion | INPACT™ Need | Target | How to Measure | Echo Week 10 |
 |---|-----------|--------------|--------|----------------|--------------|
-| 1 | INPACT™ Score ≥ 80 | All 6 | 80/100 minimum | Chapter 9 assessment | ✅ 86/100 |
-| 2 | Response Time < 5s | I (Instant) | <5s P95 | Load testing, APM traces | ✅ 4.8s P95 |
-| 3 | NLU Accuracy ≥ 85% | N (Natural) | ≥85% | Validation set testing | ✅ 87% |
+| 1 | INPACT™ Score ≥ 86 | All 6 | 86/100 minimum | Chapter 9 assessment | ✅ 86/100 |
+| 2 | Response Time < 5s | I (Instant) | <5s P95 | Load testing, APM traces | ✅ 2.2s P95 |
+| 3 | NLU Accuracy ≥ 85% | N (Natural) | ≥85% | Validation set testing | ✅ 83% (85% Week 11) |
 | 4 | HITL Escalation < 15% | P (Permitted) | <15% rate | Governance logs | ✅ 8% |
 | 5 | Audit Coverage 100% | T (Transparent) | 100% | Audit log validation | ✅ 100% |
 
-**Criterion 1: INPACT™ Score ≥ 80** validates overall readiness. Scores below 80 indicate infrastructure gaps that will surface in production. Echo achieved 86/100 at Week 10, comfortably above the threshold.
+**Criterion 1: INPACT™ Score ≥ 86** validates overall readiness. Scores below 86 indicate infrastructure gaps that will surface in production. Echo achieved 86/100 at Week 10, meeting the production-ready threshold.
 
-**Criterion 2: Response Time < 5s** ensures users won't abandon agents mid-query. Healthcare workflows can't wait 10 seconds for answers. Echo's P95 latency of 4.8 seconds meant 95% of queries completed in under 5 seconds—acceptable for clinical use.
+**Criterion 2: Response Time < 5s** ensures users won't abandon agents mid-query. Healthcare workflows can't wait 10 seconds for answers. Echo's P95 latency of 2.2 seconds at Week 10 meant 95% of queries completed well under the 5-second threshold—excellent for clinical use.
 
-**Criterion 3: NLU Accuracy ≥ 85%** measures whether agents understand what users ask. Below 85%, users spend more time correcting misunderstandings than the agent saves. Echo's 87% accuracy meant reliable clinical query understanding.
+**Criterion 3: NLU Accuracy ≥ 85%** measures whether agents understand what users ask. Below 85%, users spend more time correcting misunderstandings than the agent saves. Echo's 83% accuracy at Week 10 was near-threshold, reaching 85% by Week 11 and 87% by Week 12 through continuous improvement.
 
 **Criterion 4: HITL Escalation < 15%** confirms agents handle most queries autonomously. Higher escalation rates indicate the agent isn't trusted—or shouldn't be. Echo's 8% escalation rate demonstrated appropriate confidence calibration.
 

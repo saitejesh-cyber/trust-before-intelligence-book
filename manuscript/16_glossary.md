@@ -14,6 +14,8 @@ This glossary provides definitions for acronyms and key terms used throughout *T
 
 - **API:** Application Programming Interface — A set of protocols and tools that allow different software applications to communicate with each other.
 
+- **BAA:** Business Associate Agreement — A contract required under HIPAA between a covered entity and a business associate that establishes permitted uses and disclosures of protected health information.
+
 - **BI:** Business Intelligence — Technologies, practices, and strategies for collecting, integrating, analyzing, and presenting business data to support better decision-making.
 
 - **BID:** Twice Daily — Medical dosing abbreviation indicating medication should be taken twice per day (from Latin "bis in die").
@@ -48,6 +50,8 @@ This glossary provides definitions for acronyms and key terms used throughout *T
 
 - **GenAI:** Generative Artificial Intelligence — AI systems capable of generating new content (text, images, code) based on patterns learned from training data.
 
+- **GOALS™:** Governance, Observability, Availability, Lexicon, Solid — Colaberry's operational measurement framework for sustaining agent trust in production, measuring five dimensions of operational excellence.
+
 - **GPT:** Generative Pre-trained Transformer — A type of large language model architecture developed by OpenAI, trained on vast text datasets to generate human-like text.
 
 - **HBR:** Harvard Business Review — A management magazine published by Harvard Business Publishing.
@@ -64,11 +68,15 @@ This glossary provides definitions for acronyms and key terms used throughout *T
 
 - **IDC:** International Data Corporation — A global market intelligence and advisory firm specializing in information technology, telecommunications, and consumer technology research.
 
+- **INPACT™:** Instant, Natural, Permitted, Adaptive, Contextual, Transparent — Colaberry's six-dimension framework for measuring infrastructure readiness to support AI agents, scored 0-100.
+
 - **LLM:** Large Language Model — AI models trained on vast text datasets capable of understanding and generating human-like text. Examples include GPT-4, Claude, and Gemini.
 
 - **LOINC:** Logical Observation Identifiers Names and Codes — A universal standard for identifying medical laboratory observations, clinical documents, and other health measurements.
 
 - **MIT:** Massachusetts Institute of Technology — Research university whose NANDA initiative produced the "State of AI in Business 2025" report cited in this book.
+
+- **MCP:** Model Context Protocol — An open protocol developed by Anthropic for connecting AI assistants to external data sources and tools.
 
 - **ML:** Machine Learning — A subset of artificial intelligence where systems learn patterns from data rather than being explicitly programmed.
 
@@ -106,11 +114,13 @@ This glossary provides definitions for acronyms and key terms used throughout *T
 
 - **RRF:** Reciprocal Rank Fusion — A method for combining multiple ranked lists into a single ranking, commonly used in hybrid search systems.
 
-- **SQL:** Structured Query Language — A programming language used for managing and querying relational databases.
+- **SLA:** Service Level Agreement — A contract defining the expected level of service between a provider and customer, including metrics like uptime, response time, and resolution time.
 
 - **SLO:** Service Level Objective — A target metric for system reliability or performance (e.g., 99.9% uptime), used to define acceptable service quality.
 
 - **SOC:** Security Operations Center — A centralized team responsible for monitoring, detecting, and responding to security threats and incidents.
+
+- **SQL:** Structured Query Language — A programming language used for managing and querying relational databases.
 
 - **SRE:** Site Reliability Engineering — A discipline that applies software engineering principles to infrastructure and operations, pioneered by Google to ensure system reliability.
 
