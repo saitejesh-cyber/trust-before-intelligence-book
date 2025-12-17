@@ -449,6 +449,12 @@ graph TB
         direction TB
         subgraph ROW1[" "]
             direction LR
+            subgraph INTEL["INTELLIGENCE"]
+                direction TB
+                L4["L4: Retrieval<br/>LlamaIndex · Vectara"]
+                L3["L3: Semantic<br/>dbt · Cube"]
+            end
+
             subgraph TRUST["TRUST LAYERS"]
                 direction TB
                 L7["L7: Orchestration<br/>LangChain · CrewAI"]
@@ -456,11 +462,6 @@ graph TB
                 L5["L5: Governance<br/>Collibra · Privacera"]
             end
             
-            subgraph INTEL["INTELLIGENCE"]
-                direction TB
-                L4["L4: Retrieval<br/>LlamaIndex · Vectara"]
-                L3["L3: Semantic<br/>dbt · Cube"]
-            end
         end
         
         subgraph FOUND["FOUNDATION LAYERS"]
@@ -487,6 +488,7 @@ graph TB
     style L2 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
     style L1 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
     style Copyright fill:#ffffff,stroke:none,color:#666666
+
 
 ```
 
