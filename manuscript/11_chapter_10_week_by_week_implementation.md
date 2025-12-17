@@ -173,44 +173,27 @@ graph LR
 
 ```mermaid
 
-graph TB
+graph LR
     subgraph PHASE1["PHASE 1: FOUNDATION (Weeks 1-4)"]
-        direction TB
-        
+        direction LR
         subgraph WEEK12["WEEKS 1-2"]
-            subgraph STORAGE["L1: MULTI-MODAL STORAGE"]
-                direction LR
-                S1["Databricks<br/>Lakehouse"]
-                S2["Redis<br/>Cache"]
-                S3["Vector<br/>Store"]
-            end
+            L1["L1: Storage<br/>Databricks · Redis · Vector Store"]
         end
         
         subgraph WEEK34["WEEKS 3-4"]
-            subgraph FABRIC["L2: DATA FABRIC"]
-                direction LR
-                F1["Debezium<br/>CDC"]
-                F2["Kafka<br/>Streaming"]
-                F3["Event<br/>Hub"]
-            end
+            L2["L2: Data Fabric<br/>Debezium · Kafka · Event Hub"]
         end
     end
     
     Copyright["© 2025 Colaberry Inc."]
     
-    STORAGE --> FABRIC
+    L1 --> L2
     
     style PHASE1 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
-    style WEEK12 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
-    style WEEK34 fill:#fff3e0,stroke:#f57c00,stroke-width:1px,color:#e65100
-    style STORAGE fill:#bbdefb,stroke:#1976d2,stroke-width:2px,color:#0d47a1
-    style FABRIC fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style S1 fill:#e3f2fd,stroke:#1976d2,color:#0d47a1
-    style S2 fill:#e3f2fd,stroke:#1976d2,color:#0d47a1
-    style S3 fill:#e3f2fd,stroke:#1976d2,color:#0d47a1
-    style F1 fill:#fff3e0,stroke:#f57c00,color:#e65100
-    style F2 fill:#fff3e0,stroke:#f57c00,color:#e65100
-    style F3 fill:#fff3e0,stroke:#f57c00,color:#e65100
+    style WEEK12 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style WEEK34 fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style L1 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
+    style L2 fill:#ffe0b2,stroke:#f57c00,color:#e65100
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
@@ -260,44 +243,27 @@ Week 3 hit yellow status when EHR CDC integration took 2 extra days due to legac
 
 ```mermaid
 
-graph TB
+graph LR
     subgraph PHASE2["PHASE 2: INTELLIGENCE (Weeks 5-7)"]
-        direction TB
-        
+        direction LR
         subgraph WEEK5["WEEK 5"]
-            subgraph SEMANTIC["L3: SEMANTIC LAYER"]
-                direction LR
-                SE1["Business<br/>Glossary"]
-                SE2["Entity<br/>Resolution"]
-                SE3["dbt<br/>Models"]
-            end
+            L3["L3: Semantic Layer<br/>Business Glossary · Entity Resolution · dbt"]
         end
         
         subgraph WEEK67["WEEKS 6-7"]
-            subgraph INTELLIGENCE["L4: INTELLIGENT RETRIEVAL"]
-                direction LR
-                I1["Pinecone<br/>Vector DB"]
-                I2["RAG<br/>Pipeline"]
-                I3["Semantic<br/>Cache"]
-            end
+            L4["L4: Intelligent Retrieval<br/>Pinecone · RAG Pipeline · Semantic Cache"]
         end
     end
     
     Copyright["© 2025 Colaberry Inc."]
     
-    SEMANTIC --> INTELLIGENCE
+    L3 --> L4
     
     style PHASE2 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
-    style WEEK5 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
-    style WEEK67 fill:#fff3e0,stroke:#f57c00,stroke-width:1px,color:#e65100
-    style SEMANTIC fill:#bbdefb,stroke:#1976d2,stroke-width:2px,color:#0d47a1
-    style INTELLIGENCE fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style SE1 fill:#e3f2fd,stroke:#1976d2,color:#0d47a1
-    style SE2 fill:#e3f2fd,stroke:#1976d2,color:#0d47a1
-    style SE3 fill:#e3f2fd,stroke:#1976d2,color:#0d47a1
-    style I1 fill:#fff3e0,stroke:#f57c00,color:#e65100
-    style I2 fill:#fff3e0,stroke:#f57c00,color:#e65100
-    style I3 fill:#fff3e0,stroke:#f57c00,color:#e65100
+    style WEEK5 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style WEEK67 fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style L3 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
+    style L4 fill:#ffe0b2,stroke:#f57c00,color:#e65100
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
@@ -391,53 +357,22 @@ Week 7 nearly failed the phase gate. Accuracy sat at 82%—below the 85% target.
 
 ```mermaid
 
-graph TB
+graph LR
     subgraph TRUST["TRUST LAYERS (L5-L7)"]
-        direction TB
-        subgraph ROW1[" "]
-            direction LR
-            subgraph ORCH["L7: ORCHESTRATION"]
-                O1["Multi-Agent<br/>Coordination"]
-                O2["Intent<br/>Routing"]
-            end
-            
-            subgraph OBS["L6: OBSERVABILITY"]
-                B1["Audit Trails"]
-                B2["Tracing"]
-            end
-        end
-        
-        subgraph ROW2[" "]
-            direction LR
-            subgraph GOV["L5: GOVERNANCE"]
-                G1["ABAC Policies"]
-                G2["HITL Workflows"]
-                G3["HIPAA Controls"]
-            end
-            
-            B3["Explainability"]
-        end
+        direction LR
+        L7["L7: Orchestration<br/>Multi-Agent Coordination · Intent Routing"]
+        L6["L6: Observability<br/>Audit Trails · Tracing · Explainability"]
+        L5["L5: Governance<br/>ABAC Policies · HITL Workflows · HIPAA"]
     end
     
     Copyright["© 2025 Colaberry Inc."]
     
-    ORCH --> OBS
-    ROW1 --> ROW2
+    L7 --> L6 --> L5
     
     style TRUST fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
-    style ROW1 fill:none,stroke:none
-    style ROW2 fill:none,stroke:none
-    style ORCH fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c
-    style OBS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style GOV fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#880e4f
-    style O1 fill:#e1bee7,stroke:#7b1fa2,color:#4a148c
-    style O2 fill:#e1bee7,stroke:#7b1fa2,color:#4a148c
-    style B1 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style B2 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style B3 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style G1 fill:#f8bbd9,stroke:#c2185b,color:#880e4f
-    style G2 fill:#f8bbd9,stroke:#c2185b,color:#880e4f
-    style G3 fill:#f8bbd9,stroke:#c2185b,color:#880e4f
+    style L7 fill:#e1bee7,stroke:#7b1fa2,color:#4a148c
+    style L6 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style L5 fill:#f8bbd9,stroke:#c2185b,color:#880e4f
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
