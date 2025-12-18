@@ -26,12 +26,12 @@
     
     BEFORE --> TRANSFORM --> AFTER
     
-    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
-    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style B1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style T1 fill:#f5f5f5,stroke:#666666,color:#333333
-    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style BEFORE fill:#FBEAEA,stroke:#EB898B,stroke-width:2px
+    style B1 fill:#F6D1CE,stroke:#EB898B,stroke-width:2px,color:#7A1F22
+    style TRANSFORM fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style T1 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style AFTER fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style A1 fill:#14D793,stroke:#0FB67D,stroke-width:2px,color:#003322
 
 ```
 
@@ -112,16 +112,16 @@ graph TD
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
-    style VENDOR fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
-    style PILLAR1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style PILLAR2 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
-    style PILLAR3 fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style V fill:#eeeeee,stroke:#666666,color:#333333
-    style P1 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style P2 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style P3 fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style SCORE fill:#c8e6c9,stroke:#388e3c,stroke-width:2px,color:#1b5e20
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style VENDOR fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style PILLAR1 fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style PILLAR2 fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style PILLAR3 fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style V fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style P1 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style P2 fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+    style P3 fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+    style SCORE fill:#14D793,stroke:#0FB67D,stroke-width:2px,color:#003322
+    style Copyright fill:#ffffff,stroke:#666666,stroke-width:2px,color:#000000
 ```
 
 **Pillar 1: INPACT™ Agent Needs (40% Weight)**
@@ -259,14 +259,14 @@ graph LR
     
     style DECISIONS fill:none,stroke:none
     style OUTCOMES fill:none,stroke:none
-    style START fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
-    style Q1 fill:#fff9c4,stroke:#f9a825,stroke-width:2px,color:#f57f17
-    style Q2 fill:#fff9c4,stroke:#f9a825,stroke-width:2px,color:#f57f17
-    style Q3 fill:#fff9c4,stroke:#f9a825,stroke-width:2px,color:#f57f17
-    style BUILD fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
-    style BUY fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style PARTNER fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style START fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style Q1 fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style Q2 fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style Q3 fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style BUILD fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+    style BUY fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style PARTNER fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+    style Copyright fill:#ffffff,stroke:#666666,stroke-width:2px,color:#000000
 
 ```
 
@@ -475,19 +475,19 @@ graph TB
     
     ROW1 --> FOUND
     
-    style STACK fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
+    style STACK fill:#E6F3F6,stroke:#32738C,stroke-width:2px
     style ROW1 fill:none,stroke:none
-    style TRUST fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style INTEL fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style FOUND fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
-    style L7 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style L6 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style L5 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style L4 fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style L3 fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style L2 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style L1 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style TRUST fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style INTEL fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style FOUND fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style L7 fill:#30838C,stroke:#0D0D0D,stroke-width:3px,color:#ffffff
+    style L6 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style L5 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style L4 fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+    style L3 fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+    style L2 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style L1 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style Copyright fill:#ffffff,stroke:#666666,stroke-width:2px,color:#000000
 
 ```
 
@@ -1418,17 +1418,17 @@ graph LR
     
     TRUST --> INTEL --> FOUND
     
-    style TRUST fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c
-    style INTEL fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style FOUND fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
-    style L7 fill:#e1bee7,stroke:#7b1fa2,color:#4a148c
-    style L6 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style L5 fill:#f8bbd9,stroke:#c2185b,color:#880e4f
-    style L4 fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style L3 fill:#fff59d,stroke:#f9a825,color:#f57f17
-    style L2 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style L1 fill:#c8e6c9,stroke:#388e3c,color:#1b5e20
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style TRUST fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style INTEL fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style FOUND fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style L7 fill:#30838C,stroke:#0D0D0D,stroke-width:3px,color:#ffffff
+    style L6 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style L5 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style L4 fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+    style L3 fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+    style L2 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style L1 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style Copyright fill:#ffffff,stroke:#666666,stroke-width:2px,color:#000000
 
 ```
 
