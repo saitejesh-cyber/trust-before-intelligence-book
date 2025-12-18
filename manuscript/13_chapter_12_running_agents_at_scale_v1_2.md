@@ -26,12 +26,12 @@ graph LR
     
     BEFORE --> TRANSFORM --> AFTER
     
-    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
-    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style B1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style T1 fill:#f5f5f5,stroke:#666666,color:#333333
-    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style BEFORE fill:#FBEAEA,stroke:#EB898B,stroke-width:2px
+    style TRANSFORM fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style AFTER fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style B1 fill:#F6D1CE,stroke:#EB898B,stroke-width:2px,color:#7A1F22
+    style T1 fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+    style A1 fill:#14D793,stroke:#0FB67D,stroke-width:2px,color:#003322
 
 ```
 
@@ -107,26 +107,26 @@ graph TD
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
-    style INPACT fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
-    style ARCH fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style GOALS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style READY fill:#c8e6c9,stroke:#388e3c,stroke-width:3px,color:#1b5e20
-    style I1 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style I2 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style I3 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style I4 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style I5 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style A1 fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style A2 fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style A3 fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style A4 fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style A5 fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style G1 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style G2 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style G3 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style G4 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style G5 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style INPACT fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style ARCH fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style GOALS fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style READY fill:#14D793,stroke:#0FB67D,stroke-width:2px,color:#003322
+    style I1 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style I2 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style I3 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style I4 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style I5 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style A1 fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+    style A2 fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+    style A3 fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+    style A4 fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+    style A5 fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+    style G1 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style G2 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style G3 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style G4 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style G5 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style Copyright fill:#ffffff,stroke:#666666,stroke-width:2px,color:#000000
 ```
 
 **Pillar 1: INPACT™ Readiness (5 Criteria)**
@@ -335,17 +335,17 @@ graph LR
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
-    style DEVELOP fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
-    style TEST fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style DEPLOY fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#880e4f
-    style MONITOR fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style OPTIMIZE fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c
-    style D1 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style T1 fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style P1 fill:#f8bbd9,stroke:#c2185b,color:#880e4f
-    style M1 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style O1 fill:#e1bee7,stroke:#7b1fa2,color:#4a148c
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style DEVELOP fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style TEST fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style DEPLOY fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style MONITOR fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style OPTIMIZE fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style D1 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style T1 fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+    style P1 fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+    style M1 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style O1 fill:#14D793,stroke:#0FB67D,stroke-width:2px,color:#003322
+    style Copyright fill:#ffffff,stroke:#666666,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -762,19 +762,19 @@ graph LR
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
-    style P1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style P2 fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style P3 fill:#fff9c4,stroke:#f9a825,stroke-width:2px,color:#f57f17
-    style P4 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
-    style P5 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style P6 fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c
-    style D fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style T fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style M fill:#fff9c4,stroke:#f9a825,color:#f57f17
-    style C fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style R fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style L fill:#e1bee7,stroke:#7b1fa2,color:#4a148c
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style P1 fill:#FBEAEA,stroke:#EB898B,stroke-width:2px
+    style P2 fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style P3 fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style P4 fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style P5 fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style P6 fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style D fill:#EB898B,stroke:#7A1F22,stroke-width:3px,color:#ffffff
+    style T fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style M fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+    style C fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style R fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style L fill:#14D793,stroke:#0FB67D,stroke-width:2px,color:#003322
+    style Copyright fill:#ffffff,stroke:#666666,stroke-width:2px,color:#000000
 ```
 
 **Phase 1: DETECT**
@@ -956,20 +956,20 @@ graph LR
     
     M --> T --> W --> H --> F
     F -->|<b>Next Week</b>| M
-    
+
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
-    style MON fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
-    style TUE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style WED fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style THU fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style FRI fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c
-    style M fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style T fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style W fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style H fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style F fill:#e1bee7,stroke:#7b1fa2,color:#4a148c
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style MON fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style TUE fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style WED fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style THU fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style FRI fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style M fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style T fill:#F6D1CE,stroke:#EB898B,stroke-width:2px,color:#7A1F22
+    style W fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+    style H fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style F fill:#14D793,stroke:#0FB67D,stroke-width:2px,color:#003322
+    style Copyright fill:#ffffff,stroke:#666666,stroke-width:2px,color:#000000
 ```
 
 **The Five-Day Cycle**
@@ -1175,14 +1175,14 @@ graph TD
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
-    style PLATFORM fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style C1 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style C2 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style C3 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style C4 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style C5 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style RESULT fill:#c8e6c9,stroke:#388e3c,stroke-width:3px,color:#1b5e20
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style PLATFORM fill:#E6F3F6,stroke:#32738C,stroke-width:2px
+    style C1 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style C2 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style C3 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style C4 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style C5 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style RESULT fill:#14D793,stroke:#0FB67D,stroke-width:2px,color:#003322
+    style Copyright fill:#ffffff,stroke:#666666,stroke-width:2px,color:#000000
 ```
 
 **Five Core Components**
