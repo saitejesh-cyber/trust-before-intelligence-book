@@ -24,12 +24,12 @@ graph LR
     
     BEFORE --> PILLARS --> AFTER
     
-    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style PILLARS fill:#00695c,stroke:#004d40,stroke-width:2px,color:#ffffff
-    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style B1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style P1 fill:#00796b,stroke:#004d40,color:#ffffff
-    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style BEFORE fill:#FBEAEA,stroke:#EB898B,stroke-width:2px,color:#7A1F22
+    style PILLARS fill:#E6F3F6,stroke:#32738C,stroke-width:2px,color:#000000
+    style AFTER fill:#E6F3F6,stroke:#32738C,stroke-width:2px,color:#000000
+    style B1 fill:#F6D1CE,stroke:#EB898B,stroke-width:2px,color:#7A1F22
+    style P1 fill:#30838C,stroke:#0D0D0D,stroke-width:3px,color:#ffffff
+    style A1 fill:#14D793,stroke:#0FB67D,stroke-width:2px,color:#003322
 
 ```
 
@@ -78,16 +78,16 @@ graph LR
     L --> TOTAL
     S --> TOTAL
     
-    style BASELINE fill:#f0fff0,stroke:#00897b,stroke-width:2px
-    style G fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#004d40
-    style O fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#004d40
-    style A fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#004d40
-    style S fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style TOTAL fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style BASELINE fill:#E6F3F6,stroke:#32738C,stroke-width:2px,color:#000000
+    style G fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+    style O fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+    style A fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style L fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+    style S fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+    style TOTAL fill:#EB898B,stroke:#7A1F22,stroke-width:3px,color:#ffffff
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style Copyright fill:#ffffff,stroke:#666666,stroke-width:2px,color:#000000
 ```
 
 "Fifteen out of twenty-five," Marcus said. "We need twenty-one to deploy clinical AI in production. That's six points in two weeks."
@@ -434,16 +434,16 @@ graph TB
     R2 --> RESULT
     R3 --> RESULT
     
-    style CACHE fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style QUERY fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style L1 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L2 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L3 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style R1 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:2px
-    style R2 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style R3 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style RESULT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style CACHE fill:#E6F3F6,stroke:#32738C,stroke-width:2px,color:#000000
+    style QUERY fill:#30838C,stroke:#0D0D0D,stroke-width:3px,color:#ffffff
+    style L1 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style L2 fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+    style L3 fill:#F6D1CE,stroke:#EB898B,stroke-width:2px,color:#7A1F22
+    style R1 fill:#14D793,stroke:#0FB67D,stroke-width:2px,color:#003322
+    style R2 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style R3 fill:#EB898B,stroke:#7A1F22,stroke-width:3px,color:#ffffff
+    style RESULT fill:#14D793,stroke:#0FB67D,stroke-width:2px,color:#003322
+    style Copyright fill:#ffffff,stroke:#666666,stroke-width:2px,color:#000000
 
 ```
 
@@ -511,16 +511,16 @@ graph TB
     HIGH --> RESULT
     LOW --> PROMPT --> RESP --> RESULT
     
-    style DISAMBIGUATION fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style Q fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style CONF fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style PATHS fill:none,stroke:none
-    style HIGH fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style LOW fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style PROMPT fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style RESP fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style RESULT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style DISAMBIGUATION fill:#E6F3F6,stroke:#32738C,stroke-width:2px,color:#000000
+    style Q fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style CONF fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+    style HIGH fill:#14D793,stroke:#0FB67D,stroke-width:2px,color:#003322
+    style LOW fill:#F6D1CE,stroke:#EB898B,stroke-width:2px,color:#7A1F22
+    style PROMPT fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style RESP fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style RESULT fill:#14D793,stroke:#0FB67D,stroke-width:2px,color:#003322
+    style Copyright fill:#ffffff,stroke:#666666,stroke-width:2px,color:#000000
+
 
 ```
 
@@ -597,15 +597,15 @@ graph TB
     GATE3 -->|"Pass"| PASS
     GATE3 -->|"Flag"| QUARANTINE
     
-    style QUALITY fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style SOURCE fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style GATE1 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style GATE2 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style GATE3 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style OUTCOMES fill:none,stroke:none
-    style PASS fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style QUARANTINE fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style QUALITY fill:#E6F3F6,stroke:#32738C,stroke-width:2px,color:#000000
+    style SOURCE fill:#30838C,stroke:#0D0D0D,stroke-width:3px,color:#ffffff
+    style GATE1 fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style GATE2 fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style GATE3 fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style PASS fill:#14D793,stroke:#0FB67D,stroke-width:2px,color:#003322
+    style QUARANTINE fill:#F6D1CE,stroke:#EB898B,stroke-width:2px,color:#7A1F22
+    style Copyright fill:#ffffff,stroke:#666666,stroke-width:2px,color:#000000
+
 
 ```
 
@@ -816,17 +816,23 @@ graph TB
         ORCH --> RC
     end
     
-    style AGENTS fill:#f0fff0,stroke:#00897b,stroke-width:2px
-    style CARE fill:#e0f2f1,stroke:#00897b,stroke-width:2px
-    style CLINICAL fill:#e0f2f1,stroke:#00897b,stroke-width:2px
-    style REVENUE fill:#e0f2f1,stroke:#00897b,stroke-width:2px
-    style CA fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style CD fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style RC fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style ORCH fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style AGENTS fill:#E6F3F6,stroke:#32738C,stroke-width:2px,color:#000000
+    style CARE fill:#E6F3F6,stroke:#32738C,stroke-width:2px,color:#000000
+    style CLINICAL fill:#E6F3F6,stroke:#32738C,stroke-width:2px,color:#000000
+    style REVENUE fill:#E6F3F6,stroke:#32738C,stroke-width:2px,color:#000000
+    style CA fill:#30838C,stroke:#0D0D0D,stroke-width:3px,color:#ffffff
+    style CD fill:#30838C,stroke:#0D0D0D,stroke-width:3px,color:#ffffff
+    style RC fill:#30838C,stroke:#0D0D0D,stroke-width:3px,color:#ffffff
+    style ORCH fill:#30838C,stroke:#0D0D0D,stroke-width:3px,color:#ffffff
+    style CA_DATA fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style CA_USERS fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style CD_DATA fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style CD_USERS fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style RC_DATA fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
+    style RC_USERS fill:#7FD5E8,stroke:#32738C,stroke-width:2px,color:#00323D
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style Copyright fill:#ffffff,stroke:#666666,stroke-width:2px,color:#000000
 ```
 
 The Care Coordination Agent served the broadest user base—anyone involved in patient care navigation. Its queries ranged from simple ("When is my appointment?") to complex ("What prior authorizations are needed for this patient's upcoming surgery?").
@@ -972,16 +978,16 @@ graph TB
     L --> TOTAL
     S --> TOTAL
     
-    style FINAL fill:#f0fff0,stroke:#00897b,stroke-width:2px
-    style G fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style O fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style A fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style L fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style S fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style TOTAL fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style FINAL fill:#E6F3F6,stroke:#32738C,stroke-width:2px,color:#000000
+    style G fill:#14D793,stroke:#0FB67D,stroke-width:2px,color:#003322
+    style O fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style A fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style L fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style S fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style TOTAL fill:#0D0D0D,stroke:#30838C,stroke-width:3px,color:#ffffff
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style Copyright fill:#ffffff,stroke:#666666,stroke-width:2px,color:#000000
 ```
 
 "We answered your question by building three integrated pillars—and proving all three work together."
@@ -1041,17 +1047,20 @@ graph TB
     P2 --> RESULT
     P3 --> RESULT
     
-    style COMPLETE fill:#f0fff0,stroke:#00897b,stroke-width:2px
-    style P1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px
-    style P2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px
-    style P3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px
-    style I1 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style L1 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style G1 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style RESULT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style COMPLETE fill:#E6F3F6,stroke:#32738C,stroke-width:2px,color:#000000
+    style P1 fill:#E6F3F6,stroke:#32738C,stroke-width:2px,color:#000000
+    style P2 fill:#E6F3F6,stroke:#32738C,stroke-width:2px,color:#000000
+    style P3 fill:#E6F3F6,stroke:#32738C,stroke-width:2px,color:#000000
+    style I1 fill:#14D793,stroke:#0FB67D,stroke-width:2px,color:#003322
+    style L1 fill:#14D793,stroke:#0FB67D,stroke-width:2px,color:#003322
+    style G1 fill:#14D793,stroke:#0FB67D,stroke-width:2px,color:#003322
+    style I2 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style L2 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style G2 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style RESULT fill:#0D0D0D,stroke:#30838C,stroke-width:3px,color:#ffffff
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style Copyright fill:#ffffff,stroke:#666666,stroke-width:2px,color:#000000
 ```
 
 Dr. Raj leaned forward. "You've built something that measures itself. That proves itself. That sustains itself."
@@ -1088,15 +1097,15 @@ graph TB
     BUILD -->|"Pillar 3"| W12
     W12 --> FINAL
     
-    style JOURNEY fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style D0 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style BUILD fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style W4 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style W7 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style W10 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style W12 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style FINAL fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style JOURNEY fill:#E6F3F6,stroke:#32738C,stroke-width:2px,color:#000000
+    style D0 fill:#F6D1CE,stroke:#EB898B,stroke-width:2px,color:#7A1F22
+    style BUILD fill:#E6F3F6,stroke:#32738C,stroke-width:2px,color:#000000
+    style W4 fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+    style W7 fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+    style W10 fill:#4478A6,stroke:#32738C,stroke-width:2px,color:#ffffff
+    style W12 fill:#327C8C,stroke:#30838C,stroke-width:2px,color:#ffffff
+    style FINAL fill:#14D793,stroke:#0FB67D,stroke-width:2px,color:#003322
+    style Copyright fill:#ffffff,stroke:#666666,stroke-width:2px,color:#000000
 
 ```
 
