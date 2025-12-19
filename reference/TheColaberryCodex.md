@@ -130,7 +130,7 @@ Use EXACT figures. Never round or approximate.
 **Payback:** 10 weeks (not "about 3 months")
 **Return:** $7.1M ($6.3M savings + $800K revenue)
 **Start readiness:** 28/100 (BI-First archetype)
-**End readiness:** 85/100
+**End readiness:** 86/100
 **SLOs:** Data freshness 25 seconds, NDCG 0.94, API availability 99.92%
 
 Before writing Echo example: Check these figures. Copy exactly. Never vary.
