@@ -1,8 +1,24 @@
 # Chapter 2: The INPACT™ Framework
 
+**The Six Needs Chapter**
+
 ---
 
-**Diagram 0: The INPACT™ Framework — Six Infrastructure Needs for Agent Trust**
+*Monday morning, conference room 3B.*
+
+Sarah Cedao pulled up the assessment dashboard. Krish Yadav studied the numbers in silence.
+
+**28/100.**
+
+"We spent fifteen years building data excellence," Krish said. "How are we failing this badly?"
+
+"We haven't failed at data excellence—we succeeded brilliantly at building the wrong thing for the agent era." Sarah advanced to the breakdown. "Our infrastructure was built for humans analyzing reports over coffee. Agents need something different. They need six things, actually. And we're failing at five of them."
+
+This chapter explains what those six things are.
+
+---
+
+**Figure 2.0: The INPACT™ Framework — Six Infrastructure Needs for Agent Trust**
 
 ```mermaid
 
@@ -36,7 +52,7 @@ graph LR
 
 > **Key Takeaway:** Six infrastructure needs. One framework. Trust.
 
-## Part 1: Framework Introduction (1,540 words)
+## PART 1: FRAMEWORK INTRODUCTION
 
 ### The Architecture of Trust: Building Pillar 1
 
@@ -50,7 +66,7 @@ Chapter 1 revealed why 95% of enterprise AI agent projects fail—not from inade
 
 **Pillar 3: GOALS™** establishes how to measure operational success, ensuring infrastructure continuously fulfills agent needs in production.
 
-**Diagram 1: The Architecture of Trust—Three Integrated Pillars**
+**Figure 2.1: The Architecture of Trust—Three Integrated Pillars**
 
 ```mermaid
 
@@ -103,17 +119,6 @@ Three patterns emerged consistently:
 When we analyzed these failures, six needs emerged. When any single need went unfulfilled, trust collapsed. When all six were addressed systematically, adoption soared. These six needs became INPACT™.
 
 ---
-**📍 CHECKPOINT: What We've Covered So Far**
-
-✅ The Architecture of Trust rests on three integrated pillars: INPACT™ (what), 7-Layer (how), GOALS™ (measure)  
-✅ Agent failures follow paradoxical patterns—high accuracy but abandoned, efficient but unused, evidence-based but overridden  
-✅ Six architectural needs emerged from analyzing 50+ production deployments across industries  
-⭐ **Next:** Understanding each of the six INPACT™ needs and how they parallel human psychology
-
-**Reading Time Remaining:** ~25 minutes
-
-**Your Framework Quick Check:** Which agent paradox (accuracy, efficiency, or trust) most resembles your organization's current challenges?
----
 
 ### The Tony Robbins Parallel: From Human Needs to Agent Needs
 
@@ -121,7 +126,7 @@ Tony Robbins built an empire on one insight: humans have six core needs—certai
 
 **AI agents follow the same pattern.** They don't need psychological fulfillment—they need architectural fulfillment.
 
-**Diagram 2: Human Needs → Agent Needs Parallel**
+**Figure 2.2: Human Needs to Agent Needs Parallel**
 
 ```mermaid
 graph TB
@@ -214,8 +219,6 @@ graph TB
 
 **Agents cannot advocate for themselves.** They depend entirely on infrastructure to fulfill their needs. An agent can't request real-time data when batch ETL is all that's available. It can't negotiate for dynamic permissions when RBAC alone is all that exists.
 
-**This is why INPACT™ focuses on infrastructure capabilities, not agent features.** The framework defines what infrastructure must provide. Trust emerges as the outcome when infrastructure systematically fulfills all six needs.
-
 ### Trust = Earned Outcome, Not Built Component
 
 Traditional enterprise software could require trust: "You must use this ERP system." Users had no alternative. Distrust meant workarounds, but the system remained in use because it was mandated.
@@ -224,7 +227,7 @@ Traditional enterprise software could require trust: "You must use this ERP syst
 
 **Trust emerges when infrastructure consistently fulfills needs:**
 
-**Diagram 3: 6 INPACT™ Needs Fulfilled Agent**
+**Figure 2.3: Six INPACT™ Needs Fulfilled**
 
 ```mermaid
 graph TB
@@ -283,7 +286,7 @@ The six needs interconnect through architecture. Instant (I) requires real-time 
 
 INPACT™ assessment quantifies infrastructure readiness using a 1-6 scoring system per dimension, creating a 36-point maximum (6 dimensions × 6 points). Convert to 100-point scale: (score/36) × 100.
 
-**Diagram 4: INPACT™ Assessment Methodology—From Dimensions to Decision**
+**Figure 2.4: INPACT™ Assessment Methodology—From Dimensions to Decision**
 
 ```mermaid
 graph TB
@@ -337,7 +340,7 @@ graph TB
 
 ### Echo Health's Reality Check
 
-Monday morning, conference room 3B. Sarah Cedao pulled up the INPACT™ assessment dashboard. Marcus Williams and Krish Yadav studied the scores:
+Sarah's dashboard revealed the brutal truth—dimension by dimension:
 
 **I (Instant): 1/6** (critical - batch only)  
 **N (Natural): 2/6** (weak - minimal semantic)  
@@ -348,15 +351,11 @@ Monday morning, conference room 3B. Sarah Cedao pulled up the INPACT™ assessme
 
 **Total: 10/36 = 28% → 28/100**
 
-Sarah broke the silence. "We're not even close to agent-ready. Pilots will keep failing until we fix the foundation."
-
-Krish studied the breakdown. "What's the production threshold?"
-
-"86/100," Marcus replied. "We need 31 points. We have 10. That's a 21-point gap—significant infrastructure work ahead."
+Five critical gaps. One moderate strength. A 21-point climb to reach the 86/100 production threshold.
 
 The transformation roadmap began there.
 
-**Diagram 5: Echo Health's INPACT™ Transformation—28/100 to 86/100 in 10 Weeks**
+**Figure 2.5: Echo Health's INPACT™ Transformation—28/100 to 86/100 in 10 Weeks**
 
 ```mermaid
 graph TB
@@ -411,15 +410,13 @@ A_STATUS["<b>Production-Ready</b><br/><b>• All dimensions ≥5/6 </b><br/><b>�
 
 ---
 
-## Part 2: Echo's Discovery & Prioritization (975 words)
+## PART 2: ECHO'S DISCOVERY AND PRIORITIZATION
 
 ### The Assessment That Changed Everything
 
-The CEO studied Sarah's one-page assessment. "Twenty-eight out of a hundred. We spent fifteen years building data excellence. How are we failing this badly?"
+Sarah's assessment made the rounds. The board wanted answers. Dr. Arun Raj scheduled a follow-up.
 
-Marcus Williams, CDO, leaned forward. "We haven't failed at data excellence—we succeeded brilliantly at building the wrong thing for the agent era."
-
-Sarah nodded. "Marcus is right. We built excellence for the human era—overnight batch processing, visual dashboards, analysts who could wait hours for reports. That infrastructure is sophisticated, well-governed, and completely wrong for agents needing sub-second responses to natural language questions with dynamic authorization."
+"We built excellence for the human era," Sarah explained. "Overnight batch processing, visual dashboards, analysts who could wait hours for reports. That infrastructure is sophisticated, well-governed, and completely wrong for agents needing sub-second responses to natural language questions with dynamic authorization."
 
 ### Two Critical Dimensions Explained
 
@@ -459,22 +456,10 @@ The CEO studied the assessment. "Sarah, you're recommending $1.23M over 90 days 
 The board approved. Week 12 target: 86/100 with first production agent deployed.
 
 ---
-**📍 CHECKPOINT: Understanding the Gap**
 
-✅ Echo assessed at 28/100—five critical infrastructure gaps blocking agent deployment  
-✅ The 86/100 threshold emerged from industry research as minimum for production readiness  
-✅ Two critical dimensions explained: Instant (I) needs real-time data, Permitted (P) needs contextual ABAC on RBAC  
-✅ Dependencies force implementation sequence—can't build authorization on batch data  
-⭐ **Next:** Deep dive into all six INPACT™ needs with Echo's transformation details
+## PART 3: THE SIX NEEDS
 
-**Reading Time Remaining:** ~22 minutes
-
-**Your Framework Quick Check:** If you assessed your infrastructure today, which score range would you expect: 0-30, 31-60, 61-84, or 85+?
----
-
-## Part 3: The Six Needs (4,225 words)
-
-### I — Instant: Speed Builds Confidence
+### I — Instant: Real-Time or Abandoned
 
 **The User Need**
 
@@ -484,7 +469,7 @@ Every second of latency costs trust. A patient calls to schedule. The agent quer
 
 **The Infrastructure Gap**
 
-**Diagram 6: Analytics Era Batch vs. Agent Era Real-Time Response**
+**Figure 2.6: Batch Processing vs. Real-Time Response**
 
 ```mermaid
 graph TB
@@ -544,7 +529,7 @@ Results: 1.8 second average response (82% improvement), under 30-second data fre
 
 ---
 
-### N — Natural: Understanding Builds Connection
+### N — Natural: Understood or Useless
 
 **The User Need**
 
@@ -554,7 +539,7 @@ Research shows GPT-4 achieves 73% execution accuracy on complex database schemas
 
 **The Infrastructure Gap**
 
-**Diagram 7: Analytics Era Manual Translation vs. Agent Era Semantic Understanding**
+**Figure 2.7: Manual Translation vs. Semantic Understanding**
 
 ```mermaid
 graph TB
@@ -614,7 +599,7 @@ Results: Query accuracy improved from 43% to 87% (103% improvement). Simple quer
 
 ---
 
-### P — Permitted: Authorization Builds Safety
+### P — Permitted: Authorized or Liable
 
 **The User Need**
 
@@ -624,7 +609,7 @@ Role-based access control (RBAC) operates at table level: grant all patient reco
 
 **The Infrastructure Gap**
 
-**Diagram 8: From RBAC Baseline to RBAC + Contextual ABAC**
+**Figure 2.8: RBAC Only vs. RBAC + ABAC**
 
 ```mermaid
 graph TB
@@ -679,19 +664,8 @@ Results: HIPAA compliance restored. Policy evaluation: 6ms average (sub-10ms req
 **Measuring Success:** Score 1 = RBAC only, no masking, compliance failures. Score 6 = RBAC + ABAC with sub-10ms evaluation, dynamic masking, zero violations. Echo moved from 1/6 to 5/6.
 
 ---
-**📍 CHECKPOINT: First Three INPACT™ Needs**
 
-✅ **Instant (I)** requires real-time data infrastructure—batch processing creates 24-hour lag that destroys trust  
-✅ **Natural (N)** demands semantic layers mapping business language to technical schemas—87% accuracy vs 43%  
-✅ **Permitted (P)** needs contextual ABAC layered on RBAC—HIPAA compliance restored with 6ms evaluation  
-⭐ **Next:** The final three needs—Adaptive learning, Contextual integration, and Transparent reasoning
-
-**Reading Time Remaining:** ~18 minutes
-
-**Your Framework Quick Check:** Of these three needs (Instant, Natural, Permitted), which represents your organization's biggest gap?
----
-
-### A — Adaptive: Learning Builds Reliability
+### A — Adaptive: Evolve or Erode
 
 **The User Need**
 
@@ -701,7 +675,7 @@ Manual quarterly retraining creates 3-month windows where agents operate with de
 
 **The Infrastructure Gap**
 
-**Diagram 9: Manual Era Quarterly Retraining vs. Adaptive Era Continuous Learning**
+**Figure 2.9: Quarterly Retraining vs. Continuous Learning**
 
 ```mermaid
 graph TB
@@ -761,7 +735,7 @@ Results: Drift detection latency: 48 hours (was 3 months). Retraining cycle: 3 d
 
 ---
 
-### C — Contextual: Integration Builds Completeness
+### C — Contextual: Whole Picture or Half Answers
 
 **The User Need**
 
@@ -771,7 +745,7 @@ Agents operating on single-system data provide incomplete answers: "You have an 
 
 **The Infrastructure Gap**
 
-**Diagram 10: Siloed Era Single-System vs. Contextual Era Cross-System Integration**
+**Figure 2.10: Single-System vs. Cross-System Integration**
 
 ```mermaid
 graph TB
@@ -829,7 +803,7 @@ Results: Query completeness: 40% → 92% (130% improvement). Systems integrated:
 
 ---
 
-### T — Transparent: Explainability Builds Confidence
+### T — Transparent: Show Your Work or Lose Their Trust
 
 **The User Need**
 
@@ -839,7 +813,7 @@ Without transparency, physicians override 70% of agent recommendations—not bec
 
 **The Infrastructure Gap**
 
-**Diagram 11: Black-Box Era Opaque Decisions vs. Transparent Era Explainable Reasoning**
+**Figure 2.11: Opaque Decisions vs. Explainable Reasoning**
 
 ```mermaid
 graph TB
@@ -898,20 +872,12 @@ Physician response: "This makes sense. Proceed with Ozempic." Override: avoided.
 **Measuring Success:** Score 1 = no audit trails, opaque decisions, override rate above 60%. Score 6 = complete traceability, evidence-linked reasoning, override rate under 20%. Echo moved from 1/6 to 5/6.
 
 ---
-**📍 CHECKPOINT: All Six INPACT™ Needs Completed**
 
-✅ **Adaptive (A)** maintains reliability through continuous learning—drift detection in 48 hours, not 3 months  
-✅ **Contextual (C)** delivers completeness through cross-system integration—5 systems, 92% query completeness  
-✅ **Transparent (T)** builds confidence through explainable reasoning—override rates dropped from 70% to 15%  
-✅ Echo moved from 28/100 to 86/100 by systematically fulfilling all six needs  
-⭐ **Next:** How to assess your own infrastructure readiness and prioritize improvements
+Echo fulfilled all six needs. The question now: how do you assess your own readiness?
 
-**Reading Time Remaining:** ~12 minutes
-
-**Your Framework Quick Check:** Which of the six INPACT™ needs resonates most with your organization's current agent challenges?
 ---
 
-## Part 4: Assessment & Scoring (340 words)
+## PART 4: ASSESSMENT AND SCORING
 
 ### Aggregate Scoring
 
@@ -944,20 +910,8 @@ The cost of delayed readiness compounds in three ways. First, abandoned pilots: 
 The 87% not yet ready face a choice: invest now in systematic infrastructure upgrades, or watch the 13% capture market advantage.
 
 ---
-**📍 CHECKPOINT: From Assessment to Action**
 
-✅ INPACT™ scoring: 1-6 per dimension, 36 points maximum, converted to 100-point scale  
-✅ 86/100 threshold = production-ready infrastructure (31 of 36 points minimum)  
-✅ Dependencies force sequence: Instant → Natural+Permitted → Contextual → Adaptive+Transparent  
-✅ Only 13% of enterprises are agent-ready—creating significant early-mover advantage  
-⭐ **Next:** Six key principles for implementing INPACT™ successfully
-
-**Reading Time Remaining:** ~5 minutes
-
-**Your Framework Quick Check:** Based on what you've learned, which phase would be your starting point: real-time data (I), semantic understanding (N+P), integration (C), or learning (A+T)?
----
-
-## Part 5: Key Takeaways (290 words)
+## PART 5: KEY TAKEAWAYS
 
 ### The INPACT™ Principles
 
@@ -991,21 +945,6 @@ Traditional frameworks focus on AI model quality, prompt engineering, or RAG opt
 
 Those topics matter. But they assume infrastructure readiness. INPACT™ establishes the foundation enabling AI capabilities to deliver business value.
 
----
-**📍 FINAL CHECKPOINT: Chapter 2 Complete**
-
-✅ **The Architecture of Trust** requires three integrated pillars: INPACT™ (what), 7-Layer (how), GOALS™ (measure)  
-✅ **Six needs define success:** Instant, Natural, Permitted, Adaptive, Contextual, Transparent—all must be fulfilled  
-✅ **Echo's transformation:** 28/100 → 86/100 in 10 weeks, $1.23M investment, 477% ROI over three years  
-✅ **Dependencies matter:** Sequence implementation (I → N+P → C → A+T) based on architectural foundations  
-✅ **Only 13% are ready:** Early-mover advantage window exists for organizations investing now  
-⭐ **Next Chapter:** From BI-era to Agent-era—understanding the paradigm shift in enterprise architecture
-
-**Congratulations!** You've completed the INPACT™ framework. You now understand what agents need to earn trust.
-
-**Your Action Item:** Schedule a 2-hour INPACT™ assessment with your infrastructure and data teams within the next two weeks.
----
-
 ### Next Steps: From Needs to Architecture
 
 **Chapter 2 established Pillar 1:** What agents need (INPACT™ six needs).
@@ -1021,6 +960,18 @@ Those topics matter. But they assume infrastructure readiness. INPACT™ establi
 Your organization's journey follows the same pattern. The specifics differ—your data systems, your regulatory requirements, your user needs—but the six architectural needs remain universal.
 
 **Ready to assess your infrastructure?** Visit colaberry.ai/assessment for the complete INPACT™ diagnostic tool and implementation guidance.
+
+---
+
+## Chapter Summary
+
+| Part | Content | Key Takeaway |
+|------|---------|--------------|
+| **Part 1** | Framework Introduction | Trust is architectural—six needs must be fulfilled for agents to earn user trust |
+| **Part 2** | Echo's Discovery | The 86/100 threshold determines production readiness; Echo started at 28/100 |
+| **Part 3** | The Six Needs | Each dimension requires specific infrastructure: real-time, semantic, authorization, learning, integration, transparency |
+| **Part 4** | Assessment and Scoring | Dependencies force sequence; only 13% of enterprises are agent-ready |
+| **Part 5** | Key Takeaways | Infrastructure readiness determines success, not AI quality |
 
 ---
 
