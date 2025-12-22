@@ -27,11 +27,10 @@ graph LR
     
     style WITHOUT fill:#FBEAEA,stroke:#EB898B,stroke-width:1px,rx:10,ry:10
     style W1 fill:#F6D1CE,stroke:#EB898B,stroke-width:1px,color:#7A1F22,rx:10,ry:10
-    style TRANSFORM fill:#7FD5E8,stroke:#32738C,stroke-width:1px,color:#00323D,rx:10,ry:10
-    style T1 fill:#7FD5E8,stroke:#32738C,stroke-width:1px,color:#00323D,rx:10,ry:10
+    style TRANSFORM fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#00323D,rx:10,ry:10
+    style T1 fill:#4478A6,stroke:#e4ebed,stroke-width:1px,color:#FFFFFF,rx:10,ry:10
     style WITH fill:#E6F3F6,stroke:#32738C,stroke-width:1px,rx:10,ry:10
     style L1 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-
 
 
 ```

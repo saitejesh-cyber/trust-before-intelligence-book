@@ -25,8 +25,8 @@ graph LR
 
     style BEFORE fill:#FBEAEA,stroke:#EB898B,stroke-width:1px,rx:10,ry:10
     style B1 fill:#F6D1CE,stroke:#EB898B,stroke-width:1px,color:#7A1F22,rx:10,ry:10
-    style PHASES fill:#7FD5E8,stroke:#32738C,stroke-width:1px,color:#00323D,rx:10,ry:10
-    style P1 fill:#7FD5E8,stroke:#32738C,stroke-width:1px,color:#00323D,rx:10,ry:10
+    style PHASES fill:##E6F3F6,stroke:#32738C,stroke-width:1px,color:#00323D,rx:10,ry:10
+    style P1 fill:#4478A6,stroke:#e4ebed,stroke-width:1px,color:#FFFFFF,rx:10,ry:10
     style AFTER fill:#E6F3F6,stroke:#32738C,stroke-width:1px,rx:10,ry:10
     style A1 fill:#30838C,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
 
