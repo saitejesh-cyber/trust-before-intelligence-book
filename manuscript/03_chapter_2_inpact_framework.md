@@ -742,7 +742,7 @@ graph TB
     style D1 fill:#EB898B,stroke:#7A1F22,stroke-width:1px,color:#7A1F22,rx:10,ry:10
 
     %% ---- Agent Era (Solution) ----
-    style ERA2 fill:#E6F3F6,stroke:#32738C,stroke-width:1px
+    style ERA2 fill:#E6F3F6,stroke:#32738C,stroke-width:1px,rx:10,ry:10
     style A2 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style B2 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style C2 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
@@ -810,7 +810,7 @@ graph TB
     end
 
     %% ---- Siloed Era (Problem) ----
-    style ERA1 fill:#FBEAEA,stroke:#EB898B,stroke-width:1px
+    style ERA1 fill:#FBEAEA,stroke:#EB898B,stroke-width:1px,rx:10,ry:10
     style A1 fill:#F6D1CE,stroke:#EB898B,stroke-width:1px,color:#7A1F22,rx:10,ry:10
     style B1 fill:#F6D1CE,stroke:#EB898B,stroke-width:1px,color:#7A1F22,rx:10,ry:10
 
@@ -884,7 +884,7 @@ graph TB
         A2 --> B2 --> C2 --> D2
     end
 
-    style ERA1 fill:#FBEAEA,stroke:#EB898B,stroke-width:1px
+    style ERA1 fill:#FBEAEA,stroke:#EB898B,stroke-width:1px,rx:10,ry:10
     style A1 fill:#F6D1CE,stroke:#EB898B,stroke-width:1px,color:#7A1F22,rx:10,ry:10
     style B1 fill:#F6D1CE,stroke:#EB898B,stroke-width:1px,color:#7A1F22,rx:10,ry:10
 
