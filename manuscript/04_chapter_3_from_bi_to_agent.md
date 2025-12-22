@@ -236,7 +236,7 @@ graph TB
     style O4 fill:#EB898B,color:#ffffff,stroke:#7A1F22,stroke-width:1px,rx:10,ry:10
 
     %% TRANSITION — Neutral / Informative (LIGHT CYAN)
-    style Shift fill:#7FD5E8,stroke:#32738C,stroke-width:1px,color:#00323D
+    style Shift fill:#7FD5E8,stroke:#32738C,stroke-width:1px,color:#00323,rx:10,ry:10
 
     %% AGENT ERA — Solutions / Modern (TEAL)
     style new fill:#E6F3F6,stroke:#32738C,stroke-width:1px,rx:10,ry:10
