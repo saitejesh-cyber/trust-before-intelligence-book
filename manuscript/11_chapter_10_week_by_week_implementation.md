@@ -127,7 +127,7 @@ graph LR
     style P2 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style P3 fill:#30838C,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style P4 fill:#14D793,stroke:#0FB67D,stroke-width:1px,color:#003322,rx:10,ry:10
-    style Copyright fill:none,stroke:#666666,stroke-width:1px,color:#000000
+    style Copyright fill:none,stroke:none,color:#000000
 
 ```
 
@@ -268,7 +268,7 @@ graph LR
     style RESOLVED fill:#7FD5E8,stroke:#32738C,stroke-width:1px,color:#00323D,rx:10,ry:10
     style CONTINUE fill:#14D793,stroke:#0FB67D,stroke-width:1px,color:#003322,rx:10,ry:10
     style ESCALATE fill:#0D0D0D,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style Copyright fill:none,stroke:#666666,stroke-width:1px,color:#000000
+    style Copyright fill:none,stroke:none,color:#000000
 
 ```
 
@@ -395,7 +395,7 @@ graph TB
     style S1 fill:#30838C,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style S2 fill:#30838C,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style S3 fill:#30838C,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style Copyright fill:none,stroke:#666666,stroke-width:1px,color:#000000
+    style Copyright fill:none,stroke:none,color:#000000
 
 ```
 
@@ -895,7 +895,7 @@ graph LR
     style S3 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style S4 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style S5 fill:#14D793,stroke:#0FB67D,stroke-width:1px,color:#003322,rx:10,ry:10
-    style Copyright fill:none,stroke:#666666,stroke-width:1px,color:#000000
+    style Copyright fill:none,stroke:none,color:#000000
 ```
 
 **Day 1-3: RAG Architecture Implementation**
@@ -1196,7 +1196,7 @@ graph TB
     style G1 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style G2 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style G3 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style Copyright fill:none,stroke:#666666,stroke-width:1px,color:#000000
+    style Copyright fill:none,stroke:none,color:#000000
 
 ```
 
@@ -1743,7 +1743,7 @@ graph RL
     style T5 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style T6 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style T7 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style Copyright fill:none,stroke:#666666,stroke-width:1px,color:#000000
+    style Copyright fill:none,stroke:none,color:#000000
 
 ```
 

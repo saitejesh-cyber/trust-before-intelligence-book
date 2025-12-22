@@ -87,7 +87,7 @@ graph LR
     style TOTAL fill:#EB898B,stroke:#7A1F22,stroke-width:1px,color:#ffffff,rx:10,ry:10
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:#666666,stroke-width:1px,color:#000000
+    style Copyright fill:none,stroke:none,color:#000000
 ```
 
 "Fifteen out of twenty-five," Marcus said. "We need twenty-one to deploy clinical AI in production. That's six points in two weeks."
@@ -443,7 +443,7 @@ graph TB
     style R2 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style R3 fill:#EB898B,stroke:#7A1F22,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style RESULT fill:#14D793,stroke:#0FB67D,stroke-width:1px,color:#003322,rx:10,ry:10
-    style Copyright fill:none,stroke:#666666,stroke-width:1px,color:#000000
+    style Copyright fill:none,stroke:none,color:#000000
 
 ```
 
@@ -519,7 +519,7 @@ graph TB
     style PROMPT fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style RESP fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style RESULT fill:#14D793,stroke:#0FB67D,stroke-width:1px,color:#003322,rx:10,ry:10
-    style Copyright fill:none,stroke:#666666,stroke-width:1px,color:#000000
+    style Copyright fill:none,stroke:none,color:#000000
 
 
 ```
@@ -604,7 +604,7 @@ graph TB
     style GATE3 fill:#7FD5E8,stroke:#32738C,stroke-width:1px,color:#00323D,rx:10,ry:10
     style PASS fill:#14D793,stroke:#0FB67D,stroke-width:1px,color:#003322,rx:10,ry:10
     style QUARANTINE fill:#F6D1CE,stroke:#EB898B,stroke-width:1px,color:#7A1F22,rx:10,ry:10
-    style Copyright fill:none,stroke:#666666,stroke-width:1px,color:#000000
+    style Copyright fill:none,stroke:none,color:#000000
 
 
 ```
@@ -832,7 +832,7 @@ graph TB
     style RC_USERS fill:#7FD5E8,stroke:#32738C,stroke-width:1px,color:#00323D,rx:10,ry:10
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:#666666,stroke-width:1px,color:#000000
+    style Copyright fill:none,stroke:none,color:#000000
 ```
 
 The Care Coordination Agent served the broadest user base—anyone involved in patient care navigation. Its queries ranged from simple ("When is my appointment?") to complex ("What prior authorizations are needed for this patient's upcoming surgery?").
@@ -987,7 +987,7 @@ graph TB
     style TOTAL fill:#0D0D0D,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:#666666,stroke-width:1px,color:#000000
+    style Copyright fill:none,stroke:none,color:#000000
 ```
 
 "We answered your question by building three integrated pillars—and proving all three work together."
@@ -1060,7 +1060,7 @@ graph TB
     style RESULT fill:#0D0D0D,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:#666666,stroke-width:1px,color:#000000
+    style Copyright fill:none,stroke:none,color:#000000
 ```
 
 Dr. Raj leaned forward. "You've built something that measures itself. That proves itself. That sustains itself."
@@ -1105,7 +1105,7 @@ graph TB
     style W10 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style W12 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style FINAL fill:#14D793,stroke:#0FB67D,stroke-width:1px,color:#003322,rx:10,ry:10
-    style Copyright fill:none,stroke:#666666,stroke-width:1px,color:#000000
+    style Copyright fill:none,stroke:none,stroke-width:1px,color:#000000
 
 ```
 

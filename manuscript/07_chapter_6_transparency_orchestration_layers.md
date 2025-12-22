@@ -126,26 +126,32 @@ The three-week build timeline—Week 8 Governance, Week 9 Observability, Week 10
 
 ```mermaid
 graph TB
-    subgraph "<b>TRUST LAYERS (Ch 6)</b>"
-        L7["<b>Layer 7: Orchestration</b><br/><b>Multi-Agent Coordination</b>"]
-        L6["<b>Layer 6: Observability</b><br/><b>Tracing & Monitoring</b>"]
-        L5["<b>Layer 5: Governance</b><br/><b>ABAC + HITL</b>"]
+    subgraph TRUST_SUB["<b>TRUST LAYERS (Ch 6)</b>"]
+        direction TB
+        L7["<b>Layer 7: Orchestration</b><br/>Multi-Agent Coordination"]
+        L6["<b>Layer 6: Observability</b><br/>Tracing & Monitoring"]
+        L5["<b>Layer 5: Governance</b><br/>ABAC + HITL"]
     end
     
-    subgraph "<b>INTELLIGENCE (Ch 5)</b>"
-        L4["<b>Layer 4: Intelligence</b><br/><b>RAG + LLM</b>"]
-        L3["<b>Layer 3: Semantic</b><br/><b>Business Context</b>"]
+    subgraph INTEL_SUB["<b>INTELLIGENCE (Ch 5)</b>"]
+        direction TB
+        L4["<b>Layer 4: Intelligence</b><br/>RAG + LLM"]
+        L3["<b>Layer 3: Semantic</b><br/>Business Context"]
     end
     
-    subgraph "<b>FOUNDATION (Ch 4)</b>"
-        L2["<b>Layer 2: Real-Time</b><br/><b>CDC & Streaming</b>"]
-        L1["<b>Layer 1: Storage</b><br/><b>Multi-Modal</b>"]
+    subgraph FOUND_SUB["<b>FOUNDATION (Ch 4)</b>"]
+        direction TB
+        L2["<b>Layer 2: Real-Time</b><br/>CDC & Streaming"]
+        L1["<b>Layer 1: Storage</b><br/>Multi-Modal"]
     end
     
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    Copyright["© 2025 Colaberry Inc."]
     
     L7 --> L6 --> L5 --> L4 --> L3 --> L2 --> L1
     
+    style TRUST_SUB fill:#E6F3F6,stroke:#32738C,stroke-width:1px,rx:10,ry:10
+    style INTEL_SUB fill:#E6F3F6,stroke:#32738C,stroke-width:1px,rx:10,ry:10
+    style FOUND_SUB fill:#E6F3F6,stroke:#666666,stroke-width:1px,rx:10,ry:10
     style L7 fill:#30838C,color:#ffffff,stroke:#0D0D0D,stroke-width:1px,rx:10,ry:10
     style L6 fill:#30838C,color:#ffffff,stroke:#0D0D0D,stroke-width:1px,rx:10,ry:10
     style L5 fill:#30838C,color:#ffffff,stroke:#0D0D0D,stroke-width:1px,rx:10,ry:10
@@ -1170,24 +1176,40 @@ gantt
 
 ```mermaid
 graph LR
-    subgraph "<b>Week 7</b>"
+    classDef intermediateGraph fill:#E6F3F6,stroke:#32738C,stroke-width:1px,rx:10,ry:10;
+    classDef intermediateNode fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10;
+    classDef neutralNode fill:#7FD5E8,stroke:#32738C,stroke-width:1px,color:#00323D,rx:10,ry:10;
+    classDef successGraph fill:#E6F3F6,stroke:#0FB67D,stroke-width:1px,rx:10,ry:10;
+    classDef successNode fill:#14D793,stroke:#0FB67D,stroke-width:1px,color:#003322,rx:10,ry:10;
+    classDef meta fill:none,stroke:none,color:#666666,font-size:12px;
+
+    subgraph W7_SUB["<b>Week 7</b>"]
+        direction TB
         W7["<b>TOTAL: 67/100</b>"]
     end
     
     Arrow["<b>→</b><br/><b>+18 pts</b>"]
     
-    subgraph "<b>Week 10</b>"
+    subgraph W10_SUB["<b>Week 10</b>"]
+        direction TB
         W10["<b>TOTAL: 85/100</b>"]
     end
     
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    Copyright["© 2025 Colaberry Inc."]
     
     W7 --> Arrow --> W10
     
-    style W7 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style Arrow fill:#7FD5E8,stroke:#32738C,stroke-width:1px,color:#00323D,rx:10,ry:10
-    style W10 fill:#14D793,color:#003322,stroke:#0FB67D,stroke-width:1px,rx:10,ry:10
-    style Copyright fill:none,stroke:none,color:#666666
+    class W7_SUB intermediateGraph
+    class W7 intermediateNode
+    
+    class Arrow neutralNode
+    
+    class W10_SUB successGraph
+    class W10 successNode
+    
+    class Copyright meta
+
+    linkStyle default stroke:#32738C,stroke-width:1px;
 ```
 
 **INPACT™ Dimension Changes:**
@@ -1250,23 +1272,28 @@ Seventy days. Seven layers. From 28/100 to 85/100.
 
 ```mermaid
 graph TB
-    subgraph "<b>COMPLETE ARCHITECTURE - WEEK 10</b>"
-        L7["<b>Layer 7: Orchestration</b><br/><b>✓ LangGraph Multi-Agent</b>"]
-        L6["<b>Layer 6: Observability</b><br/><b>✓ OpenTelemetry + Datadog</b>"]
-        L5["<b>Layer 5: Governance</b><br/><b>✓ OPA + ABAC + HITL</b>"]
-        L4["<b>Layer 4: Intelligence</b><br/><b>✓ RAG + LLM Pipeline</b>"]
-        L3["<b>Layer 3: Semantic</b><br/><b>✓ 2,400 Clinical Terms</b>"]
-        L2["<b>Layer 2: Real-Time</b><br/><b>✓ 28-Second Freshness</b>"]
-        L1["<b>Layer 1: Storage</b><br/><b>✓ 8 Storage Categories</b>"]
+    subgraph ARCH_SUB["<b>COMPLETE ARCHITECTURE - WEEK 10</b>"]
+        direction TB
+        
+        L7["<b>Layer 7: Orchestration</b><br/>✓ LangGraph Multi-Agent"]
+        L6["<b>Layer 6: Observability</b><br/>✓ OpenTelemetry + Datadog"]
+        L5["<b>Layer 5: Governance</b><br/>✓ OPA + ABAC + HITL"]
+        L4["<b>Layer 4: Intelligence</b><br/>✓ RAG + LLM Pipeline"]
+        L3["<b>Layer 3: Semantic</b><br/>✓ 2,400 Clinical Terms"]
+        L2["<b>Layer 2: Real-Time</b><br/>✓ 28-Second Freshness"]
+        L1["<b>Layer 1: Storage</b><br/>✓ 8 Storage Categories"]
     end
     
-    INPACT["<b>INPACT™: 85/100</b><br/><b>Production Ready</b>"]
+    INPACT["<b>INPACT™: 85/100</b><br/>Production Ready"]
     
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    Copyright["© 2025 Colaberry Inc."]
     
+    %% --- FLOW ---
     L7 --> L6 --> L5 --> L4 --> L3 --> L2 --> L1
     L1 -.->|<b>Enables</b>| INPACT
     
+    
+    style ARCH_SUB fill:#E6F3F6,stroke:#32738C,stroke-width:1px,rx:10,ry:10
     style L7 fill:#30838C,color:#ffffff,stroke:#0D0D0D,stroke-width:1px,rx:10,ry:10
     style L6 fill:#30838C,color:#ffffff,stroke:#0D0D0D,stroke-width:1px,rx:10,ry:10
     style L5 fill:#30838C,color:#ffffff,stroke:#0D0D0D,stroke-width:1px,rx:10,ry:10

@@ -148,7 +148,7 @@ graph TB
     style INPACT fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style Layers fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style GOALS fill:#14D793,color:#003322,stroke:#0FB67D,stroke-width:1px,rx:10,ry:10
-    style Copyright fill:none,stroke:#666666,stroke-width:1px,color:#000000
+    style Copyright fill:none,stroke:none,stroke-width:1px,color:#000000
 
 
 ```
@@ -308,7 +308,7 @@ graph TB
     style W6 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style W7 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style COMPLETE fill:#14D793,stroke:#0FB67D,stroke-width:1px,color:#003322,rx:10,ry:10
-    style Copyright fill:none,stroke:#666666,stroke-width:1px,color:#000000
+    style Copyright fill:none,stroke:none,stroke-width:1px,color:#000000
 
 ```
 
@@ -1150,7 +1150,7 @@ graph TD
     style SLOW fill:#0D0D0D,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:#666666,stroke-width:1px,color:#000000
+    style Copyright fill:none,stroke:none,stroke-width:1px,color:#000000
 ```
 
 ---
@@ -1281,7 +1281,7 @@ graph TB
     style CLARIFY fill:#EB898B,stroke:#7A1F22,stroke-width:1px,color:#ffffff,rx:10,ry:10
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:#666666,stroke-width:1px,color:#000000
+    style Copyright fill:none,stroke:none,stroke-width:1px,color:#000000
 ```
 
 ### The Multi-Agent Challenge
@@ -1574,7 +1574,7 @@ graph TB
     style FIX fill:#F6D1CE,stroke:#EB898B,stroke-width:1px,color:#7A1F22,rx:10,ry:10
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:#666666,stroke-width:1px,color:#000000
+    style Copyright fill:none,stroke:none,stroke-width:1px,color:#000000
 ```
 
 ### Echo's Data Quality Targets
@@ -1652,7 +1652,7 @@ graph TB
     style S fill:#14D793,stroke:#0FB67D,stroke-width:1px,color:#003322,rx:10,ry:10
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:#666666,stroke-width:1px,color:#000000
+    style Copyright fill:none,stroke:none,stroke-width:1px,color:#000000
 ```
 
 ### The Trust Flywheel
@@ -1685,7 +1685,7 @@ graph LR
     style TRUST fill:#14D793,stroke:#0FB67D,stroke-width:1px,color:#003322,rx:10,ry:10
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:#666666,stroke-width:1px,color:#000000
+    style Copyright fill:none,stroke:none,stroke-width:1px,color:#000000
 ```
 
 "GOALS™ measurements reveal whether INPACT™ needs are truly being met," Marcus explained. "When Lexicon scores drop, it signals the Natural (N) need is degrading. When Availability drops, Instant (I) is at risk. This feedback drives architecture improvements—which layers need attention, what upgrades are needed."
@@ -1816,7 +1816,7 @@ graph TB
     style THRESHOLD fill:#30838C,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:#666666,stroke-width:1px,color:#000000
+    style Copyright fill:none,stroke:none,stroke-width:1px,color:#000000
 ```
 
 ### The Week 12 Target

@@ -121,7 +121,7 @@ graph TD
     style P2 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style P3 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style SCORE fill:#14D793,stroke:#0FB67D,stroke-width:1px,color:#003322,rx:10,ry:10
-    style Copyright fill:none,stroke:#666666,stroke-width:1px,color:#000000
+    style Copyright fill:none,stroke:none,color:#000000
 ```
 
 **Pillar 1: INPACT™ Agent Needs (40% Weight)**
@@ -266,7 +266,7 @@ graph LR
     style BUILD fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style BUY fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style PARTNER fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style Copyright fill:none,stroke:#666666,stroke-width:1px,color:#000000
+    style Copyright fill:none,stroke:none,color:#000000
 
 ```
 
@@ -487,7 +487,7 @@ graph TB
     style L3 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style L2 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style L1 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style Copyright fill:none,stroke:#666666,stroke-width:1px,color:#000000
+    style Copyright fill:none,stroke:none,color:#000000
 
 ```
 
@@ -1428,7 +1428,7 @@ graph LR
     style L3 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style L2 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style L1 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style Copyright fill:none,stroke:#666666,stroke-width:1px,color:#000000
+    style Copyright fill:none,stroke:none,color:#000000
 
 ```
 

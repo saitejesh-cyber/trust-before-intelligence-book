@@ -122,7 +122,7 @@ graph LR
     style A2 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style G1 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style R1 fill:#14D793,stroke:#0FB67D,stroke-width:1px,color:#003322,rx:10,ry:10
-    style Copyright fill:none,stroke:#666666,stroke-width:1px,color:#000000
+    style Copyright fill:none,stroke:none,color:#000000
 ```
 
 The integration principle is simple: **if you assess INPACT™ comprehensively, you've assessed everything.**
@@ -236,7 +236,7 @@ graph LR
     style M fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style G fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style H fill:#14D793,stroke:#0FB67D,stroke-width:1px,color:#003322,rx:10,ry:10
-    style Copyright fill:none,stroke:#666666,stroke-width:1px,color:#000000
+    style Copyright fill:none,stroke:none,color:#000000
 ```
 
 | Raw Score | Percentage | Trust Band | Agent Readiness |
@@ -309,7 +309,7 @@ graph LR
     style L4 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style L5 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style L6 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style Copyright fill:none,stroke:#666666,stroke-width:1px,color:#000000
+    style Copyright fill:none,stroke:none,color:#000000
 ```
 
 **The Mapping Principle**
@@ -1087,7 +1087,7 @@ graph LR
     style W7 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style W10 fill:#14D793,stroke:#0FB67D,stroke-width:1px,color:#003322,rx:10,ry:10
     style W12 fill:#14D793,stroke:#0FB67D,stroke-width:1px,color:#003322,rx:10,ry:10
-    style Copyright fill:none,stroke:#666666,stroke-width:1px,color:#000000
+    style Copyright fill:none,stroke:none,color:#000000
 ```
 
 **Echo's INPACT™ Progression — Milestone View**
@@ -1294,7 +1294,7 @@ graph TD
     style T1 fill:#30838C,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style T2 fill:#30838C,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style T3 fill:#30838C,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style Copyright fill:none,stroke:#666666,stroke-width:1px,color:#000000
+    style Copyright fill:none,stroke:none,color:#000000
 
 ```
 

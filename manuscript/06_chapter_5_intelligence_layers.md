@@ -1190,25 +1190,29 @@ gantt
 
 ```mermaid
 graph LR
-    subgraph "<b>Week 4:Foundation Layer</b>"
+    subgraph W4_SUB["<b>Week 4: Foundation Layer</b>"]
+        direction TB
         W4_TOTAL["<b>TOTAL: 42/100</b>"]
     end
     
     ARROW["<b>→</b><br/><b>+25 pts</b>"]
     
-    subgraph "<b>Week 7:Intelligence Layer</b>"
+    subgraph W7_SUB["<b>Week 7: Intelligence Layer</b>"]
+        direction TB
         W7_TOTAL["<b>TOTAL: 67/100</b>"]
     end
     
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    Copyright["© 2025 Colaberry Inc."]
     
     W4_TOTAL --> ARROW
     ARROW --> W7_TOTAL
     
+    style W4_SUB fill:#FBEAEA,stroke:#EB898B,stroke-width:1px,color:#7A1F22,rx:10,ry:10
     style W4_TOTAL fill:#F6D1CE,stroke:#EB898B,stroke-width:1px,color:#7A1F22,rx:10,ry:10
     style ARROW fill:#7FD5E8,stroke:#32738C,stroke-width:1px,color:#00323D,rx:10,ry:10
-    style W7_TOTAL fill:#30838C,color:#ffffff,stroke:#0D0D0D,stroke-width:1px,rx:10,ry:10
-    style Copyright fill:none,stroke:none,color:#666666,rx:10,ry:10
+    style W7_SUB fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#32738C,rx:10,ry:10
+    style W7_TOTAL fill:#30838C,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
+    style Copyright fill:none,stroke:none,color:#666666
 ```
 
 | Dimension | Week 4 | Week 7 | Change | Driver |
