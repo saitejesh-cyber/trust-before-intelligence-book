@@ -1,34 +1,67 @@
-# Chapter 3: From BI-Era to Agent-Era: Seven Gaps
+# Chapter 3: From BI-Era to Agent-Era
+
+**The Seven Gaps Chapter**
 
 ---
+*"Run me through it again," Marcus said. "How does fifteen years of excellence add up to 28 out of 100?"*
 
+*Sarah pulled up her analysis. "Because we measured the wrong things. Our dashboards were fast. Our data quality was pristine. Our governance was bulletproof. But agents don't use dashboards."*
+
+*She shared her screen—seven lines that explained everything:*
+
+Gap 1: Storage that couldn't handle vectors or graphs.
+Gap 2: Data that was always a day old.
+Gap 3: Schemas no agent could understand.
+Gap 4: Search that couldn't find meaning.
+Gap 5: Permissions frozen at login.
+Gap 6: Decisions no one could explain.
+Gap 7: Agents that couldn't coordinate.
+
+*Seven gaps. Each one a death sentence for agent deployments. Each one invisible to the metrics that had won Echo industry awards.*
+
+*This chapter maps those gaps—and explains why transformation, not retrofit, is the only path forward.*
+
+---
 
 ```mermaid
 
 graph LR
-    subgraph BEFORE["DAY 0"]
+    subgraph BEFORE["<b>DAY 0: THE PROBLEM</b>"]
         direction TB
-        B1["INPACT™: 28/100<br/><br/>No framework<br/><br/>No roadmap<br/><br/><b>Where do we start?</b>"]
+        B1["<b>INPACT™: 28/100</b>"]
+        B2["<b>7 Gaps Identified:</b><br/><b>Storage | Real-time | Semantic</b><br/><b>Retrieval | Permissions</b><br/><b>Observability | Orchestration</b>"]
     end
     
-    subgraph PHASES["7 LAYERS - 3 PHASES"]
+    subgraph SOLUTION["<b>THE SOLUTION</b>"]
         direction TB
-        P1["Phase 1: Foundation<br/>Layers 1,2<br/><br/>Phase 2: Intelligence<br/>Layers 3,4<br/><br/>Phase 3: Trust Layers 5,6<br/> Orchestration Layer 7"]
+        S1["<b>7 Gaps → 7 Layers</b><br/><br/><b>Phase 1: Foundation</b><br/><b>Layers 1-2</b><br/><br/><b>Phase 2: Intelligence</b><br/><b>Layers 3-4</b><br/><br/><b>Phase 3: Trust</b><br/><b>Layers 5-7</b>"]
     end
     
-    subgraph AFTER["DAY 70"]
+    subgraph AFTER["<b>DAY 70: THE RESULT</b>"]
         direction TB
-        A1["INPACT™: 86/100<br/><br/>7 Layers Complete<br/><br/>3 Agents Live<br/><br/><b>Production Ready</b>"]
+        A1["<b>INPACT™: 86/100</b><br/><br/><b>7 Layers Complete</b><br/><b>3 Agents Live</b><br/><br/><b>Production Ready</b>"]
     end
     
-    BEFORE --> PHASES --> AFTER
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
-    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style PHASES fill:#fff3cd,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style B1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style P1 fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    BEFORE --> SOLUTION --> AFTER
+    
+    %% RED - Problems/Old Era (Day 0 with gaps)
+    style BEFORE fill:#fff5f5,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style B1 fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
+    style B2 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    
+    %% ORANGE - Transition/Solution
+    style SOLUTION fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style S1 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    
+    %% TEAL - Success/Result (Day 70)
+    style AFTER fill:#f0fff0,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A1 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    
+    %% Copyright
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+
 
 ```
 
