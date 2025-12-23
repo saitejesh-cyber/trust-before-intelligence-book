@@ -28,13 +28,12 @@ Gap 7: Agents that couldn't coordinate.
 graph LR
     subgraph BEFORE["<b>DAY 0: THE PROBLEM</b>"]
         direction TB
-        B1["<b>INPACT™: 28/100</b>"]
-        B2["<b>7 Gaps Identified:</b><br/><b>Storage | Real-time | Semantic</b><br/><b>Retrieval | Permissions</b><br/><b>Observability | Orchestration</b>"]
+        B1["<b>INPACT™: 28/100</b><br/><br/><b>7 Infrastructure Gaps</b><br/><br/><b>No vectors or graphs</b><br/><b>Data always stale</b><br/><b>Schemas unreadable</b><br/><b>Search without meaning</b><br/><b>Permissions frozen</b><br/><b>Decisions unexplainable</b><br/><b>Agents isolated</b>"]
     end
     
     subgraph SOLUTION["<b>THE SOLUTION</b>"]
         direction TB
-        S1["<b>7 Gaps → 7 Layers</b><br/><br/><b>Phase 1: Foundation</b><br/><b>Layers 1-2</b><br/><br/><b>Phase 2: Intelligence</b><br/><b>Layers 3-4</b><br/><br/><b>Phase 3: Trust</b><br/><b>Layers 5-7</b>"]
+        S1["<b>7 Gaps → 7 Layers</b><br/><br/><b>3 Phases</b><br/><b>70 Days</b><br/><b>$1.23M</b>"]
     end
     
     subgraph AFTER["<b>DAY 70: THE RESULT</b>"]
@@ -48,8 +47,7 @@ graph LR
     
     %% RED - Problems/Old Era (Day 0 with gaps)
     style BEFORE fill:#fff5f5,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style B1 fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
-    style B2 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style B1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
     
     %% ORANGE - Transition/Solution
     style SOLUTION fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
@@ -61,7 +59,6 @@ graph LR
     
     %% Copyright
     style Copyright fill:#ffffff,stroke:none,color:#666666
-
 
 ```
 
