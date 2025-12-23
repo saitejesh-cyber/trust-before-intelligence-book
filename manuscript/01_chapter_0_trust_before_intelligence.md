@@ -147,7 +147,7 @@ graph LR
     style TRANSFORM fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#000000, rx:10,ry:10
     style T1 fill:#4478A6,stroke:##e4ebed,color:#ffffff, rx:10,ry:10
     style AgentEra fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#00323D rx:10,ry:10
-    style A1 fill:#02B1D6,stroke:#32738C,stroke-width:1px,color:#ffffff, rx:10,ry:10
+    style A1 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff, rx:10,ry:10
     style Copyright fill:none,stroke:none,color:#666666
 
 ```
