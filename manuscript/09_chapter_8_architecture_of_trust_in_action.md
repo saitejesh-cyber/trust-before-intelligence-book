@@ -24,9 +24,9 @@ graph LR
     
     BEFORE --> PILLARS --> AFTER
     
-    style BEFORE fill:#FBEAEA,stroke:#EB898B,stroke-width:0.5px,color:#7A1F22,rx:10,ry:10
-    style PILLARS fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
-    style AFTER fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
+    style BEFORE fill:#FBEAEA,stroke:#EB898B,stroke-width:0.5px,color:#121212,rx:10,ry:10
+    style PILLARS fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#121212,rx:10,ry:10
+    style AFTER fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#121212,rx:10,ry:10
     style B1 fill:#F6D1CE,stroke:#EB898B,stroke-width:0.5px,color:#7A1F22,rx:10,ry:10
     style P1 fill:#30838C,stroke:#0D0D0D,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style A1 fill:#14D793,stroke:#0FB67D,stroke-width:0.5px,color:#003322,rx:10,ry:10
@@ -440,7 +440,7 @@ graph TB
     R2 --> RESULT
     R3 --> RESULT
     
-    style CACHE fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
+    style CACHE fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#121212,rx:10,ry:10
     style QUERY fill:#30838C,stroke:#0D0D0D,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style L1 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style L2 fill:#4478A6,stroke:#32738C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
@@ -517,7 +517,7 @@ graph TB
     HIGH --> RESULT
     LOW --> PROMPT --> RESP --> RESULT
     
-    style DISAMBIGUATION fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
+    style DISAMBIGUATION fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#121212,rx:10,ry:10
     style Q fill:#7FD5E8,stroke:#32738C,stroke-width:0.5px,color:#00323D,rx:10,ry:10
     style CONF fill:#4478A6,stroke:#32738C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style HIGH fill:#14D793,stroke:#0FB67D,stroke-width:0.5px,color:#003322,rx:10,ry:10
@@ -603,7 +603,7 @@ graph TB
     GATE3 -->|"Pass"| PASS
     GATE3 -->|"Flag"| QUARANTINE
     
-    style QUALITY fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
+    style QUALITY fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#121212,rx:10,ry:10
     style SOURCE fill:#30838C,stroke:#0D0D0D,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style GATE1 fill:#7FD5E8,stroke:#32738C,stroke-width:0.5px,color:#00323D,rx:10,ry:10
     style GATE2 fill:#7FD5E8,stroke:#32738C,stroke-width:0.5px,color:#00323D,rx:10,ry:10
@@ -822,10 +822,10 @@ graph TB
         ORCH --> RC
     end
     
-    style AGENTS fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
-    style CARE fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
-    style CLINICAL fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
-    style REVENUE fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
+    style AGENTS fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#121212,rx:10,ry:10
+    style CARE fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#121212,rx:10,ry:10
+    style CLINICAL fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#121212,rx:10,ry:10
+    style REVENUE fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#121212,rx:10,ry:10
     style CA fill:#30838C,stroke:#0D0D0D,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style CD fill:#30838C,stroke:#0D0D0D,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style RC fill:#30838C,stroke:#0D0D0D,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
@@ -984,7 +984,7 @@ graph TB
     L --> TOTAL
     S --> TOTAL
     
-    style FINAL fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
+    style FINAL fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#121212,rx:10,ry:10
     style G fill:#14D793,stroke:#0FB67D,stroke-width:0.5px,color:#003322,rx:10,ry:10
     style O fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style A fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
@@ -1053,10 +1053,10 @@ graph TB
     P2 --> RESULT
     P3 --> RESULT
     
-    style COMPLETE fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
-    style P1 fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
-    style P2 fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
-    style P3 fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
+    style COMPLETE fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#121212,rx:10,ry:10
+    style P1 fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#121212,rx:10,ry:10
+    style P2 fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#121212,rx:10,ry:10
+    style P3 fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#121212,rx:10,ry:10
     style I1 fill:#14D793,stroke:#0FB67D,stroke-width:0.5px,color:#003322,rx:10,ry:10
     style L1 fill:#14D793,stroke:#0FB67D,stroke-width:0.5px,color:#003322,rx:10,ry:10
     style G1 fill:#14D793,stroke:#0FB67D,stroke-width:0.5px,color:#003322,rx:10,ry:10
@@ -1103,9 +1103,9 @@ graph TB
     BUILD -->|"Pillar 3"| W12
     W12 --> FINAL
     
-    style JOURNEY fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
+    style JOURNEY fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#121212,rx:10,ry:10
     style D0 fill:#F6D1CE,stroke:#EB898B,stroke-width:0.5px,color:#7A1F22,rx:10,ry:10
-    style BUILD fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
+    style BUILD fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#121212,rx:10,ry:10
     style W4 fill:#4478A6,stroke:#32738C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style W7 fill:#4478A6,stroke:#32738C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style W10 fill:#4478A6,stroke:#32738C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
