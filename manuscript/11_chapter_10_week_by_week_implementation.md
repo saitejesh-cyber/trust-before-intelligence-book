@@ -26,12 +26,12 @@ graph LR
     
     BEFORE --> TRANSFORM --> AFTER
     
-    style BEFORE fill:#FBEAEA,stroke:#EB898B,stroke-width:1px,color:#7A1F22,rx:10,ry:10
-    style B1 fill:#F6D1CE,stroke:#EB898B,stroke-width:1px,color:#7A1F22,rx:10,ry:10
-    style TRANSFORM fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#000000,rx:10,ry:10
-    style T1 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style AFTER fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#000000,rx:10,ry:10
-    style A1 fill:#14D793,stroke:#0FB67D,stroke-width:1px,color:#003322
+    style BEFORE fill:#FBEAEA,stroke:#EB898B,stroke-width:0.5px,color:#7A1F22,rx:10,ry:10
+    style B1 fill:#F6D1CE,stroke:#EB898B,stroke-width:0.5px,color:#7A1F22,rx:10,ry:10
+    style TRANSFORM fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
+    style T1 fill:#4478A6,stroke:#32738C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style AFTER fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
+    style A1 fill:#14D793,stroke:#0FB67D,stroke-width:0.5px,color:#003322
 
 ```
 
@@ -118,15 +118,15 @@ graph LR
     
     P1 --> P2 --> P3 --> P4
     
-    style JOURNEY fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#000000,rx:10,ry:10
-    style PHASE1 fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#000000,rx:10,ry:10
-    style PHASE2 fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#000000,rx:10,ry:10
-    style PHASE3 fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#000000,rx:10,ry:10
-    style PHASE4 fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#000000,rx:10,ry:10
-    style P1 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style P2 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style P3 fill:#30838C,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style P4 fill:#14D793,stroke:#0FB67D,stroke-width:1px,color:#003322,rx:10,ry:10
+    style JOURNEY fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
+    style PHASE1 fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
+    style PHASE2 fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
+    style PHASE3 fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
+    style PHASE4 fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
+    style P1 fill:#4478A6,stroke:#32738C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style P2 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style P3 fill:#30838C,stroke:#0D0D0D,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style P4 fill:#14D793,stroke:#0FB67D,stroke-width:0.5px,color:#003322,rx:10,ry:10
     style Copyright fill:none,stroke:none,color:#000000
 
 ```
@@ -257,17 +257,17 @@ graph LR
     RESOLVED -->|"Yes"| CONTINUE
     RESOLVED -->|"No"| ESCALATE
     
-    style STATUS fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#000000,rx:10,ry:10
-    style ACTIONS fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#000000,rx:10,ry:10
+    style STATUS fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
+    style ACTIONS fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
     style OUTCOMES fill:none,stroke:none,rx:10,ry:10
-    style GREEN fill:#14D793,stroke:#0FB67D,stroke-width:1px,color:#003322,rx:10,ry:10
-    style YELLOW fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style RED fill:#EB898B,stroke:#7A1F22,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style R1 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style R2 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style RESOLVED fill:#7FD5E8,stroke:#32738C,stroke-width:1px,color:#00323D,rx:10,ry:10
-    style CONTINUE fill:#14D793,stroke:#0FB67D,stroke-width:1px,color:#003322,rx:10,ry:10
-    style ESCALATE fill:#0D0D0D,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
+    style GREEN fill:#14D793,stroke:#0FB67D,stroke-width:0.5px,color:#003322,rx:10,ry:10
+    style YELLOW fill:#4478A6,stroke:#32738C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style RED fill:#EB898B,stroke:#7A1F22,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style R1 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style R2 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style RESOLVED fill:#7FD5E8,stroke:#32738C,stroke-width:0.5px,color:#00323D,rx:10,ry:10
+    style CONTINUE fill:#14D793,stroke:#0FB67D,stroke-width:0.5px,color:#003322,rx:10,ry:10
+    style ESCALATE fill:#0D0D0D,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style Copyright fill:none,stroke:none,color:#000000
 
 ```
@@ -384,17 +384,17 @@ graph TB
     OBS --> FABRIC
     FOUNDATION --> STORAGE
     
-    style FOUNDATION fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#000000,rx:10,ry:10
-    style OBS fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#000000,rx:10,ry:10
-    style FABRIC fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#000000,rx:10,ry:10
-    style STORAGE fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#000000,rx:10,ry:10
-    style O1 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style F1 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style F2 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style F3 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style S1 fill:#30838C,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style S2 fill:#30838C,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style S3 fill:#30838C,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
+    style FOUNDATION fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
+    style OBS fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
+    style FABRIC fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
+    style STORAGE fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
+    style O1 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style F1 fill:#4478A6,stroke:#32738C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style F2 fill:#4478A6,stroke:#32738C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style F3 fill:#4478A6,stroke:#32738C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style S1 fill:#30838C,stroke:#0D0D0D,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style S2 fill:#30838C,stroke:#0D0D0D,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style S3 fill:#30838C,stroke:#0D0D0D,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style Copyright fill:none,stroke:none,color:#000000
 
 ```
@@ -885,16 +885,16 @@ graph LR
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
-    style STAGE1 fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#000000,rx:10,ry:10
-    style STAGE2 fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#000000,rx:10,ry:10
-    style STAGE3 fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#000000,rx:10,ry:10
-    style STAGE4 fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#000000,rx:10,ry:10
-    style STAGE5 fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#000000,rx:10,ry:10
-    style S1 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style S2 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style S3 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style S4 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style S5 fill:#14D793,stroke:#0FB67D,stroke-width:1px,color:#003322,rx:10,ry:10
+    style STAGE1 fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
+    style STAGE2 fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
+    style STAGE3 fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
+    style STAGE4 fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
+    style STAGE5 fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
+    style S1 fill:#4478A6,stroke:#32738C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style S2 fill:#4478A6,stroke:#32738C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style S3 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style S4 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style S5 fill:#14D793,stroke:#0FB67D,stroke-width:0.5px,color:#003322,rx:10,ry:10
     style Copyright fill:none,stroke:none,color:#000000
 ```
 
@@ -1182,20 +1182,20 @@ graph TB
     ORCH --> OBS
     ROW1 --> ROW2
     
-    style TRUST fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#000000,rx:10,ry:10
+    style TRUST fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000,rx:10,ry:10
     style ROW1 fill:none,stroke:none,rx:10,ry:10
     style ROW2 fill:none,stroke:none,rx:10,ry:10
-    style ORCH fill:#30838C,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style OBS fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style GOV fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style O1 fill:#7FD5E8,stroke:#32738C,stroke-width:1px,color:#00323D,rx:10,ry:10
-    style O2 fill:#7FD5E8,stroke:#32738C,stroke-width:1px,color:#00323D,rx:10,ry:10
-    style B1 fill:#7FD5E8,stroke:#32738C,stroke-width:1px,color:#00323D,rx:10,ry:10
-    style B2 fill:#7FD5E8,stroke:#32738C,stroke-width:1px,color:#00323D,rx:10,ry:10
-    style B3 fill:#7FD5E8,stroke:#32738C,stroke-width:1px,color:#00323D,rx:10,ry:10
-    style G1 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style G2 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style G3 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
+    style ORCH fill:#30838C,stroke:#0D0D0D,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style OBS fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style GOV fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style O1 fill:#7FD5E8,stroke:#32738C,stroke-width:0.5px,color:#00323D,rx:10,ry:10
+    style O2 fill:#7FD5E8,stroke:#32738C,stroke-width:0.5px,color:#00323D,rx:10,ry:10
+    style B1 fill:#7FD5E8,stroke:#32738C,stroke-width:0.5px,color:#00323D,rx:10,ry:10
+    style B2 fill:#7FD5E8,stroke:#32738C,stroke-width:0.5px,color:#00323D,rx:10,ry:10
+    style B3 fill:#7FD5E8,stroke:#32738C,stroke-width:0.5px,color:#00323D,rx:10,ry:10
+    style G1 fill:#4478A6,stroke:#32738C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style G2 fill:#4478A6,stroke:#32738C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style G3 fill:#4478A6,stroke:#32738C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style Copyright fill:none,stroke:none,color:#000000
 
 ```
@@ -1731,18 +1731,18 @@ graph RL
     PILLARS --> T1
     OPS --> T1
 
-    style TRACKER fill:#E6F3F6,stroke:#32738C,stroke-width:1px,rx:10,ry:10
-    style EXECUTIVE fill:#E6F3F6,stroke:#32738C,stroke-width:1px,rx:10,ry:10
+    style TRACKER fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,rx:10,ry:10
+    style EXECUTIVE fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,rx:10,ry:10
     style FEEDS fill:none,stroke:none,rx:10,ry:10
-    style PILLARS fill:#E6F3F6,stroke:#32738C,stroke-width:1px,rx:10,ry:10
-    style OPS fill:#E6F3F6,stroke:#32738C,stroke-width:1px,rx:10,ry:10
-    style T1 fill:#30838C,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style T2 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style T3 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style T4 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style T5 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style T6 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style T7 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
+    style PILLARS fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,rx:10,ry:10
+    style OPS fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,rx:10,ry:10
+    style T1 fill:#30838C,stroke:#0D0D0D,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style T2 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style T3 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style T4 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style T5 fill:#4478A6,stroke:#32738C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style T6 fill:#4478A6,stroke:#32738C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style T7 fill:#4478A6,stroke:#32738C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style Copyright fill:none,stroke:none,color:#000000
 
 ```

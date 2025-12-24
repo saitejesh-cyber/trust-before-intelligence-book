@@ -23,12 +23,12 @@ graph LR
     TRANSFORM --> AFTER
     Copyright["© 2025 Colaberry Inc."]
 
-    style B1 fill:#F6D1CE,stroke:#EB898B,stroke-width:1px,color:#7A1F22
-    style T1 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff
-    style A1 fill:#14D793,stroke:#0FB67D,stroke-width:1px,color:#003322
-    style BEFORE fill:#FBEAEA,stroke:#EB898B,stroke-width:1px,color:#7A1F22,rx:10,ry:10
-    style TRANSFORM fill:#E6F3F6,stroke:#000000,stroke-width:1px,color:#000000,rx:10,ry:10
-    style AFTER fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#30838C,rx:10,ry:10
+    style B1 fill:#F6D1CE,stroke:#EB898B,stroke-width:0.5px,color:#7A1F22
+    style T1 fill:#4478A6,stroke:#32738C,stroke-width:0.5px,color:#ffffff
+    style A1 fill:#14D793,stroke:#0FB67D,stroke-width:0.5px,color:#003322
+    style BEFORE fill:#FBEAEA,stroke:#EB898B,stroke-width:0.5px,color:#7A1F22,rx:10,ry:10
+    style TRANSFORM fill:#E6F3F6,stroke:#000000,stroke-width:0.5px,color:#000000,rx:10,ry:10
+    style AFTER fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#30838C,rx:10,ry:10
     style Copyright fill:none,stroke:none,color:#666666
     
 ```
@@ -142,12 +142,12 @@ graph LR
     
     HumanEra --> TRANSFORM --> AgentEra
     
-    style HumanEra fill:#FBEAEA,stroke:#EB898B,stroke-width:1px,color:#7A1F22, rx:10,ry:10
-    style H1 fill:#F6D1CE,stroke:#EB898B,stroke-width:1px,color:#7A1F22, rx:10,ry:10
-    style TRANSFORM fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#000000, rx:10,ry:10
+    style HumanEra fill:#FBEAEA,stroke:#EB898B,stroke-width:0.5px,color:#7A1F22, rx:10,ry:10
+    style H1 fill:#F6D1CE,stroke:#EB898B,stroke-width:0.5px,color:#7A1F22, rx:10,ry:10
+    style TRANSFORM fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#000000, rx:10,ry:10
     style T1 fill:#4478A6,stroke:##e4ebed,color:#ffffff, rx:10,ry:10
-    style AgentEra fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#00323D rx:10,ry:10
-    style A1 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff, rx:10,ry:10
+    style AgentEra fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#00323D rx:10,ry:10
+    style A1 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff, rx:10,ry:10
     style Copyright fill:none,stroke:none,color:#666666
 
 ```
@@ -214,14 +214,14 @@ graph TB
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
-    style HITL fill:#E6F3F6,stroke:#32738C,stroke-width:1px, rx:10,ry:10
-    style I fill:#7FD5E8,stroke:#32738C,stroke-width:1px,color:#00323D, rx:10,ry:10
-    style N fill:#7FD5E8,stroke:#32738C,stroke-width:1px,color:#00323D, rx:10,ry:10
-    style P fill:#7FD5E8,stroke:#32738C,stroke-width:1px,color:#00323D, rx:10,ry:10
-    style A fill:#7FD5E8,stroke:#32738C,stroke-width:1px,color:#00323D, rx:10,ry:10
-    style C fill:#7FD5E8,stroke:#32738C,stroke-width:1px,color:#00323D,rx:10,ry:10
-    style T fill:#7FD5E8,stroke:#32738C,stroke-width:1px,color:#00323D, rx:10,ry:10
-    style Trust fill:#14D793,color:#003322,stroke:#0FB67D,stroke-width:1px, rx:10,ry:10
+    style HITL fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px, rx:10,ry:10
+    style I fill:#7FD5E8,stroke:#32738C,stroke-width:0.5px,color:#00323D, rx:10,ry:10
+    style N fill:#7FD5E8,stroke:#32738C,stroke-width:0.5px,color:#00323D, rx:10,ry:10
+    style P fill:#7FD5E8,stroke:#32738C,stroke-width:0.5px,color:#00323D, rx:10,ry:10
+    style A fill:#7FD5E8,stroke:#32738C,stroke-width:0.5px,color:#00323D, rx:10,ry:10
+    style C fill:#7FD5E8,stroke:#32738C,stroke-width:0.5px,color:#00323D,rx:10,ry:10
+    style T fill:#7FD5E8,stroke:#32738C,stroke-width:0.5px,color:#00323D, rx:10,ry:10
+    style Trust fill:#14D793,color:#003322,stroke:#0FB67D,stroke-width:0.5px, rx:10,ry:10
     style Copyright fill:none,stroke:none,color:#666666
 ```
 
@@ -311,11 +311,11 @@ graph TB
     Layers -.->|"Enables Operations"| GOALS
     GOALS -.->|"Drives Trust"| INPACT
     
-    style Title fill:#0D0D0D,color:#FFFFFF,stroke:#30838C,stroke-width:1px,rx:10,ry:10
+    style Title fill:#0D0D0D,color:#FFFFFF,stroke:#30838C,stroke-width:0.5px,rx:10,ry:10
     style PILLARS fill:none,stroke:none
-    style INPACT fill:#E6F4F7,color:#0D2F35,stroke:#32738C,stroke-width:1px,rx:10,ry:10
-    style Layers fill:#E6F4F7,color:#0D2F35,stroke:#32738C,stroke-width:1px,rx:10,ry:10
-    style GOALS fill:#E6F4F7,color:#0D2F35,stroke:#32738C,stroke-width:1px,rx:10,ry:10
+    style INPACT fill:#E6F4F7,color:#0D2F35,stroke:#32738C,stroke-width:0.5px,rx:10,ry:10
+    style Layers fill:#E6F4F7,color:#0D2F35,stroke:#32738C,stroke-width:0.5px,rx:10,ry:10
+    style GOALS fill:#E6F4F7,color:#0D2F35,stroke:#32738C,stroke-width:0.5px,rx:10,ry:10
     style Copyright fill:none,stroke:none,color:#4D4D4D
 
 ```

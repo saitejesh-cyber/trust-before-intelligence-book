@@ -26,12 +26,12 @@
     
     BEFORE --> TRANSFORM --> AFTER
     
-    style BEFORE fill:#FBEAEA,stroke:#EB898B,stroke-width:1px,rx:10,ry:10
-    style B1 fill:#F6D1CE,stroke:#EB898B,stroke-width:1px,color:#7A1F22,rx:10,ry:10
-    style TRANSFORM fill:#E6F3F6,stroke:#32738C,stroke-width:1px,rx:10,ry:10
-    style T1 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style AFTER fill:#E6F3F6,stroke:#32738C,stroke-width:1px,rx:10,ry:10
-    style A1 fill:#14D793,stroke:#0FB67D,stroke-width:1px,color:#003322,rx:10,ry:10
+    style BEFORE fill:#FBEAEA,stroke:#EB898B,stroke-width:0.5px,rx:10,ry:10
+    style B1 fill:#F6D1CE,stroke:#EB898B,stroke-width:0.5px,color:#7A1F22,rx:10,ry:10
+    style TRANSFORM fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,rx:10,ry:10
+    style T1 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style AFTER fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,rx:10,ry:10
+    style A1 fill:#14D793,stroke:#0FB67D,stroke-width:0.5px,color:#003322,rx:10,ry:10
 
 ```
 
@@ -112,15 +112,15 @@ graph TD
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
-    style VENDOR fill:#E6F3F6,stroke:#32738C,stroke-width:1px,rx:10,ry:10
-    style PILLAR1 fill:#E6F3F6,stroke:#32738C,stroke-width:1px,rx:10,ry:10
-    style PILLAR2 fill:#E6F3F6,stroke:#32738C,stroke-width:1px,rx:10,ry:10
-    style PILLAR3 fill:#E6F3F6,stroke:#32738C,stroke-width:1px,rx:10,ry:10
-    style V fill:#7FD5E8,stroke:#32738C,stroke-width:1px,color:#00323D,rx:10,ry:10
-    style P1 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style P2 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style P3 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style SCORE fill:#14D793,stroke:#0FB67D,stroke-width:1px,color:#003322,rx:10,ry:10
+    style VENDOR fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,rx:10,ry:10
+    style PILLAR1 fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,rx:10,ry:10
+    style PILLAR2 fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,rx:10,ry:10
+    style PILLAR3 fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,rx:10,ry:10
+    style V fill:#7FD5E8,stroke:#32738C,stroke-width:0.5px,color:#00323D,rx:10,ry:10
+    style P1 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style P2 fill:#4478A6,stroke:#32738C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style P3 fill:#4478A6,stroke:#32738C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style SCORE fill:#14D793,stroke:#0FB67D,stroke-width:0.5px,color:#003322,rx:10,ry:10
     style Copyright fill:none,stroke:none,color:#000000
 ```
 
@@ -259,13 +259,13 @@ graph LR
     
     style DECISIONS fill:none,stroke:none
     style OUTCOMES fill:none,stroke:none
-    style START fill:#7FD5E8,stroke:#32738C,stroke-width:1px,color:#00323D,rx:10,ry:10
-    style Q1 fill:#7FD5E8,stroke:#32738C,stroke-width:1px,color:#00323D,rx:10,ry:10
-    style Q2 fill:#7FD5E8,stroke:#32738C,stroke-width:1px,color:#00323D,rx:10,ry:10
-    style Q3 fill:#7FD5E8,stroke:#32738C,stroke-width:1px,color:#00323D,rx:10,ry:10
-    style BUILD fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style BUY fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style PARTNER fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
+    style START fill:#7FD5E8,stroke:#32738C,stroke-width:0.5px,color:#00323D,rx:10,ry:10
+    style Q1 fill:#7FD5E8,stroke:#32738C,stroke-width:0.5px,color:#00323D,rx:10,ry:10
+    style Q2 fill:#7FD5E8,stroke:#32738C,stroke-width:0.5px,color:#00323D,rx:10,ry:10
+    style Q3 fill:#7FD5E8,stroke:#32738C,stroke-width:0.5px,color:#00323D,rx:10,ry:10
+    style BUILD fill:#4478A6,stroke:#32738C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style BUY fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style PARTNER fill:#4478A6,stroke:#32738C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style Copyright fill:none,stroke:none,color:#000000
 
 ```
@@ -475,18 +475,18 @@ graph TB
     
     ROW1 --> FOUND
     
-    style STACK fill:#E6F3F6,stroke:#32738C,stroke-width:1px,rx:10,ry:10
+    style STACK fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,rx:10,ry:10
     style ROW1 fill:none,stroke:none,rx:10,ry:10
-    style TRUST fill:#E6F3F6,stroke:#32738C,stroke-width:1px,rx:10,ry:10
-    style INTEL fill:#E6F3F6,stroke:#32738C,stroke-width:1px,rx:10,ry:10
-    style FOUND fill:#E6F3F6,stroke:#32738C,stroke-width:1px,rx:10,ry:10
-    style L7 fill:#30838C,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style L6 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style L5 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style L4 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style L3 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style L2 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style L1 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
+    style TRUST fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,rx:10,ry:10
+    style INTEL fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,rx:10,ry:10
+    style FOUND fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,rx:10,ry:10
+    style L7 fill:#30838C,stroke:#0D0D0D,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style L6 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style L5 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style L4 fill:#4478A6,stroke:#32738C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style L3 fill:#4478A6,stroke:#32738C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style L2 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style L1 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style Copyright fill:none,stroke:none,color:#000000
 
 ```
@@ -1418,16 +1418,16 @@ graph LR
     
     TRUST --> INTEL --> FOUND
     
-    style TRUST fill:#E6F3F6,stroke:#32738C,stroke-width:1px,rx:10,ry:10
-    style INTEL fill:#E6F3F6,stroke:#32738C,stroke-width:1px,rx:10,ry:10
-    style FOUND fill:#E6F3F6,stroke:#32738C,stroke-width:1px,rx:10,ry:10
-    style L7 fill:#30838C,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style L6 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style L5 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style L4 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style L3 fill:#4478A6,stroke:#32738C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style L2 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style L1 fill:#327C8C,stroke:#30838C,stroke-width:1px,color:#ffffff,rx:10,ry:10
+    style TRUST fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,rx:10,ry:10
+    style INTEL fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,rx:10,ry:10
+    style FOUND fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,rx:10,ry:10
+    style L7 fill:#30838C,stroke:#0D0D0D,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style L6 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style L5 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style L4 fill:#4478A6,stroke:#32738C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style L3 fill:#4478A6,stroke:#32738C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style L2 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style L1 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style Copyright fill:none,stroke:none,color:#000000
 
 ```
