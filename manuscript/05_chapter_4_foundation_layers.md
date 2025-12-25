@@ -3,6 +3,36 @@
 
 ---
 
+## The Monday That Changed Everything
+
+*Monday, 7:47 AM  
+Echo Health Systems, Executive Conference Room  
+Floor 12, Building A*
+
+Sarah Cedao arrived thirteen minutes early. She'd learned that trick from her first CTO mentor: whoever controls the whiteboard controls the meeting. By 7:52, she had the agenda mapped in blue marker, the constraints in red, and the timeline in green.
+
+Ninety days. That's what Dr. Raj had given her. Ninety days to transform infrastructure that had taken fifteen years to build—or watch the AI initiative get defunded entirely.
+
+The scheduling agent failure had cost them $650,000 and whatever remained of executive patience. Three pilots. Three failures. Zero production agents. The board wanted results, not explanations.
+
+Her team filed in at 7:58: Marcus Williams, CDO, carrying coffee like a shield. Swapna Ram, Lead Data Engineer, already frowning at her laptop.
+
+"Before we start," Sarah said, "let me be clear about what today is. This isn't a planning meeting. This is a building meeting. We leave this room with deployment orders, not discussion items."
+
+She tapped the whiteboard. "Week 1 starts now. Foundation first."
+
+Marcus raised an eyebrow. "You want to rebuild storage before touching intelligence? The board wants to see agents working, not databases."
+
+"The board wants agents that *work*," Sarah corrected. "The scheduling agent failed because it couldn't see real-time data. The clinical assistant failed because it couldn't search semantically. The referral agent failed because it couldn't traverse relationships. Same root cause every time: infrastructure can't deliver what agents need."
+
+She circled FOUNDATION in green. "We fix that first. Layers 1 and 2. Four weeks. Then—and only then—we build intelligence on top."
+
+The room was quiet. Then Swapna nodded. "Show me the storage gaps."
+
+Sarah pulled up the architecture diagram. "Let me show you what we're building."
+
+---
+
 **Figure 4.0: Foundation Layers — Why Layers 1-2 Are Prerequisites**
 
 ```mermaid
@@ -36,11 +66,9 @@ graph LR
 
 > **Key Takeaway:** Foundation first. Without Layers 1-2, nothing else works.
 
+---
+
 ## PART 1: FOUNDATION FIRST
-
-*Three chapters prepared us for this moment.*
-
-*Chapter 0 introduced the Architecture of Trust—three integrated pillars working together to transform infrastructure chaos into agent-ready systems. Chapter 1 diagnosed why 95% of agent projects fail: the trust gap between what executives expect and what infrastructure delivers. Chapter 2 defined what agents need through INPACT™—six dimensions separating trusted agents from those that fail. Chapter 3 revealed why traditional BI infrastructure cannot deliver those needs, exposing seven specific gaps.*
 
 **Now we build.**
 
