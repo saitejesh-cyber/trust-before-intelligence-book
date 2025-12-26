@@ -413,19 +413,19 @@ graph TB
         direction TB
         S1["1. <b>RDBMS</b><br/>Transactions"]
         S2["2. <b>NoSQL</b><br/>Documents"]
-        S3["4. <b>Graph DB</b><br/>Relationships"]
-        S4["5. <b>Object Store</b><br/>Unstructured"]
-        S5["6. <b>Lakehouse</b><br/>Analytics"]
-        S6["7. <b>Model Registry</b><br/>ML models"]
-        S7["9. <b>Time-Series</b><br/>IoT/metrics"]
-        S8["11. <b>Cache Layer</b><br/>Performance"]    
+        S3["3. <b>Graph DB</b><br/>Relationships"]
+        S4["4. <b>Object Store</b><br/>Unstructured"]
+        S5["5. <b>Lakehouse</b><br/>Analytics"]
+        S6["6. <b>Model Registry</b><br/>ML models"]
+        S7["7. <b>Time-Series</b><br/>IoT/metrics"]
+        S8["8. <b>Cache Layer</b><br/>Performance"]    
     end
     
     subgraph PHASE2["Phase 2 (3 Types)"]
         direction TB
-        S9["3. <b>Vector DB</b><br/>Embeddings"]
+        S9["9. <b>Vector DB</b><br/>Embeddings"]
         S10["10. <b>Search Index</b><br/>Full-text"]
-        S11["8. <b>Feature Store</b><br/>ML features"]
+        S11["11. <b>Feature Store</b><br/>ML features"]
     end
     
     OUTPUT["Right Storage<br/>for Each Query"]
@@ -506,7 +506,7 @@ No single storage technology handles all these patterns efficiently. Multi-modal
 
 **What:** Neo4j Aura (https://neo4j.com/cloud/platform/aura-graph-database/) (managed graph database). *Alternatives: Amazon Neptune, TigerGraph, ArangoDB.*
 
-**Why:** Provider referral networks, organizational hierarchies, clinical pathways—relationships are first-class entities. Graph traversal (Cypher queries) 24x faster than SQL recursive CTEs.
+**Why:** Provider referral networks, organizational hierarchies, clinical pathways relationships are first-class entities. Graph traversal (Cypher queries) 24x faster than SQL recursive CTEs.
 
 **Echo's Implementation:**
 - Nearly 3,000 provider nodes (physicians, nurses, specialists)
@@ -523,7 +523,7 @@ No single storage technology handles all these patterns efficiently. Multi-modal
 
 **What:** MLflow (self-hosted on Azure Container Instances). *Alternatives: Weights & Biases, Neptune.ai, Kubeflow.*
 
-**Why:** 47 ML models in production require version control, artifact storage, lineage tracking. Git commits and Excel spreadsheets don't scale. MLflow provides centralized registry with rollback capabilities.
+**Why:** 47 ML models in production require version control, artifact storage, lineage tracking. Git commits and Excel spreadsheets don't scale. MLflow provides a centralized registry with rollback capabilities.
 
 **Echo's Implementation:**
 - 47 models registered (sepsis detection, readmission risk, medication interaction)
