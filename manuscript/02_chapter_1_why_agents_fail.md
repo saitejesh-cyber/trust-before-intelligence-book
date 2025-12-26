@@ -7,7 +7,7 @@
 
 ## Maria's Impossible Appointment
 
-*Tuesday, April 15, 2025, 10:03 AM  
+*Tuesday, 10:03 AM  
 Echo Health Systems, Patient Scheduling Department  
 Floor 3, Building A*
 
