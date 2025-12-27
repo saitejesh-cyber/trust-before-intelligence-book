@@ -706,17 +706,17 @@ graph LR
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-**Cache layer:** Critical for performance. Every agent query hit the database directly—no caching tier. Repeated queries for the same patient, same provider, same schedule data hammered SQL Server unnecessarily. Peak load saw 12,000 identical queries per hour. Redis MemoryDB provides sub-10ms response for cached results, reducing database load by 60% and enabling the response times agents require.
+**Cache layer:** Critical for performance. Every agent query hit the database directly, no caching tier. Repeated queries for the same patient, same provider, same schedule data hammered SQL Server unnecessarily. Peak load saw 12,000 identical queries per hour. Redis MemoryDB provides sub-10ms response for cached results, reducing database load by 60% and enabling the response times agents require.
 
-**Graph traversal:** Painful. "Find all providers within three reporting levels of Dr. Sarah Chen" requires recursive CTE in SQL Server. Echo's implementation took 8.2 seconds on average (p95: 12.4s). Neo4j's native graph traversal (Cypher query) completes the same query in 340 milliseconds—over 20x faster, consistent with published benchmarks showing graph databases outperforming relational systems by 3x for simple queries up to 1,000x+ for deep traversals [1]. When agents need referral network analysis for care coordination, 8 seconds is prohibitive.
+**Graph traversal:** Painful. "Find all providers within three reporting levels of Dr. Sarah Chen" requires recursive CTE in SQL Server. Echo's implementation took 8.2 seconds on average (p95: 12.4s). Neo4j's native graph traversal (Cypher query) completes the same query in 340 milliseconds, over 20x faster, consistent with published benchmarks showing graph databases outperforming relational systems by 3x for simple queries up to 1,000x+ for deep traversals [1]. When agents need referral network analysis for care coordination, 8 seconds is prohibitive.
 
-**Flexible schema:** Awkward. Clinical notes vary by specialty—cardiology notes have "ejection fraction," radiology notes have "contrast administration," psychiatry notes have "mental status exam." Storing all in varchar(max) columns forces application-level schema management. MongoDB's flexible schema allows specialty-specific fields without schema migration for every new specialty.
+**Flexible schema:** Awkward. Clinical notes vary by specialty. Cardiology notes have "ejection fraction," radiology notes have "contrast administration," psychiatry notes have "mental status exam." Storing all in varchar(max) columns forces application-level schema management. MongoDB's flexible schema allows specialty-specific fields without schema migration for every new specialty.
 
 **Training data:** Fragmented. Medical imaging (420TB DICOM files), historical EHR exports (87TB), research datasets (34TB) scattered across file shares, NAS devices, and aging SAN systems. No centralized object storage. No lifecycle policies. No tiered storage (hot/cool/archive). Azure Blob Storage consolidates all with lifecycle management reducing costs 40%.
 
-**Model versioning:** Excel spreadsheets. 47 ML models in production tracked in Git commits and Excel files. When sepsis model performance degraded Week -3, it took 6 hours to identify the deployed version and roll back. No lineage. No artifact storage. No A/B testing capability. MLflow provides all three with 10-minute rollback time.
+**Model versioning:** Excel spreadsheets. 47 ML models in production tracked in Git commits and Excel files. When sepsis model performance degraded, it took 6 hours to identify the deployed version and roll back. No lineage. No artifact storage. No A/B testing capability. MLflow provides all three with a 10-minute rollback time.
 
-**Phase 2 preview:** Two critical capabilities—vector search for semantic queries and feature stores for ML consistency—require the foundation built here. Chapter 5 deploys Pinecone (42ms semantic search) and Tecton (unified feature definitions) on top of this multi-modal foundation.
+**Phase 2 preview:** Two critical capabilities, vector search for semantic queries and feature stores for ML consistency, require the foundation built here. Chapter 5 deploys Pinecone (42ms semantic search) and Tecton (unified feature definitions) on top of this multi-modal foundation.
 
 ### Layer 1 Summary
 
@@ -728,12 +728,6 @@ graph LR
 - Unstructured data strategy: Fragmented file shares → Centralized object storage
 - Real-time cache: None → 100K responses cached (85% hit rate projected)
 
-**Costs:**
-- Phase 1 setup: $288,000 (8 core foundation categories)
-- Phase 2 adds: Pinecone vector DB ($60K from Phase 2 budget), Tecton enhancements, Azure Search
-- Total: 11 categories operational by Week 7
-- Monthly operational: $16,400 net (after $12,200 cache savings + $4,000 warehouse elimination)
-- Cost per storage category: $1,490/month average
 
 **Team:**
 - 3 parallel deployment teams (4-5 engineers each)
@@ -744,7 +738,7 @@ graph LR
 
 ---
 
-**Progress Check:** Layer 1 complete—eight storage categories operational. Multi-modal storage improves Contextual dimension, cache improves Instant dimension, model registry improves Adaptive.
+**Progress Check:** Layer 1 complete. Eight storage categories operational. Multi-modal storage improves Contextual dimension, cache improves Instant dimension, model registry improves Adaptive.
 
 ---
 
@@ -754,7 +748,7 @@ graph LR
 
 Layer 2 provides sub-30 second data freshness through change data capture (CDC), event streaming, and stream processing. Replaces overnight batch ETL with continuous real-time synchronization.
 
-**Figure 4.6: Layer 2 Real-Time Data Fabric—CDC to Agents**
+**Figure 4.6: Layer 2 Real-Time Data Fabric - CDC to Agents**
 
 ```mermaid
 
@@ -786,7 +780,7 @@ graph LR
 
 ```
 
-Traditional BI refreshes overnight (2 AM ETL). Agents querying at 3 PM see data 13 hours stale. For clinical decision support, this creates patient safety risks—medication orders placed at 10 AM won't trigger drug interaction alerts until midnight.
+Traditional BI refreshes overnight (2 AM ETL). Agents querying at 3 PM see data 13 hours stale. For clinical decision support, this creates patient safety risks. Medication orders placed at 10 AM won't trigger drug interaction alerts until midnight.
 
 Layer 2 solves this with three integrated components:
 
@@ -794,13 +788,13 @@ Layer 2 solves this with three integrated components:
 
 **What:** Debezium CDC connectors monitoring operational databases for INSERT, UPDATE, DELETE operations. *Alternatives: AWS DMS, Oracle GoldenGate, Airbyte.*
 
-**Why:** CDC captures database changes within milliseconds without impacting operational system performance. Reads database transaction logs (binlog for MySQL, Write-Ahead Log for PostgreSQL, Change Tracking for SQL Server)—no additional load on production databases.
+**Why:** CDC captures database changes within milliseconds without impacting operational system performance. Reads database transaction logs (binlog for MySQL, Write-Ahead Log for PostgreSQL, Change Tracking for SQL Server) with no additional load on production databases.
 
 **Echo's Implementation:**
-- 43 source tables from Epic EHR (patient demographics, appointments, medications)
-- 18 source tables from Cerner Lab system (results, orders, reference ranges)
-- 7 source tables from Workday HR (provider schedules, credentials, organizational hierarchy)
-- Average CDC latency: 850ms (p95: 1.2s) from database commit to Kafka topic
+- 40+ source tables from Epic EHR (patient demographics, appointments, medications)
+- ~20 source tables from Cerner Lab system (results, orders, reference ranges)
+- ~10 source tables from Workday HR (provider schedules, credentials, organizational hierarchy)
+- Average CDC latency: ~850ms (p95: 1.2s) from database commit to Kafka topic
 
 **How it works:**
 1. Medication order committed to Epic database → SQL Server Change Tracking logs operation
@@ -814,12 +808,12 @@ Layer 2 solves this with three integrated components:
 
 **What:** Confluent Cloud managed Kafka (3-node cluster, US East region). *Alternatives: Amazon MSK, Azure Event Hubs, Redpanda.*
 
-**Why:** Durable message queue decouples event capture (CDC) from event processing (stream processing). Provides replay capability (30-day retention) for reprocessing historical events. Enables multiple consumers (real-time analytics, audit logging, agent inference) from single event stream.
+**Why:** Durable message queue decouples event capture (CDC) from event processing (stream processing). Provides replay capability (30-day retention) for reprocessing historical events. Enables multiple consumers (real-time analytics, audit logging, agent inference) from a single event stream.
 
 **Echo's Implementation:**
-- 68 Kafka topics (one per source table)
-- 6.1M events/day average (70 events/second sustained)
-- 30-day retention policy (180GB total storage)
+- ~70~ Kafka topics (one per source table)
+- 6+ M events/day average (70 events/second sustained)
+- 30-day retention policy (~180GB  storage)
 - 3 consumer groups (real-time storage sync, audit trail, operational dashboard)
 
 **Kafka Topic Structure:**
@@ -912,45 +906,21 @@ graph LR
 - Overnight ETL populates Databricks Delta tables for training
 - Model training runs for 6 hours (latency irrelevant)
 
-**Why this matters:** Don't over-engineer training pipelines for real-time when batch suffices. Focus real-time investment on inference path only.
+**Why this matters:** Don't over-engineer training pipelines for real-time when batch suffices. Focus real-time investment on inference paths only.
 
-### Streaming LLM Responses (Layer 2 Component 4)
 
-**What:** Server-Sent Events (SSE) endpoint streaming GPT-4 responses token-by-token.
-
-**Why:** Perceived latency vs. actual latency. GPT-4 generates 40 tokens/second. For 120-token response, actual generation time is 3.0 seconds. If UI waits for complete response, user stares at frozen screen for 3 seconds (poor experience). If UI streams tokens as they generate, user sees response building in real-time (perceived latency <1 second).
-
-**Echo's Implementation:**
-
-```python
-# Intelligence layer uses Layer 2's streaming service
-async def stream_clinical_response(query, patient_context):
-    prompt = assemble_prompt(query, patient_context)
-    
-    async for token_chunk in openai.stream_completion(prompt):
-        await sse_push(token_chunk, session_id)
-        conversation_buffer.append(token_chunk)
-```
-
-**Benefits:**
-- Completion rate: 73% → 94% (users don't abandon streaming responses)
-- Perceived latency: 3.2s → 0.8s (first tokens arrive <1 second)
-- **INPACT™ Impact:** Natural +0.5 (streaming improves user experience, though Layer 3 semantic understanding drives most Natural score)
+**Capability Enabled:** The real-time infrastructure mindset extends beyond data ingestion. When Chapter 5 introduces LLM integration, Echo will use Server-Sent Events (SSE) to stream responses token-by-token, reducing perceived latency from 3.2 seconds to under 1 second and improving user completion rates from 73% to 94%. The foundation built here makes that possible.
 
 ### Layer 2 Summary
 
 **Week 2 → Week 4 Transformation:**
 
-- Data freshness: 24 hours → 28 seconds (51x improvement)
-- CDC-enabled tables: 0 → 43 (Epic EHR) + 18 (Cerner Labs) + 7 (Workday HR)
-- Event throughput: 0 → 6.1M events/day (70 events/second sustained)
+- Data freshness: 24 hours → <30> seconds (51x improvement)
+- CDC-enabled tables: 0 → 40+ (Epic EHR) + ~20 (Cerner Labs) + ~10 (Workday HR)
+- Event throughput: 0 → 6+M events/day (70 events/second sustained)
 - Stream processing jobs: 0 → 3 (time-series aggregation, sepsis detection, enrichment)
 - Sepsis alert timing: Overnight batch → 4.2 hours earlier (Week 4 measurement)
 
-**Costs:**
-- Setup: $210,000 (CDC connectors, Kafka cluster, Flink deployment, integration testing)
-- Monthly operational: $8,200 ($4,800 Confluent Cloud + $2,200 Databricks Flink + $1,200 operational overhead)
-- Cost per event: $0.000045 (6.1M events/day × 30 days)
 
 **Team:**
 - 2 deployment teams (3-4 engineers each)
@@ -961,7 +931,7 @@ async def stream_clinical_response(query, patient_context):
 
 ---
 
-**Progress Check:** Layer 2 complete—CDC replacing overnight batch, streaming pipelines processing over 6 million daily events, sub-30 second freshness. Foundation layers improved Echo's score from 28/100 to 42/100.
+**Progress Check:** Layer 2 complete, CDC replacing overnight batch, streaming pipelines processing over 6 million daily events, sub-30 second freshness. Foundation layers improved Echo's score from 28/100 to 42/100.
 
 ---
 
@@ -1027,12 +997,12 @@ graph LR
 *© 2025 Colaberry Inc.*
 
 **Foundation Impact on INPACT™ Dimensions:**
-- **Instant (I):** 1→4 (+3) — Cache layer + real-time data fabric eliminate latency
-- **Natural (N):** 2→2 (±0) — Requires semantic layer (Chapter 5)
-- **Permitted (P):** 1→1 (±0) — Requires governance layer (Chapter 6)
-- **Adaptive (A):** 2→3 (+1) — Model registry + lakehouse enable ML workflows
-- **Contextual (C):** 3→4 (+1) — Multi-modal storage enables cross-system synthesis
-- **Transparent (T):** 1→1 (±0) — Requires observability layer (Chapter 6)
+- **Instant (I):** 1→4 (+3) Cache layer + real-time data fabric eliminate latency
+- **Natural (N):** 2→2 (±0) Requires semantic layer (Chapter 5)
+- **Permitted (P):** 1→1 (±0) Requires governance layer (Chapter 6)
+- **Adaptive (A):** 2→3 (+1) Model registry + lakehouse enable ML workflows
+- **Contextual (C):** 3→4 (+1) Multi-modal storage enables cross-system synthesis
+- **Transparent (T):** 1→1 (±0) Requires observability layer (Chapter 6)
 
 Sarah organized three parallel teams for the foundation build.
 
@@ -1071,21 +1041,21 @@ Swapna demonstrated. Care coordination agent analyzing provider referral network
 
 ### The Breakthrough (Week 3-4)
 
-**Day 18: CDC Operational (43 Tables)**
+**Day 18: CDC Operational (40+ Tables)**
 
-Real-time data flowing. Medication order committed to Epic EHR at 10:17:34 AM. Order visible in MongoDB (medications collection) at 10:18:02 AM. 28-second end-to-end latency.
+Real-time data flowing. Medication order committed to Epic EHR at 10:17:34 AM. Order visible in MongoDB (medications collection) at 10:18:02 AM. <30 seconds end-to-end latency.
 
-Physician placed medication order. Drug interaction alert fired 28 seconds later (system detected contraindication with existing prescription). Previous batch system would have waited until 2 AM next day—14+ hours late.
+Physician placed a medication order. Drug interaction alert fired 28 seconds later (system detected contraindication with existing prescription). Previous batch system would have waited until 2 AM next day, 14+ hours late.
 
-Patient safety impact: immediate.
+Patient safety impact: Immediate.
 
 **Day 21: Stream Processing Live (Apache Flink)**
 
 Sepsis detection pattern operational. Three-condition rule: fever >100.4°F + WBC >12K + SBP <90 within 2-hour window.
 
-Batch system (Week 0): Overnight ETL ran at 2 AM. If patient developed sepsis Thursday afternoon, alert fired Friday morning—potentially 16 hours late.
+Batch system (Week 0): Overnight ETL ran at 2 AM. If the patient developed sepsis Thursday afternoon, alert fired Friday morning, potentially 16 hours late.
 
-Stream system (Week 4): Real-time vitals monitored. ICU patient met sepsis criteria Thursday 2:47 PM. Alert fired Thursday 2:52 PM—5 minutes later.
+Stream system (Week 4): Real-time vitals monitored. ICU patient met sepsis criteria Thursday 2:47 PM. Alert fired Thursday 2:52 PM, five minutes later.
 
 4.2 hours earlier on average (median across 6 sepsis events during Week 4 testing).
 
@@ -1093,7 +1063,7 @@ Medical director's reaction: "This is why we're building agents. Not to replace 
 
 ### INPACT™ Score Progression
 
-**Figure 4.10: Foundation Impact—Week 0 to Week 4**
+**Figure 4.10: Foundation Impact - Week 0 to Week 4**
 
 ```mermaid
 graph TB
@@ -1133,11 +1103,11 @@ graph TB
 | Dimension | Week 0 | Week 4 | Improvement | Driver |
 |-----------|--------|--------|-------------|--------|
 | Instant (I) | 1/6 | 4/6 | +3 | Cache layer + real-time data fabric eliminate latency |
-| Natural (N) | 2/6 | 2/6 | — | Requires Layer 3 semantic layer (Chapter 5) |
-| Permitted (P) | 1/6 | 1/6 | — | Requires Layer 5 governance (Chapter 6) |
+| Natural (N) | 2/6 | 2/6 | NA | Requires Layer 3 semantic layer (Chapter 5) |
+| Permitted (P) | 1/6 | 1/6 | NA | Requires Layer 5 governance (Chapter 6) |
 | Adaptive (A) | 2/6 | 3/6 | +1 | Model registry + lakehouse enable ML workflows |
 | Contextual (C) | 3/6 | 4/6 | +1 | Multi-modal storage enables cross-system synthesis |
-| Transparent (T) | 1/6 | 1/6 | — | Requires Layer 6 observability (Chapter 6) |
+| Transparent (T) | 1/6 | 1/6 | NA | Requires Layer 6 observability (Chapter 6) |
 | **Total** | **10/36 (28%)** | **15/36 (42%)** | **+5 pts (+14%)** | Foundation layers operational |
 
 ---
@@ -1150,18 +1120,16 @@ graph TB
 
 Friday afternoon, Week 4. Sarah convened the leadership team for foundation review. CFO Krish Yadav joined via video to verify Phase 1 spend against the approved $470,000 budget.
 
-"Final tally: $468,000," Jamie reported. "Two thousand under budget."
+"Final tally: $468,000," Krish reported. "Two thousand under budget. Small win, but a win. Proves the team can execute within constraints."
 
-Krish nodded. "Small win, but a win. Proves the team can execute within constraints."
-
-Sarah smiled. "We committed to phase-wise discipline. Foundation delivered. Intelligence phase next—same rigor."
+Sarah smiled. "We committed to phase-wise discipline. Foundation delivered. Intelligence phase next with same rigor."
 
 ### Foundation Status (Week 4 Complete)
 
 | Component | Phase 1 Metrics |
 |-----------|-----------------|
-| **Storage (Layer 1)** | 8 foundation categories operational, graph database with 847 relationships, time-series processing 460K vitals/hour, lakehouse with Delta Lake |
-| **Real-Time (Layer 2)** | 43 CDC tables, 6.1M daily events, 28s average freshness, 8.2s alert latency |
+| **Storage (Layer 1)** | 8 foundation categories operational, graph database with about 850 relationships, time-series processing 450+K vitals/hour, lakehouse with Delta Lake |
+| **Real-Time (Layer 2)** | 40+ CDC tables, 6+M daily events, ~28s average freshness,  ~8.2s alert latency |
 | **Foundation Economics** | $4K/month warehouse consolidation savings, infrastructure ready for intelligence layer optimizations |
 | **INPACT™ Progress** | 28/100 → 42/100 (+14 points) |
 
@@ -1174,60 +1142,47 @@ Sarah smiled. "We committed to phase-wise discipline. Foundation delivered. Inte
 | Phase | Weeks | Layers | **Budget** | **Actual** | Chapter |
 |-------|-------|--------|------------|------------|---------|
 | **Phase 1: Foundation** | 1-4 | 1-2 | $470K | **$468K** | **This Chapter** |
-| **Phase 2: Intelligence** | 5-7 | 3-4 | $380K | — | Chapter 5 |
-| **Phase 3: Trust & Orchestration** | 8-10 | 5-6-7 | $380K | — | Chapter 6 |
+| **Phase 2: Intelligence** | 5-7 | 3-4 | $380K | NA | Chapter 5 |
+| **Phase 3: Trust & Orchestration** | 8-10 | 5-6-7 | $380K | NA | Chapter 6 |
 
-**Phase 1 Investment Detail (This Chapter):**
+
+### Investment Summary
+
+**Phase 1 Investment ($470K budget / $468K actual):**
 
 | Component | Technology | Services | Staff | Total |
 |-----------|------------|----------|-------|-------|
-| Layer 1 (Storage) | $230K | $40K | $20K | $290K |
+| Layer 1 (Storage) | $228K | $40K | $20K | $288K |
 | Layer 2 (Real-Time) | $90K | $60K | $30K | $180K |
-| **Phase 1 Total** | **$320K** | **$100K** | **$50K** | **$470K** |
+| **Phase 1 Total** | **$318K** | **$100K** | **$50K** | **$468K** |
 
 **Phase 1 Operational Costs:**
 - Monthly: $24,600 (Layer 1: $16,400 + Layer 2: $8,200)
 - Annual: $295,200
-- Net after verified savings: $100,800/year (cache + consolidation savings of $194,400)
+- Phase 1 verified savings: $48,000/year (warehouse consolidation)
 
-**Phases 2-3:** See Chapters 5-6 for detailed investment breakdowns and operational costs. Complete project economics in Appendix D.
-- **Net operational:** $377,400/year
-
-**Total Year 1 Investment:**
-- Implementation (10 weeks): $1,230,000 (one-time)
-- Net operations (12 months): $377,400 (ongoing)
-- **Year 1 Total: $1,607,400**
+*For Phases 2-3 investment details, operational costs, and complete project economics, see Chapters 5-6 and Appendix D.*
 
 **Note:** These costs reflect Echo's specific context (mid-size healthcare system, Azure-native, managed services preference, 10-week accelerated timeline, HIPAA compliance). The $1.23M is the complete implementation budget for Weeks 1-10 covering all seven layers. Operational costs are separate and ongoing. Your organization's costs will vary based on scale, existing infrastructure, team expertise, cloud platform, vendor negotiations, and timeline requirements. For detailed budget methodology, phase-by-phase breakdowns, cost drivers (technology 56%, services 31%, staff 13%), ROI calculations, and sensitivity analysis, see **Appendix D: Budget Methodology.**
 
-### ROI Analysis: Foundation Value Delivery
+### Foundation Value: What Phase 1 Enables
 
-**Quantified Recurring Savings (Verified):**
-- **Cache Layer LLM cost reduction:** $12,200/month = $146,400/year
+**Phase 1 Verified Savings:**
 - **Lakehouse warehouse consolidation:** $4,000/month = $48,000/year
-- **Total verified annual savings: $194,400**
 
-**Additional Operational Benefits (Estimated, Not Included in Conservative ROI):**
+**Operational Capabilities Enabled (Value Realized in Phases 2-3):**
 
-*The following improvements were observed during Phase 1 deployment but are not included in the $194,400 verified savings due to context-specific variability:*
+- **Patient safety:** Medication interaction alerts reduced from 12+ hour batch delay to 8.2 seconds real-time
+- **Sepsis detection:** Real-time streaming reduced prediction lag from 72 hours to <30 seconds
+- **Clinician efficiency:** Graph query performance improved 24× (8.2s → 340ms) for care coordination
+- **Compliance:** Complete audit trails and data lineage for HIPAA compliance
 
-- **Patient safety improvements:** Medication interaction alerts reduced from 12+ hour batch delay to 8.2 seconds real-time, enabling clinical intervention before drug administration
-- **Sepsis detection acceleration:** Real-time streaming reduced sepsis model prediction lag from 72 hours to <30 seconds, enabling earlier intervention protocols
-- **Clinician efficiency gains:** Graph query performance improved 24× (8.2s → 340ms) for provider network analysis and care coordination workflows, reducing time spent navigating complex organizational structures
-- **Compliance risk reduction:** Complete audit trails and data lineage for all data access, reducing HIPAA compliance risk and improving audit preparation efficiency
+**Phase 1 Investment Summary:**
+- Implementation: $468,000 (actual)
+- Operational: $24,600/month ($295,200/year)
+- Net operational after savings: $247,200/year ($295,200 - $48,000)
 
-*Note: Healthcare safety event costs ($50K-$500K per event), lawsuit prevention values, and clinician time savings ($120-$180/hour loaded) vary widely by organization size, case severity, regulatory context, and incident probability. Conservative ROI calculation uses only verified technology cost reductions ($194,400/year). Actual value realized when including operational improvements typically 2-4× higher but requires organization-specific measurement.*
-
-**Foundation ROI (Conservative):**
-- Phase 1 implementation: $470,000 budgeted / $468,000 actual
-- Phase 1 net operational Year 1: $100,800 ($295.2K gross - $194.4K savings)
-- **Foundation Year 1 total: $570,800**
-- **Payback from verified savings alone: 29 months**
-
-**Full Project ROI** (all three phases, including operational benefits): See Appendix D for complete analysis showing 477% ROI and 10-week payback when operational improvements are quantified.
-- **Payback period: 30.8 months** (2.6 years) on foundation alone
-
-However, this calculation covers only Phase 1 foundation. Phases 2-3 (Weeks 5-10) add intelligence and governance layers, enabling complete agent deployment. Full project ROI (all three phases) shows 477% return and 10-week payback when operational improvements are quantified (see Appendix D).
+*Foundation alone shows modest returns. The 477% ROI and 10-week payback require Phases 2-3 (intelligence and governance layers) to unlock operational benefits. See Appendix D for complete project economics.*
 
 ### Bridge to Chapter 5: Intelligence Layers
 
@@ -1243,7 +1198,7 @@ The infrastructure built in Weeks 1-4 directly enables intelligence deployment:
 - Multi-modal storage provides diverse data sources for RAG retrieval
 - Real-time data ensures semantic models operate on current information
 - Model registry enables version control for ML components
-- Feature store provides consistent feature definitions across agents
+- Lakehouse provides unified analytics foundation for ML pipelines
 
 **Foundation first, intelligence second.** Echo progresses to Phase 2 (Weeks 5-7), building intelligence capabilities on the foundation established here. Phase 3 (Weeks 8-10) adds governance and observability before deploying the first production agent.
 
