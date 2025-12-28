@@ -24,9 +24,9 @@ graph LR
     
     WITHOUT --> TRANSFORM --> WITH
 
-    style WITHOUT fill:#FBEAEA,stroke:#EB898B,stroke-width:0.5px,color:#121212,rx:10,ry:10
-    style TRANSFORM fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#121212,rx:10,ry:10
-    style WITH fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#121212,rx:10,ry:10
+    style WITHOUT fill:#FBEAEA,stroke:#EB898B,stroke-width:1px,color:#121212,rx:18,ry:18
+    style TRANSFORM fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#121212,rx:18,ry:18
+    style WITH fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#121212,rx:18,ry:18
     style I1 fill:#14D793,color:#003322,stroke:#0FB67D,stroke-width:0.5px,rx:10,ry:10
     style W1 fill:#F6D1CE,stroke:#EB898B,stroke-width:0.5px,color:#7A1F22,rx:10,ry:10
     style T1 fill:#4478A6,stroke:#e4ebed,stroke-width:0.5px,color:#FFFFFF,rx:10,ry:10
@@ -171,11 +171,11 @@ graph TB
     
     COPYRIGHT["<b>© 2025 Colaberry Inc.</b>"]
     
-    style TITLE fill:#0D0D0D,color:#ffffff,stroke:#30838C,stroke-width:0.5px,rx:10,ry:10
+    style TITLE fill:#0D0D0D,color:#ffffff,stroke:#30838C,stroke-width:1px,rx:18,ry:18
     
     style ROW fill:#ffffff,stroke:none
     
-    style HUMAN fill:#E6F6FB,stroke:#32738C,stroke-width:0.5px,color:#121212,rx:10,ry:10
+    style HUMAN fill:#E6F6FB,stroke:#32738C,stroke-width:1px,color:#121212,rx:18,ry:18
     style H1 fill:#ffffff,stroke:#32738C,stroke-width:0.5px,color:#00323D,rx:10,ry:10
     style H2 fill:#ffffff,stroke:#32738C,stroke-width:0.5px,color:#00323D,rx:10,ry:10
     style H3 fill:#ffffff,stroke:#32738C,stroke-width:0.5px,color:#00323D,rx:10,ry:10
@@ -183,7 +183,7 @@ graph TB
     style H5 fill:#ffffff,stroke:#32738C,stroke-width:0.5px,color:#00323D,rx:10,ry:10
     style H6 fill:#ffffff,stroke:#32738C,stroke-width:0.5px,color:#00323D,rx:10,ry:10
 
-    style AGENT fill:#7FD5E8,stroke:#30838C,stroke-width:0.5px,color:#121212,rx:10,ry:10
+    style AGENT fill:#7FD5E8,stroke:#30838C,stroke-width:1px,color:#121212,rx:18,ry:18
     style A1 fill:#ffffff,stroke:#30838C,stroke-width:0.5px,color:#00323D,rx:10,ry:10
     style A2 fill:#ffffff,stroke:#30838C,stroke-width:0.5px,color:#00323D,rx:10,ry:10
     style A3 fill:#ffffff,stroke:#30838C,stroke-width:0.5px,color:#00323D,rx:10,ry:10
@@ -248,7 +248,7 @@ graph TB
     
     COPYRIGHT["<b>© 2025 Colaberry Inc.</b>"]
     
-    style BOX fill:#E6F6FB,stroke:#32738C,stroke-width:0.5px,color:#121212,rx:10,ry:10
+    style BOX fill:#E6F6FB,stroke:#32738C,stroke-width:1px,color:#121212,rx:18,ry:18
     style I fill:#7FD5E8,stroke:#30838C,stroke-width:0.5px,color:#00323D,rx:10,ry:10
     style N fill:#7FD5E8,stroke:#30838C,stroke-width:0.5px,color:#00323D,rx:10,ry:10
     style P fill:#7FD5E8,stroke:#30838C,stroke-width:0.5px,color:#00323D,rx:10,ry:10
@@ -256,7 +256,7 @@ graph TB
     style C fill:#7FD5E8,stroke:#30838C,stroke-width:0.5px,color:#00323D,rx:10,ry:10
     style T fill:#7FD5E8,stroke:#30838C,stroke-width:0.5px,color:#00323D,rx:10,ry:10
     
-    style TRUST fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:0.5px,rx:10,ry:10
+    style TRUST fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:1px,rx:18,ry:18
     
     style COPYRIGHT fill:none,stroke:none,color:#666666
 ```
@@ -392,17 +392,17 @@ A_STATUS["<b>Production-Ready</b><br/><b>• All dimensions ≥5/6 </b><br/><b>�
     
     COPYRIGHT["<b>© 2025 Colaberry Inc.</b>"]
 
-    style TITLE fill:#ffffff,stroke:#666666,stroke-width:0.5px,color:#121212,rx:10,ry:10
+    style TITLE fill:#ffffff,stroke:#666666,stroke-width:1px,color:#121212,rx:18,ry:18
 
     %% BEFORE — Problems / Failures (Coral)
-    style BEFORE fill:#FBEAEA,stroke:#EB898B,stroke-width:0.5px,color:#121212,rx:10,ry:10
+    style BEFORE fill:#FBEAEA,stroke:#EB898B,stroke-width:1px,color:#121212,rx:18,ry:18
     style B_SCORE fill:#EB898B,color:#ffffff,stroke:#7A1F22,stroke-width:0.5px,rx:10,ry:10
     style B_DIMS fill:#F6D1CE,stroke:#EB898B,stroke-width:0.5px,color:#7A1F22,rx:10,ry:10
     style B_STATUS fill:#F6D1CE,stroke:#EB898B,stroke-width:0.5px,color:#7A1F22,rx:10,ry:10
 
-    style TRANSFORM fill:#7FD5E8,stroke:#32738C,stroke-width:0.5px,color:#121212,rx:10,ry:10
+    style TRANSFORM fill:#7FD5E8,stroke:#32738C,stroke-width:1px,color:#121212,rx:18,ry:18
 
-    style AFTER fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#121212,rx:10,ry:10
+    style AFTER fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#121212,rx:18,ry:18
     style A_SCORE fill:#14D793,color:#003322,stroke:#0FB67D,stroke-width:0.5px,rx:10,ry:10
     style A_DIMS fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style A_STATUS fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
@@ -509,12 +509,12 @@ graph TB
         style D2 fill:#14D793,color:#003322,stroke:#0FB67D,stroke-width:0.5px,rx:10,ry:10
     end
     
-    style ERA1 fill:#FBEAEA,stroke:#EB898B,stroke-width:0.5px,color:#121212,rx:10,ry:10
+    style ERA1 fill:#FBEAEA,stroke:#EB898B,stroke-width:1px,color:#121212,rx:18,ry:18
     style A1 fill:#F6D1CE,stroke:#EB898B,stroke-width:0.5px,color:#7A1F22,rx:10,ry:10
     style B1 fill:#F6D1CE,stroke:#EB898B,stroke-width:0.5px,color:#7A1F22,rx:10,ry:10
     style C1 fill:#F6D1CE,stroke:#EB898B,stroke-width:0.5px,color:#7A1F22,rx:10,ry:10
     
-    style ERA2 fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#121212,rx:10,ry:10
+    style ERA2 fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#121212,rx:18,ry:18
     style A2 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style B2 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style C2 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
@@ -579,12 +579,12 @@ graph TB
         style D2 fill:#14D793,color:#003322,stroke:#0FB67D,stroke-width:0.5px,rx:10,ry:10
     end
     
-    style ERA1 fill:#FBEAEA,stroke:#EB898B,stroke-width:0.5px,color:#121212,rx:10,ry:10
+    style ERA1 fill:#FBEAEA,stroke:#EB898B,stroke-width:1px,color:#121212,rx:18,ry:18
     style A1 fill:#F6D1CE,stroke:#EB898B,stroke-width:0.5px,color:#7A1F22,rx:10,ry:10
     style B1 fill:#F6D1CE,stroke:#EB898B,stroke-width:0.5px,color:#7A1F22,rx:10,ry:10
     style C1 fill:#F6D1CE,stroke:#EB898B,stroke-width:0.5px,color:#7A1F22,rx:10,ry:10
 
-    style ERA2 fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#121212,rx:10,ry:10
+    style ERA2 fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#121212,rx:18,ry:18
     style A2 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style B2 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style C2 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
@@ -651,12 +651,12 @@ graph TB
     end
 
 
-    style ERA1 fill:#FBEAEA,stroke:#EB898B,stroke-width:0.5px,color:#121212,rx:10,ry:10
+    style ERA1 fill:#FBEAEA,stroke:#EB898B,stroke-width:1px,color:#121212,rx:18,ry:18
     style A1 fill:#F6D1CE,stroke:#EB898B,stroke-width:0.5px,color:#7A1F22,rx:10,ry:10
     style B1 fill:#F6D1CE,stroke:#EB898B,stroke-width:0.5px,color:#7A1F22,rx:10,ry:10
     style D1 fill:#EB898B,stroke:#7A1F22,stroke-width:0.5px,color:#7A1F22,rx:10,ry:10
 
-    style ERA2 fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#121212,rx:10,ry:10
+    style ERA2 fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#121212,rx:18,ry:18
     style A2 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style B2 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style C2 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
@@ -734,7 +734,7 @@ graph TB
         A2 --> B2 --> C2 --> D2
     end
 
-    style ERA1 fill:#FBEAEA,stroke:#EB898B,stroke-width:0.5px,color:#121212,rx:10,ry:10
+    style ERA1 fill:#FBEAEA,stroke:#EB898B,stroke-width:1px,color:#121212,rx:18,ry:18
     style A1 fill:#F6D1CE,stroke:#EB898B,stroke-width:0.5px,color:#7A1F22,rx:10,ry:10
     style B1 fill:#F6D1CE,stroke:#EB898B,stroke-width:0.5px,color:#7A1F22,rx:10,ry:10
     style C1 fill:#F6D1CE,stroke:#EB898B,stroke-width:0.5px,color:#7A1F22,rx:10,ry:10
@@ -742,7 +742,7 @@ graph TB
     style D1 fill:#EB898B,stroke:#7A1F22,stroke-width:0.5px,color:#7A1F22,rx:10,ry:10
 
     %% ---- Agent Era (Solution) ----
-    style ERA2 fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#121212,rx:10,ry:10
+    style ERA2 fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#121212,rx:18,ry:18
     style A2 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style B2 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style C2 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
@@ -810,13 +810,13 @@ graph TB
     end
 
     %% ---- Siloed Era (Problem) ----
-    style ERA1 fill:#FBEAEA,stroke:#EB898B,stroke-width:0.5px,color:#121212,rx:10,ry:10
+    style ERA1 fill:#FBEAEA,stroke:#EB898B,stroke-width:1px,color:#121212,rx:18,ry:18
     style A1 fill:#F6D1CE,stroke:#EB898B,stroke-width:0.5px,color:#7A1F22,rx:10,ry:10
     style B1 fill:#F6D1CE,stroke:#EB898B,stroke-width:0.5px,color:#7A1F22,rx:10,ry:10
 
     style D1 fill:#EB898B,stroke:#7A1F22,stroke-width:0.5px,color:#7A1F22,rx:10,ry:10
 
-    style ERA2 fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#121212,rx:10,ry:10
+    style ERA2 fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#121212,rx:18,ry:18
     style A2 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style B2 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style C2 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
@@ -884,13 +884,13 @@ graph TB
         A2 --> B2 --> C2 --> D2
     end
 
-    style ERA1 fill:#FBEAEA,stroke:#EB898B,stroke-width:0.5px,color:#121212,rx:10,ry:10
+    style ERA1 fill:#FBEAEA,stroke:#EB898B,stroke-width:1px,color:#121212,rx:18,ry:18
     style A1 fill:#F6D1CE,stroke:#EB898B,stroke-width:0.5px,color:#7A1F22,rx:10,ry:10
     style B1 fill:#F6D1CE,stroke:#EB898B,stroke-width:0.5px,color:#7A1F22,rx:10,ry:10
 
     style D1 fill:#EB898B,stroke:#7A1F22,stroke-width:0.5px,color:#7A1F22,rx:10,ry:10
 
-    style ERA2 fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#121212,rx:10,ry:10
+    style ERA2 fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#121212,rx:18,ry:18
     style A2 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style B2 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style C2 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10

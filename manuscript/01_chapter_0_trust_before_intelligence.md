@@ -26,9 +26,9 @@ graph LR
     style B1 fill:#F6D1CE,stroke:#EB898B,stroke-width:0.5px,color:#7A1F22,rx:10,ry:10
     style T1 fill:#4478A6,stroke:#32738C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style A1 fill:#14D793,stroke:#0FB67D,stroke-width:0.5px,color:#003322,rx:10,ry:10
-    style BEFORE fill:#FBEAEA,stroke:#EB898B,stroke-width:0.5px,color:#121212,rx:10,ry:10
-    style TRANSFORM fill:#E6F3F6,stroke:#000000,stroke-width:0.5px,color:#121212,rx:10,ry:10
-    style AFTER fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#121212,rx:10,ry:10
+    style BEFORE fill:#FBEAEA,stroke:#EB898B,stroke-width:1px,color:#121212,rx:18,ry:18
+    style TRANSFORM fill:#E6F3F6,stroke:#000000,stroke-width:1px,color:#121212,rx:18,ry:18
+    style AFTER fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#121212,rx:18,ry:18
     style Copyright fill:none,stroke:none,color:#666666
     
 ```
@@ -142,11 +142,11 @@ graph LR
     
     HumanEra --> TRANSFORM --> AgentEra
     
-    style HumanEra fill:#FBEAEA,stroke:#EB898B,stroke-width:0.5px,color:#121212, rx:10,ry:10
+    style HumanEra fill:#FBEAEA,stroke:#EB898B,stroke-width:1px,color:#121212, rx:18,ry:18
     style H1 fill:#F6D1CE,stroke:#EB898B,stroke-width:0.5px,color:#7A1F22, rx:10,ry:10
-    style TRANSFORM fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#121212, rx:10,ry:10
+    style TRANSFORM fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#121212, rx:18,ry:18
     style T1 fill:#4478A6,stroke:##e4ebed,color:#ffffff, rx:10,ry:10
-    style AgentEra fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#121212 rx:10,ry:10
+    style AgentEra fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#121212 rx:18,ry:18
     style A1 fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff, rx:10,ry:10
     style Copyright fill:none,stroke:none,color:#666666
 
@@ -214,7 +214,7 @@ graph TB
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
-    style HITL fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#121212, rx:10,ry:10
+    style HITL fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#121212, rx:18,ry:18
     style I fill:#7FD5E8,stroke:#32738C,stroke-width:0.5px,color:#00323D, rx:10,ry:10
     style N fill:#7FD5E8,stroke:#32738C,stroke-width:0.5px,color:#00323D, rx:10,ry:10
     style P fill:#7FD5E8,stroke:#32738C,stroke-width:0.5px,color:#00323D, rx:10,ry:10
