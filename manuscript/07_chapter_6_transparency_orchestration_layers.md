@@ -446,7 +446,7 @@ graph TB
     style A fill:#30838C,stroke:#0D0D0D,stroke-width:1px,color:#FFFFFF,rx:10,ry:10
     style C fill:#30838C,stroke:#0D0D0D,stroke-width:1px,color:#FFFFFF,rx:10,ry:10
 
-    style ABAC fill:#F4F9D8,stroke:#C9C94A,stroke-width:1.5px,color:#121212,rx:18,ry:18
+    style ABAC fill:#F4F9D8,stroke:#C9C94A,stroke-width:1px,color:#121212,rx:18,ry:18
 
     style Policy fill:#327C8C,stroke:#0D0D0D,stroke-width:1px,color:#FFFFFF,rx:10,ry:10
     style Copyright fill:none,stroke:none,color:#666666
@@ -1045,7 +1045,7 @@ graph TB
     style Revenue fill:#327C8C,stroke:#0D0D0D,stroke-width:1px,color:#FFFFFF,rx:10,ry:10
     style State fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#00323D,rx:10,ry:10
     style Response fill:#14D793,stroke:#0FB67D,stroke-width:1px,color:#003322,rx:10,ry:10
-    style PARALLEL fill:#F4F9D8,stroke:#C9C94A,stroke-width:1.5px,color:#121212,rx:18,ry:18
+    style PARALLEL fill:#F4F9D8,stroke:#C9C94A,stroke-width:1px,color:#121212,rx:18,ry:18
     style Copyright fill:none,stroke:none,color:#666666
 ```
 
