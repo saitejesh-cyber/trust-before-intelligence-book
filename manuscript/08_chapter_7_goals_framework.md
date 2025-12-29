@@ -1678,7 +1678,7 @@ graph LR
         TRUST -->|<b>Usage patterns inform</b>| INPACT
     end
     
-    style FLYWHEEL fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#121212,rx:10,ry:10
+    style FLYWHEEL fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#121212,rx:18,ry:18
     style INPACT fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style LAYERS fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style GOALS fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10

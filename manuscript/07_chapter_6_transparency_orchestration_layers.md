@@ -351,13 +351,13 @@ graph TB
     Risk -->|"Low"| Auto --> Audit
     Risk -->|"High"| HITL --> Human --> Audit
     
-    style LAYER5 fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#121212,rx:10,ry:10
+    style LAYER5 fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#121212,rx:18,ry:18
     style Query fill:#7FD5E8,stroke:#32738C,stroke-width:0.5px,color:#00323D,rx:10,ry:10
     style EVAL fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#121212,rx:18,ry:18
     style ABAC fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style OPA fill:#327C8C,stroke:#30838C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
     style Risk fill:#4478A6,stroke:#32738C,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
-    style DECISION fill:#E6F3F6,stroke:#32738C,stroke-width:0.5px,color:#121212,rx:10,ry:10
+    style DECISION fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#121212,rx:18,ry:18
     style Auto fill:#14D793,color:#003322,stroke:#0FB67D,stroke-width:0.5px,rx:10,ry:10
     style HITL fill:#EB898B,color:#ffffff,stroke:#7A1F22,stroke-width:0.5px,rx:10,ry:10
     style Human fill:#7FD5E8,stroke:#32738C,stroke-width:0.5px,color:#00323D,rx:10,ry:10

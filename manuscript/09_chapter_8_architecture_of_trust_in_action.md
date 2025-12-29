@@ -517,7 +517,7 @@ graph TB
     HIGH --> RESULT
     LOW --> PROMPT --> RESP --> RESULT
 
-    style DISAMBIGUATION fill:#E6F3F6,stroke:#32738C,stroke-width:1.5px,color:#121212,rx:18,ry:18
+    style DISAMBIGUATION fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#121212,rx:18,ry:18
     style PATHS fill:#F4F9FC,stroke:#32738C,stroke-width:1px,color:#121212,rx:14,ry:14
     style Q fill:#7FD5E8,stroke:#32738C,stroke-width:1px,color:#00323D,rx:10,ry:10
     style CONF fill:#30838C,stroke:#0D0D0D,stroke-width:1px,color:#FFFFFF,rx:10,ry:10
@@ -604,7 +604,7 @@ graph TB
     GATE3 -->|"Pass"| PASS
     GATE3 -->|"Flag"| QUARANTINE
 
-    style QUALITY fill:#E6F3F6,stroke:#32738C,stroke-width:1.5px,color:#121212,rx:18,ry:18
+    style QUALITY fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#121212,rx:18,ry:18
     style OUTCOMES fill:#F4F9FC,stroke:#32738C,stroke-width:1px,color:#121212,rx:14,ry:14
     style SOURCE fill:#30838C,stroke:#0D0D0D,stroke-width:1px,color:#FFFFFF,rx:10,ry:10
     style GATE1 fill:#7FD5E8,stroke:#32738C,stroke-width:1px,color:#00323D,rx:10,ry:10
