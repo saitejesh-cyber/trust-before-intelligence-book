@@ -23,12 +23,12 @@ graph LR
     
     BEFORE --> PHASES --> AFTER
 
-    style BEFORE fill:#FBEAEA,stroke:#EB898B,stroke-width:1px,color:#121212,rx:18,ry:18
-    style B1 fill:#F6D1CE,stroke:#EB898B,stroke-width:0.5px,color:#7A1F22,rx:10,ry:10
-    style PHASES fill:##E6F3F6,stroke:#32738C,stroke-width:1px,color:#121212,rx:18,ry:18
-    style P1 fill:#4478A6,stroke:#e4ebed,stroke-width:0.5px,color:#FFFFFF,rx:10,ry:10
-    style AFTER fill:#E6F3F6,stroke:#32738C,stroke-width:1px,color:#121212,rx:18,ry:18
-    style A1 fill:#30838C,stroke:#0D0D0D,stroke-width:0.5px,color:#ffffff,rx:10,ry:10
+    style BEFORE fill:#FBEAEA,stroke:#EB898B,stroke-width:1.5px,color:#121212,rx:18,ry:18
+    style PHASES fill:#E6F3F6,stroke:#32738C,stroke-width:1.5px,color:#121212,rx:18,ry:18
+    style AFTER fill:#E6F3F6,stroke:#32738C,stroke-width:1.5px,color:#121212,rx:18,ry:18
+    style B1 fill:#F6D1CE,stroke:#EB898B,stroke-width:1px,color:#7A1F22,rx:10,ry:10
+    style P1 fill:#4478A6,stroke:#2F5F8A,stroke-width:1px,color:#FFFFFF,rx:10,ry:10
+    style A1 fill:#30838C,stroke:#0D0D0D,stroke-width:1px,color:#FFFFFF,rx:10,ry:10
 
 ```
 
