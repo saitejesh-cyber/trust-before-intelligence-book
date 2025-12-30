@@ -748,9 +748,9 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#757575
 ```
 
-Echo deployed their scheduling agent in January with 87% appointment booking accuracy. By March, accuracy dropped to 73%. Analysis revealed three drift categories: 
+Echo deployed their scheduling agent in September with 87% appointment booking accuracy. By November, accuracy dropped to 73%. Analysis revealed three drift categories: 
 **Data drift**: new physicians added, locations changed, service offerings expanded
-**Concept drift**: seasonal patterns shifted (January = New Year wellness checks, March = allergy season). 
+**Concept drift**: seasonal patterns shifted (September = back-to-school physicals, November = flu season). 
 **Performance drift**: model optimized for 200 daily queries now handling 600, response patterns changed.
 
 Manual retraining required data science team availability, retraining pipeline execution, validation testing, and production deployment. Total time: 3-4 weeks. During drift period: frustrated users, abandoned bookings, manual intervention required.
@@ -925,7 +925,7 @@ Week 9 after implementing Layer 7: LangSmith deployed for full trace logging [13
 
 Results: Override rate: 70% → 15% (79% improvement). Physician trust: "confident in agent recommendations" 23% → 81%. Audit compliance: complete trace IDs for all 3,000+ daily agent interactions. Reasoning transparency: physicians could verify evidence for 100% of recommendations.
 
-**Specific scenario:** Same Ozempic recommendation, now with transparency: "Recommendation: Ozempic (semaglutide) 0.5mg weekly. Reasoning: (1) Patient's eGFR 42 mL/min contraindicates metformin [evidence: lab result 2024-03-15]. (2) Insurance covers Ozempic tier 2 copay $35 [evidence: benefits check 2024-03-18]. (3) ADA 2024 guidelines recommend GLP-1 agonists for patients with renal impairment [evidence: ADA Standards of Care 2024]. Alternative considered: DPP-4 inhibitors (less effective per GRADE evidence). Confidence: 89%."
+**Specific scenario:** Same Ozempic recommendation, now with transparency: "Recommendation: Ozempic (semaglutide) 0.5mg weekly. Reasoning: (1) Patient's eGFR 42 mL/min contraindicates metformin [evidence: lab result 03-01]. (2) Insurance covers Ozempic tier 2 copay $35 [evidence: benefits check 03-04]. (3) ADA 2024 guidelines recommend GLP-1 agonists for patients with renal impairment [evidence: ADA Standards of Care 2024]. Alternative considered: DPP-4 inhibitors (less effective per GRADE evidence). Confidence: 89%."
 
 Physician response: "This makes sense. Proceed with Ozempic." Override: avoided.
 
