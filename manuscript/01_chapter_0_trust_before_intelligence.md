@@ -34,12 +34,12 @@ graph LR
     
     BEFORE --> TRANSFORM --> AFTER
     
-    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
-    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style B1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style T1 fill:#f5f5f5,stroke:#666666,color:#333333
-    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:2O,ry:20
+    style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333,rx:2O,ry:20
+    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:2O,ry:20
+    style B1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c,rx:1O,ry:10
+    style T1 fill:#f5f5f5,stroke:#666666,color:#333333,rx:1O,ry:10
+    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40,rx:1O,ry:10
     style Copyright fill:#ffffff,stroke:none,color:#666666
     
 ```
@@ -183,12 +183,12 @@ graph LR
     
     HumanEra --> TRANSFORM --> AgentEra
     
-    style HumanEra fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
-    style AgentEra fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style H1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style T1 fill:#f5f5f5,stroke:#666666,color:#333333
-    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style HumanEra fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:2O,ry:20
+    style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333,rx:2O,ry:20
+    style AgentEra fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:2O,ry:20
+    style H1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c,rx:1O,ry:10
+    style T1 fill:#f5f5f5,stroke:#666666,color:#333333,rx:1O,ry:10
+    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40,rx:1O,ry:10
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
@@ -265,14 +265,14 @@ graph TB
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
-    style HITL fill:#f0fff0,stroke:#00897b,stroke-width:2px
-    style I fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style N fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style P fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style C fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style T fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style Trust fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style HITL fill:#f0fff0,stroke:#00897b,stroke-width:2px,rx:2O,ry:20
+    style I fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style N fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style P fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style A fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style C fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style T fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style Trust fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px,rx:1O,ry:10
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
@@ -350,11 +350,11 @@ graph TB
     Layers -.->|"Enables Operations"| GOALS
     GOALS -.->|"Drives Trust"| INPACT
     
-    style Title fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Title fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px,rx:20,ry:20
     style PILLARS fill:none,stroke:none
-    style INPACT fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style Layers fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style GOALS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style INPACT fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:20,ry:20
+    style Layers fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:20,ry:20
+    style GOALS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:20,ry:20
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
