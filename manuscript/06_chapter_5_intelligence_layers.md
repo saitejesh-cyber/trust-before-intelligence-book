@@ -25,6 +25,10 @@ The foundation was solid. The data was fresh. But the agent couldn't tell the di
 
 Fast isn't enough. Confident wrong is dangerous.
 
+The demo exposed the gap: infrastructure could deliver data fast, but couldn't make it meaningful. This chapter closes that gap.
+
+**This chapter builds intelligence: Layers 3 and 4.**
+
 ---
 
 **Diagram 1: Intelligence Layers - Why Layers 3-4 Enable Understanding**
@@ -64,11 +68,8 @@ graph LR
 
 ## PART 1: INTELLIGENCE ARCHITECTURE INTRODUCTION
 
-The demo exposed the gap: infrastructure could deliver data fast, but couldn't make it meaningful. This chapter closes that gap.
 
-**This chapter builds intelligence: Layers 3 and 4.**
-
-**Diagram 2: The Architecture of Trust—Intelligence Layers Highlighted**
+**Diagram 2: The Architecture of Trust - Intelligence Layers Highlighted**
 
 ```mermaid
 
@@ -121,11 +122,11 @@ graph TB
 
 Foundation without intelligence is like having a well-stocked library with no catalog and no librarian. Data availability alone doesn't create agent capability. Intelligence transforms accessible data into understanding and reasoning.
 
-**Layer 3 (Semantic Layer):** Business language understanding. When a clinician asks about "high-risk diabetic patients," semantic infrastructure translates this to diagnosis codes (E11.*), lab thresholds (HbA1c > 7.0), and scheduling logic—without requiring database schemas or SQL queries.
+**Layer 3 (Semantic Layer):** Business language understanding. When a clinician asks about "high-risk diabetic patients," semantic infrastructure translates this to diagnosis codes (E11.*), lab thresholds (HbA1c > 7.0), and scheduling logic, without requiring database schemas or SQL queries.
 
-**Layer 4 (Intelligence):** Complete reasoning pipeline encompassing query understanding, embedding generation, hybrid retrieval, reranking, context assembly, LLM generation, and semantic caching. RAG and LLMs are tightly coupled components of the same layer—effective retrieval-augmented generation requires both.[8][9]
+**Layer 4 (Intelligence):** Complete reasoning pipeline encompassing query understanding, embedding generation, hybrid retrieval, reranking, context assembly, LLM generation, and semantic caching. RAG and LLMs are tightly coupled components of the same layer. Effective retrieval-augmented generation requires both.[8][9]
 
-**Diagram 3: 7-Layer Agent-Ready Architecture—Intelligence Highlighted**
+**Diagram 3: 7-Layer Agent-Ready Architecture - Intelligence Highlighted**
 
 ```mermaid
 graph TB
@@ -180,7 +181,7 @@ Sarah's team would close these gaps in three weeks.
 
 ### INPACT™ Dimension Focus: Natural (N)
 
-Chapter 5 primarily addresses the **Natural (N)** dimension of INPACT™—the need for agents to understand and respond in natural language. This dimension had the largest gap at Echo Health Systems after foundation completion.
+Chapter 5 primarily addresses the **Natural (N)** dimension of INPACT™, the need for agents to understand and respond in natural language. This dimension had the largest gap at Echo Health Systems after foundation completion.
 
 At Week 4 (end of Chapter 4), Echo's INPACT™ score was 42/100:
 
@@ -205,27 +206,13 @@ The Natural dimension scored 2/6 because Echo's infrastructure could not:
 
 ## PART 2: ECHO'S INTELLIGENCE CHALLENGE
 
-Monday morning, Week 5. Sarah Cedao convened the intelligence kickoff in Echo's conference room overlooking Boston Harbor. The February sun cast long shadows across the whiteboard, still covered with Phase 1 architecture diagrams.
-
-"Foundation is live," Sarah announced. "Eight storage categories operational. Real-time streaming at 28-second freshness. INPACT™ score: 42/100. We hit our Phase 1 targets."
-
-The Phase 2 team assembled: Marcus Williams (CDO), Swapna Ram (Lead Data Engineer), Jamie Rodriguez (Director of IT), Krish Yadav (CFO, via video), and Dr. Angela Torres (Chief Medical Officer, joining for her first infrastructure meeting after the Phase 1 clinical validation results).
-
-Marcus displayed the agent pilot results. "Scheduling agent pilot—launched in the final days of Phase 1 to stress-test the foundation—live with 5 internal users. Query response: 2.8 seconds, down from 9-13 seconds. Storage works. Real-time works." He paused. "But accuracy is 47%."
-
-For a scheduling agent clinicians would depend on, that failure rate was unacceptable.
-
-Marcus demonstrated: "Show me Dr. Martinez's available appointments next week." The agent responded in 2.8 seconds:
-
-> *"I found 847 records matching 'Martinez' across 3 systems. Unable to determine which Dr. Martinez you mean. Please specify: provider_id, physician_npi, or schedule_id."*
-
-"Users won't provide NPI numbers," Dr. Torres said. "They'll say 'Dr. Martinez in Cardiology' or 'the heart doctor on the fourth floor.' The agent needs context understanding."
+As the demo continued in the Monday morning session convened by Sarah Cedao, Dr. Torres said "Users won't provide NPI numbers. They'll say 'Dr. Martinez in Cardiology' or 'the heart doctor on the fourth floor.' The agent needs context understanding."
 
 The National Provider Identifier (NPI) is a 10-digit HIPAA-mandated identifier for healthcare providers, maintained by CMS through the National Plan and Provider Enumeration System.[7] While essential for cross-system interoperability, clinical users rarely know these technical identifiers.
 
 "That's the problem," Marcus continued. "We have the data and speed. But the agent doesn't understand what users are asking. It can't translate 'Dr. Martinez' to the specific provider across systems or understand that 'high-risk diabetic patients' means diagnosis codes E11.*, HbA1c > 7.0, and scheduling criteria. It's literal, not intelligent."
 
-Swapna displayed the architecture slide. "The issue is structural. Layers 1-2 deliver data availability—we store and stream any data type with sub-30-second freshness. But we have no semantic layer to translate business language to data language, and no intelligence layer to retrieve relevant context and reason about it."
+Swapna displayed the architecture slide. "The issue is structural. Layers 1-2 deliver data availability. We store and stream any data type with sub-30-second freshness. But we have no semantic layer to translate business language to data language, and no intelligence layer to retrieve relevant context and reason about it."
 
 She traced the failure mode:
 
@@ -254,7 +241,7 @@ Response: "Which Dr. Martinez do you mean? Please provide provider_id."
 
 Krish Yadav's face on screen showed careful attention. "What's the cost of intelligence? We have $380,000 allocated for Phase 2. Sufficient?"
 
-"Tight but workable," Swapna replied. "Largest costs are LLM APIs and vector database. We've architected for efficiency—semantic caching will reduce LLM costs by 80-85% once operational."
+"Tight but workable," Sarah replied. "The Largest costs are LLM APIs and vector databases. We've architected for efficiency. Semantic caching will reduce LLM costs by 80-85% once operational."
 
 Sarah walked to the whiteboard. "The business problem: We promised the board agent-ready infrastructure by Week 10. INPACT™ score of 86/100 or higher. We're at 42. The gap is 43 points."
 
@@ -270,7 +257,7 @@ Week 10: 86/100 (Governance + Orchestration) → +18 points
 
 Swapna nodded to Jamie Rodriguez, who displayed the Phase 2 architecture diagram:
 
-**Diagram 4: Echo's Intelligence Challenge—Current State vs. Target State**
+**Diagram 4: Echo's Intelligence Challenge - Current State vs. Target State**
 
 ```mermaid
 graph TB
@@ -300,35 +287,37 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-"Three weeks," Swapna said. "Week 5: Layer 3—semantic infrastructure. Business glossary with 2,400 clinical terms, entity resolution across all provider and patient systems, clinical concept mapping to SNOMED, ICD-10, and LOINC.[3][4][5] Week 6: Layer 4 stages 1-5—vector database deployment with 10 million document embeddings, hybrid retrieval pipeline, reranking optimization, context assembly. Week 7: Layer 4 stages 6-7—LLM integration with multi-model routing, semantic caching activation. By Friday of Week 7, we'll have our first fully intelligent query."
+"Three weeks," Swapna said. "Week 5: Layer 3 semantic infrastructure. Business glossary with 2,400 clinical terms, entity resolution across all provider and patient systems, clinical concept mapping to SNOMED, ICD-10, and LOINC.[3][4][5]. 
+Week 6: Layer 4 stages 1-5 vector database deployment with 10 million document embeddings, hybrid retrieval pipeline, reranking optimization, context assembly. 
+Week 7: Layer 4 stages 6-7 LLM integration with multi-model routing, semantic caching activation. By Friday of Week 7, we'll have our first fully intelligent query."
 
 Marcus raised the key question: "How do we get from 47% accuracy to 85%+?"
 
-"The semantic layer is the bridge," Swapna answered. "Right now, 'Dr. Martinez' hits three different ID systems and returns confusion. With entity resolution, 'Dr. Martinez' resolves to a single golden ID—provider_npi=1234567890—that connects all three systems. The agent knows exactly who we're talking about before it even queries."
+"The semantic layer is the bridge," Swapna answered. "Right now, 'Dr. Martinez' hits three different ID systems and returns confusion. With entity resolution, 'Dr. Martinez' resolves to a single golden ID,provider_npi=1234567890, that connects all three systems. The agent knows exactly who we're talking about before it even queries."
 
 "And the RAG pipeline?" Sarah asked.
 
-"RAG grounds the LLM in our actual data.[8] Instead of generating responses from training data—which leads to hallucinations—the agent retrieves specific records from our systems, assembles them as context, and generates responses based on what it actually found. The 847 Martinez records become the 3 most relevant records about Dr. Sarah Martinez's schedule, with citations pointing to source systems."
+"RAG grounds the LLM in our actual data.[8] Instead of generating responses from training data which leads to hallucinations, the agent retrieves specific records from our systems, assembles them as context, and generates responses based on what it actually found. The 847 Martinez records become the 3 most relevant records about Dr. Sarah Martinez's schedule, with citations pointing to source systems."
 
 Dr. Torres leaned forward. "What about clinical safety? We can't have the agent hallucinating medication dosages or missing allergies."
 
-"Healthcare-specific guardrails are built into the prompt architecture," Swapna explained. "The LLM is instructed to cite every clinical claim from retrieved sources. If it cannot find supporting documentation, it must say so rather than fabricate. And for high-risk queries—medication orders, diagnostic interpretations—we route to human review through Layer 5 governance workflows. But governance is Chapter 6. First, we build intelligence."
+"Healthcare-specific guardrails are built into the prompt architecture," Swapna explained. "The LLM is instructed to cite every clinical claim from retrieved sources. If it cannot find supporting documentation, it must say so rather than fabricate. And for high-risk queries, medication orders, diagnostic interpretations,we route to human review through Layer 5 governance workflows. But governance is Chapter 6. First, we build intelligence."
 
 Sarah stood. "Phase 2 approved. Let's make the data intelligent."
 
 ---
 
-## PART 3: LAYER 3—SEMANTIC LAYER
+## PART 3: LAYER 3 - SEMANTIC LAYER
 
-Sarah's directive—"make the data intelligent"—began with Layer 3. Before agents could reason, they needed to understand.
+Sarah's directive "make the data intelligent" began with Layer 3. Before agents could reason, they needed to understand.
 
 ### Translating Human Language to Agent Queries
 
-Layer 3 is the business understanding layer—a machine-readable representation of your organization's concepts, terminology, and relationships that agents can navigate without knowing database schemas, table names, or join logic.
+Layer 3 is the business understanding layer, a machine-readable representation of your organization's concepts, terminology, and relationships that agents can navigate without knowing database schemas, table names, or join logic.
 
-The semantic layer translates human language to data structures.[1] When a care coordinator asks "Show me patients needing diabetes follow-up," it resolves this to: diagnosis codes E11.*, HbA1c lab results > 7.0, last appointment > 90 days, excluding deceased patients—automatically, without the coordinator writing SQL or knowing which tables contain which fields.
+The semantic layer translates human language to data structures.[1] When a care coordinator asks "Show me patients needing diabetes follow-up," it resolves this to: diagnosis codes E11.*, HbA1c lab results > 7.0, last appointment > 90 days, excluding deceased patients automatically, without the coordinator writing SQL or knowing which tables contain which fields.
 
-**Diagram 5: Layer 3—Semantic Layer Architecture**
+**Diagram 5: Layer 3 -Semantic Layer Architecture**
 
 ```mermaid
 flowchart TB
@@ -371,26 +360,26 @@ flowchart TB
 
 ### Components of the Semantic Layer
 
-**Business Glossary:** The authoritative dictionary of organizational terminology. Every metric, dimension, and concept has a formal definition, calculation logic, data sources, owners, and lineage. "Active patient" means "patient with encounter in past 12 months, excluding deceased"—not open to interpretation.
+**Business Glossary:** The authoritative dictionary of organizational terminology. Every metric, dimension, and concept has a formal definition, calculation logic, data sources, owners, and lineage. "Active patient" means "patient with an encounter in the past 12 months, excluding deceased", not open to interpretation.
 
 **Entity Resolution:** The capability to recognize that the same real-world entity appears under different identifiers across systems.[22] Patient MRN (Medical Record Number) 12345 in Epic equals member_id CUST-890 in claims equals specimen_id LAB-456 in the lab system. Entity resolution creates "golden IDs" that unify these disparate identifiers.
 
 **Clinical Ontologies:** Healthcare-specific terminologies that enable precise concept mapping:
-- [SNOMED CT](https://www.snomed.org) (Systematized Nomenclature of Medicine—Clinical Terms): 350,000+ clinical concepts with formal relationships[3]
+- [SNOMED CT](https://www.snomed.org) (Systematized Nomenclature of Medicine Clinical Terms): 350,000+ clinical concepts with formal relationships[3]
 - [ICD-10](https://icd.who.int/browse10/2019/en) (International Classification of Diseases, 10th Revision): WHO standard diagnosis and procedure codes for billing and clinical tracking, with over 14,000 unique codes used in 117+ countries[4]
 - [LOINC](https://loinc.org) (Logical Observation Identifiers Names and Codes): 25,000+ laboratory and clinical observation codes maintained by the Regenstrief Institute[5]
 
-**Knowledge Graphs:** Relationship networks that encode how concepts connect.[21] "Dr. Martinez" is_a "Cardiologist" who works_at "Echo Cardiac Center" and treats patients with "Heart Failure"—enabling the agent to traverse relationships, not just match keywords.
+**Knowledge Graphs:** Relationship networks that encode how concepts connect.[21] "Dr. Martinez" is_a "Cardiologist" who works_at "Echo Cardiac Center" and treats patients with "Heart Failure" enabling the agent to traverse relationships, not just match keywords.
 
 ### Healthcare Ontology Deep Dive
 
 Healthcare presents unique semantic challenges. A single clinical concept can have dozens of representations across systems, coding standards, and clinical contexts.
 
-**SNOMED CT (Systematized Nomenclature of Medicine—Clinical Terms):**
+**SNOMED CT (Systematized Nomenclature of Medicine Clinical Terms):**
 
 [SNOMED CT](https://www.snomed.org) provides the most comprehensive clinical terminology with over 350,000 concepts organized in formal hierarchies.[3] When an agent encounters "heart attack," SNOMED CT provides the preferred term (Myocardial infarction), concept ID (22298006), hierarchical parents (Ischemic heart disease → Heart disease → Cardiovascular disease), and related concepts (Troponin elevation, chest pain, coronary artery disease).
 
-This hierarchy enables semantic reasoning. An agent searching for "cardiovascular patients" can traverse the hierarchy to include myocardial infarction, heart failure, arrhythmias, and hypertension—without explicit enumeration of each condition.
+This hierarchy enables semantic reasoning. An agent searching for "cardiovascular patients" can traverse the hierarchy to include myocardial infarction, heart failure, arrhythmias, and hypertension without explicit enumeration of each condition.
 
 **ICD-10 (International Classification of Diseases):**
 
@@ -400,7 +389,7 @@ ICD-10's specificity matters for agent accuracy. "Diabetes" alone matches E08-E1
 
 **LOINC (Logical Observation Identifiers Names and Codes):**
 
-[LOINC](https://loinc.org) standardizes laboratory and clinical observations—essential for agents interpreting diagnostic results.[5] Consider HbA1c (glycated hemoglobin): LOINC Code 4548-4 specifies Hemoglobin A1c/Hemoglobin.total in Blood on a Quantitative scale.
+[LOINC](https://loinc.org) standardizes laboratory and clinical observations essential for agents interpreting diagnostic results.[5] Consider HbA1c (glycated hemoglobin): LOINC Code 4548-4 specifies Hemoglobin A1c/Hemoglobin.total in Blood on a Quantitative scale.
 
 Without LOINC mapping, "HbA1c" in one lab system might be stored as "GLYCOHEMOGLOBIN" in another, "A1C" in a third, and "HEMOGLOBIN A1C" in a fourth. The semantic layer unifies these representations so agents can consistently interpret lab results regardless of source system terminology.
 
@@ -426,11 +415,11 @@ Agents speak natural language. Databases speak schemas. The semantic layer bridg
 
 Without semantic understanding, a clinician asks: "Which of my diabetic patients haven't been seen in 90 days?" The agent attempts direct SQL generation, guesses column names, fails to find "diagnosis" (it's `dx_code` in claims, `problem_list` in EHR), and returns "I couldn't find diabetes information."
 
-With Layer 3, the semantic parser extracts intent, condition, filter, and scope. The business glossary resolves "diabetes" → ICD-10 codes E08-E13[4], "my patients" → provider_npi=current_user[7]. Entity resolution links dx_code (claims) + problem_list (EHR) + lab_flag (lab). The agent executes precise query and returns: "You have 23 diabetic patients without appointments in 90+ days. Here are the top 5 by risk score..."
+With Layer 3, the semantic parser extracts intent, condition, filter, and scope. The business glossary resolves "diabetes" → ICD-10 codes E08-E13[4], "my patients" → provider_npi=current_user[7]. Entity resolution links dx_code (claims) + problem_list (EHR) + lab_flag (lab). The agent executes a precise query and returns: "You have 23 diabetic patients without appointments in 90+ days. Here are the top 5 by risk score..."
 
-The difference is transformational. Research benchmarks show that direct natural language-to-SQL conversion achieves only 40-55% accuracy on complex cross-domain queries; adding semantic layer context—business glossaries, entity resolution, and schema understanding—improves accuracy to 75-90%.[23][24]
+The difference is transformational. Research benchmarks show that direct natural language-to-SQL conversion achieves only 40-55% accuracy on complex cross-domain queries; adding semantic layer context, business glossaries, entity resolution, and schema understanding improves accuracy to 75-90%.[23][24]
 
-**Diagram 6: Before/After—Keyword Search vs. Semantic Search**
+**Diagram 6: Before/After - Keyword Search vs. Semantic Search**
 
 ```mermaid
 graph TB
@@ -510,13 +499,13 @@ Echo evaluated tools across five categories, prioritizing healthcare compliance,
 - [Senzing](https://senzing.com) - Real-time entity resolution API
 - [Tamr](https://www.tamr.com) - Enterprise data mastering
 
-Echo's selections—dbt, Senzing, and Alation—are detailed in the implementation section below.
+Echo's selections dbt, Senzing, and Alation are detailed in the implementation section below.
 
 ### Echo's Gap
 
-Echo's data infrastructure had 487 tables with cryptic names like `FCT_PTNT_ENCT` and `DIM_PRVDR_SPCLT`. Documentation existed in SharePoint—18 months out of date. The data lake had even less structure: files named `epic_extract_20240315.parquet` with no catalog entry.
+Echo's data infrastructure had about 500 tables with cryptic names like `FCT_PTNT_ENCT` and `DIM_PRVDR_SPCLT`. Documentation  in SharePoint is 18 months out of date. The data lake had even less structure: files named `epic_extract_20240315.parquet` with no catalog entry.
 
-No system connected natural language concepts to these technical artifacts. Every agent query required custom translation logic. There was no entity resolution—"Dr. Martinez" in one system was not linked to the same provider in another. No metric versioning—when definitions changed, agents broke silently. No ontology mapping—clinical concepts existed as free text, not structured codes.
+No system connected natural language concepts to these technical artifacts. Every agent query required custom translation logic. There is no entity resolution. "Dr. Martinez" in one system was not linked to the same provider in another. No metric versioning—when definitions changed, agents broke silently. No ontology mapping, clinical concepts existed as free text, not structured codes.
 
 The result: 47% accuracy on natural language queries. More than half of user requests resulted in errors, empty results, or confused responses.
 
@@ -535,7 +524,7 @@ For data cataloging, Echo implemented [Alation](https://www.alation.com) to prov
 | Component | Specification | Status |
 |-----------|--------------|--------|
 | **Business Glossary** | 2,400 clinical terms defined | Complete |
-| **Entity Resolution** | 847 provider entities unified | Complete |
+| **Entity Resolution** | 850 provider entities unified | Complete |
 | **Golden IDs** | patient_master_id, provider_npi, facility_id | Complete |
 | **Ontology Mapping** | SNOMED[3], ICD-10[4], LOINC[5] crosswalks | Complete |
 | **dbt Semantic Models** | 156 metrics, 89 dimensions | Complete |
@@ -549,7 +538,7 @@ For data cataloging, Echo implemented [Alation](https://www.alation.com) to prov
 
 ### INPACT™ Contribution
 
-**Layer 3 primarily fulfills Natural (N):** Enabling business language understanding—"diabetes follow-up patients" translates to precise queries without SQL knowledge.
+**Layer 3 primarily fulfills Natural (N):** Enabling business language understanding, "diabetes follow-up patients" translates to precise queries without SQL knowledge.
 
 > **📓 For complete technology evaluation criteria and implementation details, see Appendix DA-4, Section H.3: Technology Selection Methodology.**
 
@@ -571,15 +560,15 @@ Sarah's team had taught the infrastructure to understand. Layer 4 would teach it
 
 ---
 
-## PART 4: LAYER 4—INTELLIGENCE (RAG + LLM)
+## PART 4: LAYER 4 - INTELLIGENCE (RAG + LLM)
 
 ### Teaching Agents to Respond Intelligently
 
-Layer 4 is the complete intelligence pipeline—the system that transforms user queries into grounded, accurate responses through retrieval-augmented generation with large language model integration.[8] This is not a single technology but an orchestrated workflow encompassing seven stages: query understanding, embedding generation, hybrid retrieval, reranking, context assembly, LLM generation, and semantic caching.
+Layer 4 is the complete intelligence pipeline system that transforms user queries into grounded, accurate responses through retrieval-augmented generation with large language model integration.[8] This is not a single technology but an orchestrated workflow encompassing seven stages: query understanding, embedding generation, hybrid retrieval, reranking, context assembly, LLM generation, and semantic caching.
 
-**Critical Architectural Note:** LLMs are part of Layer 4, not a separate layer. The 7-Layer Architecture represents infrastructure concerns, not technology lists. Layer 4's concern is "HOW agents understand and respond"—which requires the complete pipeline from query to response. Separating RAG from LLMs would be like separating a car's engine from its transmission—theoretically possible but architecturally incoherent.
+**Critical Architectural Note:** LLMs are part of Layer 4, not a separate layer. The 7-Layer Architecture represents infrastructure concerns, not technology lists. Layer 4's concern is "HOW agents understand and respond", which requires the complete pipeline from query to response. Separating RAG from LLMs would be like separating a car's engine from its transmission, theoretically possible but architecturally incoherent.
 
-**Diagram 7: Layer 4—Complete Intelligence Pipeline**
+**Diagram 7: Layer 4 - Complete Intelligence Pipeline**
 
 ```mermaid
 graph TB
@@ -623,19 +612,19 @@ graph TB
 
 ### Why Agents Need RAG
 
-Without RAG, language models rely solely on their training data—knowledge frozen at their cutoff date, containing no information about your specific organization, patients, or operations. The result is confident hallucination: responses that sound authoritative but are factually wrong.
+Without RAG, language models rely solely on their training data knowledge frozen at their cutoff date, containing no information about your specific organization, patients, or operations. The result is confident hallucination: responses that sound authoritative but are factually wrong.
 
-RAG solves this by grounding LLM responses in retrieved context.[8][9] Instead of asking "What are the risk factors for this patient?" and hoping the LLM remembers general medical knowledge, RAG retrieves the specific patient's records—lab results, diagnoses, medications, encounters—and provides them as context. The LLM generates responses based on actual data, with citations pointing to source documents.
+RAG solves this by grounding LLM responses in retrieved context.[8][9] Instead of asking "What are the risk factors for this patient?" and hoping the LLM remembers general medical knowledge, RAG retrieves the specific patient's records, lab results, diagnoses, medications, encounters and provides them as context. The LLM generates responses based on actual data, with citations pointing to source documents.
 
 Anthropic's production RAG guidance explains that well-implemented retrieval architectures significantly reduce hallucination rates by grounding language model responses in retrieved factual information, with retrieval latency targets of 200ms or less for real-time conversational applications.[2]
 
 ### Stage 1: Query Understanding
 
-Query understanding extracts intent, entities, and constraints from natural language—enabling "Show me Dr. Martinez's high-risk patients" to become executable logic. Components include intent classification (search/command/question), entity extraction (patients, providers, conditions), constraint identification (filters, ranges), and query reformulation for optimal retrieval.
+Query understanding extracts intent, entities, and constraints from natural language enabling "Show me Dr. Martinez's high-risk patients" to become executable logic. Components include intent classification (search/command/question), entity extraction (patients, providers, conditions), constraint identification (filters, ranges), and query reformulation for optimal retrieval.
 
 ### Stage 2: Embedding Generation
 
-Embedding models transform text into high-dimensional vectors where similar concepts cluster together—enabling "diabetes management" to match "glycemic control" without shared keywords.[15] Echo chose text-embedding-3-large (3,072 dimensions) for production accuracy, text-embedding-3-small for batch cost optimization.
+Embedding models transform text into high-dimensional vectors where similar concepts cluster together enabling "diabetes management" to match "glycemic control" without shared keywords.[15] Echo chose text-embedding-3-large (3,072 dimensions) for production accuracy, text-embedding-3-small for batch cost optimization.
 
 | Model | Provider | Dimensions | Best For | Cost |
 |-------|----------|------------|----------|------|
@@ -960,7 +949,7 @@ NDCG (Normalized Discounted Cumulative Gain) is a standard ranking evaluation me
 
 Following the kickoff, Swapna's semantic team began glossary construction in Echo's war room.
 
-"We have 487 database tables," Swapna announced. "By Friday, we need 2,400 business terms mapped to them. That's 480 terms per day."
+"We have about 500 database tables," Swapna announced. "By Friday, we need 2,400 business terms mapped to them. That's 480 terms per day."
 
 The room absorbed the scale. Marcus raised an eyebrow. "Is that even possible?"
 
