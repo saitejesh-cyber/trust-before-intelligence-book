@@ -11,23 +11,23 @@ Week 5, Day 1*
 
 "Show me Dr. Martinez's patients with pending lab results."
 
-The scheduling agent responded in 2.8 seconds. Fast. Marcus smiled—four weeks of foundation work paying off.
+The scheduling agent responded in 2.8 seconds. Fast. Marcus smiled. Four weeks of foundation work paying off.
 
 Then Dr. Torres leaned forward. "Wait. Those are dermatology patients."
 
-Marcus checked the query. The agent had returned Dr. Carlos Martinez, Dermatology. The team wanted Dr. Sarah Martinez, Cardiology—whose cardiac patients had pending troponin results that actually mattered.
+Marcus checked the query. The agent had returned results for Dr. Carlos Martinez, Dermatology. The team wanted Dr. Sarah Martinez, Cardiology—whose cardiac patients had pending lab results that actually mattered.
 
 "It picked the wrong doctor," Sarah said quietly.
 
 "Forty-seven percent accuracy," Marcus admitted. "We're fast. But we're returning confident wrong answers. That's worse than returning nothing."
 
-The foundation was solid. The data was fresh. But the agent couldn't tell the difference between two doctors with the same last name—or understand that "pending labs" for cardiac patients meant something urgent.
+The foundation was solid. The data was fresh. But the agent couldn't tell the difference between two doctors with the same last name or understand that "pending labs" for cardiac patients meant something urgent.
 
-Fast wasn't enough. Confident wrong was dangerous.
+Fast isn't enough. Confident wrong is dangerous.
 
 ---
 
-**Diagram 1: Intelligence Layers — Why Layers 3-4 Enable Understanding**
+**Diagram 1: Intelligence Layers - Why Layers 3-4 Enable Understanding**
 
 ```mermaid
 
@@ -55,6 +55,8 @@ graph LR
     style W1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
     style T1 fill:#f5f5f5,stroke:#666666,color:#333333
     style L1 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    
+    %% © 2025 Colaberry Inc. All rights reserved.
 
 ```
 
