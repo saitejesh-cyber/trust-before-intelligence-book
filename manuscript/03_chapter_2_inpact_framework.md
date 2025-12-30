@@ -40,12 +40,12 @@ graph LR
     
     WITHOUT --> TRANSFORM --> WITH
     
-    style WITHOUT fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
-    style WITH fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style W1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style T1 fill:#f5f5f5,stroke:#666666,color:#333333
-    style I1 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style WITHOUT fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:2O,ry:20
+    style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333,rx:2O,ry:20
+    style WITH fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:2O,ry:20
+    style W1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c,rx:1O,ry:10
+    style T1 fill:#f5f5f5,stroke:#666666,color:#333333,rx:1O,ry:10
+    style I1 fill:#b2dfdb,stroke:#00897b,color:#004d40,rx:1O,ry:10
     
 
 ```
@@ -91,12 +91,12 @@ graph TB
     Layers -.->|"Enables Operations"| GOALS
     GOALS -.->|"Drives Trust"| INPACT
     
-    style Title fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style PILLARS fill:none,stroke:none
-    style INPACT fill:#f57c00,stroke:#e65100,stroke-width:3px,color:#ffffff
-    style Layers fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style GOALS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style Title fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px,rx:2O,ry:20
+    style PILLARS fill:none,stroke:none,rx:2O,ry:20
+    style INPACT fill:#f57c00,stroke:#e65100,stroke-width:3px,color:#ffffff,rx:2O,ry:20
+    style Layers fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:2O,ry:20
+    style GOALS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:2O,ry:20
+    style Copyright fill:none,stroke:none,color:#666666
 
 
 
@@ -176,27 +176,27 @@ graph TB
     
     COPYRIGHT["<b>© 2025 Colaberry Inc.</b>"]
     
-    style TITLE fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style TITLE fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000,rx:2O,ry:20
     
     style ROW fill:#ffffff,stroke:none
     
-    style HUMAN fill:#fff9e6,stroke:#f57c00,stroke-width:3px,color:#e65100
-    style H1 fill:#ffffff,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style H2 fill:#ffffff,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style H3 fill:#ffffff,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style H4 fill:#ffffff,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style H5 fill:#ffffff,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style H6 fill:#ffffff,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style HUMAN fill:#fff9e6,stroke:#f57c00,stroke-width:3px,color:#e65100,rx:2O,ry:20
+    style H1 fill:#ffffff,stroke:#f57c00,stroke-width:2px,color:#e65100,rx:1O,ry:10
+    style H2 fill:#ffffff,stroke:#f57c00,stroke-width:2px,color:#e65100,rx:1O,ry:10
+    style H3 fill:#ffffff,stroke:#f57c00,stroke-width:2px,color:#e65100,rx:1O,ry:10
+    style H4 fill:#ffffff,stroke:#f57c00,stroke-width:2px,color:#e65100,rx:1O,ry:10
+    style H5 fill:#ffffff,stroke:#f57c00,stroke-width:2px,color:#e65100,rx:1O,ry:10
+    style H6 fill:#ffffff,stroke:#f57c00,stroke-width:2px,color:#e65100,rx:1O,ry:10
     
-    style AGENT fill:#e0f2f1,stroke:#00897b,stroke-width:3px,color:#004d40
-    style A1 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A3 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A4 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A5 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A6 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style AGENT fill:#e0f2f1,stroke:#00897b,stroke-width:3px,color:#004d40,rx:2O,ry:20
+    style A1 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style A3 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style A4 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style A5 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style A6 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
     
-    style TRUST fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style TRUST fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px,rx:2O,ry:20
     
     style COPYRIGHT fill:#ffffff,stroke:none,color:#666666
 ```
@@ -251,17 +251,17 @@ graph TB
     
     COPYRIGHT["<b>© 2025 Colaberry Inc.</b>"]
     
-    style BOX fill:#f0fff0,stroke:#00897b,stroke-width:3px
-    style I fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style N fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style P fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style C fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style T fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style BOX fill:#f0fff0,stroke:#00897b,stroke-width:3px,rx:2O,ry:20
+    style I fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style N fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style P fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style A fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style C fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style T fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
     
-    style TRUST fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style TRUST fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px,rx:2O,ry:20
     
-    style COPYRIGHT fill:#ffffff,stroke:none,color:#666666
+    style COPYRIGHT fill:none,stroke:none,color:#666666
 ```
 
 **When even one need fails, trust collapses across all dimensions.** Agents operate on binary trust. Users either trust enough to delegate, or they don't trust at all. Echo's scheduling agent achieved 95% accuracy but took 9-13 seconds to respond. Users abandoned it. Accuracy didn't matter when speed destroyed conversational experience.
@@ -308,12 +308,12 @@ graph TB
     DECISION -->|<b>YES</b>| READY
     DECISION -->|<b>NO</b>| GAPS
     
-    style TITLE fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style ASSESS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style CALC fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style DECISION fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style READY fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style GAPS fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
+    style TITLE fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000,rx:2O,ry:20
+    style ASSESS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:2O,ry:20
+    style CALC fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100,rx:2O,ry:20
+    style DECISION fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100,rx:2O,ry:20
+    style READY fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px,rx:2O,ry:20
+    style GAPS fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px,rx:2O,ry:20
     style COPYRIGHT fill:#ffffff,stroke:none,color:#666666
 ```
 
@@ -391,21 +391,21 @@ A_STATUS["<b>Production-Ready</b><br/><b>• All dimensions ≥5/6 </b><br/><b>�
     
     COPYRIGHT["<b>© 2025 Colaberry Inc.</b>"]
     
-    style TITLE fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style TITLE fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000,rx:2O,ry:20
     
-    style BEFORE fill:#fff5f5,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style B_SCORE fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
-    style B_DIMS fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style B_STATUS fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style BEFORE fill:#fff5f5,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:2O,ry:20
+    style B_SCORE fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px,rx:1O,ry:10
+    style B_DIMS fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:1O,ry:10
+    style B_STATUS fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:1O,ry:10
     
-    style TRANSFORM fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style TRANSFORM fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100,rx:2O,ry:20
     
-    style AFTER fill:#f0fff0,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A_SCORE fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style A_DIMS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A_STATUS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style AFTER fill:#f0fff0,stroke:#00897b,stroke-width:2px,color:#004d40,rx:2O,ry:20
+    style A_SCORE fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px,rx:1O,ry:10
+    style A_DIMS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style A_STATUS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
     
-    style COPYRIGHT fill:#ffffff,stroke:none,color:#666666
+    style COPYRIGHT fill:none,stroke:none,color:#666666
 ```
 
 ---
@@ -494,18 +494,18 @@ graph TB
         style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px
     end
     
-    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style A1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style B1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style C1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:2O,ry:20
+    style A1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:1O,ry:10
+    style B1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:1O,ry:10
+    style C1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:1O,ry:10
     
-    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style B2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style C2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:2O,ry:20
+    style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style B2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style C2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style Copyright fill:none,stroke:none,color:#666666
 ```
 
 Echo's agent took 9-13 seconds to respond. Appointment availability queries hit data warehouses refreshed overnight via batch ETL. By 10 AM, data was 8+ hours stale. The database was cold with no indexes optimized for agent patterns, no caching. Every request forced table scans.
@@ -570,18 +570,18 @@ graph TB
         style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px
     end
     
-    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style A1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style B1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style C1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:2O,ry:20
+    style A1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:1O,ry:10
+    style B1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:1O,ry:10
+    style C1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:1O,ry:10
     
-    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style B2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style C2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:2O,ry:20
+    style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style B2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style C2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:#ffffff,stroke:none,color:#757575
+    style Copyright fill:none,stroke:none,color:#757575
 ```
 
 Echo's database schema: 347 tables, average table name 23 characters of cryptic abbreviations. DIM_CUST_LOC_ADDR_FACT_D_KEY meant "customer location address fact dimension key." Legacy naming was chosen for technical reasons fifteen years ago. Perfect for batch ETL. Unintelligible to LLMs and humans.
@@ -653,17 +653,17 @@ graph TB
         style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px
     end
     
-    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style A1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style B1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:2O,ry:20
+    style A1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:1O,ry:10
+    style B1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:1O,ry:10
     
-    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style B2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style C2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:2O,ry:20
+    style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style B2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style C2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:#ffffff,stroke:none,color:#757575
+    style Copyright fill:none,stroke:none,color:#757575
 ```
 
 Echo used four RBAC roles: reader (view only), writer (edit appointments), admin (configuration), app_service (agent). The agent used app_service credentials with table-level SELECT permissions across all patient tables. 
@@ -734,18 +734,18 @@ graph TB
         style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px
     end
     
-    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style A1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style B1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style C1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:2O,ry:20
+    style A1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:1O,ry:10
+    style B1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:1O,ry:10
+    style C1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:1O,ry:10
     
-    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style B2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style C2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:2O,ry:20
+    style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style B2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style C2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:#ffffff,stroke:none,color:#757575
+    style Copyright fill:none,stroke:none,color:#757575
 ```
 
 Echo deployed their scheduling agent in September with 87% appointment booking accuracy. By November, accuracy dropped to 73%. Analysis revealed three drift categories: 
@@ -816,17 +816,17 @@ graph TB
         style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px
     end
     
-    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style A1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style B1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:2O,ry:20
+    style A1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:1O,ry:10
+    style B1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:1O,ry:10
     
-    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style B2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style C2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style B2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style C2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:#ffffff,stroke:none,color:#757575
+    style Copyright fill:none,stroke:none,color:#757575
 ```
 
 Echo's initial agent had partial integration. EHR connected to scheduling, with read-only lab access. But billing, pharmacy, and patient portal remained siloed. Query: "What do I need to know about my Tuesday appointment?" Agent response: "You have an appointment Tuesday at 2 PM with Dr. Martinez for annual physical. Labs ordered: comprehensive metabolic panel." Missing context: Lab requires 12-hour fasting (instruction not surfaced). Insurance needs prior auth for specific tests (billing not connected). Pharmacy flagged medication interaction (pharmacy not connected). Two outstanding forms (patient portal not connected).
@@ -890,17 +890,17 @@ graph TB
         style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px
     end
     
-    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style A1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style B1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:2O,ry:20
+    style A1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:1O,ry:10
+    style B1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:1O,ry:10
     
-    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style B2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style C2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:2O,ry:20
+    style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style B2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style C2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:#ffffff,stroke:none,color:#757575
+    style Copyright fill:none,stroke:none,color:#757575
 ```
 
 Echo's initial agent provided recommendations without explanation. Physician query: "Treatment options for Patient 10243's Type 2 diabetes." Agent response: "Consider Ozempic (semaglutide) as first-line therapy." Physician question: "Why Ozempic specifically?" Agent: [no explanation available]. Physician override: prescribes metformin instead (standard first-line per institutional protocol).
