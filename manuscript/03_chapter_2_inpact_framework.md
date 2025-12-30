@@ -480,7 +480,7 @@ graph TB
         B1 --> C1["<b>BI Query<br/>8-13 seconds</b>"]
         C1 --> D1["<b>Stale Data<br/>8-24 hours old</b>"]
         
-        style D1 fill:#b71c1c,color:#ffffff,stroke:#c62828,stroke-width:3px
+        style D1 fill:#b71c1c,color:#ffffff,stroke:#c62828,stroke-width:3px,rx:1O,ry:10
     end
     
     ERA1 -.->|<b>Evolution</b>| ERA2
@@ -491,7 +491,7 @@ graph TB
         B2 --> C2["<b>Agent Query<br/>&lt;2 seconds</b>"]
         C2 --> D2["<b>Fresh Data<br/>&lt;30 seconds old</b>"]
         
-        style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px
+        style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px,rx:1O,ry:10
     end
     
     style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:2O,ry:20
@@ -556,7 +556,7 @@ graph TB
         B1 --> C1["<b>Cryptic Table<br/>FCT_PTNT_ENCT</b>"]
         C1 --> D1["<b>2-3 days<br/>40-60% accuracy</b>"]
         
-        style D1 fill:#b71c1c,color:#ffffff,stroke:#c62828,stroke-width:3px
+        style D1 fill:#b71c1c,color:#ffffff,stroke:#c62828,stroke-width:3px,rx:1O,ry:10
     end
     
     ERA1 -.->|<b>Evolution</b>| ERA2
@@ -567,7 +567,7 @@ graph TB
         B2 --> C2["<b>Business Terms<br/>'Patient Encounters'</b>"]
         C2 --> D2["<b>Instant<br/>87-93% accuracy</b>"]
         
-        style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px
+        style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px,rx:1O,ry:10
     end
     
     style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:2O,ry:20
@@ -639,7 +639,7 @@ graph TB
         A1["<b>User = Scheduler<br/>Role Granted</b>"] --> B1["<b>Access ALL<br/>Patient Records</b>"]
         B1 --> D1["<b>HIPAA<br/>Violation</b>"]
         
-        style D1 fill:#b71c1c,color:#ffffff,stroke:#c62828,stroke-width:3px
+        style D1 fill:#b71c1c,color:#ffffff,stroke:#c62828,stroke-width:3px,rx:1O,ry:10
     end
     
     ERA1 -.->|<b>Add Context Layer</b>| ERA2
@@ -650,7 +650,7 @@ graph TB
         B2 --> C2["<b>Dynamic<br/>Masking</b>"]
         C2 --> D2["<b>HIPAA<br/>Compliant</b>"]
         
-        style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px
+        style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px,rx:1O,ry:10
     end
     
     style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:2O,ry:20
@@ -720,7 +720,7 @@ graph TB
         B1 --> C1["<b>Manual Retrain<br/>Q2 (3 months)</b>"]
         C1 --> D1["<b>3-Month<br/>Degradation Window</b>"]
         
-        style D1 fill:#b71c1c,color:#ffffff,stroke:#c62828,stroke-width:3px
+        style D1 fill:#b71c1c,color:#ffffff,stroke:#c62828,stroke-width:3px,rx:1O,ry:10
     end
     
     ERA1 -.->|<b>Evolution</b>| ERA2
@@ -731,7 +731,7 @@ graph TB
         B2 --> C2["<b>Auto Retrain<br/>Drift Detected</b>"]
         C2 --> D2["<b>Continuous<br/>Improvement</b>"]
         
-        style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px
+        style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px,rx:1O,ry:10
     end
     
     style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:2O,ry:20
@@ -802,7 +802,7 @@ graph TB
         A1["<b>Agent Query</b>"] --> B1["<b>EHR<br/>Only</b>"]
         B1 --> D1["<b>Incomplete<br/>Answer</b>"]
         
-        style D1 fill:#b71c1c,color:#ffffff,stroke:#c62828,stroke-width:3px
+        style D1 fill:#b71c1c,color:#ffffff,stroke:#c62828,stroke-width:3px,rx:1O,ry:10
     end
     
     ERA1 -.->|<b>Evolution</b>| ERA2
@@ -813,7 +813,7 @@ graph TB
         B2 --> C2["<b>Context<br/>Enriched</b>"]
         C2 --> D2["<b>Complete<br/>Answer</b>"]
         
-        style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px
+        style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px,rx:1O,ry:10
     end
     
     style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:2O,ry:20
@@ -876,7 +876,7 @@ graph TB
         A1["<b>Agent<br/>Recommendation</b>"] --> B1["<b>No<br/>Explanation</b>"]
         B1 --> D1["<b>70% Override<br/>Rate</b>"]
         
-        style D1 fill:#b71c1c,color:#ffffff,stroke:#c62828,stroke-width:3px
+        style D1 fill:#b71c1c,color:#ffffff,stroke:#c62828,stroke-width:3px,rx:1O,ry:10
     end
     
     ERA1 -.->|<b>Evolution</b>| ERA2
@@ -887,7 +887,7 @@ graph TB
         B2 --> C2["<b>Clinical<br/>Evidence</b>"]
         C2 --> D2["<b>15% Override<br/>Rate</b>"]
         
-        style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px
+        style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px,rx:1O,ry:10
     end
     
     style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:2O,ry:20
