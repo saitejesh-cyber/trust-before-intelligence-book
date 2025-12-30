@@ -48,16 +48,16 @@ graph LR
     BEFORE --> SOLUTION --> AFTER
     
     %% RED - Problems/Old Era (Day 0 with gaps)
-    style BEFORE fill:#fff5f5,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style B1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style BEFORE fill:#fff5f5,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:2O,ry:20
+    style B1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:1O,ry:10
     
     %% ORANGE - Transition/Solution
-    style SOLUTION fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style S1 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style SOLUTION fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100,rx:2O,ry:20
+    style S1 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100,rx:1O,ry:10
     
     %% TEAL - Success/Result (Day 70)
-    style AFTER fill:#f0fff0,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A1 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style AFTER fill:#f0fff0,stroke:#00897b,stroke-width:2px,color:#004d40,rx:2O,ry:20
+    style A1 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px,rx:1O,ry:10
     
     %% Copyright
     style Copyright fill:#ffffff,stroke:none,color:#666666
@@ -164,18 +164,21 @@ graph LR
     era2 -.->|<b>PARADIGM SHIFT <br> Requires INPACT™ </b>| era3
     
     %% Era 1 - Neutral/Gray (Old)
-    style P1 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style I1 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style era1 stroke-width:2px,rx:20,ry:20
+    style P1 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000,rx:1O,ry:10
+    style I1 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000,rx:1O,ry:10
     
     %% Era 2 - Orange (Transition/ML Addition)
-    style P2 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style I2 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style era2 stroke-width:2px,rx:20,ry:20
+    style P2 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100,rx:1O,ry:10
+    style I2 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100,rx:1O,ry:10
     
     %% Era 3 - Teal (Modern/Agent-Ready)
-    style P3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style I3 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style era3 stroke-width:2px,rx:20,ry:20
+    style P3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style I3 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px,rx:1O,ry:10
     
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style Copyright fill:none,stroke:none,color:#666666
 ```
 
 As Figure 3.1 illustrates, running Software 3.0 agents on Software 1.0 infrastructure is like running cloud-native microservices on mainframe batch processing. The assumptions don't align.
@@ -240,22 +243,24 @@ graph TB
     Shift -.->|<b>To Enable</b>| new
     
     %% BI-Era (Red - Problems/Old Approach)
-    style O1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style O2 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style O3 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style O4 fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
+    style old stroke-width:2px,rx:2O,ry:20
+    style O1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:1O,ry:10
+    style O2 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:1O,ry:10
+    style O3 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:1O,ry:10
+    style O4 fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px,rx:1O,ry:10
     
     %% Agent-Era (Teal - Solutions/Modern Approach)
-    style N1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style N2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style N3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style N4 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style new stroke-width:2px,rx:2O,ry:20
+    style N1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style N2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style N3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style N4 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px,rx:1O,ry:10
     
     %% Transition Element
-    style Shift fill:#fff9e6,stroke:#f57c00,stroke-width:3px,color:#e65100
+    style Shift fill:#fff9e6,stroke:#f57c00,stroke-width:3px,color:#e65100,stroke-width:2px,rx:2O,ry:20
     
     %% Copyright
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style Copyright fill:none,stroke:none,color:#666666
 ```
 
 Figure 3.2 captures this paradigm shift. The key differences are stark:
@@ -529,36 +534,36 @@ graph LR
     N6 -.->|"Solved by"| L6
     
     %% Styling - GAPS (Red - Problems)
-    style gaps fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style G1 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style G2 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style G3 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style G4 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style G5 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style G6 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style G7 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style gaps fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:2O,ry:20
+    style G1 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:1O,ry:10
+    style G2 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:1O,ry:10
+    style G3 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:1O,ry:10
+    style G4 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:1O,ry:10
+    style G5 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:1O,ry:10
+    style G6 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:1O,ry:10
+    style G7 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:1O,ry:10
     
     %% Styling - NEEDS (Neutral - Requirements)
-    style needs fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style N1 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
-    style N2 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
-    style N3 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
-    style N4 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
-    style N5 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
-    style N6 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
+    style needs fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000,rx:2O,ry:20
+    style N1 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000,rx:1O,ry:10
+    style N2 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000,rx:1O,ry:10
+    style N3 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000,rx:1O,ry:10
+    style N4 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000,rx:1O,ry:10
+    style N5 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000,rx:1O,ry:10
+    style N6 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000,rx:1O,ry:10
     
     %% Styling - LAYERS (Teal - Solutions)
-    style layers fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L1 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L2 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L3 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L4 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L5 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L6 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L7 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style layers fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style L1 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style L2 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style L3 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style L4 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style L5 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style L6 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
+    style L7 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40,rx:1O,ry:10
     
     %% Copyright
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style Copyright fill:none,stroke:none,color:#666666
 
 ```
 
