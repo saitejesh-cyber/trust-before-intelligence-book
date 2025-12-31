@@ -159,7 +159,7 @@ graph TB
 
 These intelligence layers directly address specific gaps from Chapter 3:
 
-### The Seven Infrastructure Gaps (Intelligence Focus)
+### The Seven Gaps: Intelligence Focus
 
 Chapter 3 identified seven infrastructure gaps preventing agent deployment. Chapter 4 addressed Gaps 1-2 (storage and real-time). Chapter 5 addresses **Gaps 3-4**.
 
@@ -371,7 +371,7 @@ flowchart TB
 
 **Knowledge Graphs:** Relationship networks that encode how concepts connect.[21] "Dr. Martinez" is_a "Cardiologist" who works_at "Echo Cardiac Center" and treats patients with "Heart Failure" enabling the agent to traverse relationships, not just match keywords.
 
-### Healthcare Ontology Deep Dive
+### Healthcare Ontology
 
 Healthcare presents unique semantic challenges. A single clinical concept can have dozens of representations across systems, coding standards, and clinical contexts.
 
@@ -529,12 +529,6 @@ For data cataloging, Echo implemented [Alation](https://www.alation.com) to prov
 | **Ontology Mapping** | SNOMED[3], ICD-10[4], LOINC[5] crosswalks | Complete |
 | **dbt Semantic Models** | 156 metrics, 89 dimensions | Complete |
 
-**Investment (Layer 3):**
-- Alation Data Catalog: $28,000 (annual license, 10 users)
-- Senzing Entity Resolution: $12,000 (annual license)
-- dbt Cloud Semantic Layer: $5,000 (incremental to existing)
-- Professional Services: $45,000 (glossary population, ontology mapping)
-- **Layer 3 Total: $90,000**
 
 ### INPACT™ Contribution
 
@@ -849,15 +843,15 @@ graph TB
 
 **Cost Impact:**
 - Before caching: $14,500/month LLM costs
-- After caching (85% hit rate): $2,175/month effective
-- Monthly savings: $12,325
-- Net savings: $12,200/month (after $125/month cache infrastructure)
+- After caching (84% hit rate): $2,300/month effective
+- Monthly savings: $12,200
+- Net savings: $12,200/month (cache infrastructure included in Layer 4)
 
-### Prompt Caching for Additional Savings
+### Prompt Caching
 
 Modern LLMs support prompt-level caching for system prompts and context preambles. Echo implemented [Anthropic's prompt caching](https://www.anthropic.com/news/prompt-caching) and [OpenAI's prompt caching](https://platform.openai.com/docs/guides/prompt-caching), caching system instructions (8K tokens) and clinical context (4K tokens). Combined with semantic response caching, total LLM cost reduction: 93%, bringing effective cost per query from $0.034 to $0.0023.
 
-### Key Technologies Summary
+### Key Technologies
 
 For the intelligence pipeline, Echo evaluated RAG frameworks and evaluation tools based on healthcare integration requirements and observability needs:
 
@@ -903,15 +897,7 @@ Agent responses were slow (3-8 seconds), frequently wrong (53% error rate), and 
 | **Query Router** | Custom classifier | Complexity-based routing |
 | **Semantic Cache** | GPTCache + Pinecone | 85% hit rate |
 
-**Investment (Layer 4):**
-- Pinecone Vector DB: $60,000/year
-- OpenAI Embeddings: $15,000 (initial indexing)
-- Cohere Rerank: $8,000/year
-- LLM APIs (annual): $102,000 (post-caching)
-- LlamaIndex Enterprise: $12,000/year
-- Self-hosted Llama infrastructure: $33,600/year
-- Professional Services: $60,000 (pipeline development)
-- **Layer 4 Total: $290,600**
+
 
 ### INPACT™ Contribution
 
@@ -1212,7 +1198,7 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-### Metrics Summary
+### Results
 
 | Metric | Week 4 | Week 7 | Improvement |
 |--------|--------|--------|-------------|
