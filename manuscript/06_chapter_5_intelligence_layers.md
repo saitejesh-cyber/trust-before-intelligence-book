@@ -66,7 +66,7 @@ graph LR
 
 > **Key Takeaway:** Intelligence requires understanding. Layers 3-4 give agents semantic awareness.
 
-## PART 1: INTELLIGENCE ARCHITECTURE INTRODUCTION
+## PART 1: THE INTELLIGENCE GAP
 
 
 **Diagram 2: The Architecture of Trust - Intelligence Layers Highlighted**
@@ -204,7 +204,7 @@ The Natural dimension scored 2/6 because Echo's infrastructure could not:
 
 ---
 
-## PART 2: ECHO'S INTELLIGENCE CHALLENGE
+## PART 2: THE KICKOFF
 
 As the demo continued in the Monday morning session convened by Sarah Cedao, Dr. Torres said "Users won't provide NPI numbers. They'll say 'Dr. Martinez in Cardiology' or 'the heart doctor on the fourth floor.' The agent needs context understanding."
 
@@ -307,7 +307,7 @@ Sarah stood. "Phase 2 approved. Let's make the data intelligent."
 
 ---
 
-## PART 3: LAYER 3 - SEMANTIC LAYER
+## PART 3: LAYER 3 - THE TRANSLATOR
 
 Sarah's directive "make the data intelligent" began with Layer 3. Before agents could reason, they needed to understand.
 
@@ -560,7 +560,7 @@ Sarah's team had taught the infrastructure to understand. Layer 4 would teach it
 
 ---
 
-## PART 4: LAYER 4 - INTELLIGENCE (RAG + LLM)
+## PART 4: LAYER 4 - INTELLIGENCE
 
 ### Teaching Agents to Respond Intelligently
 
@@ -688,7 +688,7 @@ Echo integrated [Azure Cognitive Search](https://azure.microsoft.com/en-us/produ
 
 ### Stage 4: Reranking
 
-Initial retrieval returns candidates based on surface similarity. Reranking applies sophisticated relevance scoring to identify truly relevant results.[14] Vector search might return 50 documents about "diabetes"; reranking determines which 5 are actually relevant to "this patient's diabetes management plan"—considering recency, patient context, and clinical importance.
+Initial retrieval returns candidates based on surface similarity. Reranking applies sophisticated relevance scoring to identify truly relevant results.[14] Vector search might return 50 documents about "diabetes"; reranking determines which 5 are actually relevant to "this patient's diabetes management plan" considering recency, patient context, and clinical importance.
 
 Echo implemented [Cohere Rerank](https://docs.cohere.com/docs/rerank-overview) with custom scoring: 40% clinical relevance, 30% temporal recency, 20% patient specificity, 10% source authority.[14] Post-reranking selects top 5-10 results for context assembly.
 
@@ -712,7 +712,7 @@ Echo's intelligence pipeline doesn't just retrieve documents; it orchestrates re
 
 #### Architectural Implementation
 
-Echo deployed seven Pinecone namespaces—one per context type—with specialized retrieval strategies for each dimension.[13] Each namespace uses optimized chunking: business context chunks are larger (1,500 tokens) because policies need full context; data context chunks are smaller (600 tokens) because clinical notes need precision.
+Echo deployed seven Pinecone namespaces—one per context type, with specialized retrieval strategies for each dimension.[13] Each namespace uses optimized chunking: business context chunks are larger (1,500 tokens) because policies need full context; data context chunks are smaller (600 tokens) because clinical notes need precision.
 
 Echo's synthesis engine orchestrates retrieval within <400ms: Query Analysis (50ms), Parallel Retrieval across seven namespaces (180ms), Relevance Scoring (40ms), Deduplication (30ms), Priority Assembly (60ms), Token Optimization (40ms). Echo's median: 312ms.
 
@@ -722,11 +722,11 @@ Echo's synthesis engine orchestrates retrieval within <400ms: Query Analysis (50
 
 Healthcare demands explicit uncertainty handling. Echo implemented three-tier confidence: High (>0.85): provide answer with citations; Medium (0.70-0.85): surface with caveats; Low (<0.70): decline to answer, request clarification.
 
-Detection monitors for unsupported claims, confidence inflation, temporal inconsistency, and entity confusion—triggering automated review, response suppression in high-risk scenarios, and feedback to retrieval pipeline.
+Detection monitors for unsupported claims, confidence inflation, temporal inconsistency, and entity confusion triggering automated review, response suppression in high-risk scenarios, and feedback to retrieval pipeline.
 
 ### Stage 6: LLM Generation
 
-Context assembled, citations tracked—now comes reasoning. The LLM synthesizes retrieved information into natural language responses grounded in actual data.
+Context assembled, citations tracked, now comes reasoning. The LLM synthesizes retrieved information into natural language responses grounded in actual data.
 
 | Model | Provider | Context | Strengths | Cost (per 1M tokens) |
 |-------|----------|---------|-----------|---------------------|
@@ -876,7 +876,7 @@ Echo chose LlamaIndex for its healthcare document handling and RAGAS for retriev
 
 ### Echo's Gap (Pre-Chapter 5)
 
-Echo had no intelligence infrastructure. Their initial agent prototype converted natural language to SQL using GPT-4 directly—which worked only 47% of the time. No embedding models meant no semantic search. No caching meant every query hit the LLM API. No reranking meant arbitrary result ordering. No context assembly meant truncation and token waste.
+Echo had no intelligence infrastructure. Their initial agent prototype converted natural language to SQL using GPT-4 directly which worked only 47% of the time. No embedding models meant no semantic search. No caching meant every query hit the LLM API. No reranking meant arbitrary result ordering. No context assembly meant truncation and token waste.
 
 Agent responses were slow (3-8 seconds), frequently wrong (53% error rate), and often incomplete. Users couldn't tell when answers were uncertain. LLM costs spiked unpredictably.
 
@@ -943,7 +943,7 @@ NDCG (Normalized Discounted Cumulative Gain) is a standard ranking evaluation me
 
 ---
 
-## PART 5: ECHO'S WEEK 5-7 BUILD
+## PART 5: BUILDING INTELLIGENCE
 
 ### Week 5: Semantic Infrastructure (Layer 3)
 
@@ -961,7 +961,7 @@ Tuesday brought friction. Quality team's definition of "readmission" (any admiss
 
 Sarah convened rapid governance. "We're not picking winners. We're documenting both clearly. The agent needs to know that `readmission_quality` differs from `readmission_finance` and understand when each applies."
 
-By Wednesday, first entity resolution results arrived. Patient matching achieved 94% confidence; provider matching reached 98%—NPI numbers[7] provided deterministic matching.
+By Wednesday, first entity resolution results arrived. Patient matching achieved 94% confidence; provider matching reached 98%. NPI numbers[7] provided deterministic matching.
 
 Thursday brought first semantic query success: "Show me Dr. Martinez's schedule" resolved correctly through entity resolution → provider_npi=1234567890 → 3 specific appointments returned.
 
@@ -975,7 +975,7 @@ Thursday brought first semantic query success: "Show me Dr. Martinez's schedule"
 
 ### Week 6: RAG Pipeline (Layer 4 Stages 1-5)
 
-Week 6 focused on intelligent retrieval. Document chunking and embedding generation took 72 hours across three OpenAI accounts[15]—8.2 million document chunks reaching 10 million with historical data.
+Week 6 focused on intelligent retrieval. Document chunking and embedding generation took 72 hours across three OpenAI accounts[15]. 8.2 million document chunks reaching 10 million with historical data.
 
 By Thursday, the vector index was live. First retrieval test demonstrated the transformation:
 
@@ -998,7 +998,7 @@ Friday's integration milestone: hybrid retrieval operational. Vector search, key
 
 ### Week 6 Victory: Feature Store Consistency
 
-The Databricks-Tecton integration announcement[20] simplified Echo's roadmap. Rather than deploying a separate feature store platform, Swapna's team enabled Tecton capabilities directly within their existing Databricks workspace—same lakehouse, same governance, new capability.
+The Databricks-Tecton integration announcement[20] simplified Echo's roadmap. Rather than deploying a separate feature store platform, Swapna's team enabled Tecton capabilities directly within their existing Databricks workspace. Same lakehouse, same governance, new capability.
 
 The data science team's chronic pain point was finally solved. "30-day readmission risk" had been calculated three different ways:
 - Sepsis model (Python, scikit-learn, 14 features)
@@ -1023,7 +1023,7 @@ With Tecton on Databricks: single feature definition in Python. All three consum
 
 The final week brought the complete pipeline together.
 
-Monday and Tuesday: LLM integration. Multi-LLM router required careful prompt engineering—Claude received system prompts emphasizing clinical reasoning, GPT-4 received schema definitions for structured output, Llama received simplified prompts for high-volume queries.
+Monday and Tuesday: LLM integration. Multi-LLM router required careful prompt engineering. Claude received system prompts emphasizing clinical reasoning, GPT-4 received schema definitions for structured output, Llama received simplified prompts for high-volume queries.
 
 Wednesday: Query routing logic deployment. Complexity classifier analyzed incoming queries for routing decisions.
 
@@ -1089,7 +1089,7 @@ Dr. Torres examined the response. "These are accurate. I recognize three of thes
 
 Marcus ran the validation suite: 96% accuracy across 500 test queries.
 
-"Forty-seven percent to 96% in three weeks," Swapna said.
+"47% percent to 96% in three weeks," Swapna said.
 
 The room was silent for a moment. Then applause.
 
@@ -1171,11 +1171,11 @@ graph LR
 
 ---
 
-## PART 6: INTELLIGENCE LAYERS COMPLETE
+## PART 6: THE FINISH LINE
 
 ### What We Built
 
-**Diagram 13: Complete Intelligence Architecture—Layers 3-4**
+**Diagram 13: Complete Intelligence Architecture - Layers 3-4**
 
 ```mermaid
 graph TB
@@ -1238,8 +1238,8 @@ graph TB
 
 | Gap | Status | Solution |
 |-----|--------|----------|
-| **Gap 3:** Semantic Understanding | ✅ Resolved | Layer 3: Business glossary, entity resolution |
-| **Gap 4:** Intelligent Retrieval | ✅ Resolved | Layer 4: RAG pipeline with LLM integration |
+| **Gap 3:** Semantic Understanding | Resolved | Layer 3: Business glossary, entity resolution |
+| **Gap 4:** Intelligent Retrieval | Resolved | Layer 4: RAG pipeline with LLM integration |
 
 **Remaining (Chapter 6):**
 - Gap 5: Dynamic Permissions → Layer 5 (Governance)
@@ -1276,7 +1276,7 @@ Without Layer 5 (Governance), the intelligent response creates a compliance viol
 
 - **Layer 7 (Orchestration):** Multi-agent coordination using frameworks like LangGraph. State management across workflows. Integration with all layers below.
 
-**The principle:** Intelligence before governance, but governance before production. Echo's agents are intelligent. Chapter 6 makes them trustworthy and coordinated—completing the architecture.
+**The principle:** Intelligence before governance, but governance before production. Echo's agents are intelligent. Chapter 6 makes them trustworthy and coordinated by completing the architecture.
 
 **Echo's Remaining Journey:**
 
@@ -1286,7 +1286,7 @@ Without Layer 5 (Governance), the intelligent response creates a compliance viol
 | Phase 2: Intelligence | 5-7 | 3-4 | 42 → 67 | **Chapter 5 ✓** |
 | Phase 3: Trust + Orchestration | 8-10 | 5-6-7 | 67 → 85 | Chapter 6 |
 
-At Week 7, Echo has covered 70% of the journey from 28/100 to 86/100. The final 18 points require governance, observability, and orchestration—completing the architecture.
+At Week 7, Echo has covered 70% of the journey from 28/100 to 86/100. The final 18 points require governance, observability, and orchestration to complete the architecture.
 
 Chapter 6 completes the 7-Layer Architecture, making intelligent agents production-ready.
 
@@ -1298,11 +1298,11 @@ Chapter 6 completes the 7-Layer Architecture, making intelligent agents producti
 
 **Intelligence = Understanding + Reasoning:** Layer 3 translates business language to data structures. Layer 4 retrieves, assembles, and reasons over that data.
 
-**LLMs integrate within Layer 4:** The 7-Layer Architecture organizes by infrastructure concern. Layer 4's concern is intelligence—the complete pipeline from query understanding through LLM generation.
+**LLMs integrate within Layer 4:** The 7-Layer Architecture organizes by infrastructure concern. Layer 4's concern is intelligence, the complete pipeline from query understanding through LLM generation.
 
 **RAG prevents hallucination:** Grounding LLM responses in retrieved data reduces hallucination from >30% to <5%.[8][9]
 
-**Semantic caching transforms economics:** 85% cache hit rate reduced Echo's LLM costs from $14,500/month to $2,300/month—$12,200/month savings.
+**Semantic caching transforms economics:** 85% cache hit rate reduced Echo's LLM costs from $14,500/month to $2,300/month, a $12,200/month savings.
 
 **Natural (N) is the primary gain:** INPACT™ Natural dimension improved from 2/6 to 5/6, enabling true natural language interaction.
 
@@ -1351,7 +1351,7 @@ Chapter 6 completes the 7-Layer Architecture, making intelligent agents producti
 - **NPI:** National Provider Identifier[7]
 - **RAG:** Retrieval-Augmented Generation[8]
 - **RRF:** Reciprocal Rank Fusion[11]
-- **SNOMED CT:** Systematized Nomenclature of Medicine—Clinical Terms[3]
+- **SNOMED CT:** Systematized Nomenclature of Medicine Clinical Terms[3]
 - **SQL:** Structured Query Language
 - **TTL:** Time To Live[18]
 
