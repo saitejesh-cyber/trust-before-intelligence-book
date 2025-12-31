@@ -895,7 +895,7 @@ Agent responses were slow (3-8 seconds), frequently wrong (53% error rate), and 
 | **Secondary LLM** | GPT-4 Turbo | Structured output, FHIR[6] |
 | **Bulk LLM** | Llama 3.1 70B | Self-hosted, simple queries |
 | **Query Router** | Custom classifier | Complexity-based routing |
-| **Semantic Cache** | GPTCache + Pinecone | 85% hit rate |
+| **Semantic Cache** | GPTCache + Pinecone | 84% hit rate |
 
 
 
@@ -1082,7 +1082,7 @@ The room was silent for a moment. Then applause.
 **Week 7 Metrics:**
 - Query accuracy: 96%
 - End-to-end latency: 1.8s average (23ms cached)
-- Cache hit rate: 85%
+- Cache hit rate: 84%
 - LLM cost reduction: 84% (from baseline)
 - INPACT™ score: 67/100
 
@@ -1159,6 +1159,22 @@ graph LR
 
 ## PART 6: THE FINISH LINE
 
+## PART 6: THE FINISH LINE
+
+Friday afternoon, Week 7. Sarah convened the leadership team for intelligence review. CFO Krish Yadav joined via video to verify Phase 2 spend against the approved $380,000 budget.
+
+"Final tally: $392,000," Krish reported. "Twelve thousand over budget."
+
+"LLM API costs during Week 6 testing," Swapna explained. "We ran 47,000 test queries before caching went live."
+
+Krish nodded. "Lesson for Phase 3?"
+
+"Cache earlier," Swapna said. "We activated semantic caching in Week 7. If we'd deployed it mid-Week 6, we'd have stayed under budget."
+
+"The overage is manageable," Sarah added. "We're now at $2,300 per month for LLM costs—84% below baseline. The operational savings will recover the implementation variance within sixty days."
+
+Krish made a note. "Phase 3 has the same $380,000 allocation. Apply the lesson."
+
 ### What We Built
 
 **Diagram 13: Complete Intelligence Architecture - Layers 3-4**
@@ -1209,16 +1225,42 @@ graph TB
 
 ### Investment Summary: Phase 2
 
-| Category | Amount | Notes |
-|----------|--------|-------|
-| **Layer 3 (Semantic)** | $90,000 | Glossary, entity resolution |
-| **Layer 4 (Intelligence)** | $290,000 | RAG pipeline, LLMs, caching |
-| **Phase 2 Total** | $380,000 | Weeks 5-7 |
+**Phase 2 Investment ($380K budget / $392K actual):**
+
+| Component | Technology | Services | Total |
+|-----------|------------|----------|-------|
+| Layer 3 (Semantic) | $45K | $45K | $90K |
+| Layer 4 (Intelligence) | $231K | $71K | $302K |
+| **Phase 2 Total** | **$276K** | **$116K** | **$392K** |
+
+**Layer 3 Detail ($90K):**
+- Alation Data Catalog: $28,000 (annual license)
+- Senzing Entity Resolution: $12,000 (annual license)
+- dbt Cloud Semantic Layer: $5,000 (incremental)
+- Professional Services: $45,000 (glossary, ontology mapping)
+
+**Layer 4 Detail ($302K):**
+- Pinecone Vector DB: $60,000/year
+- OpenAI Embeddings: $15,000 (initial indexing)
+- Cohere Rerank: $8,000/year
+- LLM APIs (annual): $102,000 (post-caching baseline)
+- LlamaIndex Enterprise: $12,000/year
+- Self-hosted Llama infrastructure: $33,600/year
+- Professional Services: $71,400 (pipeline development, complexity adjustments)
+
+**Phase 2 Operational Costs:**
+- Monthly: $19,400 (Layer 3: $3,800 + Layer 4: $15,600)
+- LLM costs: $2,300/month (after 84% caching reduction)
+- Annual: $232,800
 
 **Cumulative Investment:**
-- Phase 1 (Foundation): $470,000
-- Phase 2 (Intelligence): $380,000
-- **Total through Week 7: $850,000**
+
+| Phase | Weeks | Budgeted | Actual | Chapter |
+|-------|-------|----------|--------|---------|
+| Phase 1: Foundation | 1-4 | $470K | $468K | Chapter 4 ✓ |
+| Phase 2: Intelligence | 5-7 | $380K | $392K | **This Chapter** ✓ |
+| Phase 3: Trust | 8-10 | $380K | — | Chapter 6 |
+| **Total through Week 7** | | **$850K** | **$860K** |
 
 ### Gaps Addressed
 
