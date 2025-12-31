@@ -1159,8 +1159,6 @@ graph LR
 
 ## PART 6: THE FINISH LINE
 
-## PART 6: THE FINISH LINE
-
 Friday afternoon, Week 7. Sarah convened the leadership team for intelligence review. CFO Krish Yadav joined via video to verify Phase 2 spend against the approved $380,000 budget.
 
 "Final tally: $392,000," Krish reported. "Twelve thousand over budget."
@@ -1260,7 +1258,7 @@ graph TB
 | Phase 1: Foundation | 1-4 | $470K | $468K | Chapter 4 ✓ |
 | Phase 2: Intelligence | 5-7 | $380K | $392K | **This Chapter** ✓ |
 | Phase 3: Trust | 8-10 | $380K | — | Chapter 6 |
-| **Total through Week 7** | | **$850K** | **$860K** |
+| **Total through Week 7** | | **$850K** | **$860K** | **This Chapter** ✓ |
 
 ### Gaps Addressed
 
@@ -1330,7 +1328,7 @@ Chapter 6 completes the 7-Layer Architecture, making intelligent agents producti
 
 **RAG prevents hallucination:** Grounding LLM responses in retrieved data reduces hallucination from >30% to <5%.[8][9]
 
-**Semantic caching transforms economics:** 85% cache hit rate reduced Echo's LLM costs from $14,500/month to $2,300/month, a $12,200/month savings.
+**Semantic caching transforms economics:** 84% cache hit rate reduced Echo's LLM costs from $14,500/month to $2,300/month, a $12,200/month savings.
 
 **Natural (N) is the primary gain:** INPACT™ Natural dimension improved from 2/6 to 5/6, enabling true natural language interaction.
 
@@ -1341,7 +1339,7 @@ Chapter 6 completes the 7-Layer Architecture, making intelligent agents producti
 | **INPACT™ Score** | 28/100 | 67/100 | +39 points |
 | **Query Accuracy** | 47% | 96% | 2× improvement |
 | **Response Latency** | 9-13s | 1.8s (23ms cached) | 5-400× faster |
-| **Investment** | $0 | $850,000 | Phase 1-2 complete |
+| **Investment** | $0 | $860,000 | Phase 1-2 complete |
 
 ### Technologies Deployed
 
