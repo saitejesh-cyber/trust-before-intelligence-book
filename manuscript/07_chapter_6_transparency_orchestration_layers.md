@@ -29,11 +29,11 @@ The intelligence layers worked. The foundation was solid. But an agent that coul
 
 Fast and accurate isn't enough. Ungoverned AI is dangerous AI.
 
-**This chapter builds trust: Layers 5, 6, and 7.**
+**This chapter builds Trust Layers 5, 6, and 7.**
 
 ---
 
-**Diagram 1: Transparency + Orchestration Layers — Why Layers 5-6-7 Complete Trust**
+**Diagram 1: Transparency + Orchestration Layers - Why Layers 5-6-7 Complete Trust**
 
 ```mermaid
 
@@ -70,21 +70,18 @@ graph LR
 
 Intelligence is operational. But intelligence alone isn't enough.
 
-In Week 7, Echo Health Systems achieved what months of prior effort had failed to deliver. LLMs understood clinical queries. RAG retrieved relevant medical records from 150,000 documents with 95.6% accuracy. The semantic layer resolved "Dr. Martinez's diabetic patients with poor glycemic control" into precise SQL queries across Epic, lab systems, and scheduling databases, all in 1.8 seconds.
 
-But Sarah Cedao, Echo's CTO, knew this wasn't the finish line. It was merely the foundation for what agents actually needed to operate in production.
+The Warfarin incident crystallized what Sarah had suspected - intelligence without governance is dangerous. Week 7's achievements: 95.6% RAG accuracy, 1.8-second semantic queries, 2,400 clinical terms resolved meant nothing if agents couldn't distinguish routine questions from life-threatening decisions.
 
-Intelligence without governance is risk. An agent that can access everything is an agent that will eventually access something it shouldn't. In healthcare, that "something" is protected health information, medication decisions, and financial authorizations. These are areas where errors carry regulatory penalties and patient harm.
+Three risks remained unaddressed:
 
-Intelligence without observability is invisible risk. When an agent makes a decision, operations teams need to understand why. When costs spike, finance needs to trace the cause. When accuracy drops, data scientists need visibility into model behavior. Without observability, organizations operate blind.
-
-Intelligence without orchestration is isolation risk. Real clinical workflows don't involve single questions with single answers. They involve care coordination across scheduling, clinical documentation, and revenue cycle: three domains that traditional systems treat as separate kingdoms. Agents that can't coordinate are agents that can't deliver complete care.
-
-This is the trust risk: agents that work but cannot be governed, observed, or coordinated. This is the gap between what agents can do and what organizations can safely let them do.
+- **Governance risk:** No dynamic authorization. No HITL for high-risk decisions.
+- **Observability risk:** No end-to-end tracing. No cost visibility. No explainability.
+- **Orchestration risk:** No multi-agent coordination. Complex queries required manual assembly.
 
 These final three layers would complete the architecture.
 
-**Diagram 2: The Architecture of Trust—Completing Pillar 2**
+**Diagram 2: The Architecture of Trust - Completing Pillar 2**
 
 ```mermaid
 
@@ -138,7 +135,7 @@ graph TB
 
 ### Architectural Context
 
-Chapters 4-5 built the foundation and intelligence layers. Chapter 4 delivered data availability: eight storage categories and real-time pipelines with 28-second freshness. Chapter 5 delivered data understanding: semantic resolution of 2,400 clinical terms and a 7-stage RAG pipeline with 85% cache hit rates. Together, these four layers transformed Echo's data infrastructure from legacy BI to agent-capable.
+Chapters 4-5 built the foundation and intelligence layers. Chapter 4 delivered data availability: eight storage categories and real-time pipelines with less than 30 seconds freshness. Chapter 5 delivered data understanding: semantic resolution of 2,400 clinical terms and a 7-stage RAG pipeline with 85% cache hit rates. Together, these four layers transformed Echo's data infrastructure from legacy BI to agent-capable.
 
 Chapter 6 completes the architecture with three final layers:
 
@@ -154,7 +151,7 @@ Why cover three layers in one chapter? Because trust and orchestration are inter
 
 The three-week build timeline (Week 8 Governance, Week 9 Observability, Week 10 Orchestration) is detailed in Part 2.
 
-**Diagram 3: 7-Layer Agent-Ready Architecture—Transparency + Orchestration Highlighted**
+**Diagram 3: 7-Layer Agent-Ready Architecture - Transparency + Orchestration Highlighted**
 
 ```mermaid
 graph TB
@@ -222,39 +219,29 @@ The 86/100 threshold represents production readiness, the point at which agent i
 
 ## PART 2: THE FINAL SPRINT
 
-Monday, Week 8. 7:15 AM.
+Marcus studied the incident report, then set it down. "This is exactly what we've been warning about."
 
-Sarah Cedao stood at the whiteboard in her office, marker in hand, staring at three words she'd written in capital letters:
+Sarah walked to the whiteboard and wrote three words:
 
 **GOVERNANCE. OBSERVABILITY. ORCHESTRATION.**
 
-The morning light filtered through the blinds, casting long shadows across the conference table where her team was assembling. Seven weeks ago, this same room had hosted the crisis meeting that launched the transformation: $2M in failed AI initiatives, a board demanding answers, and a 90-day deadline that seemed impossible.
+"Get Jamie and Dr. Chen on a call. We're planning the final sprint."
 
-Now they were in the final stretch.
+Twenty minutes later, the team was assembled. Jamie Rodriguez, Director of IT, had joined in person, coffee in hand. Dr. Chen dialed in from the hospitalist office.
 
-Marcus Williams, Echo's CDO, sat across from her with his tablet open to the Week 7 metrics dashboard. The numbers were encouraging: 67/100, up from 28/100 at Week 0. But Marcus's expression suggested he wasn't ready to celebrate. Jamie Rodriguez, Director of IT, leaned against the doorframe with a coffee cup that had long since gone cold. Dr. Chen, their clinical liaison, had dialed in from the hospitalist office, her voice slightly tinny through the speakerphone. She'd experienced the infrastructure failures firsthand. Her documentation agent's context blindness had become one of the canonical examples of what needed fixing.
+Sarah gestured at the whiteboard. "Three weeks. Three layers. One goal: architecture completion by Week 10."
 
-"We've built intelligence," Sarah began, capping the marker. "Now we make it trustworthy and coordinated."
+She turned to Dr. Chen first. "You caught the Warfarin issue. Walk everyone through what happened."
 
-The statement hung in the air for a moment. Everyone in the room understood what it meant. The intelligence layers worked. Queries returned accurate answers, semantic understanding was reliable, the RAG pipeline performed well. But "working" in a pilot context and "trusted" in a production context were different standards. Production meant thousands of queries daily. Production meant clinical staff relying on agent outputs for patient care. Production meant regulatory scrutiny and compliance audits.
+Dr. Chen's voice came through the speakerphone. "Friday afternoon. An agent recommended a Warfarin dose adjustment for a patient on concurrent aspirin therapy. Medically sound recommendation for most patients. But this patient had a history of GI bleeding. Any anticoagulation change required gastroenterology consultation. The agent had no way to know that. No way to flag it. No way to escalate."
 
-Marcus spoke first. "Governance has to come before anything else. We can't deploy clinical agents without dynamic authorization. The compliance team has been clear: RBAC alone isn't sufficient for PHI access in agent contexts. HIPAA requires reasonable and appropriate access controls, and 'appropriate' means contextual in 2025."
+"And if you hadn't caught it?" Marcus asked.
 
-He pulled up a slide showing the current authorization model, a simple matrix of roles and data access permissions inherited from Epic. Physicians could access any patient record. Nurses could view but not modify orders. Administrators had department-scoped access.
+"The recommendation would have gone to the care team as a routine suggestion. Someone might have acted on it without checking the full history."
 
-"This worked when access meant a human navigating screens," Marcus continued. "It doesn't work when access means an agent processing thousands of records per minute. We need ABAC. We need HITL. We need audit trails that can explain every decision."
+The room was quiet.
 
-Jamie nodded. "And I need observability before I can support this in production. When something breaks at 3 AM—and something will break at 3 AM—I need to trace the failure across all seven layers. Right now, debugging means correlating timestamps across twelve different log files. Last week's accuracy regression took 18 hours to diagnose because we couldn't trace the retrieval path."
-
-He gestured at his phone. "I'm already on-call for the existing systems. Adding agent infrastructure without proper observability means I'm on-call for a black box. That's not sustainable."
-
-Dr. Chen's voice came through the speakerphone. "The clinical staff is asking when they can run multi-domain queries. Yesterday, Dr. Martinez asked about a patient's medication adherence, upcoming appointments, and insurance coverage in the same conversation. She had to ask three separate questions and manually piece together the answers. That's not AI-assisted care coordination. It's AI-assisted frustration."
-
-Sarah could hear the weariness in Dr. Chen's voice. As the bridge between IT and clinical operations, Dr. Chen absorbed complaints from both sides. The clinicians wanted more capability. The IT team wanted more stability. Both wanted faster progress.
-
-Sarah turned back to the whiteboard and drew three boxes connected by arrows.
-
-"Three weeks. Three layers. One goal: architecture completion by Week 10." She began filling in details beneath each box.
+"That's why governance comes first," Sarah said. She began writing beneath each word on the whiteboard.
 
 **Week 8: Layer 5 - Governance**
 - OPA policy engine deployment
@@ -263,8 +250,8 @@ Sarah turned back to the whiteboard and drew three boxes connected by arrows.
 - Target: Dynamic authorization operational
 
 **Week 9: Layer 6 - Observability**
-- Datadog APM integration
 - OpenTelemetry distributed tracing
+- Datadog APM integration
 - LLM cost tracking dashboard
 - Target: Complete operational visibility
 
@@ -274,41 +261,15 @@ Sarah turned back to the whiteboard and drew three boxes connected by arrows.
 - State management and routing
 - Target: Multi-agent queries working
 
-"The board presentation is Week 12," Sarah continued. "That gives us two weeks of operational validation after architecture completion. We need 86/100 INPACT™ for production readiness. We're at 67. Governance improves Permitted from 2 to 6, observability improves Transparent from 3 to 6, together driving us from 67 to 86. Orchestration ties it all together for production deployment."
+"By Week 10, we hit 86/100 INPACT™," Sarah continued. "Governance gets Permitted from 2 to 6. Observability gets Transparent from 3 to 6. Orchestration ties it together for production."
 
-She paused, looking at each face in the room. "But the math only works if we execute. Questions?"
+Jamie nodded. "What about the Warfarin scenario specifically? That's the test case."
 
-Marcus pulled up the budget tracker. "Phase 3 allocation is $82,000. Governance is mostly open source (OPA is free), so we're looking at $15,000 for integration and testing. Observability is the big line item at $34,000 for Datadog licensing plus OpenTelemetry instrumentation. Orchestration is another $33,000 for LangGraph implementation and the Redis state management we'll need."
+Sarah circled "HITL" on the whiteboard. "Any medication classified as high-interaction Warfarin, methotrexate, lithium automatically triggers human review. The agent drafts the recommendation. A clinician approves before it reaches the patient. The system knows its limits."
 
-"That leaves $298,000 buffer from the original $1.23M," Jamie added. "We're under budget. Which is good, because I'd rather have contingency than explain why we need more money."
+Dr. Chen's voice came through one final time. "When this works, Dr. Martinez can ask one question and get a complete care coordination answer, That's when clinical staff will believe AI actually helps them."
 
-Dr. Chen cut through the financial discussion. "What about the Warfarin scenario? Last week, an agent recommended a dosing schedule without flagging the interaction with the patient's aspirin prescription. If we're serious about governance, that's the test case. The clinical staff won't trust a system that makes medication recommendations without appropriate safeguards."
-
-The Warfarin scenario had become something of a touchstone for the team. It represented the exact kind of high-stakes, high-risk situation where agent mistakes could cause patient harm. Any governance system that couldn't handle Warfarin couldn't be trusted with clinical deployment.
-
-Sarah circled "HITL" on the whiteboard. "That's exactly what HITL solves. Any medication classified as high-interaction (Warfarin, methotrexate, lithium) triggers human review. The agent can draft the recommendation, but a clinician must approve before it reaches the patient. We're not replacing clinical judgment. We're augmenting it with AI assistance while keeping humans in control of high-risk decisions."
-
-"How fast?" Dr. Chen pressed.
-
-"The target is under 30 seconds for the escalation notification. The approval is asynchronous, which could be immediate if the clinician is available, or queued for their next review window. But the key is the agent never presents unreviewed high-risk recommendations as final answers. The system knows its limits."
-
-Marcus made a note. "We should track HITL latency as a key metric. If escalations are too slow, clinicians will route around the system. They'll ask simpler questions to avoid triggering review, which defeats the purpose."
-
-"Agreed." Sarah stepped back from the whiteboard. "Any blockers I should know about?"
-
-Jamie set down her coffee cup. "Datadog contract is ready to sign. Been negotiating for two weeks, and they know we're serious. OpenTelemetry instrumentation is already partially in place from Layer 4. We added basic tracing for RAG pipeline debugging. Extending it to all seven layers is incremental work, not greenfield."
-
-"LangGraph is the unknown," Marcus admitted. "We've prototyped with it, but production multi-agent coordination is new territory. The framework is solid, but our experience is limited. I'm allocating extra testing time in Week 10."
-
-Sarah nodded. "That's why orchestration comes last. By the time we get there, governance and observability will be proving themselves. We'll know our constraints. We'll know our failure modes. And we'll have two weeks of operational data to inform the orchestration design."
-
-She looked at each team member in turn. "Three weeks to complete what we started seven weeks ago. The foundation is solid. The intelligence works. Now we make it safe, visible, and coordinated."
-
-Dr. Chen's voice came through one final time. "Sarah, when this works, when Dr. Martinez can ask one question and get a complete care coordination answer, that's when the clinical staff will believe AI actually helps them. Everything before that is infrastructure. This is where it becomes care."
-
-The call ended. Sarah turned to Marcus and Jamie.
-
-"Let's build trust."
+Sarah turned to her team. "Let's build trust."
 
 ---
 
@@ -599,7 +560,8 @@ Observability differs from monitoring in scope and intent. Monitoring checks whe
 
 This comprehensive visibility requires four capabilities:
 
-**Distributed Tracing:** Request tracking across all seven layers, enabling end-to-end visibility for any agent interaction. OpenTelemetry provides the standard instrumentation framework, building on foundational work in distributed systems tracing.[6][7]
+**Distributed Tracing:** Request tracking across all seven layers, enabling end-to-end visibility for any agent interaction. Modern distributed tracing builds on foundational work in large-scale systems monitoring.[7]
+
 
 **MLOps Monitoring:** Model performance tracking including accuracy degradation, drift detection, and quality metrics. When underlying data distributions shift, MLOps monitoring detects the change before it impacts outputs. Research on machine learning operations emphasizes continuous monitoring as essential for production AI systems.[8]
 
@@ -667,7 +629,7 @@ This opacity creates three operational challenges:
 
 **Debugging Challenge:** When an agent returns an incorrect response, troubleshooting requires understanding the full processing chain. Did the semantic layer misinterpret the query? Did RAG retrieve irrelevant documents? Did the LLM hallucinate despite having correct context? Each failure mode has different remediation, and lacking observability, identifying the failure mode requires guesswork.
 
-**Cost Management Challenge:** LLM API calls carry meaningful cost. Claude Sonnet 4 pricing at $3 per million input tokens and $15 per million output tokens seems economical until query volume scales.[9] A healthcare system processing 10,000 daily agent queries with average 2,000 input tokens and 500 output tokens generates monthly LLM costs exceeding $2,000 for a single model—and most RAG pipelines involve multiple model calls per query. Lacking granular cost visibility, organizations cannot optimize spend.
+**Cost Management Challenge:** LLM API calls carry meaningful cost. Claude Sonnet 4 pricing at $3 per million input tokens and $15 per million output tokens seems economical until query volume scales.[9] A healthcare system processing 10,000 daily agent queries with average 2,000 input tokens and 500 output tokens generates monthly LLM costs exceeding $2,000 for a single model. Most RAG pipelines involve multiple model calls per query. Lacking granular cost visibility, organizations cannot optimize spend.
 
 **Quality Assurance Challenge:** LLM outputs vary. The same query can produce slightly different responses. Context retrieval quality affects output quality. Model drift occurs over time as underlying APIs evolve. Without quality metrics, organizations cannot detect degradation until users complain.
 
@@ -677,8 +639,26 @@ This opacity creates three operational challenges:
 
 **Datadog APM** provides visualization with native OpenTelemetry support.[10] Key capabilities: LLM token tracking for cost attribution, anomaly detection that alerts before users complain, and service maps showing latency distribution.
 
-**Diagram 8: Echo's Seven-Layer Service Map**
+**LLM-Specific Observability Patterns:**
+- **Token Tracking:** Cost allocation by query type and model
+- **Prompt Versioning:** Git-managed templates with version hashes in traces
+- **Cache Analytics:** Identifying near-duplicate queries suitable for caching
 
+### Echo's Gap Before Layer 6
+
+Echo's pre-transformation monitoring consisted of CloudWatch logs and basic uptime checks. When issues emerged, debugging followed a painful pattern: user reports problem → operations identifies timestamp → engineers search logs across multiple services → correlation requires manual timestamp matching → root cause takes hours or days.
+
+CFO Krish Yadav raised this concern: "We're spending $26,000 monthly on LLM APIs. I can see the total. I can't see the breakdown. That's not a cost center. It's a mystery."
+
+The most frustrating gap appeared during the Week 6 accuracy regression. Response quality dropped from 95% to 87% over three days. The cause: a Pinecone index corruption that degraded retrieval quality. But identifying this root cause took 18 hours of investigation. With proper tracing, this diagnosis would have taken minutes.
+
+"We were flying blind," Jamie Rodriguez recalled. "We knew something was wrong because users complained. But finding the actual problem meant reading thousands of log lines and hoping to spot a pattern."
+
+### Echo's Implementation
+
+Echo deployed OpenTelemetry instrumentation across all seven layers during Week 9, with Datadog APM providing visualization and alerting.
+
+**Diagram 8: Echo's Seven-Layer Service Map**
 ```mermaid
 
 graph TB
@@ -726,35 +706,16 @@ graph TB
     style L2 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
     style L1 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
     style Copyright fill:#ffffff,stroke:none,color:#666666
-
 ```
 
 **© 2025 Colaberry Inc.**
 
 The service map reveals latency distribution: Layer 4 (RAG + LLM) dominates at 2.8 seconds P95, representing 67% of total request time. This visibility enabled Echo to focus optimization on LLM generation rather than infrastructure layers.
 
-**LLM-Specific Observability Patterns:**
-- **Token Tracking:** Cost allocation by query type (Echo found 73% of latency came from LLM generation, not retrieval)
-- **Prompt Versioning:** Git-managed templates with version hashes in traces—when Echo updated its clinical reasoning prompt, observability showed accuracy improved from 94.2% to 95.6%
-- **Cache Analytics:** 34% of queries were near-duplicates suitable for caching
-
-### Echo's Gap Before Layer 6
-
-Echo's pre-transformation monitoring consisted of CloudWatch logs and basic uptime checks. When issues emerged, debugging followed a painful pattern: user reports problem → operations identifies timestamp → engineers search logs across multiple services → correlation requires manual timestamp matching → root cause takes hours or days.
-
-CFO Krish Yadav raised this concern: "We're spending $26,000 monthly on LLM APIs. I can see the total. I can't see the breakdown. That's not a cost center. It's a mystery."
-
-The most frustrating gap appeared during the Week 6 accuracy regression. Response quality dropped from 95% to 87% over three days. The cause: a Pinecone index corruption that degraded retrieval quality. But identifying this root cause took 18 hours of investigation.
-
-The debugging process illustrated the gap. For 18 hours, Jamie's team worked backward through the system—confirming accuracy degradation, reviewing LLM prompts, checking semantic parsing—each component appearing normal until they finally traced the problem to a corrupted Pinecone index from routine maintenance. With proper tracing, this diagnosis would have taken minutes.
-
-"We were flying blind," Jamie Rodriguez recalled. "We knew something was wrong because users complained. But finding the actual problem meant reading thousands of log lines and hoping to spot a pattern."
-
-### Echo's Implementation
-
-Echo deployed Layer 6 across Week 9 with the following architecture:
-
-**OpenTelemetry Instrumentation:** Added to all seven layers with consistent trace context propagation. Every request receives a unique trace ID that flows through the entire processing chain.[6]
+**Implementation Results:**
+- **Token Tracking:** 73% of latency came from LLM generation, not retrieval
+- **Prompt Versioning:** Accuracy improved from 94.2% to 95.6% after clinical reasoning prompt update
+- **Cache Analytics:** 34% of queries identified as near-duplicates suitable for caching
 
 **Datadog Integration:** APM agents deployed alongside application services, with custom dashboards for:
 - Query latency by layer (P50, P95, P99)
@@ -762,12 +723,6 @@ Echo deployed Layer 6 across Week 9 with the following architecture:
 - Cache hit rates (semantic cache, RAG cache)
 - HITL escalation volume and resolution time
 - Error rates by category
-
-**LLM Cost Tracking:** Custom middleware capturing token usage per request:
-- Input tokens (query + context)
-- Output tokens (response)
-- Model selection (Claude, GPT-4, Llama)
-- Cache status (hit/miss)
 
 **Alert Configuration:**
 - Latency: P95 > 3s triggers warning, P95 > 5s triggers page
