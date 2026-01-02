@@ -562,7 +562,7 @@ graph LR
     style L4 fill:#e0f2f1,stroke:#00897b,stroke-width:1px,color:#004d40,rx:10,ry:10
     style L5 fill:#e0f2f1,stroke:#00897b,stroke-width:1px,color:#004d40,rx:10,ry:10
     style L6 fill:#e0f2f1,stroke:#00897b,stroke-width:1px,color:#004d40,rx:10,ry:10
-    style L7 fill:#30838C,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
+    style L7 fill:#e0f2f1,stroke:#00897b,stroke-width:1px,color:#004d40,rx:10,ry:10
     
     %% FOOTER
     style Copyright fill:none,stroke:none,color:#666666
