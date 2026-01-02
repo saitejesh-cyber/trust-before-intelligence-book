@@ -351,7 +351,7 @@ graph TB
     GOALS -.->|"Drives Trust"| INPACT
     
     style Title fill:#30838C,color:#ffffff,stroke:#0D0D0D,stroke-width:2px,rx:20,ry:20
-    %% PILLARS — NEUTRAL (Definition / Framework Introduction)    style PILLARS fill:none,stroke:none
+    style PILLARS fill:none,stroke:none
     style INPACT fill:#ffffff,stroke:#666666,stroke-width:2px,color:#000000,rx:20,ry:20
     style Layers fill:#ffffff,stroke:#666666,stroke-width:2px,color:#000000,rx:20,ry:20
     style GOALS fill:#ffffff,stroke:#666666,stroke-width:2px,color:#000000,rx:20,ry:20
