@@ -434,7 +434,7 @@ graph LR
     style sw2 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100,rx:20,ry:20
     style prog2 fill:#fff9e6,stroke:#f57c00,stroke-width:1px,color:#e65100,rx:10,ry:10
     style infra2 fill:#fff9e6,stroke:#f57c00,stroke-width:1px,color:#e65100,rx:10,ry:10
-    style sw3 fill:#f0fff0,stroke:#00897b,stroke-width:2px,color:#004d40,rx:20,ry:20
+    style sw3 fill:#e6f3f6,stroke:#00897b,stroke-width:2px,color:#004d40,rx:20,ry:20
     style prog3 fill:#e0f2f1,stroke:#00897b,stroke-width:1px,color:#004d40,rx:10,ry:10
     style infra3 fill:#30838C,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
     style Copyright fill:none,stroke:none,color:#666666
@@ -503,8 +503,8 @@ graph TB
     style PROBLEM fill:#fff5f5,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:20,ry:20
     style current fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#b71c1c,rx:10,ry:10
     style attempting fill:#fff9e6,stroke:#f57c00,stroke-width:1px,color:#e65100,rx:10,ry:10
-    style gap fill:#990000,stroke:#b71c1c,stroke-width:1px,color:#ffffff,rx:10,ry:10
-    style result fill:#990000,stroke:#b71c1c,stroke-width:1px,color:#ffffff,rx:10,ry:10
+    style gap fill:#990000,stroke:#b71c1c,stroke-width:3px,color:#ffffff,rx:10,ry:10
+    style result fill:#990000,stroke:#b71c1c,stroke-width:3px,color:#ffffff,rx:10,ry:10
     style SOLUTION fill:#e6f3f6,stroke:#00897b,stroke-width:2px,color:#004d40,rx:20,ry:20
     style transform fill:#e0f2f1,stroke:#00897b,stroke-width:1px,color:#004d40,rx:10,ry:10
     style delivers fill:#30838C,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
@@ -577,9 +577,9 @@ graph LR
     end
     
     style BI fill:#fff5f5,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:20,ry:20
-    style ETL fill:#ffcdd2,stroke:#c62828,stroke-width:1px,color:#b71c1c,rx:10,ry:10
-    style DW fill:#ffcdd2,stroke:#c62828,stroke-width:1px,color:#b71c1c,rx:10,ry:10
-    style RBAC fill:#ffcdd2,stroke:#c62828,stroke-width:1px,color:#b71c1c,rx:10,ry:10
+    style ETL fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#b71c1c,rx:10,ry:10
+    style DW fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#b71c1c,rx:10,ry:10
+    style RBAC fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#b71c1c,rx:10,ry:10
     linkStyle 0 stroke:#4478A6,stroke-width:2px,color:#4478A6
     style AGENT fill:#e6f3f6,stroke:#00897b,stroke-width:2px,color:#004d40,rx:20,ry:20
     style STREAM fill:#e0f2f1,stroke:#00897b,stroke-width:1px,color:#004d40,rx:10,ry:10
@@ -644,12 +644,12 @@ graph TB
     style investment fill:#ffffff,stroke:#666666,stroke-width:2px,color:#000000,rx:20,ry:20
     style TOTAL fill:#f9f9f9,stroke:#666666,stroke-width:1px,color:#000000,rx:10,ry:10
     style pilots fill:#fff5f5,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:20,ry:20
-    style P1 fill:#ffcdd2,stroke:#c62828,stroke-width:1px,color:#b71c1c,rx:10,ry:10
-    style P2 fill:#ffcdd2,stroke:#c62828,stroke-width:1px,color:#b71c1c,rx:10,ry:10
-    style P3 fill:#990000,stroke:#b71c1c,stroke-width:1px,color:#ffffff,rx:10,ry:10
+    style P1 fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#b71c1c,rx:10,ry:10
+    style P2 fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#b71c1c,rx:10,ry:10
+    style P3 fill:#990000,stroke:#b71c1c,stroke-width:3px,color:#ffffff,rx:10,ry:10
     style outcome fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100,rx:20,ry:20
     style SCORE fill:#fff9e6,stroke:#f57c00,stroke-width:1px,color:#e65100,rx:10,ry:10
-    style DECISION fill:#f57c00,stroke:#e65100,stroke-width:1px,color:#ffffff,rx:10,ry:10
+    style DECISION fill:#f57c00,stroke:#e65100,stroke-width:3px,color:#ffffff,rx:10,ry:10
     style Copyright fill:none,stroke:none,color:#666666
 
 ```
