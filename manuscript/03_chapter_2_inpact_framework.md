@@ -91,11 +91,11 @@ graph TB
     Layers -.->|"Enables Operations"| GOALS
     GOALS -.->|"Drives Trust"| INPACT
     
-    style Title fill:#ffffff,stroke:#666666,stroke-width:2px,color:#000000,rx:20,ry:20
+    style Title fill:#30838C,stroke:#0D0D0D,stroke-width:2px,color:#ffffff,rx:20,ry:20
     style PILLARS fill:none,stroke:none
-    style INPACT fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000,rx:20,ry:20
-    style Layers fill:#e6f3f6,stroke:#00897b,stroke-width:2px,color:#004d40,rx:20,ry:20
-    style GOALS fill:#e6f3f6,stroke:#00897b,stroke-width:2px,color:#004d40,rx:20,ry:20
+    style INPACT fill:#ffffff,stroke:#666666,stroke-width:2px,color:#000000,rx:20,ry:20
+    style Layers fill:#ffffff,stroke:#666666,stroke-width:2px,color:#000000,rx:20,ry:20
+    style GOALS fill:#ffffff,stroke:#666666,stroke-width:2px,color:#000000,rx:20,ry:20
     style Copyright fill:none,stroke:none,color:#666666
 
 
@@ -176,12 +176,12 @@ graph TB
     
     COPYRIGHT["<b>© 2025 Colaberry Inc.</b>"]
     
-    %% TITLE — NEUTRAL
+    %% TITLE — NEUTRAL (Context / framing)
     style TITLE fill:#ffffff,stroke:#666666,stroke-width:2px,color:#000000,rx:20,ry:20
     
     style ROW fill:none,stroke:none
     
-    %% 🟠 HUMAN — ORANGE (Human motivation / pressure)
+    %% 🟠 HUMAN NEEDS — POSITIVE HUMAN MOTIVATION
     style HUMAN fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100,rx:20,ry:20
     style H1 fill:#ffffff,stroke:#f57c00,stroke-width:1px,color:#e65100,rx:10,ry:10
     style H2 fill:#ffffff,stroke:#f57c00,stroke-width:1px,color:#e65100,rx:10,ry:10
@@ -190,16 +190,16 @@ graph TB
     style H5 fill:#ffffff,stroke:#f57c00,stroke-width:1px,color:#e65100,rx:10,ry:10
     style H6 fill:#ffffff,stroke:#f57c00,stroke-width:1px,color:#e65100,rx:10,ry:10
     
-    %% ⚪ AGENT NEEDS — NEUTRAL (Definition / diagnostic)
-    style AGENT fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000,rx:20,ry:20
-    style A1 fill:#ffffff,stroke:#666666,stroke-width:1px,color:#000000,rx:10,ry:10
-    style A2 fill:#ffffff,stroke:#666666,stroke-width:1px,color:#000000,rx:10,ry:10
-    style A3 fill:#ffffff,stroke:#666666,stroke-width:1px,color:#000000,rx:10,ry:10
-    style A4 fill:#ffffff,stroke:#666666,stroke-width:1px,color:#000000,rx:10,ry:10
-    style A5 fill:#ffffff,stroke:#666666,stroke-width:1px,color:#000000,rx:10,ry:10
-    style A6 fill:#ffffff,stroke:#666666,stroke-width:1px,color:#000000,rx:10,ry:10
+    %% 🔵 AGENT NEEDS — POSITIVE CAPABILITY DEFINITION (BECOMING)
+    style AGENT fill:#edf4fa,stroke:#4478A6,stroke-width:2px,color:#000000,rx:20,ry:20
+    style A1 fill:#4478A6,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
+    style A2 fill:#4478A6,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
+    style A3 fill:#4478A6,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
+    style A4 fill:#4478A6,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
+    style A5 fill:#4478A6,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
+    style A6 fill:#4478A6,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
     
-    %% 🟢 TRUSTED AGENT — TEAL (Outcome / proven)
+    %% 🟢 TRUSTED AGENT — PROVEN OUTCOME
     style TRUST fill:#30838C,stroke:#0D0D0D,stroke-width:3px,color:#ffffff,rx:20,ry:20
     
     %% FOOTER
@@ -256,15 +256,16 @@ graph TB
     
     COPYRIGHT["<b>© 2025 Colaberry Inc.</b>"]
     
-    %% ⚪ INPACT™ DEFINITION — NEUTRAL
-    style BOX fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000,rx:20,ry:20
+    %% ⚪ CONTAINER — NEUTRAL
+    style BOX fill:#ffffff,stroke:#666666,stroke-width:2px,color:#000000,rx:20,ry:20
     
-    style I fill:#ffffff,stroke:#666666,stroke-width:1px,color:#000000,rx:10,ry:10
-    style N fill:#ffffff,stroke:#666666,stroke-width:1px,color:#000000,rx:10,ry:10
-    style P fill:#ffffff,stroke:#666666,stroke-width:1px,color:#000000,rx:10,ry:10
-    style A fill:#ffffff,stroke:#666666,stroke-width:1px,color:#000000,rx:10,ry:10
-    style C fill:#ffffff,stroke:#666666,stroke-width:1px,color:#000000,rx:10,ry:10
-    style T fill:#ffffff,stroke:#666666,stroke-width:1px,color:#000000,rx:10,ry:10
+    %% 🔵 INPACT™ NEEDS — DEFINITION / BECOMING
+    style I fill:#4478A6,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
+    style N fill:#4478A6,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
+    style P fill:#4478A6,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
+    style A fill:#4478A6,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
+    style C fill:#4478A6,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
+    style T fill:#4478A6,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
     
     %% 🟢 TRUST — PROVEN OUTCOME
     style TRUST fill:#30838C,stroke:#0D0D0D,stroke-width:3px,color:#ffffff,rx:20,ry:20
