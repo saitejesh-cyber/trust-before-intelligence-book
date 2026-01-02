@@ -251,8 +251,8 @@ graph TB
     style O3 fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#b71c1c,rx:10,ry:10
     style O4 fill:#990000,stroke:#b71c1c,stroke-width:1px,color:#ffffff,rx:10,ry:10
     
-    %% 🟠 TRANSITION — ACTIVE EVOLUTION
-    style Shift fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100,rx:20,ry:20
+    %% 🔵 TRANSFORMATION — PARADIGM SHIFT
+    style Shift fill:#edf4fa,stroke:#666666,stroke-width:2px,color:#333333,rx:20,ry:20
     
     %% 🟢 AGENT ERA — TRUSTED / AGENT-READY
     style new fill:#e6f3f6,stroke:#00897b,stroke-width:2px,color:#004d40,rx:20,ry:20
