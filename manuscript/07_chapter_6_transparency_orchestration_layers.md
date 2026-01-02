@@ -737,7 +737,7 @@ The service map reveals latency distribution: Layer 4 (RAG + LLM) dominates at 2
 
 ### Visibility Achieved
 
-With Layer 6 operational, Echo gained unprecedented visibility into agent operations. Complete request traces now show timing for every layer—when latency spikes occur, engineers immediately identify whether the bottleneck is semantic parsing, governance checks, vector search, or LLM generation.
+With Layer 6 operational, Echo gained unprecedented visibility into agent operations. Complete request traces now show timing for every layer when latency spikes occur, engineers immediately identify whether the bottleneck is semantic parsing, governance checks, vector search, or LLM generation.
 
 **Cost Visibility Example:**
 Monthly LLM spend of $26,000 now decomposed:
@@ -753,9 +753,9 @@ This visibility revealed optimization opportunity: 34% of clinical reasoning que
 Layer 6 directly delivers **Transparent (T)**: from 3/6 to 6/6.
 
 The three-point improvement reflects the shift from opaque operations to complete visibility:
-- **Point 1:** Request tracing provides explainability—users and operators can understand what happened and why
-- **Point 2:** Quality monitoring provides confidence—the organization knows system accuracy in real-time
-- **Point 3:** Cost attribution provides accountability—every dollar of LLM spend traces to specific use cases
+- **Point 1:** Request tracing provides explainability so that users and operators can understand what happened and why
+- **Point 2:** Quality monitoring provides confidence so that the organization knows system accuracy in real-time
+- **Point 3:** Cost attribution provides accountability so that every dollar of LLM spend traces to specific use cases
 
 Combined, these capabilities transform agents from black boxes into transparent systems where every decision has an explanation and every trend has visibility.
 
@@ -776,15 +776,6 @@ Layer 7 delivers multi-agent coordination: the capability for specialized agents
 
 Layer 7 is the orchestrator. It turns multiple agents into one coherent answer.
 
-Single-agent architectures work well for focused queries: "What is this patient's latest A1C?" routes to the clinical agent, retrieves the lab result, and returns an answer. But healthcare workflows rarely involve single domains. A discharge planning query—"prepare this patient for discharge"—requires care coordination (scheduling follow-up appointments), clinical documentation (summarizing the stay and medications), and revenue cycle (verifying insurance coverage and authorizations). Three domains, three specialized knowledge bases, one coherent answer needed.
-
-Orchestration solves the multi-domain problem through structured coordination:
-
-**Supervisor Pattern:** A coordinating agent classifies query intent, routes to specialized agents, and synthesizes responses. The supervisor doesn't answer directly—it manages agents that do. This pattern reflects decades of research in multi-agent systems coordination.[11]
-
-**Shared State:** All agents access common context about the current interaction, ensuring consistency across agent boundaries. When the clinical agent retrieves medication information, the revenue agent sees that context without re-querying.
-
-**Conditional Routing:** Query characteristics determine which agents activate. Simple queries route to single agents. Complex queries activate multiple agents in parallel or sequence.
 
 **Diagram 9: Layer 7 Orchestration Architecture**
 
@@ -831,17 +822,27 @@ graph TB
 
 ### Why Agents Need Orchestration
 
+Single-agent architectures work well for focused queries: "What is this patient's latest A1C?" routes to the clinical agent, retrieves the lab result, and returns an answer. But healthcare workflows rarely involve single domains. A discharge planning query: "prepare this patient for discharge" requires care coordination (scheduling follow-up appointments), clinical documentation (summarizing the stay and medications), and revenue cycle (verifying insurance coverage and authorizations). Three domains, three specialized knowledge bases, one coherent answer needed.
+
 The alternative to orchestration is decomposition, forcing users to break complex queries into simple components, submit them separately, and manually integrate the results. This approach has three problems:
 
 **Cognitive Load:** Users must understand system boundaries to phrase queries correctly. Asking "prepare this patient for discharge" when the system only handles clinical questions forces the user to rephrase: "What medications is this patient on? What follow-up appointments are scheduled? Is insurance coverage verified?" The AI should handle decomposition, not the human.
 
-**Context Loss:** Sequential queries lose context. When a user asks about medications, then asks about appointments, the second query doesn't know the first query's results unless the user manually includes them. Orchestration maintains shared state across agent boundaries.
+**Context Loss:** Sequential queries lose context. When a user asks about medications, then asks about appointments, the second query doesn't know the first query's results unless the user manually includes them. Orchestration maintains a shared state across agent boundaries.
 
-**Latency Multiplication:** Sequential queries multiply latency. If each domain query takes 2 seconds, three sequential queries take 6 seconds minimum. Orchestration allows parallel execution—the same three queries complete in 2-3 seconds total.
+**Latency Multiplication:** Sequential queries multiply latency. If each domain query takes 2 seconds, three sequential queries take 6 seconds minimum. Orchestration allows parallel execution, so that the same three queries complete in 2-3 seconds total.
 
 ### Technologies and Approaches
 
-**LangGraph** models agent workflows as graphs—nodes are agents, edges are transitions.[12] This builds on research showing structured workflows outperform unstructured approaches.[13]
+Orchestration solves the multi-domain problem through structured coordination:
+
+**Supervisor Pattern:** A coordinating agent classifies query intent, routes to specialized agents, and synthesizes responses. The supervisor doesn't answer directly, it manages agents that do. This pattern reflects decades of research in multi-agent systems coordination.[11]
+
+**Shared State:** All agents access common context about the current interaction, ensuring consistency across agent boundaries. When the clinical agent retrieves medication information, the revenue agent sees that context without re-querying.
+
+**Conditional Routing:** Query characteristics determine which agents activate. Simple queries route to single agents. Complex queries activate multiple agents in parallel or sequence.
+
+**LangGraph** models agent workflows as graphs. Nodes are agents, edges are transitions.[12] This builds on research showing structured workflows outperform unstructured approaches.[13]
 
 ```python
 # Simplified LangGraph workflow definition
@@ -858,7 +859,7 @@ workflow.add_conditional_edges("supervisor", route_to_agents,
 
 **Coordination Patterns:**
 
-1. **Supervisor Pattern:** Central coordinator routes to specialists and synthesizes responses. Echo uses this—classifying intent into care, clinical, revenue, or multi-domain categories.
+1. **Supervisor Pattern:** Central coordinator routes to specialists and synthesizes responses. Echo uses this to classify intent into care, clinical, revenue, or multi-domain categories.
 
 2. **Sequential Pattern:** Agents process in order, each enriching shared state. Example: prior authorization workflow where clinical gathers diagnosis, revenue checks coverage, authorization submits to payer.
 
@@ -866,13 +867,13 @@ workflow.add_conditional_edges("supervisor", route_to_agents,
 
 **State Management:** Redis with 15-minute TTL provides shared context across agents.[14] State includes query context, intermediate results, session history, and coordination metadata. (TTL configurable per use case.)
 
-**Error Handling:** 10-second agent timeouts, partial failure responses with clear indication, graceful degradation when agents unavailable.
+**Error Handling:** 10-second agent timeouts, partial failure responses with clear indication, graceful degradation when agents are unavailable.
 
 ### Echo's Gap Before Layer 7
 
 Echo's pilot supported only single-agent queries. Complex requests failed:
 
-**User:** "Prepare discharge—summary, follow-up appointments, and insurance verification."  
+**User:** "Prepare discharge summary, follow-up appointments, and insurance verification."  
 **System:** "I can help with clinical documentation. For scheduling and insurance, please contact the respective departments."
 
 The clinical agent did its job correctly, but the system couldn't orchestrate across domains.
@@ -897,12 +898,12 @@ Echo deployed Layer 7 across Week 10 with the following architecture:
 
 **Supervisor Design:** Intent classification determines routing:
 - Single-domain queries → direct routing to relevant agent
-- Multi-domain queries → parallel execution with synthesis
+- Multi-domain queries → parallel or sequential execution with synthesis
 - Ambiguous queries → clarification request
 
 **State Management:** Redis-backed shared state with 15-minute TTL for session context.[14]
 
-**Governance Integration:** All agent operations pass through Layer 5 ABAC evaluation. The orchestration layer doesn't bypass governance—it coordinates governance-approved operations.
+**Governance Integration:** All agent operations pass through Layer 5 ABAC evaluation. The orchestration layer doesn't bypass governance. It coordinates with governance-approved operations.
 
 **Observability Integration:** All agent operations generate OpenTelemetry traces. The orchestration layer provides visibility into coordination patterns, not opacity.
 
@@ -920,36 +921,9 @@ Sarah watched the terminal as Jamie Rodriguez submitted the test query:
 
 **Query:** "Patient Maria Santos, MRN 78234156, is being discharged today following hip replacement surgery. Schedule post-discharge follow-up, medication review, and verify insurance coverage."
 
-The orchestration layer activated. Intent classification identified three domains: Care (follow-up scheduling), Clinical (medication review), Revenue (insurance verification). The supervisor routed to all three agents in parallel.
+The orchestration layer activated. Intent classification identified three domains: Care (follow-up scheduling), Clinical (medication review), Revenue (insurance verification). The supervisor delegated the request to all three agents in parallel.
 
-**Care Coordination Agent (2.1s):**
-- Scheduled follow-up: Orthopedics, Dr. Kim, next Tuesday 10:00 AM
-- Scheduled physical therapy evaluation: Thursday 2:00 PM
-- Confirmed patient transportation preferences
-
-**Clinical Documentation Agent (1.8s):**
-- Medication summary: 3 active prescriptions post-surgery
-- Drug interaction check: No high-risk interactions detected
-- Discharge instructions: Prepared and staged for review
-
-**Revenue Cycle Agent (2.3s):**
-- Insurance verified: UnitedHealthcare PPO
-- Prior authorization: Not required for follow-up visits
-- Patient responsibility estimate: $45 copay per visit
-
-**Total Execution Time:** 4.2 seconds (parallel execution)
-
-The supervisor synthesized the responses into a coherent discharge preparation summary. One query, three agents, one coordinated answer.
-
-The Datadog trace showed the complete flow—intent classification and routing (~400ms), parallel agent execution (2.3s slowest path), state synchronization and synthesis (~1.5s). Every layer visible. Every agent auditable. Every decision traceable.
-
-Marcus checked the governance log. All three agents had passed ABAC evaluation. No HITL escalations triggered—the medication review found no Warfarin-class drugs. Clean execution.
-
-"This is what we built for," Sarah said quietly. "Three agents, one response, complete care coordination."
-
-The room was silent for a moment. Then Jamie grinned. "**The Architecture of Trust** is operational. Now we need to prove it would stay that way."
-
-**Diagram 10: Multi-Agent Query Flow—Maria Santos Discharge**
+**Diagram 10: Multi-Agent Query Flow - Maria Santos Discharge**
 
 ```mermaid
 graph TB
@@ -990,11 +964,40 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
+**Care Coordination Agent (2.1s):**
+- Scheduled follow-up: Orthopedics, Dr. Kim, next Tuesday 10:00 AM
+- Scheduled physical therapy evaluation: Thursday 2:00 PM
+- Confirmed patient transportation preferences
+
+**Clinical Documentation Agent (1.8s):**
+- Medication summary: 3 active prescriptions post-surgery
+- Drug interaction check: No high-risk interactions detected
+- Discharge instructions: Prepared and staged for review
+
+**Revenue Cycle Agent (2.3s):**
+- Insurance verified: UnitedHealthcare PPO
+- Prior authorization: Not required for follow-up visits
+- Patient responsibility estimate: $45 copay per visit
+
+**Total Execution Time:** 4.2 seconds (parallel execution)
+
+The supervisor synthesized the responses into a coherent discharge preparation summary. One query, three agents, one coordinated answer.
+
+The Datadog trace showed the complete flow, intent classification and routing (~400ms), parallel agent execution (2.3s slowest path), state synchronization and synthesis (~1.5s). Every layer visible. Every agent auditable. Every decision traceable.
+
+Marcus checked the governance log. All three agents had passed ABAC evaluation. No HITL escalations triggered. Medication review found no Warfarin-class drugs. Clean execution.
+
+"This is what we built for," Sarah said quietly. "Three agents, one response, complete care coordination."
+
+The room was silent for a moment. Then Jamie grinned. "**The Architecture of Trust** is operational. Now we need to prove it would stay that way."
+
+
+
 ### INPACT™ Contribution
 
-Layer 7 doesn't directly add points to the INPACT™ score—the 86/100 is achieved through Layers 5-6 improvements to Permitted and Transparent. But orchestration enables INPACT™ dimensions at scale:
+Layer 7 doesn't directly add points to the INPACT™ score. The 86/100 score is achieved through Layers 5-6 improvements to Permitted and Transparent. But orchestration enables INPACT™ dimensions at scale:
 
-**Instant (I):** Multi-agent workflows complete in seconds through parallel execution. Without orchestration, the same tasks would require sequential human navigation across systems—minutes instead of seconds.
+**Instant (I):** Multi-agent workflows complete in seconds through parallel execution. Without orchestration, the same tasks would require sequential human navigation across systems in minutes instead of seconds.
 
 **Natural (N):** Users ask complex questions naturally. "Prepare for discharge" doesn't require understanding system boundaries. Orchestration handles decomposition invisibly.
 
@@ -1029,7 +1032,7 @@ Trust is the outcome. Transparency is the mechanism.[15]
 
 **Explainability:** HITL escalations include reasoning: "Risk score 8/10. Trigger: Warfarin + drug interaction. Policy requires pharmacist review." Users see reasoning they can evaluate.
 
-**HITL as Trust Feature:** Systems that know when to ask for help earn trust. HITL isn't a failure mode—it communicates: "This system knows its limits."
+**HITL as Trust Feature:** Systems that know when to ask for help earn trust. HITL isn't a failure mode. It communicates: "This system knows its limits."
 
 **Echo's Response Format:**
 > **Query:** Maria Santos's medication list?  
@@ -1043,7 +1046,7 @@ Trust is the outcome. Transparency is the mechanism.[15]
 
 ### Week 8: Governance Foundation
 
-Marcus Williams led policy development, working with compliance to translate regulatory requirements into OPA rules. 247 policies emerged from sessions that felt like contract negotiations—clinical operations wanted flexibility, compliance wanted constraints.
+Marcus Williams led policy development, working with compliance to translate regulatory requirements into OPA rules. 247 policies emerged from sessions that felt like contract negotiations. Clinical operations wanted flexibility. Compliance wanted constraints.
 
 Thursday brought the first policy conflict: a scheduling rule required department-head approval for cross-department appointments, but care coordination needed to schedule cardiology follow-ups without manual approval. Resolution: explicit "care coordination workflow" exception with enhanced audit logging.
 
@@ -1051,9 +1054,9 @@ By Friday, 193 of 247 policies were deployed. The remaining 54 covered edge case
 
 ### Week 9: Observability Operational
 
-The observability build proceeded faster than planned—Echo's Layer 4 already had basic OpenTelemetry tracing. Extending to all seven layers required consistent patterns, not greenfield development. By Wednesday, trace completeness exceeded 98%.
+The observability build proceeded faster than planned. Echo's Layer 4 already had basic OpenTelemetry tracing. Extending to all seven layers required consistent patterns, not greenfield development. By Wednesday, trace completeness exceeded 98%.
 
-Thursday afternoon brought the first HITL escalation in production—the Warfarin scenario. The trace told the complete story:
+Thursday afternoon brought the first HITL escalation in production - the Warfarin scenario. The trace told the complete story:
 - T+0ms: Query received
 - T+23ms: Governance evaluation (risk score: 8, trigger: Warfarin-class medication)
 - T+24ms: HITL escalation initiated
@@ -1066,7 +1069,7 @@ Thursday afternoon brought the first HITL escalation in production—the Warfari
 
 The three agents had been in design since Week 8. Week 10 was production integration: connecting agents to LangGraph, implementing shared state, testing coordination patterns.
 
-Tuesday brought integration failures—Epic rate limits, payer disambiguation issues. Normal problems with normal fixes.
+Tuesday brought integration failures. Epic rate limits and payer disambiguation issues. Normal problems with normal fixes.
 
 Wednesday-Thursday: 47 test scenarios across single-domain, dual-domain, triple-domain, error handling, and HITL integration. All passed by Thursday evening.
 
@@ -1132,11 +1135,11 @@ graph LR
 
 | Dimension | Week 7 | Week 10 | Change | Enabling Layer |
 |-----------|--------|---------|--------|----------------|
-| **I** (Instant) | 5/6 | 5/6 | — | — |
-| **N** (Natural) | 5/6 | 5/6 | — | — |
+| **I** (Instant) | 5/6 | 5/6 | NA | NA |
+| **N** (Natural) | 5/6 | 5/6 | NA | NA |
 | **P** (Permitted) | 2/6 | 6/6 | **+4** | Layer 5: Governance |
-| **A** (Adaptive) | 5/6 | 5/6 | — | — |
-| **C** (Contextual) | 5/6 | 5/6 | — | — |
+| **A** (Adaptive) | 5/6 | 5/6 | NA | NA |
+| **C** (Contextual) | 5/6 | 5/6 | NA | NA |
 | **T** (Transparent) | 3/6 | 6/6 | **+3** | Layer 6: Observability |
 | **Total** | **67/100** | **86/100** | **+19** | + Orchestration Readiness |
 
@@ -1178,21 +1181,21 @@ $82,000.
 
 "Sarah, walk me through this," he said, turning his screen toward her. "We budgeted $380K. We spent $82K. That's not a rounding error. That's 78% under budget."
 
-Sarah smiled. "Three factors. First, OPA is open source—we budgeted $137K for a commercial policy engine we didn't need. Second, we already had Datadog licensing from the infrastructure team—$33K we didn't have to spend. Third, the agents themselves. Remember the $2M in failed pilots?"
+Sarah smiled. "Three factors. First, OPA is open source. We budgeted $137K for a commercial policy engine we didn't need. Second, we already had Datadog licensing from the infrastructure team.$33K we didn't have to spend. Third, the agents themselves. Remember the $2M in failed pilots?"
 
 Krish nodded. The failed pilots had been a recurring topic in board meetings.
 
-"Those agents still work. The logic is sound, the Epic integrations are built, the clinical workflows are mapped. What failed was the infrastructure underneath them. We didn't rebuild the agents—we retrofitted them onto infrastructure that finally fulfills their needs. That saved $128K in development costs."
+"Those agents still work. The logic is sound, the Epic integrations are built, the clinical workflows are mapped. What failed was the infrastructure underneath them. We didn't rebuild the agents. We retrofitted them onto infrastructure that finally fulfills their needs. That saved $128K in development costs."
 
-Krish studied the numbers. "So the original pilots weren't wasted investment."
+Krish studied the numbers. "So the original pilots weren't a wasted investment."
 
-"They were premature investment. The agents were ready. The infrastructure wasn't. Now it is."
+"They were premature investments. The agents were ready. The infrastructure wasn't. Now it is."
 
 ### The Seven-Layer Achievement
 
 Week 10, Friday, 5:15 PM.
 
-Sarah Cedao stood at the whiteboard one final time. The three words from Week 8 Monday remained: GOVERNANCE. OBSERVABILITY. ORCHESTRATION. Each now had a checkmark beside it.
+Sarah Cedao stood at the whiteboard one final time. The three words from Week 8 Monday remained: **GOVERNANCE. OBSERVABILITY. ORCHESTRATION.** Each now had a checkmark beside it.
 
 Seventy days. Seven layers. From 28/100 to 86/100.
 
@@ -1228,12 +1231,9 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-**Diagram 14: The Architecture of Trust— Two Pillars Complete**
+**Diagram 14: The Architecture of Trust - Two Pillars Complete**
 
 ```mermaid
-
-
-
 
 graph TB
     Title["ARCHITECTURE OF TRUST<br/>Three Integrated Pillars"]
@@ -1262,18 +1262,17 @@ graph TB
     INPACT -.->|"Needs Fulfilled by"| Layers
     Layers -.->|"Enables Operations"| GOALS
     GOALS -.->|"Drives Trust"| INPACT
-
+    
     style Title fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     style PILLARS fill:none,stroke:none
     style INDICATOR fill:none,stroke:none
-    style INPACT fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style INPACT fill:#f57c00,stroke:#e65100,stroke-width:3px,color:#ffffff
     style Layers fill:#f57c00,stroke:#e65100,stroke-width:3px,color:#ffffff
     style GOALS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style Spacer1 fill:none,stroke:none,color:transparent
     style YouAreHere fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
     style Spacer2 fill:none,stroke:none,color:transparent
     style Copyright fill:#ffffff,stroke:none,color:#666666
-
 
 ```
 
