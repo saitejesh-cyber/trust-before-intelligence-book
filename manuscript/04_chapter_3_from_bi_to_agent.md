@@ -47,19 +47,19 @@ graph LR
     
     BEFORE --> SOLUTION --> AFTER
     
-    %% RED - Problems/Old Era (Day 0 with gaps)
-    style BEFORE fill:#fff5f5,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style B1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    %% 🔴 RED — FAILURE / OLD ERA
+    style BEFORE fill:#fff5f5,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:20,ry:20
+    style B1 fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#b71c1c,rx:10,ry:10
     
-    %% ORANGE - Transition/Solution
-    style SOLUTION fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style S1 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    %% 🔵 BLUE — ACTIVE TRANSFORMATION
+    style SOLUTION fill:#edf4fa,stroke:#666666,stroke-width:2px,color:#333333,rx:20,ry:20
+    style S1 fill:#4478A6,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
     
-    %% TEAL - Success/Result (Day 70)
-    style AFTER fill:#f0fff0,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A1 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    %% 🟢 TEAL — TRUSTED OUTCOME
+    style AFTER fill:#e6f3f6,stroke:#00897b,stroke-width:2px,color:#004d40,rx:20,ry:20
+    style A1 fill:#30838C,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
     
-    %% Copyright
+    %% FOOTER
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
@@ -160,22 +160,23 @@ graph LR
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
-    era1 -.->|<b>Added ML</b>| era2
-    era2 -.->|<b>PARADIGM SHIFT <br> Requires INPACT™ </b>| era3
+    %% ⚪ SOFTWARE 1.0 — NEUTRAL (Human-era, BI assumptions)
+    style era1 fill:#ffffff,stroke:#666666,stroke-width:2px,rx:20,ry:20
+    style P1 fill:#f9f9f9,stroke:#666666,stroke-width:1px,color:#000000,rx:10,ry:10
+    style I1 fill:#f9f9f9,stroke:#666666,stroke-width:1px,color:#000000,rx:10,ry:10
     
-    %% Era 1 - Neutral/Gray (Old)
-    style P1 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style I1 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    %% 🟠 SOFTWARE 2.0 — INTERMEDIATE (ML added, not agent-ready)
+    style era2 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100,rx:20,ry:20
+    style P2 fill:#fff9e6,stroke:#f57c00,stroke-width:1px,color:#e65100,rx:10,ry:10
+    style I2 fill:#fff9e6,stroke:#f57c00,stroke-width:1px,color:#e65100,rx:10,ry:10
     
-    %% Era 2 - Orange (Transition/ML Addition)
-    style P2 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style I2 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    %% 🟢 SOFTWARE 3.0 — TRUSTED OUTCOME (Agent-native)
+    style era3 fill:#e6f3f6,stroke:#00897b,stroke-width:2px,color:#004d40,rx:20,ry:20
+    style P3 fill:#e0f2f1,stroke:#00897b,stroke-width:1px,color:#004d40,rx:10,ry:10
+    style I3 fill:#30838C,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
     
-    %% Era 3 - Teal (Modern/Agent-Ready)
-    style P3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style I3 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    %% FOOTER
+    style Copyright fill:none,stroke:none,color:#666666
 ```
 
 As Figure 3.1 illustrates, running Software 3.0 agents on Software 1.0 infrastructure is like running cloud-native microservices on mainframe batch processing. The assumptions don't align.
@@ -239,23 +240,26 @@ graph TB
     old -.->|<b>Must Transform</b>| Shift
     Shift -.->|<b>To Enable</b>| new
     
-    %% BI-Era (Red - Problems/Old Approach)
-    style O1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style O2 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style O3 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style O4 fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
     
-    %% Agent-Era (Teal - Solutions/Modern Approach)
-    style N1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style N2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style N3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style N4 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    %% 🔴 BI ERA — OLD / TRUST-BREAKING FOR AGENTS
+    style old fill:#fff5f5,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:20,ry:20
+    style O1 fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#b71c1c,rx:10,ry:10
+    style O2 fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#b71c1c,rx:10,ry:10
+    style O3 fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#b71c1c,rx:10,ry:10
+    style O4 fill:#990000,stroke:#b71c1c,stroke-width:1px,color:#ffffff,rx:10,ry:10
     
-    %% Transition Element
-    style Shift fill:#fff9e6,stroke:#f57c00,stroke-width:3px,color:#e65100
+    %% 🟠 TRANSITION — ACTIVE EVOLUTION
+    style Shift fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100,rx:20,ry:20
     
-    %% Copyright
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    %% 🟢 AGENT ERA — TRUSTED / AGENT-READY
+    style new fill:#e6f3f6,stroke:#00897b,stroke-width:2px,color:#004d40,rx:20,ry:20
+    style N1 fill:#e0f2f1,stroke:#00897b,stroke-width:1px,color:#004d40,rx:10,ry:10
+    style N2 fill:#e0f2f1,stroke:#00897b,stroke-width:1px,color:#004d40,rx:10,ry:10
+    style N3 fill:#e0f2f1,stroke:#00897b,stroke-width:1px,color:#004d40,rx:10,ry:10
+    style N4 fill:#30838C,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
+    
+    %% FOOTER
+    style Copyright fill:none,stroke:none,color:#666666
 ```
 
 Figure 3.2 captures this paradigm shift. The key differences are stark:
@@ -528,37 +532,37 @@ graph LR
     N5 -.->|"Solved by"| L4
     N6 -.->|"Solved by"| L6
     
-    %% Styling - GAPS (Red - Problems)
-    style gaps fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style G1 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style G2 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style G3 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style G4 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style G5 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style G6 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style G7 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    %% 🔴 GAPS — PROBLEMS / BI ERA
+    style gaps fill:#fff5f5,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:20,ry:20
+    style G1 fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#b71c1c,rx:10,ry:10
+    style G2 fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#b71c1c,rx:10,ry:10
+    style G3 fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#b71c1c,rx:10,ry:10
+    style G4 fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#b71c1c,rx:10,ry:10
+    style G5 fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#b71c1c,rx:10,ry:10
+    style G6 fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#b71c1c,rx:10,ry:10
+    style G7 fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#b71c1c,rx:10,ry:10
     
-    %% Styling - NEEDS (Neutral - Requirements)
-    style needs fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style N1 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
-    style N2 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
-    style N3 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
-    style N4 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
-    style N5 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
-    style N6 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
+    %% ⚪ NEEDS — REQUIREMENTS (NEUTRAL)
+    style needs fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000,rx:20,ry:20
+    style N1 fill:#ffffff,stroke:#666666,stroke-width:1px,color:#000000,rx:10,ry:10
+    style N2 fill:#ffffff,stroke:#666666,stroke-width:1px,color:#000000,rx:10,ry:10
+    style N3 fill:#ffffff,stroke:#666666,stroke-width:1px,color:#000000,rx:10,ry:10
+    style N4 fill:#ffffff,stroke:#666666,stroke-width:1px,color:#000000,rx:10,ry:10
+    style N5 fill:#ffffff,stroke:#666666,stroke-width:1px,color:#000000,rx:10,ry:10
+    style N6 fill:#ffffff,stroke:#666666,stroke-width:1px,color:#000000,rx:10,ry:10
     
-    %% Styling - LAYERS (Teal - Solutions)
-    style layers fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L1 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L2 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L3 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L4 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L5 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L6 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L7 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    %% 🟢 LAYERS — SOLUTIONS / AGENT-READY
+    style layers fill:#e6f3f6,stroke:#00897b,stroke-width:2px,color:#004d40,rx:20,ry:20
+    style L1 fill:#e0f2f1,stroke:#00897b,stroke-width:1px,color:#004d40,rx:10,ry:10
+    style L2 fill:#e0f2f1,stroke:#00897b,stroke-width:1px,color:#004d40,rx:10,ry:10
+    style L3 fill:#e0f2f1,stroke:#00897b,stroke-width:1px,color:#004d40,rx:10,ry:10
+    style L4 fill:#e0f2f1,stroke:#00897b,stroke-width:1px,color:#004d40,rx:10,ry:10
+    style L5 fill:#e0f2f1,stroke:#00897b,stroke-width:1px,color:#004d40,rx:10,ry:10
+    style L6 fill:#e0f2f1,stroke:#00897b,stroke-width:1px,color:#004d40,rx:10,ry:10
+    style L7 fill:#30838C,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
     
-    %% Copyright
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    %% FOOTER
+    style Copyright fill:none,stroke:none,color:#666666
 
 ```
 
