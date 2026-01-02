@@ -34,13 +34,13 @@ graph LR
     
     BEFORE --> TRANSFORM --> AFTER
     
-    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
-    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style B1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style T1 fill:#f5f5f5,stroke:#666666,color:#333333
-    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style BEFORE fill:#fff5f5,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:2O,ry:20
+    style TRANSFORM fill:#edf4fa,stroke:#666666,stroke-width:2px,color:#333333,rx:2O,ry:20
+    style AFTER fill:#e6f3f6,stroke:#00897b,stroke-width:2px,color:#004d40,rx:2O,ry:20
+    style B1 fill:#ffcdd2,stroke:#c62828,stroke-width:1px,color:#b71c1c,rx:1O,ry:10
+    style T1 fill:#4478A6,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:1O,ry:10
+    style A1 fill:#30838C,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:1O,ry:10
+    style Copyright fill:none,stroke:none,color:#666666
     
 ```
 
@@ -183,13 +183,13 @@ graph LR
     
     HumanEra --> TRANSFORM --> AgentEra
     
-    style HumanEra fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
-    style AgentEra fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style H1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style T1 fill:#f5f5f5,stroke:#666666,color:#333333
-    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style HumanEra fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c,rx:2O,ry:20
+    style TRANSFORM fill:#edf4fa,stroke:#666666,stroke-width:2px,color:#333333,rx:2O,ry:20
+    style AgentEra fill:#e6f3f6,stroke:#00897b,stroke-width:2px,color:#004d40,rx:2O,ry:20
+    style H1 fill:#ffcdd2,stroke:#c62828,stroke-width:1px,color:#b71c1c,rx:1O,ry:10
+    style T1 fill:#4478A6,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:1O,ry:10
+    style A1 fill:#30838C,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:1O,ry:10
+    style Copyright fill:none,stroke:none,color:#666666
 
 ```
 
@@ -265,15 +265,15 @@ graph TB
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
-    style HITL fill:#f0fff0,stroke:#00897b,stroke-width:2px
-    style I fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style N fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style P fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style C fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style T fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style Trust fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style HITL fill:#ffffff,stroke:#666666,stroke-width:2px,rx:20,ry:20
+    style I fill:#4478A6,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
+    style N fill:#4478A6,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
+    style P fill:#4478A6,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
+    style A fill:#4478A6,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
+    style C fill:#4478A6,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
+    style T fill:#4478A6,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
+    style Trust fill:#30838C,stroke:#0D0D0D,stroke-width:3px,color:#ffffff,rx:10,ry:10
+    style Copyright fill:none,stroke:none,color:#666666
 ```
 
 **Figure 0.2: INPACT™ Framework - Six Agent Needs Leading to Trust**
@@ -331,18 +331,18 @@ This integration creates what we call "The Architecture of Trust" - not three se
 ```mermaid
 
 graph TB
-    Title["ARCHITECTURE OF TRUST<br/>Three Integrated Pillars"]
+    Title["<b>ARCHITECTURE OF TRUST</b><br/><b>Three Integrated Pillars</b>"]
     
     subgraph PILLARS[" "]
         direction LR
-        INPACT["PILLAR 1: INPACT™<br/><br/>What Agents Need?<br/><br/><b>I</b>nstant<br/><b>N</b>atural<br/><b>P</b>ermitted<br/><b>A</b>daptive<br/><b>C</b>ontextual<br/><b>T</b>ransparent"]
+        INPACT["<b>PILLAR 1: INPACT™</b><br/><br/><b>What Agents Need?</b><br/><br/><b>I</b>nstant<br/><b>N</b>atural<br/><b>P</b>ermitted<br/><b>A</b>daptive<br/><b>C</b>ontextual<br/><b>T</b>ransparent"]
         
-        Layers["PILLAR 2: 7-LAYERS<br/>Infrastructure<br/><br/>How to Build TRUST?<br/><br/>Storage<br/>Real-Time<br/>Semantic<br/>Intelligence<br/>Governance<br/>Observability<br/>Orchestration"]
+        Layers["<b>PILLAR 2: 7-LAYERS</b><br/><b>Infrastructure</b><br/><br/><b>How to Build TRUST?</b><br/><br/>Storage<br/>Real-Time<br/>Semantic<br/>Intelligence<br/>Governance<br/>Observability<br/>Orchestration"]
         
-        GOALS["PILLAR 3: GOALS™<br/><br/>How to Measure TRUST?<br/><br/><b>G</b>overnance<br/><b>O</b>bservability<br/><b>A</b>vailability<br/><b>L</b>exicon<br/><b>S</b>olid"]
+        GOALS["<b>PILLAR 3: GOALS™</b><br/><br/><b>How to Measure TRUST?</b><br/><br/><b>G</b>overnance<br/><b>O</b>bservability<br/><b>A</b>vailability<br/><b>L</b>exicon<br/><b>S</b>olid"]
     end
     
-    Copyright["© 2025 Colaberry Inc."]
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
     Title --> PILLARS
     
@@ -350,13 +350,13 @@ graph TB
     Layers -.->|"Enables Operations"| GOALS
     GOALS -.->|"Drives Trust"| INPACT
     
-    style Title fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Title fill:#30838C,color:#ffffff,stroke:#0D0D0D,stroke-width:2px,rx:20,ry:20
     style PILLARS fill:none,stroke:none
-    style INPACT fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style Layers fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style GOALS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style INPACT fill:#4478A6,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:20,ry:20
+    style Layers fill:#e0f2f1,stroke:#00897b,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style GOALS fill:#e0f2f1,stroke:#00897b,stroke-width:1px,color:#004d40,rx:20,ry:20
     style Copyright fill:#ffffff,stroke:none,color:#666666
-
+S
 ```
 
 **Figure 0.3: The Architecture of Trust Triad - Three Pillars Working Together**
