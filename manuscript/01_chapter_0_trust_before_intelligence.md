@@ -356,7 +356,7 @@ graph TB
     style Layers fill:#e0f2f1,stroke:#00897b,stroke-width:1px,color:#004d40,rx:20,ry:20
     style GOALS fill:#e0f2f1,stroke:#00897b,stroke-width:1px,color:#004d40,rx:20,ry:20
     style Copyright fill:#ffffff,stroke:none,color:#666666
-S
+
 ```
 
 **Figure 0.3: The Architecture of Trust Triad - Three Pillars Working Together**
