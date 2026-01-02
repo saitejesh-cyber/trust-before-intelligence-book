@@ -158,22 +158,25 @@ graph LR
         P3 --> I3
     end
     
+    era1 -.->|<b>Added ML</b>| era2
+    era2 -.->|<b>PARADIGM SHIFT<br/>Requires INPACT™</b>| era3
+    
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
     %% ⚪ SOFTWARE 1.0 — NEUTRAL (Human-era, BI assumptions)
     style era1 fill:#ffffff,stroke:#666666,stroke-width:2px,rx:20,ry:20
-    style P1 fill:#f9f9f9,stroke:#666666,stroke-width:1px,color:#000000,rx:10,ry:10
-    style I1 fill:#f9f9f9,stroke:#666666,stroke-width:1px,color:#000000,rx:10,ry:10
+    style P1 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000,rx:10,ry:10
+    style I1 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000,rx:10,ry:10
     
     %% 🟠 SOFTWARE 2.0 — INTERMEDIATE (ML added, not agent-ready)
     style era2 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100,rx:20,ry:20
-    style P2 fill:#fff9e6,stroke:#f57c00,stroke-width:1px,color:#e65100,rx:10,ry:10
-    style I2 fill:#fff9e6,stroke:#f57c00,stroke-width:1px,color:#e65100,rx:10,ry:10
+    style P2 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100,rx:10,ry:10
+    style I2 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100,rx:10,ry:10
     
     %% 🟢 SOFTWARE 3.0 — TRUSTED OUTCOME (Agent-native)
     style era3 fill:#e6f3f6,stroke:#00897b,stroke-width:2px,color:#004d40,rx:20,ry:20
-    style P3 fill:#e0f2f1,stroke:#00897b,stroke-width:1px,color:#004d40,rx:10,ry:10
-    style I3 fill:#30838C,stroke:#0D0D0D,stroke-width:1px,color:#ffffff,rx:10,ry:10
+    style P3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40,rx:10,ry:10
+    style I3 fill:#30838C,stroke:#0D0D0D,stroke-width:3px,color:#ffffff,rx:10,ry:10
     
     %% FOOTER
     style Copyright fill:none,stroke:none,color:#666666
