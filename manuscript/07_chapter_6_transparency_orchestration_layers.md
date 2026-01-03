@@ -465,11 +465,6 @@ Echo deployed Layer 5 across Week 8-9 with the following architecture:
 7. Bulk data exports
 8. Access from unrecognized devices
 
-**Cost:** $15,000 total
-- OPA: $0 (open source)
-- Policy development: $8,000 (40 hours consulting)
-- Integration testing: $5,000
-- HITL workflow tooling: $2,000
 
 **Diagram 6: HITL Escalation Patterns**
 
@@ -730,10 +725,6 @@ The service map reveals latency distribution: Layer 4 (RAG + LLM) dominates at 2
 - Quality: Accuracy drop > 5% triggers investigation
 - Errors: Error rate > 2% triggers immediate response
 
-**Cost:** $34,000 annual
-- Datadog licensing: $24,000/year
-- OpenTelemetry instrumentation: $6,000 (development)
-- Custom dashboards: $4,000 (development)
 
 ### Visibility Achieved
 
@@ -907,11 +898,6 @@ Echo deployed Layer 7 across Week 10 with the following architecture:
 
 **Observability Integration:** All agent operations generate OpenTelemetry traces. The orchestration layer provides visibility into coordination patterns, not opacity.
 
-**Cost:** $33,000 total
-- LangGraph: $0 (open source)
-- Redis state management: $6,000/year
-- Agent orchestration integration: $18,000 (retrofitting three existing agents for multi-agent coordination)
-- Integration testing: $9,000
 
 ### The Multi-Agent Moment
 
@@ -1156,17 +1142,50 @@ graph LR
 | HITL Resolution Time | <2 min | 47s average |
 | Multi-Agent Latency | <5s | 4.2s average |
 
-**Investment Summary:**
+### Investment Summary: Phase 3
 
-| Component | Budget | Actual |
-|-----------|--------|--------|
-| Layer 5: Governance | $15,000 | $15,000 |
-| Layer 6: Observability | $34,000 | $34,000 |
-| Layer 7: Orchestration | $33,000 | $33,000 |
-| **Phase 3 Total** | **$82,000** | **$82,000** |
+**Phase 3 Investment ($380K budget / $82K actual):**
 
-**Cumulative Investment:** $942,000 of $1.23M budget (77% utilized). Phase 4 validation (~$50K) and $238K buffer remaining for contingency.
+| Component | Technology | Services | Total |
+|-----------|------------|----------|-------|
+| Layer 5 (Governance) | $0 | $15K | $15K |
+| Layer 6 (Observability) | $24K | $10K | $34K |
+| Layer 7 (Orchestration) | $6K | $27K | $33K |
+| **Phase 3 Total** | **$30K** | **$52K** | **$82K** |
 
+**Layer 5 Detail ($15K):**
+- OPA Policy Engine: $0 (open source)
+- Policy development: $8,000 (40 hours consulting)
+- Integration testing: $5,000
+- HITL workflow tooling: $2,000
+
+**Layer 6 Detail ($34K):**
+- Datadog licensing: $24,000/year
+- OpenTelemetry instrumentation: $6,000 (development)
+- Custom dashboards: $4,000 (development)
+
+**Layer 7 Detail ($33K):**
+- LangGraph: $0 (open source)
+- Redis state management: $6,000/year
+- Agent orchestration integration: $18,000 (retrofitting existing agents)
+- Integration testing: $9,000
+
+**Phase 3 Operational Costs:**
+- Monthly: $2,500 (Datadog: $2,000 + Redis: $500)
+- Annual: $30,000
+
+**Cumulative Investment:**
+
+| Phase | Weeks | Budgeted | Actual | Chapter |
+|-------|-------|----------|--------|---------|
+| Phase 1: Foundation | 1-4 | $470K | $468K | Chapter 4 ✓ |
+| Phase 2: Intelligence | 5-7 | $380K | $392K | Chapter 5 ✓ |
+| Phase 3: Trust + Orchestration | 8-10 | $380K | $82K | **This Chapter** ✓ |
+| **Total through Week 10** | | **$1,230K** | **$942K** | **23% under budget** |
+
+**Remaining:** Phase 4 validation (~$50K) and $238K buffer for contingency.
+
+*For complete project economics, ROI calculations, and sensitivity analysis, see Appendix D: Budget Methodology.*
 ---
 
 ## PART 8: THE FINISH LINE
@@ -1278,7 +1297,7 @@ graph TB
 
 ### What Echo Achieved
 
-The journey started with a simple question: Why do 95% of agent projects fail? The answer was trust—the infrastructure gap between what agents could theoretically do and what organizations could safely let them do.
+The journey started with a simple question: Why do 95% of agent projects fail? The answer was TRUST. The infrastructure gap between what agents could theoretically do and what organizations could safely let them do.
 
 Echo closed that gap. Layer by layer, week by week, capability by capability. The complete transformation metrics are detailed in the Chapter Summary.
 
@@ -1297,7 +1316,7 @@ Krish Yadav, Echo's CFO, reviewed the numbers Friday evening:
 
 "We spent $298,000 less than projected," Krish noted. "And the architecture is production-ready two weeks ahead of the board presentation. That never happens."
 
-The remaining two weeks—Weeks 11-12—would validate these projections through operational deployment and measurement. Chapter 8 will document that validation. But the infrastructure prerequisite was complete.
+The remaining two weeks, Weeks 11-12, would validate these projections through operational deployment and measurement. Chapter 8 will document that validation. But the infrastructure prerequisite was complete.
 
 ### Bridge to Operational Excellence
 
@@ -1305,7 +1324,7 @@ Architecture alone isn't success. The 86/100 score reflects capability, meaning 
 
 The next phase would test every assumption: Would HITL workflows scale? Would clinicians engage with review or route around it? Would multi-agent coordination remain reliable under load? Would clinical staff trust the system for complex queries?
 
-**Chapter 7 introduces GOALS™—the framework for operational excellence:**
+**Chapter 7 introduces GOALS™ - the framework for operational excellence:**
 - **G**overnance: Policy effectiveness and HITL optimization
 - **O**bservability: Monitoring maturity and incident response
 - **A**vailability: Speed, freshness, and performance at scale
@@ -1335,7 +1354,7 @@ The architecture is complete. Now it must perform.
 
 2. **Trust requires transparency:** Distributed tracing transforms black boxes into glass boxes. When systems fail or costs spike, operators need to understand why.
 
-3. **Scale requires orchestration:** Multi-agent coordination supports complex workflows—like discharge planning across scheduling, clinical, and revenue—that single agents cannot address.
+3. **Scale requires orchestration:** Multi-agent coordination supports complex workflows like discharge planning across scheduling, clinical and revenue that single agents cannot address.
 
 4. **The 7-Layer Architecture is complete:** Foundation (Layers 1-2), Intelligence (Layers 3-4), and Trust + Orchestration (Layers 5-6-7) together create production-ready infrastructure.
 
@@ -1411,7 +1430,7 @@ The complete transformation closed all seven gaps across three phases:
 
 [14] Redis. (2024). "Redis Documentation." https://redis.io/docs/latest/integrate/redis-data-integration/data-pipelines/transform-examples/redis-expiration-example/
 
-[15] Jacovi, A., MarasoviÄ‡, A., Miller, T., & Goldberg, Y. (2021). "Formalizing Trust in Artificial Intelligence: Prerequisites, Causes and Goals of Human Trust in AI." *Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency*, 624-635. https://arxiv.org/abs/2010.07487
+[15] Jacovi, A., Marasović, A., Miller, T., & Goldberg, Y. (2021). "Formalizing Trust in Artificial Intelligence: Prerequisites, Causes and Goals of Human Trust in AI." *Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency*, 624-635. https://arxiv.org/abs/2010.07487
 
 [16] Gao, Y., Xiong, Y., Gao, X., et al. (2024). "Retrieval-Augmented Generation for Large Language Models: A Survey." *arXiv preprint arXiv:2312.10997*. https://arxiv.org/abs/2312.10997
 
