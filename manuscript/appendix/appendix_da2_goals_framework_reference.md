@@ -1276,11 +1276,62 @@ Recommended sequence:
 
 **Observability:** Monitoring, cost tracking, and maintainability (GOALS™ dimension)
 
-**Solid:** Data quality and integrity across accuracy, completeness, consistency, timeliness (GOALS™ dimension)
+**Solid:** Data quality and integrity across accuracy, completeness, consistency, currentness, and traceability per ISO/IEC 5259 (GOALS™ dimension)
 
 **SLO:** Service Level Objective - Target performance threshold (Google SRE concept)
 
 **SRE:** Site Reliability Engineering - Google's approach to operational excellence
+
+---
+
+## GOALS™ Alignment with ISO/IEC 5259
+
+The GOALS™ framework aligns with ISO/IEC 5259 (2024-2025), the international standard for AI data quality. Of the 15 data quality characteristics defined in ISO/IEC 5259-2, 13 map directly to GOALS™ dimensions.
+
+### ISO/IEC 5259 Dimension Mapping
+
+| ISO/IEC 5259 Dimension | Category | GOALS™ Mapping | Rationale |
+|------------------------|----------|----------------|-----------|
+| Accuracy | Inherent | **Solid** | Core data quality - is data correct? |
+| Completeness | Inherent | **Solid** | Core data quality - is all data present? |
+| Consistency | Inherent | **Solid** | Core data quality - does data align across systems? |
+| Currentness | Inherent | **Solid** | Core data quality - is data fresh enough? |
+| Credibility | Inherent | **Solid** | Outcome of other quality dimensions |
+| Traceability | Both | **Solid** | Data lineage for explainability |
+| Availability | System-Dependent | **Availability** | Data retrievable when needed |
+| Efficiency | Both | **Availability** | Performance and resource requirements |
+| Accessibility | Both | **Governance** | Who can access data |
+| Compliance | Both | **Governance** | Regulatory adherence (HIPAA, EU AI Act) |
+| Confidentiality | Both | **Governance** | PHI protection, authorization |
+| Precision | Both | **Lexicon** | Level of detail affects semantic understanding |
+| Understandability | Both | **Lexicon** | Data can be read and interpreted |
+| Portability | System-Dependent | *Infrastructure* | System migration (7-Layer Architecture) |
+| Recoverability | System-Dependent | *Infrastructure* | Disaster recovery (7-Layer Architecture) |
+
+### Summary by GOAL
+
+| GOAL | ISO/IEC 5259 Dimensions | Count |
+|------|-------------------------|-------|
+| **Solid** | Accuracy, Completeness, Consistency, Currentness, Credibility, Traceability | 6 |
+| **Governance** | Accessibility, Compliance, Confidentiality | 3 |
+| **Availability** | Availability, Efficiency | 2 |
+| **Lexicon** | Precision, Understandability | 2 |
+| **Observability** | *(Monitoring function - measures other dimensions)* | 0 |
+| *Infrastructure* | Portability, Recoverability | 2 |
+
+**Note:** Observability is the measurement function that monitors all dimensions, not a data characteristic itself. Portability and Recoverability are infrastructure concerns addressed in the 7-Layer Architecture (Chapters 4-6).
+
+### The Five Dimensions of Data Soundness (Solid)
+
+For operational purposes, the Solid GOAL focuses on five measurable dimensions from ISO/IEC 5259:
+
+1. **Accuracy** - Is the data correct?
+2. **Completeness** - Is all required data present?
+3. **Consistency** - Does data align across systems?
+4. **Currentness** - Is data fresh enough for its use case?
+5. **Traceability** - Can we trace data to its source?
+
+These five dimensions are validated through continuous monitoring (Observability) using both rule-based quality gates and ML-based anomaly detection.
 
 ---
 
@@ -1293,6 +1344,7 @@ Recommended sequence:
 **For implementation guidance, see Chapter 3.**
 
 **Standards References:**
+- ISO/IEC 5259: https://www.iso.org/standard/81088.html
 - NIST AI RMF: https://www.nist.gov/itl/ai-risk-management-framework
 - EU AI Act: https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
 - DAMA DMBOK: https://dama.org/learning-resources/dama-data-management-body-of-knowledge-dmbok/

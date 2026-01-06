@@ -661,9 +661,9 @@ Model versioning with tested rollback capability (<15 minutes to revert) provide
 
 ### Key Technologies for Agent Governance
 
-*For detailed vendor recommendations including ABAC policy engines and audit logging platforms, see Appendix DA-1: Technology Selection Guide, Layer 5 (Security & Policy) section.*
-
 **Selection criteria:** Prioritize ABAC over RBAC for dynamic permissions, sub-10ms policy evaluation latency, comprehensive audit trails with business context, and integration with your cloud provider's identity systems.
+
+*For detailed vendor recommendations including ABAC policy engines and audit logging platforms, see Appendix DA-1: Technology Selection Guide, Layer 5 (Security & Policy) section.*
 
 ### Multi-Agent Governance Complexity
 
@@ -910,6 +910,8 @@ When resource constraints require sequencing, follow this prioritization: **O→
 
 **Selection criteria:** Choose platforms supporting trace IDs across all seven layers, model drift detection for embeddings and LLMs, data quality monitoring with automated alerting, and closed-loop feedback capabilities.
 
+*For detailed vendor recommendations including APM platforms and LLM observability tools, see Appendix DA-1: Technology Selection Guide, Layer 6 (Observability & Feedback) section.*
+
 ### Echo's Observability Maturity Journey
 
 **Stage 1: Basic Monitoring (Score: 52/100)**
@@ -1029,6 +1031,8 @@ Semantic caching achieving 60%+ hit rates. Common queries returned from cache in
 ### Key Technologies for Availability
 
 **Selection criteria:** Prioritize sub-30-second data freshness for critical tables, semantic caching with >60% hit rates, parallel retrieval capabilities, and proven 10x scale capacity.
+
+*For detailed vendor recommendations including caching platforms and vector databases, see Appendix DA-1: Technology Selection Guide, Layer 2 (Real-Time Infrastructure) and Layer 3 (Semantic Storage) sections.*
 
 ### Understanding the Caching Hierarchy
 
@@ -1259,6 +1263,8 @@ Additionally, implement **human evaluation sampling**: review 100 random queries
 
 **Selection criteria:** Choose platforms with natural language query support, versioned metric definitions, entity resolution across systems, integration with your semantic storage (vector DB, knowledge graph), and collaborative curation workflows for domain experts.
 
+*For detailed vendor recommendations including semantic layer platforms and entity resolution tools, see Appendix DA-1: Technology Selection Guide, Layer 4 (Semantic Intelligence) section.*
+
 ### Echo's Lexicon Maturity Journey
 
 **Stage 1: Basic Semantic Layer (Score: 58/100)**
@@ -1312,7 +1318,7 @@ Agents are only as good as their data. Wrong data leads to wrong answers. In hea
 
 Solid answers: *Can you trust the underlying data, and does the agent know when it shouldn't?* [9]
 
-Data quality has four dimensions: accuracy (does it reflect reality?), completeness (are critical fields populated?), consistency (same data, same value across systems?), and timeliness (does it reflect current state?).
+Data quality has five dimensions per ISO/IEC 5259: accuracy (is it correct?), completeness (is all required data present?), consistency (does it align across systems?), currentness (is it fresh enough?), and traceability (can we trace it to source?). [10]
 
 ### The Three-Day Trust Collapse
 
@@ -1348,35 +1354,39 @@ Solid isn't glamorous. It doesn't deliver the exciting capabilities agents promi
 
 But without it, nothing else matters.
 
-### The Four Dimensions of Data Quality
+### The Five Dimensions of Data Quality
 
-**Accuracy:** Is the data factually correct? Provider schedules showed Dr. Martinez working on days she was on vacation. Data was fresh (updated hourly) but wrong.
+Every data record must satisfy five dimensions before agents can trust it:
 
-**Completeness:** Are all required fields populated? Insurance records missing coverage details for 8% of patients. Agents couldn't verify eligibility.
+**Accuracy:** Is the data correct? Provider schedules showed Dr. Martinez working on days she was on vacation. Data was fresh (updated hourly) but wrong.
+
+**Completeness:** Is all required data present? Insurance records missing coverage details for 8% of patients. Agents couldn't verify eligibility.
 
 **Consistency:** Does data align across systems? Patient demographics in EHR showed different addresses than billing records for 3% of patients. Entity resolution failed.
 
-**Timeliness:** Is data fresh enough for its use case? Lab results were 24 hours old, fine for analytical reports but problematic when patients asked about "my recent test results" meaning tests from this morning. [10]
+**Currentness:** Is data fresh enough for its use case? Lab results were 24 hours old, fine for analytical reports but problematic when patients asked about "my recent test results" meaning tests from this morning. Critical data requires sub-30-second freshness.
+
+**Traceability:** Can we trace data to its source? When an agent reports "Dr. Martinez has 3 openings tomorrow," users need to know that came from the scheduling system, updated 15 seconds ago. Without traceability, you can't debug wrong answers or learn from mistakes.
 
 ### Silent Data Corruption
 
 Silent data corruption is the most dangerous failure mode. When data becomes incorrect without detection, agents confidently provide wrong answers. That's the worst possible outcome.
 
-"Imagine a decimal point error in the lab interface causes all hemoglobin values to be recorded as 10x actual," Marcus illustrated. "The agent reports 'critically high hemoglobin' for normal patients until someone questions why *every* patient appears abnormal."
+"Imagine a decimal point error in the lab interface causes all hemoglobin values to be recorded as 10x actual," Marcus illustrated. "The agent reports 'critically high hemoglobin' for normal patients until someone questions why *every* patient appears abnormal. That's why we monitor all five dimensions continuously. Anomaly detection using ML is how we catch what rule-based validation misses."
 
 ### Measuring Solid
 
 **Solid Operational Metrics:**
 
-*Targets aligned with DAMA DMBOK data quality standards:* [9]
+*Targets aligned with ISO/IEC 5259 data quality dimensions:* [10]
 
-| Metric | Target | Echo Week 10 | DMBOK Benchmark |
-|--------|--------|--------------|-----------------|
-| Data accuracy | >95% | ~97% | 95%+ for clinical data |
-| Completeness (critical fields) | >98% | ~99% | 98%+ required |
-| Cross-system consistency | >95% | ~92% | 95%+ for master data |
-| Schema validation | 100% | 100% | 100% enforced |
-| Error rate | <1% | ~0.4% | <1% for production |
+| Dimension | Target | Echo Week 10 | ISO/IEC 5259 Basis |
+|-----------|--------|--------------|-------------------|
+| Accuracy | >95% | ~97% | Data correctly represents true value |
+| Completeness | >98% | ~99% | All expected attributes have values |
+| Consistency | >95% | ~92% | Free from contradiction across systems |
+| Currentness | <30s critical | ~25s | Right age for use case |
+| Traceability | 100% | ~95% | Lineage available and auditable |
 
 *Note: Echo's current values are assessment estimates; precise measurement requires Week 11 monitoring implementation.*
 
@@ -1387,7 +1397,7 @@ Silent data corruption is the most dangerous failure mode. When data becomes inc
 | **2/5** | Data quality measured quarterly, known issues logged but not prioritized |
 | **3/5** | Automated quality checks, >90% accuracy, issues addressed within 1 week |
 | **4/5** | Real-time quality monitoring, >95% accuracy, issues addressed within 24 hours |
-| **5/5** | Continuous monitoring + automated remediation + >98% accuracy + cross-system reconciliation |
+| **5/5** | Continuous monitoring + automated remediation + >98% accuracy + cross-system reconciliation + full data lineage |
 
 "Our cross-system consistency is the gap," Marcus noted. "We have cases where a patient's primary care physician shows as Dr. Nguyen in scheduling but Dr. Chen in the EHR, because the patient changed providers but scheduling wasn't updated. The agent gives different answers depending on which system it queries."
 
@@ -1395,33 +1405,13 @@ Silent data corruption is the most dangerous failure mode. When data becomes inc
 
 **Selection criteria:** Choose platforms supporting real-time quality monitoring (not just batch), automated anomaly detection with ML, quality gates that block bad data from reaching agents, and comprehensive lineage tracking to source systems.
 
+*For detailed vendor recommendations including data observability platforms and quality monitoring tools, see Appendix DA-1: Technology Selection Guide, Layer 1 (Foundation Data) section.*
+
 ### The Quality Gate Architecture
 
-Echo implements quality gates at multiple points in the data pipeline:
+Echo validates all five dimensions at a central gate in the data pipeline. Data flows from source systems through Change Data Capture, passes through all five checks simultaneously, and only validated data reaches agents.
 
-**Gate 1: Source System Validation**
-- Validates data at point of capture
-- Catches obvious errors immediately (invalid formats, null required fields)
-- Blocks corrupt records from entering pipeline
-
-**Gate 2: Transformation Validation**
-- Validates after each transformation step
-- Ensures business rules properly applied
-- Catches drift from expected distributions
-
-**Gate 3: Pre-Agent Validation**
-- Final validation before data becomes available to agents
-- Cross-system reconciliation checks
-- Freshness verification
-
-**Gate 4: Post-Response Validation**
-- Validates agent responses against known good patterns
-- Detects confident-but-wrong answers
-- Triggers human review for edge cases
-
-"Each gate catches different failure modes," Marcus explained. "The layered approach means no single point of failure can allow bad data to reach users."
-
-**Diagram 11: Continuous Data Quality Monitoring Pipeline**
+**Diagram 11: The Quality Gate Architecture**
 
 ```mermaid
 graph TB
@@ -1438,11 +1428,11 @@ graph TB
     S3 -->|<b>Stream</b>| CDC
     
     subgraph CHECKS["<b>Quality Gates</b>"]
-        Q1["<b>Freshness</b><br/><b><30s critical</b>"]
+        Q1["<b>Accuracy</b><br/><b>Correct values</b>"]
         Q2["<b>Completeness</b><br/><b>Required fields</b>"]
         Q3["<b>Consistency</b><br/><b>Cross-system</b>"]
-        Q4["<b>Accuracy</b><br/><b>Valid formats</b>"]
-        Q5["<b>Anomaly</b><br/><b>ML detection</b>"]
+        Q4["<b>Currentness</b><br/><b><30s critical</b>"]
+        Q5["<b>Traceability</b><br/><b>Source lineage</b>"]
     end
     
     CDC --> Q1
@@ -1489,15 +1479,17 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
+"Each dimension catches different failure modes," Marcus explained. "Anomaly detection using ML monitors all five continuously. Data that fails any dimension goes to quarantine, triggers a ticket, and gets fixed at source before re-entering the pipeline."
+
 ### Echo's Data Quality Targets
 
-| Metric | Minimum | Target | Current |
-|--------|---------|--------|---------|
+| Dimension | Minimum | Target | Current |
+|-----------|---------|--------|---------|
 | Accuracy | 95% | 98% | 97% |
-| Completeness (critical fields) | 98% | 99.5% | 99% |
-| Consistency (cross-system) | 90% | 95% | 92% |
-| Timeliness (critical data) | 99% within SLA | 99.9% | 99.5% |
-| Schema compliance | 100% | 100% | 100% |
+| Completeness | 98% | 99.5% | 99% |
+| Consistency | 90% | 95% | 92% |
+| Currentness | <60s | <30s | ~25s |
+| Traceability | 90% | 100% | 95% |
 
 "The cross-system consistency gap at 92% is our focus for Week 11," Marcus said. "Every patient should have consistent PCP information across all systems before we go to production."
 
@@ -1921,7 +1913,7 @@ Use this checklist to evaluate your organization's GOALS™ readiness:
 | 7 | Output Quality Validation Metrics | Part 4 (Observability) | Quality gates |
 | 8 | Multi-Level Caching Strategy | Part 5 (Availability) | Performance tiers |
 | 9 | Natural Language → Data Operation Pipeline | Part 6 (Lexicon) | Semantic translation |
-| 10 | Continuous Data Quality Monitoring Pipeline | Part 7 (Solid) | Quality gates flow |
+| 10 | The Quality Gate Architecture | Part 7 (Solid) | Five dimensions validation |
 | 11 | GOALS Interdependencies | Part 8 | How GOALS connect |
 | 12 | The Trust Flywheel-Three Pillars in Motion | Part 8 | Continuous improvement cycle |
 | 13 | GOALS™ Scoring Matrix | Part 8 | Health thresholds |
@@ -1973,7 +1965,7 @@ Use this checklist to evaluate your organization's GOALS™ readiness:
 
 [9] DAMA International (2024). "Data Management Body of Knowledge (DMBOK) 2.0." https://www.dama.org/cpages/body-of-knowledge
 
-[10] ISO/IEC (2024). "ISO/IEC 25012:2008 - Data Quality Model." International Organization for Standardization. https://iso25000.com/index.php/en/iso-25000-standards/iso-25012
+[10] ISO/IEC 5259-2:2024. "Artificial Intelligence - Data Quality for Analytics and Machine Learning (ML) - Part 2: Data Quality Measures." International Organization for Standardization. https://www.iso.org/standard/81860.html
 
 [11] Colaberry Inc. (2025). "Agent Infrastructure Readiness Analysis." Internal implementation research based on client engagements, corroborated by EU AI Act (2024/1689) and NIST AI RMF requirements.
 
