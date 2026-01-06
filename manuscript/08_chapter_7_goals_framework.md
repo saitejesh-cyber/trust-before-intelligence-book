@@ -1532,7 +1532,7 @@ graph TB
 
 Marcus stepped back from the whiteboard. "There's one more concept that makes the three pillars truly powerful. They don't just stack. They cycle."
 
-He drew a circular arrow connecting all three pillars:
+He drew a circular arrows connecting all three pillars:
 
 **Diagram 13: The Trust Flywheel-Three Pillars in Motion**
 
@@ -1605,11 +1605,12 @@ The GOALS™ framework synthesizes operational concerns from established standar
 | NIST AI RMF 1.0 | January 2023 | Governance, Observability, Lexicon, Solid | US de facto AI governance standard [13] |
 | NIST AI 600-1 (GenAI Profile) | July 2024 | Governance, Observability | GenAI-specific risk management [14] |
 | EU AI Act | August 2024 | Governance (human oversight), Observability (transparency), Solid | Healthcare = high-risk classification [4] |
-| DAMA DMBOK 2.0 Revised | 2024 | Governance, Availability, Lexicon, Solid | Data management industry standard [9] |
+| ISO/IEC 5259 | 2024-2025 | Solid | AI/ML data quality standard (EU AI Act aligned) [10] |
+| DAMA DMBOK 2.0 Revised | 2024 | Governance, Availability, Lexicon | Data management industry foundation [9] |
 | ISO/IEC 27001:2022 | Transition deadline: October 2025 | Governance, Observability | Information security certification [15] |
 | Google SRE | 2016, 2018 | Observability, Availability | Site reliability engineering principles [5] |
 
-"These aren't competing frameworks," Marcus explained. "GOALS™ integrates their operational requirements into a unified model specifically designed for AI agent infrastructure."
+"These aren't competing frameworks," Marcus explained. "GOALS™ integrates their operational requirements into a unified model specifically designed for AI agent infrastructure. For data quality specifically, ISO/IEC 5259 extends traditional DMBOK principles for AI/ML contexts."
 
 ### Critical Compliance Dates
 
@@ -1644,8 +1645,21 @@ Marcus displayed the operational dashboard they'd designed.
 
 "The dashboard becomes our operational nerve center," Sarah said. "Every morning standup starts with GOALS™ health."
 
-**Diagram 14: GOALS™ Scoring Matrix**
+### The Week 12 Target
 
+Sarah summarized the path forward. "We need to move from 15/25 to 21/25 in the next two weeks. That means:"
+
+**Week 11-12 GOALS™ Improvement Plan:**
+
+| GOAL | Current | Target | Key Actions |
+|------|---------|--------|-------------|
+| G | 3 → 5 | Complete audit coverage, reduce HITL time, test rollback |
+| O | 3 → 4 | Instrument remaining services, reduce MTTD, enable explainability |
+| A | 4 | Maintain-validate 10x scale capacity |
+| L | 3 → 4 | Implement disambiguation, start correction feedback loop |
+| S | 4 | Maintain-fix cross-system consistency for PCP data |
+
+**Diagram 14: GOALS™ Healthcare Threshold**
 ```mermaid
 graph TB
     subgraph SCORING["<b>GOALS™ Health Scoring (5-Point Scale)</b>"]
@@ -1675,20 +1689,6 @@ graph TB
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
-
-### The Week 12 Target
-
-Sarah summarized the path forward. "We need to move from 15/25 to 21/25 in the next two weeks. That means:"
-
-**Week 11-12 GOALS™ Improvement Plan:**
-
-| GOAL | Current | Target | Key Actions |
-|------|---------|--------|-------------|
-| G | 3 → 5 | Complete audit coverage, reduce HITL time, test rollback |
-| O | 3 → 4 | Instrument remaining services, reduce MTTD, enable explainability |
-| A | 4 | Maintain-validate 10x scale capacity |
-| L | 3 → 4 | Implement disambiguation, start correction feedback loop |
-| S | 4 | Maintain-fix cross-system consistency for PCP data |
 
 "When we present to the board at Week 12," Sarah said, "we won't just show them what we built. We'll show them how we're operating it. We'll show them GOALS™ health at 21+. We'll answer Dr. Raj's question: *This is how we know it stays trustworthy.*"
 
@@ -1893,19 +1893,20 @@ Use this checklist to evaluate your organization's GOALS™ readiness:
 
 | # | Title | Part | Purpose |
 |---|-------|------|---------|
-| 1 | The Architecture of Trust-Three Integrated Pillars | Part 1 | Shows GOALS™ as Pillar 3 |
-| 2 | Echo's 90-Day Journey-Architecture Complete | Part 2 | Timeline of Phases 1-3 |
-| 3 | Echo's GOALS Health Dashboard (Week 10 Baseline) | Part 2 | Visual health scores |
-| 4 | RBAC vs ABAC Authorization Flow | Part 3 (Governance) | Security evolution |
-| 5 | Human-in-the-Loop Autonomy Spectrum | Part 3 (Governance) | Decision autonomy levels |
-| 6 | End-to-End Observability with Trace IDs | Part 4 (Observability) | Trace-based diagnosis |
-| 7 | Output Quality Validation Metrics | Part 4 (Observability) | Quality gates |
-| 8 | Multi-Level Caching Strategy | Part 5 (Availability) | Performance tiers |
-| 9 | Natural Language → Data Operation Pipeline | Part 6 (Lexicon) | Semantic translation |
-| 10 | The Quality Gate Architecture | Part 7 (Solid) | Five dimensions validation |
-| 11 | GOALS Interdependencies | Part 8 | How GOALS connect |
-| 12 | The Trust Flywheel-Three Pillars in Motion | Part 8 | Continuous improvement cycle |
-| 13 | GOALS™ Scoring Matrix | Part 8 | Health thresholds |
+| 1 | GOALS™ Framework - From Build Complete to Operate Continuously | Opening | Chapter overview |
+| 2 | The Architecture of Trust-Three Integrated Pillars | Part 1 | Shows GOALS™ as Pillar 3 |
+| 3 | Echo's 90-Day Journey-Architecture Complete | Part 2 | Timeline of Phases 1-3 |
+| 4 | Echo's GOALS Health Dashboard (Week 10 Baseline) | Part 2 | Visual health scores |
+| 5 | RBAC vs ABAC Authorization Flow | Part 3 (Governance) | Security evolution |
+| 6 | Human-in-the-Loop Autonomy Spectrum | Part 3 (Governance) | Decision autonomy levels |
+| 7 | End-to-End Observability with Trace IDs | Part 4 (Observability) | Trace-based diagnosis |
+| 8 | Output Quality Validation Metrics | Part 4 (Observability) | Quality gates |
+| 9 | Multi-Level Caching Strategy | Part 5 (Availability) | Performance tiers |
+| 10 | Natural Language → Data Operation Pipeline | Part 6 (Lexicon) | Semantic translation |
+| 11 | The Quality Gate Architecture | Part 7 (Solid) | Five dimensions validation |
+| 12 | GOALS Interdependencies | Part 8 | How GOALS connect |
+| 13 | The Trust Flywheel-Three Pillars in Motion | Part 8 | Continuous improvement cycle |
+| 14 | GOALS™ Healthcare Threshold | Part 9 (Week 12 Target) | Scoring scale and healthcare threshold |
 
 ---
 

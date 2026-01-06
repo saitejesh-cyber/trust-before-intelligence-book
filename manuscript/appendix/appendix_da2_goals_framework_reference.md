@@ -311,7 +311,9 @@ The GOALS™ framework synthesizes operational concerns from established industr
 | **O - Observability** | NIST AI RMF, EU AI Act, Google SRE |
 | **A - Availability** | Google SRE, DAMA DMBOK |
 | **L - Lexicon** | DAMA DMBOK |
-| **S - Solid** | NIST AI RMF, DAMA DMBOK |
+| **S - Solid** | NIST AI RMF, ISO/IEC 5259 |
+
+*Note: DAMA DMBOK provides the data management foundation; ISO/IEC 5259 extends these principles specifically for AI/ML data quality.*
 
 ### Standard 1: NIST AI Risk Management Framework (AI RMF 1.0)
 
@@ -372,22 +374,22 @@ The GOALS™ framework synthesizes operational concerns from established industr
 
 **Overview:** The definitive industry reference for data management, published by DAMA International. The 2024 revision (DMBOK 2.0 Revised) standardized terminology and added currency as a data quality dimension. DMBOK 3.0 is in development (2025) to address AI and emerging data practices.
 
-**Why It Matters:** DAMA DMBOK is the foundation for data management certification (CDMP) and is recognized globally by CDOs and data professionals. Its principles underpin GOALS™ data-centric dimensions.
+**Why It Matters:** DAMA DMBOK is the foundation for data management certification (CDMP) and is recognized globally by CDOs and data professionals. Its principles underpin GOALS™ data-centric dimensions. For AI-specific data quality, ISO/IEC 5259 extends DMBOK principles (see Standard 6 below).
 
 **GOALS™ Alignment:**
 
 | DAMA DMBOK Knowledge Area | GOALS™ Dimension | Alignment |
 |--------------------------|------------------|-----------|
 | **Data Governance** | **G - Governance** | DMBOK defines governance as the exercise of authority over data management. GOALS™ Governance extends this to agent-specific controls. |
-| **Data Quality** | **S - Solid** | DMBOK's six quality dimensions (accuracy, completeness, consistency, timeliness, uniqueness, validity) map directly to GOALS™ Solid. |
 | **Metadata Management** | **L - Lexicon** | DMBOK metadata practices enable GOALS™ Lexicon's semantic understanding through business glossaries and data dictionaries. |
 | **Data Architecture** | **A - Availability** | DMBOK architecture principles support GOALS™ Availability through optimized data structures. |
 | **Reference & Master Data** | **L - Lexicon** | DMBOK reference data management enables GOALS™ entity resolution and terminology mapping. |
 
+*Note: DMBOK's Data Quality knowledge area is now superseded by ISO/IEC 5259 for AI/ML contexts. See Standard 6.*
+
 **Key DAMA DMBOK Principles Reflected in GOALS™:**
 - **Data as an Asset:** Data has unique properties and measurable value
 - **Metadata for Management:** Effective data management requires metadata (Lexicon)
-- **Quality Management:** Data quality must be measured and managed (Solid)
 - **Lifecycle Management:** Different data types have different lifecycle requirements
 
 **Reference:** DAMA International (2024). DAMA-DMBOK 2.0 Revised Edition. https://dama.org/learning-resources/dama-data-management-body-of-knowledge-dmbok/
@@ -456,6 +458,54 @@ Google (2018). The Site Reliability Workbook. https://sre.google/workbook/
 
 ---
 
+### Standard 6: ISO/IEC 5259 (Data Quality for AI/ML)
+
+**Overview:** The ISO/IEC 5259 series (2024-2025) provides the first international standard specifically addressing data quality for artificial intelligence and machine learning systems. The series consists of five parts covering terminology, quality measures, management requirements, process framework, and governance.
+
+**Why It Matters:** ISO/IEC 5259 is the authoritative AI-specific data quality standard, adopted by the EU as EN ISO/IEC 5259-4:2025 for AI Act compliance. It extends traditional data quality frameworks (like DAMA DMBOK) with 15 dimensions purpose-built for AI/ML contexts.
+
+**ISO/IEC 5259 Series Structure:**
+- **5259-1 (2024):** Overview and terminology
+- **5259-2 (2024):** Data quality measures (15 dimensions)
+- **5259-3 (2024):** Data quality management requirements
+- **5259-4 (2024):** Data quality process framework
+- **5259-5 (2025):** Data governance framework
+
+**GOALS™ Alignment:**
+
+| ISO/IEC 5259 Dimension | GOALS™ Dimension | Alignment |
+|-----------------------|------------------|-----------|
+| **Accuracy** | **S - Solid** | Data correctly represents true values |
+| **Completeness** | **S - Solid** | All expected attributes have values |
+| **Consistency** | **S - Solid** | Free from contradiction across systems |
+| **Currentness** | **S - Solid** | Right age for use case (replaces "timeliness") |
+| **Traceability** | **S - Solid** | Lineage available and auditable |
+| **Credibility** | **S - Solid** | Outcome of other quality dimensions |
+| **Accessibility** | **G - Governance** | Data available to authorized users |
+| **Compliance** | **G - Governance** | Adherence to regulations and policies |
+| **Confidentiality** | **G - Governance** | Protection of sensitive data |
+| **Availability** | **A - Availability** | Data accessible when needed |
+| **Efficiency** | **A - Availability** | Optimal resource utilization |
+| **Precision** | **L - Lexicon** | Level of detail appropriate for use |
+| **Understandability** | **L - Lexicon** | Clear meaning and context |
+| **Portability** | Infrastructure | Data movable across systems |
+| **Recoverability** | Infrastructure | Data restorable after failure |
+
+**The Five Dimensions of Data Soundness:**
+
+GOALS™ Solid adopts five ISO/IEC 5259 dimensions for continuous monitoring:
+1. **Accuracy:** Is data correct?
+2. **Completeness:** Is all data present?
+3. **Consistency:** Does data align across systems?
+4. **Currentness:** Is data fresh enough?
+5. **Traceability:** Can we trace to source?
+
+*Credibility is the outcome of these five dimensions, not a separate measurement target.*
+
+**Reference:** ISO/IEC 5259-2:2024. Data quality for analytics and machine learning — Part 2: Data quality measures. https://www.iso.org/standard/81088.html
+
+---
+
 ### Standards Mapping Summary
 
 ```mermaid
@@ -474,7 +524,8 @@ graph TB
         NIST["<b>NIST AI RMF</b><br/>Govern, Map, Measure, Manage"]
         EU["<b>EU AI Act</b><br/>High-Risk AI Requirements"]
         DAMA["<b>DAMA DMBOK</b><br/>Data Management"]
-        ISO["<b>ISO 27001</b><br/>Security Management"]
+        ISO27["<b>ISO 27001</b><br/>Security Management"]
+        ISO5259["<b>ISO/IEC 5259</b><br/>AI Data Quality"]
         SRE["<b>Google SRE</b><br/>Operational Excellence"]
     end
     
@@ -487,10 +538,12 @@ graph TB
     
     DAMA --> G
     DAMA --> L
-    DAMA --> S
+    DAMA --> A
     
-    ISO --> G
-    ISO --> O
+    ISO27 --> G
+    ISO27 --> O
+    
+    ISO5259 --> S
     
     SRE --> O
     SRE --> A
@@ -502,7 +555,7 @@ graph TB
     classDef framework fill:#00695c,stroke:#004d40,stroke-width:3px,color:#ffffff
     
     class G,O,A,L,S goalBox
-    class NIST,EU,DAMA,ISO,SRE standardBox
+    class NIST,EU,DAMA,ISO27,ISO5259,SRE standardBox
     class GOALS,STANDARDS framework
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
