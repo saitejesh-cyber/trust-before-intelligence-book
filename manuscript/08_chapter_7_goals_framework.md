@@ -3,7 +3,7 @@
 
 ---
 
-## The Question That Changed Everything
+## The Sustainability Question
 
 *Week 11, Monday, 8:00 AM  
 Echo Health Systems, Technology Center  
@@ -15,9 +15,9 @@ Dr. Raj had asked it during Friday's board briefing, right after the applause di
 
 "How do you know it stays trustworthy?"
 
-Sarah had answered with architecture. Layers, integrations, security controls. Dr. Raj had nodded politely, then asked again: "I understand what you built. But how do you know it *keeps working* six months from now? A year from now?"
+Sarah had answered with architecture. Layers, integrations, security controls. Dr. Raj nodded politely, then asked again: "I understand what you built. But how do you know it *keeps working* six months from now? A year from now?"
 
-She hadn't had an answer.
+She didn't have an answer.
 
 All seven layers operational. Every infrastructure gap closed. INPACT™ score: 86/100. $992K invested, 19% under the $1.23M budget. Ten weeks of focused execution. The architecture was complete.
 
@@ -70,7 +70,7 @@ Six chapters brought us here.
 
 Chapter 0 introduced the Architecture of Trust: three pillars working together to transform infrastructure into agent-ready systems. Chapters 1-2 built the first pillar: INPACT™, defining the six needs agents require for trusted operation. Chapters 3-6 built the second pillar: the 7-Layer Architecture, the technical blueprint that fulfills those needs.
 
-Last week, Echo Health completed that second pillar. Layer 7 orchestration went live. All seven layers operational. The architecture, beautifully designed and expertly constructed, stood complete.
+Last week, Echo Health completed that second pillar. Layer 7 orchestration went live. All seven layers are operational. The architecture, beautifully designed and expertly constructed, stood complete.
 
 But architecture alone doesn't create trust. Buildings need maintenance. Vehicles need service. Infrastructure needs operational discipline.
 
@@ -314,7 +314,7 @@ graph TB
 
 Nods around the room. Tired but satisfied faces.
 
-"But Dr. Raj asked a question Monday that we need to answer before the Week 12 board presentation: How do we know it *stays* trustworthy?"
+"But Dr. Raj asked a question that we need to answer before the Week 12 board presentation: How do we know it *stays* trustworthy?"
 
 The room grew quiet.
 
@@ -413,10 +413,9 @@ graph TB
 
 ---
 
-## Part 3: GOAL 1 - Governance
-### Security, Compliance & Control
+## Part 3: GOAL 1 - Governance (Security, Compliance & Control)
 
-### Governance: Who Can Do What, When, and Why?
+### Governance: Who Can Do What, When, Where and Why?
 
 Without governance, agents violate compliance requirements, access unauthorized data, and expose organizations to legal risk. In healthcare, HIPAA penalties can reach $50,000+ per violation. The Montefiore settlement in 2024 cost $4.75M for unauthorized access issues. [2]
 
@@ -652,7 +651,7 @@ Model versioning with tested rollback capability (<15 minutes to revert) provide
 | Metric | Before ABAC | After ABAC | Industry Benchmark |
 |--------|-------------|------------|-------------------|
 | Violation detection time | Manual audit (batch) | Real-time (<60 sec) | ABAC enables real-time vs. periodic [1] |
-| Audit trail completeness | ~60% | 94%+ | HIPAA requires comprehensive logging [18] |
+| Audit trail completeness | ~60% | ~95% | HIPAA requires comprehensive logging [18] |
 | False positive alerts | ~300-400/mo | <15/mo | Industry avg: >50% are false positives [19] |
 | Authorization latency | ~45ms | <10ms | NIST recommends ABAC for dynamic permissions [1] |
 
@@ -694,14 +693,13 @@ This operational cadence separates organizations that maintain governance health
 
 ### Echo's Governance Operations
 
-"For Week 11, we need three things," Marcus said. "First, complete the audit trail coverage: every cached response logged. Second, reduce HITL escalation time from 45 to under 30 seconds. Third, test our rollback capability."
+"For Week 11, we need three things," Marcus said. "First, complete audit trail coverage: every cached response logged. Second, reduce HITL escalation time from 45 to under 30 seconds. Third, test our rollback capability."
 
 Dr. Chen nodded. "I'll work with the clinical staff on HITL workflows. We need to make sure escalations get to the right people."
 
 ---
 
-## Part 4: GOAL 2 - Observability
-### Monitoring, Cost & Maintainability
+## Part 4: GOAL 2 - Observability (Monitoring, Cost & Maintainability)
 
 ### Observability: What's Inside the Black Box?
 
@@ -826,7 +824,7 @@ EU AI Act Article 13 requires transparency for high-risk AI systems, which inclu
 
 - **Confidence calibration:** When an agent says it's 90% confident, it should be correct 85-95% of the time. Track calibration curves monthly, recalibrating when drift exceeds ±5%.
 - **Trace completeness:** 100% of responses include full lineage: which data sources, which policies applied, which models generated the response.
-- **Response justification:** Every recommendation includes reasoning. Not just "approved" but "approved because HbA1c >7.0 AND insurance covers program AND patient engagement score 85."
+- **Response justification:** Every recommendation includes reasoning. Not just "approved" but "approved because HbA1c >7.0 AND insurance covers the program AND patient engagement score 85."
 
 **Diagram 8: Output Quality Validation Metrics**
 
@@ -922,7 +920,7 @@ No trace-level debugging. No model performance tracking. No automated quality de
 
 **Stage 2: Enhanced Observability (Score: 75/100)**
 
-Trace IDs enabled end-to-end debugging. Model drift detection automated. Data quality monitoring comprehensive. Most issues found within hours.
+Trace IDs enabled end-to-end debugging. Model drift detection automated. Data quality monitoring is comprehensive. Most issues found within hours.
 
 **Stage 3: Advanced with Closed-Loop Feedback (Score: 88/100)**
 
@@ -942,8 +940,7 @@ Observability requires continuous vigilance at multiple cadences:
 
 ---
 
-## Part 5: GOAL 3 - Availability
-### Speed, Freshness & Scale
+## Part 5: GOAL 3 - Availability (Speed, Freshness & Scale)
 
 ### Availability: Fast Enough to Feel Real?
 
@@ -979,7 +976,7 @@ Investigation typically reveals three bottlenecks destroying performance:
 
 **Bottleneck 1: Stale Data Requiring Slow Queries**
 
-Scheduling table updated nightly. By 10 AM, data was eight hours stale. When users asked about "today's availability," the agent had to query multiple systems in real-time to reconcile stale warehouse with current state. This added 3-4 seconds per query.
+Scheduling table updated nightly. By 10 AM, data was eight hours stale. When users asked about "today's availability," the agent had to query multiple systems in real-time to reconcile stale warehouse with the current state. This added 3-4 seconds per query.
 
 **Bottleneck 2: Cold Storage and Missing Indexes**
 
@@ -1027,7 +1024,7 @@ Semantic caching achieving 60%+ hit rates. Common queries returned from cache in
 | **4/5** | Real-time streaming, <2 second responses, handles current load |
 | **5/5** | Sub-second freshness, <2s responses under 10x load, 99.9%+ uptime |
 
-"We're at 4/5 for Availability," Marcus noted. "That's our target for Week 12. The gap is scale testing. We've only validated to 5x load. We need to prove 10x before the board presentation."
+"We're at 4/5 for Availability," Marcus noted. "That's our target for Week 12. The gap is scale testing. We've only validated to a 5x load. We need to prove 10x before the board presentation."
 
 ### Key Technologies for Availability
 
@@ -1047,7 +1044,7 @@ The multi-level caching strategy is what enables sub-2-second responses. *The fo
 **Caching Level 2: Vector Database (20-30% additional hit rate)**
 - Technology: [Pinecone](https://www.pinecone.io), [Weaviate](https://weaviate.io), or [Qdrant](https://qdrant.tech)
 - Speed: 600-1000ms average
-- How it works: Embedding-based similarity search finds "close enough" results
+- How it works: Embedding based similarity search finds "close enough" results
 - Example: Query about "Dr. Martinez" retrieves cached results for "Dr. Maria Martinez" even if exact name differs
 - Cost: ~$0.01 per query
 
@@ -1113,8 +1110,8 @@ The caching hierarchy explains why Echo achieved sub-2-second response times for
 
 ---
 
-## Part 6: GOAL 4 - Lexicon
-### Semantic Understanding & Accuracy
+## Part 6: GOAL 4 - Lexicon (Semantic Understanding & Accuracy)
+
 
 ### Lexicon: Is the Agent on the Same Page as You?
 
