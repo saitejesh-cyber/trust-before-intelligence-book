@@ -1309,8 +1309,8 @@ When a patient asks "What's my diabetes care plan?", the semantic layer correctl
 
 ---
 
-## Part 7: GOAL 5 - Solid
-### Data Quality & Integrity
+## Part 7: GOAL 5 - Solid (Data Quality & Integrity)
+
 
 ### Solid: Can You Trust Your Data?
 
@@ -1366,7 +1366,7 @@ Every data record must satisfy five dimensions before agents can trust it:
 
 **Currentness:** Is data fresh enough for its use case? Lab results were 24 hours old, fine for analytical reports but problematic when patients asked about "my recent test results" meaning tests from this morning. Critical data requires sub-30-second freshness.
 
-**Traceability:** Can we trace data to its source? When an agent reports "Dr. Martinez has 3 openings tomorrow," users need to know that came from the scheduling system, updated 15 seconds ago. Without traceability, you can't debug wrong answers or learn from mistakes.
+**Traceability:** Can we trace data to its source? When an agent reports "Dr. Martinez has 3 openings tomorrow," users need to know that it came from the scheduling system, updated 15 seconds ago. Without traceability, you can't debug wrong answers or learn from mistakes.
 
 ### Silent Data Corruption
 
@@ -1376,17 +1376,15 @@ Silent data corruption is the most dangerous failure mode. When data becomes inc
 
 ### Measuring Solid
 
-**Solid Operational Metrics:**
+**Solid Operational Metrics (ISO/IEC 5259 Dimensions):** [10]
 
-*Targets aligned with ISO/IEC 5259 data quality dimensions:* [10]
-
-| Dimension | Target | Echo Week 10 | ISO/IEC 5259 Basis |
-|-----------|--------|--------------|-------------------|
-| Accuracy | >95% | ~97% | Data correctly represents true value |
-| Completeness | >98% | ~99% | All expected attributes have values |
-| Consistency | >95% | ~92% | Free from contradiction across systems |
-| Currentness | <30s critical | ~25s | Right age for use case |
-| Traceability | 100% | ~95% | Lineage available and auditable |
+| Dimension | Minimum | Target | Echo Week 10 | ISO/IEC 5259 Basis |
+|-----------|---------|--------|--------------|-------------------|
+| Accuracy | 95% | 98% | 97% | Data correctly represents true value |
+| Completeness | 98% | 99.5% | 99% | All expected attributes have values |
+| Consistency | 90% | 95% | 92% | Free from contradiction across systems |
+| Currentness | <60s | <30s | ~25s | Right age for use case |
+| Traceability | 90% | 100% | 95% | Lineage available and auditable |
 
 *Note: Echo's current values are assessment estimates; precise measurement requires Week 11 monitoring implementation.*
 
@@ -1481,19 +1479,10 @@ graph TB
 
 "Each dimension catches different failure modes," Marcus explained. "Anomaly detection using ML monitors all five continuously. Data that fails any dimension goes to quarantine, triggers a ticket, and gets fixed at source before re-entering the pipeline."
 
-### Echo's Data Quality Targets
-
-| Dimension | Minimum | Target | Current |
-|-----------|---------|--------|---------|
-| Accuracy | 95% | 98% | 97% |
-| Completeness | 98% | 99.5% | 99% |
-| Consistency | 90% | 95% | 92% |
-| Currentness | <60s | <30s | ~25s |
-| Traceability | 90% | 100% | 95% |
-
 "The cross-system consistency gap at 92% is our focus for Week 11," Marcus said. "Every patient should have consistent PCP information across all systems before we go to production."
 
 ---
+
 
 ## Part 8: GOALS™ Complete - The Interdependence Principle
 

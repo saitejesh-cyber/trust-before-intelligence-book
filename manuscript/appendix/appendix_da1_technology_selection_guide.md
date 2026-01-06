@@ -37,13 +37,13 @@ When Chapter 10 says:
 - 1.4 Cloud Platform Comparison (AWS vs GCP vs Azure)
 
 ### Part 2: Layer-by-Layer Technology Analysis
-- 2.1 Layer 1: Multi-Modal Storage (Vector, Graph, Warehouse)
+- 2.1 Layer 1: Multi-Modal Storage (Vector, Graph, Warehouse, **Data Quality**)
 - 2.2 Layer 2: Real-Time Data Fabric (CDC, Streaming, Ingestion)
-- 2.3 Layer 3: Universal Semantic Layer (Semantic Platforms, Catalogs, Glossaries)
+- 2.3 Layer 3: Universal Semantic Layer (Semantic Platforms, Catalogs, Glossaries, **Entity Resolution**)
 - 2.4 Layer 4: Intelligence Orchestration & Retrieval (RAG, Embeddings, Reranking, Caching)
-- 2.5 Layer 5: Agent-Aware Governance (ABAC, Audit, Secrets, Data Quality)
-- 2.6 Layer 6: Observability & Feedback (APM, Logging, Experimentation, Quality)
-- 2.7 Layer 7: Self-Service Data Products (Orchestration, API Gateways, HITL, Analytics)
+- 2.5 Layer 5: Agent-Aware Governance (ABAC, Audit, Secrets)
+- 2.6 Layer 6: Observability & Feedback (APM, LLM Observability)
+- 2.7 Layer 7: Self-Service Data Products (Orchestration, API Gateways, **HITL Platforms**)
 
 ### Part 3: Healthcare Decision Tools
 - 3.1 HIPAA-Eligible Products (28 products with BAA support)
@@ -699,6 +699,159 @@ RESULT: Vector database selected
 
 ---
 
+### Data Quality & Observability Platforms (6 products analyzed)
+
+**Purpose:** Monitor data quality dimensions (accuracy, completeness, consistency, currentness, traceability), detect anomalies, track lineage
+
+**GOALS Alignment:** Solid (S) - Data Quality & Integrity
+
+**ISO/IEC 5259 Context:** These tools help monitor the five data quality dimensions defined in ISO/IEC 5259-2:2024 for AI/ML systems: accuracy, completeness, consistency, currentness, and traceability.
+
+---
+
+#### 🏆 Top Recommendation: Monte Carlo
+**URL:** https://www.montecarlodata.com  
+**INPACT™:** 28/36 (I=5, N=4, P=5, A=5, C=5, T=4)  
+**GOALS:** 23/25 (G=4, O=5, A=4, L=5, S=5)  
+**Combined:** 51/61 (Best overall data quality)
+
+**Why It's #1:**
+- ✅ **ML-powered anomaly detection** (no manual threshold setting)
+- ✅ **Automated lineage** (column-level tracking)
+- ✅ **All five ISO/IEC 5259 dimensions** monitored
+- ✅ **150+ enterprise customers** (CNN, JetBlue, HubSpot)
+
+**Best for:** Enterprise, comprehensive data observability  
+**Pricing:** Enterprise pricing (typically $50K+/year)
+
+**Cons:**
+- Most expensive option
+- Enterprise-focused (may be overkill for small teams)
+
+---
+
+#### 🥈 Open-Source Leader: Great Expectations
+**URL:** https://greatexpectations.io  
+**INPACT™:** 24/36 (I=4, N=4, P=4, A=4, C=5, T=3)  
+**GOALS:** 20/25 (G=4, O=4, A=4, L=4, S=4)  
+**Combined:** 44/61
+
+**Why Consider:**
+- ✅ **Open-source** (Apache 2.0)
+- ✅ **Rule-based validation** (define expectations in Python)
+- ✅ **CI/CD integration** (data testing in pipelines)
+- ✅ **Large community** (most popular OSS data quality tool)
+
+**Best for:** Teams with Python expertise, CI/CD-driven quality  
+**Pricing:** Free (self-hosted), GX Cloud from $500/month
+
+**Cons:**
+- Rule-based only (no ML anomaly detection)
+- No automated lineage
+- Requires coding for expectations
+
+---
+
+#### 🥉 Best Value: Soda
+**URL:** https://www.soda.io  
+**INPACT™:** 26/36 (I=5, N=4, P=4, A=5, C=5, T=3)  
+**GOALS:** 21/25 (G=4, O=5, A=4, L=4, S=4)  
+**Combined:** 47/61
+
+**Why Consider:**
+- ✅ **Data contracts** (align producers and consumers)
+- ✅ **ML anomaly detection** (automated threshold learning)
+- ✅ **Open-source core** (Soda Core is free)
+- ✅ **No-code UI** (business users can define checks)
+
+**Best for:** Teams wanting balance of ML + rule-based  
+**Pricing:** Open-source core free, Cloud from $500/month
+
+**Cons:**
+- Smaller enterprise footprint than Monte Carlo
+- Data contracts require organizational buy-in
+
+---
+
+#### Budget-Friendly: Bigeye
+**URL:** https://www.bigeye.com  
+**INPACT™:** 25/36 (I=5, N=4, P=4, A=4, C=5, T=3)  
+**GOALS:** 20/25 (G=4, O=5, A=4, L=4, S=3)  
+**Combined:** 45/61
+
+**Why Consider:**
+- ✅ **Automated anomaly detection** (ML-powered)
+- ✅ **Customizable metrics** (SQL-based definitions)
+- ✅ **Competitive pricing** (lower than Monte Carlo)
+
+**Best for:** Mid-market, SQL-comfortable teams  
+**Pricing:** Custom (typically $20-40K/year)
+
+**Cons:**
+- Smaller ecosystem than competitors
+- Less comprehensive lineage
+
+---
+
+#### ML-Native: Metaplane
+**URL:** https://www.metaplane.dev  
+**INPACT™:** 25/36 (I=5, N=4, P=4, A=4, C=5, T=3)  
+**GOALS:** 20/25 (G=4, O=5, A=4, L=4, S=3)  
+**Combined:** 45/61
+
+**Why Consider:**
+- ✅ **ML anomaly detection** (learns patterns automatically)
+- ✅ **Column-level lineage** (trace issues to source)
+- ✅ **Modern stack integration** (Snowflake, dbt, Looker)
+
+**Best for:** Modern data stack users  
+**Pricing:** Custom (mid-market pricing)
+
+**Cons:**
+- Newer entrant (smaller customer base)
+- Less comprehensive than Monte Carlo
+
+---
+
+#### Spark-Native: Apache Deequ
+**URL:** https://github.com/awslabs/deequ  
+**INPACT™:** 21/36 (I=4, N=3, P=3, A=4, C=4, T=3)  
+**GOALS:** 18/25 (G=3, O=4, A=4, L=4, S=3)  
+**Combined:** 39/61
+
+**Why Consider:**
+- ✅ **Open-source** (Apache 2.0, AWS-backed)
+- ✅ **Spark-native** (scales to petabytes)
+- ✅ **Unit tests for data** (constraint verification)
+- ✅ **Free** (no licensing costs)
+
+**Best for:** Spark shops, AWS-native, budget-constrained  
+**Pricing:** Free (infrastructure costs only)
+
+**Cons:**
+- Spark dependency (not for non-Spark environments)
+- Rule-based only (no ML anomaly detection)
+- No UI (code-only)
+
+---
+
+### Data Quality Tool Selection Matrix
+
+| Tool | ML Anomaly | Rule-Based | Lineage | Open-Source | Healthcare |
+|------|------------|------------|---------|-------------|------------|
+| Monte Carlo | ✅ Best | ✅ | ✅ Best | ❌ | ✅ SOC2 |
+| Great Expectations | ❌ | ✅ Best | ❌ | ✅ | ⚠️ Self-host |
+| Soda | ✅ | ✅ | ✅ | ✅ Core | ✅ SOC2 |
+| Bigeye | ✅ | ✅ | ⚠️ Basic | ❌ | ✅ SOC2 |
+| Metaplane | ✅ | ✅ | ✅ | ❌ | ✅ SOC2 |
+| Apache Deequ | ❌ | ✅ | ❌ | ✅ | ⚠️ Self-host |
+
+**Healthcare Recommendation:** For HIPAA compliance, **Monte Carlo** or **Soda Cloud** (SOC2 certified). For self-hosted PHI environments, **Great Expectations** or **Apache Deequ**.
+
+**Key Insight:** Rule-based tools (Great Expectations, Deequ) validate against predefined expectations. ML-powered tools (Monte Carlo, Soda, Bigeye, Metaplane) detect anomalies without manual threshold setting—critical for catching patterns like hemoglobin values suddenly clustering at 10x normal.
+
+---
+
 ## 2.2 Layer 2: Real-Time Data Fabric
 
 **Purpose:** Keep data fresh (<1 hour), enable streaming for agents
@@ -940,6 +1093,114 @@ RESULT: Vector database selected
 **Cons:**
 - Very expensive (overkill for <500 users)
 - Complex setup (months not weeks)
+
+---
+
+### Entity Resolution & MDM Tools (4 products analyzed)
+
+**Purpose:** Match, merge, and deduplicate entities (patients, providers, products) across systems
+
+**GOALS Alignment:** Lexicon (L) - Semantic Understanding & Accuracy
+
+**Why It Matters for Agents:** When a user asks "Show my appointments with Dr. Martinez," the agent must resolve "Dr. Martinez" to a unique provider ID that works across EHR, scheduling, and billing systems. Entity resolution failures cause agents to serve wrong data or miss relevant information.
+
+---
+
+#### 🏆 Top Recommendation: Tamr
+**URL:** https://www.tamr.com  
+**INPACT™:** 27/36 (I=4, N=5, P=5, A=5, C=5, T=3)  
+**GOALS:** 21/25 (G=4, O=4, A=4, L=5, S=4)  
+**Combined:** 48/61
+
+**Why It's #1:**
+- ✅ **ML-powered matching** (learns from feedback)
+- ✅ **Healthcare-proven** (patient matching use cases)
+- ✅ **Scales to billions** (enterprise-grade)
+- ✅ **Human-in-the-loop** (expert curation)
+
+**Best for:** Healthcare, large-scale entity matching  
+**Pricing:** Enterprise ($100K+/year)
+
+**Cons:**
+- Expensive (enterprise pricing)
+- Complex implementation
+
+---
+
+#### 🥈 Cloud-Native: AWS Entity Resolution
+**URL:** https://aws.amazon.com/entity-resolution/  
+**INPACT™:** 25/36 (I=5, N=4, P=5, A=4, C=5, T=2)  
+**GOALS:** 20/25 (G=4, O=4, A=4, L=4, S=4)  
+**Combined:** 45/61
+
+**Why Consider:**
+- ✅ **AWS-native** (integrates with Glue, S3, Redshift)
+- ✅ **Rule + ML matching** (flexible matching logic)
+- ✅ **HIPAA-eligible** (BAA available)
+- ✅ **Pay-per-use** (no upfront commitment)
+
+**Best for:** AWS shops, moderate scale  
+**Pricing:** $0.25 per 1,000 records processed
+
+**Cons:**
+- AWS lock-in
+- Less sophisticated ML than Tamr
+
+---
+
+#### 🥉 Open-Source: Zingg
+**URL:** https://www.zingg.ai  
+**INPACT™:** 22/36 (I=4, N=4, P=3, A=4, C=4, T=3)  
+**GOALS:** 18/25 (G=3, O=3, A=4, L=4, S=4)  
+**Combined:** 40/61
+
+**Why Consider:**
+- ✅ **Open-source** (Apache 2.0)
+- ✅ **ML-powered** (active learning)
+- ✅ **Spark-native** (scales with Spark)
+- ✅ **Free** (no licensing)
+
+**Best for:** Spark shops, budget-constrained  
+**Pricing:** Free (infrastructure costs only)
+
+**Cons:**
+- Self-hosted (requires Spark expertise)
+- Smaller community
+- No enterprise support
+
+---
+
+#### Budget Alternative: Splink
+**URL:** https://github.com/moj-analytical-services/splink  
+**INPACT™:** 21/36 (I=4, N=4, P=3, A=4, C=4, T=2)  
+**GOALS:** 17/25 (G=3, O=3, A=4, L=4, S=3)  
+**Combined:** 38/61
+
+**Why Consider:**
+- ✅ **Open-source** (MIT license, UK Government-backed)
+- ✅ **Probabilistic matching** (Fellegi-Sunter model)
+- ✅ **DuckDB/Spark/Athena** (multiple backends)
+- ✅ **Well-documented** (excellent tutorials)
+
+**Best for:** Government, research, budget-constrained  
+**Pricing:** Free
+
+**Cons:**
+- Less ML sophistication than Tamr/Zingg
+- Primarily probabilistic (not deep learning)
+
+---
+
+### Entity Resolution Selection Matrix
+
+| Tool | ML Matching | Scale | Open-Source | Healthcare | Pricing |
+|------|-------------|-------|-------------|------------|---------|
+| Tamr | ✅ Best | Billions | ❌ | ✅ Proven | $$$$ |
+| AWS ER | ✅ | Millions | ❌ | ✅ HIPAA | $$ |
+| Zingg | ✅ | Millions | ✅ | ⚠️ Self-host | Free |
+| Splink | ⚠️ Probabilistic | Millions | ✅ | ⚠️ Self-host | Free |
+
+**Healthcare Recommendation:** **Tamr** for enterprise patient matching, **AWS Entity Resolution** for AWS-native deployments with HIPAA requirements. For self-hosted PHI, **Zingg** or **Splink** with proper infrastructure security.
 
 ---
 
@@ -1448,6 +1709,116 @@ RESULT: Vector database selected
 
 **Cons:**
 - Azure lock-in
+
+---
+
+### HITL (Human-in-the-Loop) Platforms (4 products analyzed)
+
+**Purpose:** Enable human review, approval, and override of agent decisions
+
+**GOALS Alignment:** Governance (G) - Security, Compliance & Control
+
+**Why It Matters for Agents:** High-risk decisions (clinical recommendations, financial approvals, compliance actions) require human oversight. HITL platforms provide the workflow infrastructure to route decisions to qualified reviewers, track approvals, and maintain audit trails.
+
+---
+
+#### 🏆 Top Recommendation: Labelbox
+**URL:** https://www.labelbox.com  
+**INPACT™:** 26/36 (I=5, N=4, P=5, A=5, C=4, T=3)  
+**GOALS:** 21/25 (G=5, O=4, A=4, L=4, S=4)  
+**Combined:** 47/61
+
+**Why It's #1:**
+- ✅ **AI-assisted labeling** (model-assisted review)
+- ✅ **Workflow automation** (routing, assignment, escalation)
+- ✅ **Quality management** (consensus, review, audit)
+- ✅ **Healthcare-proven** (medical imaging workflows)
+
+**Best for:** Complex labeling, healthcare, enterprise  
+**Pricing:** Enterprise ($50K+/year)
+
+**Cons:**
+- Expensive (enterprise focus)
+- Primarily designed for ML labeling (adapted for HITL)
+
+---
+
+#### 🥈 LLM-Native: Humanloop
+**URL:** https://humanloop.com  
+**INPACT™:** 25/36 (I=5, N=5, P=4, A=5, C=4, T=2)  
+**GOALS:** 20/25 (G=4, O=5, A=4, L=4, S=3)  
+**Combined:** 45/61
+
+**Why Consider:**
+- ✅ **LLM-focused** (designed for LLM applications)
+- ✅ **Prompt management** (versioning, A/B testing)
+- ✅ **Feedback collection** (thumbs up/down, corrections)
+- ✅ **Evaluation pipelines** (automated + human review)
+
+**Best for:** LLM applications, prompt iteration  
+**Pricing:** Starter $99/month, Pro $399/month, Enterprise custom
+
+**Cons:**
+- Less workflow sophistication than Labelbox
+- Newer platform
+
+---
+
+#### 🥉 Open-Source: Argilla
+**URL:** https://argilla.io  
+**INPACT™:** 23/36 (I=4, N=4, P=4, A=4, C=4, T=3)  
+**GOALS:** 19/25 (G=4, O=4, A=4, L=4, S=3)  
+**Combined:** 42/61
+
+**Why Consider:**
+- ✅ **Open-source** (Apache 2.0)
+- ✅ **LLM feedback** (RLHF workflows)
+- ✅ **Self-hosted** (PHI-friendly)
+- ✅ **Active community** (Hugging Face integration)
+
+**Best for:** ML teams, RLHF, budget-constrained  
+**Pricing:** Free (self-hosted), Cloud from $99/month
+
+**Cons:**
+- Less enterprise workflow features
+- Primarily ML-focused
+
+---
+
+#### Budget Alternative: Custom LangGraph HITL
+**URL:** https://www.langchain.com/langgraph  
+**INPACT™:** 22/36 (I=4, N=4, P=4, A=4, C=4, T=2)  
+**GOALS:** 18/25 (G=3, O=4, A=4, L=4, S=3)  
+**Combined:** 40/61
+
+**Why Consider:**
+- ✅ **Integrated with orchestration** (same platform)
+- ✅ **Customizable** (build exact workflow needed)
+- ✅ **Python-native** (familiar for developers)
+- ✅ **No additional cost** (if already using LangGraph)
+
+**Best for:** Teams already on LangChain, simple HITL needs  
+**Pricing:** Included with LangSmith
+
+**Cons:**
+- Requires custom development
+- No built-in reviewer management
+- Less sophisticated than dedicated platforms
+
+---
+
+### HITL Selection Matrix
+
+| Tool | Workflow | LLM-Native | Open-Source | Healthcare | Pricing |
+|------|----------|------------|-------------|------------|---------|
+| Labelbox | ✅ Best | ⚠️ Adapted | ❌ | ✅ Proven | $$$$ |
+| Humanloop | ✅ | ✅ Best | ❌ | ⚠️ | $$ |
+| Argilla | ✅ | ✅ | ✅ | ⚠️ Self-host | Free |
+| LangGraph | ⚠️ Custom | ✅ | ✅ | ⚠️ Self-host | Free |
+
+**Healthcare Recommendation:** **Labelbox** for enterprise clinical workflows with audit requirements. **Argilla** (self-hosted) for PHI-sensitive environments requiring human review of LLM outputs.
+
+**Key Insight:** For healthcare, HITL is not optional—EU AI Act Article 14 and FDA guidance require human oversight for clinical AI. Build HITL into your architecture from day one.
 
 ---
 
