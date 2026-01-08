@@ -33,7 +33,7 @@ Built isn't enough. Operations prove trust.
 
 ---
 
-## Part 1: Operations Begin
+## Part 1: Operations Kickoff
 
 ### Two Hours Earlier
 
@@ -49,7 +49,7 @@ Marcus pulled up the GOALS™ dashboard. Five gauges, fifteen out of twenty-five
 
 ```mermaid
 graph LR
-  subgraph BASELINE["<b>ECHO HEALTH GOALS™ BASELINE - WEEK 10</b>"]
+  subgraph BASELINE["<b>ECHO HEALTH GOALS™<br/>BASELINE - WEEK 10</b>"]
     G["<b>G - Governance</b><br/><b>3/5</b><br/><b>🟡 Developing</b>"]
     O["<b>O - Observability</b><br/><b>3/5</b><br/><b>🟡 Developing</b>"]
     A["<b>A - Availability</b><br/><b>4/5</b><br/><b>🟢 Proficient</b>"]
@@ -123,7 +123,7 @@ Echo's deployment followed a parallel operation model. The agentic system would 
 
 ## Part 2: Governance and Observability in Action
 
-### Governance: Week 11 Journey
+### Governance: The Invisible 65%
 
 The audit trail gap surfaced Monday afternoon.
 
@@ -166,7 +166,7 @@ By Friday, Governance stood at 4/5. Audit coverage complete. HITL escalation: 28
 
 The Trust Flywheel was turning. Faster HITL resolution built clinician trust. Trust drove engagement. Engagement improved quality. Quality reinforced the value of human oversight.
 
-### Observability: Week 11 Journey
+### Observability: Seeing Through the Blackbox
 
 Observability presented different challenges. Mean time to detection was running at 8 minutes, above their 5-minute target. And explainability wasn't fully enabled.
 
@@ -249,7 +249,7 @@ With Governance and Observability at 4/5, Echo had the diagnostic foundation in 
 
 ## Part 3: Availability, Lexicon, and Solid in Action
 
-### Availability: Maintaining Excellence
+### Availability: Performance at Scale
 
 Availability was already at 4/5. Week 11's task was validation: proving the system could handle growth.
 
@@ -264,7 +264,7 @@ The 10x scale test began Tuesday at 6 AM. Jamie's team generated synthetic queri
 ```mermaid
 
 graph TB
-  subgraph CACHE["ECHO'S CACHING UNDER 10X LOAD"]
+  subgraph CACHE["<b>ECHO'S CACHING UNDER<br/>10X LOAD</b>"]
     direction TB
     QUERY["20,000 Queries/Day<br/>(10x normal load)"]
     
@@ -314,7 +314,7 @@ The Trust Flywheel was turning. Faster responses built user habits. Habits drove
 
 Availability remained at 4/5, but now with validated capacity for growth.
 
-### Lexicon: Speaking Their Language
+### Lexicon: Smooth Talker
 
 Lexicon was the gap that worried Sarah most.
 
@@ -331,7 +331,7 @@ Swapna identified three categories: entity ambiguity ("my doctor" with multiple 
 ```mermaid
 
 graph TB
-  subgraph DISAMBIGUATION["LEXICON DISAMBIGUATION PROCESS"]
+  subgraph DISAMBIGUATION["<b>LEXICON DISAMBIGUATION<br/>PROCESS</b>"]
     direction TB
     Q["User Query<br/>'When did I last see my doctor?'"]
     
@@ -385,7 +385,7 @@ The Trust Flywheel was turning. Better disambiguation led to accurate responses.
 
 Lexicon moved to 4/5.
 
-### Solid: Data Quality Foundation
+### Solid: One Truth, Four Systems
 
 Solid was the foundation everything else depended upon. At 3/5, the 3% cross-system inconsistency for primary care provider data was causing problems.
 
@@ -400,7 +400,7 @@ Swapna mapped the data flows. The EHR was source of truth, but the scheduling sy
 ```mermaid
 
 graph TB
-  subgraph QUALITY["ECHO'S DATA QUALITY GATES"]
+  subgraph QUALITY["<b>ECHO'S DATA QUALITY<br/>GATES</b>"]
     direction TB
     SOURCE["Data Sources<br/>EHR | Scheduling | Claims"]
     
@@ -457,9 +457,9 @@ End of Week 11. All five GOALS™ dimensions at production-ready levels: 20 out 
 
 ---
 
-## Part 4: Operations Mature
+## Part 4: Operational Excellence
 
-### Week 12: The Final Push
+### The Last Mile
 
 Week 12 opened with cautious optimism.
 
@@ -473,7 +473,7 @@ Jamie had analyzed Week 11 data. "We processed 847 HITL escalations. Most follow
 
 "That's a lot of human time confirming what the system already knew," Sarah observed. "And it's not sustainable at 10x scale."
 
-### Monday Through Wednesday: Fine-Tuning
+### Fine-Tuning the Machine
 
 The team spent the first three days optimizing based on operational data.
 
@@ -482,7 +482,7 @@ The team spent the first three days optimizing based on operational data.
 - **HITL routing:** Re-routing to appropriate specialists reduced review time by 15%
 - **Documentation:** Marcus led a sprint to capture all operational procedures
 
-### Governance Reaches 5/5
+### Governance: The Learning Loop
 
 The breakthrough came Tuesday afternoon.
 
@@ -500,7 +500,7 @@ The approach was carefully designed to maintain safety:
 
 Swapna implemented the learning loop Wednesday.
 
-### Thursday and Friday: Validation
+### High Stakes Validation
 
 By Thursday, the improvement was measurable. HITL escalation rate for routine patterns dropped 23%, but full escalation continued for novel queries.
 
@@ -510,7 +510,7 @@ The compliance team confirmed the audit trail was complete. Every pattern learne
 
 **Governance reached 5/5.**
 
-### GOALS™ Final Validation
+### GOALS™: Mission Accomplished
 
 Friday morning. Sarah called an all-hands meeting.
 
@@ -531,7 +531,7 @@ Sarah held up her hand. "We're not done. We still need to validate the three age
 
 ---
 
-## Part 5: Three Agents Validation
+## Part 5: Three Agents, One Standard
 
 The next three hours were the most comprehensive validation Echo's team had ever conducted.
 
@@ -578,7 +578,7 @@ graph TB
   style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-### Care Coordination Agent
+### Agent 1: Care Coordination
 
 **Agent Profile:**
 - **Purpose:** Coordinate patient care across departments
@@ -606,7 +606,7 @@ graph TB
 - **7-Layer:** Layer 1 unified scheduling data. Layer 2 delivered data in 0.8s. Layer 3 resolved "heart doctor" → cardiologist. Layer 4 retrieved care history. Layer 5 verified permissions. Layer 6 logged trace. Layer 7 orchestrated routing.
 - **GOALS™:** **G**overnance (audit complete, ~3% HITL), **O**bservability (full trace visible), **A**vailability (97% under 2s), **L**exicon (97% accuracy), **S**olid (data consistent)
 
-### Clinical Documentation Agent
+### Agent 2: Clinical Documentation
 
 **Agent Profile:**
 - **Purpose:** Assist clinicians with documentation
@@ -638,7 +638,7 @@ Dr. Chen reviewed the validation personally. "The agent correctly escalated a po
 - **7-Layer:** Layer 1 provided EHR data. Layer 2 streamed lab results. Layer 3 mapped clinical terminology. Layer 4 RAG retrieved notes and guidelines. Layer 5 enforced HIPAA controls. Layer 6 logged reasoning chain. Layer 7 coordinated multi-source retrieval.
 - **GOALS™:** **G**overnance (~8% HITL for clinical decisions), **O**bservability (full explainability), **A**vailability (supports workflow), **L**exicon (ICD-10/CPT mapped), **S**olid (lab values verified)
 
-### Revenue Cycle Agent
+### Agent 3: Revenue Cycle
 
 **Agent Profile:**
 - **Purpose:** Support billing and revenue operations
@@ -668,7 +668,7 @@ The 12% denial rate reduction was the most compelling ROI metric. By catching is
 - **7-Layer:** Layer 1 provided consistent claim data. Layer 2 delivered real-time status. Layer 3 resolved CPT codes. Layer 4 retrieved authorization history. Layer 5 enforced role-based access. Layer 6 logged audit trail. Layer 7 orchestrated claim-to-auth matching.
 - **GOALS™:** **G**overnance (~6% HITL for high-value), **O**bservability (end-to-end traceable), **A**vailability (supports high-volume), **L**exicon (98% CPT/ICD accuracy), **S**olid (12% denial reduction validates accuracy)
 
-### Validation Complete
+### Results
 
 All three agents passed production validation.
 
@@ -788,18 +788,18 @@ Dr. Raj leaned forward. "You've built something that measures itself. That prove
 
 "That's the answer to your question," Sarah said. "We know it stays trustworthy because the three pillars validate each other continuously."
 
-### Echo's Three-Pillar Journey
+### The Journey
 
 **Diagram 10: Echo's 90-Day Journey**
 
 ```mermaid
 
 graph TB
-  subgraph JOURNEY["ECHO HEALTH: 90-DAY <br/>TRANSFORMATION"]
+  subgraph JOURNEY["<b>ECHO HEALTH: 90-DAY<br/>TRANSFORMATION</b>"]
     direction TB
     D0["Day 0: Assessment<br/>INPACT™ 28/100"]
     
-    subgraph BUILD["Pillar 2: Build Layers"]
+    subgraph BUILD["<b>Pillar 2: Build Layers</b>"]
       direction LR
       W4["Weeks 1-4<br/>Foundation<br/>Layers 1-2"]
       W7["Weeks 5-7<br/>Intelligence<br/>Layers 3-4"]
@@ -839,7 +839,7 @@ graph TB
 | Operations | Weeks 11-12 | GOALS™ | 21/25 achieved |
 | **Production** | Week 12 | **All 3 Validated** | 89/100 INPACT™, 7/7 Layers, 21/25 GOALS™ |
 
-### Final Metrics
+### Final Score Card
 
 | Metric | Day 0 | Week 12 | Change |
 |--------|-------|---------|--------|
@@ -914,17 +914,17 @@ Now it's your turn.
 ```mermaid
 
 graph LR
-  subgraph BEFORE["WEEK 0"]
+  subgraph BEFORE["<b>WEEK 0</b>"]
     direction TB
     B1["INPACT™: 28/100<br/><br/>GOALS™: 0/25<br/><br/>Agents: 0<br/><br/><b>Fix this in 90 days</b>"]
   end
   
-  subgraph PILLARS["THREE PILLARS"]
+  subgraph PILLARS["<b>THREE PILLARS</b>"]
     direction TB
     P1["<b>INPACT™</b><br/>What agents need<br/><br/><b>7-Layers</b><br/>How to build it<br/><br/><b>GOALS™</b><br/>How to measure"]
   end
   
-  subgraph AFTER["WEEK 12"]
+  subgraph AFTER["<b>WEEK 12</b>"]
     direction TB
     A1["INPACT™: 89/100<br/><br/>GOALS™: 21/25<br/><br/>Agents: 3 Live<br/><br/><b>Architecture we can trust</b>"]
   end
