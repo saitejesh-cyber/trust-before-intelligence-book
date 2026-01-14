@@ -49,7 +49,7 @@ Marcus pulled up the GOALS™ dashboard. Five gauges, fifteen out of twenty-five
 
 ```mermaid
 graph LR
-  subgraph BASELINE["<b>ECHO HEALTH GOALS™<br/>BASELINE - WEEK 10</b>"]
+  subgraph BASELINE["<b>GOALS™ WEEK 10 BASELINE</b>"]
     G["<b>G - Governance</b><br/><b>3/5</b><br/><b>🟡 Developing</b>"]
     O["<b>O - Observability</b><br/><b>3/5</b><br/><b>🟡 Developing</b>"]
     A["<b>A - Availability</b><br/><b>4/5</b><br/><b>🟢 Proficient</b>"]
@@ -89,18 +89,19 @@ Sarah walked to the whiteboard. "Here's the plan."
 gantt
   title Echo Health GOALS™ Improvement Timeline
   dateFormat YYYY-MM-DD
+  axisFormat %b %d
   
   section Week 11
-  Governance 3→4   :g1, 03-17, 5d
-  Observability 3→4 :o1, 03-17, 5d
-  Availability Maintain :a1, 03-17, 5d
-  Lexicon 3→4    :l1, 03-17, 5d
-  Solid Maintain   :s1, 03-17, 5d
+  Governance 3→4   :g1, 2025-03-17, 5d
+  Observability 3→4 :o1, 2025-03-17, 5d
+  Availability Maintain :a1, 2025-03-17, 5d
+  Lexicon 3→4    :l1, 2025-03-17, 5d
+  Solid Maintain   :s1, 2025-03-17, 5d
   
   section Week 12
-  Governance 4→5   :g2, 03-24, 5d
-  Final Validation  :v1, 03-24, 5d
-  Board Presentation :bp, 03-28, 1d
+  Governance 4→5   :g2, 2025-03-24, 5d
+  Final Validation  :v1, 2025-03-24, 5d
+  Board Presentation :bp, 2025-03-28, 1d
 ```
 
 Marcus wrote out the Week 11 targets:
@@ -264,7 +265,7 @@ The 10x scale test began Tuesday at 6 AM. Jamie's team generated synthetic queri
 ```mermaid
 
 graph TB
-  subgraph CACHE["<b>ECHO'S CACHING UNDER<br/>10X LOAD</b>"]
+  subgraph CACHE["<b>CACHING UNDER 10X LOAD</b>"]
     direction TB
     QUERY["20,000 Queries/Day<br/>(10x normal load)"]
     
@@ -331,7 +332,7 @@ Swapna identified three categories: entity ambiguity ("my doctor" with multiple 
 ```mermaid
 
 graph TB
-  subgraph DISAMBIGUATION["<b>LEXICON DISAMBIGUATION<br/>PROCESS</b>"]
+  subgraph DISAMBIGUATION["<b>LEXICON DISAMBIGUATION</b>"]
     direction TB
     Q["User Query<br/>'When did I last see my doctor?'"]
     
@@ -400,7 +401,7 @@ Swapna mapped the data flows. The EHR was source of truth, but the scheduling sy
 ```mermaid
 
 graph TB
-  subgraph QUALITY["<b>ECHO'S DATA QUALITY<br/>GATES</b>"]
+  subgraph QUALITY["<b>DATA QUALITY GATES</b>"]
     direction TB
     SOURCE["Data Sources<br/>EHR | Scheduling | Claims"]
     
@@ -795,7 +796,7 @@ Dr. Raj leaned forward. "You've built something that measures itself. That prove
 ```mermaid
 
 graph TB
-  subgraph JOURNEY["<b>ECHO HEALTH: 90-DAY<br/>TRANSFORMATION</b>"]
+  subgraph JOURNEY["<b>90-DAY TRANSFORMATION</b>"]
     direction TB
     D0["Day 0: Assessment<br/>INPACT™ 28/100"]
     
