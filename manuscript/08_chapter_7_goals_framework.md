@@ -673,14 +673,6 @@ Echo's insurance pre-authorization agent coordinates with the scheduling agent, 
 
 The orchestrator must enforce permissions for each agent independently while maintaining a coherent audit trail showing the complete request chain.
 
-### Why Governance Comes First
-
-Governance is first not because it's most important. All five GOALS matter equally. But governance failures have immediate, severe consequences.
-
-A performance degradation in Availability frustrates users.
-
-A governance failure results in HIPAA violations, security breaches, or compliance fines.
-
 ### The Continuous Practice
 
 Governance isn't a one-time implementation but a continuous practice.
@@ -972,41 +964,11 @@ Marcus displayed the adoption curve. "When we got response times below 2 seconds
 
 Data freshness matters equally. When a patient's medication list updates at 2:00 PM but the agent reports the old list until 6:00 PM, clinicians lose trust immediately.
 
-### The Three Bottlenecks
+### The Architecture That Enables Speed
 
-Investigation typically reveals three bottlenecks destroying performance:
+Echo's transformation from 9-second to 1.8-second responses required coordinated improvements across multiple layers: real-time data fabric for freshness (Layer 2), query-optimized vector storage (Layer 1), parallel retrieval orchestration (Layer 4), and intelligent caching. The technical implementation is detailed in Chapters 4-5.
 
-**Bottleneck 1: Stale Data Requiring Slow Queries**
-
-Scheduling table updated nightly. By 10 AM, data was eight hours stale. When users asked about "today's availability," the agent had to query multiple systems in real-time to reconcile stale warehouse with the current state. This added 3-4 seconds per query.
-
-**Bottleneck 2: Cold Storage and Missing Indexes**
-
-Appointment data lived in a general-purpose warehouse optimized for analytical queries. Retrieval queries hit cold storage with no semantic indexes. Every query required full table scans. Average retrieval time: 2-3 seconds.
-
-**Bottleneck 3: Sequential Processing**
-
-When queries required multiple data sources (checking availability + verifying insurance + retrieving preferences), the agent processed sequentially. Three 1.5-second queries became 4.5 seconds of latency.
-
-### The Transformation to Sub-2-Second Performance
-
-Echo's transformation to 1.8-second average required addressing all three simultaneously:
-
-**Solution 1: Real-Time Data Fabric**
-
-CDC on critical tables with streaming updates maintaining sub-30-second freshness. This eliminated reconciling stale warehouse data with live systems.
-
-**Solution 2: Query-Optimized Storage**
-
-Migrated appointment queries to vector databases with semantic indexing. Cold warehouse queries (2-3 seconds) became warm vector lookups (50ms) and graph traversals (200ms).
-
-**Solution 3: Parallel Retrieval**
-
-Redesigned Intelligence Layer to orchestrate parallel retrieval across multiple sources. Three sequential 1.5-second queries became three parallel 1.5-second queries with 1.6-second total latency.
-
-**Solution 4: Intelligent Caching**
-
-Semantic caching achieving 60%+ hit rates. Common queries returned from cache in 300ms instead of querying data sources.
+What matters for GOALS™ is measuring and sustaining this performance over time.
 
 ### Measuring Availability
 
