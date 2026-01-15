@@ -49,7 +49,7 @@ Marcus pulled up the GOALS™ dashboard. Five gauges, fifteen out of twenty-five
 
 ```mermaid
 graph LR
-  subgraph BASELINE["<b>GOALS™ WEEK 10 BASELINE</b>"]
+  subgraph BASELINE["<b>GOALS™ BASELINE</b>"]
     G["<b>G - Governance</b><br/><b>3/5</b><br/><b>🟡 Developing</b>"]
     O["<b>O - Observability</b><br/><b>3/5</b><br/><b>🟡 Developing</b>"]
     A["<b>A - Availability</b><br/><b>4/5</b><br/><b>🟢 Proficient</b>"]
