@@ -1219,7 +1219,7 @@ Additionally, implement **human evaluation sampling**: review 100 random queries
 | **4/5** | Full ontology with clinical terminology, disambiguation prompts, >90% accuracy |
 | **5/5** | Comprehensive ontology + continuous learning from corrections + >95% accuracy |
 
-"We're at 3/5," Marcus said. "The gap is disambiguation and continuous learning. When users rephrase queries, we're not capturing that signal to improve the ontology."
+"We're at 2/5," Marcus said. "The gap is disambiguation and continuous learning. When users rephrase queries, we're not capturing that signal to improve the ontology."
 
 ### Key Technologies for Semantic Understanding
 
@@ -1618,7 +1618,7 @@ Sarah summarized the path forward. "We need to move from 15/25 to 21/25 in the n
 | G | 3 → 5 | Complete audit coverage, reduce HITL time, test rollback |
 | O | 3 → 4 | Instrument remaining services, reduce MTTD, enable explainability |
 | A | 4 | Maintain-validate 10x scale capacity |
-| L | 3 → 4 | Implement disambiguation, start correction feedback loop |
+| L | 2 → 4 | Implement disambiguation, start correction feedback loop |
 | S | 4 | Maintain-fix cross-system consistency for PCP data |
 
 **Diagram 14: GOALS™ Healthcare Threshold**
@@ -1681,7 +1681,7 @@ Chapter 8 will demonstrate each GOALS™ improvement validating the full Archite
 | HITL catches controlled substance override | Governance 4→5 | Permitted (P) working | Layer 5 operational |
 | 3 AM alert diagnosed in 4 minutes | Observability 3→4 | Transparent (T) working | Layer 6 operational |
 | 10x scale test passes | Availability maintained | Instant (I) working | Layer 2 operational |
-| "My doctor" disambiguation works | Lexicon 3→4 | Natural (N) working | Layer 3 operational |
+| "My doctor" disambiguation works | Lexicon 2→4 | Natural (N) working | Layer 3 operational |
 | PCP consistency reaches 98% | Solid maintained | Adaptive (A) working | Layer 1 operational |
 
 "Each operational win in Chapter 8 isn't just a GOALS™ improvement," Marcus noted. "It's validation that all three pillars are working together. That's what we'll show the board."
