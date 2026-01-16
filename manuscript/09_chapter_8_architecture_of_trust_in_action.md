@@ -268,7 +268,7 @@ The 10x scale test began Tuesday at 6 AM. Jamie's team generated synthetic queri
 ```mermaid
 
 graph TB
-  subgraph CACHE["<b>CACHING UNDER 10X LOAD</b>"]
+  subgraph CACHE["<b>CACHING @10x LOAD</b>"]
     direction TB
     QUERY["20,000 Queries/Day<br/>(10x normal load)"]
     
