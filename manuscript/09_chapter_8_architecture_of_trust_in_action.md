@@ -114,7 +114,7 @@ Marcus wrote out the Week 11 targets:
 
 "By Friday, we should be at twenty out of twenty-five," Sarah said. "Week 12, we push Governance to five and validate for production."
 
-"The 95% failure rate for agent projects," Marcus said. "That's what happens when organizations build without operating. We're proving operability before we launch."
+"The 95% failure rate for agent projects," Marcus said. "That's what happens when organizations build without optimizing for operations. We're proving operability before we launch."
 
 Sarah checked her watch. "First production queries go live at ten AM. Two hours to prove ten weeks of work."
 
@@ -130,7 +130,7 @@ The audit trail gap surfaced Monday afternoon.
 
 "We're logging all direct queries," Jamie reported. "But cached responses aren't generating audit entries. 65% of our access patterns are invisible."
 
-In healthcare, that's a compliance violation waiting to happen. The Montefiore case ($4.75 million in penalties) was fresh in everyone's mind.
+In healthcare, that's a compliance violation waiting to happen. The Montefiore case ($4.75 million in penalties for HIPAA Security Rule failures) was fresh in everyone's mind [1].
 
 "How fast can we fix it?" Sarah asked.
 
@@ -171,7 +171,7 @@ The Trust Flywheel was turning. Faster HITL resolution built clinician trust. Tr
 
 Observability presented different challenges. Mean time to detection was running at 8 minutes, above their 5-minute target. And explainability wasn't fully enabled.
 
-"The EU AI Act requires explainability for high-risk AI applications," Marcus reminded the team. "Healthcare is high-risk. Every agent response needs reasoning that can be audited."
+"The EU AI Act requires explainability for high-risk AI applications," Marcus reminded the team [2]. "Healthcare is high-risk. Every agent response needs reasoning that can be audited."
 
 The detection issue was alert tuning. Jamie analyzed two weeks of data: 340 alerts per month, most false positives.
 
@@ -196,6 +196,7 @@ sequenceDiagram
   participant P as Layer 5<br/>Policy
   participant R as Layer 4<br/>RAG
   participant S as Layer 3<br/>Semantic
+  participant St as Layer 2<br/>Streaming
   participant D as Layer 1<br/>Storage
   participant T as Layer 6<br/>Trace Log
   
@@ -210,9 +211,11 @@ sequenceDiagram
   S->>T: ⚙️ Log: Entity resolved → Dr. Patel + appointment type
   S-->>O: Entities: provider_id=789, type=cardiology
   O->>R: Retrieve context for response
-  R->>D: Query appointment data
+  R->>St: Stream appointment data
+  St->>D: Query appointment data
   D->>T: ⚙️ Log: Query 0.8s - appointment found
-  D-->>R: Appointment: March 27, 2:30 PM
+  D-->>St: Appointment: March 27, 2:30 PM
+  St-->>R: Data streamed
   R-->>O: Context assembled with citations
   O->>T: ⚙️ Log: Response generated with 3 citations
   O-->>U: "Your next cardiology appointment with Dr. Patel is Thursday, March 27 at 2:30 PM at Main Campus."
@@ -630,7 +633,7 @@ The ~8% HITL rate was intentional, escalating medication recommendations, diagno
 > 
 > **Agent:** "Mrs. Johnson (DOB 03/15/1958) has Type 2 diabetes managed with metformin 1000mg BID. HbA1c trend: 7.8% (September) → 7.2% (December) → 6.9% (March). Last eye exam: August. Foot exam due. Shall I draft the care plan update?"
 > 
-> *[Reasoning chain: 4 lab results, 2 medication records, 3 visit notes. ADA guidelines applied.]*
+> *[Reasoning chain: 4 lab results, 2 medication records, 3 visit notes. ADA guidelines applied [3].]*
 
 Dr. Chen reviewed the validation personally. "The agent correctly escalated a potential medication interaction for pharmacist review. That's exactly the behavior we want."
 
@@ -947,17 +950,11 @@ graph LR
 
 ## References
 
-[1] NIST (2014). "Guide to Attribute Based Access Control (ABAC) Definition and Considerations." NIST Special Publication 800-162. https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-162.pdf
+[1] U.S. Department of Health and Human Services (2024). "HHS Office for Civil Rights Settles HIPAA Investigation with Montefiore Medical Center for $4.75 Million." HHS Press Release, February 6, 2024. https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/montefiore/index.html
 
-[2] Google SRE (2016). "Monitoring Distributed Systems." Site Reliability Engineering. https://sre.google/sre-book/monitoring-distributed-systems/
+[2] European Commission (2024). "AI Act: First Regulation on Artificial Intelligence." https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
 
-[3] Anthropic (2024). "Building Effective Agents." Anthropic Research. https://www.anthropic.com/research/building-effective-agents
-
-[4] European Commission (2024). "AI Act: First Regulation on Artificial Intelligence." https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
-
-[5] U.S. Department of Health and Human Services (2024). "HIPAA Security Rule." https://www.hhs.gov/hipaa/for-professionals/security/index.html
-
-[6] American Diabetes Association (2024). "Standards of Care in Diabetes." Diabetes Care. https://diabetesjournals.org/care/issue/47/Supplement_1
+[3] American Diabetes Association (2024). "Standards of Care in Diabetes." Diabetes Care. https://diabetesjournals.org/care/issue/47/Supplement_1
 
 ---
 
