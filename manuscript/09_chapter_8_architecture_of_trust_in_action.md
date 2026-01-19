@@ -109,8 +109,7 @@ Marcus wrote out the Week 11 targets:
 - **Governance:** 3/5 to 4/5. Complete audit trails, reduce HITL escalation time to under 30 seconds, test model rollback.
 - **Observability:** 3/5 to 4/5. Mean time to detection under 5 minutes, enable explainability for EU AI Act.
 - **Availability:** Maintain 4/5. Validate the system handles 10x current load.
-- **Lexicon:** 2/5 to 4/5. Implement disambiguation, reduce clarification rate to under 5%.
-- **Solid:** 3/5 to 4/5. Fix cross-system PCP consistency issue.
+- **Lexicon:** 2/5 to 4/5. Implement disambiguation, reduce clarification rate to under 10%.- **Solid:** 3/5 to 4/5. Fix cross-system PCP consistency issue.
 
 "By Friday, we should be at twenty out of twenty-five," Sarah said. "Week 12, we push Governance to five and validate for production."
 
@@ -322,7 +321,7 @@ Availability remained at 4/5, but now with validated capacity for growth.
 
 Lexicon was the gap that worried Sarah most.
 
-At 2/5, the 12% clarification rate meant one in eight queries required the agent to ask for more information. For busy clinicians, that friction was a trust-killer.
+At 2/5, the 30% clarification rate meant nearly one in three queries required the agent to ask for more information. For busy clinicians, that friction was a trust-killer.
 
 "The primary issue is ambiguity in entity references," Marcus explained. "When someone says 'my doctor,' we don't always know if they mean their PCP, their specialist, or the physician they saw last week."
 
@@ -381,7 +380,7 @@ The implementation required coordination across layers: Layer 3 for confidence s
 
 They also added 47 new clinical terms to the glossary: "A1c" for HbA1c, "sugar" for glucose, "blood pressure meds" for antihypertensives. The informal language patients actually use.
 
-By Thursday, clarification rate had dropped from 12% to about 5%. When clarification was needed, patients found the questions helpful rather than frustrating.
+By Thursday, clarification rate had dropped from 30% to under 10%. When clarification was needed, patients found the questions helpful rather than frustrating.
 
 "One patient said the agent 'actually listened' when it asked for clarification," Dr. Chen reported. "That's appreciation for accuracy, not complaint about friction."
 
