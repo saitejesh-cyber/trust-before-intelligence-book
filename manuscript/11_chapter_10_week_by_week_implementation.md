@@ -1,10 +1,30 @@
-# Chapter 10: Your 90-Day Implementation Roadmap
+# Chapter 10: The 90-Day AI Agent Readiness Playbook
 
-**The Complete Implementation Guide**
+## The Complete Implementation Guide
 
 ---
 
-**Diagram 1: Roadmap Value — From Ad-Hoc to Structured**
+## The Clock Starts Now
+
+*Tuesday, 2:15 PM
+Enterprise AI Summit, Main Stage
+Six Months After Production Launch*
+
+Sarah Cedao stepped to the podium. The room held four hundred IT leaders, all facing the same question her team had faced a year ago: how do you actually get from assessment to production?
+
+"We scored twenty-eight out of a hundred," she began. "Ninety days later, we were at eighty-nine - three agents in production, fifty thousand daily interactions, zero compliance incidents." She clicked to her first slide. "Everyone asks for our secret. There isn't one. Just a playbook we followed week by week."
+
+A hand went up. "You're healthcare. How do we know it works for manufacturing? Or finance?"
+
+"The layers are the same," Sarah replied. "Foundation, intelligence, trust, operations. The sequence doesn't change. Your technologies might. Your timeline might. But the playbook? That's universal."
+
+She clicked to the four-phase roadmap. "Let me show you exactly what we did."
+
+This chapter is that presentation.
+
+---
+
+**Diagram 1: Roadmap Value: From Ad-Hoc to Structured**
 
 ```mermaid
 
@@ -39,17 +59,11 @@ graph LR
 
 ---
 
-*Ninety days. That's all it took Echo Health Systems to transform from 28/100 to 89/100—from agents that couldn't answer basic questions to three specialized AI assistants handling 50,000 daily interactions. This chapter gives you their roadmap: four phases, specific costs, and the checkpoints that kept them on track. Your INPACT™ score (Chapter 9) revealed where you stand. Now build your plan to fix it.*
-
----
-
 ## Part 1: Roadmap Overview
 
-### 1.1 Welcome to Your 90-Day Journey
+### Welcome to Your 90-Day Journey
 
-You've completed the assessment. You have your INPACT™ score. You know which dimensions need work and which layers require investment. Chapter 9 gave you the diagnosis. Chapter 10 gives you the treatment plan.
-
-This chapter documents Echo Health Systems' complete implementation journey—not as abstract guidance, but as a roadmap you can adapt to your own transformation. Every cost, every checkpoint comes from their actual experience.
+Chapter 9 gave you the diagnosis. This chapter gives you the treatment plan - a week-by-week playbook for transforming your infrastructure from assessment to production-ready. The playbook is universal; where specific numbers help, we reference real implementations as evidence.
 
 **Why 90 Days?**
 
@@ -61,16 +75,16 @@ The 90-day timeline isn't arbitrary. It's the result of balancing three constrai
 
 3. **Team sustainability**: Transformation projects demand intense focus. Beyond 90 days, teams burn out, priorities shift, and momentum dissipates. The four-phase structure creates natural milestones that maintain energy.
 
-Echo's board gave Sarah 90 days. She delivered in 10 weeks of building plus 2 weeks of validation. Your timeline may vary based on starting point (Part 4), but the phase sequence remains constant.
+The 90-day timeline typically breaks into 10 weeks of building plus 2 weeks of validation. Your timeline may vary based on starting point (Part 4), but the phase sequence remains constant.
 
 **What You'll Get from This Chapter**
 
 By the end of this chapter, you will have:
 
 - **Four phase structures** with clear boundaries, budgets, and go/no-go checkpoints
-- **Implementation architecture diagrams** showing Echo's technology stack for each phase
-- **Risk management patterns** that kept Echo on track when challenges emerged
-- **The 90-Day Tracker system**—seven interconnected tracking sheets to manage your own transformation
+- **Implementation architecture diagrams** showing technology stack options for each phase
+- **Risk management patterns** that keep transformations on track when challenges emerge
+- **The 90-Day Tracker system** - seven interconnected tracking sheets to manage your own transformation
 
 **How to Use This Roadmap**
 
@@ -79,9 +93,9 @@ Your approach depends on your INPACT™ score from Chapter 9:
 | Score Range | Trust Level | Your Focus | Start Here |
 |-------------|-------------|------------|------------|
 | 25-40 | Very Low to Low | Full transformation | Part 2 (all phases) |
-| 40-65 | Low to Moderate | Intelligence + Trust | Parts 2.2-2.3 |
-| 65-80 | Moderate to Good | Trust + Operations | Parts 2.3-2.4 |
-| 80+ | High | Operations only | Part 2.4 → Chapter 12 |
+| 40-65 | Low to Moderate | Intelligence + Trust | Part 2: Phases 2-3 |
+| 65-80 | Moderate to Good | Trust + Operations | Part 2: Phases 3-4 |
+| 80+ | High | Operations only | Part 2: Phase 4 → Chapter 12 |
 
 **Important Cross-References**
 
@@ -92,9 +106,9 @@ This chapter focuses on *when* to build. Other chapters provide complementary gu
 - For *how to operate* at scale → Chapter 12 (production operations)
 - For *week-by-week layer detail* → Chapters 4-6
 
-### 1.2 Change Management Approach
+### Change Management Approach
 
-Technical transformation fails without organizational alignment. Echo invested deliberately in stakeholder communication and user adoption.
+Technical transformation fails without organizational alignment. Invest deliberately in stakeholder communication and user adoption.
 
 **Communication Rhythm**
 
@@ -107,20 +121,20 @@ Technical transformation fails without organizational alignment. Echo invested d
 
 **Stakeholder Engagement**
 
-Echo identified four stakeholder groups with different concerns:
+Identify four stakeholder groups with different concerns:
 
-- **Clinical staff**: Will this make my job easier or harder? (Focus: workflow integration, training)
+- **End users**: Will this make my job easier or harder? (Focus: workflow integration, training)
 - **IT/Operations**: Can we support this? (Focus: infrastructure, monitoring, on-call burden)
-- **Compliance/Legal**: Is this safe and auditable? (Focus: HIPAA, audit trails, liability)
+- **Compliance/Legal**: Is this safe and auditable? (Focus: audit trails, liability, regulatory requirements)
 - **Finance**: What's the ROI? (Focus: costs, benefits, payback period)
 
-Sarah scheduled dedicated sessions with each group at phase boundaries, not just project kickoff. Early engagement prevented late-stage resistance.
+Schedule dedicated sessions with each group at phase boundaries, not just project kickoff. Early engagement prevents late-stage resistance.
 
 ---
 
-### 1.3 Four Phases Overview
+### Four Phases Overview
 
-Echo's transformation followed four distinct phases, each building on the previous. The sequence matters—attempting Phase 3 governance work before Phase 1 foundations produces the failures behind AI agents' 95% failure rate.[1]
+The transformation follows four distinct phases, each building on the previous. The sequence matters - attempting Phase 3 governance work before Phase 1 foundations produces the failures behind AI agents' 95% failure rate.[1]
 
 **Diagram 2: The 90-Day Four-Phase Roadmap**
 
@@ -130,19 +144,19 @@ graph LR
     subgraph JOURNEY["90-DAY TRANSFORMATION"]
         direction LR
         subgraph PHASE1["PHASE 1: FOUNDATION"]
-            P1["Weeks 1-4<br/>L1 Storage +<br/> L2 Data Fabric<br/>$468K · 28→42 pts"]
+            P1["Weeks 1-4<br/>L1 Storage +<br/> L2 Data Fabric<br/>$350-550K · +10-15 pts"]
         end
         
         subgraph PHASE2["PHASE 2: INTELLIGENCE"]
-            P2["Weeks 5-7<br/>L3 Semantic +<br/> L4 Retrieval<br/>$392K · 42→67 pts"]
+            P2["Weeks 5-7<br/>L3 Semantic +<br/> L4 Retrieval<br/>$300-450K · +20-25 pts"]
         end
         
         subgraph PHASE3["PHASE 3: TRUST"]
-            P3["Weeks 8-10<br/>L5-L6-L7<br/>Governance + Orchestration<br/>$82K · 67→86 pts"]
+            P3["Weeks 8-10<br/>L5-L6-L7<br/>Governance + Orchestration<br/>$80-400K · +15-20 pts"]
         end
         
         subgraph PHASE4["PHASE 4: OPERATIONS"]
-            P4["Weeks 11-12<br/>Validation +<br/> GOALS™<br/>$50K · 86→89 pts"]
+            P4["Weeks 11-12<br/>Validation +<br/> GOALS™<br/>$40-80K · +2-5 pts"]
         end
     end
     
@@ -167,9 +181,9 @@ graph LR
 
 ## Part 2: Phase Summaries
 
-### 2.1 Phase 1: Foundation (Weeks 1-4)
+### Phase 1: Foundation (Weeks 1-4)
 
-**Diagram 4: Foundation Layer Stack**
+**Diagram 3: Foundation Layer Stack**
 
 ```mermaid
 
@@ -177,11 +191,11 @@ graph LR
     subgraph PHASE1["PHASE 1: FOUNDATION (Weeks 1-4)"]
         direction LR
         subgraph WEEK12["WEEKS 1-2"]
-            L1["L1: Storage<br/>Databricks · Redis · Vector Store"]
+            L1["L1: Storage<br/>Lakehouse · Cache · Vector Store"]
         end
         
         subgraph WEEK34["WEEKS 3-4"]
-            L2["L2: Data Fabric<br/>Debezium · Kafka · Event Hub"]
+            L2["L2: Data Fabric<br/>CDC · Streaming · Integration"]
         end
     end
     
@@ -202,34 +216,31 @@ graph LR
 |-----------|--------|
 | **Weeks** | 1-4 |
 | **Layers** | L1 (Multi-Modal Storage) → L2 (Real-Time Data Fabric) |
-| **INPACT™ Target** | 28 → 42 (+14 points) |
-| **Budget** | $470K budgeted / $468K actual |
+| **INPACT™ Target** | +10-15 points |
+| **Budget Range** | $350K-$550K (varies by scale and existing infrastructure) |
 | **Team** | 2 senior data engineers, 1 cloud architect, 1 DBA, 2 CDC specialists (consulting) |
 | **Primary Focus** | Data freshness (<30 seconds), query performance |
 
 **What Gets Built**
 
-Phase 1 establishes the foundation everything else depends on. Echo built layer-by-layer to maintain momentum and clear dependencies:
+Phase 1 establishes the foundation everything else depends on. Build layer-by-layer to maintain momentum and clear dependencies:
 
 **Weeks 1-2: Layer 1 (Multi-Modal Storage)**
-- Databricks lakehouse for unified analytics
-- Redis cache for sub-millisecond access
+- Unified lakehouse for analytics (Databricks, Snowflake, or equivalent)
+- In-memory cache for sub-millisecond access (Redis, Memcached)
 - Vector store preparation for Phase 2 semantic search
 
 **Weeks 3-4: Layer 2 (Real-Time Data Fabric)**
-- Debezium captures changes from Epic EHR
-- Kafka streams events in real-time
-- Event Hub provides Azure integration
-- Result: 28-second data freshness (down from 24-hour batch)
+- CDC captures changes from source systems (Debezium, Fivetran, or native connectors)
+- Event streaming for real-time data flow (Kafka, Pulsar, or cloud-native)
+- Target: <30-second data freshness (down from batch cycles)
 
-**Echo's Experience**
-
-Week 3 hit yellow status when EHR CDC integration took 2 extra days due to legacy system complexity. The team recovered by parallelizing storage testing while completing CDC work. Foundation was operational by end of Week 4.
+**Common Risk:** CDC integration delays are typical - legacy system complexity often adds 1-3 days. Have parallel workstreams ready to maintain momentum.
 
 **Phase Gate Checkpoint**
 
 - INPACT™ score ≥40 (±5% tolerance)
-- CDC operational for critical tables (appointments, demographics, insurance)
+- CDC operational for critical tables (e.g., customers, transactions, core entities)
 - Storage infrastructure provisioned and tested
 - If behind: Add 1-2 weeks to Phase 1; never skip ahead to Phase 2
 
@@ -237,9 +248,9 @@ Week 3 hit yellow status when EHR CDC integration took 2 extra days due to legac
 
 ---
 
-### 2.2 Phase 2: Intelligence (Weeks 5-7)
+### Phase 2: Intelligence (Weeks 5-7)
 
-**Diagram 5a: Intelligence Layer Stack**
+**Diagram 4: Intelligence Layer Stack**
 
 ```mermaid
 
@@ -251,7 +262,7 @@ graph LR
         end
         
         subgraph WEEK67["WEEKS 6-7"]
-            L4["L4: Intelligent Retrieval<br/>Pinecone · RAG Pipeline · Semantic Cache"]
+            L4["L4: Intelligent Retrieval<br/>Vector DB · RAG Pipeline · Semantic Cache"]
         end
     end
     
@@ -268,7 +279,7 @@ graph LR
 
 ```
 
-**Diagram 5b: Five-Stage RAG Pipeline**
+**Diagram 5: Five-Stage RAG Pipeline**
 
 ```mermaid
 graph LR
@@ -313,32 +324,30 @@ graph LR
 |-----------|--------|
 | **Weeks** | 5-7 |
 | **Layers** | L3 (Semantic Layer) → L4 (Intelligent Retrieval) |
-| **INPACT™ Target** | 42 → 67 (+25 points) |
-| **Budget** | $380K budgeted / $392K actual |
-| **Team** | 2 ML engineers, 1 clinical SME, semantic layer specialists |
+| **INPACT™ Target** | +20-25 points |
+| **Budget Range** | $300K-$450K (varies by complexity and document volume) |
+| **Team** | 2 ML engineers, 1 domain SME, semantic layer specialists |
 | **Primary Focus** | NLU accuracy (target: 85%), semantic layer coverage, RAG pipeline |
 
 **What Gets Built**
 
-Phase 2 gives agents the ability to understand and reason. Echo built layer-by-layer:
+Phase 2 gives agents the ability to understand and reason. Build layer-by-layer:
 
 **Week 5: Layer 3 (Semantic Layer)**
-- Business glossary with 2,400 clinical terms mapped to data structures
-- Entity resolution achieving 97% accuracy across Epic, lab systems, and scheduling
-- dbt models translating business concepts to technical queries
+- Business glossary mapping domain terms to data structures (target: 1,000+ terms)
+- Entity resolution achieving 95%+ accuracy across source systems
+- Semantic models translating business concepts to technical queries (dbt, Cube, or equivalent)
 
 **Weeks 6-7: Layer 4 (Intelligent Retrieval)**
-- Pinecone vector database with 12,847 indexed documents
-- Five-stage RAG pipeline (see Diagram 5b): Query Understanding → Retrieval → Reranking → Augmentation → Generation
-- Semantic caching with 85% hit rate ($12,200/month LLM cost savings)
+- Vector database for semantic search (Pinecone, Weaviate, Chroma, or equivalent)
+- Five-stage RAG pipeline (see Diagram 5): Query Understanding → Retrieval → Reranking → Augmentation → Generation
+- Semantic caching to reduce LLM costs (target: 70%+ hit rate)
 
-**Technology Stack**
+**Technology Options**
 
-Echo used LangChain for orchestration, Pinecone for vector retrieval, Cohere for reranking, GPT-4 for generation, and Redis for semantic caching. For vendor selection rationale and alternatives, see Chapter 11, Section 2.
+Orchestration (LangChain, LlamaIndex), vector retrieval (Pinecone, Weaviate, Chroma), reranking (Cohere, cross-encoders), generation (GPT-4, Claude, open-source), caching (Redis, custom). For vendor selection guidance, see Chapter 11, Section 2.
 
-**Echo's Experience**
-
-Week 7 nearly failed the phase gate. Accuracy sat at 82%—below the 85% target. The team added Cohere reranking and hybrid search (combining vector and keyword retrieval), pushing accuracy to 85% before proceeding. The discipline to pause rather than proceed with gaps prevented downstream failures.
+**Common Risk:** Accuracy often plateaus at 80-82% before hitting the 85% target. Solutions include adding reranking, hybrid search (combining vector and keyword retrieval), or expanding the semantic layer. Don't proceed with gaps - they compound in Phase 3.
 
 **Phase Gate Checkpoint**
 
@@ -351,7 +360,7 @@ Week 7 nearly failed the phase gate. Accuracy sat at 82%—below the 85% target.
 
 ---
 
-### 2.3 Phase 3: Trust & Orchestration (Weeks 8-10)
+### Phase 3: Trust & Orchestration (Weeks 8-10)
 
 **Diagram 6: Trust Layer Stack**
 
@@ -362,7 +371,7 @@ graph LR
         direction LR
         L7["L7: Orchestration<br/>Multi-Agent Coordination · Intent Routing"]
         L6["L6: Observability<br/>Audit Trails · Tracing · Explainability"]
-        L5["L5: Governance<br/>ABAC Policies · HITL Workflows · HIPAA"]
+        L5["L5: Governance<br/>ABAC Policies · HITL Workflows · Compliance"]
     end
     
     Copyright["© 2025 Colaberry Inc."]
@@ -381,8 +390,8 @@ graph LR
 |-----------|--------|
 | **Weeks** | 8-10 |
 | **Layers** | L5 (Agent-Aware Governance) + L6 (Observability complete) + L7 (Orchestration) |
-| **INPACT™ Target** | 67 → 86 (+19 points) |
-| **Budget** | $380K budgeted / **$82K actual** |
+| **INPACT™ Target** | +15-20 points |
+| **Budget Range** | $80K-$400K (varies significantly based on open-source vs. commercial choices) |
 | **Team** | 2 security engineers, 2 DevOps engineers, 1 compliance officer, 1 ML engineer |
 | **Primary Focus** | ABAC policies, HITL workflows, audit trails, multi-agent coordination |
 
@@ -390,19 +399,14 @@ graph LR
 
 Phase 3 makes agents trustworthy:
 
-- **ABAC governance**: Open Policy Agent (OPA) evaluates 247 policies in <8ms—who is asking, what they're accessing, when, and from where
-- **HITL workflows**: Confidence-based escalation routes high-risk decisions to human reviewers; initial 22% escalation rate tuned to <15%
-- **Observability complete**: OpenTelemetry distributed tracing, Datadog APM, complete audit trails for HIPAA compliance
-- **Multi-agent orchestration**: LangGraph coordinates three specialized agents (Care Coordination, Clinical Documentation, Revenue Cycle) with shared state management
+- **ABAC governance**: Policy engine (OPA, Styra, or equivalent) evaluates access policies in <10ms - who is asking, what they're accessing, when, and from where
+- **HITL workflows**: Confidence-based escalation routes high-risk decisions to human reviewers; target escalation rate <15%
+- **Observability complete**: Distributed tracing (OpenTelemetry), APM (Datadog, New Relic, or equivalent), complete audit trails for compliance requirements
+- **Multi-agent orchestration**: Coordination framework (LangGraph, AutoGen, or custom) manages specialized agents with shared state
 
-**Echo's Experience**
+**Cost Optimization Opportunity**
 
-Phase 3 achieved **$298K in savings** (78% under budget) through strategic decisions:
-- Open-source OPA instead of commercial Styra ($137K saved)
-- Leveraged existing corporate Datadog license ($33K saved)
-- Retrofitted original pilot agents instead of rebuilding ($128K saved)
-
-The pilot agents that failed in Chapter 0 weren't broken—they lacked infrastructure. With Layers 1-6 operational, those same agents finally had the foundation they required.
+Phase 3 offers the largest budget variance potential. Open-source choices (OPA vs. commercial Styra, leveraging existing monitoring licenses, retrofitting pilot agents vs. rebuilding) can reduce costs by 50-80%. Evaluate build-vs-buy carefully - see Chapter 11, Section 3.
 
 **Phase Gate Checkpoint**
 
@@ -416,14 +420,14 @@ The pilot agents that failed in Chapter 0 weren't broken—they lacked infrastru
 
 ---
 
-### 2.4 Phase 4: Operations (Weeks 11-12)
+### Phase 4: Operations (Weeks 11-12)
 
 | Attribute | Detail |
 |-----------|--------|
 | **Weeks** | 11-12 |
 | **Focus** | Validation, UAT, Production Readiness |
-| **INPACT™ Target** | 86 → 89 (+3 points) |
-| **Budget** | ~$50K |
+| **INPACT™ Target** | +2-5 points (refinement) |
+| **Budget Range** | $40K-$80K |
 | **Team** | UAT facilitators, compliance sign-off, training staff |
 | **Primary Focus** | User Acceptance Testing, production cutover |
 
@@ -431,19 +435,20 @@ The pilot agents that failed in Chapter 0 weren't broken—they lacked infrastru
 
 Phase 4 validates everything works together:
 
-- **UAT with real users**: 50 nurses tested real clinical scenarios over 2 weeks
-- **Edge case resolution**: 47 edge cases identified and resolved
+- **UAT with real users**: Representative user group tests real scenarios over 2 weeks
+- **Edge case resolution**: Identify and resolve edge cases before production (expect 30-60)
 - **Production readiness**: 15-criteria checklist verified (see Chapter 12)
 - **GOALS™ operational targets**: All five metrics at target levels
 
-**Echo's Results**
+**Success Criteria**
 
-- UAT success rate: 94% (target: 90%)
-- Task completion: 94% of clinical workflows completed successfully
-- User satisfaction: 4.3/5.0
-- NLU accuracy (production): 87%
-- HITL override rate: <8%
-- Production approval: Granted
+| Metric | Target |
+|--------|--------|
+| UAT success rate | ≥90% |
+| Task completion | ≥90% of workflows completed successfully |
+| User satisfaction | ≥4.0/5.0 |
+| NLU accuracy (production) | ≥85% |
+| HITL override rate | <15% |
 
 **Phase Gate Checkpoint**
 
@@ -458,74 +463,71 @@ Phase 4 validates everything works together:
 
 ## Part 3: Investment Summary
 
-### 3.1 Complete Investment Breakdown
+### Budget Framework
 
-| Phase | Weeks | Layers | Budgeted | Actual | INPACT™ Gain | Cumulative |
-|-------|-------|--------|----------|--------|--------------|------------|
-| Foundation | 1-4 | L1-L2 | $470K | $468K | +14 (28→42) | 42/100 |
-| Intelligence | 5-7 | L3-L4 | $380K | $392K | +25 (42→67) | 67/100 |
-| Trust | 8-10 | L5-L6-L7 | $380K | $82K | +19 (67→86) | 86/100 |
-| Operations | 11-12 | Validation | — | $50K | +3 (86→89) | 89/100 |
-| **Total** | **12** | **All 7** | **$1.23M** | **$992K** | **+61** | **89/100** |
+| Phase | Weeks | Layers | Budget Range | INPACT™ Gain |
+|-------|-------|--------|--------------|--------------|
+| Foundation | 1-4 | L1-L2 | $350K-$550K | +10-15 points |
+| Intelligence | 5-7 | L3-L4 | $300K-$450K | +20-25 points |
+| Trust | 8-10 | L5-L6-L7 | $80K-$400K | +15-20 points |
+| Operations | 11-12 | Validation | $40K-$80K | +2-5 points |
+| **Total** | **12** | **All 7** | **$770K-$1.5M** | **+50-65 points** |
 
-### 3.2 Cost by Category
+Budget varies based on organization size, existing infrastructure, and build-vs-buy decisions.
 
-Echo's investment broke down across three categories:
+### Cost Categories
 
-| Category | Budgeted | Actual | Variance | Components |
-|----------|----------|--------|----------|------------|
-| **Technology** | $690K | $505K | -26.8% | Platforms, infrastructure, licenses |
-| **Services** | $380K | $326K | -14.2% | Consulting, implementation, training |
-| **Staff** | $160K | $161K | +0.6% | Internal team time allocation |
-| **Total** | **$1.23M** | **$992K** | **-19.4%** | |
+Investment typically breaks down across three categories:
 
-The technology underspend came primarily from Phase 3 open-source adoption. Services underspend reflected faster-than-expected implementation once foundation layers were operational.
+| Category | Typical Range | Components |
+|----------|---------------|------------|
+| **Technology** | 45-55% | Platforms, infrastructure, licenses |
+| **Services** | 25-35% | Consulting, implementation, training |
+| **Staff** | 15-20% | Internal team time allocation |
 
-### 3.3 Key Investment Insights
+### Key Investment Insights
 
-**19% Under Budget**
+**Phase 3 Has Highest Variance**
 
-Echo completed the full 12-week transformation with $238K preserved for contingency and future enhancements. This buffer proved valuable for post-launch optimizations and the unexpected need to add a fourth specialized agent six weeks after go-live.
+Trust & Orchestration costs vary most dramatically based on strategic decisions:
+- Open-source policy engines (OPA) vs. commercial (Styra): $100K+ difference
+- Leveraging existing monitoring licenses vs. new purchases: $30-50K difference
+- Retrofitting pilot agents vs. rebuilding: $100K+ difference
 
-**Phase 3 Savings (78% Under Budget)**
-
-Three strategic decisions drove Phase 3 from $380K budgeted to $82K actual:
-- **Open-source OPA**: $137K saved vs. commercial Styra
-- **Existing Datadog license**: $33K saved by leveraging corporate contract
-- **Agent retrofit**: $128K saved by updating pilot agents vs. rebuilding
+Evaluate build-vs-buy carefully in Phase 3 - see Chapter 11, Section 3.
 
 **Ongoing Operations**
 
-Monthly recurring costs after go-live: $52K/month, comprising:
-- Cloud infrastructure: $28K
-- LLM API usage: $12K (after caching optimization)
-- Monitoring and observability: $8K
-- Support and maintenance: $4K
+Plan for monthly recurring costs after go-live (typical ranges):
+- Cloud infrastructure: $20K-$40K
+- LLM API usage: $8K-$20K (after caching optimization)
+- Monitoring and observability: $5K-$15K
+- Support and maintenance: $3K-$8K
+- **Total monthly:** $36K-$83K
 
-### 3.4 ROI Analysis
+### ROI Expectations
 
-| Metric | Value |
-|--------|-------|
-| Total Implementation Investment | $992K |
-| Year 1 Operational Costs | $624K ($52K × 12) |
-| Year 1 Quantified Benefits | $2.1M |
-| **Year 1 ROI** | **209%** |
-| **3-Year ROI** | **477%** |
-| **Payback Period** | **10 weeks** from production deployment |
+| Metric | Typical Range |
+|--------|---------------|
+| Year 1 ROI | 150-250% |
+| 3-Year ROI | 400-600% |
+| Payback Period | 8-14 weeks from production |
 
-Benefits included scheduling efficiency gains ($890K), reduced call center volume ($540K), clinical documentation time savings ($420K), and avoided compliance incidents ($250K).
+ROI sources vary by industry but typically include: operational efficiency gains, reduced manual workload, improved accuracy, faster response times, and avoided compliance incidents.
+
+> **Evidence Note:** Budget and timeline figures in this chapter are informed by Echo Health Systems' implementation ($992K actual, 12 weeks, 28→89 INPACT™). For Echo's complete journey, see Chapter 8.
 
 ---
 
 ## Part 4: Adapting Your Roadmap
 
-### 4.1 Starting from Different INPACT™ Scores
+### Starting from Different INPACT™ Scores
 
-Not everyone starts at 28/100. Your Chapter 9 assessment determines where to focus:
+Your starting point determines your path. Your Chapter 9 assessment determines where to focus:
 
 **Score 25-40 (Full Transformation)**
 
-You're starting where Echo started. The complete roadmap applies:
+Starting from a low score requires the complete roadmap:
 - Execute all 4 phases as documented
 - Expect 10-12 weeks total
 - Budget: $800K-$1.5M depending on scale and existing infrastructure
@@ -558,7 +560,7 @@ You're nearly production-ready. Polish and scale:
 - Budget: $50K-$150K
 - Focus: UAT, production hardening, monitoring optimization
 
-### 4.2 Common Adaptation Patterns
+### Common Adaptation Patterns
 
 | Starting Condition | Adaptation | Rationale |
 |--------------------|------------|-----------|
@@ -570,26 +572,26 @@ You're nearly production-ready. Polish and scale:
 | Healthcare with strict HIPAA requirements | Add 1 week to Phase 3 | Additional compliance validation needed |
 | Multi-cloud environment | Add 1 week to Phase 1 | Cross-cloud data fabric complexity |
 
-### 4.3 Scaling Considerations
+### Scaling Considerations
 
-Echo's roadmap scaled for a mid-size healthcare system (4 hospitals, 12,000 employees). Adjust timelines for your scale:
+The baseline roadmap scales for a mid-size organization (1,000-15,000 employees). Adjust timelines for your scale:
 
 | Organization Size | Timeline Adjustment | Budget Adjustment |
 |-------------------|---------------------|-------------------|
-| Small (1-2 facilities) | -2 weeks | 0.6× |
-| Mid-size (3-5 facilities) | Baseline | 1.0× |
-| Large (6-10 facilities) | +2 weeks | 1.5× |
-| Enterprise (10+ facilities) | +4 weeks | 2.0-3.0× |
+| Small (<1,000 employees) | -2 weeks | 0.6× |
+| Mid-size (1,000-15,000 employees) | Baseline | 1.0× |
+| Large (15,000-50,000 employees) | +2 weeks | 1.5× |
+| Enterprise (50,000+ employees) | +4 weeks | 2.0-3.0× |
 
-Larger organizations require more stakeholder alignment, broader testing, and phased rollout across facilities.
+Larger organizations require more stakeholder alignment, broader testing, and phased rollout across business units.
 
 ---
 
 ## Part 5: Risk Management & Phase Gates
 
-### 5.1 Risk Escalation Framework
+### Risk Escalation Framework
 
-**Diagram 3: Risk Escalation Framework**
+**Diagram 7: Risk Escalation Framework**
 
 ```mermaid
 
@@ -640,44 +642,15 @@ graph LR
 
 ```
 
-### 5.2 Phase Gate Checkpoints
+### Phase Gate Checkpoints
 
-Every phase ends with a formal go/no-go decision. These gates prevent the most common failure mode: proceeding with gaps that compound into production failures.
-
-**Phase 1 Gate (End of Week 4)**
-- INPACT™ score ≥40 (±5% tolerance)
-- Layer 1 storage infrastructure provisioned and tested
-- Layer 2 CDC operational for critical tables (appointments, demographics, insurance)
-- Data freshness <30 seconds verified
-- Decision: Proceed to Phase 2 or extend Phase 1
-
-**Phase 2 Gate (End of Week 7)**
-- INPACT™ score ≥65 (±5% tolerance)
-- Query accuracy ≥85% on 500-query test set
-- Semantic layer operational with entity resolution
-- RAG pipeline end-to-end functional
-- Decision: Proceed to Phase 3 or tune accuracy
-
-**Phase 3 Gate (End of Week 10)**
-- INPACT™ score ≥80 (±5% tolerance)
-- All 7 layers operational
-- HITL escalation rate <15%
-- Audit trail 100% complete
-- HIPAA compliance validated
-- Decision: Proceed to Phase 4 or strengthen governance
-
-**Phase 4 Gate (End of Week 12)**
-- UAT success rate ≥90%
-- All 15 production readiness criteria met (see Chapter 12)
-- Stakeholder sign-off obtained
-- Operations team trained
-- Decision: Go-live or extend validation
+Every phase ends with a formal go/no-go decision. These gates prevent the most common failure mode: proceeding with gaps that compound into production failures. Phase gate criteria are documented in each phase section (Part 2). The critical discipline: never skip a gate, never proceed with gaps.
 
 **Gate Decision Authority**
 
-CTO/CDO makes the final call with steering committee input. Never delegate gate decisions to the implementation team—they have incentive to proceed even with gaps.
+CTO/CDO makes the final call with steering committee input. Never delegate gate decisions to the implementation team - they have incentive to proceed even with gaps.
 
-### 5.3 Weekly Health Checks
+### Weekly Health Checks
 
 Within each phase, Friday health checks catch issues early:
 
@@ -687,29 +660,34 @@ Within each phase, Friday health checks catch issues early:
 
 **Never let blockers persist across weekends without escalation.**
 
-### 5.4 Echo's Risk Experience
+### Common Risk Patterns
 
-Echo had two yellow weeks across 12 weeks. Both were resolved within the week:
+Most transformations encounter 1-3 yellow weeks. Common patterns and mitigations:
 
-**Week 3 (Yellow): CDC Complexity**
-- Issue: EHR CDC integration took 2 extra days due to legacy system constraints
-- Mitigation: Parallelized storage testing while completing CDC work
-- Resolution: Foundation still operational by Week 4; no phase extension needed
+**Phase 1 Risk: CDC Complexity**
+- Issue: Legacy system CDC integration takes longer than planned
+- Mitigation: Parallelize other workstreams while resolving; have batch fallback ready
+- Prevention: Budget 1-2 extra days for CDC; engage source system experts early
 
-**Week 7 (Yellow): Accuracy Below Target**
-- Issue: RAG accuracy at 82%, below 85% gate requirement
-- Mitigation: Added Cohere reranking; implemented hybrid search
-- Resolution: Reached 85% accuracy; Phase 3 started on schedule
+**Phase 2 Risk: Accuracy Plateau**
+- Issue: RAG accuracy stalls at 80-82%, below 85% gate requirement
+- Mitigation: Add reranking layer; implement hybrid search; expand semantic layer
+- Prevention: Build accuracy testing into daily workflow; don't wait for phase gate
 
-Zero red-status weeks. The weekly health check discipline caught issues before they became blockers.
+**Phase 3 Risk: Policy Complexity**
+- Issue: ABAC policy definition takes longer as edge cases emerge
+- Mitigation: Start with core policies; add edge cases iteratively post-launch
+- Prevention: Involve compliance early; document policy requirements in Phase 1
+
+The weekly health check discipline catches issues before they become blockers.
 
 ---
 
 ## Part 6: 90-Day Tracker System
 
-### 6.1 Seven-Tab Overview
+### Seven-Tab Overview
 
-**Diagram 7: Seven-Tab Tracker System**
+**Diagram 8: Seven-Tab Tracker System**
 
 ```mermaid
 
@@ -759,11 +737,11 @@ graph RL
 
 ```
 
-### 6.2 How the Tabs Work Together
+### How the Tabs Work Together
 
 | Tab | Purpose | Primary User | Update Frequency |
 |-----|---------|--------------|------------------|
-| **Tab 1: Weekly Progress** | Executive dashboard—overall status | Project Manager | Weekly (Friday) |
+| **Tab 1: Weekly Progress** | Executive dashboard - overall status | Project Manager | Weekly (Friday) |
 | **Tab 2: INPACT™ Tracker** | Six dimensions, week-by-week scores | Data Architect | Weekly |
 | **Tab 3: GOALS™ Dashboard** | Five operational metrics | Operations Lead | Weekly (Phase 3+) |
 | **Tab 4: 7-Layer Status** | Layer-by-layer build progress | Technical Lead | Weekly |
@@ -771,7 +749,7 @@ graph RL
 | **Tab 6: Communication Log** | Meetings, decisions, action items | Project Manager | Per meeting |
 | **Tab 7: Budget Tracker** | Spend vs. plan by category | Finance | Weekly |
 
-### 6.3 Tab Details
+### Tab Details
 
 **Tab 1: Weekly Progress Dashboard**
 
@@ -791,17 +769,17 @@ Technical tracking of layer-by-layer progress. Each layer shows weekly status (�
 
 **Tab 5: Risk & Blocker Log**
 
-Issue tracking with probability, impact, severity, owner, mitigation plan, and resolution status. Echo logged 12 risks over 12 weeks; 10 resolved within the week, 2 required phase adjustments.
+Issue tracking with probability, impact, severity, owner, mitigation plan, and resolution status. Expect 10-15 risks over 12 weeks; most resolve within the week, 1-2 may require phase adjustments.
 
 **Tab 6: Stakeholder Communication Log**
 
-Documents every meeting, decision, and action item. Critical for maintaining alignment and providing audit trail. Echo logged 45 communications across 12 weeks including daily standups, weekly reviews, and bi-weekly executive steering.
+Documents every meeting, decision, and action item. Critical for maintaining alignment and providing audit trail. Expect 40-50 logged communications across 12 weeks including daily standups, weekly reviews, and bi-weekly executive steering.
 
 **Tab 7: Budget Tracker**
 
 Monitors spend by category (Technology, Services, Staff) against plan. Weekly actuals with variance tracking and percentage spent. Threshold alerts: Green (within ±5%), Yellow (±5-10%), Red (>±10%).
 
-### 6.4 Getting Started with the Tracker
+### Getting Started with the Tracker
 
 **Before Week 1:**
 1. Download the template at colaberry.ai/90-day-tracker
@@ -839,9 +817,9 @@ Two questions remain: *What technologies should you select?* and *How do you ope
 
 **Chapter 11: Technology Selection Guide**
 
-Echo chose Databricks, Pinecone, LangChain, OPA, and Datadog. Were these the right choices? Chapter 11 provides:
+How do you choose between Databricks and Snowflake? Pinecone and Weaviate? Build or buy? Chapter 11 provides:
 - Vendor evaluation methodology for each of the seven layers
-- Echo's complete technology stack with selection rationale
+- Technology stack options with selection rationale
 - Build vs. buy analysis framework
 - Alternative options for different contexts and budgets
 
@@ -852,7 +830,7 @@ Deployment is not the finish line. Chapter 12 covers everything after go-live:
 - MLOps practices for agent systems (model monitoring, drift detection, retraining)
 - Incident response and escalation procedures
 - Continuous improvement from feedback loops
-- Ongoing operations breakdown ($52K/month)
+- Ongoing operations cost management
 
 **Your Monday Morning**
 
@@ -860,11 +838,11 @@ Week 1 starts with Layer 1 storage provisioning. By Friday, you should have:
 
 - Current-state documentation complete (all seven layers assessed)
 - Stakeholder alignment confirmed (steering committee formed)
-- Storage infrastructure provisioning underway (Databricks, Redis)
+- Storage infrastructure provisioning underway
 - Budget approved and resources allocated
 - Week 2 plan finalized with assigned owners
 
-The infrastructure exists. The frameworks are proven. The tracker is ready.
+The frameworks are proven. The tracker is ready.
 
 **The 90-day clock starts now.**
 
@@ -874,14 +852,14 @@ The infrastructure exists. The frameworks are proven. The tracker is ready.
 
 | Part | Content | Key Takeaway |
 |------|---------|--------------|
-| **Part 1** | Roadmap overview | Four phases, $992K actual of $1.23M budget |
+| **Part 1** | Roadmap overview | Four phases with clear boundaries and checkpoints |
 | **Part 2** | Phase summaries | Foundation → Intelligence → Trust → Operations |
-| **Part 3** | Investment summary | 19% under budget, 477% 3-year ROI |
+| **Part 3** | Investment summary | $770K-$1.5M range, 400-600% 3-year ROI potential |
 | **Part 4** | Adaptation guidance | Customize based on your INPACT™ score |
 | **Part 5** | Risk management | Phase gates, escalation framework |
 | **Part 6** | 90-Day Tracker | Seven tabs for implementation tracking |
 
-**Echo's Complete Journey:** 28/100 → 89/100 INPACT™ score across 12 weeks, transforming 9-13 second queries into 1.6-second responses with 87% NLU accuracy and <8% HITL override rate.
+> **Evidence Note:** Budget and timeline figures in this chapter are informed by Echo Health Systems' implementation ($992K actual, 12 weeks, 28→89 INPACT™). For Echo's complete journey, see Chapter 8.
 
 ---
 
