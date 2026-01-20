@@ -22,7 +22,7 @@ Marcus Williams looked up from his laptop. The operations dashboard showed green
 
 "And Echo's journey becomes the benchmark."
 
-"Twenty-eight to eighty-nine. Every data point real. Every week documented." Sarah stepped back. "They don't have to guess what's possible."
+"Twenty-eight to eighty-nine. Every data point and every week documented." Sarah stepped back. "They don't have to guess what's possible."
 
 This chapter is what they wrote down.
 
@@ -331,7 +331,7 @@ You have two paths to complete your INPACT™ assessment, both yielding identica
 
 **Option 1: Online Assessment (Coming Q1 2026)**
 
-Colaberry is developing an automated assessment platform at [colaberry.ai/assessment](https://colaberry.ai/assessment). The online tool will provide:
+Colaberry is developing an automated assessment platform at [https://trustbeforeintelligence.ai/assessment](https://trustbeforeintelligence.ai/assessment) or [colaberry.ai/assessment](https://colaberry.ai/assessment). The online tool will provide:
 
 - Automated scoring engine with instant results
 - Real-time gap analysis with visualizations
@@ -354,9 +354,41 @@ Complete the assessment using this chapter's 36 questions:
 
 **Recommended Approach**
 
-Complete the manual assessment now. Thirty minutes of honest evaluation delivers immediate clarity on your agent readiness posture. When the online tool launches, you can validate your self-assessment and track progress over time.
+Complete the manual assessment now. Thirty minutes of honest evaluation delivers immediate clarity on your agent readiness posture. If you use the online tool, you can validate your self-assessment and track progress over time.
 
 Both approaches use identical questions and scoring methodology. Your scores will be directly comparable.
+
+---
+
+### Honesty Is the Best Policy
+
+The assessment's value depends entirely on honest answers. Inflated scores produce incorrect priorities and wasted investment. Accurate scores, even painful ones, lead to effective roadmaps.
+
+**Common Scoring Traps**
+
+- **Aspirational scoring**: "We're planning to implement real-time CDC next quarter." Score your *current* state, not your roadmap. If CDC isn't operational today, it doesn't count.
+
+- **Best-case scoring**: "On a good day, we hit sub-2-second response times." Score your *typical* performance, not peak performance. If most queries take 5+ seconds, score accordingly.
+
+- **Departmental scoring**: "Our data science team has a great semantic layer." Score your *organization-wide* capability. If the semantic layer serves one team but not the agents, it doesn't fulfill the need.
+
+- **Technology-possession scoring**: "We own Databricks." Owning technology isn't the same as operational capability. Score based on what's working, not what's licensed.
+
+**Honest Assessment Tips**
+
+1. **Score what EXISTS today**, not what's planned, budgeted, or promised
+2. **Get multiple perspectives**. Data engineers, operations staff, and business users often see different realities
+3. **Use evidence**: If you claim a score of 5, can you prove it with metrics?
+4. **When uncertain, score lower**. Conservative scores lead to appropriate investment, not over-engineering
+5. **Revisit quarterly**. Your score should improve as infrastructure matures
+
+**The Value of Honesty**
+
+Echo Health Systems scored 28/100 on their initial assessment. That number was painful to accept. Their CTO, Sarah Cedao, later reflected: "Twenty-eight felt like failure. But it was the most valuable number we'd ever seen. It told us exactly where to invest. Every dollar we spent addressed a real gap, not a perceived one."
+
+An inflated score of 50/100 would have led Echo to skip foundational work. They would have attempted intelligence layers on unstable foundations. The agents would have failed, and the failure would have been blamed on AI, not infrastructure.
+
+Accurate scores lead to accurate roadmaps. Accurate roadmaps lead to successful agents.
 
 ---
 
@@ -880,37 +912,6 @@ Users and regulators must understand how agents reach conclusions. Black-box dec
 
 **T Dimension Total: ___ / 36** → **T Score: ___ / 6** (divide by 6)
 
----
-
-### Honesty Is the Best Policy
-
-The assessment's value depends entirely on honest answers. Inflated scores produce incorrect priorities and wasted investment. Accurate scores, even painful ones, lead to effective roadmaps.
-
-**Common Scoring Traps**
-
-- **Aspirational scoring**: "We're planning to implement real-time CDC next quarter." Score your *current* state, not your roadmap. If CDC isn't operational today, it doesn't count.
-
-- **Best-case scoring**: "On a good day, we hit sub-2-second response times." Score your *typical* performance, not peak performance. If most queries take 5+ seconds, score accordingly.
-
-- **Departmental scoring**: "Our data science team has a great semantic layer." Score your *organization-wide* capability. If the semantic layer serves one team but not the agents, it doesn't fulfill the need.
-
-- **Technology-possession scoring**: "We own Databricks." Owning technology isn't the same as operational capability. Score based on what's working, not what's licensed.
-
-**Honest Assessment Tips**
-
-1. **Score what EXISTS today**, not what's planned, budgeted, or promised
-2. **Get multiple perspectives**. Data engineers, operations staff, and business users often see different realities
-3. **Use evidence**: If you claim a score of 5, can you prove it with metrics?
-4. **When uncertain, score lower**. Conservative scores lead to appropriate investment, not over-engineering
-5. **Revisit quarterly**. Your score should improve as infrastructure matures
-
-**The Value of Honesty**
-
-Echo Health Systems scored 28/100 on their initial assessment. That number was painful to accept. Their CTO, Sarah Cedao, later reflected: "Twenty-eight felt like failure. But it was the most valuable number we'd ever seen. It told us exactly where to invest. Every dollar we spent addressed a real gap, not a perceived one."
-
-An inflated score of 50/100 would have led Echo to skip foundational work. They would have attempted intelligence layers on unstable foundations. The agents would have failed, and the failure would have been blamed on AI, not infrastructure.
-
-Accurate scores lead to accurate roadmaps. Accurate roadmaps lead to successful agents.
 
 ---
 
@@ -1039,7 +1040,7 @@ You're close to production readiness:
 
 Consider extended timeline (16+ weeks), AIXcelerator acceleration, or phased approach to achieve pilot readiness first.
 
-*For complete budget guidance by score range, see Chapter 10, Part 1 and Chapter 11, Section 1.4.*
+*For complete budget guidance by score range, see Chapter 10 and Chapter 11*
 
 **Finding Your Starting Point**
 
