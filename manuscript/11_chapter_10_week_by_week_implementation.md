@@ -63,7 +63,7 @@ graph LR
 
 ### Welcome to Your 90-Day Journey
 
-Chapter 9 gave you the diagnosis. This chapter gives you the treatment plan - a week-by-week playbook for transforming your infrastructure from assessment to production-ready. The playbook is universal; where specific numbers help, we reference real implementations as evidence.
+Chapter 9 gave you the diagnosis. This chapter gives you the treatment plan - a week-by-week playbook for transforming your infrastructure from assessment to production-ready. The playbook is universal.
 
 **Why 90 Days?**
 

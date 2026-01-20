@@ -1061,30 +1061,30 @@ You have your INPACT™ score. You've seen how Echo progressed from 28 to 89. No
 
 ### Your Trust Band
 
-Your trust band determines your transformation scope.
+Your trust band estimates your transformation **timeline and investment level**. Your lowest dimensions (next section) determine **where to focus**.
 
 **🟢 HIGH TRUST (86-100%)**  
-**Timeline:** 2-4 weeks | **Focus:** Operational excellence, scaling | **Guide:** Chapter 12
+**Timeline:** 2-4 weeks | **Budget:** $50K-$150K | **Guide:** Chapter 12
 
 You're ready. Your infrastructure fulfills agent needs across all six dimensions. Deploy with confidence. Organizations in this band often arrived through prior modernization efforts: cloud migrations, data platform investments, or governance initiatives that weren't labeled "AI readiness" but delivered exactly that.
 
-**🟡 GOOD TRUST (67-83%)**  
-**Timeline:** 4-8 weeks | **Focus:** Trust layers (L5-L7) | **Guide:** Chapters 10-11
+**🟡 GOOD TRUST (67-85%)**  
+**Timeline:** 4-8 weeks | **Budget:** $200K-$500K | **Guide:** Chapters 10-11
 
 Solid foundations with gaps in specific dimensions. Production deployment is achievable with targeted investment. But don't underestimate P (Permitted) and T (Transparent). Organizations assume governance and transparency can be "added at the end." They're wrong. These dimensions become deployment blockers.
 
 **🟠 MODERATE TRUST (50-67%)**  
-**Timeline:** 8-12 weeks | **Focus:** Intelligence + Trust (L3-L6) | **Guide:** Chapters 10-11
+**Timeline:** 8-12 weeks | **Budget:** $500K-$900K | **Guide:** Chapters 10-11
 
 You can see your data. You can run queries quickly. But your agents don't understand user questions, and you can't enforce who sees what. This is the dangerous zone. Don't deploy now and "add governance later." Organizations who tried crashed - agents returning confidential data to unauthorized users, misunderstanding questions so badly that users stopped trusting them entirely.
 
 **🔴 LOW TRUST (33-50%)**  
-**Timeline:** 12-16 weeks | **Focus:** All layers systematically | **Guide:** Chapters 10-11
+**Timeline:** 12-16 weeks | **Budget:** $800K-$1.2M | **Guide:** Chapters 10-11
 
 Your infrastructure was built for a different era - BI reports, analyst queries, batch processing. Agents need something fundamentally different. Attempting to deploy agents on this foundation produces failures that get blamed on AI rather than infrastructure. Echo started at 28/100 in this band. Their 90-day transformation proves it's achievable, but it requires systematic investment.
 
 **⚫ VERY LOW TRUST (<33%)**  
-**Timeline:** 16+ weeks | **Focus:** Foundations first | **Guide:** Chapters 10-12
+**Timeline:** 16+ weeks | **Budget:** $1.2M-$1.5M+ | **Guide:** Chapters 10-12
 
 Your current infrastructure cannot support agent workloads. This isn't a gap to close - it's a foundation to build. Organizations who attempt deployment anyway experience predictable failures: agents that take minutes to respond, answers that contradict each other, security violations that trigger compliance investigations. The damage poisons future AI initiatives. "We tried AI and it didn't work" becomes organizational mythology.
 
@@ -1092,7 +1092,9 @@ Your current infrastructure cannot support agent workloads. This isn't a gap to 
 
 ### Closing Your Gaps
 
-Not all gaps are equal. Your lowest-scoring dimensions reveal where to focus first.
+Your trust band tells you *how long* and *how much*. Your lowest dimensions tell you *where to focus*.
+
+Regardless of your overall score, your lowest-scoring dimensions reveal which layers need the most attention. A score of 70 with weak Instant (I) still requires Phase 1 foundation work. Not all gaps are equal.
 
 **Diagram 6: Gap-to-Phase Prioritization Flow**
 
@@ -1170,11 +1172,15 @@ If several dimensions score 1-2, prioritize based on dependencies: I and C first
 
 ## Bridge to Chapter 10
 
-You now have your INPACT™ score and know which dimensions need work. You understand how Echo progressed from 28/100 to 89/100 and where your journey fits that benchmark.
+You now have:
+- Your **INPACT™ score** (overall readiness)
+- Your **trust band** (timeline and budget estimate)
+- Your **priority dimensions** (where to focus)
+- Your **priority layers** (from the Gap Prioritization Matrix)
 
-Chapter 10 translates your score into a week-by-week implementation plan. Whether you're starting at 28/100 like Echo or entering at 60/100 with partial infrastructure already in place, Chapter 10 customizes the 90-day roadmap to your starting point.
+Chapter 10 provides the week-by-week playbook. The four-phase sequence (Foundation → Intelligence → Trust → Operations) is fixed. What varies is where you invest the most time based on your priority layers.
 
-Your assessment revealed the gaps. The roadmap shows how to close them.
+Your assessment revealed the gaps. The playbook shows how to close them.
 
 Turn the page to build your plan.
 
@@ -1187,7 +1193,7 @@ Turn the page to build your plan.
 | **Part 1: Methodology** | One INPACT™ assessment measures all three pillars: needs, architecture, and operations |
 | **Part 2: The 36 Questions** | Complete self-assessment tool covering six dimensions with 1-6 scoring |
 | **Part 3: Echo's Benchmark** | 28→89 progression provides calibration for your own journey |
-| **Part 4: Interpretation** | Trust bands determine timeline; lowest dimensions reveal priorities |
+| **Part 4: Interpretation** | Trust bands estimate timeline and budget; lowest dimensions determine focus |
 
 **Your INPACT™ Score**: ___/100
 
