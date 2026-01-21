@@ -1,6 +1,6 @@
-# Chapter 10: The 90-Day AI Agent Readiness Playbook
+# Chapter 10: The AI Agent Readiness Playbook
 
-## The Complete Implementation Guide
+## From Assessment to Production in 90 Days
 
 ---
 
@@ -59,9 +59,9 @@ graph LR
 
 ---
 
-## Part 1: Roadmap Overview
+## Part 1: The Roadmap
 
-### Welcome to Your 90-Day Journey
+### Your 90-Day Journey
 
 Chapter 9 gave you the diagnosis: your INPACT™ score, trust band, and priority layers. This chapter gives you the treatment plan - a week-by-week playbook for transforming your infrastructure from assessment to production-ready. The playbook is universal; where specific numbers help, we reference real implementations as evidence.
 
@@ -187,7 +187,7 @@ graph LR
 
 ---
 
-## Part 2: Phase Summaries
+## Part 2: The Four Phases
 
 ### Phase 1: Foundation (Weeks 1-4)
 
@@ -469,7 +469,7 @@ Phase 4 validates everything works together:
 
 ---
 
-## Part 3: Investment Summary
+## Part 3: The Investment Approach
 
 ### Budget Framework
 
@@ -573,7 +573,7 @@ ROI sources vary by industry but typically include: operational efficiency gains
 
 ---
 
-## Part 4: Adapting Your Roadmap
+## Part 4: Your Path
 
 ### Receiving Your Chapter 9 Results
 
@@ -631,7 +631,7 @@ Larger organizations require more stakeholder alignment, broader testing, and ph
 
 ---
 
-## Part 5: Risk Management & Phase Gates
+## Part 5: Managing Risk
 
 ### Risk Escalation Framework
 
@@ -727,7 +727,7 @@ The weekly health check discipline catches issues before they become blockers.
 
 ---
 
-## Part 6: 90-Day Tracker System
+## Part 6: The AI Agent Readiness Tracker
 
 ### Seven-Tab Overview
 
@@ -793,7 +793,7 @@ graph RL
 | **Tab 6: Communication Log** | Meetings, decisions, action items | Project Manager | Per meeting |
 | **Tab 7: Budget Tracker** | Spend vs. plan by category | Finance | Weekly |
 
-### Tab Details
+### Inside the Seven Tabs
 
 **Tab 1: Weekly Progress Dashboard**
 
