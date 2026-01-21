@@ -1064,29 +1064,31 @@ You have your INPACT™ score. You've seen how Echo progressed from 28 to 89. No
 Your trust band estimates your transformation **timeline and investment level**. Your lowest dimensions (next section) determine **where to focus**.
 
 **🟢 HIGH TRUST (86-100%)**  
-**Timeline:** 2-4 weeks | **Budget:** $50K-$150K | **Guide:** Chapter 12
+**Timeline:** 2-4 weeks | **Budget:** $20K-$150K | **Guide:** Chapter 12
 
 You're ready. Your infrastructure fulfills agent needs across all six dimensions. Deploy with confidence. Organizations in this band often arrived through prior modernization efforts: cloud migrations, data platform investments, or governance initiatives that weren't labeled "AI readiness" but delivered exactly that.
 
 **🟡 GOOD TRUST (67-85%)**  
-**Timeline:** 4-8 weeks | **Budget:** $200K-$500K | **Guide:** Chapters 10-11
+**Timeline:** 4-8 weeks | **Budget:** $60K-$500K | **Guide:** Chapters 10-11
 
 Solid foundations with gaps in specific dimensions. Production deployment is achievable with targeted investment. But don't underestimate P (Permitted) and T (Transparent). Organizations assume governance and transparency can be "added at the end." They're wrong. These dimensions become deployment blockers.
 
 **🟠 MODERATE TRUST (50-67%)**  
-**Timeline:** 8-12 weeks | **Budget:** $500K-$900K | **Guide:** Chapters 10-11
+**Timeline:** 8-12 weeks | **Budget:** $120K-$900K | **Guide:** Chapters 10-11
 
 You can see your data. You can run queries quickly. But your agents don't understand user questions, and you can't enforce who sees what. This is the dangerous zone. Don't deploy now and "add governance later." Organizations who tried crashed - agents returning confidential data to unauthorized users, misunderstanding questions so badly that users stopped trusting them entirely.
 
 **🔴 LOW TRUST (33-50%)**  
-**Timeline:** 12-16 weeks | **Budget:** $800K-$1.2M | **Guide:** Chapters 10-11
+**Timeline:** 12-16 weeks | **Budget:** $190K-$1.2M | **Guide:** Chapters 10-11
 
 Your infrastructure was built for a different era - BI reports, analyst queries, batch processing. Agents need something fundamentally different. Attempting to deploy agents on this foundation produces failures that get blamed on AI rather than infrastructure. Echo started at 28/100 in this band. Their 90-day transformation proves it's achievable, but it requires systematic investment.
 
 **⚫ VERY LOW TRUST (<33%)**  
-**Timeline:** 16+ weeks | **Budget:** $1.2M-$1.5M+ | **Guide:** Chapters 10-12
+**Timeline:** 16+ weeks | **Budget:** $190K-$1.5M+ | **Guide:** Chapters 10-12
 
 Your current infrastructure cannot support agent workloads. This isn't a gap to close - it's a foundation to build. Organizations who attempt deployment anyway experience predictable failures: agents that take minutes to respond, answers that contradict each other, security violations that trigger compliance investigations. The damage poisons future AI initiatives. "We tried AI and it didn't work" becomes organizational mythology.
+
+*Budget ranges reflect the spectrum from pure open-source (low end) to commercial platforms (high end). See Chapter 10, Part 3 for detailed track options.*
 
 ---
 
