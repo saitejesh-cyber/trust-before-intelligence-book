@@ -245,6 +245,10 @@ Phase 1 establishes the foundation everything else depends on. Build layer-by-la
 
 **Common Risk:** CDC integration delays are typical - legacy system complexity often adds 1-3 days. Have parallel workstreams ready to maintain momentum.
 
+**Technology Options**
+
+For Layer 1 and Layer 2 technology details, see Chapter 4. For vendor selection guidance, see Chapter 11.
+
 **Phase Gate Checkpoint**
 
 - INPACT™ score ≥40 (±5% tolerance)
@@ -309,14 +313,14 @@ Phase 2 gives agents the ability to understand and reason. Build layer-by-layer:
 
 **Weeks 6-7: Layer 4 (Intelligent Retrieval)**
 - Vector database for semantic search (Pinecone, Weaviate, Chroma, or equivalent)
-- Five-stage RAG pipeline (see Chapter 5, Diagram 7): Query Understanding → Retrieval → Reranking → Augmentation → Generation
+- Seven-stage intelligence pipeline (see Chapter 5, Diagram 7): Query → Embed → Retrieve → Rerank → Context → LLM → Cache
 - Semantic caching to reduce LLM costs (target: 70%+ hit rate)
+
+**Common Risk:** Accuracy often plateaus at 80-82% before hitting the 85% target. Solutions include adding reranking, hybrid search (combining vector and keyword retrieval), or expanding the semantic layer. Don't proceed with gaps - they compound in Phase 3.
 
 **Technology Options**
 
-Orchestration (LangChain, LlamaIndex), vector retrieval (Pinecone, Weaviate, Chroma), reranking (Cohere, cross-encoders), generation (GPT-4, Claude, open-source), caching (Redis, custom). For vendor selection guidance, see Chapter 11, Section 2.
-
-**Common Risk:** Accuracy often plateaus at 80-82% before hitting the 85% target. Solutions include adding reranking, hybrid search (combining vector and keyword retrieval), or expanding the semantic layer. Don't proceed with gaps - they compound in Phase 3.
+For Layer 3 and Layer 4 technology details, see Chapter 5. For vendor selection guidance, see Chapter 11.
 
 **Phase Gate Checkpoint**
 
@@ -375,7 +379,12 @@ Phase 3 makes agents trustworthy:
 
 **Cost Optimization Opportunity**
 
-Phase 3 offers the largest budget variance potential. Open-source choices (OPA vs. commercial Styra, leveraging existing monitoring licenses, retrofitting pilot agents vs. rebuilding) can reduce costs by 50-80%. Evaluate build-vs-buy carefully - see Chapter 11, Section 3.
+Phase 3 offers the largest budget variance potential. Open-source choices (OPA vs. commercial Styra, leveraging existing monitoring licenses, retrofitting pilot agents vs. rebuilding) can reduce costs by 50-80%. Evaluate build-vs-buy carefully - see Chapter 11.
+
+**Technology Options**
+
+For Layer 5, 6, and 7 technology details, see Chapter 6. For vendor selection guidance, see Chapter 11, Section 3.
+
 
 **Phase Gate Checkpoint**
 
