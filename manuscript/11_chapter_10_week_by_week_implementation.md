@@ -377,6 +377,8 @@ Phase 3 makes agents trustworthy:
 - **Observability complete**: Distributed tracing (OpenTelemetry), APM (Datadog, New Relic, or equivalent), complete audit trails for compliance requirements
 - **Multi-agent orchestration**: Coordination framework (LangGraph, AutoGen, or custom) manages specialized agents with shared state
 
+**Common Risk:** Policy complexity often exceeds initial estimates - enterprises typically have 3-5× more access control edge cases than documented. Start with high-impact policies (PHI access, financial transactions) and expand iteratively.
+
 **Cost Optimization Opportunity**
 
 Phase 3 offers the largest budget variance potential. Open-source choices (OPA vs. commercial Styra, leveraging existing monitoring licenses, retrofitting pilot agents vs. rebuilding) can reduce costs by 50-80%. Evaluate build-vs-buy carefully - see Chapter 11.
@@ -427,6 +429,8 @@ Phase 4 validates everything works together:
 | User satisfaction | ≥4.0/5.0 |
 | NLU accuracy (production) | ≥85% |
 | HITL override rate | <15% |
+
+**Common Risk:** UAT reveals unexpected workflow gaps - expect 30-60 edge cases requiring resolution. Build buffer time for iteration; rushing to production with unresolved issues creates post-launch incidents.
 
 **Phase Gate Checkpoint**
 
@@ -521,13 +525,13 @@ Monthly recurring costs after go-live vary by track:
 
 | Cost Component | Commercial | Hybrid | Open-Source |
 |----------------|------------|--------|-------------|
-| Cloud infrastructure | $25K-$40K | $15K-$25K | $8K-$20K |
+| Cloud infrastructure | $20K-$35K | $18K-$30K | $25K-$45K |
 | LLM API/inference | $10K-$20K | $5K-$12K | $2K-$8K |
 | Platform licenses | $8K-$15K | $3K-$8K | $0-$2K |
 | Support/maintenance | $5K-$10K | $5K-$10K | $8K-$15K |
-| **Total monthly** | **$48K-$85K** | **$28K-$55K** | **$18K-$45K** |
+| **Total monthly** | **$43K-$80K** | **$31K-$60K** | **$35K-$70K** |
 
-Open-source reduces platform costs but may increase support/maintenance (internal staff time).
+Open-source reduces platform license costs but increases cloud infrastructure (self-managed systems require more compute) and support/maintenance (internal staff time). The total cost of ownership converges across tracks - the difference is where the money goes, not how much.
 
 ### ROI Expectations
 
@@ -539,7 +543,7 @@ Open-source reduces platform costs but may increase support/maintenance (interna
 
 ROI sources vary by industry but typically include: operational efficiency gains, reduced manual workload, improved accuracy, faster response times, and avoided compliance incidents.
 
-> **Evidence Note:** Budget and timeline figures in this chapter are informed by Echo Health Systems' implementation ($992K actual, 12 weeks, 28→89 INPACT™). For Echo's complete journey, see Chapter 8.
+> **Note:** Budget and timeline figures in this chapter reflect typical ranges for mid-size enterprise implementations based on the 7-Layer Architecture methodology.
 
 ---
 
@@ -873,7 +877,7 @@ The frameworks are proven. The tracker is ready.
 | **Part 5** | Risk management | Phase gates, escalation framework |
 | **Part 6** | 90-Day Tracker | Seven tabs for implementation tracking |
 
-> **Evidence Note:** Budget and timeline figures in this chapter are informed by Echo Health Systems' implementation ($992K actual, 12 weeks, 28→89 INPACT™). For Echo's complete journey, see Chapter 8.
+> **Note:** Budget and timeline figures in this chapter reflect typical ranges for mid-size enterprise implementations based on the 7-Layer Architecture methodology.
 
 ---
 
