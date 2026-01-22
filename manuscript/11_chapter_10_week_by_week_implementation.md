@@ -225,7 +225,7 @@ graph LR
 | **Weeks** | 1-4 |
 | **Layers** | L1 (Multi-Modal Storage) → L2 (Real-Time Data Fabric) |
 | **INPACT™ Target** | +10-15 points |
-| **Budget Range** | $350K-$550K (varies by scale and existing infrastructure) |
+| **Budget Range** | $80K-$550K (see Part 3: The Investment Approach) |
 | **Team** | 2 senior data engineers, 1 cloud architect, 1 DBA, 2 CDC specialists (consulting) |
 | **Primary Focus** | Data freshness (<30 seconds), query performance |
 
@@ -287,53 +287,14 @@ graph LR
 
 ```
 
-**Diagram 5: Five-Stage RAG Pipeline**
-
-```mermaid
-graph LR
-    subgraph STAGE1["STAGE 1"]
-        S1["<b>Query<br/>Understanding</b><br/><b>Intent · Entities</b>"]
-    end
-    
-    subgraph STAGE2["STAGE 2"]
-        S2["<b>Retrieval</b><br/><b>Top 20 Candidates</b>"]
-    end
-    
-    subgraph STAGE3["STAGE 3"]
-        S3["<b>Reranking</b><br/><b>Cross-Encoder</b>"]
-    end
-    
-    subgraph STAGE4["STAGE 4"]
-        S4["<b>Augmentation</b><br/><b>Context + Citations</b>"]
-    end
-    
-    subgraph STAGE5["STAGE 5"]
-        S5["<b>Generation</b><br/><b>LLM Response</b>"]
-    end
-    
-    S1 -->|<b>Embedding</b>| S2 -->|<b>Top 5</b>| S3 -->|<b>Prompt</b>| S4 -->|<b>API Call</b>| S5
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    
-    style STAGE1 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
-    style STAGE2 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
-    style STAGE3 fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style STAGE4 fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style STAGE5 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style S1 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style S2 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style S3 fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style S4 fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style S5 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style Copyright fill:#ffffff,stroke:none,color:#666666
-```
+*For RAG pipeline architecture details, see Chapter 5, Diagram 7: Layer 4 - Complete Intelligence Pipeline.*
 
 | Attribute | Detail |
 |-----------|--------|
 | **Weeks** | 5-7 |
 | **Layers** | L3 (Semantic Layer) → L4 (Intelligent Retrieval) |
 | **INPACT™ Target** | +20-25 points |
-| **Budget Range** | $300K-$450K (varies by complexity and document volume) |
+| **Budget Range** | $60K-$450K (see Part 3: The Investment Approach) |
 | **Team** | 2 ML engineers, 1 domain SME, semantic layer specialists |
 | **Primary Focus** | NLU accuracy (target: 85%), semantic layer coverage, RAG pipeline |
 
@@ -348,7 +309,7 @@ Phase 2 gives agents the ability to understand and reason. Build layer-by-layer:
 
 **Weeks 6-7: Layer 4 (Intelligent Retrieval)**
 - Vector database for semantic search (Pinecone, Weaviate, Chroma, or equivalent)
-- Five-stage RAG pipeline (see Diagram 5): Query Understanding → Retrieval → Reranking → Augmentation → Generation
+- Five-stage RAG pipeline (see Chapter 5, Diagram 7): Query Understanding → Retrieval → Reranking → Augmentation → Generation
 - Semantic caching to reduce LLM costs (target: 70%+ hit rate)
 
 **Technology Options**
@@ -370,7 +331,7 @@ Orchestration (LangChain, LlamaIndex), vector retrieval (Pinecone, Weaviate, Chr
 
 ### Phase 3: Trust & Orchestration (Weeks 8-10)
 
-**Diagram 6: Trust Layer Stack**
+**Diagram 5: Trust Layer Stack**
 
 ```mermaid
 
@@ -399,7 +360,7 @@ graph LR
 | **Weeks** | 8-10 |
 | **Layers** | L5 (Agent-Aware Governance) + L6 (Observability complete) + L7 (Orchestration) |
 | **INPACT™ Target** | +15-20 points |
-| **Budget Range** | $80K-$400K (varies significantly based on open-source vs. commercial choices) |
+| **Budget Range** | $30K-$400K (see Part 3: The Investment Approach) |
 | **Team** | 2 security engineers, 2 DevOps engineers, 1 compliance officer, 1 ML engineer |
 | **Primary Focus** | ABAC policies, HITL workflows, audit trails, multi-agent coordination |
 
@@ -435,7 +396,7 @@ Phase 3 offers the largest budget variance potential. Open-source choices (OPA v
 | **Weeks** | 11-12 |
 | **Focus** | Validation, UAT, Production Readiness |
 | **INPACT™ Target** | +2-5 points (refinement) |
-| **Budget Range** | $40K-$80K |
+| **Budget Range** | $20K-$80K (see Part 3: The Investment Approach) |
 | **Team** | UAT facilitators, compliance sign-off, training staff |
 | **Primary Focus** | User Acceptance Testing, production cutover |
 
@@ -635,7 +596,7 @@ Larger organizations require more stakeholder alignment, broader testing, and ph
 
 ### Risk Escalation Framework
 
-**Diagram 7: Risk Escalation Framework**
+**Diagram 6: Risk Escalation Framework**
 
 ```mermaid
 
@@ -731,7 +692,7 @@ The weekly health check discipline catches issues before they become blockers.
 
 ### Seven-Tab Overview
 
-**Diagram 8: Seven-Tab Tracker System**
+**Diagram 7: Seven-Tab Tracker System**
 
 ```mermaid
 
