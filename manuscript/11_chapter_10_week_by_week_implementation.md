@@ -566,9 +566,9 @@ This section shows how to adapt each phase based on your priority layers.
 | L5, L6, L7 | Validate (1-2 weeks) | Validate (1-2 weeks) | **FULL** (3 weeks) | Standard (2 weeks) |
 | All layers need work | **FULL** (4 weeks) | **FULL** (3 weeks) | **FULL** (3 weeks) | **FULL** (2 weeks) |
 
-**Validate** = Audit existing infrastructure, confirm phase gate criteria, fill gaps only (1-2 weeks)  
-**Standard** = Execute as documented in Part 2  
 **FULL** = Maximum investment - this is where your gaps live
+**Standard** = Execute as documented in Part 2  
+**Validate** = Audit existing infrastructure, confirm phase gate criteria, fill gaps only (1-2 weeks)  
 
 ### Handling Multiple Priority Layers
 
