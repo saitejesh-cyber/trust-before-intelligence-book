@@ -1,6 +1,6 @@
 # Chapter 12: Running Agents at Scale
 
-**The GOALS™ Operations Chapter: Three Pillars in Production**
+**The Operations Chapter**
 
 ---
 
