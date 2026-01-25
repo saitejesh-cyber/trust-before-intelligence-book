@@ -19,7 +19,7 @@ graph LR
         T1["15 Criteria<br/>+ GOALS™"]
     end
     
-    subgraph AFTER["OPERATIONAL EXCELLENCE"]
+    subgraph AFTER["PRODUCTION OPERATIONS"]
         direction TB
         A1["Proactive observability<br/><br/>Structured incidents<br/><br/>MLOps automation<br/><br/>Continuous improvement"]
     end
@@ -35,7 +35,7 @@ graph LR
 
 ```
 
-> **Key Takeaway:** Building is easy. Operating at scale requires systematic excellence.
+> **Key Takeaway:** Building is easy. Operating at scale requires systematic discipline.
 
 ---
 
@@ -69,7 +69,7 @@ Marcus pulled up a document. It was three pages long. By Monday morning, it woul
 
 You've completed the hardest part. Chapters 4-6 built the architecture layer by layer. Chapter 10 executed the 90-day roadmap. Chapter 11 selected technologies for each layer. Your INPACT™ score has climbed from wherever you started toward the 86+ threshold that signals agent-readiness.
 
-But building isn't operating. The gap between "architecture complete" and "production ready" has derailed more agent initiatives than infrastructure gaps ever did. Organizations celebrate Week 10 architecture milestones only to stumble in Week 11 pilots. The Architecture of Trust needs operational excellence to deliver sustained value.
+But building isn't operating. The gap between "architecture complete" and "production ready" has derailed more agent initiatives than infrastructure gaps ever did. Organizations celebrate Week 10 architecture milestones only to stumble in Week 11 pilots. The Architecture of Trust needs operational discipline to deliver sustained value.
 
 This chapter completes your journey with five operational components:
 
@@ -835,7 +835,7 @@ Post-mortems prevent repeat incidents. Conduct post-mortems within 48 hours of P
 
 ## Part 4: Continuous Improvement
 
-The Architecture of Trust isn't a destination. It's a foundation for continuous improvement. Your INPACT™ score shouldn't stop at 86/100. Through systematic weekly improvement cycles, organizations can achieve 3-5% accuracy gains in the first month. This section provides the processes that drive ongoing excellence.
+The Architecture of Trust isn't a destination. It's a foundation for continuous improvement. Your INPACT™ score shouldn't stop at 86/100. Through systematic weekly improvement cycles, organizations can achieve 3-5% accuracy gains in the first month. This section provides the processes that drive ongoing improvement.
 
 ---
 
