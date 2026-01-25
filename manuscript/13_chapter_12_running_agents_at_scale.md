@@ -1,10 +1,10 @@
 # Chapter 12: Running Agents at Scale
 
-**The GOALS™ Operations Chapter — Three Pillars in Production**
+**The GOALS™ Operations Chapter: Three Pillars in Production**
 
 ---
 
-**Diagram 1: Operations Value — From Reactive to Proactive**
+**Diagram 1: Operations Value (From Reactive to Proactive)**
 
 ```mermaid
 
@@ -39,7 +39,27 @@ graph LR
 
 ---
 
-*You've built the architecture. All seven layers operational. Three agents validated. Now comes the harder part: keeping it running. This chapter transforms you from architect to operator—15 readiness criteria to validate, MLOps practices to master, incidents to handle, and continuous improvement cycles that turned Echo's 85% accuracy into 88% in just five weeks. The Architecture of Trust is built. Now learn to sustain it.*
+*You've built the architecture. All seven layers operational. Three agents validated. Now comes the harder part: keeping it running at scale. This chapter transforms you from architect to operator. Fifteen readiness criteria to validate, MLOps practices to master, incidents to handle, and continuous improvement cycles that can drive 3-5% accuracy gains in the first month. The Architecture of Trust is built. Now learn to sustain it.*
+
+---
+
+*About a year ago.*
+
+*Friday, 4:47 PM, Week 10.*
+
+*Echo Health Systems, Sarah's Office.*
+
+"What's the worst thing that can happen Monday morning?"
+
+Marcus didn't hesitate. "LLM provider goes down. Agents start hallucinating. A nurse gets bad information about a patient's medication."
+
+Sarah nodded. They'd spent 10 weeks building the architecture. Seven layers. Three agents. Eighty-six on the INPACT™ scale. All the checkboxes checked.
+
+But checkboxes don't answer phones at 2 AM.
+
+"Show me the runbook," Sarah said. "The one for when everything breaks at once."
+
+Marcus pulled up a document. It was three pages long. By Monday morning, it would be twelve.
 
 ---
 
@@ -53,23 +73,25 @@ But building isn't operating. The gap between "architecture complete" and "produ
 
 This chapter completes your journey with five operational components:
 
-**Part 1: Production Readiness.** Fifteen criteria that separate "ready for production" from "ready for failure." Echo validated all 15 before their Week 11 pilot launch.
+**Part 1: Production Readiness.** Fifteen criteria that separate "ready for production" from "ready for failure." Validate all 15 before your pilot launch.
 
 **Part 2: MLOps for Agents.** Model versioning, A/B testing, prompt management, and cost optimization practices adapted from traditional ML operations to agentic systems.
 
-**Part 3: Monitoring and Incident Response.** SLA definitions, alerting strategy, incident triage, and post-mortem processes. When things break—and they will—your response determines whether users lose trust or gain confidence.
+**Part 3: Monitoring and Incident Response.** SLA definitions, alerting strategy, incident triage, and post-mortem processes. When things break (and they will), your response determines whether users lose trust or gain confidence.
 
-**Part 4: Continuous Improvement.** Weekly improvement cycles that drove Echo from 85% to 88% accuracy in five weeks. The Architecture of Trust isn't static—it improves continuously.
+**Part 4: Continuous Improvement.** Weekly improvement cycles that can drive 3-5% accuracy gains in the first month. The Architecture of Trust isn't static. It improves continuously.
 
 **Part 5: AIXcelerator Platform.** For organizations seeking acceleration, how Colaberry's platform compresses the 90-day journey to 45 days while maintaining all three pillars.
 
-Let's begin with the question every organization faces at Week 10: are we actually ready?
+Let's begin with the question every organization faces at Week 10: are you actually ready?
 
 ---
 
 ### 1.2 The 15-Criteria Production Readiness Checklist
 
-Production readiness isn't a feeling—it's a measurable state. Echo validated against 15 specific criteria organized around the Architecture of Trust's three pillars. Each criterion has a clear target, measurement method, and evidence requirement.
+Production readiness isn't a feeling. It's a measurable state. Validate against 15 specific criteria organized around the Architecture of Trust's three pillars. Each criterion has a clear target, measurement method, and evidence requirement.
+
+Throughout this chapter, reference benchmarks are drawn from Echo Health Systems, the pedagogical case study used in this book. Adjust these numbers based on your industry, use case, and risk tolerance. Part 6 consolidates Echo's complete results for easy reference.
 
 **Diagram 2: The 15-Criteria Production Readiness Framework**
 
@@ -85,7 +107,7 @@ graph LR
     end
     
     subgraph GOALS["PILLAR 3: GOALS™"]
-        G1["11. Score ≥ 4.0<br/>12. SLAs Defined<br/>13. Runbooks Ready<br/>14. Rollback < 5min<br/>15. Team Trained"]
+        G1["11. ABAC + Audit<br/>12. Dashboards Active<br/>13. SLA Achievable<br/>14. Semantic Mapped<br/>15. On-Call Staffed"]
     end
     
     READY["PRODUCTION<br/>READY"]
@@ -109,73 +131,43 @@ graph LR
 
 **Pillar 1: INPACT™ Readiness (5 Criteria)**
 
-These criteria validate that your infrastructure genuinely meets agent needs:
+| # | Criterion | INPACT™ Need | How to Measure | Reference Benchmark |
+|---|-----------|--------------|----------------|---------------------|
+| 1 | INPACT™ Score | All 6 | Chapter 9 assessment | ≥86/100 |
+| 2 | Response Time | I (Instant) | Load testing, APM traces | <5s P95 |
+| 3 | NLU Accuracy | N (Natural) | Validation set testing | ≥85% |
+| 4 | HITL Escalation | P (Permitted) | Governance logs | <15% |
+| 5 | Audit Coverage | T (Transparent) | Audit log validation | 100% |
 
-| # | Criterion | INPACT™ Need | Target | How to Measure | Echo Week 10 |
-|---|-----------|--------------|--------|----------------|--------------|
-| 1 | INPACT™ Score ≥ 86 | All 6 | 86/100 minimum | Chapter 9 assessment | ✅ 86/100 |
-| 2 | Response Time < 5s | I (Instant) | <5s P95 | Load testing, APM traces | ✅ 2.2s P95 |
-| 3 | NLU Accuracy ≥ 85% | N (Natural) | ≥85% | Validation set testing | ✅ 83% (85% Week 11) |
-| 4 | HITL Escalation < 15% | P (Permitted) | <15% rate | Governance logs | ✅ 8% |
-| 5 | Audit Coverage 100% | T (Transparent) | 100% | Audit log validation | ✅ 100% |
-
-**Criterion 1: INPACT™ Score ≥ 86** validates overall readiness. Scores below 86 indicate infrastructure gaps that will surface in production. Echo achieved 86/100 at Week 10, meeting the production-ready threshold.
-
-**Criterion 2: Response Time < 5s** ensures users won't abandon agents mid-query. Healthcare workflows can't wait 10 seconds for answers. Echo's P95 latency of 2.2 seconds at Week 10 meant 95% of queries completed well under the 5-second threshold—excellent for clinical use.
-
-**Criterion 3: NLU Accuracy ≥ 85%** measures whether agents understand what users ask. Below 85%, users spend more time correcting misunderstandings than the agent saves. Echo's 83% accuracy at Week 10 was near-threshold, reaching 85% by Week 11 and 87% by Week 12 through continuous improvement.
-
-**Criterion 4: HITL Escalation < 15%** confirms agents handle most queries autonomously. Higher escalation rates indicate the agent isn't trusted—or shouldn't be. Echo's 8% escalation rate demonstrated appropriate confidence calibration.
-
-**Criterion 5: Audit Coverage 100%** ensures every agent action is traceable. In healthcare, a single unaudited decision could trigger compliance violations. Echo achieved complete coverage across all agent interactions.
+Criterion 3 often sparks debate. If you're near threshold with a clear improvement trajectory, launching with aggressive monitoring may be safer than delaying indefinitely. The key: have weekly improvement cycles ready to close the gap.
 
 ---
 
 **Pillar 2: Architecture Readiness (5 Criteria)**
 
-These criteria validate that your seven-layer infrastructure operates correctly:
+| # | Criterion | Layers | How to Measure | Reference Benchmark |
+|---|-----------|--------|----------------|---------------------|
+| 6 | All 7 Layers Operational | L1-L7 | Layer health checks | All functional |
+| 7 | Three+ Agents Validated | L7 | UAT completion | ≥3 agents |
+| 8 | Multi-Agent Orchestration | L7 | Coordination testing | <3s latency |
+| 9 | All Vendor BAAs Signed | All | Contract audit | 100% |
+| 10 | Data Residency Confirmed | L1-L2 | Cloud region audit | Per requirements |
 
-| # | Criterion | Layers | Target | How to Measure | Echo Week 10 |
-|---|-----------|--------|--------|----------------|--------------|
-| 6 | All 7 Layers Operational | L1-L7 | All functional | Layer health checks | ✅ All operational |
-| 7 | Three+ Agents Validated | L7 | ≥3 agents | UAT completion | ✅ 3 agents |
-| 8 | Multi-Agent Orchestration | L7 | <3s latency | Coordination testing | ✅ 2.8s |
-| 9 | All Vendor BAAs Signed | All | 100% | Contract audit | ✅ 12/12 vendors |
-| 10 | Data Residency Confirmed | L1-L2 | US-only | Cloud region audit | ✅ All US |
-
-**Criterion 6: All 7 Layers Operational** confirms no architectural gaps exist. A missing layer becomes a production bottleneck. Echo validated each layer independently before integration testing.
-
-**Criterion 7: Three+ Agents Validated** proves multi-agent capability works. Single-agent deployments hide coordination issues that surface when agents need to collaborate. Echo deployed scheduling, clinical documentation, and care coordination agents.
-
-**Criterion 8: Multi-Agent Orchestration** validates agents work together efficiently. Coordination overhead exceeding 3 seconds frustrates users expecting quick responses. Echo's LangGraph supervisor maintained 2.8-second total latency across agent handoffs.
-
-**Criterion 9: All Vendor BAAs Signed** ensures HIPAA compliance for every technology touching PHI. A single unsigned BAA creates organizational liability. Echo required signed BAAs from all 12 SaaS vendors before production.
-
-**Criterion 10: Data Residency Confirmed** validates PHI stays within required jurisdictions. Healthcare data leaving US regions violates compliance requirements. Echo configured US-only regions for all data stores.
+Architecture criteria are typically pass/fail. If you've followed the 90-day roadmap, these should pass cleanly.
 
 ---
 
 **Pillar 3: GOALS™ Readiness (5 Criteria)**
 
-These criteria validate operational excellence readiness:
+| # | Criterion | GOALS™ | How to Measure | Reference Benchmark |
+|---|-----------|--------|----------------|---------------------|
+| 11 | ABAC + Audit Operational | G (Governance) | Policy testing | <10ms eval |
+| 12 | Dashboards Active | O (Observability) | Dashboard review | Real-time |
+| 13 | SLA Achievable | A (Availability) | Availability testing | 99.5% uptime |
+| 14 | Semantic Layer Mapped | L (Language) | Term coverage audit | Documented |
+| 15 | On-Call Rotation Staffed | S (Solid) | Schedule review | 24/7 coverage |
 
-| # | Criterion | GOALS™ | Target | How to Measure | Echo Week 10 |
-|---|-----------|--------|--------|----------------|--------------|
-| 11 | ABAC + Audit Operational | G (Governance) | <10ms eval | Policy testing | ✅ 6.8ms |
-| 12 | Dashboards Active | O (Observability) | Real-time | Dashboard review | ✅ 200+ metrics |
-| 13 | SLA Achievable | A (Availability) | 99.5% uptime | Availability testing | ✅ 99.7% |
-| 14 | Semantic Layer Mapped | L (Language) | Documented | Term coverage audit | ✅ 2,400 terms |
-| 15 | On-Call Rotation Staffed | S (Solid) | 24/7 coverage | Schedule review | ✅ 3-person rotation |
-
-**Criterion 11: ABAC + Audit Operational** confirms governance doesn't block performance. Policy evaluation exceeding 10ms adds perceptible latency. Echo's 6.8ms evaluation maintained responsive user experience.
-
-**Criterion 12: Dashboards Active** ensures operational visibility exists before production. You can't manage what you can't see. Echo configured 200+ metrics across Datadog and Grafana dashboards.
-
-**Criterion 13: SLA Achievable** validates infrastructure can meet uptime commitments. Promising 99.9% without capacity testing guarantees broken promises. Echo's testing confirmed 99.7% achievable availability.
-
-**Criterion 14: Semantic Layer Mapped** ensures consistent terminology across all agents. Unmapped terms cause disambiguation failures. Echo documented 2,400 clinical terms in their semantic layer.
-
-**Criterion 15: On-Call Rotation Staffed** confirms human response capability exists. Agents without human backup fail catastrophically when issues occur. Echo established a 3-person rotation with PagerDuty integration.
+Criterion 15 is often the last to complete. Finding engineers willing to carry pagers may require negotiation. Consider on-call bonuses if staffing is difficult.
 
 ---
 
@@ -188,101 +180,127 @@ These criteria validate operational excellence readiness:
 | 9-11 | Not ready | 2-4 more weeks of remediation |
 | <9 | Significant gaps | Continue building, reassess |
 
-**Echo's Week 10 Score: 15/15** — Full production readiness achieved.
+Aim for 15/15, but recognize that some criteria may require judgment calls rather than clean passes.
 
 ---
 
-### 1.3 Operational Monitoring References
+### 1.3 Operational Monitoring Essentials
 
-Production operations require ongoing attention across all three pillars. Rather than duplicate earlier guidance, reference these canonical sources:
+Production operations require ongoing monitoring across all three pillars. Here's what to track:
 
-- **INPACT™ monitoring metrics and alert thresholds:** Chapter 9, Part 4 provides the definitive INPACT™ interpretation guide with dimension-specific targets.
-- **Layer ownership and team responsibilities:** Chapter 10, Parts 2-4 document team compositions and layer assignments by phase.
-- **GOALS™ operational cadence:** Chapter 7, Part 5 establishes daily, weekly, and monthly GOALS™ rhythms.
-- **Complete metrics reference:** Appendix E (Quick Reference Card) consolidates all canonical metrics.
+**INPACT™ Operational Metrics**
 
-The sections below focus on what's unique to production operations: go-live planning, MLOps practices, incident response, and continuous improvement.
+| Dimension | What to Monitor | Reference Benchmark | Check Frequency |
+|-----------|-----------------|---------------------|-----------------|
+| I (Instant) | P95 response time | <5s | Real-time |
+| N (Natural) | NLU accuracy rate | ≥85% weekly avg | Daily |
+| P (Permitted) | HITL escalation rate | <15% | Daily |
+| A (Adaptive) | Model drift score | <10% deviation | Weekly |
+| C (Contextual) | Context retrieval success | ≥90% | Daily |
+| T (Transparent) | Audit log completeness | 100% | Real-time |
 
----
+**GOALS™ Operational Metrics**
 
-**🔍 CHECKPOINT: What We've Covered So Far**
+| Dimension | What to Monitor | Reference Benchmark | Check Frequency |
+|-----------|-----------------|---------------------|-----------------|
+| G (Governance) | Policy evaluation latency | <10ms | Real-time |
+| O (Observability) | Dashboard availability | ≥99.9% | Real-time |
+| A (Availability) | System uptime | ≥99.5% | Real-time |
+| L (Language) | Terminology match rate | ≥95% | Weekly |
+| S (Solid) | On-call response time | <5min for P1 | Per incident |
 
-✅ 15 production readiness criteria organized by Architecture of Trust pillar  
-✅ Echo achieved 15/15 ✅ before going live — the threshold for healthcare  
-✅ Readiness references: INPACT™ (Ch 9), Layer ownership (Ch 10), GOALS™ (Ch 7)  
-⭐️ **Next:** Phased rollout strategy that reduces go-live risk
+**Layer Health Checks**
 
-**Reading Time Remaining:** ~25 minutes
+| Layer | Health Check | Frequency |
+|-------|--------------|-----------|
+| L1: Storage | Connection pool, query latency | Every 5 min |
+| L2: Data Fabric | CDC lag, sync status | Every 1 min |
+| L3: Semantic | Embedding freshness, term coverage | Daily |
+| L4: Intelligence | LLM API latency, token usage | Real-time |
+| L5: Governance | Policy sync, ABAC evaluation | Every 5 min |
+| L6: Observability | Log ingestion, dashboard load | Every 1 min |
+| L7: Orchestration | Agent handoff latency, queue depth | Real-time |
 
-**Your Framework Quick Check:** How many of the 15 criteria does your organization currently meet?
+*For detailed scoring methodology, see Chapter 9. For team responsibilities by layer, see Chapter 10.*
 
 ---
 
 ### 1.4 Go-Live Planning
 
-Production readiness enables launch—it doesn't guarantee success. Phased rollout reduces risk by expanding gradually based on demonstrated success.
+Production readiness enables launch, but it doesn't guarantee success. Phased rollout reduces risk by expanding gradually based on demonstrated success.
 
 **Phase 1: Internal Pilot (Week 11)**
 
-| Dimension | Target | Echo Result |
-|-----------|--------|-------------|
-| Users | 50 nurses, 3 shifts | 50 nurses |
-| Duration | 1 week | 1 week |
-| Monitoring | Hourly reviews | Hourly |
-| Success Criteria | 90%+ task completion | 94% ✅ |
-| HITL Threshold | <10% escalation | 8% ✅ |
-| Decision | Proceed to Phase 2 | ✅ Approved |
+| Dimension | Guidance | Reference Benchmark |
+|-----------|----------|---------------------|
+| Users | Start small with friendly users who provide feedback | 50 users |
+| Duration | Minimum 1 week | 1 week |
+| Monitoring | Intensive: catch issues early | Hourly reviews |
+| Success Criteria | High task completion rate | ≥90% |
+| HITL Threshold | Lower than production target | <10% escalation |
+| Decision Gate | Proceed only if criteria met | All green to advance |
 
 Phase 1 validates with friendly users who provide detailed feedback. Hourly monitoring catches issues before they propagate. Success at Phase 1 builds confidence for expansion.
 
 **Phase 2: Department Pilot (Week 12)**
 
-| Dimension | Target | Echo Result |
-|-----------|--------|-------------|
-| Users | Full department (150 nurses) | Emergency Department |
-| Duration | 1 week | 1 week |
-| Monitoring | Daily reviews | Daily |
-| Success Criteria | 85%+ task completion | 91% ✅ |
-| HITL Threshold | <12% escalation | 9% ✅ |
-| Decision | Proceed to Phase 3 | ✅ Approved |
+| Dimension | Guidance | Reference Benchmark |
+|-----------|----------|---------------------|
+| Users | Expand to full department or team | 100-200 users |
+| Duration | Minimum 1 week | 1 week |
+| Monitoring | Shift to sustainable cadence | Daily reviews |
+| Success Criteria | Slightly relaxed from Phase 1 | ≥85% |
+| HITL Threshold | Closer to production target | <12% escalation |
+| Decision Gate | Proceed only if criteria met | All green to advance |
 
 Phase 2 tests at department scale with diverse users and workflows. Daily monitoring balances vigilance with sustainable operations. Success at Phase 2 proves scalability.
 
 **Phase 3: Full Production (Week 13+)**
 
-| Dimension | Target | Echo Plan |
-|-----------|--------|-----------|
-| Users | All clinical staff | 500+ nurses, 200+ physicians |
+| Dimension | Guidance | Reference Benchmark |
+|-----------|----------|---------------------|
+| Users | All target users | Full rollout |
 | Duration | Ongoing | Continuous |
-| Monitoring | Weekly reviews | Weekly |
-| Success Criteria | 80%+ task completion | Ongoing measurement |
-| HITL Threshold | <15% escalation | Continuous optimization |
+| Monitoring | Steady-state cadence | Weekly reviews |
+| Success Criteria | Production target | ≥80% |
+| HITL Threshold | Production target | <15% escalation |
+| Decision Gate | Rollback if thresholds breached | SLA review weekly |
 
-Phase 3 is steady-state operations with continuous improvement cycles replacing intensive monitoring.
-
-*For detailed stakeholder communication cadence during go-live, see Chapter 10, Part 1.4.*
+Phase 3 is steady-state operations with continuous improvement cycles replacing intensive monitoring. The decision gate shifts from "proceed to next phase" to "maintain or rollback." If metrics breach thresholds, trigger incident response.
 
 ---
 
 ### 1.5 The Go/No-Go Decision
 
-Friday afternoon, Week 10. Sarah Cedano convened the go/no-go review with leadership. The 15-criteria checklist showed all green.
+The 15-criteria checklist provides data. The go/no-go meeting interprets it. These questions determine whether your organization is ready:
 
-The clinical question: "What's our fallback if agents give bad recommendations?" Answer: HITL workflows catch clinical risk flags. The 8% escalation rate was manageable.
+**Clinical Risk**
+- What happens if an agent gives a bad recommendation?
+- Can your HITL workflows catch high-risk decisions?
+- Does your clinical staff have capacity to handle the escalation rate?
 
-The business question: "What's the downside of waiting?" Answer: Competitive pressure. Every week of delay meant competitors building operational experience.
+**Business Risk**
+- What's the cost of waiting another month?
+- What competitive pressure exists?
+- Will stakeholder confidence survive another delay?
 
-The security confirmation: Audit coverage complete. ABAC policies tested against 500 scenarios. All 12 vendor BAAs signed.
+**Operational Risk**
+- Have you tested scenarios that aren't in the checklist?
+- Do you have rollback procedures documented and tested?
+- Is your on-call team ready for the first 48 hours?
 
-**Decision: APPROVED for Week 11 pilot launch.**
+**The Question Nobody Asks Out Loud**
+- What happens to this initiative if you launch and it fails?
 
-Three agents went live Monday morning. Fifty nurses across three shifts became first users. The Architecture of Trust would prove itself in production.
+The answer isn't "don't launch." The answer is "launch small." Fifty users, not five hundred. Hourly monitoring, not daily. Weekly steering committee, not monthly.
+
+A controlled pilot limits blast radius while generating real-world data no staging environment can provide.
 
 ---
 
 ## Part 2: MLOps for Agents
 
-Traditional MLOps practices—model versioning, A/B testing, performance monitoring—require adaptation for agentic systems. Agents combine multiple models, orchestration logic, and prompt configurations that evolve together. This section provides practical MLOps patterns validated through Echo's production operations.
+Traditional MLOps practices (model versioning, A/B testing, performance monitoring) require adaptation for agentic systems. Agents combine multiple models, orchestration logic, and prompt configurations that evolve together. This section provides practical MLOps patterns for agentic systems.
 
 **Diagram 3: Agent MLOps Lifecycle**
 
@@ -357,36 +375,17 @@ Every configuration affecting agent behavior requires version control:
 | Base LLM version | Configuration file | Quarterly |
 | Embedding model | Configuration file | Quarterly |
 
-**Echo's Versioning Practice**
+**Recommended Repository Structure**
 
-Echo maintained a `prompts/` repository with this structure:
-
-```
-prompts/
-├── scheduling/
-│   ├── v1.0.0/
-│   │   ├── system.md
-│   │   ├── few_shot.json
-│   │   └── config.yaml
-│   └── v1.1.0/
-│       ├── system.md
-│       ├── few_shot.json
-│       └── config.yaml
-├── clinical_docs/
-│   └── ...
-└── care_coordination/
-    └── ...
-```
-
-Every production change required pull request, code review, and staging validation before deployment. This discipline caught 12 potential issues in Week 11 alone—before they reached production users.
+Maintain a `prompts/` repository with versioned folders per agent (e.g., `scheduling/v1.0.0/`, `clinical_docs/v1.1.0/`). Each version folder contains system.md, few_shot.json, and config.yaml. Every production change should require pull request, code review, and staging validation before deployment.
 
 **Tools**
 
-| Tool | Purpose | Echo Choice |
-|------|---------|-------------|
-| LangSmith | Prompt versioning, tracing | ✅ Primary |
-| Git | Source control for all configs | ✅ Required |
-| PromptLayer | Prompt analytics | Considered |
+| Tool | Purpose | Recommendation |
+|------|---------|----------------|
+| LangSmith | Prompt versioning, tracing | Primary |
+| Git | Source control for all configs | Required |
+| PromptLayer | Prompt analytics | Optional |
 
 ---
 
@@ -413,9 +412,9 @@ Every A/B test should measure impact across the Architecture of Trust:
 | GOALS™ | SLA compliance, error rate | No regression |
 | User | Satisfaction score, task completion | >5% improvement |
 
-**Echo's Week 10 A/B Test**
+**Example A/B Test**
 
-Echo tested a prompt refinement (v1.1 vs v1.2) for their scheduling agent:
+A prompt refinement test (v1.1 vs v1.2) for a scheduling agent:
 
 | Metric | v1.1 (Champion) | v1.2 (Challenger) | Result |
 |--------|-----------------|-------------------|--------|
@@ -440,32 +439,13 @@ Echo tested a prompt refinement (v1.1 vs v1.2) for their scheduling agent:
 
 ### 2.3 Prompt Management
 
-Prompts are the primary interface between business intent and agent behavior. Effective prompt management requires the same discipline as code management—version control, testing, review, and deployment processes.
+Prompts are the primary interface between business intent and agent behavior. Effective prompt management requires the same discipline as code management: version control, testing, review, and deployment processes.
 
 **Best Practices**
 
 **1. Store in Git**
 
 Prompts belong in version control, not in application code or databases. Git provides history, diff capabilities, and review workflows.
-
-```markdown
-# scheduling_agent/system.md v1.2.0
-
-You are a healthcare scheduling assistant for Echo Health Systems.
-
-## Core Responsibilities
-- Help patients schedule, reschedule, or cancel appointments
-- Verify insurance eligibility before confirming
-- Respect provider availability and patient preferences
-
-## Constraints
-- Never schedule appointments outside provider hours
-- Always verify patient identity before discussing appointments
-- Escalate to human if insurance verification fails
-
-## Response Format
-[structured output specification]
-```
 
 **2. Template with Variables**
 
@@ -481,7 +461,7 @@ Separate static instructions from dynamic context:
 
 Every prompt change triggers validation against test suites:
 
-| Test Type | Purpose | Echo Implementation |
+| Test Type | Purpose | Reference Benchmark |
 |-----------|---------|---------------------|
 | Regression | Ensure existing capabilities work | 200 golden queries |
 | Edge cases | Validate boundary handling | 50 edge case queries |
@@ -497,31 +477,15 @@ All prompt changes require review before deployment:
 | MINOR | 2 reviewers |
 | MAJOR | 2 reviewers + clinical sign-off |
 
-**Echo's Prompt Pipeline**
+**Recommended Prompt Pipeline**
 
-```
-Developer creates prompt change
-    ↓
-Automated tests run (regression, edge, safety)
-    ↓
-Pull request created
-    ↓
-Peer review (1-2 reviewers based on change type)
-    ↓
-Staging deployment
-    ↓
-A/B test (1 week minimum)
-    ↓
-Production promotion (if metrics positive)
-```
-
-This pipeline caught 8 problematic prompt changes in Echo's first month of operations—changes that passed initial review but failed A/B testing.
+The pipeline flows from developer change → automated tests (regression, edge, safety) → pull request → peer review → staging deployment → A/B test (1 week minimum) → production promotion. This catches problematic prompt changes before they reach production.
 
 ---
 
 ### 2.4 Cost Optimization
 
-LLM costs accumulate quickly at production scale. Without optimization, a healthcare system processing 50,000 daily queries can face monthly bills exceeding $100,000. Echo implemented four strategies that reduced per-query cost from $0.12 to $0.04—a 67% reduction.
+LLM costs accumulate quickly at production scale. Without optimization, a system processing 50,000 daily queries can face monthly bills exceeding $100,000. Four strategies can reduce per-query cost by 60-70%.
 
 **Strategy 1: Semantic Caching**
 
@@ -545,7 +509,7 @@ Reduce token count without sacrificing quality:
 | Use abbreviations in system prompts | 10-15% | None |
 | Compress few-shot examples | 20-30% | Minimal |
 
-**Echo's result:** Average prompt reduced from 3,200 to 1,800 tokens (44% reduction) with no measurable accuracy impact.
+**Reference benchmark:** Average prompt reduced from 3,200 to 1,800 tokens (44% reduction) with no measurable accuracy impact.
 
 **Strategy 3: Model Routing**
 
@@ -557,7 +521,7 @@ Use cheaper models for simpler queries:
 | Standard clinical | GPT-4o | $2.50 |
 | Complex reasoning | GPT-4o | $2.50 |
 
-**Echo's traffic distribution:**
+**Reference traffic distribution:**
 - 70% routed to GPT-4o-mini (simple queries)
 - 30% routed to GPT-4o (complex queries)
 - Blended cost: 70% cheaper than GPT-4o-only
@@ -571,7 +535,7 @@ Aggregate non-urgent queries for batch API pricing:
 | Real-time | User-facing queries | Baseline |
 | Batch | Report generation, analytics | 50% discount |
 
-**Echo's implementation:** 20% of queries (scheduled reports, daily summaries) processed in batch mode.
+**Reference benchmark:** 20% of queries (scheduled reports, daily summaries) processed in batch mode.
 
 **Combined Result**
 
@@ -579,28 +543,17 @@ Aggregate non-urgent queries for batch API pricing:
 |--------|--------------------|--------------------|
 | Cost per query | $0.12 | $0.04 |
 | Monthly LLM spend | ~$180K | ~$60K |
-| Annual savings | — | **$1.44M** |
+| Annual savings | n/a | **$1.44M** |
 
-Cost optimization isn't a one-time effort. Echo reviews cost metrics weekly, identifying new optimization opportunities as usage patterns evolve.
+Your results will vary based on query volume, complexity distribution, and caching effectiveness. Review cost metrics weekly to identify new optimization opportunities as usage patterns evolve.
 
 ---
-
-**🔍 CHECKPOINT: What We've Covered So Far**
-
-✅ MLOps essentials: Model versioning, A/B testing, prompt management  
-✅ Cost optimization: Caching (60% savings), routing, batching  
-✅ Echo reduced LLM costs from $0.12 to $0.04 per query ($1.44M annual savings)  
-⭐️ **Next:** SLAs, alerting, and incident response for production operations
-
-**Reading Time Remaining:** ~18 minutes
-
-**Your Framework Quick Check:** What's your target cost per query? Echo started at $0.12 and optimized to $0.04.
 
 ---
 
 ## Part 3: Monitoring & Incident Response
 
-Production agents will fail. Databases go down. LLM APIs timeout. Policies misconfigure. The question isn't whether incidents occur—it's how quickly you detect, respond, and recover. This section establishes monitoring foundations and incident response processes that maintained Echo's 99.7% availability through their first month of production.
+Production agents will fail. Databases go down. LLM APIs timeout. Policies misconfigure. The question isn't whether incidents occur. It's how quickly you detect, respond, and recover. This section establishes monitoring foundations and incident response processes for production operations.
 
 ---
 
@@ -628,7 +581,7 @@ Not all agents require the same SLAs:
 | Clinical support | 99.5% | <5s P95 | >85% |
 | Administrative | 99.0% | <10s P95 | >80% |
 
-Echo classified their scheduling agent as patient-facing (highest tier) and documentation assistant as clinical support (standard tier).
+Classify your agents by user impact. For example, a patient-facing scheduling agent warrants the highest tier, while an internal documentation assistant may use standard tier.
 
 **SLA Breach Consequences**
 
@@ -691,7 +644,7 @@ Effective alerting balances sensitivity with noise. Too few alerts miss problems
 | L (Language) | Semantic layer down | Term resolution failure > 10% |
 | S (Solid) | Data corruption detected | Quality score drop > 10% |
 
-**Echo's Alert Results (Month 1)**
+**Reference Benchmark: Alert Results**
 
 | Priority | Alerts Triggered | False Positives | MTTR |
 |----------|------------------|-----------------|------|
@@ -700,13 +653,13 @@ Effective alerting balances sensitivity with noise. Too few alerts miss problems
 | P2 | 8 | 2 | 2.1 hours |
 | P3 | 34 | 12 | Next day |
 
-The two P1 alerts were legitimate issues: one LLM API degradation (18-minute resolution) and one CDC pipeline failure (22-minute resolution). Both resolved within SLA.
+Your alert volume will vary based on system maturity and threshold configuration. Aim for zero P0s, minimal P1s, and low false positive rates at P2-P3.
 
 ---
 
 ### 3.3 Incident Response
 
-When alerts fire, structured response prevents chaos. Echo adopted a six-phase incident response process mapped to the Architecture of Trust:
+When alerts fire, structured response prevents chaos. Adopt a six-phase incident response process mapped to the Architecture of Trust:
 
 **Diagram 4: Six-Phase Incident Response**
 
@@ -829,7 +782,7 @@ Learn from every significant incident (P0-P1 mandatory, P2 recommended).
 
 ### 3.4 Post-Mortem Process
 
-Post-mortems prevent repeat incidents. Echo conducts post-mortems within 48 hours of P0-P1 incidents using a three-pillar template:
+Post-mortems prevent repeat incidents. Conduct post-mortems within 48 hours of P0-P1 incidents using a three-pillar template:
 
 **Three-Pillar Post-Mortem Template**
 
@@ -868,45 +821,27 @@ Post-mortems prevent repeat incidents. Echo conducts post-mortems within 48 hour
 | [Detection improvement] | [Name] | [Date] | Open |
 | [Process change] | [Name] | [Date] | Open |
 
-**Echo's First P1 Post-Mortem**
+**Example P1 Post-Mortem**
 
-**Summary:** LLM API degradation caused 18-minute accuracy drop to 72%.
+**Summary:** LLM API degradation caused 18-minute accuracy drop to 72%. Pillars affected: INPACT™ (I, N), Layer 4, GOALS™ (A, S).
 
-**Pillars Affected:** INPACT™ (I, N), Layer 4, GOALS™ (A, S)
+**Root Cause:** LLM provider experienced regional degradation. Backup region not configured for automatic failover.
 
-**Root Cause:** OpenAI API experienced regional degradation. Echo's primary region affected; backup region not configured for automatic failover.
-
-**Action Items:**
-1. Configure automatic failover to backup region — Marcus, 3 days — ✅ Complete
-2. Add health check probes for earlier detection — Swapna, 5 days — ✅ Complete
-3. Document manual failover procedure — DevOps, 2 days — ✅ Complete
+**Key Actions:** Configure automatic failover, add health check probes, document manual failover procedure.
 
 **Result:** Second LLM incident (3 weeks later) detected in 2 minutes, failed over automatically, zero user impact.
 
 ---
 
-**🔍 CHECKPOINT: What We've Covered So Far**
-
-✅ Three-Pillar SLAs: INPACT™ metrics, Layer health, GOALS™ targets  
-✅ Alert strategy: P1 (critical, 15min response) through P4 (informational)  
-✅ Incident response: Detection → Triage → Mitigation → Resolution → Post-mortem  
-⭐️ **Next:** Weekly improvement cycles that took Echo from 86/100 to 89/100
-
-**Reading Time Remaining:** ~10 minutes
-
-**Your Framework Quick Check:** What's your P1 response time target? Echo committed to 15 minutes.
-
----
-
 ## Part 4: Continuous Improvement
 
-The Architecture of Trust isn't a destination—it's a foundation for continuous improvement. Echo's INPACT™ score didn't stop at 86/100. Through systematic weekly improvement cycles, they reached 89/100 within five weeks of production launch. This section provides the processes that drive ongoing excellence.
+The Architecture of Trust isn't a destination. It's a foundation for continuous improvement. Your INPACT™ score shouldn't stop at 86/100. Through systematic weekly improvement cycles, organizations can achieve 3-5% accuracy gains in the first month. This section provides the processes that drive ongoing excellence.
 
 ---
 
 ### 4.1 Weekly Improvement Cycle
 
-Structured weekly cycles transform operational data into agent improvements. Echo followed a five-day pattern that yielded consistent 1-2% weekly accuracy gains.
+Structured weekly cycles transform operational data into agent improvements. A five-day pattern can yield consistent 1-2% weekly accuracy gains.
 
 **Diagram 5: Five-Day Improvement Cycle**
 
@@ -960,61 +895,14 @@ graph LR
 | Thursday | Implement changes | Validate fix | Deploy to staging | G (Governance) |
 | Friday | A/B test launch | Compare versions | Monitor | All |
 
-**Monday: Metrics Review**
+**Key Activities by Day:**
+- **Monday:** Review INPACT™ scores, error logs, user feedback, cost metrics
+- **Tuesday:** Cluster failures, categorize by root cause, map to layers, estimate complexity
+- **Wednesday:** Propose fixes (prompt refinement, few-shot additions, retrieval tuning, semantic updates)
+- **Thursday:** Implement with appropriate review (1-2 reviewers based on change type)
+- **Friday:** Deploy A/B test with 50/50 traffic split, 1-week minimum duration, rollback if >5% regression
 
-Start each week with comprehensive metrics analysis:
-
-| Metric Category | Questions to Answer |
-|-----------------|---------------------|
-| INPACT™ scores | Any dimension below threshold? Trending down? |
-| Error logs | What patterns in failed queries? |
-| User feedback | What complaints or suggestions? |
-| Cost metrics | Any unexpected spending? |
-
-**Tuesday: Failure Analysis**
-
-Deep dive into the previous week's failures:
-
-| Analysis Step | Purpose |
-|---------------|---------|
-| Cluster similar failures | Identify systemic issues |
-| Categorize by root cause | Prioritize fixes |
-| Map to layers | Assign ownership |
-| Estimate fix complexity | Plan sprint capacity |
-
-**Wednesday: Fix Proposal**
-
-Convert analysis into actionable improvements:
-
-| Fix Type | Example | Typical Impact |
-|----------|---------|----------------|
-| Prompt refinement | Clarify ambiguous instructions | 1-3% accuracy |
-| Few-shot addition | New example for edge case | 2-5% accuracy |
-| Retrieval tuning | Adjust similarity threshold | 1-2% accuracy |
-| Semantic update | Add missing terminology | 1-3% accuracy |
-
-**Thursday: Implementation**
-
-Execute changes with appropriate governance:
-
-| Change Type | Review Required | Testing Required |
-|-------------|-----------------|------------------|
-| Prompt patch | 1 reviewer | Regression suite |
-| Configuration change | 2 reviewers | Full test suite |
-| Model update | Team approval | Extended testing |
-
-**Friday: A/B Test Launch**
-
-Deploy changes for real-world validation:
-
-| A/B Test Element | Specification |
-|------------------|---------------|
-| Traffic split | 50/50 |
-| Duration | 1 week minimum |
-| Primary metrics | Accuracy, latency, satisfaction |
-| Rollback trigger | >5% regression on any metric |
-
-**Echo's Weekly Results**
+**Reference Benchmark: Weekly Results**
 
 | Week | Starting Accuracy | Improvement | Ending Accuracy |
 |------|-------------------|-------------|-----------------|
@@ -1024,13 +912,13 @@ Deploy changes for real-world validation:
 | Week 14 | 87.2% | +0.4% | 87.6% |
 | Week 15 | 87.6% | +0.4% | 88.0% |
 
-Compound improvements: 85% → 88% in five weeks, a 3.5% total improvement translating to thousands of better patient interactions.
+Compound improvements of 3-5% over five weeks translate to thousands of better user interactions. Your results will vary based on starting accuracy and optimization opportunities.
 
 ---
 
 ### 4.2 Feedback Loop Automation
 
-Manual feedback analysis doesn't scale. Echo automated feedback collection, aggregation, and integration to maintain improvement velocity as volume grew.
+Manual feedback analysis doesn't scale. Automate feedback collection, aggregation, and integration to maintain improvement velocity as volume grows.
 
 **Feedback Pipeline**
 
@@ -1062,13 +950,13 @@ Metrics monitored
 
 **From Feedback to Improvement**
 
-Echo's Week 11 example:
+**Example Improvement Cycle:**
 - 127 actionable feedback items identified
 - 89 mapped to prompt improvements
 - 23 mapped to retrieval tuning
 - 15 required semantic layer updates
-- Changes deployed in Week 12 A/B tests
-- Result: 85% → 87% accuracy improvement
+- Changes deployed in following week's A/B tests
+- Result: 2% accuracy improvement
 
 ---
 
@@ -1095,31 +983,18 @@ Agent performance degrades over time. Data distributions shift. User expectation
 | C (Contextual) | CDC lag at launch | +50% from baseline | +100% from baseline |
 | T (Transparent) | Audit coverage | Any gap | Persistent gap |
 
-**Echo's Drift Response**
+**Example Drift Response**
 
-Week 13 drift detection identified declining retrieval precision (78% → 74% over two weeks). Root cause: new clinical documentation formats introduced by Epic upgrade not reflected in chunking strategy.
+A drift detection identified declining retrieval precision (78% → 74% over two weeks). Root cause: new clinical documentation formats introduced by EHR upgrade not reflected in chunking strategy.
 
 Response:
 - Tuesday: Identified drift pattern
-- Wednesday: Diagnosed Epic format changes
+- Wednesday: Diagnosed format changes
 - Thursday: Updated chunking configuration
 - Friday: Deployed fix in A/B test
 - Following week: Precision restored to 79%
 
 Early detection prevented user-visible degradation.
-
----
-
-**🔍 CHECKPOINT: What We've Covered So Far**
-
-✅ Weekly improvement cycle: Monday metrics → Friday deploy (1-2% weekly gains)  
-✅ Feedback loop automation: Override capture → Pattern analysis → Model update  
-✅ Drift detection: INPACT™, Architecture, GOALS™ baselines with warning thresholds  
-⭐️ **Next:** AIXcelerator platform for accelerated implementation
-
-**Reading Time Remaining:** ~5 minutes
-
-**Your Framework Quick Check:** What's your plan for catching performance drift before users notice?
 
 ---
 
@@ -1131,7 +1006,7 @@ For organizations seeking to accelerate their journey, Colaberry's AIXcelerator 
 
 ### 5.1 What is AIXcelerator?
 
-AIXcelerator is a comprehensive platform that accelerates agent infrastructure deployment while maintaining all three pillars of the Architecture of Trust. Rather than building every component from scratch, organizations leverage production-validated modules.
+AIXcelerator is a complete platform that accelerates agent infrastructure deployment while maintaining all three pillars of the Architecture of Trust. Rather than building every component from scratch, organizations use production-validated modules.
 
 **Diagram 6: AIXcelerator Five-Component Platform**
 
@@ -1217,7 +1092,7 @@ Continuous measurement:
 
 ### 5.2 AIXcelerator in Production
 
-AIXcelerator isn't theoretical—it powers production deployments across healthcare, financial services, and enterprise operations.
+AIXcelerator isn't theoretical. It powers production deployments across healthcare, financial services, and enterprise operations.
 
 **Production Validation**
 
@@ -1230,7 +1105,7 @@ AIXcelerator isn't theoretical—it powers production deployments across healthc
 
 **Comparison: DIY vs. AIXcelerator**
 
-| Dimension | DIY (Echo's Approach) | AIXcelerator |
+| Dimension | DIY Approach | AIXcelerator |
 |-----------|----------------------|--------------|
 | Timeline | 90 days | 45 days |
 | Implementation cost | $1.23M | $350-400K |
@@ -1292,6 +1167,52 @@ Hands-on validation:
 
 ---
 
+## Part 6: Echo Health Systems Results
+
+Echo Health Systems is a pedagogical case study used throughout this book to illustrate the Architecture of Trust in practice. While fictional, Echo's metrics reflect realistic outcomes based on Colaberry's production deployments. This section consolidates Echo's results as a reference benchmark.
+
+**Production Readiness (Week 10)**
+
+| Criterion Category | Result |
+|-------------------|--------|
+| INPACT™ Criteria (5) | 5/5 passed |
+| Architecture Criteria (5) | 5/5 passed |
+| GOALS™ Criteria (5) | 5/5 passed |
+| **Total Score** | **15/15** |
+
+**Key Metrics at Launch**
+
+| Metric | Week 10 Value |
+|--------|---------------|
+| INPACT™ Score | 86/100 |
+| Response Time (P95) | 2.2 seconds |
+| NLU Accuracy | 83% (reached 85% Week 11) |
+| HITL Escalation Rate | 8% |
+| Audit Coverage | 100% |
+
+**Operational Results (Weeks 11-15)**
+
+| Metric | Result |
+|--------|--------|
+| Availability | 99.7% |
+| P1 Incidents | 2 (both resolved within SLA) |
+| Accuracy Improvement | 85% → 88% (+3%) |
+| Cost per Query | $0.12 → $0.04 (67% reduction) |
+| Annual LLM Savings | $1.44M |
+
+**Investment Summary**
+
+| Category | Amount |
+|----------|--------|
+| Total Implementation | $1.23M |
+| Timeline | 12 weeks (10 build + 2 validation) |
+| Team Size | 12 specialists |
+| First-Year ROI | 477% |
+
+*For complete Echo metrics, see Appendix E (Quick Reference Card).*
+
+---
+
 ## Closing
 
 You've completed the journey.
@@ -1301,8 +1222,6 @@ The INPACT™ framework defines what agents need. The 7-Layer Architecture deliv
 Whether you build from scratch following the patterns in Chapters 4-12 or accelerate with AIXcelerator, you now have the knowledge to join the 5% who succeed with enterprise AI agents.
 
 Trust before intelligence. Architecture before agents. The three pillars are yours.
-
-*For Echo's complete metrics and progression, see Appendix E (Quick Reference Card).*
 
 ---
 
@@ -1315,6 +1234,7 @@ Trust before intelligence. Architecture before agents. The three pillars are you
 | Part 3 | Monitoring & Incidents | SLAs, alerting, response process |
 | Part 4 | Continuous Improvement | Weekly cycles, feedback loops, drift detection |
 | Part 5 | AIXcelerator | Platform overview, access paths |
+| Part 6 | Echo Health Systems Results | Consolidated reference benchmark |
 
 *For complete canonical metrics (investment, ROI, timeline), see Appendix E (Quick Reference Card).*
 

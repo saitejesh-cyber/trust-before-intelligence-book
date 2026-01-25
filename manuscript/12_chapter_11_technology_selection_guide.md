@@ -1,10 +1,34 @@
-# Chapter 11: Choosing the Right Tools for Your Stack
+# Chapter 11: Build Your Tech Stack
 
-**The Technology Selection Chapter — Your Methodology Guide**
+**The Technology Selection Chapter**
 
 ---
 
-<!-- CHAPTER OPENING GRAPHIC -->
+*About a year ago.*
+*Week 1, Wednesday afternoon.*
+*Echo Health Systems, Sarah's office.*
+
+Sarah stared at the vendor comparison spreadsheet. Fourteen vector databases. Eight CDC platforms. Six semantic layer tools. Every sales deck promised "enterprise-ready" and "healthcare-compliant."
+
+Marcus Chen, her lead architect, dropped into the chair across from her desk. "Pinecone's demo was impressive. Sub-50ms queries, slick UI."
+
+"Did they have a BAA?"
+
+Marcus paused. "I didn't ask."
+
+"Then they're not on the list." Sarah pulled up the evaluation framework they'd built after the failed pilots. "We learned this the hard way. Impressive demos don't mean production-ready. We score INPACT™ first, GOALS™ second, then verify integration. In that order."
+
+"Even if the demo is amazing?"
+
+"Especially then." Sarah turned her monitor toward him. "Remember the scheduling agent? Perfect demo. Nine-second response times in production. The demo wasn't lying. Our infrastructure was."
+
+Marcus nodded slowly. "So we're not picking the best technology. We're picking the technology that works with what we're building."
+
+"Now you're getting it."
+
+---
+
+**Diagram 1: Vendor Selection Transformation**
 
 ```mermaid
 
@@ -37,13 +61,11 @@
 
 > **Key Takeaway:** Every vendor must pass the three-pillar test. No exceptions.
 
-<!-- END CHAPTER OPENING GRAPHIC -->
-
 ---
 
 *Technology selection methodology determines success or failure. This chapter provides the criteria, frameworks, and processes to evaluate any vendor against the Architecture of Trust. Your roadmap (Chapter 10) shows when to build. This chapter shows how to decide what to build with.*
 
-> **📚 Online Tools:** For interactive vendor evaluation scorecards, assessment templates, and current vendor comparisons, visit **trustbeforeintelligence.com/tools** — updated quarterly.
+> **📚 Online Tools:** For interactive vendor evaluation scorecards, assessment templates, and current vendor comparisons, visit **trustbeforeintelligence.com/tools** (updated quarterly).
 
 ---
 
@@ -73,10 +95,10 @@ Every vendor evaluation follows three principles:
 
 **Chapter Structure**
 
-- **Part 1:** Selection framework—three-pillar vendor test, build vs buy, budget tiers
-- **Part 2:** Layer-by-layer selection criteria—what to evaluate, not whom to select
-- **Part 3:** Evaluation process—RFP templates, POC approach, contract negotiation
-- **Part 4:** Applying the methodology—Echo's selection process as example
+- **Part 1:** Selection framework (three-pillar vendor test, build vs buy, budget tiers)
+- **Part 2:** Layer-by-layer selection criteria (what to evaluate, not whom to select)
+- **Part 3:** Evaluation process (RFP templates, POC approach, contract negotiation)
+- **Part 4:** Applying the methodology (Echo's selection process as example)
 
 ---
 
@@ -84,7 +106,7 @@ Every vendor evaluation follows three principles:
 
 Every technology in a production stack must pass the same evaluation. Three pillars, separately scored, identify vendors that meet both agent needs and operational requirements.
 
-**Diagram: The Three-Pillar Vendor Evaluation Framework**
+**Diagram 2: The Three-Pillar Vendor Evaluation Framework**
 
 ```mermaid
 graph TD
@@ -139,7 +161,7 @@ The first pillar asks: does this technology help agents meet the six fundamental
 | **C (Contextual)** | Does it integrate with multiple sources? | API breadth, connector ecosystem, data federation |
 | **T (Transparent)** | Does it provide explainability, citations, compliance? | Audit trails, decision traces, regulatory support |
 
-Score each relevant dimension 1-6. Not every dimension applies to every vendor category—a vector database primarily addresses I (speed) and N (semantic), while a policy engine focuses on P (permitted) and T (transparent). Score only the dimensions relevant to that technology's purpose. *(For complete scoring rubrics, see Appendix DA-5.)*
+Score each relevant dimension 1-6. Not every dimension applies to every vendor category. A vector database primarily addresses I (speed) and N (semantic), while a policy engine focuses on P (permitted) and T (transparent). Score only the dimensions relevant to that technology's purpose. *(For complete scoring rubrics, see Appendix DA-5.)*
 
 **INPACT™ Vendor Score**: Sum of relevant dimensions (maximum 36 if all apply)
 
@@ -172,11 +194,7 @@ Score each dimension 1-5 (GOALS™ uses 5-point scale).
 
 **Why Separate Scores Matter**
 
-INPACT™ measures what infrastructure must *provide* to agents. GOALS™ measures how you *operate* that infrastructure. These are different evaluation dimensions:
-
-- A vendor scoring high on INPACT™ but low on GOALS™ delivers impressive technology your team can't sustain
-- A vendor scoring high on GOALS™ but low on INPACT™ is easy to operate but can't meet agent requirements
-- Both scores must exceed minimum thresholds independently
+INPACT™ measures what infrastructure must *provide* to agents. GOALS™ measures how you *operate* that infrastructure. A vendor scoring high on INPACT™ but low on GOALS™ delivers impressive technology your team can't sustain. Both scores must exceed minimum thresholds independently.
 
 **Minimum Thresholds for Healthcare**
 
@@ -187,8 +205,6 @@ INPACT™ measures what infrastructure must *provide* to agents. GOALS™ measur
 | P (Permitted) | ≥5/6 | Healthcare requires strong access control |
 | G (Governance) | 5/5 | HIPAA compliance non-negotiable |
 | BAA | Required | Filter before technical evaluation |
-
-Vendors scoring below these thresholds should be rejected regardless of other strengths.
 
 ---
 
@@ -209,7 +225,7 @@ This methodology applies regardless of which specific vendors you evaluate. The 
 
 Not every component requires a vendor purchase. The Architecture of Trust supports a hybrid approach: buy commodity capabilities, build differentiators, partner for expertise.
 
-**Diagram: Build vs Buy vs Partner Decision Flow**
+**Diagram 3: Build vs Buy vs Partner Decision Flow**
 
 ```mermaid
 
@@ -253,7 +269,7 @@ graph LR
 
 ```
 
-**Build (Custom Development) — 5-10% of Stack**
+**Build (Custom Development): 5-10% of Stack**
 
 Custom development makes sense when:
 
@@ -274,7 +290,7 @@ Custom development makes sense when:
 - ⚠️ Ongoing maintenance burden
 - ⚠️ Slower time-to-value
 
-**Buy (SaaS/Cloud Services) — 85-90% of Stack**
+**Buy (SaaS/Cloud Services): 85-90% of Stack**
 
 Purchasing makes sense when:
 
@@ -296,7 +312,7 @@ Purchasing makes sense when:
 - ⚠️ Vendor dependency and potential lock-in
 - ⚠️ Less customization flexibility
 
-**Partner (Managed Services/Consulting) — 0-5% of Stack**
+**Partner (Managed Services/Consulting): 0-5% of Stack**
 
 Partnering makes sense when:
 
@@ -366,46 +382,13 @@ Regardless of tier, budget allocation follows the 7-Layer Architecture:
 
 ---
 
-### 1.5 Scoring Quick Reference
-
-**INPACT™ Scoring Scale (1-6)**
-
-| Score | Label | Description |
-|-------|-------|-------------|
-| **6** | Excellent | Best-in-class; competitive advantage |
-| **5** | Strong | Production-ready; meets all requirements |
-| **4** | Functional | Adequate with monitoring |
-| **3** | Moderate | Basic capability; gaps workable |
-| **2** | Significant Gap | Major limitations; workarounds needed |
-| **1** | Critical Gap | Blocks deployment |
-
-**GOALS™ Scoring Scale (1-5)**
-
-| Score | Label | Description |
-|-------|-------|-------------|
-| **5** | Advanced | Full automation with continuous improvement |
-| **4** | Proficient | Comprehensive, mostly automated |
-| **3** | Developing | Structured but incomplete |
-| **2** | Basic | Minimal implementation, reactive |
-| **1** | Absent | No formal capability |
-
-**Minimum Thresholds**
-
-| Framework | Minimum | Healthcare Requirement |
-|-----------|---------|------------------------|
-| INPACT™ | ≥24/36 (67%) | P (Permitted) ≥5/6 |
-| GOALS™ | ≥18/25 (72%) | G (Governance) = 5/5 |
-| Compliance | BAA Required | Filter before evaluation |
-
----
-
 ## Part 2: Layer-by-Layer Selection Criteria
 
 This section provides selection criteria for each of the seven architecture layers. For each layer, you'll find: the purpose and INPACT™ dimensions to prioritize, minimum requirements and questions to ask vendors, red flags that eliminate vendors, and subcategories to evaluate.
 
 > **📚 For specific vendor comparisons:** See Appendix DA-1 for detailed vendor tables, or visit **trustbeforeintelligence.com/tools** for current evaluations.
 
-**Diagram: The 7-Layer Architecture Technology Stack**
+**Diagram 4: The 7-Layer Architecture Technology Stack**
 
 ```mermaid
 
@@ -508,7 +491,7 @@ Layer 1 establishes the storage foundation everything else depends on. Without p
 
 **Implementation Timing:** Weeks 1-4 (Foundation Phase)
 
-Layer 2 ensures agents work with current information. Without real-time data, agents make decisions on stale context—the difference between catching a medication interaction before administration versus after.
+Layer 2 ensures agents work with current information. Without real-time data, agents make decisions on stale context. The difference between catching a medication interaction before administration versus after can be life or death.
 
 **Selection Criteria**
 
@@ -580,7 +563,7 @@ Layer 3 bridges human language and database schemas. When a clinician asks "Show
 
 ---
 
-### 2.4 Layer 4: Intelligence Orchestration & Retrieval
+### 2.4 Layer 4: Intelligence Layer
 
 **Purpose:** Transform queries into grounded, accurate responses through RAG
 
@@ -669,7 +652,7 @@ Layer 5 provides policy-based authorization and audit infrastructure. Agents mak
 
 **Implementation Timing:** Weeks 8-10 (Trust Phase)
 
-Layer 6 delivers complete visibility into agent operations. Without observability, agents are black boxes—you can't debug failures, optimize costs, or detect quality degradation.
+Layer 6 delivers complete visibility into agent operations. Without observability, agents are black boxes. You can't debug failures, optimize costs, or detect quality degradation.
 
 **Selection Criteria**
 
@@ -709,7 +692,7 @@ Layer 6 delivers complete visibility into agent operations. Without observabilit
 
 **Implementation Timing:** Weeks 8-10 (Trust Phase)
 
-Layer 7 delivers multi-agent coordination. Complex queries often span multiple domains—a care coordination question might require clinical, scheduling, and billing expertise simultaneously.
+Layer 7 delivers multi-agent coordination. Complex queries often span multiple domains. A care coordination question might require clinical, scheduling, and billing expertise simultaneously.
 
 **Selection Criteria**
 
@@ -757,86 +740,39 @@ Selecting vendors requires more than scoring spreadsheets. This section provides
 
 ### 3.1 Three-Pillar RFP Template
 
-Structure your vendor requests around the Architecture of Trust. This ensures responses address what matters for agent infrastructure.
+Structure your vendor requests around the Architecture of Trust: INPACT™ requirements (40 points), Architecture fit (30 points), and GOALS™ operations (30 points).
 
-**RFP Structure (100 Points Total)**
+| Section | Points | Focus Areas |
+|---------|--------|-------------|
+| INPACT™ | 40 | Latency, semantic support, ABAC/HITL, feedback loops, connectors, explainability |
+| Architecture | 30 | Layer alignment, adjacent integration, gap/overlap analysis |
+| GOALS™ | 30 | Compliance certs, monitoring, SLA/support, API quality, production track record |
 
-**Part 1: INPACT™ Requirements (40 Points)**
+Score each pillar separately. Both INPACT™ and GOALS™ must meet minimum thresholds independently.
 
-| Dimension | Points | Questions to Include |
-|-----------|--------|---------------------|
-| I (Instant) | 7 | What is your p95 query latency? Describe caching capabilities. |
-| N (Natural) | 7 | How do you support semantic search? What embedding models integrate? |
-| P (Permitted) | 7 | Describe ABAC capabilities. How do you support HITL workflows? |
-| A (Adaptive) | 6 | How do you enable feedback loops? Describe model versioning. |
-| C (Contextual) | 6 | How many data sources can you integrate? Describe connector ecosystem. |
-| T (Transparent) | 7 | What explainability features exist? Describe compliance certifications. |
-
-**Part 2: Architecture Requirements (30 Points)**
-
-| Criterion | Points | Questions to Include |
-|-----------|--------|---------------------|
-| Layer Alignment | 10 | Which architecture layer does your product serve? |
-| Adjacent Integration | 10 | How do you integrate with Layer N-1 and Layer N+1 technologies? |
-| Gap/Overlap Analysis | 10 | What capabilities does your product NOT provide? |
-
-**Part 3: GOALS™ Requirements (30 Points)**
-
-| Dimension | Points | Questions to Include |
-|-----------|--------|---------------------|
-| G (Governance) | 6 | What compliance certifications do you hold? Is BAA available? |
-| O (Observability) | 6 | What monitoring dashboards exist? How do you support tracing? |
-| A (Availability) | 6 | What is your uptime SLA? Describe support response times. |
-| L (Lexicon) | 6 | Describe API quality and SDK availability. |
-| S (Solid) | 6 | What is your production track record? How do you ensure data integrity? |
-
-*Download complete RFP template at trustbeforeintelligence.com/tools*
+*Download complete RFP template with question banks at trustbeforeintelligence.com/tools*
 
 ---
 
 ### 3.2 POC Approach
 
-Proof-of-concept validation tests vendors against your specific requirements, not demo environments. Run 2-week POCs for shortlisted vendors using representative data.
+Run 2-week POCs for shortlisted vendors using representative data, not demo environments.
 
-**Two-Week POC Structure**
+**Week 1 (INPACT™ Validation):** Test latency with 1,000 queries, accuracy with 100 business-language queries, policy evaluation speed, feedback loop responsiveness, multi-source connectivity, and audit log completeness.
 
-**Week 1: INPACT™ Validation**
+**Week 2 (GOALS™ + Integration):** Validate layer integration latency, monitoring dashboards, support responsiveness, documentation quality, and failure recovery.
 
-| Dimension | Validation Test | Success Criteria |
-|-----------|-----------------|------------------|
-| I (Instant) | Run 1,000 representative queries | p95 latency < target |
-| N (Natural) | Test 100 business-language queries | Accuracy > 85% |
-| P (Permitted) | Configure 10 representative policies | Policy evaluation < 50ms |
-| A (Adaptive) | Simulate feedback loop | Feedback reflected in < 24 hours |
-| C (Contextual) | Connect to 3+ data sources | All sources accessible in single query |
-| T (Transparent) | Generate audit logs for all operations | 100% operation coverage |
+**POC Failure Patterns:** Latency degradation under realistic load, data volume limitations, integration complexity requiring professional services, documentation gaps requiring support tickets.
 
-**Week 2: Layer Integration + GOALS™ Validation**
-
-| Test | Validation Approach | Success Criteria |
-|------|---------------------|------------------|
-| Layer Integration | Connect to adjacent layers | End-to-end latency < target |
-| Monitoring | Configure dashboards and alerts | All key metrics visible |
-| Support | Submit support ticket | Response within SLA |
-| Documentation | Complete setup using docs only | Achievable without vendor help |
-| Failure Recovery | Simulate outage | Recovery within SLA |
-
-**POC Failure Patterns to Watch**
-
-- Latency degradation under realistic load (not demo conditions)
-- Data volume limitations not apparent in small-scale tests
-- Integration complexity requiring vendor professional services
-- Documentation gaps requiring support tickets for basic setup
-
-POC failures save you from costly mistakes. A vendor that fails POC would have failed in production—better to discover this in two weeks than twelve months.
+POC failures save you from costly mistakes. A vendor that fails POC would have failed in production. Better to discover this in two weeks than twelve months.
 
 ---
 
 ### 3.3 Contract Negotiation
 
-Leverage your evaluation process in negotiations. Vendors competing through structured POCs know you're evaluating alternatives seriously.
+Use your evaluation process in negotiations. Vendors competing through structured POCs know you're evaluating alternatives seriously.
 
-**Negotiation Leverage Points**
+**Negotiation Points**
 
 | Lever | Typical Discount | How to Use |
 |-------|------------------|------------|
@@ -856,7 +792,7 @@ Leverage your evaluation process in negotiations. Vendors competing through stru
 | **Exit Clause** | Data portability and transition period | Avoid vendor lock-in |
 | **Security Audit** | Right to audit or SOC2/HIPAA certification | Verify security claims |
 
-Negotiate all five terms with every PHI-touching vendor. Walk away from vendors who resist BAA requirements—they'll eventually agree when you demonstrate serious evaluation of alternatives.
+Negotiate all five terms with every PHI-touching vendor. Walk away from vendors who resist BAA requirements. They'll eventually agree when you demonstrate serious evaluation of alternatives.
 
 ---
 
@@ -868,41 +804,24 @@ This section shows how to apply the selection methodology. Echo Health Systems s
 
 ### 4.1 Echo's Selection Criteria
 
-Echo Health Systems—a mid-size health system with $1.23M budget, 12-week timeline, and 2-person infrastructure team—began with constraints, not vendor lists.
-
-**Echo's Context Shaped Their Criteria**
-
-| Constraint | Implication for Selection |
-|------------|---------------------------|
-| Healthcare (PHI) | BAA required before technical evaluation |
-| 12-week timeline | Managed services over self-hosted |
-| $1.23M budget | Growth tier, not Enterprise |
-| 2-person infrastructure team | Operational simplicity prioritized |
-
-**Echo's Minimum Thresholds**
-
-Echo applied the healthcare minimum thresholds from Part 1.2: INPACT™ ≥24/36, GOALS™ ≥18/25, P ≥5/6, G=5/5, and BAA required before technical evaluation.
+Echo began with constraints, not vendor lists. Their context (healthcare/PHI, $1.23M budget, 12-week timeline, 2-person team) shaped every decision: BAA required first, managed services preferred, Growth tier pricing, operational simplicity prioritized.
 
 **How Filters Narrowed the Field**
 
-These criteria functioned as progressive filters:
-
-1. **BAA filter** — Vendors without healthcare BAA capability eliminated before technical review
-2. **INPACT™ threshold** — Vendors below minimum eliminated after paper evaluation
-3. **GOALS™ threshold** — Vendors with impressive technology but unsustainable operations eliminated
-4. **POC validation** — Remaining vendors validated against real workloads
+1. **BAA filter**: Vendors without healthcare BAA capability eliminated before technical review
+2. **INPACT™ threshold**: Vendors below ≥24/36 eliminated after paper evaluation
+3. **GOALS™ threshold**: Vendors with impressive technology but unsustainable operations eliminated
+4. **POC validation**: Remaining vendors validated against real workloads
 
 The filters did the work. By the time Echo ran POCs, they were choosing between good options, not eliminating bad ones.
 
 **Build vs Buy Decisions**
 
-Echo applied the decision framework from Section 1.3:
-
 | Question | Echo's Answer | Decision |
 |----------|---------------|----------|
-| Is vector search a competitive differentiator? | No — commodity capability | BUY |
-| Does a proven CDC solution exist for Epic EHR? | Yes — multiple vendors | BUY |
-| Does our clinical HITL workflow exist off-the-shelf? | No — unique to our process | BUILD |
+| Is vector search a competitive differentiator? | No, commodity capability | BUY |
+| Does a proven CDC solution exist for Epic EHR? | Yes, multiple vendors | BUY |
+| Does our clinical HITL workflow exist off-the-shelf? | No, unique to our process | BUILD |
 | Do we have ABAC policy expertise internally? | No | PARTNER (implementation) then BUY |
 
 Result: 90% buy, 5% build, 5% partner.
@@ -911,7 +830,7 @@ Result: 90% buy, 5% build, 5% partner.
 
 ### 4.2 Your Turn: Applying the Methodology
 
-Echo's context—mid-size health system, $1.23M budget, 12-week timeline, 2-person infrastructure team—shaped their criteria. Your context will shape yours differently.
+Your context will shape your criteria differently than Echo's.
 
 **Different Contexts, Different Criteria**
 
@@ -982,13 +901,13 @@ The methodology doesn't guarantee perfect selections. It prevents predictable mi
 
 ---
 
-## Part 5: Echo's Complete Stack Summary
+### 4.5 Echo's Complete Stack
 
-This section provides the reference for Echo Health Systems' final technology choices. Every vendor passed the three-pillar test. Every selection has documented rationale.
+Echo's final technology choices demonstrate the methodology in action. Every vendor passed the three-pillar test.
 
 > **Note:** Echo's choices reflect their specific context (healthcare, $1.23M budget, 12-week timeline). Your selections will differ based on your constraints. For detailed vendor comparisons, see Appendix DA-1.
 
-**Diagram: Echo's Complete Technology Stack**
+**Diagram 5: Echo's Complete Technology Stack**
 
 ```mermaid
 
@@ -1030,23 +949,9 @@ graph LR
 
 ```
 
-**Echo's Selection Principles**
+**Echo's Selection Principles:** (1) Managed over self-hosted, (2) Healthcare-first (BAA required), (3) Integration-proven over best-in-class, (4) Cost-optimized for Growth tier.
 
-Four principles guided Echo's selections:
-
-**1. Managed Over Self-Hosted** — Healthcare organizations can't staff 24/7 on-call for every component. Trade-off accepted: Some vendor lock-in. Trade-off avoided: Infrastructure operations consuming clinical IT resources.
-
-**2. Healthcare-First** — Every PHI-touching vendor has BAA capability, applied as filter before technical evaluation. Trade-off accepted: Smaller vendor pool. Trade-off avoided: Compliance risk.
-
-**3. Integration-Proven** — Selected vendors that work together, prioritizing ecosystem compatibility over best-in-class isolation. Trade-off accepted: Not always best-in-class for every capability. Trade-off avoided: Integration complexity.
-
-**4. Cost-Optimized** — Growth tier, negotiated annual commits, right-sized to actual scale, open-source where operational burden acceptable. Trade-off accepted: Some manual effort. Trade-off avoided: Over-spending on unused enterprise features.
-
-**Echo's Results**
-
-Echo completed implementation under budget ($992K of $1.23M), achieved INPACT™ 89/100 and GOALS™ 21/25, and went live in 12 weeks. *(For complete investment breakdown, see Appendix D. For canonical metrics, see Appendix E.)*
-
-*For Echo's complete vendor list with costs and rationale, see Appendix DA-1, Section 4.*
+**Echo's Results:** Completed under budget ($992K of $1.23M), achieved INPACT™ 89/100 and GOALS™ 21/25, went live in 12 weeks. *(For complete investment breakdown, see Appendix D. For vendor list with rationale, see Appendix DA-1.)*
 
 ---
 
@@ -1067,8 +972,7 @@ Chapter 12 completes your journey with MLOps practices for versioning and testin
 | Part 1 | Selection Framework | Three-pillar vendor test, build/buy/partner, budget tiers |
 | Part 2 | Layer-by-Layer Criteria | Selection criteria for all 7 layers |
 | Part 3 | Evaluation Process | RFP templates, POC approach, negotiation |
-| Part 4 | Applying the Methodology | Echo's process as example, your toolkit |
-| Part 5 | Echo's Stack Summary | Reference architecture with principles |
+| Part 4 | Applying the Methodology | Echo's process, your toolkit, complete stack reference |
 
 **Key Resources:**
 - **Appendix DA-1:** Detailed vendor comparisons by layer
