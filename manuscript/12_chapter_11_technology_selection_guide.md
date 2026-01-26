@@ -196,17 +196,6 @@ Score each dimension 1-5 (GOALS™ uses 5-point scale).
 
 INPACT™ measures what infrastructure must *provide* to agents. GOALS™ measures how you *operate* that infrastructure. A vendor scoring high on INPACT™ but low on GOALS™ delivers impressive technology your team can't sustain. Both scores must exceed minimum thresholds independently.
 
-**Minimum Thresholds for Healthcare**
-
-| Threshold | Minimum Score | Rationale |
-|-----------|---------------|-----------|
-| INPACT™ | ≥24/36 (67%) | Agents must meet core needs |
-| GOALS™ | ≥18/25 (72%) | Operations must be sustainable |
-| P (Permitted) | ≥5/6 | Healthcare requires strong access control |
-| G (Governance) | 5/5 | HIPAA compliance non-negotiable |
-| BAA | Required | Filter before technical evaluation |
-
----
 
 **What This Means for Your Vendor Search**
 
@@ -333,7 +322,8 @@ Partnering makes sense when:
 - ⚠️ Variable costs based on scope
 - ⚠️ Dependency on partner availability
 
-**Typical Split for Healthcare Organizations**
+
+**Illustrative Split for regulated Organizations**
 
 | Approach | Percentage | Rationale |
 |----------|------------|-----------|
@@ -342,43 +332,6 @@ Partnering makes sense when:
 | Partner | 5% | One-time expertise gaps (implementation, compliance validation) |
 
 This split works for organizations needing fast time-to-value with regulatory compliance, lacking internal expertise in agent infrastructure, and with budget for managed services. Your split may differ based on existing capabilities and strategic priorities.
-
----
-
-### 1.4 Budget Tiers
-
-Technology selection depends heavily on available budget. The three-pillar vendor test identifies capable tools, but budget constraints determine which tier of solutions you can deploy.
-
-**Tier Overview**
-
-| Tier | Total Investment | Monthly Ops | Best For | Stack Philosophy |
-|------|------------------|-------------|----------|------------------|
-| **Starter** | $150-250K | <$20K | POC, <1,000 users | Open source + minimal SaaS |
-| **Growth** | $400-600K | $30-50K | Production healthcare, <50K users | Enterprise SaaS + strategic OSS |
-| **Enterprise** | $800K-1.5M | $60-100K | Multi-region, >50K users | Best-in-class everything |
-
-*For detailed budget allocation by layer for each tier, see Appendix D (Budget Methodology).*
-
-**Tier Selection Guide**
-
-| If Your Situation Is... | Choose Tier |
-|-------------------------|-------------|
-| Proof of concept, internal tools, <1K users | Tier 1: Starter |
-| Production system, healthcare compliance, <50K users | Tier 2: Growth |
-| Enterprise scale, multi-region, mission-critical | Tier 3: Enterprise |
-| Unsure | Start with Tier 2, adjust based on results |
-
-**Budget Allocation by Phase**
-
-Regardless of tier, budget allocation follows the 7-Layer Architecture:
-
-| Phase | Weeks | Layers | Typical Allocation |
-|-------|-------|--------|-------------------|
-| Foundation | 1-4 | L1-L2 | 35-40% |
-| Intelligence | 5-7 | L3-L4 | 30-35% |
-| Trust | 8-10 | L5-L6-L7 | 25-30% |
-
-*See Chapter 10 for week-by-week breakdown.*
 
 ---
 
@@ -457,7 +410,7 @@ Layer 1 establishes the storage foundation everything else depends on. Without p
 | Criterion | Minimum Requirement | Questions to Ask Vendors |
 |-----------|---------------------|--------------------------|
 | Query Latency | <100ms p95 | What is your p95 latency at 500 concurrent users? |
-| Healthcare Compliance | HIPAA BAA available | Do you offer BAA? What's your SOC2 status? |
+| Regulatory Compliance | Industry certifications available | What compliance certifications do you hold? (SOC2, ISO27001, etc.) |
 | Embedding Support | Native vector operations | Which embedding models integrate natively? |
 | Scalability | 10x headroom | How do you handle 10x current load? |
 | Data Residency | Region-specific storage | Can you guarantee US-only data storage? |
