@@ -119,7 +119,7 @@ graph TD
     end
     
     subgraph PILLAR2["PILLAR 2: ARCHITECTURE"]
-        P2["<b>Layer Fit</b><br/><b>7-Layer Integration</b><br/><b>Fit Check: ✓/✗</b>"]
+        P2["<b>Layer Fit</b><br/><b>7-Layer Integration</b><br/><b>Fit Check: Yes/No</b>"]
     end
     
     subgraph PILLAR3["PILLAR 3: GOALS™"]
