@@ -65,7 +65,7 @@ Marcus nodded slowly. "So we're not picking the best technology. We're picking t
 
 *Technology selection methodology determines success or failure. This chapter provides the criteria, frameworks, and processes to evaluate any vendor against the Architecture of Trust. Your roadmap (Chapter 10) shows when to build. This chapter shows how to decide what to build with.*
 
-> **📚 Online Tools:** For interactive vendor evaluation scorecards, assessment templates, and current vendor comparisons, visit **trustbeforeintelligence.com/tools** (updated quarterly).
+> **📚 Online Tools:** For interactive vendor evaluation scorecards, assessment templates, and current vendor comparisons, see the **Online Tools** section at the end of this chapter.
 
 ---
 
@@ -130,7 +130,7 @@ graph TD
     V --> P2
     V --> P3
     
-P1 --> EVAL["<b>Evaluate Separately</b><br/><b>INPACT™ ≥67%</b><br/><b>GOALS™ ≥70%</b><br/><b>(Adjust to context)</b>"]
+    P1 --> EVAL["<b>Evaluate Separately</b><br/><b>INPACT™ ≥67%</b><br/><b>GOALS™ ≥70%</b><br/><b>(Adjust to context)</b>"]
     P2 --> EVAL
     P3 --> EVAL
     
@@ -339,7 +339,7 @@ This split works for organizations needing fast time-to-value with regulatory co
 
 This section provides selection criteria for each of the seven architecture layers. For each layer, you'll find: the purpose and INPACT™ dimensions to prioritize, minimum requirements and questions to ask vendors, red flags that eliminate vendors, and subcategories to evaluate.
 
-> **📚 For specific vendor comparisons:** See Appendix DA-1 for detailed vendor tables, or visit **trustbeforeintelligence.com/tools** for current evaluations.
+> **📚 For specific vendor comparisons:** See Appendix DA-1 for detailed vendor tables, or the **Online Tools** section for current evaluations.
 
 **Diagram 4: The 7-Layer Architecture Technology Stack**
 
@@ -701,7 +701,11 @@ Structure your vendor requests around the Architecture of Trust: INPACT™ requi
 | Architecture | Pass/Fail | Layer alignment, adjacent integration, gap/overlap analysis |
 | GOALS™ | X/25 (per Section 1.2) | Compliance certs, monitoring, SLA/support, API quality, production track record |
 
-Score each pillar separately. Both INPACT™ (≥67%) and GOALS™ (≥70%) must meet minimum thresholds independently.
+Score each pillar separately. Suggested minimum thresholds: INPACT™ ≥67% and GOALS™ ≥70%. Adjust based on your risk tolerance and operational capacity.
+
+*See Online Tools section for downloadable RFP template with question banks.*
+
+---
 
 ### 3.2 POC Approach
 
@@ -758,8 +762,8 @@ Echo began with constraints, not vendor lists. Their context (healthcare/PHI, $1
 **How Filters Narrowed the Field**
 
 1. **BAA filter**: Vendors without healthcare BAA capability eliminated before technical review
-2. **INPACT™ threshold**: Vendors below ≥24/36 eliminated after paper evaluation
-3. **GOALS™ threshold**: Vendors with impressive technology but unsustainable operations eliminated
+2. **INPACT™ threshold**: Vendors below 67% eliminated after paper evaluation
+3. **GOALS™ threshold**: Vendors below 70% on operations eliminated
 4. **POC validation**: Remaining vendors validated against real workloads
 
 The filters did the work. By the time Echo ran POCs, they were choosing between good options, not eliminating bad ones.
@@ -799,37 +803,14 @@ A manufacturing company might prioritize:
 
 ### 4.3 Your Selection Toolkit
 
-The following tools help you apply the methodology to your situation.
+The following tools help you apply the methodology to your situation. See the **Online Tools** section at the end of this chapter for download links.
 
-**Available at trustbeforeintelligence.com/tools:**
-
-**Vendor Evaluation Scorecard**
-- INPACT™ scoring template (6 dimensions × 6 points, 36 max)
-- GOALS™ scoring template (5 dimensions × 5 points, 25 max)
-- Weighted scoring based on your priorities
-- Comparison matrix for finalists
-
-**POC Test Plan Template**
-- Week 1: INPACT™ validation tests
-- Week 2: GOALS™ + integration validation
-- Success criteria definition
-- Failure documentation guide
-
-**Contract Terms Checklist**
-- Non-negotiable terms (compliance certifications, data residency, SLA, exit clause)
-- Negotiable terms (pricing, commitment length, support tier)
-- Red flags that indicate walk-away
-
-**Build vs Buy Decision Matrix**
-- Differentiator assessment
-- Market availability check
-- Internal capability evaluation
-- Total cost of ownership comparison
-
-**Budget Planning Worksheet**
-- Three-tier templates (Starter, Growth, Enterprise)
-- Implementation vs ongoing cost separation
-- Hidden cost identification
+- **Vendor Evaluation Scorecard:** INPACT™ and GOALS™ scoring with weighted comparison matrix
+- **Three-Pillar RFP Template:** Structured vendor requests with question banks
+- **POC Test Plan Template:** Two-week validation with success criteria
+- **Contract Terms Checklist:** Non-negotiable terms, negotiable terms, walk-away red flags
+- **Build vs Buy Decision Matrix:** Differentiator assessment and TCO comparison
+- **Budget Planning Worksheet:** Implementation vs ongoing costs by tier
 
 ---
 
@@ -918,14 +899,31 @@ Chapter 12 completes your journey with MLOps practices for versioning and testin
 
 | Part | Content | Key Deliverable |
 |------|---------|-----------------|
-| Part 1 | Selection Framework | Three-pillar vendor test, build/buy/partner, budget tiers |
+| Part 1 | Selection Framework | Three-pillar vendor test, build/buy/partner |
 | Part 2 | Layer-by-Layer Criteria | Selection criteria for all 7 layers |
-| Part 3 | Evaluation Process | RFP templates, POC approach, negotiation |
+| Part 3 | Evaluation Process | RFP approach, POC validation, negotiation |
 | Part 4 | Applying the Methodology | Echo's process, your toolkit, complete stack reference |
 
 **Key Resources:**
 - **Appendix DA-1:** Detailed vendor comparisons by layer
-- **trustbeforeintelligence.com/tools:** Interactive scorecards, templates, current vendor database
+- **Appendix DA-5:** Complete INPACT™ and GOALS™ scoring rubrics
+- **Appendix D:** Budget methodology
+
+---
+
+## Online Tools
+
+The following tools support the methodology in this chapter. Available at **trustbeforeintelligence.com/tools**:
+
+| Tool | Purpose | Format |
+|------|---------|--------|
+| **Vendor Evaluation Scorecard** | Score vendors on INPACT™ (36 pts) and GOALS™ (25 pts) with weighted comparison | Spreadsheet |
+| **Three-Pillar RFP Template** | Structure vendor requests with question banks per pillar | Document |
+| **POC Test Plan Template** | Week 1 INPACT™ + Week 2 GOALS™ validation with success criteria | Document |
+| **Contract Terms Checklist** | Non-negotiable terms, negotiable terms, walk-away red flags | Checklist |
+| **Build vs Buy Decision Matrix** | Differentiator assessment, market availability, TCO comparison | Spreadsheet |
+| **Budget Planning Worksheet** | Implementation vs ongoing costs by tier | Spreadsheet |
+| **Current Vendor Database** | Quarterly-updated vendor evaluations by layer | Web/Spreadsheet |
 
 ---
 
