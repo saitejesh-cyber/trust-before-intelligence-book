@@ -119,7 +119,7 @@ graph TD
     end
     
     subgraph PILLAR2["PILLAR 2: ARCHITECTURE"]
-        P2["<b>Layer Fit</b><br/><b>7-Layer Integration</b><br/><b>Score: X/6</b>"]
+        P2["<b>Layer Fit</b><br/><b>7-Layer Integration</b><br/><b>Fit Check: ✓/✗</b>"]
     end
     
     subgraph PILLAR3["PILLAR 3: GOALS™"]
@@ -165,7 +165,7 @@ Score each relevant dimension 1-6. Not every dimension applies to every vendor c
 
 **INPACT™ Vendor Score**: Sum of relevant dimensions (maximum 36 if all apply)
 
-**Pillar 2: Architecture Fit (Score: 1-6)**
+**Pillar 2: Architecture Fit (Qualitative Check)**
 
 The second pillar ensures the technology integrates cleanly into the 7-Layer Architecture:
 
@@ -174,7 +174,7 @@ The second pillar ensures the technology integrates cleanly into the 7-Layer Arc
 - **Gap Prevention**: Does selecting this vendor create gaps in your architecture, or complete a capability you need?
 - **Overlap Avoidance**: Does this vendor duplicate functionality you're getting elsewhere?
 
-**Architecture Fit Score**: 1-6 based on layer alignment and integration quality
+**Architecture Fit**: Pass/Fail based on layer alignment and integration quality
 
 **Pillar 3: GOALS™ Operations (Score Separately)**
 
