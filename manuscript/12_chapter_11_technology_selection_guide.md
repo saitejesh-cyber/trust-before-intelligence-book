@@ -130,7 +130,7 @@ graph TD
     V --> P2
     V --> P3
     
-    P1 --> EVAL["<b>Evaluate Separately</b><br/><b>INPACT™ ≥24/36</b><br/><b>GOALS™ ≥18/25</b>"]
+P1 --> EVAL["<b>Evaluate Separately</b><br/><b>INPACT™ ≥67%</b><br/><b>GOALS™ ≥70%</b><br/><b>(Adjust to context)</b>"]
     P2 --> EVAL
     P3 --> EVAL
     
@@ -182,7 +182,7 @@ The third pillar measures operational readiness. A technology might score perfec
 
 | GOALS™ Dimension | Vendor Evaluation Question | What to Look For |
 |------------------|---------------------------|------------------|
-| **G (Governance)** | Does it support policy enforcement, compliance? | HIPAA/SOC2 certification, BAA availability, audit features |
+| **G (Governance)** | Does it support policy enforcement, compliance? | Industry certifications (SOC2, ISO27001, etc.), audit features |
 | **O (Observability)** | Does it provide monitoring, tracing, dashboards? | Built-in metrics, logging quality, alerting integration |
 | **A (Availability)** | What's the uptime SLA? Support quality? | 99.9%+ SLA, responsive support, documentation quality |
 | **L (Lexicon)** | Does it support semantic accuracy, terminology? | API quality, SDK maturity, integration breadth |
@@ -201,7 +201,7 @@ INPACT™ measures what infrastructure must *provide* to agents. GOALS™ measur
 
 Your three-pillar scores become your vendor conversation framework. When evaluating any technology:
 
-1. **Filter first**: BAA/compliance requirements eliminate vendors before technical evaluation
+1. **Filter first**: Compliance requirements eliminate vendors before technical evaluation
 2. **Score INPACT™**: Does it meet agent needs for its layer?
 3. **Score GOALS™**: Can your team operate it?
 4. **Verify architecture fit**: Does it integrate with adjacent layers?
@@ -268,9 +268,9 @@ Custom development makes sense when:
 - Long-term maintenance costs are acceptable
 
 **Typical Build Candidates**:
-- Custom HITL user interfaces matching specific clinical workflows
+- Custom HITL user interfaces matching specific domain workflows
 - Specialized agent prompts incorporating domain-specific concepts
-- Integration layers connecting proprietary EHR systems to semantic layers
+- Integration layers connecting proprietary source systems to semantic layers
 
 **Build Trade-offs**:
 - ✅ Perfect fit for unique requirements
@@ -286,7 +286,7 @@ Purchasing makes sense when:
 - The capability is commodity (many proven solutions exist)
 - Time-to-value matters more than perfect fit
 - Your team lacks specialized expertise to build and maintain
-- Vendor provides compliance certifications you need (HIPAA, SOC2)
+- Vendor provides compliance certifications you need (SOC2, ISO27001, industry-specific)
 
 **Typical Buy Candidates**:
 - Vector databases, data warehouses, graph databases
@@ -312,7 +312,7 @@ Partnering makes sense when:
 
 **Typical Partner Candidates**:
 - Implementation consulting for transformation projects
-- Domain-specific content mapping (clinical terminology, regulatory requirements)
+- Domain-specific content mapping (industry terminology, regulatory requirements)
 - Compliance validation and audit preparation
 
 **Partner Trade-offs**:
@@ -417,7 +417,7 @@ Layer 1 establishes the storage foundation everything else depends on. Without p
 
 **Red Flags (Eliminate Vendor If Present)**
 
-- No BAA available (eliminates for PHI workloads)
+- No compliance certifications for your industry's regulatory requirements
 - Latency benchmarks only for small datasets (<1M records)
 - Requires self-managed infrastructure without DevOps support
 - No native integration with common embedding providers
@@ -430,7 +430,7 @@ Layer 1 establishes the storage foundation everything else depends on. Without p
 | Vector Databases | Semantic search, RAG | Sub-50ms similarity search |
 | Data Warehouses | Structured analytics | SQL compatibility, compliance certifications |
 | Graph Databases | Relationship traversal | Multi-hop query performance |
-| Document Stores | Flexible schema | JSON native, clinical notes |
+| Document Stores | Flexible schema | JSON native, unstructured text |
 
 *For detailed vendor comparisons in each subcategory, see Appendix DA-1, Section 2.1.*
 
@@ -451,7 +451,7 @@ Layer 2 ensures agents work with current information. Without real-time data, ag
 | Criterion | Minimum Requirement | Questions to Ask Vendors |
 |-----------|---------------------|--------------------------|
 | CDC Latency | <30 seconds end-to-end | What is your typical CDC latency from source to target? |
-| Connector Coverage | EHR systems supported | Do you have native connectors for Epic/Cerner? |
+| Connector Coverage | Source systems supported | Do you have native connectors for our key systems? |
 | Schema Evolution | Auto-adapt to changes | How do you handle source schema changes? |
 | Throughput | >10K events/second | What's your sustained throughput capacity? |
 | Exactly-Once Delivery | Guaranteed | How do you ensure no duplicate or lost events? |
@@ -459,7 +459,7 @@ Layer 2 ensures agents work with current information. Without real-time data, ag
 **Red Flags (Eliminate Vendor If Present)**
 
 - CDC latency measured in minutes, not seconds
-- No native healthcare EHR connectors (requires custom development)
+- No native connectors for your key source systems (requires custom development)
 - Manual intervention required for schema changes
 - No exactly-once delivery guarantee
 - Pricing based on row count without volume discounts
@@ -484,21 +484,21 @@ Layer 2 ensures agents work with current information. Without real-time data, ag
 
 **Implementation Timing:** Weeks 5-7 (Intelligence Phase)
 
-Layer 3 bridges human language and database schemas. When a clinician asks "Show me patients needing diabetes follow-up," the semantic layer resolves this to precise query logic without requiring SQL knowledge.
+Layer 3 bridges human language and database schemas. When a user asks a domain-specific question, the semantic layer resolves this to precise query logic without requiring SQL knowledge.
 
 **Selection Criteria**
 
 | Criterion | Minimum Requirement | Questions to Ask Vendors |
 |-----------|---------------------|--------------------------|
-| Term Resolution | >95% accuracy | What is your term resolution accuracy on healthcare terminology? |
+| Term Resolution | >95% accuracy | What is your term resolution accuracy on domain terminology? |
 | Entity Resolution | >90% confidence | How do you handle entity disambiguation across systems? |
 | Lineage Tracking | Complete | Can you trace any metric back to source tables? |
 | Glossary Scale | >2,000 terms | How many business terms can your glossary support? |
-| Ontology Support | Healthcare standards | Do you support SNOMED, ICD-10, LOINC mappings? |
+| Ontology Support | Industry standards | Do you support industry-standard ontologies and taxonomies? |
 
 **Red Flags (Eliminate Vendor If Present)**
 
-- No support for healthcare ontologies (SNOMED, ICD-10, LOINC)
+- No support for industry-standard ontologies required by your domain
 - Manual-only term definition (no automation assistance)
 - No lineage tracking to source systems
 - Entity resolution limited to exact matches only
@@ -530,7 +530,7 @@ Layer 4 is the complete intelligence pipeline: query understanding, embedding ge
 
 | Criterion | Minimum Requirement | Questions to Ask Vendors |
 |-----------|---------------------|--------------------------|
-| RAG Accuracy | >85% on domain queries | What accuracy do you achieve on healthcare RAG tasks? |
+| RAG Accuracy | >85% on domain queries | What accuracy do you achieve on domain-specific RAG tasks? |
 | Citation Support | Source attribution | Can responses include source citations? |
 | Hybrid Retrieval | Vector + keyword | Do you support hybrid search with RRF? |
 | Context Window | >100K tokens | What's your maximum context window? |
@@ -538,7 +538,7 @@ Layer 4 is the complete intelligence pipeline: query understanding, embedding ge
 
 **Red Flags (Eliminate Vendor If Present)**
 
-- No healthcare BAA for LLM providers
+- No compliance certifications for LLM providers handling sensitive data
 - Citation/attribution not supported
 - Vector-only retrieval (no keyword fallback)
 - No prompt versioning or management
@@ -590,7 +590,7 @@ Layer 5 provides policy-based authorization and audit infrastructure. Agents mak
 | Subcategory | Primary Use | Key Differentiator |
 |-------------|-------------|-------------------|
 | Policy Engines | ABAC evaluation | Rego/policy language flexibility |
-| Data Governance | Compliance management | Healthcare-specific features |
+| Data Governance | Compliance management | Industry-specific compliance features |
 | HITL Platforms | Human escalation | Workflow customization |
 
 *For detailed vendor comparisons in each subcategory, see Appendix DA-1, Section 2.5.*
@@ -645,7 +645,7 @@ Layer 6 delivers complete visibility into agent operations. Without observabilit
 
 **Implementation Timing:** Weeks 8-10 (Trust Phase)
 
-Layer 7 delivers multi-agent coordination. Complex queries often span multiple domains. A care coordination question might require clinical, scheduling, and billing expertise simultaneously.
+Layer 7 delivers multi-agent coordination. Complex queries often span multiple domains. A coordination question might require expertise from multiple specialized agents simultaneously.
 
 **Selection Criteria**
 
@@ -693,19 +693,15 @@ Selecting vendors requires more than scoring spreadsheets. This section provides
 
 ### 3.1 Three-Pillar RFP Template
 
-Structure your vendor requests around the Architecture of Trust: INPACT™ requirements (40 points), Architecture fit (30 points), and GOALS™ operations (30 points).
+Structure your vendor requests around the Architecture of Trust: INPACT™ requirements, Architecture fit, and GOALS™ operations.
 
-| Section | Points | Focus Areas |
-|---------|--------|-------------|
-| INPACT™ | 40 | Latency, semantic support, ABAC/HITL, feedback loops, connectors, explainability |
-| Architecture | 30 | Layer alignment, adjacent integration, gap/overlap analysis |
-| GOALS™ | 30 | Compliance certs, monitoring, SLA/support, API quality, production track record |
+| Section | Scoring | Focus Areas |
+|---------|---------|-------------|
+| INPACT™ | X/36 (per Section 1.2) | Latency, semantic support, ABAC/HITL, feedback loops, connectors, explainability |
+| Architecture | Pass/Fail | Layer alignment, adjacent integration, gap/overlap analysis |
+| GOALS™ | X/25 (per Section 1.2) | Compliance certs, monitoring, SLA/support, API quality, production track record |
 
-Score each pillar separately. Both INPACT™ and GOALS™ must meet minimum thresholds independently.
-
-*Download complete RFP template with question banks at trustbeforeintelligence.com/tools*
-
----
+Score each pillar separately. Both INPACT™ (≥67%) and GOALS™ (≥70%) must meet minimum thresholds independently.
 
 ### 3.2 POC Approach
 
@@ -735,17 +731,17 @@ Use your evaluation process in negotiations. Vendors competing through structure
 | Volume | 10-20% | Commit to higher usage tier upfront |
 | Case Study | 5-10% | Offer to be reference customer |
 
-**Must-Have Contract Terms (Healthcare)**
+**Must-Have Contract Terms**
 
 | Term | Requirement | Why It Matters |
 |------|-------------|----------------|
-| **BAA** | Signed Business Associate Agreement | HIPAA compliance mandatory |
-| **Data Residency** | US-only data storage confirmed | PHI cannot leave jurisdiction |
+| **Compliance** | Industry-required certifications (SOC2, ISO27001, or industry-specific) | Regulatory compliance mandatory |
+| **Data Residency** | Data storage in required jurisdictions confirmed | Sensitive data cannot leave jurisdiction |
 | **SLA** | Uptime guarantee with financial penalties | Accountability for reliability |
 | **Exit Clause** | Data portability and transition period | Avoid vendor lock-in |
-| **Security Audit** | Right to audit or SOC2/HIPAA certification | Verify security claims |
+| **Security Audit** | Right to audit or security certification | Verify security claims |
 
-Negotiate all five terms with every PHI-touching vendor. Walk away from vendors who resist BAA requirements. They'll eventually agree when you demonstrate serious evaluation of alternatives.
+Negotiate all five terms with every vendor handling sensitive data. Walk away from vendors who resist compliance requirements. They'll eventually agree when you demonstrate serious evaluation of alternatives.
 
 ---
 
@@ -820,7 +816,7 @@ The following tools help you apply the methodology to your situation.
 - Failure documentation guide
 
 **Contract Terms Checklist**
-- Non-negotiable terms (BAA/SOC2, data residency, SLA, exit clause)
+- Non-negotiable terms (compliance certifications, data residency, SLA, exit clause)
 - Negotiable terms (pricing, commitment length, support tier)
 - Red flags that indicate walk-away
 
@@ -844,7 +840,7 @@ Structured methodology prevents common selection failures:
 | Failure Mode | How Methodology Prevents It |
 |--------------|----------------------------|
 | "Shiny object" syndrome | GOALS™ scoring exposes operational gaps behind impressive demos |
-| Compliance gaps | BAA/regulatory filter applied before technical evaluation |
+| Compliance gaps | Regulatory filter applied before technical evaluation |
 | Vendor lock-in | Exit clause required in contract terms checklist |
 | Budget overruns | Three-pillar test aligns selection to actual budget tier |
 | Integration failures | POC Week 2 validates layer integration before commitment |
