@@ -67,7 +67,7 @@ Marcus pulled up a document. It was three pages long. By Monday morning, it woul
 
 ### 1.1 The Production Readiness Decision
 
-You've completed the hardest part. Chapters 4-6 built the architecture layer by layer. Chapter 10 executed the 90-day roadmap. Chapter 11 selected technologies for each layer. Your INPACT™ score has climbed from wherever you started toward the 86+ threshold that signals agent-readiness.
+You've completed the hardest part. Chapters 4-6 built the architecture layer by layer. Chapter 10 executed the 90-day roadmap. Chapter 11 selected technologies for each layer. Your INPACT™ score has climbed from wherever you started toward the threshold that signals agent-readiness—typically 80+ for standard enterprise deployments, 86+ for high-stakes environments.
 
 But building isn't operating. The gap between "architecture complete" and "production ready" has derailed more agent initiatives than infrastructure gaps ever did. Organizations celebrate Week 10 architecture milestones only to stumble in Week 11 pilots. The Architecture of Trust needs operational discipline to deliver sustained value.
 
@@ -99,18 +99,20 @@ Throughout this chapter, reference benchmarks are drawn from Echo Health Systems
 
 graph LR
     subgraph INPACT["PILLAR 1: INPACT™"]
-        I1["1. Score ≥ 86<br/>2. Response < 5s<br/>3. NLU ≥ 85%<br/>4. Escalation < 15%<br/>5. Audit 100%"]
+        I1["1. Score ≥ 80/86<br/>2. Response < 10/5s<br/>3. NLU ≥ 80/85%<br/>4. Escalation < 20/15%<br/>5. Audit 100%"]
     end
     
     subgraph ARCH["PILLAR 2: ARCHITECTURE"]
-        A1["6. 7 Layers Live<br/>7. 3+ Agents<br/>8. Orchestration < 3s<br/>9. BAAs Signed<br/>10. Data Residency"]
+        A1["6. 7 Layers Live<br/>7. 1/3+ Agents<br/>8. Orchestration < 5/3s<br/>9. Agreements Signed<br/>10. Data Residency"]
     end
     
     subgraph GOALS["PILLAR 3: GOALS™"]
-        G1["11. ABAC + Audit<br/>12. Dashboards Active<br/>13. SLA Achievable<br/>14. Semantic Mapped<br/>15. On-Call Staffed"]
+        G1["11. Access Control + Audit<br/>12. Dashboards Active<br/>13. SLA 99.0/99.5%+<br/>14. Semantic Mapped<br/>15. On-Call Coverage"]
     end
     
     READY["PRODUCTION<br/>READY"]
+    
+    Note["Values show Generic/High-Stakes targets"]
     
     Copyright["© 2025 Colaberry Inc."]
     
@@ -125,19 +127,24 @@ graph LR
     style A1 fill:#ffe0b2,stroke:#f57c00,color:#e65100
     style G1 fill:#b2dfdb,stroke:#00897b,color:#004d40
     style READY fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Note fill:#f5f5f5,stroke:#999999,color:#666666
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
 
 **Pillar 1: INPACT™ Readiness (5 Criteria)**
 
-| # | Criterion | INPACT™ Need | How to Measure | Reference Benchmark |
-|---|-----------|--------------|----------------|---------------------|
-| 1 | INPACT™ Score | All 6 | Chapter 9 assessment | ≥86/100 |
-| 2 | Response Time | I (Instant) | Load testing, APM traces | <5s P95 |
-| 3 | NLU Accuracy | N (Natural) | Validation set testing | ≥85% |
-| 4 | HITL Escalation | P (Permitted) | Governance logs | <15% |
-| 5 | Audit Coverage | T (Transparent) | Audit log validation | 100% |
+| # | Criterion | INPACT™ Need | How to Measure | Generic Target | High-Stakes Target |
+|---|-----------|--------------|----------------|----------------|-------------------|
+| 1 | INPACT™ Score | All 6 | Chapter 9 assessment | ≥80/100 | ≥86/100 |
+| 2 | Response Time | I (Instant) | Load testing, APM traces | <10s P95 | <5s P95 |
+| 3 | NLU Accuracy | N (Natural) | Validation set testing | ≥80% | ≥85% |
+| 4 | HITL Escalation | P (Permitted) | Governance logs | <20% | <15% |
+| 5 | Audit Coverage | T (Transparent) | Audit log validation | 100% | 100% |
+
+**Choosing Your Targets:**
+- **Generic targets** suit most enterprise deployments where agent errors cause inconvenience but not significant harm
+- **High-stakes targets** apply to regulated industries, safety-critical systems, and environments where errors have serious consequences
 
 Criterion 3 often sparks debate. If you're near threshold with a clear improvement trajectory, launching with aggressive monitoring may be safer than delaying indefinitely. The key: have weekly improvement cycles ready to close the gap.
 
@@ -145,29 +152,29 @@ Criterion 3 often sparks debate. If you're near threshold with a clear improveme
 
 **Pillar 2: Architecture Readiness (5 Criteria)**
 
-| # | Criterion | Layers | How to Measure | Reference Benchmark |
-|---|-----------|--------|----------------|---------------------|
-| 6 | All 7 Layers Operational | L1-L7 | Layer health checks | All functional |
-| 7 | Three+ Agents Validated | L7 | UAT completion | ≥3 agents |
-| 8 | Multi-Agent Orchestration | L7 | Coordination testing | <3s latency |
-| 9 | All Vendor BAAs Signed | All | Contract audit | 100% |
-| 10 | Data Residency Confirmed | L1-L2 | Cloud region audit | Per requirements |
+| # | Criterion | Layers | How to Measure | Generic Target | High-Stakes Target |
+|---|-----------|--------|----------------|----------------|-------------------|
+| 6 | All 7 Layers Operational | L1-L7 | Layer health checks | All functional | All functional + redundancy |
+| 7 | Agents Validated | L7 | UAT completion | ≥1 agent | ≥3 agents |
+| 8 | Multi-Agent Orchestration | L7 | Coordination testing | <5s latency | <3s latency |
+| 9 | Vendor Agreements Signed | All | Contract audit | 100% | 100% + compliance addenda |
+| 10 | Data Residency Confirmed | L1-L2 | Cloud region audit | Documented | Per regulatory requirements |
 
-Architecture criteria are typically pass/fail. If you've followed the 90-day roadmap, these should pass cleanly.
+Architecture criteria are typically pass/fail. If you've followed the 90-day roadmap, these should pass cleanly. High-stakes environments may require additional compliance documentation for Criterion 9 (such as BAAs, SOC 2 attestations, or PCI-DSS certifications depending on your industry).
 
 ---
 
 **Pillar 3: GOALS™ Readiness (5 Criteria)**
 
-| # | Criterion | GOALS™ | How to Measure | Reference Benchmark |
-|---|-----------|--------|----------------|---------------------|
-| 11 | ABAC + Audit Operational | G (Governance) | Policy testing | <10ms eval |
-| 12 | Dashboards Active | O (Observability) | Dashboard review | Real-time |
-| 13 | SLA Achievable | A (Availability) | Availability testing | 99.5% uptime |
-| 14 | Semantic Layer Mapped | L (Language) | Term coverage audit | Documented |
-| 15 | On-Call Rotation Staffed | S (Solid) | Schedule review | 24/7 coverage |
+| # | Criterion | GOALS™ | How to Measure | Generic Target | High-Stakes Target |
+|---|-----------|--------|----------------|----------------|-------------------|
+| 11 | Access Control + Audit | G (Governance) | Policy testing | <50ms eval | <10ms eval |
+| 12 | Dashboards Active | O (Observability) | Dashboard review | Near real-time | Real-time |
+| 13 | SLA Achievable | A (Availability) | Availability testing | 99.0% uptime | 99.5%+ uptime |
+| 14 | Semantic Layer Mapped | L (Language) | Term coverage audit | Core terms | Comprehensive |
+| 15 | On-Call Coverage | S (Solid) | Schedule review | Business hours | 24/7 coverage |
 
-Criterion 15 is often the last to complete. Finding engineers willing to carry pagers may require negotiation. Consider on-call bonuses if staffing is difficult.
+Criterion 15 is often the last to complete. For organizations not requiring 24/7 coverage, business-hours support with automated alerting may suffice initially. Finding engineers willing to carry pagers may require negotiation—consider on-call bonuses if staffing is difficult.
 
 ---
 
@@ -190,24 +197,26 @@ Production operations require ongoing monitoring across all three pillars. Here'
 
 **INPACT™ Operational Metrics**
 
-| Dimension | What to Monitor | Reference Benchmark | Check Frequency |
-|-----------|-----------------|---------------------|-----------------|
-| I (Instant) | P95 response time | <5s | Real-time |
-| N (Natural) | NLU accuracy rate | ≥85% weekly avg | Daily |
-| P (Permitted) | HITL escalation rate | <15% | Daily |
-| A (Adaptive) | Model drift score | <10% deviation | Weekly |
-| C (Contextual) | Context retrieval success | ≥90% | Daily |
-| T (Transparent) | Audit log completeness | 100% | Real-time |
+| Dimension | What to Monitor | Generic Target | High-Stakes Target | Check Frequency |
+|-----------|-----------------|----------------|-------------------|-----------------|
+| I (Instant) | P95 response time | <10s | <5s | Real-time |
+| N (Natural) | NLU accuracy rate | ≥80% weekly avg | ≥85% weekly avg | Daily |
+| P (Permitted) | HITL escalation rate | <20% | <15% | Daily |
+| A (Adaptive) | Model drift score | <15% deviation | <10% deviation | Weekly |
+| C (Contextual) | Context retrieval success | ≥85% | ≥90% | Daily |
+| T (Transparent) | Audit log completeness | 100% | 100% | Real-time |
+
+Select targets based on your industry requirements and risk tolerance. High-stakes environments should use the stricter targets.
 
 **GOALS™ Operational Metrics**
 
-| Dimension | What to Monitor | Reference Benchmark | Check Frequency |
-|-----------|-----------------|---------------------|-----------------|
-| G (Governance) | Policy evaluation latency | <10ms | Real-time |
-| O (Observability) | Dashboard availability | ≥99.9% | Real-time |
-| A (Availability) | System uptime | ≥99.5% | Real-time |
-| L (Language) | Terminology match rate | ≥95% | Weekly |
-| S (Solid) | On-call response time | <5min for P1 | Per incident |
+| Dimension | What to Monitor | Generic Target | High-Stakes Target | Check Frequency |
+|-----------|-----------------|----------------|-------------------|-----------------|
+| G (Governance) | Policy evaluation latency | <50ms | <10ms | Real-time |
+| O (Observability) | Dashboard availability | ≥99.0% | ≥99.9% | Real-time |
+| A (Availability) | System uptime | ≥99.0% | ≥99.5% | Real-time |
+| L (Language) | Terminology match rate | ≥90% | ≥95% | Weekly |
+| S (Solid) | On-call response time | <15min for P1 | <5min for P1 | Per incident |
 
 **Layer Health Checks**
 
@@ -231,40 +240,40 @@ Production readiness enables launch, but it doesn't guarantee success. Phased ro
 
 **Phase 1: Internal Pilot (Week 11)**
 
-| Dimension | Guidance | Reference Benchmark |
-|-----------|----------|---------------------|
-| Users | Start small with friendly users who provide feedback | 50 users |
-| Duration | Minimum 1 week | 1 week |
-| Monitoring | Intensive: catch issues early | Hourly reviews |
-| Success Criteria | High task completion rate | ≥90% |
-| HITL Threshold | Lower than production target | <10% escalation |
-| Decision Gate | Proceed only if criteria met | All green to advance |
+| Dimension | Guidance | Generic Target | High-Stakes Target |
+|-----------|----------|----------------|-------------------|
+| Users | Start small with friendly users who provide feedback | 25-50 users | 50-100 users |
+| Duration | Minimum observation period | 1 week | 2 weeks |
+| Monitoring | Intensive: catch issues early | Daily reviews | Hourly reviews |
+| Success Criteria | High task completion rate | ≥85% | ≥90% |
+| HITL Threshold | Lower than production target | <15% escalation | <10% escalation |
+| Decision Gate | Proceed only if criteria met | All green to advance | All green to advance |
 
-Phase 1 validates with friendly users who provide detailed feedback. Hourly monitoring catches issues before they propagate. Success at Phase 1 builds confidence for expansion.
+Phase 1 validates with friendly users who provide detailed feedback. Intensive monitoring catches issues before they propagate. Success at Phase 1 builds confidence for expansion.
 
 **Phase 2: Department Pilot (Week 12)**
 
-| Dimension | Guidance | Reference Benchmark |
-|-----------|----------|---------------------|
-| Users | Expand to full department or team | 100-200 users |
-| Duration | Minimum 1 week | 1 week |
-| Monitoring | Shift to sustainable cadence | Daily reviews |
-| Success Criteria | Slightly relaxed from Phase 1 | ≥85% |
-| HITL Threshold | Closer to production target | <12% escalation |
-| Decision Gate | Proceed only if criteria met | All green to advance |
+| Dimension | Guidance | Generic Target | High-Stakes Target |
+|-----------|----------|----------------|-------------------|
+| Users | Expand to full department or team | 50-100 users | 100-200 users |
+| Duration | Minimum observation period | 1 week | 1-2 weeks |
+| Monitoring | Shift to sustainable cadence | Weekly reviews | Daily reviews |
+| Success Criteria | Slightly relaxed from Phase 1 | ≥80% | ≥85% |
+| HITL Threshold | Closer to production target | <18% escalation | <12% escalation |
+| Decision Gate | Proceed only if criteria met | All green to advance | All green to advance |
 
-Phase 2 tests at department scale with diverse users and workflows. Daily monitoring balances vigilance with sustainable operations. Success at Phase 2 proves scalability.
+Phase 2 tests at department scale with diverse users and workflows. Sustainable monitoring balances vigilance with operational efficiency. Success at Phase 2 proves scalability.
 
 **Phase 3: Full Production (Week 13+)**
 
-| Dimension | Guidance | Reference Benchmark |
-|-----------|----------|---------------------|
-| Users | All target users | Full rollout |
-| Duration | Ongoing | Continuous |
-| Monitoring | Steady-state cadence | Weekly reviews |
-| Success Criteria | Production target | ≥80% |
-| HITL Threshold | Production target | <15% escalation |
-| Decision Gate | Rollback if thresholds breached | SLA review weekly |
+| Dimension | Guidance | Generic Target | High-Stakes Target |
+|-----------|----------|----------------|-------------------|
+| Users | All target users | Full rollout | Full rollout |
+| Duration | Ongoing | Continuous | Continuous |
+| Monitoring | Steady-state cadence | Monthly reviews | Weekly reviews |
+| Success Criteria | Production target | ≥75% | ≥80% |
+| HITL Threshold | Production target | <20% escalation | <15% escalation |
+| Decision Gate | Rollback if thresholds breached | SLA review monthly | SLA review weekly |
 
 Phase 3 is steady-state operations with continuous improvement cycles replacing intensive monitoring. The decision gate shifts from "proceed to next phase" to "maintain or rollback." If metrics breach thresholds, trigger incident response.
 
@@ -274,10 +283,10 @@ Phase 3 is steady-state operations with continuous improvement cycles replacing 
 
 The 15-criteria checklist provides data. The go/no-go meeting interprets it. These questions determine whether your organization is ready:
 
-**Clinical Risk**
-- What happens if an agent gives a bad recommendation?
-- Can your HITL workflows catch high-risk decisions?
-- Does your clinical staff have capacity to handle the escalation rate?
+**Domain Risk**
+- What happens if an agent gives a bad recommendation in your context?
+- Can your HITL workflows catch high-risk decisions before they cause harm?
+- Does your team have capacity to handle the projected escalation rate?
 
 **Business Risk**
 - What's the cost of waiting another month?
@@ -454,8 +463,8 @@ Separate static instructions from dynamic context:
 | Variable Type | Example | Update Frequency |
 |---------------|---------|------------------|
 | Static | Core instructions, constraints | Monthly |
-| Session | Patient context, conversation history | Per query |
-| Dynamic | Provider availability, current date | Real-time |
+| Session | User context, conversation history | Per query |
+| Dynamic | Resource availability, current date | Real-time |
 
 **3. Automated Testing**
 
@@ -475,7 +484,7 @@ All prompt changes require review before deployment:
 |-------------|-------------------|
 | PATCH | 1 reviewer |
 | MINOR | 2 reviewers |
-| MAJOR | 2 reviewers + clinical sign-off |
+| MAJOR | 2 reviewers + domain expert sign-off |
 
 **Recommended Prompt Pipeline**
 
@@ -517,8 +526,8 @@ Use cheaper models for simpler queries:
 
 | Query Complexity | Model | Cost/1K tokens |
 |------------------|-------|----------------|
-| Simple scheduling | GPT-4o-mini | $0.15 |
-| Standard clinical | GPT-4o | $2.50 |
+| Simple queries | GPT-4o-mini | $0.15 |
+| Standard queries | GPT-4o | $2.50 |
 | Complex reasoning | GPT-4o | $2.50 |
 
 **Reference traffic distribution:**
@@ -573,15 +582,15 @@ Service Level Agreements define your commitments to users. Without explicit SLAs
 
 **SLA Tiers by Agent Type**
 
-Not all agents require the same SLAs:
+Not all agents require the same SLAs. Classify by user impact and error consequences:
 
-| Agent Type | Availability | Performance | Accuracy |
-|------------|--------------|-------------|----------|
-| Patient-facing | 99.9% | <3s P95 | >90% |
-| Clinical support | 99.5% | <5s P95 | >85% |
-| Administrative | 99.0% | <10s P95 | >80% |
+| Agent Type | Availability | Performance | Accuracy | When to Use |
+|------------|--------------|-------------|----------|-------------|
+| Tier 1: Critical | 99.9% | <3s P95 | >90% | External-facing, revenue-impacting, safety-related |
+| Tier 2: Standard | 99.5% | <5s P95 | >85% | Internal user-facing, operational decisions |
+| Tier 3: Basic | 99.0% | <10s P95 | >80% | Administrative, back-office, non-urgent |
 
-Classify your agents by user impact. For example, a patient-facing scheduling agent warrants the highest tier, while an internal documentation assistant may use standard tier.
+Classify your agents by user impact. An external-facing agent typically warrants Tier 1, while an internal documentation assistant may use Tier 3.
 
 **SLA Breach Consequences**
 
@@ -985,7 +994,7 @@ Agent performance degrades over time. Data distributions shift. User expectation
 
 **Example Drift Response**
 
-A drift detection identified declining retrieval precision (78% → 74% over two weeks). Root cause: new clinical documentation formats introduced by EHR upgrade not reflected in chunking strategy.
+Drift detection identified declining retrieval precision (78% → 74% over two weeks). Root cause: new document formats introduced by a source system upgrade not reflected in the chunking strategy.
 
 Response:
 - Tuesday: Identified drift pattern
@@ -994,7 +1003,7 @@ Response:
 - Friday: Deployed fix in A/B test
 - Following week: Precision restored to 79%
 
-Early detection prevented user-visible degradation.
+Early detection prevented user-visible degradation. At Echo Health Systems, this same pattern occurred when their EHR system introduced new documentation templates—the universal response process applied regardless of the specific source system.
 
 ---
 
@@ -1060,7 +1069,7 @@ Pre-built orchestration framework with:
 
 Standardized data connectivity:
 - Pre-built connectors for 50+ enterprise systems
-- Healthcare connectors (Epic, Cerner, Athena)
+- Industry-specific connectors (EHR, ERP, CRM, core banking, e-commerce platforms)
 - CDC pipeline templates
 - Real-time data fabric patterns
 
@@ -1076,7 +1085,7 @@ Reusable agent marketplace:
 
 Enterprise-grade access control:
 - ABAC policy templates
-- HIPAA-compliant audit trails
+- Compliance-ready audit trails
 - HITL workflow builder
 - Compliance reporting
 
@@ -1169,7 +1178,16 @@ Hands-on validation:
 
 ## Part 6: Echo Health Systems Results
 
-Echo Health Systems is a pedagogical case study used throughout this book to illustrate the Architecture of Trust in practice. While fictional, Echo's metrics reflect realistic outcomes based on Colaberry's production deployments. This section consolidates Echo's results as a reference benchmark.
+Echo Health Systems is a pedagogical case study used throughout this book to illustrate the Architecture of Trust in practice. While fictional, Echo's metrics reflect realistic outcomes based on Colaberry's production deployments.
+
+**How to Use These Benchmarks:**
+
+Echo represents a high-stakes deployment with stringent requirements. Your targets may differ based on your industry, use case, and risk tolerance. Use Echo's metrics as:
+- **Reference points** for what's achievable with disciplined execution
+- **Upper-bound targets** if you operate in a similarly regulated environment
+- **Validation benchmarks** to compare your own progress
+
+This section consolidates Echo's results for easy reference.
 
 **Production Readiness (Week 10)**
 

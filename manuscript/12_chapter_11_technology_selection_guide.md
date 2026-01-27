@@ -322,17 +322,6 @@ Partnering makes sense when:
 - ⚠️ Variable costs based on scope
 - ⚠️ Dependency on partner availability
 
-
-**Illustrative Split for regulated Organizations**
-
-| Approach | Percentage | Rationale |
-|----------|------------|-----------|
-| Buy | 90% | Managed services reduce operational burden, compliance built-in |
-| Build | 5% | Competitive differentiators only (workflow-specific interfaces, domain prompts) |
-| Partner | 5% | One-time expertise gaps (implementation, compliance validation) |
-
-This split works for organizations needing fast time-to-value with regulatory compliance, lacking internal expertise in agent infrastructure, and with budget for managed services. Your split may differ based on existing capabilities and strategic priorities.
-
 ---
 
 ## Part 2: Layer-by-Layer Selection Criteria
@@ -917,7 +906,7 @@ The following tools support the methodology in this chapter. Available at **trus
 
 | Tool | Purpose | Format |
 |------|---------|--------|
-| **Vendor Evaluation Scorecard** | Score vendors on INPACT™ (36 pts) and GOALS™ (25 pts) with weighted comparison | Spreadsheet |
+| **Vendor Evaluation Scorecard** | Score vendors on INPACT™ (layer-specific) and GOALS™ (25 pts) with weighted comparison | Spreadsheet |
 | **Three-Pillar RFP Template** | Structure vendor requests with question banks per pillar | Document |
 | **POC Test Plan Template** | Week 1 INPACT™ + Week 2 GOALS™ validation with success criteria | Document |
 | **Contract Terms Checklist** | Non-negotiable terms, negotiable terms, walk-away red flags | Checklist |
