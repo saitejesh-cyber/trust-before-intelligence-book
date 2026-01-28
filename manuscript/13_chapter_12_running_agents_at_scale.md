@@ -4,6 +4,26 @@
 
 ---
 
+*About a year ago.*
+
+*Friday, 4:47 PM, Week 10.*
+
+*Echo Health Systems, Sarah's Office.*
+
+"What's the worst thing that can happen Monday morning?"
+
+Marcus didn't hesitate. "LLM provider goes down. Agents start hallucinating. A nurse gets bad information about a patient's medication."
+
+Sarah nodded. They'd spent 10 weeks building the architecture. Seven layers. Three agents. Eighty-six on the INPACT™ scale. All the checkboxes checked.
+
+But checkboxes don't answer phones at 2 AM.
+
+"Show me the runbook," Sarah said. "The one for when everything breaks at once."
+
+Marcus pulled up a document. It was three pages long. By Monday morning, it would be twelve.
+
+---
+
 **Diagram 1: Operations Value (From Reactive to Proactive)**
 
 ```mermaid
@@ -43,25 +63,7 @@ graph LR
 
 ---
 
-*About a year ago.*
 
-*Friday, 4:47 PM, Week 10.*
-
-*Echo Health Systems, Sarah's Office.*
-
-"What's the worst thing that can happen Monday morning?"
-
-Marcus didn't hesitate. "LLM provider goes down. Agents start hallucinating. A nurse gets bad information about a patient's medication."
-
-Sarah nodded. They'd spent 10 weeks building the architecture. Seven layers. Three agents. Eighty-six on the INPACT™ scale. All the checkboxes checked.
-
-But checkboxes don't answer phones at 2 AM.
-
-"Show me the runbook," Sarah said. "The one for when everything breaks at once."
-
-Marcus pulled up a document. It was three pages long. By Monday morning, it would be twelve.
-
----
 
 ## Part 1: Production Readiness
 
@@ -81,7 +83,7 @@ This chapter completes your journey with five operational components:
 
 **Part 4: Continuous Improvement.** Weekly improvement cycles that can drive 3-5% accuracy gains in the first month. The Architecture of Trust isn't static. It improves continuously.
 
-**Part 5: AIXcelerator Platform.** For organizations seeking acceleration, how Colaberry's platform compresses the 90-day journey to 45 days while maintaining all three pillars.
+**Part 5: AIXcelerator Platform.** For organizations seeking a proven path, how Colaberry's platform makes the 90-day transformation achievable while maintaining all three pillars.
 
 Let's begin with the question every organization faces at Week 10: are you actually ready?
 
