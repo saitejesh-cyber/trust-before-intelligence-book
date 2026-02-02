@@ -328,7 +328,7 @@ Partnering makes sense when:
 
 This section provides selection criteria for each of the seven architecture layers. For each layer, you'll find: the purpose and INPACT™ dimensions to prioritize, minimum requirements and questions to ask vendors, red flags that eliminate vendors, and subcategories to evaluate.
 
-> **📚 For specific vendor comparisons:** See Appendix DA-1 for detailed vendor tables, or the **Online Tools** section for current evaluations.
+> **📚 For specific vendor comparisons:** Use the **Vendor Selector at trustbeforeintelligence.ai/tools** for personalized recommendations based on your context.
 
 **Diagram 4: The 7-Layer Architecture Technology Stack**
 
@@ -421,8 +421,6 @@ Layer 1 establishes the storage foundation everything else depends on. Without p
 | Graph Databases | Relationship traversal | Multi-hop query performance |
 | Document Stores | Flexible schema | JSON native, unstructured text |
 
-*For detailed vendor comparisons in each subcategory, see Appendix DA-1, Section 2.1.*
-
 ---
 
 ### 2.2 Layer 2: Real-Time Data Fabric
@@ -461,8 +459,6 @@ Layer 2 ensures agents work with current information. Without real-time data, ag
 | Streaming Platforms | Event processing | Throughput and latency |
 | Stream Processing | Real-time transformation | Windowing and aggregation |
 
-*For detailed vendor comparisons in each subcategory, see Appendix DA-1, Section 2.2.*
-
 ---
 
 ### 2.3 Layer 3: Semantic Layer
@@ -500,8 +496,6 @@ Layer 3 bridges human language and database schemas. When a user asks a domain-s
 | Semantic Modeling | Metric definitions | SQL-native transformation |
 | Data Catalogs | Discovery and governance | Auto-classification, PII detection |
 | Entity Resolution | Identity matching | Probabilistic matching confidence |
-
-*For detailed vendor comparisons in each subcategory, see Appendix DA-1, Section 2.3.*
 
 ---
 
@@ -542,8 +536,6 @@ Layer 4 is the complete intelligence pipeline: query understanding, embedding ge
 | RAG Frameworks | Pipeline orchestration | Ecosystem and flexibility |
 | Reranking | Result refinement | Accuracy improvement |
 
-*For detailed vendor comparisons in each subcategory, see Appendix DA-1, Section 2.4.*
-
 ---
 
 ### 2.5 Layer 5: Governance
@@ -581,8 +573,6 @@ Layer 5 provides policy-based authorization and audit infrastructure. Agents mak
 | Policy Engines | ABAC evaluation | Rego/policy language flexibility |
 | Data Governance | Compliance management | Industry-specific compliance features |
 | HITL Platforms | Human escalation | Workflow customization |
-
-*For detailed vendor comparisons in each subcategory, see Appendix DA-1, Section 2.5.*
 
 ---
 
@@ -622,8 +612,6 @@ Layer 6 delivers complete visibility into agent operations. Without observabilit
 | LLM Observability | AI-specific tracing | Prompt versioning, quality metrics |
 | Log Management | Centralized logging | Search and correlation |
 
-*For detailed vendor comparisons in each subcategory, see Appendix DA-1, Section 2.6.*
-
 ---
 
 ### 2.7 Layer 7: Orchestration
@@ -661,8 +649,6 @@ Layer 7 delivers multi-agent coordination. Complex queries often span multiple d
 | Agent Frameworks | Multi-agent coordination | State management approach |
 | Workflow Engines | Process orchestration | Retry and error handling |
 | Integration Platforms | Cross-system coordination | Connector ecosystem |
-
-*For detailed vendor comparisons in each subcategory, see Appendix DA-1, Section 2.7.*
 
 ---
 
@@ -824,7 +810,7 @@ The methodology doesn't guarantee perfect selections. It prevents predictable mi
 
 Echo's final technology choices demonstrate the methodology in action. Every vendor passed the three-pillar test.
 
-> **Note:** Echo's choices reflect their specific context (healthcare, $1.23M budget, 12-week timeline). Your selections will differ based on your constraints. For detailed vendor comparisons, see Appendix DA-1.
+> **Note:** Echo's choices reflect their specific context (healthcare, $1.23M budget, 12-week timeline). Your selections will differ based on your constraints. For detailed vendor comparisons, use the Vendor Selector tool.
 
 **Diagram 5: Echo's Complete Technology Stack**
 

@@ -386,7 +386,7 @@ The team documented their constraints and boundaries within which technology dec
 
 "These constraints eliminate 80% of technology options before we even evaluate," Sarah observed. "That's good. Decision paralysis kills projects. Clear constraints accelerate decisions."
 
-**For detailed technology selection criteria, product comparisons with INPACT™ + GOALS™ scoring, healthcare-specific guidance, and budget-tier recommendations across all storage and real-time data technologies, see Appendix DA-1: Technology Selection Guide (Sections 2.1-2.2).**
+**For detailed technology selection criteria, product comparisons with INPACT™ + GOALS™ scoring, healthcare-specific guidance, and budget-tier recommendations, use the Vendor Selector at trustbeforeintelligence.ai/tools.**
 
 The team was ready to build.
 
@@ -734,7 +734,7 @@ graph LR
 - 2 weeks deployment time (Week 1-2)
 - 6-8 hours deployment per category average
 
-**Technology Selection Note:** Echo's vendor selections (Pinecone, Neo4j, MongoDB, Tecton, etc.) reflect their specific constraints (Azure-first, HIPAA compliance, 4-week timeline). Your organization's optimal choices may differ based on cloud platform, budget tier, team expertise, and compliance requirements. For comprehensive vendor comparisons with INPACT™ + GOALS™ scoring, alternative options, and decision criteria for each storage category, see **Appendix DA-1, Section 2.1: Layer 1 Multi-Modal Storage.**
+**Technology Selection Note:** Echo's vendor selections (Pinecone, Neo4j, MongoDB, Tecton, etc.) reflect their specific constraints (Azure-first, HIPAA compliance, 4-week timeline). Your organization's optimal choices may differ based on cloud platform, budget tier, team expertise, and compliance requirements. For comprehensive vendor comparisons with INPACT™ + GOALS™ scoring, use the **Vendor Selector at trustbeforeintelligence.ai/tools.**
 
 ---
 
@@ -927,7 +927,7 @@ graph LR
 - 2 weeks deployment time (Week 3-4)
 - Primary bottleneck: Epic EHR CDC connector configuration (HL7 integration complexity)
 
-**Technology Selection Note:** Echo's real-time fabric choices (Debezium CDC, Confluent Cloud Kafka, Apache Flink on Databricks) reflect their Azure-first strategy and managed services preference. Alternative architectures include AWS-native (Kinesis + DMS), Google Cloud-native (Pub/Sub + Datastream), or open-source (self-hosted Kafka + Flink). For comprehensive CDC, streaming, and event processing vendor comparisons, see **Appendix DA-1, Section 2.2: Layer 2 Real-Time Data Fabric.**
+**Technology Selection Note:** Echo's real-time fabric choices (Debezium CDC, Confluent Cloud Kafka, Apache Flink on Databricks) reflect their Azure-first strategy and managed services preference. Alternative architectures include AWS-native (Kinesis + DMS), Google Cloud-native (Pub/Sub + Datastream), or open-source (self-hosted Kafka + Flink). For comprehensive CDC, streaming, and event processing vendor comparisons, use the **Vendor Selector at trustbeforeintelligence.ai/tools.**
 
 ---
 
