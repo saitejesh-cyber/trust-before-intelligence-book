@@ -869,7 +869,7 @@ These aren't random problems requiring bespoke solutions. They're systematic INP
 
 Echo scored 28/100. Most enterprises scoring between 25-45 are firmly in the "high risk" zone where agent deployments consistently fail.
 
-The assessment at **colaberry.ai/assessment** measures your readiness across all six dimensions in 15 minutes. Chapter 2 provides the detailed scoring rubrics and shows Echo's path from 28 to 86.
+The assessment at **trustbeforeintelligence.ai/assessment** measures your readiness across all six dimensions in 15 minutes. Chapter 2 provides the detailed scoring rubrics and shows Echo's path from 28 to 86.
 
 ### Bridge to Chapter 2: INPACT™ Deep Dive
 

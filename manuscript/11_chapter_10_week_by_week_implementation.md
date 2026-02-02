@@ -800,7 +800,7 @@ Monitors spend by category (Technology, Services, Staff) against plan. Weekly ac
 ### Getting Started with the Tracker
 
 **Before Week 1:**
-1. Download the template at colaberry.ai/90-day-tracker
+1. Download the template at trustbeforeintelligence.ai/tools
 2. Complete your INPACT™ assessment (Chapter 9) to establish baseline scores
 3. Customize phase focus based on your priority layers (Part 4)
 4. Assign tab owners and establish update cadence

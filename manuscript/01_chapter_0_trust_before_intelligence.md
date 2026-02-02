@@ -106,7 +106,7 @@ MIT's recommendation was clear: *"Create a strong data foundation. Prioritize lo
 
 Before we can answer that, you need to meet someone who faced this crisis head-on.
 
-> **Your Turn:** Where does your infrastructure stand? The 15-minute INPACT™ assessment at **colaberry.ai/assessment** measures your readiness across six dimensions and generates a personalized gap analysis. Consider taking it now, your results will make the frameworks ahead immediately actionable.
+> **Your Turn:** Where does your infrastructure stand? The 15-minute INPACT™ assessment at **trustbeforeintelligence.ai/assessment** measures your readiness across six dimensions and generates a personalized gap analysis. Consider taking it now, your results will make the frameworks ahead immediately actionable.
 
 ---
 

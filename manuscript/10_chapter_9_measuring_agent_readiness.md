@@ -331,7 +331,7 @@ You have two paths to complete your INPACT™ assessment, both yielding identica
 
 **Option 1: Online Assessment (Coming Q1 2026)**
 
-Colaberry is developing an automated assessment platform at [https://trustbeforeintelligence.ai/assessment](https://trustbeforeintelligence.ai/assessment) or [colaberry.ai/assessment](https://colaberry.ai/assessment). The online tool will provide:
+Colaberry is developing an automated assessment platform at [trustbeforeintelligence.ai/assessment](https://trustbeforeintelligence.ai/assessment). The online tool will provide:
 
 - Automated scoring engine with instant results
 - Real-time gap analysis with visualizations

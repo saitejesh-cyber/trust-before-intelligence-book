@@ -336,7 +336,7 @@ graph TB
 
 **86/100 Threshold:** Industry analysis shows 86/100 (~31/36 points) as minimum for production readiness [15,16]. Below 86: high abandonment risk. Above 86: sustainable adoption, manageable risk, continuous improvement foundation.
 
-**Practical Application:** INPACT™ assessment takes 2-4 hours with infrastructure and data teams. Output: current score per dimension, gap analysis, prioritized roadmap. Tool available at colaberry.ai/assessment.
+**Practical Application:** INPACT™ assessment takes 2-4 hours with infrastructure and data teams. Output: current score per dimension, gap analysis, prioritized roadmap. Tool available at trustbeforeintelligence.ai/assessment.
 
 ### Echo Health's Reality Check
 
@@ -946,7 +946,7 @@ INPACT™ assessment produces actionable insights across six dimensions. Each di
 
 **Practical Use:** Assessment identifies specific infrastructure gaps preventing agent readiness. Echo's 28/100 revealed five critical dimensions (scores 1-2/6), one moderate strength (Contextual at 3/6), and a clear roadmap: prioritize Instant, Natural, Permitted first (highest impact, foundational dependencies).
 
-Complete assessment methodology and diagnostic tool available at colaberry.ai/assessment. Appendix DA-1 provides technology selection guidance across 138+ evaluated products.
+Complete assessment methodology and diagnostic tool available at trustbeforeintelligence.ai/assessment.
 
 ### Which Need to Fix First?
 
@@ -1018,7 +1018,7 @@ Those topics matter. But they assume infrastructure readiness. INPACT™ establi
 
 Your organization's journey follows the same pattern. The specifics differ, your data systems, your regulatory requirements, your user needs, but the six architectural needs remain universal.
 
-**Ready to assess your infrastructure?** Visit colaberry.ai/assessment for the complete INPACT™ diagnostic tool and implementation guidance.
+**Ready to assess your infrastructure?** Visit trustbeforeintelligence.ai/assessment for the complete INPACT™ diagnostic tool and implementation guidance.
 
 ---
 

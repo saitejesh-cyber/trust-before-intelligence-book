@@ -902,7 +902,7 @@ Chapter 12 completes your journey with MLOps practices for versioning and testin
 
 ## Online Tools
 
-The following tools support the methodology in this chapter. Available at **trustbeforeintelligence.com/tools**:
+The following tools support the methodology in this chapter. Available at **trustbeforeintelligence.ai/tools**:
 
 | Tool | Purpose | Format |
 |------|---------|--------|

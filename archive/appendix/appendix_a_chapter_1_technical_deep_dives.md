@@ -190,7 +190,7 @@ This taxonomy directly informed Chapter 5's Universal Context Architecture:
 | History Context | Layer 1-2: Longitudinal data access |
 | Tooling Context | Layer 7: Workflow integration APIs |
 
-*For complete implementation specifications, see Appendix H (Intelligence Layers Technical Reference).*
+*For complete implementation specifications, see Appendix CA-4 (Intelligence Layers Technical Reference).*
 
 ---
 
@@ -255,10 +255,10 @@ The MIT NANDA "GenAI Divide" study (July 2025) provided the 95% failure rate sta
 
 | Section | Related Chapter Content | Related Appendix |
 |---------|------------------------|------------------|
-| A.1 | Chapter 1, Part 2 | Appendix H (Technical Specs) |
-| A.2 | Chapter 1, Part 3 | Appendix C (Technology Selection) |
-| A.3 | Chapter 1, Part 3 | Appendix H, Section H.1 |
-| A.4 | Chapter 1, Part 1 | Appendix D (INPACT™ Reference) |
+| A.1 | Chapter 1, Part 2 | Appendix CA-4 (Technical Specs) |
+| A.2 | Chapter 1, Part 3 | Appendix CA-1 (Technology Selection) |
+| A.3 | Chapter 1, Part 3 | Appendix CA-4, Section H.1 |
+| A.4 | Chapter 1, Part 1 | Appendix C (INPACT™ Reference) |
 
 ---
 
