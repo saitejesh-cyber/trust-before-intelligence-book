@@ -69,7 +69,7 @@ graph LR
 
 ### 1.1 The Production Readiness Decision
 
-You've completed the hardest part. Chapters 4-6 built the architecture layer by layer. Chapter 10 executed the 90-day roadmap. Chapter 11 selected technologies for each layer. Your INPACT™ score has climbed from wherever you started toward the threshold that signals agent-readiness—typically 80+ for standard enterprise deployments, 86+ for high-stakes environments.
+You've completed the hardest part. Chapters 4-6 built the architecture layer by layer. Chapter 10 executed the 90-day roadmap. Chapter 11 selected technologies for each layer. Your INPACT™ score has climbed from wherever you started toward the threshold that signals agent-readiness: typically 80+ for standard enterprise deployments, 86+ for high-stakes environments.
 
 But building isn't operating. The gap between "architecture complete" and "production ready" has derailed more agent initiatives than infrastructure gaps ever did. Organizations celebrate Week 10 architecture milestones only to stumble in Week 11 pilots. The Architecture of Trust needs operational discipline to deliver sustained value.
 
@@ -176,7 +176,7 @@ Architecture criteria are typically pass/fail. If you've followed the 90-day roa
 | 14 | Semantic Layer Mapped | L (Language) | Term coverage audit | Core terms | Comprehensive |
 | 15 | On-Call Coverage | S (Solid) | Schedule review | Business hours | 24/7 coverage |
 
-Criterion 15 is often the last to complete. For organizations not requiring 24/7 coverage, business-hours support with automated alerting may suffice initially. Finding engineers willing to carry pagers may require negotiation—consider on-call bonuses if staffing is difficult.
+Criterion 15 is often the last to complete. For organizations not requiring 24/7 coverage, business-hours support with automated alerting may suffice initially. Finding engineers willing to carry pagers may require negotiation. Consider on-call bonuses, or leverage distributed teams across time zones to provide follow-the-sun coverage without requiring overnight shifts.
 
 ---
 
@@ -388,7 +388,7 @@ Every configuration affecting agent behavior requires version control:
 
 **Recommended Repository Structure**
 
-Maintain a `prompts/` repository with versioned folders per agent (e.g., `scheduling/v1.0.0/`, `clinical_docs/v1.1.0/`). Each version folder contains system.md, few_shot.json, and config.yaml. Every production change should require pull request, code review, and staging validation before deployment.
+Maintain a `prompts/` repository with versioned folders per agent (e.g., `scheduling/v1.0.0/`, `support_docs/v1.1.0/`). Each version folder contains system.md, few_shot.json, and config.yaml. Every production change should require pull request, code review, and staging validation before deployment.
 
 **Tools**
 
@@ -454,9 +454,9 @@ Prompts are the primary interface between business intent and agent behavior. Ef
 
 **Best Practices**
 
-**1. Store in Git**
+**1. Version Control Your Prompts**
 
-Prompts belong in version control, not in application code or databases. Git provides history, diff capabilities, and review workflows.
+Prompts require version control with history tracking, diff capabilities, and review workflows. Many specialized prompt management tools exist (LangSmith, PromptLayer, Humanloop, Phoenix, Agno, and others) alongside traditional Git-based approaches. Tool selection is beyond the scope of this book, but the principle is universal: treat prompts with the same rigor as production code.
 
 **2. Template with Variables**
 
@@ -1005,13 +1005,13 @@ Response:
 - Friday: Deployed fix in A/B test
 - Following week: Precision restored to 79%
 
-Early detection prevented user-visible degradation. At Echo Health Systems, this same pattern occurred when their EHR system introduced new documentation templates—the universal response process applied regardless of the specific source system.
+Early detection prevented user-visible degradation. At Echo Health Systems, this same pattern occurred when their EHR system introduced new documentation templates. The universal response process applied regardless of the specific source system.
 
 ---
 
 ## Part 5: AIXcelerator Platform
 
-For organizations seeking to accelerate their journey, Colaberry's AIXcelerator platform provides pre-built components validated across 40+ enterprise deployments. This section explains what AIXcelerator offers, how it reduces implementation time, and how to access it.
+For organizations seeking to accelerate their journey, Colaberry's AIXcelerator platform provides pre-built components validated across multiple enterprise deployments. This section explains what AIXcelerator offers, how it reduces implementation time, and how to access it.
 
 ---
 
@@ -1031,7 +1031,7 @@ graph TD
         C5["<b>Assessment Platform</b><br/><b>L6 · All 6 Needs</b>"]
     end
     
-    C1 --> RESULT["<b>90 Days → 45 Days</b><br/><b>All Three Pillars</b>"]
+C1 --> RESULT["<b>Months/Years → 90 Days</b><br/><b>All Three Pillars</b>"]
     C2 --> RESULT
     C3 --> RESULT
     C4 --> RESULT
@@ -1051,13 +1051,13 @@ graph TD
 
 **Five Core Components**
 
-| Component | INPACT™ Coverage | Layers Accelerated | Time Saved |
-|-----------|------------------|-------------------|------------|
-| Multi-Agent Core | All 6 needs | L4, L7 | 3-4 weeks |
-| MCP Server | C (Contextual) | L1-L2 | 2-3 weeks |
-| Agent Syndication Hub | N (Natural) | L7 | 4-6 weeks |
-| Governance Engine | P, T | L5 | 2-3 weeks |
-| Assessment Platform | All 6 | L6 | 1-2 weeks |
+| Component | INPACT™ Coverage | Layers Addressed | Key Benefit |
+|-----------|------------------|-----------------|-------------|
+| Multi-Agent Core | All 6 needs | L4, L7 | Production-validated orchestration |
+| MCP Server | C (Contextual) | L1-L2 |  Pre-built connectors |
+| Agent Syndication Hub | N (Natural) | L7 | Reusable agent patterns |
+| Governance Engine | P, T | L5 | Compliance-ready from day one |
+| Assessment Platform | All 6 | L6 | Continuous INPACT™ measurement |
 
 **Multi-Agent Core**
 
@@ -1101,44 +1101,8 @@ Continuous measurement:
 
 ---
 
-### 5.2 AIXcelerator in Production
 
-AIXcelerator isn't theoretical. It powers production deployments across healthcare, financial services, and enterprise operations.
-
-**Production Validation**
-
-| Metric | Scale |
-|--------|-------|
-| Daily interactions | 50,000+ |
-| Production deployments | 40+ |
-| Healthcare implementations | 15+ |
-| Average deployment time | 45 days |
-
-**Comparison: DIY vs. AIXcelerator**
-
-| Dimension | DIY Approach | AIXcelerator |
-|-----------|----------------------|--------------|
-| Timeline | 90 days | 45 days |
-| Implementation cost | $1.23M | $350-400K |
-| Team required | 12+ specialists | 4-6 specialists |
-| Risk profile | Higher (custom build) | Lower (proven patterns) |
-| Customization | Unlimited | High (framework-based) |
-
-**When DIY Makes Sense:**
-- Unique requirements not covered by AIXcelerator
-- Strong existing engineering team
-- Longer timelines acceptable
-- Budget for custom development
-
-**When AIXcelerator Makes Sense:**
-- Standard enterprise patterns apply
-- Time-to-value critical
-- Want reduced implementation risk
-- Prefer proven, validated components
-
----
-
-### 5.3 How to Access AIXcelerator
+### 5.2 How to Access AIXcelerator
 
 Three paths to evaluate and adopt AIXcelerator:
 
@@ -1167,12 +1131,6 @@ Hands-on validation:
 - Investment: $50K (credited toward subscription)
 
 **Subscription Tiers**
-
-| Tier | Monthly | Best For |
-|------|---------|----------|
-| Starter | $15K | Single department, 1-2 agents |
-| Growth | $35K | Multiple departments, 3-5 agents |
-| Enterprise | Custom | Organization-wide, unlimited agents |
 
 **Access:** Visit aiXcelerator.ai or contact Colaberry for consultation.
 
@@ -1227,7 +1185,8 @@ This section consolidates Echo's results for easy reference.
 | Total Implementation | $1.23M |
 | Timeline | 12 weeks (10 build + 2 validation) |
 | Team Size | 12 specialists |
-| First-Year ROI | 477% |
+| First-Year ROI | 209% |
+| 18-Month ROI | 477% |
 
 *For complete Echo metrics, see Appendix E (Quick Reference Card).*
 
