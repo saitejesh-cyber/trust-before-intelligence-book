@@ -697,7 +697,7 @@ WHERE load_date = DATEADD(day, -1, GETDATE());
 
 By 10 AM, data was 8 hours stale. That morning cancellation at 9:47 AM? The agent couldn't see it. A double-booked appointment? Invisible until tomorrow's ETL run.
 
-The database was cold, no indexes optimized for agent query patterns, no caching layer. Every request hit the warehouse fresh, forcing full table scans. Insurance eligibility checks added another 3-4 seconds querying the claims system's batch-refreshed tables. (See Appendix A, Section A.1 for detailed performance breakdown and infrastructure architecture.)
+The database was cold, no indexes optimized for agent query patterns, no caching layer. Every request hit the warehouse fresh, forcing full table scans. Insurance eligibility checks added another 3-4 seconds querying the claims system's batch-refreshed tables. (See the Stack Builder at trustbeforeintelligence.ai/tools to assess your infrastructure gaps.)
 
 **Failure Impact:**
 - **Adoption:** 8% after 6 months (target was 60%)
@@ -724,7 +724,7 @@ Pilot 1's failure wasn't about the AI, it was about eight-hour-old data  in a no
 **INPACT™ Analysis: Three Simultaneous Need Failures**
 
 **Natural (N) Need Failure:**  
-Echo's data warehouse used cryptic table names: `FCT_PTNT_ENCT`, `DIM_PRVDR_SPCLT`, `BRIDGE_DIAG_ICD10`. The agent had no semantic layer mapping "diabetes follow-up" to diagnosis codes E11.9, E11.65, E11.22. When physicians used shorthand like "uncontrolled DM2," the agent misinterpreted or missed it entirely. No business glossary. No entity resolution. No natural language mapping to technical schemas. (See Appendix A, Section A.2 for detailed schema analysis.)
+Echo's data warehouse used cryptic table names: `FCT_PTNT_ENCT`, `DIM_PRVDR_SPCLT`, `BRIDGE_DIAG_ICD10`. The agent had no semantic layer mapping "diabetes follow-up" to diagnosis codes E11.9, E11.65, E11.22. When physicians used shorthand like "uncontrolled DM2," the agent misinterpreted or missed it entirely. No business glossary. No entity resolution. No natural language mapping to technical schemas. (See the Vendor Selector at trustbeforeintelligence.ai/tools for semantic layer product recommendations.)
 
 **Contextual (C) Need Failure -Seven Missing Context Dimensions:**  
 
@@ -740,7 +740,7 @@ Agents require seven types of context to generate accurate, trustworthy outputs.
 - **History Context:** Missing - No 8-year A1C trends (couldn't reference "ongoing management" or medication adjustments)  
 - **Tooling Context:** Missing - Read-only, no actions (couldn't trigger prescription system or lab orders)
 
-**Result:** The agent operated with 86% context blindness. It couldn't see 8 years of patient history, care protocols, or physician documentation patterns. When Dr. Chen said "ongoing management," the agent needed History Context to see the progression. When discussing medication adjustments, it needed Business Context to reference diabetes care protocols. (See Appendix A, Section A.3 for complete seven-context taxonomy.)
+**Result:** The agent operated with 86% context blindness. It couldn't see 8 years of patient history, care protocols, or physician documentation patterns. When Dr. Chen said "ongoing management," the agent needed History Context to see the progression. When discussing medication adjustments, it needed Business Context to reference diabetes care protocols. (See the Context Analyzer at trustbeforeintelligence.ai/tools for the complete context taxonomy.)
 
 **Transparent (T) Need Failure:**  
 Legal reviewed 50 AI-generated notes and couldn't determine which data sources the agent accessed, why specific diagnoses were included/excluded, whether protected health information was handled appropriately, or what the audit trail showed. With no reasoning chain visibility and no complete audit logging, legal blocked production deployment. The risk of malpractice liability was too high.
@@ -905,21 +905,6 @@ If Sarah could do it under board pressure with a 90-day deadline and $2 million 
 | **Part 5** | Key Takeaways | Trust is earned through need fulfillment; the path forward requires architectural transformation |
 
 ---
-
-## Technical References
-
-For detailed technical analysis supporting this chapter, see:
-
-- **Appendix A: Chapter 1 Technical Deep-Dives**
-  - A.1: Performance Metrics & Infrastructure Architecture (Pilot 1)
-  - A.2: Database Schema Details (Pilot 2)
-  - A.3: Seven Context Types Taxonomy (Pilot 2)
-  - A.4: Extended Research Methodology (Part 1)
-
-- **Appendix B: Chapter 1 Pilot Case Studies**
-  - B.1: Patient Scheduling Agent Complete Technical Analysis
-  - B.2: Clinical Documentation Assistant Complete Context Analysis
-  - B.3: Revenue Cycle Optimization HIPAA Violation Timeline
 
 ---
 
