@@ -1188,7 +1188,7 @@ This section consolidates Echo's results for easy reference.
 | First-Year ROI | 209% |
 | 18-Month ROI | 477% |
 
-*For complete Echo metrics, see Appendix E (Quick Reference Card).*
+*Use the INPACT™ Assessment at trustbeforeintelligence.ai/assessment to benchmark your organization against Echo's results.*
 
 ---
 
@@ -1215,7 +1215,7 @@ Trust before intelligence. Architecture before agents. The three pillars are you
 | Part 5 | AIXcelerator | Platform overview, access paths |
 | Part 6 | Echo Health Systems Results | Consolidated reference benchmark |
 
-*For complete canonical metrics (investment, ROI, timeline), see Appendix E (Quick Reference Card).*
+*Visit trustbeforeintelligence.ai/tools for interactive assessment and planning tools.*
 
 ---
 

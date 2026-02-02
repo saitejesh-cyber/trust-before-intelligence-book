@@ -374,7 +374,7 @@ The team documented their constraints and boundaries within which technology dec
 
 **Phase 2 and Phase 3** add intelligence-specific storage (Pinecone vector DB, semantic search index) and governance infrastructure. See Chapters 5-7 for detailed breakdowns.
 
-**Operational Costs** (separate from $1.23M implementation): Foundation layers require $24,600/month ongoing. *(See Appendix D for complete breakdown including Phases 2-3)*
+**Operational Costs** (separate from $1.23M implementation): Foundation layers require $24,600/month ongoing. *(Use the Stack Builder at trustbeforeintelligence.ai/tools to estimate your layer-by-layer investment.)*
 
 **Compliance:** HIPAA, HITECH, state privacy regulations [2]. Every storage technology required Business Associate Agreement (BAA). Encryption at rest (AES-256) and in transit (TLS 1.2+) mandatory. Seven-year retention for medical records. Audit logging for all data access. Decision: Exclude vendors without healthcare BAA or HIPAA-compliant deployment path.
 
@@ -1161,9 +1161,9 @@ Sarah smiled. "We committed to phase-wise discipline. Foundation delivered. Inte
 - Annual: $295,200
 - Phase 1 verified savings: $48,000/year (warehouse consolidation)
 
-*For Phases 2-3 investment details, operational costs, and complete project economics, see Chapters 5-6 and Appendix D.*
+*For Phases 2-3 investment details, operational costs, and complete project economics, see Chapters 5-6.*
 
-**Note:** These costs reflect Echo's specific context (mid-size healthcare system, Azure-native, managed services preference, 10-week accelerated timeline, HIPAA compliance). The $1.23M is the complete implementation budget for Weeks 1-10 covering all seven layers. Operational costs are separate and ongoing. Your organization's costs will vary based on scale, existing infrastructure, team expertise, cloud platform, vendor negotiations, and timeline requirements. For detailed budget methodology, phase-by-phase breakdowns, cost drivers (technology 56%, services 31%, staff 13%), ROI calculations, and sensitivity analysis, see **Appendix D: Budget Methodology.**
+**Note:** These costs reflect Echo's specific context (mid-size healthcare system, Azure-native, managed services preference, 10-week accelerated timeline, HIPAA compliance). The $1.23M is the complete implementation budget for Weeks 1-10 covering all seven layers. Operational costs are separate and ongoing. Your organization's costs will vary based on scale, existing infrastructure, team expertise, cloud platform, vendor negotiations, and timeline requirements. Use the **Stack Builder at trustbeforeintelligence.ai/tools** to estimate your investment based on your specific context.
 
 ### Foundation Value: What Phase 1 Enables
 
@@ -1182,7 +1182,7 @@ Sarah smiled. "We committed to phase-wise discipline. Foundation delivered. Inte
 - Operational: $24,600/month ($295,200/year)
 - Net operational after savings: $247,200/year ($295,200 - $48,000)
 
-*Foundation alone shows modest returns. The 477% ROI and 10-week payback require Phases 2-3 (intelligence and governance layers) to unlock operational benefits. See Appendix D for complete project economics.*
+*Foundation alone shows modest returns. The 477% ROI and 10-week payback require Phases 2-3 (intelligence and governance layers) to unlock operational benefits. Use the Stack Builder at trustbeforeintelligence.ai/tools to estimate your project economics.*
 
 ### Bridge to Chapter 5: Intelligence Layers
 

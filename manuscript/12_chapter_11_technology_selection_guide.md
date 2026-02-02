@@ -870,7 +870,7 @@ graph LR
 
 **Echo's Selection Principles:** (1) Managed over self-hosted, (2) Healthcare-first (BAA required), (3) Integration-proven over best-in-class, (4) Cost-optimized for Growth tier.
 
-**Echo's Results:** Completed under budget ($992K of $1.23M), achieved INPACT™ 89/100 and GOALS™ 21/25, went live in 12 weeks. *(For complete investment breakdown, see Appendix D. For vendor list with rationale, see Appendix DA-1.)*
+**Echo's Results:** Completed under budget ($992K of $1.23M), achieved INPACT™ 89/100 and GOALS™ 21/25, went live in 12 weeks. *(Use the Stack Builder and Vendor Selector at trustbeforeintelligence.ai/tools to plan your investment and select vendors.)*
 
 ---
 
@@ -892,11 +892,6 @@ Chapter 12 completes your journey with MLOps practices for versioning and testin
 | Part 2 | Layer-by-Layer Criteria | Selection criteria for all 7 layers |
 | Part 3 | Evaluation Process | RFP approach, POC validation, negotiation |
 | Part 4 | Applying the Methodology | Echo's process, your toolkit, complete stack reference |
-
-**Key Resources:**
-- **Appendix DA-1:** Detailed vendor comparisons by layer
-- **Appendix DA-5:** Complete INPACT™ and GOALS™ scoring rubrics
-- **Appendix D:** Budget methodology
 
 ---
 

@@ -1185,7 +1185,7 @@ graph LR
 
 **Remaining:** Phase 4 validation (~$50K) and $238K buffer for contingency.
 
-*For complete project economics, ROI calculations, and sensitivity analysis, see Appendix D: Budget Methodology.*
+*Use the Stack Builder at trustbeforeintelligence.ai/tools for investment planning and ROI estimation.*
 ---
 
 ## PART 8: THE FINISH LINE
