@@ -161,7 +161,7 @@ The first pillar asks: does this technology help agents meet the six fundamental
 | **C (Contextual)** | Does it integrate with multiple sources? | API breadth, connector ecosystem, data federation |
 | **T (Transparent)** | Does it provide explainability, citations, compliance? | Audit trails, decision traces, regulatory support |
 
-Score each relevant dimension 1-6. Not every dimension applies to every vendor category. A vector database primarily addresses I (speed) and N (semantic), while a policy engine focuses on P (permitted) and T (transparent). Score only the dimensions relevant to that technology's purpose. *(For complete scoring rubrics, see Appendix DA-5.)*
+Score each relevant dimension 1-6. Not every dimension applies to every vendor category. A vector database primarily addresses I (speed) and N (semantic), while a policy engine focuses on P (permitted) and T (transparent). Score only the dimensions relevant to that technology's purpose. *(For complete scoring rubrics, see the INPACT™ Practitioner Reference.)*
 
 **INPACT™ Vendor Score**: Sum of relevant dimensions (maximum 36 if all apply)
 

@@ -534,7 +534,7 @@ For data cataloging, Echo implemented [Alation](https://www.alation.com) to prov
 
 **Layer 3 primarily fulfills Natural (N):** Enabling business language understanding, "diabetes follow-up patients" translates to precise queries without SQL knowledge.
 
-> **📓 For complete technology evaluation criteria and implementation details, see Appendix DA-4, Section H.3: Technology Selection Methodology.**
+> **📓 For technology evaluation criteria, use the Vendor Selector at trustbeforeintelligence.ai/tools.**
 
 ### Operational Metrics
 
@@ -912,8 +912,6 @@ Supporting contributions:
 - **T (Transparent):** Citation mechanisms with confidence scores
 - **I (Instant):** Semantic caching reduces latency to milliseconds
 
-> **📓 For complete operational metrics calculation methodologies and monitoring configurations, see Appendix DA-4, Section H.4.**
-
 ### Operational Metrics
 
 | Metric | Target | Critical Threshold |
@@ -1153,7 +1151,7 @@ graph LR
 | **T (Transparent)** | 1/6 | 3/6 | **+2** | Citations link sources |
 | **TOTAL** | 42/100 | 67/100 | **+25** | Intelligence operational |
 
-*Note: INPACT™ scores incorporate weighted factors for production readiness assessment. See Appendix DA-5 for complete scoring methodology.*
+*Note: INPACT™ scores incorporate weighted factors for production readiness assessment. See the INPACT™ Practitioner Reference for complete scoring methodology.*
 
 ---
 
