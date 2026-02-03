@@ -778,14 +778,7 @@ A manufacturing company might prioritize:
 
 ### 4.3 Your Selection Toolkit
 
-The following tools help you apply the methodology to your situation. See the **Online Tools** section at the end of this chapter for download links.
-
-- **Vendor Evaluation Scorecard:** INPACT™ and GOALS™ scoring with weighted comparison matrix
-- **Three-Pillar RFP Template:** Structured vendor requests with question banks
-- **POC Test Plan Template:** Two-week validation with success criteria
-- **Contract Terms Checklist:** Non-negotiable terms, negotiable terms, walk-away red flags
-- **Build vs Buy Decision Matrix:** Differentiator assessment and TCO comparison
-- **Budget Planning Worksheet:** Implementation vs ongoing costs by tier
+Interactive tools and downloadable templates to apply this methodology are available at **trustbeforeintelligence.ai/tools**.
 
 ---
 
@@ -883,17 +876,7 @@ Chapter 12 completes your journey with MLOps practices for versioning and testin
 
 ## Online Tools
 
-The following tools support the methodology in this chapter. Available at **trustbeforeintelligence.ai/tools**:
-
-| Tool | Purpose | Format |
-|------|---------|--------|
-| **Vendor Evaluation Scorecard** | Score vendors on INPACT™ (layer-specific) and GOALS™ (25 pts) with weighted comparison | Spreadsheet |
-| **Three-Pillar RFP Template** | Structure vendor requests with question banks per pillar | Document |
-| **POC Test Plan Template** | Week 1 INPACT™ + Week 2 GOALS™ validation with success criteria | Document |
-| **Contract Terms Checklist** | Non-negotiable terms, negotiable terms, walk-away red flags | Checklist |
-| **Build vs Buy Decision Matrix** | Differentiator assessment, market availability, TCO comparison | Spreadsheet |
-| **Budget Planning Worksheet** | Implementation vs ongoing costs by tier | Spreadsheet |
-| **Current Vendor Database** | Quarterly-updated vendor evaluations by layer | Web/Spreadsheet |
+Interactive tools and downloadable templates supporting this chapter are available at **trustbeforeintelligence.ai/tools**, including the Vendor Selector, Stack Builder, Three-Pillar RFP Template, and POC Test Plan Template.
 
 ---
 

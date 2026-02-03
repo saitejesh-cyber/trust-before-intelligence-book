@@ -189,19 +189,19 @@ Raw scores translate into five trust bands that indicate agent readiness:
 
 ```mermaid
 graph LR
-    subgraph VERYLOW["⚫ 6-11 pts (17-33%)"]
+    subgraph VERYLOW["⚫ 6-11 pts (<33%)"]
         VL["<b>Very Low Trust</b><br/><b>Complete rebuild</b>"]
     end
     
-    subgraph LOW["🔴 12-17 pts (33-50%)"]
+    subgraph LOW["🔴 12-17 pts (33-49%)"]
         L["<b>Low Trust</b><br/><b>Major transformation</b>"]
     end
     
-    subgraph MOD["🟠 18-23 pts (50-67%)"]
+    subgraph MOD["🟠 18-23 pts (50-66%)"]
         M["<b>Moderate Trust</b><br/><b>Significant work</b>"]
     end
     
-    subgraph GOOD["🟡 24-30 pts (67-83%)"]
+    subgraph GOOD["🟡 24-30 pts (67-85%)"]
         G["<b>Good Trust</b><br/><b>Pilot-ready</b>"]
     end
     
@@ -229,10 +229,10 @@ graph LR
 | Raw Score | Percentage | Trust Band | Agent Readiness |
 |-----------|------------|------------|-----------------|
 | 31-36 | 86-100% | 🟢 **High Trust** | Production-ready for enterprise agents |
-| 24-30 | 67-83% | 🟡 **Good Trust** | Pilot-ready, minor gaps remain |
-| 18-23 | 50-67% | 🟠 **Moderate Trust** | Significant work needed before agents |
-| 12-17 | 33-50% | 🔴 **Low Trust** | Major transformation required |
-| 6-11 | 17-33% | ⚫ **Very Low Trust** | Complete rebuild required |
+| 24-30 | 67-85% | 🟡 **Good Trust** | Pilot-ready, minor gaps remain |
+| 18-23 | 50-66% | 🟠 **Moderate Trust** | Significant work needed before agents |
+| 12-17 | 33-49% | 🔴 **Low Trust** | Major transformation required |
+| 6-11 | <33% | ⚫ **Very Low Trust** | Complete rebuild required |
 
 These thresholds aren't arbitrary. They emerge from Colaberry's pattern recognition across enterprise implementations. Organizations scoring below 80/100 consistently experience agent failures in production. Those scoring 86+ achieve successful deployment with minimal post-launch issues.
 
@@ -1073,12 +1073,12 @@ You're ready. Your infrastructure fulfills agent needs across all six dimensions
 
 Solid foundations with gaps in specific dimensions. Production deployment is achievable with targeted investment. But don't underestimate P (Permitted) and T (Transparent). Organizations assume governance and transparency can be "added at the end." They're wrong. These dimensions become deployment blockers.
 
-**🟠 MODERATE TRUST (50-67%)**  
+**🟠 MODERATE TRUST (50-66%)**
 **Timeline:** 8-12 weeks | **Budget:** $120K-$900K | **Guide:** Chapters 10-11
 
 You can see your data. You can run queries quickly. But your agents don't understand user questions, and you can't enforce who sees what. This is the dangerous zone. Don't deploy now and "add governance later." Organizations who tried crashed - agents returning confidential data to unauthorized users, misunderstanding questions so badly that users stopped trusting them entirely.
 
-**🔴 LOW TRUST (33-50%)**  
+**🔴 LOW TRUST (33-49%)**
 **Timeline:** 12-16 weeks | **Budget:** $190K-$1.2M | **Guide:** Chapters 10-11
 
 Your infrastructure was built for a different era - BI reports, analyst queries, batch processing. Agents need something fundamentally different. Attempting to deploy agents on this foundation produces failures that get blamed on AI rather than infrastructure. Echo started at 28/100 in this band. Their 90-day transformation proves it's achievable, but it requires systematic investment.
