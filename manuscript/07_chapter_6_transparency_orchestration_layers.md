@@ -1194,7 +1194,7 @@ graph LR
 
 Friday, Week 10. 4:30 PM.
 
-Krish Yadav, Echo's CFO, pulled up the Phase 3 actuals on his laptop. He'd allocated $380,000 for the trust and orchestration layers—the same budget methodology that had proven accurate for Phases 1 and 2. What he saw made him scroll back to double-check.
+Krish Yadav, Echo's CFO, pulled up the Phase 3 actuals on his laptop. He'd allocated $380,000 for the trust and orchestration layers, the same budget methodology that had proven accurate for Phases 1 and 2. What he saw made him scroll back to double-check.
 
 $82,000.
 

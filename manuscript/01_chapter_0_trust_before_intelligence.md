@@ -361,7 +361,7 @@ graph TB
 
 **Figure 0.3: The Architecture of Trust Triad - Three Pillars Working Together**
 
-This architecture rests on three pillars working in harmony. Each pillar supports and validates the others. INPACT™ defines what agents need—.Those needs drive 7-Layer architecture decisions. The 7-Layer Architecture shows how to build infrastructure that delivers INPACT™ needs. GOALS™ validates that both pillars remain structurally sound as the system scales to production.
+This architecture rests on three pillars working in harmony. Each pillar supports and validates the others. INPACT™ defines what agents need. Those needs drive 7-Layer architecture decisions. The 7-Layer Architecture shows how to build infrastructure that delivers INPACT™ needs. GOALS™ validates that both pillars remain structurally sound as the system scales to production.
 
 **The Trust Equation:**
 

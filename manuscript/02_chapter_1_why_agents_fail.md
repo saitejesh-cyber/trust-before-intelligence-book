@@ -51,7 +51,7 @@ This wasn't a technology failure. **This was an infrastructure failure to fulfil
 
 This $650,000 failure was just the beginning.
 
-**Figure 1.0: The Infrastructure Gap — Why Human-Era Systems Can't Support AI Agents**
+**Figure 1.0: The Infrastructure Gap - Why Human-Era Systems Can't Support AI Agents**
 
 ```mermaid
 
@@ -224,7 +224,7 @@ The problem isn't AI. The problem is what AI runs on.
 
 ### Why Most Pilots Never Reach Production
 
-While trust collapse explains why users abandon agents, infrastructure barriers explain why pilots never reach production. According to KPMG's Q1 2025 AI Pulse Survey, **65% of enterprises are piloting AI agents—but only 11% have reached full deployment.**[4] This 54-point gap from pilot to production reveals a critical infrastructure crisis: organizations are rapidly experimenting with agents but lack the foundational capabilities to deploy them safely at scale.
+While trust collapse explains why users abandon agents, infrastructure barriers explain why pilots never reach production. According to KPMG's Q1 2025 AI Pulse Survey, **65% of enterprises are piloting AI agents, but only 11% have reached full deployment.**[4] This 54-point gap from pilot to production reveals a critical infrastructure crisis: organizations are rapidly experimenting with agents but lack the foundational capabilities to deploy them safely at scale.
 
 The McKinsey Superagency in the Workplace report confirms this infrastructure maturity gap: while **92% of companies plan to increase AI spending** over the next three years, only **1% report their AI deployments have reached maturity.**[5] Even more telling, **47% of C-suite leaders acknowledge their organizations are moving too slowly** on AI development not because of lacking ambition, but because of infrastructure readiness barriers.[5]
 
@@ -844,7 +844,7 @@ Users abandon agents that don't respond instantly, understand naturally, access 
 
 Trust isn't something you require or declare. **Trust is earned when infrastructure consistently fulfills all six INPACT™ needs.** Miss even one dimension, and join the 95% who fail.
 
-**Insight 2: Technology Works—Infrastructure Isn't INPACT™ Ready**
+**Insight 2: Technology Works - Infrastructure Isn't INPACT™ Ready**
 
 GPT-4 achieves 90th percentile on the Bar Exam. Claude Sonnet 4.5 demonstrates superhuman coding ability. Pinecone handles 50+ billion monthly queries. RAG implementations achieve 85%+ retrieval accuracy.
 

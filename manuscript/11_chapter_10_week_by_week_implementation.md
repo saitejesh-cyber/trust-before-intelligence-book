@@ -703,19 +703,23 @@ The weekly health check discipline catches issues before they become blockers.
 
 ## Part 6: The AI Agent Readiness Tracker
 
-### Seven-Tab Overview
+### Eight-Tab Overview
 
-**Diagram 7: Seven-Tab Tracker System**
+**Diagram 7: Eight-Tab Tracker System**
 
 ```mermaid
 
 graph RL
     subgraph TRACKER["90-DAY TRACKER"]
         direction RL
+        subgraph GATE["DAY ZERO GATE"]
+            T0["Tab 0: Day Zero Readiness<br/>(15-35 items by org size)"]
+        end
+
         subgraph EXECUTIVE["EXECUTIVE VIEW"]
             T1["Tab 1: Weekly Progress"]
         end
-        
+
         subgraph FEEDS[" "]
             direction TB
             subgraph PILLARS["THREE PILLARS"]
@@ -724,7 +728,7 @@ graph RL
                 T3["Tab 3: GOALS™ Dashboard"]
                 T4["Tab 4: 7-Layer Status"]
             end
-            
+
             subgraph OPS["OPERATIONS"]
                 direction RL
                 T5["Tab 5: Risk & Blocker Log"]
@@ -733,17 +737,20 @@ graph RL
             end
         end
     end
-    
+
     Copyright["© 2025 Colaberry Inc."]
-    
+
+    T0 -->|"Unlocks"| T1
     PILLARS --> T1
     OPS --> T1
 
     style TRACKER fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
+    style GATE fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#880e4f
     style EXECUTIVE fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style FEEDS fill:none,stroke:none
     style PILLARS fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
     style OPS fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style T0 fill:#f8bbd9,stroke:#c2185b,color:#880e4f,stroke-width:2px
     style T1 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     style T2 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
     style T3 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
@@ -759,6 +766,7 @@ graph RL
 
 | Tab | Purpose | Primary User | Update Frequency |
 |-----|---------|--------------|------------------|
+| **Tab 0: Day Zero Readiness** | Pre-transformation gate - 15-35 items by org size | Project Manager | Before Week 1 |
 | **Tab 1: Weekly Progress** | Executive dashboard - overall status | Project Manager | Weekly (Friday) |
 | **Tab 2: INPACT™ Tracker** | Six dimensions, week-by-week scores | Data Architect | Weekly |
 | **Tab 3: GOALS™ Dashboard** | Five operational metrics | Operations Lead | Weekly (Phase 3+) |
@@ -767,7 +775,11 @@ graph RL
 | **Tab 6: Communication Log** | Meetings, decisions, action items | Project Manager | Per meeting |
 | **Tab 7: Budget Tracker** | Spend vs. plan by category | Finance | Weekly |
 
-### Inside the Seven Tabs
+### Inside the Eight Tabs
+
+**Tab 0: Day Zero Readiness (Gate)**
+
+The pre-transformation gate ensuring organizational readiness. Select your tier (Essential/Standard/Comprehensive) based on organization size, then complete items across six domains: Assessment & Planning, Stakeholder Alignment, Team & Resources, Technical Prerequisites, Data Readiness, and Compliance & Risk. Critical items (✅) are blockers. Week 1 remains locked until all critical items show "Ready" and overall readiness reaches 90%+.
 
 **Tab 1: Weekly Progress Dashboard**
 
@@ -799,11 +811,23 @@ Monitors spend by category (Technology, Services, Staff) against plan. Weekly ac
 
 ### Getting Started with the Tracker
 
+**Day Zero: Pre-Transformation Readiness**
+
+Before Week 1 begins, complete the Day Zero checklist (Tab 0) at trustbeforeintelligence.ai/tracker. This gate prevents the #1 cause of failed transformations: starting without proper preparation.
+
+Day Zero items scale by organization size:
+- **Essential** (15 items): Small organizations (<1,000 employees), -2 weeks timeline
+- **Standard** (25 items): Mid-size organizations (1,000-15,000 employees), baseline 12 weeks
+- **Comprehensive** (35 items): Large/Enterprise (15,000+ employees), +2-4 weeks timeline
+
+Critical blockers (items like Executive Sponsor, Steering Committee, Budget Approved, INPACT™ Assessment Complete) must be "Ready" before Week 1 unlocks.
+
 **Before Week 1:**
-1. Download the template at trustbeforeintelligence.ai/tools
-2. Complete your INPACT™ assessment (Chapter 9) to establish baseline scores
-3. Customize phase focus based on your priority layers (Part 4)
-4. Assign tab owners and establish update cadence
+1. Access the online tracker at trustbeforeintelligence.ai/tracker
+2. Select your organization tier and complete Day Zero checklist (Tab 0)
+3. Complete your INPACT™ assessment (Chapter 9) to establish baseline scores
+4. Customize phase focus based on your priority layers (Part 4)
+5. Confirm team allocation (see Tab-by-Tab guidance for recommended owners)
 
 **Week 1 Onward:**
 - Friday: Update all tabs with current week's progress
@@ -827,7 +851,7 @@ You now have the complete implementation roadmap:
 - **Part 2**: Phase-by-phase detail with technology stacks and phase gates
 - **Parts 3-4**: Investment summary and adaptation guidance for your context
 - **Part 5**: Risk management framework and phase gate checkpoints
-- **Part 6**: The 90-Day Tracker system with seven interconnected tabs
+- **Part 6**: The 90-Day Tracker system with Day Zero gate plus seven implementation tabs
 
 **What's Next**
 
@@ -852,17 +876,24 @@ Deployment is not the finish line. Chapter 12 covers everything after go-live:
 
 **Your Monday Morning**
 
-Week 1 starts with Layer 1 storage provisioning. By Friday, you should have:
+Week 1 starts with Layer 1 storage provisioning, but only after Day Zero is complete. Before that first Monday:
 
-- Current-state documentation complete (all seven layers assessed)
-- Stakeholder alignment confirmed (steering committee formed)
-- Storage infrastructure provisioning underway
+**Day Zero Complete (Prerequisites):**
+- INPACT™ assessment complete with baseline score
+- Priority layers identified from assessment
+- Executive sponsor identified and steering committee formed
 - Budget approved and resources allocated
+- Current-state documentation complete (all seven layers assessed)
+- Technology track selected (Commercial / Hybrid / Open-Source)
+
+**Week 1 Friday Targets:**
+- Storage infrastructure provisioning underway
 - Week 2 plan finalized with assigned owners
+- First progress update in Tab 1
 
-The frameworks are proven. The tracker is ready.
+The frameworks are proven. The tracker is ready. Complete Day Zero at trustbeforeintelligence.ai/tracker.
 
-**The 90-day clock starts now.**
+**The 90-day clock starts when Day Zero is complete.**
 
 ---
 
@@ -875,7 +906,7 @@ The frameworks are proven. The tracker is ready.
 | **Part 3** | Investment summary | $770K-$1.5M range, 400-600% 3-year ROI potential |
 | **Part 4** | Adaptation guidance | Customize based on your priority layers from Chapter 9 |
 | **Part 5** | Risk management | Phase gates, escalation framework |
-| **Part 6** | 90-Day Tracker | Seven tabs for implementation tracking |
+| **Part 6** | 90-Day Tracker | Eight tabs: Day Zero gate (Tab 0) + seven implementation tabs |
 
 > **Note:** Budget and timeline figures in this chapter reflect typical ranges for mid-size enterprise implementations based on the 7-Layer Architecture methodology.
 

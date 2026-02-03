@@ -15,7 +15,7 @@ The scheduling agent responded in 2.8 seconds. Fast. Marcus smiled. Four weeks o
 
 Then Dr. Torres leaned forward. "Wait. Those are dermatology patients."
 
-Marcus checked the query. The agent had returned results for Dr. Carlos Martinez, Dermatology. The team wanted Dr. Sarah Martinez, Cardiology—whose cardiac patients had pending lab results that actually mattered.
+Marcus checked the query. The agent had returned results for Dr. Carlos Martinez, Dermatology. The team wanted Dr. Sarah Martinez, Cardiology, whose cardiac patients had pending lab results that actually mattered.
 
 "It picked the wrong doctor," Sarah said quietly.
 
@@ -505,7 +505,7 @@ Echo's selections dbt, Senzing, and Alation are detailed in the implementation s
 
 Echo's data infrastructure had about 500 tables with cryptic names like `FCT_PTNT_ENCT` and `DIM_PRVDR_SPCLT`. Documentation  in SharePoint is 18 months out of date. The data lake had even less structure: files named `epic_extract_20240315.parquet` with no catalog entry.
 
-No system connected natural language concepts to these technical artifacts. Every agent query required custom translation logic. There is no entity resolution. "Dr. Martinez" in one system was not linked to the same provider in another. No metric versioning—when definitions changed, agents broke silently. No ontology mapping, clinical concepts existed as free text, not structured codes.
+No system connected natural language concepts to these technical artifacts. Every agent query required custom translation logic. There is no entity resolution. "Dr. Martinez" in one system was not linked to the same provider in another. No metric versioning: when definitions changed, agents broke silently. No ontology mapping, clinical concepts existed as free text, not structured codes.
 
 The result: 47% accuracy on natural language queries. More than half of user requests resulted in errors, empty results, or confused responses.
 
@@ -706,7 +706,7 @@ Echo's intelligence pipeline doesn't just retrieve documents; it orchestrates re
 
 #### Architectural Implementation
 
-Echo deployed seven Pinecone namespaces—one per context type, with specialized retrieval strategies for each dimension.[13] Each namespace uses optimized chunking: business context chunks are larger (1,500 tokens) because policies need full context; data context chunks are smaller (600 tokens) because clinical notes need precision.
+Echo deployed seven Pinecone namespaces, one per context type, with specialized retrieval strategies for each dimension.[13] Each namespace uses optimized chunking: business context chunks are larger (1,500 tokens) because policies need full context; data context chunks are smaller (600 tokens) because clinical notes need precision.
 
 Echo's synthesis engine orchestrates retrieval within <400ms: Query Analysis (50ms), Parallel Retrieval across seven namespaces (180ms), Relevance Scoring (40ms), Deduplication (30ms), Priority Assembly (60ms), Token Optimization (40ms). Echo's median: 312ms.
 
@@ -1167,7 +1167,7 @@ Krish nodded. "Lesson for Phase 3?"
 
 "Cache earlier," Swapna said. "We activated semantic caching in Week 7. If we'd deployed it mid-Week 6, we'd have stayed under budget."
 
-"The overage is manageable," Sarah added. "We're now at $2,300 per month for LLM costs—84% below baseline. The operational savings will recover the implementation variance within sixty days."
+"The overage is manageable," Sarah added. "We're now at $2,300 per month for LLM costs, 84% below baseline. The operational savings will recover the implementation variance within sixty days."
 
 Krish made a note. "Phase 3 has the same $380,000 allocation. Apply the lesson."
 
@@ -1255,7 +1255,7 @@ graph TB
 |-------|-------|----------|--------|---------|
 | Phase 1: Foundation | 1-4 | $470K | $468K | Chapter 4 ✓ |
 | Phase 2: Intelligence | 5-7 | $380K | $392K | **This Chapter** ✓ |
-| Phase 3: Trust | 8-10 | $380K | — | Chapter 6 |
+| Phase 3: Trust | 8-10 | $380K | - | Chapter 6 |
 | **Total through Week 7** | | **$850K** | **$860K** | **This Chapter** ✓ |
 
 ### Gaps Addressed

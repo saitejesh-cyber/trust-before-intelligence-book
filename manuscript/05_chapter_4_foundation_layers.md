@@ -1077,9 +1077,9 @@ graph TB
     end
     
     subgraph "<b>Needs Later Layers</b>"
-        B2["<b>Natural: 2→2 (—)</b><br/><b>Needs Layer 3</b>"]
-        B3["<b>Permitted: 1→1 (—)</b><br/><b>Needs Layer 5</b>"]
-        B6["<b>Transparent: 1→1 (—)</b><br/><b>Needs Layer 6</b>"]
+        B2["<b>Natural: 2→2 (--)</b><br/><b>Needs Layer 3</b>"]
+        B3["<b>Permitted: 1→1 (--)</b><br/><b>Needs Layer 5</b>"]
+        B6["<b>Transparent: 1→1 (--)</b><br/><b>Needs Layer 6</b>"]
     end
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]

@@ -35,7 +35,7 @@ graph LR
     
     subgraph WITH["WITH INPACT™"]
         direction TB
-        I1["I — Instant<br/>Under 2 seconds<br/><br/>N — Natural<br/>97% comprehension<br/><br/>P — Permitted<br/>Dynamic access<br/><br/>A — Adaptive<br/>Learns from feedback<br/><br/>C — Contextual<br/>Cross-system aware<br/><br/>T — Transparent<br/>Full audit trail</br></br><b>I trust it</b>"]
+        I1["I - Instant<br/>Under 2 seconds<br/><br/>N - Natural<br/>97% comprehension<br/><br/>P - Permitted<br/>Dynamic access<br/><br/>A - Adaptive<br/>Learns from feedback<br/><br/>C - Contextual<br/>Cross-system aware<br/><br/>T - Transparent<br/>Full audit trail</br></br><b>I trust it</b>"]
     end
     
     WITHOUT --> TRANSFORM --> WITH
@@ -1069,7 +1069,7 @@ Your organization's journey follows the same pattern. The specifics differ, your
 [16] Cisco. (2025, August). "Cisco AI Readiness Index 2025: Realizing the Value of AI." Survey of 8,039 senior business leaders across 30 markets measuring readiness across Strategy, Infrastructure, Data, Governance, Talent, and Culture. Key findings: 13% "Pacesetters" (fully prepared), 36% "Chasers," 48% "Followers," 3% "Laggards;" only 32% measure AI impact systematically, 24% can control agent actions with guardrails. Retrieved from https://www.cisco.com/c/dam/m/en_us/solutions/ai/readiness-index/2025-m10/documents/cisco-ai-readiness-index-2025-realizing-the-value-of-ai.pdf (Accessed November 2025)
 
 
-[17] American Diabetes Association. (2024). "Standards of Care in Diabetes—2024." Diabetes Care, Volume 47, Supplement 1. https://diabetesjournals.org/care/issue/47/Supplement_1 (Accessed November 2025)
+[17] American Diabetes Association. (2024). "Standards of Care in Diabetes - 2024." Diabetes Care, Volume 47, Supplement 1. https://diabetesjournals.org/care/issue/47/Supplement_1 (Accessed November 2025)
 
 
 ---

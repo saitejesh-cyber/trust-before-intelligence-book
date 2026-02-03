@@ -848,8 +848,8 @@ graph TB
 |--------|-------|---------|--------|
 | INPACT™ Score | 28/100 | 89/100 | +61 points |
 | GOALS™ Score | N/A | 21/25 | Production ready |
-| Investment | — | $992K | 19% under budget |
-| ROI | — | 477% | Validated |
+| Investment | - | $992K | 19% under budget |
+| ROI | - | 477% | Validated |
 | Agents Live | 0 | 3 | Production |
 | User Satisfaction | N/A | ~87% | Above target |
 
