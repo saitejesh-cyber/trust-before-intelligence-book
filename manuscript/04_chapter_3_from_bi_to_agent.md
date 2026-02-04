@@ -416,43 +416,31 @@ Friday Sarah presented to Echo's board:
 
 "We have three options." She pulled up the comparison. "Two preserve our BI investment but compromise agent capabilities. One transforms infrastructure in ninety days."
 
-She walked through the retrofit trap. $2.5M over eighteen months, dual systems, incomplete capabilities. Then the incremental path at$250K per year stretching past three years, fragmented experience, architecture drift.
+She walked through the retrofit trap—$2.5M over eighteen months, dual systems, incomplete capabilities—then the incremental path stretching past three years.
 
-"Option 3 is the Transform path. $1.23M over ninety days. Build the 7-layer architecture. Best path to production agents."
+"Option 3 is the Transform path. $1.23M over ninety days. Build the 7-layer architecture."
 
 CEO: "What's the ROI?"
 
-Sarah: "Conservative estimate: 477% over eighteen months that builds on the strong Year 1 returns with compounding benefits as adoption scales. Payback: four months. Three agents in production."
+Sarah: "Conservative estimate: 477% over eighteen months. Payback in four months."
 
 CFO Krish Yadav: "Why is transform cheaper than retrofit?"
 
-Sarah: "Retrofit maintains two systems, BI plus middleware. Every BI change requires middleware updates. Transform builds one modern system. Our BI users migrate gradually. Long-term, we maintain a single architecture."
+Sarah: "Retrofit maintains two systems. Transform builds one. Long-term, we maintain a single architecture."
 
 Board member: "What if it fails?"
 
-Sarah: "We gate investments with checkpoints:
-
-**Week 4:** Foundation layers functional. If not at 45-50/100, we reassess. 
-**Week 7:** Intelligence layers operational. Target 65-70/100. This is point of no return. 
-**Week 10:** First production agent. 86/100 minimum.
-
-We don't commit $1.23M day one. We validate: $470K Phase 1, $380K Phase 2, $380K Phase 3."
+Sarah: "We gate investments. Week 4 checkpoint: foundation layers functional. Week 7: intelligence operational. Week 10: first production agent. We don't commit $1.23M day one—we validate phase by phase."
 
 **The vote: Unanimous approval.**
 
-Conditions: weekly progress reviews, mandatory checkpoints, first agent by Week 10, ROI tracking from Week 12.
-
-Team: Sarah (architecture), Marcus Williams (governance), Jamie Rodriguez (Director of IT), Swapna Ram (technical lead), +4 engineers full-time.
-
 ### The World Changed
 
-Walking to her car: "We just committed to transforming fifteen years of infrastructure in ninety days."
+Walking to her car, Marcus caught up. "We just committed to transforming fifteen years of infrastructure in ninety days."
 
-But the conviction was clear. The blueprint existed in the form of the 7-Layer Architecture, which we'll explore in Chapters 4-7. **This wasn't invention, it was execution.**
+Sarah nodded. "Then let's start Monday."
 
-Marcus's perspective: "Our data quality is strong. Our governance is solid. We're not starting from chaos. We're building the next layer."
-
-Jamie: "We have Azure. We have the team. We have the budget. Now we build."
+The blueprint existed in the form of the 7-Layer Architecture, which we'll explore in Chapters 4-7. **This wasn't invention, it was execution.**
 
 Sarah's private thought: **"We didn't fail. The world changed. BI-era infrastructure was excellent for its era. Agent-era requires agent-ready infrastructure. This isn't failure, it's evolution."**
 
@@ -676,25 +664,7 @@ Seven gaps require seven layers. The next four chapters show exactly how Sarah t
 
 ---
 
-## Acronyms
-
-- **ABAC:** Attribute-Based Access Control
-- **AI:** Artificial Intelligence
-- **API:** Application Programming Interface
-- **BI:** Business Intelligence
-- **CDC:** Change Data Capture
-- **CDO:** Chief Data Officer
-- **CTO:** Chief Technology Officer
-- **EHR:** Electronic Health Record
-- **ETL:** Extract, Transform, Load
-- **HIPAA:** Health Insurance Portability and Accountability Act
-- **LLM:** Large Language Model
-- **ML:** Machine Learning
-- **RAG:** Retrieval-Augmented Generation
-- **RBAC:** Role-Based Access Control
-- **SQL:** Structured Query Language
-
----
-
-**© 2025 Colaberry Inc. All Rights Reserved.**  
+**© 2025 Colaberry Inc. All Rights Reserved.**
 INPACT™ and GOALS™ are trademarks of Colaberry Inc.
+
+*Acronyms and key terms are defined in the Glossary.*

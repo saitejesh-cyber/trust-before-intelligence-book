@@ -10,15 +10,11 @@
 Enterprise AI Summit, Main Stage
 Six Months After Production Launch*
 
-Sarah Cedao stepped to the podium. The room held four hundred IT leaders, all facing the same question her team had faced a year ago: how do you actually get from assessment to production?
+Sarah Cedao stepped to the podium at the Enterprise AI Summit. Four hundred IT leaders waited.
 
-"We scored twenty-eight out of a hundred," she began. "Ninety days later, we were at eighty-nine - three agents in production, fifty thousand daily interactions, zero compliance incidents." She clicked to her first slide. "Everyone asks for our secret. There isn't one. Just a playbook we followed week by week."
+"Everyone asks for our secret," she began. "There isn't one. Just a playbook we followed week by week." She clicked to her first slide: a four-phase roadmap.
 
-A hand went up. "You're healthcare. How do we know it works for manufacturing? Or finance?"
-
-"The layers are the same," Sarah replied. "Foundation, intelligence, trust, operations. The sequence doesn't change. Your technologies might. Your timeline might. But the playbook? That's universal."
-
-She clicked to the four-phase roadmap. "Let me show you exactly what we did."
+"The layers are the same regardless of industry. Foundation, intelligence, trust, operations. The sequence doesn't change. Your technologies might. Your timeline might. But the playbook? That's universal."
 
 This chapter is that presentation.
 
@@ -920,20 +916,7 @@ The frameworks are proven. The tracker is ready. Complete Day Zero at trustbefor
 
 ---
 
-## Acronym Reference
-
-| Acronym | Definition |
-|---------|------------|
-| ABAC | Attribute-Based Access Control |
-| CDC | Change Data Capture |
-| HITL | Human-in-the-Loop |
-| LLM | Large Language Model |
-| NLU | Natural Language Understanding |
-| OPA | Open Policy Agent |
-| RAG | Retrieval-Augmented Generation |
-| UAT | User Acceptance Testing |
-
----
-
-**© 2025 Colaberry Inc. All Rights Reserved.**  
+**© 2025 Colaberry Inc. All Rights Reserved.**
 INPACT™ and GOALS™ are trademarks of Colaberry Inc.
+
+*Acronyms and key terms are defined in the Glossary.*

@@ -4,27 +4,17 @@
 
 ---
 
-*About a year ago.*
-*Week 1, Wednesday afternoon.*
-*Echo Health Systems, Sarah's office.*
+*Week 1, Wednesday afternoon—ten weeks before production.*
 
-Sarah stared at the vendor comparison spreadsheet. Fourteen vector databases. Eight CDC platforms. Six semantic layer tools. Every sales deck promised "enterprise-ready" and "healthcare-compliant."
+Sarah stared at the vendor comparison spreadsheet. Fourteen vector databases. Eight CDC platforms. Six semantic layer tools.
 
-Marcus Chen, her lead architect, dropped into the chair across from her desk. "Pinecone's demo was impressive. Sub-50ms queries, slick UI."
+Marcus asked about Pinecone's impressive demo—sub-50ms retrieval, slick UI.
 
-"Did they have a BAA?"
+"Did they have a BAA?" Sarah asked.
 
 Marcus paused. "I didn't ask."
 
-"Then they're not on the list." Sarah pulled up the evaluation framework they'd built after the failed pilots. "We learned this the hard way. Impressive demos don't mean production-ready. We score INPACT™ first, GOALS™ second, then verify integration. In that order."
-
-"Even if the demo is amazing?"
-
-"Especially then." Sarah turned her monitor toward him. "Remember the scheduling agent? Perfect demo. Nine-second response times in production. The demo wasn't lying. Our infrastructure was."
-
-Marcus nodded slowly. "So we're not picking the best technology. We're picking the technology that works with what we're building."
-
-"Now you're getting it."
+"Then they're not on the list." She'd learned this lesson the hard way: INPACT™ first, GOALS™ second, verify integration. Impressive demos don't mean production-ready.
 
 ---
 
@@ -896,23 +886,7 @@ Interactive tools and downloadable templates supporting this chapter are availab
 
 ---
 
-## Acronym Reference
-
-| Acronym | Definition |
-|---------|------------|
-| ABAC | Attribute-Based Access Control |
-| BAA | Business Associate Agreement |
-| CDC | Change Data Capture |
-| GOALS™ | Governance, Observability, Availability, Lexicon, Solid |
-| HIPAA | Health Insurance Portability and Accountability Act |
-| HITL | Human-in-the-Loop |
-| INPACT™ | Instant, Natural, Permitted, Adaptive, Contextual, Transparent |
-| POC | Proof of Concept |
-| RAG | Retrieval-Augmented Generation |
-| RFP | Request for Proposal |
-
----
-
-© 2025 Colaberry Inc. All Rights Reserved.
-
+**© 2025 Colaberry Inc. All Rights Reserved.**
 INPACT™ and GOALS™ are trademarks of Colaberry Inc.
+
+*Acronyms and key terms are defined in the Glossary.*
