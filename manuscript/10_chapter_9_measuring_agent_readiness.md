@@ -6,7 +6,7 @@
 
 ## The Assessment That Almost Didn't Exist
 
-*Friday, 4:15 PM — Echo Health Systems, Innovation Lab — Week 14*
+*Friday, 4:15 PM - Echo Health Systems, Innovation Lab - Week 14*
 
 "We got lucky," Sarah Cedao said.
 
