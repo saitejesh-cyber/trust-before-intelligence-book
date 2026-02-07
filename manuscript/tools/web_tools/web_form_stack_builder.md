@@ -92,7 +92,7 @@ Optional fields:
 
 #### Page 4: Layer 3  - Universal Semantic Layer
 
-**Layer Description:** "How agents understand business language  - translating 'show me high-risk patients' into actual database queries."
+**Layer Description:** "How agents understand business language - translating natural queries (e.g., 'show me high-risk accounts', 'find overdue orders') into actual database queries."
 
 | Component | Question | Options | Impact If Missing |
 |-----------|----------|---------|-------------------|
@@ -130,9 +130,9 @@ Optional fields:
 | Access Control | What access control do you have? | OPA (Open Policy Agent), Styra DAS, Custom ABAC, RBAC only (IAM), None | CRITICAL  - Agents have unconstrained access |
 | Audit Logging | Do you have comprehensive audit logging? | Splunk, Datadog, ELK Stack, CloudWatch/Azure Monitor, Custom, Basic logs only, None | CRITICAL  - No accountability |
 | Secrets Management | Do you have secrets management? | HashiCorp Vault, AWS Secrets Manager, Azure Key Vault, GCP Secret Manager, Other, None | HIGH  - Credentials at risk |
-| Data Masking | Do you have data masking/tokenization? | Protegrity, Delphix, Privacera, Custom, None, Not Needed | CRITICAL for healthcare  - PHI exposure |
+| Data Masking | Do you have data masking/tokenization? | Protegrity, Delphix, Privacera, Custom, None, Not Needed | CRITICAL for regulated industries - Sensitive data exposure |
 
-**Visual:** Show Layer 5 box filling in (highlighted for healthcare users)
+**Visual:** Show Layer 5 box filling in (highlighted for regulated industries: Healthcare/PHI, Financial/CHD, Public Sector/CUI)
 
 ---
 
@@ -335,13 +335,24 @@ When user clicks a gap, the right panel shows **selectable product recommendatio
 
 The tool guides users through gaps in **priority order** based on their industry:
 
-**Healthcare Priority Flow:**
+**Priority Flow by Industry:**
+
+| Step | Healthcare | Financial Services | Manufacturing | Retail | Public Sector |
+|------|------------|-------------------|---------------|--------|---------------|
+| 1 | ABAC (HIPAA) | ABAC (PCI-DSS) | ABAC (CMMC) | ABAC (GDPR) | ABAC (FedRAMP) |
+| 2 | Audit Logging | Audit (SOX) | Change Mgmt | Consent Mgmt | Audit (FISMA) |
+| 3 | Data Masking | Tokenization | Data Class. | Data Masking | Data Class. |
+| 4 | LLM Observ. | Fair Lending | Export Ctrl | Privacy | Cont. Monitoring |
+| 5 | LLM (BAA) | LLM (SOC2) | LLM (ITAR) | LLM (GDPR) | LLM (FedRAMP) |
+| 6 | HITL (Clinical) | HITL (Credit) | HITL (Quality) | HITL (Orders) | HITL (Decisions) |
+
+**Healthcare Example:**
 ```
 Step 1 → L5: ABAC Policy Engine (CRITICAL for HIPAA)
 Step 2 → L5: Audit Logging (CRITICAL for HIPAA)
 Step 3 → L5: Data Masking (CRITICAL for PHI)
 Step 4 → L6: LLM Observability (Required for audit)
-Step 5 → L4: LLM Access (Must have BAA  - Azure OpenAI only)
+Step 5 → L4: LLM Access (Must have BAA - Azure OpenAI only)
 Step 6 → L7: HITL Platform (Required for clinical decisions)
 ... remaining gaps in priority order
 ```
@@ -366,15 +377,24 @@ Step 6 → L7: HITL Platform (Required for clinical decisions)
 ┌───────────────────────────────────────────────────────────────────────────┐
 │  Want the fast path?                                                      │
 │                                                                           │
-│  [🚀 Use Recommended Healthcare Stack]                                    │
+│  [🚀 Use Recommended {Industry} Stack]                                    │
 │                                                                           │
-│  This will select the most common products for Healthcare + Azure +       │
-│  Growth budget. You can customize any selection after.                    │
+│  This will select the most common products for {Industry} + {Cloud} +     │
+│  {Budget} tier. You can customize any selection after.                    │
 │                                                                           │
-│  Includes: Azure OpenAI, Styra DAS, Datadog, LangSmith, Temporal...      │
-│  Estimated: $145K | 12 weeks                                              │
+│  {Industry-specific products listed dynamically}                          │
+│  Estimated: ${cost} | {weeks} weeks                                       │
 └───────────────────────────────────────────────────────────────────────────┘
 ```
+
+**Industry-Specific Defaults:**
+| Industry | Key Products | Compliance Focus |
+|----------|--------------|------------------|
+| Healthcare | Azure OpenAI (BAA), Styra DAS, Datadog | HIPAA, BAA required |
+| Financial | Azure OpenAI (SOC2), OPA, Splunk | PCI-DSS, SOX audit |
+| Manufacturing | Self-hosted LLM, OPA, Grafana | CMMC, ITAR (if defense) |
+| Retail | OpenAI, OneTrust, Datadog | GDPR, CCPA consent |
+| Public Sector | Azure OpenAI (FedRAMP), AWS Verified Perms | FedRAMP, FISMA |
 
 **"I'll use what I have" Toggle:**
 For components where user has partial coverage:
@@ -382,18 +402,24 @@ For components where user has partial coverage:
 ┌───────────────────────────────────────────────────────────────────────────┐
 │ You selected: AWS IAM (RBAC only)                                         │
 │                                                                           │
-│ ⚠️ AWS IAM provides RBAC but not full ABAC. For healthcare:               │
-│    - RBAC alone is insufficient for PHI access control                    │
-│    - HIPAA requires attribute-based decisions (user role + data type      │
-│      + purpose + time)                                                    │
+│ ⚠️ AWS IAM provides RBAC but not full ABAC. For regulated industries:     │
+│    - RBAC alone is insufficient for sensitive data access control         │
+│    - {Compliance} requires attribute-based decisions (user role + data    │
+│      type + purpose + time)                                               │
 │                                                                           │
 │ ○ Keep AWS IAM AND add ABAC layer (Recommended)                           │
 │ ○ Replace with full ABAC solution                                         │
-│ ○ Keep AWS IAM only (⚠️ Not recommended for healthcare)                   │
+│ ○ Keep AWS IAM only (⚠️ Not recommended for regulated industries)         │
 │                                                                           │
 │                                                          [Continue →]     │
 └───────────────────────────────────────────────────────────────────────────┘
 ```
+
+**Industry-Specific Warning Text:**
+- Healthcare: "HIPAA requires attribute-based decisions for PHI access"
+- Financial: "PCI-DSS Req 7 requires need-to-know access control for CHD"
+- Manufacturing: "CMMC requires access control based on data classification"
+- Public Sector: "FedRAMP requires ABAC for CUI access"
 
 ---
 
@@ -699,7 +725,10 @@ When a gap is identified, the tool provides specific product recommendations bas
 | **Growth** | OpenAI, Anthropic | Azure OpenAI ✓, AWS Bedrock (Anthropic) ✓ |
 | **Enterprise** | Azure OpenAI, AWS Bedrock, Google Vertex AI | Azure OpenAI ✓, AWS Bedrock ✓ |
 
-**CRITICAL for Healthcare:** Only Azure OpenAI and AWS Bedrock (select models) offer BAAs. OpenAI direct does NOT.
+**CRITICAL by Industry:**
+- Healthcare: Only Azure OpenAI and AWS Bedrock offer BAAs. OpenAI direct does NOT.
+- Financial: Require SOC2 Type II attestation. Azure OpenAI, OpenAI Enterprise, AWS Bedrock qualify.
+- Public Sector: FedRAMP authorization required. Azure OpenAI (FedRAMP High) is primary option.
 
 #### Semantic Cache (If Missing)
 
@@ -721,7 +750,10 @@ When a gap is identified, the tool provides specific product recommendations bas
 | **Growth** | Styra DAS, OPA + custom UI | Managed policies, audit trails |
 | **Enterprise** | Styra Enterprise, PlainID | Full ABAC suite, enterprise features |
 
-**CRITICAL for Healthcare:** ABAC is non-negotiable. RBAC alone is insufficient for PHI access control.
+**CRITICAL for Regulated Industries:** ABAC is non-negotiable for sensitive data access control.
+- Healthcare: RBAC alone insufficient for PHI (HIPAA requires purpose-of-use)
+- Financial: PCI-DSS Req 7 requires need-to-know for CHD
+- Public Sector: FedRAMP requires attribute-based access for CUI
 
 #### Audit Logging (If Missing)
 
@@ -731,7 +763,10 @@ When a gap is identified, the tool provides specific product recommendations bas
 | **Growth** | Datadog, Splunk Cloud | Datadog, Azure Sentinel | Datadog | Datadog (with BAA) ✓ |
 | **Enterprise** | Splunk Enterprise, Datadog | Splunk, Azure Sentinel | Splunk, Chronicle | Splunk Enterprise ✓ |
 
-**CRITICAL for Healthcare:** Must have immutable logs, 6-year retention, PHI access tracking.
+**CRITICAL for Regulated Industries:** Immutable logs required.
+- Healthcare: 6-year retention, 100% PHI access tracking
+- Financial: 1-year minimum (PCI-DSS), 7-year for SOX
+- Public Sector: Per NIST 800-53 AU controls, continuous monitoring
 
 #### Secrets Management (If Missing)
 
@@ -741,7 +776,7 @@ When a gap is identified, the tool provides specific product recommendations bas
 | **Growth** | HashiCorp Vault Cloud | HashiCorp Vault, Azure Key Vault | HashiCorp Vault |
 | **Enterprise** | HashiCorp Vault Enterprise | HashiCorp Vault Enterprise | HashiCorp Vault Enterprise |
 
-#### Data Masking (If Missing + Healthcare)
+#### Data Masking / Tokenization (If Missing + Regulated)
 
 | Tier | Recommendation | Why |
 |------|----------------|-----|
@@ -749,7 +784,10 @@ When a gap is identified, the tool provides specific product recommendations bas
 | **Growth** | Privacera, Immuta | Dynamic masking, policy-based |
 | **Enterprise** | Protegrity, Delphix | Enterprise-grade tokenization |
 
-**CRITICAL for Healthcare:** Data masking is required for PHI. Not optional.
+**CRITICAL for Regulated Industries:** Data masking/tokenization required for sensitive data.
+- Healthcare: PHI masking mandatory (HIPAA)
+- Financial: CHD tokenization mandatory (PCI-DSS Req 3)
+- Retail: Customer PII masking for GDPR compliance
 
 ---
 
@@ -799,13 +837,21 @@ When a gap is identified, the tool provides specific product recommendations bas
 | **Growth** | Custom + workflow integration | Integrated with Temporal/Airflow |
 | **Enterprise** | Custom enterprise platform | Full audit, compliance features |
 
-**CRITICAL for Healthcare:** HITL is mandatory for clinical decisions. No exceptions.
+**CRITICAL for High-Stakes Decisions:** HITL is mandatory. No exceptions.
+- Healthcare: Clinical decisions require clinician approval
+- Financial: Credit decisions require human reviewer (Fair Lending)
+- Manufacturing: Quality holds require QA manager approval
+- Public Sector: Benefit determinations require human adjudication
 
 ---
 
-### Quick Reference: Healthcare Stack (HIPAA-Compliant)
+### Quick Reference: Industry-Specific Stacks
 
-For healthcare organizations, here's the recommended stack by tier:
+**Select your industry for the recommended stack by tier.**
+
+#### Healthcare Stack (HIPAA-Compliant)
+
+For healthcare organizations:
 
 | Layer | Component | Starter | Growth | Enterprise |
 |-------|-----------|---------|--------|------------|
@@ -825,6 +871,39 @@ For healthcare organizations, here's the recommended stack by tier:
 | L6 | APM | Azure Monitor | Datadog | Datadog Enterprise |
 | L7 | Orchestration | Airflow | Temporal Cloud | Temporal Enterprise |
 | L7 | HITL | Custom | Custom + Temporal | Enterprise Platform |
+
+#### Financial Services Stack (PCI-DSS/SOX Compliant)
+
+For financial services organizations:
+
+| Layer | Component | Starter | Growth | Enterprise |
+|-------|-----------|---------|--------|------------|
+| L1 | Vector DB | Azure AI Search | Pinecone (SOC2) | Pinecone Enterprise |
+| L1 | Warehouse | Snowflake | Snowflake (PCI) | Snowflake Enterprise |
+| L2 | CDC | Fivetran | Fivetran (SOC2) | Fivetran Enterprise |
+| L3 | Semantic | Cube Cloud | Cube Pro | Cube Enterprise |
+| L4 | LLM | Azure OpenAI ✓ | Azure OpenAI ✓ | Azure OpenAI ✓ |
+| L5 | ABAC | OPA | OPA + Styra | Styra Enterprise |
+| L5 | Audit | Splunk Cloud | Splunk Enterprise | Splunk + SIEM |
+| L5 | Tokenization | Custom | Protegrity | Protegrity Enterprise |
+| L6 | APM | Datadog | Datadog | Datadog Enterprise |
+| L7 | HITL | Custom | Custom + Workflow | Enterprise Platform |
+
+#### Public Sector Stack (FedRAMP Compliant)
+
+For public sector organizations:
+
+| Layer | Component | Starter | Growth | Enterprise |
+|-------|-----------|---------|--------|------------|
+| L1 | Vector DB | Azure AI Search (FedRAMP) | Azure AI Search | Azure AI Search |
+| L1 | Warehouse | Snowflake Gov | Snowflake Gov | Snowflake Gov |
+| L2 | CDC | AWS DMS (GovCloud) | AWS DMS | AWS DMS |
+| L3 | Semantic | dbt Cloud | dbt Cloud | dbt Enterprise |
+| L4 | LLM | Azure OpenAI (FedRAMP) ✓ | Azure OpenAI ✓ | Azure OpenAI ✓ |
+| L5 | ABAC | AWS Verified Permissions | OPA + Styra | Styra Enterprise |
+| L5 | Audit | AWS CloudWatch | Splunk GovCloud | Splunk GovCloud |
+| L6 | APM | AWS X-Ray | Datadog Gov | Datadog Gov |
+| L7 | HITL | Custom | Custom + Workflow | Enterprise Platform |
 
 ---
 
@@ -861,10 +940,19 @@ def calculate_budget(gaps, tier, industry):
         total_min += range["min"]
         total_max += range["max"]
 
-    # Healthcare modifier (+15% for compliance overhead)
-    if industry == "healthcare":
-        total_min *= 1.15
-        total_max *= 1.15
+    # Industry compliance modifier
+    compliance_modifiers = {
+        "healthcare": 1.15,     # HIPAA overhead
+        "financial": 1.20,     # PCI-DSS + SOX overhead
+        "public_sector": 1.25, # FedRAMP overhead
+        "manufacturing": 1.10, # CMMC overhead (if defense)
+        "retail": 1.05,        # GDPR overhead
+        "technology": 1.00     # No compliance overhead
+    }
+
+    modifier = compliance_modifiers.get(industry, 1.0)
+    total_min *= modifier
+    total_max *= modifier
 
     return (total_min, total_max)
 ```
