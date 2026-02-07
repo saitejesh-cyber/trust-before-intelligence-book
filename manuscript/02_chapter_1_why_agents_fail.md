@@ -815,14 +815,9 @@ Sarah anxiously loaded the INPACT™ assessment tool results:
 
 **Echo Health INPACT™ Score: 28/100**
 
-**I - Instant:** 1/6 → Overnight ETL, 8-24 hour data lag  
-**N - Natural:** 2/6 → No semantic layer, cryptic table names  
-**P - Permitted:** 1/6 → RBAC only, no contextual ABAC layer  
-**A - Adaptive:** 2/6 → No feedback loops, quarterly reviews only  
-**C - Contextual:** 3/6 → Siloed systems, no cross-domain synthesis  
-**T - Transparent:** 1/6 → Basic query logs, no reasoning chain capture
+Their dimension breakdown (detailed in Chapter 2) revealed five critical gaps: Instant, Natural, Permitted, Adaptive, and Transparent all scored 1-2/6. Only Contextual reached 3/6.
 
-**10/36 = 28 out of 100.** Not even close to the 70+ required for agent deployments to succeed.
+**10/36 = 28 out of 100.** Not even close to the 86+ required for agent deployments to succeed.
 
 But the assessment also showed the path forward: **a 7-layer architecture that systematically delivers all six INPACT™ needs.** Real-time data fabric for Instant. Semantic layers for Natural. Dynamic authorization for Permitted. Feedback loops for Adaptive. Intelligence orchestration for Contextual. Observable reasoning for Transparent.
 
@@ -869,7 +864,7 @@ These aren't random problems requiring bespoke solutions. They're systematic INP
 
 Echo scored 28/100. Most enterprises scoring between 25-45 are firmly in the "high risk" zone where agent deployments consistently fail.
 
-The assessment at **trustbeforeintelligence.ai/assessment** measures your readiness across all six dimensions in 15 minutes. Chapter 2 provides the detailed scoring rubrics and shows Echo's path from 28 to 86.
+The assessment at **trustbeforeintelligence.ai/assessment** measures your readiness across all six dimensions in 15 minutes. Chapter 2 provides the detailed scoring rubrics.
 
 ### Bridge to Chapter 2: INPACT™ Deep Dive
 
@@ -932,32 +927,7 @@ If Sarah could do it under board pressure with a 90-day deadline and $2 million 
 
 ---
 
-## Acronyms
-
-- **ABAC:** Attribute-Based Access Control
-- **API:** Application Programming Interface
-- **BI:** Business Intelligence
-- **CDC:** Change Data Capture
-- **CDO:** Chief Data Officer
-- **CFO:** Chief Financial Officer
-- **CMS:** Centers for Medicare & Medicaid Services
-- **CTO:** Chief Technology Officer
-- **DM2:** Diabetes Mellitus Type 2
-- **EHR:** Electronic Health Record
-- **ETL:** Extract, Transform, Load
-- **GenAI:** Generative Artificial Intelligence
-- **GPT:** Generative Pre-trained Transformer
-- **HIPAA:** Health Insurance Portability and Accountability Act
-- **ICD-10:** International Classification of Diseases, 10th Revision
-- **LLM:** Large Language Model
-- **ML:** Machine Learning
-- **MLOps:** Machine Learning Operations
-- **RAG:** Retrieval-Augmented Generation
-- **RBAC:** Role-Based Access Control
-- **ROI:** Return on Investment
-- **SQL:** Structured Query Language
-
----
-
-**© 2025 Colaberry Inc. All Rights Reserved.**  
+**© 2025-2026 Colaberry Inc. All Rights Reserved.**
 INPACT™ and GOALS™ are trademarks of Colaberry Inc.
+
+*Acronyms and key terms are defined in the Glossary.*

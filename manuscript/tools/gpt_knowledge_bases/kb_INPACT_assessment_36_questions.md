@@ -61,117 +61,117 @@ Measures infrastructure's ability to deliver sub-second responses that match con
 
 ---
 
-**I-1: Query Response Time**
+**I-1: Response Time Capability**
 
-*What is your P95 query response time for agent-relevant data?*
+*How quickly can your data infrastructure return query results for typical agent workloads?*
 
 | Score | Criteria |
 |-------|----------|
-| 6 | <500ms P95, <100ms P50, consistent across query types |
-| 5 | <1s P95, <300ms P50, occasional spikes under load |
-| 4 | <3s P95, <1s P50, predictable performance |
-| 3 | <5s P95, variable performance, load-dependent |
-| 2 | 5-15s P95, frequent timeouts, unpredictable |
-| 1 | >15s or frequent timeouts, unusable for conversation |
+| 6 | Sub-1-second P99 latency for complex queries |
+| 5 | Sub-2-second P95 latency, sub-5-second P99 |
+| 4 | 2-5 second typical response, occasional delays |
+| 3 | 5-10 second responses common |
+| 2 | 10-30 second responses typical |
+| 1 | Over 30 seconds, frequent timeouts |
 
 **Evidence Sources:** APM dashboards, database query logs, load test results
 
-**Echo Baseline (Week 0):** Score 1  - 47-second average query time, 2-minute P95
+**Echo Baseline (Week 0):** Score 1 - 9-13 second response times, overnight ETL
 
 ---
 
 **I-2: Data Freshness**
 
-*How current is the data agents access?*
+*How current is the data available to your agents?*
 
 | Score | Criteria |
 |-------|----------|
-| 6 | Real-time (<1 minute), streaming architecture |
-| 5 | Near real-time (<5 minutes), CDC operational |
-| 4 | <1 hour freshness, reliable refresh cycles |
-| 3 | <4 hours freshness, scheduled batch with monitoring |
-| 2 | 4-24 hours freshness, overnight batch only |
-| 1 | >24 hours or unknown freshness, no freshness SLA |
+| 6 | Sub-5-second freshness (streaming) |
+| 5 | Sub-30-second freshness (real-time CDC) |
+| 4 | 1-8 hour freshness (frequent batch) |
+| 3 | 8-24 hour freshness (overnight batch) |
+| 2 | 24-72 hour freshness (daily batch) |
+| 1 | Over 72 hours (weekly or ad-hoc) |
 
 **Evidence Sources:** CDC lag dashboards, ETL schedules, data timestamp analysis
 
-**Echo Baseline (Week 0):** Score 1  - 72-hour batch refresh cycle
+**Echo Baseline (Week 0):** Score 1 - Overnight ETL, 8-24 hour data lag
 
 ---
 
-**I-3: Cache Effectiveness**
+**I-3: Caching Infrastructure**
 
-*What is your semantic cache hit rate for repeated queries?*
+*Do you have semantic caching that serves repeated or similar queries without full recomputation?*
 
 | Score | Criteria |
 |-------|----------|
-| 6 | >70% hit rate, <10ms cache response, intelligent invalidation |
-| 5 | 60-70% hit rate, <50ms cache response, TTL-based invalidation |
-| 4 | 50-60% hit rate, <100ms cache response, manual invalidation |
-| 3 | 30-50% hit rate, >100ms cache response, basic caching |
-| 2 | <30% hit rate or no semantic caching, only exact match |
-| 1 | No caching layer, every query hits full pipeline |
+| 6 | ML-powered predictive caching, 80%+ hit rate |
+| 5 | Semantic caching operational, 60%+ hit rate |
+| 4 | Basic caching, 40-60% hit rate |
+| 3 | Simple key-value caching, under 40% hit rate |
+| 2 | Minimal caching, under 20% hit rate |
+| 1 | No caching infrastructure |
 
 **Evidence Sources:** Cache analytics, Redis/Momento dashboards, application metrics
 
-**Echo Baseline (Week 0):** Score 1  - No caching infrastructure
+**Echo Baseline (Week 0):** Score 1 - No caching infrastructure
 
 ---
 
-**I-4: Concurrent Query Handling**
+**I-4: Query Optimization**
 
-*How many concurrent agent queries can your infrastructure handle?*
+*Is your storage layer optimized for agent query patterns (not just analyst workloads)?*
 
 | Score | Criteria |
 |-------|----------|
-| 6 | >10,000 concurrent, auto-scaling, no degradation |
-| 5 | 5,000-10,000 concurrent, auto-scaling with minor latency increase |
-| 4 | 1,000-5,000 concurrent, manual scaling available |
-| 3 | 500-1,000 concurrent, queue-based overflow handling |
-| 2 | 100-500 concurrent, degradation under load |
-| 1 | <100 concurrent or unknown capacity, frequent overload |
+| 6 | Agent-specific optimization with continuous tuning |
+| 5 | Optimized for agent patterns, regularly reviewed |
+| 4 | Some optimization for common queries |
+| 3 | Generic optimization, analyst-focused |
+| 2 | Minimal optimization |
+| 1 | No query optimization |
 
-**Evidence Sources:** Load testing results, production traffic analysis, scaling configurations
+**Evidence Sources:** Query performance analysis, index configuration, optimization reviews
 
-**Echo Baseline (Week 0):** Score 2  - Systems designed for analyst queries, not agent volume
+**Echo Baseline (Week 0):** Score 2 - Systems designed for analyst queries, not agent patterns
 
 ---
 
-**I-5: API Latency**
+**I-5: Real-Time Data Pipelines**
 
-*What is the end-to-end latency for agent API calls?*
+*Do you have streaming or CDC pipelines that keep agent-accessible data current?*
 
 | Score | Criteria |
 |-------|----------|
-| 6 | <200ms P95, optimized network path, edge deployment |
-| 5 | <500ms P95, minimal network hops, regional deployment |
-| 4 | <1s P95, standard cloud deployment |
-| 3 | 1-3s P95, multiple service hops |
-| 2 | 3-10s P95, legacy integration overhead |
-| 1 | >10s P95 or synchronous blocking, unusable for agents |
+| 6 | Enterprise-wide streaming with sub-second latency |
+| 5 | CDC operational across primary systems |
+| 4 | CDC for some systems, others batch |
+| 3 | Limited streaming, mostly batch |
+| 2 | Batch-only with some micro-batch |
+| 1 | Overnight batch ETL only |
 
-**Evidence Sources:** API gateway metrics, distributed tracing, network analysis
+**Evidence Sources:** CDC configuration, streaming pipeline metrics, data freshness dashboards
 
-**Echo Baseline (Week 0):** Score 2  - Legacy middleware adding 5+ seconds
+**Echo Baseline (Week 0):** Score 1 - Overnight batch ETL only
 
 ---
 
-**I-6: Timeout and Retry Strategy**
+**I-6: Performance Monitoring**
 
-*How does your infrastructure handle slow or failed queries?*
+*Can you detect and respond to performance degradation in real-time?*
 
 | Score | Criteria |
 |-------|----------|
-| 6 | Intelligent timeouts, circuit breakers, graceful degradation, partial results |
-| 5 | Tiered timeouts, automatic retry with backoff, fallback responses |
-| 4 | Configurable timeouts, basic retry logic, error responses |
-| 3 | Fixed timeouts, manual retry, generic error handling |
-| 2 | Inconsistent timeout handling, retry storms possible |
-| 1 | No timeout strategy, queries hang indefinitely |
+| 6 | Predictive alerting, auto-remediation |
+| 5 | Real-time monitoring with immediate alerts |
+| 4 | Near-real-time monitoring, manual response |
+| 3 | Periodic monitoring, delayed alerts |
+| 2 | Basic monitoring, reactive only |
+| 1 | No performance monitoring |
 
-**Evidence Sources:** Error handling code, resilience patterns documentation, incident history
+**Evidence Sources:** Monitoring dashboards, alerting configuration, incident response history
 
-**Echo Baseline (Week 0):** Score 1  - No timeout strategy, queries blocked until completion or crash
+**Echo Baseline (Week 0):** Score 1 - No real-time performance monitoring
 
 ---
 
@@ -181,117 +181,117 @@ Measures infrastructure's ability to understand business language without techni
 
 ---
 
-**N-1: NLU Accuracy**
+**N-1: Semantic Layer Existence**
 
-*What is your Natural Language Understanding accuracy for business queries?*
+*Do you have a semantic layer that translates business terms to data structures?*
 
 | Score | Criteria |
 |-------|----------|
-| 6 | >95% accuracy, handles ambiguity, multi-intent recognition |
-| 5 | 92-95% accuracy, good disambiguation, reliable intent detection |
-| 4 | 88-92% accuracy, handles common queries well |
-| 3 | 80-88% accuracy, struggles with complex or ambiguous queries |
-| 2 | 60-80% accuracy, frequent misinterpretation |
-| 1 | <60% accuracy or no NLU capability, requires structured input |
+| 6 | Universal semantic layer covering all domains |
+| 5 | Comprehensive coverage (80%+ of business concepts) |
+| 4 | Functional coverage (core concepts mapped) |
+| 3 | Partial coverage (limited domains) |
+| 2 | Minimal semantic layer (basic glossary only) |
+| 1 | No semantic layer |
+
+**Evidence Sources:** Semantic layer configuration, business glossary documentation, coverage metrics
+
+**Echo Baseline (Week 0):** Score 2 - No semantic layer, cryptic table names
+
+---
+
+**N-2: Natural Language Understanding Accuracy**
+
+*What percentage of business questions does your system interpret correctly?*
+
+| Score | Criteria |
+|-------|----------|
+| 6 | Over 90% accuracy with ambiguity handling |
+| 5 | 75-90% accuracy on complex queries |
+| 4 | 60-75% accuracy, single-table queries strong |
+| 3 | 45-60% accuracy, simple queries only |
+| 2 | 30-45% accuracy, frequent misinterpretation |
+| 1 | Under 30% accuracy |
 
 **Evidence Sources:** NLU testing results, production accuracy metrics, user feedback
 
-**Echo Baseline (Week 0):** Score 2  - Basic keyword matching, no semantic understanding
+**Echo Baseline (Week 0):** Score 2 - 40-60% understanding rate
 
 ---
 
-**N-2: Business Glossary Coverage**
+**N-3: Business Glossary Coverage**
 
-*What percentage of domain terminology is captured in your semantic layer?*
+*How completely are business terms defined and mapped to data?*
 
 | Score | Criteria |
 |-------|----------|
-| 6 | >95% coverage, 500+ terms, synonyms, context rules, continuous updates |
-| 5 | 90-95% coverage, 300+ terms, synonyms included |
-| 4 | 80-90% coverage, 200+ terms, basic synonyms |
-| 3 | 60-80% coverage, 100+ terms, limited synonyms |
-| 2 | 30-60% coverage, <100 terms, no synonyms |
-| 1 | No business glossary or <30% coverage |
+| 6 | Complete glossary with automated maintenance |
+| 5 | Comprehensive glossary (500+ terms), regularly updated |
+| 4 | Functional glossary (200-500 terms) |
+| 3 | Basic glossary (50-200 terms) |
+| 2 | Minimal glossary (under 50 terms) |
+| 1 | No business glossary |
 
-**Evidence Sources:** Glossary documentation, semantic layer configuration, coverage analysis
+**Evidence Sources:** Glossary documentation, term coverage analysis, update frequency
 
-**Echo Baseline (Week 0):** Score 2  - Informal glossaries in spreadsheets, no system integration
+**Echo Baseline (Week 0):** Score 2 - Informal glossaries in spreadsheets
 
 ---
 
-**N-3: Text-to-SQL Accuracy**
+**N-4: Entity Resolution**
 
-*What is your accuracy for translating natural language to data queries?*
+*Can your system resolve entities (customers, products, employees, accounts) across different naming conventions?*
 
 | Score | Criteria |
 |-------|----------|
-| 6 | >85% execution accuracy, handles joins/aggregations/filters |
-| 5 | 80-85% execution accuracy, reliable for common patterns |
-| 4 | 70-80% execution accuracy, works for simple queries |
-| 3 | 60-70% execution accuracy, requires query validation |
-| 2 | 40-60% execution accuracy, frequent errors |
-| 1 | <40% accuracy or no text-to-SQL capability |
+| 6 | ML-powered entity resolution with confidence scores |
+| 5 | Robust entity resolution across all systems |
+| 4 | Entity resolution for primary entities |
+| 3 | Basic entity resolution, manual rules |
+| 2 | Limited entity resolution, frequent errors |
+| 1 | No entity resolution |
 
-**Evidence Sources:** Text-to-SQL benchmark results, production query success rates
+**Evidence Sources:** Entity resolution accuracy metrics, cross-system matching analysis
 
-**Echo Baseline (Week 0):** Score 2  - Users must write SQL directly
+**Echo Baseline (Week 0):** Score 2 - Limited entity resolution, frequent errors
 
 ---
 
-**N-4: Semantic Search Quality**
+**N-5: Query Understanding**
 
-*How relevant are your vector search results for natural language queries?*
+*Can agents handle multi-table joins, temporal logic, and complex business rules?*
 
 | Score | Criteria |
 |-------|----------|
-| 6 | >90% relevance (top-5), hybrid search, reranking, metadata filtering |
-| 5 | 85-90% relevance (top-5), vector + keyword hybrid |
-| 4 | 80-85% relevance (top-5), pure vector search |
-| 3 | 70-80% relevance (top-5), basic embeddings |
-| 2 | 50-70% relevance, keyword search only |
-| 1 | <50% relevance or no semantic search capability |
+| 6 | Handles complex queries with business rule inference |
+| 5 | Multi-table joins, temporal logic, aggregations |
+| 4 | Multi-table queries, simple temporal logic |
+| 3 | Single-table queries, basic filters |
+| 2 | Simple lookups only |
+| 1 | Cannot interpret natural language queries |
 
-**Evidence Sources:** Retrieval evaluation metrics (MRR, NDCG), user satisfaction with search
+**Evidence Sources:** Query complexity analysis, success rates by query type
 
-**Echo Baseline (Week 0):** Score 2  - Keyword search only, no vector capability
+**Echo Baseline (Week 0):** Score 2 - Simple lookups only, no complex query handling
 
 ---
 
-**N-5: Multi-Turn Conversation Handling**
+**N-6: User Comprehension Feedback**
 
-*Can your infrastructure maintain context across conversation turns?*
-
-| Score | Criteria |
-|-------|----------|
-| 6 | Full context preservation, cross-session memory, relevance weighting |
-| 5 | Session context preserved, reference resolution, 10+ turns |
-| 4 | Session context preserved, 5-10 turns, basic reference resolution |
-| 3 | Limited context (3-5 turns), some reference resolution |
-| 2 | Minimal context (1-2 turns), frequent context loss |
-| 1 | No conversation context, every query treated independently |
-
-**Evidence Sources:** Conversation logs, context window configuration, user experience testing
-
-**Echo Baseline (Week 0):** Score 2  - Each query independent, no conversation state
-
----
-
-**N-6: Language Localization**
-
-*Does your infrastructure support multiple languages and regional variations?*
+*Do you systematically capture and learn from cases where users were misunderstood?*
 
 | Score | Criteria |
 |-------|----------|
-| 6 | Full multilingual support, regional variations, cultural context |
-| 5 | 5+ languages, regional terminology handling |
-| 4 | 2-4 languages, basic translation |
-| 3 | English + 1 language, limited regional support |
-| 2 | English only with international user base |
-| 1 | English only, appropriate for user base (or no language capability) |
+| 6 | Automated learning from misunderstanding patterns |
+| 5 | Systematic feedback collection, regular model updates |
+| 4 | Feedback captured, periodic review |
+| 3 | Ad-hoc feedback collection |
+| 2 | Feedback captured but not analyzed |
+| 1 | No feedback mechanism |
 
-**Evidence Sources:** Language configuration, translation quality metrics, user demographics
+**Evidence Sources:** Feedback collection system, model update frequency, improvement metrics
 
-**Echo Baseline (Week 0):** Score 3  - English + Spanish for patient-facing, adequate for Echo's demographics
+**Echo Baseline (Week 0):** Score 2 - Feedback captured but not analyzed
 
 ---
 
@@ -301,117 +301,117 @@ Measures infrastructure's ability to enforce dynamic authorization and access co
 
 ---
 
-**P-1: Access Control Model**
+**P-1: Authorization Model**
 
-*What access control model does your infrastructure implement?*
+*What authorization approach governs agent data access?*
 
 | Score | Criteria |
 |-------|----------|
-| 6 | Full ABAC with 8+ attributes, real-time evaluation, purpose binding |
-| 5 | ABAC with 5-7 attributes, sub-second evaluation |
-| 4 | ABAC with 3-4 attributes or enhanced RBAC with context |
-| 3 | RBAC with role hierarchy, manual provisioning |
-| 2 | Basic RBAC, static roles, slow provisioning |
-| 1 | Shared credentials or no access control |
+| 6 | Zero-trust ABAC with ML anomaly detection |
+| 5 | Comprehensive ABAC (40+ policies), sub-10ms evaluation |
+| 4 | ABAC operational with core attributes |
+| 3 | RBAC with some attribute-based rules |
+| 2 | Static RBAC only, shared service accounts |
+| 1 | No authorization or open access |
 
 **Evidence Sources:** Access control architecture, policy engine configuration, provisioning workflow
 
-**Echo Baseline (Week 0):** Score 1  - Shared database credentials, no granular control
+**Echo Baseline (Week 0):** Score 1 - RBAC only, no contextual ABAC layer
 
 ---
 
-**P-2: Policy Evaluation Latency**
+**P-2: Human-in-the-Loop (HITL)**
 
-*How quickly can your system evaluate access control policies?*
-
-| Score | Criteria |
-|-------|----------|
-| 6 | <5ms P95, cached policies, distributed evaluation |
-| 5 | <10ms P95, policy caching, centralized evaluation |
-| 4 | <50ms P95, acceptable for most queries |
-| 3 | 50-200ms P95, noticeable latency |
-| 2 | 200ms-1s P95, significant overhead |
-| 1 | >1s or synchronous database lookup for every request |
-
-**Evidence Sources:** Policy engine metrics, authorization logs, performance testing
-
-**Echo Baseline (Week 0):** Score 1  - No dynamic policy evaluation
-
----
-
-**P-3: Human-in-the-Loop Capability**
-
-*Can your infrastructure escalate decisions to human reviewers?*
+*Do you have workflows for human review of high-risk agent decisions?*
 
 | Score | Criteria |
 |-------|----------|
-| 6 | Full HITL with SLA tracking, feedback loops, analytics |
-| 5 | HITL workflows with routing and queuing |
-| 4 | Basic HITL for high-risk decisions |
-| 3 | Manual escalation process, no automation |
-| 2 | Escalation possible but no defined workflow |
-| 1 | No escalation capability, fully autonomous or fully manual |
+| 6 | ML-powered risk scoring, adaptive escalation |
+| 5 | HITL workflows operational, under 15% escalation rate |
+| 4 | HITL defined for critical decisions |
+| 3 | Manual escalation process exists |
+| 2 | Ad-hoc escalation, no formal process |
+| 1 | No HITL capability |
 
 **Evidence Sources:** HITL workflow documentation, escalation metrics, queue configuration
 
-**Echo Baseline (Week 0):** Score 1  - No escalation workflow
+**Echo Baseline (Week 0):** Score 1 - No HITL capability
 
 ---
 
-**P-4: Audit Trail Completeness**
+**P-3: Audit Logging**
 
-*How complete are your audit trails for agent decisions?*
+*How completely do you capture who accessed what, when, and why?*
 
 | Score | Criteria |
 |-------|----------|
-| 6 | 100% coverage, reasoning chains preserved, 7+ year retention, queryable |
-| 5 | 100% coverage, key decision points logged, 5+ year retention |
-| 4 | >95% coverage, decisions logged, 3+ year retention |
-| 3 | >80% coverage, basic logging, 1+ year retention |
-| 2 | Partial logging, inconsistent, short retention |
-| 1 | No audit trail or <50% coverage |
+| 6 | Complete audit with ML-powered analysis |
+| 5 | 100% coverage, 7+ year retention, trace IDs |
+| 4 | Comprehensive logging, partial trace correlation |
+| 3 | User identity captured, limited context |
+| 2 | Basic database logs only |
+| 1 | No audit logging |
 
 **Evidence Sources:** Logging configuration, retention policies, audit query capability
 
-**Echo Baseline (Week 0):** Score 1  - Application logs only, no decision audit trail
+**Echo Baseline (Week 0):** Score 1 - Basic query logs, no reasoning chain capture
 
 ---
 
-**P-5: Data Classification**
+**P-4: Compliance Coverage**
 
-*Is your data classified and labeled for access control?*
+*How well does your authorization system address regulatory requirements (e.g., GDPR, SOC 2, HIPAA, PCI-DSS, SOX)?*
 
 | Score | Criteria |
 |-------|----------|
-| 6 | Full classification taxonomy, automated labeling, 100% coverage |
-| 5 | Comprehensive classification, >95% coverage, regular review |
-| 4 | Classification schema exists, >80% coverage |
-| 3 | Basic classification (public/internal/confidential), 60-80% coverage |
-| 2 | Informal classification, <60% coverage |
-| 1 | No data classification |
+| 6 | Automated compliance reporting, continuous validation |
+| 5 | Full compliance coverage, audit-ready |
+| 4 | Major regulations addressed |
+| 3 | Partial compliance, gaps documented |
+| 2 | Compliance gaps, remediation needed |
+| 1 | Non-compliant, deployment blocked |
 
-**Evidence Sources:** Data catalog, classification policy, coverage metrics
+**Evidence Sources:** Compliance audit results, regulatory documentation, gap analysis
 
-**Echo Baseline (Week 0):** Score 2  - HIPAA awareness but no systematic classification
+**Echo Baseline (Week 0):** Score 1 - HIPAA gaps, deployment blocked
 
 ---
 
-**P-6: Consent Management**
+**P-5: Context-Aware Permissions**
 
-*Can your infrastructure respect and enforce user consent preferences?*
+*Do permissions adapt based on context (time, location, purpose, customer relationship)?*
 
 | Score | Criteria |
 |-------|----------|
-| 6 | Real-time consent enforcement, granular preferences, audit trail |
-| 5 | Consent enforcement at query time, preference management |
-| 4 | Consent captured and respected, manual enforcement |
-| 3 | Basic consent capture, inconsistent enforcement |
-| 2 | Consent captured but not enforced programmatically |
-| 1 | No consent management |
+| 6 | Full context awareness with predictive access |
+| 5 | Rich context attributes (10+) in policy evaluation |
+| 4 | Core context attributes (role, time, location) |
+| 3 | Limited context (role + department) |
+| 2 | Role-only, no context adaptation |
+| 1 | Static permissions, no context |
 
-**Evidence Sources:** Consent database, enforcement logic, compliance audit results
+**Evidence Sources:** Policy engine configuration, attribute definitions, context evaluation logs
 
-**Echo Baseline (Week 0):** Score 2  - HIPAA consent on file, not enforced by agents
+**Echo Baseline (Week 0):** Score 1 - Static permissions, no context awareness
+
+---
+
+**P-6: Escalation Protocols**
+
+*Are escalation paths clearly defined for permission denials and edge cases?*
+
+| Score | Criteria |
+|-------|----------|
+| 6 | Automated escalation with SLA tracking |
+| 5 | Defined protocols, measured response times |
+| 4 | Escalation paths documented |
+| 3 | Informal escalation process |
+| 2 | Ad-hoc escalation |
+| 1 | No escalation process |
+
+**Evidence Sources:** Escalation workflow documentation, SLA metrics, response time analysis
+
+**Echo Baseline (Week 0):** Score 1 - No escalation process
 
 ---
 
@@ -421,117 +421,117 @@ Measures infrastructure's ability to learn and improve from feedback and changin
 
 ---
 
-**A-1: Feedback Loop Implementation**
+**A-1: Feedback Loop Existence**
 
-*How effectively does your infrastructure capture and use feedback?*
+*Do you have infrastructure to capture user feedback on agent responses?*
 
 | Score | Criteria |
 |-------|----------|
-| 6 | Closed-loop automation, weekly model updates, A/B testing |
-| 5 | Automated feedback capture, monthly retraining, metrics tracking |
-| 4 | Feedback capture, quarterly retraining cycle |
-| 3 | Manual feedback collection, ad-hoc retraining |
-| 2 | Feedback captured but not used systematically |
-| 1 | No feedback capture mechanism |
+| 6 | Multi-channel feedback with sentiment analysis |
+| 5 | Systematic feedback capture, integrated with training |
+| 4 | Feedback collection operational |
+| 3 | Basic feedback mechanism |
+| 2 | Feedback captured but not connected |
+| 1 | No feedback infrastructure |
 
-**Evidence Sources:** Feedback pipeline, retraining schedule, improvement metrics
+**Evidence Sources:** Feedback pipeline, collection mechanisms, integration points
 
-**Echo Baseline (Week 0):** Score 2  - User complaints tracked but not connected to improvement
+**Echo Baseline (Week 0):** Score 2 - No feedback loops, quarterly reviews only
 
 ---
 
-**A-2: Drift Detection**
+**A-2: Model Retraining Cadence**
 
-*Can your infrastructure detect when model performance degrades?*
+*How frequently can you update models based on new data and feedback?*
 
 | Score | Criteria |
 |-------|----------|
-| 6 | Real-time drift detection, automated alerts, retraining triggers |
-| 5 | Daily drift monitoring, alerts on threshold breach |
-| 4 | Weekly drift analysis, manual review process |
-| 3 | Monthly performance review, reactive detection |
-| 2 | Quarterly review or incident-triggered only |
+| 6 | Continuous deployment with A/B testing |
+| 5 | Weekly retraining with validation |
+| 4 | Monthly retraining cycle |
+| 3 | Quarterly updates |
+| 2 | Annual or ad-hoc updates |
+| 1 | No retraining capability |
+
+**Evidence Sources:** Retraining schedule, MLOps pipeline, update frequency metrics
+
+**Echo Baseline (Week 0):** Score 2 - Quarterly manual reviews only
+
+---
+
+**A-3: Drift Detection**
+
+*Can you detect when model performance degrades due to data or concept drift?*
+
+| Score | Criteria |
+|-------|----------|
+| 6 | Real-time drift detection with auto-remediation |
+| 5 | Automated drift alerts, defined response |
+| 4 | Regular drift monitoring |
+| 3 | Periodic manual drift checks |
+| 2 | Ad-hoc drift assessment |
 | 1 | No drift detection |
 
 **Evidence Sources:** Monitoring dashboards, alert configuration, drift detection algorithms
 
-**Echo Baseline (Week 0):** Score 2  - Performance issues discovered through user complaints
+**Echo Baseline (Week 0):** Score 2 - No drift detection, issues discovered through complaints
 
 ---
 
-**A-3: Model Versioning**
+**A-4: Continuous Improvement Process**
 
-*How do you manage model versions and rollback capability?*
+*Do you have a defined process for turning feedback into improvements?*
 
 | Score | Criteria |
 |-------|----------|
-| 6 | Full versioning, instant rollback, A/B deployment, version analytics |
-| 5 | Version control, <1 hour rollback, deployment automation |
-| 4 | Version tracking, same-day rollback capability |
-| 3 | Basic versioning, multi-day rollback process |
-| 2 | Informal versioning, rollback requires rebuild |
-| 1 | No versioning, rollback not possible |
+| 6 | Automated improvement pipeline |
+| 5 | Weekly improvement cycle with measured outcomes |
+| 4 | Regular improvement reviews |
+| 3 | Ad-hoc improvement process |
+| 2 | Improvements when critical issues arise |
+| 1 | No improvement process |
 
-**Evidence Sources:** MLOps tooling, version history, rollback procedures
+**Evidence Sources:** Improvement workflow documentation, cycle time metrics, outcome tracking
 
-**Echo Baseline (Week 0):** Score 2  - No model versioning infrastructure
+**Echo Baseline (Week 0):** Score 2 - No defined improvement process
 
 ---
 
-**A-4: Context Personalization**
+**A-5: Learning Automation**
 
-*Can your infrastructure adapt to individual user preferences and context?*
+*How automated is your feedback-to-improvement pipeline?*
 
 | Score | Criteria |
 |-------|----------|
-| 6 | Real-time personalization, preference learning, context adaptation |
-| 5 | Session-based personalization, preference storage |
-| 4 | Basic personalization based on role/department |
-| 3 | Limited personalization, manual configuration |
-| 2 | One-size-fits-all with minor customization |
-| 1 | No personalization capability |
+| 6 | Fully automated with human oversight |
+| 5 | Largely automated, manual approval gates |
+| 4 | Semi-automated, significant manual work |
+| 3 | Mostly manual with some automation |
+| 2 | Manual process |
+| 1 | No automation |
 
-**Evidence Sources:** Personalization features, user profile system, adaptation metrics
+**Evidence Sources:** MLOps infrastructure, automation metrics, pipeline documentation
 
-**Echo Baseline (Week 0):** Score 2  - Static reports, no personalization
+**Echo Baseline (Week 0):** Score 1 - No ML automation infrastructure
 
 ---
 
-**A-5: Continuous Learning Pipeline**
+**A-6: Performance Trend Tracking**
 
-*Is there infrastructure for continuous model improvement?*
-
-| Score | Criteria |
-|-------|----------|
-| 6 | Fully automated pipeline, daily improvement cycles |
-| 5 | Automated pipeline, weekly improvement cycles |
-| 4 | Semi-automated pipeline, monthly cycles |
-| 3 | Manual pipeline, quarterly updates |
-| 2 | Ad-hoc updates, no defined pipeline |
-| 1 | No learning pipeline |
-
-**Evidence Sources:** MLOps infrastructure, training pipelines, update frequency
-
-**Echo Baseline (Week 0):** Score 1  - No ML infrastructure
-
----
-
-**A-6: Experimentation Capability**
-
-*Can you run controlled experiments on agent behavior?*
+*Do you track agent performance metrics over time to identify degradation?*
 
 | Score | Criteria |
 |-------|----------|
-| 6 | Full A/B testing, multi-variate, statistical rigor, auto-analysis |
-| 5 | A/B testing framework, manual analysis |
-| 4 | Basic A/B capability, limited traffic |
-| 3 | Shadow mode testing, no production A/B |
-| 2 | Manual testing only, no controlled experiments |
-| 1 | No experimentation capability |
+| 6 | Predictive trend analysis with alerting |
+| 5 | Comprehensive trend dashboards, anomaly detection |
+| 4 | Key metrics tracked over time |
+| 3 | Basic trend tracking |
+| 2 | Point-in-time metrics only |
+| 1 | No performance tracking |
 
-**Evidence Sources:** Experimentation platform, experiment history, statistical methodology
+**Evidence Sources:** Performance dashboards, trend analysis tools, alerting configuration
 
-**Echo Baseline (Week 0):** Score 1  - No experimentation infrastructure
+**Echo Baseline (Week 0):** Score 1 - No performance trend tracking
 
 ---
 
@@ -541,117 +541,117 @@ Measures infrastructure's ability to synthesize knowledge across systems and dom
 
 ---
 
-**C-1: System Integration Breadth**
+**C-1: System Integration Count**
 
-*How many source systems feed your agent infrastructure?*
+*How many source systems feed your agent-accessible data layer?*
 
 | Score | Criteria |
 |-------|----------|
-| 6 | 10+ systems, unified access layer, real-time sync |
-| 5 | 7-10 systems, integrated with some latency |
-| 4 | 5-6 systems, batch integration |
-| 3 | 3-4 systems, manual integration points |
-| 2 | 1-2 systems, siloed data |
-| 1 | Single system or no integration |
+| 6 | 10+ systems with automated discovery |
+| 5 | 7-10 systems integrated |
+| 4 | 4-6 systems integrated |
+| 3 | 2-3 systems integrated |
+| 2 | Single system only |
+| 1 | No integration |
 
 **Evidence Sources:** Integration inventory, data flow diagrams, API catalog
 
-**Echo Baseline (Week 0):** Score 3  - Epic, Salesforce, and billing only
+**Echo Baseline (Week 0):** Score 3 - Siloed systems, no cross-domain synthesis
 
 ---
 
-**C-2: Entity Resolution**
+**C-2: Cross-System Data Freshness**
 
-*Can your infrastructure resolve entities across systems?*
+*How current is data from your integrated systems?*
 
 | Score | Criteria |
 |-------|----------|
-| 6 | Real-time resolution, >99% accuracy, ML-based matching |
-| 5 | Near real-time resolution, >97% accuracy |
-| 4 | Batch resolution, >95% accuracy |
-| 3 | Manual resolution, 90-95% accuracy |
-| 2 | Partial resolution, <90% accuracy |
+| 6 | Sub-15-second freshness across all systems |
+| 5 | Sub-30-second freshness for primary systems |
+| 4 | Hourly freshness across systems |
+| 3 | Daily freshness |
+| 2 | Multi-day lag for some systems |
+| 1 | Weekly or longer lag |
+
+**Evidence Sources:** CDC lag dashboards, cross-system freshness analysis
+
+**Echo Baseline (Week 0):** Score 2 - Weekly batch jobs between systems
+
+---
+
+**C-3: Entity Resolution Cross-Domain**
+
+*Can you resolve the same entity (customer, employee, account) across different systems?*
+
+| Score | Criteria |
+|-------|----------|
+| 6 | Universal entity resolution with confidence scoring |
+| 5 | Robust cross-system entity resolution |
+| 4 | Entity resolution for primary entities |
+| 3 | Basic cross-system matching |
+| 2 | Limited cross-system resolution |
 | 1 | No cross-system entity resolution |
 
-**Evidence Sources:** MDM platform, resolution accuracy metrics, duplicate analysis
+**Evidence Sources:** Entity resolution accuracy metrics, cross-system matching analysis
 
-**Echo Baseline (Week 0):** Score 3  - MPI for patients, no other entity resolution
-
----
-
-**C-3: Knowledge Graph Implementation**
-
-*Do you have a knowledge graph representing domain relationships?*
-
-| Score | Criteria |
-|-------|----------|
-| 6 | Production knowledge graph, real-time updates, >10M nodes |
-| 5 | Knowledge graph, batch updates, 1-10M nodes |
-| 4 | Basic knowledge graph, <1M nodes |
-| 3 | Ontology without graph implementation |
-| 2 | Informal relationships, no formal graph |
-| 1 | No knowledge representation |
-
-**Evidence Sources:** Graph database, ontology documentation, node/edge counts
-
-**Echo Baseline (Week 0):** Score 2  - Healthcare ontologies (SNOMED, ICD-10) but no graph
+**Echo Baseline (Week 0):** Score 2 - Limited cross-system resolution
 
 ---
 
-**C-4: Cross-Domain Query Capability**
+**C-4: Context Synthesis Capability**
 
-*Can agents query across multiple domains in a single request?*
+*Can agents combine information from multiple systems to answer questions?*
 
 | Score | Criteria |
 |-------|----------|
-| 6 | Seamless multi-domain, optimized query planning, sub-second |
-| 5 | Multi-domain queries, some latency, unified results |
-| 4 | Multi-domain possible, requires multiple queries |
-| 3 | Limited cross-domain, manual joining |
-| 2 | Single domain per query only |
-| 1 | No cross-domain capability |
+| 6 | Intelligent context assembly with relevance ranking |
+| 5 | Multi-system queries with unified response |
+| 4 | Cross-system queries with some limitations |
+| 3 | Basic cross-system queries |
+| 2 | Single-system queries only |
+| 1 | Cannot synthesize context |
 
-**Evidence Sources:** Query capabilities, federation layer, cross-domain testing
+**Evidence Sources:** Query capabilities, federation layer, cross-system testing
 
-**Echo Baseline (Week 0):** Score 3  - Manual joins required for cross-system queries
+**Echo Baseline (Week 0):** Score 3 - Basic cross-system queries
 
 ---
 
-**C-5: Temporal Context**
+**C-5: Cross-System Querying**
 
-*Can your infrastructure provide historical context and trends?*
+*Can a single agent query span multiple source systems transparently?*
 
 | Score | Criteria |
 |-------|----------|
-| 6 | Full temporal support, trend analysis, forecasting |
-| 5 | Historical queries, basic trends |
-| 4 | Point-in-time queries, limited history |
-| 3 | Current state only, some history available |
-| 2 | Current state only, no history |
-| 1 | Snapshot data, no temporal capability |
+| 6 | Transparent multi-system queries with optimization |
+| 5 | Multi-system queries with sub-3-second response |
+| 4 | Multi-system queries, some performance impact |
+| 3 | Limited cross-system capability |
+| 2 | Manual system selection required |
+| 1 | Single-system queries only |
 
-**Evidence Sources:** Temporal data model, history retention, query capabilities
+**Evidence Sources:** Query capabilities, federation layer, cross-system testing
 
-**Echo Baseline (Week 0):** Score 4  - EHR has history, limited trend capabilities
+**Echo Baseline (Week 0):** Score 3 - Limited cross-system capability
 
 ---
 
-**C-6: Document Understanding**
+**C-6: Universal Context Availability**
 
-*Can your infrastructure extract and integrate unstructured content?*
+*What percentage of business questions can be answered with available integrated data?*
 
 | Score | Criteria |
 |-------|----------|
-| 6 | Full document understanding, multi-format, entity extraction |
-| 5 | Document parsing, text extraction, basic entity recognition |
-| 4 | PDF/Word extraction, limited entity recognition |
-| 3 | Basic text extraction only |
-| 2 | Metadata only, no content extraction |
-| 1 | No unstructured content capability |
+| 6 | Over 95% question coverage |
+| 5 | 80-95% question coverage |
+| 4 | 60-80% question coverage |
+| 3 | 40-60% question coverage |
+| 2 | 20-40% question coverage |
+| 1 | Under 20% question coverage |
 
-**Evidence Sources:** Document processing pipeline, extraction accuracy, format support
+**Evidence Sources:** Question coverage analysis, data availability assessment
 
-**Echo Baseline (Week 0):** Score 3  - Basic OCR for scanned documents
+**Echo Baseline (Week 0):** Score 3 - 40-60% question coverage
 
 ---
 
@@ -661,117 +661,117 @@ Measures infrastructure's ability to explain decisions and provide audit trails.
 
 ---
 
-**T-1: Citation Generation**
+**T-1: Audit Trail Completeness**
 
-*Can your infrastructure cite sources for agent responses?*
+*How completely do you capture the reasoning chain from question to answer?*
 
 | Score | Criteria |
 |-------|----------|
-| 6 | 100% citation coverage, deep links, confidence scores, source freshness |
-| 5 | >95% citation coverage, links to sources |
-| 4 | >80% citation coverage, basic source attribution |
-| 3 | Partial citations, inconsistent formatting |
-| 2 | Occasional citations, no systematic approach |
-| 1 | No citation capability |
+| 6 | Complete trails with ML-powered analysis |
+| 5 | 100% coverage, end-to-end trace IDs, 7+ year retention |
+| 4 | Comprehensive trails, partial correlation |
+| 3 | Basic audit trails, user identity captured |
+| 2 | Database query logs only |
+| 1 | No audit trails |
 
-**Evidence Sources:** Response samples, citation configuration, link verification
+**Evidence Sources:** Audit log configuration, trace infrastructure, retention policies
 
-**Echo Baseline (Week 0):** Score 1  - No citation capability
+**Echo Baseline (Week 0):** Score 1 - No audit trails
 
 ---
 
-**T-2: Reasoning Explainability**
+**T-2: Explainability Capability**
 
-*Can users understand why the agent made a decision?*
+*Can agents explain their reasoning in terms users understand?*
 
 | Score | Criteria |
 |-------|----------|
-| 6 | Full reasoning chains, confidence breakdown, alternative paths |
-| 5 | Step-by-step reasoning, key decision factors |
-| 4 | Summary explanation, main factors identified |
-| 3 | Basic explanation on request |
-| 2 | Limited explanation, black box mostly |
+| 6 | Natural language explanations with confidence levels |
+| 5 | Structured explanations with reasoning steps |
+| 4 | Basic explainability, data sources shown |
+| 3 | Limited explainability |
+| 2 | Technical explanations only |
 | 1 | No explainability |
 
 **Evidence Sources:** Explainability features, user testing, explanation samples
 
-**Echo Baseline (Week 0):** Score 1  - No explanation capability
+**Echo Baseline (Week 0):** Score 1 - No explainability
 
 ---
 
-**T-3: Confidence Calibration**
+**T-3: Citation Provision**
 
-*Is agent confidence aligned with actual accuracy?*
+*Do agent responses include citations to source data?*
 
 | Score | Criteria |
 |-------|----------|
-| 6 | <3% calibration error, dynamic adjustment, uncertainty quantification |
-| 5 | <5% calibration error, regular calibration |
-| 4 | <10% calibration error, periodic calibration |
-| 3 | 10-20% calibration error, infrequent calibration |
-| 2 | >20% calibration error or not measured |
-| 1 | No confidence scores or severely miscalibrated |
+| 6 | Inline citations with confidence and freshness |
+| 5 | Citations for all claims with source links |
+| 4 | Citations for key claims |
+| 3 | Occasional citations |
+| 2 | Source system mentioned, no specifics |
+| 1 | No citations |
 
-**Evidence Sources:** Calibration metrics, confidence distribution analysis
+**Evidence Sources:** Response samples, citation configuration, link verification
 
-**Echo Baseline (Week 0):** Score 1  - No confidence scoring
+**Echo Baseline (Week 0):** Score 1 - No citations
 
 ---
 
-**T-4: Trace Correlation**
+**T-4: Decision Traceability**
 
-*Can you trace a request through all system components?*
+*Can you trace any agent decision back to the data and logic that produced it?*
 
 | Score | Criteria |
 |-------|----------|
-| 6 | Full distributed tracing, <1s trace lookup, 100% coverage |
-| 5 | Distributed tracing, >95% coverage |
-| 4 | Request tracing, >80% coverage |
-| 3 | Partial tracing, manual correlation required |
-| 2 | Log correlation possible but difficult |
-| 1 | No tracing capability |
+| 6 | Full traceability with replay capability |
+| 5 | Complete traceability, query replay |
+| 4 | Traceability for most decisions |
+| 3 | Limited traceability |
+| 2 | Partial traceability |
+| 1 | No traceability |
 
 **Evidence Sources:** Tracing infrastructure, trace examples, coverage metrics
 
-**Echo Baseline (Week 0):** Score 1  - Application logs only, no correlation
+**Echo Baseline (Week 0):** Score 1 - No traceability
 
 ---
 
 **T-5: Compliance Reporting**
 
-*Can you generate compliance reports for agent behavior?*
+*Can you generate compliance reports showing appropriate data access?*
 
 | Score | Criteria |
 |-------|----------|
-| 6 | Automated compliance reports, real-time dashboards, audit-ready |
-| 5 | Regular compliance reports, dashboards, manual audit support |
-| 4 | Periodic reports, basic metrics |
-| 3 | Ad-hoc reports, manual data gathering |
-| 2 | Limited reporting, significant manual effort |
+| 6 | Automated compliance reporting with alerts |
+| 5 | On-demand compliance reports, audit-ready |
+| 4 | Compliance reports with manual effort |
+| 3 | Basic compliance data available |
+| 2 | Limited compliance visibility |
 | 1 | No compliance reporting |
 
 **Evidence Sources:** Report samples, compliance dashboards, audit history
 
-**Echo Baseline (Week 0):** Score 2  - Manual HIPAA audits, no agent-specific reporting
+**Echo Baseline (Week 0):** Score 2 - Limited compliance visibility
 
 ---
 
-**T-6: Error Attribution**
+**T-6: User Trust in Transparency**
 
-*When something goes wrong, can you identify the cause?*
+*Do users report understanding and trusting agent explanations?*
 
 | Score | Criteria |
 |-------|----------|
-| 6 | Automated root cause analysis, <5 min MTTD, full context |
-| 5 | Rapid diagnosis, <15 min MTTD, good context |
-| 4 | Same-day diagnosis, adequate context |
-| 3 | Multi-day diagnosis, limited context |
-| 2 | Difficult diagnosis, requires extensive investigation |
-| 1 | Cannot identify causes systematically |
+| 6 | Over 90% user trust in explanations |
+| 5 | 75-90% user trust |
+| 4 | 60-75% user trust |
+| 3 | 40-60% user trust |
+| 2 | Under 40% user trust |
+| 1 | No user trust measurement |
 
-**Evidence Sources:** Incident history, MTTD metrics, RCA documentation
+**Evidence Sources:** User surveys, trust metrics, feedback analysis
 
-**Echo Baseline (Week 0):** Score 1  - Multi-day investigation for any issue
+**Echo Baseline (Week 0):** Score 1 - No user trust measurement
 
 ---
 

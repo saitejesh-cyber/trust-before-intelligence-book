@@ -4,11 +4,11 @@
 
 ---
 
-*Week 1, Wednesday afternoon—ten weeks before production.*
+*Week 1, Wednesday afternoon. Ten weeks before production.*
 
 Sarah stared at the vendor comparison spreadsheet. Fourteen vector databases. Eight CDC platforms. Six semantic layer tools.
 
-Marcus asked about Pinecone's impressive demo—sub-50ms retrieval, slick UI.
+Marcus asked about Pinecone's impressive demo: sub-50ms retrieval, slick UI.
 
 "Did they have a BAA?" Sarah asked.
 
@@ -18,7 +18,7 @@ Marcus paused. "I didn't ask."
 
 ---
 
-**Diagram 1: Vendor Selection Transformation**
+**Figure 11.1: Vendor Selection Transformation**
 
 ```mermaid
 
@@ -96,7 +96,7 @@ Every vendor evaluation follows three principles:
 
 Every technology in a production stack must pass the same evaluation. Three pillars, separately scored, identify vendors that meet both agent needs and operational requirements.
 
-**Diagram 2: The Three-Pillar Vendor Evaluation Framework**
+**Figure 11.2: The Three-Pillar Vendor Evaluation Framework**
 
 ```mermaid
 graph TD
@@ -204,7 +204,7 @@ This methodology applies regardless of which specific vendors you evaluate. The 
 
 Not every component requires a vendor purchase. The Architecture of Trust supports a hybrid approach: buy commodity capabilities, build differentiators, partner for expertise.
 
-**Diagram 3: Build vs Buy vs Partner Decision Flow**
+**Figure 11.3: Build vs Buy vs Partner Decision Flow**
 
 ```mermaid
 
@@ -320,7 +320,7 @@ This section provides selection criteria for each of the seven architecture laye
 
 > **📚 For specific vendor comparisons:** Use the **Vendor Selector at trustbeforeintelligence.ai/tools** for personalized recommendations based on your context.
 
-**Diagram 4: The 7-Layer Architecture Technology Stack**
+**Figure 11.4: The 7-Layer Architecture Technology Stack**
 
 ```mermaid
 
@@ -382,7 +382,7 @@ graph TB
 
 **Implementation Timing:** Weeks 1-4 (Foundation Phase)
 
-Layer 1 establishes the storage foundation everything else depends on. Without performant multi-modal storage, agents can't retrieve context quickly enough for conversational interaction.
+Without performant multi-modal storage, agents can't retrieve context quickly enough for conversational interaction. See Chapter 4 for implementation details.
 
 **Selection Criteria**
 
@@ -421,7 +421,7 @@ Layer 1 establishes the storage foundation everything else depends on. Without p
 
 **Implementation Timing:** Weeks 1-4 (Foundation Phase)
 
-Layer 2 ensures agents work with current information. Without real-time data, agents make decisions on stale context. The difference between catching a medication interaction before administration versus after can be life or death.
+Without real-time data, agents make decisions on stale context. In healthcare, the difference between catching a medication interaction before administration versus after can be life or death. See Chapter 4 for implementation details.
 
 **Selection Criteria**
 
@@ -459,7 +459,7 @@ Layer 2 ensures agents work with current information. Without real-time data, ag
 
 **Implementation Timing:** Weeks 5-7 (Intelligence Phase)
 
-Layer 3 bridges human language and database schemas. When a user asks a domain-specific question, the semantic layer resolves this to precise query logic without requiring SQL knowledge.
+When a user asks a domain-specific question, the semantic layer resolves this to precise query logic without requiring SQL knowledge. See Chapter 5 for implementation details.
 
 **Selection Criteria**
 
@@ -497,7 +497,7 @@ Layer 3 bridges human language and database schemas. When a user asks a domain-s
 
 **Implementation Timing:** Weeks 5-7 (Intelligence Phase)
 
-Layer 4 is the complete intelligence pipeline: query understanding, embedding generation, hybrid retrieval, reranking, context assembly, LLM generation, and semantic caching. This is not a single technology but an orchestrated workflow.
+The intelligence pipeline includes query understanding, embedding generation, hybrid retrieval, reranking, context assembly, LLM generation, and semantic caching. This is not a single technology but an orchestrated workflow. See Chapter 5 for implementation details.
 
 **Selection Criteria**
 
@@ -536,7 +536,7 @@ Layer 4 is the complete intelligence pipeline: query understanding, embedding ge
 
 **Implementation Timing:** Weeks 8-10 (Trust Phase)
 
-Layer 5 provides policy-based authorization and audit infrastructure. Agents make thousands of decisions daily and can't rely on human review for every query. Context-aware authorization evaluates the full situation: who is asking, what they're asking for, when, and why.
+Agents make thousands of decisions daily and can't rely on human review for every query. Context-aware authorization evaluates the full situation: who is asking, what they're asking for, when, and why. See Chapter 6 for implementation details.
 
 **Selection Criteria**
 
@@ -574,7 +574,7 @@ Layer 5 provides policy-based authorization and audit infrastructure. Agents mak
 
 **Implementation Timing:** Weeks 8-10 (Trust Phase)
 
-Layer 6 delivers complete visibility into agent operations. Without observability, agents are black boxes. You can't debug failures, optimize costs, or detect quality degradation.
+Without observability, agents are black boxes. You can't debug failures, optimize costs, or detect quality degradation. See Chapter 6 for implementation details.
 
 **Selection Criteria**
 
@@ -612,7 +612,7 @@ Layer 6 delivers complete visibility into agent operations. Without observabilit
 
 **Implementation Timing:** Weeks 8-10 (Trust Phase)
 
-Layer 7 delivers multi-agent coordination. Complex queries often span multiple domains. A coordination question might require expertise from multiple specialized agents simultaneously.
+Complex queries often span multiple domains, requiring expertise from multiple specialized agents simultaneously. See Chapter 6 for implementation details.
 
 **Selection Criteria**
 
@@ -795,7 +795,7 @@ Echo's final technology choices demonstrate the methodology in action. Every ven
 
 > **Note:** Echo's choices reflect their specific context (healthcare, $1.23M budget, 12-week timeline). Your selections will differ based on your constraints. For detailed vendor comparisons, use the Vendor Selector tool.
 
-**Diagram 5: Echo's Complete Technology Stack**
+**Figure 11.5: Echo's Complete Technology Stack**
 
 ```mermaid
 
@@ -886,7 +886,7 @@ Interactive tools and downloadable templates supporting this chapter are availab
 
 ---
 
-**© 2025 Colaberry Inc. All Rights Reserved.**
+**© 2025-2026 Colaberry Inc. All Rights Reserved.**
 INPACT™ and GOALS™ are trademarks of Colaberry Inc.
 
 *Acronyms and key terms are defined in the Glossary.*

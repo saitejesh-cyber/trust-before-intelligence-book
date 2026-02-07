@@ -45,7 +45,7 @@ The conference room felt different. For ten weeks, whiteboards had been covered 
 
 Marcus pulled up the GOALS™ dashboard. Five gauges, fifteen out of twenty-five points total. Six points short of production threshold.
 
-**Diagram 1: Echo's GOALS™ Baseline (Week 10)**
+**Figure 8.1: Echo's GOALS™ Baseline (Week 10)**
 
 ```mermaid
 graph LR
@@ -83,7 +83,7 @@ Dr. Chen studied the Governance gauge. "Healthcare requires Governance at five o
 
 Sarah walked to the whiteboard. "Here's the plan."
 
-**Diagram 2: Week 11-12 Operations Timeline**
+**Figure 8.2: Week 11-12 Operations Timeline**
 
 ```mermaid
 gantt
@@ -186,7 +186,7 @@ He adjusted thresholds based on baseline data. By Wednesday, false positives dro
 
 Explainability required surfacing the reasoning chain across all seven layers.
 
-**Diagram 3: End-to-End Observability with Trace IDs**
+**Figure 8.3: End-to-End Observability with Trace IDs**
 
 ```mermaid
 sequenceDiagram
@@ -262,7 +262,7 @@ The stakes were real. Healthcare organizations face unpredictable demand spikes:
 
 The 10x scale test began Tuesday at 6 AM. Jamie's team generated synthetic queries mirroring actual usage patterns across all three agents.
 
-**Diagram 4: Multi-Level Cache Performance Under Load**
+**Figure 8.4: Multi-Level Cache Performance Under Load**
 
 ```mermaid
 
@@ -329,7 +329,7 @@ The problem ran deeper. Healthcare language is inherently contextual. "My appoin
 
 Swapna identified three categories: entity ambiguity ("my doctor" with multiple providers), temporal ambiguity ("my appointment" without timing), and domain ambiguity ("my results" without type).
 
-**Diagram 5: Lexicon Disambiguation Flow**
+**Figure 8.5: Lexicon Disambiguation Flow**
 
 ```mermaid
 
@@ -398,7 +398,7 @@ Marcus framed the stakes. "If a patient gets conflicting information, they lose 
 
 Swapna mapped the data flows. The EHR was source of truth, but the scheduling system updated nightly via batch extract. When a PCP changed, it could take 24 hours for scheduling to reflect it.
 
-**Diagram 6: Quality Gates in Production**
+**Figure 8.6: Quality Gates in Production**
 
 ```mermaid
 
@@ -538,7 +538,7 @@ Sarah held up her hand. "We're not done. We still need to validate the three age
 
 The next three hours were the most comprehensive validation Echo's team had ever conducted.
 
-**Diagram 7: Three Agents Architecture**
+**Figure 8.7: Three Agents Architecture**
 
 ```mermaid
 graph TB
@@ -693,7 +693,7 @@ Sarah stood at the front of the room, the GOALS™ dashboard behind her showing 
 
 "Dr. Raj, twelve weeks ago you asked how we would know our AI agents stay trustworthy. We answered by building three integrated pillars."
 
-**Diagram 8: Echo's GOALS™ Final Dashboard (Week 12)**
+**Figure 8.8: Echo's GOALS™ Final Dashboard (Week 12)**
 
 ```mermaid
 graph TB
@@ -747,7 +747,7 @@ She paused.
 
 "Three agents in production. Response times average 1.6 seconds. Accuracy exceeds 96%. User satisfaction running around 85-90%. We built the Architecture of Trust, and proved all three pillars sustain each other."
 
-**Diagram 9: Echo Health - Architecture of Trust Complete**
+**Figure 8.9: Echo Health - Architecture of Trust Complete**
 
 ```mermaid
 graph TB
@@ -793,7 +793,7 @@ Dr. Raj leaned forward. "You've built something that measures itself. That prove
 
 ### The Journey
 
-**Diagram 10: Echo's 90-Day Journey**
+**Figure 8.10: Echo's 90-Day Journey**
 
 ```mermaid
 
@@ -957,24 +957,7 @@ graph LR
 
 ---
 
-## Acronyms
+**© 2025-2026 Colaberry Inc. All Rights Reserved.**
+INPACT™ and GOALS™ are trademarks of Colaberry Inc.
 
-| Acronym | Definition |
-|---------|------------|
-| ABAC | Attribute-Based Access Control |
-| ADA | American Diabetes Association |
-| CPT | Current Procedural Terminology |
-| EHR | Electronic Health Record |
-| EU | European Union |
-| GOALS™ | Governance, Observability, Availability, Lexicon, Solid |
-| HbA1c | Hemoglobin A1c (glycated hemoglobin) |
-| HIPAA | Health Insurance Portability and Accountability Act |
-| HITL | Human-in-the-Loop |
-| ICD-10 | International Classification of Diseases, 10th Revision |
-| INPACT™ | Instant, Natural, Permitted, Adaptive, Contextual, Transparent |
-| LLM | Large Language Model |
-| MTTD | Mean Time to Detection |
-| PCP | Primary Care Provider |
-| RAG | Retrieval-Augmented Generation |
-| ROI | Return on Investment |
-| SRE | Site Reliability Engineering |
+*Acronyms and key terms are defined in the Glossary.*

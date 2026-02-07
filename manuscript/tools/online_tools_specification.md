@@ -39,12 +39,16 @@
 | Priority | Tool | Format | Lead Capture |
 |----------|------|--------|--------------|
 | **1** | INPACT™ Assessment (36-Q) | Web form → PDF | Required |
-| **2** | Build Your Stack Tool | Interactive web app | Required |
-| **3** | Vendor Selector | Conversational AI | Required |
-| **4** | 90-Day Implementation Tracker | Web app (8 tabs: Day Zero + Weeks 1-12) | Required |
-| **5** | Compliance Navigator | Interactive assessment (30 categories) | Optional |
+| **2** | GOALS™ Readiness Checker (30-Q) | Web form → PDF | Required |
+| **3** | Build Your Stack Tool | Interactive web app | Required |
+| **4** | Vendor Selector | Conversational AI | Required |
+| **5** | 90-Day Implementation Tracker | Web app (8 tabs: Day Zero + Weeks 1-12) | Required |
+| **6** | Compliance Navigator | Interactive assessment (30 categories) | Optional |
+| **7** | Figures Gallery | Searchable image gallery | None |
 
 **Note:** Day Zero Readiness Checklist is now integrated into the 90-Day Tracker as Tab 0 (gate for Week 1).
+
+**Note:** INPACT™ measures infrastructure capability (BEFORE). GOALS™ measures operational sustainability (DURING/AFTER).
 
 ---
 
@@ -89,10 +93,71 @@ Trust Bands (percentage-based):
 
 ---
 
-## Tool 2: Build Your Stack Tool (PRIORITY #2)
+## Tool 2: GOALS™ Readiness Checker (PRIORITY #2)
 
 ### Purpose
-Personalized stack gap analysis -users input what they have, get recommendations for what they need.
+Interactive 30-question assessment to evaluate operational readiness for sustaining AI agent deployments. Complements INPACT™ Assessment.
+
+### Source Content
+- **Chapter 7 Self-Assessment Checklist** (lines 1734-1788)
+- **GOALS™ Minimum Thresholds** (Chapter 7, lines 1714-1721)
+
+### Relationship to INPACT™
+- **INPACT™** = "Can we support agents?" (infrastructure capability, BEFORE)
+- **GOALS™** = "Can we sustain agent operations?" (operational sustainability, DURING/AFTER)
+
+### User Flow
+1. Landing page: "Evaluate your operational readiness in 10 minutes"
+2. User enters email, name, company, role, industry
+3. 30 Yes/No questions (6 per GOALS dimension)
+4. Real-time score calculation
+5. PDF report generation with:
+   - Overall score (X/25 = Y%)
+   - Dimension breakdown radar chart
+   - Readiness band classification
+   - Healthcare threshold compliance check (if applicable)
+   - Comparison to Echo Health (15/25 → 21/25)
+   - Gap analysis with Chapter 7 references
+
+### Score Calculation (Book-Consistent)
+```
+Per Dimension (6 Yes/No questions):
+- 0-2 Yes: Score 2/5
+- 3 Yes:   Score 3/5
+- 4-5 Yes: Score 4/5
+- 6 Yes:   Score 5/5
+
+Total = G + O + A + L + S (range: 5-25)
+Percentage = (Total / 25) × 100
+
+Readiness Bands:
+- 92-100% (23-25): Excellent (production-ready)
+- 84-88% (21-22): Healthcare Ready (meets 21/25 threshold)
+- 72-80% (18-20): Good (minor gaps)
+- 56-68% (14-17): Moderate (significant gaps)
+- 40-52% (10-13): Low (major gaps)
+- 20-36% (5-9): Critical (foundation missing)
+```
+
+### Healthcare Threshold (Chapter 7)
+| Dimension | Minimum |
+|-----------|---------|
+| Governance | 5/5 |
+| Observability | 4/5 |
+| Availability | 4/5 |
+| Lexicon | 4/5 |
+| Solid | 4/5 |
+| **Total** | **21/25 (84%)** |
+
+### Detailed Specification
+See: `tools/web_tools/web_form_goals_readiness_checker.md`
+
+---
+
+## Tool 3: Build Your Stack Tool (PRIORITY #3)
+
+### Purpose
+Personalized stack gap analysis - users input what they have, get recommendations for what they need.
 
 ### User Flow
 1. **Input existing stack:** User selects what they already have per layer
@@ -116,7 +181,7 @@ Shows users what they DON'T need to buy (layers already covered) vs what they DO
 
 ---
 
-## Tool 3: Vendor Selector (PRIORITY #3)
+## Tool 4: Vendor Selector (PRIORITY #4)
 
 ### Purpose
 Living advisory tool that helps users select vendors for each layer. Unlike static comparison tables, this chatbot:
@@ -156,7 +221,7 @@ Users can request a PDF scorecard comparing their shortlisted vendors:
 
 ---
 
-## Tool 4: 90-Day Implementation Tracker
+## Tool 5: 90-Day Implementation Tracker (PRIORITY #5)
 
 ### Purpose
 Complete implementation tracking from Day Zero readiness through 90-day transformation.
@@ -197,7 +262,7 @@ Web-based application with 8 tabs:
 
 ---
 
-## Tool 5: Compliance Navigator
+## Tool 6: Compliance Navigator (PRIORITY #6)
 
 ### Purpose
 Universal compliance assessment covering 30 categories and 200+ regulatory frameworks. Helps organizations identify which compliance requirements apply to their AI agent initiatives.
@@ -355,7 +420,7 @@ In addition to interactive tools, the following templates are available for down
 
 ### Footer
 ```
-© 2026 Colaberry Inc. All rights reserved.
+© 2025-2026 Colaberry Inc. All rights reserved.
 INPACT™ and GOALS™ are trademarks of Colaberry Inc.
 From "Trust Before Intelligence" by Ram Katamaraja
 ```
@@ -368,4 +433,4 @@ Each tool should reference its companion content:
 
 ---
 
-**© 2026 Colaberry Inc. All rights reserved.**
+**© 2025-2026 Colaberry Inc. All rights reserved.**

@@ -209,7 +209,7 @@
 
 ---
 
-**© 2025 Colaberry Inc. All rights reserved.**  
+**© 2025-2026 Colaberry Inc. All rights reserved.**  
 **INPACT™ is a trademark of Colaberry Inc.**
 
 ---

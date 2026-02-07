@@ -136,5 +136,5 @@ This glossary provides definitions for acronyms and key terms used throughout *T
 
 ---
 
-**© 2025 Colaberry Inc. All Rights Reserved.**  
+**© 2025-2026 Colaberry Inc. All Rights Reserved.**  
 INPACT™ and GOALS™ are trademarks of Colaberry Inc.

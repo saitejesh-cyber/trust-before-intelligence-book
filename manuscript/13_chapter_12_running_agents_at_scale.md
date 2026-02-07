@@ -24,7 +24,7 @@ Marcus pulled up a document. It was three pages long. By Monday morning, it woul
 
 ---
 
-**Diagram 1: Operations Value (From Reactive to Proactive)**
+**Figure 12.1: Operations Value (From Reactive to Proactive)**
 
 ```mermaid
 
@@ -95,7 +95,7 @@ Production readiness isn't a feeling. It's a measurable state. Validate against 
 
 Throughout this chapter, reference benchmarks are drawn from Echo Health Systems, the pedagogical case study used in this book. Adjust these numbers based on your industry, use case, and risk tolerance. Part 6 consolidates Echo's complete results for easy reference.
 
-**Diagram 2: The 15-Criteria Production Readiness Framework**
+**Figure 12.2: The 15-Criteria Production Readiness Framework**
 
 ```mermaid
 
@@ -313,7 +313,7 @@ A controlled pilot limits blast radius while generating real-world data no stagi
 
 Traditional MLOps practices (model versioning, A/B testing, performance monitoring) require adaptation for agentic systems. Agents combine multiple models, orchestration logic, and prompt configurations that evolve together. This section provides practical MLOps patterns for agentic systems.
 
-**Diagram 3: Agent MLOps Lifecycle**
+**Figure 12.3: Agent MLOps Lifecycle**
 
 ```mermaid
 graph LR
@@ -672,7 +672,7 @@ Your alert volume will vary based on system maturity and threshold configuration
 
 When alerts fire, structured response prevents chaos. Adopt a six-phase incident response process mapped to the Architecture of Trust:
 
-**Diagram 4: Six-Phase Incident Response**
+**Figure 12.4: Six-Phase Incident Response**
 
 ```mermaid
 graph LR
@@ -854,7 +854,7 @@ The Architecture of Trust isn't a destination. It's a foundation for continuous 
 
 Structured weekly cycles transform operational data into agent improvements. A five-day pattern can yield consistent 1-2% weekly accuracy gains.
 
-**Diagram 5: Five-Day Improvement Cycle**
+**Figure 12.5: Five-Day Improvement Cycle**
 
 ```mermaid
 graph LR
@@ -1019,7 +1019,7 @@ For organizations seeking to accelerate their journey, Colaberry's AIXcelerator 
 
 AIXcelerator is a complete platform that accelerates agent infrastructure deployment while maintaining all three pillars of the Architecture of Trust. Rather than building every component from scratch, organizations use production-validated modules.
 
-**Diagram 6: AIXcelerator Five-Component Platform**
+**Figure 12.6: AIXcelerator Five-Component Platform**
 
 ```mermaid
 graph TD
@@ -1269,28 +1269,7 @@ Trust before intelligence. Architecture before agents. The three pillars are you
 
 ---
 
-## Acronym Reference
-
-| Acronym | Definition |
-|---------|------------|
-| ABAC | Attribute-Based Access Control |
-| APM | Application Performance Monitoring |
-| BAA | Business Associate Agreement |
-| CDC | Change Data Capture |
-| GOALS™ | Governance, Observability, Availability, Lexicon, Solid |
-| HIPAA | Health Insurance Portability and Accountability Act |
-| HITL | Human-in-the-Loop |
-| INPACT™ | Instant, Natural, Permitted, Adaptive, Contextual, Transparent |
-| LLM | Large Language Model |
-| MCP | Model Context Protocol |
-| MLOps | Machine Learning Operations |
-| MTTR | Mean Time To Resolution |
-| NLU | Natural Language Understanding |
-| P95 | 95th Percentile |
-| SLA | Service Level Agreement |
-| UAT | User Acceptance Testing |
-
----
-
-**© 2025 Colaberry Inc. All Rights Reserved.**  
+**© 2025-2026 Colaberry Inc. All Rights Reserved.**
 INPACT™ and GOALS™ are trademarks of Colaberry Inc.
+
+*Acronyms and key terms are defined in the Glossary.*

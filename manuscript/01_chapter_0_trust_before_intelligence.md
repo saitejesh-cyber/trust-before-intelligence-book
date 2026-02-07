@@ -59,9 +59,9 @@ Something fundamental is missing, and it's not in the AI.
 **The answer lies in infrastructure, not intelligence.**
 
 ---
-<i>
 ## What Trust Means in This Book
 
+<i>
 This isn't a book about whether society should trust AI. It's not about bias, ethics, or existential risk - important topics covered elsewhere.
 
 This book is about **operational trust**: the confidence that an AI agent will access the right data, understand the question, respect permissions, explain its reasoning, and perform consistently at scale. It's the trust a physician needs before accepting an agent's recommendation. The trust a CFO needs before letting an agent process claims. The trust that turns a pilot into production.
@@ -198,24 +198,6 @@ graph LR
 > **Note:** Echo Health Systems is a fictional case study created for pedagogical purposes. The organization, people, and specific metrics are composites based on patterns observed across 40+ real enterprise implementations. While Echo is fictional, the challenges, solutions, and outcomes reflect verified patterns from actual deployments in healthcare and other regulated industries.
 
 **Sarah needed a framework. So do you.**
-
----
-
-## What Trust Means in This Book
-
-This isn't a book about whether society should trust AI. It's not about bias, ethics, or existential risk - important topics covered elsewhere.
-
-This book is about **operational trust**: the confidence that an AI agent will access the right data, understand the question, respect permissions, explain its reasoning, and perform consistently at scale. It's the trust a physician needs before accepting an agent's recommendation. The trust a CFO needs before letting an agent process claims. The trust that turns a pilot into production.
-
-More specifically, this book answers five questions:
-
-- **What is trust?** What do agents need to earn user confidence?
-- **How do you earn it?** By fulfilling those needs not once, but every interaction
-- **How do you build it?** Through systematic architecture designed for agent-era requirements
-- **How do you measure it?** With operational targets that validate trust continuously
-- **How do you sustain it?** By monitoring, adapting, and reinforcing trust as systems scale
-
-Operational trust isn't earned through promises or policies. It's earned through architecture, systems designed from the ground up to deliver what agents need. That architecture is what 95% of organizations lack.
 
 ---
 
@@ -409,25 +391,7 @@ Sarah Cedao needed an architecture. Chapter 1 shows you why infrastructure isn't
 
 ---
 
-## Acronyms
-
-- **ABAC:** Attribute-Based Access Control
-- **CDC:** Change Data Capture
-- **CDO:** Chief Data Officer
-- **CFO:** Chief Financial Officer
-- **CTO:** Chief Technology Officer
-- **EHR:** Electronic Health Record
-- **ETL:** Extract, Transform, Load
-- **HBR:** Harvard Business Review
-- **HIPAA:** Health Insurance Portability and Accountability Act
-- **HITL:** Human-in-the-Loop
-- **LLM:** Large Language Model
-- **MIT:** Massachusetts Institute of Technology
-- **RAG:** Retrieval-Augmented Generation
-- **RBAC:** Role-Based Access Control
-- **ROI:** Return on Investment
-
----
-
-**© 2025 Colaberry Inc. All Rights Reserved.**  
+**© 2025-2026 Colaberry Inc. All Rights Reserved.**
 INPACT™ and GOALS™ are trademarks of Colaberry Inc.
+
+*Acronyms and key terms are defined in the Glossary.*

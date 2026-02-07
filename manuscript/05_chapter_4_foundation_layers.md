@@ -213,25 +213,7 @@ Echo Health Systems started from a familiar position: strong BI infrastructure f
 
 **Gap closed: 14 points.** Foundation enables intelligence layers in Phase 2.
 
-#### **Week 7: Intelligence Operational (67/100)** - Phase 2: $380K
-
-*Preview (Details in Chapter 5):* Semantic layer and intelligence orchestration built on foundation. RAG pipeline operational. Natural language understanding enabled.
-
-*INPACT™ Score:* 67/100 (24 out of 36 points)
-- Foundation dimensions maintained; Natural and Contextual dimensions significantly improved through intelligence layers
-
-**Gap closed: 25 points.** Intelligence enables governance layers in Phase 3.
-
-#### **Week 10: Production-Ready (85/100)** - Phase 3: $380K
-
-*Preview (Details in Chapters 6-7):* Governance framework operational with dynamic permissions and human-in-the-loop workflows. Full observability and audit trails. First production agent deployed.
-
-*INPACT™ Score:* 85/100 (31 out of 36 points)
-- All six dimensions reach production-ready levels (≥5/6)
-
-**Gap closed: 18 points.** Production-ready: all dimensions strong.
-
-**Total transformation: 28 → 85 in 10 weeks (57-point improvement).**
+**Total transformation: 28 → 85 in 10 weeks (57-point improvement).** For Week 7 (67/100) and Week 10 (85/100) progression details, see Chapters 5 and 6 respectively.
 
 ### Foundation Layer Impact on INPACT™ (Chapter 4 Scope)
 
@@ -496,11 +478,9 @@ No single storage technology handles all these patterns efficiently. Multi-modal
 
 **The Gap:** Semantic search requires cosine similarity across high-dimensional embeddings. RDBMS cannot index vectors efficiently. Similarity search across 10M patient records takes 15-20 seconds in SQL Server. Agents need <50ms semantic search.
 
-**Foundation Requirement:** Layer 1 establishes the architectural pattern and data pipelines that vector databases will consume. Patient records, clinical notes, and guidelines must be accessible and properly structured before vectorization.
+**Foundation Requirement:** Layer 1 establishes data pipelines that vector databases consume. Patient records, clinical notes, and guidelines must be accessible before vectorization.
 
-**Phase 2 Solution (Chapter 5):** Pinecone vector database deployment, embedding generation, and semantic search implementation. *Alternatives: Weaviate, Milvus, Qdrant.* The infrastructure foundation built in Phase 1 enables rapid Phase 2 deployment.
-
-*For vector database implementation details, embedding strategies, and RAG pipeline construction, see Chapter 5: Intelligence Layers.*
+*Vector database deployment, embedding generation, and semantic search are covered in Chapter 5.*
 
 ### Type 4: Graph Database
 
@@ -539,11 +519,9 @@ No single storage technology handles all these patterns efficiently. Multi-modal
 
 **The Gap:** ML models across the organization calculate the same metrics differently. "30-day readmission risk" computed one way in the sepsis model, another way in the discharge planning agent, and yet another way in the utilization dashboard. When predictions conflict, clinicians lose trust.
 
-**Foundation Requirement:** Layer 1 establishes the model registry (MLflow) and lakehouse (Databricks) infrastructure that feature stores integrate with. ML pipelines must be operational before feature management can be layered on top.
+**Foundation Requirement:** Layer 1 establishes the model registry and lakehouse infrastructure that feature stores integrate with. ML pipelines must be operational before feature management can be layered on top.
 
-**Phase 2 Solution (Chapter 5):** Tecton feature store deployment, feature definition standardization, and integration with training/inference pipelines. The ML infrastructure foundation built in Phase 1 enables rapid Phase 2 deployment.
-
-*For feature store implementation details, feature engineering strategies, and ML pipeline integration, see Chapter 5: Intelligence Layers.*
+*Feature store deployment and integration are covered in Chapter 5.*
 
 ### Type 7: Object Storage
 
@@ -963,7 +941,7 @@ gantt
     Flink Stream Processing  :L2c, 01-22, 6d
 ```
 
-*© 2025 Colaberry Inc.*
+*© 2025-2026 Colaberry Inc.*
 
 **Timeline Notes:**
 - **Week 1-2 (Layer 1):** Eight storage categories deployed in parallel by three teams. Databricks (8 days) is the critical path. All categories operational by end of Week 2.
@@ -994,7 +972,7 @@ graph LR
     style W4 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
 ```
 
-*© 2025 Colaberry Inc.*
+*© 2025-2026 Colaberry Inc.*
 
 **Foundation Impact on INPACT™ Dimensions:**
 - **Instant (I):** 1→4 (+3) Cache layer + real-time data fabric eliminate latency
@@ -1100,19 +1078,11 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-| Dimension | Week 0 | Week 4 | Improvement | Driver |
-|-----------|--------|--------|-------------|--------|
-| Instant (I) | 1/6 | 4/6 | +3 | Cache layer + real-time data fabric eliminate latency |
-| Natural (N) | 2/6 | 2/6 | NA | Requires Layer 3 semantic layer (Chapter 5) |
-| Permitted (P) | 1/6 | 1/6 | NA | Requires Layer 5 governance (Chapter 6) |
-| Adaptive (A) | 2/6 | 3/6 | +1 | Model registry + lakehouse enable ML workflows |
-| Contextual (C) | 3/6 | 4/6 | +1 | Multi-modal storage enables cross-system synthesis |
-| Transparent (T) | 1/6 | 1/6 | NA | Requires Layer 6 observability (Chapter 6) |
-| **Total** | **10/36 (28%)** | **15/36 (42%)** | **+5 pts (+14%)** | Foundation layers operational |
+The foundation layers delivered a 14-point INPACT improvement (28% to 42%), with gains in Instant (+3), Adaptive (+1), and Contextual (+1). See Part 1 for the complete dimension breakdown.
 
 ---
 
-**Progress Check:** Foundation build complete. Four weeks, $468K actual, parallel workstreams. INPACT™ score improved 28 → 42. Foundation enables intelligence layers in Chapter 5.
+**Progress Check:** Foundation build complete. Four weeks, $468K actual, parallel workstreams. INPACT score improved 28 to 42. Foundation enables intelligence layers in Chapter 5.
 
 ---
 
@@ -1188,10 +1158,6 @@ Sarah smiled. "We committed to phase-wise discipline. Foundation delivered. Inte
 
 Foundation complete. Sarah's team delivered storage and real-time data in four weeks, $2K under budget. The infrastructure is ready. Now it needs a brain.
 
-**What Chapter 5 delivers:**
-- **Layer 3 (Semantic Layer):** Business glossary, entity resolution, clinical concept mapping
-- **Layer 4 (Intelligence):** RAG pipeline, LLM integration, context assembly
-
 **Why foundation enables intelligence:**
 
 The infrastructure built in Weeks 1-4 directly enables intelligence deployment:
@@ -1200,9 +1166,7 @@ The infrastructure built in Weeks 1-4 directly enables intelligence deployment:
 - Model registry enables version control for ML components
 - Lakehouse provides unified analytics foundation for ML pipelines
 
-**Foundation first, intelligence second.** Echo progresses to Phase 2 (Weeks 5-7), building intelligence capabilities on the foundation established here. Phase 3 (Weeks 8-10) adds governance and observability before deploying the first production agent.
-
-Chapter 5 begins the intelligence build.
+**Foundation first, intelligence second.** Chapter 5 builds Layers 3-4 (Semantic and Intelligence) on this foundation.
 
 ---
 
@@ -1219,25 +1183,6 @@ Chapter 5 begins the intelligence build.
 
 ---
 
-## Acronyms
-
-- **API:** Application Programming Interface
-- **BI:** Business Intelligence
-- **CDC:** Change Data Capture
-- **CDO:** Chief Data Officer
-- **CEO:** Chief Executive Officer
-- **CTO:** Chief Technology Officer
-- **EHR:** Electronic Health Record
-- **ETL:** Extract, Transform, Load
-- **HIPAA:** Health Insurance Portability and Accountability Act
-- **LLM:** Large Language Model
-- **ML:** Machine Learning
-- **RAG:** Retrieval-Augmented Generation
-- **RBAC:** Role-Based Access Control
-- **SQL:** Structured Query Language
-
----
-
 ## References
 
 [1] Stothers, J.A.M. & Nguyen, A. (2020). "Can Neo4j Replace PostgreSQL in Healthcare?" AMIA Joint Summits on Translational Science Proceedings, 646-653. https://pmc.ncbi.nlm.nih.gov/articles/PMC7233060/
@@ -1250,5 +1195,7 @@ Chapter 5 begins the intelligence build.
 
 ---
 
-**© 2025 Colaberry Inc. All Rights Reserved.**  
+**© 2025-2026 Colaberry Inc. All Rights Reserved.**
 INPACT™ and GOALS™ are trademarks of Colaberry Inc.
+
+*Acronyms and key terms are defined in the Glossary.*

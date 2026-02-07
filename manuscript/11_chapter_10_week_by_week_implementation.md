@@ -20,7 +20,7 @@ This chapter is that presentation.
 
 ---
 
-**Diagram 1: Roadmap Value: From Ad-Hoc to Structured**
+**Figure 10.1: Roadmap Value: From Ad-Hoc to Structured**
 
 ```mermaid
 
@@ -140,7 +140,7 @@ Schedule dedicated sessions with each group at phase boundaries, not just projec
 
 The transformation follows four distinct phases, each building on the previous. The sequence matters - attempting Phase 3 governance work before Phase 1 foundations produces the failures behind AI agents' 95% failure rate.[1]
 
-**Diagram 2: The 90-Day Four-Phase Roadmap**
+**Figure 10.2: The 90-Day Four-Phase Roadmap**
 
 ```mermaid
 
@@ -187,7 +187,7 @@ graph LR
 
 ### Phase 1: Foundation (Weeks 1-4)
 
-**Diagram 3: Foundation Layer Stack**
+**Figure 10.3: Foundation Layer Stack**
 
 ```mermaid
 
@@ -258,7 +258,7 @@ For Layer 1 and Layer 2 technology details, see Chapter 4. For vendor selection 
 
 ### Phase 2: Intelligence (Weeks 5-7)
 
-**Diagram 4: Intelligence Layer Stack**
+**Figure 10.4: Intelligence Layer Stack**
 
 ```mermaid
 
@@ -287,7 +287,7 @@ graph LR
 
 ```
 
-*For RAG pipeline architecture details, see Chapter 5, Diagram 7: Layer 4 - Complete Intelligence Pipeline.*
+*For RAG pipeline architecture details, see Chapter 5, Figure 5.7: Layer 4 - Complete Intelligence Pipeline.*
 
 | Attribute | Detail |
 |-----------|--------|
@@ -309,7 +309,7 @@ Phase 2 gives agents the ability to understand and reason. Build layer-by-layer:
 
 **Weeks 6-7: Layer 4 (Intelligent Retrieval)**
 - Vector database for semantic search (Pinecone, Weaviate, Chroma, or equivalent)
-- Seven-stage intelligence pipeline (see Chapter 5, Diagram 7): Query → Embed → Retrieve → Rerank → Context → LLM → Cache
+- Seven-stage intelligence pipeline (see Chapter 5, Figure 5.7): Query → Embed → Retrieve → Rerank → Context → LLM → Cache
 - Semantic caching to reduce LLM costs (target: 70%+ hit rate)
 
 **Common Risk:** Accuracy often plateaus at 80-82% before hitting the 85% target. Solutions include adding reranking, hybrid search (combining vector and keyword retrieval), or expanding the semantic layer. Don't proceed with gaps - they compound in Phase 3.
@@ -331,7 +331,7 @@ For Layer 3 and Layer 4 technology details, see Chapter 5. For vendor selection 
 
 ### Phase 3: Trust & Orchestration (Weeks 8-10)
 
-**Diagram 5: Trust Layer Stack**
+**Figure 10.5: Trust Layer Stack**
 
 ```mermaid
 
@@ -605,7 +605,7 @@ Larger organizations require more stakeholder alignment, broader testing, and ph
 
 ### Risk Escalation Framework
 
-**Diagram 6: Risk Escalation Framework**
+**Figure 10.6: Risk Escalation Framework**
 
 ```mermaid
 
@@ -701,7 +701,7 @@ The weekly health check discipline catches issues before they become blockers.
 
 ### Eight-Tab Overview
 
-**Diagram 7: Eight-Tab Tracker System**
+**Figure 10.7: Eight-Tab Tracker System**
 
 ```mermaid
 
@@ -916,7 +916,7 @@ The frameworks are proven. The tracker is ready. Complete Day Zero at trustbefor
 
 ---
 
-**© 2025 Colaberry Inc. All Rights Reserved.**
+**© 2025-2026 Colaberry Inc. All Rights Reserved.**
 INPACT™ and GOALS™ are trademarks of Colaberry Inc.
 
 *Acronyms and key terms are defined in the Glossary.*

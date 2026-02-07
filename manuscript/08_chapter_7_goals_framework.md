@@ -29,7 +29,7 @@ Built isn't enough. Operational excellence is what sustains trust.
 
 ---
 
-**Diagram 1: GOALS™ Framework - From Build Complete to Operate Continuously**
+**Figure 7.1: GOALS™ Framework - From Build Complete to Operate Continuously**
 
 ```mermaid
 
@@ -124,7 +124,7 @@ Sarah nodded. The construction metaphor made sense. They'd built a hospital. Now
 
 **The Architecture of Trust: Three Pillars**
 
-**Diagram 2: The Architecture of Trust-Three Integrated Pillars**
+**Figure 7.2: The Architecture of Trust-Three Integrated Pillars**
 
 ```mermaid
 
@@ -260,7 +260,7 @@ Sarah gathered her extended team in the large conference room. Marcus Williams, 
 
 "We built something remarkable," Sarah began. "In ten weeks, we went from a 28/100 INPACT™ score to 86/100. We constructed all seven layers of agent-ready infrastructure. We came in at $942K through Week 10, 23% under our $1.23M budget."
 
-**Diagram 3: Echo's 90-Day Journey-Architecture Complete**
+**Figure 7.3: Echo's 90-Day Journey-Architecture Complete**
 
 ```mermaid
 
@@ -359,7 +359,7 @@ He pulled up a validation chart. "Colaberry's research is clear: proficiency acr
 **Table 2: Echo's GOALS™ Operational Health Baseline (Week 10)**
 *Note: GOALS™ (max 25 points) measures operational sustainability, distinct from INPACT™ (max 100) capability score. Healthcare production requires 21+ GOALS™ points.*
 
-**Diagram 4: Echo's GOALS Health Dashboard (Week 10 Baseline)**
+**Figure 7.4: Echo's GOALS Health Dashboard (Week 10 Baseline)**
 
 ```mermaid
 graph TB
@@ -451,7 +451,7 @@ Dynamic ABAC asks five questions simultaneously:
 
 These five dimensions enable policies that are dynamically evaluated in real-time, achieving the sub-10ms latency agents require while maintaining HIPAA's "minimum necessary" compliance standard. [1]
 
-**Diagram 5: RBAC vs ABAC Authorization Flow**
+**Figure 7.5: RBAC vs ABAC Authorization Flow**
 
 ```mermaid
 graph LR
@@ -540,7 +540,7 @@ Agents operate across a spectrum from fully automated to fully supervised:
 
 The art is positioning decisions correctly on this spectrum. Too much autonomy creates risk; too little negates agent value.
 
-**Diagram 6: Human-in-the-Loop Autonomy Spectrum**
+**Figure 7.6: Human-in-the-Loop Autonomy Spectrum**
 
 ```mermaid
 graph TB
@@ -733,7 +733,7 @@ User query → semantic translation → retrieval → policy evaluation → data
 
 This enables root cause analysis impossible with infrastructure metrics alone.
 
-**Diagram 7: End-to-End Observability with Trace IDs (All 7 Layers)**
+**Figure 7.7: End-to-End Observability with Trace IDs (All 7 Layers)**
 
 ```mermaid
 sequenceDiagram
@@ -818,7 +818,7 @@ EU AI Act Article 13 requires transparency for high-risk AI systems, which inclu
 - **Trace completeness:** 100% of responses include full lineage: which data sources, which policies applied, which models generated the response.
 - **Response justification:** Every recommendation includes reasoning. Not just "approved" but "approved because HbA1c >7.0 AND insurance covers the program AND patient engagement score 85."
 
-**Diagram 8: Output Quality Validation Metrics**
+**Figure 7.8: Output Quality Validation Metrics**
 
 ```mermaid
 graph TB
@@ -1028,7 +1028,7 @@ The multi-level caching strategy is what enables sub-2-second responses. *The fo
 
 This hierarchy explains why the vast majority of queries return in under 2 seconds. Only a small fraction hit the expensive cold path. [7]
 
-**Diagram 9: Multi-Level Caching Strategy for Sub-2-Second Performance**
+**Figure 7.9: Multi-Level Caching Strategy for Sub-2-Second Performance**
 
 ```mermaid
 graph TD
@@ -1135,7 +1135,7 @@ Entity resolution failure is particularly dangerous. According to RAND Corporati
 
 **The Golden ID Connection:** Entity resolution in Stage 2 depends on the **Golden IDs** established during Layer 3 implementation (see Chapter 5). Golden IDs create canonical identifiers that unify entities across systems. For example, `patient_master_id` resolves the same patient across EHR, billing, and portal. Lexicon operational health measures whether this entity resolution continues working correctly over time. When Golden ID accuracy degrades (e.g., duplicate records created, matching rules drift), Lexicon scores drop correspondingly. This is why Lexicon and Solid are interdependent: data quality issues in Layer 1 corrupt the Golden IDs in Layer 3, which degrades Lexicon scores in operations.
 
-**Diagram 10: Natural Language → Data Operation Pipeline**
+**Figure 7.10: Natural Language → Data Operation Pipeline**
 
 ```mermaid
 graph TB
@@ -1371,7 +1371,7 @@ Silent data corruption is the most dangerous failure mode. When data becomes inc
 
 Echo validates all five dimensions at a central gate in the data pipeline. Data flows from source systems through Change Data Capture, passes through all five checks simultaneously, and only validated data reaches agents.
 
-**Diagram 11: The Quality Gate Architecture**
+**Figure 7.11: The Quality Gate Architecture**
 
 ```mermaid
 graph TB
@@ -1462,7 +1462,7 @@ The most dangerous cascade is **S→L→G**: bad data gets cached in the semanti
 
 "Understanding these cascades is why we document failure modes," Marcus explained.
 
-**Diagram 12: GOALS Interdependencies**
+**Figure 7.12: GOALS Interdependencies**
 
 ```mermaid
 graph TB
@@ -1496,7 +1496,7 @@ Marcus stepped back from the whiteboard. "There's one more concept that makes th
 
 He drew a circular arrows connecting all three pillars:
 
-**Diagram 13: The Trust Flywheel-Three Pillars in Motion**
+**Figure 7.13: The Trust Flywheel-Three Pillars in Motion**
 
 ```mermaid
 graph LR
@@ -1621,7 +1621,7 @@ Sarah summarized the path forward. "We need to move from 15/25 to 21/25 in the n
 | L | 2 → 4 | Implement disambiguation, start correction feedback loop |
 | S | 4 | Maintain-fix cross-system consistency for PCP data |
 
-**Diagram 14: GOALS™ Healthcare Threshold**
+**Figure 7.14: GOALS™ Healthcare Threshold**
 ```mermaid
 graph TB
     subgraph SCORING["<b>GOALS™ Health Scoring (5-Point Scale)</b>"]
@@ -1653,70 +1653,6 @@ graph TB
 ```
 
 "When we present to the board at Week 12," Sarah said, "we won't just show them what we built. We'll show them how we're operating it. We'll show them GOALS™ health at 21+. We'll answer Dr. Raj's question: *This is how we know it stays trustworthy.*"
-
----
-
-## Bridge to Chapter 8
-
-The framework was understood. The gaps were identified. The plan was clear.
-
-What remained was execution.
-
-"Chapter 7 taught us what operational excellence looks like," Sarah said as the meeting concluded. "Chapter 8 will show us achieving it. Two weeks to prove we can not only build agent-ready infrastructure, but sustain it."
-
-Marcus gathered his materials. "The architecture got us to 86/100 INPACT™. Operational discipline will get us to 21/25 GOALS™. And that's when we'll be ready for production."
-
-Dr. Chen stood. "I'll have the clinical team ready for HITL workflow optimization tomorrow. They understand what's at stake."
-
-### What Chapter 8 Will Show
-
-The next chapter follows Echo through Weeks 11-12 as they transform GOALS™ from framework to reality and complete the Architecture of Trust:
-
-### The Three-Pillar Completion
-
-Chapter 8 will demonstrate each GOALS™ improvement validating the full Architecture of Trust:
-
-| Chapter 8 Moment | GOALS™ Win | Validates INPACT™ | Proves 7-Layer |
-|------------------|------------|-------------------|----------------|
-| HITL catches controlled substance override | Governance 4→5 | Permitted (P) working | Layer 5 operational |
-| 3 AM alert diagnosed in 4 minutes | Observability 3→4 | Transparent (T) working | Layer 6 operational |
-| 10x scale test passes | Availability maintained | Instant (I) working | Layer 2 operational |
-| "My doctor" disambiguation works | Lexicon 2→4 | Natural (N) working | Layer 3 operational |
-| PCP consistency reaches 98% | Solid maintained | Adaptive (A) working | Layer 1 operational |
-
-"Each operational win in Chapter 8 isn't just a GOALS™ improvement," Marcus noted. "It's validation that all three pillars are working together. That's what we'll show the board."
-
-### The Transformation Pattern
-
-Echo's journey follows a pattern other organizations can replicate:
-
-**Phase 1: Assess (Week 10)**
-- Calculate baseline GOALS™ score
-- Identify gaps against target
-- Prioritize using O→S→G→L→A sequence
-
-**Phase 2: Improve (Weeks 11-12)**
-- Execute improvement plan
-- Track daily progress
-- Iterate on blockers
-
-**Phase 3: Validate (Week 12)**
-- Re-assess GOALS™ score
-- Validate against production thresholds
-- Document for stakeholders
-
-**Phase 4: Operate (Ongoing)**
-- Maintain GOALS™ health dashboard
-- Continuous monitoring
-- Quarterly deep assessments
-
-The room emptied, but Sarah remained. She looked at the three-pillar diagram one more time.
-
-INPACT™. 7-Layer. GOALS™.
-
-Three pillars. One Architecture of Trust.
-
-Week 11 would prove whether the architecture held under operational pressure.
 
 ---
 
@@ -1789,6 +1725,7 @@ Week 11 would prove whether the architecture held under operational pressure.
 ## Online Resources
 
 Visit **trustbeforeintelligence.ai/tools** for:
+- **GOALS™ Readiness Checker** - Interactive 30-question assessment based on the checklist below, with PDF report and healthcare threshold validation
 - **Vendor Selector** - Personalized vendor recommendations for each layer
 - **Compliance Navigator** - HIPAA and regulatory requirements mapped to GOALS™ dimensions
 - **Agent Diagnostics** - Failure mode detection and prevention strategies
@@ -1797,7 +1734,7 @@ Visit **trustbeforeintelligence.ai/tools** for:
 
 ## Self-Assessment Checklist
 
-Use this checklist to evaluate your organization's GOALS™ readiness:
+Use this checklist to evaluate your organization's GOALS™ readiness. An interactive version is available at **trustbeforeintelligence.ai/goals-assessment**.
 
 ### Governance Self-Assessment
 
@@ -1849,52 +1786,6 @@ Use this checklist to evaluate your organization's GOALS™ readiness:
 - 3 checks: Score 3/5
 - 4-5 checks: Score 4/5
 - 6 checks: Score 5/5
-
----
-
-## Diagrams Reference
-
-| # | Title | Part | Purpose |
-|---|-------|------|---------|
-| 1 | GOALS™ Framework - From Build Complete to Operate Continuously | Opening | Chapter overview |
-| 2 | The Architecture of Trust-Three Integrated Pillars | Part 1 | Shows GOALS™ as Pillar 3 |
-| 3 | Echo's 90-Day Journey-Architecture Complete | Part 2 | Timeline of Phases 1-3 |
-| 4 | Echo's GOALS Health Dashboard (Week 10 Baseline) | Part 2 | Visual health scores |
-| 5 | RBAC vs ABAC Authorization Flow | Part 3 (Governance) | Security evolution |
-| 6 | Human-in-the-Loop Autonomy Spectrum | Part 3 (Governance) | Decision autonomy levels |
-| 7 | End-to-End Observability with Trace IDs | Part 4 (Observability) | Trace-based diagnosis |
-| 8 | Output Quality Validation Metrics | Part 4 (Observability) | Quality gates |
-| 9 | Multi-Level Caching Strategy | Part 5 (Availability) | Performance tiers |
-| 10 | Natural Language → Data Operation Pipeline | Part 6 (Lexicon) | Semantic translation |
-| 11 | The Quality Gate Architecture | Part 7 (Solid) | Five dimensions validation |
-| 12 | GOALS Interdependencies | Part 8 | How GOALS connect |
-| 13 | The Trust Flywheel-Three Pillars in Motion | Part 8 | Continuous improvement cycle |
-| 14 | GOALS™ Healthcare Threshold | Part 9 (Week 12 Target) | Scoring scale and healthcare threshold |
-
----
-
-## Acronyms
-
-| Acronym | Definition |
-|---------|------------|
-| ABAC | Attribute-Based Access Control |
-| APM | Application Performance Monitoring |
-| CDC | Change Data Capture |
-| EDR | Endpoint Detection and Response |
-| HITL | Human-in-the-Loop |
-| LLM | Large Language Model |
-| MTBF | Mean Time Between Failures |
-| MTTD | Mean Time to Detection |
-| MTTR | Mean Time to Recovery |
-| NDCG | Normalized Discounted Cumulative Gain |
-| OPA | Open Policy Agent |
-| PHI | Protected Health Information |
-| RBAC | Role-Based Access Control |
-| RAG | Retrieval-Augmented Generation |
-| SLO | Service Level Objective |
-| SOC | Security Operations Center |
-| SRE | Site Reliability Engineering |
-| TTL | Time to Live |
 
 ---
 
@@ -1950,5 +1841,7 @@ Use this checklist to evaluate your organization's GOALS™ readiness:
 
 ---
 
-**© 2025 Colaberry Inc. All Rights Reserved.**  
+**© 2025-2026 Colaberry Inc. All Rights Reserved.**
 **INPACT™ and GOALS™ are trademarks of Colaberry Inc.**
+
+*Acronyms and key terms are defined in the Glossary.*

@@ -416,7 +416,7 @@ Friday Sarah presented to Echo's board:
 
 "We have three options." She pulled up the comparison. "Two preserve our BI investment but compromise agent capabilities. One transforms infrastructure in ninety days."
 
-She walked through the retrofit trap—$2.5M over eighteen months, dual systems, incomplete capabilities—then the incremental path stretching past three years.
+She walked through the retrofit trap: $2.5M over eighteen months, dual systems, incomplete capabilities. Then the incremental path stretching past three years.
 
 "Option 3 is the Transform path. $1.23M over ninety days. Build the 7-layer architecture."
 
@@ -430,7 +430,7 @@ Sarah: "Retrofit maintains two systems. Transform builds one. Long-term, we main
 
 Board member: "What if it fails?"
 
-Sarah: "We gate investments. Week 4 checkpoint: foundation layers functional. Week 7: intelligence operational. Week 10: first production agent. We don't commit $1.23M day one—we validate phase by phase."
+Sarah: "We gate investments. Week 4 checkpoint: foundation layers functional. Week 7: intelligence operational. Week 10: first production agent. We don't commit $1.23M day one. We validate phase by phase."
 
 **The vote: Unanimous approval.**
 
@@ -567,63 +567,37 @@ Figure 3.3 maps the complete transformation path:
 | **Gap 6: Reasoning observability** | Transparent (T), Adaptive (A) | 6 | Distributed tracing |
 | **Gap 7: Multi-agent coordination** | All needs at scale | 7 | Orchestration framework |
 
-### Echo's Three-Phase Roadmap
+### Echo's Four-Phase Roadmap
+
+The transformation follows four phases across 12 weeks:
 
 **Phase 1: Foundation (Weeks 1-4) - $470K**
 
-Build Layers 1-2: Multi-Modal Storage + Real-Time Data Fabric
+Builds Layers 1-2: Multi-Modal Storage + Real-Time Data Fabric. CDC captures changes within 15 seconds, vector database ready for semantic search.
 
-**Deliverables:**
-- [Azure SQL](https://azure.microsoft.com/en-us/products/azure-sql/) with agent-optimized indexes
-- [Debezium](https://debezium.io) CDC capturing EHR changes within fifteen seconds
-- [Kafka](https://kafka.apache.org) streaming operational
-- [Pinecone](https://www.pinecone.io) vector database provisioned
-
-**INPACT™ progression:** 28/100 -> 42/100
-- Instant (I): 1 -> 4 (real-time data, faster queries)
-- Contextual (C): 3 -> 4 (better multi-source storage)
-
-**Checkpoint Week 4:** Foundation functional or stop.
+INPACT progression: 28 to 42. Checkpoint Week 4: Foundation functional or stop.
 
 **Phase 2: Intelligence (Weeks 5-7) - $380K**
 
-Build Layers 3-6: Semantic + Intelligence (RAG + LLM)
+Builds Layers 3-4: Semantic Layer + RAG Pipeline. Business glossary resolves domain terminology, intelligence pipeline achieves 85%+ accuracy.
 
-**Deliverables:**
-- [dbt](https://www.getdbt.com) semantic models (business-friendly views)
-- RAG pipeline: embeddings -> retrieval -> reranking
-- [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-services/openai-service) integration (GPT-4)
-- [OPA](https://www.openpolicyagent.org) policy engine with ABAC rules
-- [OpenTelemetry](https://opentelemetry.io) + [Datadog](https://www.datadoghq.com) observability
-
-**INPACT™ progression:** 42/100 -> 67/100
-- Natural (N): 2 -> 5 (semantic layer working)
-- Permitted (P): 1 -> 5 (ABAC operational)
-- Transparent (T): 1 -> 4 (reasoning visible)
-
-**Checkpoint Week 7:** Intelligence functional or don't deploy agents.
+INPACT progression: 42 to 67. Checkpoint Week 7: Intelligence operational or don't deploy agents.
 
 **Phase 3: Trust + Orchestration (Weeks 8-10) - $380K**
 
-Build Layers 5-6-7: Governance + Observability + Orchestration
+Builds Layers 5-7: Governance + Observability + Orchestration. ABAC policies control access, distributed tracing provides visibility, multi-agent coordination enables complex workflows.
 
-**Deliverables:**
-- [LangGraph](https://langchain-ai.github.io/langgraph/) orchestration framework
-- Multi-agent state management
-- Human-in-the-loop workflows
-- First production agent live
+INPACT progression: 67 to 86. Target Week 10: First production agent live.
 
-**INPACT™ progression:** 67/100 -> 86/100
-- Adaptive (A): 2 -> 5 (feedback loops operational)
-- All dimensions optimized through final tuning
+**Phase 4: Operations (Weeks 11-12)**
 
-**Target Week 10:** Care Coordination Agent serving 500 daily interactions.
+Validation, UAT, and production readiness. Continuous improvement begins.
 
-**Week 12+:** Production operations, continuous improvement (1-2% weekly gains).
+Chapters 4-6 detail each phase. Chapter 10 provides the week-by-week implementation playbook. Chapter 11 covers technology selection.
 
 ### From Blueprint to Build
 
-Sarah's team had the blueprint. Seven gaps mapped to seven layers. Three phases spanning ten weeks. The Architecture of Trust provided the roadmap, now comes execution.
+Sarah's team had the blueprint. Seven gaps mapped to seven layers. Four phases spanning twelve weeks. The Architecture of Trust provided the roadmap, now comes execution.
 
 **What comes next:**
 
@@ -664,7 +638,7 @@ Seven gaps require seven layers. The next four chapters show exactly how Sarah t
 
 ---
 
-**© 2025 Colaberry Inc. All Rights Reserved.**
+**© 2025-2026 Colaberry Inc. All Rights Reserved.**
 INPACT™ and GOALS™ are trademarks of Colaberry Inc.
 
 *Acronyms and key terms are defined in the Glossary.*

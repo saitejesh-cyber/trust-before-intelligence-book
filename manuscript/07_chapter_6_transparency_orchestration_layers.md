@@ -33,7 +33,7 @@ Fast and accurate isn't enough. Ungoverned AI is dangerous AI.
 
 ---
 
-**Diagram 1: Transparency + Orchestration Layers - Why Layers 5-6-7 Complete Trust**
+**Figure 6.1: Transparency + Orchestration Layers - Why Layers 5-6-7 Complete Trust**
 
 ```mermaid
 
@@ -81,7 +81,7 @@ Three risks remained unaddressed:
 
 These final three layers would complete the architecture.
 
-**Diagram 2: The Architecture of Trust - Completing Pillar 2**
+**Figure 6.2: The Architecture of Trust - Completing Pillar 2**
 
 ```mermaid
 
@@ -151,7 +151,7 @@ Why cover three layers in one chapter? Because trust and orchestration are inter
 
 The three-week build timeline (Week 8 Governance, Week 9 Observability, Week 10 Orchestration) is detailed in Part 2.
 
-**Diagram 3: 7-Layer Agent-Ready Architecture - Transparency + Orchestration Highlighted**
+**Figure 6.3: 7-Layer Agent-Ready Architecture - Transparency + Orchestration Highlighted**
 
 ```mermaid
 graph TB
@@ -293,7 +293,7 @@ This contextual evaluation requires four capabilities:
 
 **Audit Infrastructure:** Complete decision logging for compliance, debugging, and policy refinement. Every authorization decision (granted, denied, or escalated) is recorded with full context.
 
-**Diagram 4: Layer 5 Governance Architecture**
+**Figure 6.4: Layer 5 Governance Architecture**
 
 ```mermaid
 
@@ -388,7 +388,7 @@ NIST guidance recognizes that RBAC and ABAC are complementary, and organizations
 
 Pattern selection depends on reversibility, urgency, and risk magnitude.
 
-**Diagram 5: ABAC Four-Factor Authorization Model**
+**Figure 6.5: ABAC Four-Factor Authorization Model**
 
 ```mermaid
 graph TB
@@ -466,7 +466,7 @@ Echo deployed Layer 5 across Week 8-9 with the following architecture:
 8. Access from unrecognized devices
 
 
-**Diagram 6: HITL Escalation Patterns**
+**Figure 6.6: HITL Escalation Patterns**
 
 ```mermaid
 
@@ -564,7 +564,7 @@ This comprehensive visibility requires four capabilities:
 
 **Centralized Logging:** Aggregated logs with structured data enabling correlation across services. Debugging distributed systems without centralized logging means correlating timestamps across dozens of separate log files.
 
-**Diagram 7: Layer 6 Observability Architecture**
+**Figure 6.7: Layer 6 Observability Architecture**
 
 ```mermaid
 
@@ -653,7 +653,7 @@ The most frustrating gap appeared during the Week 6 accuracy regression. Respons
 
 Echo deployed OpenTelemetry instrumentation across all seven layers during Week 9, with Datadog APM providing visualization and alerting.
 
-**Diagram 8: Echo's Seven-Layer Service Map**
+**Figure 6.8: Echo's Seven-Layer Service Map**
 ```mermaid
 
 graph TB
@@ -703,7 +703,7 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-**© 2025 Colaberry Inc.**
+**© 2025-2026 Colaberry Inc.**
 
 The service map reveals latency distribution: Layer 4 (RAG + LLM) dominates at 2.8 seconds P95, representing 67% of total request time. This visibility enabled Echo to focus optimization on LLM generation rather than infrastructure layers.
 
@@ -768,7 +768,7 @@ Layer 7 delivers multi-agent coordination: the capability for specialized agents
 Layer 7 is the orchestrator. It turns multiple agents into one coherent answer.
 
 
-**Diagram 9: Layer 7 Orchestration Architecture**
+**Figure 6.9: Layer 7 Orchestration Architecture**
 
 ```mermaid
 
@@ -892,8 +892,6 @@ Echo deployed Layer 7 across Week 10 with the following architecture:
 - Multi-domain queries → parallel or sequential execution with synthesis
 - Ambiguous queries → clarification request
 
-**State Management:** Redis-backed shared state with 15-minute TTL for session context.[14]
-
 **Governance Integration:** All agent operations pass through Layer 5 ABAC evaluation. The orchestration layer doesn't bypass governance. It coordinates with governance-approved operations.
 
 **Observability Integration:** All agent operations generate OpenTelemetry traces. The orchestration layer provides visibility into coordination patterns, not opacity.
@@ -909,7 +907,7 @@ Sarah watched the terminal as Jamie Rodriguez submitted the test query:
 
 The orchestration layer activated. Intent classification identified three domains: Care (follow-up scheduling), Clinical (medication review), Revenue (insurance verification). The supervisor delegated the request to all three agents in parallel.
 
-**Diagram 10: Multi-Agent Query Flow - Maria Santos Discharge**
+**Figure 6.10: Multi-Agent Query Flow - Maria Santos Discharge**
 
 ```mermaid
 graph TB
@@ -1061,7 +1059,7 @@ Wednesday-Thursday: 47 test scenarios across single-domain, dual-domain, triple-
 
 Friday, 4:47 PM. The Maria Santos discharge query succeeded. Three agents. One response. Architecture complete.
 
-**Diagram 11: Echo's Week 8-10 Timeline**
+**Figure 6.11: Echo's Week 8-10 Timeline**
 
 ```mermaid
 gantt
@@ -1089,11 +1087,11 @@ gantt
     Architecture Complete              :milestone, m2, 03-14, 0d
 ```
 
-**© 2025 Colaberry Inc.**
+**© 2025-2026 Colaberry Inc.**
 
 ### INPACT™ Score: Week 7 → Week 10
 
-**Diagram 12: INPACT™ Transformation (67 → 86)**
+**Figure 6.12: INPACT™ Transformation (67 → 86)**
 
 ```mermaid
 graph LR
@@ -1218,7 +1216,7 @@ Sarah Cedao stood at the whiteboard one final time. The three words from Week 8 
 
 Seventy days. Seven layers. From 28/100 to 86/100.
 
-**Diagram 13: Complete 7-Layer Agent-Ready Architecture**
+**Figure 6.13: Complete 7-Layer Agent-Ready Architecture**
 
 ```mermaid
 graph TB
@@ -1250,7 +1248,7 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-**Diagram 14: The Architecture of Trust - Two Pillars Complete**
+**Figure 6.14: The Architecture of Trust - Two Pillars Complete**
 
 ```mermaid
 
@@ -1317,21 +1315,6 @@ Krish Yadav, Echo's CFO, reviewed the numbers Friday evening:
 "We spent $298,000 less than projected," Krish noted. "And the architecture is production-ready two weeks ahead of the board presentation. That never happens."
 
 The remaining two weeks, Weeks 11-12, would validate these projections through operational deployment and measurement. Chapter 8 will document that validation. But the infrastructure prerequisite was complete.
-
-### Bridge to Operational Excellence
-
-Architecture alone isn't success. The 86/100 score reflects capability, meaning what the infrastructure can do. Operations determine reality: what it actually does when clinical staff rely on it daily.
-
-The next phase would test every assumption: Would HITL workflows scale? Would clinicians engage with review or route around it? Would multi-agent coordination remain reliable under load? Would clinical staff trust the system for complex queries?
-
-**Chapter 7 introduces GOALS™ - the framework for operational excellence:**
-- **G**overnance: Policy effectiveness and HITL optimization
-- **O**bservability: Monitoring maturity and incident response
-- **A**vailability: Speed, freshness, and performance at scale
-- **L**exicon: Query understanding and semantic accuracy
-- **S**olid: System reliability and data integrity
-
-The architecture is complete. Now it must perform.
 
 ---
 
@@ -1434,37 +1417,9 @@ The complete transformation closed all seven gaps across three phases:
 
 [16] Gao, Y., Xiong, Y., Gao, X., et al. (2024). "Retrieval-Augmented Generation for Large Language Models: A Survey." *arXiv preprint arXiv:2312.10997*. https://arxiv.org/abs/2312.10997
 
-[17] U.S. Department of Health and Human Services. (2024). "HIPAA Security Rule." https://www.hhs.gov/hipaa/for-professionals/security/index.html
-
-[18] Office of the National Coordinator for Health IT. (2024). "Interoperability Standards Advisory." https://www.healthit.gov/isa/
-
 ---
 
-## Acronyms
-
-- **ABAC:** Attribute-Based Access Control
-- **API:** Application Programming Interface
-- **APM:** Application Performance Monitoring
-- **CDC:** Change Data Capture
-- **CNCF:** Cloud Native Computing Foundation
-- **DVT:** Deep Vein Thrombosis
-- **EHR:** Electronic Health Record
-- **FDA:** Food and Drug Administration
-- **FHIR:** Fast Healthcare Interoperability Resources
-- **HIPAA:** Health Insurance Portability and Accountability Act
-- **HITL:** Human-in-the-Loop
-- **INR:** International Normalized Ratio
-- **LLM:** Large Language Model
-- **MRN:** Medical Record Number
-- **NIST:** National Institute of Standards and Technology
-- **OPA:** Open Policy Agent
-- **PHI:** Protected Health Information
-- **RAG:** Retrieval-Augmented Generation
-- **RBAC:** Role-Based Access Control
-- **SQL:** Structured Query Language
-- **TTL:** Time To Live
-
----
-
-**© 2025 Colaberry Inc. All Rights Reserved.**  
+**© 2025-2026 Colaberry Inc. All Rights Reserved.**
 INPACT™ and GOALS™ are trademarks of Colaberry Inc.
+
+*Acronyms and key terms are defined in the Glossary.*

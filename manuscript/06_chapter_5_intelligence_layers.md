@@ -31,7 +31,7 @@ The demo exposed the gap: infrastructure could deliver data fast, but couldn't m
 
 ---
 
-**Diagram 1: Intelligence Layers - Why Layers 3-4 Enable Understanding**
+**Figure 5.1: Intelligence Layers - Why Layers 3-4 Enable Understanding**
 
 ```mermaid
 
@@ -69,7 +69,7 @@ graph LR
 ## PART 1: THE INTELLIGENCE GAP
 
 
-**Diagram 2: The Architecture of Trust - Intelligence Layers Highlighted**
+**Figure 5.2: The Architecture of Trust - Intelligence Layers Highlighted**
 
 ```mermaid
 
@@ -126,7 +126,7 @@ Foundation without intelligence is like having a well-stocked library with no ca
 
 **Layer 4 (Intelligence):** Complete reasoning pipeline encompassing query understanding, embedding generation, hybrid retrieval, reranking, context assembly, LLM generation, and semantic caching. RAG and LLMs are tightly coupled components of the same layer. Effective retrieval-augmented generation requires both.[8][9]
 
-**Diagram 3: 7-Layer Agent-Ready Architecture - Intelligence Highlighted**
+**Figure 5.3: 7-Layer Agent-Ready Architecture - Intelligence Highlighted**
 
 ```mermaid
 graph TB
@@ -257,7 +257,7 @@ Week 10: 86/100 (Governance + Orchestration) → +18 points
 
 Swapna nodded to Jamie Rodriguez, who displayed the Phase 2 architecture diagram:
 
-**Diagram 4: Echo's Intelligence Challenge - Current State vs. Target State**
+**Figure 5.4: Echo's Intelligence Challenge - Current State vs. Target State**
 
 ```mermaid
 graph TB
@@ -317,7 +317,7 @@ Layer 3 is the business understanding layer, a machine-readable representation o
 
 The semantic layer translates human language to data structures.[1] When a care coordinator asks "Show me patients needing diabetes follow-up," it resolves this to: diagnosis codes E11.*, HbA1c lab results > 7.0, last appointment > 90 days, excluding deceased patients automatically, without the coordinator writing SQL or knowing which tables contain which fields.
 
-**Diagram 5: Layer 3 -Semantic Layer Architecture**
+**Figure 5.5: Layer 3 -Semantic Layer Architecture**
 
 ```mermaid
 flowchart TB
@@ -419,7 +419,7 @@ With Layer 3, the semantic parser extracts intent, condition, filter, and scope.
 
 The difference is transformational. Research benchmarks show that direct natural language-to-SQL conversion achieves only 40-55% accuracy on complex cross-domain queries; adding semantic layer context, business glossaries, entity resolution, and schema understanding improves accuracy to 75-90%.[23][24]
 
-**Diagram 6: Before/After - Keyword Search vs. Semantic Search**
+**Figure 5.6: Before/After - Keyword Search vs. Semantic Search**
 
 ```mermaid
 graph TB
@@ -562,7 +562,7 @@ Layer 4 is the complete intelligence pipeline system that transforms user querie
 
 **Critical Architectural Note:** LLMs are part of Layer 4, not a separate layer. The 7-Layer Architecture represents infrastructure concerns, not technology lists. Layer 4's concern is "HOW agents understand and respond", which requires the complete pipeline from query to response. Separating RAG from LLMs would be like separating a car's engine from its transmission, theoretically possible but architecturally incoherent.
 
-**Diagram 7: Layer 4 - Complete Intelligence Pipeline**
+**Figure 5.7: Layer 4 - Complete Intelligence Pipeline**
 
 ```mermaid
 graph TB
@@ -630,7 +630,7 @@ Embedding models transform text into high-dimensional vectors where similar conc
 
 Single-strategy retrieval misses relevant results. Vector search excels at semantic similarity but struggles with exact matches. Keyword search handles precise terms but misses synonyms. Graph traversal captures relationships but requires structured data. Hybrid retrieval combines all three strategies in parallel, merging results for comprehensive coverage.
 
-**Diagram 8: Hybrid Retrieval Architecture**
+**Figure 5.8: Hybrid Retrieval Architecture**
 
 ```mermaid
 graph LR
@@ -708,7 +708,7 @@ Echo's intelligence pipeline doesn't just retrieve documents; it orchestrates re
 
 Echo deployed seven Pinecone namespaces, one per context type, with specialized retrieval strategies for each dimension.[13] Each namespace uses optimized chunking: business context chunks are larger (1,500 tokens) because policies need full context; data context chunks are smaller (600 tokens) because clinical notes need precision.
 
-Echo's synthesis engine orchestrates retrieval within <400ms: Query Analysis (50ms), Parallel Retrieval across seven namespaces (180ms), Relevance Scoring (40ms), Deduplication (30ms), Priority Assembly (60ms), Token Optimization (40ms). Echo's median: 312ms.
+Echo's synthesis engine orchestrates retrieval within <400ms through parallel retrieval across seven namespaces, relevance scoring, deduplication, and token optimization. Echo's median: 312ms.
 
 **INPACT™ Impact:** Universal context enables Natural (N) through business language translation, Contextual (C) through complete situational awareness, and Adaptive (A) through automatic response adjustment.
 
@@ -732,7 +732,7 @@ Context assembled, citations tracked, now comes reasoning. The LLM synthesizes r
 
 Healthcare requires different LLM capabilities for different tasks. Echo implemented a multi-LLM router:
 
-**Diagram 9: Multi-LLM Router Architecture**
+**Figure 5.9: Multi-LLM Router Architecture**
 
 ```mermaid
 graph TB
@@ -793,7 +793,7 @@ Similar queries should not incur redundant LLM costs. Semantic caching stores re
 
 **How It Works:** New query → generate embedding → search cache index (similarity > 0.92) → if match: return cached response; if no match: execute full pipeline, cache response.
 
-**Diagram 10: Semantic Cache Architecture**
+**Figure 5.10: Semantic Cache Architecture**
 
 ```mermaid
 graph TB
@@ -1084,7 +1084,7 @@ The room was silent for a moment. Then applause.
 - LLM cost reduction: 84% (from baseline)
 - INPACT™ score: 67/100
 
-**Diagram 11: Echo's Week 5-7 Timeline**
+**Figure 5.11: Echo's Week 5-7 Timeline**
 
 ```mermaid
 gantt
@@ -1116,7 +1116,7 @@ gantt
 
 ### INPACT™ Score: Week 4 → Week 7
 
-**Diagram 12: INPACT™ Transformation (42 → 67)**
+**Figure 5.12: INPACT™ Transformation (42 → 67)**
 
 ```mermaid
 graph LR
@@ -1173,7 +1173,7 @@ Krish made a note. "Phase 3 has the same $380,000 allocation. Apply the lesson."
 
 ### What We Built
 
-**Diagram 13: Complete Intelligence Architecture - Layers 3-4**
+**Figure 5.13: Complete Intelligence Architecture - Layers 3-4**
 
 ```mermaid
 graph TB
@@ -1278,11 +1278,7 @@ Intelligence layers validated the foundation investment. Without multi-modal sto
 
 Intelligence is powerful. Ungoverned intelligence is dangerous.
 
-Echo's agents can now understand natural language, retrieve relevant context, and generate grounded responses. But they cannot yet:
-- Enforce dynamic access control based on user context
-- Audit reasoning chains for compliance review
-- Detect and respond to model drift
-- Coordinate multiple agents on complex tasks
+Echo's agents can now understand natural language, retrieve relevant context, and generate grounded responses. But they cannot yet enforce dynamic access control, audit reasoning chains, detect model drift, or coordinate multiple agents.
 
 **The Governance Gap:**
 
@@ -1292,27 +1288,7 @@ The intelligence layers process correctly, but should this query be answered? Th
 
 Without Layer 5 (Governance), the intelligent response creates a compliance violation. Without Layer 6 (Observability), there's no audit trail.
 
-**What Chapter 6 delivers:**
-
-- **Layer 5 (Governance):** ABAC evaluates who, what, when, where. Policy engines like [Open Policy Agent](https://www.openpolicyagent.org) evaluate policies at agent speed. HITL workflows route high-risk decisions to human reviewers.
-
-- **Layer 6 (Observability):** Distributed tracing follows queries through the pipeline. Model monitoring detects quality degradation. Feedback loops capture corrections.
-
-- **Layer 7 (Orchestration):** Multi-agent coordination using frameworks like LangGraph. State management across workflows. Integration with all layers below.
-
-**The principle:** Intelligence before governance, but governance before production. Echo's agents are intelligent. Chapter 6 makes them trustworthy and coordinated by completing the architecture.
-
-**Echo's Remaining Journey:**
-
-| Phase | Weeks | Layers | INPACT™ Progress | Chapter |
-|-------|-------|--------|------------------|---------|
-| Phase 1: Foundation | 1-4 | 1-2 | 28 → 42 | Chapter 4 ✓ |
-| Phase 2: Intelligence | 5-7 | 3-4 | 42 → 67 | **Chapter 5 ✓** |
-| Phase 3: Trust + Orchestration | 8-10 | 5-6-7 | 67 → 85 | Chapter 6 |
-
-At Week 7, Echo has covered 70% of the journey from 28/100 to 86/100. The final 18 points require governance, observability, and orchestration to complete the architecture.
-
-Chapter 6 completes the 7-Layer Architecture, making intelligent agents production-ready.
+**The principle:** Intelligence before governance, but governance before production. Echo's agents are intelligent. Chapter 6 makes them trustworthy and coordinated by completing the architecture with Layers 5-6-7.
 
 ---
 
@@ -1344,15 +1320,6 @@ Chapter 6 completes the 7-Layer Architecture, making intelligent agents producti
 **Layer 3:** dbt Cloud[1], Alation, Senzing, SNOMED[3]/ICD-10[4]/LOINC[5] mappings
 
 **Layer 4:** Pinecone[13], OpenAI Embeddings[15], Cohere Rerank[14], LlamaIndex, Claude Sonnet 4, GPT-4 Turbo, Llama 3.1, GPTCache
-
-### What's Next
-
-**Chapter 6:** Trust + Orchestration Layers (Layers 5-6-7)
-- Governance: ABAC, OPA policy engines, HITL workflows
-- Observability: OpenTelemetry tracing, model monitoring
-- Orchestration: Multi-agent coordination, LangGraph
-- Echo: Weeks 8-10, INPACT™ 67 → 85
-- Architecture complete
 
 ---
 
@@ -1433,5 +1400,7 @@ Chapter 6 completes the 7-Layer Architecture, making intelligent agents producti
 
 ---
 
-**© 2025 Colaberry Inc. All Rights Reserved.**  
+**© 2025-2026 Colaberry Inc. All Rights Reserved.**
 INPACT™ and GOALS™ are trademarks of Colaberry Inc.
+
+*Acronyms and key terms are defined in the Glossary.*

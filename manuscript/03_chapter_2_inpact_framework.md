@@ -56,15 +56,7 @@ graph LR
 
 ### The Architecture of Trust: Building Pillar 1
 
-Chapter 1 revealed why 95% of enterprise AI agent projects fail not from inadequate AI, but from infrastructure unreadiness [1]. The solution requires an integrated architecture, not bolt-on tools.
-
-**The Architecture of Trust rests on three pillars:**
-
-**Pillar 1: INPACT™** defines what agents need from infrastructure - six fundamental requirements that must be fulfilled for users to trust autonomous operation.
-
-**Pillar 2: 7-Layer Architecture** specifies how to build infrastructure that delivers on those needs, from storage through orchestration.
-
-**Pillar 3: GOALS™** establishes how to measure operational success, ensuring infrastructure continuously fulfills agent needs in production.
+Chapter 1 revealed why 95% of enterprise AI agent projects fail not from inadequate AI, but from infrastructure unreadiness [1]. The solution: the Architecture of Trust, with its three integrated pillars shown below.
 
 **Figure 2.1: The Architecture of Trust - Three Integrated Pillars**
 
@@ -1078,29 +1070,7 @@ Your organization's journey follows the same pattern. The specifics differ, your
 
 ---
 
-
-## Acronyms
-
-- **ABAC:** Attribute-Based Access Control
-- **API:** Application Programming Interface
-- **BI:** Business Intelligence
-- **CDC:** Change Data Capture
-- **CDO:** Chief Data Officer
-- **CTO:** Chief Technology Officer
-- **EHR:** Electronic Health Record
-- **ETL:** Extract, Transform, Load
-- **HIPAA:** Health Insurance Portability and Accountability Act
-- **HITL:** Human-in-the-Loop
-- **IDC:** International Data Corporation
-- **LLM:** Large Language Model
-- **NIST:** National Institute of Standards and Technology
-- **OPA:** Open Policy Agent
-- **RAG:** Retrieval-Augmented Generation
-- **RBAC:** Role-Based Access Control
-- **ROI:** Return on Investment
-- **SQL:** Structured Query Language
-
----
-
-**© 2025 Colaberry Inc. All Rights Reserved.**  
+**© 2025-2026 Colaberry Inc. All Rights Reserved.**
 INPACT™ and GOALS™ are trademarks of Colaberry Inc.
+
+*Acronyms and key terms are defined in the Glossary.*

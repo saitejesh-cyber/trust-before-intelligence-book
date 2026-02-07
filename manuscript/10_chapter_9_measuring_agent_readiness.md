@@ -28,7 +28,7 @@ This chapter is what they wrote down.
 
 ---
 
-**Diagram 1: Assessment Value, From Confusion to Clarity**
+**Figure 9.1: Assessment Value, From Confusion to Clarity**
 
 ```mermaid
 
@@ -82,7 +82,7 @@ The Architecture of Trust integrates three frameworks into one coherent system. 
 
 These three frameworks form a chain of dependency. INPACT™ requirements drive architecture decisions. Architecture capabilities enable operational excellence. Operational excellence delivers the trust that makes agent adoption successful.
 
-**Diagram 2: Architecture of Trust Assessment Flow**
+**Figure 9.2: Architecture of Trust Assessment Flow**
 
 ```mermaid
 graph LR
@@ -172,20 +172,13 @@ The INPACT™ score calculation is simple:
 2. **Sum the raw scores**: Total = I + N + P + A + C + T (range: 6-36)
 3. **Calculate percentage**: INPACT™ Score = (Total ÷ 36) × 100
 
-For example, Echo Health Systems' Week 0 assessment:
-- I (Instant): 1
-- N (Natural): 2
-- P (Permitted): 1
-- A (Adaptive): 2
-- C (Contextual): 3
-- T (Transparent): 1
-- **Total: 10 ÷ 36 = 28/100**
+For example, Echo Health Systems' Week 0 assessment scored 10/36 points (28/100), with five dimensions at critical levels (1-2/6) and only Contextual reaching moderate (3/6). Chapter 2 details the full breakdown.
 
 **Trust Bands**
 
 Raw scores translate into five trust bands that indicate agent readiness:
 
-**Diagram 3: The Five Trust Bands**
+**Figure 9.3: The Five Trust Bands**
 
 ```mermaid
 graph LR
@@ -244,7 +237,7 @@ These thresholds aren't arbitrary. They emerge from Colaberry's pattern recognit
 
 INPACT™ covers the full architecture. Each dimension doesn't exist in isolation. It requires specific infrastructure layers to be fulfilled. When you score an INPACT™ dimension, you're simultaneously assessing the health of those underlying layers.
 
-**Diagram 4: INPACT™ Dimension to Layer Mapping**
+**Figure 9.4: INPACT™ Dimension to Layer Mapping**
 
 ```mermaid
 graph LR
@@ -460,7 +453,7 @@ The score exposed painful truth: five dimensions at critical gaps (1-2), only C 
 
 Echo's progression from 28/100 to 89/100 followed a deliberate sequence. Each phase addressed specific dimensions, building capability that enabled subsequent phases.
 
-**Diagram 5: Echo's 90-Day INPACT™ Transformation**
+**Figure 9.5: Echo's 90-Day INPACT™ Transformation**
 
 ```mermaid
 graph LR
@@ -602,7 +595,7 @@ Your trust band tells you *how long* and *how much*. Your lowest dimensions tell
 
 Regardless of your overall score, your lowest-scoring dimensions reveal which layers need the most attention. A score of 70 with weak Instant (I) still requires Phase 1 foundation work. Not all gaps are equal.
 
-**Diagram 6: Gap-to-Phase Prioritization Flow**
+**Figure 9.6: Gap-to-Phase Prioritization Flow**
 
 ```mermaid
 
@@ -711,7 +704,7 @@ Turn the page to build your plan.
 
 ---
 
-**© 2025 Colaberry Inc. All Rights Reserved.**
+**© 2025-2026 Colaberry Inc. All Rights Reserved.**
 INPACT™ and GOALS™ are trademarks of Colaberry Inc.
 
 *Acronyms and key terms are defined in the Glossary.*
