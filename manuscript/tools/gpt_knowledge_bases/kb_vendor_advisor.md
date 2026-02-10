@@ -153,7 +153,7 @@ graph TD
     class DECISION decision
 ```
 
-**Figure DA-1.1: INPACT™ and GOALS™ Separate Scoring Methodology**
+**Figure 1: INPACT™ and GOALS™ Separate Scoring Methodology**
 
 Every technology product in this appendix is evaluated using both frameworks. INPACT™ measures agent needs (how well it helps agents meet the six fundamental requirements), while GOALS™ measures operational readiness (how mature and production-ready it is). **Both scores must meet minimum thresholds independently**  - a vendor must pass on INPACT™ AND on GOALS™ to be recommended.
 
@@ -282,7 +282,7 @@ graph TB
     class DECISION decision
 ```
 
-**Figure A.2: Three Budget Tiers for 90-Day Implementation**
+**Figure 2: Three Budget Tiers for 90-Day Implementation**
 
 Budget tiers represent different approaches to building agent-ready infrastructure. Tier 1 optimizes for cost with open-source tools. Tier 2 (recommended) balances managed services with reasonable costs—ideal for regulated industries. Tier 3 provides enterprise-grade everything for organizations at scale.
 
@@ -431,7 +431,7 @@ graph TD
     class AZURE_DETAILS,GCP_DETAILS,AWS_DETAILS details
 ```
 
-**Figure A.3: Cloud Platform Decision Tree (AWS vs Azure vs GCP)**
+**Figure 3: Cloud Platform Decision Tree (AWS vs Azure vs GCP)**
 
 This decision tree guides cloud platform selection based on your specific requirements. Healthcare deployments strongly favor Azure (HIPAA compliance, Entra ID). ML-first teams benefit from GCP's Vertex AI. Organizations with existing >$1M cloud investments should typically stay on their current platform due to high switching costs.
 
@@ -2628,7 +2628,7 @@ graph TD
     class DECISION decision
 ```
 
-**Figure A.4: Technology Selection Decision Tree**
+**Figure 4: Technology Selection Decision Tree**
 
 Follow this decision tree when selecting any technology product from this appendix. Healthcare deployments must filter to HIPAA-eligible products first. Then choose based on budget tier. Evaluate INPACT™ + GOALS™ scores against your requirements. Finally, verify prerequisites before finalizing selection.
 
@@ -2684,7 +2684,7 @@ graph TD
     class EVALUATE evaluate
 ```
 
-**Figure A.5: Build vs Buy Decision Framework**
+**Figure 5: Build vs Buy Decision Framework**
 
 Evaluate each technology decision by counting indicators on both sides. Build when you have unique requirements, core competency, or need full control. Buy when it's a commodity capability, time-to-market is critical, or regulatory complexity (like HIPAA) is built-in. Most healthcare organizations should favor "Buy" due to HIPAA compliance requirements.
 
