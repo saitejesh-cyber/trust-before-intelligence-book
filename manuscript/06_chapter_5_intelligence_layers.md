@@ -134,7 +134,7 @@ graph TB
     L6["<b>Layer 6: Observability</b><br/><b>Tracing & Audit</b>"]
     L5["<b>Layer 5: Governance</b><br/><b>Dynamic Access Control</b>"]
     
-    subgraph "<b>🧠 INTELLIGENCE</b>"
+    subgraph INTELLIGENCE["<b>🧠 INTELLIGENCE</b>"]
         L4["<b>Layer 4: Intelligence</b><br/><b>RAG + LLM Pipeline</b>"]
         L3["<b>Layer 3: Semantic</b><br/><b>Business Context</b>"]
     end
@@ -154,6 +154,7 @@ graph TB
     style L3 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
     style L2 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
     style L1 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style INTELLIGENCE fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
     style Copyright fill:none,stroke:none,color:#333333
 ```
 
@@ -1130,13 +1131,13 @@ gantt
 
 ```mermaid
 graph LR
-    subgraph "<b>Week 4:Foundation Layer</b>"
+    subgraph WEEK4["<b>Week 4:Foundation Layer</b>"]
         W4_TOTAL["<b>TOTAL: 42/100</b>"]
     end
     
     ARROW["<b>→</b><br/><b>+25 pts</b>"]
     
-    subgraph "<b>Week 7:Intelligence Layer</b>"
+    subgraph WEEK7["<b>Week 7:Intelligence Layer</b>"]
         W7_TOTAL["<b>TOTAL: 67/100</b>"]
     end
     
@@ -1148,6 +1149,8 @@ graph LR
     style W4_TOTAL fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
     style ARROW fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
     style W7_TOTAL fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style WEEK4 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style WEEK7 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
     style Copyright fill:none,stroke:none,color:#333333
 ```
 

@@ -155,18 +155,18 @@ The three-week build timeline (Week 8 Governance, Week 9 Observability, Week 10 
 
 ```mermaid
 graph TB
-    subgraph "<b>TRUST LAYERS (Ch 6)</b>"
+    subgraph TRUST_LAYERS["<b>TRUST LAYERS (Ch 6)</b>"]
         L7["<b>Layer 7: Orchestration</b><br/><b>Multi-Agent Coordination</b>"]
         L6["<b>Layer 6: Observability</b><br/><b>Tracing & Monitoring</b>"]
         L5["<b>Layer 5: Governance</b><br/><b>ABAC + HITL</b>"]
     end
     
-    subgraph "<b>INTELLIGENCE (Ch 5)</b>"
+    subgraph INTELLIGENCE_CH5["<b>INTELLIGENCE (Ch 5)</b>"]
         L4["<b>Layer 4: Intelligence</b><br/><b>RAG + LLM</b>"]
         L3["<b>Layer 3: Semantic</b><br/><b>Business Context</b>"]
     end
     
-    subgraph "<b>FOUNDATION (Ch 4)</b>"
+    subgraph FOUNDATION_CH4["<b>FOUNDATION (Ch 4)</b>"]
         L2["<b>Layer 2: Real-Time</b><br/><b>CDC & Streaming</b>"]
         L1["<b>Layer 1: Storage</b><br/><b>Multi-Modal</b>"]
     end
@@ -175,13 +175,16 @@ graph TB
     
     L7 --> L6 --> L5 --> L4 --> L3 --> L2 --> L1
     
-    style L7 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style L6 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style L5 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style L4 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style L3 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style L2 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style L1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+        style L7 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+        style L6 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+        style L5 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+        style L4 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+        style L3 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+        style L2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+        style L1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style TRUST_LAYERS fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style INTELLIGENCE_CH5 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style FOUNDATION_CH4 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
     style Copyright fill:none,stroke:none,color:#333333
 ```
 
@@ -394,7 +397,7 @@ Pattern selection depends on reversibility, urgency, and risk magnitude.
 graph TB
     Query["<b>Agent Request</b><br/><b>Access Needed</b>"]
     
-    subgraph "<b>ABAC EVALUATION</b>"
+    subgraph ABAC_EVAL["<b>ABAC EVALUATION</b>"]
         S["<b>SUBJECT</b><br/><b>Who is asking?</b><br/><b>Role, Dept, Credentials</b>"]
         R["<b>RESOURCE</b><br/><b>What data?</b><br/><b>Classification, Sensitivity</b>"]
         A["<b>ACTION</b><br/><b>What operation?</b><br/><b>Read, Write, Export</b>"]
@@ -420,6 +423,7 @@ graph TB
     style A fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
     style C fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
     style Policy fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style ABAC_EVAL fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
     style Copyright fill:none,stroke:none,color:#333333
 ```
 
@@ -915,7 +919,7 @@ graph TB
     
     Supervisor["<b>Supervisor</b><br/><b>Routes to 3 Agents</b>"]
     
-    subgraph "<b>PARALLEL EXECUTION (2.3s)</b>"
+    subgraph PARALLEL_EXEC["<b>PARALLEL EXECUTION (2.3s)</b>"]
         Care["<b>Care Agent</b><br/><b>Follow-up: Tue 10 AM</b><br/><b>PT Eval: Thu 2 PM</b>"]
         Clinical["<b>Clinical Agent</b><br/><b>3 Medications</b><br/><b>No Interactions</b>"]
         Revenue["<b>Revenue Agent</b><br/><b>UHC PPO Verified</b><br/><b>$45 Copay</b>"]
@@ -945,6 +949,7 @@ graph TB
     style Revenue fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
     style State fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
     style Response fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style PARALLEL_EXEC fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
     style Copyright fill:none,stroke:none,color:#333333
 ```
 
@@ -1095,13 +1100,13 @@ gantt
 
 ```mermaid
 graph LR
-    subgraph "<b>Week 7</b>"
+    subgraph WEEK7["<b>Week 7</b>"]
         W7["<b>TOTAL: 67/100</b>"]
     end
     
     Arrow["<b>→</b><br/><b>+19 pts</b>"]
     
-    subgraph "<b>Week 10</b>"
+    subgraph WEEK10["<b>Week 10</b>"]
         W10["<b>TOTAL: 86/100</b>"]
     end
     
@@ -1112,6 +1117,8 @@ graph LR
     style W7 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
     style Arrow fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
     style W10 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style WEEK7 fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
+    style WEEK10 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
     style Copyright fill:none,stroke:none,color:#333333
 ```
 
@@ -1220,7 +1227,7 @@ Seventy days. Seven layers. From 28/100 to 86/100.
 
 ```mermaid
 graph TB
-    subgraph "<b>COMPLETE ARCHITECTURE - WEEK 10</b>"
+    subgraph COMPLETE_ARCH["<b>COMPLETE ARCHITECTURE - WEEK 10</b>"]
         L7["<b>Layer 7: Orchestration</b><br/><b>✓ LangGraph Multi-Agent</b>"]
         L6["<b>Layer 6: Observability</b><br/><b>✓ OpenTelemetry + Datadog</b>"]
         L5["<b>Layer 5: Governance</b><br/><b>✓ OPA + ABAC + HITL</b>"]
@@ -1245,6 +1252,7 @@ graph TB
     style L2 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
     style L1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
     style INPACT fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style COMPLETE_ARCH fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
     style Copyright fill:none,stroke:none,color:#333333
 ```
 
