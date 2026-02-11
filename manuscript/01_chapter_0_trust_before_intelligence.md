@@ -41,7 +41,7 @@ graph LR
     style AFTER fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
     style A1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
 
-    style Copyright fill:none,stroke:none,color:#888888
+    style Copyright fill:none,stroke:none,color:#333333
     
 ```
 
@@ -185,12 +185,12 @@ graph LR
     HumanEra --> TRANSFORM --> AgentEra
     
     style HumanEra fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style H1 fill:#ffebee,stroke:none,color:#b71c1c,rx:14,ry:14
+    style H1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
     style TRANSFORM fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style T1 fill:#4478A6,stroke:none,color:#ffffff,rx:14,ry:14
+    style T1 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
     style AgentEra fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style A1 fill:#30838C,stroke:none,color:#ffffff,rx:14,ry:14
-    style Copyright fill:none,stroke:none,color:#888888
+    style A1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style Copyright fill:none,stroke:none,color:#333333
 
 ```
 
@@ -256,7 +256,7 @@ graph TB
     style C fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
     style T fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
     style Trust fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style Copyright fill:none,stroke:none,color:#666666
+    style Copyright fill:none,stroke:none,color:#333333
 ```
 
 **Figure 0.2: INPACT™ Framework - Six Agent Needs Leading to Trust**
@@ -335,10 +335,10 @@ graph TB
     
     style Title fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
     style PILLARS fill:none,stroke:none
-    style INPACT fill:#f9f9f9,stroke:none,color:#000000,rx:20,ry:20
-    style Layers fill:#f9f9f9,stroke:none,color:#000000,rx:20,ry:20
-    style GOALS fill:#f9f9f9,stroke:none,color:#000000,rx:20,ry:20
-    style Copyright fill:none,stroke:none,color:#666666
+        style INPACT fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+        style Layers fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+        style GOALS fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style Copyright fill:none,stroke:none,color:#333333
 
 ```
 

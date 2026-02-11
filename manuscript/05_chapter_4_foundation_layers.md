@@ -55,12 +55,12 @@ graph LR
     
     WITHOUT --> TRANSFORM --> WITH
     
-    style WITHOUT fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:18,ry:18
-    style W1 fill:#ffebee,stroke:none,color:#b71c1c,rx:12,ry:12
-    style TRANSFORM fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:18,ry:18
-    style T1 fill:#4478A6,stroke:none,color:#ffffff,rx:12,ry:12
-    style WITH fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:18,ry:18
-    style L1 fill:#30838C,stroke:none,color:#ffffff,rx:12,ry:12
+    style WITHOUT fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
+    style W1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+    style TRANSFORM fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
+    style T1 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
+    style WITH fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style L1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
 
 ```
 
@@ -109,16 +109,16 @@ graph TB
     GOALS -.->|"Drives Trust"| INPACT
 
 
-    style Title fill:#e6f3f6,stroke:#d6eef3,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style Title fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
     style PILLARS fill:none,stroke:none
     style INDICATOR fill:none,stroke:none
-    style INPACT fill:#ffffff,stroke:#eeeeee,stroke-width:1px,color:#000000,rx:18,ry:18
-    style Layers fill:#ffffff,stroke:#eeeeee,stroke-width:1px,color:#000000,rx:18,ry:18
-    style GOALS fill:#ffffff,stroke:#eeeeee,stroke-width:1px,color:#000000,rx:18,ry:18
-    style YouAreHere fill:#edf4fa,stroke:#e1ebf5,stroke-width:1px,color:#333333,rx:18,ry:18
+    style INPACT fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style Layers fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style GOALS fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style YouAreHere fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
     style Spacer1 fill:none,stroke:none,color:transparent
     style Spacer2 fill:none,stroke:none,color:transparent
-    style Copyright fill:none,stroke:none,color:#888888
+    style Copyright fill:none,stroke:none,color:#333333
 
 
 ```
@@ -154,15 +154,15 @@ graph TB
     L7 --> L6 --> L5 --> L4 --> L3
     L3 --> L2 --> L1
     
-    style L7 fill:#ffffff,stroke:#eeeeee,stroke-width:1px,color:#000000,rx:18,ry:18
-    style L6 fill:#ffffff,stroke:#eeeeee,stroke-width:1px,color:#000000,rx:18,ry:18
-    style L5 fill:#ffffff,stroke:#eeeeee,stroke-width:1px,color:#000000,rx:18,ry:18
-    style L4 fill:#ffffff,stroke:#eeeeee,stroke-width:1px,color:#000000,rx:18,ry:18
-    style L3 fill:#ffffff,stroke:#eeeeee,stroke-width:1px,color:#000000,rx:18,ry:18
-    style FOUNDATION fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:22,ry:22
-    style L2 fill:#ffffff,stroke:none,color:#004d40,rx:18,ry:18
-    style L1 fill:#ffffff,stroke:none,color:#004d40,rx:18,ry:18
-    style Copyright fill:none,stroke:none,color:#888888
+    style L7 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style L6 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style L5 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style L4 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style L3 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style FOUNDATION fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style L2 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style L1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style Copyright fill:none,stroke:none,color:#333333
 
 ```
 
@@ -299,12 +299,12 @@ graph LR
     ETL -->|<b>Batch load</b>| REPORT
     REPORT -.->|<b>Agents query stale data</b>| RISK
     
-    style OPS fill:#f9f9f9,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:18,ry:18
-    style ETL fill:#fff9e6,stroke:#f3d9a5,stroke-width:1px,color:#e65100,rx:18,ry:18
-    style REPORT fill:#ffebee,stroke:#f5c6cb,stroke-width:1px,color:#b71c1c,rx:18,ry:18
-    style RISK fill:#ffe5e5,stroke:#f5bcbc,stroke-width:1px,color:#990000,rx:18,ry:18
-    style WEEK0 fill:#fff5f5,stroke:#f0c2c2,stroke-width:1px,color:#b71c1c,rx:22,ry:22
-    style Copyright fill:none,stroke:none,color:#888888
+    style OPS fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style ETL fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
+    style REPORT fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+    style RISK fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
+    style WEEK0 fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
+    style Copyright fill:none,stroke:none,color:#333333
 ```
 
 "Concrete example," Sarah requested.
@@ -422,22 +422,22 @@ graph TB
 
     TITLE --> FOUNDATION --> PHASE2 --> OUTPUT
 
-    style TITLE fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:18,ry:18
-    style Copyright fill:none,stroke:none,color:#888888
+    style TITLE fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style Copyright fill:none,stroke:none,color:#333333
     style FOUNDATION fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
     style PHASE2 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style S1 fill:#f9f9f9,stroke:none,color:#000000,rx:12,ry:12
-    style S2 fill:#f9f9f9,stroke:none,color:#000000,rx:12,ry:12
-    style S3 fill:#f9f9f9,stroke:none,color:#000000,rx:12,ry:12
-    style S4 fill:#f9f9f9,stroke:none,color:#000000,rx:12,ry:12
-    style S5 fill:#f9f9f9,stroke:none,color:#000000,rx:12,ry:12
-    style S6 fill:#f9f9f9,stroke:none,color:#000000,rx:12,ry:12
-    style S7 fill:#f9f9f9,stroke:none,color:#000000,rx:12,ry:12
-    style S8 fill:#f9f9f9,stroke:none,color:#000000,rx:12,ry:12
-    style S9 fill:#f9f9f9,stroke:none,color:#000000,rx:12,ry:12
-    style S10 fill:#f9f9f9,stroke:none,color:#000000,rx:12,ry:12
-    style S11 fill:#f9f9f9,stroke:none,color:#000000,rx:12,ry:12
-    style OUTPUT fill:#30838C,stroke:none,color:#ffffff,rx:18,ry:18
+    style S1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style S2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style S3 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style S4 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style S5 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style S6 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style S7 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style S8 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style S9 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style S10 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style S11 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style OUTPUT fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
 
 ```
 
@@ -675,19 +675,19 @@ graph LR
     NEW --> S4
  
     style BEFORE fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style OLD fill:#ffebee,stroke:none,color:#b71c1c,rx:12,ry:12
-    style P1 fill:#ffebee,stroke:none,color:#b71c1c,rx:12,ry:12
-    style P2 fill:#ffebee,stroke:none,color:#b71c1c,rx:12,ry:12
-    style P3 fill:#ffebee,stroke:none,color:#b71c1c,rx:12,ry:12
-    style P4 fill:#ffebee,stroke:none,color:#b71c1c,rx:12,ry:12
+    style OLD fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+    style P1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+    style P2 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+    style P3 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+    style P4 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
     style TRANSFORM fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
     style AFTER fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style NEW fill:#30838C,stroke:none,color:#ffffff,rx:12,ry:12
-    style S1 fill:#f9f9f9,stroke:none,color:#000000,rx:12,ry:12
-    style S2 fill:#f9f9f9,stroke:none,color:#000000,rx:12,ry:12
-    style S3 fill:#f9f9f9,stroke:none,color:#000000,rx:12,ry:12
-    style S4 fill:#f9f9f9,stroke:none,color:#000000,rx:12,ry:12
-    style Copyright fill:none,stroke:none,color:#888888
+    style NEW fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style S1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style S2 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style S3 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style S4 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style Copyright fill:none,stroke:none,color:#333333
 ```
 
 **Cache layer:** Critical for performance. Every agent query hit the database directly, no caching tier. Repeated queries for the same patient, same provider, same schedule data hammered SQL Server unnecessarily. Peak load saw 12,000 identical queries per hour. Redis MemoryDB provides sub-10ms response for cached results, reducing database load by 60% and enabling the response times agents require.
@@ -754,13 +754,13 @@ graph LR
     SOURCE -->|"Changes"| LAYER2
     LAYER2 -->|"Store"| OUTCOME
     
-    style SOURCE fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:18,ry:18
+    style SOURCE fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
     style LAYER2 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style CDC fill:#f9f9f9,stroke:none,color:#000000,rx:12,ry:12
-    style KAFKA fill:#f9f9f9,stroke:none,color:#000000,rx:12,ry:12
-    style PROCESS fill:#f9f9f9,stroke:none,color:#000000,rx:12,ry:12
-    style OUTCOME fill:#30838C,stroke:none,color:#ffffff,rx:18,ry:18
-    style Copyright fill:none,stroke:none,color:#888888
+    style CDC fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style KAFKA fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style PROCESS fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style OUTCOME fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style Copyright fill:none,stroke:none,color:#333333
 
 ```
 
@@ -866,15 +866,15 @@ graph LR
     T1 --> T2 --> STORAGE --> T3
 
     style RT fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style I1 fill:#f9f9f9,stroke:none,color:#000000,rx:12,ry:12
-    style I2 fill:#f9f9f9,stroke:none,color:#000000,rx:12,ry:12
-    style I3 fill:#30838C,stroke:none,color:#ffffff,rx:14,ry:14
+    style I1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style I2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style I3 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
     style BATCH fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style T1 fill:#f9f9f9,stroke:none,color:#000000,rx:12,ry:12
-    style T2 fill:#f9f9f9,stroke:none,color:#000000,rx:12,ry:12
-    style T3 fill:#f9f9f9,stroke:none,color:#000000,rx:12,ry:12
-    style STORAGE fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:18,ry:18
-    style Copyright fill:none,stroke:none,color:#888888
+    style T1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style T2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style T3 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style STORAGE fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style Copyright fill:none,stroke:none,color:#333333
 ```
 
 **Critical distinction:** Agent inference requires real-time data (<30 second lag). Model training tolerates batch data (overnight ETL acceptable). Layer 2 serves both needs:
@@ -974,10 +974,10 @@ graph LR
     week0 --> ARROW --> week4
 
     style week0 fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style W0 fill:#ffebee,stroke:none,color:#b71c1c,rx:14,ry:14
-    style ARROW fill:#4478A6,stroke:none,color:#ffffff,rx:14,ry:14
+    style W0 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+    style ARROW fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
     style week4 fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style W4 fill:#f9f9f9,stroke:none,color:#000000,rx:14,ry:14
+    style W4 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
 
 ```
 
@@ -1076,17 +1076,17 @@ graph TB
     A1 & A4 & A5 --> AFTER
     B2 & B3 & B6 --> AFTER
 
-    style BEFORE fill:#ffebee,stroke:none,color:#b71c1c,rx:16,ry:16
+    style BEFORE fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
     style IMPROVED fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style A1 fill:#4478A6,stroke:none,color:#ffffff,rx:14,ry:14
-    style A4 fill:#4478A6,stroke:none,color:#ffffff,rx:14,ry:14
-    style A5 fill:#4478A6,stroke:none,color:#ffffff,rx:14,ry:14
+    style A1 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
+    style A4 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
+    style A5 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
     style LATER fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style B2 fill:#f9f9f9,stroke:none,color:#000000,rx:14,ry:14
-    style B3 fill:#f9f9f9,stroke:none,color:#000000,rx:14,ry:14
-    style B6 fill:#f9f9f9,stroke:none,color:#000000,rx:14,ry:14
-    style AFTER fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:18,ry:18
-    style Copyright fill:none,stroke:none,color:#888888
+    style B2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style B3 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style B6 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style AFTER fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style Copyright fill:none,stroke:none,color:#333333
 ```
 
 | Dimension | Week 0 | Week 4 | Improvement | Driver |

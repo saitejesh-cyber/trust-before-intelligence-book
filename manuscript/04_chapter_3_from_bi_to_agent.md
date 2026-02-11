@@ -60,7 +60,7 @@ graph LR
     style A1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
 
     %% FOOTER
-    style Copyright fill:none,stroke:none,color:#888888
+    style Copyright fill:none,stroke:none,color:#333333
 ```
 
 > **Key Takeaway:** Seven gaps. Seven layers. One transformation.
@@ -169,9 +169,9 @@ graph LR
     style I1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
 
     %% 🟠 SOFTWARE 2.0 — INTERMEDIATE / PRESSURE
-    style era2 fill:#fff9e6,stroke:#f2d3a7,stroke-width:1px,color:#e65100,rx:20,ry:20
-    style P2 fill:#ffefd1,stroke:none,color:#e65100,rx:10,ry:10
-    style I2 fill:#ffefd1,stroke:none,color:#e65100,rx:10,ry:10
+    style era2 fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
+    style P2 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
+    style I2 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
 
     %% 🟢 SOFTWARE 3.0 — TRUSTED / INPACT™-FULFILLED
     style era3 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
@@ -179,7 +179,7 @@ graph LR
     style I3 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
 
     %% FOOTER
-    style Copyright fill:none,stroke:none,color:#888888
+    style Copyright fill:none,stroke:none,color:#333333
 ```
 
 As Figure 3.1 illustrates, running Software 3.0 agents on Software 1.0 infrastructure is like running cloud-native microservices on mainframe batch processing. The assumptions don't align.
@@ -261,7 +261,7 @@ graph TB
     style N4 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
     
     %% FOOTER
-    style Copyright fill:none,stroke:none,color:#888888
+    style Copyright fill:none,stroke:none,color:#333333
 ```
 
 Figure 3.2 captures this paradigm shift. The key differences are stark:
@@ -552,7 +552,7 @@ graph LR
     style L7 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
     
     %% FOOTER
-    style Copyright fill:none,stroke:none,color:#888888
+    style Copyright fill:none,stroke:none,color:#333333
 
 ```
 

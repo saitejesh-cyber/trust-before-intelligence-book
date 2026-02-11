@@ -85,10 +85,10 @@ graph TB
     
     style Title fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
     style PILLARS fill:none,stroke:none
-    style INPACT fill:#f9f9f9,stroke:none,color:#000000,rx:20,ry:20
-    style Layers fill:#f9f9f9,stroke:none,color:#000000,rx:20,ry:20
-    style GOALS fill:#f9f9f9,stroke:none,color:#000000,rx:20,ry:20
-    style Copyright fill:none,stroke:none,color:#888888
+        style INPACT fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
+        style Layers fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+        style GOALS fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style Copyright fill:none,stroke:none,color:#333333
 
 
 
@@ -173,28 +173,28 @@ graph TB
     style ROW fill:none,stroke:none
     
     %% 🟠 HUMAN NEEDS — POSITIVE MOTIVATION (NOT FAILURE)
-    style HUMAN fill:#fff9e6,stroke:#f2d3a7,stroke-width:1px,color:#e65100,rx:20,ry:20
-    style H1 fill:#f9f9f9,stroke:none,color:#e65100,rx:10,ry:10
-    style H2 fill:#f9f9f9,stroke:none,color:#e65100,rx:10,ry:10
-    style H3 fill:#f9f9f9,stroke:none,color:#e65100,rx:10,ry:10
-    style H4 fill:#f9f9f9,stroke:none,color:#e65100,rx:10,ry:10
-    style H5 fill:#f9f9f9,stroke:none,color:#e65100,rx:10,ry:10
-    style H6 fill:#f9f9f9,stroke:none,color:#e65100,rx:10,ry:10
+        style HUMAN fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+        style H1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+        style H2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+        style H3 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+        style H4 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+        style H5 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+        style H6 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
     
     %% 🔵 AGENT NEEDS — TRANSFORMATION / BECOMING
-    style AGENT fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style A1 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style A2 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style A3 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style A4 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style A5 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style A6 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
+        style AGENT fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
+        style A1 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
+        style A2 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
+        style A3 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
+        style A4 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
+        style A5 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
+        style A6 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
     
     %% 🟢 TRUSTED AGENT — OUTCOME
-    style TRUST fill:#30838C,stroke:none,color:#ffffff,rx:20,ry:20
+            style TRUST fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
     
     %% FOOTER
-    style COPYRIGHT fill:none,stroke:none,color:#888888
+    style COPYRIGHT fill:none,stroke:none,color:#333333
 ```
 
 **The parallel mappings:**
@@ -248,21 +248,21 @@ graph TB
     COPYRIGHT["<b>© 2025 Colaberry Inc.</b>"]
     
     %% ⚪ CONTAINER — NEUTRAL / CONTEXT
-    style BOX fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+        style BOX fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
     
     %% 🔵 INPACT™ NEEDS — TRANSFORMATION / DEFINITION
-    style I fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style N fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style P fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style A fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style C fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style T fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
+        style I fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+        style N fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+        style P fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+        style A fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+        style C fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+        style T fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
     
     %% 🟢 TRUST — INPACT™-FULFILLED OUTCOME
-    style TRUST fill:#30838C,stroke:none,color:#ffffff,rx:20,ry:20
+        style TRUST fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
     
     %% FOOTER
-    style COPYRIGHT fill:none,stroke:none,color:#888888
+    style COPYRIGHT fill:none,stroke:none,color:#333333
 ```
 
 **When even one need fails, trust collapses across all dimensions.** Agents operate on binary trust. Users either trust enough to delegate, or they don't trust at all. Echo's scheduling agent achieved 95% accuracy but took 9-13 seconds to respond. Users abandoned it. Accuracy didn't matter when speed destroyed conversational experience.
@@ -315,16 +315,16 @@ graph TB
     style CALC fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
 
     %% 🟠 DECISION / PRESSURE POINT
-    style DECISION fill:#fff9e6,stroke:#f2d3a7,stroke-width:1px,color:#e65100,rx:20,ry:20
+    style DECISION fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
 
     %% 🟢 TRUSTED / INPACT™-FULFILLED
-    style READY fill:#30838C,stroke:none,color:#ffffff,rx:20,ry:20
+    style READY fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
 
     %% 🔴 FAILURE / RISK
-    style GAPS fill:#ffebee,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
+    style GAPS fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
 
     %% FOOTER
-    style COPYRIGHT fill:none,stroke:none,color:#888888
+    style COPYRIGHT fill:none,stroke:none,color:#333333
 ```
 
 **The six INPACT™ dimensions assessed:**
@@ -416,11 +416,11 @@ A_STATUS["<b>Production-Ready</b><br/><b>• All dimensions ≥5/6 </b><br/><b>�
     %% 🟢 AFTER — TRUSTED / INPACT™-FULFILLED
     style AFTER fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
     style A_SCORE fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style A_DIMS fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style A_STATUS fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style A_DIMS fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style A_STATUS fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
 
     %% FOOTER
-    style COPYRIGHT fill:none,stroke:none,color:#888888
+    style COPYRIGHT fill:none,stroke:none,color:#333333
 ```
 
 ---
@@ -496,7 +496,7 @@ graph TB
         C1 --> D1["<b>Stale Data<br/>8-24 hours old</b>"]
         
         %% 🔴 CRITICAL FAILURE
-        style D1 fill:#990000,stroke:#b71c1c,stroke-width:1px,color:#ffffff,rx:10,ry:10
+        style D1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
     end
     
     %% 🔵 TRANSITION
@@ -525,7 +525,7 @@ graph TB
 
     %% FOOTER
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:none,color:#888888
+    style Copyright fill:none,stroke:none,color:#333333
 ```
 
 Echo's agent took 9-13 seconds to respond. Appointment availability queries hit data warehouses refreshed overnight via batch ETL. By 10 AM, data was 8+ hours stale. The database was cold with no indexes optimized for agent patterns, no caching. Every request forced table scans.
@@ -577,7 +577,7 @@ graph TB
         C1 --> D1["<b>2–3 days<br/>40–60% accuracy</b>"]
         
         %% 🔴 CRITICAL FAILURE
-        style D1 fill:#990000,stroke:#b71c1c,stroke-width:1px,color:#ffffff,rx:10,ry:10
+        style D1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
     end
     
     %% 🔵 TRANSITION
@@ -606,7 +606,7 @@ graph TB
 
     %% FOOTER
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:none,color:#888888
+    style Copyright fill:none,stroke:none,color:#333333
 ```
 
 Echo's database schema: 347 tables, average table name 23 characters of cryptic abbreviations. DIM_CUST_LOC_ADDR_FACT_D_KEY meant "customer location address fact dimension key." Legacy naming was chosen for technical reasons fifteen years ago. Perfect for batch ETL. Unintelligible to LLMs and humans.
@@ -665,7 +665,7 @@ graph TB
         B1 --> D1["<b>HIPAA<br/>Violation</b>"]
         
         %% 🔴 CRITICAL COMPLIANCE FAILURE
-        style D1 fill:#990000,stroke:#b71c1c,stroke-width:1px,color:#ffffff,rx:10,ry:10
+        style D1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
     end
     
     %% 🔵 TRANSITION — CONTEXT ADDED
@@ -693,7 +693,7 @@ graph TB
 
     %% FOOTER
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:none,color:#888888
+    style Copyright fill:none,stroke:none,color:#333333
 ```
 
 Echo used four RBAC roles: reader (view only), writer (edit appointments), admin (configuration), app_service (agent). The agent used app_service credentials with table-level SELECT permissions across all patient tables. 
@@ -751,7 +751,7 @@ graph TB
         C1 --> D1["<b>3-Month<br/>Degradation Window</b>"]
         
         %% 🔴 CRITICAL TRUST EROSION
-        style D1 fill:#990000,stroke:#b71c1c,stroke-width:1px,color:#ffffff,rx:10,ry:10
+        style D1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
     end
     
     %% 🔵 TRANSITION — CONTINUOUS ADAPTATION
@@ -780,7 +780,7 @@ graph TB
 
     %% FOOTER
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:none,color:#888888
+    style Copyright fill:none,stroke:none,color:#333333
 ```
 
 Echo deployed their scheduling agent in September with 87% appointment booking accuracy. By November, accuracy dropped to 73%. Analysis revealed three drift categories: 
@@ -838,7 +838,7 @@ graph TB
         B1 --> D1["<b>Incomplete<br/>Answer</b>"]
         
         %% 🔴 CRITICAL CONTEXT FAILURE
-        style D1 fill:#990000,stroke:#b71c1c,stroke-width:1px,color:#ffffff,rx:10,ry:10
+        style D1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
     end
     
     %% 🔵 TRANSITION — CONTEXTUAL EVOLUTION
@@ -866,7 +866,7 @@ graph TB
 
     %% FOOTER
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:none,color:#888888
+    style Copyright fill:none,stroke:none,color:#333333
 ```
 
 Echo's initial agent had partial integration. EHR connected to scheduling, with read-only lab access. But billing, pharmacy, and patient portal remained siloed. Query: "What do I need to know about my Tuesday appointment?" Agent response: "You have an appointment Tuesday at 2 PM with Dr. Martinez for annual physical. Labs ordered: comprehensive metabolic panel." Missing context: Lab requires 12-hour fasting (instruction not surfaced). Insurance needs prior auth for specific tests (billing not connected). Pharmacy flagged medication interaction (pharmacy not connected). Two outstanding forms (patient portal not connected).
@@ -917,7 +917,7 @@ graph TB
         B1 --> D1["<b>70% Override<br/>Rate</b>"]
         
         %% 🔴 CRITICAL TRUST FAILURE
-        style D1 fill:#990000,stroke:#b71c1c,stroke-width:1px,color:#ffffff,rx:10,ry:10
+        style D1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
     end
     
     %% 🔵 TRANSITION — ADD TRANSPARENCY
@@ -945,7 +945,7 @@ graph TB
 
     %% FOOTER
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:none,color:#888888
+    style Copyright fill:none,stroke:none,color:#333333
 ```
 
 Echo's initial agent provided recommendations without explanation. Physician query: "Treatment options for Patient 10243's Type 2 diabetes." Agent response: "Consider Ozempic (semaglutide) as first-line therapy." Physician question: "Why Ozempic specifically?" Agent: [no explanation available]. Physician override: prescribes metformin instead (standard first-line per institutional protocol).

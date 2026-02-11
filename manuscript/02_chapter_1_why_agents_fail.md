@@ -75,8 +75,8 @@ graph LR
     
     style BUILT fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
     style B1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style GAP fill:#fff9e6,stroke:#f2d3a7,stroke-width:1px,color:#e65100,rx:20,ry:20
-    style G1 fill:#ffefd1,stroke:#ffefd1,stroke-width:1px,color:#e65100,rx:10,ry:10
+    style GAP fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
+    style G1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
     style NEED fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
     style N1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
 
@@ -173,7 +173,7 @@ graph TB
     style RESULT fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
 
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:none,color:#999999
+    style Copyright fill:none,stroke:none,color:#333333
 ```
 
 *Source: Deloitte TrustID® Workforce AI Report Q3 2025. Trust levels tracked monthly Feb-July 2025, showing accelerated decline for agentic AI (autonomous decision-making) vs general GenAI (human-supervised generation).*
@@ -440,7 +440,7 @@ graph LR
     style sw3 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
     style prog3 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
     style infra3 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style Copyright fill:none,stroke:none,color:#888888
+    style Copyright fill:none,stroke:none,color:#333333
 
 ```
 
@@ -510,9 +510,9 @@ graph TB
     style gap fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
     style result fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
     style SOLUTION fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style transform fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style transform fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
     style delivers fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style Copyright fill:none,stroke:none,color:#888888
+    style Copyright fill:none,stroke:none,color:#333333
 
 ```
 
@@ -592,7 +592,7 @@ graph LR
     style SEMANTIC fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
     style ABAC fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
     CR["<b>© 2025 Colaberry Inc.</b>"]
-    style CR fill:none,stroke:none,color:#888888
+    style CR fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
 ```
 
 **INPACT™ Need Fulfillment: BI Era vs Agent Era**
@@ -653,10 +653,10 @@ graph TB
     style P1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
     style P2 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
     style P3 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style outcome fill:#fff9e6,stroke:#f2d3a7,stroke-width:1px,color:#e65100,rx:20,ry:20
-    style SCORE fill:#fff9e6,stroke:none,color:#e65100,rx:10,ry:10
-    style DECISION fill:#f57c00,stroke:none,color:#ffffff,rx:10,ry:10
-    style Copyright fill:none,stroke:none,color:#888888
+    style outcome fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
+    style SCORE fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
+    style DECISION fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
+    style Copyright fill:none,stroke:none,color:#333333
 
 ```
 
