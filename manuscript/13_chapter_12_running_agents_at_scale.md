@@ -46,12 +46,12 @@ graph LR
     
     BEFORE --> TRANSFORM --> AFTER
     
-    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
-    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style B1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style T1 fill:#f5f5f5,stroke:#666666,color:#333333
-    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style BEFORE fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
+    style TRANSFORM fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
+    style AFTER fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style B1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+    style T1 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
+    style A1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
 
 ```
 
@@ -122,15 +122,15 @@ graph LR
     ARCH --> READY
     GOALS --> READY
     
-    style INPACT fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
-    style ARCH fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style GOALS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style I1 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style A1 fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style G1 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style READY fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style Note fill:#f5f5f5,stroke:#999999,color:#666666
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style INPACT fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style ARCH fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
+    style GOALS fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style I1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style A1 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
+    style G1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style READY fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style Note fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style Copyright fill:none,stroke:none,color:#333333
 
 ```
 
@@ -342,17 +342,17 @@ graph LR
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
-    style DEVELOP fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
-    style TEST fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style DEPLOY fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#880e4f
-    style MONITOR fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style OPTIMIZE fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c
-    style D1 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style T1 fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style P1 fill:#f8bbd9,stroke:#c2185b,color:#880e4f
-    style M1 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style O1 fill:#e1bee7,stroke:#7b1fa2,color:#4a148c
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style DEVELOP fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style TEST fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
+    style DEPLOY fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style MONITOR fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style OPTIMIZE fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style D1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style T1 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
+    style P1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style M1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style O1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style Copyright fill:none,stroke:none,color:#333333
 ```
 
 ---
@@ -704,19 +704,19 @@ graph LR
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
-    style P1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style P2 fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style P3 fill:#fff9c4,stroke:#f9a825,stroke-width:2px,color:#f57f17
-    style P4 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
-    style P5 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style P6 fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c
-    style D fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style T fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style M fill:#fff9c4,stroke:#f9a825,color:#f57f17
-    style C fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style R fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style L fill:#e1bee7,stroke:#7b1fa2,color:#4a148c
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style P1 fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
+    style P2 fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
+    style P3 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style P4 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style P5 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style P6 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style D fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+    style T fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
+    style M fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style C fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style R fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style L fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style Copyright fill:none,stroke:none,color:#333333
 ```
 
 **Phase 1: DETECT**
@@ -883,17 +883,17 @@ graph LR
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
-    style MON fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
-    style TUE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style WED fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style THU fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style FRI fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c
-    style M fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style T fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style W fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style H fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style F fill:#e1bee7,stroke:#7b1fa2,color:#4a148c
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style MON fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style TUE fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
+    style WED fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
+    style THU fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style FRI fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style M fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style T fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+    style W fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
+    style H fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style F fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style Copyright fill:none,stroke:none,color:#333333
 ```
 
 **The Five-Day Cycle**
@@ -1039,14 +1039,14 @@ C1 --> RESULT["<b>Months/Years → 90 Days</b><br/><b>All Three Pillars</b>"]
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
-    style PLATFORM fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style C1 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style C2 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style C3 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style C4 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style C5 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style RESULT fill:#c8e6c9,stroke:#388e3c,stroke-width:3px,color:#1b5e20
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style PLATFORM fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style C1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style C2 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style C3 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style C4 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style C5 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style RESULT fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style Copyright fill:none,stroke:none,color:#333333
 ```
 
 **Five Core Components**
