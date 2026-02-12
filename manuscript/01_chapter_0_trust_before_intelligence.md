@@ -4,7 +4,7 @@
 
 *"Fix this in 90 days or we're shelving AI."*
 
-Dr. Arun Raj didn't raise his voice. He didn't need to. The Echo Health board chair had spent fifteen years building businesses, and he'd learned that the quietest statements carry the most weight. Across the boardroom table, Sarah Cedao,Echo's CTO,understood exactly what those twelve words meant: her career was on a ninety-day countdown.
+Dr. Arun Raj didn't raise his voice. He didn't need to. The Echo Health board chair had spent fifteen years building businesses, and he'd learned that the quietest statements carry the most weight. Across the boardroom table, Sarah Cedao, Echo's CTO, understood exactly what those twelve words meant: her career was on a ninety-day countdown.
 
 **Key Takeaway:** Understanding the Architecture of Trust - three integrated pillars that separate the 5% who succeed from the 95% who fail
 
@@ -349,7 +349,7 @@ This architecture rests on three pillars working in harmony. Each pillar support
 
 > **TRUSTED AGENTS = INPACT™ + 7-Layer Architecture + GOALS™**
 
-This equation captures the book's thesis. Chapters 1-2 define INPACT™ - what agents need. Chapters 3-6 construct the 7-Layer Architecture - how to build it. Chapters 7-8 establish GOALS™ - how to sustain it. By Chapter 8, Echo proves all three.
+This equation captures the book's thesis. Chapters 1-2 define INPACT™ — what agents need. Chapters 4-6 construct the 7-Layer Architecture — how to build it. Chapter 7 establishes GOALS™ — how to sustain it. By Chapter 8, Echo proves all three.
 
 **Echo's transformation proves the architecture works:**
 
@@ -367,8 +367,8 @@ From infrastructure chaos to agent-ready in 10 weeks. Not because they found a m
 The remainder of this book builds this architecture, pillar by pillar:
 
 - **Chapters 1-3** establish the foundation - why infrastructure readiness matters, what INPACT™ measures, how the BI→Agent transformation unfolds
-- **Chapters 4-7** construct the second pillar layer by layer - the complete 7-Layer Architecture from storage to orchestration
-- **Chapters 8-10** build the third pillar - GOALS™ operational framework, assessment methodology, and 90-day execution roadmap
+- **Chapters 4-6** construct the second pillar layer by layer - the complete 7-Layer Architecture from storage to orchestration
+- **Chapter 7** builds the third pillar - GOALS™ operational framework; **Chapters 8-10** provide assessment methodology and the 90-day execution roadmap
 - **Chapters 11-12** complete the architecture - technology selection and production operations
 
 Sarah Cedao needed an architecture. Chapter 1 shows you why infrastructure isn't ready, setting up the need for the Architecture of Trust that transforms chaos into agent-ready infrastructure in 90 days.

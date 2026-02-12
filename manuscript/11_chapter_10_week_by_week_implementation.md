@@ -148,19 +148,19 @@ graph LR
     subgraph JOURNEY["90-DAY TRANSFORMATION"]
         direction LR
         subgraph PHASE1["PHASE 1: FOUNDATION"]
-            P1["Weeks 1-4<br/>L1 Storage +<br/> L2 Data Fabric<br/>$350-550K · +10-15 pts"]
+            P1["Weeks 1-4<br/>L1 Storage +<br/> L2 Data Fabric<br/>$80K-550K · +10-15 pts"]
         end
-        
+
         subgraph PHASE2["PHASE 2: INTELLIGENCE"]
-            P2["Weeks 5-7<br/>L3 Semantic +<br/> L4 Retrieval<br/>$300-450K · +20-25 pts"]
+            P2["Weeks 5-7<br/>L3 Semantic +<br/> L4 Retrieval<br/>$60K-450K · +20-25 pts"]
         end
-        
+
         subgraph PHASE3["PHASE 3: TRUST"]
-            P3["Weeks 8-10<br/>L5-L6-L7<br/>Governance + Orchestration<br/>$80-400K · +15-20 pts"]
+            P3["Weeks 8-10<br/>L5-L6-L7<br/>Governance + Orchestration<br/>$30K-400K · +15-20 pts"]
         end
-        
+
         subgraph PHASE4["PHASE 4: OPERATIONS"]
-            P4["Weeks 11-12<br/>Validation +<br/> GOALS™<br/>$40-80K · +2-5 pts"]
+            P4["Weeks 11-12<br/>Validation +<br/> GOALS™<br/>$20K-80K · +2-5 pts"]
         end
     end
     

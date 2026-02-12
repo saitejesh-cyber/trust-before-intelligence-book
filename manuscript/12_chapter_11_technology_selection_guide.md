@@ -318,7 +318,7 @@ Partnering makes sense when:
 
 This section provides selection criteria for each of the seven architecture layers. For each layer, you'll find: the purpose and INPACT™ dimensions to prioritize, minimum requirements and questions to ask vendors, red flags that eliminate vendors, and subcategories to evaluate.
 
-> **📚 For specific vendor comparisons:** Use the **Vendor Selector at trustbeforeintelligence.ai/tools** for personalized recommendations based on your context.
+> **📚 For specific vendor comparisons:** Use the **Vendor Advisor at trustbeforeintelligence.ai/tools** for personalized recommendations based on your context.
 
 **Figure 11.4: The 7-Layer Architecture Technology Stack**
 
@@ -793,7 +793,7 @@ The methodology doesn't guarantee perfect selections. It prevents predictable mi
 
 Echo's final technology choices demonstrate the methodology in action. Every vendor passed the three-pillar test.
 
-> **Note:** Echo's choices reflect their specific context (healthcare, $1.23M budget, 12-week timeline). Your selections will differ based on your constraints. For detailed vendor comparisons, use the Vendor Selector tool.
+> **Note:** Echo's choices reflect their specific context (healthcare, $1.23M budget, 12-week timeline). Your selections will differ based on your constraints. For detailed vendor comparisons, use the Vendor Advisor tool.
 
 **Figure 11.5: Echo's Complete Technology Stack**
 
@@ -839,7 +839,7 @@ graph LR
 
 **Echo's Selection Principles:** (1) Managed over self-hosted, (2) Healthcare-first (BAA required), (3) Integration-proven over best-in-class, (4) Cost-optimized for Growth tier.
 
-**Echo's Results:** Completed under budget ($992K of $1.23M), achieved INPACT™ 89/100 and GOALS™ 21/25, went live in 12 weeks. *(Use the Stack Builder and Vendor Selector at trustbeforeintelligence.ai/tools to plan your investment and select vendors.)*
+**Echo's Results:** Completed under budget ($992K of $1.23M), achieved INPACT™ 89/100 and GOALS™ 21/25, went live in 12 weeks. *(Use the Stack Builder and Vendor Advisor at trustbeforeintelligence.ai/tools to plan your investment and select vendors.)*
 
 ---
 
@@ -866,7 +866,7 @@ Chapter 12 completes your journey with MLOps practices for versioning and testin
 
 ## Online Tools
 
-Interactive tools and downloadable templates supporting this chapter are available at **trustbeforeintelligence.ai/tools**, including the Vendor Selector, Stack Builder, Three-Pillar RFP Template, and POC Test Plan Template.
+Interactive tools and downloadable templates supporting this chapter are available at **trustbeforeintelligence.ai/tools**, including the Vendor Advisor, Stack Builder, Three-Pillar RFP Template, and POC Test Plan Template.
 
 ---
 

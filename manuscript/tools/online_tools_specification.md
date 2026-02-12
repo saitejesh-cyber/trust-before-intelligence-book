@@ -19,8 +19,8 @@
 | Tool | Source | Type |
 |------|--------|------|
 | **INPACT™ Assessment** | 36-question assessment | Interactive scoring |
-| **Build Your Stack Tool** | Layer gap analysis | Interactive web app |
-| **Vendor Selector** | Vendor knowledge base | Conversational AI |
+| **Stack Builder** | Layer gap analysis | Interactive web app |
+| **Vendor Advisor** | Vendor knowledge base | Conversational AI |
 | **90-Day Tracker** | Chapter 10 + Day Zero | Web app with 8 tabs |
 | **Compliance Navigator** | Regulatory frameworks | Interactive assessment |
 
@@ -40,8 +40,8 @@
 |----------|------|--------|--------------|
 | **1** | INPACT™ Assessment (36-Q) | Web form → PDF | Required |
 | **2** | GOALS™ Readiness Checker (30-Q) | Web form → PDF | Required |
-| **3** | Build Your Stack Tool | Interactive web app | Required |
-| **4** | Vendor Selector | Conversational AI | Required |
+| **3** | Stack Builder | Interactive web app | Required |
+| **4** | Vendor Advisor | Conversational AI | Required |
 | **5** | 90-Day Implementation Tracker | Web app (8 tabs: Day Zero + Weeks 1-12) | Required |
 | **6** | Compliance Navigator | Interactive assessment (30 categories) | Optional |
 | **7** | Figures Gallery | Searchable image gallery | None |
@@ -154,7 +154,7 @@ See: `tools/web_tools/web_form_goals_readiness_checker.md`
 
 ---
 
-## Tool 3: Build Your Stack Tool (PRIORITY #3)
+## Tool 3: Stack Builder (PRIORITY #3)
 
 ### Purpose
 Personalized stack gap analysis - users input what they have, get recommendations for what they need.
@@ -174,14 +174,14 @@ Personalized stack gap analysis - users input what they have, get recommendation
    - Prioritized build order
    - Estimated investment by layer
    - Integration considerations
-   - "Next: Use Vendor Selector to choose specific products"
+   - "Next: Use Vendor Advisor to choose specific products"
 
 ### Key Differentiator
 Shows users what they DON'T need to buy (layers already covered) vs what they DO need. Saves money and prevents over-purchasing.
 
 ---
 
-## Tool 4: Vendor Selector (PRIORITY #4)
+## Tool 4: Vendor Advisor (PRIORITY #4)
 
 ### Purpose
 Living advisory tool that helps users select vendors for each layer. Unlike static comparison tables, this chatbot:
@@ -207,9 +207,9 @@ Living advisory tool that helps users select vendors for each layer. Unlike stat
    - "How does Pinecone compare to Weaviate for real-time updates?"
    - "What about Chroma for a POC?"
 
-### Synergy with Build Your Stack
-- Build Your Stack identifies gaps → Chatbot helps select specific vendors
-- "Build Your Stack says you need Layer 3. Let me help you choose a semantic layer product."
+### Synergy with Stack Builder
+- Stack Builder identifies gaps → Chatbot helps select specific vendors
+- "Stack Builder says you need Layer 3. Let me help you choose a semantic layer product."
 
 ### Output: Vendor Evaluation Scorecard
 Users can request a PDF scorecard comparing their shortlisted vendors:
@@ -359,7 +359,7 @@ In addition to interactive tools, the following templates are available for down
 - Role (required)
 - Industry (optional)
 
-**Interactive Tools (Build Your Stack, Vendor Chatbot):**
+**Interactive Tools (Stack Builder, Vendor Chatbot):**
 - Email (required)
 
 **Downloadable Templates:**
@@ -382,11 +382,11 @@ In addition to interactive tools, the following templates are available for down
 - Basic analytics
 
 ### Phase 2: Stack Tools (Month 3-4)
-- Build Your Stack Tool
+- Stack Builder
 - 90-Day Tracker (with integrated Day Zero as Tab 0)
 
 ### Phase 3: Vendor Chatbot (Month 5-6)
-- Vendor Selector (conversational AI)
+- Vendor Advisor (conversational AI)
 - Knowledge base with quarterly update process
 - Compliance Navigator (30-category universal assessment)
 
@@ -402,7 +402,7 @@ In addition to interactive tools, the following templates are available for down
 | Metric | Target (6 months) |
 |--------|-------------------|
 | INPACT™ Assessment completions | 1,000 |
-| Build Your Stack analyses | 500 |
+| Stack Builder analyses | 500 |
 | Vendor Chatbot conversations | 2,000 |
 | Email captures (total) | 3,000 |
 | Template downloads | 1,500 |

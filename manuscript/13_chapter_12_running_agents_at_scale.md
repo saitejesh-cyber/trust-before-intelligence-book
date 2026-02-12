@@ -560,8 +560,6 @@ Your results will vary based on query volume, complexity distribution, and cachi
 
 ---
 
----
-
 ## Part 3: Monitoring & Incident Response
 
 Production agents will fail. Databases go down. LLM APIs timeout. Policies misconfigure. The question isn't whether incidents occur. It's how quickly you detect, respond, and recover. This section establishes monitoring foundations and incident response processes for production operations.
