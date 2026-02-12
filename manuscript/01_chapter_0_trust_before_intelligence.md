@@ -349,7 +349,7 @@ This architecture rests on three pillars working in harmony. Each pillar support
 
 > **TRUSTED AGENTS = INPACT™ + 7-Layer Architecture + GOALS™**
 
-This equation captures the book's thesis. Chapters 1-2 define INPACT™ — what agents need. Chapters 4-6 construct the 7-Layer Architecture — how to build it. Chapter 7 establishes GOALS™ — how to sustain it. By Chapter 8, Echo proves all three.
+This equation captures the book's thesis. Chapters 1-2 define INPACT™ - what agents need. Chapters 4-6 construct the 7-Layer Architecture - how to build it. Chapter 7 establishes GOALS™ - how to sustain it. By Chapter 8, Echo proves all three.
 
 **Echo's transformation proves the architecture works:**
 

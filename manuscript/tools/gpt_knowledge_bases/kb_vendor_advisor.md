@@ -284,7 +284,7 @@ graph TB
 
 **Figure 2: Three Budget Tiers for 90-Day Implementation**
 
-Budget tiers represent different approaches to building agent-ready infrastructure. Tier 1 optimizes for cost with open-source tools. Tier 2 (recommended) balances managed services with reasonable costs—ideal for regulated industries. Tier 3 provides enterprise-grade everything for organizations at scale.
+Budget tiers represent different approaches to building agent-ready infrastructure. Tier 1 optimizes for cost with open-source tools. Tier 2 (recommended) balances managed services with reasonable costs - ideal for regulated industries. Tier 3 provides enterprise-grade everything for organizations at scale.
 
 ---
 

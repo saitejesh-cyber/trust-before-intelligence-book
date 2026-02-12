@@ -603,7 +603,7 @@ Sarah's team had the blueprint. Seven gaps mapped to seven layers. Four phases s
 
 - **Chapters 4-6** build the seven layers systematically from overnight batch to sub-second streaming, from 40% query accuracy to 87%, from HIPAA violations to zero incidents, from isolated pilots to production deployment.
 
-- **Chapter 7** introduces GOALS™ — how to measure operational success.
+- **Chapter 7** introduces GOALS™ - how to measure operational success.
 
 - **Chapters 9-10** provide the 90-day implementation roadmap.
 
