@@ -35,7 +35,7 @@ graph LR
     
     subgraph WITH["WITH INPACT™"]
         direction TB
-        I1["I — Instant<br/>Under 2 seconds<br/><br/>N — Natural<br/>97% comprehension<br/><br/>P — Permitted<br/>Dynamic access<br/><br/>A — Adaptive<br/>Learns from feedback<br/><br/>C — Contextual<br/>Cross-system aware<br/><br/>T — Transparent<br/>Full audit trail</br></br><b>I trust it</b>"]
+        I1["I - Instant<br/>Under 2 seconds<br/><br/>N - Natural<br/>97% comprehension<br/><br/>P - Permitted<br/>Dynamic access<br/><br/>A - Adaptive<br/>Learns from feedback<br/><br/>C - Contextual<br/>Cross-system aware<br/><br/>T - Transparent<br/>Full audit trail<br/><br/><b>I trust it</b>"]
     end
     
     WITHOUT --> TRANSFORM --> WITH
@@ -116,7 +116,7 @@ When we analyzed these failures, six needs emerged. When any single need went un
 
 Tony Robbins built an empire on one insight: humans have six core needs - significance, variety, certainty, growth, connection, and contribution. When fulfilled, humans flourish. When neglected, people stagnate.
 
-**AI agents follow the same pattern.** They don't need psychological fulfillment - they need architectural fulfillment. Agent six core needs - instant, natural, permitted, adaptive, contextual, and transparent. When fulfilled, Agents earn trust. When neglected, agents are abandoned.
+**AI agents follow the same pattern.** They don't need psychological fulfillment - they need architectural fulfillment. Agents' six core needs - instant, natural, permitted, adaptive, contextual, and transparent. When fulfilled, Agents earn trust. When neglected, agents are abandoned.
 
 **Figure 2.2: Human Needs to Agent Needs Parallel**
 
@@ -269,7 +269,7 @@ graph TB
 
 ### INPACT™ as Requirements Definition
 
-This chapter establishes INPACT™ as the first and foundational pillar of the Architecture of Trust. Every architectural decision in Chapters 4-7 flows from these six needs.
+This chapter establishes INPACT™ as the first and foundational pillar of the Architecture of Trust. Every architectural decision in Chapters 4-6 flows from these six needs.
 
 **The framework provides:**
 
@@ -281,7 +281,7 @@ This chapter establishes INPACT™ as the first and foundational pillar of the A
 
 **Validation criteria** establishing clear thresholds of 1-6 scoring scale per dimension, 86/100 minimum for agent readiness.
 
-Every one of the six needs are interconnected through multiple layers of architecture. For example, Instant (I) requires real-time streaming, query optimization, and caching, Natural (N) demands semantic layers, embedding models, and vector databases. No layer solves any need alone.
+Every one of the six needs is interconnected through multiple layers of architecture. For example, Instant (I) requires real-time streaming, query optimization, and caching, Natural (N) demands semantic layers, embedding models, and vector databases. No layer solves any need alone.
 
 ### How INPACT™ Assessment Works
 
@@ -1039,7 +1039,7 @@ Traditional frameworks focus on AI model quality, prompt engineering, or RAG opt
 - **Diagnostic:** Reveals where infrastructure fails agent needs
 - **Prioritized:** Dependencies determine optimal sequence
 - **Measurable:** 1-6 scoring enables gap tracking
-- **Actionable:** Maps to 7-layer architecture (Chapters 4-7)
+- **Actionable:** Maps to 7-layer architecture (Chapters 4-6)
 
 **INPACT™ is not:**
 - Model selection guidance (choose GPT-4 vs Claude vs Llama)
@@ -1053,9 +1053,9 @@ Those topics matter. But they assume infrastructure readiness. INPACT™ establi
 
 **Chapter 2 established Pillar 1:** What agents need (INPACT™ six needs).
 
-**Chapters 4-7 establish Pillar 2:** How to build infrastructure fulfilling those needs (7-layer architecture built across four chapters).
+**Chapters 4-6 establish Pillar 2:** How to build infrastructure fulfilling those needs (7-layer architecture built across three chapters).
 
-**Chapter 8 establishes Pillar 3:** How to measure operational success (GOALS™ operational framework).
+**Chapter 7 establishes Pillar 3:** How to measure operational success (GOALS™ operational framework).
 
 **Together, the three pillars form The Architecture of Trust**, an integrated system ensuring agents operate reliably, compliantly, and effectively in production environments.
 

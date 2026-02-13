@@ -560,8 +560,6 @@ Your results will vary based on query volume, complexity distribution, and cachi
 
 ---
 
----
-
 ## Part 3: Monitoring & Incident Response
 
 Production agents will fail. Databases go down. LLM APIs timeout. Policies misconfigure. The question isn't whether incidents occur. It's how quickly you detect, respond, and recover. This section establishes monitoring foundations and incident response processes for production operations.
@@ -1219,53 +1217,53 @@ Trust before intelligence. Architecture before agents. The three pillars are you
 
 ---
 
-## References
+## Further Reading
 
-**Academic Research (Tier 1)**
+**Academic Research**
 
-[1] Bayram, F., Ahmed, B., & Kassler, A. (2022). "From Concept Drift to Model Degradation: An Overview on Performance-Aware Drift Detectors." *Scientific Reports*, Nature. Study of 128 (model, dataset) pairs observed temporal model degradation in 91% of cases. https://www.nature.com/articles/s41598-022-15245-z (Accessed November 2025)
+- Bayram, F., Ahmed, B., & Kassler, A. (2022). "From Concept Drift to Model Degradation: An Overview on Performance-Aware Drift Detectors." *Scientific Reports*, Nature. https://www.nature.com/articles/s41598-022-15245-z
 
-[2] Sculley, D., Holt, G., Golovin, D., et al. (2015). "Hidden Technical Debt in Machine Learning Systems." *Advances in Neural Information Processing Systems (NeurIPS)*. Foundation paper on MLOps technical debt. https://papers.nips.cc/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html (Accessed November 2025)
+- Sculley, D., Holt, G., Golovin, D., et al. (2015). "Hidden Technical Debt in Machine Learning Systems." *Advances in Neural Information Processing Systems (NeurIPS)*. https://papers.nips.cc/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html
 
-[3] Beyer, B., Jones, C., Petoff, J., & Murphy, N. R. (2016). "Site Reliability Engineering: How Google Runs Production Systems." *O'Reilly Media*. Foundation for SLA/SLO/SLI framework. https://sre.google/sre-book/table-of-contents/ (Accessed November 2025)
+- Beyer, B., Jones, C., Petoff, J., & Murphy, N. R. (2016). "Site Reliability Engineering: How Google Runs Production Systems." *O'Reilly Media*. https://sre.google/sre-book/table-of-contents/
 
-[4] Kamel Rahimi, A., et al. (2024). "Implementing AI in Hospitals to Achieve a Learning Health System: Systematic Review of Current Enablers and Barriers." *Journal of Medical Internet Research*, 26:e49655. Peer-reviewed systematic review of healthcare AI implementation challenges. https://www.jmir.org/2024/1/e49655 (Accessed November 2025)
+- Kamel Rahimi, A., et al. (2024). "Implementing AI in Hospitals to Achieve a Learning Health System." *Journal of Medical Internet Research*, 26:e49655. https://www.jmir.org/2024/1/e49655
 
-[5] Asai, A., Wu, Z., Wang, Y., et al. (2024). "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection." *International Conference on Learning Representations (ICLR)*. Self-reflective RAG for improved accuracy. https://arxiv.org/abs/2310.11511 (Accessed November 2025)
+- Asai, A., Wu, Z., Wang, Y., et al. (2024). "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection." *ICLR*. https://arxiv.org/abs/2310.11511
 
-**Government & Standards (Tier 2)**
+**Government & Standards**
 
-[6] National Institute of Standards and Technology. (2023). "NIST Cybersecurity Framework 2.0." Incident response and recovery guidance for critical infrastructure. https://www.nist.gov/cyberframework (Accessed November 2025)
+- National Institute of Standards and Technology. (2023). "NIST Cybersecurity Framework 2.0." https://www.nist.gov/cyberframework
 
-[7] National Institute of Standards and Technology. (2023). "AI Risk Management Framework (AI RMF 1.0)." NIST AI 100-1. Framework for AI system governance and monitoring. https://www.nist.gov/itl/ai-risk-management-framework (Accessed November 2025)
+- National Institute of Standards and Technology. (2023). "AI Risk Management Framework (AI RMF 1.0)." NIST AI 100-1. https://www.nist.gov/itl/ai-risk-management-framework
 
-[8] U.S. Department of Health & Human Services. (2023). "HIPAA Security Rule: Technical Safeguards." 45 CFR § 164.312 - Audit controls and access management requirements. https://www.hhs.gov/hipaa/for-professionals/security/laws-regulations/index.html (Accessed November 2025)
+- U.S. Department of Health & Human Services. (2023). "HIPAA Security Rule: Technical Safeguards." 45 CFR § 164.312. https://www.hhs.gov/hipaa/for-professionals/security/laws-regulations/index.html
 
-[9] ONC. (2024). "Health IT Certification Program." Interoperability standards for healthcare information technology. https://www.healthit.gov/topic/certification-ehrs/about-onc-health-it-certification-program (Accessed November 2025)
+- ONC. (2024). "Health IT Certification Program." https://www.healthit.gov/topic/certification-ehrs/about-onc-health-it-certification-program
 
-**MLOps & Model Management (Tier 4)**
+**MLOps & Model Management**
 
-[10] Semantic Versioning. (2024). "Semantic Versioning 2.0.0." Standard for version numbering in software development. https://semver.org/ (Accessed November 2025)
+- Semantic Versioning. (2024). "Semantic Versioning 2.0.0." https://semver.org/
 
-[11] LangSmith. (2024). "LLM Observability and Tracing Platform." Prompt versioning, A/B testing, and cost tracking for LLM applications. https://docs.langchain.com/langsmith/observability (Accessed November 2025)
+- LangSmith. (2024). "LLM Observability and Tracing Platform." https://docs.langchain.com/langsmith/observability
 
-[12] MLflow. (2024). "MLflow Model Registry." Open-source platform for ML lifecycle management. https://mlflow.org/docs/latest/model-registry.html (Accessed November 2025)
+- MLflow. (2024). "MLflow Model Registry." https://mlflow.org/docs/latest/model-registry.html
 
-**Monitoring & Observability (Tier 4)**
+**Monitoring & Observability**
 
-[13] Datadog. (2024). "Application Performance Monitoring." End-to-end APM with LLM-specific integrations and anomaly detection. https://www.datadoghq.com/product/apm/ (Accessed November 2025)
+- Datadog. (2024). "Application Performance Monitoring." https://www.datadoghq.com/product/apm/
 
-[14] Grafana Labs. (2024). "Grafana Dashboard Documentation." Open-source observability platform for metrics visualization. https://grafana.com/docs/grafana/latest/ (Accessed November 2025)
+- Grafana Labs. (2024). "Grafana Dashboard Documentation." https://grafana.com/docs/grafana/latest/
 
-[15] PagerDuty. (2024). "Incident Response Platform." On-call management and incident escalation automation. https://www.pagerduty.com/ (Accessed November 2025)
+- PagerDuty. (2024). "Incident Response Platform." https://www.pagerduty.com/
 
-[16] Evidently AI. (2024). "ML Monitoring and Observability Platform." Data drift detection and model quality monitoring. https://www.evidentlyai.com/ (Accessed November 2025)
+- Evidently AI. (2024). "ML Monitoring and Observability Platform." https://www.evidentlyai.com/
 
-**Agent Orchestration (Tier 4)**
+**Agent Orchestration**
 
-[17] LangChain. (2024). "LangGraph Human-in-the-Loop Patterns." HITL workflows, feedback loops, and escalation patterns for agent systems. https://docs.langchain.com/oss/python/langgraph/interrupts (Accessed November 2025)
+- LangChain. (2024). "LangGraph Human-in-the-Loop Patterns." https://docs.langchain.com/oss/python/langgraph/interrupts
 
-[18] Anthropic. (2024). "Model Context Protocol (MCP)." Open protocol for connecting AI assistants to data sources and tools. https://modelcontextprotocol.io/ (Accessed November 2025)
+- Anthropic. (2024). "Model Context Protocol (MCP)." https://modelcontextprotocol.io/
 
 ---
 

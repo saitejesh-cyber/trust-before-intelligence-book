@@ -228,7 +228,7 @@ graph TB
     
     Shift["<b>PARADIGM EVOLUTION</b>"]
     
-    subgraph new["<b>AGENT-ERA:AUTONOMOUS     SYSTEMS</b>"]
+    subgraph new["<b>AGENT-ERA: AUTONOMOUS SYSTEMS</b>"]
         direction LR
         N1["<b>Real-Time</b><br/>Sub-30s freshness"]
         N2["<b>Multi-Modal</b><br/>Vector + Graph + SQL"]
@@ -446,7 +446,7 @@ Walking to her car, Marcus caught up. "We just committed to transforming fifteen
 
 Sarah nodded. "Then let's start Monday."
 
-The blueprint existed in the form of the 7-Layer Architecture, which we'll explore in Chapters 4-7. **This wasn't invention, it was execution.**
+The blueprint existed in the form of the 7-Layer Architecture, which we'll explore in Chapters 4-6. **This wasn't invention, it was execution.**
 
 Sarah's private thought: **"We didn't fail. The world changed. BI-era infrastructure was excellent for its era. Agent-era requires agent-ready infrastructure. This isn't failure, it's evolution."**
 
@@ -635,13 +635,13 @@ Sarah's team had the blueprint. Seven gaps mapped to seven layers. Four phases s
 
 **What comes next:**
 
-- **Chapters 4-7** build the seven layers systematically from overnight batch to sub-second streaming, from 40% query accuracy to 87%, from HIPAA violations to zero incidents, from isolated pilots to production deployment.
+- **Chapters 4-6** build the seven layers systematically from overnight batch to sub-second streaming, from 40% query accuracy to 87%, from HIPAA violations to zero incidents, from isolated pilots to production deployment.
 
-- **Chapter 8** introduces GOALS™ how to measure operational success.
+- **Chapter 7** introduces GOALS™ - how to measure operational success.
 
 - **Chapters 9-10** provide the 90-day implementation roadmap.
 
-Seven gaps require seven layers. The next four chapters show exactly how Sarah transformed Echo's infrastructure from 28/100 to 86/100 and how you can do the same.
+Seven gaps require seven layers. The next three chapters show exactly how Sarah transformed Echo's infrastructure from 28/100 to 86/100 and how you can do the same.
 
 **From infrastructure that blocked agents to architecture that enables them.**
 

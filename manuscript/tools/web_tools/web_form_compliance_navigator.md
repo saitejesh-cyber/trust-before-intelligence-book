@@ -1,17 +1,17 @@
-# Compliance Checker  - Web Tool Specification
+# Compliance Navigator  - Web Tool Specification
 
 ## Overview
 
 **URL:** trustbeforeintelligence.ai/compliance
 **Purpose:** Interactive compliance assessment for AI agent deployments across 30 regulatory categories
-**Lead Capture:** Email required to access checker
+**Lead Capture:** Email required to access navigator
 **Knowledge Base:** 200+ frameworks from `kb_compliance_navigator.md`
 
 ---
 
 ## Key Differentiator
 
-Unlike single-industry compliance tools, this is a **universal compliance checker** that covers:
+Unlike single-industry compliance tools, this is a **universal compliance navigator** that covers:
 - **30 compliance categories** (not just healthcare)
 - **200+ regulatory frameworks** globally
 - **Industry-specific profiles** (Healthcare, Finance, Education, Government, etc.)
@@ -329,7 +329,7 @@ For each compliance gap, show which infrastructure layers provide remediation:
 
 > **For AI-Assisted Development (Claude Code, Cursor, Windsurf, etc.)**
 >
-> This section provides the technical specifications needed to build the Compliance Checker. It includes data models, rules engine, scoring algorithms, and profile-based filtering.
+> This section provides the technical specifications needed to build the Compliance Navigator. It includes data models, rules engine, scoring algorithms, and profile-based filtering.
 
 ---
 

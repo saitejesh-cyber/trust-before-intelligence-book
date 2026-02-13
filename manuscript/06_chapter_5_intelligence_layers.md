@@ -542,7 +542,7 @@ For data cataloging, Echo implemented [Alation](https://www.alation.com) to prov
 
 **Layer 3 primarily fulfills Natural (N):** Enabling business language understanding, "diabetes follow-up patients" translates to precise queries without SQL knowledge.
 
-> **📓 For technology evaluation criteria, use the Vendor Selector at trustbeforeintelligence.ai/tools.**
+> **📓 For technology evaluation criteria, use the Vendor Advisor at trustbeforeintelligence.ai/tools.**
 
 ### Operational Metrics
 

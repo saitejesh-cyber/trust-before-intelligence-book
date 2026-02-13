@@ -1,4 +1,4 @@
-# Vendor Selector  - Web Tool Specification
+# Vendor Advisor  - Web Tool Specification
 
 ## Overview
 

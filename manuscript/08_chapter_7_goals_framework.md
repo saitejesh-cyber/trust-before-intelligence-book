@@ -68,7 +68,7 @@ graph LR
 
 Six chapters brought us here.
 
-Chapter 0 introduced the Architecture of Trust: three pillars working together to transform infrastructure into agent-ready systems. Chapters 1-2 built the first pillar: INPACT™, defining the six needs agents require for trusted operation. Chapters 3-6 built the second pillar: the 7-Layer Architecture, the technical blueprint that fulfills those needs.
+Chapter 0 introduced the Architecture of Trust: three pillars working together to transform infrastructure into agent-ready systems. Chapters 1-2 built the first pillar: INPACT™, defining the six needs agents require for trusted operation. Chapters 4-6 built the second pillar: the 7-Layer Architecture, the technical blueprint that fulfills those needs.
 
 Last week, Echo Health completed that second pillar. Layer 7 orchestration went live. All seven layers are operational. The architecture, beautifully designed and expertly constructed, stood complete.
 
@@ -663,7 +663,7 @@ Model versioning with tested rollback capability (<15 minutes to revert) provide
 
 **Selection criteria:** Prioritize ABAC over RBAC for dynamic permissions, sub-10ms policy evaluation latency, comprehensive audit trails with business context, and integration with your cloud provider's identity systems.
 
-*For detailed vendor recommendations including ABAC policy engines and audit logging platforms, use the Vendor Selector at trustbeforeintelligence.ai/tools.*
+*For detailed vendor recommendations including ABAC policy engines and audit logging platforms, use the Vendor Advisor at trustbeforeintelligence.ai/tools.*
 
 ### Multi-Agent Governance Complexity
 
@@ -902,7 +902,7 @@ When resource constraints require sequencing, follow this prioritization: **O→
 
 **Selection criteria:** Choose platforms supporting trace IDs across all seven layers, model drift detection for embeddings and LLMs, data quality monitoring with automated alerting, and closed-loop feedback capabilities.
 
-*For detailed vendor recommendations including APM platforms and LLM observability tools, use the Vendor Selector at trustbeforeintelligence.ai/tools.*
+*For detailed vendor recommendations including APM platforms and LLM observability tools, use the Vendor Advisor at trustbeforeintelligence.ai/tools.*
 
 ### Echo's Observability Maturity Journey
 
@@ -994,7 +994,7 @@ What matters for GOALS™ is measuring and sustaining this performance over time
 
 **Selection criteria:** Prioritize sub-30-second data freshness for critical tables, semantic caching with >60% hit rates, parallel retrieval capabilities, and proven 10x scale capacity.
 
-*For detailed vendor recommendations including caching platforms and vector databases, use the Vendor Selector at trustbeforeintelligence.ai/tools.*
+*For detailed vendor recommendations including caching platforms and vector databases, use the Vendor Advisor at trustbeforeintelligence.ai/tools.*
 
 ### Understanding the Caching Hierarchy
 
@@ -1225,7 +1225,7 @@ Additionally, implement **human evaluation sampling**: review 100 random queries
 
 **Selection criteria:** Choose platforms with natural language query support, versioned metric definitions, entity resolution across systems, integration with your semantic storage (vector DB, knowledge graph), and collaborative curation workflows for domain experts.
 
-*For detailed vendor recommendations including semantic layer platforms and entity resolution tools, use the Vendor Selector at trustbeforeintelligence.ai/tools.*
+*For detailed vendor recommendations including semantic layer platforms and entity resolution tools, use the Vendor Advisor at trustbeforeintelligence.ai/tools.*
 
 ### Echo's Lexicon Maturity Journey
 
@@ -1365,7 +1365,7 @@ Silent data corruption is the most dangerous failure mode. When data becomes inc
 
 **Selection criteria:** Choose platforms supporting real-time quality monitoring (not just batch), automated anomaly detection with ML, quality gates that block bad data from reaching agents, and comprehensive lineage tracking to source systems.
 
-*For detailed vendor recommendations including data observability platforms and quality monitoring tools, use the Vendor Selector at trustbeforeintelligence.ai/tools.*
+*For detailed vendor recommendations including data observability platforms and quality monitoring tools, use the Vendor Advisor at trustbeforeintelligence.ai/tools.*
 
 ### The Quality Gate Architecture
 
@@ -1726,7 +1726,7 @@ graph TB
 
 Visit **trustbeforeintelligence.ai/tools** for:
 - **GOALS™ Readiness Checker** - Interactive 30-question assessment based on the checklist below, with PDF report and healthcare threshold validation
-- **Vendor Selector** - Personalized vendor recommendations for each layer
+- **Vendor Advisor** - Personalized vendor recommendations for each layer
 - **Compliance Navigator** - HIPAA and regulatory requirements mapped to GOALS™ dimensions
 - **Agent Diagnostics** - Failure mode detection and prevention strategies
 

@@ -45,12 +45,13 @@ The information in this book is provided for educational purposes only. The auth
 
 **Published by**
 
-Colaberry Press  
-Dallas, Texas
+Colaberry Press
+Boston, Massachusetts
 
 www.colaberry.com
 
-ISBN: [To be assigned]
+ISBN: 979-8-9948853-0-7 (paperback)
+ISBN: 979-8-9948853-1-4 (ebook)
 
 First Edition: 2026
 
@@ -74,7 +75,36 @@ Printed in the United States of America
 
 ## TABLE OF CONTENTS
 
-*[To be generated after all chapters are finalized]*
+**PART I: THE TRUST IMPERATIVE**
+
+- **Chapter 0:** Trust Before Intelligence
+- **Chapter 1:** Why 95% of Agent Pilots Fail
+- **Chapter 2:** The INPACT™ Framework
+- **Chapter 3:** From BI-Era to Agent-Era
+
+**PART II: THE 95% SOLUTION**
+
+- **Chapter 4:** The 95% Solution – Part 1 (Foundation Layers)
+- **Chapter 5:** The 95% Solution – Part 2 (Intelligence Layers)
+- **Chapter 6:** The 95% Solution – Part 3 (Transparency & Orchestration Layers)
+
+**PART III: TRUST IN PRACTICE**
+
+- **Chapter 7:** The GOALS™ Framework
+- **Chapter 8:** The Architecture of Trust in Action
+- **Chapter 9:** What's Your Score?
+
+**DIGITAL COMPANION**
+
+- **Chapter 10:** The AI Agent Readiness Playbook
+- **Chapter 11:** Build Your Tech Stack
+- **Chapter 12:** Running Agents at Scale
+
+**BACK MATTER**
+
+- Glossary
+- Index
+- About the Author
 
 ---
 
@@ -108,7 +138,19 @@ The full story begins in Chapter 0.
 
 ## ACKNOWLEDGMENTS
 
-*[To be added]*
+This book exists because of the generosity of many people who shared their time, expertise, and encouragement.
+
+**Thought Leaders and Influences.** Martin Fowler's writings on software architecture and enterprise patterns at ThoughtWorks have been a lasting influence on my thinking and career. The ideas in this book were also shaped by pioneers redefining what's possible with AI: Dario Amodei's work on AI safety, Andrej Karpathy's teachings on neural networks, Andrew Ng's democratization of machine learning, and Peter Diamandis's vision of abundance. Dr. John J. Sviokla's insights on AI strategy and business transformation helped bridge the gap between technical possibility and enterprise reality.
+
+**Professional Community.** I'm grateful to colleagues across organizations who challenged my thinking and refined these frameworks. Luda Kopeikina and the Women Applying AI community provided valuable perspectives on responsible AI adoption. Ashish Bhatia at Audible, Vivek Mukhatyar at Pfizer, and Ashwin Mittal at C5I offered real-world feedback from the front lines of enterprise AI. Paul Bilodeau and Aditya Mohan Sharma at SkillsProject contributed insights on workforce transformation. Shailu Tipparaju at Magna Academy helped sharpen the educational approach.
+
+**Harvard OPM.** My classmates at Harvard Business School's Owner/President Management program pushed me to think bigger. Special thanks to Mike Said, Ricardo De La Fuente, Michael Chen, Mustapha Shaikh, and Volodymyr Berezhniy for their ongoing support and candid feedback.
+
+**Beta Readers.** Rajkumar Kandukuri and Sudhakar MVK reviewed early drafts and provided invaluable suggestions that improved clarity and practical applicability.
+
+**The Colaberry Team.** This book reflects lessons learned building Colaberry alongside an exceptional team. John McBride, David Freni, David Lahme, Ali Muwwakkil, Karun Swaroop, Ramamohan Manamasa, Angie Mezo, Neha Sharma, Nate Taylor, and Prasad Ankepalli - thank you for your dedication to our mission and for tolerating my book-related distractions.
+
+To everyone who contributed to this work, named and unnamed: thank you.
 
 ---
 

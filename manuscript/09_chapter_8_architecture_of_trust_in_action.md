@@ -109,7 +109,8 @@ Marcus wrote out the Week 11 targets:
 - **Governance:** 3/5 to 4/5. Complete audit trails, reduce HITL escalation time to under 30 seconds, test model rollback.
 - **Observability:** 3/5 to 4/5. Mean time to detection under 5 minutes, enable explainability for EU AI Act.
 - **Availability:** Maintain 4/5. Validate the system handles 10x current load.
-- **Lexicon:** 2/5 to 4/5. Implement disambiguation, reduce clarification rate to under 10%.- **Solid:** 3/5 to 4/5. Fix cross-system PCP consistency issue.
+- **Lexicon:** 2/5 to 4/5. Implement disambiguation, reduce clarification rate to under 10%.
+- **Solid:** 3/5 to 4/5. Fix cross-system PCP consistency issue.
 
 "By Friday, we should be at twenty out of twenty-five," Sarah said. "Week 12, we push Governance to five and validate for production."
 

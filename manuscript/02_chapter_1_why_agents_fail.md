@@ -706,7 +706,7 @@ The database was cold, no indexes optimized for agent query patterns, no caching
 
 ---
 
-Pilot 1's failure wasn't about the AI, it was about eight-hour-old data  in a non-indexed data warehouse. Pilots 2 and 3 reveal different gaps, same root cause.
+Pilot 1's failure wasn't about the AI, it was about eight-hour-old data in a non-indexed data warehouse. Pilots 2 and 3 reveal different gaps, same root cause.
 
 ---
 
@@ -721,7 +721,7 @@ Pilot 1's failure wasn't about the AI, it was about eight-hour-old data  in a no
 **INPACT™ Analysis: Three Simultaneous Need Failures**
 
 **Natural (N) Need Failure:**  
-Echo's data warehouse used cryptic table names: `FCT_PTNT_ENCT`, `DIM_PRVDR_SPCLT`, `BRIDGE_DIAG_ICD10`. The agent had no semantic layer mapping "diabetes follow-up" to diagnosis codes E11.9, E11.65, E11.22. When physicians used shorthand like "uncontrolled DM2," the agent misinterpreted or missed it entirely. No business glossary. No entity resolution. No natural language mapping to technical schemas. (See the Vendor Selector at trustbeforeintelligence.ai/tools for semantic layer product recommendations.)
+Echo's data warehouse used cryptic table names: `FCT_PTNT_ENCT`, `DIM_PRVDR_SPCLT`, `BRIDGE_DIAG_ICD10`. The agent had no semantic layer mapping "diabetes follow-up" to diagnosis codes E11.9, E11.65, E11.22. When physicians used shorthand like "uncontrolled DM2," the agent misinterpreted or missed it entirely. No business glossary. No entity resolution. No natural language mapping to technical schemas. (See the Vendor Advisor at trustbeforeintelligence.ai/tools for semantic layer product recommendations.)
 
 **Contextual (C) Need Failure -Seven Missing Context Dimensions:**  
 
@@ -737,7 +737,7 @@ Agents require seven types of context to generate accurate, trustworthy outputs.
 - **History Context:** Missing - No 8-year A1C trends (couldn't reference "ongoing management" or medication adjustments)  
 - **Tooling Context:** Missing - Read-only, no actions (couldn't trigger prescription system or lab orders)
 
-**Result:** The agent operated with 86% context blindness. It couldn't see 8 years of patient history, care protocols, or physician documentation patterns. When Dr. Chen said "ongoing management," the agent needed History Context to see the progression. When discussing medication adjustments, it needed Business Context to reference diabetes care protocols. (See the Context Analyzer at trustbeforeintelligence.ai/tools for the complete context taxonomy.)
+**Result:** The agent operated with 86% context blindness. It couldn't see 8 years of patient history, care protocols, or physician documentation patterns. When Dr. Chen said "ongoing management," the agent needed History Context to see the progression. When discussing medication adjustments, it needed Business Context to reference diabetes care protocols. (See the Context Types at trustbeforeintelligence.ai/tools for the complete context taxonomy.)
 
 **Transparent (T) Need Failure:**  
 Legal reviewed 50 AI-generated notes and couldn't determine which data sources the agent accessed, why specific diagnoses were included/excluded, whether protected health information was handled appropriately, or what the audit trail showed. With no reasoning chain visibility and no complete audit logging, legal blocked production deployment. The risk of malpractice liability was too high.
@@ -774,7 +774,7 @@ LIMIT 50;
 
 No treatment relationship filter. No temporal context. No "minimum necessary" enforcement. **The infrastructure had no way to enforce the Permitted (P) need dynamically.**
 
-Forty-seven records. Fortyseven HIPAA violations. One record belonged to the adult daughter of a state legislator, a woman whose medical history had nothing to do with the query except shared insurance provider and diagnosis.
+Forty-seven records. Forty-seven HIPAA violations. One record belonged to the adult daughter of a state legislator, a woman whose medical history had nothing to do with the query except shared insurance provider and diagnosis.
 
 **The Permitted (P) Need Failure:**
 

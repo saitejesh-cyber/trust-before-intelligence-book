@@ -72,7 +72,7 @@ graph LR
 
 **Now we build.**
 
-*This chapter begins Part II: "The 95% Solution - Building the Seven Layers That Work." Chapters 4-7 construct the 7-Layer Architecture layer by layer, transforming diagnosis into deployment, problems into solutions, gaps into capabilities.*
+*This chapter begins Part II: "The 95% Solution - Building the Seven Layers That Work." Chapters 4-6 construct the 7-Layer Architecture layer by layer, transforming diagnosis into deployment, problems into solutions, gaps into capabilities.*
 
 **This chapter builds the foundation: Layers 1 and 2.**
 
@@ -182,7 +182,7 @@ Chapter 3 identified seven infrastructure gaps preventing agent deployment. Chap
 | **Gap 6** | Reasoning Observability | Layer 6: Observability | Chapter 6 |
 | **Gap 7** | Multi-Agent Coordination | Layer 7: Orchestration | Chapter 6 |
 
-**This Chapter's Scope:** Layers 1-2 build the foundation that enables intelligence (Chapters 5), governance (Chapter 6), and orchestration (Chapter 7).
+**This Chapter's Scope:** Layers 1-2 build the foundation that enables intelligence (Chapter 5), governance (Chapter 6), and orchestration (Chapter 6).
 
 **Specific Solutions:**
 
@@ -221,7 +221,7 @@ Echo Health Systems started from a familiar position: strong BI infrastructure f
 
 ### Foundation Layer Impact on INPACT™ (Chapter 4 Scope)
 
-| Dimension | Week 0 | Week 4<br/>(This Chapter) | Chapters 5-7 Target | Foundation Contribution |
+| Dimension | Week 0 | Week 4<br/>(This Chapter) | Chapters 5-6 Target | Foundation Contribution |
 |-----------|--------|---------------------------|---------------------|------------------------|
 | **Instant (I)** | 1/6 | **4/6** | 5/6 | Cache layer + optimized storage + real-time data |
 | **Natural (N)** | 2/6 | 2/6 | 5/6 | *Requires semantic layer (Chapter 5)* |
@@ -232,7 +232,7 @@ Echo Health Systems started from a familiar position: strong BI infrastructure f
 | **TOTAL** | **10/36** | **15/36** | **31/36** | **+5 points from foundation** |
 | **Percentage** | **28%** | **42%** | **86%** | **+14% (this chapter)** |
 
-**Key Insight:** Foundation layers (1-2) directly improve three dimensions: Instant, Adaptive, and Contextual. Natural, Permitted, and Transparent require intelligence and governance layers built in Chapters 5-7. Foundation provides the infrastructure that enables those improvements.
+**Key Insight:** Foundation layers (1-2) directly improve three dimensions: Instant, Adaptive, and Contextual. Natural, Permitted, and Transparent require intelligence and governance layers built in Chapters 5-6. Foundation provides the infrastructure that enables those improvements.
 
 ### Bridge from Chapter 3
 
@@ -242,7 +242,7 @@ Chapter 3's seven infrastructure gaps revealed the failures of BI-era architectu
 
 **Gap 2 (Real-Time Data):** Traditional BI refreshes overnight. Agents need the current state. Layer 2's CDC and streaming eliminates batch lag, providing <30 second freshness.
 
-Chapters 5-7 address the remaining five gaps (semantic understanding, intelligent retrieval, dynamic permissions, observability, orchestration). But those depend on foundation. You cannot build semantic understanding on stale data. You cannot implement intelligence without vector and graph storage. You cannot deploy governance without proper data access patterns.
+Chapters 5-6 address the remaining five gaps (semantic understanding, intelligent retrieval, dynamic permissions, observability, orchestration). But those depend on foundation. You cannot build semantic understanding on stale data. You cannot implement intelligence without vector and graph storage. You cannot deploy governance without proper data access patterns.
 
 **Foundation first. Intelligence second. Let's build.**
 
@@ -333,7 +333,7 @@ Sarah established the timeline:
 - **Week 1-2:** Layer 1 (Multi-Modal Storage) - 8 core categories deployed
 - **Week 3-4:** Layer 2 (Real-Time Data Fabric) - CDC and streaming operational  
 - **Weeks 5-7:** Intelligence layers (Chapter 5) - semantic, RAG, LLM + 3 more storage categories
-- **Weeks 8-10:** Governance and orchestration (Chapters 6-7) - ABAC, observability, first agent deployment
+- **Weeks 8-10:** Governance and orchestration (Chapter 6) - ABAC, observability, first agent deployment
 
 "Ten weeks from infrastructure chaos to agent-ready systems," Sarah said. "But only if we build the foundation right."
 
@@ -352,7 +352,7 @@ The team documented their constraints and boundaries within which technology dec
 |-------|-------|--------|-------|-------|
 | **Phase 1: Foundation** | 1-4 | 1-2 | **$470K** | Storage (8 categories) + Real-time data fabric |
 | **Phase 2: Intelligence** | 5-7 | 3-4 | **$380K** | *Details in Chapter 5* |
-| **Phase 3: Governance** | 8-10 | 5-6-7 | **$380K** | *Details in Chapters 6-7* |
+| **Phase 3: Governance** | 8-10 | 5-6-7 | **$380K** | *Details in Chapter 6* |
 
 **Phase 1 Allocation ($470K budget / $468K actual) - This Chapter:**
 - Layer 1 (Multi-Modal Storage - 8 categories): $288,000
@@ -360,7 +360,7 @@ The team documented their constraints and boundaries within which technology dec
 
 **Operational:** $24,600/month ($16,400 Layer 1 + $8,200 Layer 2)
 
-**Phase 2 and Phase 3** add intelligence-specific storage (Pinecone vector DB, semantic search index) and governance infrastructure. See Chapters 5-7 for detailed breakdowns.
+**Phase 2 and Phase 3** add intelligence-specific storage (Pinecone vector DB, semantic search index) and governance infrastructure. See Chapters 5-6 for detailed breakdowns.
 
 **Operational Costs** (separate from $1.23M implementation): Foundation layers require $24,600/month ongoing. *(Use the Stack Builder at trustbeforeintelligence.ai/tools to estimate your layer-by-layer investment.)*
 
@@ -374,7 +374,7 @@ The team documented their constraints and boundaries within which technology dec
 
 "These constraints eliminate 80% of technology options before we even evaluate," Sarah observed. "That's good. Decision paralysis kills projects. Clear constraints accelerate decisions."
 
-**For detailed technology selection criteria, product comparisons with INPACT™ + GOALS™ scoring, healthcare-specific guidance, and budget-tier recommendations, use the Vendor Selector at trustbeforeintelligence.ai/tools.**
+**For detailed technology selection criteria, product comparisons with INPACT™ + GOALS™ scoring, healthcare-specific guidance, and budget-tier recommendations, use the Vendor Advisor at trustbeforeintelligence.ai/tools.**
 
 The team was ready to build.
 
@@ -718,7 +718,7 @@ graph LR
 - 2 weeks deployment time (Week 1-2)
 - 6-8 hours deployment per category average
 
-**Technology Selection Note:** Echo's vendor selections (Pinecone, Neo4j, MongoDB, Tecton, etc.) reflect their specific constraints (Azure-first, HIPAA compliance, 4-week timeline). Your organization's optimal choices may differ based on cloud platform, budget tier, team expertise, and compliance requirements. For comprehensive vendor comparisons with INPACT™ + GOALS™ scoring, use the **Vendor Selector at trustbeforeintelligence.ai/tools.**
+**Technology Selection Note:** Echo's vendor selections (Pinecone, Neo4j, MongoDB, Tecton, etc.) reflect their specific constraints (Azure-first, HIPAA compliance, 4-week timeline). Your organization's optimal choices may differ based on cloud platform, budget tier, team expertise, and compliance requirements. For comprehensive vendor comparisons with INPACT™ + GOALS™ scoring, use the **Vendor Advisor at trustbeforeintelligence.ai/tools.**
 
 ---
 
@@ -747,7 +747,7 @@ graph LR
         CDC --> KAFKA --> PROCESS
     end
     
-    OUTCOME["<b>Layer 1 Storage</b><br/>↓<br/>Agents < 30s ReFresh"]
+    OUTCOME["<b>Layer 1 Storage</b><br/>↓<br/>Agents < 30s Refresh"]
     
     Copyright["© 2025 Colaberry Inc."]
     
@@ -795,7 +795,7 @@ Layer 2 solves this with three integrated components:
 **Why:** Durable message queue decouples event capture (CDC) from event processing (stream processing). Provides replay capability (30-day retention) for reprocessing historical events. Enables multiple consumers (real-time analytics, audit logging, agent inference) from a single event stream.
 
 **Echo's Implementation:**
-- ~70~ Kafka topics (one per source table)
+- ~70 Kafka topics (one per source table)
 - 6+ M events/day average (70 events/second sustained)
 - 30-day retention policy (~180GB  storage)
 - 3 consumer groups (real-time storage sync, audit trail, operational dashboard)
@@ -913,7 +913,7 @@ graph LR
 - 2 weeks deployment time (Week 3-4)
 - Primary bottleneck: Epic EHR CDC connector configuration (HL7 integration complexity)
 
-**Technology Selection Note:** Echo's real-time fabric choices (Debezium CDC, Confluent Cloud Kafka, Apache Flink on Databricks) reflect their Azure-first strategy and managed services preference. Alternative architectures include AWS-native (Kinesis + DMS), Google Cloud-native (Pub/Sub + Datastream), or open-source (self-hosted Kafka + Flink). For comprehensive CDC, streaming, and event processing vendor comparisons, use the **Vendor Selector at trustbeforeintelligence.ai/tools.**
+**Technology Selection Note:** Echo's real-time fabric choices (Debezium CDC, Confluent Cloud Kafka, Apache Flink on Databricks) reflect their Azure-first strategy and managed services preference. Alternative architectures include AWS-native (Kinesis + DMS), Google Cloud-native (Pub/Sub + Datastream), or open-source (self-hosted Kafka + Flink). For comprehensive CDC, streaming, and event processing vendor comparisons, use the **Vendor Advisor at trustbeforeintelligence.ai/tools.**
 
 ---
 
@@ -1118,7 +1118,7 @@ Sarah smiled. "We committed to phase-wise discipline. Foundation delivered. Inte
 | Component | Phase 1 Metrics |
 |-----------|-----------------|
 | **Storage (Layer 1)** | 8 foundation categories operational, graph database with about 850 relationships, time-series processing 450+K vitals/hour, lakehouse with Delta Lake |
-| **Real-Time (Layer 2)** | 40+ CDC tables, 6+M daily events, ~28s average freshness,  ~8.2s alert latency |
+| **Real-Time (Layer 2)** | 40+ CDC tables, 6+M daily events, ~28s average freshness, ~8.2s alert latency |
 | **Foundation Economics** | $4K/month warehouse consolidation savings, infrastructure ready for intelligence layer optimizations |
 | **INPACT™ Progress** | 28/100 → 42/100 (+14 points) |
 
