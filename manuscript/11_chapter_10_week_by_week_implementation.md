@@ -899,7 +899,7 @@ The frameworks are proven. The tracker is ready. Complete Day Zero at trustbefor
 |------|---------|--------------|
 | **Part 1** | Roadmap overview | Four phases with clear boundaries and checkpoints |
 | **Part 2** | Phase summaries | Foundation → Intelligence → Trust → Operations |
-| **Part 3** | Investment summary | $770K-$1.5M range, 400-600% 3-year ROI potential |
+| **Part 3** | Investment summary | $190K-$1.5M range, 400-600% 3-year ROI potential |
 | **Part 4** | Adaptation guidance | Customize based on your priority layers from Chapter 9 |
 | **Part 5** | Risk management | Phase gates, escalation framework |
 | **Part 6** | 90-Day Tracker | Eight tabs: Day Zero gate (Tab 0) + seven implementation tabs |

@@ -102,6 +102,7 @@ Printed in the United States of America
 
 **BACK MATTER**
 
+- INPACT™ Practitioner Reference
 - Glossary
 - Index
 - About the Author
@@ -140,7 +141,7 @@ The full story begins in Chapter 0.
 
 This book exists because of the generosity of many people who shared their time, expertise, and encouragement.
 
-**Thought Leaders and Influences.** Martin Fowler's writings on software architecture and enterprise patterns at ThoughtWorks have been a lasting influence on my thinking and career. The ideas in this book were also shaped by pioneers redefining what's possible with AI: Dario Amodei's work on AI safety, Andrej Karpathy's teachings on neural networks, Andrew Ng's democratization of machine learning, and Peter Diamandis's vision of abundance. Dr. John J. Sviokla's insights on AI strategy and business transformation helped bridge the gap between technical possibility and enterprise reality.
+**Thought Leaders and Influences.** Martin Fowler's writings on software architecture and enterprise patterns at ThoughtWorks have been a lasting influence on my thinking and career. The ideas in this book were also shaped by pioneers redefining what's possible with AI: Dario Amodei's work on AI safety, Andrej Karpathy's teachings on neural networks, Andrew Ng's democratization of machine learning, Peter Diamandis's vision of abundance, and Tony Robbins's principles on peak performance and organizational transformation. Dr. John J. Sviokla's insights on AI strategy and business transformation helped bridge the gap between technical possibility and enterprise reality.
 
 **Professional Community.** I'm grateful to colleagues across organizations who challenged my thinking and refined these frameworks. Luda Kopeikina and the Women Applying AI community provided valuable perspectives on responsible AI adoption. Ashish Bhatia at Audible, Vivek Mukhatyar at Pfizer, and Ashwin Mittal at C5I offered real-world feedback from the front lines of enterprise AI. Paul Bilodeau and Aditya Mohan Sharma at SkillsProject contributed insights on workforce transformation. Shailu Tipparaju at Magna Academy helped sharpen the educational approach.
 
