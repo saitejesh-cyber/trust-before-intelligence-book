@@ -1556,7 +1556,7 @@ Each GOALS™ dimension has documented failure patterns. Critically, each failur
 
 "This is the diagnostic power of three pillars working together," Marcus explained. "When we detect a GOALS™ failure, we immediately know which INPACT™ need is at risk and which layer to investigate. L1 failure? Check Layer 3 semantic infrastructure. Natural language understanding is degrading. S1 failure? Check Layer 1 storage. Adaptive capability is compromised by bad data."
 
-*Use the Agent Diagnostics tool at trustbeforeintelligence.ai/tools for failure mode detection and prevention strategies.*
+*Use the Trust Patterns tool at trustbeforeintelligence.ai/tools for failure mode detection and prevention strategies.*
 
 ### GOALS™ and Industry Standards
 
@@ -1728,7 +1728,8 @@ Visit **trustbeforeintelligence.ai/tools** for:
 - **GOALS™ Readiness Checker** - Interactive 30-question assessment based on the checklist below, with PDF report and healthcare threshold validation
 - **Vendor Advisor** - Personalized vendor recommendations for each layer
 - **Compliance Navigator** - HIPAA and regulatory requirements mapped to GOALS™ dimensions
-- **Agent Diagnostics** - Failure mode detection and prevention strategies
+- **Trust Patterns** - Failure mode detection and prevention strategies
+- **Figures Gallery** - High-resolution versions of all figures at trustbeforeintelligence.ai/figures
 
 ---
 

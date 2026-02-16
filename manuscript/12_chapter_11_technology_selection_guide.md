@@ -90,6 +90,8 @@ Every vendor evaluation follows three principles:
 - **Part 3:** Evaluation process (RFP templates, POC approach, contract negotiation)
 - **Part 4:** Applying the methodology (Echo's selection process as example)
 
+> **Note:** Budget ranges and discount percentages in this chapter are illustrative. Your actual pricing will vary based on vendor negotiations, deployment scale, and market conditions.
+
 ---
 
 ### 1.2 The Three-Pillar Vendor Test
@@ -866,7 +868,7 @@ Chapter 12 completes your journey with MLOps practices for versioning and testin
 
 ## Online Tools
 
-Interactive tools and downloadable templates supporting this chapter are available at **trustbeforeintelligence.ai/tools**, including the Vendor Advisor, Stack Builder, Three-Pillar RFP Template, and POC Test Plan Template.
+Interactive tools and downloadable templates supporting this chapter are available at **trustbeforeintelligence.ai/tools**, including the Vendor Advisor, Stack Builder, Three-Pillar RFP Template, and POC Test Plan Template. High-resolution versions of all figures are available in the **Figures Gallery** at trustbeforeintelligence.ai/figures.
 
 ---
 

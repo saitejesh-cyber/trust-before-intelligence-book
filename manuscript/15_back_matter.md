@@ -14,15 +14,21 @@ Ram is a Harvard Business School OPM fellow and holds a Master of Liberal Arts f
 
 ## DIGITAL COMPANION
 
-*[QR code and access instructions to be added]*
+*[Insert QR code linking to: trustbeforeintelligence.ai]*
 
-Access the digital companion at: **trustbeforeintelligence.ai**
+Scan the QR code or visit: **trustbeforeintelligence.ai**
 
 The digital companion includes:
 - **Chapters 10-12:** Implementation Roadmap, Technology Selection Guide, Running Agents at Scale
 - **Interactive Tools:** INPACT™ Assessment, GOALS™ Readiness Checker, Stack Builder, Vendor Advisor, 90-Day Tracker, Compliance Navigator
 - **Downloadable Templates:** All tracking spreadsheets and checklists from the book
 - **Figures Gallery:** High-resolution versions of all 112 figures at trustbeforeintelligence.ai/figures
+
+---
+
+## INPACT™ PRACTITIONER REFERENCE
+
+*See Appendix: INPACT™ Practitioner Reference for scoring rubrics, anti-patterns, and quick reference materials.*
 
 ---
 
@@ -43,6 +49,7 @@ Agno, DC
 Agent-Ready Architecture, definition, Ch 1, Ch 3, Ch 4, Ch 5, Ch 6
 Agentic AI, definition, Ch 0, Ch 1
 AI Governance, Ch 7
+APM (Application Performance Monitoring), Ch 6, DC
 AIXcelerator Platform, Ch 9, DC
 Alation, Ch 5
 Alerting Systems, Ch 2, Ch 4, Ch 6, Ch 7, DC
@@ -65,6 +72,7 @@ Azure SQL Database Hyperscale, Ch 4
 
 **B**
 
+BAA (Business Associate Agreement), Ch 5, Ch 11
 Bain AI Agent Survey, Ch 1
 Batch ETL, limitations of, Ch 0, Ch 1, Ch 3
 BI-Era Architecture, limitations of, Ch 0, Ch 1, Ch 3, Ch 4
@@ -88,6 +96,7 @@ Cohere embed-v3, Ch 5
 Cohere Rerank, Ch 2, Ch 5, DC
 Collibra, Ch 5
 Compliance. *See also* HIPAA; PCI-DSS; SOX; GLBA; FedRAMP
+Compliance Navigator Tool, Ch 7, DC
 Confidence Scoring, Ch 2, Ch 3, Ch 5, Ch 7, Ch 8
 Confluent Cloud, Ch 4
 Context Types, Seven, Ch 1
@@ -104,6 +113,7 @@ Data Lakehouse, Ch 2, Ch 3, Ch 4, Ch 5, DC
 Data Quality Gates, Ch 7, Ch 8
 Data Quality Score, DC
 Data Silos, Ch 0, Ch 1, Ch 2, Ch 8
+Day Zero Readiness, Ch 10, DC
 Datadog APM, Ch 6, DC
 DataHub, Ch 5
 Databricks, Ch 0, Ch 1, Ch 2, Ch 3, Ch 4, Ch 5, Ch 9, DC
@@ -132,6 +142,7 @@ Echo Health Systems Case Study
   - Production results, Ch 8
   - Assessment baseline, Ch 9
 Embedding Models, Ch 2, Ch 3, Ch 5, DC
+ePHI (Electronic Protected Health Information), Ch 6, Ch 7
 Entity Resolution, Ch 5, Ch 7, DC
 Epic EHR, Ch 4, Ch 5, Ch 6, DC
 ETL (Extract, Transform, Load), Ch 0, Ch 3, Ch 4
@@ -145,11 +156,13 @@ Explainability, Ch 1, Ch 2, Ch 6, Ch 7, Ch 8, DC
 Failure Rate, 95% pilot, Ch 0, Ch 1, Ch 2, Ch 3, Ch 4, Ch 5, Ch 6, Ch 7, Ch 8, DC
 Feature Store, Ch 4, Ch 5
 FDA (Clinical Decision Support Guidance), Ch 6
+Figures Gallery, Ch 7, Ch 11, DC
 Feedback Loops, Ch 0, Ch 1, Ch 2, Ch 3, Ch 7, DC
 FHIR (Fast Healthcare Interoperability Resources), Ch 5
 Financial Services (Industry Context), DC
 Fivetran, DC
 Foundation Layers (Layers 1-2), Ch 3, Ch 4, Ch 5, DC
+Four Phase Roadmap, Ch 10, DC
 Freshness SLA, Ch 5, Ch 8
 
 **G**
@@ -160,6 +173,7 @@ GOALS™ Framework - Governance, Ch 0, Ch 7, Ch 8, Ch 9, DC
 GOALS™ Framework - Lexicon, Ch 7, Ch 8, Ch 9, DC
 GOALS™ Framework - Observability, Ch 0, Ch 7, Ch 8, Ch 9, DC
 GOALS™ Framework - Solid, Ch 7, Ch 8, Ch 9, DC
+GDPR (General Data Protection Regulation), Ch 7
 Governance Layer (Layer 5), Ch 0, Ch 4, Ch 5, Ch 6
 GPT-4, Ch 0, Ch 1, Ch 2, Ch 5, Ch 6, DC
 Google SRE (Site Reliability Engineering), Ch 7, DC
@@ -258,6 +272,7 @@ Model Rollback, Ch 4, Ch 7, Ch 8, DC
 MongoDB Atlas, Ch 4
 Mount Sinai (Case Study), Ch 4
 MTTD (Mean Time to Detection), Ch 7, Ch 8
+MTTR (Mean Time to Recovery), Ch 7
 Multi-Agent Coordination, Ch 3, Ch 4, Ch 5, Ch 6, Ch 7, DC
 Multi-Modal Storage (11 categories), Ch 0, Ch 3, Ch 4, Ch 5, Ch 6, DC
 
@@ -270,6 +285,7 @@ Neo4j, Ch 4, Ch 5, Ch 7
 Neo4j Aura, Ch 4
 90-Day Implementation, Ch 0, Ch 1, Ch 2, Ch 3, Ch 4, Ch 5, Ch 7, Ch 8, Ch 9, DC
 NIST AI Risk Management Framework, Ch 6, Ch 7, DC
+NLU (Natural Language Understanding), Ch 2, Ch 5
 NPI (National Provider Identifier), Ch 5
 
 **O**
@@ -293,9 +309,11 @@ Patient Matching. *See* Entity Resolution
 PCI-DSS Compliance, DC
 Permitted (INPACT™ dimension), Ch 0, Ch 2, Ch 9
 PHI (Protected Health Information), Ch 6, Ch 7, DC
+Phase Gate Checkpoints, Ch 10, DC
 Phoenix, DC
 Pilot Failure Rate (95%), Ch 0, Ch 1, Ch 2, Ch 3, Ch 4, Ch 5, Ch 6, Ch 7, Ch 8, DC
 Pinecone, Ch 1, Ch 2, Ch 4, Ch 5, Ch 6, Ch 7, Ch 8, DC
+POC (Proof of Concept), Ch 11
 Policy Engine, Ch 2, Ch 3, Ch 6, Ch 7, Ch 8, DC
 Power BI, Ch 3
 Prior Authorization Agent, Ch 6, Ch 7, Ch 8
@@ -349,11 +367,12 @@ Seven Infrastructure Gaps, Ch 0, Ch 1, Ch 2, Ch 3, Ch 4, Ch 5, Ch 6, Ch 9, DC
 SLA (Service Level Agreement), Ch 5, DC
 SNOMED CT, Ch 5
 Snowflake, DC
+SOX (Sarbanes-Oxley Act), Ch 7
 Software 1.0/2.0/3.0 paradigms, Ch 1, Ch 3
 Solid (GOALS™ dimension), Ch 7, Ch 8, Ch 9, DC
 Spark, Ch 4
 SQL Server, Ch 0, Ch 1, Ch 2, Ch 3, Ch 4
-Stack Builder Tool, Ch 1, Ch 4, Ch 6, DC
+Stack Builder Tool, Ch 1, Ch 4, Ch 6, Ch 7, Ch 11, DC
 Stardog, Ch 5
 Storage Categories (11 types), Ch 4, Ch 6
 Stream Processing, Ch 4, DC
@@ -366,6 +385,7 @@ Synapse (Azure), Ch 4
 Tableau, Ch 3
 Three-Pillar Vendor Test, Ch 0, Ch 2, Ch 7, Ch 8, Ch 9, DC
 Tecton (Feature Store), Ch 4, Ch 5
+Technology Tracks (Commercial, Hybrid, Open-Source), Ch 10, DC
 Time-Series Database, Ch 4
 TopBraid, Ch 5
 Traceability, Ch 7
@@ -376,10 +396,13 @@ Trust Bands (scoring levels), Ch 9
 Trust Collapse (2025), Ch 0, Ch 1, Ch 2, Ch 7
 Trust Flywheel, Ch 7, Ch 8
 Trust, Operational Definition, Ch 0, Ch 1, Ch 2
+Trust Guide Tool, DC
+Trust Patterns Tool, Ch 7, DC
 TruLens, Ch 5
 
 **U**
 
+UAT (User Acceptance Testing), Ch 10
 Unity Catalog (Databricks), Ch 2
 Unstructured Data, Ch 3, Ch 4, Ch 6, DC
 Use Case Prioritization, Ch 1, Ch 3, Ch 4, Ch 6, Ch 7, DC
@@ -389,7 +412,7 @@ Use Case Prioritization, Ch 1, Ch 3, Ch 4, Ch 6, Ch 7, DC
 Vector Database, Ch 4, Ch 5, Ch 7, DC
 Vector Embeddings, Ch 2, Ch 3, Ch 4, Ch 5, Ch 6, Ch 7, DC
 Vector Search, Ch 3, Ch 5
-Vendor Advisor Tool, Ch 4, Ch 5, DC
+Vendor Advisor Tool, Ch 4, Ch 5, Ch 7, Ch 11, DC
 
 **W**
 

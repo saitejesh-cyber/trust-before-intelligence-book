@@ -273,9 +273,9 @@ Figure 3.2 captures this paradigm shift. The key differences are stark:
 | **Query interface** | Fixed dashboards, SQL | Natural language |
 | **Decision maker** | Human analysts | Autonomous agents |
 | **Access control** | Static RBAC | Dynamic ABAC |
-| **Failure impact** | Predictable exceptions. User waits, retries | Probabilistic errors.User loses trust, abandons |
+| **Failure impact** | Predictable exceptions. User waits, retries | Probabilistic errors. User loses trust, abandons |
 | **Observability** | Query logs, stack traces | Reasoning chain tracing |
-| **Learning Cycle** | Code changes (days-weeks) | In-context training (immediate)) |
+| **Learning Cycle** | Code changes (days-weeks) | In-context training (immediate) |
 
 
 BI thinking is batch, human-mediated, report-oriented. Agent thinking is real-time, autonomous, conversation-oriented. **The architecture must match the requirements.**

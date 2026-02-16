@@ -48,7 +48,11 @@ This glossary provides definitions for acronyms and key terms used throughout *T
 
 - **FDA:** Food and Drug Administration:U.S. federal agency responsible for protecting public health through regulation of food, drugs, medical devices, and AI/ML-based medical software.
 
+- **ePHI:** Electronic Protected Health Information:PHI that is created, stored, transmitted, or received electronically. Subject to HIPAA Security Rule technical safeguards including encryption, access controls, and audit logging.
+
 - **GenAI:** Generative Artificial Intelligence:AI systems capable of generating new content (text, images, code) based on patterns learned from training data.
+
+- **GDPR:** General Data Protection Regulation:European Union regulation on data protection and privacy, establishing requirements for consent, data minimization, and the right to be forgotten. Often applies to global organizations processing EU citizen data.
 
 - **GOALS™:** Governance, Observability, Availability, Lexicon, Solid:Colaberry's operational measurement framework for sustaining agent trust in production, measuring five dimensions of operational excellence.
 
@@ -104,6 +108,8 @@ This glossary provides definitions for acronyms and key terms used throughout *T
 
 - **PHI:** Protected Health Information:Any individually identifiable health information held or transmitted by a covered entity, protected under HIPAA regulations.
 
+- **POC:** Proof of Concept:A small-scale implementation designed to verify that a proposed solution is technically feasible and delivers expected value before committing to full deployment.
+
 - **P95:** 95th Percentile:A statistical measure indicating the value below which 95% of observations fall, commonly used for latency and performance metrics.
 
 - **RAG:** Retrieval-Augmented Generation:An AI architecture that combines information retrieval with text generation, grounding LLM responses in retrieved enterprise data to reduce hallucinations.
@@ -121,6 +127,8 @@ This glossary provides definitions for acronyms and key terms used throughout *T
 - **SOC:** Security Operations Center:A centralized team responsible for monitoring, detecting, and responding to security threats and incidents.
 
 - **SQL:** Structured Query Language:A programming language used for managing and querying relational databases.
+
+- **SOX:** Sarbanes-Oxley Act:U.S. federal law establishing requirements for financial reporting, internal controls, and audit trails. Relevant to AI systems that process financial data or support compliance workflows.
 
 - **SRE:** Site Reliability Engineering:A discipline that applies software engineering principles to infrastructure and operations, pioneered by Google to ensure system reliability.
 
