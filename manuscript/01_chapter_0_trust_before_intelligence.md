@@ -15,17 +15,17 @@ Dr. Arun Raj didn't raise his voice. He didn't need to. The Echo Health board ch
 ```mermaid
 
 graph LR
-    subgraph BEFORE["<b>BEFORE: WEEK 0</b>"]
+    subgraph BEFORE["BEFORE: WEEK 0"]
         direction TB
-        B1["3 Failed Pilots<br/>$2M Spent<br/>0 Production Agents<br/>9–13s Response Time<br/>INPACT™ Score: 28/100"]
+        B1["3 Failed Pilots<br/>$2M Spent<br/>0 Production Agents<br/>9-13s Response Time<br/>INPACT™ Score: 28/100"]
     end
     
-    subgraph TRANSFORM["<b>90 DAYS</b>"]
+    subgraph TRANSFORM["90 DAYS"]
         direction TB
         T1["→"]
     end
     
-    subgraph AFTER["<b>AFTER: WEEK 12</b>"]
+    subgraph AFTER["AFTER: WEEK 12"]
         direction TB
         A1["3 Production Agents<br/>$1.23M → 477% ROI<br/>50,000 Daily Queries<br/>1.6s Response Time<br/>INPACT™ Score: 89/100"]
     end
@@ -33,15 +33,14 @@ graph LR
     Copyright["© 2025 Colaberry Inc."]
     
     BEFORE --> TRANSFORM --> AFTER
-
-    style BEFORE fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style B1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style TRANSFORM fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style T1 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style AFTER fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style A1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-
-    style Copyright fill:none,stroke:none,color:#333333
+    
+    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
+    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style B1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style T1 fill:#f5f5f5,stroke:#666666,color:#333333
+    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style Copyright fill:#ffffff,stroke:none,color:#666666
     
 ```
 
@@ -185,13 +184,13 @@ graph LR
     
     HumanEra --> TRANSFORM --> AgentEra
     
-    style HumanEra fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style H1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style TRANSFORM fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style T1 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style AgentEra fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style A1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style Copyright fill:none,stroke:none,color:#333333
+    style HumanEra fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
+    style AgentEra fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style H1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style T1 fill:#f5f5f5,stroke:#666666,color:#333333
+    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
 
@@ -250,15 +249,15 @@ graph TB
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
-    style HITL fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style I fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style N fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style P fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style A fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style C fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style T fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style Trust fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style Copyright fill:none,stroke:none,color:#333333
+    style HITL fill:#f0fff0,stroke:#00897b,stroke-width:2px
+    style I fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style N fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style P fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style C fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style T fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Trust fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
 ![Diagram](../assets/figures/01_chapter_0_trust_before_intelligence-diagram-03.png)
@@ -317,18 +316,18 @@ This integration creates what we call "The Architecture of Trust" - not three se
 ```mermaid
 
 graph TB
-    Title["<b>ARCHITECTURE OF TRUST</b><br/><b>Three Integrated Pillars</b>"]
+    Title["ARCHITECTURE OF TRUST<br/>Three Integrated Pillars"]
     
     subgraph PILLARS[" "]
         direction LR
-        INPACT["<b>PILLAR 1: INPACT™</b><br/><br/><b>What Agents Need?</b><br/><br/><b>I</b>nstant<br/><b>N</b>atural<br/><b>P</b>ermitted<br/><b>A</b>daptive<br/><b>C</b>ontextual<br/><b>T</b>ransparent"]
+        INPACT["PILLAR 1: INPACT™<br/><br/>What Agents Need?<br/><br/><b>I</b>nstant<br/><b>N</b>atural<br/><b>P</b>ermitted<br/><b>A</b>daptive<br/><b>C</b>ontextual<br/><b>T</b>ransparent"]
         
-        Layers["<b>PILLAR 2: 7-LAYERS</b><br/><b>Infrastructure</b><br/><br/><b>How to Build TRUST?</b><br/><br/>Storage<br/>Real-Time<br/>Semantic<br/>Intelligence<br/>Governance<br/>Observability<br/>Orchestration"]
+        Layers["PILLAR 2: 7-LAYERS<br/>Infrastructure<br/><br/>How to Build TRUST?<br/><br/>Storage<br/>Real-Time<br/>Semantic<br/>Intelligence<br/>Governance<br/>Observability<br/>Orchestration"]
         
-        GOALS["<b>PILLAR 3: GOALS™</b><br/><br/><b>How to Measure TRUST?</b><br/><br/><b>G</b>overnance<br/><b>O</b>bservability<br/><b>A</b>vailability<br/><b>L</b>exicon<br/><b>S</b>olid"]
+        GOALS["PILLAR 3: GOALS™<br/><br/>How to Measure TRUST?<br/><br/><b>G</b>overnance<br/><b>O</b>bservability<br/><b>A</b>vailability<br/><b>L</b>exicon<br/><b>S</b>olid"]
     end
     
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    Copyright["© 2025 Colaberry Inc."]
     
     Title --> PILLARS
     
@@ -336,12 +335,12 @@ graph TB
     Layers -.->|"Enables Operations"| GOALS
     GOALS -.->|"Drives Trust"| INPACT
     
-    style Title fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style Title fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     style PILLARS fill:none,stroke:none
-        style INPACT fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-        style Layers fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-        style GOALS fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style Copyright fill:none,stroke:none,color:#333333
+    style INPACT fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Layers fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style GOALS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
 

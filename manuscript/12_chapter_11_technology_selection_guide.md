@@ -40,12 +40,12 @@ Marcus paused. "I didn't ask."
     
     BEFORE --> TRANSFORM --> AFTER
     
-    style BEFORE fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style TRANSFORM fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style AFTER fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style B1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style T1 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style A1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
+    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style B1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style T1 fill:#f5f5f5,stroke:#666666,color:#333333
+    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
 
 ```
 
@@ -129,16 +129,16 @@ graph TD
     
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     
-    style VENDOR fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style PILLAR1 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style PILLAR2 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style PILLAR3 fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style V fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style P1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style P2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style P3 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style EVAL fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style Copyright fill:none,stroke:none,color:#333333
+    style VENDOR fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
+    style PILLAR1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style PILLAR2 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style PILLAR3 fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style V fill:#eeeeee,stroke:#666666,color:#333333
+    style P1 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style P2 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
+    style P3 fill:#ffe0b2,stroke:#f57c00,color:#e65100
+    style EVAL fill:#c8e6c9,stroke:#388e3c,stroke-width:2px,color:#1b5e20
+    style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
 ![Figure 11.2: The Three-Pillar Vendor Evaluation Framework](../assets/figures/figure-11-2.png)
@@ -241,14 +241,14 @@ graph LR
     
     style DECISIONS fill:none,stroke:none
     style OUTCOMES fill:none,stroke:none
-    style START fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style Q1 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style Q2 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style Q3 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style BUILD fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style BUY fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style PARTNER fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style Copyright fill:none,stroke:none,color:#333333
+    style START fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
+    style Q1 fill:#fff9c4,stroke:#f9a825,stroke-width:2px,color:#f57f17
+    style Q2 fill:#fff9c4,stroke:#f9a825,stroke-width:2px,color:#f57f17
+    style Q3 fill:#fff9c4,stroke:#f9a825,stroke-width:2px,color:#f57f17
+    style BUILD fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style BUY fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style PARTNER fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
 
@@ -360,19 +360,19 @@ graph TB
     
     ROW1 --> FOUND
     
-    style STACK fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style STACK fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
     style ROW1 fill:none,stroke:none
-    style TRUST fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style INTEL fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style FOUND fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style L7 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style L6 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style L5 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style L4 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style L3 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style L2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style L1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style Copyright fill:none,stroke:none,color:#333333
+    style TRUST fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style INTEL fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style FOUND fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style L7 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style L6 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style L5 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style L4 fill:#ffe0b2,stroke:#f57c00,color:#e65100
+    style L3 fill:#ffe0b2,stroke:#f57c00,color:#e65100
+    style L2 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
+    style L1 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
+    style Copyright fill:#ffffff,stroke:none,color:#666666
 
 
 ```
@@ -829,17 +829,17 @@ graph LR
     
     TRUST --> INTEL --> FOUND
     
-    style TRUST fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style INTEL fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style FOUND fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style L7 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style L6 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style L5 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style L4 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style L3 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style L2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style L1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style Copyright fill:none,stroke:none,color:#333333
+    style TRUST fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c
+    style INTEL fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style FOUND fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style L7 fill:#e1bee7,stroke:#7b1fa2,color:#4a148c
+    style L6 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style L5 fill:#f8bbd9,stroke:#c2185b,color:#880e4f
+    style L4 fill:#ffe0b2,stroke:#f57c00,color:#e65100
+    style L3 fill:#fff59d,stroke:#f9a825,color:#f57f17
+    style L2 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
+    style L1 fill:#c8e6c9,stroke:#388e3c,color:#1b5e20
+    style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
 

@@ -40,12 +40,12 @@ graph LR
     
     WITHOUT --> TRANSFORM --> WITH
     
-    style WITHOUT fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style W1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style TRANSFORM fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style T1 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style WITH fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style I1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style WITHOUT fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
+    style WITH fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style W1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style T1 fill:#f5f5f5,stroke:#666666,color:#333333
+    style I1 fill:#b2dfdb,stroke:#00897b,color:#004d40
     
 
 ```
@@ -84,12 +84,12 @@ graph TB
     Layers -.->|"Enables Operations"| GOALS
     GOALS -.->|"Drives Trust"| INPACT
     
-    style Title fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style Title fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     style PILLARS fill:none,stroke:none
-        style INPACT fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-        style Layers fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-        style GOALS fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style Copyright fill:none,stroke:none,color:#333333
+    style INPACT fill:#f57c00,stroke:#e65100,stroke-width:3px,color:#ffffff
+    style Layers fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style GOALS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Copyright fill:#ffffff,stroke:none,color:#666666
 
 
 
@@ -170,33 +170,29 @@ graph TB
     
     COPYRIGHT["<b>© 2025 Colaberry Inc.</b>"]
     
-    %% TITLE — NEUTRAL / CONTEXT
-    style TITLE fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style ROW fill:none,stroke:none
+    style TITLE fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
     
-    %% 🟠 HUMAN NEEDS — POSITIVE MOTIVATION (NOT FAILURE)
-        style HUMAN fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-        style H1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-        style H2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-        style H3 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-        style H4 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-        style H5 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-        style H6 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style ROW fill:#ffffff,stroke:none
     
-    %% 🔵 AGENT NEEDS — TRANSFORMATION / BECOMING
-        style AGENT fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-        style A1 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-        style A2 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-        style A3 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-        style A4 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-        style A5 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-        style A6 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
+    style HUMAN fill:#fff9e6,stroke:#f57c00,stroke-width:3px,color:#e65100
+    style H1 fill:#ffffff,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style H2 fill:#ffffff,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style H3 fill:#ffffff,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style H4 fill:#ffffff,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style H5 fill:#ffffff,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style H6 fill:#ffffff,stroke:#f57c00,stroke-width:2px,color:#e65100
     
-    %% 🟢 TRUSTED AGENT — OUTCOME
-            style TRUST fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style AGENT fill:#e0f2f1,stroke:#00897b,stroke-width:3px,color:#004d40
+    style A1 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A3 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A4 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A5 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A6 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
     
-    %% FOOTER
-    style COPYRIGHT fill:none,stroke:none,color:#333333
+    style TRUST fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    
+    style COPYRIGHT fill:#ffffff,stroke:none,color:#666666
 ```
 
 ![Figure 2.2: Human Needs to Agent Needs Parallel](../assets/figures/figure-2-2.png)
@@ -250,22 +246,17 @@ graph TB
     
     COPYRIGHT["<b>© 2025 Colaberry Inc.</b>"]
     
-    %% ⚪ CONTAINER — NEUTRAL / CONTEXT
-        style BOX fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style BOX fill:#f0fff0,stroke:#00897b,stroke-width:3px
+    style I fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style N fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style P fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style C fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style T fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     
-    %% 🔵 INPACT™ NEEDS — TRANSFORMATION / DEFINITION
-        style I fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-        style N fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-        style P fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-        style A fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-        style C fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-        style T fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style TRUST fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     
-    %% 🟢 TRUST — INPACT™-FULFILLED OUTCOME
-        style TRUST fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    
-    %% FOOTER
-    style COPYRIGHT fill:none,stroke:none,color:#333333
+    style COPYRIGHT fill:#ffffff,stroke:none,color:#666666
 ```
 
 ![Figure 2.3: Six INPACT™ Needs Fulfilled](../assets/figures/figure-2-3.png)
@@ -312,23 +303,14 @@ graph TB
     TITLE --> ASSESS --> CALC --> DECISION
     DECISION -->|<b>YES</b>| READY
     DECISION -->|<b>NO</b>| GAPS
-
-    %% ⚪ CONTEXT / FRAMING
-    style TITLE fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style ASSESS fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style CALC fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-
-    %% 🟠 DECISION / PRESSURE POINT
-    style DECISION fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-
-    %% 🟢 TRUSTED / INPACT™-FULFILLED
-    style READY fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-
-    %% 🔴 FAILURE / RISK
-    style GAPS fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-
-    %% FOOTER
-    style COPYRIGHT fill:none,stroke:none,color:#333333
+    
+    style TITLE fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style ASSESS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style CALC fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style DECISION fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style READY fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style GAPS fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
+    style COPYRIGHT fill:#ffffff,stroke:none,color:#666666
 ```
 
 ![Figure 2.4: INPACT™ Assessment Methodology - From Dimensions to Decision](../assets/figures/figure-2-4.png)
@@ -405,27 +387,22 @@ A_STATUS["<b>Production-Ready</b><br/><b>• All dimensions ≥5/6 </b><br/><b>�
     end
     
     COPYRIGHT["<b>© 2025 Colaberry Inc.</b>"]
-
-    %% ⚪ CONTEXT / FRAMING
-    style TITLE fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-
-    %% 🔴 BEFORE — FAILURE / BI-ERA
-    style BEFORE fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style B_SCORE fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style B_DIMS fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style B_STATUS fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-
-    %% 🔵 TRANSFORMATION / CHANGE
-    style TRANSFORM fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-
-    %% 🟢 AFTER — TRUSTED / INPACT™-FULFILLED
-    style AFTER fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style A_SCORE fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style A_DIMS fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style A_STATUS fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-
-    %% FOOTER
-    style COPYRIGHT fill:none,stroke:none,color:#333333
+    
+    style TITLE fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    
+    style BEFORE fill:#fff5f5,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style B_SCORE fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
+    style B_DIMS fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style B_STATUS fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    
+    style TRANSFORM fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    
+    style AFTER fill:#f0fff0,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A_SCORE fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style A_DIMS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A_STATUS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    
+    style COPYRIGHT fill:#ffffff,stroke:none,color:#666666
 ```
 
 ![Figure 2.5: Echo Health's INPACT™ Transformation - 28/100 to 86/100 in 10 Weeks](../assets/figures/figure-2-5.png)
@@ -501,37 +478,32 @@ graph TB
         B1 --> C1["<b>BI Query<br/>8-13 seconds</b>"]
         C1 --> D1["<b>Stale Data<br/>8-24 hours old</b>"]
         
-        %% 🔴 CRITICAL FAILURE
-        style D1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+        style D1 fill:#b71c1c,color:#ffffff,stroke:#c62828,stroke-width:3px
     end
     
-    %% 🔵 TRANSITION
     ERA1 -.->|<b>Evolution</b>| ERA2
     
     subgraph ERA2["<b>Agent Era: Real-Time</b>"]
         direction LR
         A2["<b>CDC<br/>Continuous</b>"] --> B2["<b>Streaming<br/>Platform</b>"]
-        B2 --> C2["<b>Agent Query<br/>&lt; 2 seconds</b>"]
-        C2 --> D2["<b>Fresh Data<br/>&lt; 30 seconds old</b>"]
+        B2 --> C2["<b>Agent Query<br/>&lt;2 seconds</b>"]
+        C2 --> D2["<b>Fresh Data<br/>&lt;30 seconds old</b>"]
+        
+        style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px
     end
-
-    %% 🔴 FAILURE / BI ERA
-    style ERA1 fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style A1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style B1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style C1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style D1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-
-    %% 🟢 TRUSTED / AGENT ERA
-    style ERA2 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style A2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style B2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style C2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style D2 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-
-    %% FOOTER
+    
+    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style A1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style B1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style C1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    
+    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style B2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style C2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:none,color:#333333
+    style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
 ![Figure 2.6: Batch Processing vs. Real-Time Response](../assets/figures/figure-2-6.png)
@@ -581,39 +553,34 @@ graph TB
         direction LR
         A1["<b>Natural<br/>Language Query</b>"] --> B1["<b>Developer<br/>Translates to SQL</b>"]
         B1 --> C1["<b>Cryptic Table<br/>FCT_PTNT_ENCT</b>"]
-        C1 --> D1["<b>2–3 days<br/>40–60% accuracy</b>"]
+        C1 --> D1["<b>2-3 days<br/>40-60% accuracy</b>"]
         
-        %% 🔴 CRITICAL FAILURE
-        style D1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+        style D1 fill:#b71c1c,color:#ffffff,stroke:#c62828,stroke-width:3px
     end
     
-    %% 🔵 TRANSITION
     ERA1 -.->|<b>Evolution</b>| ERA2
     
     subgraph ERA2["<b>Agent Era: Semantic</b>"]
         direction LR
         A2["<b>Natural<br/>Language Query</b>"] --> B2["<b>Semantic<br/>Layer</b>"]
-        B2 --> C2["<b>Business Terms<br/>“Patient Encounters”</b>"]
-        C2 --> D2["<b>Instant<br/>87–93% accuracy</b>"]
+        B2 --> C2["<b>Business Terms<br/>'Patient Encounters'</b>"]
+        C2 --> D2["<b>Instant<br/>87-93% accuracy</b>"]
+        
+        style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px
     end
-
-    %% 🔴 FAILURE / HUMAN ERA
-    style ERA1 fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style A1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style B1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style C1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style D1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-
-    %% 🟢 TRUSTED / AGENT ERA
-    style ERA2 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style A2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style B2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style C2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style D2 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-
-    %% FOOTER
+    
+    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style A1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style B1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style C1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    
+    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style B2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style C2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:none,color:#333333
+    style Copyright fill:#ffffff,stroke:none,color:#757575
 ```
 
 ![Figure 2.7: Manual Translation vs. Semantic Understanding](../assets/figures/figure-2-7.png)
@@ -672,36 +639,31 @@ graph TB
         A1["<b>User = Scheduler<br/>Role Granted</b>"] --> B1["<b>Access ALL<br/>Patient Records</b>"]
         B1 --> D1["<b>HIPAA<br/>Violation</b>"]
         
-        %% 🔴 CRITICAL COMPLIANCE FAILURE
-        style D1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+        style D1 fill:#b71c1c,color:#ffffff,stroke:#c62828,stroke-width:3px
     end
     
-    %% 🔵 TRANSITION — CONTEXT ADDED
     ERA1 -.->|<b>Add Context Layer</b>| ERA2
     
     subgraph ERA2["<b>RBAC + ABAC</b>"]
         direction LR
-        A2["<b>User + Context<br/>Per-Query Eval</b>"] --> B2["<b>Policy<br/>Engine (OPA)</b>"]
+        A2["<b>User + Context<br/>Per-Query Eval</b>"] --> B2["<b>Policy<br/>Engine OPA</b>"]
         B2 --> C2["<b>Dynamic<br/>Masking</b>"]
         C2 --> D2["<b>HIPAA<br/>Compliant</b>"]
+        
+        style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px
     end
-
-    %% 🔴 FAILURE / COMPLIANCE RISK
-    style ERA1 fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style A1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style B1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style D1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-
-    %% 🟢 TRUSTED / COMPLIANT OUTCOME
-    style ERA2 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style A2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style B2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style C2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style D2 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-
-    %% FOOTER
+    
+    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style A1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style B1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    
+    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style B2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style C2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:none,color:#333333
+    style Copyright fill:#ffffff,stroke:none,color:#757575
 ```
 
 ![Figure 2.8: RBAC Only vs. RBAC + ABAC](../assets/figures/figure-2-8.png)
@@ -759,11 +721,9 @@ graph TB
         B1 --> C1["<b>Manual Retrain<br/>Q2 (3 months)</b>"]
         C1 --> D1["<b>3-Month<br/>Degradation Window</b>"]
         
-        %% 🔴 CRITICAL TRUST EROSION
-        style D1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+        style D1 fill:#b71c1c,color:#ffffff,stroke:#c62828,stroke-width:3px
     end
     
-    %% 🔵 TRANSITION — CONTINUOUS ADAPTATION
     ERA1 -.->|<b>Evolution</b>| ERA2
     
     subgraph ERA2["<b>Adaptive Era: Continuous</b>"]
@@ -771,25 +731,22 @@ graph TB
         A2["<b>Model<br/>Deployed</b>"] --> B2["<b>Monitor<br/>Performance</b>"]
         B2 --> C2["<b>Auto Retrain<br/>Drift Detected</b>"]
         C2 --> D2["<b>Continuous<br/>Improvement</b>"]
+        
+        style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px
     end
-
-    %% 🔴 FAILURE / TRUST EROSION
-    style ERA1 fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style A1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style B1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style C1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style D1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-
-    %% 🟢 TRUSTED / ADAPTIVE OUTCOME
-    style ERA2 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style A2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style B2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style C2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style D2 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-
-    %% FOOTER
+    
+    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style A1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style B1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style C1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    
+    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style B2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style C2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:none,color:#333333
+    style Copyright fill:#ffffff,stroke:none,color:#757575
 ```
 
 ![Figure 2.9: Quarterly Retraining vs. Continuous Learning](../assets/figures/figure-2-9.png)
@@ -847,11 +804,9 @@ graph TB
         A1["<b>Agent Query</b>"] --> B1["<b>EHR<br/>Only</b>"]
         B1 --> D1["<b>Incomplete<br/>Answer</b>"]
         
-        %% 🔴 CRITICAL CONTEXT FAILURE
-        style D1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+        style D1 fill:#b71c1c,color:#ffffff,stroke:#c62828,stroke-width:3px
     end
     
-    %% 🔵 TRANSITION — CONTEXTUAL EVOLUTION
     ERA1 -.->|<b>Evolution</b>| ERA2
     
     subgraph ERA2["<b>Contextual Era: Integrated</b>"]
@@ -859,24 +814,21 @@ graph TB
         A2["<b>Agent Query</b>"] --> B2["<b>5 Systems<br/>Integrated</b>"]
         B2 --> C2["<b>Context<br/>Enriched</b>"]
         C2 --> D2["<b>Complete<br/>Answer</b>"]
+        
+        style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px
     end
-
-    %% 🔴 FAILURE / CONTEXT GAP
-    style ERA1 fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style A1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style B1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style D1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-
-    %% 🟢 TRUSTED / CONTEXTUAL OUTCOME
-    style ERA2 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style A2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style B2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style C2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style D2 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-
-    %% FOOTER
+    
+    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style A1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style B1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    
+    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style B2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style C2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:none,color:#333333
+    style Copyright fill:#ffffff,stroke:none,color:#757575
 ```
 
 ![Figure 2.10: Single-System vs. Cross-System Integration](../assets/figures/figure-2-10.png)
@@ -927,11 +879,9 @@ graph TB
         A1["<b>Agent<br/>Recommendation</b>"] --> B1["<b>No<br/>Explanation</b>"]
         B1 --> D1["<b>70% Override<br/>Rate</b>"]
         
-        %% 🔴 CRITICAL TRUST FAILURE
-        style D1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+        style D1 fill:#b71c1c,color:#ffffff,stroke:#c62828,stroke-width:3px
     end
     
-    %% 🔵 TRANSITION — ADD TRANSPARENCY
     ERA1 -.->|<b>Evolution</b>| ERA2
     
     subgraph ERA2["<b>Transparent: Explainable</b>"]
@@ -939,24 +889,21 @@ graph TB
         A2["<b>Agent<br/>Recommendation</b>"] --> B2["<b>Audit<br/>Trail</b>"]
         B2 --> C2["<b>Clinical<br/>Evidence</b>"]
         C2 --> D2["<b>15% Override<br/>Rate</b>"]
+        
+        style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px
     end
-
-    %% 🔴 FAILURE / TRUST BREAKDOWN
-    style ERA1 fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style A1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style B1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style D1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-
-    %% 🟢 TRUSTED / TRANSPARENT OUTCOME
-    style ERA2 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style A2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style B2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style C2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style D2 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-
-    %% FOOTER
+    
+    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style A1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style B1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    
+    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style B2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style C2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:none,color:#333333
+    style Copyright fill:#ffffff,stroke:none,color:#757575
 ```
 
 ![Figure 2.11: Opaque Decisions vs. Explainable Reasoning](../assets/figures/figure-2-11.png)

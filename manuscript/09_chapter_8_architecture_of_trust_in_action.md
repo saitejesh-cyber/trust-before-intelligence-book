@@ -65,16 +65,16 @@ graph LR
   L --> TOTAL
   S --> TOTAL
   
-  style BASELINE fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-  style G fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-  style O fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-  style A fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-  style L fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-  style S fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-  style TOTAL fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+  style BASELINE fill:#f0fff0,stroke:#00897b,stroke-width:2px
+  style G fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#004d40
+  style O fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#004d40
+  style A fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+  style L fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#004d40
+  style S fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+  style TOTAL fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
   
   Copyright["<b>© 2025 Colaberry Inc.</b>"]
-  style Copyright fill:none,stroke:none,color:#333333
+  style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
 ![Figure 8.1: Echo's GOALS™ Baseline (Week 10)](../assets/figures/figure-8-1.png)
@@ -298,16 +298,16 @@ graph TB
   R2 --> RESULT
   R3 --> RESULT
   
-  style CACHE fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-  style QUERY fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-  style L1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-  style L2 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-  style L3 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-  style R1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-  style R2 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-  style R3 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-  style RESULT fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-  style Copyright fill:none,stroke:none,color:#333333
+  style CACHE fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+  style QUERY fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style L1 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+  style L2 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+  style L3 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
+  style R1 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:2px
+  style R2 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+  style R3 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
+  style RESULT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
 
@@ -366,16 +366,16 @@ graph TB
   HIGH --> RESULT
   LOW --> PROMPT --> RESP --> RESULT
   
-  style DISAMBIGUATION fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-  style Q fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-  style CONF fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+  style DISAMBIGUATION fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+  style Q fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+  style CONF fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
   style PATHS fill:none,stroke:none
-  style HIGH fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-  style LOW fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-  style PROMPT fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-  style RESP fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-  style RESULT fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-  style Copyright fill:none,stroke:none,color:#333333
+  style HIGH fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style LOW fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
+  style PROMPT fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+  style RESP fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+  style RESULT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
 
@@ -434,15 +434,15 @@ graph TB
   GATE3 -->|"Pass"| PASS
   GATE3 -->|"Flag"| QUARANTINE
   
-  style QUALITY fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-  style SOURCE fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-  style GATE1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-  style GATE2 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-  style GATE3 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+  style QUALITY fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+  style SOURCE fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style GATE1 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+  style GATE2 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+  style GATE3 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
   style OUTCOMES fill:none,stroke:none
-  style PASS fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-  style QUARANTINE fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-  style Copyright fill:none,stroke:none,color:#333333
+  style PASS fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style QUARANTINE fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
+  style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
 
@@ -575,17 +575,17 @@ graph TB
     ORCH --> RC
   end
   
-  style AGENTS fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-  style CARE fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-  style CLINICAL fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-  style REVENUE fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-  style CA fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-  style CD fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-  style RC fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-  style ORCH fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+  style AGENTS fill:#f0fff0,stroke:#00897b,stroke-width:2px
+  style CARE fill:#e0f2f1,stroke:#00897b,stroke-width:2px
+  style CLINICAL fill:#e0f2f1,stroke:#00897b,stroke-width:2px
+  style REVENUE fill:#e0f2f1,stroke:#00897b,stroke-width:2px
+  style CA fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style CD fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style RC fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style ORCH fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
   
   Copyright["<b>© 2025 Colaberry Inc.</b>"]
-  style Copyright fill:none,stroke:none,color:#333333
+  style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
 ![Figure 8.7: Three Agents Architecture](../assets/figures/figure-8-7.png)
@@ -721,16 +721,16 @@ graph TB
   L --> TOTAL
   S --> TOTAL
   
-  style FINAL fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-  style G fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-  style O fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-  style A fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-  style L fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-  style S fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-  style TOTAL fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+  style FINAL fill:#f0fff0,stroke:#00897b,stroke-width:2px
+  style G fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style O fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style A fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style L fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style S fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style TOTAL fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
   
   Copyright["<b>© 2025 Colaberry Inc.</b>"]
-  style Copyright fill:none,stroke:none,color:#333333
+  style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
 ![Figure 8.8: Echo's GOALS™ Final Dashboard (Week 12)](../assets/figures/figure-8-8.png)
@@ -783,17 +783,17 @@ graph TB
   P2 --> RESULT
   P3 --> RESULT
   
-  style COMPLETE fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-  style P1 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-  style P2 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-  style P3 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-  style I1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-  style L1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-  style G1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-  style RESULT fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+  style COMPLETE fill:#f0fff0,stroke:#00897b,stroke-width:2px
+  style P1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px
+  style P2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px
+  style P3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px
+  style I1 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style L1 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style G1 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style RESULT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
   
   Copyright["<b>© 2025 Colaberry Inc.</b>"]
-  style Copyright fill:none,stroke:none,color:#333333
+  style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
 ![Figure 8.9: Echo Health - Architecture of Trust Complete](../assets/figures/figure-8-9.png)
@@ -831,15 +831,15 @@ graph TB
   BUILD -->|"Pillar 3"| W12
   W12 --> FINAL
   
-  style JOURNEY fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-  style D0 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-  style BUILD fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-  style W4 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-  style W7 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-  style W10 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-  style W12 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-  style FINAL fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-  style Copyright fill:none,stroke:none,color:#333333
+  style JOURNEY fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+  style D0 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
+  style BUILD fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+  style W4 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+  style W7 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+  style W10 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+  style W12 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+  style FINAL fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
 
@@ -945,12 +945,12 @@ graph LR
   
   BEFORE --> PILLARS --> AFTER
   
-  style BEFORE fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-  style PILLARS fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-  style AFTER fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-  style B1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-  style P1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-  style A1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+  style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+  style PILLARS fill:#00695c,stroke:#004d40,stroke-width:2px,color:#ffffff
+  style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+  style B1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+  style P1 fill:#00796b,stroke:#004d40,color:#ffffff
+  style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
 
 ```
 
