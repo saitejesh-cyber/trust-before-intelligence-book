@@ -49,6 +49,8 @@ Marcus paused. "I didn't ask."
 
 ```
 
+![Figure 11.1: Vendor Selection Transformation](../assets/figures/figure-11-1.png)
+
 > **Key Takeaway:** Every vendor must pass the three-pillar test. No exceptions.
 
 ---
@@ -139,6 +141,8 @@ graph TD
     style EVAL fill:#c8e6c9,stroke:#388e3c,stroke-width:2px,color:#1b5e20
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+
+![Figure 11.2: The Three-Pillar Vendor Evaluation Framework](../assets/figures/figure-11-2.png)
 
 **Pillar 1: INPACT™ Agent Needs (Score Separately)**
 
@@ -249,6 +253,8 @@ graph LR
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
+
+![Figure 11.3: Build vs Buy vs Partner Decision Flow](../assets/figures/figure-11-3.png)
 
 **Build (Custom Development): 5-10% of Stack**
 
@@ -373,6 +379,8 @@ graph TB
 
 
 ```
+
+![Figure 11.4: The 7-Layer Architecture Technology Stack](../assets/figures/figure-11-4.png)
 
 ---
 
@@ -838,6 +846,8 @@ graph LR
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
+
+![Figure 11.5: Echo's Complete Technology Stack](../assets/figures/figure-11-5.png)
 
 **Echo's Selection Principles:** (1) Managed over self-hosted, (2) Healthcare-first (BAA required), (3) Integration-proven over best-in-class, (4) Cost-optimized for Growth tier.
 

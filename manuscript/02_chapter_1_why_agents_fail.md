@@ -83,6 +83,8 @@ graph LR
 
 ```
 
+![Figure 1.0: The Infrastructure Gap - Why Human-Era Systems Can't Support AI Agents](../assets/figures/figure-1-0.png)
+
 > **Key Takeaway:** The infrastructure gap IS the trust gap. Human-era systems cannot fulfill AI Agent needs.
 
 ---
@@ -174,6 +176,8 @@ graph TB
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     style CR fill:none,stroke:none,color:#999999
 ```
+
+![Figure 1.1: Trust Collapse Timeline (February-July 2025)](../assets/figures/figure-1-1.png)
 
 *Source: Deloitte TrustID® Workforce AI Report Q3 2025. Trust levels tracked monthly Feb-July 2025, showing accelerated decline for agentic AI (autonomous decision-making) vs general GenAI (human-supervised generation).*
 
@@ -442,6 +446,8 @@ graph LR
 
 ```
 
+![Figure 1.2: Software Evolution and INPACT™ Needs](../assets/figures/figure-1-2.png)
+
 Karpathy's framework shows why Software 3.0 requires fundamentally new infrastructure. **Each paradigm demands different architectural foundations because the operational requirements shifted from human-mediated to agent-autonomous. INPACT™ defines those new requirements.**[9]
 
 ---
@@ -513,6 +519,8 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
+
+![Figure 1.3: INPACT™ Need Failures Drive 95% Failure Rate](../assets/figures/figure-1-3.png)
 
 Most enterprises attempt to deploy Software 3.0 agents on unaugmented Software 1.0 infrastructure, creating the INPACT™ gap that drives the 95% pilot failure rate. The solution isn't replacing existing systems, it's augmenting them with agent-ready layers.
 
@@ -595,6 +603,8 @@ graph LR
     style CR fill:none,stroke:none,color:#999999
 ```
 
+![Figure 1.4: Human Era vs INPACT™Ready Agent Era](../assets/figures/figure-1-4.png)
+
 **INPACT™ Need Fulfillment: BI Era vs Agent Era**
 
 | INPACT™ Need | BI Era Infrastructure | Agent Era Infrastructure | Failure When Unfulfilled |
@@ -662,6 +672,8 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
+
+![Figure 1.5: Echo's Three Failing Pilots - The $2M Wake-Up Call](../assets/figures/figure-1-5.png)
 
 The visual pattern was unmistakable: three independent failures, three different vendors, but one systematic cause - infrastructure's inability to fulfill INPACT™ needs across all six dimensions. Each pilot's detailed analysis would reveal the specific need failures that drove abandonment.
 

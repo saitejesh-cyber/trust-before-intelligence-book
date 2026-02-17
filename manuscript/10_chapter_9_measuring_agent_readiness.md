@@ -59,6 +59,8 @@ graph LR
 
 ```
 
+![Figure 9.1: Assessment Value, From Confusion to Clarity](../assets/figures/figure-9-1.png)
+
 > **Key Takeaway:** One assessment. Six dimensions. Complete clarity on where to invest.
 
 
@@ -122,6 +124,8 @@ graph LR
     style R1 fill:#a5d6a7,stroke:#388e3c,color:#1b5e20
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+
+![Figure 9.2: Architecture of Trust Assessment Flow](../assets/figures/figure-9-2.png)
 
 The integration principle is simple: **if you assess INPACT™ comprehensively, you've assessed everything.**
 
@@ -219,6 +223,8 @@ graph LR
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
+![Figure 9.3: The Five Trust Bands](../assets/figures/figure-9-3.png)
+
 | Raw Score | Percentage | Trust Band | Agent Readiness |
 |-----------|------------|------------|-----------------|
 | 31-36 | 86-100% | 🟢 **High Trust** | Production-ready for enterprise agents |
@@ -291,6 +297,8 @@ graph LR
     style L6 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+
+![Figure 9.4: INPACT™ Dimension to Layer Mapping](../assets/figures/figure-9-4.png)
 
 **Coverage Verification**: This mapping touches all seven layers. L7 (Orchestration) emerges when multiple dimensions reach production thresholds simultaneously. When you discover a low score in a particular dimension, you immediately know which layers require investment.
 
@@ -494,6 +502,8 @@ graph LR
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
+![Figure 9.5: Echo's 90-Day INPACT™ Transformation](../assets/figures/figure-9-5.png)
+
 **Echo's INPACT™ Progression: Milestone View**
 
 | Milestone | Week | Score | Key Achievement | Trust Band |
@@ -642,6 +652,8 @@ graph TD
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
+
+![Figure 9.6: Gap-to-Phase Prioritization Flow](../assets/figures/figure-9-6.png)
 
 **Gap Prioritization Matrix**
 

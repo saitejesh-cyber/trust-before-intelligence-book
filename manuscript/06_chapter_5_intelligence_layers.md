@@ -64,6 +64,8 @@ graph LR
 
 ```
 
+![Figure 5.1: Intelligence Layers - Why Layers 3-4 Enable Understanding](../assets/figures/figure-5-1.png)
+
 > **Key Takeaway:** Intelligence requires understanding. Layers 3-4 give agents semantic awareness.
 
 ## PART 1: THE INTELLIGENCE GAP
@@ -118,6 +120,8 @@ graph TB
 
 ```
 
+![Figure 5.2: The Architecture of Trust - Intelligence Layers Highlighted](../assets/figures/figure-5-2.png)
+
 ### Why Intelligence Matters
 
 Foundation without intelligence is like having a well-stocked library with no catalog and no librarian. Data availability alone doesn't create agent capability. Intelligence transforms accessible data into understanding and reasoning.
@@ -156,6 +160,8 @@ graph TB
     style L1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+
+![Figure 5.3: 7-Layer Agent-Ready Architecture - Intelligence Highlighted](../assets/figures/figure-5-3.png)
 
 These intelligence layers directly address specific gaps from Chapter 3:
 
@@ -287,6 +293,8 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
+![Figure 5.4: Echo's Intelligence Challenge - Current State vs. Target State](../assets/figures/figure-5-4.png)
+
 "Three weeks," Swapna said. "Week 5: Layer 3 semantic infrastructure. Business glossary with 2,400 clinical terms, entity resolution across all provider and patient systems, clinical concept mapping to SNOMED, ICD-10, and LOINC.[3][4][5]. 
 Week 6: Layer 4 stages 1-5 vector database deployment with 10 million document embeddings, hybrid retrieval pipeline, reranking optimization, context assembly. 
 Week 7: Layer 4 stages 6-7 LLM integration with multi-model routing, semantic caching activation. By Friday of Week 7, we'll have our first fully intelligent query."
@@ -357,6 +365,8 @@ flowchart TB
     style RESULT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+
+![Figure 5.5: Layer 3 -Semantic Layer Architecture](../assets/figures/figure-5-5.png)
 
 ### Components of the Semantic Layer
 
@@ -467,6 +477,8 @@ graph TB
     style S_RESULT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+
+![Figure 5.6: Before/After - Keyword Search vs. Semantic Search](../assets/figures/figure-5-6.png)
 
 ### Key Technologies
 
@@ -604,6 +616,8 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
+![Figure 5.7: Layer 4 - Complete Intelligence Pipeline](../assets/figures/figure-5-7.png)
+
 ### Why Agents Need RAG
 
 Without RAG, language models rely solely on their training data knowledge frozen at their cutoff date, containing no information about your specific organization, patients, or operations. The result is confident hallucination: responses that sound authoritative but are factually wrong.
@@ -669,6 +683,8 @@ graph LR
     style OUT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+
+![Figure 5.8: Hybrid Retrieval Architecture](../assets/figures/figure-5-8.png)
 
 **Vector Database Selection:**
 
@@ -772,6 +788,8 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
+![Figure 5.9: Multi-LLM Router Architecture](../assets/figures/figure-5-9.png)
+
 **Routing Logic:**
 - Claude Sonnet 4: Complex clinical reasoning (45% of queries)
 - GPT-4 Turbo: Structured output, FHIR[6] API calls (25% of queries)
@@ -834,6 +852,8 @@ graph TB
     style INVALIDATE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+
+![Figure 5.10: Semantic Cache Architecture](../assets/figures/figure-5-10.png)
 
 **Level 1: Exact Match (Redis):** Character-for-character matches hit instantly. TTL (Time To Live)[18]: 1 hour. Hit rate: ~15%.
 
@@ -1114,6 +1134,8 @@ gantt
     First Intelligent Query           :milestone, m1, 02-20, 0d
 ```
 
+![Figure 5.11: Echo's Week 5-7 Timeline](../assets/figures/figure-5-11.png)
+
 ### INPACT™ Score: Week 4 → Week 7
 
 **Figure 5.12: INPACT™ Transformation (42 → 67)**
@@ -1140,6 +1162,8 @@ graph LR
     style W7_TOTAL fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+
+![Figure 5.12: INPACT™ Transformation (42 → 67)](../assets/figures/figure-5-12.png)
 
 | Dimension | Week 4 | Week 7 | Change | Driver |
 |-----------|--------|--------|--------|--------|
@@ -1209,6 +1233,8 @@ graph TB
     style RESPONSE fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+
+![Figure 5.13: Complete Intelligence Architecture - Layers 3-4](../assets/figures/figure-5-13.png)
 
 ### Results
 

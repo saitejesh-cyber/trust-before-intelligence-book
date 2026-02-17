@@ -64,6 +64,8 @@ graph LR
 
 ```
 
+![Figure 6.1: Transparency + Orchestration Layers - Why Layers 5-6-7 Complete Trust](../assets/figures/figure-6-1.png)
+
 > **Key Takeaway:** Trust requires transparency. Layers 5-6-7 make AI verifiable.
 
 ## PART 1: THE TRUST RISK
@@ -133,6 +135,8 @@ graph TB
 
 ```
 
+![Figure 6.2: The Architecture of Trust - Completing Pillar 2](../assets/figures/figure-6-2.png)
+
 ### Architectural Context
 
 Chapters 4-5 built the foundation and intelligence layers. Chapter 4 delivered data availability: eight storage categories and real-time pipelines with less than 30 seconds freshness. Chapter 5 delivered data understanding: semantic resolution of 2,400 clinical terms and a 7-stage RAG pipeline with 85% cache hit rates. Together, these four layers transformed Echo's data infrastructure from legacy BI to agent-capable.
@@ -184,6 +188,8 @@ graph TB
     style L1 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+
+![Figure 6.3: 7-Layer Agent-Ready Architecture - Transparency + Orchestration Highlighted](../assets/figures/figure-6-3.png)
 
 ### The Remaining Gaps
 
@@ -341,6 +347,8 @@ graph TB
 
 ```
 
+![Figure 6.4: Layer 5 Governance Architecture](../assets/figures/figure-6-4.png)
+
 ### Why Agents Need Governance
 
 Agents operate differently than human users. A human physician accessing EHR records makes deliberate choices, navigating to specific patients, reviewing specific documents, for specific reasons. The implicit governance of user interfaces constrains access patterns. Agents eliminate these constraints. An agent with data access can iterate through thousands of records in seconds, aggregate information across patients, and correlate data in ways that human navigation never enabled.
@@ -423,6 +431,8 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
+![Figure 6.5: ABAC Four-Factor Authorization Model](../assets/figures/figure-6-5.png)
+
 ### Echo's Gap Before Layer 5
 
 Echo's pre-transformation authorization relied on Epic's native RBAC, a solid foundation that defined role-based permissions: physicians access patient records, nurses view orders, administrators have department scope. This RBAC baseline remains in place. What was missing was the contextual layer to evaluate when, where, and why.
@@ -503,6 +513,8 @@ graph LR
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
+
+![Figure 6.6: HITL Escalation Patterns](../assets/figures/figure-6-6.png)
 
 ### The Warfarin Moment
 
@@ -616,6 +628,8 @@ graph TB
 
 ```
 
+![Figure 6.7: Layer 6 Observability Architecture](../assets/figures/figure-6-7.png)
+
 ### Why Agents Need Observability
 
 Agents are black boxes by default. A user submits a query. An answer returns. What happened in between? Which documents were retrieved? Which model generated the response? How confident was the system? How much did it cost? Without observability, these questions have no answers.
@@ -702,6 +716,8 @@ graph TB
     style L1 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+
+![Figure 6.8: Echo's Seven-Layer Service Map](../assets/figures/figure-6-8.png)
 
 **© 2025-2026 Colaberry Inc.**
 
@@ -810,6 +826,8 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
+
+![Figure 6.9: Layer 7 Orchestration Architecture](../assets/figures/figure-6-9.png)
 
 ### Why Agents Need Orchestration
 
@@ -947,6 +965,8 @@ graph TB
     style Response fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+
+![Figure 6.10: Multi-Agent Query Flow - Maria Santos Discharge](../assets/figures/figure-6-10.png)
 
 **Care Coordination Agent (2.1s):**
 - Scheduled follow-up: Orthopedics, Dr. Kim, next Tuesday 10:00 AM
@@ -1087,6 +1107,8 @@ gantt
     Architecture Complete              :milestone, m2, 03-14, 0d
 ```
 
+![Figure 6.11: Echo's Week 8-10 Timeline](../assets/figures/figure-6-11.png)
+
 **© 2025-2026 Colaberry Inc.**
 
 ### INPACT™ Score: Week 7 → Week 10
@@ -1114,6 +1136,8 @@ graph LR
     style W10 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+
+![Figure 6.12: INPACT™ Transformation (67 → 86)](../assets/figures/figure-6-12.png)
 
 **INPACT™ Dimension Changes:**
 
@@ -1248,6 +1272,8 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
+![Figure 6.13: Complete 7-Layer Agent-Ready Architecture](../assets/figures/figure-6-13.png)
+
 **Figure 6.14: The Architecture of Trust - Two Pillars Complete**
 
 ```mermaid
@@ -1292,6 +1318,8 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
+
+![Figure 6.14: The Architecture of Trust - Two Pillars Complete](../assets/figures/figure-6-14.png)
 
 ### What Echo Achieved
 

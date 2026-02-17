@@ -55,6 +55,8 @@ graph LR
 
 ```
 
+![Figure 12.1: Operations Value (From Reactive to Proactive)](../assets/figures/figure-12-1.png)
+
 > **Key Takeaway:** Building is easy. Operating at scale requires systematic discipline.
 
 ---
@@ -133,6 +135,8 @@ graph LR
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
+
+![Figure 12.2: The 15-Criteria Production Readiness Framework](../assets/figures/figure-12-2.png)
 
 **Pillar 1: INPACT™ Readiness (5 Criteria)**
 
@@ -354,6 +358,8 @@ graph LR
     style O1 fill:#e1bee7,stroke:#7b1fa2,color:#4a148c
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+
+![Figure 12.3: Agent MLOps Lifecycle](../assets/figures/figure-12-3.png)
 
 ---
 
@@ -717,6 +723,8 @@ graph LR
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
+![Figure 12.4: Six-Phase Incident Response](../assets/figures/figure-12-4.png)
+
 **Phase 1: DETECT**
 
 Automated monitoring triggers alert. On-call engineer acknowledges within response time SLA.
@@ -894,6 +902,8 @@ graph LR
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
+![Figure 12.5: Five-Day Improvement Cycle](../assets/figures/figure-12-5.png)
+
 **The Five-Day Cycle**
 
 | Day | Activity | INPACT™ Focus | Layer Focus | GOALS™ Focus |
@@ -1046,6 +1056,8 @@ C1 --> RESULT["<b>Months/Years → 90 Days</b><br/><b>All Three Pillars</b>"]
     style RESULT fill:#c8e6c9,stroke:#388e3c,stroke-width:3px,color:#1b5e20
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+
+![Figure 12.6: AIXcelerator Five-Component Platform](../assets/figures/figure-12-6.png)
 
 **Five Core Components**
 

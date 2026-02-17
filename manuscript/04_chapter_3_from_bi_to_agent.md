@@ -63,6 +63,8 @@ graph LR
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
+![Figure 3.0: Echo's 70-Day Transformation](../assets/figures/figure-3-0.png)
+
 > **Key Takeaway:** Seven gaps. Seven layers. One transformation.
 
 ## When Excellence Became Inadequate
@@ -178,6 +180,8 @@ graph LR
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
+![Figure 3.1: Software 1.0 to 3.0 Evolution](../assets/figures/figure-3-1.png)
+
 As Figure 3.1 illustrates, running Software 3.0 agents on Software 1.0 infrastructure is like running cloud-native microservices on mainframe batch processing. The assumptions don't align.
 
 ### Where the Two Eras Collide
@@ -257,6 +261,8 @@ graph TB
     %% Copyright
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+
+![Figure 3.2: BI Era vs Agent Era](../assets/figures/figure-3-2.png)
 
 Figure 3.2 captures this paradigm shift. The key differences are stark:
 
@@ -549,6 +555,8 @@ graph LR
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
+
+![Figure 3.3: Seven Gaps --> Six Needs --> Seven Layers](../assets/figures/figure-3-3.png)
 
 Figure 3.3 maps the complete transformation path:
 - **Left (Red):** Seven infrastructure gaps from BI-era systems

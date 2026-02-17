@@ -50,6 +50,8 @@ graph LR
 
 ```
 
+![Figure 2.0: The INPACT™ Framework - Six Infrastructure Needs for Agent Trust](../assets/figures/figure-2-0.png)
+
 > **Key Takeaway:** Six infrastructure needs. One framework. Trust.
 
 ## PART 1: FRAMEWORK INTRODUCTION
@@ -93,6 +95,8 @@ graph TB
 
 
 ```
+
+![Figure 2.1: The Architecture of Trust - Three Integrated Pillars](../assets/figures/figure-2-1.png)
 
 **This chapter builds Pillar 1 completely.** You'll understand what agents need, why traditional infrastructure fails each need, and how Echo Health transformed from 28/100 readiness to 86/100 in ten weeks.
 
@@ -193,6 +197,8 @@ graph TB
     style COPYRIGHT fill:#ffffff,stroke:none,color:#666666
 ```
 
+![Figure 2.2: Human Needs to Agent Needs Parallel](../assets/figures/figure-2-2.png)
+
 **The parallel mappings:**
 
 **Significance** (importance, validation) → **Instant**: When someone is significant, they receive immediate attention. VIP treatment means instant response. An agent taking 10+ seconds to respond signals "you're not important enough." Sub-2-second responses validate user significance through immediate, attentive service.
@@ -256,6 +262,8 @@ graph TB
     style COPYRIGHT fill:#ffffff,stroke:none,color:#666666
 ```
 
+![Figure 2.3: Six INPACT™ Needs Fulfilled](../assets/figures/figure-2-3.png)
+
 **When even one need fails, trust collapses across all dimensions.** Agents operate on binary trust. Users either trust enough to delegate, or they don't trust at all. Echo's scheduling agent achieved 95% accuracy but took 9-13 seconds to respond. Users abandoned it. Accuracy didn't matter when speed destroyed conversational experience.
 
 ### INPACT™ as Requirements Definition
@@ -308,6 +316,8 @@ graph TB
     style GAPS fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
     style COPYRIGHT fill:#ffffff,stroke:none,color:#666666
 ```
+
+![Figure 2.4: INPACT™ Assessment Methodology - From Dimensions to Decision](../assets/figures/figure-2-4.png)
 
 **The six INPACT™ dimensions assessed:**
 
@@ -399,6 +409,8 @@ A_STATUS["<b>Production-Ready</b><br/><b>• All dimensions ≥5/6 </b><br/><b>�
     
     style COPYRIGHT fill:#ffffff,stroke:none,color:#666666
 ```
+
+![Figure 2.5: Echo Health's INPACT™ Transformation - 28/100 to 86/100 in 10 Weeks](../assets/figures/figure-2-5.png)
 
 ---
 
@@ -500,6 +512,8 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
+![Figure 2.6: Batch Processing vs. Real-Time Response](../assets/figures/figure-2-6.png)
+
 Echo's agent took 9-13 seconds to respond. Appointment availability queries hit data warehouses refreshed overnight via batch ETL. By 10 AM, data was 8+ hours stale. The database was cold with no indexes optimized for agent patterns, no caching. Every request forced table scans.
 
 Enterprise data systems were built for patience. Overnight batch jobs. Queries taking 9-13 seconds. Data hours or days old. That worked when humans analyzed reports over coffee. It fails when agents must respond at conversational speed.
@@ -575,6 +589,8 @@ graph TB
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     style Copyright fill:#ffffff,stroke:none,color:#757575
 ```
+
+![Figure 2.7: Manual Translation vs. Semantic Understanding](../assets/figures/figure-2-7.png)
 
 Echo's database schema: 347 tables, average table name 23 characters of cryptic abbreviations. DIM_CUST_LOC_ADDR_FACT_D_KEY meant "customer location address fact dimension key." Legacy naming was chosen for technical reasons fifteen years ago. Perfect for batch ETL. Unintelligible to LLMs and humans.
 
@@ -658,6 +674,8 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#757575
 ```
 
+![Figure 2.8: RBAC Only vs. RBAC + ABAC](../assets/figures/figure-2-8.png)
+
 Echo used four RBAC roles: reader (view only), writer (edit appointments), admin (configuration), app_service (agent). The agent used app_service credentials with table-level SELECT permissions across all patient tables. 
 First test query: scheduling agent accessed Patient 10243's mental health diagnoses while booking an appointment. 
 Authorization system: no context awareness of "why" or "what data needed." 
@@ -740,6 +758,8 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#757575
 ```
 
+![Figure 2.9: Quarterly Retraining vs. Continuous Learning](../assets/figures/figure-2-9.png)
+
 Echo deployed their scheduling agent in September with 87% appointment booking accuracy. By November, accuracy dropped to 73%. Analysis revealed three drift categories: 
 **Data drift**: new physicians added, locations changed, service offerings expanded
 **Concept drift**: seasonal patterns shifted (September = back-to-school physicals, November = flu season). 
@@ -821,6 +841,8 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#757575
 ```
 
+![Figure 2.10: Single-System vs. Cross-System Integration](../assets/figures/figure-2-10.png)
+
 Echo's initial agent had partial integration. EHR connected to scheduling, with read-only lab access. But billing, pharmacy, and patient portal remained siloed. Query: "What do I need to know about my Tuesday appointment?" Agent response: "You have an appointment Tuesday at 2 PM with Dr. Martinez for annual physical. Labs ordered: comprehensive metabolic panel." Missing context: Lab requires 12-hour fasting (instruction not surfaced). Insurance needs prior auth for specific tests (billing not connected). Pharmacy flagged medication interaction (pharmacy not connected). Two outstanding forms (patient portal not connected).
 
 Patient arrived unfasted, insurance rejected claim, medication interaction discovered during visit, forms caused delays. A complete answer required all 5 systems working together. Echo had 2 partially connected.
@@ -894,6 +916,8 @@ graph TB
     Copyright["<b>© 2025 Colaberry Inc.</b>"]
     style Copyright fill:#ffffff,stroke:none,color:#757575
 ```
+
+![Figure 2.11: Opaque Decisions vs. Explainable Reasoning](../assets/figures/figure-2-11.png)
 
 Echo's initial agent provided recommendations without explanation. Physician query: "Treatment options for Patient 10243's Type 2 diabetes." Agent response: "Consider Ozempic (semaglutide) as first-line therapy." Physician question: "Why Ozempic specifically?" Agent: [no explanation available]. Physician override: prescribes metformin instead (standard first-line per institutional protocol).
 

@@ -44,6 +44,8 @@ graph LR
     
 ```
 
+![Figure 0.0: Echo Health Transformation - From Failed Pilots to Production Success](../assets/figures/figure-0-0.png)
+
 ## The Crisis: When $40 Billion Can't Buy Trust
 
 In July 2025, MIT's NANDA initiative released a sobering report. After analyzing over 300 enterprise AI initiatives, interviewing 52 executives, and surveying 153 leaders, the researchers uncovered a stark reality: **95% of enterprise generative AI pilots fail to deliver measurable business value.**[1]
@@ -193,6 +195,8 @@ graph LR
 
 ```
 
+![Diagram](../assets/figures/01_chapter_0_trust_before_intelligence-diagram-02.png)
+
 **Figure 0.1: The Infrastructure Paradigm Shift - From Human-Era BI to Agent-Era Architecture**
 
 > **Note:** Echo Health Systems is a fictional case study created for pedagogical purposes. The organization, people, and specific metrics are composites based on patterns observed across 40+ real enterprise implementations. While Echo is fictional, the challenges, solutions, and outcomes reflect verified patterns from actual deployments in healthcare and other regulated industries.
@@ -257,6 +261,8 @@ graph TB
     style Trust fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+
+![Diagram](../assets/figures/01_chapter_0_trust_before_intelligence-diagram-03.png)
 
 **Figure 0.2: INPACT™ Framework - Six Agent Needs Leading to Trust**
 
@@ -340,6 +346,8 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
+
+![Diagram](../assets/figures/01_chapter_0_trust_before_intelligence-diagram-04.png)
 
 **Figure 0.3: The Architecture of Trust Triad - Three Pillars Working Together**
 

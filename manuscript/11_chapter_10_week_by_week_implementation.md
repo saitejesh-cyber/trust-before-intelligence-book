@@ -51,6 +51,8 @@ graph LR
 
 ```
 
+![Figure 10.1: Roadmap Value: From Ad-Hoc to Structured](../assets/figures/figure-10-1.png)
+
 > **Key Takeaway:** Ninety days from assessment to production. Week-by-week structure eliminates guesswork.
 
 ---
@@ -181,6 +183,8 @@ graph LR
 
 ```
 
+![Figure 10.2: The 90-Day Four-Phase Roadmap](../assets/figures/figure-10-2.png)
+
 ---
 
 ## Part 2: The Four Phases
@@ -215,6 +219,8 @@ graph LR
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
+
+![Figure 10.3: Foundation Layer Stack](../assets/figures/figure-10-3.png)
 
 | Attribute | Detail |
 |-----------|--------|
@@ -287,6 +293,8 @@ graph LR
 
 ```
 
+![Figure 10.4: Intelligence Layer Stack](../assets/figures/figure-10-4.png)
+
 *For RAG pipeline architecture details, see Chapter 5, Figure 5.7: Layer 4 - Complete Intelligence Pipeline.*
 
 | Attribute | Detail |
@@ -354,6 +362,8 @@ graph LR
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
+
+![Figure 10.5: Trust Layer Stack](../assets/figures/figure-10-5.png)
 
 | Attribute | Detail |
 |-----------|--------|
@@ -656,6 +666,8 @@ graph LR
 
 ```
 
+![Figure 10.6: Risk Escalation Framework](../assets/figures/figure-10-6.png)
+
 ### Phase Gate Checkpoints
 
 Every phase ends with a formal go/no-go decision. These gates prevent the most common failure mode: proceeding with gaps that compound into production failures. Phase gate criteria are documented in each phase section (Part 2). The critical discipline: never skip a gate, never proceed with gaps.
@@ -757,6 +769,8 @@ graph RL
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
+
+![Figure 10.7: Eight-Tab Tracker System](../assets/figures/figure-10-7.png)
 
 ### How the Tabs Work Together
 
