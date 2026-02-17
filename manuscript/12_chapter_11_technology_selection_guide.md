@@ -20,10 +20,36 @@ Marcus paused. "I didn't ask."
 
 **Figure 11.1: Vendor Selection Transformation**
 
-![Figure 11.1: Vendor Selection Transformation](../assets/figures/figure-11-1.png)
+```mermaid
+
+ graph LR
+    subgraph BEFORE["VENDOR HYPE"]
+        direction TB
+        B1["Feature-driven choices<br/><br/>Integration afterthought<br/><br/>Mismatched capabilities<br/><br/><b>Compliance gaps</b>"]
+    end
+    
+    subgraph TRANSFORM["THREE-PILLAR TEST"]
+        direction TB
+        T1["INPACT™ + 7-Layer<br/>+ GOALS™"]
+    end
+    
+    subgraph AFTER["VALIDATED STACK"]
+        direction TB
+        A1["Need-driven selection<br/><br/>Layer-by-layer fit<br/><br/>Unified architecture<br/><br/><b>Built-in compliance</b>"]
+    end
+    
+    BEFORE --> TRANSFORM --> AFTER
+    
+    style BEFORE fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
+    style TRANSFORM fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
+    style AFTER fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style B1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+    style T1 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
+    style A1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+
+```
 
 ![Figure 11.1: Vendor Selection Transformation](../assets/figures/figure-11-1.png)
-
 > **Key Takeaway:** Every vendor must pass the three-pillar test. No exceptions.
 
 ---
@@ -75,10 +101,47 @@ Every technology in a production stack must pass the same evaluation. Three pill
 
 **Figure 11.2: The Three-Pillar Vendor Evaluation Framework**
 
-![Figure 11.2: The Three-Pillar Vendor Evaluation Framework](../assets/figures/figure-11-2.png)
+```mermaid
+graph TD
+    subgraph VENDOR["VENDOR EVALUATION"]
+        V["<b>Technology<br/>Candidate</b>"]
+    end
+    
+    subgraph PILLAR1["PILLAR 1: INPACT™"]
+        P1["<b>Agent Needs</b><br/><b>6 Dimensions</b><br/><b>Score: X/36</b>"]
+    end
+    
+    subgraph PILLAR2["PILLAR 2: ARCHITECTURE"]
+        P2["<b>Layer Fit</b><br/><b>7-Layer Integration</b><br/><b>Fit Check: Yes/No</b>"]
+    end
+    
+    subgraph PILLAR3["PILLAR 3: GOALS™"]
+        P3["<b>Operations</b><br/><b>5 Dimensions</b><br/><b>Score: X/25</b>"]
+    end
+    
+    V --> P1
+    V --> P2
+    V --> P3
+    
+    P1 --> EVAL["<b>Evaluate Separately</b><br/><b>INPACT™ ≥67%</b><br/><b>GOALS™ ≥70%</b><br/><b>(Adjust to context)</b>"]
+    P2 --> EVAL
+    P3 --> EVAL
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    style VENDOR fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style PILLAR1 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style PILLAR2 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style PILLAR3 fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
+    style V fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style P1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style P2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style P3 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
+    style EVAL fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style Copyright fill:none,stroke:none,color:#333333
+```
 
 ![Figure 11.2: The Three-Pillar Vendor Evaluation Framework](../assets/figures/figure-11-2.png)
-
 **Pillar 1: INPACT™ Agent Needs (Score Separately)**
 
 The first pillar asks: does this technology help agents meet the six fundamental needs? Each INPACT™ dimension translates into specific vendor evaluation questions:
@@ -147,10 +210,49 @@ Not every component requires a vendor purchase. The Architecture of Trust suppor
 
 **Figure 11.3: Build vs Buy vs Partner Decision Flow**
 
-![Figure 11.3: Build vs Buy vs Partner Decision Flow](../assets/figures/figure-11-3.png)
+```mermaid
+
+graph LR
+    START["Component<br/>Needed"]
+    
+    subgraph DECISIONS[" "]
+        direction TB
+        Q1{"Competitive<br/>differentiator?"}
+        Q2{"Proven vendor<br/>solutions exist?"}
+        Q3{"Team has<br/>expertise?"}
+    end
+    
+    subgraph OUTCOMES[" "]
+        direction TB
+        BUILD["BUILD<br/>Custom Dev<br/>5-10%"]
+        BUY["BUY<br/>SaaS/Cloud<br/>85-90%"]
+        PARTNER["PARTNER<br/>Consulting<br/>0-5%"]
+    end
+    
+    Copyright["© 2025 Colaberry Inc."]
+    
+    START --> Q1
+    Q1 -->|"Yes"| BUILD
+    Q1 -->|"No"| Q2
+    Q2 -->|"Yes"| BUY
+    Q2 -->|"No"| Q3
+    Q3 -->|"Yes"| BUILD
+    Q3 -->|"No"| PARTNER
+    
+    style DECISIONS fill:none,stroke:none
+    style OUTCOMES fill:none,stroke:none
+    style START fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style Q1 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style Q2 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style Q3 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style BUILD fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style BUY fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style PARTNER fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
+    style Copyright fill:none,stroke:none,color:#333333
+
+```
 
 ![Figure 11.3: Build vs Buy vs Partner Decision Flow](../assets/figures/figure-11-3.png)
-
 **Build (Custom Development): 5-10% of Stack**
 
 Custom development makes sense when:
@@ -225,10 +327,57 @@ This section provides selection criteria for each of the seven architecture laye
 
 **Figure 11.4: The 7-Layer Architecture Technology Stack**
 
-![Figure 11.4: The 7-Layer Architecture Technology Stack](../assets/figures/figure-11-4.png)
+```mermaid
+
+graph TB
+    subgraph STACK["7-LAYER ARCHITECTURE"]
+        direction TB
+        subgraph ROW1[" "]
+            direction LR
+            subgraph INTEL["INTELLIGENCE"]
+                direction TB
+                L4["L4: Retrieval"]
+                L3["L3: Semantic"]
+            end
+
+            subgraph TRUST["TRUST LAYERS"]
+                direction TB
+                L7["L7: Orchestration"]
+                L6["L6: Observability"]
+                L5["L5: Governance"]
+            end
+            
+        end
+        
+        subgraph FOUND["FOUNDATION LAYERS"]
+            direction LR
+            L2["L2: Data Fabric"]
+            L1["L1: Storage"]
+        end
+    end
+    
+    Copyright["© 2025 Colaberry Inc."]
+    
+    ROW1 --> FOUND
+    
+    style STACK fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style ROW1 fill:none,stroke:none
+    style TRUST fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style INTEL fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
+    style FOUND fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style L7 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style L6 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style L5 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style L4 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
+    style L3 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
+    style L2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style L1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style Copyright fill:none,stroke:none,color:#333333
+
+
+```
 
 ![Figure 11.4: The 7-Layer Architecture Technology Stack](../assets/figures/figure-11-4.png)
-
 ---
 
 ### 2.1 Layer 1: Multi-Modal Storage
@@ -654,10 +803,47 @@ Echo's final technology choices demonstrate the methodology in action. Every ven
 
 **Figure 11.5: Echo's Complete Technology Stack**
 
-![Figure 11.5: Echo's Complete Technology Stack](../assets/figures/figure-11-5.png)
+```mermaid
+
+graph LR
+    subgraph TRUST["TRUST"]
+        direction LR
+        L7["L7: Orchestration"]
+        L6["L6: Observability"]
+        L5["L5: Governance"]
+    end
+    
+    subgraph INTEL["INTELLIGENCE"]
+        direction LR
+        L4["L4: Retrieval"]
+        L3["L3: Semantic"]
+    end
+    
+    subgraph FOUND["FOUNDATION"]
+        direction LR
+        L2["L2: Data Fabric"]
+        L1["L1: Storage"]
+    end
+    
+    Copyright["© 2025 Colaberry Inc."]
+    
+    TRUST --> INTEL --> FOUND
+    
+    style TRUST fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style INTEL fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
+    style FOUND fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style L7 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style L6 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style L5 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style L4 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
+    style L3 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style L2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style L1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style Copyright fill:none,stroke:none,color:#333333
+
+```
 
 ![Figure 11.5: Echo's Complete Technology Stack](../assets/figures/figure-11-5.png)
-
 **Echo's Selection Principles:** (1) Managed over self-hosted, (2) Healthcare-first (BAA required), (3) Integration-proven over best-in-class, (4) Cost-optimized for Growth tier.
 
 **Echo's Results:** Completed under budget ($992K of $1.23M), achieved INPACT™ 89/100 and GOALS™ 21/25, went live in 12 weeks. *(Use the Stack Builder and Vendor Advisor at trustbeforeintelligence.ai/tools to plan your investment and select vendors.)*

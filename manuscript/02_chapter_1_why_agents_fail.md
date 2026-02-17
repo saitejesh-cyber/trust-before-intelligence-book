@@ -53,10 +53,36 @@ This $650,000 failure was just the beginning.
 
 **Figure 1.0: The Infrastructure Gap - Why Human-Era Systems Can't Support AI Agents**
 
-![Figure 1.0: The Infrastructure Gap - Why Human-Era Systems Can't Support AI Agents](../assets/figures/figure-1-0.png)
+```mermaid
+
+graph LR
+    subgraph BUILT["WHAT THEY HAVE NOW"]
+        direction TB
+        B1["Batch ETL:<br/>Overnight updates<br/><br/>Static Dashboards:<br/>Human-mediated<br/><br/>Role-Based Access:<br/>Fixed permissions<br/><br/>Manual Review:<br/>No real-time audit"]
+    end
+    
+    subgraph GAP["THE GAP"]
+        direction TB
+        G1["Human-Era<br/>Infrastructure ≠<br/>AI Agent Needs<br/><br/>→ 95% Failure"]
+    end
+    
+    subgraph NEED["WHAT AGENTS NEED"]
+        direction TB
+        N1["Instant:<br/>Under 2s response<br/><br/>Natural:<br/>Semantic understanding<br/><br/>Permitted:<br/>Dynamic authorization<br/><br/>Transparent:<br/>Complete audit trail"]
+    end
+    
+    BUILT -->|"Trust Collapse"| GAP --> NEED
+    
+    style BUILT fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
+    style B1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+    style GAP fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
+    style G1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+    style NEED fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style N1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+
+```
 
 ![Figure 1.0: The Infrastructure Gap - Why Human-Era Systems Can't Support AI Agents](../assets/figures/figure-1-0.png)
-
 > **Key Takeaway:** The infrastructure gap IS the trust gap. Human-era systems cannot fulfill AI Agent needs.
 
 ---
@@ -107,10 +133,51 @@ The data is stark:
 
 **Figure 1.1: Trust Collapse Timeline (February-July 2025)**
 
-![Figure 1.1: Trust Collapse Timeline (February-July 2025)](../assets/figures/figure-1-1.png)
+```mermaid
+graph TB
+    subgraph timeline["<b>TRUST COLLAPSE (Feb-July 2025)</b>"]
+        direction LR
+        
+        FEB["<b>Feb 2025</b><br/>Agent: 78%<br/>GenAI: 82%"]
+        
+        MAR["<b>Mar 2025</b><br/>Agent: 65%<br/>GenAI: 75%"]
+        
+        MAY["<b>May 2025</b><br/>Agent: 48%<br/>GenAI: 68%"]
+        
+        JUL["<b>Jul 2025</b><br/>Agent: 14%<br/>GenAI: 51%"]
+        
+        FEB --> MAR --> MAY --> JUL
+    end
+    
+    subgraph analysis["<b>ROOT CAUSE ANALYSIS</b>"]
+        direction TB
+        
+        CAUSE["<b>Infrastructure Failure</b><br/>INPACT™ needs<br/>systematically unfulfilled"]
+        
+        RESULT["<b>User Response</b><br/>64% trust collapse<br/>Agent abandonment"]
+        
+        CAUSE --> RESULT
+    end
+    
+    timeline --> analysis
+
+    %% TIMELINE — FAILURE / BI-ERA
+    style timeline fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
+    style FEB fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+    style MAR fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+    style MAY fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+    style JUL fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+
+    %% ANALYSIS — FAILURE CONTEXT
+    style analysis fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
+    style CAUSE fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+    style RESULT fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    style Copyright fill:none,stroke:none,color:#333333
+```
 
 ![Figure 1.1: Trust Collapse Timeline (February-July 2025)](../assets/figures/figure-1-1.png)
-
 *Source: Deloitte TrustID® Workforce AI Report Q3 2025. Trust levels tracked monthly Feb-July 2025, showing accelerated decline for agentic AI (autonomous decision-making) vs general GenAI (human-supervised generation).*
 
 Deloitte's research tracked trust collapse month-over-month, revealing an accelerating decline between May and July as enterprises rushed agents into production without addressing INPACT™ readiness. The 2x faster collapse for autonomous agents (compared to general GenAI) validates that autonomy amplifies infrastructure failure consequences.
@@ -339,10 +406,47 @@ The enterprise challenge: attempting to run Software 3.0 agents on unaugmented S
 
 **Figure 1.2: Software Evolution and INPACT™ Needs**
 
-![Figure 1.2: Software Evolution and INPACT™ Needs](../assets/figures/figure-1-2.png)
+```mermaid
+
+graph LR
+    subgraph sw1["SOFTWARE 1.0"]
+        direction TB
+        prog1["Programming<br/>(1950s-2010s)<br/>Explicit instructions<br/>C++, Java, Python"]
+        infra1["Infrastructure<br/>Data warehouses<br/>Batch ETL, BI dashboards<br/><br/><b>Cannot fulfill INPACT™"</b>]
+        prog1 --> infra1
+    end
+    subgraph sw2["SOFTWARE 2.0"]
+        direction TB
+        prog2["Programming<br/>(2010s-2023)<br/>Curate datasets<br/>Train ML models"]
+        infra2["Infrastructure<br/>Added ML layers<br/>MLOps, registries<br/><br/><b>Partial INPACT™"</b>]
+        prog2 --> infra2
+    end
+    subgraph sw3["SOFTWARE 3.0"]
+        direction TB
+        prog3["Programming<br/>(2023-Present)<br/>Natural language<br/>In-context learning"]
+        infra3["NEW Infrastructure<br/>Vector DBs, real-time<br/>Semantic layers, ABAC<br/><br/><b>INPACT™-Ready</b>"]
+        prog3 --> infra3
+    end
+    sw1 -.->|"Added ML"| sw2
+    sw2 -.->|"PARADIGM SHIFT<br/>Requires INPACT™"| sw3
+    
+    Copyright["© 2025 Colaberry Inc."]
+
+    %% SOFTWARE 1.0 — FAILURE / BI-ERA
+    style sw1 fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
+    style infra1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+    style prog1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style sw2 fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
+    style prog2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style infra2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style sw3 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style prog3 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style infra3 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style Copyright fill:none,stroke:none,color:#333333
+
+```
 
 ![Figure 1.2: Software Evolution and INPACT™ Needs](../assets/figures/figure-1-2.png)
-
 Karpathy's framework shows why Software 3.0 requires fundamentally new infrastructure. **Each paradigm demands different architectural foundations because the operational requirements shifted from human-mediated to agent-autonomous. INPACT™ defines those new requirements.**[9]
 
 ---
@@ -371,10 +475,51 @@ When enterprises attempt agent deployments on BI-era infrastructure, critical mi
 
 **Figure 1.3: INPACT™ Need Failures Drive 95% Failure Rate**
 
-![Figure 1.3: INPACT™ Need Failures Drive 95% Failure Rate](../assets/figures/figure-1-3.png)
+```mermaid
+
+graph TB
+    subgraph PROBLEM["THE PROBLEM"]
+        direction TB
+        current["60% of Enterprises<br/>Software 1.0 Infrastructure<br/>Cannot fulfill INPACT™"]
+        
+        attempting["Attempting to Deploy<br/>Software 3.0 Agents<br/>Require INPACT™ fulfillment"]
+        
+        gap["INPACT™ Gap<br/>No I, N, P, A, C, or T<br/>No middleware fix possible"]
+        
+        result["95% Failure Rate<br/>Trust collapse across<br/>all six dimensions"]
+        
+        current --> gap
+        attempting --> gap
+        gap --> result
+    end
+    
+    subgraph SOLUTION["THE SOLUTION"]
+        direction TB
+        transform["INPACT™-Ready Architecture<br/>Infrastructure that fulfills<br/>all six needs systematically"]
+        
+        delivers["Delivers Results<br/>85+ INPACT™ score<br/>Production-ready reliability"]
+        
+        transform --> delivers
+    end
+    
+    result -.->|"Requires Transformation"| transform
+    
+    Copyright["© 2025 Colaberry Inc."]
+
+    %% PROBLEM — FAILURE / BI-ERA
+    style PROBLEM fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
+    style current fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+    style attempting fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+    style gap fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+    style result fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+    style SOLUTION fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style transform fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
+    style delivers fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style Copyright fill:none,stroke:none,color:#333333
+
+```
 
 ![Figure 1.3: INPACT™ Need Failures Drive 95% Failure Rate](../assets/figures/figure-1-3.png)
-
 Most enterprises attempt to deploy Software 3.0 agents on unaugmented Software 1.0 infrastructure, creating the INPACT™ gap that drives the 95% pilot failure rate. The solution isn't replacing existing systems, it's augmenting them with agent-ready layers.
 
 ### PART 3C: The Technology Works - Infrastructure Doesn't
@@ -412,10 +557,49 @@ This isn't about replacing data warehouses or abandoning BI dashboards. It's abo
 
 **Figure 1.4: Human Era vs INPACT™Ready Agent Era**
 
-![Figure 1.4: Human Era vs INPACT™Ready Agent Era](../assets/figures/figure-1-4.png)
+```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'14px'}}}%%
+
+graph LR
+    %% BI ERA (1990-2020) - Red Subgraph
+    subgraph BI["<b>Human ERA (1990-2020) <br/> Cannot Fulfill INPACT™</b><br/>"]
+        direction TB
+        ETL["<b>Batch ETL</b><br/>8-24 hour lag<br/><b> Fails Instant (I)</b>"]
+        DW["<b>Data Warehouse</b><br/>SQL schemas<br/><b> Fails Natural (N)</b>"]
+        RBAC["<b>RBAC Only</b><br/>No context layer<br/><b> Fails Permitted (P)</b>"]
+        
+        ETL --> DW --> RBAC
+    end
+    
+    %% PARADIGM SHIFT - Bold Arrow
+    BI -.->|"<b>⚡ PARADIGM SHIFT</b><br/>Must fulfill INPACT™"| AGENT
+    
+    %% AGENT ERA (2023-) - Green Subgraph
+    subgraph AGENT["<b>AGENT ERA (2023-Present) <br/> Fulfills All INPACT™</b><br/>"]
+        direction TB
+        STREAM["<b>Real-Time Streaming</b><br/>Sub-5s freshness<br/><b> Instant (I)</b>"]
+        SEMANTIC["<b>Semantic Layer</b><br/>Business language<br/><b> Natural (N)</b>"]
+        ABAC["<b>RBAC + ABAC</b><br/>Context-aware<br/> Permitted (P)"]
+        
+        STREAM --> SEMANTIC --> ABAC
+    end
+    
+    %% HUMAN ERA — FAILURE / BI-ERA
+    style BI fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
+    style ETL fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+    style DW fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+    style RBAC fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+    linkStyle 0 stroke:#4478A6,stroke-width:2px,color:#4478A6
+    %% AGENT ERA — TRUSTED / INPACT™-FULFILLED
+    style AGENT fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style STREAM fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style SEMANTIC fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style ABAC fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    CR["<b>© 2025 Colaberry Inc.</b>"]
+    style CR fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+```
 
 ![Figure 1.4: Human Era vs INPACT™Ready Agent Era](../assets/figures/figure-1-4.png)
-
 **INPACT™ Need Fulfillment: BI Era vs Agent Era**
 
 | INPACT™ Need | BI Era Infrastructure | Agent Era Infrastructure | Failure When Unfulfilled |
@@ -439,10 +623,49 @@ After the board meeting, Sarah Cedao sat in her office reviewing the forensic an
 
 **Figure 1.5: Echo's Three Failing Pilots - The $2M Wake-Up Call**
 
-![Figure 1.5: Echo's Three Failing Pilots - The $2M Wake-Up Call](../assets/figures/figure-1-5.png)
+```mermaid
+
+graph TB
+    subgraph investment["ECHO'S $2M INVESTMENT"]
+        TOTAL["Total: $2M<br/>6-month pilots<br/>Three vendors"]
+    end
+    
+    subgraph pilots["THREE FAILING PILOTS"]
+        P1["P1: Scheduling<br/>$650K - 8% adopt<br/><b>Fails Instant (I)</b>"]
+        
+        P2["P2: Documentation<br/>$720K - 12% adopt<br/><b>Fails N, C, T</b>"]
+        
+        P3["P3: Revenue Cycle<br/>$630K - HIPAA blocked<br/><b>Fails Permitted (P)</b>"]
+        
+        P1 -.-> P2 -.-> P3
+    end
+    
+    subgraph outcome["CRITICAL OUTCOME"]
+        SCORE["INPACT™ Score<br/>28 out of 100<br/>Not ready"]
+        
+        DECISION["Board Decision<br/>90-day ultimatum<br/>Transform or cancel"]
+        
+        SCORE --> DECISION
+    end
+    
+    investment --> pilots --> outcome
+    
+    Copyright["© 2025 Colaberry Inc."]
+    
+    style investment fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style TOTAL fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style pilots fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
+    style P1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+    style P2 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+    style P3 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+    style outcome fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
+    style SCORE fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
+    style DECISION fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
+    style Copyright fill:none,stroke:none,color:#333333
+
+```
 
 ![Figure 1.5: Echo's Three Failing Pilots - The $2M Wake-Up Call](../assets/figures/figure-1-5.png)
-
 The visual pattern was unmistakable: three independent failures, three different vendors, but one systematic cause - infrastructure's inability to fulfill INPACT™ needs across all six dimensions. Each pilot's detailed analysis would reveal the specific need failures that drove abandonment.
 
 ### Pilot 1: Patient Scheduling Agent -Instant (I) Need Failure (Detailed Analysis)

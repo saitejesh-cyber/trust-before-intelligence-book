@@ -26,10 +26,36 @@ Marcus pulled up a document. It was three pages long. By Monday morning, it woul
 
 **Figure 12.1: Operations Value (From Reactive to Proactive)**
 
-![Figure 12.1: Operations Value (From Reactive to Proactive)](../assets/figures/figure-12-1.png)
+```mermaid
+
+graph LR
+    subgraph BEFORE["WORKS ON MY MACHINE"]
+        direction TB
+        B1["Ad-hoc monitoring<br/><br/>Reactive firefighting<br/><br/>Manual processes<br/><br/>Performance drift"]
+    end
+    
+    subgraph TRANSFORM["PRODUCTION READINESS"]
+        direction TB
+        T1["15 Criteria<br/>+ GOALS™"]
+    end
+    
+    subgraph AFTER["PRODUCTION OPERATIONS"]
+        direction TB
+        A1["Proactive observability<br/><br/>Structured incidents<br/><br/>MLOps automation<br/><br/>Continuous improvement"]
+    end
+    
+    BEFORE --> TRANSFORM --> AFTER
+    
+    style BEFORE fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
+    style TRANSFORM fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
+    style AFTER fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style B1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+    style T1 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
+    style A1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+
+```
 
 ![Figure 12.1: Operations Value (From Reactive to Proactive)](../assets/figures/figure-12-1.png)
-
 > **Key Takeaway:** Building is easy. Operating at scale requires systematic discipline.
 
 ---
@@ -72,10 +98,44 @@ Throughout this chapter, reference benchmarks are drawn from Echo Health Systems
 
 **Figure 12.2: The 15-Criteria Production Readiness Framework**
 
-![Figure 12.2: The 15-Criteria Production Readiness Framework](../assets/figures/figure-12-2.png)
+```mermaid
+
+graph LR
+    subgraph INPACT["PILLAR 1: INPACT™"]
+        I1["1. Score ≥ 80/86<br/>2. Response < 10/5s<br/>3. NLU ≥ 80/85%<br/>4. Escalation < 20/15%<br/>5. Audit 100%"]
+    end
+    
+    subgraph ARCH["PILLAR 2: ARCHITECTURE"]
+        A1["6. 7 Layers Live<br/>7. 1/3+ Agents<br/>8. Orchestration < 5/3s<br/>9. Agreements Signed<br/>10. Data Residency"]
+    end
+    
+    subgraph GOALS["PILLAR 3: GOALS™"]
+        G1["11. Access Control + Audit<br/>12. Dashboards Active<br/>13. SLA 99.0/99.5%+<br/>14. Semantic Mapped<br/>15. On-Call Coverage"]
+    end
+    
+    READY["PRODUCTION<br/>READY"]
+    
+    Note["Values show Generic/High-Stakes targets"]
+    
+    Copyright["© 2025 Colaberry Inc."]
+    
+    INPACT --> READY
+    ARCH --> READY
+    GOALS --> READY
+    
+    style INPACT fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style ARCH fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
+    style GOALS fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style I1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style A1 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
+    style G1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style READY fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style Note fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style Copyright fill:none,stroke:none,color:#333333
+
+```
 
 ![Figure 12.2: The 15-Criteria Production Readiness Framework](../assets/figures/figure-12-2.png)
-
 **Pillar 1: INPACT™ Readiness (5 Criteria)**
 
 | # | Criterion | INPACT™ Need | How to Measure | Generic Target | High-Stakes Target |
@@ -257,10 +317,47 @@ Traditional MLOps practices (model versioning, A/B testing, performance monitori
 
 **Figure 12.3: Agent MLOps Lifecycle**
 
-![Figure 12.3: Agent MLOps Lifecycle](../assets/figures/figure-12-3.png)
+```mermaid
+graph LR
+    subgraph DEVELOP["DEVELOP"]
+        D1["<b>Version<br/>Control</b>"]
+    end
+    
+    subgraph TEST["TEST"]
+        T1["<b>A/B<br/>Testing</b>"]
+    end
+    
+    subgraph DEPLOY["DEPLOY"]
+        P1["<b>Staged<br/>Rollout</b>"]
+    end
+    
+    subgraph MONITOR["MONITOR"]
+        M1["<b>Performance<br/>Tracking</b>"]
+    end
+    
+    subgraph OPTIMIZE["OPTIMIZE"]
+        O1["<b>Cost<br/>Optimization</b>"]
+    end
+    
+    D1 --> T1 --> P1 --> M1 --> O1
+    O1 -->|<b>Feedback</b>| D1
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    style DEVELOP fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style TEST fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
+    style DEPLOY fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style MONITOR fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style OPTIMIZE fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style D1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style T1 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
+    style P1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style M1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style O1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style Copyright fill:none,stroke:none,color:#333333
+```
 
 ![Figure 12.3: Agent MLOps Lifecycle](../assets/figures/figure-12-3.png)
-
 ---
 
 ### 2.1 Model Versioning
@@ -578,10 +675,52 @@ When alerts fire, structured response prevents chaos. Adopt a six-phase incident
 
 **Figure 12.4: Six-Phase Incident Response**
 
-![Figure 12.4: Six-Phase Incident Response](../assets/figures/figure-12-4.png)
+```mermaid
+graph LR
+    subgraph P1["PHASE 1"]
+        D["<b>DETECT</b><br/><b>Alert Fires</b>"]
+    end
+    
+    subgraph P2["PHASE 2"]
+        T["<b>TRIAGE</b><br/><b>Map to Pillars</b>"]
+    end
+    
+    subgraph P3["PHASE 3"]
+        M["<b>MITIGATE</b><br/><b>Stop Bleeding</b>"]
+    end
+    
+    subgraph P4["PHASE 4"]
+        C["<b>COMMUNICATE</b><br/><b>Stakeholders</b>"]
+    end
+    
+    subgraph P5["PHASE 5"]
+        R["<b>RESOLVE</b><br/><b>Root Cause</b>"]
+    end
+    
+    subgraph P6["PHASE 6"]
+        L["<b>LEARN</b><br/><b>Post-Mortem</b>"]
+    end
+    
+    D --> T --> M --> C --> R --> L
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    style P1 fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
+    style P2 fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
+    style P3 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style P4 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style P5 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style P6 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style D fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+    style T fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
+    style M fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style C fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style R fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style L fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style Copyright fill:none,stroke:none,color:#333333
+```
 
 ![Figure 12.4: Six-Phase Incident Response](../assets/figures/figure-12-4.png)
-
 **Phase 1: DETECT**
 
 Automated monitoring triggers alert. On-call engineer acknowledges within response time SLA.
@@ -719,10 +858,47 @@ Structured weekly cycles transform operational data into agent improvements. A f
 
 **Figure 12.5: Five-Day Improvement Cycle**
 
-![Figure 12.5: Five-Day Improvement Cycle](../assets/figures/figure-12-5.png)
+```mermaid
+graph LR
+    subgraph MON["MONDAY"]
+        M["<b>Review<br/>Metrics</b>"]
+    end
+    
+    subgraph TUE["TUESDAY"]
+        T["<b>Analyze<br/>Failures</b>"]
+    end
+    
+    subgraph WED["WEDNESDAY"]
+        W["<b>Propose<br/>Fixes</b>"]
+    end
+    
+    subgraph THU["THURSDAY"]
+        H["<b>Implement<br/>Changes</b>"]
+    end
+    
+    subgraph FRI["FRIDAY"]
+        F["<b>A/B Test<br/>Launch</b>"]
+    end
+    
+    M --> T --> W --> H --> F
+    F -->|<b>Next Week</b>| M
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    style MON fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style TUE fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
+    style WED fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
+    style THU fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style FRI fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style M fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style T fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+    style W fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
+    style H fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style F fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style Copyright fill:none,stroke:none,color:#333333
+```
 
 ![Figure 12.5: Five-Day Improvement Cycle](../assets/figures/figure-12-5.png)
-
 **The Five-Day Cycle**
 
 | Day | Activity | INPACT™ Focus | Layer Focus | GOALS™ Focus |
@@ -848,10 +1024,35 @@ AIXcelerator is a complete platform that accelerates agent infrastructure deploy
 
 **Figure 12.6: AIXcelerator Five-Component Platform**
 
-![Figure 12.6: AIXcelerator Five-Component Platform](../assets/figures/figure-12-6.png)
+```mermaid
+graph TD
+    subgraph PLATFORM["AIXcelerator PLATFORM"]
+        C1["<b>Multi-Agent Core</b><br/><b>L4, L7 · All 6 Needs</b>"]
+        C2["<b>MCP Server</b><br/><b>L1-L2 · Contextual</b>"]
+        C3["<b>Agent Syndication</b><br/><b>L7 · Natural</b>"]
+        C4["<b>Governance Engine</b><br/><b>L5 · Permitted, Transparent</b>"]
+        C5["<b>Assessment Platform</b><br/><b>L6 · All 6 Needs</b>"]
+    end
+    
+C1 --> RESULT["<b>Months/Years → 90 Days</b><br/><b>All Three Pillars</b>"]
+    C2 --> RESULT
+    C3 --> RESULT
+    C4 --> RESULT
+    C5 --> RESULT
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    style PLATFORM fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style C1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style C2 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style C3 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style C4 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style C5 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style RESULT fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style Copyright fill:none,stroke:none,color:#333333
+```
 
 ![Figure 12.6: AIXcelerator Five-Component Platform](../assets/figures/figure-12-6.png)
-
 **Five Core Components**
 
 | Component | INPACT™ Coverage | Layers Addressed | Key Benefit |
