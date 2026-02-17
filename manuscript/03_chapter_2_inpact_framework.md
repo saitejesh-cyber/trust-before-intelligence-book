@@ -20,35 +20,7 @@ This chapter explains what those six things are.
 
 **Figure 2.0: The INPACT™ Framework - Six Infrastructure Needs for Agent Trust**
 
-```mermaid
-
-graph LR
-    subgraph WITHOUT["WITHOUT INPACT™"]
-        direction TB
-        W1["Why is this so slow?<br/><br/>It doesn't understand me<br/><br/>Who authorized this?<br/><br/>It keeps making mistakes<br/><br/>It doesn't know context<br/><br/><b>I don't trust it</b>"]
-    end
-    
-    subgraph TRANSFORM["TRANSFORM"]
-        direction TB
-        T1["→"]
-    end
-    
-    subgraph WITH["WITH INPACT™"]
-        direction TB
-        I1["I - Instant<br/>Under 2 seconds<br/><br/>N - Natural<br/>97% comprehension<br/><br/>P - Permitted<br/>Dynamic access<br/><br/>A - Adaptive<br/>Learns from feedback<br/><br/>C - Contextual<br/>Cross-system aware<br/><br/>T - Transparent<br/>Full audit trail<br/><br/><b>I trust it</b>"]
-    end
-    
-    WITHOUT --> TRANSFORM --> WITH
-    
-    style WITHOUT fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
-    style WITH fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style W1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style T1 fill:#f5f5f5,stroke:#666666,color:#333333
-    style I1 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    
-
-```
+![Figure 2.0: The INPACT™ Framework - Six Infrastructure Needs for Agent Trust](../assets/figures/figure-2-0.png)
 
 ![Figure 2.0: The INPACT™ Framework - Six Infrastructure Needs for Agent Trust](../assets/figures/figure-2-0.png)
 
@@ -62,39 +34,7 @@ Chapter 1 revealed why 95% of enterprise AI agent projects fail not from inadequ
 
 **Figure 2.1: The Architecture of Trust - Three Integrated Pillars**
 
-```mermaid
-
-
-graph TB
-    Title["ARCHITECTURE OF TRUST<br/>Three Integrated Pillars"]
-    
-    subgraph PILLARS[" "]
-        direction LR
-        INPACT["PILLAR 1: INPACT™<br/><br/>What Agents Need?<br/><br/><b>I</b>nstant<br/><b>N</b>atural<br/><b>P</b>ermitted<br/><b>A</b>daptive<br/><b>C</b>ontextual<br/><b>T</b>ransparent"]
-        
-        Layers["PILLAR 2: 7-LAYERS<br/>Infrastructure<br/><br/>How to Build TRUST?<br/><br/>Storage<br/>Real-Time<br/>Semantic<br/>Intelligence<br/>Governance<br/>Observability<br/>Orchestration"]
-        
-        GOALS["PILLAR 3: GOALS™<br/><br/>How to Measure TRUST?<br/><br/><b>G</b>overnance<br/><b>O</b>bservability<br/><b>A</b>vailability<br/><b>L</b>exicon<br/><b>S</b>olid"]
-    end
-    
-    Copyright["© 2025 Colaberry Inc."]
-    
-    Title --> PILLARS
-    
-    INPACT -.->|"Needs Fulfilled by"| Layers
-    Layers -.->|"Enables Operations"| GOALS
-    GOALS -.->|"Drives Trust"| INPACT
-    
-    style Title fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style PILLARS fill:none,stroke:none
-    style INPACT fill:#f57c00,stroke:#e65100,stroke-width:3px,color:#ffffff
-    style Layers fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style GOALS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style Copyright fill:#ffffff,stroke:none,color:#666666
-
-
-
-```
+![Figure 2.1: The Architecture of Trust - Three Integrated Pillars](../assets/figures/figure-2-1.png)
 
 ![Figure 2.1: The Architecture of Trust - Three Integrated Pillars](../assets/figures/figure-2-1.png)
 
@@ -124,78 +64,7 @@ Tony Robbins built an empire on one insight: humans have six core needs - signif
 
 **Figure 2.2: Human Needs to Agent Needs Parallel**
 
-```mermaid
-graph TB
-    TITLE["<b>HUMAN (Tony Robbins) → <br/>INPACT™ AGENT PARALLEL</b>"]
-    
-    TITLE --> ROW
-    
-    subgraph ROW[" "]
-        direction LR
-        
-        subgraph HUMAN["<b>6 HUMAN NEEDS </b>"]
-            direction TB
-            H1["<b>Significance</b><br/>Importance<br/>Validation"]
-            H2["<b>Variety</b><br/>Challenge<br/>Novelty"]
-            H3["<b>Certainty</b><br/>Predictability<br/>Safety"]
-            H4["<b>Growth</b><br/>Progress<br/>Development"]
-            H5["<b>Connection</b><br/>Belonging<br/>Relationships"]
-            H6["<b>Contribution</b><br/>Purpose<br/>Meaning"]
-        end
-        
-        subgraph AGENT["<b>6 AGENT NEEDS</b>"]
-            direction TB
-            A1["<b>I - Instant</b><br/>Real-time data<br/>Sub-2s response"]
-            A2["<b>N - Natural</b><br/>Business language<br/>Understanding"]
-            A3["<b>P - Permitted</b><br/>Authorization<br/>Security boundaries"]
-            A4["<b>A - Adaptive</b><br/>Continuous learning<br/>Improvement"]
-            A5["<b>C - Contextual</b><br/>Cross-system<br/>Integration"]
-            A6["<b>T - Transparent</b><br/>Explainable value<br/>Delivery"]
-        end
-        
-        TRUST["<b>✅ TRUSTED AGENT</b><br/><b>Infrastructure Fulfills <br/>All 6 Needs</b>"]
-        
-        H1 -.->|<b>Parallels</b>| A1
-        H2 -.->|<b>Parallels</b>| A2
-        H3 -.->|<b>Parallels</b>| A3
-        H4 -.->|<b>Parallels</b>| A4
-        H5 -.->|<b>Parallels</b>| A5
-        H6 -.->|<b>Parallels</b>| A6
-        
-        A1 --> TRUST
-        A2 --> TRUST
-        A3 --> TRUST
-        A4 --> TRUST
-        A5 --> TRUST
-        A6 --> TRUST
-    end
-    
-    COPYRIGHT["<b>© 2025 Colaberry Inc.</b>"]
-    
-    style TITLE fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    
-    style ROW fill:#ffffff,stroke:none
-    
-    style HUMAN fill:#fff9e6,stroke:#f57c00,stroke-width:3px,color:#e65100
-    style H1 fill:#ffffff,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style H2 fill:#ffffff,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style H3 fill:#ffffff,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style H4 fill:#ffffff,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style H5 fill:#ffffff,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style H6 fill:#ffffff,stroke:#f57c00,stroke-width:2px,color:#e65100
-    
-    style AGENT fill:#e0f2f1,stroke:#00897b,stroke-width:3px,color:#004d40
-    style A1 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A3 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A4 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A5 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A6 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    
-    style TRUST fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    
-    style COPYRIGHT fill:#ffffff,stroke:none,color:#666666
-```
+![Figure 2.2: Human Needs to Agent Needs Parallel](../assets/figures/figure-2-2.png)
 
 ![Figure 2.2: Human Needs to Agent Needs Parallel](../assets/figures/figure-2-2.png)
 
@@ -227,40 +96,7 @@ Traditional enterprise software could require trust: "You must use this ERP syst
 
 **Figure 2.3: Six INPACT™ Needs Fulfilled**
 
-```mermaid
-graph TB
-    subgraph BOX["<b>INPACT™ AGENT</b>"]
-        I["<b>I - Instant</b><br/><b>Users trust responses<br/> are current</b>"]
-        N["<b>N - Natural</b><br/><b>Users trust agent<br/> understands</b>"]
-        P["<b>P - Permitted</b><br/><b>Users trust agent<br/> respects boundaries</b>"]
-        A["<b>A - Adaptive</b><br/><b>Users trust agent<br/> learns & improves</b>"]
-        C["<b>C - Contextual</b><br/><b>Users trust agent<br/> sees complete picture</b>"]
-        T["<b>T - Transparent</b><br/><b>Users trust agent's<br/> reasoning</b>"]
-        
-        TRUST["<b>✅ TRUSTED AGENT</b><br/><b>Users<br/> Collaborate & Delegate<br/> with Confidence</b>"]
-        
-        I --> TRUST
-        N --> TRUST
-        P --> TRUST
-        A --> TRUST
-        C --> TRUST
-        T --> TRUST
-    end
-    
-    COPYRIGHT["<b>© 2025 Colaberry Inc.</b>"]
-    
-    style BOX fill:#f0fff0,stroke:#00897b,stroke-width:3px
-    style I fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style N fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style P fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style C fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style T fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    
-    style TRUST fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    
-    style COPYRIGHT fill:#ffffff,stroke:none,color:#666666
-```
+![Figure 2.3: Six INPACT™ Needs Fulfilled](../assets/figures/figure-2-3.png)
 
 ![Figure 2.3: Six INPACT™ Needs Fulfilled](../assets/figures/figure-2-3.png)
 
@@ -288,34 +124,7 @@ INPACT™ assessment quantifies infrastructure readiness using a 1-6 scoring sys
 
 **Figure 2.4: INPACT™ Assessment Methodology - From Dimensions to Decision**
 
-```mermaid
-graph TB
-    TITLE["<b>INPACT™ ASSESSMENT<br/> METHODOLOGY</b>"]
-    
-    ASSESS["<b>STEP 1: ASSESS<br/> 6 DIMENSIONS</b><br/><b>I · N · P · A · C · T</b><br/><b>(Score each 1-6 points)</br>Max points: 36</b>"]
-    
-    CALC["<b>STEP 2: CALCULATE SCORE:</b><br/><b>Add 6 dimensions points</b><br/><b>Convert: (score/36) × 100</b>"]
-    
-    DECISION{"<b>STEP 3: EVALUATE</b><br/><b>Score ≥ 86/100?</b>"}
-    
-    READY["<b>✅ AGENT-READY</b><br/><b>Production approved</b><br/><b>Sustainable adoption</b>"]
-    
-    GAPS["<b>⚠️ GAPS FOUND</b><br/><b>Roadmap needed</b><br/><b>High risk</b>"]
-    
-    COPYRIGHT["<b>© 2025 Colaberry Inc.</b>"]
-    
-    TITLE --> ASSESS --> CALC --> DECISION
-    DECISION -->|<b>YES</b>| READY
-    DECISION -->|<b>NO</b>| GAPS
-    
-    style TITLE fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style ASSESS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style CALC fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style DECISION fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style READY fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style GAPS fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
-    style COPYRIGHT fill:#ffffff,stroke:none,color:#666666
-```
+![Figure 2.4: INPACT™ Assessment Methodology - From Dimensions to Decision](../assets/figures/figure-2-4.png)
 
 ![Figure 2.4: INPACT™ Assessment Methodology - From Dimensions to Decision](../assets/figures/figure-2-4.png)
 
@@ -359,56 +168,7 @@ The transformation roadmap began there.
 
 **Figure 2.5: Echo Health's INPACT™ Transformation - 28/100 to 86/100 in 10 Weeks**
 
-```mermaid
-graph TB
-    TITLE["<b>ECHO HEALTH'S<br/>INFRASTRUCTURE<br/>TRANSFORMATION</b>"]
-    
-    TITLE --> BEFORE
-    
-    subgraph BEFORE["<b>WEEK 0: SCORE =28/100</b>"]
-        B_SCORE["<b>Overall Score: 28/100</b><br/><b>(10 out of 36 points)</b>"]
-        
-        B_DIMS["<b>Dimension Breakdown:</b><br/><b>I=1/6 🔴 | N=2/6 🔴 </b><br/><b>P=1/6 🔴 | A=2/6 🔴</b><br/> C=3/6 🟡 | T=1/6 🔴</b>"]
-        
-        B_STATUS["<b>Not Production Ready</b><br/><b>• 5 critical gaps </b><br/><b>• Compliance risk</b><br/><b>• Cannot proceed to prod</b>"]
-        
-        B_SCORE --> B_DIMS
-        B_DIMS --> B_STATUS
-    end
-    
-    BEFORE --> TRANSFORM["<b>90-DAY TRANSFORMATION<br/>ROADMAP</b><br/><b>Investment: $1.23M </b><br/><b> Timeline: 10 weeks</b><br/><b>Sequence: </b><br/><b>I → N+P → C → A+T</b>"]
-    
-    TRANSFORM --> AFTER
-    
-    subgraph AFTER["<b>WEEK 10: SCORE = 86/100</b>"]
-        A_SCORE["<b>Overall Score: 86/100</b><br/><b>(31 out of 36 points)</b>"]
-        
-        A_DIMS["<b>Dimension Breakdown:</b><br/><b>I=5/6 ✅ | N=5/6 ✅ </b><br/><b> P=5/6 ✅ | A=5/6 ✅</b><br/><b>C=6/6 ✅ | T=5/6 ✅</b>"]
-        
-A_STATUS["<b>Production-Ready</b><br/><b>• All dimensions ≥5/6 </b><br/><b>• ROI: 209% Year 1 </b><br/><b>• Payback: 10 weeks</b>"]
-        
-        A_SCORE --> A_DIMS
-        A_DIMS --> A_STATUS
-    end
-    
-    COPYRIGHT["<b>© 2025 Colaberry Inc.</b>"]
-    
-    style TITLE fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    
-    style BEFORE fill:#fff5f5,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style B_SCORE fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
-    style B_DIMS fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style B_STATUS fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    
-    style TRANSFORM fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
-    
-    style AFTER fill:#f0fff0,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A_SCORE fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style A_DIMS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A_STATUS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    
-    style COPYRIGHT fill:#ffffff,stroke:none,color:#666666
-```
+![Figure 2.5: Echo Health's INPACT™ Transformation - 28/100 to 86/100 in 10 Weeks](../assets/figures/figure-2-5.png)
 
 ![Figure 2.5: Echo Health's INPACT™ Transformation - 28/100 to 86/100 in 10 Weeks](../assets/figures/figure-2-5.png)
 
@@ -476,41 +236,7 @@ Every second of latency costs trust. A patient calls to schedule. The agent quer
 
 **Figure 2.6: Batch Processing vs. Real-Time Response**
 
-```mermaid
-graph TB
-    subgraph ERA1["<b>Analytics Era: Batch</b>"]
-        direction LR
-        A1["<b>Overnight<br/>ETL Job</b>"] --> B1["<b>Data<br/>Warehouse</b>"]
-        B1 --> C1["<b>BI Query<br/>8-13 seconds</b>"]
-        C1 --> D1["<b>Stale Data<br/>8-24 hours old</b>"]
-        
-        style D1 fill:#b71c1c,color:#ffffff,stroke:#c62828,stroke-width:3px
-    end
-    
-    ERA1 -.->|<b>Evolution</b>| ERA2
-    
-    subgraph ERA2["<b>Agent Era: Real-Time</b>"]
-        direction LR
-        A2["<b>CDC<br/>Continuous</b>"] --> B2["<b>Streaming<br/>Platform</b>"]
-        B2 --> C2["<b>Agent Query<br/>&lt;2 seconds</b>"]
-        C2 --> D2["<b>Fresh Data<br/>&lt;30 seconds old</b>"]
-        
-        style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px
-    end
-    
-    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style A1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style B1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style C1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    
-    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style B2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style C2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:#ffffff,stroke:none,color:#666666
-```
+![Figure 2.6: Batch Processing vs. Real-Time Response](../assets/figures/figure-2-6.png)
 
 ![Figure 2.6: Batch Processing vs. Real-Time Response](../assets/figures/figure-2-6.png)
 
@@ -554,41 +280,7 @@ Research shows GPT-4 achieves 73% execution accuracy on complex database schemas
 
 **Figure 2.7: Manual Translation vs. Semantic Understanding**
 
-```mermaid
-graph TB
-    subgraph ERA1["<b>Analytics Era: Manual</b>"]
-        direction LR
-        A1["<b>Natural<br/>Language Query</b>"] --> B1["<b>Developer<br/>Translates to SQL</b>"]
-        B1 --> C1["<b>Cryptic Table<br/>FCT_PTNT_ENCT</b>"]
-        C1 --> D1["<b>2-3 days<br/>40-60% accuracy</b>"]
-        
-        style D1 fill:#b71c1c,color:#ffffff,stroke:#c62828,stroke-width:3px
-    end
-    
-    ERA1 -.->|<b>Evolution</b>| ERA2
-    
-    subgraph ERA2["<b>Agent Era: Semantic</b>"]
-        direction LR
-        A2["<b>Natural<br/>Language Query</b>"] --> B2["<b>Semantic<br/>Layer</b>"]
-        B2 --> C2["<b>Business Terms<br/>'Patient Encounters'</b>"]
-        C2 --> D2["<b>Instant<br/>87-93% accuracy</b>"]
-        
-        style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px
-    end
-    
-    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style A1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style B1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style C1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    
-    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style B2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style C2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:#ffffff,stroke:none,color:#757575
-```
+![Figure 2.7: Manual Translation vs. Semantic Understanding](../assets/figures/figure-2-7.png)
 
 ![Figure 2.7: Manual Translation vs. Semantic Understanding](../assets/figures/figure-2-7.png)
 
@@ -640,39 +332,7 @@ Role-based access control (RBAC) operates at table level: grant all patient reco
 
 **Figure 2.8: RBAC Only vs. RBAC + ABAC**
 
-```mermaid
-graph TB
-    subgraph ERA1["<b>RBAC Only</b>"]
-        direction LR
-        A1["<b>User = Scheduler<br/>Role Granted</b>"] --> B1["<b>Access ALL<br/>Patient Records</b>"]
-        B1 --> D1["<b>HIPAA<br/>Violation</b>"]
-        
-        style D1 fill:#b71c1c,color:#ffffff,stroke:#c62828,stroke-width:3px
-    end
-    
-    ERA1 -.->|<b>Add Context Layer</b>| ERA2
-    
-    subgraph ERA2["<b>RBAC + ABAC</b>"]
-        direction LR
-        A2["<b>User + Context<br/>Per-Query Eval</b>"] --> B2["<b>Policy<br/>Engine OPA</b>"]
-        B2 --> C2["<b>Dynamic<br/>Masking</b>"]
-        C2 --> D2["<b>HIPAA<br/>Compliant</b>"]
-        
-        style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px
-    end
-    
-    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style A1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style B1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    
-    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style B2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style C2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:#ffffff,stroke:none,color:#757575
-```
+![Figure 2.8: RBAC Only vs. RBAC + ABAC](../assets/figures/figure-2-8.png)
 
 ![Figure 2.8: RBAC Only vs. RBAC + ABAC](../assets/figures/figure-2-8.png)
 
@@ -722,41 +382,7 @@ Manual quarterly retraining creates 3-month windows where agents operate with de
 
 **Figure 2.9: Quarterly Retraining vs. Continuous Learning**
 
-```mermaid
-graph TB
-    subgraph ERA1["<b>Manual Era: Quarterly</b>"]
-        direction LR
-        A1["<b>Model<br/>Deployed Q1</b>"] --> B1["<b>Performance<br/>Degrades 91%</b>"]
-        B1 --> C1["<b>Manual Retrain<br/>Q2 (3 months)</b>"]
-        C1 --> D1["<b>3-Month<br/>Degradation Window</b>"]
-        
-        style D1 fill:#b71c1c,color:#ffffff,stroke:#c62828,stroke-width:3px
-    end
-    
-    ERA1 -.->|<b>Evolution</b>| ERA2
-    
-    subgraph ERA2["<b>Adaptive Era: Continuous</b>"]
-        direction LR
-        A2["<b>Model<br/>Deployed</b>"] --> B2["<b>Monitor<br/>Performance</b>"]
-        B2 --> C2["<b>Auto Retrain<br/>Drift Detected</b>"]
-        C2 --> D2["<b>Continuous<br/>Improvement</b>"]
-        
-        style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px
-    end
-    
-    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style A1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style B1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style C1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    
-    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style B2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style C2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:#ffffff,stroke:none,color:#757575
-```
+![Figure 2.9: Quarterly Retraining vs. Continuous Learning](../assets/figures/figure-2-9.png)
 
 ![Figure 2.9: Quarterly Retraining vs. Continuous Learning](../assets/figures/figure-2-9.png)
 
@@ -807,39 +433,7 @@ Agents operating on single-system data provide incomplete answers: "You have an 
 
 **Figure 2.10: Single-System vs. Cross-System Integration**
 
-```mermaid
-graph TB
-    subgraph ERA1["<b>Siloed Era: Single-System</b>"]
-        direction LR
-        A1["<b>Agent Query</b>"] --> B1["<b>EHR<br/>Only</b>"]
-        B1 --> D1["<b>Incomplete<br/>Answer</b>"]
-        
-        style D1 fill:#b71c1c,color:#ffffff,stroke:#c62828,stroke-width:3px
-    end
-    
-    ERA1 -.->|<b>Evolution</b>| ERA2
-    
-    subgraph ERA2["<b>Contextual Era: Integrated</b>"]
-        direction LR
-        A2["<b>Agent Query</b>"] --> B2["<b>5 Systems<br/>Integrated</b>"]
-        B2 --> C2["<b>Context<br/>Enriched</b>"]
-        C2 --> D2["<b>Complete<br/>Answer</b>"]
-        
-        style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px
-    end
-    
-    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style A1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style B1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    
-    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style B2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style C2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:#ffffff,stroke:none,color:#757575
-```
+![Figure 2.10: Single-System vs. Cross-System Integration](../assets/figures/figure-2-10.png)
 
 ![Figure 2.10: Single-System vs. Cross-System Integration](../assets/figures/figure-2-10.png)
 
@@ -883,39 +477,7 @@ Without transparency, physicians override 70% of agent recommendations, not beca
 
 **Figure 2.11: Opaque Decisions vs. Explainable Reasoning**
 
-```mermaid
-graph TB
-    subgraph ERA1["<b>Black-Box: Opaque</b>"]
-        direction LR
-        A1["<b>Agent<br/>Recommendation</b>"] --> B1["<b>No<br/>Explanation</b>"]
-        B1 --> D1["<b>70% Override<br/>Rate</b>"]
-        
-        style D1 fill:#b71c1c,color:#ffffff,stroke:#c62828,stroke-width:3px
-    end
-    
-    ERA1 -.->|<b>Evolution</b>| ERA2
-    
-    subgraph ERA2["<b>Transparent: Explainable</b>"]
-        direction LR
-        A2["<b>Agent<br/>Recommendation</b>"] --> B2["<b>Audit<br/>Trail</b>"]
-        B2 --> C2["<b>Clinical<br/>Evidence</b>"]
-        C2 --> D2["<b>15% Override<br/>Rate</b>"]
-        
-        style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px
-    end
-    
-    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style A1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style B1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    
-    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style B2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    style C2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:#ffffff,stroke:none,color:#757575
-```
+![Figure 2.11: Opaque Decisions vs. Explainable Reasoning](../assets/figures/figure-2-11.png)
 
 ![Figure 2.11: Opaque Decisions vs. Explainable Reasoning](../assets/figures/figure-2-11.png)
 

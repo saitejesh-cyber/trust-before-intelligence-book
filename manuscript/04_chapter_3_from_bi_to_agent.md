@@ -26,42 +26,7 @@ Gap 7: Agents that couldn't coordinate.
 
 **Figure 3.0: Echo's 70-Day Transformation**
 
-```mermaid
-graph LR
-    subgraph BEFORE["<b>DAY 0: THE PROBLEM</b>"]
-        direction TB
-        B1["<b>INPACT™: 28/100</b><br/><br/><b>7 Infrastructure Gaps</b><br/><br/><b>No vectors or graphs</b><br/><b>Data always stale</b><br/><b>Schemas unreadable</b><br/><b>Search without meaning</b><br/><b>Permissions frozen</b><br/><b>Decisions unexplainable</b><br/><b>Agents isolated</b>"]
-    end
-    
-    subgraph SOLUTION["<b>THE SOLUTION</b>"]
-        direction TB
-        S1["<b>7 Gaps → 7 Layers</b><br/><br/><b>3 Phases</b><br/><b>70 Days</b><br/><b>$1.23M</b>"]
-    end
-    
-    subgraph AFTER["<b>DAY 70: THE RESULT</b>"]
-        direction TB
-        A1["<b>INPACT™: 86/100</b><br/><br/><b>7 Layers Complete</b><br/><b>3 Agents Live</b><br/><br/><b>Production Ready</b>"]
-    end
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    
-    BEFORE --> SOLUTION --> AFTER
-    
-    %% RED - Problems/Old Era (Day 0 with gaps)
-    style BEFORE fill:#fff5f5,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style B1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    
-    %% ORANGE - Transition/Solution
-    style SOLUTION fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style S1 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
-    
-    %% TEAL - Success/Result (Day 70)
-    style AFTER fill:#f0fff0,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A1 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    
-    %% Copyright
-    style Copyright fill:#ffffff,stroke:none,color:#666666
-```
+![Figure 3.0: Echo's 70-Day Transformation](../assets/figures/figure-3-0.png)
 
 ![Figure 3.0: Echo's 70-Day Transformation](../assets/figures/figure-3-0.png)
 
@@ -137,48 +102,7 @@ The implications for enterprise infrastructure are profound. MIT NANDA research 
 
 **Figure 3.1: Software 1.0 to 3.0 Evolution**
 
-```mermaid
-graph LR
-    subgraph era1["<b>SOFTWARE 1.0</b>"]
-        direction TB
-        P1["<b>Programming</b><br/><b>(1950s-2010s)</b><br/>Explicit instructions<br/>C++, Java, Python"]
-        I1["<b>Infrastructure</b><br/>Data warehouses<br/>Batch ETL, BI dashboards"]
-        P1 --> I1
-    end
-    
-    subgraph era2["<b>SOFTWARE 2.0</b>"]
-        direction TB
-        P2["<b>Programming</b><br/><b>(2010s-2023)</b><br/>Curate datasets<br/>Train ML models"]
-        I2["<b>Infrastructure</b><br/>Added ML layers<br/>MLOps, registries"]
-        P2 --> I2
-    end
-    
-    subgraph era3["<b>SOFTWARE 3.0</b>"]
-        direction TB
-        P3["<b>Programming</b><br/><b>(2023-Present)</b><br/>Natural language<br/>In-context learning"]
-        I3["<b>NEW Infrastructure</b><br/>Vector DBs, real-time<br/>Semantic layers, ABAC"]
-        P3 --> I3
-    end
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    
-    era1 -.->|<b>Added ML</b>| era2
-    era2 -.->|<b>PARADIGM SHIFT <br> Requires INPACT™ </b>| era3
-    
-    %% Era 1 - Neutral/Gray (Old)
-    style P1 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style I1 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    
-    %% Era 2 - Orange (Transition/ML Addition)
-    style P2 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style I2 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
-    
-    %% Era 3 - Teal (Modern/Agent-Ready)
-    style P3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style I3 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    
-    style Copyright fill:#ffffff,stroke:none,color:#666666
-```
+![Figure 3.1: Software 1.0 to 3.0 Evolution](../assets/figures/figure-3-1.png)
 
 ![Figure 3.1: Software 1.0 to 3.0 Evolution](../assets/figures/figure-3-1.png)
 
@@ -214,53 +138,7 @@ Capturing that learning requires feedback loops, validation mechanisms, and cont
 
 **Figure 3.2: BI Era vs Agent Era**
 
-```mermaid
-graph TB
-    subgraph old["<b>BI-ERA:HUMAN ANALYSIS</b>"]
-        direction LR
-        O1["<b>Batch ETL</b><br/>8-24 hour lag"]
-        O2["<b>Data Warehouse</b><br/>OLAP cubes"]
-        O3["<b>Dashboards</b><br/>Fixed queries"]
-        O4["<b>Human Analysts</b><br/>Manual decisions"]
-        
-        O1 --> O2 --> O3 --> O4
-    end
-    
-    Shift["<b>PARADIGM EVOLUTION</b>"]
-    
-    subgraph new["<b>AGENT-ERA: AUTONOMOUS SYSTEMS</b>"]
-        direction LR
-        N1["<b>Real-Time</b><br/>Sub-30s freshness"]
-        N2["<b>Multi-Modal</b><br/>Vector + Graph + SQL"]
-        N3["<b>Semantic + RAG</b><br/>Natural language"]
-        N4["<b>Autonomous Agents</b><br/>Instant decisions"]
-        
-        N1 --> N2 --> N3 --> N4
-    end
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    
-    old -.->|<b>Must Transform</b>| Shift
-    Shift -.->|<b>To Enable</b>| new
-    
-    %% BI-Era (Red - Problems/Old Approach)
-    style O1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style O2 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style O3 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style O4 fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
-    
-    %% Agent-Era (Teal - Solutions/Modern Approach)
-    style N1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style N2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style N3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style N4 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    
-    %% Transition Element
-    style Shift fill:#fff9e6,stroke:#f57c00,stroke-width:3px,color:#e65100
-    
-    %% Copyright
-    style Copyright fill:#ffffff,stroke:none,color:#666666
-```
+![Figure 3.2: BI Era vs Agent Era](../assets/figures/figure-3-2.png)
 
 ![Figure 3.2: BI Era vs Agent Era](../assets/figures/figure-3-2.png)
 
@@ -460,101 +338,7 @@ Each infrastructure gap requires a specific architectural layer:
 
 **Figure 3.3: Seven Gaps --> Six Needs --> Seven Layers**
 
-```mermaid
-
-graph LR
-    subgraph gaps["7 INFRASTRUCTURE GAPS"]
-        direction TB
-        G1["Gap 1: Multi-Modal<br/>Storage<br/>Relational only<br/>No vectors/graphs"]
-        G2["Gap 2: Real-Time Data<br/>Overnight batch ETL<br/>8-24 hour staleness"]
-        G3["Gap 3: Semantic<br/>Understanding<br/>SQL schemas only<br/>No business language"]
-        G4["Gap 4: Intelligent<br/>Retrieval<br/>Keyword search only<br/>No context awareness"]
-        G5["Gap 5: Dynamic<br/>Permissions<br/>Static RBAC<br/>No context evaluation"]
-        G6["Gap 6: Reasoning<br/>Observability<br/>Query logs only<br/>No reasoning traces"]
-        G7["Gap 7: Multi-Agent<br/>Coordination<br/>Single-user systems<br/>No orchestration"]
-    end
-    
-    subgraph needs["INPACT™ NEEDS"]
-        direction TB
-        N1["I - Instant"]
-        N2["N - Natural"]
-        N3["P - Permitted"]
-        N4["A - Adaptive"]
-        N5["C - Contextual"]
-        N6["T - Transparent"]
-    end
-    
-    subgraph layers["7-LAYER ARCHITECTURE"]
-        direction TB
-        L1["Layer 1<br/>Storage<br/>Multi-Modal Data"]
-        L2["Layer 2<br/>Real-Time<br/>CDC, Streaming"]
-        L3["Layer 3<br/>Semantic Layer<br/>Business Glossary"]
-        L4["Layer 4<br/>Intelligence<br/>RAG + Retrieval<br/>Vector Search"]
-        L5["Layer 5<br/>Governance<br/>ABAC, Policies"]
-        L6["Layer 6<br/>Observability<br/>Distributed Tracing"]
-        L7["Layer 7<br/>Orchestration<br/>Multi-Agent Framework"]
-    end
-    
-    Copyright["© 2025 Colaberry Inc."]
-    
-    %% Gap to Need connections
-    G1 -.->|"Requires"| N5
-    G2 -.->|"Requires"| N1
-    G2 -.->|"Requires"| N5
-    G3 -.->|"Requires"| N2
-    G4 -.->|"Requires"| N2
-    G4 -.->|"Requires"| N5
-    G5 -.->|"Requires"| N3
-    G6 -.->|"Requires"| N4
-    G6 -.->|"Requires"| N6
-    G7 -.->|"at scale"| N1
-    G7 -.->|"Requires"| N2
-    G7 -.->|"Requires"| N4
-    
-    %% Need to Layer connections
-    N1 -.->|"Solved by"| L2
-    N2 -.->|"Solved by"| L3
-    N2 -.->|"Solved by"| L4
-    N3 -.->|"Solved by"| L5
-    N4 -.->|"Solved by"| L6
-    N4 -.->|"Solved by"| L7
-    N5 -.->|"Solved by"| L1
-    N5 -.->|"Solved by"| L4
-    N6 -.->|"Solved by"| L6
-    
-    %% Styling - GAPS (Red - Problems)
-    style gaps fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style G1 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style G2 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style G3 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style G4 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style G5 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style G6 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style G7 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    
-    %% Styling - NEEDS (Neutral - Requirements)
-    style needs fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style N1 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
-    style N2 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
-    style N3 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
-    style N4 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
-    style N5 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
-    style N6 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
-    
-    %% Styling - LAYERS (Teal - Solutions)
-    style layers fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L1 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L2 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L3 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L4 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L5 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L6 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L7 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    
-    %% Copyright
-    style Copyright fill:#ffffff,stroke:none,color:#666666
-
-```
+![Figure 3.3: Seven Gaps --> Six Needs --> Seven Layers](../assets/figures/figure-3-3.png)
 
 ![Figure 3.3: Seven Gaps --> Six Needs --> Seven Layers](../assets/figures/figure-3-3.png)
 

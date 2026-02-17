@@ -35,34 +35,7 @@ Sarah pulled up the architecture diagram. "Let me show you what we're building."
 
 **Figure 4.0: Foundation Layers - Why Layers 1-2 Are Prerequisites**
 
-```mermaid
-
-graph LR
-    subgraph WITHOUT["WITHOUT LAYERS 1-2"]
-        direction TB
-        W1["Siloed databases<br/>No unified access<br/><br/>Overnight batch ETL<br/>Stale data<br/><br/>No vector storage<br/>No semantic search<br/><br/><b>Minutes to query<br/>Users abandon</b>"]
-    end
-    
-    subgraph TRANSFORM["TRANSFORM"]
-        direction TB
-        T1["→"]
-    end
-    
-    subgraph WITH["WITH LAYERS 1-2"]
-        direction TB
-        L1["Layer 1:<br/>Unified multi-modal<br/>storage<br/><br/>Layer 2:<br/>Sub-second freshness<br/><br/>Vector + Graph ready<br/><br/><b>Under 2s response<br/>Users trust</b>"]
-    end
-    
-    WITHOUT --> TRANSFORM --> WITH
-    
-    style WITHOUT fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
-    style WITH fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style W1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style T1 fill:#f5f5f5,stroke:#666666,color:#333333
-    style L1 fill:#b2dfdb,stroke:#00897b,color:#004d40
-
-```
+![Figure 4.0: Foundation Layers - Why Layers 1-2 Are Prerequisites](../assets/figures/figure-4-0.png)
 
 ![Figure 4.0: Foundation Layers - Why Layers 1-2 Are Prerequisites](../assets/figures/figure-4-0.png)
 
@@ -80,49 +53,7 @@ graph LR
 
 **Figure 4.1: The Architecture of Trust - Three Integrated Pillars**
 
-```mermaid
-
-graph TB
-    Title["ARCHITECTURE OF TRUST<br/>Three Integrated Pillars"]
-    
-    subgraph PILLARS[" "]
-        direction LR
-        INPACT["`PILLAR 1: INPACT™<br/><br/>What Agents Need?<br/><br/>**I**nstant<br/>**N**atural<br/>**P**ermitted<br/>**A**daptive<br/>**C**ontextual<br/>**T**ransparent`"]
-        
-        Layers["PILLAR 2: 7-LAYERS<br/>Infrastructure<br/><br/>How to Build TRUST?<br/><br/>Storage<br/>Real-Time<br/>Semantic<br/>Intelligence<br/>Governance<br/>Observability<br/>Orchestration"]
-        
-        GOALS["`PILLAR 3: GOALS™<br/><br/>How to Measure TRUST?<br/><br/>**G**overnance<br/>**O**bservability<br/>**A**vailability<br/>**L**exicon<br/>**S**olid`"]
-    end
-    
-    subgraph INDICATOR[" "]
-        direction LR
-        Spacer1[" "]
-        YouAreHere["<b>YOU ARE HERE</b><br/>Layers 1: Storage <br/> Layer 2: Real-time<br/> Built Here"]
-        Spacer2[" "]
-    end
-    
-    Copyright["© 2025 Colaberry Inc."]
-    
-    Title --> PILLARS
-    PILLARS <--> INDICATOR
-    
-    INPACT -.->|"Needs Fulfilled by"| Layers
-    Layers -.->|"Enables Operations"| GOALS
-    GOALS -.->|"Drives Trust"| INPACT
-
-    style Title fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style PILLARS fill:none,stroke:none
-    style INDICATOR fill:none,stroke:none
-    style INPACT fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style Layers fill:#f57c00,stroke:#e65100,stroke-width:3px,color:#ffffff
-    style GOALS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style Spacer1 fill:none,stroke:none,color:transparent
-    style YouAreHere fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style Spacer2 fill:none,stroke:none,color:transparent
-    style Copyright fill:#ffffff,stroke:none,color:#666666
-
-
-```
+![Figure 4.1: The Architecture of Trust - Three Integrated Pillars](../assets/figures/figure-4-1.png)
 
 ![Figure 4.1: The Architecture of Trust - Three Integrated Pillars](../assets/figures/figure-4-1.png)
 
@@ -138,33 +69,7 @@ Foundation equals data availability and accessibility. Before agents can underst
 
 **Figure 4.2: 7-Layer Agent-Ready Architecture - Foundation Highlighted**
 
-```mermaid
-graph TB
-    L7["<b>Layer 7: Orchestration</b><br/><b>Multi-Agent Coordination</b>"]
-    L6["<b>Layer 6: Observability</b><br/><b>Tracing & Audit</b>"]
-    L5["<b>Layer 5: Governance</b><br/><b>Dynamic Access Control</b>"]
-    L4["<b>Layer 4: Intelligence</b><br/><b>LLM + RAG Pipeline</b>"]
-    L3["<b>Layer 3: Semantic</b><br/><b>Business Context</b>"]
-    
-    subgraph "<b>🏗️ FOUNDATION</b>"
-        L2["<b>Layer 2: Real-Time Data</b><br/><b>CDC & Streaming</b>"]
-        L1["<b>Layer 1: Multi-Modal Storage</b><br/><b>8 Phase 1 Categories</b>"]
-    end
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    
-    L7 --> L6 --> L5 --> L4 --> L3
-    L3 --> L2 --> L1
-    
-    style L7 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style L6 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style L5 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style L4 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style L3 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style L2 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style L1 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style Copyright fill:#ffffff,stroke:none,color:#666666
-```
+![Figure 4.2: 7-Layer Agent-Ready Architecture - Foundation Highlighted](../assets/figures/figure-4-2.png)
 
 ![Figure 4.2: 7-Layer Agent-Ready Architecture - Foundation Highlighted](../assets/figures/figure-4-2.png)
 
@@ -284,28 +189,7 @@ Swapna pulled up the pipeline diagram. "Overnight batch. Operational databases, 
 
 **Figure 4.3: Batch ETL Creates Patient Safety Risk**
 
-```mermaid
-graph LR
-    subgraph "<b>Week 0: Batch ETL</b>"
-        OPS["<b>Operational Systems</b><br/>Epic, Cerner, Workday<br/>Real-time updates"]
-        ETL["<b>2 AM ETL</b><br/>Overnight batch<br/>24-hour cycle"]
-        REPORT["<b>Reporting Database</b><br/>Stale by afternoon<br/>8-24 hour lag"]
-    end
-    
-    RISK["<b>Patient Safety Risk</b><br/>Medication orders<br/>invisible 12+ hours"]
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    
-    OPS -->|<b>Continuous changes</b>| ETL
-    ETL -->|<b>Batch load</b>| REPORT
-    REPORT -.->|<b>Agents query stale data</b>| RISK
-    
-    style OPS fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style ETL fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
-    style REPORT fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style RISK fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
-    style Copyright fill:#ffffff,stroke:none,color:#666666
-```
+![Figure 4.3: Batch ETL Creates Patient Safety Risk](../assets/figures/figure-4-3.png)
 
 ![Figure 4.3: Batch ETL Creates Patient Safety Risk](../assets/figures/figure-4-3.png)
 
@@ -394,54 +278,7 @@ Layer 1 provides eleven distinct storage categories, each optimized for specific
 
 **Figure 4.4: Layer 1 Multi-Modal Storage - 11 Categories by Function**
 
-```mermaid
-
-graph TB
-    TITLE["LAYER 1:<br/><b>MULTI-MODAL</b><br/><b>STORAGE</b><br/>11 Categories"]
-    
-    subgraph FOUNDATION["Foundation (8 Types)"]
-        direction TB
-        S1["1. <b>RDBMS</b><br/>Transactions"]
-        S2["2. <b>NoSQL</b><br/>Documents"]
-        S3["3. <b>Graph DB</b><br/>Relationships"]
-        S4["4. <b>Object Store</b><br/>Unstructured"]
-        S5["5. <b>Lakehouse</b><br/>Analytics"]
-        S6["6. <b>Model Registry</b><br/>ML models"]
-        S7["7. <b>Time-Series</b><br/>IoT/metrics"]
-        S8["8. <b>Cache Layer</b><br/>Performance"]    
-    end
-    
-    subgraph PHASE2["Phase 2 (3 Types)"]
-        direction TB
-        S9["9. <b>Vector DB</b><br/>Embeddings"]
-        S10["10. <b>Search Index</b><br/>Full-text"]
-        S11["11. <b>Feature Store</b><br/>ML features"]
-    end
-    
-    OUTPUT["Right Storage<br/>for Each Query"]
-    
-    Copyright["© 2025 Colaberry Inc."]
-    
-    TITLE --> FOUNDATION --> PHASE2 <--> OUTPUT
-    
-    style TITLE fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style FOUNDATION fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style PHASE2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style S1 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style S2 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style S3 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style S4 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style S5 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style S6 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style S7 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style S8 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style S9 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style S10 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style S11 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style OUTPUT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style Copyright fill:#ffffff,stroke:none,color:#666666
-
-```
+![Figure 4.4: Layer 1 Multi-Modal Storage - 11 Categories by Function](../assets/figures/figure-4-4.png)
 
 ![Figure 4.4: Layer 1 Multi-Modal Storage - 11 Categories by Function](../assets/figures/figure-4-4.png)
 
@@ -642,57 +479,7 @@ No single storage technology handles all these patterns efficiently. Multi-modal
 Echo started with SQL Server only. Here's what failed:
 
 **Figure 4.5: Echo's Storage Transformation - Single-Modal to Multi-Modal**
-```mermaid
-graph LR
-    subgraph BEFORE["<b>Week 0: Single-Modal</b>"]
-        OLD["<b>SQL Server Only</b><br/><b>All queries, one DB</b>"]
-        P1["<b>Cache: None</b><br/><b>Every query hits DB</b>"]
-        P2["<b>Graph queries: 8.2s</b><br/><b>Complex JOINs</b>"]
-        P3["<b>Schema: Rigid</b><br/><b>Change is slow</b>"]
-        P4["<b>ML: Spreadsheets</b><br/><b>No versioning</b>"]
-    end
-    
-    TRANSFORM["<b>4 Weeks</b>"]
-    
-    subgraph AFTER["<b>Week 4: Multi-Modal</b>"]
-        NEW["<b>8 Categories</b><br/><b>Right tool, right job</b>"]
-        S1["<b>Cache: &lt;10ms</b><br/><b>Redis MemoryDB</b>"]
-        S2["<b>Graph DB: 340ms</b><br/><b>Native traversal</b>"]
-        S3["<b>Schema: Flexible</b><br/><b>NoSQL + Lakehouse</b>"]
-        S4["<b>ML: Registry</b><br/><b>Full versioning</b>"]
-    end
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-
-    OLD --> P1
-    OLD --> P2
-    OLD --> P3
-    OLD --> P4
-    P1 --> TRANSFORM
-    P2 --> TRANSFORM
-    P3 --> TRANSFORM
-    P4 --> TRANSFORM
-    TRANSFORM --> NEW
-    NEW --> S1
-    NEW --> S2
-    NEW --> S3
-    NEW --> S4
-
-    style BEFORE fill:#fff5f5,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style OLD fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
-    style P1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style P2 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style P3 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style P4 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style TRANSFORM fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style NEW fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style S1 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style S2 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style S3 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style S4 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style Copyright fill:#ffffff,stroke:none,color:#666666
-```
+![Figure 4.5: Echo's Storage Transformation - Single-Modal to Multi-Modal](../assets/figures/figure-4-5.png)
 
 ![Figure 4.5: Echo's Storage Transformation - Single-Modal to Multi-Modal](../assets/figures/figure-4-5.png)
 
@@ -740,35 +527,7 @@ Layer 2 provides sub-30 second data freshness through change data capture (CDC),
 
 **Figure 4.6: Layer 2 Real-Time Data Fabric - CDC to Agents**
 
-```mermaid
-
-graph LR
-    SOURCE["<b>Operational Systems</b><br/>EHR, Scheduling, Labs"]
-    
-    subgraph LAYER2["<b>Layer 2: Real-Time Data</b>"]
-        direction TB
-        CDC["CDC: Debezium"]
-        KAFKA["Streaming: Kafka"]
-        PROCESS["Processing: Flink"]
-        CDC --> KAFKA --> PROCESS
-    end
-    
-    OUTCOME["<b>Layer 1 Storage</b><br/>↓<br/>Agents < 30s Refresh"]
-    
-    Copyright["© 2025 Colaberry Inc."]
-    
-    SOURCE -->|"Changes"| LAYER2
-    LAYER2 -->|"Store"| OUTCOME
-    
-    style SOURCE fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style LAYER2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style CDC fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style KAFKA fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style PROCESS fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style OUTCOME fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style Copyright fill:#ffffff,stroke:none,color:#666666
-
-```
+![Figure 4.6: Layer 2 Real-Time Data Fabric - CDC to Agents](../assets/figures/figure-4-6.png)
 
 ![Figure 4.6: Layer 2 Real-Time Data Fabric - CDC to Agents](../assets/figures/figure-4-6.png)
 
@@ -852,36 +611,7 @@ workday.providers.credentials
 
 **Figure 4.7: Real-Time Inference vs. Batch Training Paths**
 
-```mermaid
-graph LR
-    subgraph "<b>Real-Time Inference Path</b>"
-        I1["<b>User Query</b>"]
-        I2["<b>Real-Time CDC</b><br/><b>< 30s lag</b>"]
-        I3["<b>Agent Response</b><br/><b>< 3s total</b>"]
-    end
-    
-    subgraph "<b>Batch Training Path</b>"
-        T1["<b>Historical Data</b>"]
-        T2["<b>Overnight ETL</b><br/><b>OK for batch</b>"]
-        T3["<b>Model Training</b><br/><b>Hours/days OK</b>"]
-    end
-    
-    STORAGE["<b>Layer 1 Storage</b><br/><b>Serves both paths</b>"]
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    
-    I1 --> I2 --> STORAGE --> I3
-    T1 --> T2 --> STORAGE --> T3
-    
-    style I1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style I2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style I3 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style T1 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style T2 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style T3 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style STORAGE fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style Copyright fill:#ffffff,stroke:none,color:#666666
-```
+![Figure 4.7: Real-Time Inference vs. Batch Training Paths](../assets/figures/figure-4-7.png)
 
 ![Figure 4.7: Real-Time Inference vs. Batch Training Paths](../assets/figures/figure-4-7.png)
 
@@ -935,27 +665,7 @@ graph LR
 
 **Figure 4.8: Echo's Week 1-4 Foundation Build Timeline**
 
-```mermaid
-gantt
-    title Echo's Foundation Build (Weeks 1-4)
-    dateFormat MM-DD
-    axisFormat %m-%d
-    
-    section Layer 1 Storage
-    Azure SQL Hyperscale     :L1a, 01-06, 3d
-    MongoDB Atlas            :L1b, 01-06, 5d
-    Neo4j Graph Database     :L1c, 01-07, 6d
-    MLflow Model Registry    :L1d, 01-08, 5d
-    Azure Blob Storage       :L1e, 01-09, 3d
-    Databricks Lakehouse     :L1f, 01-06, 8d
-    Redis Cache Layer        :L1g, 01-10, 4d
-    InfluxDB Time-Series     :L1h, 01-09, 5d
-    
-    section Layer 2 Real-Time
-    Debezium CDC Connectors  :L2a, 01-20, 5d
-    Confluent Kafka Cluster  :L2b, 01-21, 4d
-    Flink Stream Processing  :L2c, 01-22, 6d
-```
+![Figure 4.8: Echo's Week 1-4 Foundation Build Timeline](../assets/figures/figure-4-8.png)
 
 ![Figure 4.8: Echo's Week 1-4 Foundation Build Timeline](../assets/figures/figure-4-8.png)
 
@@ -969,26 +679,7 @@ gantt
 
 **Figure 4.9: INPACT™ Transformation (28 → 42)**
 
-```mermaid
-graph LR
-    subgraph week0["<b>Week 0: Assessment</b>"]
-        W0["<b>No Foundation</b><br/>TOTAL: 28/100</b><br/>I=1 | N=2 | P=1<br/>A=2 | C=3 | T=1"]
-    end
-    
-    ARROW["<b>→</b><br/><b>+14 pts</b>"]
-    
-    subgraph week4["<b>Week 4: Assessment</b>"]
-        W4["<b>Foundation Complete</b><br/>TOTAL: 42/100</b><br/>I=4 | N=2 | P=1<br/>A=3 | C=4 | T=1"]
-    end
-    
-    week0 --> ARROW --> week4
-    
-    style week0 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style W0 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style ARROW fill:#ffffff,stroke:none,color:#004d40
-    style week4 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style W4 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-```
+![Figure 4.9: INPACT™ Transformation (28 → 42)](../assets/figures/figure-4-9.png)
 
 ![Figure 4.9: INPACT™ Transformation (28 → 42)](../assets/figures/figure-4-9.png)
 
@@ -1063,40 +754,7 @@ Medical director's reaction: "This is why we're building agents. Not to replace 
 
 **Figure 4.10: Foundation Impact - Week 0 to Week 4**
 
-```mermaid
-graph TB
-    BEFORE["<b>Week 0: 28/100</b><br/>(10/36 points)"]
-    AFTER["<b>Week 4: 42/100</b><br/>(15/36 points)"]
-    
-    subgraph "<b>Improved (+5 points)</b>"
-        A1["<b>Instant: 1→4 (+3)</b><br/><b>Cache + real-time</b>"]
-        A4["<b>Adaptive: 2→3 (+1)</b><br/><b>Model registry</b>"]
-        A5["<b>Contextual: 3→4 (+1)</b><br/><b>Multi-modal</b>"]
-    end
-    
-    subgraph "<b>Needs Later Layers</b>"
-        B2["<b>Natural: 2→2 (--)</b><br/><b>Needs Layer 3</b>"]
-        B3["<b>Permitted: 1→1 (--)</b><br/><b>Needs Layer 5</b>"]
-        B6["<b>Transparent: 1→1 (--)</b><br/><b>Needs Layer 6</b>"]
-    end
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    
-    BEFORE --> A1 & A4 & A5
-    BEFORE --> B2 & B3 & B6
-    A1 & A4 & A5 --> AFTER
-    B2 & B3 & B6 --> AFTER
-    
-    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style AFTER fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style A1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A4 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A5 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style B2 fill:#f9f9f9,stroke:#666666,stroke-width:1px,color:#666666
-    style B3 fill:#f9f9f9,stroke:#666666,stroke-width:1px,color:#666666
-    style B6 fill:#f9f9f9,stroke:#666666,stroke-width:1px,color:#666666
-    style Copyright fill:#ffffff,stroke:none,color:#666666
-```
+![Figure 4.10: Foundation Impact - Week 0 to Week 4](../assets/figures/figure-4-10.png)
 
 ![Figure 4.10: Foundation Impact - Week 0 to Week 4](../assets/figures/figure-4-10.png)
 
