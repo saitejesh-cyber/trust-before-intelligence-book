@@ -149,7 +149,7 @@ This book exists because of the generosity of many people who shared their time,
 
 **Beta Readers.** Rajkumar Kandukuri and Sudhakar MVK reviewed early drafts and provided invaluable suggestions that improved clarity and practical applicability.
 
-**The Colaberry Team.** This book reflects lessons learned building Colaberry alongside an exceptional team. John McBride, David Freni, David Lahme, Ali Muwwakkil, Karun Swaroop, Ramamohan Manamasa, Angie Mezo, Neha Sharma, Nate Taylor, and Prasad Ankepalli - thank you for your dedication to our mission and for tolerating my book-related distractions.
+**The Colaberry Team.** This book reflects lessons learned building Colaberry alongside an exceptional team. John McBride, David Freni (who also designed the cover), David Lahme, Ali Muwwakkil, Karun Swaroop, Ramamohan Manamasa, Angie Mezo, Neha Sharma, Nate Taylor, Prasad Ankepalli, Mohammad Abdul Aleem, and Sai Tejesh Kowtharapu - thank you for your dedication to our mission and for tolerating my book-related distractions.
 
 To everyone who contributed to this work, named and unnamed: thank you.
 
