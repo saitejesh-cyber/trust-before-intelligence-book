@@ -1,0 +1,52 @@
+graph TB
+    REQUEST["<b>Agent Decision Request</b><br/><b>e.g., Medication refill</b>"]
+    
+    ASSESS["<b>Risk Assessment</b><br/><b>Financial • Clinical • Regulatory</b>"]
+    
+    REQUEST --> ASSESS
+    
+    subgraph SPECTRUM["<b>Autonomy Decision Spectrum</b>"]
+        FULL["<b>Full Autonomy</b><br/><b>Auto-execute</b><br/><b>e.g., Routine scheduling</b>"]
+        
+        COND["<b>Conditional</b><br/><b>Execute unless triggered</b><br/><b>e.g., Controlled substance</b>"]
+        
+        HITL["<b>Human-in-the-Loop</b><br/><b>Propose, human approves</b><br/><b>e.g., Prior auth >$5K</b>"]
+        
+        HONL["<b>Human-on-the-Loop</b><br/><b>Execute, human monitors</b><br/><b>e.g., Care plan updates</b>"]
+        
+        MANUAL["<b>Full Manual</b><br/><b>Info only</b><br/><b>e.g., Diagnoses</b>"]
+    end
+    
+    ASSESS --> FULL
+    ASSESS --> COND
+    ASSESS --> HITL
+    ASSESS --> HONL
+    ASSESS --> MANUAL
+    
+    FULL -->|<b>Low risk</b>| EXECUTE["<b>Auto-Execute</b>"]
+    COND -->|<b>Medium risk</b>| CHECK{<b>Trigger?</b>}
+    CHECK -->|<b>No</b>| EXECUTE
+    CHECK -->|<b>Yes</b>| APPROVE["<b>Human Approval</b>"]
+    HITL -->|<b>High risk</b>| APPROVE
+    HONL -->|<b>High stakes</b>| MONITOR["<b>Human Monitor</b>"]
+    MANUAL -->|<b>Critical</b>| INFORM["<b>Information Only</b>"]
+    
+    APPROVE -->|<b>Approved</b>| EXECUTE
+    MONITOR --> EXECUTE
+    
+    style REQUEST fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style ASSESS fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style SPECTRUM fill:#f0fff0,stroke:#00897b,stroke-width:2px
+    style FULL fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style COND fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style HITL fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style HONL fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style MANUAL fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style CHECK fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style EXECUTE fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style APPROVE fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style MONITOR fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style INFORM fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    style Copyright fill:#ffffff,stroke:none,color:#666666

@@ -1,0 +1,63 @@
+graph TB
+    subgraph SOURCES["<b>Source Systems</b>"]
+        S1["<b>EHR System</b><br/><b>Real-time updates</b>"]
+        S2["<b>Scheduling</b><br/><b>Every 30 seconds</b>"]
+        S3["<b>Billing</b><br/><b>Nightly + alerts</b>"]
+    end
+    
+    CDC["<b>Change Data Capture</b><br/><b>Debezium + Kafka</b><br/><b>Sub-30s streaming</b>"]
+    
+    S1 -->|<b>Stream</b>| CDC
+    S2 -->|<b>Stream</b>| CDC
+    S3 -->|<b>Stream</b>| CDC
+    
+    subgraph CHECKS["<b>Quality Gates</b>"]
+        Q1["<b>Accuracy</b><br/><b>Correct values</b>"]
+        Q2["<b>Completeness</b><br/><b>Required fields</b>"]
+        Q3["<b>Consistency</b><br/><b>Cross-system</b>"]
+        Q4["<b>Currentness</b><br/><b><30s critical</b>"]
+        Q5["<b>Traceability</b><br/><b>Source lineage</b>"]
+    end
+    
+    CDC --> Q1
+    CDC --> Q2
+    CDC --> Q3
+    CDC --> Q4
+    CDC --> Q5
+    
+    GATE{<b>All Pass?</b>}
+    
+    Q1 --> GATE
+    Q2 --> GATE
+    Q3 --> GATE
+    Q4 --> GATE
+    Q5 --> GATE
+    
+    GATE -->|<b>Pass - 98%</b>| STORAGE["<b>Agent-Ready Storage</b><br/><b>Validated data only</b>"]
+    
+    GATE -->|<b>Fail - 2%</b>| QUARANTINE["<b>Data Quarantine</b><br/><b>Block from agents</b><br/><b>Create ticket</b>"]
+    
+    STORAGE --> AGENTS["<b>AI Agents</b><br/><b>Trust score: 98%+</b>"]
+    
+    QUARANTINE --> FIX["<b>Root Cause</b><br/><b>Fix at source</b>"]
+    FIX -.->|<b>Corrected</b>| CDC
+    
+    style SOURCES fill:#e0f2f1,stroke:#00897b,stroke-width:2px
+    style S1 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S3 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style CDC fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style CHECKS fill:#e0f2f1,stroke:#00897b,stroke-width:2px
+    style Q1 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Q2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Q3 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Q4 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Q5 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style GATE fill:#e0f2f1,stroke:#00897b,stroke-width:3px,color:#004d40
+    style STORAGE fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style QUARANTINE fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
+    style AGENTS fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style FIX fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    style Copyright fill:#ffffff,stroke:none,color:#666666

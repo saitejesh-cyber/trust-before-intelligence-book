@@ -1,0 +1,38 @@
+
+graph TB
+    subgraph LAYER7["LAYER 7: ORCHESTRATION"]
+        direction TB
+        Query["Multi-Domain Query<br/>Complex Care Request"]
+        Supervisor["Supervisor Agent<br/>LangGraph Coordinator"]
+        Intent{{"Intent Classification"}}
+        
+        subgraph AGENTS["SPECIALIZED AGENTS"]
+            direction LR
+            Care["Care Coordination<br/>Scheduling, Follow-up"]
+            Clinical["Clinical Documentation<br/>Records, Medications"]
+            Revenue["Revenue Cycle<br/>Insurance, Auth"]
+        end
+        
+        State["Shared State: Patient Context"]
+        Synthesis["Response Synthesis<br/>Unified Answer"]
+    end
+    
+    Copyright["© 2025 Colaberry Inc."]
+    
+    Query --> Supervisor --> Intent
+    Intent --> AGENTS
+    AGENTS <--> State
+    AGENTS --> Synthesis
+    
+    style LAYER7 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style Query fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style Supervisor fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Intent fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style AGENTS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Care fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Clinical fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Revenue fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style State fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Synthesis fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+

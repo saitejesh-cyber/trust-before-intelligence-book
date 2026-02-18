@@ -1,0 +1,43 @@
+
+graph TB
+    subgraph LAYER5["LAYER 5: GOVERNANCE"]
+        direction TB
+        Query["Agent Query"]
+        
+        subgraph EVAL["EVALUATION"]
+            direction LR
+            ABAC["ABAC Evaluation"]
+            OPA["OPA Policy Engine"]
+            ABAC --> OPA
+        end
+        
+        Risk{{"Risk?"}}
+        
+        subgraph DECISION["DECISION & AUDIT"]
+            direction LR
+            Auto["Auto-Approve<br/>Risk < 7"]
+            HITL["HITL<br/>Risk >= 7"]
+            Human["Human Review"]
+            Audit["Audit Log"]
+        end
+    end
+    
+    Copyright["© 2025 Colaberry Inc."]
+    
+    Query --> EVAL --> Risk
+    Risk -->|"Low"| Auto --> Audit
+    Risk -->|"High"| HITL --> Human --> Audit
+    
+    style LAYER5 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style Query fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style EVAL fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style ABAC fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style OPA fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Risk fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style DECISION fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Auto fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style HITL fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style Human fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Audit fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+

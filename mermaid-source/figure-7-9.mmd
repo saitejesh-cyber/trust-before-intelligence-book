@@ -1,0 +1,39 @@
+graph TD
+    Q["<b>User Query:</b><br/><b>Show Dr. Martinez availability</b>"]
+    
+    Q --> L4["<b>Layer 4: Intelligence</b><br/><b>Orchestrates caching</b>"]
+    
+    L4 --> L1{"<b>Level 1: Semantic Cache</b><br/><b>Redis/Momento</b>"}
+    
+    L1 -->|<b>✅ Hit - 65%</b>| C1["<b>⚡ 300ms</b><br/><b>$0.001/query</b>"]
+    
+    L1 -->|<b>❌ Miss - 35%</b>| L2{"<b>Level 2: Vector DB</b><br/><b>Pinecone/Weaviate</b>"}
+    
+    L2 -->|<b>✅ Hit - 25%</b>| C2["<b>⚡ 800ms</b><br/><b>$0.008/query</b>"]
+    
+    L2 -->|<b>❌ Miss - 10%</b>| L3{"<b>Level 3: Knowledge Graph</b><br/><b>Neo4j/Neptune</b>"}
+    
+    L3 -->|<b>✅ Hit - 7%</b>| C3["<b>⚡ 1.2s</b><br/><b>$0.015/query</b>"]
+    
+    L3 -->|<b>❌ Miss - 3%</b>| COLD["<b>Level 4: Cold Path</b><br/><b>Full orchestration</b><br/><b>2.8-4.2s</b><br/><b>$0.12/query</b>"]
+    
+    C1 --> R["<b>Response</b><br/><b>Sub-2-seconds</b>"]
+    C2 --> R
+    C3 --> R
+    COLD --> SLOW["<b>Response</b><br/><b>2.8-4.2s</b>"]
+    
+    COLD -.->|<b>Cache warming</b>| L1
+    
+    style L4 fill:#e0f2f1,stroke:#00897b,stroke-width:3px,color:#004d40
+    style C1 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style C2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style C3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style COLD fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style R fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style SLOW fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
+    style L1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    style Copyright fill:#ffffff,stroke:none,color:#666666

@@ -1,0 +1,36 @@
+graph TB
+    Query["<b>Discharge Query</b><br/><b>Schedule, Review, Verify</b>"]
+    
+    Supervisor["<b>Supervisor</b><br/><b>Routes to 3 Agents</b>"]
+    
+    subgraph "<b>PARALLEL EXECUTION (2.3s)</b>"
+        Care["<b>Care Agent</b><br/><b>Follow-up: Tue 10 AM</b><br/><b>PT Eval: Thu 2 PM</b>"]
+        Clinical["<b>Clinical Agent</b><br/><b>3 Medications</b><br/><b>No Interactions</b>"]
+        Revenue["<b>Revenue Agent</b><br/><b>UHC PPO Verified</b><br/><b>$45 Copay</b>"]
+    end
+    
+    State["<b>Shared State</b><br/><b>Patient: Maria Santos</b><br/><b>MRN: 78234156</b>"]
+    
+    Response["<b>Unified Response</b><br/><b>Complete Discharge Prep</b><br/><b>4.2 Seconds Total</b>"]
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    Query --> Supervisor
+    Supervisor --> Care
+    Supervisor --> Clinical
+    Supervisor --> Revenue
+    Care <--> State
+    Clinical <--> State
+    Revenue <--> State
+    Care --> Response
+    Clinical --> Response
+    Revenue --> Response
+    
+    style Query fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style Supervisor fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Care fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Clinical fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Revenue fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style State fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style Response fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Copyright fill:#ffffff,stroke:none,color:#666666

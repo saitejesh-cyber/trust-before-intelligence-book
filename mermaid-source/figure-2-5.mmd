@@ -1,0 +1,48 @@
+graph TB
+    TITLE["<b>ECHO HEALTH'S<br/>INFRASTRUCTURE<br/>TRANSFORMATION</b>"]
+    
+    TITLE --> BEFORE
+    
+    subgraph BEFORE["<b>WEEK 0: SCORE =28/100</b>"]
+        B_SCORE["<b>Overall Score: 28/100</b><br/><b>(10 out of 36 points)</b>"]
+        
+        B_DIMS["<b>Dimension Breakdown:</b><br/><b>I=1/6 🔴 | N=2/6 🔴 </b><br/><b>P=1/6 🔴 | A=2/6 🔴</b><br/> C=3/6 🟡 | T=1/6 🔴</b>"]
+        
+        B_STATUS["<b>Not Production Ready</b><br/><b>• 5 critical gaps </b><br/><b>• Compliance risk</b><br/><b>• Cannot proceed to prod</b>"]
+        
+        B_SCORE --> B_DIMS
+        B_DIMS --> B_STATUS
+    end
+    
+    BEFORE --> TRANSFORM["<b>90-DAY TRANSFORMATION<br/>ROADMAP</b><br/><b>Investment: $1.23M </b><br/><b> Timeline: 10 weeks</b><br/><b>Sequence: </b><br/><b>I → N+P → C → A+T</b>"]
+    
+    TRANSFORM --> AFTER
+    
+    subgraph AFTER["<b>WEEK 10: SCORE = 86/100</b>"]
+        A_SCORE["<b>Overall Score: 86/100</b><br/><b>(31 out of 36 points)</b>"]
+        
+        A_DIMS["<b>Dimension Breakdown:</b><br/><b>I=5/6 ✅ | N=5/6 ✅ </b><br/><b> P=5/6 ✅ | A=5/6 ✅</b><br/><b>C=6/6 ✅ | T=5/6 ✅</b>"]
+        
+A_STATUS["<b>Production-Ready</b><br/><b>• All dimensions ≥5/6 </b><br/><b>• ROI: 209% Year 1 </b><br/><b>• Payback: 10 weeks</b>"]
+        
+        A_SCORE --> A_DIMS
+        A_DIMS --> A_STATUS
+    end
+    
+    COPYRIGHT["<b>© 2025 Colaberry Inc.</b>"]
+    
+    style TITLE fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    
+    style BEFORE fill:#fff5f5,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style B_SCORE fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
+    style B_DIMS fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style B_STATUS fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    
+    style TRANSFORM fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    
+    style AFTER fill:#f0fff0,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A_SCORE fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style A_DIMS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A_STATUS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    
+    style COPYRIGHT fill:#ffffff,stroke:none,color:#666666

@@ -1,0 +1,93 @@
+
+graph LR
+    subgraph gaps["7 INFRASTRUCTURE GAPS"]
+        direction TB
+        G1["Gap 1: Multi-Modal<br/>Storage<br/>Relational only<br/>No vectors/graphs"]
+        G2["Gap 2: Real-Time Data<br/>Overnight batch ETL<br/>8-24 hour staleness"]
+        G3["Gap 3: Semantic<br/>Understanding<br/>SQL schemas only<br/>No business language"]
+        G4["Gap 4: Intelligent<br/>Retrieval<br/>Keyword search only<br/>No context awareness"]
+        G5["Gap 5: Dynamic<br/>Permissions<br/>Static RBAC<br/>No context evaluation"]
+        G6["Gap 6: Reasoning<br/>Observability<br/>Query logs only<br/>No reasoning traces"]
+        G7["Gap 7: Multi-Agent<br/>Coordination<br/>Single-user systems<br/>No orchestration"]
+    end
+    
+    subgraph needs["INPACT™ NEEDS"]
+        direction TB
+        N1["I - Instant"]
+        N2["N - Natural"]
+        N3["P - Permitted"]
+        N4["A - Adaptive"]
+        N5["C - Contextual"]
+        N6["T - Transparent"]
+    end
+    
+    subgraph layers["7-LAYER ARCHITECTURE"]
+        direction TB
+        L1["Layer 1<br/>Storage<br/>Multi-Modal Data"]
+        L2["Layer 2<br/>Real-Time<br/>CDC, Streaming"]
+        L3["Layer 3<br/>Semantic Layer<br/>Business Glossary"]
+        L4["Layer 4<br/>Intelligence<br/>RAG + Retrieval<br/>Vector Search"]
+        L5["Layer 5<br/>Governance<br/>ABAC, Policies"]
+        L6["Layer 6<br/>Observability<br/>Distributed Tracing"]
+        L7["Layer 7<br/>Orchestration<br/>Multi-Agent Framework"]
+    end
+    
+    Copyright["© 2025 Colaberry Inc."]
+    
+    %% Gap to Need connections
+    G1 -.->|"Requires"| N5
+    G2 -.->|"Requires"| N1
+    G2 -.->|"Requires"| N5
+    G3 -.->|"Requires"| N2
+    G4 -.->|"Requires"| N2
+    G4 -.->|"Requires"| N5
+    G5 -.->|"Requires"| N3
+    G6 -.->|"Requires"| N4
+    G6 -.->|"Requires"| N6
+    G7 -.->|"at scale"| N1
+    G7 -.->|"Requires"| N2
+    G7 -.->|"Requires"| N4
+    
+    %% Need to Layer connections
+    N1 -.->|"Solved by"| L2
+    N2 -.->|"Solved by"| L3
+    N2 -.->|"Solved by"| L4
+    N3 -.->|"Solved by"| L5
+    N4 -.->|"Solved by"| L6
+    N4 -.->|"Solved by"| L7
+    N5 -.->|"Solved by"| L1
+    N5 -.->|"Solved by"| L4
+    N6 -.->|"Solved by"| L6
+    
+    %% Styling - GAPS (Red - Problems)
+    style gaps fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style G1 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style G2 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style G3 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style G4 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style G5 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style G6 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style G7 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    
+    %% Styling - NEEDS (Neutral - Requirements)
+    style needs fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style N1 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
+    style N2 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
+    style N3 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
+    style N4 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
+    style N5 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
+    style N6 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#000000
+    
+    %% Styling - LAYERS (Teal - Solutions)
+    style layers fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L1 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L2 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L3 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L4 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L5 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L6 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L7 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    
+    %% Copyright
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+

@@ -1,0 +1,42 @@
+graph LR
+    subgraph P1["PHASE 1"]
+        D["<b>DETECT</b><br/><b>Alert Fires</b>"]
+    end
+    
+    subgraph P2["PHASE 2"]
+        T["<b>TRIAGE</b><br/><b>Map to Pillars</b>"]
+    end
+    
+    subgraph P3["PHASE 3"]
+        M["<b>MITIGATE</b><br/><b>Stop Bleeding</b>"]
+    end
+    
+    subgraph P4["PHASE 4"]
+        C["<b>COMMUNICATE</b><br/><b>Stakeholders</b>"]
+    end
+    
+    subgraph P5["PHASE 5"]
+        R["<b>RESOLVE</b><br/><b>Root Cause</b>"]
+    end
+    
+    subgraph P6["PHASE 6"]
+        L["<b>LEARN</b><br/><b>Post-Mortem</b>"]
+    end
+    
+    D --> T --> M --> C --> R --> L
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    style P1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style P2 fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style P3 fill:#fff9c4,stroke:#f9a825,stroke-width:2px,color:#f57f17
+    style P4 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style P5 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style P6 fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c
+    style D fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style T fill:#ffe0b2,stroke:#f57c00,color:#e65100
+    style M fill:#fff9c4,stroke:#f9a825,color:#f57f17
+    style C fill:#bbdefb,stroke:#1976d2,color:#0d47a1
+    style R fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style L fill:#e1bee7,stroke:#7b1fa2,color:#4a148c
+    style Copyright fill:#ffffff,stroke:none,color:#666666

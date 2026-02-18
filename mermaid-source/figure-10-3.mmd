@@ -1,0 +1,24 @@
+
+graph LR
+    subgraph PHASE1["PHASE 1: FOUNDATION (Weeks 1-4)"]
+        direction LR
+        subgraph WEEK12["WEEKS 1-2"]
+            L1["L1: Storage<br/>Lakehouse · Cache · Vector Store"]
+        end
+        
+        subgraph WEEK34["WEEKS 3-4"]
+            L2["L2: Data Fabric<br/>CDC · Streaming · Integration"]
+        end
+    end
+    
+    Copyright["© 2025 Colaberry Inc."]
+    
+    L1 --> L2
+    
+    style PHASE1 fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
+    style WEEK12 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style WEEK34 fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style L1 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
+    style L2 fill:#ffe0b2,stroke:#f57c00,color:#e65100
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+

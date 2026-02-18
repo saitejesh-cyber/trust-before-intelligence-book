@@ -1,0 +1,45 @@
+graph TB
+    subgraph old["<b>BI-ERA:HUMAN ANALYSIS</b>"]
+        direction LR
+        O1["<b>Batch ETL</b><br/>8-24 hour lag"]
+        O2["<b>Data Warehouse</b><br/>OLAP cubes"]
+        O3["<b>Dashboards</b><br/>Fixed queries"]
+        O4["<b>Human Analysts</b><br/>Manual decisions"]
+        
+        O1 --> O2 --> O3 --> O4
+    end
+    
+    Shift["<b>PARADIGM EVOLUTION</b>"]
+    
+    subgraph new["<b>AGENT-ERA: AUTONOMOUS SYSTEMS</b>"]
+        direction LR
+        N1["<b>Real-Time</b><br/>Sub-30s freshness"]
+        N2["<b>Multi-Modal</b><br/>Vector + Graph + SQL"]
+        N3["<b>Semantic + RAG</b><br/>Natural language"]
+        N4["<b>Autonomous Agents</b><br/>Instant decisions"]
+        
+        N1 --> N2 --> N3 --> N4
+    end
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    old -.->|<b>Must Transform</b>| Shift
+    Shift -.->|<b>To Enable</b>| new
+    
+    %% BI-Era (Red - Problems/Old Approach)
+    style O1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style O2 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style O3 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style O4 fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
+    
+    %% Agent-Era (Teal - Solutions/Modern Approach)
+    style N1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style N2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style N3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style N4 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    
+    %% Transition Element
+    style Shift fill:#fff9e6,stroke:#f57c00,stroke-width:3px,color:#e65100
+    
+    %% Copyright
+    style Copyright fill:#ffffff,stroke:none,color:#666666

@@ -26,34 +26,6 @@ Marcus pulled up a document. It was three pages long. By Monday morning, it woul
 
 **Figure 12.1: Operations Value (From Reactive to Proactive)**
 
-```mermaid
-
-graph LR
-    subgraph BEFORE["WORKS ON MY MACHINE"]
-        direction TB
-        B1["Ad-hoc monitoring<br/><br/>Reactive firefighting<br/><br/>Manual processes<br/><br/>Performance drift"]
-    end
-    
-    subgraph TRANSFORM["PRODUCTION READINESS"]
-        direction TB
-        T1["15 Criteria<br/>+ GOALS™"]
-    end
-    
-    subgraph AFTER["PRODUCTION OPERATIONS"]
-        direction TB
-        A1["Proactive observability<br/><br/>Structured incidents<br/><br/>MLOps automation<br/><br/>Continuous improvement"]
-    end
-    
-    BEFORE --> TRANSFORM --> AFTER
-    
-    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
-    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style B1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style T1 fill:#f5f5f5,stroke:#666666,color:#333333
-    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
-
-```
 
 ![Figure 12.1: Operations Value (From Reactive to Proactive)](figures/figure-12-1.png)
 > **Key Takeaway:** Building is easy. Operating at scale requires systematic discipline.
@@ -98,42 +70,6 @@ Throughout this chapter, reference benchmarks are drawn from Echo Health Systems
 
 **Figure 12.2: The 15-Criteria Production Readiness Framework**
 
-```mermaid
-
-graph LR
-    subgraph INPACT["PILLAR 1: INPACT™"]
-        I1["1. Score ≥ 80/86<br/>2. Response < 10/5s<br/>3. NLU ≥ 80/85%<br/>4. Escalation < 20/15%<br/>5. Audit 100%"]
-    end
-    
-    subgraph ARCH["PILLAR 2: ARCHITECTURE"]
-        A1["6. 7 Layers Live<br/>7. 1/3+ Agents<br/>8. Orchestration < 5/3s<br/>9. Agreements Signed<br/>10. Data Residency"]
-    end
-    
-    subgraph GOALS["PILLAR 3: GOALS™"]
-        G1["11. Access Control + Audit<br/>12. Dashboards Active<br/>13. SLA 99.0/99.5%+<br/>14. Semantic Mapped<br/>15. On-Call Coverage"]
-    end
-    
-    READY["PRODUCTION<br/>READY"]
-    
-    Note["Values show Generic/High-Stakes targets"]
-    
-    Copyright["© 2025 Colaberry Inc."]
-    
-    INPACT --> READY
-    ARCH --> READY
-    GOALS --> READY
-    
-    style INPACT fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
-    style ARCH fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style GOALS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style I1 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style A1 fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style G1 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style READY fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style Note fill:#f5f5f5,stroke:#999999,color:#666666
-    style Copyright fill:#ffffff,stroke:none,color:#666666
-
-```
 
 ![Figure 12.2: The 15-Criteria Production Readiness Framework](figures/figure-12-2.png)
 **Pillar 1: INPACT™ Readiness (5 Criteria)**
@@ -317,45 +253,6 @@ Traditional MLOps practices (model versioning, A/B testing, performance monitori
 
 **Figure 12.3: Agent MLOps Lifecycle**
 
-```mermaid
-graph LR
-    subgraph DEVELOP["DEVELOP"]
-        D1["<b>Version<br/>Control</b>"]
-    end
-    
-    subgraph TEST["TEST"]
-        T1["<b>A/B<br/>Testing</b>"]
-    end
-    
-    subgraph DEPLOY["DEPLOY"]
-        P1["<b>Staged<br/>Rollout</b>"]
-    end
-    
-    subgraph MONITOR["MONITOR"]
-        M1["<b>Performance<br/>Tracking</b>"]
-    end
-    
-    subgraph OPTIMIZE["OPTIMIZE"]
-        O1["<b>Cost<br/>Optimization</b>"]
-    end
-    
-    D1 --> T1 --> P1 --> M1 --> O1
-    O1 -->|<b>Feedback</b>| D1
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    
-    style DEVELOP fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
-    style TEST fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style DEPLOY fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#880e4f
-    style MONITOR fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style OPTIMIZE fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c
-    style D1 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style T1 fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style P1 fill:#f8bbd9,stroke:#c2185b,color:#880e4f
-    style M1 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style O1 fill:#e1bee7,stroke:#7b1fa2,color:#4a148c
-    style Copyright fill:#ffffff,stroke:none,color:#666666
-```
 
 ![Figure 12.3: Agent MLOps Lifecycle](figures/figure-12-3.png)
 ---
@@ -675,50 +572,6 @@ When alerts fire, structured response prevents chaos. Adopt a six-phase incident
 
 **Figure 12.4: Six-Phase Incident Response**
 
-```mermaid
-graph LR
-    subgraph P1["PHASE 1"]
-        D["<b>DETECT</b><br/><b>Alert Fires</b>"]
-    end
-    
-    subgraph P2["PHASE 2"]
-        T["<b>TRIAGE</b><br/><b>Map to Pillars</b>"]
-    end
-    
-    subgraph P3["PHASE 3"]
-        M["<b>MITIGATE</b><br/><b>Stop Bleeding</b>"]
-    end
-    
-    subgraph P4["PHASE 4"]
-        C["<b>COMMUNICATE</b><br/><b>Stakeholders</b>"]
-    end
-    
-    subgraph P5["PHASE 5"]
-        R["<b>RESOLVE</b><br/><b>Root Cause</b>"]
-    end
-    
-    subgraph P6["PHASE 6"]
-        L["<b>LEARN</b><br/><b>Post-Mortem</b>"]
-    end
-    
-    D --> T --> M --> C --> R --> L
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    
-    style P1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style P2 fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style P3 fill:#fff9c4,stroke:#f9a825,stroke-width:2px,color:#f57f17
-    style P4 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
-    style P5 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style P6 fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c
-    style D fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style T fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style M fill:#fff9c4,stroke:#f9a825,color:#f57f17
-    style C fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style R fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style L fill:#e1bee7,stroke:#7b1fa2,color:#4a148c
-    style Copyright fill:#ffffff,stroke:none,color:#666666
-```
 
 ![Figure 12.4: Six-Phase Incident Response](figures/figure-12-4.png)
 **Phase 1: DETECT**
@@ -858,45 +711,6 @@ Structured weekly cycles transform operational data into agent improvements. A f
 
 **Figure 12.5: Five-Day Improvement Cycle**
 
-```mermaid
-graph LR
-    subgraph MON["MONDAY"]
-        M["<b>Review<br/>Metrics</b>"]
-    end
-    
-    subgraph TUE["TUESDAY"]
-        T["<b>Analyze<br/>Failures</b>"]
-    end
-    
-    subgraph WED["WEDNESDAY"]
-        W["<b>Propose<br/>Fixes</b>"]
-    end
-    
-    subgraph THU["THURSDAY"]
-        H["<b>Implement<br/>Changes</b>"]
-    end
-    
-    subgraph FRI["FRIDAY"]
-        F["<b>A/B Test<br/>Launch</b>"]
-    end
-    
-    M --> T --> W --> H --> F
-    F -->|<b>Next Week</b>| M
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    
-    style MON fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
-    style TUE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style WED fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style THU fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style FRI fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c
-    style M fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style T fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style W fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style H fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style F fill:#e1bee7,stroke:#7b1fa2,color:#4a148c
-    style Copyright fill:#ffffff,stroke:none,color:#666666
-```
 
 ![Figure 12.5: Five-Day Improvement Cycle](figures/figure-12-5.png)
 **The Five-Day Cycle**
@@ -1024,33 +838,6 @@ AIXcelerator is a complete platform that accelerates agent infrastructure deploy
 
 **Figure 12.6: AIXcelerator Five-Component Platform**
 
-```mermaid
-graph TD
-    subgraph PLATFORM["AIXcelerator PLATFORM"]
-        C1["<b>Multi-Agent Core</b><br/><b>L4, L7 · All 6 Needs</b>"]
-        C2["<b>MCP Server</b><br/><b>L1-L2 · Contextual</b>"]
-        C3["<b>Agent Syndication</b><br/><b>L7 · Natural</b>"]
-        C4["<b>Governance Engine</b><br/><b>L5 · Permitted, Transparent</b>"]
-        C5["<b>Assessment Platform</b><br/><b>L6 · All 6 Needs</b>"]
-    end
-    
-C1 --> RESULT["<b>Months/Years → 90 Days</b><br/><b>All Three Pillars</b>"]
-    C2 --> RESULT
-    C3 --> RESULT
-    C4 --> RESULT
-    C5 --> RESULT
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    
-    style PLATFORM fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style C1 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style C2 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style C3 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style C4 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style C5 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style RESULT fill:#c8e6c9,stroke:#388e3c,stroke-width:3px,color:#1b5e20
-    style Copyright fill:#ffffff,stroke:none,color:#666666
-```
 
 ![Figure 12.6: AIXcelerator Five-Component Platform](figures/figure-12-6.png)
 **Five Core Components**
