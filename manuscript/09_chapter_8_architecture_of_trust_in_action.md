@@ -77,7 +77,7 @@ graph LR
   style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-![Figure 8.1: Echo's GOALS™ Baseline (Week 10)](../assets/figures/figure-8-1.png)
+![Figure 8.1: Echo's GOALS™ Baseline (Week 10)](figures/figure-8-1.png)
 "We need twenty-one to deploy clinical AI in production," Marcus said. "Six points in two weeks."
 
 Dr. Chen studied the Governance gauge. "Healthcare requires Governance at five out of five. Non-negotiable."
@@ -105,7 +105,7 @@ gantt
   Board Presentation :bp, 2025-03-28, 1d
 ```
 
-![Figure 8.2: Week 11-12 Operations Timeline](../assets/figures/figure-8-2.png)
+![Figure 8.2: Week 11-12 Operations Timeline](figures/figure-8-2.png)
 Marcus wrote out the Week 11 targets:
 
 - **Governance:** 3/5 to 4/5. Complete audit trails, reduce HITL escalation time to under 30 seconds, test model rollback.
@@ -227,7 +227,7 @@ sequenceDiagram
   Note over U,T: © 2025 Colaberry Inc.
 ```
 
-![Figure 8.3: End-to-End Observability with Trace IDs](../assets/figures/figure-8-3.png)
+![Figure 8.3: End-to-End Observability with Trace IDs](figures/figure-8-3.png)
 The implementation had three components: source tracking (every fact linked to its source), reasoning chain (logical steps documented), and confidence scoring (numerical confidence visible to reviewers).
 
 By Thursday, every response included a collapsible "reasoning" section. "I can see the agent's homework," one physician commented. "It's not a black box."
@@ -311,7 +311,7 @@ graph TB
 
 ```
 
-![Figure 8.4: Multi-Level Cache Performance Under Load](../assets/figures/figure-8-4.png)
+![Figure 8.4: Multi-Level Cache Performance Under Load](figures/figure-8-4.png)
 The results validated the architecture. Under 10x load, response time p95 held at 2.1 seconds, within the 3-second target. Cache hit rate actually improved under load as common patterns became more likely.
 
 The cold path remained the bottleneck, but only 10% of queries took it, and those still completed in 2.1 seconds.
@@ -379,7 +379,7 @@ graph TB
 
 ```
 
-![Figure 8.5: Lexicon Disambiguation Flow](../assets/figures/figure-8-5.png)
+![Figure 8.5: Lexicon Disambiguation Flow](figures/figure-8-5.png)
 The team implemented smart disambiguation. When confidence dropped below 0.90, the system would ask a clarifying question with the most likely options: "Do you mean your PCP Dr. Nguyen or your cardiologist Dr. Patel?"
 
 The implementation required coordination across layers: Layer 3 for confidence scoring, Layer 4 for context retrieval, Layer 7 for dialogue management.
@@ -446,7 +446,7 @@ graph TB
 
 ```
 
-![Figure 8.6: Quality Gates in Production](../assets/figures/figure-8-6.png)
+![Figure 8.6: Quality Gates in Production](figures/figure-8-6.png)
 The solution was real-time synchronization. When a provider assignment changed in the EHR, the change would propagate to scheduling within 30 seconds.
 
 "We're implementing event-driven sync," Swapna explained. "The EHR publishes a change event. Our integration layer catches it and updates downstream systems immediately."
@@ -588,7 +588,7 @@ graph TB
   style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-![Figure 8.7: Three Agents Architecture](../assets/figures/figure-8-7.png)
+![Figure 8.7: Three Agents Architecture](figures/figure-8-7.png)
 ### Agent 1: Care Coordination
 
 **Agent Profile:**
@@ -733,7 +733,7 @@ graph TB
   style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-![Figure 8.8: Echo's GOALS™ Final Dashboard (Week 12)](../assets/figures/figure-8-8.png)
+![Figure 8.8: Echo's GOALS™ Final Dashboard (Week 12)](figures/figure-8-8.png)
 She walked through each pillar:
 
 "**Pillar 1, INPACT™:** Our agents meet all six needs. Instant response under 2 seconds. Natural language that speaks clinicians' language. Permitted access with human-in-the-loop. Adaptive learning from feedback. Contextual awareness across systems. Transparent reasoning with citations."
@@ -796,7 +796,7 @@ graph TB
   style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-![Figure 8.9: Echo Health - Architecture of Trust Complete](../assets/figures/figure-8-9.png)
+![Figure 8.9: Echo Health - Architecture of Trust Complete](figures/figure-8-9.png)
 Dr. Raj leaned forward. "You've built something that measures itself. That proves itself."
 
 "That's the answer to your question," Sarah said. "We know it stays trustworthy because the three pillars validate each other continuously."
@@ -843,7 +843,7 @@ graph TB
 
 ```
 
-![Figure 8.10: Echo's 90-Day Journey](../assets/figures/figure-8-10.png)
+![Figure 8.10: Echo's 90-Day Journey](figures/figure-8-10.png)
 | Phase | Timeline | Pillar Focus | Achievement |
 |-------|----------|--------------|-------------|
 | Assessment | Day 0 | INPACT™ | 28/100 baseline |
@@ -954,7 +954,7 @@ graph LR
 
 ```
 
-![Diagram](../assets/figures/09_chapter_8_architecture_of_trust_in_action-diagram-11.png)
+![Diagram](figures/09_chapter_8_architecture_of_trust_in_action-diagram-11.png)
 > **Key Takeaway:** *"You've answered my question, and built something we can trust."* – Dr. Arun Raj, Board Chair
 
 ---

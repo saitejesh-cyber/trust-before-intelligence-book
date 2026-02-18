@@ -49,7 +49,7 @@ Marcus paused. "I didn't ask."
 
 ```
 
-![Figure 11.1: Vendor Selection Transformation](../assets/figures/figure-11-1.png)
+![Figure 11.1: Vendor Selection Transformation](figures/figure-11-1.png)
 > **Key Takeaway:** Every vendor must pass the three-pillar test. No exceptions.
 
 ---
@@ -141,7 +141,7 @@ graph TD
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-![Figure 11.2: The Three-Pillar Vendor Evaluation Framework](../assets/figures/figure-11-2.png)
+![Figure 11.2: The Three-Pillar Vendor Evaluation Framework](figures/figure-11-2.png)
 **Pillar 1: INPACT™ Agent Needs (Score Separately)**
 
 The first pillar asks: does this technology help agents meet the six fundamental needs? Each INPACT™ dimension translates into specific vendor evaluation questions:
@@ -252,7 +252,7 @@ graph LR
 
 ```
 
-![Figure 11.3: Build vs Buy vs Partner Decision Flow](../assets/figures/figure-11-3.png)
+![Figure 11.3: Build vs Buy vs Partner Decision Flow](figures/figure-11-3.png)
 **Build (Custom Development): 5-10% of Stack**
 
 Custom development makes sense when:
@@ -377,7 +377,7 @@ graph TB
 
 ```
 
-![Figure 11.4: The 7-Layer Architecture Technology Stack](../assets/figures/figure-11-4.png)
+![Figure 11.4: The 7-Layer Architecture Technology Stack](figures/figure-11-4.png)
 ---
 
 ### 2.1 Layer 1: Multi-Modal Storage
@@ -843,7 +843,7 @@ graph LR
 
 ```
 
-![Figure 11.5: Echo's Complete Technology Stack](../assets/figures/figure-11-5.png)
+![Figure 11.5: Echo's Complete Technology Stack](figures/figure-11-5.png)
 **Echo's Selection Principles:** (1) Managed over self-hosted, (2) Healthcare-first (BAA required), (3) Integration-proven over best-in-class, (4) Cost-optimized for Growth tier.
 
 **Echo's Results:** Completed under budget ($992K of $1.23M), achieved INPACT™ 89/100 and GOALS™ 21/25, went live in 12 weeks. *(Use the Stack Builder and Vendor Advisor at trustbeforeintelligence.ai/tools to plan your investment and select vendors.)*

@@ -59,7 +59,7 @@ graph LR
 
 ```
 
-![Figure 9.1: Assessment Value, From Confusion to Clarity](../assets/figures/figure-9-1.png)
+![Figure 9.1: Assessment Value, From Confusion to Clarity](figures/figure-9-1.png)
 > **Key Takeaway:** One assessment. Six dimensions. Complete clarity on where to invest.
 
 
@@ -124,7 +124,7 @@ graph LR
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-![Figure 9.2: Architecture of Trust Assessment Flow](../assets/figures/figure-9-2.png)
+![Figure 9.2: Architecture of Trust Assessment Flow](figures/figure-9-2.png)
 The integration principle is simple: **if you assess INPACT™ comprehensively, you've assessed everything.**
 
 When you measure whether your infrastructure delivers *Instant* responses, you're simultaneously assessing Layer 1 (storage performance), Layer 2 (data freshness), and Layer 4 (caching efficiency). When you evaluate *Permitted* access control, you're measuring Layer 5 (governance) and Layer 6 (audit trails). Every INPACT™ dimension maps to specific layers and indicates GOALS™ readiness.
@@ -221,7 +221,7 @@ graph LR
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-![Figure 9.3: The Five Trust Bands](../assets/figures/figure-9-3.png)
+![Figure 9.3: The Five Trust Bands](figures/figure-9-3.png)
 | Raw Score | Percentage | Trust Band | Agent Readiness |
 |-----------|------------|------------|-----------------|
 | 31-36 | 86-100% | 🟢 **High Trust** | Production-ready for enterprise agents |
@@ -295,7 +295,7 @@ graph LR
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-![Figure 9.4: INPACT™ Dimension to Layer Mapping](../assets/figures/figure-9-4.png)
+![Figure 9.4: INPACT™ Dimension to Layer Mapping](figures/figure-9-4.png)
 **Coverage Verification**: This mapping touches all seven layers. L7 (Orchestration) emerges when multiple dimensions reach production thresholds simultaneously. When you discover a low score in a particular dimension, you immediately know which layers require investment.
 
 ---
@@ -498,7 +498,7 @@ graph LR
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-![Figure 9.5: Echo's 90-Day INPACT™ Transformation](../assets/figures/figure-9-5.png)
+![Figure 9.5: Echo's 90-Day INPACT™ Transformation](figures/figure-9-5.png)
 **Echo's INPACT™ Progression: Milestone View**
 
 | Milestone | Week | Score | Key Achievement | Trust Band |
@@ -648,7 +648,7 @@ graph TD
 
 ```
 
-![Figure 9.6: Gap-to-Phase Prioritization Flow](../assets/figures/figure-9-6.png)
+![Figure 9.6: Gap-to-Phase Prioritization Flow](figures/figure-9-6.png)
 **Gap Prioritization Matrix**
 
 | If Your Lowest Dimension Is... | Priority Layers | Chapter 10 Phase |

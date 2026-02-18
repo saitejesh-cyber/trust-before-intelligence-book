@@ -64,7 +64,7 @@ graph LR
 
 ```
 
-![Figure 5.1: Intelligence Layers - Why Layers 3-4 Enable Understanding](../assets/figures/figure-5-1.png)
+![Figure 5.1: Intelligence Layers - Why Layers 3-4 Enable Understanding](figures/figure-5-1.png)
 > **Key Takeaway:** Intelligence requires understanding. Layers 3-4 give agents semantic awareness.
 
 ## PART 1: THE INTELLIGENCE GAP
@@ -119,7 +119,7 @@ graph TB
 
 ```
 
-![Figure 5.2: The Architecture of Trust - Intelligence Layers Highlighted](../assets/figures/figure-5-2.png)
+![Figure 5.2: The Architecture of Trust - Intelligence Layers Highlighted](figures/figure-5-2.png)
 ### Why Intelligence Matters
 
 Foundation without intelligence is like having a well-stocked library with no catalog and no librarian. Data availability alone doesn't create agent capability. Intelligence transforms accessible data into understanding and reasoning.
@@ -159,7 +159,7 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-![Figure 5.3: 7-Layer Agent-Ready Architecture - Intelligence Highlighted](../assets/figures/figure-5-3.png)
+![Figure 5.3: 7-Layer Agent-Ready Architecture - Intelligence Highlighted](figures/figure-5-3.png)
 These intelligence layers directly address specific gaps from Chapter 3:
 
 ### The Seven Gaps: Intelligence Focus
@@ -290,7 +290,7 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-![Figure 5.4: Echo's Intelligence Challenge - Current State vs. Target State](../assets/figures/figure-5-4.png)
+![Figure 5.4: Echo's Intelligence Challenge - Current State vs. Target State](figures/figure-5-4.png)
 "Three weeks," Swapna said. "Week 5: Layer 3 semantic infrastructure. Business glossary with 2,400 clinical terms, entity resolution across all provider and patient systems, clinical concept mapping to SNOMED, ICD-10, and LOINC.[3][4][5]. 
 Week 6: Layer 4 stages 1-5 vector database deployment with 10 million document embeddings, hybrid retrieval pipeline, reranking optimization, context assembly. 
 Week 7: Layer 4 stages 6-7 LLM integration with multi-model routing, semantic caching activation. By Friday of Week 7, we'll have our first fully intelligent query."
@@ -362,7 +362,7 @@ flowchart TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-![Figure 5.5: Layer 3 -Semantic Layer Architecture](../assets/figures/figure-5-5.png)
+![Figure 5.5: Layer 3 -Semantic Layer Architecture](figures/figure-5-5.png)
 ### Components of the Semantic Layer
 
 **Business Glossary:** The authoritative dictionary of organizational terminology. Every metric, dimension, and concept has a formal definition, calculation logic, data sources, owners, and lineage. "Active patient" means "patient with an encounter in the past 12 months, excluding deceased", not open to interpretation.
@@ -473,7 +473,7 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-![Figure 5.6: Before/After - Keyword Search vs. Semantic Search](../assets/figures/figure-5-6.png)
+![Figure 5.6: Before/After - Keyword Search vs. Semantic Search](figures/figure-5-6.png)
 ### Key Technologies
 
 Echo evaluated tools across five categories, prioritizing healthcare compliance, existing team expertise, and integration with their Databricks lakehouse. The following options represent the market landscape:
@@ -610,7 +610,7 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-![Figure 5.7: Layer 4 - Complete Intelligence Pipeline](../assets/figures/figure-5-7.png)
+![Figure 5.7: Layer 4 - Complete Intelligence Pipeline](figures/figure-5-7.png)
 ### Why Agents Need RAG
 
 Without RAG, language models rely solely on their training data knowledge frozen at their cutoff date, containing no information about your specific organization, patients, or operations. The result is confident hallucination: responses that sound authoritative but are factually wrong.
@@ -677,7 +677,7 @@ graph LR
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-![Figure 5.8: Hybrid Retrieval Architecture](../assets/figures/figure-5-8.png)
+![Figure 5.8: Hybrid Retrieval Architecture](figures/figure-5-8.png)
 **Vector Database Selection:**
 
 Echo deployed [Pinecone](https://www.pinecone.io) for vector storage because: managed service reduces operational overhead, serverless scaling handles variable query loads, HIPAA BAA available for healthcare compliance, and 42ms average query latency (p50, meaning 50% of requests are faster) meets real-time requirements.[13] Configuration: 10M embeddings, 3,072 dimensions, 15.4GB storage, HNSW index[10].
@@ -780,7 +780,7 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-![Figure 5.9: Multi-LLM Router Architecture](../assets/figures/figure-5-9.png)
+![Figure 5.9: Multi-LLM Router Architecture](figures/figure-5-9.png)
 **Routing Logic:**
 - Claude Sonnet 4: Complex clinical reasoning (45% of queries)
 - GPT-4 Turbo: Structured output, FHIR[6] API calls (25% of queries)
@@ -844,7 +844,7 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-![Figure 5.10: Semantic Cache Architecture](../assets/figures/figure-5-10.png)
+![Figure 5.10: Semantic Cache Architecture](figures/figure-5-10.png)
 **Level 1: Exact Match (Redis):** Character-for-character matches hit instantly. TTL (Time To Live)[18]: 1 hour. Hit rate: ~15%.
 
 **Level 2: Semantic Match (Pinecone):** Semantically similar queries (similarity > 0.92) return cached responses. TTL[18]: 24 hours. Hit rate: ~70%.
@@ -1124,7 +1124,7 @@ gantt
     First Intelligent Query           :milestone, m1, 02-20, 0d
 ```
 
-![Figure 5.11: Echo's Week 5-7 Timeline](../assets/figures/figure-5-11.png)
+![Figure 5.11: Echo's Week 5-7 Timeline](figures/figure-5-11.png)
 ### INPACT™ Score: Week 4 → Week 7
 
 **Figure 5.12: INPACT™ Transformation (42 → 67)**
@@ -1152,7 +1152,7 @@ graph LR
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-![Figure 5.12: INPACT™ Transformation (42 → 67)](../assets/figures/figure-5-12.png)
+![Figure 5.12: INPACT™ Transformation (42 → 67)](figures/figure-5-12.png)
 | Dimension | Week 4 | Week 7 | Change | Driver |
 |-----------|--------|--------|--------|--------|
 | **I (Instant)** | 4/6 | 5/6 | **+1** | Semantic caching |
@@ -1222,7 +1222,7 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-![Figure 5.13: Complete Intelligence Architecture - Layers 3-4](../assets/figures/figure-5-13.png)
+![Figure 5.13: Complete Intelligence Architecture - Layers 3-4](figures/figure-5-13.png)
 ### Results
 
 | Metric | Week 4 | Week 7 | Improvement |

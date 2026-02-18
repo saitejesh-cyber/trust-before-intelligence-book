@@ -60,7 +60,7 @@ graph LR
 
 ```
 
-![Figure 7.1: GOALS™ Framework - From Build Complete to Operate Continuously](../assets/figures/figure-7-1.png)
+![Figure 7.1: GOALS™ Framework - From Build Complete to Operate Continuously](figures/figure-7-1.png)
 > **Key Takeaway:** *"Building is a 90-day project. Operating is forever."* - Dr. Arun Raj
 
 ## Part 1: The Architecture Is Complete. Now What?
@@ -158,7 +158,7 @@ graph TB
 
 ```
 
-![Figure 7.2: The Architecture of Trust-Three Integrated Pillars](../assets/figures/figure-7-2.png)
+![Figure 7.2: The Architecture of Trust-Three Integrated Pillars](figures/figure-7-2.png)
 | Pillar | Framework | Purpose | When Applied |
 |--------|-----------|---------|--------------|
 | **Pillar 1** | INPACT™ | What agents NEED (6 trust requirements) | Assessment & Design |
@@ -314,7 +314,7 @@ graph TB
 
 ```
 
-![Figure 7.3: Echo's 90-Day Journey-Architecture Complete](../assets/figures/figure-7-3.png)
+![Figure 7.3: Echo's 90-Day Journey-Architecture Complete](figures/figure-7-3.png)
 Nods around the room. Tired but satisfied faces.
 
 "But Dr. Raj asked a question that we need to answer before the Week 12 board presentation: How do we know it *stays* trustworthy?"
@@ -403,7 +403,7 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-![Figure 7.4: Echo's GOALS Health Dashboard (Week 10 Baseline)](../assets/figures/figure-7-4.png)
+![Figure 7.4: Echo's GOALS Health Dashboard (Week 10 Baseline)](figures/figure-7-4.png)
 | GOAL | Current | Target | Gap | Priority |
 |------|---------|--------|-----|----------|
 | **G - Governance** | 3/5 | 5/5 | 2 | Week 11 |
@@ -512,7 +512,7 @@ graph LR
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-![Figure 7.5: RBAC vs ABAC Authorization Flow](../assets/figures/figure-7-5.png)
+![Figure 7.5: RBAC vs ABAC Authorization Flow](figures/figure-7-5.png)
 ### The Authentication Challenge
 
 When a patient asks Echo's agent: "Show me my recent lab results," the agent must:
@@ -602,7 +602,7 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-![Figure 7.6: Human-in-the-Loop Autonomy Spectrum](../assets/figures/figure-7-6.png)
+![Figure 7.6: Human-in-the-Loop Autonomy Spectrum](figures/figure-7-6.png)
 **Echo Health's HITL Decision Matrix:**
 
 | Decision Type | Risk Level | Autonomy | Approval Required? |
@@ -799,7 +799,7 @@ sequenceDiagram
     Note over U,L1: © 2025 Colaberry Inc.
 ```
 
-![Figure 7.7: End-to-End Observability with Trace IDs (All 7 Layers)](../assets/figures/figure-7-7.png)
+![Figure 7.7: End-to-End Observability with Trace IDs (All 7 Layers)](figures/figure-7-7.png)
 **Echo's Observability Improvement Targets:**
 
 *Targets informed by Google SRE principles and industry observability benchmarks:* [5]
@@ -877,7 +877,7 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-![Figure 7.8: Output Quality Validation Metrics](../assets/figures/figure-7-8.png)
+![Figure 7.8: Output Quality Validation Metrics](figures/figure-7-8.png)
 ### Measuring Observability
 
 **Observability Operational Metrics:**
@@ -1080,7 +1080,7 @@ graph TD
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-![Figure 7.9: Multi-Level Caching Strategy for Sub-2-Second Performance](../assets/figures/figure-7-9.png)
+![Figure 7.9: Multi-Level Caching Strategy for Sub-2-Second Performance](figures/figure-7-9.png)
 The caching hierarchy explains why Echo achieved sub-2-second response times for 97% of queries, critical for user adoption.
 
 ---
@@ -1194,7 +1194,7 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-![Figure 7.10: Natural Language → Data Operation Pipeline](../assets/figures/figure-7-10.png)
+![Figure 7.10: Natural Language → Data Operation Pipeline](figures/figure-7-10.png)
 ### The Multi-Agent Challenge
 
 Multi-agent systems amplify lexicon challenges.
@@ -1449,7 +1449,7 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-![Figure 7.11: The Quality Gate Architecture](../assets/figures/figure-7-11.png)
+![Figure 7.11: The Quality Gate Architecture](figures/figure-7-11.png)
 "Each dimension catches different failure modes," Marcus explained. "Anomaly detection using ML monitors all five continuously. Data that fails any dimension goes to quarantine, triggers a ticket, and gets fixed at source before re-entering the pipeline."
 
 "The cross-system consistency gap at 92% is our focus for Week 11," Marcus said. "Every patient should have consistent PCP information across all systems before we go to production."
@@ -1501,7 +1501,7 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-![Figure 7.12: GOALS Interdependencies](../assets/figures/figure-7-12.png)
+![Figure 7.12: GOALS Interdependencies](figures/figure-7-12.png)
 ### The Trust Flywheel
 
 Marcus stepped back from the whiteboard. "There's one more concept that makes the three pillars truly powerful. They don't just stack. They cycle."
@@ -1535,7 +1535,7 @@ graph LR
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-![Figure 7.13: The Trust Flywheel-Three Pillars in Motion](../assets/figures/figure-7-13.png)
+![Figure 7.13: The Trust Flywheel-Three Pillars in Motion](figures/figure-7-13.png)
 "GOALS™ measurements reveal whether INPACT™ needs are truly being met," Marcus explained. "When Lexicon scores drop, it signals the Natural (N) need is degrading. When Availability drops, Instant (I) is at risk. This feedback drives architecture improvements: which layers need attention, what upgrades are needed."
 
 Sarah saw the elegance. "So the cycle continues: better architecture leads to better GOALS™ scores, which validates more INPACT™ fulfillment, which builds more user trust, which generates usage patterns that inform better need definitions."
@@ -1665,7 +1665,7 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-![Figure 7.14: GOALS™ Healthcare Threshold](../assets/figures/figure-7-14.png)
+![Figure 7.14: GOALS™ Healthcare Threshold](figures/figure-7-14.png)
 "When we present to the board at Week 12," Sarah said, "we won't just show them what we built. We'll show them how we're operating it. We'll show them GOALS™ health at 21+. We'll answer Dr. Raj's question: *This is how we know it stays trustworthy.*"
 
 ---

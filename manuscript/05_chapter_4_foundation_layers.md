@@ -64,7 +64,7 @@ graph LR
 
 ```
 
-![Figure 4.0: Foundation Layers - Why Layers 1-2 Are Prerequisites](../assets/figures/figure-4-0.png)
+![Figure 4.0: Foundation Layers - Why Layers 1-2 Are Prerequisites](figures/figure-4-0.png)
 > **Key Takeaway:** Foundation first. Without Layers 1-2, nothing else works.
 
 ---
@@ -123,7 +123,7 @@ graph TB
 
 ```
 
-![Figure 4.1: The Architecture of Trust - Three Integrated Pillars](../assets/figures/figure-4-1.png)
+![Figure 4.1: The Architecture of Trust - Three Integrated Pillars](figures/figure-4-1.png)
 ### Why Foundation Matters
 
 Think of enterprise architecture like building construction. You cannot build floors three through seven without a solid foundation. Skip the foundation, and the structure becomes unstable, regardless of the intelligence layers above.
@@ -164,7 +164,7 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-![Figure 4.2: 7-Layer Agent-Ready Architecture - Foundation Highlighted](../assets/figures/figure-4-2.png)
+![Figure 4.2: 7-Layer Agent-Ready Architecture - Foundation Highlighted](figures/figure-4-2.png)
 These foundation layers directly address specific gaps from Chapter 3:
 
 ### The Seven Infrastructure Gaps
@@ -304,7 +304,7 @@ graph LR
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-![Figure 4.3: Batch ETL Creates Patient Safety Risk](../assets/figures/figure-4-3.png)
+![Figure 4.3: Batch ETL Creates Patient Safety Risk](figures/figure-4-3.png)
 "Concrete example," Sarah requested.
 
 "Friday afternoon, physician schedules Monday appointment. That appointment exists in Epic immediately. Our agent infrastructure won't see it until Saturday morning's ETL. Patient calls Friday at 4 PM asking about Monday appointments. Agents query stale data. They might say 'no appointments available' when three slots opened an hour ago."
@@ -439,7 +439,7 @@ graph TB
 
 ```
 
-![Figure 4.4: Layer 1 Multi-Modal Storage - 11 Categories by Function](../assets/figures/figure-4-4.png)
+![Figure 4.4: Layer 1 Multi-Modal Storage - 11 Categories by Function](figures/figure-4-4.png)
 Traditional BI infrastructure assumes one or two storage types handle everything. Usually a relational database for operational data and a data warehouse for analytics. This works for reporting but fails for agents. Agents need semantic search across patient records, relationship traversal through provider networks, flexible schema for clinical notes, petabyte-scale training data, sub-second response times, ML artifact versioning, feature reuse across models, continuous time-series data from ICU monitors, and unified ML pipelines with ACID transactions.
 
 No single storage technology handles all these patterns efficiently. Multi-modal storage matches storage type to query pattern, optimizing performance, cost, and developer productivity.
@@ -689,7 +689,7 @@ graph LR
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-![Figure 4.5: Echo's Storage Transformation - Single-Modal to Multi-Modal](../assets/figures/figure-4-5.png)
+![Figure 4.5: Echo's Storage Transformation - Single-Modal to Multi-Modal](figures/figure-4-5.png)
 **Cache layer:** Critical for performance. Every agent query hit the database directly, no caching tier. Repeated queries for the same patient, same provider, same schedule data hammered SQL Server unnecessarily. Peak load saw 12,000 identical queries per hour. Redis MemoryDB provides sub-10ms response for cached results, reducing database load by 60% and enabling the response times agents require.
 
 **Graph traversal:** Painful. "Find all providers within three reporting levels of Dr. Sarah Chen" requires recursive CTE in SQL Server. Echo's implementation took 8.2 seconds on average (p95: 12.4s). Neo4j's native graph traversal (Cypher query) completes the same query in 340 milliseconds, over 20x faster, consistent with published benchmarks showing graph databases outperforming relational systems by 3x for simple queries up to 1,000x+ for deep traversals [1]. When agents need referral network analysis for care coordination, 8 seconds is prohibitive.
@@ -764,7 +764,7 @@ graph LR
 
 ```
 
-![Figure 4.6: Layer 2 Real-Time Data Fabric - CDC to Agents](../assets/figures/figure-4-6.png)
+![Figure 4.6: Layer 2 Real-Time Data Fabric - CDC to Agents](figures/figure-4-6.png)
 Traditional BI refreshes overnight (2 AM ETL). Agents querying at 3 PM see data 13 hours stale. For clinical decision support, this creates patient safety risks. Medication orders placed at 10 AM won't trigger drug interaction alerts until midnight.
 
 Layer 2 solves this with three integrated components:
@@ -876,7 +876,7 @@ graph LR
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-![Figure 4.7: Real-Time Inference vs. Batch Training Paths](../assets/figures/figure-4-7.png)
+![Figure 4.7: Real-Time Inference vs. Batch Training Paths](figures/figure-4-7.png)
 **Critical distinction:** Agent inference requires real-time data (<30 second lag). Model training tolerates batch data (overnight ETL acceptable). Layer 2 serves both needs:
 
 **Real-Time Inference (Critical Path):**
@@ -949,7 +949,7 @@ gantt
     Flink Stream Processing  :L2c, 01-22, 6d
 ```
 
-![Figure 4.8: Echo's Week 1-4 Foundation Build Timeline](../assets/figures/figure-4-8.png)
+![Figure 4.8: Echo's Week 1-4 Foundation Build Timeline](figures/figure-4-8.png)
 *© 2025-2026 Colaberry Inc.*
 
 **Timeline Notes:**
@@ -981,7 +981,7 @@ graph LR
     style W4 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
 ```
 
-![Figure 4.9: INPACT™ Transformation (28 → 42)](../assets/figures/figure-4-9.png)
+![Figure 4.9: INPACT™ Transformation (28 → 42)](figures/figure-4-9.png)
 *© 2025-2026 Colaberry Inc.*
 
 **Foundation Impact on INPACT™ Dimensions:**
@@ -1088,7 +1088,7 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
 
-![Figure 4.10: Foundation Impact - Week 0 to Week 4](../assets/figures/figure-4-10.png)
+![Figure 4.10: Foundation Impact - Week 0 to Week 4](figures/figure-4-10.png)
 The foundation layers delivered a 14-point INPACT improvement (28% to 42%), with gains in Instant (+3), Adaptive (+1), and Contextual (+1). See Part 1 for the complete dimension breakdown.
 
 ---
