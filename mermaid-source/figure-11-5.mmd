@@ -1,0 +1,37 @@
+
+graph LR
+    subgraph TRUST["TRUST"]
+        direction LR
+        L7["L7: Orchestration"]
+        L6["L6: Observability"]
+        L5["L5: Governance"]
+    end
+    
+    subgraph INTEL["INTELLIGENCE"]
+        direction LR
+        L4["L4: Retrieval"]
+        L3["L3: Semantic"]
+    end
+    
+    subgraph FOUND["FOUNDATION"]
+        direction LR
+        L2["L2: Data Fabric"]
+        L1["L1: Storage"]
+    end
+    
+    Copyright["© 2025 Colaberry Inc."]
+    
+    TRUST --> INTEL --> FOUND
+    
+    style TRUST fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c
+    style INTEL fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style FOUND fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style L7 fill:#e1bee7,stroke:#7b1fa2,color:#4a148c
+    style L6 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style L5 fill:#f8bbd9,stroke:#c2185b,color:#880e4f
+    style L4 fill:#ffe0b2,stroke:#f57c00,color:#e65100
+    style L3 fill:#fff59d,stroke:#f9a825,color:#f57f17
+    style L2 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
+    style L1 fill:#c8e6c9,stroke:#388e3c,color:#1b5e20
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+

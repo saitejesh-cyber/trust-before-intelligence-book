@@ -31,35 +31,8 @@ Built isn't enough. Operational excellence is what sustains trust.
 
 **Figure 7.1: GOALS™ Framework - From Build Complete to Operate Continuously**
 
-```mermaid
 
-graph LR
-    subgraph BUILD["BUILD COMPLETE - WEEK 10"]
-        direction TB
-        B1["Architecture: Done<br/><br/>INPACT™: 86/100<br/><br/>7 Layers: Complete<br/><br/><b>How do you know<br/>it stays trustworthy?</b>"]
-    end
-    
-    subgraph TRANSFORM["TRANSFORM"]
-        direction TB
-        T1["→"]
-    end
-    
-    subgraph OPERATE["OPERATIONAL EXCELLENCE"]
-        direction TB
-        O1["G - Governance: 5/5<br/><br/>O - Observability: 4/5<br/><br/>A - Availability: 4/5<br/><br/>L - Lexicon: 4/5<br/><br/>S - Solid: 4/5<br/><br/><b>GOALS Total: 21/25 = 84%<br/>I can measure Trust<br/>Agents are trustworthy!"]
-    end
-    
-    BUILD --> TRANSFORM --> OPERATE
-    
-    style BUILD fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style TRANSFORM fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style OPERATE fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style B1 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style T1 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style O1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-
-```
-
+![Figure 7.1: GOALS™ Framework - From Build Complete to Operate Continuously](figures/figure-7-1.png)
 > **Key Takeaway:** *"Building is a 90-day project. Operating is forever."* - Dr. Arun Raj
 
 ## Part 1: The Architecture Is Complete. Now What?
@@ -126,37 +99,8 @@ Sarah nodded. The construction metaphor made sense. They'd built a hospital. Now
 
 **Figure 7.2: The Architecture of Trust-Three Integrated Pillars**
 
-```mermaid
 
-graph TB
-    Title["ARCHITECTURE OF TRUST<br/>Three Integrated Pillars"]
-    
-    subgraph PILLARS[" "]
-        direction LR
-        INPACT["PILLAR 1: INPACT™<br/><br/>What Agents Need?<br/><br/><b>I</b>nstant<br/><b>N</b>atural<br/><b>P</b>ermitted<br/><b>A</b>daptive<br/><b>C</b>ontextual<br/><b>T</b>ransparent"]
-        
-        Layers["PILLAR 2: 7-LAYERS<br/>Infrastructure<br/><br/>How to Build TRUST?<br/><br/>Storage<br/>Real-Time<br/>Semantic<br/>Intelligence<br/>Governance<br/>Observability<br/>Orchestration"]
-        
-        GOALS["PILLAR 3: GOALS™<br/><br/>How to Measure TRUST?<br/><br/><b>G</b>overnance<br/><b>O</b>bservability<br/><b>A</b>vailability<br/><b>L</b>exicon<br/><b>S</b>olid"]
-    end
-    
-    Copyright["© 2025 Colaberry Inc."]
-    
-    Title --> PILLARS
-    
-    INPACT -.->|"Needs Fulfilled by"| Layers
-    Layers -.->|"Enables Operations"| GOALS
-    GOALS -.->|"Drives Trust"| INPACT
-    
-    style Title fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style PILLARS fill:none,stroke:none
-    style INPACT fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style Layers fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style GOALS fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style Copyright fill:none,stroke:none,color:#333333
-
-```
-
+![Figure 7.2: The Architecture of Trust-Three Integrated Pillars](figures/figure-7-2.png)
 | Pillar | Framework | Purpose | When Applied |
 |--------|-----------|---------|--------------|
 | **Pillar 1** | INPACT™ | What agents NEED (6 trust requirements) | Assessment & Design |
@@ -262,56 +206,8 @@ Sarah gathered her extended team in the large conference room. Marcus Williams, 
 
 **Figure 7.3: Echo's 90-Day Journey-Architecture Complete**
 
-```mermaid
 
-graph TB
-    subgraph JOURNEY["ECHO'S 90-DAY JOURNEY"]
-        direction TB
-        subgraph PHASE1["Foundation (Weeks 1-4)"]
-            direction LR
-            W1["Week 1-2<br/>Layer 1: Storage<br/>Multi-modal data"]
-            W2["Week 3-4<br/>Layer 2: Data Fabric<br/>Real-time streaming"]
-            W1 --> W2
-        end
-        
-        subgraph PHASE2["Intelligence (Weeks 5-7)"]
-            direction LR
-            W3["Week 5-6<br/>Layer 3: Semantic<br/>Business meaning"]
-            W4["Week 7<br/>Layer 4: Intelligence<br/>RAG + LLM"]
-            W3 --> W4
-        end
-        
-        subgraph PHASE3["Trust (Weeks 8-10)"]
-            direction LR
-            W5["Week 8<br/>Layer 5: Governance<br/>Security & HITL"]
-            W6["Week 9<br/>Layer 6: Observability<br/>Tracing & Monitoring"]
-            W7["Week 10<br/>Layer 7: Orchestration<br/>Multi-Agent Coordination"]
-            W5 --> W6 --> W7
-        end
-    end
-    
-    COMPLETE["Architecture Complete<br/>INPACT™: 86/100 | $942K Invested"]
-    
-    Copyright["© 2025 Colaberry Inc."]
-    
-    PHASE1 --> PHASE2 --> PHASE3 --> COMPLETE
-    
-    style JOURNEY fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style PHASE1 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style PHASE2 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style PHASE3 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style W1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style W2 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style W3 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style W4 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style W5 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style W6 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style W7 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style COMPLETE fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style Copyright fill:none,stroke:none,color:#333333
-
-```
-
+![Figure 7.3: Echo's 90-Day Journey-Architecture Complete](figures/figure-7-3.png)
 Nods around the room. Tired but satisfied faces.
 
 "But Dr. Raj asked a question that we need to answer before the Week 12 board presentation: How do we know it *stays* trustworthy?"
@@ -361,45 +257,8 @@ He pulled up a validation chart. "Colaberry's research is clear: proficiency acr
 
 **Figure 7.4: Echo's GOALS Health Dashboard (Week 10 Baseline)**
 
-```mermaid
-graph TB
-    subgraph DASHBOARD["<b>GOALS™ Health Dashboard - Week 10</b>"]
-        TITLE["<b>Overall Health: 15/25</b><br/><b>Status: Below <br/>Production Threshold</b>"]
-        
-        G["<b>G - Governance</b><br/><b>3/5 🚀</b><br/><b>Audit coverage gap</b>"]
-        O["<b>O - Observability</b><br/><b>3/5 🚀</b><br/><b>Need explainability</b>"]
-        A["<b>A - Availability</b><br/><b>4/5 🚢</b><br/><b>Scale testing needed</b>"]
-        L["<b>L - Lexicon</b><br/><b>2/5 🚠</b><br/><b>Disambiguation gap</b>"]
-        S["<b>S - Solid</b><br/><b>3/5 🚀</b><br/><b>Cross-system consistency</b>"]
-    end
-    
-    TITLE --> G
-    TITLE --> O
-    TITLE --> A
-    TITLE --> L
-    TITLE --> S
-    
-    TARGET["<b>Target: 21/25</b><br/><b>Timeline: Week 12</b>"]
-    
-    G --> TARGET
-    O --> TARGET
-    A --> TARGET
-    L --> TARGET
-    S --> TARGET
-    
-    style DASHBOARD fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style TITLE fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style G fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style O fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style A fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style L fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style S fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style TARGET fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:none,color:#333333
-```
 
+![Figure 7.4: Echo's GOALS Health Dashboard (Week 10 Baseline)](figures/figure-7-4.png)
 | GOAL | Current | Target | Gap | Priority |
 |------|---------|--------|-----|----------|
 | **G - Governance** | 3/5 | 5/5 | 2 | Week 11 |
@@ -453,61 +312,8 @@ These five dimensions enable policies that are dynamically evaluated in real-tim
 
 **Figure 7.5: RBAC vs ABAC Authorization Flow**
 
-```mermaid
-graph LR
-    subgraph OLD["<b>Analytics Era: RBAC</b>"]
-        TITLE1["<b>Role-Based Access Control</b>"]
-        R1["<b>User Request</b>"]
-        R2["<b>Check Role</b>"]
-        R3["<b>Role = Patient</b>"]
-        R4["<b>Grant Broad Access</b>"]
-        R5["<b>Violates minimum <br/>necessary access</b>"]
-        
-        TITLE1 --> R1
-        R1 --> R2
-        R2 --> R3
-        R3 --> R4
-        R4 --> R5
-    end
-    
-    OLD -.->|<b>Evolution</b>| NEW
-    
-    subgraph NEW["<b>Agent Era: ABAC</b>"]
-        TITLE2["<b>Attribute-Based Access Control</b>"]
-        A1["<b>User Request</b>"]
-        A2["<b>Context Eval</b><br/><b>Who • What • When <br/> Where • Why</b>"]
-        A3["<b>Dynamic Policy</b>"]
-        A4["<b>Filter Rows</b>"]
-        A5["<b>Sub-10ms secure access</b>"]
-        
-        TITLE2 --> A1
-        A1 --> A2
-        A2 --> A3
-        A3 --> A4
-        A4 --> A5
-    end
-    
-    style TITLE1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style R1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style R2 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style R3 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style R4 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style R5 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    
-    style TITLE2 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style A1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style A2 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style A3 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style A4 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style A5 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    
-    style OLD fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style NEW fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:none,color:#333333
-```
 
+![Figure 7.5: RBAC vs ABAC Authorization Flow](figures/figure-7-5.png)
 ### The Authentication Challenge
 
 When a patient asks Echo's agent: "Show me my recent lab results," the agent must:
@@ -542,61 +348,8 @@ The art is positioning decisions correctly on this spectrum. Too much autonomy c
 
 **Figure 7.6: Human-in-the-Loop Autonomy Spectrum**
 
-```mermaid
-graph TB
-    REQUEST["<b>Agent Decision Request</b><br/><b>e.g., Medication refill</b>"]
-    
-    ASSESS["<b>Risk Assessment</b><br/><b>Financial • Clinical • Regulatory</b>"]
-    
-    REQUEST --> ASSESS
-    
-    subgraph SPECTRUM["<b>Autonomy Decision Spectrum</b>"]
-        FULL["<b>Full Autonomy</b><br/><b>Auto-execute</b><br/><b>e.g., Routine scheduling</b>"]
-        
-        COND["<b>Conditional</b><br/><b>Execute unless triggered</b><br/><b>e.g., Controlled substance</b>"]
-        
-        HITL["<b>Human-in-the-Loop</b><br/><b>Propose, human approves</b><br/><b>e.g., Prior auth >$5K</b>"]
-        
-        HONL["<b>Human-on-the-Loop</b><br/><b>Execute, human monitors</b><br/><b>e.g., Care plan updates</b>"]
-        
-        MANUAL["<b>Full Manual</b><br/><b>Info only</b><br/><b>e.g., Diagnoses</b>"]
-    end
-    
-    ASSESS --> FULL
-    ASSESS --> COND
-    ASSESS --> HITL
-    ASSESS --> HONL
-    ASSESS --> MANUAL
-    
-    FULL -->|<b>Low risk</b>| EXECUTE["<b>Auto-Execute</b>"]
-    COND -->|<b>Medium risk</b>| CHECK{<b>Trigger?</b>}
-    CHECK -->|<b>No</b>| EXECUTE
-    CHECK -->|<b>Yes</b>| APPROVE["<b>Human Approval</b>"]
-    HITL -->|<b>High risk</b>| APPROVE
-    HONL -->|<b>High stakes</b>| MONITOR["<b>Human Monitor</b>"]
-    MANUAL -->|<b>Critical</b>| INFORM["<b>Information Only</b>"]
-    
-    APPROVE -->|<b>Approved</b>| EXECUTE
-    MONITOR --> EXECUTE
-    
-    style REQUEST fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style ASSESS fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style SPECTRUM fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style FULL fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style COND fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style HITL fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style HONL fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style MANUAL fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style CHECK fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style EXECUTE fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style APPROVE fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style MONITOR fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style INFORM fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:none,color:#333333
-```
 
+![Figure 7.6: Human-in-the-Loop Autonomy Spectrum](figures/figure-7-6.png)
 **Echo Health's HITL Decision Matrix:**
 
 | Decision Type | Risk Level | Autonomy | Approval Required? |
@@ -735,64 +488,8 @@ This enables root cause analysis impossible with infrastructure metrics alone.
 
 **Figure 7.7: End-to-End Observability with Trace IDs (All 7 Layers)**
 
-```mermaid
-sequenceDiagram
-    participant U as User
-    participant L7 as Layer 7<br/>Agent
-    participant L6 as Layer 6<br/>Observability
-    participant L5 as Layer 5<br/>Governance
-    participant L4 as Layer 4<br/>Intelligence
-    participant L3 as Layer 3<br/>Semantic
-    participant L2 as Layer 2<br/>Real-Time
-    participant L1 as Layer 1<br/>Storage
-    
-    rect rgb(224, 242, 241)
-        Note over U,L1: Trace ID: abc-123-def | All 7 layers instrumented
-    end
-    
-    U->>L7: Show Dr. Martinez's availability tomorrow
-    activate L7
-    L7->>L6: 📊 Log: Query received (trace: abc-123-def)
-    
-    L7->>L3: Translate: Dr. Martinez + availability
-    activate L3
-    L3->>L6: 📊 Log: Semantic translation 0.3s
-    L3-->>L7: provider_id=789, date=tomorrow
-    deactivate L3
-    
-    L7->>L5: Check: User authorized for provider schedule?
-    activate L5
-    L5->>L6: 📊 Log: ABAC policy eval 8ms ✓
-    L5-->>L7: Authorized (policy: patient-provider-access)
-    deactivate L5
-    
-    L7->>L4: Retrieve: provider_schedule context
-    activate L4
-    L4->>L2: Subscribe: schedule_updates stream
-    activate L2
-    L2->>L6: 📊 Log: Stream check 15ms (fresh)
-    L2-->>L4: Last update: 12s ago ✓
-    deactivate L2
-    L4->>L1: Query: provider_schedule WHERE id=789
-    activate L1
-    L1->>L6: ⚠ï¸¸ Log: Query 2.3s - SLOW
-    Note over L1: Missing index!
-    L1-->>L4: Result: 3 time slots
-    deactivate L1
-    L4-->>L7: Context: [8am, 10am, 2pm]
-    deactivate L4
-    
-    L7->>L6: 📊 Log: Response 2.9s total | All layers traced
-    L7->>U: Dr. Martinez has 3 openings tomorrow
-    deactivate L7
-    
-    rect rgb(255, 235, 238)
-        Note over L6: Root Cause: Layer 1 bottleneck<br/>All 7 layers visible in trace
-    end
-    
-    Note over U,L1: © 2025 Colaberry Inc.
-```
 
+![Figure 7.7: End-to-End Observability with Trace IDs (All 7 Layers)](figures/figure-7-7.png)
 **Echo's Observability Improvement Targets:**
 
 *Targets informed by Google SRE principles and industry observability benchmarks:* [5]
@@ -820,56 +517,8 @@ EU AI Act Article 13 requires transparency for high-risk AI systems, which inclu
 
 **Figure 7.8: Output Quality Validation Metrics**
 
-```mermaid
-graph TB
-    AGENT["<b>Agent Response</b><br/><b>Generated output</b>"]
-    
-    subgraph METRICS["<b>Output Quality Validation</b>"]
-        M1["<b>Factual Accuracy</b><br/><b>Target: >95%</b>"]
-        M2["<b>Hallucination Rate</b><br/><b>Target: <2%</b>"]
-        M3["<b>Consistency</b><br/><b>Target: 98%+</b>"]
-        M4["<b>User Satisfaction</b><br/><b>Target: >85%</b>"]
-    end
-    
-    VALIDATE{<b>All metrics<br/>passing?</b>}
-    
-    PASS["<b>Production Ready</b><br/><b>Quality validated</b>"]
-    FAIL["<b>Investigation</b><br/><b>Review required</b>"]
-    
-    FEEDBACK["<b>Continuous Loop</b><br/><b>Daily • Weekly • Monthly</b>"]
-    
-    AGENT --> M1
-    AGENT --> M2
-    AGENT --> M3
-    AGENT --> M4
-    
-    M1 --> VALIDATE
-    M2 --> VALIDATE
-    M3 --> VALIDATE
-    M4 --> VALIDATE
-    
-    VALIDATE -->|<b>Pass</b>| PASS
-    VALIDATE -->|<b>Fail</b>| FAIL
-    
-    PASS --> FEEDBACK
-    FAIL --> FEEDBACK
-    FEEDBACK -.->|<b>Improves</b>| AGENT
-    
-    style AGENT fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style METRICS fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style M1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style M2 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style M3 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style M4 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style VALIDATE fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style PASS fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style FAIL fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style FEEDBACK fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:none,color:#333333
-```
 
+![Figure 7.8: Output Quality Validation Metrics](figures/figure-7-8.png)
 ### Measuring Observability
 
 **Observability Operational Metrics:**
@@ -1030,48 +679,8 @@ This hierarchy explains why the vast majority of queries return in under 2 secon
 
 **Figure 7.9: Multi-Level Caching Strategy for Sub-2-Second Performance**
 
-```mermaid
-graph TD
-    Q["<b>User Query:</b><br/><b>Show Dr. Martinez availability</b>"]
-    
-    Q --> L4["<b>Layer 4: Intelligence</b><br/><b>Orchestrates caching</b>"]
-    
-    L4 --> L1{"<b>Level 1: Semantic Cache</b><br/><b>Redis/Momento</b>"}
-    
-    L1 -->|<b>✅ Hit - 65%</b>| C1["<b>⚡ 300ms</b><br/><b>$0.001/query</b>"]
-    
-    L1 -->|<b>❌ Miss - 35%</b>| L2{"<b>Level 2: Vector DB</b><br/><b>Pinecone/Weaviate</b>"}
-    
-    L2 -->|<b>✅ Hit - 25%</b>| C2["<b>⚡ 800ms</b><br/><b>$0.008/query</b>"]
-    
-    L2 -->|<b>❌ Miss - 10%</b>| L3{"<b>Level 3: Knowledge Graph</b><br/><b>Neo4j/Neptune</b>"}
-    
-    L3 -->|<b>✅ Hit - 7%</b>| C3["<b>⚡ 1.2s</b><br/><b>$0.015/query</b>"]
-    
-    L3 -->|<b>❌ Miss - 3%</b>| COLD["<b>Level 4: Cold Path</b><br/><b>Full orchestration</b><br/><b>2.8-4.2s</b><br/><b>$0.12/query</b>"]
-    
-    C1 --> R["<b>Response</b><br/><b>Sub-2-seconds</b>"]
-    C2 --> R
-    C3 --> R
-    COLD --> SLOW["<b>Response</b><br/><b>2.8-4.2s</b>"]
-    
-    COLD -.->|<b>Cache warming</b>| L1
-    
-    style L4 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style C1 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style C2 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style C3 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style COLD fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style R fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style SLOW fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style L1 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style L2 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style L3 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:none,color:#333333
-```
 
+![Figure 7.9: Multi-Level Caching Strategy for Sub-2-Second Performance](figures/figure-7-9.png)
 The caching hierarchy explains why Echo achieved sub-2-second response times for 97% of queries, critical for user adoption.
 
 ---
@@ -1137,54 +746,8 @@ Entity resolution failure is particularly dangerous. According to RAND Corporati
 
 **Figure 7.10: Natural Language → Data Operation Pipeline**
 
-```mermaid
-graph TB
-    NL["<b>User Query:</b><br/><b>Show my doctor's</b><br/><b>availability next week</b>"]
-    
-    NL --> L4["<b>Layer 4: Intelligence</b><br/><b>Receives raw natural language</b>"]
-    
-    subgraph PHASE1["<b>Phase 1: UNDERSTAND</b>"]
-        P1["<b>LLM Analysis:</b><br/><b>Parse • Extract • Plan</b>"]
-    end
-    
-    subgraph PHASE2["<b>Phase 2: RESOLVE</b>"]
-        P2["<b>Call Layer 3:</b><br/><b>resolve_entity • lookup_glossary</b>"]
-    end
-    
-    subgraph PHASE3["<b>Phase 3: EXECUTE</b>"]
-        P3A["<b>Retrieve Context:</b><br/><b>Query data • Apply ABAC</b>"]
-        P3B["<b>Validate Quality:</b><br/><b>NDCG@5 >0.8</b>"]
-    end
-    
-    CLARIFY["<b>Clarification</b><br/><b>Confidence < 0.90</b>"]
-    
-    RESULT["<b>Natural Response:</b><br/><b>Dr. Martinez has 5 openings</b>"]
-    
-    L4 --> P1
-    P1 --> P2
-    P2 --> P3A
-    P3A --> P3B
-    P3B --> RESULT
-    
-    P1 -.->|<b>Low confidence</b>| CLARIFY
-    P3B -.->|<b>Quality fail</b>| CLARIFY
-    
-    style L4 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style PHASE1 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style PHASE2 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style PHASE3 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style P1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style P2 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style P3A fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style P3B fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style RESULT fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style CLARIFY fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style NL fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:none,color:#333333
-```
 
+![Figure 7.10: Natural Language → Data Operation Pipeline](figures/figure-7-10.png)
 ### The Multi-Agent Challenge
 
 Multi-agent systems amplify lexicon challenges.
@@ -1373,72 +936,8 @@ Echo validates all five dimensions at a central gate in the data pipeline. Data 
 
 **Figure 7.11: The Quality Gate Architecture**
 
-```mermaid
-graph TB
-    subgraph SOURCES["<b>Source Systems</b>"]
-        S1["<b>EHR System</b><br/><b>Real-time updates</b>"]
-        S2["<b>Scheduling</b><br/><b>Every 30 seconds</b>"]
-        S3["<b>Billing</b><br/><b>Nightly + alerts</b>"]
-    end
-    
-    CDC["<b>Change Data Capture</b><br/><b>Debezium + Kafka</b><br/><b>Sub-30s streaming</b>"]
-    
-    S1 -->|<b>Stream</b>| CDC
-    S2 -->|<b>Stream</b>| CDC
-    S3 -->|<b>Stream</b>| CDC
-    
-    subgraph CHECKS["<b>Quality Gates</b>"]
-        Q1["<b>Accuracy</b><br/><b>Correct values</b>"]
-        Q2["<b>Completeness</b><br/><b>Required fields</b>"]
-        Q3["<b>Consistency</b><br/><b>Cross-system</b>"]
-        Q4["<b>Currentness</b><br/><b><30s critical</b>"]
-        Q5["<b>Traceability</b><br/><b>Source lineage</b>"]
-    end
-    
-    CDC --> Q1
-    CDC --> Q2
-    CDC --> Q3
-    CDC --> Q4
-    CDC --> Q5
-    
-    GATE{<b>All Pass?</b>}
-    
-    Q1 --> GATE
-    Q2 --> GATE
-    Q3 --> GATE
-    Q4 --> GATE
-    Q5 --> GATE
-    
-    GATE -->|<b>Pass - 98%</b>| STORAGE["<b>Agent-Ready Storage</b><br/><b>Validated data only</b>"]
-    
-    GATE -->|<b>Fail - 2%</b>| QUARANTINE["<b>Data Quarantine</b><br/><b>Block from agents</b><br/><b>Create ticket</b>"]
-    
-    STORAGE --> AGENTS["<b>AI Agents</b><br/><b>Trust score: 98%+</b>"]
-    
-    QUARANTINE --> FIX["<b>Root Cause</b><br/><b>Fix at source</b>"]
-    FIX -.->|<b>Corrected</b>| CDC
-    
-    style SOURCES fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style S1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style S2 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style S3 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style CDC fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style CHECKS fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style Q1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style Q2 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style Q3 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style Q4 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style Q5 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style GATE fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style STORAGE fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style QUARANTINE fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style AGENTS fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style FIX fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:none,color:#333333
-```
 
+![Figure 7.11: The Quality Gate Architecture](figures/figure-7-11.png)
 "Each dimension catches different failure modes," Marcus explained. "Anomaly detection using ML monitors all five continuously. Data that fails any dimension goes to quarantine, triggers a ticket, and gets fixed at source before re-entering the pipeline."
 
 "The cross-system consistency gap at 92% is our focus for Week 11," Marcus said. "Every patient should have consistent PCP information across all systems before we go to production."
@@ -1464,32 +963,8 @@ The most dangerous cascade is **S→L→G**: bad data gets cached in the semanti
 
 **Figure 7.12: GOALS Interdependencies**
 
-```mermaid
-graph TB
-    G["<b>G - Governance</b><br/><b>Security & Compliance</b>"]
-    O["<b>O - Observability</b><br/><b>Monitoring & Feedback</b>"]
-    A["<b>A - Availability</b><br/><b>Speed & Freshness</b>"]
-    L["<b>L - Lexicon</b><br/><b>Semantic Understanding</b>"]
-    S["<b>S - Solid</b><br/><b>Data Quality</b>"]
-    
-    G <-->|<b>Audit trails ↔ Policy violations</b>| O
-    O <-->|<b>Performance metrics ↔ Monitoring</b>| A
-    A <-->|<b>Fast retrieval ↔ Query optimization</b>| L
-    L <-->|<b>Semantic validation ↔ Quality data</b>| S
-    
-    S -.->|<b>Foundation: Enables all GOALS</b>| G
-    O -.->|<b>Diagnostic: Detects issues in all GOALS</b>| L
-    
-    style G fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style O fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style A fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style L fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style S fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:none,color:#333333
-```
 
+![Figure 7.12: GOALS Interdependencies](figures/figure-7-12.png)
 ### The Trust Flywheel
 
 Marcus stepped back from the whiteboard. "There's one more concept that makes the three pillars truly powerful. They don't just stack. They cycle."
@@ -1498,31 +973,8 @@ He drew a circular arrows connecting all three pillars:
 
 **Figure 7.13: The Trust Flywheel-Three Pillars in Motion**
 
-```mermaid
-graph LR
-    subgraph FLYWHEEL["<b>THE TRUST FLYWHEEL</b>"]
-        INPACT["<b>INPACT™</b><br/><b>Define Needs</b>"]
-        LAYERS["<b>7-Layer</b><br/><b>Fulfill Needs</b>"]
-        GOALS["<b>GOALS™</b><br/><b>Validate Fulfillment</b>"]
-        TRUST["<b>USER TRUST</b><br/><b>Increases</b>"]
-        
-        INPACT -->|<b>Requirements drive</b>| LAYERS
-        LAYERS -->|<b>Infrastructure enables</b>| GOALS
-        GOALS -->|<b>Metrics reveal gaps in</b>| INPACT
-        GOALS -->|<b>Validated fulfillment creates</b>| TRUST
-        TRUST -->|<b>Usage patterns inform</b>| INPACT
-    end
-    
-    style FLYWHEEL fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style INPACT fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style LAYERS fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style GOALS fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style TRUST fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:none,color:#333333
-```
 
+![Figure 7.13: The Trust Flywheel-Three Pillars in Motion](figures/figure-7-13.png)
 "GOALS™ measurements reveal whether INPACT™ needs are truly being met," Marcus explained. "When Lexicon scores drop, it signals the Natural (N) need is degrading. When Availability drops, Instant (I) is at risk. This feedback drives architecture improvements: which layers need attention, what upgrades are needed."
 
 Sarah saw the elegance. "So the cycle continues: better architecture leads to better GOALS™ scores, which validates more INPACT™ fulfillment, which builds more user trust, which generates usage patterns that inform better need definitions."
@@ -1622,36 +1074,8 @@ Sarah summarized the path forward. "We need to move from 15/25 to 21/25 in the n
 | S | 4 | Maintain-fix cross-system consistency for PCP data |
 
 **Figure 7.14: GOALS™ Healthcare Threshold**
-```mermaid
-graph TB
-    subgraph SCORING["<b>GOALS™ Health Scoring (5-Point Scale)</b>"]
-        EXCELLENT["<b>5/5: 🚢 EXCELLENT</b><br/><b>Production-ready</b><br/><b>Continuous improvement</b>"]
-        GOOD["<b>4/5: 🚢 GOOD</b><br/><b>Healthy operations</b><br/><b>Monitor trends</b>"]
-        ADEQUATE["<b>3/5: 🚀 ADEQUATE</b><br/><b>Functional</b><br/><b>Improvement needed</b>"]
-        NEEDS["<b>2/5: 🚠 NEEDS WORK</b><br/><b>Gaps present</b><br/><b>Action required</b>"]
-        CRITICAL["<b>1/5: 🔴 CRITICAL</b><br/><b>Major gaps</b><br/><b>Immediate intervention</b>"]
-    end
-    
-    THRESHOLD["<b>Healthcare Threshold: 21/25</b><br/><b>G=5, O/A/L/S ≥4</b>"]
-    
-    EXCELLENT --> THRESHOLD
-    GOOD --> THRESHOLD
-    ADEQUATE -.->|<b>Below threshold</b>| THRESHOLD
-    NEEDS -.->|<b>Below threshold</b>| THRESHOLD
-    CRITICAL -.->|<b>Below threshold</b>| THRESHOLD
-    
-    style SCORING fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style EXCELLENT fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style GOOD fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style ADEQUATE fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style NEEDS fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style CRITICAL fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style THRESHOLD fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:none,color:#333333
-```
 
+![Figure 7.14: GOALS™ Healthcare Threshold](figures/figure-7-14.png)
 "When we present to the board at Week 12," Sarah said, "we won't just show them what we built. We'll show them how we're operating it. We'll show them GOALS™ health at 21+. We'll answer Dr. Raj's question: *This is how we know it stays trustworthy.*"
 
 ---

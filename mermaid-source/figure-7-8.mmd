@@ -1,0 +1,47 @@
+graph TB
+    AGENT["<b>Agent Response</b><br/><b>Generated output</b>"]
+    
+    subgraph METRICS["<b>Output Quality Validation</b>"]
+        M1["<b>Factual Accuracy</b><br/><b>Target: >95%</b>"]
+        M2["<b>Hallucination Rate</b><br/><b>Target: <2%</b>"]
+        M3["<b>Consistency</b><br/><b>Target: 98%+</b>"]
+        M4["<b>User Satisfaction</b><br/><b>Target: >85%</b>"]
+    end
+    
+    VALIDATE{<b>All metrics<br/>passing?</b>}
+    
+    PASS["<b>Production Ready</b><br/><b>Quality validated</b>"]
+    FAIL["<b>Investigation</b><br/><b>Review required</b>"]
+    
+    FEEDBACK["<b>Continuous Loop</b><br/><b>Daily • Weekly • Monthly</b>"]
+    
+    AGENT --> M1
+    AGENT --> M2
+    AGENT --> M3
+    AGENT --> M4
+    
+    M1 --> VALIDATE
+    M2 --> VALIDATE
+    M3 --> VALIDATE
+    M4 --> VALIDATE
+    
+    VALIDATE -->|<b>Pass</b>| PASS
+    VALIDATE -->|<b>Fail</b>| FAIL
+    
+    PASS --> FEEDBACK
+    FAIL --> FEEDBACK
+    FEEDBACK -.->|<b>Improves</b>| AGENT
+    
+    style AGENT fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style METRICS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style M1 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style M2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style M3 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style M4 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style VALIDATE fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style PASS fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style FAIL fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
+    style FEEDBACK fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    style Copyright fill:#ffffff,stroke:none,color:#666666

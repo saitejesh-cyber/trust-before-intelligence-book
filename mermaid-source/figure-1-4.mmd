@@ -1,0 +1,41 @@
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'14px'}}}%%
+
+graph LR
+    %% BI ERA (1990-2020) - Red Subgraph
+    subgraph BI["<b>Human ERA (1990-2020) <br/> Cannot Fulfill INPACT™</b><br/>"]
+        direction TB
+        ETL["<b>Batch ETL</b><br/>8-24 hour lag<br/><b> Fails Instant (I)</b>"]
+        DW["<b>Data Warehouse</b><br/>SQL schemas<br/><b> Fails Natural (N)</b>"]
+        RBAC["<b>RBAC Only</b><br/>No context layer<br/><b> Fails Permitted (P)</b>"]
+        
+        ETL --> DW --> RBAC
+    end
+    
+    %% PARADIGM SHIFT - Bold Arrow
+    BI -.->|"<b>⚡ PARADIGM SHIFT</b><br/>Must fulfill INPACT™"| AGENT
+    
+    %% AGENT ERA (2023-) - Green Subgraph
+    subgraph AGENT["<b>AGENT ERA (2023-Present) <br/> Fulfills All INPACT™</b><br/>"]
+        direction TB
+        STREAM["<b>Real-Time Streaming</b><br/>Sub-5s freshness<br/><b> Instant (I)</b>"]
+        SEMANTIC["<b>Semantic Layer</b><br/>Business language<br/><b> Natural (N)</b>"]
+        ABAC["<b>RBAC + ABAC</b><br/>Context-aware<br/> Permitted (P)"]
+        
+        STREAM --> SEMANTIC --> ABAC
+    end
+    
+    %% Styling - CORRECTED COLORS FROM APPROVED PALETTE
+    style BI fill:#fff5f5,stroke:#c62828,stroke-width:3px,color:#b71c1c
+    style AGENT fill:#e8f5e9,stroke:#2e7d32,stroke-width:3px,color:#004d40
+    
+    style ETL fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style DW fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style RBAC fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    
+    style STREAM fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style SEMANTIC fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style ABAC fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    
+    %% Copyright (MANDATORY)
+    CR["<b>© 2025 Colaberry Inc.</b>"]
+    style CR fill:none,stroke:none,color:#999999

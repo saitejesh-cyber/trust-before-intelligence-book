@@ -20,36 +20,8 @@ This chapter explains what those six things are.
 
 **Figure 2.0: The INPACT™ Framework - Six Infrastructure Needs for Agent Trust**
 
-```mermaid
 
-graph LR
-    subgraph WITHOUT["WITHOUT INPACT™"]
-        direction TB
-        W1["Why is this so slow?<br/><br/>It doesn't understand me<br/><br/>Who authorized this?<br/><br/>It keeps making mistakes<br/><br/>It doesn't know context<br/><br/><b>I don't trust it</b>"]
-    end
-    
-    subgraph TRANSFORM["TRANSFORM"]
-        direction TB
-        T1["→"]
-    end
-    
-    subgraph WITH["WITH INPACT™"]
-        direction TB
-        I1["I - Instant<br/>Under 2 seconds<br/><br/>N - Natural<br/>97% comprehension<br/><br/>P - Permitted<br/>Dynamic access<br/><br/>A - Adaptive<br/>Learns from feedback<br/><br/>C - Contextual<br/>Cross-system aware<br/><br/>T - Transparent<br/>Full audit trail<br/><br/><b>I trust it</b>"]
-    end
-    
-    WITHOUT --> TRANSFORM --> WITH
-    
-    style WITHOUT fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style W1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style TRANSFORM fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style T1 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style WITH fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style I1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    
-
-```
-
+![Figure 2.0: The INPACT™ Framework - Six Infrastructure Needs for Agent Trust](figures/figure-2-0.png)
 > **Key Takeaway:** Six infrastructure needs. One framework. Trust.
 
 ## PART 1: FRAMEWORK INTRODUCTION
@@ -60,40 +32,8 @@ Chapter 1 revealed why 95% of enterprise AI agent projects fail not from inadequ
 
 **Figure 2.1: The Architecture of Trust - Three Integrated Pillars**
 
-```mermaid
 
-
-graph TB
-    Title["ARCHITECTURE OF TRUST<br/>Three Integrated Pillars"]
-    
-    subgraph PILLARS[" "]
-        direction LR
-        INPACT["PILLAR 1: INPACT™<br/><br/>What Agents Need?<br/><br/><b>I</b>nstant<br/><b>N</b>atural<br/><b>P</b>ermitted<br/><b>A</b>daptive<br/><b>C</b>ontextual<br/><b>T</b>ransparent"]
-        
-        Layers["PILLAR 2: 7-LAYERS<br/>Infrastructure<br/><br/>How to Build TRUST?<br/><br/>Storage<br/>Real-Time<br/>Semantic<br/>Intelligence<br/>Governance<br/>Observability<br/>Orchestration"]
-        
-        GOALS["PILLAR 3: GOALS™<br/><br/>How to Measure TRUST?<br/><br/><b>G</b>overnance<br/><b>O</b>bservability<br/><b>A</b>vailability<br/><b>L</b>exicon<br/><b>S</b>olid"]
-    end
-    
-    Copyright["© 2025 Colaberry Inc."]
-    
-    Title --> PILLARS
-    
-    INPACT -.->|"Needs Fulfilled by"| Layers
-    Layers -.->|"Enables Operations"| GOALS
-    GOALS -.->|"Drives Trust"| INPACT
-    
-    style Title fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style PILLARS fill:none,stroke:none
-        style INPACT fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-        style Layers fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-        style GOALS fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style Copyright fill:none,stroke:none,color:#333333
-
-
-
-```
-
+![Figure 2.1: The Architecture of Trust - Three Integrated Pillars](figures/figure-2-1.png)
 **This chapter builds Pillar 1 completely.** You'll understand what agents need, why traditional infrastructure fails each need, and how Echo Health transformed from 28/100 readiness to 86/100 in ten weeks.
 
 ### The Origin: Pattern Recognition Across Industry Deployments
@@ -120,83 +60,8 @@ Tony Robbins built an empire on one insight: humans have six core needs - signif
 
 **Figure 2.2: Human Needs to Agent Needs Parallel**
 
-```mermaid
-graph TB
-    TITLE["<b>HUMAN (Tony Robbins) → <br/>INPACT™ AGENT PARALLEL</b>"]
-    
-    TITLE --> ROW
-    
-    subgraph ROW[" "]
-        direction LR
-        
-        subgraph HUMAN["<b>6 HUMAN NEEDS </b>"]
-            direction TB
-            H1["<b>Significance</b><br/>Importance<br/>Validation"]
-            H2["<b>Variety</b><br/>Challenge<br/>Novelty"]
-            H3["<b>Certainty</b><br/>Predictability<br/>Safety"]
-            H4["<b>Growth</b><br/>Progress<br/>Development"]
-            H5["<b>Connection</b><br/>Belonging<br/>Relationships"]
-            H6["<b>Contribution</b><br/>Purpose<br/>Meaning"]
-        end
-        
-        subgraph AGENT["<b>6 AGENT NEEDS</b>"]
-            direction TB
-            A1["<b>I - Instant</b><br/>Real-time data<br/>Sub-2s response"]
-            A2["<b>N - Natural</b><br/>Business language<br/>Understanding"]
-            A3["<b>P - Permitted</b><br/>Authorization<br/>Security boundaries"]
-            A4["<b>A - Adaptive</b><br/>Continuous learning<br/>Improvement"]
-            A5["<b>C - Contextual</b><br/>Cross-system<br/>Integration"]
-            A6["<b>T - Transparent</b><br/>Explainable value<br/>Delivery"]
-        end
-        
-        TRUST["<b>✅ TRUSTED AGENT</b><br/><b>Infrastructure Fulfills <br/>All 6 Needs</b>"]
-        
-        H1 -.->|<b>Parallels</b>| A1
-        H2 -.->|<b>Parallels</b>| A2
-        H3 -.->|<b>Parallels</b>| A3
-        H4 -.->|<b>Parallels</b>| A4
-        H5 -.->|<b>Parallels</b>| A5
-        H6 -.->|<b>Parallels</b>| A6
-        
-        A1 --> TRUST
-        A2 --> TRUST
-        A3 --> TRUST
-        A4 --> TRUST
-        A5 --> TRUST
-        A6 --> TRUST
-    end
-    
-    COPYRIGHT["<b>© 2025 Colaberry Inc.</b>"]
-    
-    %% TITLE — NEUTRAL / CONTEXT
-    style TITLE fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style ROW fill:none,stroke:none
-    
-    %% 🟠 HUMAN NEEDS — POSITIVE MOTIVATION (NOT FAILURE)
-        style HUMAN fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-        style H1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-        style H2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-        style H3 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-        style H4 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-        style H5 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-        style H6 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    
-    %% 🔵 AGENT NEEDS — TRANSFORMATION / BECOMING
-        style AGENT fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-        style A1 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-        style A2 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-        style A3 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-        style A4 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-        style A5 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-        style A6 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    
-    %% 🟢 TRUSTED AGENT — OUTCOME
-            style TRUST fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    
-    %% FOOTER
-    style COPYRIGHT fill:none,stroke:none,color:#333333
-```
 
+![Figure 2.2: Human Needs to Agent Needs Parallel](figures/figure-2-2.png)
 **The parallel mappings:**
 
 **Significance** (importance, validation) → **Instant**: When someone is significant, they receive immediate attention. VIP treatment means instant response. An agent taking 10+ seconds to respond signals "you're not important enough." Sub-2-second responses validate user significance through immediate, attentive service.
@@ -225,46 +90,8 @@ Traditional enterprise software could require trust: "You must use this ERP syst
 
 **Figure 2.3: Six INPACT™ Needs Fulfilled**
 
-```mermaid
-graph TB
-    subgraph BOX["<b>INPACT™ AGENT</b>"]
-        I["<b>I - Instant</b><br/><b>Users trust responses<br/> are current</b>"]
-        N["<b>N - Natural</b><br/><b>Users trust agent<br/> understands</b>"]
-        P["<b>P - Permitted</b><br/><b>Users trust agent<br/> respects boundaries</b>"]
-        A["<b>A - Adaptive</b><br/><b>Users trust agent<br/> learns & improves</b>"]
-        C["<b>C - Contextual</b><br/><b>Users trust agent<br/> sees complete picture</b>"]
-        T["<b>T - Transparent</b><br/><b>Users trust agent's<br/> reasoning</b>"]
-        
-        TRUST["<b>✅ TRUSTED AGENT</b><br/><b>Users<br/> Collaborate & Delegate<br/> with Confidence</b>"]
-        
-        I --> TRUST
-        N --> TRUST
-        P --> TRUST
-        A --> TRUST
-        C --> TRUST
-        T --> TRUST
-    end
-    
-    COPYRIGHT["<b>© 2025 Colaberry Inc.</b>"]
-    
-    %% ⚪ CONTAINER — NEUTRAL / CONTEXT
-        style BOX fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    
-    %% 🔵 INPACT™ NEEDS — TRANSFORMATION / DEFINITION
-        style I fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-        style N fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-        style P fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-        style A fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-        style C fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-        style T fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    
-    %% 🟢 TRUST — INPACT™-FULFILLED OUTCOME
-        style TRUST fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    
-    %% FOOTER
-    style COPYRIGHT fill:none,stroke:none,color:#333333
-```
 
+![Figure 2.3: Six INPACT™ Needs Fulfilled](figures/figure-2-3.png)
 **When even one need fails, trust collapses across all dimensions.** Agents operate on binary trust. Users either trust enough to delegate, or they don't trust at all. Echo's scheduling agent achieved 95% accuracy but took 9-13 seconds to respond. Users abandoned it. Accuracy didn't matter when speed destroyed conversational experience.
 
 ### INPACT™ as Requirements Definition
@@ -289,44 +116,8 @@ INPACT™ assessment quantifies infrastructure readiness using a 1-6 scoring sys
 
 **Figure 2.4: INPACT™ Assessment Methodology - From Dimensions to Decision**
 
-```mermaid
-graph TB
-    TITLE["<b>INPACT™ ASSESSMENT<br/> METHODOLOGY</b>"]
-    
-    ASSESS["<b>STEP 1: ASSESS<br/> 6 DIMENSIONS</b><br/><b>I · N · P · A · C · T</b><br/><b>(Score each 1-6 points)</br>Max points: 36</b>"]
-    
-    CALC["<b>STEP 2: CALCULATE SCORE:</b><br/><b>Add 6 dimensions points</b><br/><b>Convert: (score/36) × 100</b>"]
-    
-    DECISION{"<b>STEP 3: EVALUATE</b><br/><b>Score ≥ 86/100?</b>"}
-    
-    READY["<b>✅ AGENT-READY</b><br/><b>Production approved</b><br/><b>Sustainable adoption</b>"]
-    
-    GAPS["<b>⚠️ GAPS FOUND</b><br/><b>Roadmap needed</b><br/><b>High risk</b>"]
-    
-    COPYRIGHT["<b>© 2025 Colaberry Inc.</b>"]
-    
-    TITLE --> ASSESS --> CALC --> DECISION
-    DECISION -->|<b>YES</b>| READY
-    DECISION -->|<b>NO</b>| GAPS
 
-    %% ⚪ CONTEXT / FRAMING
-    style TITLE fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style ASSESS fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style CALC fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-
-    %% 🟠 DECISION / PRESSURE POINT
-    style DECISION fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-
-    %% 🟢 TRUSTED / INPACT™-FULFILLED
-    style READY fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-
-    %% 🔴 FAILURE / RISK
-    style GAPS fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-
-    %% FOOTER
-    style COPYRIGHT fill:none,stroke:none,color:#333333
-```
-
+![Figure 2.4: INPACT™ Assessment Methodology - From Dimensions to Decision](figures/figure-2-4.png)
 **The six INPACT™ dimensions assessed:**
 
 - **I (Instant):** Real-time data delivery, sub-2-second response times
@@ -367,62 +158,8 @@ The transformation roadmap began there.
 
 **Figure 2.5: Echo Health's INPACT™ Transformation - 28/100 to 86/100 in 10 Weeks**
 
-```mermaid
-graph TB
-    TITLE["<b>ECHO HEALTH'S<br/>INFRASTRUCTURE<br/>TRANSFORMATION</b>"]
-    
-    TITLE --> BEFORE
-    
-    subgraph BEFORE["<b>WEEK 0: SCORE =28/100</b>"]
-        B_SCORE["<b>Overall Score: 28/100</b><br/><b>(10 out of 36 points)</b>"]
-        
-        B_DIMS["<b>Dimension Breakdown:</b><br/><b>I=1/6 🔴 | N=2/6 🔴 </b><br/><b>P=1/6 🔴 | A=2/6 🔴</b><br/> C=3/6 🟡 | T=1/6 🔴</b>"]
-        
-        B_STATUS["<b>Not Production Ready</b><br/><b>• 5 critical gaps </b><br/><b>• Compliance risk</b><br/><b>• Cannot proceed to prod</b>"]
-        
-        B_SCORE --> B_DIMS
-        B_DIMS --> B_STATUS
-    end
-    
-    BEFORE --> TRANSFORM["<b>90-DAY TRANSFORMATION<br/>ROADMAP</b><br/><b>Investment: $1.23M </b><br/><b> Timeline: 10 weeks</b><br/><b>Sequence: </b><br/><b>I → N+P → C → A+T</b>"]
-    
-    TRANSFORM --> AFTER
-    
-    subgraph AFTER["<b>WEEK 10: SCORE = 86/100</b>"]
-        A_SCORE["<b>Overall Score: 86/100</b><br/><b>(31 out of 36 points)</b>"]
-        
-        A_DIMS["<b>Dimension Breakdown:</b><br/><b>I=5/6 ✅ | N=5/6 ✅ </b><br/><b> P=5/6 ✅ | A=5/6 ✅</b><br/><b>C=6/6 ✅ | T=5/6 ✅</b>"]
-        
-A_STATUS["<b>Production-Ready</b><br/><b>• All dimensions ≥5/6 </b><br/><b>• ROI: 209% Year 1 </b><br/><b>• Payback: 10 weeks</b>"]
-        
-        A_SCORE --> A_DIMS
-        A_DIMS --> A_STATUS
-    end
-    
-    COPYRIGHT["<b>© 2025 Colaberry Inc.</b>"]
 
-    %% ⚪ CONTEXT / FRAMING
-    style TITLE fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-
-    %% 🔴 BEFORE — FAILURE / BI-ERA
-    style BEFORE fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style B_SCORE fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style B_DIMS fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style B_STATUS fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-
-    %% 🔵 TRANSFORMATION / CHANGE
-    style TRANSFORM fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-
-    %% 🟢 AFTER — TRUSTED / INPACT™-FULFILLED
-    style AFTER fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style A_SCORE fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style A_DIMS fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style A_STATUS fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-
-    %% FOOTER
-    style COPYRIGHT fill:none,stroke:none,color:#333333
-```
-
+![Figure 2.5: Echo Health's INPACT™ Transformation - 28/100 to 86/100 in 10 Weeks](figures/figure-2-5.png)
 ---
 
 ## PART 2: ECHO'S DISCOVERY AND PRIORITIZATION
@@ -487,47 +224,8 @@ Every second of latency costs trust. A patient calls to schedule. The agent quer
 
 **Figure 2.6: Batch Processing vs. Real-Time Response**
 
-```mermaid
-graph TB
-    subgraph ERA1["<b>Analytics Era: Batch</b>"]
-        direction LR
-        A1["<b>Overnight<br/>ETL Job</b>"] --> B1["<b>Data<br/>Warehouse</b>"]
-        B1 --> C1["<b>BI Query<br/>8-13 seconds</b>"]
-        C1 --> D1["<b>Stale Data<br/>8-24 hours old</b>"]
-        
-        %% 🔴 CRITICAL FAILURE
-        style D1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    end
-    
-    %% 🔵 TRANSITION
-    ERA1 -.->|<b>Evolution</b>| ERA2
-    
-    subgraph ERA2["<b>Agent Era: Real-Time</b>"]
-        direction LR
-        A2["<b>CDC<br/>Continuous</b>"] --> B2["<b>Streaming<br/>Platform</b>"]
-        B2 --> C2["<b>Agent Query<br/>&lt; 2 seconds</b>"]
-        C2 --> D2["<b>Fresh Data<br/>&lt; 30 seconds old</b>"]
-    end
 
-    %% 🔴 FAILURE / BI ERA
-    style ERA1 fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style A1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style B1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style C1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style D1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-
-    %% 🟢 TRUSTED / AGENT ERA
-    style ERA2 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style A2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style B2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style C2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style D2 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-
-    %% FOOTER
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:none,color:#333333
-```
-
+![Figure 2.6: Batch Processing vs. Real-Time Response](figures/figure-2-6.png)
 Echo's agent took 9-13 seconds to respond. Appointment availability queries hit data warehouses refreshed overnight via batch ETL. By 10 AM, data was 8+ hours stale. The database was cold with no indexes optimized for agent patterns, no caching. Every request forced table scans.
 
 Enterprise data systems were built for patience. Overnight batch jobs. Queries taking 9-13 seconds. Data hours or days old. That worked when humans analyzed reports over coffee. It fails when agents must respond at conversational speed.
@@ -568,47 +266,8 @@ Research shows GPT-4 achieves 73% execution accuracy on complex database schemas
 
 **Figure 2.7: Manual Translation vs. Semantic Understanding**
 
-```mermaid
-graph TB
-    subgraph ERA1["<b>Analytics Era: Manual</b>"]
-        direction LR
-        A1["<b>Natural<br/>Language Query</b>"] --> B1["<b>Developer<br/>Translates to SQL</b>"]
-        B1 --> C1["<b>Cryptic Table<br/>FCT_PTNT_ENCT</b>"]
-        C1 --> D1["<b>2–3 days<br/>40–60% accuracy</b>"]
-        
-        %% 🔴 CRITICAL FAILURE
-        style D1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    end
-    
-    %% 🔵 TRANSITION
-    ERA1 -.->|<b>Evolution</b>| ERA2
-    
-    subgraph ERA2["<b>Agent Era: Semantic</b>"]
-        direction LR
-        A2["<b>Natural<br/>Language Query</b>"] --> B2["<b>Semantic<br/>Layer</b>"]
-        B2 --> C2["<b>Business Terms<br/>“Patient Encounters”</b>"]
-        C2 --> D2["<b>Instant<br/>87–93% accuracy</b>"]
-    end
 
-    %% 🔴 FAILURE / HUMAN ERA
-    style ERA1 fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style A1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style B1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style C1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style D1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-
-    %% 🟢 TRUSTED / AGENT ERA
-    style ERA2 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style A2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style B2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style C2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style D2 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-
-    %% FOOTER
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:none,color:#333333
-```
-
+![Figure 2.7: Manual Translation vs. Semantic Understanding](figures/figure-2-7.png)
 Echo's database schema: 347 tables, average table name 23 characters of cryptic abbreviations. DIM_CUST_LOC_ADDR_FACT_D_KEY meant "customer location address fact dimension key." Legacy naming was chosen for technical reasons fifteen years ago. Perfect for batch ETL. Unintelligible to LLMs and humans.
 
 Test queries revealed 43% accuracy. 
@@ -657,45 +316,8 @@ Role-based access control (RBAC) operates at table level: grant all patient reco
 
 **Figure 2.8: RBAC Only vs. RBAC + ABAC**
 
-```mermaid
-graph TB
-    subgraph ERA1["<b>RBAC Only</b>"]
-        direction LR
-        A1["<b>User = Scheduler<br/>Role Granted</b>"] --> B1["<b>Access ALL<br/>Patient Records</b>"]
-        B1 --> D1["<b>HIPAA<br/>Violation</b>"]
-        
-        %% 🔴 CRITICAL COMPLIANCE FAILURE
-        style D1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    end
-    
-    %% 🔵 TRANSITION — CONTEXT ADDED
-    ERA1 -.->|<b>Add Context Layer</b>| ERA2
-    
-    subgraph ERA2["<b>RBAC + ABAC</b>"]
-        direction LR
-        A2["<b>User + Context<br/>Per-Query Eval</b>"] --> B2["<b>Policy<br/>Engine (OPA)</b>"]
-        B2 --> C2["<b>Dynamic<br/>Masking</b>"]
-        C2 --> D2["<b>HIPAA<br/>Compliant</b>"]
-    end
 
-    %% 🔴 FAILURE / COMPLIANCE RISK
-    style ERA1 fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style A1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style B1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style D1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-
-    %% 🟢 TRUSTED / COMPLIANT OUTCOME
-    style ERA2 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style A2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style B2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style C2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style D2 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-
-    %% FOOTER
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:none,color:#333333
-```
-
+![Figure 2.8: RBAC Only vs. RBAC + ABAC](figures/figure-2-8.png)
 Echo used four RBAC roles: reader (view only), writer (edit appointments), admin (configuration), app_service (agent). The agent used app_service credentials with table-level SELECT permissions across all patient tables. 
 First test query: scheduling agent accessed Patient 10243's mental health diagnoses while booking an appointment. 
 Authorization system: no context awareness of "why" or "what data needed." 
@@ -742,47 +364,8 @@ Manual quarterly retraining creates 3-month windows where agents operate with de
 
 **Figure 2.9: Quarterly Retraining vs. Continuous Learning**
 
-```mermaid
-graph TB
-    subgraph ERA1["<b>Manual Era: Quarterly</b>"]
-        direction LR
-        A1["<b>Model<br/>Deployed Q1</b>"] --> B1["<b>Performance<br/>Degrades 91%</b>"]
-        B1 --> C1["<b>Manual Retrain<br/>Q2 (3 months)</b>"]
-        C1 --> D1["<b>3-Month<br/>Degradation Window</b>"]
-        
-        %% 🔴 CRITICAL TRUST EROSION
-        style D1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    end
-    
-    %% 🔵 TRANSITION — CONTINUOUS ADAPTATION
-    ERA1 -.->|<b>Evolution</b>| ERA2
-    
-    subgraph ERA2["<b>Adaptive Era: Continuous</b>"]
-        direction LR
-        A2["<b>Model<br/>Deployed</b>"] --> B2["<b>Monitor<br/>Performance</b>"]
-        B2 --> C2["<b>Auto Retrain<br/>Drift Detected</b>"]
-        C2 --> D2["<b>Continuous<br/>Improvement</b>"]
-    end
 
-    %% 🔴 FAILURE / TRUST EROSION
-    style ERA1 fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style A1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style B1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style C1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style D1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-
-    %% 🟢 TRUSTED / ADAPTIVE OUTCOME
-    style ERA2 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style A2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style B2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style C2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style D2 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-
-    %% FOOTER
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:none,color:#333333
-```
-
+![Figure 2.9: Quarterly Retraining vs. Continuous Learning](figures/figure-2-9.png)
 Echo deployed their scheduling agent in September with 87% appointment booking accuracy. By November, accuracy dropped to 73%. Analysis revealed three drift categories: 
 **Data drift**: new physicians added, locations changed, service offerings expanded
 **Concept drift**: seasonal patterns shifted (September = back-to-school physicals, November = flu season). 
@@ -830,45 +413,8 @@ Agents operating on single-system data provide incomplete answers: "You have an 
 
 **Figure 2.10: Single-System vs. Cross-System Integration**
 
-```mermaid
-graph TB
-    subgraph ERA1["<b>Siloed Era: Single-System</b>"]
-        direction LR
-        A1["<b>Agent Query</b>"] --> B1["<b>EHR<br/>Only</b>"]
-        B1 --> D1["<b>Incomplete<br/>Answer</b>"]
-        
-        %% 🔴 CRITICAL CONTEXT FAILURE
-        style D1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    end
-    
-    %% 🔵 TRANSITION — CONTEXTUAL EVOLUTION
-    ERA1 -.->|<b>Evolution</b>| ERA2
-    
-    subgraph ERA2["<b>Contextual Era: Integrated</b>"]
-        direction LR
-        A2["<b>Agent Query</b>"] --> B2["<b>5 Systems<br/>Integrated</b>"]
-        B2 --> C2["<b>Context<br/>Enriched</b>"]
-        C2 --> D2["<b>Complete<br/>Answer</b>"]
-    end
 
-    %% 🔴 FAILURE / CONTEXT GAP
-    style ERA1 fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style A1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style B1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style D1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-
-    %% 🟢 TRUSTED / CONTEXTUAL OUTCOME
-    style ERA2 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style A2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style B2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style C2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style D2 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-
-    %% FOOTER
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:none,color:#333333
-```
-
+![Figure 2.10: Single-System vs. Cross-System Integration](figures/figure-2-10.png)
 Echo's initial agent had partial integration. EHR connected to scheduling, with read-only lab access. But billing, pharmacy, and patient portal remained siloed. Query: "What do I need to know about my Tuesday appointment?" Agent response: "You have an appointment Tuesday at 2 PM with Dr. Martinez for annual physical. Labs ordered: comprehensive metabolic panel." Missing context: Lab requires 12-hour fasting (instruction not surfaced). Insurance needs prior auth for specific tests (billing not connected). Pharmacy flagged medication interaction (pharmacy not connected). Two outstanding forms (patient portal not connected).
 
 Patient arrived unfasted, insurance rejected claim, medication interaction discovered during visit, forms caused delays. A complete answer required all 5 systems working together. Echo had 2 partially connected.
@@ -909,45 +455,8 @@ Without transparency, physicians override 70% of agent recommendations, not beca
 
 **Figure 2.11: Opaque Decisions vs. Explainable Reasoning**
 
-```mermaid
-graph TB
-    subgraph ERA1["<b>Black-Box: Opaque</b>"]
-        direction LR
-        A1["<b>Agent<br/>Recommendation</b>"] --> B1["<b>No<br/>Explanation</b>"]
-        B1 --> D1["<b>70% Override<br/>Rate</b>"]
-        
-        %% 🔴 CRITICAL TRUST FAILURE
-        style D1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    end
-    
-    %% 🔵 TRANSITION — ADD TRANSPARENCY
-    ERA1 -.->|<b>Evolution</b>| ERA2
-    
-    subgraph ERA2["<b>Transparent: Explainable</b>"]
-        direction LR
-        A2["<b>Agent<br/>Recommendation</b>"] --> B2["<b>Audit<br/>Trail</b>"]
-        B2 --> C2["<b>Clinical<br/>Evidence</b>"]
-        C2 --> D2["<b>15% Override<br/>Rate</b>"]
-    end
 
-    %% 🔴 FAILURE / TRUST BREAKDOWN
-    style ERA1 fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style A1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style B1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style D1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-
-    %% 🟢 TRUSTED / TRANSPARENT OUTCOME
-    style ERA2 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style A2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style B2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style C2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style D2 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-
-    %% FOOTER
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    style Copyright fill:none,stroke:none,color:#333333
-```
-
+![Figure 2.11: Opaque Decisions vs. Explainable Reasoning](figures/figure-2-11.png)
 Echo's initial agent provided recommendations without explanation. Physician query: "Treatment options for Patient 10243's Type 2 diabetes." Agent response: "Consider Ozempic (semaglutide) as first-line therapy." Physician question: "Why Ozempic specifically?" Agent: [no explanation available]. Physician override: prescribes metformin instead (standard first-line per institutional protocol).
 
 Analysis revealed: Agent recommendation was correct based on patient's specific contraindications for metformin (kidney function), insurance coverage (Ozempic covered), and clinical guidelines (ADA 2024 recommendations) [17] . But without transparent reasoning, physician couldn't verify and defaulted to institutional protocol despite patient-specific factors.

@@ -1,0 +1,36 @@
+flowchart TB
+    NL["<b>Natural Language</b><br/>'High-risk diabetic patients'"]
+    
+    subgraph PARSE_ROW["<b>Parse & Enrich</b>"]
+        direction LR
+        PARSE["<b>Semantic Parser</b>"] --> GLOSS["<b>Business Glossary</b><br/><b>2,400 terms</b>"]
+    end
+    
+    subgraph RESOLVE_ROW["<b>Entity Resolution</b>"]
+        direction LR
+        E1["<b>EHR ID</b>"] --> GOLD["<b>Golden ID</b>"]
+        E2["<b>Claims ID</b>"] --> GOLD
+        E3["<b>Lab ID</b>"] --> GOLD
+    end
+    
+    subgraph OUTPUT_ROW["<b>Output</b>"]
+        direction LR
+        ONTO["<b>Clinical Ontology</b><br/><b>SNOMED/ICD/LOINC</b>"] --> RESULT["<b>Unified Query</b>"]
+    end
+    
+    NL --> PARSE_ROW
+    PARSE_ROW --> RESOLVE_ROW
+    RESOLVE_ROW --> OUTPUT_ROW
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    style NL fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style PARSE fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style GLOSS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style E1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style E2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style E3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style GOLD fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style ONTO fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style RESULT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Copyright fill:#ffffff,stroke:none,color:#666666

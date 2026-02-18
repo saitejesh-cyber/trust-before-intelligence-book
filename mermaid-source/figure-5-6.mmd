@@ -1,0 +1,44 @@
+graph TB
+    subgraph KEYWORD["<b>KEYWORD SEARCH<br/> (Before Layer 3)</b>"]
+        direction LR
+        K_Q["<b>Query: 'diabetes patients'</b>"] --> K_MATCH["<b>String Matching</b><br/><b>LIKE '%diabetes%'</b>"]
+        K_MATCH --> K_MISS1["<b>Missed:<br/> DM Type 2</b>"]
+        K_MATCH --> K_MISS2["<b>Missed:<br/> glycemic control</b>"]
+        K_MATCH --> K_MISS3["<b>Missed:<br/> E11.9</b>"]
+        K_MISS1 --> K_RESULT["<b>40-60% Recall</b><br/><b>Incomplete results</b>"]
+        K_MISS2 --> K_RESULT
+        K_MISS3 --> K_RESULT
+    end
+    
+    KEYWORD -->|<b>Layer 3 Transforms</b>| SEMANTIC
+    
+    subgraph SEMANTIC["<b>SEMANTIC SEARCH<br/>(With Layer 3)</b>"]
+        direction LR
+        S_Q["<b>Query: 'diabetes patients'</b>"] --> S_RESOLVE["<b>Semantic Resolution</b><br/><b>Concept expansion</b>"]
+        S_RESOLVE --> S_HIT1["<b>Diabetes mellitus</b>"]
+        S_RESOLVE --> S_HIT2["<b>DM Type 1, Type 2</b>"]
+        S_RESOLVE --> S_HIT3["<b>E08-E13 codes</b>"]
+        S_RESOLVE --> S_HIT4["<b>Glycemic disorders</b>"]
+        S_HIT1 --> S_RESULT["<b>85%+ Recall</b><br/><b>Complete results</b>"]
+        S_HIT2 --> S_RESULT
+        S_HIT3 --> S_RESULT
+        S_HIT4 --> S_RESULT
+    end
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    style K_Q fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style K_MATCH fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style K_MISS1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style K_MISS2 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style K_MISS3 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style K_RESULT fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
+    
+    style S_Q fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style S_RESOLVE fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S_HIT1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S_HIT2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S_HIT3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S_HIT4 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S_RESULT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Copyright fill:#ffffff,stroke:none,color:#666666

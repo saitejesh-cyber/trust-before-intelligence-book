@@ -35,35 +35,8 @@ Sarah pulled up the architecture diagram. "Let me show you what we're building."
 
 **Figure 4.0: Foundation Layers - Why Layers 1-2 Are Prerequisites**
 
-```mermaid
 
-graph LR
-    subgraph WITHOUT["WITHOUT LAYERS 1-2"]
-        direction TB
-        W1["Siloed databases<br/>No unified access<br/><br/>Overnight batch ETL<br/>Stale data<br/><br/>No vector storage<br/>No semantic search<br/><br/><b>Minutes to query<br/>Users abandon</b>"]
-    end
-    
-    subgraph TRANSFORM["TRANSFORM"]
-        direction TB
-        T1["→"]
-    end
-    
-    subgraph WITH["WITH LAYERS 1-2"]
-        direction TB
-        L1["Layer 1:<br/>Unified multi-modal<br/>storage<br/><br/>Layer 2:<br/>Sub-second freshness<br/><br/>Vector + Graph ready<br/><br/><b>Under 2s response<br/>Users trust</b>"]
-    end
-    
-    WITHOUT --> TRANSFORM --> WITH
-    
-    style WITHOUT fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style W1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style TRANSFORM fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style T1 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style WITH fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style L1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-
-```
-
+![Figure 4.0: Foundation Layers - Why Layers 1-2 Are Prerequisites](figures/figure-4-0.png)
 > **Key Takeaway:** Foundation first. Without Layers 1-2, nothing else works.
 
 ---
@@ -78,51 +51,8 @@ graph LR
 
 **Figure 4.1: The Architecture of Trust - Three Integrated Pillars**
 
-```mermaid
 
-graph TB
-    Title["ARCHITECTURE OF TRUST<br/>Three Integrated Pillars"]
-    
-    subgraph PILLARS[" "]
-        direction LR
-        INPACT["`PILLAR 1: INPACT™<br/><br/>What Agents Need?<br/><br/>**I**nstant<br/>**N**atural<br/>**P**ermitted<br/>**A**daptive<br/>**C**ontextual<br/>**T**ransparent`"]
-        
-        Layers["PILLAR 2: 7-LAYERS<br/>Infrastructure<br/><br/>How to Build TRUST?<br/><br/>Storage<br/>Real-Time<br/>Semantic<br/>Intelligence<br/>Governance<br/>Observability<br/>Orchestration"]
-        
-        GOALS["`PILLAR 3: GOALS™<br/><br/>How to Measure TRUST?<br/><br/>**G**overnance<br/>**O**bservability<br/>**A**vailability<br/>**L**exicon<br/>**S**olid`"]
-    end
-    
-    subgraph INDICATOR[" "]
-        direction LR
-        Spacer1[" "]
-        YouAreHere["<b>YOU ARE HERE</b><br/>Layers 1: Storage <br/> Layer 2: Real-time<br/> Built Here"]
-        Spacer2[" "]
-    end
-    
-    Copyright["© 2025 Colaberry Inc."]
-    
-    Title --> PILLARS
-    PILLARS <--> INDICATOR
-    
-    INPACT -.->|"Needs Fulfilled by"| Layers
-    Layers -.->|"Enables Operations"| GOALS
-    GOALS -.->|"Drives Trust"| INPACT
-
-
-    style Title fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style PILLARS fill:none,stroke:none
-    style INDICATOR fill:none,stroke:none
-    style INPACT fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style Layers fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style GOALS fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style YouAreHere fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style Spacer1 fill:none,stroke:none,color:transparent
-    style Spacer2 fill:none,stroke:none,color:transparent
-    style Copyright fill:none,stroke:none,color:#333333
-
-
-```
-
+![Figure 4.1: The Architecture of Trust - Three Integrated Pillars](figures/figure-4-1.png)
 ### Why Foundation Matters
 
 Think of enterprise architecture like building construction. You cannot build floors three through seven without a solid foundation. Skip the foundation, and the structure becomes unstable, regardless of the intelligence layers above.
@@ -135,37 +65,8 @@ Foundation equals data availability and accessibility. Before agents can underst
 
 **Figure 4.2: 7-Layer Agent-Ready Architecture - Foundation Highlighted**
 
-```mermaid
-graph TB
-    L7["<b>Layer 7: Orchestration</b><br/><b>Multi-Agent Coordination</b>"]
-    L6["<b>Layer 6: Observability</b><br/><b>Tracing & Audit</b>"]
-    L5["<b>Layer 5: Governance</b><br/><b>Dynamic Access Control</b>"]
-    L4["<b>Layer 4: Intelligence</b><br/><b>LLM + RAG Pipeline</b>"]
-    L3["<b>Layer 3: Semantic</b><br/><b>Business Context</b>"]
-    
-    subgraph FOUNDATION["<b>🏗️ FOUNDATION</b>"]
-        direction TB
-        L2["<b>Layer 2: Real-Time Data</b><br/><b>CDC & Streaming</b>"]
-        L1["<b>Layer 1: Multi-Modal Storage</b><br/><b>8 Phase 1 Categories</b>"]
-    end
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    
-    L7 --> L6 --> L5 --> L4 --> L3
-    L3 --> L2 --> L1
-    
-    style L7 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style L6 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style L5 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style L4 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style L3 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style FOUNDATION fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style L2 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style L1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style Copyright fill:none,stroke:none,color:#333333
 
-```
-
+![Figure 4.2: 7-Layer Agent-Ready Architecture - Foundation Highlighted](figures/figure-4-2.png)
 These foundation layers directly address specific gaps from Chapter 3:
 
 ### The Seven Infrastructure Gaps
@@ -282,31 +183,8 @@ Swapna pulled up the pipeline diagram. "Overnight batch. Operational databases, 
 
 **Figure 4.3: Batch ETL Creates Patient Safety Risk**
 
-```mermaid
-graph LR
-    subgraph WEEK0["<b>Week 0: Batch ETL</b>"]
-        direction TB
-        OPS["<b>Operational Systems</b><br/>Epic, Cerner, Workday<br/>Real-time updates"]
-        ETL["<b>2 AM ETL</b><br/>Overnight batch<br/>24-hour cycle"]
-        REPORT["<b>Reporting Database</b><br/>Stale by afternoon<br/>8–24 hour lag"]
-    end
-    
-    RISK["<b>Patient Safety Risk</b><br/>Medication orders<br/>invisible 12+ hours"]
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    
-    OPS -->|<b>Continuous changes</b>| ETL
-    ETL -->|<b>Batch load</b>| REPORT
-    REPORT -.->|<b>Agents query stale data</b>| RISK
-    
-    style OPS fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style ETL fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style REPORT fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style RISK fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style WEEK0 fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style Copyright fill:none,stroke:none,color:#333333
-```
 
+![Figure 4.3: Batch ETL Creates Patient Safety Risk](figures/figure-4-3.png)
 "Concrete example," Sarah requested.
 
 "Friday afternoon, physician schedules Monday appointment. That appointment exists in Epic immediately. Our agent infrastructure won't see it until Saturday morning's ETL. Patient calls Friday at 4 PM asking about Monday appointments. Agents query stale data. They might say 'no appointments available' when three slots opened an hour ago."
@@ -392,55 +270,8 @@ Layer 1 provides eleven distinct storage categories, each optimized for specific
 
 **Figure 4.4: Layer 1 Multi-Modal Storage - 11 Categories by Function**
 
-```mermaid
 
-graph TB
-    TITLE["LAYER 1:<br/><b>MULTI-MODAL</b><br/><b>STORAGE</b><br/>11 Categories"]
-    
-    subgraph FOUNDATION["Foundation (8 Types)"]
-        direction TB
-        S1["1. <b>RDBMS</b><br/>Transactions"]
-        S2["2. <b>NoSQL</b><br/>Documents"]
-        S3["3. <b>Graph DB</b><br/>Relationships"]
-        S4["4. <b>Object Store</b><br/>Unstructured"]
-        S5["5. <b>Lakehouse</b><br/>Analytics"]
-        S6["6. <b>Model Registry</b><br/>ML models"]
-        S7["7. <b>Time-Series</b><br/>IoT/metrics"]
-        S8["8. <b>Cache Layer</b><br/>Performance"]    
-    end
-    
-    subgraph PHASE2["Phase 2 (3 Types)"]
-        direction TB
-        S9["9. <b>Vector DB</b><br/>Embeddings"]
-        S10["10. <b>Search Index</b><br/>Full-text"]
-        S11["11. <b>Feature Store</b><br/>ML features"]
-    end
-    
-    OUTPUT["Right Storage<br/>for Each Query"]
-    
-    Copyright["© 2025 Colaberry Inc."]
-
-    TITLE --> FOUNDATION --> PHASE2 --> OUTPUT
-
-    style TITLE fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style Copyright fill:none,stroke:none,color:#333333
-    style FOUNDATION fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style PHASE2 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style S1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style S2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style S3 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style S4 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style S5 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style S6 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style S7 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style S8 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style S9 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style S10 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style S11 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style OUTPUT fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-
-```
-
+![Figure 4.4: Layer 1 Multi-Modal Storage - 11 Categories by Function](figures/figure-4-4.png)
 Traditional BI infrastructure assumes one or two storage types handle everything. Usually a relational database for operational data and a data warehouse for analytics. This works for reporting but fails for agents. Agents need semantic search across patient records, relationship traversal through provider networks, flexible schema for clinical notes, petabyte-scale training data, sub-second response times, ML artifact versioning, feature reuse across models, continuous time-series data from ICU monitors, and unified ML pipelines with ACID transactions.
 
 No single storage technology handles all these patterns efficiently. Multi-modal storage matches storage type to query pattern, optimizing performance, cost, and developer productivity.
@@ -638,58 +469,8 @@ No single storage technology handles all these patterns efficiently. Multi-modal
 Echo started with SQL Server only. Here's what failed:
 
 **Figure 4.5: Echo's Storage Transformation - Single-Modal to Multi-Modal**
-```mermaid
-graph LR
-    subgraph BEFORE["<b>Week 0: Single-Modal</b>"]
-        OLD["<b>SQL Server Only</b><br/><b>All queries, one DB</b>"]
-        P1["<b>Cache: None</b><br/><b>Every query hits DB</b>"]
-        P2["<b>Graph queries: 8.2s</b><br/><b>Complex JOINs</b>"]
-        P3["<b>Schema: Rigid</b><br/><b>Change is slow</b>"]
-        P4["<b>ML: Spreadsheets</b><br/><b>No versioning</b>"]
-    end
-    
-    TRANSFORM["<b>4 Weeks</b>"]
-    
-    subgraph AFTER["<b>Week 4: Multi-Modal</b>"]
-        NEW["<b>8 Categories</b><br/><b>Right tool, right job</b>"]
-        S1["<b>Cache: &lt;10ms</b><br/><b>Redis MemoryDB</b>"]
-        S2["<b>Graph DB: 340ms</b><br/><b>Native traversal</b>"]
-        S3["<b>Schema: Flexible</b><br/><b>NoSQL + Lakehouse</b>"]
-        S4["<b>ML: Registry</b><br/><b>Full versioning</b>"]
-    end
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
 
-    OLD --> P1
-    OLD --> P2
-    OLD --> P3
-    OLD --> P4
-    P1 --> TRANSFORM
-    P2 --> TRANSFORM
-    P3 --> TRANSFORM
-    P4 --> TRANSFORM
-    TRANSFORM --> NEW
-    NEW --> S1
-    NEW --> S2
-    NEW --> S3
-    NEW --> S4
- 
-    style BEFORE fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style OLD fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style P1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style P2 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style P3 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style P4 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style TRANSFORM fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style AFTER fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style NEW fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style S1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style S2 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style S3 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style S4 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style Copyright fill:none,stroke:none,color:#333333
-```
-
+![Figure 4.5: Echo's Storage Transformation - Single-Modal to Multi-Modal](figures/figure-4-5.png)
 **Cache layer:** Critical for performance. Every agent query hit the database directly, no caching tier. Repeated queries for the same patient, same provider, same schedule data hammered SQL Server unnecessarily. Peak load saw 12,000 identical queries per hour. Redis MemoryDB provides sub-10ms response for cached results, reducing database load by 60% and enabling the response times agents require.
 
 **Graph traversal:** Painful. "Find all providers within three reporting levels of Dr. Sarah Chen" requires recursive CTE in SQL Server. Echo's implementation took 8.2 seconds on average (p95: 12.4s). Neo4j's native graph traversal (Cypher query) completes the same query in 340 milliseconds, over 20x faster, consistent with published benchmarks showing graph databases outperforming relational systems by 3x for simple queries up to 1,000x+ for deep traversals [1]. When agents need referral network analysis for care coordination, 8 seconds is prohibitive.
@@ -734,43 +515,15 @@ Layer 2 provides sub-30 second data freshness through change data capture (CDC),
 
 **Figure 4.6: Layer 2 Real-Time Data Fabric - CDC to Agents**
 
-```mermaid
 
-graph LR
-    SOURCE["<b>Operational Systems</b><br/>EHR, Scheduling, Labs"]
-    
-    subgraph LAYER2["<b>Layer 2: Real-Time Data</b>"]
-        direction TB
-        CDC["CDC: Debezium"]
-        KAFKA["Streaming: Kafka"]
-        PROCESS["Processing: Flink"]
-        CDC --> KAFKA --> PROCESS
-    end
-    
-    OUTCOME["<b>Layer 1 Storage</b><br/>↓<br/>Agents < 30s Refresh"]
-    
-    Copyright["© 2025 Colaberry Inc."]
-    
-    SOURCE -->|"Changes"| LAYER2
-    LAYER2 -->|"Store"| OUTCOME
-    
-    style SOURCE fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style LAYER2 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style CDC fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style KAFKA fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style PROCESS fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style OUTCOME fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style Copyright fill:none,stroke:none,color:#333333
-
-```
-
+![Figure 4.6: Layer 2 Real-Time Data Fabric - CDC to Agents](figures/figure-4-6.png)
 Traditional BI refreshes overnight (2 AM ETL). Agents querying at 3 PM see data 13 hours stale. For clinical decision support, this creates patient safety risks. Medication orders placed at 10 AM won't trigger drug interaction alerts until midnight.
 
 Layer 2 solves this with three integrated components:
 
 ### Component 1: Change Data Capture (CDC)
 
-**What:** Debezium CDC connectors monitoring operational databases for INSERT, UPDATE, DELETE operations. *Alternatives: AWS DMS, Oracle GoldenGate, Airbyte.*
+**What:** Debezium CDC connectors monitoring operational databases for INSERT, UPDATE, DELETE operations. *Alternatives: AWS DMS, Oracle GoldenGate, Airbyte.* CDC connectors capture changes from the databases underlying enterprise systems: Oracle (supporting Oracle EBS, PeopleSoft), SQL Server (supporting Dynamics), DB2 and mainframe databases, MySQL, and PostgreSQL. For SaaS applications (Salesforce, Workday, NetSuite), Layer 2 uses API-based connectors rather than CDC. The principle is universal: capture changes at the source, stream to agent-optimized storage.
 
 **Why:** CDC captures database changes within milliseconds without impacting operational system performance. Reads database transaction logs (binlog for MySQL, Write-Ahead Log for PostgreSQL, Change Tracking for SQL Server) with no additional load on production databases.
 
@@ -844,39 +597,8 @@ workday.providers.credentials
 
 **Figure 4.7: Real-Time Inference vs. Batch Training Paths**
 
-```mermaid
-graph LR
-    subgraph RT["<b>Real-Time Inference Path</b>"]
-        I1["<b>User Query</b>"]
-        I2["<b>Real-Time CDC</b><br/><b>&lt; 30s lag</b>"]
-        I3["<b>Agent Response</b><br/><b>&lt; 3s total</b>"]
-    end
-    
-    subgraph BATCH["<b>Batch Training Path</b>"]
-        T1["<b>Historical Data</b>"]
-        T2["<b>Overnight ETL</b><br/><b>OK for batch</b>"]
-        T3["<b>Model Training</b><br/><b>Hours / days OK</b>"]
-    end
-    
-    STORAGE["<b>Layer 1 Storage</b><br/><b>Serves both paths</b>"]
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    
-    I1 --> I2 --> STORAGE --> I3
-    T1 --> T2 --> STORAGE --> T3
 
-    style RT fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style I1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style I2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style I3 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style BATCH fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style T1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style T2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style T3 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style STORAGE fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style Copyright fill:none,stroke:none,color:#333333
-```
-
+![Figure 4.7: Real-Time Inference vs. Batch Training Paths](figures/figure-4-7.png)
 **Critical distinction:** Agent inference requires real-time data (<30 second lag). Model training tolerates batch data (overnight ETL acceptable). Layer 2 serves both needs:
 
 **Real-Time Inference (Critical Path):**
@@ -927,28 +649,8 @@ graph LR
 
 **Figure 4.8: Echo's Week 1-4 Foundation Build Timeline**
 
-```mermaid
-gantt
-    title Echo's Foundation Build (Weeks 1-4)
-    dateFormat MM-DD
-    axisFormat %m-%d
-    
-    section Layer 1 Storage
-    Azure SQL Hyperscale     :L1a, 01-06, 3d
-    MongoDB Atlas            :L1b, 01-06, 5d
-    Neo4j Graph Database     :L1c, 01-07, 6d
-    MLflow Model Registry    :L1d, 01-08, 5d
-    Azure Blob Storage       :L1e, 01-09, 3d
-    Databricks Lakehouse     :L1f, 01-06, 8d
-    Redis Cache Layer        :L1g, 01-10, 4d
-    InfluxDB Time-Series     :L1h, 01-09, 5d
-    
-    section Layer 2 Real-Time
-    Debezium CDC Connectors  :L2a, 01-20, 5d
-    Confluent Kafka Cluster  :L2b, 01-21, 4d
-    Flink Stream Processing  :L2c, 01-22, 6d
-```
 
+![Figure 4.8: Echo's Week 1-4 Foundation Build Timeline](figures/figure-4-8.png)
 *© 2025-2026 Colaberry Inc.*
 
 **Timeline Notes:**
@@ -959,28 +661,8 @@ gantt
 
 **Figure 4.9: INPACT™ Transformation (28 → 42)**
 
-```mermaid
-graph LR
-    subgraph week0["<b>Week 0: Assessment</b>"]
-        W0["<b>No Foundation</b><br/>TOTAL: 28/100</b><br/>I=1 | N=2 | P=1<br/>A=2 | C=3 | T=1"]
-    end
-    
-    ARROW["<b>→</b><br/><b>+14 pts</b>"]
-    
-    subgraph week4["<b>Week 4: Assessment</b>"]
-        W4["<b>Foundation Complete</b><br/>TOTAL: 42/100</b><br/>I=4 | N=2 | P=1<br/>A=3 | C=4 | T=1"]
-    end
-    
-    week0 --> ARROW --> week4
 
-    style week0 fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style W0 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style ARROW fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style week4 fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style W4 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-
-```
-
+![Figure 4.9: INPACT™ Transformation (28 → 42)](figures/figure-4-9.png)
 *© 2025-2026 Colaberry Inc.*
 
 **Foundation Impact on INPACT™ Dimensions:**
@@ -1052,52 +734,9 @@ Medical director's reaction: "This is why we're building agents. Not to replace 
 
 **Figure 4.10: Foundation Impact - Week 0 to Week 4**
 
-```mermaid
-graph TB
-    BEFORE["<b>Week 0: 28/100</b><br/>(10/36 points)"]
-    AFTER["<b>Week 4: 42/100</b><br/>(15/36 points)"]
-    
-    subgraph IMPROVED["<b>Improved (+5 points)</b>"]
-        A1["<b>Instant: 1→4 (+3)</b><br/><b>Cache + real-time</b>"]
-        A4["<b>Adaptive: 2→3 (+1)</b><br/><b>Model registry</b>"]
-        A5["<b>Contextual: 3→4 (+1)</b><br/><b>Multi-modal</b>"]
-    end
-    
-    subgraph LATER["<b>Needs Later Layers</b>"]
-        B2["<b>Natural: 2→2 (—)</b><br/><b>Needs Layer 3</b>"]
-        B3["<b>Permitted: 1→1 (—)</b><br/><b>Needs Layer 5</b>"]
-        B6["<b>Transparent: 1→1 (—)</b><br/><b>Needs Layer 6</b>"]
-    end
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    
-    BEFORE --> A1 & A4 & A5
-    BEFORE --> B2 & B3 & B6
-    A1 & A4 & A5 --> AFTER
-    B2 & B3 & B6 --> AFTER
 
-    style BEFORE fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style IMPROVED fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style A1 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style A4 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style A5 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style LATER fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style B2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style B3 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style B6 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style AFTER fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style Copyright fill:none,stroke:none,color:#333333
-```
-
-| Dimension | Week 0 | Week 4 | Improvement | Driver |
-|-----------|--------|--------|-------------|--------|
-| Instant (I) | 1/6 | 4/6 | +3 | Cache layer + real-time data fabric eliminate latency |
-| Natural (N) | 2/6 | 2/6 | NA | Requires Layer 3 semantic layer (Chapter 5) |
-| Permitted (P) | 1/6 | 1/6 | NA | Requires Layer 5 governance (Chapter 6) |
-| Adaptive (A) | 2/6 | 3/6 | +1 | Model registry + lakehouse enable ML workflows |
-| Contextual (C) | 3/6 | 4/6 | +1 | Multi-modal storage enables cross-system synthesis |
-| Transparent (T) | 1/6 | 1/6 | NA | Requires Layer 6 observability (Chapter 6) |
-| **Total** | **10/36 (28%)** | **15/36 (42%)** | **+5 pts (+14%)** | Foundation layers operational |
+![Figure 4.10: Foundation Impact - Week 0 to Week 4](figures/figure-4-10.png)
+The foundation layers delivered a 14-point INPACT improvement (28% to 42%), with gains in Instant (+3), Adaptive (+1), and Contextual (+1). See Part 1 for the complete dimension breakdown.
 
 ---
 

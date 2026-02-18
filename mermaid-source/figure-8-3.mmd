@@ -1,0 +1,33 @@
+sequenceDiagram
+  participant U as User
+  participant O as Layer 7<br/>Orchestration
+  participant P as Layer 5<br/>Policy
+  participant R as Layer 4<br/>RAG
+  participant S as Layer 3<br/>Semantic
+  participant St as Layer 2<br/>Streaming
+  participant D as Layer 1<br/>Storage
+  participant T as Layer 6<br/>Trace Log
+  
+  Note over U,T: Trace ID: abc-123-def | Every step logged with reasoning
+  
+  U->>O: "When is my next cardiology appointment?"
+  O->>T: ⚙️ Log: Query received, routing to Care Coord Agent
+  O->>P: Check permissions for user
+  P->>T: ⚙️ Log: ABAC check passed (patient viewing own data)
+  P-->>O: ✅ Permitted
+  O->>S: Resolve "cardiology appointment"
+  S->>T: ⚙️ Log: Entity resolved → Dr. Patel + appointment type
+  S-->>O: Entities: provider_id=789, type=cardiology
+  O->>R: Retrieve context for response
+  R->>St: Stream appointment data
+  St->>D: Query appointment data
+  D->>T: ⚙️ Log: Query 0.8s - appointment found
+  D-->>St: Appointment: March 27, 2:30 PM
+  St-->>R: Data streamed
+  R-->>O: Context assembled with citations
+  O->>T: ⚙️ Log: Response generated with 3 citations
+  O-->>U: "Your next cardiology appointment with Dr. Patel is Thursday, March 27 at 2:30 PM at Main Campus."
+  
+  Note over U,T: Total: 1.6s | All steps traceable and explainable
+  
+  Note over U,T: © 2025 Colaberry Inc.

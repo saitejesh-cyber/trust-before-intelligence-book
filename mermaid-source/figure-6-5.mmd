@@ -1,0 +1,30 @@
+graph TB
+    Query["<b>Agent Request</b><br/><b>Access Needed</b>"]
+    
+    subgraph "<b>ABAC EVALUATION</b>"
+        S["<b>SUBJECT</b><br/><b>Who is asking?</b><br/><b>Role, Dept, Credentials</b>"]
+        R["<b>RESOURCE</b><br/><b>What data?</b><br/><b>Classification, Sensitivity</b>"]
+        A["<b>ACTION</b><br/><b>What operation?</b><br/><b>Read, Write, Export</b>"]
+        C["<b>CONTEXT</b><br/><b>When/Where?</b><br/><b>Time, Location, Device</b>"]
+    end
+    
+    Policy["<b>Policy Decision</b><br/><b>Risk Score 0-10</b>"]
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    Query --> S
+    Query --> R
+    Query --> A
+    Query --> C
+    S --> Policy
+    R --> Policy
+    A --> Policy
+    C --> Policy
+    
+    style Query fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style S fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style R fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style C fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Policy fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Copyright fill:#ffffff,stroke:none,color:#666666

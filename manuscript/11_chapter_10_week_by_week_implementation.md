@@ -22,35 +22,8 @@ This chapter is that presentation.
 
 **Figure 10.1: Roadmap Value: From Ad-Hoc to Structured**
 
-```mermaid
 
-graph LR
-    subgraph BEFORE["AD-HOC PROJECTS"]
-        direction TB
-        B1["No clear timeline<br/><br/>Unknown costs<br/><br/>Scope creep<br/><br/><b>Missed dependencies</b>"]
-    end
-    
-    subgraph TRANSFORM["90-DAY ROADMAP"]
-        direction TB
-        T1["Structured Phases"]
-    end
-
-    subgraph AFTER["SYSTEMS TRANSFORMATION"]
-        direction TB
-        A1["Week-by-week plan<br/><br/>Defined costs<br/><br/>Clear checkpoints<br/><br/><b>Operational Excellence</b>"]
-    end
-    
-    BEFORE --> TRANSFORM --> AFTER
-    
-    style BEFORE fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style TRANSFORM fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style AFTER fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style B1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style T1 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style A1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-
-```
-
+![Figure 10.1: Roadmap Value: From Ad-Hoc to Structured](figures/figure-10-1.png)
 > **Key Takeaway:** Ninety days from assessment to production. Week-by-week structure eliminates guesswork.
 
 ---
@@ -142,45 +115,8 @@ The transformation follows four distinct phases, each building on the previous. 
 
 **Figure 10.2: The 90-Day Four-Phase Roadmap**
 
-```mermaid
 
-graph LR
-    subgraph JOURNEY["90-DAY TRANSFORMATION"]
-        direction LR
-        subgraph PHASE1["PHASE 1: FOUNDATION"]
-            P1["Weeks 1-4<br/>L1 Storage +<br/> L2 Data Fabric<br/>$80K-550K · +10-15 pts"]
-        end
-
-        subgraph PHASE2["PHASE 2: INTELLIGENCE"]
-            P2["Weeks 5-7<br/>L3 Semantic +<br/> L4 Retrieval<br/>$60K-450K · +20-25 pts"]
-        end
-
-        subgraph PHASE3["PHASE 3: TRUST"]
-            P3["Weeks 8-10<br/>L5-L6-L7<br/>Governance + Orchestration<br/>$30K-400K · +15-20 pts"]
-        end
-
-        subgraph PHASE4["PHASE 4: OPERATIONS"]
-            P4["Weeks 11-12<br/>Validation +<br/> GOALS™<br/>$20K-80K · +2-5 pts"]
-        end
-    end
-    
-    Copyright["© 2025 Colaberry Inc."]
-    
-    P1 --> P2 --> P3 --> P4
-    
-    style JOURNEY fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style PHASE1 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style PHASE2 fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style PHASE3 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style PHASE4 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style P1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style P2 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style P3 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style P4 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style Copyright fill:none,stroke:none,color:#333333
-
-```
-
+![Figure 10.2: The 90-Day Four-Phase Roadmap](figures/figure-10-2.png)
 ---
 
 ## Part 2: The Four Phases
@@ -189,33 +125,8 @@ graph LR
 
 **Figure 10.3: Foundation Layer Stack**
 
-```mermaid
 
-graph LR
-    subgraph PHASE1["PHASE 1: FOUNDATION (Weeks 1-4)"]
-        direction LR
-        subgraph WEEK12["WEEKS 1-2"]
-            L1["L1: Storage<br/>Lakehouse · Cache · Vector Store"]
-        end
-        
-        subgraph WEEK34["WEEKS 3-4"]
-            L2["L2: Data Fabric<br/>CDC · Streaming · Integration"]
-        end
-    end
-    
-    Copyright["© 2025 Colaberry Inc."]
-    
-    L1 --> L2
-    
-    style PHASE1 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style WEEK12 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style WEEK34 fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style L1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style L2 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style Copyright fill:none,stroke:none,color:#333333
-
-```
-
+![Figure 10.3: Foundation Layer Stack](figures/figure-10-3.png)
 | Attribute | Detail |
 |-----------|--------|
 | **Weeks** | 1-4 |
@@ -260,33 +171,8 @@ For Layer 1 and Layer 2 technology details, see Chapter 4. For vendor selection 
 
 **Figure 10.4: Intelligence Layer Stack**
 
-```mermaid
 
-graph LR
-    subgraph PHASE2["PHASE 2: INTELLIGENCE (Weeks 5-7)"]
-        direction LR
-        subgraph WEEK5["WEEK 5"]
-            L3["L3: Semantic Layer<br/>Business Glossary · Entity Resolution · dbt"]
-        end
-        
-        subgraph WEEK67["WEEKS 6-7"]
-            L4["L4: Intelligent Retrieval<br/>Vector DB · RAG Pipeline · Semantic Cache"]
-        end
-    end
-    
-    Copyright["© 2025 Colaberry Inc."]
-    
-    L3 --> L4
-    
-    style PHASE2 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style WEEK5 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style WEEK67 fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style L3 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style L4 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style Copyright fill:none,stroke:none,color:#333333
-
-```
-
+![Figure 10.4: Intelligence Layer Stack](figures/figure-10-4.png)
 *For RAG pipeline architecture details, see Chapter 5, Figure 5.7: Layer 4 - Complete Intelligence Pipeline.*
 
 | Attribute | Detail |
@@ -333,28 +219,8 @@ For Layer 3 and Layer 4 technology details, see Chapter 5. For vendor selection 
 
 **Figure 10.5: Trust Layer Stack**
 
-```mermaid
 
-graph LR
-    subgraph TRUST["TRUST LAYERS (L5-L7)"]
-        direction LR
-        L7["L7: Orchestration<br/>Multi-Agent Coordination · Intent Routing"]
-        L6["L6: Observability<br/>Audit Trails · Tracing · Explainability"]
-        L5["L5: Governance<br/>ABAC Policies · HITL Workflows · Compliance"]
-    end
-    
-    Copyright["© 2025 Colaberry Inc."]
-    
-    L7 --> L6 --> L5
-    
-    style TRUST fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style L7 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style L6 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style L5 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style Copyright fill:none,stroke:none,color:#333333
-
-```
-
+![Figure 10.5: Trust Layer Stack](figures/figure-10-5.png)
 | Attribute | Detail |
 |-----------|--------|
 | **Weeks** | 8-10 |
@@ -607,55 +473,8 @@ Larger organizations require more stakeholder alignment, broader testing, and ph
 
 **Figure 10.6: Risk Escalation Framework**
 
-```mermaid
 
-graph LR
-    subgraph STATUS["STATUS INDICATORS"]
-        direction TB
-        GREEN["On Track<br/>Continue"]
-        YELLOW["At Risk<br/>Assign Owner"]
-        RED["Blocked<br/>Escalate 24h"]
-    end
-    
-    subgraph ACTIONS["RESPONSE FLOW"]
-        direction TB
-        R1["Daily Check-ins"]
-        R2["Mitigation Plan"]
-        RESOLVED{{"Resolved?"}}
-        R1 --> RESOLVED
-        R2 --> RESOLVED
-    end
-    
-    subgraph OUTCOMES[" "]
-        direction TB
-        CONTINUE["Proceed to Next Week"]
-        ESCALATE["Leadership Escalation"]
-    end
-    
-    Copyright["© 2025 Colaberry Inc."]
-    
-    GREEN --> CONTINUE
-    YELLOW --> R1
-    YELLOW --> R2
-    RED --> ESCALATE
-    RESOLVED -->|"Yes"| CONTINUE
-    RESOLVED -->|"No"| ESCALATE
-    
-    style STATUS fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style ACTIONS fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style OUTCOMES fill:none,stroke:none
-    style GREEN fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style YELLOW fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style RED fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style R1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style R2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style RESOLVED fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style CONTINUE fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style ESCALATE fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style Copyright fill:none,stroke:none,color:#333333
-
-```
-
+![Figure 10.6: Risk Escalation Framework](figures/figure-10-6.png)
 ### Phase Gate Checkpoints
 
 Every phase ends with a formal go/no-go decision. These gates prevent the most common failure mode: proceeding with gaps that compound into production failures. Phase gate criteria are documented in each phase section (Part 2). The critical discipline: never skip a gate, never proceed with gaps.
@@ -703,61 +522,8 @@ The weekly health check discipline catches issues before they become blockers.
 
 **Figure 10.7: Eight-Tab Tracker System**
 
-```mermaid
 
-graph RL
-    subgraph TRACKER["90-DAY TRACKER"]
-        direction RL
-        subgraph GATE["DAY ZERO GATE"]
-            T0["Tab 0: Day Zero Readiness<br/>(15-35 items by org size)"]
-        end
-
-        subgraph EXECUTIVE["EXECUTIVE VIEW"]
-            T1["Tab 1: Weekly Progress"]
-        end
-
-        subgraph FEEDS[" "]
-            direction TB
-            subgraph PILLARS["THREE PILLARS"]
-                direction RL
-                T2["Tab 2: INPACT™ Tracker"]
-                T3["Tab 3: GOALS™ Dashboard"]
-                T4["Tab 4: 7-Layer Status"]
-            end
-
-            subgraph OPS["OPERATIONS"]
-                direction RL
-                T5["Tab 5: Risk & Blocker Log"]
-                T6["Tab 6: Communication Log"]
-                T7["Tab 7: Budget Tracker"]
-            end
-        end
-    end
-
-    Copyright["© 2025 Colaberry Inc."]
-
-    T0 -->|"Unlocks"| T1
-    PILLARS --> T1
-    OPS --> T1
-
-    style TRACKER fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style GATE fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style EXECUTIVE fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style FEEDS fill:none,stroke:none
-    style PILLARS fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style OPS fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style T0 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style T1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style T2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style T3 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style T4 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style T5 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style T6 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style T7 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style Copyright fill:none,stroke:none,color:#333333
-
-```
-
+![Figure 10.7: Eight-Tab Tracker System](figures/figure-10-7.png)
 ### How the Tabs Work Together
 
 | Tab | Purpose | Primary User | Update Frequency |

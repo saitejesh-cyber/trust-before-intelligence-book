@@ -1,0 +1,18 @@
+graph LR
+    subgraph week0["<b>Week 0: Assessment</b>"]
+        W0["<b>No Foundation</b><br/>TOTAL: 28/100</b><br/>I=1 | N=2 | P=1<br/>A=2 | C=3 | T=1"]
+    end
+    
+    ARROW["<b>→</b><br/><b>+14 pts</b>"]
+    
+    subgraph week4["<b>Week 4: Assessment</b>"]
+        W4["<b>Foundation Complete</b><br/>TOTAL: 42/100</b><br/>I=4 | N=2 | P=1<br/>A=3 | C=4 | T=1"]
+    end
+    
+    week0 --> ARROW --> week4
+    
+    style week0 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style W0 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style ARROW fill:#ffffff,stroke:none,color:#004d40
+    style week4 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style W4 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px

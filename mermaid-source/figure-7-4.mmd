@@ -1,0 +1,36 @@
+graph TB
+    subgraph DASHBOARD["<b>GOALS™ Health Dashboard - Week 10</b>"]
+        TITLE["<b>Overall Health: 15/25</b><br/><b>Status: Below <br/>Production Threshold</b>"]
+        
+        G["<b>G - Governance</b><br/><b>3/5 🚀</b><br/><b>Audit coverage gap</b>"]
+        O["<b>O - Observability</b><br/><b>3/5 🚀</b><br/><b>Need explainability</b>"]
+        A["<b>A - Availability</b><br/><b>4/5 🚢</b><br/><b>Scale testing needed</b>"]
+        L["<b>L - Lexicon</b><br/><b>2/5 🚠</b><br/><b>Disambiguation gap</b>"]
+        S["<b>S - Solid</b><br/><b>3/5 🚀</b><br/><b>Cross-system consistency</b>"]
+    end
+    
+    TITLE --> G
+    TITLE --> O
+    TITLE --> A
+    TITLE --> L
+    TITLE --> S
+    
+    TARGET["<b>Target: 21/25</b><br/><b>Timeline: Week 12</b>"]
+    
+    G --> TARGET
+    O --> TARGET
+    A --> TARGET
+    L --> TARGET
+    S --> TARGET
+    
+    style DASHBOARD fill:#f0fff0,stroke:#00897b,stroke-width:2px
+    style TITLE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style G fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#004d40
+    style O fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#004d40
+    style A fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#004d40
+    style S fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#004d40
+    style TARGET fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    style Copyright fill:#ffffff,stroke:none,color:#666666

@@ -1,0 +1,55 @@
+sequenceDiagram
+    participant U as User
+    participant L7 as Layer 7<br/>Agent
+    participant L6 as Layer 6<br/>Observability
+    participant L5 as Layer 5<br/>Governance
+    participant L4 as Layer 4<br/>Intelligence
+    participant L3 as Layer 3<br/>Semantic
+    participant L2 as Layer 2<br/>Real-Time
+    participant L1 as Layer 1<br/>Storage
+    
+    rect rgb(224, 242, 241)
+        Note over U,L1: Trace ID: abc-123-def | All 7 layers instrumented
+    end
+    
+    U->>L7: Show Dr. Martinez's availability tomorrow
+    activate L7
+    L7->>L6: 📊 Log: Query received (trace: abc-123-def)
+    
+    L7->>L3: Translate: Dr. Martinez + availability
+    activate L3
+    L3->>L6: 📊 Log: Semantic translation 0.3s
+    L3-->>L7: provider_id=789, date=tomorrow
+    deactivate L3
+    
+    L7->>L5: Check: User authorized for provider schedule?
+    activate L5
+    L5->>L6: 📊 Log: ABAC policy eval 8ms ✓
+    L5-->>L7: Authorized (policy: patient-provider-access)
+    deactivate L5
+    
+    L7->>L4: Retrieve: provider_schedule context
+    activate L4
+    L4->>L2: Subscribe: schedule_updates stream
+    activate L2
+    L2->>L6: 📊 Log: Stream check 15ms (fresh)
+    L2-->>L4: Last update: 12s ago ✓
+    deactivate L2
+    L4->>L1: Query: provider_schedule WHERE id=789
+    activate L1
+    L1->>L6: ⚠ï¸¸ Log: Query 2.3s - SLOW
+    Note over L1: Missing index!
+    L1-->>L4: Result: 3 time slots
+    deactivate L1
+    L4-->>L7: Context: [8am, 10am, 2pm]
+    deactivate L4
+    
+    L7->>L6: 📊 Log: Response 2.9s total | All layers traced
+    L7->>U: Dr. Martinez has 3 openings tomorrow
+    deactivate L7
+    
+    rect rgb(255, 235, 238)
+        Note over L6: Root Cause: Layer 1 bottleneck<br/>All 7 layers visible in trace
+    end
+    
+    Note over U,L1: © 2025 Colaberry Inc.

@@ -12,39 +12,8 @@ Dr. Arun Raj didn't raise his voice. He didn't need to. The Echo Health board ch
 
 **Figure 0.0: Echo Health Transformation - From Failed Pilots to Production Success**
 
-```mermaid
 
-graph LR
-    subgraph BEFORE["<b>BEFORE: WEEK 0</b>"]
-        direction TB
-        B1["3 Failed Pilots<br/>$2M Spent<br/>0 Production Agents<br/>9–13s Response Time<br/>INPACT™ Score: 28/100"]
-    end
-    
-    subgraph TRANSFORM["<b>90 DAYS</b>"]
-        direction TB
-        T1["→"]
-    end
-    
-    subgraph AFTER["<b>AFTER: WEEK 12</b>"]
-        direction TB
-        A1["3 Production Agents<br/>$1.23M → 477% ROI<br/>50,000 Daily Queries<br/>1.6s Response Time<br/>INPACT™ Score: 89/100"]
-    end
-    
-    Copyright["© 2025 Colaberry Inc."]
-    
-    BEFORE --> TRANSFORM --> AFTER
-
-    style BEFORE fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style B1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style TRANSFORM fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style T1 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style AFTER fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style A1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-
-    style Copyright fill:none,stroke:none,color:#333333
-    
-```
-
+![Figure 0.0: Echo Health Transformation - From Failed Pilots to Production Success](figures/figure-0-0.png)
 ## The Crisis: When $40 Billion Can't Buy Trust
 
 In July 2025, MIT's NANDA initiative released a sobering report. After analyzing over 300 enterprise AI initiatives, interviewing 52 executives, and surveying 153 leaders, the researchers uncovered a stark reality: **95% of enterprise generative AI pilots fail to deliver measurable business value.**[1]
@@ -162,38 +131,8 @@ Everything Echo built served human decision-makers beautifully. Data warehouses 
 
 The paradigm had shifted beneath them.
 
-```mermaid
 
-graph LR
-    subgraph HumanEra["HUMAN ERA"]
-        direction TB
-        H1["Data<br/>Historical Reports<br/><br/>Interface<br/>Visual Dashboards<br/><br/>Action<br/>Humans Decide & Act"]
-    end
-    
-    subgraph TRANSFORM["PARADIGM SHIFT"]
-        direction TB
-        T1["→"]
-    end
-    
-    subgraph AgentEra["AI AGENT ERA"]
-        direction TB
-        A1["Data<br/>Real-Time Context<br/><br/>Interface<br/>Natural Language<br/><br/>Action<br/>Agents Act,<br/>Humans Oversee"]
-    end
-    
-    Copyright["© 2025 Colaberry Inc."]
-    
-    HumanEra --> TRANSFORM --> AgentEra
-    
-    style HumanEra fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style H1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style TRANSFORM fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style T1 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style AgentEra fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style A1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style Copyright fill:none,stroke:none,color:#333333
-
-```
-
+![Diagram](figures/01_chapter_0_trust_before_intelligence-diagram-02.png)
 **Figure 0.1: The Infrastructure Paradigm Shift - From Human-Era BI to Agent-Era Architecture**
 
 > **Note:** Echo Health Systems is a fictional case study created for pedagogical purposes. The organization, people, and specific metrics are composites based on patterns observed across 40+ real enterprise implementations. While Echo is fictional, the challenges, solutions, and outcomes reflect verified patterns from actual deployments in healthcare and other regulated industries.
@@ -226,39 +165,8 @@ Six needs. All six must be fulfilled for agents to earn trust. When any single n
 
 Chapter 2 details each INPACT™ dimension and shows how to assess your own infrastructure against them.
 
-```mermaid
-graph TB
-    subgraph HITL["<b>6 INPACT™ Agent Needs</b>"]
-        I["<b>I - Instant</b><br/><b>Sub-second response</b>"]
-        N["<b>N - Natural</b><br/><b>Language understanding</b>"]
-        P["<b>P - Permitted</b><br/><b>Context-aware access</b>"]
-        A["<b>A - Adaptive</b><br/><b>Continuous learning</b>"]
-        C["<b>C - Contextual</b><br/><b>Cross-domain integration</b>"]
-        T["<b>T - Transparent</b><br/><b>Auditable reasoning</b>"]
-        
-        Trust["<b>✅ TRUSTED AGENT</b>"]
-    end
-    
-    I --> Trust
-    N --> Trust
-    P --> Trust
-    A --> Trust
-    C --> Trust
-    T --> Trust
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    
-    style HITL fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style I fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style N fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style P fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style A fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style C fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style T fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style Trust fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    style Copyright fill:none,stroke:none,color:#333333
-```
 
+![Diagram](figures/01_chapter_0_trust_before_intelligence-diagram-03.png)
 **Figure 0.2: INPACT™ Framework - Six Agent Needs Leading to Trust**
 
 **Scoring:** Each dimension scores 0-6, yielding a 0-36 raw score, then normalized to 0-100 total score. Below 50 means not ready for production agents. Echo's 28 told Sarah exactly where to focus.
@@ -311,37 +219,8 @@ This integration creates what we call "The Architecture of Trust" - not three se
 
 - **GOALS™ → INPACT™:** Measurement validates trust. Governance (G) confirms Permitted (P) fulfillment. Observability (O) validates Transparent (T) compliance.
 
-```mermaid
 
-graph TB
-    Title["<b>ARCHITECTURE OF TRUST</b><br/><b>Three Integrated Pillars</b>"]
-    
-    subgraph PILLARS[" "]
-        direction LR
-        INPACT["<b>PILLAR 1: INPACT™</b><br/><br/><b>What Agents Need?</b><br/><br/><b>I</b>nstant<br/><b>N</b>atural<br/><b>P</b>ermitted<br/><b>A</b>daptive<br/><b>C</b>ontextual<br/><b>T</b>ransparent"]
-        
-        Layers["<b>PILLAR 2: 7-LAYERS</b><br/><b>Infrastructure</b><br/><br/><b>How to Build TRUST?</b><br/><br/>Storage<br/>Real-Time<br/>Semantic<br/>Intelligence<br/>Governance<br/>Observability<br/>Orchestration"]
-        
-        GOALS["<b>PILLAR 3: GOALS™</b><br/><br/><b>How to Measure TRUST?</b><br/><br/><b>G</b>overnance<br/><b>O</b>bservability<br/><b>A</b>vailability<br/><b>L</b>exicon<br/><b>S</b>olid"]
-    end
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    
-    Title --> PILLARS
-    
-    INPACT -.->|"Needs Fulfilled by"| Layers
-    Layers -.->|"Enables Operations"| GOALS
-    GOALS -.->|"Drives Trust"| INPACT
-    
-    style Title fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style PILLARS fill:none,stroke:none
-        style INPACT fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-        style Layers fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-        style GOALS fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style Copyright fill:none,stroke:none,color:#333333
-
-```
-
+![Diagram](figures/01_chapter_0_trust_before_intelligence-diagram-04.png)
 **Figure 0.3: The Architecture of Trust Triad - Three Pillars Working Together**
 
 This architecture rests on three pillars working in harmony. Each pillar supports and validates the others. INPACT™ defines what agents need. Those needs drive 7-Layer architecture decisions. The 7-Layer Architecture shows how to build infrastructure that delivers INPACT™ needs. GOALS™ validates that both pillars remain structurally sound as the system scales to production.

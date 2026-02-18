@@ -1,0 +1,32 @@
+graph TB
+    USER["<b>User Query</b><br/>'Find high-risk diabetic patients'"]
+    
+    subgraph L3["<b>Layer 3: Semantic</b>"]
+        direction LR
+        GLOSS["<b>Glossary</b>"] --> ENTITY["<b>Entity Resolution</b>"] --> ONTO["<b>Ontology</b>"]
+    end
+    
+    subgraph L4["<b>Layer 4: Intelligence</b>"]
+        direction LR
+        EMBED["<b>Embed</b>"] --> HYBRID["<b>Retrieve</b>"] --> RERANK["<b>Rerank</b>"] --> LLM["<b>LLM</b>"] --> CACHE["<b>Cache</b>"]
+    end
+    
+    RESPONSE["<b>Grounded Response</b>"]
+    
+    USER --> L3
+    L3 --> L4
+    L4 --> RESPONSE
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    style USER fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style GLOSS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style ENTITY fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style ONTO fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style EMBED fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style HYBRID fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style RERANK fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style LLM fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style CACHE fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style RESPONSE fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Copyright fill:#ffffff,stroke:none,color:#666666

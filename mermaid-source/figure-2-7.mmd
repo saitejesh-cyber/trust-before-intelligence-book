@@ -1,0 +1,33 @@
+graph TB
+    subgraph ERA1["<b>Analytics Era: Manual</b>"]
+        direction LR
+        A1["<b>Natural<br/>Language Query</b>"] --> B1["<b>Developer<br/>Translates to SQL</b>"]
+        B1 --> C1["<b>Cryptic Table<br/>FCT_PTNT_ENCT</b>"]
+        C1 --> D1["<b>2-3 days<br/>40-60% accuracy</b>"]
+        
+        style D1 fill:#b71c1c,color:#ffffff,stroke:#c62828,stroke-width:3px
+    end
+    
+    ERA1 -.->|<b>Evolution</b>| ERA2
+    
+    subgraph ERA2["<b>Agent Era: Semantic</b>"]
+        direction LR
+        A2["<b>Natural<br/>Language Query</b>"] --> B2["<b>Semantic<br/>Layer</b>"]
+        B2 --> C2["<b>Business Terms<br/>'Patient Encounters'</b>"]
+        C2 --> D2["<b>Instant<br/>87-93% accuracy</b>"]
+        
+        style D2 fill:#00695c,color:#ffffff,stroke:#00897b,stroke-width:3px
+    end
+    
+    style ERA1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style A1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style B1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style C1 fill:#ffffff,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    
+    style ERA2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style B2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style C2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    style Copyright fill:#ffffff,stroke:none,color:#757575

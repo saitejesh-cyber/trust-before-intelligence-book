@@ -1,0 +1,33 @@
+
+graph LR
+    subgraph HITL["HITL ESCALATION PATTERNS"]
+        direction LR
+        subgraph SYNC["SYNC (Blocking)"]
+            direction LR
+            S1["High-Risk<br/>Request"] --> S2["BLOCKED"] --> S3["Human<br/>Review"] --> S4["Execute"]
+        end
+        
+        subgraph ASYNC["ASYNC & POST-HOC"]
+            direction LR
+            A1["Time-Sensitive"] --> A2["Provisional"] --> A3["Review Later"]
+            P1["Low-Risk"] --> P2["Execute"] --> P3["Audit Log"]
+        end
+    end
+    
+    Copyright["© 2025 Colaberry Inc."]
+    
+    style HITL fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style SYNC fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style ASYNC fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S1 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style S2 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style S3 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S4 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style A1 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style A2 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A3 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style P1 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style P2 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style P3 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+

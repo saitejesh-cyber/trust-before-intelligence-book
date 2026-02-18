@@ -1,0 +1,27 @@
+graph LR
+  subgraph BASELINE["<b>GOALS™ BASELINE</b>"]
+    G["<b>G - Governance</b><br/><b>3/5</b><br/><b>🟡 Developing</b>"]
+    O["<b>O - Observability</b><br/><b>3/5</b><br/><b>🟡 Developing</b>"]
+    A["<b>A - Availability</b><br/><b>4/5</b><br/><b>🟢 Proficient</b>"]
+    L["<b>L - Lexicon</b><br/><b>2/5</b><br/><b>🟡 Developing</b>"]
+    S["<b>S - Solid</b><br/><b>3/5</b><br/><b>🟡 Developing</b>"]
+    
+    TOTAL["<b>TOTAL: 15/25</b><br/><b>Target: 21/25</b><br/><b>Gap: 6 points</b>"]
+  end
+  
+  G --> TOTAL
+  O --> TOTAL
+  A --> TOTAL
+  L --> TOTAL
+  S --> TOTAL
+  
+  style BASELINE fill:#f0fff0,stroke:#00897b,stroke-width:2px
+  style G fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#004d40
+  style O fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#004d40
+  style A fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+  style L fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#004d40
+  style S fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+  style TOTAL fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  
+  Copyright["<b>© 2025 Colaberry Inc.</b>"]
+  style Copyright fill:#ffffff,stroke:none,color:#666666

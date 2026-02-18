@@ -1,0 +1,32 @@
+graph TB
+    BEFORE["<b>Week 0: 28/100</b><br/>(10/36 points)"]
+    AFTER["<b>Week 4: 42/100</b><br/>(15/36 points)"]
+    
+    subgraph "<b>Improved (+5 points)</b>"
+        A1["<b>Instant: 1→4 (+3)</b><br/><b>Cache + real-time</b>"]
+        A4["<b>Adaptive: 2→3 (+1)</b><br/><b>Model registry</b>"]
+        A5["<b>Contextual: 3→4 (+1)</b><br/><b>Multi-modal</b>"]
+    end
+    
+    subgraph "<b>Needs Later Layers</b>"
+        B2["<b>Natural: 2→2 (--)</b><br/><b>Needs Layer 3</b>"]
+        B3["<b>Permitted: 1→1 (--)</b><br/><b>Needs Layer 5</b>"]
+        B6["<b>Transparent: 1→1 (--)</b><br/><b>Needs Layer 6</b>"]
+    end
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    BEFORE --> A1 & A4 & A5
+    BEFORE --> B2 & B3 & B6
+    A1 & A4 & A5 --> AFTER
+    B2 & B3 & B6 --> AFTER
+    
+    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style AFTER fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style A1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A4 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A5 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style B2 fill:#f9f9f9,stroke:#666666,stroke-width:1px,color:#666666
+    style B3 fill:#f9f9f9,stroke:#666666,stroke-width:1px,color:#666666
+    style B6 fill:#f9f9f9,stroke:#666666,stroke-width:1px,color:#666666
+    style Copyright fill:#ffffff,stroke:none,color:#666666

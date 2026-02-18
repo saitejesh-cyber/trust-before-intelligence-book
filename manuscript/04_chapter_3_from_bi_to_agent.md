@@ -26,43 +26,8 @@ Gap 7: Agents that couldn't coordinate.
 
 **Figure 3.0: Echo's 70-Day Transformation**
 
-```mermaid
-graph LR
-    subgraph BEFORE["<b>DAY 0: THE PROBLEM</b>"]
-        direction TB
-        B1["<b>INPACT™: 28/100</b><br/><br/><b>7 Infrastructure Gaps</b><br/><br/><b>No vectors or graphs</b><br/><b>Data always stale</b><br/><b>Schemas unreadable</b><br/><b>Search without meaning</b><br/><b>Permissions frozen</b><br/><b>Decisions unexplainable</b><br/><b>Agents isolated</b>"]
-    end
-    
-    subgraph SOLUTION["<b>THE SOLUTION</b>"]
-        direction TB
-        S1["<b>7 Gaps → 7 Layers</b><br/><br/><b>3 Phases</b><br/><b>70 Days</b><br/><b>$1.23M</b>"]
-    end
-    
-    subgraph AFTER["<b>DAY 70: THE RESULT</b>"]
-        direction TB
-        A1["<b>INPACT™: 86/100</b><br/><br/><b>7 Layers Complete</b><br/><b>3 Agents Live</b><br/><br/><b>Production Ready</b>"]
-    end
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    
-    BEFORE --> SOLUTION --> AFTER
 
-    %% 🔴 FAILURE / BI-ERA
-    style BEFORE fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style B1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-
-    %% 🔵 TRANSFORMATION / CHANGE
-    style SOLUTION fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style S1 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-
-    %% 🟢 TRUSTED / INPACT™-FULFILLED
-    style AFTER fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style A1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-
-    %% FOOTER
-    style Copyright fill:none,stroke:none,color:#333333
-```
-
+![Figure 3.0: Echo's 70-Day Transformation](figures/figure-3-0.png)
 > **Key Takeaway:** Seven gaps. Seven layers. One transformation.
 
 ## When Excellence Became Inadequate
@@ -135,53 +100,8 @@ The implications for enterprise infrastructure are profound. MIT NANDA research 
 
 **Figure 3.1: Software 1.0 to 3.0 Evolution**
 
-```mermaid
-graph LR
-    subgraph era1["<b>SOFTWARE 1.0</b>"]
-        direction TB
-        P1["<b>Programming</b><br/><b>(1950s-2010s)</b><br/>Explicit instructions<br/>C++, Java, Python"]
-        I1["<b>Infrastructure</b><br/>Data warehouses<br/>Batch ETL, BI dashboards"]
-        P1 --> I1
-    end
-    
-    subgraph era2["<b>SOFTWARE 2.0</b>"]
-        direction TB
-        P2["<b>Programming</b><br/><b>(2010s-2023)</b><br/>Curate datasets<br/>Train ML models"]
-        I2["<b>Infrastructure</b><br/>Added ML layers<br/>MLOps, registries"]
-        P2 --> I2
-    end
-    
-    subgraph era3["<b>SOFTWARE 3.0</b>"]
-        direction TB
-        P3["<b>Programming</b><br/><b>(2023-Present)</b><br/>Natural language<br/>In-context learning"]
-        I3["<b>NEW Infrastructure</b><br/>Vector DBs, real-time<br/>Semantic layers, ABAC"]
-        P3 --> I3
-    end
-    
-    era1 -.->|<b>Added ML</b>| era2
-    era2 -.->|<b>PARADIGM SHIFT<br/>Requires INPACT™</b>| era3
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
 
-    %% 🔴 SOFTWARE 1.0 — FAILURE / BI-ERA
-    style era1 fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style P1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style I1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-
-    %% 🟠 SOFTWARE 2.0 — INTERMEDIATE / PRESSURE
-    style era2 fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    style P2 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-    style I2 fill:#4478A6,stroke:none,color:#ffffff,rx:10,ry:10
-
-    %% 🟢 SOFTWARE 3.0 — TRUSTED / INPACT™-FULFILLED
-    style era3 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style P3 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style I3 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-
-    %% FOOTER
-    style Copyright fill:none,stroke:none,color:#333333
-```
-
+![Figure 3.1: Software 1.0 to 3.0 Evolution](figures/figure-3-1.png)
 As Figure 3.1 illustrates, running Software 3.0 agents on Software 1.0 infrastructure is like running cloud-native microservices on mainframe batch processing. The assumptions don't align.
 
 ### Where the Two Eras Collide
@@ -214,56 +134,8 @@ Capturing that learning requires feedback loops, validation mechanisms, and cont
 
 **Figure 3.2: BI Era vs Agent Era**
 
-```mermaid
-graph TB
-    subgraph old["<b>BI-ERA:HUMAN ANALYSIS</b>"]
-        direction LR
-        O1["<b>Batch ETL</b><br/>8-24 hour lag"]
-        O2["<b>Data Warehouse</b><br/>OLAP cubes"]
-        O3["<b>Dashboards</b><br/>Fixed queries"]
-        O4["<b>Human Analysts</b><br/>Manual decisions"]
-        
-        O1 --> O2 --> O3 --> O4
-    end
-    
-    Shift["<b>PARADIGM EVOLUTION</b>"]
-    
-    subgraph new["<b>AGENT-ERA: AUTONOMOUS SYSTEMS</b>"]
-        direction LR
-        N1["<b>Real-Time</b><br/>Sub-30s freshness"]
-        N2["<b>Multi-Modal</b><br/>Vector + Graph + SQL"]
-        N3["<b>Semantic + RAG</b><br/>Natural language"]
-        N4["<b>Autonomous Agents</b><br/>Instant decisions"]
-        
-        N1 --> N2 --> N3 --> N4
-    end
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    
-    old -.->|<b>Must Transform</b>| Shift
-    Shift -.->|<b>To Enable</b>| new
 
-    %% 🔴 BI ERA — FAILURE / TRUST BREAKDOWN
-    style old fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style O1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style O2 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style O3 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style O4 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    
-    %% 🔵 TRANSFORMATION — ACTIVE CHANGE
-    style Shift fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
-    
-    %% 🟢 AGENT ERA — TRUSTED / INPACT™-FULFILLED
-    style new fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style N1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style N2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style N3 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style N4 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
-    
-    %% FOOTER
-    style Copyright fill:none,stroke:none,color:#333333
-```
-
+![Figure 3.2: BI Era vs Agent Era](figures/figure-3-2.png)
 Figure 3.2 captures this paradigm shift. The key differences are stark:
 
 | Dimension | BI Systems | Agent Systems |
@@ -460,102 +332,8 @@ Each infrastructure gap requires a specific architectural layer:
 
 **Figure 3.3: Seven Gaps --> Six Needs --> Seven Layers**
 
-```mermaid
 
-graph LR
-    subgraph gaps["7 INFRASTRUCTURE GAPS"]
-        direction TB
-        G1["Gap 1: Multi-Modal<br/>Storage<br/>Relational only<br/>No vectors/graphs"]
-        G2["Gap 2: Real-Time Data<br/>Overnight batch ETL<br/>8-24 hour staleness"]
-        G3["Gap 3: Semantic<br/>Understanding<br/>SQL schemas only<br/>No business language"]
-        G4["Gap 4: Intelligent<br/>Retrieval<br/>Keyword search only<br/>No context awareness"]
-        G5["Gap 5: Dynamic<br/>Permissions<br/>Static RBAC<br/>No context evaluation"]
-        G6["Gap 6: Reasoning<br/>Observability<br/>Query logs only<br/>No reasoning traces"]
-        G7["Gap 7: Multi-Agent<br/>Coordination<br/>Single-user systems<br/>No orchestration"]
-    end
-    
-    subgraph needs["INPACT™ NEEDS"]
-        direction TB
-        N1["I - Instant"]
-        N2["N - Natural"]
-        N3["P - Permitted"]
-        N4["A - Adaptive"]
-        N5["C - Contextual"]
-        N6["T - Transparent"]
-    end
-    
-    subgraph layers["7-LAYER ARCHITECTURE"]
-        direction TB
-        L1["Layer 1<br/>Storage<br/>Multi-Modal Data"]
-        L2["Layer 2<br/>Real-Time<br/>CDC, Streaming"]
-        L3["Layer 3<br/>Semantic Layer<br/>Business Glossary"]
-        L4["Layer 4<br/>Intelligence<br/>RAG + Retrieval<br/>Vector Search"]
-        L5["Layer 5<br/>Governance<br/>ABAC, Policies"]
-        L6["Layer 6<br/>Observability<br/>Distributed Tracing"]
-        L7["Layer 7<br/>Orchestration<br/>Multi-Agent Framework"]
-    end
-    
-    Copyright["© 2025 Colaberry Inc."]
-    
-    %% Gap to Need connections
-    G1 -.->|"Requires"| N5
-    G2 -.->|"Requires"| N1
-    G2 -.->|"Requires"| N5
-    G3 -.->|"Requires"| N2
-    G4 -.->|"Requires"| N2
-    G4 -.->|"Requires"| N5
-    G5 -.->|"Requires"| N3
-    G6 -.->|"Requires"| N4
-    G6 -.->|"Requires"| N6
-    G7 -.->|"at scale"| N1
-    G7 -.->|"Requires"| N2
-    G7 -.->|"Requires"| N4
-    
-    %% Need to Layer connections
-    N1 -.->|"Solved by"| L2
-    N2 -.->|"Solved by"| L3
-    N2 -.->|"Solved by"| L4
-    N3 -.->|"Solved by"| L5
-    N4 -.->|"Solved by"| L6
-    N4 -.->|"Solved by"| L7
-    N5 -.->|"Solved by"| L1
-    N5 -.->|"Solved by"| L4
-    N6 -.->|"Solved by"| L6
-    
-    %% 🔴 GAPS — FAILURE / BI ERA
-    style gaps fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
-    style G1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style G2 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style G3 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style G4 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style G5 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style G6 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    style G7 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
-    
-    %% ⚪ NEEDS — NEUTRAL REQUIREMENTS
-    style needs fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
-    style N1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style N2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style N3 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style N4 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style N5 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style N6 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    
-    %% 🟢 LAYERS — TRUSTED / INPACT™-FULFILLING
-    style layers fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
-    style L1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style L2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style L3 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style L4 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style L5 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style L6 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    style L7 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
-    
-    %% FOOTER
-    style Copyright fill:none,stroke:none,color:#333333
-
-```
-
+![Figure 3.3: Seven Gaps --> Six Needs --> Seven Layers](figures/figure-3-3.png)
 Figure 3.3 maps the complete transformation path:
 - **Left (Red):** Seven infrastructure gaps from BI-era systems
 - **Middle (Gray):** INPACT™ needs that each gap violates  
@@ -579,55 +357,27 @@ The transformation follows four phases across 12 weeks:
 
 **Phase 1: Foundation (Weeks 1-4) - $470K**
 
-Build Layers 1-2: Multi-Modal Storage + Real-Time Data Fabric
+Builds Layers 1-2: Multi-Modal Storage + Real-Time Data Fabric. CDC captures changes within 15 seconds, vector database ready for semantic search.
 
-**Deliverables:**
-- [Azure SQL](https://azure.microsoft.com/en-us/products/azure-sql/) with agent-optimized indexes
-- [Debezium](https://debezium.io) CDC capturing EHR changes within fifteen seconds
-- [Kafka](https://kafka.apache.org) streaming operational
-- [Pinecone](https://www.pinecone.io) vector database provisioned
-
-**INPACT™ progression:** 28/100 -> 42/100
-- Instant (I): 1 -> 4 (real-time data, faster queries)
-- Contextual (C): 3 -> 4 (better multi-source storage)
-
-**Checkpoint Week 4:** Foundation functional or stop.
+INPACT progression: 28 to 42. Checkpoint Week 4: Foundation functional or stop.
 
 **Phase 2: Intelligence (Weeks 5-7) - $380K**
 
-Build Layers 3-6: Semantic + Intelligence (RAG + LLM)
+Builds Layers 3-4: Semantic Layer + RAG Pipeline. Business glossary resolves domain terminology, intelligence pipeline achieves 85%+ accuracy.
 
-**Deliverables:**
-- [dbt](https://www.getdbt.com) semantic models (business-friendly views)
-- RAG pipeline: embeddings -> retrieval -> reranking
-- [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-services/openai-service) integration (GPT-4)
-- [OPA](https://www.openpolicyagent.org) policy engine with ABAC rules
-- [OpenTelemetry](https://opentelemetry.io) + [Datadog](https://www.datadoghq.com) observability
-
-**INPACT™ progression:** 42/100 -> 67/100
-- Natural (N): 2 -> 5 (semantic layer working)
-- Permitted (P): 1 -> 5 (ABAC operational)
-- Transparent (T): 1 -> 4 (reasoning visible)
-
-**Checkpoint Week 7:** Intelligence functional or don't deploy agents.
+INPACT progression: 42 to 67. Checkpoint Week 7: Intelligence operational or don't deploy agents.
 
 **Phase 3: Trust + Orchestration (Weeks 8-10) - $380K**
 
-Build Layers 5-6-7: Governance + Observability + Orchestration
+Builds Layers 5-7: Governance + Observability + Orchestration. ABAC policies control access, distributed tracing provides visibility, multi-agent coordination enables complex workflows.
 
-**Deliverables:**
-- [LangGraph](https://langchain-ai.github.io/langgraph/) orchestration framework
-- Multi-agent state management
-- Human-in-the-loop workflows
-- First production agent live
+INPACT progression: 67 to 86. Target Week 10: First production agent live.
 
-**INPACT™ progression:** 67/100 -> 86/100
-- Adaptive (A): 2 -> 5 (feedback loops operational)
-- All dimensions optimized through final tuning
+**Phase 4: Operations (Weeks 11-12)**
 
-**Target Week 10:** Care Coordination Agent serving 500 daily interactions.
+Validation, UAT, and production readiness. Continuous improvement begins.
 
-**Week 12+:** Production operations, continuous improvement (1-2% weekly gains).
+Chapters 4-6 detail each phase. Chapter 10 provides the week-by-week implementation playbook. Chapter 11 covers technology selection.
 
 ### From Blueprint to Build
 

@@ -1,0 +1,27 @@
+
+graph LR
+    SOURCE["<b>Operational Systems</b><br/>EHR, Scheduling, Labs"]
+    
+    subgraph LAYER2["<b>Layer 2: Real-Time Data</b>"]
+        direction TB
+        CDC["CDC: Debezium"]
+        KAFKA["Streaming: Kafka"]
+        PROCESS["Processing: Flink"]
+        CDC --> KAFKA --> PROCESS
+    end
+    
+    OUTCOME["<b>Layer 1 Storage</b><br/>↓<br/>Agents < 30s Refresh"]
+    
+    Copyright["© 2025 Colaberry Inc."]
+    
+    SOURCE -->|"Changes"| LAYER2
+    LAYER2 -->|"Store"| OUTCOME
+    
+    style SOURCE fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style LAYER2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style CDC fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style KAFKA fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style PROCESS fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style OUTCOME fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+

@@ -1,0 +1,36 @@
+graph LR
+    subgraph VERYLOW["⚫ 6-11 pts (<33%)"]
+        VL["<b>Very Low Trust</b><br/><b>Complete rebuild</b>"]
+    end
+    
+    subgraph LOW["🔴 12-17 pts (33-49%)"]
+        L["<b>Low Trust</b><br/><b>Major transformation</b>"]
+    end
+    
+    subgraph MOD["🟠 18-23 pts (50-66%)"]
+        M["<b>Moderate Trust</b><br/><b>Significant work</b>"]
+    end
+    
+    subgraph GOOD["🟡 24-30 pts (67-85%)"]
+        G["<b>Good Trust</b><br/><b>Pilot-ready</b>"]
+    end
+    
+    subgraph HIGH["🟢 31-36 pts (86-100%)"]
+        H["<b>High Trust</b><br/><b>Production-ready</b>"]
+    end
+    
+    VL --> L --> M --> G --> H
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    style VERYLOW fill:#424242,stroke:#212121,stroke-width:2px,color:#ffffff
+    style LOW fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style MOD fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style GOOD fill:#fffde7,stroke:#f9a825,stroke-width:2px,color:#f57f17
+    style HIGH fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style VL fill:#616161,stroke:#424242,color:#ffffff
+    style L fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style M fill:#ffe0b2,stroke:#f57c00,color:#e65100
+    style G fill:#fff9c4,stroke:#f9a825,color:#f57f17
+    style H fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style Copyright fill:#ffffff,stroke:none,color:#666666
