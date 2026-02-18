@@ -12,8 +12,39 @@ Dr. Arun Raj didn't raise his voice. He didn't need to. The Echo Health board ch
 
 **Figure 0.0: Echo Health Transformation - From Failed Pilots to Production Success**
 
-![Figure 0.0: Echo Health Transformation - From Failed Pilots to Production Success](figures/figure-0-0.png)
+```mermaid
 
+graph LR
+    subgraph BEFORE["BEFORE: WEEK 0"]
+        direction TB
+        B1["3 Failed Pilots<br/>$2M Spent<br/>0 Production Agents<br/>9-13s Response Time<br/>INPACT™ Score: 28/100"]
+    end
+    
+    subgraph TRANSFORM["90 DAYS"]
+        direction TB
+        T1["→"]
+    end
+    
+    subgraph AFTER["AFTER: WEEK 12"]
+        direction TB
+        A1["3 Production Agents<br/>$1.23M → 477% ROI<br/>50,000 Daily Queries<br/>1.6s Response Time<br/>INPACT™ Score: 89/100"]
+    end
+    
+    Copyright["© 2025 Colaberry Inc."]
+    
+    BEFORE --> TRANSFORM --> AFTER
+    
+    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
+    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style B1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style T1 fill:#f5f5f5,stroke:#666666,color:#333333
+    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+    
+```
+
+![Figure 0.0: Echo Health Transformation - From Failed Pilots to Production Success](figures/figure-0-0.png)
 ## The Crisis: When $40 Billion Can't Buy Trust
 
 In July 2025, MIT's NANDA initiative released a sobering report. After analyzing over 300 enterprise AI initiatives, interviewing 52 executives, and surveying 153 leaders, the researchers uncovered a stark reality: **95% of enterprise generative AI pilots fail to deliver measurable business value.**[1]
@@ -31,19 +62,21 @@ Something fundamental is missing, and it's not in the AI.
 ---
 ## What Trust Means in This Book
 
-*This isn't a book about whether society should trust AI. It's not about bias, ethics, or existential risk - important topics covered elsewhere.*
+<i>
+This isn't a book about whether society should trust AI. It's not about bias, ethics, or existential risk - important topics covered elsewhere.
 
-*This book is about **operational trust**: the confidence that an AI agent will access the right data, understand the question, respect permissions, explain its reasoning, and perform consistently at scale. It's the trust a physician needs before accepting an agent's recommendation. The trust a CFO needs before letting an agent process claims. The trust that turns a pilot into production.*
+This book is about **operational trust**: the confidence that an AI agent will access the right data, understand the question, respect permissions, explain its reasoning, and perform consistently at scale. It's the trust a physician needs before accepting an agent's recommendation. The trust a CFO needs before letting an agent process claims. The trust that turns a pilot into production.
 
-*More specifically, this book answers five questions:*
+More specifically, this book answers five questions:
 
-*- **What is trust?** What do agents need to earn user confidence?*
-*- **How do you earn it?** By fulfilling those needs not once, but every interaction*
-*- **How do you build it?** Through systematic architecture designed for agent-era requirements*
-*- **How do you measure it?** With operational targets that validate trust continuously*
-*- **How do you sustain it?** By monitoring, adapting, and reinforcing trust as systems scale*
+- **What is trust?** What do agents need to earn user confidence?
+- **How do you earn it?** By fulfilling those needs not once, but every interaction
+- **How do you build it?** Through systematic architecture designed for agent-era requirements
+- **How do you measure it?** With operational targets that validate trust continuously
+- **How do you sustain it?** By monitoring, adapting, and reinforcing trust as systems scale
 
-*Operational trust isn't earned through promises or policies. It's earned through architecture, systems designed from the ground up to deliver what agents need. That architecture is what 95% of organizations lack.*
+Operational trust isn't earned through promises or policies. It's earned through architecture, systems designed from the ground up to deliver what agents need. That architecture is what 95% of organizations lack.
+</i>
 ---
 
 Users abandon agents they can't understand regardless of technical sophistication. July 2025 research confirms it: transparency and design are the mediators of trust.[2] A global study of 48,000 people across 47 countries reinforces this reality: only 46% are willing to trust AI systems, reflecting deep tension between AI's benefits and perceived risks.[6] When users can't see how agents make decisions, research shows distrust commonly spreads to both the AI and the company behind it.[3] Technical excellence means nothing without earned trust.
@@ -129,8 +162,39 @@ Everything Echo built served human decision-makers beautifully. Data warehouses 
 
 The paradigm had shifted beneath them.
 
-![Diagram](figures/01_chapter_0_trust_before_intelligence-diagram-02.png)
+```mermaid
 
+graph LR
+    subgraph HumanEra["HUMAN ERA"]
+        direction TB
+        H1["Data<br/>Historical Reports<br/><br/>Interface<br/>Visual Dashboards<br/><br/>Action<br/>Humans Decide & Act"]
+    end
+    
+    subgraph TRANSFORM["PARADIGM SHIFT"]
+        direction TB
+        T1["→"]
+    end
+    
+    subgraph AgentEra["AI AGENT ERA"]
+        direction TB
+        A1["Data<br/>Real-Time Context<br/><br/>Interface<br/>Natural Language<br/><br/>Action<br/>Agents Act,<br/>Humans Oversee"]
+    end
+    
+    Copyright["© 2025 Colaberry Inc."]
+    
+    HumanEra --> TRANSFORM --> AgentEra
+    
+    style HumanEra fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
+    style AgentEra fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style H1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style T1 fill:#f5f5f5,stroke:#666666,color:#333333
+    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+
+```
+
+![Diagram](figures/01_chapter_0_trust_before_intelligence-diagram-02.png)
 **Figure 0.1: The Infrastructure Paradigm Shift - From Human-Era BI to Agent-Era Architecture**
 
 > **Note:** Echo Health Systems is a fictional case study created for pedagogical purposes. The organization, people, and specific metrics are composites based on patterns observed across 40+ real enterprise implementations. While Echo is fictional, the challenges, solutions, and outcomes reflect verified patterns from actual deployments in healthcare and other regulated industries.
@@ -163,8 +227,40 @@ Six needs. All six must be fulfilled for agents to earn trust. When any single n
 
 Chapter 2 details each INPACT™ dimension and shows how to assess your own infrastructure against them.
 
-![Diagram](figures/01_chapter_0_trust_before_intelligence-diagram-03.png)
+```mermaid
+graph TB
+    subgraph HITL["<b>6 INPACT™ Agent Needs</b>"]
+        I["<b>I - Instant</b><br/><b>Sub-second response</b>"]
+        N["<b>N - Natural</b><br/><b>Language understanding</b>"]
+        P["<b>P - Permitted</b><br/><b>Context-aware access</b>"]
+        A["<b>A - Adaptive</b><br/><b>Continuous learning</b>"]
+        C["<b>C - Contextual</b><br/><b>Cross-domain integration</b>"]
+        T["<b>T - Transparent</b><br/><b>Auditable reasoning</b>"]
+        
+        Trust["<b>✅ TRUSTED AGENT</b>"]
+    end
+    
+    I --> Trust
+    N --> Trust
+    P --> Trust
+    A --> Trust
+    C --> Trust
+    T --> Trust
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    style HITL fill:#f0fff0,stroke:#00897b,stroke-width:2px
+    style I fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style N fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style P fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style C fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style T fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Trust fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+```
 
+![Diagram](figures/01_chapter_0_trust_before_intelligence-diagram-03.png)
 **Figure 0.2: INPACT™ Framework - Six Agent Needs Leading to Trust**
 
 **Scoring:** Each dimension scores 0-6, yielding a 0-36 raw score, then normalized to 0-100 total score. Below 50 means not ready for production agents. Echo's 28 told Sarah exactly where to focus.
@@ -217,8 +313,38 @@ This integration creates what we call "The Architecture of Trust" - not three se
 
 - **GOALS™ → INPACT™:** Measurement validates trust. Governance (G) confirms Permitted (P) fulfillment. Observability (O) validates Transparent (T) compliance.
 
-![Diagram](figures/01_chapter_0_trust_before_intelligence-diagram-04.png)
+```mermaid
 
+graph TB
+    Title["ARCHITECTURE OF TRUST<br/>Three Integrated Pillars"]
+    
+    subgraph PILLARS[" "]
+        direction LR
+        INPACT["PILLAR 1: INPACT™<br/><br/>What Agents Need?<br/><br/><b>I</b>nstant<br/><b>N</b>atural<br/><b>P</b>ermitted<br/><b>A</b>daptive<br/><b>C</b>ontextual<br/><b>T</b>ransparent"]
+        
+        Layers["PILLAR 2: 7-LAYERS<br/>Infrastructure<br/><br/>How to Build TRUST?<br/><br/>Storage<br/>Real-Time<br/>Semantic<br/>Intelligence<br/>Governance<br/>Observability<br/>Orchestration"]
+        
+        GOALS["PILLAR 3: GOALS™<br/><br/>How to Measure TRUST?<br/><br/><b>G</b>overnance<br/><b>O</b>bservability<br/><b>A</b>vailability<br/><b>L</b>exicon<br/><b>S</b>olid"]
+    end
+    
+    Copyright["© 2025 Colaberry Inc."]
+    
+    Title --> PILLARS
+    
+    INPACT -.->|"Needs Fulfilled by"| Layers
+    Layers -.->|"Enables Operations"| GOALS
+    GOALS -.->|"Drives Trust"| INPACT
+    
+    style Title fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style PILLARS fill:none,stroke:none
+    style INPACT fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Layers fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style GOALS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+
+```
+
+![Diagram](figures/01_chapter_0_trust_before_intelligence-diagram-04.png)
 **Figure 0.3: The Architecture of Trust Triad - Three Pillars Working Together**
 
 This architecture rests on three pillars working in harmony. Each pillar supports and validates the others. INPACT™ defines what agents need. Those needs drive 7-Layer architecture decisions. The 7-Layer Architecture shows how to build infrastructure that delivers INPACT™ needs. GOALS™ validates that both pillars remain structurally sound as the system scales to production.

@@ -47,8 +47,37 @@ Marcus pulled up the GOALS™ dashboard. Five gauges, fifteen out of twenty-five
 
 **Figure 8.1: Echo's GOALS™ Baseline (Week 10)**
 
-![Figure 8.1: Echo's GOALS™ Baseline (Week 10)](figures/figure-8-1.png)
+```mermaid
+graph LR
+  subgraph BASELINE["<b>GOALS™ BASELINE</b>"]
+    G["<b>G - Governance</b><br/><b>3/5</b><br/><b>🟡 Developing</b>"]
+    O["<b>O - Observability</b><br/><b>3/5</b><br/><b>🟡 Developing</b>"]
+    A["<b>A - Availability</b><br/><b>4/5</b><br/><b>🟢 Proficient</b>"]
+    L["<b>L - Lexicon</b><br/><b>2/5</b><br/><b>🟡 Developing</b>"]
+    S["<b>S - Solid</b><br/><b>3/5</b><br/><b>🟡 Developing</b>"]
+    
+    TOTAL["<b>TOTAL: 15/25</b><br/><b>Target: 21/25</b><br/><b>Gap: 6 points</b>"]
+  end
+  
+  G --> TOTAL
+  O --> TOTAL
+  A --> TOTAL
+  L --> TOTAL
+  S --> TOTAL
+  
+  style BASELINE fill:#f0fff0,stroke:#00897b,stroke-width:2px
+  style G fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#004d40
+  style O fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#004d40
+  style A fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+  style L fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#004d40
+  style S fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+  style TOTAL fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  
+  Copyright["<b>© 2025 Colaberry Inc.</b>"]
+  style Copyright fill:#ffffff,stroke:none,color:#666666
+```
 
+![Figure 8.1: Echo's GOALS™ Baseline (Week 10)](figures/figure-8-1.png)
 "We need twenty-one to deploy clinical AI in production," Marcus said. "Six points in two weeks."
 
 Dr. Chen studied the Governance gauge. "Healthcare requires Governance at five out of five. Non-negotiable."
@@ -57,8 +86,26 @@ Sarah walked to the whiteboard. "Here's the plan."
 
 **Figure 8.2: Week 11-12 Operations Timeline**
 
-![Figure 8.2: Week 11-12 Operations Timeline](figures/figure-8-2.png)
+```mermaid
+gantt
+  title Echo Health GOALS™ Improvement Timeline
+  dateFormat YYYY-MM-DD
+  axisFormat %b %d
+  
+  section Week 11
+  Governance 3→4   :g1, 2025-03-17, 5d
+  Observability 3→4 :o1, 2025-03-17, 5d
+  Availability Maintain :a1, 2025-03-17, 5d
+  Lexicon 3→4    :l1, 2025-03-17, 5d
+  Solid Maintain   :s1, 2025-03-17, 5d
+  
+  section Week 12
+  Governance 4→5   :g2, 2025-03-24, 5d
+  Final Validation  :v1, 2025-03-24, 5d
+  Board Presentation :bp, 2025-03-28, 1d
+```
 
+![Figure 8.2: Week 11-12 Operations Timeline](figures/figure-8-2.png)
 Marcus wrote out the Week 11 targets:
 
 - **Governance:** 3/5 to 4/5. Complete audit trails, reduce HITL escalation time to under 30 seconds, test model rollback.
@@ -144,8 +191,43 @@ Explainability required surfacing the reasoning chain across all seven layers.
 
 **Figure 8.3: End-to-End Observability with Trace IDs**
 
-![Figure 8.3: End-to-End Observability with Trace IDs](figures/figure-8-3.png)
+```mermaid
+sequenceDiagram
+  participant U as User
+  participant O as Layer 7<br/>Orchestration
+  participant P as Layer 5<br/>Policy
+  participant R as Layer 4<br/>RAG
+  participant S as Layer 3<br/>Semantic
+  participant St as Layer 2<br/>Streaming
+  participant D as Layer 1<br/>Storage
+  participant T as Layer 6<br/>Trace Log
+  
+  Note over U,T: Trace ID: abc-123-def | Every step logged with reasoning
+  
+  U->>O: "When is my next cardiology appointment?"
+  O->>T: ⚙️ Log: Query received, routing to Care Coord Agent
+  O->>P: Check permissions for user
+  P->>T: ⚙️ Log: ABAC check passed (patient viewing own data)
+  P-->>O: ✅ Permitted
+  O->>S: Resolve "cardiology appointment"
+  S->>T: ⚙️ Log: Entity resolved → Dr. Patel + appointment type
+  S-->>O: Entities: provider_id=789, type=cardiology
+  O->>R: Retrieve context for response
+  R->>St: Stream appointment data
+  St->>D: Query appointment data
+  D->>T: ⚙️ Log: Query 0.8s - appointment found
+  D-->>St: Appointment: March 27, 2:30 PM
+  St-->>R: Data streamed
+  R-->>O: Context assembled with citations
+  O->>T: ⚙️ Log: Response generated with 3 citations
+  O-->>U: "Your next cardiology appointment with Dr. Patel is Thursday, March 27 at 2:30 PM at Main Campus."
+  
+  Note over U,T: Total: 1.6s | All steps traceable and explainable
+  
+  Note over U,T: © 2025 Colaberry Inc.
+```
 
+![Figure 8.3: End-to-End Observability with Trace IDs](figures/figure-8-3.png)
 The implementation had three components: source tracking (every fact linked to its source), reasoning chain (logical steps documented), and confidence scoring (numerical confidence visible to reviewers).
 
 By Thursday, every response included a collapsible "reasoning" section. "I can see the agent's homework," one physician commented. "It's not a black box."
@@ -186,8 +268,50 @@ The 10x scale test began Tuesday at 6 AM. Jamie's team generated synthetic queri
 
 **Figure 8.4: Multi-Level Cache Performance Under Load**
 
-![Figure 8.4: Multi-Level Cache Performance Under Load](figures/figure-8-4.png)
+```mermaid
 
+graph TB
+  subgraph CACHE["<b>CACHING @10x LOAD</b>"]
+    direction TB
+    QUERY["20,000 Queries/Day<br/>(10x normal load)"]
+    
+    L1["Level 1: Semantic Cache<br/>Redis | 68% hit rate"]
+    L2["Level 2: Vector Cache<br/>Pinecone | 22% of remaining"]
+    L3["Level 3: Cold Path<br/>Direct query | 10%"]
+    
+    R1["280ms avg"]
+    R2["850ms avg"]
+    R3["2.1s avg"]
+    
+    RESULT["Blended p95: 2.1s<br/>Under 3s target"]
+  end
+  
+  Copyright["© 2025 Colaberry Inc."]
+  
+  QUERY --> L1
+  L1 -->|"Hit 68%"| R1
+  L1 -->|"Miss 32%"| L2
+  L2 -->|"Hit 22%"| R2
+  L2 -->|"Miss 10%"| L3
+  L3 --> R3
+  R1 --> RESULT
+  R2 --> RESULT
+  R3 --> RESULT
+  
+  style CACHE fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+  style QUERY fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style L1 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+  style L2 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+  style L3 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
+  style R1 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:2px
+  style R2 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+  style R3 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
+  style RESULT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style Copyright fill:#ffffff,stroke:none,color:#666666
+
+```
+
+![Figure 8.4: Multi-Level Cache Performance Under Load](figures/figure-8-4.png)
 The results validated the architecture. Under 10x load, response time p95 held at 2.1 seconds, within the 3-second target. Cache hit rate actually improved under load as common patterns became more likely.
 
 The cold path remained the bottleneck, but only 10% of queries took it, and those still completed in 2.1 seconds.
@@ -212,8 +336,50 @@ Swapna identified three categories: entity ambiguity ("my doctor" with multiple 
 
 **Figure 8.5: Lexicon Disambiguation Flow**
 
-![Figure 8.5: Lexicon Disambiguation Flow](figures/figure-8-5.png)
+```mermaid
 
+graph TB
+  subgraph DISAMBIGUATION["<b>LEXICON DISAMBIGUATION</b>"]
+    direction TB
+    Q["User Query<br/>'When did I last see my doctor?'"]
+    
+    CONF["Confidence Check<br/>Threshold: 0.90"]
+    
+    subgraph PATHS[" "]
+      direction LR
+      HIGH["High Confidence ≥0.90<br/>Direct response"]
+      LOW["Low Confidence <0.90<br/>Disambiguation needed"]
+    end
+    
+    PROMPT["Clarification Prompt<br/>'Do you mean your PCP Dr. Nguyen<br/>or your cardiologist Dr. Patel?'"]
+    
+    RESP["User Confirms<br/>'Dr. Patel'"]
+    
+    RESULT["Accurate Response<br/>with correct context"]
+  end
+  
+  Copyright["© 2025 Colaberry Inc."]
+  
+  Q --> CONF
+  CONF -->|"≥0.90"| HIGH
+  CONF -->|"<0.90"| LOW
+  HIGH --> RESULT
+  LOW --> PROMPT --> RESP --> RESULT
+  
+  style DISAMBIGUATION fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+  style Q fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+  style CONF fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
+  style PATHS fill:none,stroke:none
+  style HIGH fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style LOW fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
+  style PROMPT fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+  style RESP fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+  style RESULT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style Copyright fill:#ffffff,stroke:none,color:#666666
+
+```
+
+![Figure 8.5: Lexicon Disambiguation Flow](figures/figure-8-5.png)
 The team implemented smart disambiguation. When confidence dropped below 0.90, the system would ask a clarifying question with the most likely options: "Do you mean your PCP Dr. Nguyen or your cardiologist Dr. Patel?"
 
 The implementation required coordination across layers: Layer 3 for confidence scoring, Layer 4 for context retrieval, Layer 7 for dialogue management.
@@ -240,8 +406,47 @@ Swapna mapped the data flows. The EHR was source of truth, but the scheduling sy
 
 **Figure 8.6: Quality Gates in Production**
 
-![Figure 8.6: Quality Gates in Production](figures/figure-8-6.png)
+```mermaid
 
+graph TB
+  subgraph QUALITY["<b>DATA QUALITY GATES</b>"]
+    direction TB
+    SOURCE["Data Sources<br/>EHR | Scheduling | Claims"]
+    
+    GATE1["Gate 1: Schema Validation<br/>Required fields present?"]
+    GATE2["Gate 2: Cross-System Check<br/>Values consistent?"]
+    GATE3["Gate 3: Anomaly Detection<br/>Statistical outliers?"]
+    
+    subgraph OUTCOMES[" "]
+      direction LR
+      PASS["Quality Verified<br/>Data available"]
+      QUARANTINE["Quarantine<br/>Flag for review"]
+    end
+  end
+  
+  Copyright["© 2025 Colaberry Inc."]
+  
+  SOURCE --> GATE1
+  GATE1 -->|"Pass"| GATE2
+  GATE1 -->|"Fail"| QUARANTINE
+  GATE2 -->|"Pass"| GATE3
+  GATE2 -->|"Fail"| QUARANTINE
+  GATE3 -->|"Pass"| PASS
+  GATE3 -->|"Flag"| QUARANTINE
+  
+  style QUALITY fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+  style SOURCE fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style GATE1 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+  style GATE2 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+  style GATE3 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+  style OUTCOMES fill:none,stroke:none
+  style PASS fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style QUARANTINE fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
+  style Copyright fill:#ffffff,stroke:none,color:#666666
+
+```
+
+![Figure 8.6: Quality Gates in Production](figures/figure-8-6.png)
 The solution was real-time synchronization. When a provider assignment changed in the EHR, the change would propagate to scheduling within 30 seconds.
 
 "We're implementing event-driven sync," Swapna explained. "The EHR publishes a change event. Our integration layer catches it and updates downstream systems immediately."
@@ -342,8 +547,48 @@ The next three hours were the most comprehensive validation Echo's team had ever
 
 **Figure 8.7: Three Agents Architecture**
 
-![Figure 8.7: Three Agents Architecture](figures/figure-8-7.png)
+```mermaid
+graph TB
+  subgraph AGENTS["<b>ECHO HEALTH: 3 AGENTS</b>"]
+    subgraph CARE["<b>CARE COORDINATION</b>"]
+      CA["<b>Agent 1</b><br/><b>Care Coordination</b>"]
+      CA_DATA["<b>EHR | Scheduling</b><br/><b>Insurance | Pharmacy</b>"]
+      CA_USERS["<b>Coordinators</b><br/><b>Nurses | Case Mgrs</b>"]
+    end
+    
+    subgraph CLINICAL["<b>CLINICAL DOCUMENTATION</b>"]
+      CD["<b>Agent 2</b><br/><b>Clinical Docs</b>"]
+      CD_DATA["<b>EHR | Notes</b><br/><b>Labs | Imaging</b>"]
+      CD_USERS["<b>Physicians</b><br/><b>Nurses | MAs</b>"]
+    end
+    
+    subgraph REVENUE["<b>REVENUE CYCLE</b>"]
+      RC["<b>Agent 3</b><br/><b>Revenue Cycle</b>"]
+      RC_DATA["<b>Claims | Insurance</b><br/><b>Accounts | Sched</b>"]
+      RC_USERS["<b>Billing Staff</b><br/><b>Finance | Admins</b>"]
+    end
+    
+    ORCH["<b>Layer 7: Orchestration</b><br/><b>Routes | Coordinates <br/> Monitors</b>"]
+    
+    ORCH --> CA
+    ORCH --> CD
+    ORCH --> RC
+  end
+  
+  style AGENTS fill:#f0fff0,stroke:#00897b,stroke-width:2px
+  style CARE fill:#e0f2f1,stroke:#00897b,stroke-width:2px
+  style CLINICAL fill:#e0f2f1,stroke:#00897b,stroke-width:2px
+  style REVENUE fill:#e0f2f1,stroke:#00897b,stroke-width:2px
+  style CA fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style CD fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style RC fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style ORCH fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  
+  Copyright["<b>© 2025 Colaberry Inc.</b>"]
+  style Copyright fill:#ffffff,stroke:none,color:#666666
+```
 
+![Figure 8.7: Three Agents Architecture](figures/figure-8-7.png)
 ### Agent 1: Care Coordination
 
 **Agent Profile:**
@@ -458,8 +703,37 @@ Sarah stood at the front of the room, the GOALS™ dashboard behind her showing 
 
 **Figure 8.8: Echo's GOALS™ Final Dashboard (Week 12)**
 
-![Figure 8.8: Echo's GOALS™ Final Dashboard (Week 12)](figures/figure-8-8.png)
+```mermaid
+graph TB
+  subgraph FINAL["<b>GOALS™ FINAL STATUS</b>"]
+    G["<b>G - GOVERNANCE</b><br/><b>5/5 ✅</b><br/><b>Healthcare <br/>Requirement Met</b>"]
+    O["<b>O - OBSERVABILITY</b><br/><b>4/5 ✅</b><br/><b>Full Transparency</b>"]
+    A["<b>A - AVAILABILITY</b><br/><b>4/5 ✅</b><br/><b>10x Scale Proven</b>"]
+    L["<b>L - LEXICON</b><br/><b>4/5 ✅</b><br/><b>97% Accuracy</b>"]
+    S["<b>S - SOLID</b><br/><b>4/5 ✅</b><br/><b>98% Consistency</b>"]
+    
+    TOTAL["<b>TOTAL: 21/25 ✅</b><br/><b>PRODUCTION READY</b>"]
+  end
+  
+  G --> TOTAL
+  O --> TOTAL
+  A --> TOTAL
+  L --> TOTAL
+  S --> TOTAL
+  
+  style FINAL fill:#f0fff0,stroke:#00897b,stroke-width:2px
+  style G fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style O fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style A fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style L fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style S fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style TOTAL fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  
+  Copyright["<b>© 2025 Colaberry Inc.</b>"]
+  style Copyright fill:#ffffff,stroke:none,color:#666666
+```
 
+![Figure 8.8: Echo's GOALS™ Final Dashboard (Week 12)](figures/figure-8-8.png)
 She walked through each pillar:
 
 "**Pillar 1, INPACT™:** Our agents meet all six needs. Instant response under 2 seconds. Natural language that speaks clinicians' language. Permitted access with human-in-the-loop. Adaptive learning from feedback. Contextual awareness across systems. Transparent reasoning with citations."
@@ -484,8 +758,45 @@ She paused.
 
 **Figure 8.9: Echo Health - Architecture of Trust Complete**
 
-![Figure 8.9: Echo Health - Architecture of Trust Complete](figures/figure-8-9.png)
+```mermaid
+graph TB
+  subgraph COMPLETE["<b>ARCHITECTURE OF TRUST</b>"]
+    subgraph P1["<b>PILLAR 1: INPACT™</b>"]
+      I1["<b>89/100 ✅</b>"]
+      I2["<b>I✓ N✓ P✓ A✓ C✓ T✓</b>"]
+    end
+    
+    subgraph P2["<b>PILLAR 2: 7-LAYER</b>"]
+      L1["<b>7/7 ✅</b>"]
+      L2["<b>All Layers Operational</b>"]
+    end
+    
+    subgraph P3["<b>PILLAR 3: GOALS™</b>"]
+      G1["<b>21/25 ✅</b>"]
+      G2["<b>G5 O4 A4 L4 S4</b>"]
+    end
+    
+    RESULT["<b>3 AGENTS IN PRODUCTION</b><br/><b>477% ROI | 87% Satisfaction</b><br/><b>$992K Investment</b>"]
+  end
+  
+  P1 --> RESULT
+  P2 --> RESULT
+  P3 --> RESULT
+  
+  style COMPLETE fill:#f0fff0,stroke:#00897b,stroke-width:2px
+  style P1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px
+  style P2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px
+  style P3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px
+  style I1 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style L1 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style G1 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style RESULT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  
+  Copyright["<b>© 2025 Colaberry Inc.</b>"]
+  style Copyright fill:#ffffff,stroke:none,color:#666666
+```
 
+![Figure 8.9: Echo Health - Architecture of Trust Complete](figures/figure-8-9.png)
 Dr. Raj leaned forward. "You've built something that measures itself. That proves itself."
 
 "That's the answer to your question," Sarah said. "We know it stays trustworthy because the three pillars validate each other continuously."
@@ -494,8 +805,45 @@ Dr. Raj leaned forward. "You've built something that measures itself. That prove
 
 **Figure 8.10: Echo's 90-Day Journey**
 
-![Figure 8.10: Echo's 90-Day Journey](figures/figure-8-10.png)
+```mermaid
 
+graph TB
+  subgraph JOURNEY["<b>90-DAY TRANSFORMATION</b>"]
+    direction TB
+    D0["Day 0: Assessment<br/>INPACT™ 28/100"]
+    
+    subgraph BUILD["<b>Pillar 2: Build Layers</b>"]
+      direction LR
+      W4["Weeks 1-4<br/>Foundation<br/>Layers 1-2"]
+      W7["Weeks 5-7<br/>Intelligence<br/>Layers 3-4"]
+      W10["Weeks 8-10<br/>Trust<br/>Layers 5-7"]
+      W4 --> W7 --> W10
+    end
+    
+    W12["Weeks 11-12: Operations<br/>GOALS™"]
+    
+    FINAL["Day 84: Production<br/>3 Agents Live"]
+  end
+  
+  Copyright["© 2025 Colaberry Inc."]
+  
+  D0 -->|"Pillar 1"| BUILD
+  BUILD -->|"Pillar 3"| W12
+  W12 --> FINAL
+  
+  style JOURNEY fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+  style D0 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
+  style BUILD fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+  style W4 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+  style W7 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+  style W10 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+  style W12 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+  style FINAL fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style Copyright fill:#ffffff,stroke:none,color:#666666
+
+```
+
+![Figure 8.10: Echo's 90-Day Journey](figures/figure-8-10.png)
 | Phase | Timeline | Pillar Focus | Achievement |
 |-------|----------|--------------|-------------|
 | Assessment | Day 0 | INPACT™ | 28/100 baseline |
@@ -577,8 +925,36 @@ Now it's your turn.
 
 ## Echo's Transformation: Week 0 to Week 12
 
-![Diagram](figures/09_chapter_8_architecture_of_trust_in_action-diagram-11.png)
+```mermaid
 
+graph LR
+  subgraph BEFORE["<b>WEEK 0</b>"]
+    direction TB
+    B1["INPACT™: 28/100<br/><br/>GOALS™: 0/25<br/><br/>Agents: 0<br/><br/><b>Fix this in 90 days</b>"]
+  end
+  
+  subgraph PILLARS["<b>THREE PILLARS</b>"]
+    direction TB
+    P1["<b>INPACT™</b><br/>What agents need<br/><br/><b>7-Layers</b><br/>How to build it<br/><br/><b>GOALS™</b><br/>How to measure"]
+  end
+  
+  subgraph AFTER["<b>WEEK 12</b>"]
+    direction TB
+    A1["INPACT™: 89/100<br/><br/>GOALS™: 21/25<br/><br/>Agents: 3 Live<br/><br/><b>Architecture we can trust</b>"]
+  end
+  
+  BEFORE --> PILLARS --> AFTER
+  
+  style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+  style PILLARS fill:#00695c,stroke:#004d40,stroke-width:2px,color:#ffffff
+  style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+  style B1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+  style P1 fill:#00796b,stroke:#004d40,color:#ffffff
+  style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
+
+```
+
+![Diagram](figures/09_chapter_8_architecture_of_trust_in_action-diagram-11.png)
 > **Key Takeaway:** *"You've answered my question, and built something we can trust."* – Dr. Arun Raj, Board Chair
 
 ---

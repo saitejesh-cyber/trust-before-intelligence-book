@@ -33,8 +33,38 @@ The demo exposed the gap: infrastructure could deliver data fast, but couldn't m
 
 **Figure 5.1: Intelligence Layers - Why Layers 3-4 Enable Understanding**
 
-![Figure 5.1: Intelligence Layers - Why Layers 3-4 Enable Understanding](figures/figure-5-1.png)
+```mermaid
 
+graph LR
+    subgraph WITHOUT["WITHOUT LAYERS 3-4"]
+        direction TB
+        W1["'My doctor'<br/>Which doctor?<br/><br/>'MI'<br/>Heart attack or valve?<br/><br/>No business context<br/>Raw data only<br/><br/>40%-60% Query Accuracy<br/><br/><b>Frictional Conversions</b>"]
+    end
+    
+    subgraph TRANSFORM["TRANSFORM"]
+        direction TB
+        T1["→"]
+    end
+    
+    subgraph WITH["WITH LAYERS 3-4"]
+        direction TB
+        L1["Layer 3:<br/>Entity resolution 97%<br/><br/>Layer 4:<br/>Context-aware RAG<br/><br/>Healthcare terminology<br/>mapped<br/><br/>>85% Query Accuracy<br/><br/><b>Natural Conversions</b>"]
+    end
+    
+    WITHOUT --> TRANSFORM --> WITH
+    
+    style WITHOUT fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
+    style WITH fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style W1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style T1 fill:#f5f5f5,stroke:#666666,color:#333333
+    style L1 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    
+    %% © 2025 Colaberry Inc. All rights reserved.
+
+```
+
+![Figure 5.1: Intelligence Layers - Why Layers 3-4 Enable Understanding](figures/figure-5-1.png)
 > **Key Takeaway:** Intelligence requires understanding. Layers 3-4 give agents semantic awareness.
 
 ## PART 1: THE INTELLIGENCE GAP
@@ -42,8 +72,54 @@ The demo exposed the gap: infrastructure could deliver data fast, but couldn't m
 
 **Figure 5.2: The Architecture of Trust - Intelligence Layers Highlighted**
 
-![Figure 5.2: The Architecture of Trust - Intelligence Layers Highlighted](figures/figure-5-2.png)
+```mermaid
 
+
+graph TB
+    Title["ARCHITECTURE OF TRUST<br/>Three Integrated Pillars"]
+    
+    subgraph PILLARS[" "]
+        direction LR
+        INPACT["`PILLAR 1: INPACT™<br/><br/>What Agents Need?<br/><br/>**I**nstant<br/>**N**atural<br/>**P**ermitted<br/>**A**daptive<br/>**C**ontextual<br/>**T**ransparent`"]
+        
+        Layers["PILLAR 2: 7-LAYERS<br/>Infrastructure<br/><br/>How to Build TRUST?<br/><br/>Storage<br/>Real-Time<br/>Semantic<br/>Intelligence<br/>Governance<br/>Observability<br/>Orchestration"]
+        
+        GOALS["`PILLAR 3: GOALS™<br/><br/>How to Measure TRUST?<br/><br/>**G**overnance<br/>**O**bservability<br/>**A**vailability<br/>**L**exicon<br/>**S**olid`"]
+    end
+    
+    subgraph INDICATOR[" "]
+        direction LR
+        Spacer1[" "]
+        YouAreHere["<b>YOU ARE HERE</b><br/>Layers 3: Semantic <br/> Layer 4: Intelligence<br/> Built Here"]
+        Spacer2[" "]
+    end
+    
+    Copyright["© 2025 Colaberry Inc."]
+    
+    Title --> PILLARS
+    PILLARS <--> INDICATOR
+    
+    INPACT -.->|"Needs Fulfilled by"| Layers
+    Layers -.->|"Enables Operations"| GOALS
+    GOALS -.->|"Drives Trust"| INPACT
+
+    style Title fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style PILLARS fill:none,stroke:none
+    style INDICATOR fill:none,stroke:none
+    style INPACT fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Layers fill:#f57c00,stroke:#e65100,stroke-width:3px,color:#ffffff
+    style GOALS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Spacer1 fill:none,stroke:none,color:transparent
+    style YouAreHere fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style Spacer2 fill:none,stroke:none,color:transparent
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+
+
+
+
+```
+
+![Figure 5.2: The Architecture of Trust - Intelligence Layers Highlighted](figures/figure-5-2.png)
 ### Why Intelligence Matters
 
 Foundation without intelligence is like having a well-stocked library with no catalog and no librarian. Data availability alone doesn't create agent capability. Intelligence transforms accessible data into understanding and reasoning.
@@ -54,8 +130,36 @@ Foundation without intelligence is like having a well-stocked library with no ca
 
 **Figure 5.3: 7-Layer Agent-Ready Architecture - Intelligence Highlighted**
 
-![Figure 5.3: 7-Layer Agent-Ready Architecture - Intelligence Highlighted](figures/figure-5-3.png)
+```mermaid
+graph TB
+    L7["<b>Layer 7: Orchestration</b><br/><b>Multi-Agent Coordination</b>"]
+    L6["<b>Layer 6: Observability</b><br/><b>Tracing & Audit</b>"]
+    L5["<b>Layer 5: Governance</b><br/><b>Dynamic Access Control</b>"]
+    
+    subgraph "<b>🧠 INTELLIGENCE</b>"
+        L4["<b>Layer 4: Intelligence</b><br/><b>RAG + LLM Pipeline</b>"]
+        L3["<b>Layer 3: Semantic</b><br/><b>Business Context</b>"]
+    end
+    
+    L2["<b>Layer 2: Real-Time Data</b><br/><b>CDC & Streaming</b>"]
+    L1["<b>Layer 1: Multi-Modal Storage</b><br/><b>8 Foundation Categories</b>"]
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    L7 --> L6 --> L5 --> L4 --> L3
+    L3 --> L2 --> L1
+    
+    style L7 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style L6 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style L5 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style L4 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style L3 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style L2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+```
 
+![Figure 5.3: 7-Layer Agent-Ready Architecture - Intelligence Highlighted](figures/figure-5-3.png)
 These intelligence layers directly address specific gaps from Chapter 3:
 
 ### The Seven Gaps: Intelligence Focus
@@ -158,8 +262,35 @@ Swapna nodded to Jamie Rodriguez, who displayed the Phase 2 architecture diagram
 
 **Figure 5.4: Echo's Intelligence Challenge - Current State vs. Target State**
 
-![Figure 5.4: Echo's Intelligence Challenge - Current State vs. Target State](figures/figure-5-4.png)
+```mermaid
+graph TB
+    subgraph CURRENT["<b>CURRENT STATE (Week 4)</b>"]
+        direction LR
+        C_Q["<b>User Query</b><br/>'Dr. Martinez'"] --> C_SQL["<b>Direct SQL</b><br/><b>No semantic</b>"] --> C_RES["<b>847 Records</b><br/><b>Unfiltered</b>"] --> C_FAIL["<b>47%</b>"]
+    end
+    
+    CURRENT -->|<b>Intelligence Layers</b>| TARGET
+    
+    subgraph TARGET["<b>TARGET STATE (Week 7)</b>"]
+        direction LR
+        T_Q["<b>User Query</b><br/>'Dr. Martinez'"] --> T_SEM["<b>Layer 3</b><br/><b>Semantic</b>"] --> T_RAG["<b>Layer 4</b><br/><b>Intelligence</b>"] --> T_WIN["<b>95%+</b>"]
+    end
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    style C_Q fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style C_SQL fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style C_RES fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style C_FAIL fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
+    
+    style T_Q fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style T_SEM fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style T_RAG fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style T_WIN fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+```
 
+![Figure 5.4: Echo's Intelligence Challenge - Current State vs. Target State](figures/figure-5-4.png)
 "Three weeks," Swapna said. "Week 5: Layer 3 semantic infrastructure. Business glossary with 2,400 clinical terms, entity resolution across all provider and patient systems, clinical concept mapping to SNOMED, ICD-10, and LOINC.[3][4][5]. 
 Week 6: Layer 4 stages 1-5 vector database deployment with 10 million document embeddings, hybrid retrieval pipeline, reranking optimization, context assembly. 
 Week 7: Layer 4 stages 6-7 LLM integration with multi-model routing, semantic caching activation. By Friday of Week 7, we'll have our first fully intelligent query."
@@ -192,8 +323,46 @@ The semantic layer translates human language to data structures.[1] When a care 
 
 **Figure 5.5: Layer 3 -Semantic Layer Architecture**
 
-![Figure 5.5: Layer 3 -Semantic Layer Architecture](figures/figure-5-5.png)
+```mermaid
+flowchart TB
+    NL["<b>Natural Language</b><br/>'High-risk diabetic patients'"]
+    
+    subgraph PARSE_ROW["<b>Parse & Enrich</b>"]
+        direction LR
+        PARSE["<b>Semantic Parser</b>"] --> GLOSS["<b>Business Glossary</b><br/><b>2,400 terms</b>"]
+    end
+    
+    subgraph RESOLVE_ROW["<b>Entity Resolution</b>"]
+        direction LR
+        E1["<b>EHR ID</b>"] --> GOLD["<b>Golden ID</b>"]
+        E2["<b>Claims ID</b>"] --> GOLD
+        E3["<b>Lab ID</b>"] --> GOLD
+    end
+    
+    subgraph OUTPUT_ROW["<b>Output</b>"]
+        direction LR
+        ONTO["<b>Clinical Ontology</b><br/><b>SNOMED/ICD/LOINC</b>"] --> RESULT["<b>Unified Query</b>"]
+    end
+    
+    NL --> PARSE_ROW
+    PARSE_ROW --> RESOLVE_ROW
+    RESOLVE_ROW --> OUTPUT_ROW
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    style NL fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style PARSE fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style GLOSS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style E1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style E2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style E3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style GOLD fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style ONTO fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style RESULT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+```
 
+![Figure 5.5: Layer 3 -Semantic Layer Architecture](figures/figure-5-5.png)
 ### Components of the Semantic Layer
 
 **Business Glossary:** The authoritative dictionary of organizational terminology. Every metric, dimension, and concept has a formal definition, calculation logic, data sources, owners, and lineage. "Active patient" means "patient with an encounter in the past 12 months, excluding deceased", not open to interpretation.
@@ -257,8 +426,54 @@ The difference is transformational. Research benchmarks show that direct natural
 
 **Figure 5.6: Before/After - Keyword Search vs. Semantic Search**
 
-![Figure 5.6: Before/After - Keyword Search vs. Semantic Search](figures/figure-5-6.png)
+```mermaid
+graph TB
+    subgraph KEYWORD["<b>KEYWORD SEARCH<br/> (Before Layer 3)</b>"]
+        direction LR
+        K_Q["<b>Query: 'diabetes patients'</b>"] --> K_MATCH["<b>String Matching</b><br/><b>LIKE '%diabetes%'</b>"]
+        K_MATCH --> K_MISS1["<b>Missed:<br/> DM Type 2</b>"]
+        K_MATCH --> K_MISS2["<b>Missed:<br/> glycemic control</b>"]
+        K_MATCH --> K_MISS3["<b>Missed:<br/> E11.9</b>"]
+        K_MISS1 --> K_RESULT["<b>40-60% Recall</b><br/><b>Incomplete results</b>"]
+        K_MISS2 --> K_RESULT
+        K_MISS3 --> K_RESULT
+    end
+    
+    KEYWORD -->|<b>Layer 3 Transforms</b>| SEMANTIC
+    
+    subgraph SEMANTIC["<b>SEMANTIC SEARCH<br/>(With Layer 3)</b>"]
+        direction LR
+        S_Q["<b>Query: 'diabetes patients'</b>"] --> S_RESOLVE["<b>Semantic Resolution</b><br/><b>Concept expansion</b>"]
+        S_RESOLVE --> S_HIT1["<b>Diabetes mellitus</b>"]
+        S_RESOLVE --> S_HIT2["<b>DM Type 1, Type 2</b>"]
+        S_RESOLVE --> S_HIT3["<b>E08-E13 codes</b>"]
+        S_RESOLVE --> S_HIT4["<b>Glycemic disorders</b>"]
+        S_HIT1 --> S_RESULT["<b>85%+ Recall</b><br/><b>Complete results</b>"]
+        S_HIT2 --> S_RESULT
+        S_HIT3 --> S_RESULT
+        S_HIT4 --> S_RESULT
+    end
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    style K_Q fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style K_MATCH fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style K_MISS1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style K_MISS2 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style K_MISS3 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style K_RESULT fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
+    
+    style S_Q fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style S_RESOLVE fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S_HIT1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S_HIT2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S_HIT3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S_HIT4 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S_RESULT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+```
 
+![Figure 5.6: Before/After - Keyword Search vs. Semantic Search](figures/figure-5-6.png)
 ### Key Technologies
 
 Echo evaluated tools across five categories, prioritizing healthcare compliance, existing team expertise, and integration with their Databricks lakehouse. The following options represent the market landscape:
@@ -355,8 +570,47 @@ Layer 4 is the complete intelligence pipeline system that transforms user querie
 
 **Figure 5.7: Layer 4 - Complete Intelligence Pipeline**
 
-![Figure 5.7: Layer 4 - Complete Intelligence Pipeline](figures/figure-5-7.png)
+```mermaid
+graph TB
+    Q["<b>User Query</b><br/>'High-risk diabetic patients'"]
+    
+    subgraph ROW1["<b>Retrieval</b>"]
+        direction LR
+        S1["<b>1. Query</b>"] --> S2["<b>2. Embed</b>"] --> S3["<b>3. Retrieve</b>"]
+    end
+    
+    subgraph ROW2["<b>Processing</b>"]
+        direction LR
+        S4["<b>4. Rerank</b>"] --> S5["<b>5. Context</b>"]
+    end
+    
+    subgraph ROW3["<b>Generation</b>"]
+        direction LR
+        S6["<b>6. LLM</b>"] --> S7["<b>7. Cache</b>"]
+    end
+    
+    RESULT["<b>Grounded Response</b>"]
+    
+    Q --> ROW1
+    ROW1 --> ROW2
+    ROW2 --> ROW3
+    ROW3 --> RESULT
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    style Q fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style S1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S4 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S5 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S6 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S7 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style RESULT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+```
 
+![Figure 5.7: Layer 4 - Complete Intelligence Pipeline](figures/figure-5-7.png)
 ### Why Agents Need RAG
 
 Without RAG, language models rely solely on their training data knowledge frozen at their cutoff date, containing no information about your specific organization, patients, or operations. The result is confident hallucination: responses that sound authoritative but are factually wrong.
@@ -385,8 +639,45 @@ Single-strategy retrieval misses relevant results. Vector search excels at seman
 
 **Figure 5.8: Hybrid Retrieval Architecture**
 
-![Figure 5.8: Hybrid Retrieval Architecture](figures/figure-5-8.png)
+```mermaid
+graph LR
+    TITLE["<b>Stage 3: Hybrid Retrieval</b>"]
+    
+    Q["<b>Embedded Query</b>"]
+    
+    subgraph parallel["<b>Parallel Retrieval Strategy</b>"]
+        VEC["<b>Vector Search</b><br/><b>Pinecone</b><br/><b>Semantic similarity</b>"]
+        KEY["<b>Keyword Search</b><br/><b>Azure Search</b><br/><b>Exact matching</b>"]
+        GRAPH["<b>Graph Traversal</b><br/><b>Neo4j</b><br/><b>Relationships</b>"]
+    end
+    
+    MERGE["<b>Result Fusion</b><br/><b>RRF algorithm</b>"]
+    
+    OUT["<b>Candidate Set</b><br/><b>Top 50 results</b>"]
+    
+    TITLE -.-> Q
+    Q --> VEC
+    Q --> KEY
+    Q --> GRAPH
+    VEC --> MERGE
+    KEY --> MERGE
+    GRAPH --> MERGE
+    MERGE --> OUT
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    style TITLE fill:#00897b,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Q fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style parallel fill:#fafafa,stroke:#00897b,stroke-width:2px,color:#000000
+    style VEC fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style KEY fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style GRAPH fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style MERGE fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style OUT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+```
 
+![Figure 5.8: Hybrid Retrieval Architecture](figures/figure-5-8.png)
 **Vector Database Selection:**
 
 Echo deployed [Pinecone](https://www.pinecone.io) for vector storage because: managed service reduces operational overhead, serverless scaling handles variable query loads, HIPAA BAA available for healthcare compliance, and 42ms average query latency (p50, meaning 50% of requests are faster) meets real-time requirements.[13] Configuration: 10M embeddings, 3,072 dimensions, 15.4GB storage, HNSW index[10].
@@ -451,8 +742,45 @@ Healthcare requires different LLM capabilities for different tasks. Echo impleme
 
 **Figure 5.9: Multi-LLM Router Architecture**
 
-![Figure 5.9: Multi-LLM Router Architecture](figures/figure-5-9.png)
+```mermaid
+graph TB
+    TITLE["<b>Multi-LLM Router</b>"]
+    
+    Q["<b>Incoming Query</b>"]
+    
+    CLASS["<b>Query Classifier</b><br/><b>Complexity scoring</b>"]
+    
+    subgraph routing["<b>LLM Selection</b>"]
+        CLAUDE["<b>Claude Sonnet 4</b><br/><b>Complex reasoning</b><br/><b>Clinical analysis</b>"]
+        GPT["<b>GPT-4 Turbo</b><br/><b>Structured output</b><br/><b>API integrations</b>"]
+        LLAMA["<b>Llama 3.1 70B</b><br/><b>High volume</b><br/><b>Simple queries</b>"]
+    end
+    
+    OUT["<b>Response</b>"]
+    
+    TITLE -.-> Q
+    Q --> CLASS
+    CLASS -->|<b>High complexity</b>| CLAUDE
+    CLASS -->|<b>Structured need</b>| GPT
+    CLASS -->|<b>Simple/bulk</b>| LLAMA
+    CLAUDE --> OUT
+    GPT --> OUT
+    LLAMA --> OUT
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    style TITLE fill:#00897b,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Q fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style CLASS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style routing fill:#fafafa,stroke:#00897b,stroke-width:2px,color:#000000
+    style CLAUDE fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style GPT fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style LLAMA fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style OUT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+```
 
+![Figure 5.9: Multi-LLM Router Architecture](figures/figure-5-9.png)
 **Routing Logic:**
 - Claude Sonnet 4: Complex clinical reasoning (45% of queries)
 - GPT-4 Turbo: Structured output, FHIR[6] API calls (25% of queries)
@@ -476,8 +804,47 @@ Similar queries should not incur redundant LLM costs. Semantic caching stores re
 
 **Figure 5.10: Semantic Cache Architecture**
 
-![Figure 5.10: Semantic Cache Architecture](figures/figure-5-10.png)
+```mermaid
+graph TB
+    QUERY["<b>Incoming Query</b><br/>'High-risk diabetic patients'"]
+    
+    EXACT["<b>Level 1: Exact Match</b><br/><b>Redis Cache</b>"]
+    
+    SEMANTIC["<b>Level 2: Semantic Match</b><br/><b>Pinecone Vector Cache</b>"]
+    
+    PIPELINE["<b>Full RAG Pipeline</b><br/><b>If no cache hit</b>"]
+    
+    RESPONSE["<b>Response</b>"]
+    
+    CDC["<b>CDC Events</b>"]
+    
+    INVALIDATE["<b>Cache Invalidation</b>"]
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    QUERY --> EXACT
+    EXACT -->|Hit 15%| RESPONSE
+    EXACT -->|Miss| SEMANTIC
+    SEMANTIC -->|Hit 70%| RESPONSE
+    SEMANTIC -->|Miss 15%| PIPELINE
+    PIPELINE --> RESPONSE
+    RESPONSE -.->|Cache| SEMANTIC
+    
+    CDC --> INVALIDATE
+    INVALIDATE -.->|Clear| EXACT
+    INVALIDATE -.->|Clear| SEMANTIC
+    
+    style QUERY fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style EXACT fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style SEMANTIC fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style PIPELINE fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style RESPONSE fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style CDC fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style INVALIDATE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+```
 
+![Figure 5.10: Semantic Cache Architecture](figures/figure-5-10.png)
 **Level 1: Exact Match (Redis):** Character-for-character matches hit instantly. TTL (Time To Live)[18]: 1 hour. Hit rate: ~15%.
 
 **Level 2: Semantic Match (Pinecone):** Semantically similar queries (similarity > 0.92) return cached responses. TTL[18]: 24 hours. Hit rate: ~70%.
@@ -729,14 +1096,63 @@ The room was silent for a moment. Then applause.
 
 **Figure 5.11: Echo's Week 5-7 Timeline**
 
-![Figure 5.11: Echo's Week 5-7 Timeline](figures/figure-5-11.png)
+```mermaid
+gantt
+    title Echo's Intelligence Build (Weeks 5-7)
+    dateFormat  MM-DD
+    
+    section Layer 3
+    Business Glossary (2,400 terms)    :done, w5a, 02-03, 5d
+    Entity Resolution Deployment       :done, w5b, 02-03, 5d
+    dbt Semantic Models               :done, w5c, 02-05, 3d
+    Clinical Ontology Mapping         :done, w5d, 02-06, 2d
+    
+    section Layer 4 (Stages 1-5)
+    Document Chunking                 :done, w6a, 02-10, 3d
+    Embedding Generation              :done, w6b, 02-10, 4d
+    Vector DB Deployment              :done, w6c, 02-12, 2d
+    Search Index (Azure)              :done, w6d, 02-12, 2d
+    Feature Store (Tecton)            :done, w6e, 02-13, 2d
+    Hybrid Retrieval Integration      :done, w6f, 02-14, 2d
+    Reranking (Cohere)                :done, w6g, 02-14, 1d
+    Context Assembly                  :done, w6h, 02-14, 1d
+    
+    section Layer 4 (Stages 6-7)
+    LLM Integration                   :done, w7a, 02-17, 2d
+    Query Router Deployment           :done, w7b, 02-18, 2d
+    Semantic Cache Activation         :done, w7c, 02-19, 1d
+    First Intelligent Query           :milestone, m1, 02-20, 0d
+```
 
+![Figure 5.11: Echo's Week 5-7 Timeline](figures/figure-5-11.png)
 ### INPACT™ Score: Week 4 → Week 7
 
 **Figure 5.12: INPACT™ Transformation (42 → 67)**
 
-![Figure 5.12: INPACT™ Transformation (42 → 67)](figures/figure-5-12.png)
+```mermaid
+graph LR
+    subgraph "<b>Week 4:Foundation Layer</b>"
+        W4_TOTAL["<b>TOTAL: 42/100</b>"]
+    end
+    
+    ARROW["<b>→</b><br/><b>+25 pts</b>"]
+    
+    subgraph "<b>Week 7:Intelligence Layer</b>"
+        W7_TOTAL["<b>TOTAL: 67/100</b>"]
+    end
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    W4_TOTAL --> ARROW
+    ARROW --> W7_TOTAL
+    
+    style W4_TOTAL fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style ARROW fill:#ffffff,stroke:none,color:#000000
+    style W7_TOTAL fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+```
 
+![Figure 5.12: INPACT™ Transformation (42 → 67)](figures/figure-5-12.png)
 | Dimension | Week 4 | Week 7 | Change | Driver |
 |-----------|--------|--------|--------|--------|
 | **I (Instant)** | 4/6 | 5/6 | **+1** | Semantic caching |
@@ -771,8 +1187,42 @@ Krish made a note. "Phase 3 has the same $380,000 allocation. Apply the lesson."
 
 **Figure 5.13: Complete Intelligence Architecture - Layers 3-4**
 
-![Figure 5.13: Complete Intelligence Architecture - Layers 3-4](figures/figure-5-13.png)
+```mermaid
+graph TB
+    USER["<b>User Query</b><br/>'Find high-risk diabetic patients'"]
+    
+    subgraph L3["<b>Layer 3: Semantic</b>"]
+        direction LR
+        GLOSS["<b>Glossary</b>"] --> ENTITY["<b>Entity Resolution</b>"] --> ONTO["<b>Ontology</b>"]
+    end
+    
+    subgraph L4["<b>Layer 4: Intelligence</b>"]
+        direction LR
+        EMBED["<b>Embed</b>"] --> HYBRID["<b>Retrieve</b>"] --> RERANK["<b>Rerank</b>"] --> LLM["<b>LLM</b>"] --> CACHE["<b>Cache</b>"]
+    end
+    
+    RESPONSE["<b>Grounded Response</b>"]
+    
+    USER --> L3
+    L3 --> L4
+    L4 --> RESPONSE
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    style USER fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style GLOSS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style ENTITY fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style ONTO fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style EMBED fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style HYBRID fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style RERANK fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style LLM fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style CACHE fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style RESPONSE fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+```
 
+![Figure 5.13: Complete Intelligence Architecture - Layers 3-4](figures/figure-5-13.png)
 ### Results
 
 | Metric | Week 4 | Week 7 | Improvement |

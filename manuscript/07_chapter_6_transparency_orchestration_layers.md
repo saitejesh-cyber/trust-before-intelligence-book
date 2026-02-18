@@ -35,8 +35,36 @@ Fast and accurate isn't enough. Ungoverned AI is dangerous AI.
 
 **Figure 6.1: Transparency + Orchestration Layers - Why Layers 5-6-7 Complete Trust**
 
-![Figure 6.1: Transparency + Orchestration Layers - Why Layers 5-6-7 Complete Trust](figures/figure-6-1.png)
+```mermaid
 
+graph LR
+    subgraph WITHOUT["WITHOUT LAYERS 5-6-7"]
+        direction TB
+        W1["No dynamic access<br/>HIPAA risk<br/><br/>Black box AI<br/>No explainability<br/><br/>Single-agent only<br/>No coordination<br/><br/><b>'I don't trust it'<br/>Blocked</b>"]
+    end
+    
+    subgraph TRANSFORM["TRANSFORM"]
+        direction TB
+        T1["→"]
+    end
+    
+    subgraph WITH["WITH LAYERS 5-6-7"]
+        direction TB
+        L1["Layer 5:<br/>Governance<br/> Security + HITL<br/><br/>Layer 6:<br/>Observability<br/>Full trace + audit<br/><br/>Layer 7:<br/>orchestration<br/>Multi-agent coordination<br/><br/><b>'I can verify it'<br/>Trust earned</b>"]
+    end
+    
+    WITHOUT --> TRANSFORM --> WITH
+    
+    style WITHOUT fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
+    style WITH fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style W1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style T1 fill:#f5f5f5,stroke:#666666,color:#333333
+    style L1 fill:#b2dfdb,stroke:#00897b,color:#004d40
+
+```
+
+![Figure 6.1: Transparency + Orchestration Layers - Why Layers 5-6-7 Complete Trust](figures/figure-6-1.png)
 > **Key Takeaway:** Trust requires transparency. Layers 5-6-7 make AI verifiable.
 
 ## PART 1: THE TRUST RISK
@@ -56,8 +84,57 @@ These final three layers would complete the architecture.
 
 **Figure 6.2: The Architecture of Trust - Completing Pillar 2**
 
-![Figure 6.2: The Architecture of Trust - Completing Pillar 2](figures/figure-6-2.png)
+```mermaid
 
+
+
+graph TB
+    Title["ARCHITECTURE OF TRUST<br/>Three Integrated Pillars"]
+    
+    subgraph PILLARS[" "]
+        direction LR
+        INPACT["`PILLAR 1: INPACT™<br/><br/>What Agents Need?<br/><br/>**I**nstant<br/>**N**atural<br/>**P**ermitted<br/>**A**daptive<br/>**C**ontextual<br/>**T**ransparent`"]
+        
+        Layers["PILLAR 2: 7-LAYERS<br/>Infrastructure<br/><br/>How to Build TRUST?<br/><br/>Storage<br/>Real-Time<br/>Semantic<br/>Intelligence<br/>Governance<br/>Observability<br/>Orchestration"]
+        
+        GOALS["`PILLAR 3: GOALS™<br/><br/>How to Measure TRUST?<br/><br/>**G**overnance<br/>**O**bservability<br/>**A**vailability<br/>**L**exicon<br/>**S**olid`"]
+    end
+    
+    subgraph INDICATOR[" "]
+        direction LR
+        Spacer1[" "]
+        YouAreHere["<b>YOU ARE HERE</b><br/>Layers 5: Governance <br/> Layer 6: Observability<br/> Layer 7: Orchestration<br/> Built Here"]
+        Spacer2[" "]
+    end
+    
+    Copyright["© 2025 Colaberry Inc."]
+    
+    Title --> PILLARS
+    PILLARS <--> INDICATOR
+    
+    INPACT -.->|"Needs Fulfilled by"| Layers
+    Layers -.->|"Enables Operations"| GOALS
+    GOALS -.->|"Drives Trust"| INPACT
+
+    style Title fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style PILLARS fill:none,stroke:none
+    style INDICATOR fill:none,stroke:none
+    style INPACT fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Layers fill:#f57c00,stroke:#e65100,stroke-width:3px,color:#ffffff
+    style GOALS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Spacer1 fill:none,stroke:none,color:transparent
+    style YouAreHere fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style Spacer2 fill:none,stroke:none,color:transparent
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+
+
+
+
+
+
+```
+
+![Figure 6.2: The Architecture of Trust - Completing Pillar 2](figures/figure-6-2.png)
 ### Architectural Context
 
 Chapters 4-5 built the foundation and intelligence layers. Chapter 4 delivered data availability: eight storage categories and real-time pipelines with less than 30 seconds freshness. Chapter 5 delivered data understanding: semantic resolution of 2,400 clinical terms and a 7-stage RAG pipeline with 85% cache hit rates. Together, these four layers transformed Echo's data infrastructure from legacy BI to agent-capable.
@@ -78,8 +155,39 @@ The three-week build timeline (Week 8 Governance, Week 9 Observability, Week 10 
 
 **Figure 6.3: 7-Layer Agent-Ready Architecture - Transparency + Orchestration Highlighted**
 
-![Figure 6.3: 7-Layer Agent-Ready Architecture - Transparency + Orchestration Highlighted](figures/figure-6-3.png)
+```mermaid
+graph TB
+    subgraph "<b>TRUST LAYERS (Ch 6)</b>"
+        L7["<b>Layer 7: Orchestration</b><br/><b>Multi-Agent Coordination</b>"]
+        L6["<b>Layer 6: Observability</b><br/><b>Tracing & Monitoring</b>"]
+        L5["<b>Layer 5: Governance</b><br/><b>ABAC + HITL</b>"]
+    end
+    
+    subgraph "<b>INTELLIGENCE (Ch 5)</b>"
+        L4["<b>Layer 4: Intelligence</b><br/><b>RAG + LLM</b>"]
+        L3["<b>Layer 3: Semantic</b><br/><b>Business Context</b>"]
+    end
+    
+    subgraph "<b>FOUNDATION (Ch 4)</b>"
+        L2["<b>Layer 2: Real-Time</b><br/><b>CDC & Streaming</b>"]
+        L1["<b>Layer 1: Storage</b><br/><b>Multi-Modal</b>"]
+    end
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    L7 --> L6 --> L5 --> L4 --> L3 --> L2 --> L1
+    
+    style L7 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style L6 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style L5 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style L4 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L2 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style L1 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+```
 
+![Figure 6.3: 7-Layer Agent-Ready Architecture - Transparency + Orchestration Highlighted](figures/figure-6-3.png)
 ### The Remaining Gaps
 
 Chapter 3 identified seven infrastructure gaps preventing agent deployment. Chapters 4-5 addressed Gaps 1-4. Three gaps remain:
@@ -190,8 +298,53 @@ This contextual evaluation requires four capabilities:
 
 **Figure 6.4: Layer 5 Governance Architecture**
 
-![Figure 6.4: Layer 5 Governance Architecture](figures/figure-6-4.png)
+```mermaid
 
+graph TB
+    subgraph LAYER5["LAYER 5: GOVERNANCE"]
+        direction TB
+        Query["Agent Query"]
+        
+        subgraph EVAL["EVALUATION"]
+            direction LR
+            ABAC["ABAC Evaluation"]
+            OPA["OPA Policy Engine"]
+            ABAC --> OPA
+        end
+        
+        Risk{{"Risk?"}}
+        
+        subgraph DECISION["DECISION & AUDIT"]
+            direction LR
+            Auto["Auto-Approve<br/>Risk < 7"]
+            HITL["HITL<br/>Risk >= 7"]
+            Human["Human Review"]
+            Audit["Audit Log"]
+        end
+    end
+    
+    Copyright["© 2025 Colaberry Inc."]
+    
+    Query --> EVAL --> Risk
+    Risk -->|"Low"| Auto --> Audit
+    Risk -->|"High"| HITL --> Human --> Audit
+    
+    style LAYER5 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style Query fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style EVAL fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style ABAC fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style OPA fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Risk fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style DECISION fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Auto fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style HITL fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style Human fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Audit fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+
+```
+
+![Figure 6.4: Layer 5 Governance Architecture](figures/figure-6-4.png)
 ### Why Agents Need Governance
 
 Agents operate differently than human users. A human physician accessing EHR records makes deliberate choices, navigating to specific patients, reviewing specific documents, for specific reasons. The implicit governance of user interfaces constrains access patterns. Agents eliminate these constraints. An agent with data access can iterate through thousands of records in seconds, aggregate information across patients, and correlate data in ways that human navigation never enabled.
@@ -241,8 +394,40 @@ Pattern selection depends on reversibility, urgency, and risk magnitude.
 
 **Figure 6.5: ABAC Four-Factor Authorization Model**
 
-![Figure 6.5: ABAC Four-Factor Authorization Model](figures/figure-6-5.png)
+```mermaid
+graph TB
+    Query["<b>Agent Request</b><br/><b>Access Needed</b>"]
+    
+    subgraph "<b>ABAC EVALUATION</b>"
+        S["<b>SUBJECT</b><br/><b>Who is asking?</b><br/><b>Role, Dept, Credentials</b>"]
+        R["<b>RESOURCE</b><br/><b>What data?</b><br/><b>Classification, Sensitivity</b>"]
+        A["<b>ACTION</b><br/><b>What operation?</b><br/><b>Read, Write, Export</b>"]
+        C["<b>CONTEXT</b><br/><b>When/Where?</b><br/><b>Time, Location, Device</b>"]
+    end
+    
+    Policy["<b>Policy Decision</b><br/><b>Risk Score 0-10</b>"]
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    Query --> S
+    Query --> R
+    Query --> A
+    Query --> C
+    S --> Policy
+    R --> Policy
+    A --> Policy
+    C --> Policy
+    
+    style Query fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style S fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style R fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style C fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Policy fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+```
 
+![Figure 6.5: ABAC Four-Factor Authorization Model](figures/figure-6-5.png)
 ### Echo's Gap Before Layer 5
 
 Echo's pre-transformation authorization relied on Epic's native RBAC, a solid foundation that defined role-based permissions: physicians access patient records, nurses view orders, administrators have department scope. This RBAC baseline remains in place. What was missing was the contextual layer to evaluate when, where, and why.
@@ -288,8 +473,43 @@ Echo deployed Layer 5 across Week 8-9 with the following architecture:
 
 **Figure 6.6: HITL Escalation Patterns**
 
-![Figure 6.6: HITL Escalation Patterns](figures/figure-6-6.png)
+```mermaid
 
+graph LR
+    subgraph HITL["HITL ESCALATION PATTERNS"]
+        direction LR
+        subgraph SYNC["SYNC (Blocking)"]
+            direction LR
+            S1["High-Risk<br/>Request"] --> S2["BLOCKED"] --> S3["Human<br/>Review"] --> S4["Execute"]
+        end
+        
+        subgraph ASYNC["ASYNC & POST-HOC"]
+            direction LR
+            A1["Time-Sensitive"] --> A2["Provisional"] --> A3["Review Later"]
+            P1["Low-Risk"] --> P2["Execute"] --> P3["Audit Log"]
+        end
+    end
+    
+    Copyright["© 2025 Colaberry Inc."]
+    
+    style HITL fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style SYNC fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style ASYNC fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S1 fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style S2 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style S3 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S4 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style A1 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style A2 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A3 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style P1 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style P2 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style P3 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+
+```
+
+![Figure 6.6: HITL Escalation Patterns](figures/figure-6-6.png)
 ### The Warfarin Moment
 
 Thursday, Week 9. 2:34 PM.
@@ -352,8 +572,57 @@ This comprehensive visibility requires four capabilities:
 
 **Figure 6.7: Layer 6 Observability Architecture**
 
-![Figure 6.7: Layer 6 Observability Architecture](figures/figure-6-7.png)
+```mermaid
 
+graph TB
+    subgraph LAYER6["LAYER 6: OBSERVABILITY"]
+        direction TB
+        Query["Agent Query<br/>Trace ID Generated"]
+        
+        subgraph LAYERS["INSTRUMENTED LAYERS"]
+            direction LR
+            L1["L1: Storage"]
+            L3["L3: Semantic"]
+            L4["L4: RAG+LLM"]
+            L5["L5: Governance"]
+        end
+        
+        subgraph COLLECTION["COLLECTION"]
+            direction LR
+            OTEL["OpenTelemetry<br/>Distributed Tracing"]
+            LLM["LLM Cost Tracker<br/>$0.06/query avg"]
+        end
+        
+        DD["Datadog APM<br/>Dashboards & Alerts"]
+        Metrics["Metrics<br/>Latency, Quality, Cost"]
+    end
+    
+    Copyright["© 2025 Colaberry Inc."]
+    
+    Query --> LAYERS
+    LAYERS --> OTEL
+    L4 --> LLM
+    OTEL --> DD
+    LLM --> DD
+    DD --> Metrics
+    
+    style LAYER6 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style Query fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style LAYERS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L1 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L3 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L4 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L5 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style COLLECTION fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style OTEL fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style LLM fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style DD fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Metrics fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+
+```
+
+![Figure 6.7: Layer 6 Observability Architecture](figures/figure-6-7.png)
 ### Why Agents Need Observability
 
 Agents are black boxes by default. A user submits a query. An answer returns. What happened in between? Which documents were retrieved? Which model generated the response? How confident was the system? How much did it cost? Without observability, these questions have no answers.
@@ -392,8 +661,56 @@ The most frustrating gap appeared during the Week 6 accuracy regression. Respons
 Echo deployed OpenTelemetry instrumentation across all seven layers during Week 9, with Datadog APM providing visualization and alerting.
 
 **Figure 6.8: Echo's Seven-Layer Service Map**
-![Figure 6.8: Echo's Seven-Layer Service Map](figures/figure-6-8.png)
+```mermaid
 
+graph TB
+    subgraph ECHO["ECHO SERVICE MAP"]
+        direction TB
+        UI["Portal (4.2s)"]
+        L7["L7: Orchestrate (180ms)"]
+        
+        subgraph PARALLEL["PARALLEL PATHS"]
+            direction LR
+            subgraph TRUST["TRUST"]
+                direction TB
+                L6["L6: Observe<br/>12ms"]
+                L5["L5: Govern<br/>8ms"]
+            end
+            
+            subgraph INTEL["INTELLIGENCE → DATA"]
+                direction TB
+                L4["L4: RAG+LLM<br/>2.8s"]
+                L3["L3: Semantic<br/>340ms"]
+                L2["L2: Stream<br/>28ms"]
+                L1["L1: Store<br/>45ms"]
+                L4 --> L3 --> L2 --> L1
+            end
+        end
+    end
+    
+    Copyright["© 2025 Colaberry Inc."]
+    
+    UI --> L7
+    L7 --> L6
+    L7 --> L5
+    L7 --> L4
+    
+    style ECHO fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style PARALLEL fill:none,stroke:none
+    style TRUST fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style INTEL fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style UI fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style L7 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style L6 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L5 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L4 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L3 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L2 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L1 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+```
+
+![Figure 6.8: Echo's Seven-Layer Service Map](figures/figure-6-8.png)
 **© 2025-2026 Colaberry Inc.**
 
 The service map reveals latency distribution: Layer 4 (RAG + LLM) dominates at 2.8 seconds P95, representing 67% of total request time. This visibility enabled Echo to focus optimization on LLM generation rather than infrastructure layers.
@@ -461,8 +778,48 @@ Layer 7 is the orchestrator. It turns multiple agents into one coherent answer.
 
 **Figure 6.9: Layer 7 Orchestration Architecture**
 
-![Figure 6.9: Layer 7 Orchestration Architecture](figures/figure-6-9.png)
+```mermaid
 
+graph TB
+    subgraph LAYER7["LAYER 7: ORCHESTRATION"]
+        direction TB
+        Query["Multi-Domain Query<br/>Complex Care Request"]
+        Supervisor["Supervisor Agent<br/>LangGraph Coordinator"]
+        Intent{{"Intent Classification"}}
+        
+        subgraph AGENTS["SPECIALIZED AGENTS"]
+            direction LR
+            Care["Care Coordination<br/>Scheduling, Follow-up"]
+            Clinical["Clinical Documentation<br/>Records, Medications"]
+            Revenue["Revenue Cycle<br/>Insurance, Auth"]
+        end
+        
+        State["Shared State: Patient Context"]
+        Synthesis["Response Synthesis<br/>Unified Answer"]
+    end
+    
+    Copyright["© 2025 Colaberry Inc."]
+    
+    Query --> Supervisor --> Intent
+    Intent --> AGENTS
+    AGENTS <--> State
+    AGENTS --> Synthesis
+    
+    style LAYER7 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style Query fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style Supervisor fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Intent fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style AGENTS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Care fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Clinical fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Revenue fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style State fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Synthesis fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+
+```
+
+![Figure 6.9: Layer 7 Orchestration Architecture](figures/figure-6-9.png)
 ### Why Agents Need Orchestration
 
 Single-agent architectures work well for focused queries: "What is this patient's latest A1C?" routes to the clinical agent, retrieves the lab result, and returns an answer. But healthcare workflows rarely involve single domains. A discharge planning query: "prepare this patient for discharge" requires care coordination (scheduling follow-up appointments), clinical documentation (summarizing the stay and medications), and revenue cycle (verifying insurance coverage and authorizations). Three domains, three specialized knowledge bases, one coherent answer needed.
@@ -561,8 +918,46 @@ The orchestration layer activated. Intent classification identified three domain
 
 **Figure 6.10: Multi-Agent Query Flow - Maria Santos Discharge**
 
-![Figure 6.10: Multi-Agent Query Flow - Maria Santos Discharge](figures/figure-6-10.png)
+```mermaid
+graph TB
+    Query["<b>Discharge Query</b><br/><b>Schedule, Review, Verify</b>"]
+    
+    Supervisor["<b>Supervisor</b><br/><b>Routes to 3 Agents</b>"]
+    
+    subgraph "<b>PARALLEL EXECUTION (2.3s)</b>"
+        Care["<b>Care Agent</b><br/><b>Follow-up: Tue 10 AM</b><br/><b>PT Eval: Thu 2 PM</b>"]
+        Clinical["<b>Clinical Agent</b><br/><b>3 Medications</b><br/><b>No Interactions</b>"]
+        Revenue["<b>Revenue Agent</b><br/><b>UHC PPO Verified</b><br/><b>$45 Copay</b>"]
+    end
+    
+    State["<b>Shared State</b><br/><b>Patient: Maria Santos</b><br/><b>MRN: 78234156</b>"]
+    
+    Response["<b>Unified Response</b><br/><b>Complete Discharge Prep</b><br/><b>4.2 Seconds Total</b>"]
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    Query --> Supervisor
+    Supervisor --> Care
+    Supervisor --> Clinical
+    Supervisor --> Revenue
+    Care <--> State
+    Clinical <--> State
+    Revenue <--> State
+    Care --> Response
+    Clinical --> Response
+    Revenue --> Response
+    
+    style Query fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style Supervisor fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Care fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Clinical fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Revenue fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style State fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style Response fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+```
 
+![Figure 6.10: Multi-Agent Query Flow - Maria Santos Discharge](figures/figure-6-10.png)
 **Care Coordination Agent (2.1s):**
 - Scheduled follow-up: Orthopedics, Dr. Kim, next Tuesday 10:00 AM
 - Scheduled physical therapy evaluation: Thursday 2:00 PM
@@ -676,16 +1071,62 @@ Friday, 4:47 PM. The Maria Santos discharge query succeeded. Three agents. One r
 
 **Figure 6.11: Echo's Week 8-10 Timeline**
 
-![Figure 6.11: Echo's Week 8-10 Timeline](figures/figure-6-11.png)
+```mermaid
+gantt
+    title Echo's Transparency + Orchestration Build (Weeks 8-10)
+    dateFormat  MM-DD
+    
+    section Layer 5
+    OPA Policy Engine Deployment       :l5a, 02-24, 3d
+    ABAC Policy Design (247 rules)     :l5b, 02-24, 5d
+    HITL Workflow Implementation       :l5c, 02-27, 4d
+    Governance Testing                 :l5d, 03-03, 2d
+    
+    section Layer 6
+    OpenTelemetry Instrumentation      :l6a, 03-03, 3d
+    Datadog APM Integration            :l6b, 03-04, 3d
+    LLM Cost Tracking Dashboard        :l6c, 03-05, 2d
+    Warfarin HITL Success              :milestone, m1, 03-06, 0d
+    
+    section Layer 7
+    LangGraph Framework Setup          :l7a, 03-10, 2d
+    Care Coordination Agent            :l7b, 03-10, 4d
+    Clinical Documentation Agent       :l7c, 03-11, 3d
+    Revenue Cycle Agent                :l7d, 03-11, 3d
+    Multi-Agent Integration Testing    :l7e, 03-13, 2d
+    Architecture Complete              :milestone, m2, 03-14, 0d
+```
 
+![Figure 6.11: Echo's Week 8-10 Timeline](figures/figure-6-11.png)
 **© 2025-2026 Colaberry Inc.**
 
 ### INPACT™ Score: Week 7 → Week 10
 
 **Figure 6.12: INPACT™ Transformation (67 → 86)**
 
-![Figure 6.12: INPACT™ Transformation (67 → 86)](figures/figure-6-12.png)
+```mermaid
+graph LR
+    subgraph "<b>Week 7</b>"
+        W7["<b>TOTAL: 67/100</b>"]
+    end
+    
+    Arrow["<b>→</b><br/><b>+19 pts</b>"]
+    
+    subgraph "<b>Week 10</b>"
+        W10["<b>TOTAL: 86/100</b>"]
+    end
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    W7 --> Arrow --> W10
+    
+    style W7 fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style Arrow fill:#ffffff,stroke:none,color:#004d40
+    style W10 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+```
 
+![Figure 6.12: INPACT™ Transformation (67 → 86)](figures/figure-6-12.png)
 **INPACT™ Dimension Changes:**
 
 | Dimension | Week 7 | Week 10 | Change | Enabling Layer |
@@ -789,12 +1230,83 @@ Seventy days. Seven layers. From 28/100 to 86/100.
 
 **Figure 6.13: Complete 7-Layer Agent-Ready Architecture**
 
-![Figure 6.13: Complete 7-Layer Agent-Ready Architecture](figures/figure-6-13.png)
+```mermaid
+graph TB
+    subgraph "<b>COMPLETE ARCHITECTURE - WEEK 10</b>"
+        L7["<b>Layer 7: Orchestration</b><br/><b>✓ LangGraph Multi-Agent</b>"]
+        L6["<b>Layer 6: Observability</b><br/><b>✓ OpenTelemetry + Datadog</b>"]
+        L5["<b>Layer 5: Governance</b><br/><b>✓ OPA + ABAC + HITL</b>"]
+        L4["<b>Layer 4: Intelligence</b><br/><b>✓ RAG + LLM Pipeline</b>"]
+        L3["<b>Layer 3: Semantic</b><br/><b>✓ 2,400 Clinical Terms</b>"]
+        L2["<b>Layer 2: Real-Time</b><br/><b>✓ 28-Second Freshness</b>"]
+        L1["<b>Layer 1: Storage</b><br/><b>✓ 8 Storage Categories</b>"]
+    end
+    
+    INPACT["<b>INPACT™: 86/100</b><br/><b>Production Ready</b>"]
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    L7 --> L6 --> L5 --> L4 --> L3 --> L2 --> L1
+    L1 -.->|<b>Enables</b>| INPACT
+    
+    style L7 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style L6 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style L5 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style L4 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style L1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style INPACT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+```
 
+![Figure 6.13: Complete 7-Layer Agent-Ready Architecture](figures/figure-6-13.png)
 **Figure 6.14: The Architecture of Trust - Two Pillars Complete**
 
-![Figure 6.14: The Architecture of Trust - Two Pillars Complete](figures/figure-6-14.png)
+```mermaid
 
+graph TB
+    Title["ARCHITECTURE OF TRUST<br/>Three Integrated Pillars"]
+    
+    subgraph PILLARS[" "]
+        direction LR
+        INPACT["`PILLAR 1: INPACT™<br/><br/>What Agents Need?<br/><br/>**I**nstant<br/>**N**atural<br/>**P**ermitted<br/>**A**daptive<br/>**C**ontextual<br/>**T**ransparent`"]
+        
+        Layers["PILLAR 2: 7-LAYERS<br/>Infrastructure<br/><br/>How to Build TRUST?<br/><br/>Storage<br/>Real-Time<br/>Semantic<br/>Intelligence<br/>Governance<br/>Observability<br/>Orchestration"]
+        
+        GOALS["`PILLAR 3: GOALS™<br/><br/>How to Measure TRUST?<br/><br/>**G**overnance<br/>**O**bservability<br/>**A**vailability<br/>**L**exicon<br/>**S**olid`"]
+    end
+    
+    subgraph INDICATOR[" "]
+        direction LR
+        Spacer1[" "]
+        YouAreHere["<b>YOU ARE HERE</b><br/>Production Ready<br/>86/100 INPACT™<br/>$942K Investment<br/>70 Days <br/> 7-Layers Built Here"]
+        Spacer2[" "]
+    end
+    
+    Copyright["© 2025 Colaberry Inc."]
+    
+    Title --> PILLARS
+    PILLARS <--> INDICATOR
+    
+    INPACT -.->|"Needs Fulfilled by"| Layers
+    Layers -.->|"Enables Operations"| GOALS
+    GOALS -.->|"Drives Trust"| INPACT
+    
+    style Title fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style PILLARS fill:none,stroke:none
+    style INDICATOR fill:none,stroke:none
+    style INPACT fill:#f57c00,stroke:#e65100,stroke-width:3px,color:#ffffff
+    style Layers fill:#f57c00,stroke:#e65100,stroke-width:3px,color:#ffffff
+    style GOALS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Spacer1 fill:none,stroke:none,color:transparent
+    style YouAreHere fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style Spacer2 fill:none,stroke:none,color:transparent
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+
+```
+
+![Figure 6.14: The Architecture of Trust - Two Pillars Complete](figures/figure-6-14.png)
 ### What Echo Achieved
 
 The journey started with a simple question: Why do 95% of agent projects fail? The answer was TRUST. The infrastructure gap between what agents could theoretically do and what organizations could safely let them do.
