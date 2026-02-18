@@ -35,6 +35,7 @@ Fast and accurate isn't enough. Ungoverned AI is dangerous AI.
 
 **Figure 6.1: Transparency + Orchestration Layers - Why Layers 5-6-7 Complete Trust**
 
+<!--
 ```mermaid
 
 graph LR
@@ -63,6 +64,7 @@ graph LR
     style L1 fill:#b2dfdb,stroke:#00897b,color:#004d40
 
 ```
+-->
 
 ![Figure 6.1: Transparency + Orchestration Layers - Why Layers 5-6-7 Complete Trust](figures/figure-6-1.png)
 > **Key Takeaway:** Trust requires transparency. Layers 5-6-7 make AI verifiable.
@@ -84,6 +86,7 @@ These final three layers would complete the architecture.
 
 **Figure 6.2: The Architecture of Trust - Completing Pillar 2**
 
+<!--
 ```mermaid
 
 
@@ -133,6 +136,7 @@ graph TB
 
 
 ```
+-->
 
 ![Figure 6.2: The Architecture of Trust - Completing Pillar 2](figures/figure-6-2.png)
 ### Architectural Context
@@ -155,6 +159,7 @@ The three-week build timeline (Week 8 Governance, Week 9 Observability, Week 10 
 
 **Figure 6.3: 7-Layer Agent-Ready Architecture - Transparency + Orchestration Highlighted**
 
+<!--
 ```mermaid
 graph TB
     subgraph "<b>TRUST LAYERS (Ch 6)</b>"
@@ -186,6 +191,7 @@ graph TB
     style L1 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+-->
 
 ![Figure 6.3: 7-Layer Agent-Ready Architecture - Transparency + Orchestration Highlighted](figures/figure-6-3.png)
 ### The Remaining Gaps
@@ -298,6 +304,7 @@ This contextual evaluation requires four capabilities:
 
 **Figure 6.4: Layer 5 Governance Architecture**
 
+<!--
 ```mermaid
 
 graph TB
@@ -343,6 +350,7 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
+-->
 
 ![Figure 6.4: Layer 5 Governance Architecture](figures/figure-6-4.png)
 ### Why Agents Need Governance
@@ -394,6 +402,7 @@ Pattern selection depends on reversibility, urgency, and risk magnitude.
 
 **Figure 6.5: ABAC Four-Factor Authorization Model**
 
+<!--
 ```mermaid
 graph TB
     Query["<b>Agent Request</b><br/><b>Access Needed</b>"]
@@ -426,6 +435,7 @@ graph TB
     style Policy fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+-->
 
 ![Figure 6.5: ABAC Four-Factor Authorization Model](figures/figure-6-5.png)
 ### Echo's Gap Before Layer 5
@@ -473,6 +483,7 @@ Echo deployed Layer 5 across Week 8-9 with the following architecture:
 
 **Figure 6.6: HITL Escalation Patterns**
 
+<!--
 ```mermaid
 
 graph LR
@@ -508,6 +519,7 @@ graph LR
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
+-->
 
 ![Figure 6.6: HITL Escalation Patterns](figures/figure-6-6.png)
 ### The Warfarin Moment
@@ -572,6 +584,7 @@ This comprehensive visibility requires four capabilities:
 
 **Figure 6.7: Layer 6 Observability Architecture**
 
+<!--
 ```mermaid
 
 graph TB
@@ -621,6 +634,7 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
+-->
 
 ![Figure 6.7: Layer 6 Observability Architecture](figures/figure-6-7.png)
 ### Why Agents Need Observability
@@ -661,6 +675,7 @@ The most frustrating gap appeared during the Week 6 accuracy regression. Respons
 Echo deployed OpenTelemetry instrumentation across all seven layers during Week 9, with Datadog APM providing visualization and alerting.
 
 **Figure 6.8: Echo's Seven-Layer Service Map**
+<!--
 ```mermaid
 
 graph TB
@@ -709,6 +724,7 @@ graph TB
     style L1 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+-->
 
 ![Figure 6.8: Echo's Seven-Layer Service Map](figures/figure-6-8.png)
 **© 2025-2026 Colaberry Inc.**
@@ -778,6 +794,7 @@ Layer 7 is the orchestrator. It turns multiple agents into one coherent answer.
 
 **Figure 6.9: Layer 7 Orchestration Architecture**
 
+<!--
 ```mermaid
 
 graph TB
@@ -818,6 +835,7 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
+-->
 
 ![Figure 6.9: Layer 7 Orchestration Architecture](figures/figure-6-9.png)
 ### Why Agents Need Orchestration
@@ -918,6 +936,7 @@ The orchestration layer activated. Intent classification identified three domain
 
 **Figure 6.10: Multi-Agent Query Flow - Maria Santos Discharge**
 
+<!--
 ```mermaid
 graph TB
     Query["<b>Discharge Query</b><br/><b>Schedule, Review, Verify</b>"]
@@ -956,6 +975,7 @@ graph TB
     style Response fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+-->
 
 ![Figure 6.10: Multi-Agent Query Flow - Maria Santos Discharge](figures/figure-6-10.png)
 **Care Coordination Agent (2.1s):**
@@ -1071,6 +1091,7 @@ Friday, 4:47 PM. The Maria Santos discharge query succeeded. Three agents. One r
 
 **Figure 6.11: Echo's Week 8-10 Timeline**
 
+<!--
 ```mermaid
 gantt
     title Echo's Transparency + Orchestration Build (Weeks 8-10)
@@ -1096,6 +1117,7 @@ gantt
     Multi-Agent Integration Testing    :l7e, 03-13, 2d
     Architecture Complete              :milestone, m2, 03-14, 0d
 ```
+-->
 
 ![Figure 6.11: Echo's Week 8-10 Timeline](figures/figure-6-11.png)
 **© 2025-2026 Colaberry Inc.**
@@ -1104,6 +1126,7 @@ gantt
 
 **Figure 6.12: INPACT™ Transformation (67 → 86)**
 
+<!--
 ```mermaid
 graph LR
     subgraph "<b>Week 7</b>"
@@ -1125,6 +1148,7 @@ graph LR
     style W10 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+-->
 
 ![Figure 6.12: INPACT™ Transformation (67 → 86)](figures/figure-6-12.png)
 **INPACT™ Dimension Changes:**
@@ -1230,6 +1254,7 @@ Seventy days. Seven layers. From 28/100 to 86/100.
 
 **Figure 6.13: Complete 7-Layer Agent-Ready Architecture**
 
+<!--
 ```mermaid
 graph TB
     subgraph "<b>COMPLETE ARCHITECTURE - WEEK 10</b>"
@@ -1259,10 +1284,12 @@ graph TB
     style INPACT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+-->
 
 ![Figure 6.13: Complete 7-Layer Agent-Ready Architecture](figures/figure-6-13.png)
 **Figure 6.14: The Architecture of Trust - Two Pillars Complete**
 
+<!--
 ```mermaid
 
 graph TB
@@ -1305,6 +1332,7 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
+-->
 
 ![Figure 6.14: The Architecture of Trust - Two Pillars Complete](figures/figure-6-14.png)
 ### What Echo Achieved

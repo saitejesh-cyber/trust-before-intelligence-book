@@ -33,6 +33,7 @@ The demo exposed the gap: infrastructure could deliver data fast, but couldn't m
 
 **Figure 5.1: Intelligence Layers - Why Layers 3-4 Enable Understanding**
 
+<!--
 ```mermaid
 
 graph LR
@@ -63,6 +64,7 @@ graph LR
     %% © 2025 Colaberry Inc. All rights reserved.
 
 ```
+-->
 
 ![Figure 5.1: Intelligence Layers - Why Layers 3-4 Enable Understanding](figures/figure-5-1.png)
 > **Key Takeaway:** Intelligence requires understanding. Layers 3-4 give agents semantic awareness.
@@ -72,6 +74,7 @@ graph LR
 
 **Figure 5.2: The Architecture of Trust - Intelligence Layers Highlighted**
 
+<!--
 ```mermaid
 
 
@@ -118,6 +121,7 @@ graph TB
 
 
 ```
+-->
 
 ![Figure 5.2: The Architecture of Trust - Intelligence Layers Highlighted](figures/figure-5-2.png)
 ### Why Intelligence Matters
@@ -130,6 +134,7 @@ Foundation without intelligence is like having a well-stocked library with no ca
 
 **Figure 5.3: 7-Layer Agent-Ready Architecture - Intelligence Highlighted**
 
+<!--
 ```mermaid
 graph TB
     L7["<b>Layer 7: Orchestration</b><br/><b>Multi-Agent Coordination</b>"]
@@ -158,6 +163,7 @@ graph TB
     style L1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+-->
 
 ![Figure 5.3: 7-Layer Agent-Ready Architecture - Intelligence Highlighted](figures/figure-5-3.png)
 These intelligence layers directly address specific gaps from Chapter 3:
@@ -262,6 +268,7 @@ Swapna nodded to Jamie Rodriguez, who displayed the Phase 2 architecture diagram
 
 **Figure 5.4: Echo's Intelligence Challenge - Current State vs. Target State**
 
+<!--
 ```mermaid
 graph TB
     subgraph CURRENT["<b>CURRENT STATE (Week 4)</b>"]
@@ -289,6 +296,7 @@ graph TB
     style T_WIN fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+-->
 
 ![Figure 5.4: Echo's Intelligence Challenge - Current State vs. Target State](figures/figure-5-4.png)
 "Three weeks," Swapna said. "Week 5: Layer 3 semantic infrastructure. Business glossary with 2,400 clinical terms, entity resolution across all provider and patient systems, clinical concept mapping to SNOMED, ICD-10, and LOINC.[3][4][5]. 
@@ -323,6 +331,7 @@ The semantic layer translates human language to data structures.[1] When a care 
 
 **Figure 5.5: Layer 3 -Semantic Layer Architecture**
 
+<!--
 ```mermaid
 flowchart TB
     NL["<b>Natural Language</b><br/>'High-risk diabetic patients'"]
@@ -361,6 +370,7 @@ flowchart TB
     style RESULT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+-->
 
 ![Figure 5.5: Layer 3 -Semantic Layer Architecture](figures/figure-5-5.png)
 ### Components of the Semantic Layer
@@ -426,6 +436,7 @@ The difference is transformational. Research benchmarks show that direct natural
 
 **Figure 5.6: Before/After - Keyword Search vs. Semantic Search**
 
+<!--
 ```mermaid
 graph TB
     subgraph KEYWORD["<b>KEYWORD SEARCH<br/> (Before Layer 3)</b>"]
@@ -472,6 +483,7 @@ graph TB
     style S_RESULT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+-->
 
 ![Figure 5.6: Before/After - Keyword Search vs. Semantic Search](figures/figure-5-6.png)
 ### Key Technologies
@@ -570,6 +582,7 @@ Layer 4 is the complete intelligence pipeline system that transforms user querie
 
 **Figure 5.7: Layer 4 - Complete Intelligence Pipeline**
 
+<!--
 ```mermaid
 graph TB
     Q["<b>User Query</b><br/>'High-risk diabetic patients'"]
@@ -609,6 +622,7 @@ graph TB
     style RESULT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+-->
 
 ![Figure 5.7: Layer 4 - Complete Intelligence Pipeline](figures/figure-5-7.png)
 ### Why Agents Need RAG
@@ -639,6 +653,7 @@ Single-strategy retrieval misses relevant results. Vector search excels at seman
 
 **Figure 5.8: Hybrid Retrieval Architecture**
 
+<!--
 ```mermaid
 graph LR
     TITLE["<b>Stage 3: Hybrid Retrieval</b>"]
@@ -676,6 +691,7 @@ graph LR
     style OUT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+-->
 
 ![Figure 5.8: Hybrid Retrieval Architecture](figures/figure-5-8.png)
 **Vector Database Selection:**
@@ -742,6 +758,7 @@ Healthcare requires different LLM capabilities for different tasks. Echo impleme
 
 **Figure 5.9: Multi-LLM Router Architecture**
 
+<!--
 ```mermaid
 graph TB
     TITLE["<b>Multi-LLM Router</b>"]
@@ -779,6 +796,7 @@ graph TB
     style OUT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+-->
 
 ![Figure 5.9: Multi-LLM Router Architecture](figures/figure-5-9.png)
 **Routing Logic:**
@@ -804,6 +822,7 @@ Similar queries should not incur redundant LLM costs. Semantic caching stores re
 
 **Figure 5.10: Semantic Cache Architecture**
 
+<!--
 ```mermaid
 graph TB
     QUERY["<b>Incoming Query</b><br/>'High-risk diabetic patients'"]
@@ -843,6 +862,7 @@ graph TB
     style INVALIDATE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+-->
 
 ![Figure 5.10: Semantic Cache Architecture](figures/figure-5-10.png)
 **Level 1: Exact Match (Redis):** Character-for-character matches hit instantly. TTL (Time To Live)[18]: 1 hour. Hit rate: ~15%.
@@ -1096,6 +1116,7 @@ The room was silent for a moment. Then applause.
 
 **Figure 5.11: Echo's Week 5-7 Timeline**
 
+<!--
 ```mermaid
 gantt
     title Echo's Intelligence Build (Weeks 5-7)
@@ -1123,12 +1144,14 @@ gantt
     Semantic Cache Activation         :done, w7c, 02-19, 1d
     First Intelligent Query           :milestone, m1, 02-20, 0d
 ```
+-->
 
 ![Figure 5.11: Echo's Week 5-7 Timeline](figures/figure-5-11.png)
 ### INPACT™ Score: Week 4 → Week 7
 
 **Figure 5.12: INPACT™ Transformation (42 → 67)**
 
+<!--
 ```mermaid
 graph LR
     subgraph "<b>Week 4:Foundation Layer</b>"
@@ -1151,6 +1174,7 @@ graph LR
     style W7_TOTAL fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+-->
 
 ![Figure 5.12: INPACT™ Transformation (42 → 67)](figures/figure-5-12.png)
 | Dimension | Week 4 | Week 7 | Change | Driver |
@@ -1187,6 +1211,7 @@ Krish made a note. "Phase 3 has the same $380,000 allocation. Apply the lesson."
 
 **Figure 5.13: Complete Intelligence Architecture - Layers 3-4**
 
+<!--
 ```mermaid
 graph TB
     USER["<b>User Query</b><br/>'Find high-risk diabetic patients'"]
@@ -1221,6 +1246,7 @@ graph TB
     style RESPONSE fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+-->
 
 ![Figure 5.13: Complete Intelligence Architecture - Layers 3-4](figures/figure-5-13.png)
 ### Results

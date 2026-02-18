@@ -12,6 +12,7 @@ Dr. Arun Raj didn't raise his voice. He didn't need to. The Echo Health board ch
 
 **Figure 0.0: Echo Health Transformation - From Failed Pilots to Production Success**
 
+<!--
 ```mermaid
 
 graph LR
@@ -43,6 +44,7 @@ graph LR
     style Copyright fill:#ffffff,stroke:none,color:#666666
     
 ```
+-->
 
 ![Figure 0.0: Echo Health Transformation - From Failed Pilots to Production Success](figures/figure-0-0.png)
 ## The Crisis: When $40 Billion Can't Buy Trust
@@ -162,6 +164,7 @@ Everything Echo built served human decision-makers beautifully. Data warehouses 
 
 The paradigm had shifted beneath them.
 
+<!--
 ```mermaid
 
 graph LR
@@ -193,6 +196,7 @@ graph LR
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
+-->
 
 ![Diagram](figures/01_chapter_0_trust_before_intelligence-diagram-02.png)
 **Figure 0.1: The Infrastructure Paradigm Shift - From Human-Era BI to Agent-Era Architecture**
@@ -227,6 +231,7 @@ Six needs. All six must be fulfilled for agents to earn trust. When any single n
 
 Chapter 2 details each INPACT™ dimension and shows how to assess your own infrastructure against them.
 
+<!--
 ```mermaid
 graph TB
     subgraph HITL["<b>6 INPACT™ Agent Needs</b>"]
@@ -259,6 +264,7 @@ graph TB
     style Trust fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
+-->
 
 ![Diagram](figures/01_chapter_0_trust_before_intelligence-diagram-03.png)
 **Figure 0.2: INPACT™ Framework - Six Agent Needs Leading to Trust**
@@ -313,6 +319,7 @@ This integration creates what we call "The Architecture of Trust" - not three se
 
 - **GOALS™ → INPACT™:** Measurement validates trust. Governance (G) confirms Permitted (P) fulfillment. Observability (O) validates Transparent (T) compliance.
 
+<!--
 ```mermaid
 
 graph TB
@@ -343,6 +350,7 @@ graph TB
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
+-->
 
 ![Diagram](figures/01_chapter_0_trust_before_intelligence-diagram-04.png)
 **Figure 0.3: The Architecture of Trust Triad - Three Pillars Working Together**
