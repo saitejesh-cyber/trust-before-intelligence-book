@@ -35,7 +35,7 @@ Sarah pulled up the architecture diagram. "Let me show you what we're building."
 
 **Figure 4.0: Foundation Layers - Why Layers 1-2 Are Prerequisites**
 
-![Figure 4.0: Foundation Layers - Why Layers 1-2 Are Prerequisites](../assets/figures/figure-4-0.png)
+![Figure 4.0: Foundation Layers - Why Layers 1-2 Are Prerequisites](figures/figure-4-0.png)
 
 > **Key Takeaway:** Foundation first. Without Layers 1-2, nothing else works.
 
@@ -51,7 +51,7 @@ Sarah pulled up the architecture diagram. "Let me show you what we're building."
 
 **Figure 4.1: The Architecture of Trust - Three Integrated Pillars**
 
-![Figure 4.1: The Architecture of Trust - Three Integrated Pillars](../assets/figures/figure-4-1.png)
+![Figure 4.1: The Architecture of Trust - Three Integrated Pillars](figures/figure-4-1.png)
 
 ### Why Foundation Matters
 
@@ -65,7 +65,7 @@ Foundation equals data availability and accessibility. Before agents can underst
 
 **Figure 4.2: 7-Layer Agent-Ready Architecture - Foundation Highlighted**
 
-![Figure 4.2: 7-Layer Agent-Ready Architecture - Foundation Highlighted](../assets/figures/figure-4-2.png)
+![Figure 4.2: 7-Layer Agent-Ready Architecture - Foundation Highlighted](figures/figure-4-2.png)
 
 These foundation layers directly address specific gaps from Chapter 3:
 
@@ -183,7 +183,7 @@ Swapna pulled up the pipeline diagram. "Overnight batch. Operational databases, 
 
 **Figure 4.3: Batch ETL Creates Patient Safety Risk**
 
-![Figure 4.3: Batch ETL Creates Patient Safety Risk](../assets/figures/figure-4-3.png)
+![Figure 4.3: Batch ETL Creates Patient Safety Risk](figures/figure-4-3.png)
 
 "Concrete example," Sarah requested.
 
@@ -270,7 +270,7 @@ Layer 1 provides eleven distinct storage categories, each optimized for specific
 
 **Figure 4.4: Layer 1 Multi-Modal Storage - 11 Categories by Function**
 
-![Figure 4.4: Layer 1 Multi-Modal Storage - 11 Categories by Function](../assets/figures/figure-4-4.png)
+![Figure 4.4: Layer 1 Multi-Modal Storage - 11 Categories by Function](figures/figure-4-4.png)
 
 Traditional BI infrastructure assumes one or two storage types handle everything. Usually a relational database for operational data and a data warehouse for analytics. This works for reporting but fails for agents. Agents need semantic search across patient records, relationship traversal through provider networks, flexible schema for clinical notes, petabyte-scale training data, sub-second response times, ML artifact versioning, feature reuse across models, continuous time-series data from ICU monitors, and unified ML pipelines with ACID transactions.
 
@@ -469,7 +469,7 @@ No single storage technology handles all these patterns efficiently. Multi-modal
 Echo started with SQL Server only. Here's what failed:
 
 **Figure 4.5: Echo's Storage Transformation - Single-Modal to Multi-Modal**
-![Figure 4.5: Echo's Storage Transformation - Single-Modal to Multi-Modal](../assets/figures/figure-4-5.png)
+![Figure 4.5: Echo's Storage Transformation - Single-Modal to Multi-Modal](figures/figure-4-5.png)
 
 **Cache layer:** Critical for performance. Every agent query hit the database directly, no caching tier. Repeated queries for the same patient, same provider, same schedule data hammered SQL Server unnecessarily. Peak load saw 12,000 identical queries per hour. Redis MemoryDB provides sub-10ms response for cached results, reducing database load by 60% and enabling the response times agents require.
 
@@ -515,7 +515,7 @@ Layer 2 provides sub-30 second data freshness through change data capture (CDC),
 
 **Figure 4.6: Layer 2 Real-Time Data Fabric - CDC to Agents**
 
-![Figure 4.6: Layer 2 Real-Time Data Fabric - CDC to Agents](../assets/figures/figure-4-6.png)
+![Figure 4.6: Layer 2 Real-Time Data Fabric - CDC to Agents](figures/figure-4-6.png)
 
 Traditional BI refreshes overnight (2 AM ETL). Agents querying at 3 PM see data 13 hours stale. For clinical decision support, this creates patient safety risks. Medication orders placed at 10 AM won't trigger drug interaction alerts until midnight.
 
@@ -523,7 +523,7 @@ Layer 2 solves this with three integrated components:
 
 ### Component 1: Change Data Capture (CDC)
 
-**What:** Debezium CDC connectors monitoring operational databases for INSERT, UPDATE, DELETE operations. *Alternatives: AWS DMS, Oracle GoldenGate, Airbyte.*
+**What:** Debezium CDC connectors monitoring operational databases for INSERT, UPDATE, DELETE operations. *Alternatives: AWS DMS, Oracle GoldenGate, Airbyte.* CDC connectors capture changes from the databases underlying enterprise systems: Oracle (supporting Oracle EBS, PeopleSoft), SQL Server (supporting Dynamics), DB2 and mainframe databases, MySQL, and PostgreSQL. For SaaS applications (Salesforce, Workday, NetSuite), Layer 2 uses API-based connectors rather than CDC. The principle is universal: capture changes at the source, stream to agent-optimized storage.
 
 **Why:** CDC captures database changes within milliseconds without impacting operational system performance. Reads database transaction logs (binlog for MySQL, Write-Ahead Log for PostgreSQL, Change Tracking for SQL Server) with no additional load on production databases.
 
@@ -597,7 +597,7 @@ workday.providers.credentials
 
 **Figure 4.7: Real-Time Inference vs. Batch Training Paths**
 
-![Figure 4.7: Real-Time Inference vs. Batch Training Paths](../assets/figures/figure-4-7.png)
+![Figure 4.7: Real-Time Inference vs. Batch Training Paths](figures/figure-4-7.png)
 
 **Critical distinction:** Agent inference requires real-time data (<30 second lag). Model training tolerates batch data (overnight ETL acceptable). Layer 2 serves both needs:
 
@@ -649,7 +649,7 @@ workday.providers.credentials
 
 **Figure 4.8: Echo's Week 1-4 Foundation Build Timeline**
 
-![Figure 4.8: Echo's Week 1-4 Foundation Build Timeline](../assets/figures/figure-4-8.png)
+![Figure 4.8: Echo's Week 1-4 Foundation Build Timeline](figures/figure-4-8.png)
 
 *© 2025-2026 Colaberry Inc.*
 
@@ -661,7 +661,7 @@ workday.providers.credentials
 
 **Figure 4.9: INPACT™ Transformation (28 → 42)**
 
-![Figure 4.9: INPACT™ Transformation (28 → 42)](../assets/figures/figure-4-9.png)
+![Figure 4.9: INPACT™ Transformation (28 → 42)](figures/figure-4-9.png)
 
 *© 2025-2026 Colaberry Inc.*
 
@@ -734,7 +734,7 @@ Medical director's reaction: "This is why we're building agents. Not to replace 
 
 **Figure 4.10: Foundation Impact - Week 0 to Week 4**
 
-![Figure 4.10: Foundation Impact - Week 0 to Week 4](../assets/figures/figure-4-10.png)
+![Figure 4.10: Foundation Impact - Week 0 to Week 4](figures/figure-4-10.png)
 
 The foundation layers delivered a 14-point INPACT improvement (28% to 42%), with gains in Instant (+3), Adaptive (+1), and Contextual (+1). See Part 1 for the complete dimension breakdown.
 

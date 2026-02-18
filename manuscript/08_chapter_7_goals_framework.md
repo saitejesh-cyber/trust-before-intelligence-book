@@ -31,7 +31,7 @@ Built isn't enough. Operational excellence is what sustains trust.
 
 **Figure 7.1: GOALS™ Framework - From Build Complete to Operate Continuously**
 
-![Figure 7.1: GOALS™ Framework - From Build Complete to Operate Continuously](../assets/figures/figure-7-1.png)
+![Figure 7.1: GOALS™ Framework - From Build Complete to Operate Continuously](figures/figure-7-1.png)
 
 > **Key Takeaway:** *"Building is a 90-day project. Operating is forever."* - Dr. Arun Raj
 
@@ -99,7 +99,7 @@ Sarah nodded. The construction metaphor made sense. They'd built a hospital. Now
 
 **Figure 7.2: The Architecture of Trust-Three Integrated Pillars**
 
-![Figure 7.2: The Architecture of Trust-Three Integrated Pillars](../assets/figures/figure-7-2.png)
+![Figure 7.2: The Architecture of Trust-Three Integrated Pillars](figures/figure-7-2.png)
 
 | Pillar | Framework | Purpose | When Applied |
 |--------|-----------|---------|--------------|
@@ -206,7 +206,7 @@ Sarah gathered her extended team in the large conference room. Marcus Williams, 
 
 **Figure 7.3: Echo's 90-Day Journey-Architecture Complete**
 
-![Figure 7.3: Echo's 90-Day Journey-Architecture Complete](../assets/figures/figure-7-3.png)
+![Figure 7.3: Echo's 90-Day Journey-Architecture Complete](figures/figure-7-3.png)
 
 Nods around the room. Tired but satisfied faces.
 
@@ -257,7 +257,7 @@ He pulled up a validation chart. "Colaberry's research is clear: proficiency acr
 
 **Figure 7.4: Echo's GOALS Health Dashboard (Week 10 Baseline)**
 
-![Figure 7.4: Echo's GOALS Health Dashboard (Week 10 Baseline)](../assets/figures/figure-7-4.png)
+![Figure 7.4: Echo's GOALS Health Dashboard (Week 10 Baseline)](figures/figure-7-4.png)
 
 | GOAL | Current | Target | Gap | Priority |
 |------|---------|--------|-----|----------|
@@ -312,7 +312,7 @@ These five dimensions enable policies that are dynamically evaluated in real-tim
 
 **Figure 7.5: RBAC vs ABAC Authorization Flow**
 
-![Figure 7.5: RBAC vs ABAC Authorization Flow](../assets/figures/figure-7-5.png)
+![Figure 7.5: RBAC vs ABAC Authorization Flow](figures/figure-7-5.png)
 
 ### The Authentication Challenge
 
@@ -348,7 +348,7 @@ The art is positioning decisions correctly on this spectrum. Too much autonomy c
 
 **Figure 7.6: Human-in-the-Loop Autonomy Spectrum**
 
-![Figure 7.6: Human-in-the-Loop Autonomy Spectrum](../assets/figures/figure-7-6.png)
+![Figure 7.6: Human-in-the-Loop Autonomy Spectrum](figures/figure-7-6.png)
 
 **Echo Health's HITL Decision Matrix:**
 
@@ -488,7 +488,7 @@ This enables root cause analysis impossible with infrastructure metrics alone.
 
 **Figure 7.7: End-to-End Observability with Trace IDs (All 7 Layers)**
 
-![Figure 7.7: End-to-End Observability with Trace IDs (All 7 Layers)](../assets/figures/figure-7-7.png)
+![Figure 7.7: End-to-End Observability with Trace IDs (All 7 Layers)](figures/figure-7-7.png)
 
 **Echo's Observability Improvement Targets:**
 
@@ -517,7 +517,7 @@ EU AI Act Article 13 requires transparency for high-risk AI systems, which inclu
 
 **Figure 7.8: Output Quality Validation Metrics**
 
-![Figure 7.8: Output Quality Validation Metrics](../assets/figures/figure-7-8.png)
+![Figure 7.8: Output Quality Validation Metrics](figures/figure-7-8.png)
 
 ### Measuring Observability
 
@@ -679,7 +679,7 @@ This hierarchy explains why the vast majority of queries return in under 2 secon
 
 **Figure 7.9: Multi-Level Caching Strategy for Sub-2-Second Performance**
 
-![Figure 7.9: Multi-Level Caching Strategy for Sub-2-Second Performance](../assets/figures/figure-7-9.png)
+![Figure 7.9: Multi-Level Caching Strategy for Sub-2-Second Performance](figures/figure-7-9.png)
 
 The caching hierarchy explains why Echo achieved sub-2-second response times for 97% of queries, critical for user adoption.
 
@@ -746,7 +746,7 @@ Entity resolution failure is particularly dangerous. According to RAND Corporati
 
 **Figure 7.10: Natural Language → Data Operation Pipeline**
 
-![Figure 7.10: Natural Language → Data Operation Pipeline](../assets/figures/figure-7-10.png)
+![Figure 7.10: Natural Language → Data Operation Pipeline](figures/figure-7-10.png)
 
 ### The Multi-Agent Challenge
 
@@ -936,7 +936,7 @@ Echo validates all five dimensions at a central gate in the data pipeline. Data 
 
 **Figure 7.11: The Quality Gate Architecture**
 
-![Figure 7.11: The Quality Gate Architecture](../assets/figures/figure-7-11.png)
+![Figure 7.11: The Quality Gate Architecture](figures/figure-7-11.png)
 
 "Each dimension catches different failure modes," Marcus explained. "Anomaly detection using ML monitors all five continuously. Data that fails any dimension goes to quarantine, triggers a ticket, and gets fixed at source before re-entering the pipeline."
 
@@ -963,7 +963,7 @@ The most dangerous cascade is **S→L→G**: bad data gets cached in the semanti
 
 **Figure 7.12: GOALS Interdependencies**
 
-![Figure 7.12: GOALS Interdependencies](../assets/figures/figure-7-12.png)
+![Figure 7.12: GOALS Interdependencies](figures/figure-7-12.png)
 
 ### The Trust Flywheel
 
@@ -973,7 +973,7 @@ He drew a circular arrows connecting all three pillars:
 
 **Figure 7.13: The Trust Flywheel-Three Pillars in Motion**
 
-![Figure 7.13: The Trust Flywheel-Three Pillars in Motion](../assets/figures/figure-7-13.png)
+![Figure 7.13: The Trust Flywheel-Three Pillars in Motion](figures/figure-7-13.png)
 
 "GOALS™ measurements reveal whether INPACT™ needs are truly being met," Marcus explained. "When Lexicon scores drop, it signals the Natural (N) need is degrading. When Availability drops, Instant (I) is at risk. This feedback drives architecture improvements: which layers need attention, what upgrades are needed."
 
@@ -1074,7 +1074,7 @@ Sarah summarized the path forward. "We need to move from 15/25 to 21/25 in the n
 | S | 4 | Maintain-fix cross-system consistency for PCP data |
 
 **Figure 7.14: GOALS™ Healthcare Threshold**
-![Figure 7.14: GOALS™ Healthcare Threshold](../assets/figures/figure-7-14.png)
+![Figure 7.14: GOALS™ Healthcare Threshold](figures/figure-7-14.png)
 
 "When we present to the board at Week 12," Sarah said, "we won't just show them what we built. We'll show them how we're operating it. We'll show them GOALS™ health at 21+. We'll answer Dr. Raj's question: *This is how we know it stays trustworthy.*"
 

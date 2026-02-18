@@ -53,7 +53,7 @@ This $650,000 failure was just the beginning.
 
 **Figure 1.0: The Infrastructure Gap - Why Human-Era Systems Can't Support AI Agents**
 
-![Figure 1.0: The Infrastructure Gap - Why Human-Era Systems Can't Support AI Agents](../assets/figures/figure-1-0.png)
+![Figure 1.0: The Infrastructure Gap - Why Human-Era Systems Can't Support AI Agents](figures/figure-1-0.png)
 
 > **Key Takeaway:** The infrastructure gap IS the trust gap. Human-era systems cannot fulfill AI Agent needs.
 
@@ -105,7 +105,7 @@ The data is stark:
 
 **Figure 1.1: Trust Collapse Timeline (February-July 2025)**
 
-![Figure 1.1: Trust Collapse Timeline (February-July 2025)](../assets/figures/figure-1-1.png)
+![Figure 1.1: Trust Collapse Timeline (February-July 2025)](figures/figure-1-1.png)
 
 *Source: Deloitte TrustID® Workforce AI Report Q3 2025. Trust levels tracked monthly Feb-July 2025, showing accelerated decline for agentic AI (autonomous decision-making) vs general GenAI (human-supervised generation).*
 
@@ -335,7 +335,7 @@ The enterprise challenge: attempting to run Software 3.0 agents on unaugmented S
 
 **Figure 1.2: Software Evolution and INPACT™ Needs**
 
-![Figure 1.2: Software Evolution and INPACT™ Needs](../assets/figures/figure-1-2.png)
+![Figure 1.2: Software Evolution and INPACT™ Needs](figures/figure-1-2.png)
 
 Karpathy's framework shows why Software 3.0 requires fundamentally new infrastructure. **Each paradigm demands different architectural foundations because the operational requirements shifted from human-mediated to agent-autonomous. INPACT™ defines those new requirements.**[9]
 
@@ -365,7 +365,7 @@ When enterprises attempt agent deployments on BI-era infrastructure, critical mi
 
 **Figure 1.3: INPACT™ Need Failures Drive 95% Failure Rate**
 
-![Figure 1.3: INPACT™ Need Failures Drive 95% Failure Rate](../assets/figures/figure-1-3.png)
+![Figure 1.3: INPACT™ Need Failures Drive 95% Failure Rate](figures/figure-1-3.png)
 
 Most enterprises attempt to deploy Software 3.0 agents on unaugmented Software 1.0 infrastructure, creating the INPACT™ gap that drives the 95% pilot failure rate. The solution isn't replacing existing systems, it's augmenting them with agent-ready layers.
 
@@ -404,7 +404,7 @@ This isn't about replacing data warehouses or abandoning BI dashboards. It's abo
 
 **Figure 1.4: Human Era vs INPACT™Ready Agent Era**
 
-![Figure 1.4: Human Era vs INPACT™Ready Agent Era](../assets/figures/figure-1-4.png)
+![Figure 1.4: Human Era vs INPACT™Ready Agent Era](figures/figure-1-4.png)
 
 **INPACT™ Need Fulfillment: BI Era vs Agent Era**
 
@@ -429,7 +429,7 @@ After the board meeting, Sarah Cedao sat in her office reviewing the forensic an
 
 **Figure 1.5: Echo's Three Failing Pilots - The $2M Wake-Up Call**
 
-![Figure 1.5: Echo's Three Failing Pilots - The $2M Wake-Up Call](../assets/figures/figure-1-5.png)
+![Figure 1.5: Echo's Three Failing Pilots - The $2M Wake-Up Call](figures/figure-1-5.png)
 
 The visual pattern was unmistakable: three independent failures, three different vendors, but one systematic cause - infrastructure's inability to fulfill INPACT™ needs across all six dimensions. Each pilot's detailed analysis would reveal the specific need failures that drove abandonment.
 

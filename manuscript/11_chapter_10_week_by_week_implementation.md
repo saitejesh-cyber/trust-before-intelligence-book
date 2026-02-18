@@ -22,7 +22,7 @@ This chapter is that presentation.
 
 **Figure 10.1: Roadmap Value: From Ad-Hoc to Structured**
 
-![Figure 10.1: Roadmap Value: From Ad-Hoc to Structured](../assets/figures/figure-10-1.png)
+![Figure 10.1: Roadmap Value: From Ad-Hoc to Structured](figures/figure-10-1.png)
 
 > **Key Takeaway:** Ninety days from assessment to production. Week-by-week structure eliminates guesswork.
 
@@ -115,7 +115,7 @@ The transformation follows four distinct phases, each building on the previous. 
 
 **Figure 10.2: The 90-Day Four-Phase Roadmap**
 
-![Figure 10.2: The 90-Day Four-Phase Roadmap](../assets/figures/figure-10-2.png)
+![Figure 10.2: The 90-Day Four-Phase Roadmap](figures/figure-10-2.png)
 
 ---
 
@@ -125,7 +125,7 @@ The transformation follows four distinct phases, each building on the previous. 
 
 **Figure 10.3: Foundation Layer Stack**
 
-![Figure 10.3: Foundation Layer Stack](../assets/figures/figure-10-3.png)
+![Figure 10.3: Foundation Layer Stack](figures/figure-10-3.png)
 
 | Attribute | Detail |
 |-----------|--------|
@@ -171,7 +171,7 @@ For Layer 1 and Layer 2 technology details, see Chapter 4. For vendor selection 
 
 **Figure 10.4: Intelligence Layer Stack**
 
-![Figure 10.4: Intelligence Layer Stack](../assets/figures/figure-10-4.png)
+![Figure 10.4: Intelligence Layer Stack](figures/figure-10-4.png)
 
 *For RAG pipeline architecture details, see Chapter 5, Figure 5.7: Layer 4 - Complete Intelligence Pipeline.*
 
@@ -219,7 +219,7 @@ For Layer 3 and Layer 4 technology details, see Chapter 5. For vendor selection 
 
 **Figure 10.5: Trust Layer Stack**
 
-![Figure 10.5: Trust Layer Stack](../assets/figures/figure-10-5.png)
+![Figure 10.5: Trust Layer Stack](figures/figure-10-5.png)
 
 | Attribute | Detail |
 |-----------|--------|
@@ -473,7 +473,7 @@ Larger organizations require more stakeholder alignment, broader testing, and ph
 
 **Figure 10.6: Risk Escalation Framework**
 
-![Figure 10.6: Risk Escalation Framework](../assets/figures/figure-10-6.png)
+![Figure 10.6: Risk Escalation Framework](figures/figure-10-6.png)
 
 ### Phase Gate Checkpoints
 
@@ -522,7 +522,7 @@ The weekly health check discipline catches issues before they become blockers.
 
 **Figure 10.7: Eight-Tab Tracker System**
 
-![Figure 10.7: Eight-Tab Tracker System](../assets/figures/figure-10-7.png)
+![Figure 10.7: Eight-Tab Tracker System](figures/figure-10-7.png)
 
 ### How the Tabs Work Together
 

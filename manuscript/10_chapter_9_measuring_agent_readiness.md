@@ -30,7 +30,7 @@ This chapter is what they wrote down.
 
 **Figure 9.1: Assessment Value, From Confusion to Clarity**
 
-![Figure 9.1: Assessment Value, From Confusion to Clarity](../assets/figures/figure-9-1.png)
+![Figure 9.1: Assessment Value, From Confusion to Clarity](figures/figure-9-1.png)
 
 > **Key Takeaway:** One assessment. Six dimensions. Complete clarity on where to invest.
 
@@ -57,7 +57,7 @@ These three frameworks form a chain of dependency. INPACT™ requirements drive 
 
 **Figure 9.2: Architecture of Trust Assessment Flow**
 
-![Figure 9.2: Architecture of Trust Assessment Flow](../assets/figures/figure-9-2.png)
+![Figure 9.2: Architecture of Trust Assessment Flow](figures/figure-9-2.png)
 
 The integration principle is simple: **if you assess INPACT™ comprehensively, you've assessed everything.**
 
@@ -116,7 +116,7 @@ Raw scores translate into five trust bands that indicate agent readiness:
 
 **Figure 9.3: The Five Trust Bands**
 
-![Figure 9.3: The Five Trust Bands](../assets/figures/figure-9-3.png)
+![Figure 9.3: The Five Trust Bands](figures/figure-9-3.png)
 
 | Raw Score | Percentage | Trust Band | Agent Readiness |
 |-----------|------------|------------|-----------------|
@@ -138,7 +138,7 @@ INPACT™ covers the full architecture. Each dimension doesn't exist in isolatio
 
 **Figure 9.4: INPACT™ Dimension to Layer Mapping**
 
-![Figure 9.4: INPACT™ Dimension to Layer Mapping](../assets/figures/figure-9-4.png)
+![Figure 9.4: INPACT™ Dimension to Layer Mapping](figures/figure-9-4.png)
 
 **Coverage Verification**: This mapping touches all seven layers. L7 (Orchestration) emerges when multiple dimensions reach production thresholds simultaneously. When you discover a low score in a particular dimension, you immediately know which layers require investment.
 
@@ -303,7 +303,7 @@ Echo's progression from 28/100 to 89/100 followed a deliberate sequence. Each ph
 
 **Figure 9.5: Echo's 90-Day INPACT™ Transformation**
 
-![Figure 9.5: Echo's 90-Day INPACT™ Transformation](../assets/figures/figure-9-5.png)
+![Figure 9.5: Echo's 90-Day INPACT™ Transformation](figures/figure-9-5.png)
 
 **Echo's INPACT™ Progression: Milestone View**
 
@@ -408,7 +408,7 @@ Regardless of your overall score, your lowest-scoring dimensions reveal which la
 
 **Figure 9.6: Gap-to-Phase Prioritization Flow**
 
-![Figure 9.6: Gap-to-Phase Prioritization Flow](../assets/figures/figure-9-6.png)
+![Figure 9.6: Gap-to-Phase Prioritization Flow](figures/figure-9-6.png)
 
 **Gap Prioritization Matrix**
 

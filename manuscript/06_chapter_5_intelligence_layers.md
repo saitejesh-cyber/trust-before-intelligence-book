@@ -33,7 +33,7 @@ The demo exposed the gap: infrastructure could deliver data fast, but couldn't m
 
 **Figure 5.1: Intelligence Layers - Why Layers 3-4 Enable Understanding**
 
-![Figure 5.1: Intelligence Layers - Why Layers 3-4 Enable Understanding](../assets/figures/figure-5-1.png)
+![Figure 5.1: Intelligence Layers - Why Layers 3-4 Enable Understanding](figures/figure-5-1.png)
 
 > **Key Takeaway:** Intelligence requires understanding. Layers 3-4 give agents semantic awareness.
 
@@ -42,7 +42,7 @@ The demo exposed the gap: infrastructure could deliver data fast, but couldn't m
 
 **Figure 5.2: The Architecture of Trust - Intelligence Layers Highlighted**
 
-![Figure 5.2: The Architecture of Trust - Intelligence Layers Highlighted](../assets/figures/figure-5-2.png)
+![Figure 5.2: The Architecture of Trust - Intelligence Layers Highlighted](figures/figure-5-2.png)
 
 ### Why Intelligence Matters
 
@@ -54,7 +54,7 @@ Foundation without intelligence is like having a well-stocked library with no ca
 
 **Figure 5.3: 7-Layer Agent-Ready Architecture - Intelligence Highlighted**
 
-![Figure 5.3: 7-Layer Agent-Ready Architecture - Intelligence Highlighted](../assets/figures/figure-5-3.png)
+![Figure 5.3: 7-Layer Agent-Ready Architecture - Intelligence Highlighted](figures/figure-5-3.png)
 
 These intelligence layers directly address specific gaps from Chapter 3:
 
@@ -158,7 +158,7 @@ Swapna nodded to Jamie Rodriguez, who displayed the Phase 2 architecture diagram
 
 **Figure 5.4: Echo's Intelligence Challenge - Current State vs. Target State**
 
-![Figure 5.4: Echo's Intelligence Challenge - Current State vs. Target State](../assets/figures/figure-5-4.png)
+![Figure 5.4: Echo's Intelligence Challenge - Current State vs. Target State](figures/figure-5-4.png)
 
 "Three weeks," Swapna said. "Week 5: Layer 3 semantic infrastructure. Business glossary with 2,400 clinical terms, entity resolution across all provider and patient systems, clinical concept mapping to SNOMED, ICD-10, and LOINC.[3][4][5]. 
 Week 6: Layer 4 stages 1-5 vector database deployment with 10 million document embeddings, hybrid retrieval pipeline, reranking optimization, context assembly. 
@@ -192,7 +192,7 @@ The semantic layer translates human language to data structures.[1] When a care 
 
 **Figure 5.5: Layer 3 -Semantic Layer Architecture**
 
-![Figure 5.5: Layer 3 -Semantic Layer Architecture](../assets/figures/figure-5-5.png)
+![Figure 5.5: Layer 3 -Semantic Layer Architecture](figures/figure-5-5.png)
 
 ### Components of the Semantic Layer
 
@@ -257,7 +257,7 @@ The difference is transformational. Research benchmarks show that direct natural
 
 **Figure 5.6: Before/After - Keyword Search vs. Semantic Search**
 
-![Figure 5.6: Before/After - Keyword Search vs. Semantic Search](../assets/figures/figure-5-6.png)
+![Figure 5.6: Before/After - Keyword Search vs. Semantic Search](figures/figure-5-6.png)
 
 ### Key Technologies
 
@@ -355,7 +355,7 @@ Layer 4 is the complete intelligence pipeline system that transforms user querie
 
 **Figure 5.7: Layer 4 - Complete Intelligence Pipeline**
 
-![Figure 5.7: Layer 4 - Complete Intelligence Pipeline](../assets/figures/figure-5-7.png)
+![Figure 5.7: Layer 4 - Complete Intelligence Pipeline](figures/figure-5-7.png)
 
 ### Why Agents Need RAG
 
@@ -385,7 +385,7 @@ Single-strategy retrieval misses relevant results. Vector search excels at seman
 
 **Figure 5.8: Hybrid Retrieval Architecture**
 
-![Figure 5.8: Hybrid Retrieval Architecture](../assets/figures/figure-5-8.png)
+![Figure 5.8: Hybrid Retrieval Architecture](figures/figure-5-8.png)
 
 **Vector Database Selection:**
 
@@ -451,7 +451,7 @@ Healthcare requires different LLM capabilities for different tasks. Echo impleme
 
 **Figure 5.9: Multi-LLM Router Architecture**
 
-![Figure 5.9: Multi-LLM Router Architecture](../assets/figures/figure-5-9.png)
+![Figure 5.9: Multi-LLM Router Architecture](figures/figure-5-9.png)
 
 **Routing Logic:**
 - Claude Sonnet 4: Complex clinical reasoning (45% of queries)
@@ -476,7 +476,7 @@ Similar queries should not incur redundant LLM costs. Semantic caching stores re
 
 **Figure 5.10: Semantic Cache Architecture**
 
-![Figure 5.10: Semantic Cache Architecture](../assets/figures/figure-5-10.png)
+![Figure 5.10: Semantic Cache Architecture](figures/figure-5-10.png)
 
 **Level 1: Exact Match (Redis):** Character-for-character matches hit instantly. TTL (Time To Live)[18]: 1 hour. Hit rate: ~15%.
 
@@ -729,13 +729,13 @@ The room was silent for a moment. Then applause.
 
 **Figure 5.11: Echo's Week 5-7 Timeline**
 
-![Figure 5.11: Echo's Week 5-7 Timeline](../assets/figures/figure-5-11.png)
+![Figure 5.11: Echo's Week 5-7 Timeline](figures/figure-5-11.png)
 
 ### INPACT™ Score: Week 4 → Week 7
 
 **Figure 5.12: INPACT™ Transformation (42 → 67)**
 
-![Figure 5.12: INPACT™ Transformation (42 → 67)](../assets/figures/figure-5-12.png)
+![Figure 5.12: INPACT™ Transformation (42 → 67)](figures/figure-5-12.png)
 
 | Dimension | Week 4 | Week 7 | Change | Driver |
 |-----------|--------|--------|--------|--------|
@@ -771,7 +771,7 @@ Krish made a note. "Phase 3 has the same $380,000 allocation. Apply the lesson."
 
 **Figure 5.13: Complete Intelligence Architecture - Layers 3-4**
 
-![Figure 5.13: Complete Intelligence Architecture - Layers 3-4](../assets/figures/figure-5-13.png)
+![Figure 5.13: Complete Intelligence Architecture - Layers 3-4](figures/figure-5-13.png)
 
 ### Results
 

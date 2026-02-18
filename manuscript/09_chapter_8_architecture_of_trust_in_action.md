@@ -47,7 +47,7 @@ Marcus pulled up the GOALS™ dashboard. Five gauges, fifteen out of twenty-five
 
 **Figure 8.1: Echo's GOALS™ Baseline (Week 10)**
 
-![Figure 8.1: Echo's GOALS™ Baseline (Week 10)](../assets/figures/figure-8-1.png)
+![Figure 8.1: Echo's GOALS™ Baseline (Week 10)](figures/figure-8-1.png)
 
 "We need twenty-one to deploy clinical AI in production," Marcus said. "Six points in two weeks."
 
@@ -57,7 +57,7 @@ Sarah walked to the whiteboard. "Here's the plan."
 
 **Figure 8.2: Week 11-12 Operations Timeline**
 
-![Figure 8.2: Week 11-12 Operations Timeline](../assets/figures/figure-8-2.png)
+![Figure 8.2: Week 11-12 Operations Timeline](figures/figure-8-2.png)
 
 Marcus wrote out the Week 11 targets:
 
@@ -144,7 +144,7 @@ Explainability required surfacing the reasoning chain across all seven layers.
 
 **Figure 8.3: End-to-End Observability with Trace IDs**
 
-![Figure 8.3: End-to-End Observability with Trace IDs](../assets/figures/figure-8-3.png)
+![Figure 8.3: End-to-End Observability with Trace IDs](figures/figure-8-3.png)
 
 The implementation had three components: source tracking (every fact linked to its source), reasoning chain (logical steps documented), and confidence scoring (numerical confidence visible to reviewers).
 
@@ -186,7 +186,7 @@ The 10x scale test began Tuesday at 6 AM. Jamie's team generated synthetic queri
 
 **Figure 8.4: Multi-Level Cache Performance Under Load**
 
-![Figure 8.4: Multi-Level Cache Performance Under Load](../assets/figures/figure-8-4.png)
+![Figure 8.4: Multi-Level Cache Performance Under Load](figures/figure-8-4.png)
 
 The results validated the architecture. Under 10x load, response time p95 held at 2.1 seconds, within the 3-second target. Cache hit rate actually improved under load as common patterns became more likely.
 
@@ -212,7 +212,7 @@ Swapna identified three categories: entity ambiguity ("my doctor" with multiple 
 
 **Figure 8.5: Lexicon Disambiguation Flow**
 
-![Figure 8.5: Lexicon Disambiguation Flow](../assets/figures/figure-8-5.png)
+![Figure 8.5: Lexicon Disambiguation Flow](figures/figure-8-5.png)
 
 The team implemented smart disambiguation. When confidence dropped below 0.90, the system would ask a clarifying question with the most likely options: "Do you mean your PCP Dr. Nguyen or your cardiologist Dr. Patel?"
 
@@ -240,7 +240,7 @@ Swapna mapped the data flows. The EHR was source of truth, but the scheduling sy
 
 **Figure 8.6: Quality Gates in Production**
 
-![Figure 8.6: Quality Gates in Production](../assets/figures/figure-8-6.png)
+![Figure 8.6: Quality Gates in Production](figures/figure-8-6.png)
 
 The solution was real-time synchronization. When a provider assignment changed in the EHR, the change would propagate to scheduling within 30 seconds.
 
@@ -342,7 +342,7 @@ The next three hours were the most comprehensive validation Echo's team had ever
 
 **Figure 8.7: Three Agents Architecture**
 
-![Figure 8.7: Three Agents Architecture](../assets/figures/figure-8-7.png)
+![Figure 8.7: Three Agents Architecture](figures/figure-8-7.png)
 
 ### Agent 1: Care Coordination
 
@@ -458,7 +458,7 @@ Sarah stood at the front of the room, the GOALS™ dashboard behind her showing 
 
 **Figure 8.8: Echo's GOALS™ Final Dashboard (Week 12)**
 
-![Figure 8.8: Echo's GOALS™ Final Dashboard (Week 12)](../assets/figures/figure-8-8.png)
+![Figure 8.8: Echo's GOALS™ Final Dashboard (Week 12)](figures/figure-8-8.png)
 
 She walked through each pillar:
 
@@ -484,7 +484,7 @@ She paused.
 
 **Figure 8.9: Echo Health - Architecture of Trust Complete**
 
-![Figure 8.9: Echo Health - Architecture of Trust Complete](../assets/figures/figure-8-9.png)
+![Figure 8.9: Echo Health - Architecture of Trust Complete](figures/figure-8-9.png)
 
 Dr. Raj leaned forward. "You've built something that measures itself. That proves itself."
 
@@ -494,7 +494,7 @@ Dr. Raj leaned forward. "You've built something that measures itself. That prove
 
 **Figure 8.10: Echo's 90-Day Journey**
 
-![Figure 8.10: Echo's 90-Day Journey](../assets/figures/figure-8-10.png)
+![Figure 8.10: Echo's 90-Day Journey](figures/figure-8-10.png)
 
 | Phase | Timeline | Pillar Focus | Achievement |
 |-------|----------|--------------|-------------|
@@ -577,7 +577,7 @@ Now it's your turn.
 
 ## Echo's Transformation: Week 0 to Week 12
 
-![Diagram](../assets/figures/09_chapter_8_architecture_of_trust_in_action-diagram-11.png)
+![Diagram](figures/09_chapter_8_architecture_of_trust_in_action-diagram-11.png)
 
 > **Key Takeaway:** *"You've answered my question, and built something we can trust."* – Dr. Arun Raj, Board Chair
 

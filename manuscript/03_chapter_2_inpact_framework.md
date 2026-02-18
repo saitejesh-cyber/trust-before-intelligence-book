@@ -20,7 +20,7 @@ This chapter explains what those six things are.
 
 **Figure 2.0: The INPACT™ Framework - Six Infrastructure Needs for Agent Trust**
 
-![Figure 2.0: The INPACT™ Framework - Six Infrastructure Needs for Agent Trust](../assets/figures/figure-2-0.png)
+![Figure 2.0: The INPACT™ Framework - Six Infrastructure Needs for Agent Trust](figures/figure-2-0.png)
 
 > **Key Takeaway:** Six infrastructure needs. One framework. Trust.
 
@@ -32,7 +32,7 @@ Chapter 1 revealed why 95% of enterprise AI agent projects fail not from inadequ
 
 **Figure 2.1: The Architecture of Trust - Three Integrated Pillars**
 
-![Figure 2.1: The Architecture of Trust - Three Integrated Pillars](../assets/figures/figure-2-1.png)
+![Figure 2.1: The Architecture of Trust - Three Integrated Pillars](figures/figure-2-1.png)
 
 **This chapter builds Pillar 1 completely.** You'll understand what agents need, why traditional infrastructure fails each need, and how Echo Health transformed from 28/100 readiness to 86/100 in ten weeks.
 
@@ -60,7 +60,7 @@ Tony Robbins built an empire on one insight: humans have six core needs - signif
 
 **Figure 2.2: Human Needs to Agent Needs Parallel**
 
-![Figure 2.2: Human Needs to Agent Needs Parallel](../assets/figures/figure-2-2.png)
+![Figure 2.2: Human Needs to Agent Needs Parallel](figures/figure-2-2.png)
 
 **The parallel mappings:**
 
@@ -90,7 +90,7 @@ Traditional enterprise software could require trust: "You must use this ERP syst
 
 **Figure 2.3: Six INPACT™ Needs Fulfilled**
 
-![Figure 2.3: Six INPACT™ Needs Fulfilled](../assets/figures/figure-2-3.png)
+![Figure 2.3: Six INPACT™ Needs Fulfilled](figures/figure-2-3.png)
 
 **When even one need fails, trust collapses across all dimensions.** Agents operate on binary trust. Users either trust enough to delegate, or they don't trust at all. Echo's scheduling agent achieved 95% accuracy but took 9-13 seconds to respond. Users abandoned it. Accuracy didn't matter when speed destroyed conversational experience.
 
@@ -116,7 +116,7 @@ INPACT™ assessment quantifies infrastructure readiness using a 1-6 scoring sys
 
 **Figure 2.4: INPACT™ Assessment Methodology - From Dimensions to Decision**
 
-![Figure 2.4: INPACT™ Assessment Methodology - From Dimensions to Decision](../assets/figures/figure-2-4.png)
+![Figure 2.4: INPACT™ Assessment Methodology - From Dimensions to Decision](figures/figure-2-4.png)
 
 **The six INPACT™ dimensions assessed:**
 
@@ -158,7 +158,7 @@ The transformation roadmap began there.
 
 **Figure 2.5: Echo Health's INPACT™ Transformation - 28/100 to 86/100 in 10 Weeks**
 
-![Figure 2.5: Echo Health's INPACT™ Transformation - 28/100 to 86/100 in 10 Weeks](../assets/figures/figure-2-5.png)
+![Figure 2.5: Echo Health's INPACT™ Transformation - 28/100 to 86/100 in 10 Weeks](figures/figure-2-5.png)
 
 ---
 
@@ -224,7 +224,7 @@ Every second of latency costs trust. A patient calls to schedule. The agent quer
 
 **Figure 2.6: Batch Processing vs. Real-Time Response**
 
-![Figure 2.6: Batch Processing vs. Real-Time Response](../assets/figures/figure-2-6.png)
+![Figure 2.6: Batch Processing vs. Real-Time Response](figures/figure-2-6.png)
 
 Echo's agent took 9-13 seconds to respond. Appointment availability queries hit data warehouses refreshed overnight via batch ETL. By 10 AM, data was 8+ hours stale. The database was cold with no indexes optimized for agent patterns, no caching. Every request forced table scans.
 
@@ -266,7 +266,7 @@ Research shows GPT-4 achieves 73% execution accuracy on complex database schemas
 
 **Figure 2.7: Manual Translation vs. Semantic Understanding**
 
-![Figure 2.7: Manual Translation vs. Semantic Understanding](../assets/figures/figure-2-7.png)
+![Figure 2.7: Manual Translation vs. Semantic Understanding](figures/figure-2-7.png)
 
 Echo's database schema: 347 tables, average table name 23 characters of cryptic abbreviations. DIM_CUST_LOC_ADDR_FACT_D_KEY meant "customer location address fact dimension key." Legacy naming was chosen for technical reasons fifteen years ago. Perfect for batch ETL. Unintelligible to LLMs and humans.
 
@@ -316,7 +316,7 @@ Role-based access control (RBAC) operates at table level: grant all patient reco
 
 **Figure 2.8: RBAC Only vs. RBAC + ABAC**
 
-![Figure 2.8: RBAC Only vs. RBAC + ABAC](../assets/figures/figure-2-8.png)
+![Figure 2.8: RBAC Only vs. RBAC + ABAC](figures/figure-2-8.png)
 
 Echo used four RBAC roles: reader (view only), writer (edit appointments), admin (configuration), app_service (agent). The agent used app_service credentials with table-level SELECT permissions across all patient tables. 
 First test query: scheduling agent accessed Patient 10243's mental health diagnoses while booking an appointment. 
@@ -364,7 +364,7 @@ Manual quarterly retraining creates 3-month windows where agents operate with de
 
 **Figure 2.9: Quarterly Retraining vs. Continuous Learning**
 
-![Figure 2.9: Quarterly Retraining vs. Continuous Learning](../assets/figures/figure-2-9.png)
+![Figure 2.9: Quarterly Retraining vs. Continuous Learning](figures/figure-2-9.png)
 
 Echo deployed their scheduling agent in September with 87% appointment booking accuracy. By November, accuracy dropped to 73%. Analysis revealed three drift categories: 
 **Data drift**: new physicians added, locations changed, service offerings expanded
@@ -413,7 +413,7 @@ Agents operating on single-system data provide incomplete answers: "You have an 
 
 **Figure 2.10: Single-System vs. Cross-System Integration**
 
-![Figure 2.10: Single-System vs. Cross-System Integration](../assets/figures/figure-2-10.png)
+![Figure 2.10: Single-System vs. Cross-System Integration](figures/figure-2-10.png)
 
 Echo's initial agent had partial integration. EHR connected to scheduling, with read-only lab access. But billing, pharmacy, and patient portal remained siloed. Query: "What do I need to know about my Tuesday appointment?" Agent response: "You have an appointment Tuesday at 2 PM with Dr. Martinez for annual physical. Labs ordered: comprehensive metabolic panel." Missing context: Lab requires 12-hour fasting (instruction not surfaced). Insurance needs prior auth for specific tests (billing not connected). Pharmacy flagged medication interaction (pharmacy not connected). Two outstanding forms (patient portal not connected).
 
@@ -455,7 +455,7 @@ Without transparency, physicians override 70% of agent recommendations, not beca
 
 **Figure 2.11: Opaque Decisions vs. Explainable Reasoning**
 
-![Figure 2.11: Opaque Decisions vs. Explainable Reasoning](../assets/figures/figure-2-11.png)
+![Figure 2.11: Opaque Decisions vs. Explainable Reasoning](figures/figure-2-11.png)
 
 Echo's initial agent provided recommendations without explanation. Physician query: "Treatment options for Patient 10243's Type 2 diabetes." Agent response: "Consider Ozempic (semaglutide) as first-line therapy." Physician question: "Why Ozempic specifically?" Agent: [no explanation available]. Physician override: prescribes metformin instead (standard first-line per institutional protocol).
 

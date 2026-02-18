@@ -26,7 +26,7 @@ Gap 7: Agents that couldn't coordinate.
 
 **Figure 3.0: Echo's 70-Day Transformation**
 
-![Figure 3.0: Echo's 70-Day Transformation](../assets/figures/figure-3-0.png)
+![Figure 3.0: Echo's 70-Day Transformation](figures/figure-3-0.png)
 
 > **Key Takeaway:** Seven gaps. Seven layers. One transformation.
 
@@ -100,7 +100,7 @@ The implications for enterprise infrastructure are profound. MIT NANDA research 
 
 **Figure 3.1: Software 1.0 to 3.0 Evolution**
 
-![Figure 3.1: Software 1.0 to 3.0 Evolution](../assets/figures/figure-3-1.png)
+![Figure 3.1: Software 1.0 to 3.0 Evolution](figures/figure-3-1.png)
 
 As Figure 3.1 illustrates, running Software 3.0 agents on Software 1.0 infrastructure is like running cloud-native microservices on mainframe batch processing. The assumptions don't align.
 
@@ -134,7 +134,7 @@ Capturing that learning requires feedback loops, validation mechanisms, and cont
 
 **Figure 3.2: BI Era vs Agent Era**
 
-![Figure 3.2: BI Era vs Agent Era](../assets/figures/figure-3-2.png)
+![Figure 3.2: BI Era vs Agent Era](figures/figure-3-2.png)
 
 Figure 3.2 captures this paradigm shift. The key differences are stark:
 
@@ -332,7 +332,7 @@ Each infrastructure gap requires a specific architectural layer:
 
 **Figure 3.3: Seven Gaps --> Six Needs --> Seven Layers**
 
-![Figure 3.3: Seven Gaps --> Six Needs --> Seven Layers](../assets/figures/figure-3-3.png)
+![Figure 3.3: Seven Gaps --> Six Needs --> Seven Layers](figures/figure-3-3.png)
 
 Figure 3.3 maps the complete transformation path:
 - **Left (Red):** Seven infrastructure gaps from BI-era systems
