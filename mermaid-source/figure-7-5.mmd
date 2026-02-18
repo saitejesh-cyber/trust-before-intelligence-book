@@ -1,0 +1,52 @@
+graph LR
+    subgraph OLD["<b>Analytics Era: RBAC</b>"]
+        TITLE1["<b>Role-Based Access Control</b>"]
+        R1["<b>User Request</b>"]
+        R2["<b>Check Role</b>"]
+        R3["<b>Role = Patient</b>"]
+        R4["<b>Grant Broad Access</b>"]
+        R5["<b>Violates minimum <br/>necessary access</b>"]
+        
+        TITLE1 --> R1
+        R1 --> R2
+        R2 --> R3
+        R3 --> R4
+        R4 --> R5
+    end
+    
+    OLD -.->|<b>Evolution</b>| NEW
+    
+    subgraph NEW["<b>Agent Era: ABAC</b>"]
+        TITLE2["<b>Attribute-Based Access Control</b>"]
+        A1["<b>User Request</b>"]
+        A2["<b>Context Eval</b><br/><b>Who • What • When <br/> Where • Why</b>"]
+        A3["<b>Dynamic Policy</b>"]
+        A4["<b>Filter Rows</b>"]
+        A5["<b>Sub-10ms secure access</b>"]
+        
+        TITLE2 --> A1
+        A1 --> A2
+        A2 --> A3
+        A3 --> A4
+        A4 --> A5
+    end
+    
+    style TITLE1 fill:#ffcccc,stroke:#c62828,stroke-width:3px,color:#b71c1c
+    style R1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style R2 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style R3 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style R4 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style R5 fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
+    
+    style TITLE2 fill:#b3e0cc,stroke:#00897b,stroke-width:3px,color:#004d40
+    style A1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A4 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style A5 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    
+    style OLD fill:#fff5f5,stroke:#c62828,stroke-width:2px
+    style NEW fill:#f0fff0,stroke:#00897b,stroke-width:2px
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    style Copyright fill:#ffffff,stroke:none,color:#666666

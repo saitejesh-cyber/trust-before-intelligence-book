@@ -1,0 +1,19 @@
+
+graph LR
+    subgraph TRUST["TRUST LAYERS (L5-L7)"]
+        direction LR
+        L7["L7: Orchestration<br/>Multi-Agent Coordination · Intent Routing"]
+        L6["L6: Observability<br/>Audit Trails · Tracing · Explainability"]
+        L5["L5: Governance<br/>ABAC Policies · HITL Workflows · Compliance"]
+    end
+    
+    Copyright["© 2025 Colaberry Inc."]
+    
+    L7 --> L6 --> L5
+    
+    style TRUST fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
+    style L7 fill:#e1bee7,stroke:#7b1fa2,color:#4a148c
+    style L6 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style L5 fill:#f8bbd9,stroke:#c2185b,color:#880e4f
+    style Copyright fill:#ffffff,stroke:none,color:#666666
+

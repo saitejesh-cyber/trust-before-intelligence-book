@@ -1,0 +1,37 @@
+graph LR
+    subgraph MON["MONDAY"]
+        M["<b>Review<br/>Metrics</b>"]
+    end
+    
+    subgraph TUE["TUESDAY"]
+        T["<b>Analyze<br/>Failures</b>"]
+    end
+    
+    subgraph WED["WEDNESDAY"]
+        W["<b>Propose<br/>Fixes</b>"]
+    end
+    
+    subgraph THU["THURSDAY"]
+        H["<b>Implement<br/>Changes</b>"]
+    end
+    
+    subgraph FRI["FRIDAY"]
+        F["<b>A/B Test<br/>Launch</b>"]
+    end
+    
+    M --> T --> W --> H --> F
+    F -->|<b>Next Week</b>| M
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    style MON fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style TUE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style WED fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style THU fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style FRI fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c
+    style M fill:#bbdefb,stroke:#1976d2,color:#0d47a1
+    style T fill:#ffcdd2,stroke:#c62828,color:#b71c1c
+    style W fill:#ffe0b2,stroke:#f57c00,color:#e65100
+    style H fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style F fill:#e1bee7,stroke:#7b1fa2,color:#4a148c
+    style Copyright fill:#ffffff,stroke:none,color:#666666

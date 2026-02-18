@@ -1,0 +1,38 @@
+graph TB
+  subgraph AGENTS["<b>ECHO HEALTH: 3 AGENTS</b>"]
+    subgraph CARE["<b>CARE COORDINATION</b>"]
+      CA["<b>Agent 1</b><br/><b>Care Coordination</b>"]
+      CA_DATA["<b>EHR | Scheduling</b><br/><b>Insurance | Pharmacy</b>"]
+      CA_USERS["<b>Coordinators</b><br/><b>Nurses | Case Mgrs</b>"]
+    end
+    
+    subgraph CLINICAL["<b>CLINICAL DOCUMENTATION</b>"]
+      CD["<b>Agent 2</b><br/><b>Clinical Docs</b>"]
+      CD_DATA["<b>EHR | Notes</b><br/><b>Labs | Imaging</b>"]
+      CD_USERS["<b>Physicians</b><br/><b>Nurses | MAs</b>"]
+    end
+    
+    subgraph REVENUE["<b>REVENUE CYCLE</b>"]
+      RC["<b>Agent 3</b><br/><b>Revenue Cycle</b>"]
+      RC_DATA["<b>Claims | Insurance</b><br/><b>Accounts | Sched</b>"]
+      RC_USERS["<b>Billing Staff</b><br/><b>Finance | Admins</b>"]
+    end
+    
+    ORCH["<b>Layer 7: Orchestration</b><br/><b>Routes | Coordinates <br/> Monitors</b>"]
+    
+    ORCH --> CA
+    ORCH --> CD
+    ORCH --> RC
+  end
+  
+  style AGENTS fill:#f0fff0,stroke:#00897b,stroke-width:2px
+  style CARE fill:#e0f2f1,stroke:#00897b,stroke-width:2px
+  style CLINICAL fill:#e0f2f1,stroke:#00897b,stroke-width:2px
+  style REVENUE fill:#e0f2f1,stroke:#00897b,stroke-width:2px
+  style CA fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style CD fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style RC fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style ORCH fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  
+  Copyright["<b>© 2025 Colaberry Inc.</b>"]
+  style Copyright fill:#ffffff,stroke:none,color:#666666

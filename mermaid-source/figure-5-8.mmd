@@ -1,0 +1,35 @@
+graph LR
+    TITLE["<b>Stage 3: Hybrid Retrieval</b>"]
+    
+    Q["<b>Embedded Query</b>"]
+    
+    subgraph parallel["<b>Parallel Retrieval Strategy</b>"]
+        VEC["<b>Vector Search</b><br/><b>Pinecone</b><br/><b>Semantic similarity</b>"]
+        KEY["<b>Keyword Search</b><br/><b>Azure Search</b><br/><b>Exact matching</b>"]
+        GRAPH["<b>Graph Traversal</b><br/><b>Neo4j</b><br/><b>Relationships</b>"]
+    end
+    
+    MERGE["<b>Result Fusion</b><br/><b>RRF algorithm</b>"]
+    
+    OUT["<b>Candidate Set</b><br/><b>Top 50 results</b>"]
+    
+    TITLE -.-> Q
+    Q --> VEC
+    Q --> KEY
+    Q --> GRAPH
+    VEC --> MERGE
+    KEY --> MERGE
+    GRAPH --> MERGE
+    MERGE --> OUT
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    style TITLE fill:#00897b,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Q fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style parallel fill:#fafafa,stroke:#00897b,stroke-width:2px,color:#000000
+    style VEC fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style KEY fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style GRAPH fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style MERGE fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style OUT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Copyright fill:#ffffff,stroke:none,color:#666666

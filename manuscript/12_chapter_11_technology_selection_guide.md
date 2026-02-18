@@ -20,34 +20,6 @@ Marcus paused. "I didn't ask."
 
 **Figure 11.1: Vendor Selection Transformation**
 
-```mermaid
-
- graph LR
-    subgraph BEFORE["VENDOR HYPE"]
-        direction TB
-        B1["Feature-driven choices<br/><br/>Integration afterthought<br/><br/>Mismatched capabilities<br/><br/><b>Compliance gaps</b>"]
-    end
-    
-    subgraph TRANSFORM["THREE-PILLAR TEST"]
-        direction TB
-        T1["INPACT™ + 7-Layer<br/>+ GOALS™"]
-    end
-    
-    subgraph AFTER["VALIDATED STACK"]
-        direction TB
-        A1["Need-driven selection<br/><br/>Layer-by-layer fit<br/><br/>Unified architecture<br/><br/><b>Built-in compliance</b>"]
-    end
-    
-    BEFORE --> TRANSFORM --> AFTER
-    
-    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
-    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style B1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style T1 fill:#f5f5f5,stroke:#666666,color:#333333
-    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
-
-```
 
 ![Figure 11.1: Vendor Selection Transformation](figures/figure-11-1.png)
 > **Key Takeaway:** Every vendor must pass the three-pillar test. No exceptions.
@@ -101,45 +73,6 @@ Every technology in a production stack must pass the same evaluation. Three pill
 
 **Figure 11.2: The Three-Pillar Vendor Evaluation Framework**
 
-```mermaid
-graph TD
-    subgraph VENDOR["VENDOR EVALUATION"]
-        V["<b>Technology<br/>Candidate</b>"]
-    end
-    
-    subgraph PILLAR1["PILLAR 1: INPACT™"]
-        P1["<b>Agent Needs</b><br/><b>6 Dimensions</b><br/><b>Score: X/36</b>"]
-    end
-    
-    subgraph PILLAR2["PILLAR 2: ARCHITECTURE"]
-        P2["<b>Layer Fit</b><br/><b>7-Layer Integration</b><br/><b>Fit Check: Yes/No</b>"]
-    end
-    
-    subgraph PILLAR3["PILLAR 3: GOALS™"]
-        P3["<b>Operations</b><br/><b>5 Dimensions</b><br/><b>Score: X/25</b>"]
-    end
-    
-    V --> P1
-    V --> P2
-    V --> P3
-    
-    P1 --> EVAL["<b>Evaluate Separately</b><br/><b>INPACT™ ≥67%</b><br/><b>GOALS™ ≥70%</b><br/><b>(Adjust to context)</b>"]
-    P2 --> EVAL
-    P3 --> EVAL
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    
-    style VENDOR fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
-    style PILLAR1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style PILLAR2 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
-    style PILLAR3 fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style V fill:#eeeeee,stroke:#666666,color:#333333
-    style P1 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style P2 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style P3 fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style EVAL fill:#c8e6c9,stroke:#388e3c,stroke-width:2px,color:#1b5e20
-    style Copyright fill:#ffffff,stroke:none,color:#666666
-```
 
 ![Figure 11.2: The Three-Pillar Vendor Evaluation Framework](figures/figure-11-2.png)
 **Pillar 1: INPACT™ Agent Needs (Score Separately)**
@@ -210,47 +143,6 @@ Not every component requires a vendor purchase. The Architecture of Trust suppor
 
 **Figure 11.3: Build vs Buy vs Partner Decision Flow**
 
-```mermaid
-
-graph LR
-    START["Component<br/>Needed"]
-    
-    subgraph DECISIONS[" "]
-        direction TB
-        Q1{"Competitive<br/>differentiator?"}
-        Q2{"Proven vendor<br/>solutions exist?"}
-        Q3{"Team has<br/>expertise?"}
-    end
-    
-    subgraph OUTCOMES[" "]
-        direction TB
-        BUILD["BUILD<br/>Custom Dev<br/>5-10%"]
-        BUY["BUY<br/>SaaS/Cloud<br/>85-90%"]
-        PARTNER["PARTNER<br/>Consulting<br/>0-5%"]
-    end
-    
-    Copyright["© 2025 Colaberry Inc."]
-    
-    START --> Q1
-    Q1 -->|"Yes"| BUILD
-    Q1 -->|"No"| Q2
-    Q2 -->|"Yes"| BUY
-    Q2 -->|"No"| Q3
-    Q3 -->|"Yes"| BUILD
-    Q3 -->|"No"| PARTNER
-    
-    style DECISIONS fill:none,stroke:none
-    style OUTCOMES fill:none,stroke:none
-    style START fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
-    style Q1 fill:#fff9c4,stroke:#f9a825,stroke-width:2px,color:#f57f17
-    style Q2 fill:#fff9c4,stroke:#f9a825,stroke-width:2px,color:#f57f17
-    style Q3 fill:#fff9c4,stroke:#f9a825,stroke-width:2px,color:#f57f17
-    style BUILD fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
-    style BUY fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style PARTNER fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style Copyright fill:#ffffff,stroke:none,color:#666666
-
-```
 
 ![Figure 11.3: Build vs Buy vs Partner Decision Flow](figures/figure-11-3.png)
 **Build (Custom Development): 5-10% of Stack**
@@ -327,55 +219,6 @@ This section provides selection criteria for each of the seven architecture laye
 
 **Figure 11.4: The 7-Layer Architecture Technology Stack**
 
-```mermaid
-
-graph TB
-    subgraph STACK["7-LAYER ARCHITECTURE"]
-        direction TB
-        subgraph ROW1[" "]
-            direction LR
-            subgraph INTEL["INTELLIGENCE"]
-                direction TB
-                L4["L4: Retrieval"]
-                L3["L3: Semantic"]
-            end
-
-            subgraph TRUST["TRUST LAYERS"]
-                direction TB
-                L7["L7: Orchestration"]
-                L6["L6: Observability"]
-                L5["L5: Governance"]
-            end
-            
-        end
-        
-        subgraph FOUND["FOUNDATION LAYERS"]
-            direction LR
-            L2["L2: Data Fabric"]
-            L1["L1: Storage"]
-        end
-    end
-    
-    Copyright["© 2025 Colaberry Inc."]
-    
-    ROW1 --> FOUND
-    
-    style STACK fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
-    style ROW1 fill:none,stroke:none
-    style TRUST fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style INTEL fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style FOUND fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
-    style L7 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style L6 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style L5 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style L4 fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style L3 fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style L2 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style L1 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style Copyright fill:#ffffff,stroke:none,color:#666666
-
-
-```
 
 ![Figure 11.4: The 7-Layer Architecture Technology Stack](figures/figure-11-4.png)
 ---
@@ -803,45 +646,6 @@ Echo's final technology choices demonstrate the methodology in action. Every ven
 
 **Figure 11.5: Echo's Complete Technology Stack**
 
-```mermaid
-
-graph LR
-    subgraph TRUST["TRUST"]
-        direction LR
-        L7["L7: Orchestration"]
-        L6["L6: Observability"]
-        L5["L5: Governance"]
-    end
-    
-    subgraph INTEL["INTELLIGENCE"]
-        direction LR
-        L4["L4: Retrieval"]
-        L3["L3: Semantic"]
-    end
-    
-    subgraph FOUND["FOUNDATION"]
-        direction LR
-        L2["L2: Data Fabric"]
-        L1["L1: Storage"]
-    end
-    
-    Copyright["© 2025 Colaberry Inc."]
-    
-    TRUST --> INTEL --> FOUND
-    
-    style TRUST fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c
-    style INTEL fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style FOUND fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
-    style L7 fill:#e1bee7,stroke:#7b1fa2,color:#4a148c
-    style L6 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style L5 fill:#f8bbd9,stroke:#c2185b,color:#880e4f
-    style L4 fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style L3 fill:#fff59d,stroke:#f9a825,color:#f57f17
-    style L2 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style L1 fill:#c8e6c9,stroke:#388e3c,color:#1b5e20
-    style Copyright fill:#ffffff,stroke:none,color:#666666
-
-```
 
 ![Figure 11.5: Echo's Complete Technology Stack](figures/figure-11-5.png)
 **Echo's Selection Principles:** (1) Managed over self-hosted, (2) Healthcare-first (BAA required), (3) Integration-proven over best-in-class, (4) Cost-optimized for Growth tier.

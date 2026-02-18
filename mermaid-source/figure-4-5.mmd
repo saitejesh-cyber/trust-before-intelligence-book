@@ -1,0 +1,49 @@
+graph LR
+    subgraph BEFORE["<b>Week 0: Single-Modal</b>"]
+        OLD["<b>SQL Server Only</b><br/><b>All queries, one DB</b>"]
+        P1["<b>Cache: None</b><br/><b>Every query hits DB</b>"]
+        P2["<b>Graph queries: 8.2s</b><br/><b>Complex JOINs</b>"]
+        P3["<b>Schema: Rigid</b><br/><b>Change is slow</b>"]
+        P4["<b>ML: Spreadsheets</b><br/><b>No versioning</b>"]
+    end
+    
+    TRANSFORM["<b>4 Weeks</b>"]
+    
+    subgraph AFTER["<b>Week 4: Multi-Modal</b>"]
+        NEW["<b>8 Categories</b><br/><b>Right tool, right job</b>"]
+        S1["<b>Cache: &lt;10ms</b><br/><b>Redis MemoryDB</b>"]
+        S2["<b>Graph DB: 340ms</b><br/><b>Native traversal</b>"]
+        S3["<b>Schema: Flexible</b><br/><b>NoSQL + Lakehouse</b>"]
+        S4["<b>ML: Registry</b><br/><b>Full versioning</b>"]
+    end
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+
+    OLD --> P1
+    OLD --> P2
+    OLD --> P3
+    OLD --> P4
+    P1 --> TRANSFORM
+    P2 --> TRANSFORM
+    P3 --> TRANSFORM
+    P4 --> TRANSFORM
+    TRANSFORM --> NEW
+    NEW --> S1
+    NEW --> S2
+    NEW --> S3
+    NEW --> S4
+
+    style BEFORE fill:#fff5f5,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style OLD fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
+    style P1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style P2 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style P3 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style P4 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style TRANSFORM fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style NEW fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style S1 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S2 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S3 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style S4 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+    style Copyright fill:#ffffff,stroke:none,color:#666666

@@ -1,0 +1,37 @@
+graph TB
+    QUERY["<b>Incoming Query</b><br/>'High-risk diabetic patients'"]
+    
+    EXACT["<b>Level 1: Exact Match</b><br/><b>Redis Cache</b>"]
+    
+    SEMANTIC["<b>Level 2: Semantic Match</b><br/><b>Pinecone Vector Cache</b>"]
+    
+    PIPELINE["<b>Full RAG Pipeline</b><br/><b>If no cache hit</b>"]
+    
+    RESPONSE["<b>Response</b>"]
+    
+    CDC["<b>CDC Events</b>"]
+    
+    INVALIDATE["<b>Cache Invalidation</b>"]
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    QUERY --> EXACT
+    EXACT -->|Hit 15%| RESPONSE
+    EXACT -->|Miss| SEMANTIC
+    SEMANTIC -->|Hit 70%| RESPONSE
+    SEMANTIC -->|Miss 15%| PIPELINE
+    PIPELINE --> RESPONSE
+    RESPONSE -.->|Cache| SEMANTIC
+    
+    CDC --> INVALIDATE
+    INVALIDATE -.->|Clear| EXACT
+    INVALIDATE -.->|Clear| SEMANTIC
+    
+    style QUERY fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style EXACT fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style SEMANTIC fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style PIPELINE fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style RESPONSE fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style CDC fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style INVALIDATE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style Copyright fill:#ffffff,stroke:none,color:#666666

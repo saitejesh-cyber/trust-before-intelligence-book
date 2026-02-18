@@ -30,34 +30,6 @@ This chapter is what they wrote down.
 
 **Figure 9.1: Assessment Value, From Confusion to Clarity**
 
-```mermaid
-
-graph LR
-    subgraph BEFORE["WITHOUT ASSESSMENT"]
-        direction TB
-        B1["Where do we start?<br/><br/>Multiple consultants<br/><br/>Contradictory advice<br/><br/><b>Months of analysis</b>"]
-    end
-    
-    subgraph TRANSFORM["INPACT™"]
-        direction TB
-        T1["36 Questions"]
-    end
-    
-    subgraph AFTER["WITH INPACT™ ASSESSMENT"]
-        direction TB
-        A1["Clear 0-100 score<br/><br/>One unified framework<br/><br/>Dimension-by-dimension<br/>clarity<br/><br/><b>30-minute assessment</b>"]
-    end
-    
-    BEFORE --> TRANSFORM --> AFTER
-    
-    style BEFORE fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style TRANSFORM fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
-    style AFTER fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style B1 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style T1 fill:#f5f5f5,stroke:#666666,color:#333333
-    style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
-
-```
 
 ![Figure 9.1: Assessment Value, From Confusion to Clarity](figures/figure-9-1.png)
 > **Key Takeaway:** One assessment. Six dimensions. Complete clarity on where to invest.
@@ -85,44 +57,6 @@ These three frameworks form a chain of dependency. INPACT™ requirements drive 
 
 **Figure 9.2: Architecture of Trust Assessment Flow**
 
-```mermaid
-graph LR
-    subgraph ASSESS["ASSESSMENT"]
-        A1["<b>36 Questions</b><br/><b>30 Minutes</b>"]
-    end
-    
-    subgraph INPACT["INPACT™"]
-        I1["<b>6 Dimensions</b><br/><b>Agent Needs</b>"]
-    end
-    
-    subgraph ARCH["7-LAYER"]
-        A2["<b>7 Layers</b><br/><b>Architecture</b>"]
-    end
-    
-    subgraph GOALS["GOALS™"]
-        G1["<b>5 Dimensions</b><br/><b>Operations</b>"]
-    end
-    
-    subgraph RESULT["RESULT"]
-        R1["<b>0-100 Score</b><br/><b>+ Roadmap</b>"]
-    end
-    
-    A1 --> I1 --> A2 --> G1 --> R1
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    
-    style ASSESS fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
-    style INPACT fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style ARCH fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
-    style GOALS fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style RESULT fill:#c8e6c9,stroke:#388e3c,stroke-width:2px,color:#1b5e20
-    style A1 fill:#eeeeee,stroke:#666666,color:#333333
-    style I1 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style A2 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style G1 fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style R1 fill:#a5d6a7,stroke:#388e3c,color:#1b5e20
-    style Copyright fill:#ffffff,stroke:none,color:#666666
-```
 
 ![Figure 9.2: Architecture of Trust Assessment Flow](figures/figure-9-2.png)
 The integration principle is simple: **if you assess INPACT™ comprehensively, you've assessed everything.**
@@ -182,44 +116,6 @@ Raw scores translate into five trust bands that indicate agent readiness:
 
 **Figure 9.3: The Five Trust Bands**
 
-```mermaid
-graph LR
-    subgraph VERYLOW["⚫ 6-11 pts (<33%)"]
-        VL["<b>Very Low Trust</b><br/><b>Complete rebuild</b>"]
-    end
-    
-    subgraph LOW["🔴 12-17 pts (33-49%)"]
-        L["<b>Low Trust</b><br/><b>Major transformation</b>"]
-    end
-    
-    subgraph MOD["🟠 18-23 pts (50-66%)"]
-        M["<b>Moderate Trust</b><br/><b>Significant work</b>"]
-    end
-    
-    subgraph GOOD["🟡 24-30 pts (67-85%)"]
-        G["<b>Good Trust</b><br/><b>Pilot-ready</b>"]
-    end
-    
-    subgraph HIGH["🟢 31-36 pts (86-100%)"]
-        H["<b>High Trust</b><br/><b>Production-ready</b>"]
-    end
-    
-    VL --> L --> M --> G --> H
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    
-    style VERYLOW fill:#424242,stroke:#212121,stroke-width:2px,color:#ffffff
-    style LOW fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style MOD fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style GOOD fill:#fffde7,stroke:#f9a825,stroke-width:2px,color:#f57f17
-    style HIGH fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style VL fill:#616161,stroke:#424242,color:#ffffff
-    style L fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style M fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style G fill:#fff9c4,stroke:#f9a825,color:#f57f17
-    style H fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style Copyright fill:#ffffff,stroke:none,color:#666666
-```
 
 ![Figure 9.3: The Five Trust Bands](figures/figure-9-3.png)
 | Raw Score | Percentage | Trust Band | Agent Readiness |
@@ -242,58 +138,6 @@ INPACT™ covers the full architecture. Each dimension doesn't exist in isolatio
 
 **Figure 9.4: INPACT™ Dimension to Layer Mapping**
 
-```mermaid
-graph LR
-    subgraph INPACT["INPACT™ DIMENSIONS"]
-        I["<b>I - Instant</b>"]
-        N["<b>N - Natural</b>"]
-        P["<b>P - Permitted</b>"]
-        A["<b>A - Adaptive</b>"]
-        C["<b>C - Contextual</b>"]
-        T["<b>T - Transparent</b>"]
-    end
-    
-    subgraph LAYERS["7-LAYER ARCHITECTURE"]
-        L1["<b>L1 Storage</b>"]
-        L2["<b>L2 Real-time Fabric</b>"]
-        L3["<b>L3 Semantic</b>"]
-        L4["<b>L4 Intelligence</b>"]
-        L5["<b>L5 Governance</b>"]
-        L6["<b>L6 Observability</b>"]
-    end
-    
-    I --> L1
-    I --> L2
-    N --> L3
-    N --> L4
-    P --> L5
-    P --> L6
-    A --> L4
-    A --> L6
-    C --> L1
-    C --> L2
-    C --> L4
-    T --> L5
-    T --> L6
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    
-    style INPACT fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style LAYERS fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
-    style I fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style N fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style P fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style A fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style C fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style T fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style L1 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style L2 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style L3 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style L4 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style L5 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style L6 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style Copyright fill:#ffffff,stroke:none,color:#666666
-```
 
 ![Figure 9.4: INPACT™ Dimension to Layer Mapping](figures/figure-9-4.png)
 **Coverage Verification**: This mapping touches all seven layers. L7 (Orchestration) emerges when multiple dimensions reach production thresholds simultaneously. When you discover a low score in a particular dimension, you immediately know which layers require investment.
@@ -459,44 +303,6 @@ Echo's progression from 28/100 to 89/100 followed a deliberate sequence. Each ph
 
 **Figure 9.5: Echo's 90-Day INPACT™ Transformation**
 
-```mermaid
-graph LR
-    subgraph WEEK0["⚫ WEEK 0"]
-        W0["<b>28/100</b><br/><b>Very Low Trust</b><br/><b>5 dimensions critical</b>"]
-    end
-    
-    subgraph WEEK4["🔴 WEEK 4"]
-        W4["<b>42/100</b><br/><b>Low Trust</b><br/><b>Foundation complete</b>"]
-    end
-    
-    subgraph WEEK7["🟠 WEEK 7"]
-        W7["<b>67/100</b><br/><b>Moderate Trust</b><br/><b>Intelligence live</b>"]
-    end
-    
-    subgraph WEEK10["🟢 WEEK 10"]
-        W10["<b>86/100</b><br/><b>High Trust</b><br/><b>Governance complete</b>"]
-    end
-    
-    subgraph WEEK12["🟢 WEEK 12"]
-        W12["<b>89/100</b><br/><b>High Trust</b><br/><b>Production stable</b>"]
-    end
-    
-    W0 -->|<b>+14 pts</b>| W4 -->|<b>+25 pts</b>| W7 -->|<b>+19 pts</b>| W10 -->|<b>+3 pts</b>| W12
-    
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-    
-    style WEEK0 fill:#424242,stroke:#212121,stroke-width:2px,color:#ffffff
-    style WEEK4 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style WEEK7 fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style WEEK10 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style WEEK12 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style W0 fill:#616161,stroke:#424242,color:#ffffff
-    style W4 fill:#ffcdd2,stroke:#c62828,color:#b71c1c
-    style W7 fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style W10 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style W12 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style Copyright fill:#ffffff,stroke:none,color:#666666
-```
 
 ![Figure 9.5: Echo's 90-Day INPACT™ Transformation](figures/figure-9-5.png)
 **Echo's INPACT™ Progression: Milestone View**
@@ -602,51 +408,6 @@ Regardless of your overall score, your lowest-scoring dimensions reveal which la
 
 **Figure 9.6: Gap-to-Phase Prioritization Flow**
 
-```mermaid
-
-graph TD
-    subgraph ASSESS["FIND LOWEST DIMENSIONS"]
-        A["<b>Your INPACT™<br/>Assessment</b>"]
-    end
-
-    subgraph TRUST["TRUST THIRD"]
-        T1["<b>P (Permitted)</b><br/><b>→ L5</b>"]
-        T2["<b>T (Transparent)</b><br/><b>→ L5, L6</b>"]
-        T3["<b>A (Adaptive)</b><br/><b>→ L4, L6</b>"]
-    end
-
-    subgraph INTEL["INTELLIGENCE SECOND"]
-        I1["<b>N (Natural)</b><br/><b>→ L3, L4</b>"]
-    end
-
-    subgraph FOUND["FOUNDATION FIRST"]
-        F1["<b>I (Instant)</b><br/><b>→ L1, L2</b>"]
-        F2["<b>C (Contextual)</b><br/><b>→ L1, L2, L3</b>"]
-    end
-
-    A --> F1
-    A --> F2
-    A --> I1
-    A --> T1
-    A --> T2
-    A --> T3
-
-    Copyright["<b>© 2025 Colaberry Inc.</b>"]
-
-    style ASSESS fill:#f5f5f5,stroke:#666666,stroke-width:2px,color:#333333
-    style FOUND fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
-    style INTEL fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style TRUST fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A fill:#eeeeee,stroke:#666666,color:#333333
-    style F1 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style F2 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
-    style I1 fill:#ffe0b2,stroke:#f57c00,color:#e65100
-    style T1 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style T2 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style T3 fill:#b2dfdb,stroke:#00897b,color:#004d40
-    style Copyright fill:#ffffff,stroke:none,color:#666666
-
-```
 
 ![Figure 9.6: Gap-to-Phase Prioritization Flow](figures/figure-9-6.png)
 **Gap Prioritization Matrix**

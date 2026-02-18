@@ -1,0 +1,45 @@
+graph TB
+    NL["<b>User Query:</b><br/><b>Show my doctor's</b><br/><b>availability next week</b>"]
+    
+    NL --> L4["<b>Layer 4: Intelligence</b><br/><b>Receives raw natural language</b>"]
+    
+    subgraph PHASE1["<b>Phase 1: UNDERSTAND</b>"]
+        P1["<b>LLM Analysis:</b><br/><b>Parse • Extract • Plan</b>"]
+    end
+    
+    subgraph PHASE2["<b>Phase 2: RESOLVE</b>"]
+        P2["<b>Call Layer 3:</b><br/><b>resolve_entity • lookup_glossary</b>"]
+    end
+    
+    subgraph PHASE3["<b>Phase 3: EXECUTE</b>"]
+        P3A["<b>Retrieve Context:</b><br/><b>Query data • Apply ABAC</b>"]
+        P3B["<b>Validate Quality:</b><br/><b>NDCG@5 >0.8</b>"]
+    end
+    
+    CLARIFY["<b>Clarification</b><br/><b>Confidence < 0.90</b>"]
+    
+    RESULT["<b>Natural Response:</b><br/><b>Dr. Martinez has 5 openings</b>"]
+    
+    L4 --> P1
+    P1 --> P2
+    P2 --> P3A
+    P3A --> P3B
+    P3B --> RESULT
+    
+    P1 -.->|<b>Low confidence</b>| CLARIFY
+    P3B -.->|<b>Quality fail</b>| CLARIFY
+    
+    style L4 fill:#e0f2f1,stroke:#00897b,stroke-width:3px,color:#004d40
+    style PHASE1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style PHASE2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style PHASE3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style P1 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style P2 fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style P3A fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style P3B fill:#ffffff,stroke:#00897b,stroke-width:2px,color:#004d40
+    style RESULT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style CLARIFY fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style NL fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    style Copyright fill:#ffffff,stroke:none,color:#666666

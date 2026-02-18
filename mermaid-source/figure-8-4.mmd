@@ -1,0 +1,40 @@
+
+graph TB
+  subgraph CACHE["<b>CACHING @10x LOAD</b>"]
+    direction TB
+    QUERY["20,000 Queries/Day<br/>(10x normal load)"]
+    
+    L1["Level 1: Semantic Cache<br/>Redis | 68% hit rate"]
+    L2["Level 2: Vector Cache<br/>Pinecone | 22% of remaining"]
+    L3["Level 3: Cold Path<br/>Direct query | 10%"]
+    
+    R1["280ms avg"]
+    R2["850ms avg"]
+    R3["2.1s avg"]
+    
+    RESULT["Blended p95: 2.1s<br/>Under 3s target"]
+  end
+  
+  Copyright["© 2025 Colaberry Inc."]
+  
+  QUERY --> L1
+  L1 -->|"Hit 68%"| R1
+  L1 -->|"Miss 32%"| L2
+  L2 -->|"Hit 22%"| R2
+  L2 -->|"Miss 10%"| L3
+  L3 --> R3
+  R1 --> RESULT
+  R2 --> RESULT
+  R3 --> RESULT
+  
+  style CACHE fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+  style QUERY fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style L1 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+  style L2 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+  style L3 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
+  style R1 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:2px
+  style R2 fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
+  style R3 fill:#ffe0b2,stroke:#f57c00,stroke-width:2px,color:#e65100
+  style RESULT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+  style Copyright fill:#ffffff,stroke:none,color:#666666
+

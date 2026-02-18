@@ -1,0 +1,27 @@
+graph TB
+    subgraph SCORING["<b>GOALS™ Health Scoring (5-Point Scale)</b>"]
+        EXCELLENT["<b>5/5: 🚢 EXCELLENT</b><br/><b>Production-ready</b><br/><b>Continuous improvement</b>"]
+        GOOD["<b>4/5: 🚢 GOOD</b><br/><b>Healthy operations</b><br/><b>Monitor trends</b>"]
+        ADEQUATE["<b>3/5: 🚀 ADEQUATE</b><br/><b>Functional</b><br/><b>Improvement needed</b>"]
+        NEEDS["<b>2/5: 🚠 NEEDS WORK</b><br/><b>Gaps present</b><br/><b>Action required</b>"]
+        CRITICAL["<b>1/5: 🔴 CRITICAL</b><br/><b>Major gaps</b><br/><b>Immediate intervention</b>"]
+    end
+    
+    THRESHOLD["<b>Healthcare Threshold: 21/25</b><br/><b>G=5, O/A/L/S ≥4</b>"]
+    
+    EXCELLENT --> THRESHOLD
+    GOOD --> THRESHOLD
+    ADEQUATE -.->|<b>Below threshold</b>| THRESHOLD
+    NEEDS -.->|<b>Below threshold</b>| THRESHOLD
+    CRITICAL -.->|<b>Below threshold</b>| THRESHOLD
+    
+    style SCORING fill:#f0fff0,stroke:#00897b,stroke-width:2px
+    style EXCELLENT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style GOOD fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style ADEQUATE fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#004d40
+    style NEEDS fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style CRITICAL fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
+    style THRESHOLD fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    style Copyright fill:#ffffff,stroke:none,color:#666666

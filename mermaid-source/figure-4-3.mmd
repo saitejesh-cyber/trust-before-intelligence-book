@@ -1,0 +1,20 @@
+graph LR
+    subgraph "<b>Week 0: Batch ETL</b>"
+        OPS["<b>Operational Systems</b><br/>Epic, Cerner, Workday<br/>Real-time updates"]
+        ETL["<b>2 AM ETL</b><br/>Overnight batch<br/>24-hour cycle"]
+        REPORT["<b>Reporting Database</b><br/>Stale by afternoon<br/>8-24 hour lag"]
+    end
+    
+    RISK["<b>Patient Safety Risk</b><br/>Medication orders<br/>invisible 12+ hours"]
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    OPS -->|<b>Continuous changes</b>| ETL
+    ETL -->|<b>Batch load</b>| REPORT
+    REPORT -.->|<b>Agents query stale data</b>| RISK
+    
+    style OPS fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style ETL fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
+    style REPORT fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
+    style RISK fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
+    style Copyright fill:#ffffff,stroke:none,color:#666666

@@ -1,0 +1,37 @@
+graph LR
+    subgraph DEVELOP["DEVELOP"]
+        D1["<b>Version<br/>Control</b>"]
+    end
+    
+    subgraph TEST["TEST"]
+        T1["<b>A/B<br/>Testing</b>"]
+    end
+    
+    subgraph DEPLOY["DEPLOY"]
+        P1["<b>Staged<br/>Rollout</b>"]
+    end
+    
+    subgraph MONITOR["MONITOR"]
+        M1["<b>Performance<br/>Tracking</b>"]
+    end
+    
+    subgraph OPTIMIZE["OPTIMIZE"]
+        O1["<b>Cost<br/>Optimization</b>"]
+    end
+    
+    D1 --> T1 --> P1 --> M1 --> O1
+    O1 -->|<b>Feedback</b>| D1
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    style DEVELOP fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style TEST fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
+    style DEPLOY fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#880e4f
+    style MONITOR fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style OPTIMIZE fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c
+    style D1 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
+    style T1 fill:#ffe0b2,stroke:#f57c00,color:#e65100
+    style P1 fill:#f8bbd9,stroke:#c2185b,color:#880e4f
+    style M1 fill:#b2dfdb,stroke:#00897b,color:#004d40
+    style O1 fill:#e1bee7,stroke:#7b1fa2,color:#4a148c
+    style Copyright fill:#ffffff,stroke:none,color:#666666

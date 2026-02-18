@@ -1,0 +1,35 @@
+graph TB
+    TITLE["<b>Multi-LLM Router</b>"]
+    
+    Q["<b>Incoming Query</b>"]
+    
+    CLASS["<b>Query Classifier</b><br/><b>Complexity scoring</b>"]
+    
+    subgraph routing["<b>LLM Selection</b>"]
+        CLAUDE["<b>Claude Sonnet 4</b><br/><b>Complex reasoning</b><br/><b>Clinical analysis</b>"]
+        GPT["<b>GPT-4 Turbo</b><br/><b>Structured output</b><br/><b>API integrations</b>"]
+        LLAMA["<b>Llama 3.1 70B</b><br/><b>High volume</b><br/><b>Simple queries</b>"]
+    end
+    
+    OUT["<b>Response</b>"]
+    
+    TITLE -.-> Q
+    Q --> CLASS
+    CLASS -->|<b>High complexity</b>| CLAUDE
+    CLASS -->|<b>Structured need</b>| GPT
+    CLASS -->|<b>Simple/bulk</b>| LLAMA
+    CLAUDE --> OUT
+    GPT --> OUT
+    LLAMA --> OUT
+    
+    Copyright["<b>© 2025 Colaberry Inc.</b>"]
+    
+    style TITLE fill:#00897b,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Q fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
+    style CLASS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style routing fill:#fafafa,stroke:#00897b,stroke-width:2px,color:#000000
+    style CLAUDE fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style GPT fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style LLAMA fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
+    style OUT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    style Copyright fill:#ffffff,stroke:none,color:#666666
