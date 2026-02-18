@@ -20,7 +20,6 @@ Marcus paused. "I didn't ask."
 
 **Figure 11.1: Vendor Selection Transformation**
 
-<!--
 ```mermaid
 
  graph LR
@@ -49,7 +48,6 @@ Marcus paused. "I didn't ask."
     style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
 
 ```
--->
 
 ![Figure 11.1: Vendor Selection Transformation](figures/figure-11-1.png)
 > **Key Takeaway:** Every vendor must pass the three-pillar test. No exceptions.
@@ -103,7 +101,6 @@ Every technology in a production stack must pass the same evaluation. Three pill
 
 **Figure 11.2: The Three-Pillar Vendor Evaluation Framework**
 
-<!--
 ```mermaid
 graph TD
     subgraph VENDOR["VENDOR EVALUATION"]
@@ -143,7 +140,6 @@ graph TD
     style EVAL fill:#c8e6c9,stroke:#388e3c,stroke-width:2px,color:#1b5e20
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
--->
 
 ![Figure 11.2: The Three-Pillar Vendor Evaluation Framework](figures/figure-11-2.png)
 **Pillar 1: INPACT™ Agent Needs (Score Separately)**
@@ -214,7 +210,6 @@ Not every component requires a vendor purchase. The Architecture of Trust suppor
 
 **Figure 11.3: Build vs Buy vs Partner Decision Flow**
 
-<!--
 ```mermaid
 
 graph LR
@@ -256,7 +251,6 @@ graph LR
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
--->
 
 ![Figure 11.3: Build vs Buy vs Partner Decision Flow](figures/figure-11-3.png)
 **Build (Custom Development): 5-10% of Stack**
@@ -333,7 +327,6 @@ This section provides selection criteria for each of the seven architecture laye
 
 **Figure 11.4: The 7-Layer Architecture Technology Stack**
 
-<!--
 ```mermaid
 
 graph TB
@@ -383,7 +376,6 @@ graph TB
 
 
 ```
--->
 
 ![Figure 11.4: The 7-Layer Architecture Technology Stack](figures/figure-11-4.png)
 ---
@@ -811,7 +803,6 @@ Echo's final technology choices demonstrate the methodology in action. Every ven
 
 **Figure 11.5: Echo's Complete Technology Stack**
 
-<!--
 ```mermaid
 
 graph LR
@@ -851,7 +842,6 @@ graph LR
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
--->
 
 ![Figure 11.5: Echo's Complete Technology Stack](figures/figure-11-5.png)
 **Echo's Selection Principles:** (1) Managed over self-hosted, (2) Healthcare-first (BAA required), (3) Integration-proven over best-in-class, (4) Cost-optimized for Growth tier.

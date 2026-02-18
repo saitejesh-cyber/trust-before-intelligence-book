@@ -30,7 +30,6 @@ This chapter is what they wrote down.
 
 **Figure 9.1: Assessment Value, From Confusion to Clarity**
 
-<!--
 ```mermaid
 
 graph LR
@@ -59,7 +58,6 @@ graph LR
     style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
 
 ```
--->
 
 ![Figure 9.1: Assessment Value, From Confusion to Clarity](figures/figure-9-1.png)
 > **Key Takeaway:** One assessment. Six dimensions. Complete clarity on where to invest.
@@ -87,7 +85,6 @@ These three frameworks form a chain of dependency. INPACT™ requirements drive 
 
 **Figure 9.2: Architecture of Trust Assessment Flow**
 
-<!--
 ```mermaid
 graph LR
     subgraph ASSESS["ASSESSMENT"]
@@ -126,7 +123,6 @@ graph LR
     style R1 fill:#a5d6a7,stroke:#388e3c,color:#1b5e20
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
--->
 
 ![Figure 9.2: Architecture of Trust Assessment Flow](figures/figure-9-2.png)
 The integration principle is simple: **if you assess INPACT™ comprehensively, you've assessed everything.**
@@ -186,7 +182,6 @@ Raw scores translate into five trust bands that indicate agent readiness:
 
 **Figure 9.3: The Five Trust Bands**
 
-<!--
 ```mermaid
 graph LR
     subgraph VERYLOW["⚫ 6-11 pts (<33%)"]
@@ -225,7 +220,6 @@ graph LR
     style H fill:#b2dfdb,stroke:#00897b,color:#004d40
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
--->
 
 ![Figure 9.3: The Five Trust Bands](figures/figure-9-3.png)
 | Raw Score | Percentage | Trust Band | Agent Readiness |
@@ -248,7 +242,6 @@ INPACT™ covers the full architecture. Each dimension doesn't exist in isolatio
 
 **Figure 9.4: INPACT™ Dimension to Layer Mapping**
 
-<!--
 ```mermaid
 graph LR
     subgraph INPACT["INPACT™ DIMENSIONS"]
@@ -301,7 +294,6 @@ graph LR
     style L6 fill:#bbdefb,stroke:#1976d2,color:#0d47a1
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
--->
 
 ![Figure 9.4: INPACT™ Dimension to Layer Mapping](figures/figure-9-4.png)
 **Coverage Verification**: This mapping touches all seven layers. L7 (Orchestration) emerges when multiple dimensions reach production thresholds simultaneously. When you discover a low score in a particular dimension, you immediately know which layers require investment.
@@ -467,7 +459,6 @@ Echo's progression from 28/100 to 89/100 followed a deliberate sequence. Each ph
 
 **Figure 9.5: Echo's 90-Day INPACT™ Transformation**
 
-<!--
 ```mermaid
 graph LR
     subgraph WEEK0["⚫ WEEK 0"]
@@ -506,7 +497,6 @@ graph LR
     style W12 fill:#b2dfdb,stroke:#00897b,color:#004d40
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
--->
 
 ![Figure 9.5: Echo's 90-Day INPACT™ Transformation](figures/figure-9-5.png)
 **Echo's INPACT™ Progression: Milestone View**
@@ -612,7 +602,6 @@ Regardless of your overall score, your lowest-scoring dimensions reveal which la
 
 **Figure 9.6: Gap-to-Phase Prioritization Flow**
 
-<!--
 ```mermaid
 
 graph TD
@@ -658,7 +647,6 @@ graph TD
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
--->
 
 ![Figure 9.6: Gap-to-Phase Prioritization Flow](figures/figure-9-6.png)
 **Gap Prioritization Matrix**

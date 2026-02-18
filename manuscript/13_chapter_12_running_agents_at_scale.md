@@ -26,7 +26,6 @@ Marcus pulled up a document. It was three pages long. By Monday morning, it woul
 
 **Figure 12.1: Operations Value (From Reactive to Proactive)**
 
-<!--
 ```mermaid
 
 graph LR
@@ -55,7 +54,6 @@ graph LR
     style A1 fill:#b2dfdb,stroke:#00897b,color:#004d40
 
 ```
--->
 
 ![Figure 12.1: Operations Value (From Reactive to Proactive)](figures/figure-12-1.png)
 > **Key Takeaway:** Building is easy. Operating at scale requires systematic discipline.
@@ -100,7 +98,6 @@ Throughout this chapter, reference benchmarks are drawn from Echo Health Systems
 
 **Figure 12.2: The 15-Criteria Production Readiness Framework**
 
-<!--
 ```mermaid
 
 graph LR
@@ -137,7 +134,6 @@ graph LR
     style Copyright fill:#ffffff,stroke:none,color:#666666
 
 ```
--->
 
 ![Figure 12.2: The 15-Criteria Production Readiness Framework](figures/figure-12-2.png)
 **Pillar 1: INPACT™ Readiness (5 Criteria)**
@@ -321,7 +317,6 @@ Traditional MLOps practices (model versioning, A/B testing, performance monitori
 
 **Figure 12.3: Agent MLOps Lifecycle**
 
-<!--
 ```mermaid
 graph LR
     subgraph DEVELOP["DEVELOP"]
@@ -361,7 +356,6 @@ graph LR
     style O1 fill:#e1bee7,stroke:#7b1fa2,color:#4a148c
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
--->
 
 ![Figure 12.3: Agent MLOps Lifecycle](figures/figure-12-3.png)
 ---
@@ -681,7 +675,6 @@ When alerts fire, structured response prevents chaos. Adopt a six-phase incident
 
 **Figure 12.4: Six-Phase Incident Response**
 
-<!--
 ```mermaid
 graph LR
     subgraph P1["PHASE 1"]
@@ -726,7 +719,6 @@ graph LR
     style L fill:#e1bee7,stroke:#7b1fa2,color:#4a148c
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
--->
 
 ![Figure 12.4: Six-Phase Incident Response](figures/figure-12-4.png)
 **Phase 1: DETECT**
@@ -866,7 +858,6 @@ Structured weekly cycles transform operational data into agent improvements. A f
 
 **Figure 12.5: Five-Day Improvement Cycle**
 
-<!--
 ```mermaid
 graph LR
     subgraph MON["MONDAY"]
@@ -906,7 +897,6 @@ graph LR
     style F fill:#e1bee7,stroke:#7b1fa2,color:#4a148c
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
--->
 
 ![Figure 12.5: Five-Day Improvement Cycle](figures/figure-12-5.png)
 **The Five-Day Cycle**
@@ -1034,7 +1024,6 @@ AIXcelerator is a complete platform that accelerates agent infrastructure deploy
 
 **Figure 12.6: AIXcelerator Five-Component Platform**
 
-<!--
 ```mermaid
 graph TD
     subgraph PLATFORM["AIXcelerator PLATFORM"]
@@ -1062,7 +1051,6 @@ C1 --> RESULT["<b>Months/Years → 90 Days</b><br/><b>All Three Pillars</b>"]
     style RESULT fill:#c8e6c9,stroke:#388e3c,stroke-width:3px,color:#1b5e20
     style Copyright fill:#ffffff,stroke:none,color:#666666
 ```
--->
 
 ![Figure 12.6: AIXcelerator Five-Component Platform](figures/figure-12-6.png)
 **Five Core Components**
