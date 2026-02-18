@@ -1,6 +1,4 @@
-# BACK MATTER
-
----
+<!-- pagebreak -->
 
 ## ABOUT THE AUTHOR
 
@@ -10,7 +8,7 @@ Before writing about AI infrastructure, Ram built it. He architected systems ser
 
 Ram is a Harvard Business School OPM fellow and holds a Master of Liberal Arts from Harvard University. He received the McGovern Foundation's "AI for the Betterment of Humanity Prize" and was selected as a 2018 MIT Work of the Future Solver. He has presented in panels at the United Nations, World Bank, Harvard Business School, and MIT.
 
----
+<!-- pagebreak -->
 
 ## DIGITAL COMPANION
 
@@ -24,13 +22,13 @@ The digital companion includes:
 - **Downloadable Templates:** All tracking spreadsheets and checklists from the book
 - **Figures Gallery:** High-resolution versions of all 112 figures at trustbeforeintelligence.ai/figures
 
----
+<!-- pagebreak -->
 
 ## INPACT™ PRACTITIONER REFERENCE
 
 *See Appendix: INPACT™ Practitioner Reference for scoring rubrics, anti-patterns, and quick reference materials.*
 
----
+<!-- pagebreak -->
 
 ## INDEX
 
@@ -430,7 +428,3 @@ Workflow Engine, DC
 **Z**
 
 Zero-Trust Architecture, Ch 9
-
----
-
-**END OF BACK MATTER**

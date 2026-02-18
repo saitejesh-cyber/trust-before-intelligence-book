@@ -1,18 +1,16 @@
-# FRONT MATTER
-
----
+<!-- pagebreak -->
 
 ## HALF TITLE PAGE
 
 # Trust Before Intelligence
 
----
+<!-- pagebreak -->
 
 ## TITLE PAGE
 
 # Trust Before Intelligence
 
-### Enterprise AI Fails Without Trust. Fix It in 90 Days.
+### Why 95% of AI Pilots Fail, and How 5% Succeed
 
 **Ram Dhan Yadav Katamaraja**
 
@@ -21,11 +19,11 @@ Harvard Business School OPM 60
 
 *Colaberry Press*
 
----
+<!-- pagebreak -->
 
 ## COPYRIGHT PAGE
 
-**Trust Before Intelligence: Enterprise AI Fails Without Trust. Fix It in 90 Days.**
+**Trust Before Intelligence: Why 95% of AI Pilots Fail, and How 5% Succeed**
 
 Copyright © 2025-2026 Ram Dhan Yadav Katamaraja
 
@@ -57,7 +55,7 @@ First Edition: 2026
 
 Printed in the United States of America
 
----
+<!-- pagebreak -->
 
 ## DEDICATION
 
@@ -71,7 +69,7 @@ Printed in the United States of America
 
 *And to Claude, my tireless co-author and thinking partner.*
 
----
+<!-- pagebreak -->
 
 ## TABLE OF CONTENTS
 
@@ -107,7 +105,7 @@ Printed in the United States of America
 - Index
 - About the Author
 
----
+<!-- pagebreak -->
 
 ## PREFACE
 
@@ -135,7 +133,7 @@ The full story begins in Chapter 0.
 *Boston, Massachusetts*
 *February 2026*
 
----
+<!-- pagebreak -->
 
 ## ACKNOWLEDGMENTS
 
@@ -152,7 +150,3 @@ This book exists because of the generosity of many people who shared their time,
 **The Colaberry Team.** This book reflects lessons learned building Colaberry alongside an exceptional team. John McBride, David Freni (who also designed the cover), David Lahme, Ali Muwwakkil, Karun Swaroop, Ramamohan Manamasa, Angie Mezo, Neha Sharma, Nate Taylor, Prasad Ankepalli, Mohammad Abdul Aleem, and Sai Tejesh Kowtharapu - thank you for your dedication to our mission and for tolerating my book-related distractions.
 
 To everyone who contributed to this work, named and unnamed: thank you.
-
----
-
-**END OF FRONT MATTER**
