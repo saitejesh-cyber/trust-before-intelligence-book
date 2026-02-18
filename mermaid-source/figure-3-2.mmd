@@ -11,7 +11,7 @@ graph TB
     
     Shift["<b>PARADIGM EVOLUTION</b>"]
     
-    subgraph new["<b>AGENT-ERA: AUTONOMOUS SYSTEMS</b>"]
+    subgraph new["<b>AGENT-ERA:AUTONOMOUS     SYSTEMS</b>"]
         direction LR
         N1["<b>Real-Time</b><br/>Sub-30s freshness"]
         N2["<b>Multi-Modal</b><br/>Vector + Graph + SQL"]
@@ -25,21 +25,23 @@ graph TB
     
     old -.->|<b>Must Transform</b>| Shift
     Shift -.->|<b>To Enable</b>| new
+
+    %% 🔴 BI ERA — FAILURE / TRUST BREAKDOWN
+    style old fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
+    style O1 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+    style O2 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+    style O3 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
+    style O4 fill:#ffebee,stroke:none,color:#b71c1c,rx:10,ry:10
     
-    %% BI-Era (Red - Problems/Old Approach)
-    style O1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style O2 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style O3 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c
-    style O4 fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
+    %% 🔵 TRANSFORMATION — ACTIVE CHANGE
+    style Shift fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
     
-    %% Agent-Era (Teal - Solutions/Modern Approach)
-    style N1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style N2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style N3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style N4 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
+    %% 🟢 AGENT ERA — TRUSTED / INPACT™-FULFILLED
+    style new fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style N1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style N2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style N3 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style N4 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
     
-    %% Transition Element
-    style Shift fill:#fff9e6,stroke:#f57c00,stroke-width:3px,color:#e65100
-    
-    %% Copyright
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    %% FOOTER
+    style Copyright fill:none,stroke:none,color:#333333

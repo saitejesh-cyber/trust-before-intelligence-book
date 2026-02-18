@@ -10,18 +10,18 @@ graph LR
         CDC --> KAFKA --> PROCESS
     end
     
-    OUTCOME["<b>Layer 1 Storage</b><br/>↓<br/>Agents < 30s Refresh"]
+    OUTCOME["<b>Layer 1 Storage</b><br/>↓<br/>Agents < 30s ReFresh"]
     
     Copyright["© 2025 Colaberry Inc."]
     
     SOURCE -->|"Changes"| LAYER2
     LAYER2 -->|"Store"| OUTCOME
     
-    style SOURCE fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style LAYER2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style CDC fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style KAFKA fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style PROCESS fill:#b2dfdb,stroke:#00897b,stroke-width:2px,color:#004d40
-    style OUTCOME fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style SOURCE fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style LAYER2 fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style CDC fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style KAFKA fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style PROCESS fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style OUTCOME fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style Copyright fill:none,stroke:none,color:#333333
 

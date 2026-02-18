@@ -5,7 +5,8 @@ graph TB
     L4["<b>Layer 4: Intelligence</b><br/><b>LLM + RAG Pipeline</b>"]
     L3["<b>Layer 3: Semantic</b><br/><b>Business Context</b>"]
     
-    subgraph "<b>🏗️ FOUNDATION</b>"
+    subgraph FOUNDATION["<b>🏗️ FOUNDATION</b>"]
+        direction TB
         L2["<b>Layer 2: Real-Time Data</b><br/><b>CDC & Streaming</b>"]
         L1["<b>Layer 1: Multi-Modal Storage</b><br/><b>8 Phase 1 Categories</b>"]
     end
@@ -15,11 +16,13 @@ graph TB
     L7 --> L6 --> L5 --> L4 --> L3
     L3 --> L2 --> L1
     
-    style L7 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style L6 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style L5 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style L4 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style L3 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style L2 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style L1 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style L7 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style L6 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style L5 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style L4 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style L3 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style FOUNDATION fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style L2 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style L1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style Copyright fill:none,stroke:none,color:#333333
+

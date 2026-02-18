@@ -1,5 +1,5 @@
 graph TB
-    subgraph "<b>COMPLETE ARCHITECTURE - WEEK 10</b>"
+    subgraph COMPLETE_ARCH["<b>COMPLETE ARCHITECTURE - WEEK 10</b>"]
         L7["<b>Layer 7: Orchestration</b><br/><b>✓ LangGraph Multi-Agent</b>"]
         L6["<b>Layer 6: Observability</b><br/><b>✓ OpenTelemetry + Datadog</b>"]
         L5["<b>Layer 5: Governance</b><br/><b>✓ OPA + ABAC + HITL</b>"]
@@ -16,12 +16,13 @@ graph TB
     L7 --> L6 --> L5 --> L4 --> L3 --> L2 --> L1
     L1 -.->|<b>Enables</b>| INPACT
     
-    style L7 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style L6 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style L5 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style L4 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style INPACT fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style L7 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style L6 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style L5 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style L4 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style L3 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style L2 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style L1 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style INPACT fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style COMPLETE_ARCH fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style Copyright fill:none,stroke:none,color:#333333
