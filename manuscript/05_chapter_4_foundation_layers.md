@@ -771,7 +771,7 @@ Layer 2 solves this with three integrated components:
 
 ### Component 1: Change Data Capture (CDC)
 
-**What:** Debezium CDC connectors monitoring operational databases for INSERT, UPDATE, DELETE operations. *Alternatives: AWS DMS, Oracle GoldenGate, Airbyte.*
+**What:** Debezium CDC connectors monitoring operational databases for INSERT, UPDATE, DELETE operations. *Alternatives: AWS DMS, Oracle GoldenGate, Airbyte.* CDC connectors capture changes from the databases underlying enterprise systems: Oracle (supporting Oracle EBS, PeopleSoft), SQL Server (supporting Dynamics), DB2 and mainframe databases, MySQL, and PostgreSQL. For SaaS applications (Salesforce, Workday, NetSuite), Layer 2 uses API-based connectors rather than CDC. The principle is universal: capture changes at the source, stream to agent-optimized storage.
 
 **Why:** CDC captures database changes within milliseconds without impacting operational system performance. Reads database transaction logs (binlog for MySQL, Write-Ahead Log for PostgreSQL, Change Tracking for SQL Server) with no additional load on production databases.
 
