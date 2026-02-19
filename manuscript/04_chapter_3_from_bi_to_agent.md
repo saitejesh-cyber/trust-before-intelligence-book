@@ -335,9 +335,9 @@ Each infrastructure gap requires a specific architectural layer:
 
 ![Figure 3.3: Seven Gaps --> Six Needs --> Seven Layers](figures/figure-3-3.png)
 Figure 3.3 maps the complete transformation path:
-- **Left (Red):** Seven infrastructure gaps from BI-era systems
-- **Middle (Gray):** INPACT™ needs that each gap violates  
-- **Right (Teal):** Seven architectural layers that solve each gap
+- **Left :** Seven infrastructure gaps from BI-era systems
+- **Middle :** INPACT™ needs that each gap violates  
+- **Right :** Seven architectural layers that solve each gap
 
 **Key insight:** Miss one layer, agents fail. Build all seven, fulfill all six INPACT™ needs.
 
