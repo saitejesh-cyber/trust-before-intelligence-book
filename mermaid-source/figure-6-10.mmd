@@ -3,7 +3,7 @@ graph TB
     
     Supervisor["<b>Supervisor</b><br/><b>Routes to 3 Agents</b>"]
     
-    subgraph "<b>PARALLEL EXECUTION (2.3s)</b>"
+    subgraph PARALLEL_EXEC["<b>PARALLEL EXECUTION (2.3s)</b>"]
         Care["<b>Care Agent</b><br/><b>Follow-up: Tue 10 AM</b><br/><b>PT Eval: Thu 2 PM</b>"]
         Clinical["<b>Clinical Agent</b><br/><b>3 Medications</b><br/><b>No Interactions</b>"]
         Revenue["<b>Revenue Agent</b><br/><b>UHC PPO Verified</b><br/><b>$45 Copay</b>"]
@@ -26,11 +26,12 @@ graph TB
     Clinical --> Response
     Revenue --> Response
     
-    style Query fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style Supervisor fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style Care fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style Clinical fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style Revenue fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style State fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style Response fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style Query fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style Supervisor fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style Care fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style Clinical fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style Revenue fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style State fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
+    style Response fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style PARALLEL_EXEC fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style Copyright fill:none,stroke:none,color:#333333

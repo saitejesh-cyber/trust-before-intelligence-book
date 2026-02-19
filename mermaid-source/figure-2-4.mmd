@@ -16,11 +16,20 @@ graph TB
     TITLE --> ASSESS --> CALC --> DECISION
     DECISION -->|<b>YES</b>| READY
     DECISION -->|<b>NO</b>| GAPS
-    
-    style TITLE fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style ASSESS fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style CALC fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style DECISION fill:#fff9e6,stroke:#f57c00,stroke-width:2px,color:#e65100
-    style READY fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style GAPS fill:#990000,color:#ffffff,stroke:#b71c1c,stroke-width:3px
-    style COPYRIGHT fill:#ffffff,stroke:none,color:#666666
+
+    %% ⚪ CONTEXT / FRAMING
+    style TITLE fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style ASSESS fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style CALC fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+
+    %% 🟠 DECISION / PRESSURE POINT
+    style DECISION fill:#edf4fa,stroke:#d6e4f2,stroke-width:1px,color:#333333,rx:20,ry:20
+
+    %% 🟢 TRUSTED / INPACT™-FULFILLED
+    style READY fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+
+    %% 🔴 FAILURE / RISK
+    style GAPS fill:#fff5f5,stroke:#f2caca,stroke-width:1px,color:#b71c1c,rx:20,ry:20
+
+    %% FOOTER
+    style COPYRIGHT fill:none,stroke:none,color:#333333

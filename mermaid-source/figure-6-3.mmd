@@ -1,16 +1,16 @@
 graph TB
-    subgraph "<b>TRUST LAYERS (Ch 6)</b>"
+    subgraph TRUST_LAYERS["<b>TRUST LAYERS (Ch 6)</b>"]
         L7["<b>Layer 7: Orchestration</b><br/><b>Multi-Agent Coordination</b>"]
         L6["<b>Layer 6: Observability</b><br/><b>Tracing & Monitoring</b>"]
         L5["<b>Layer 5: Governance</b><br/><b>ABAC + HITL</b>"]
     end
     
-    subgraph "<b>INTELLIGENCE (Ch 5)</b>"
+    subgraph INTELLIGENCE_CH5["<b>INTELLIGENCE (Ch 5)</b>"]
         L4["<b>Layer 4: Intelligence</b><br/><b>RAG + LLM</b>"]
         L3["<b>Layer 3: Semantic</b><br/><b>Business Context</b>"]
     end
     
-    subgraph "<b>FOUNDATION (Ch 4)</b>"
+    subgraph FOUNDATION_CH4["<b>FOUNDATION (Ch 4)</b>"]
         L2["<b>Layer 2: Real-Time</b><br/><b>CDC & Streaming</b>"]
         L1["<b>Layer 1: Storage</b><br/><b>Multi-Modal</b>"]
     end
@@ -19,11 +19,14 @@ graph TB
     
     L7 --> L6 --> L5 --> L4 --> L3 --> L2 --> L1
     
-    style L7 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style L6 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style L5 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style L4 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L3 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style L2 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style L1 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+        style L7 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+        style L6 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+        style L5 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+        style L4 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+        style L3 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+        style L2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+        style L1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style TRUST_LAYERS fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style INTELLIGENCE_CH5 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style FOUNDATION_CH4 fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style Copyright fill:none,stroke:none,color:#333333
