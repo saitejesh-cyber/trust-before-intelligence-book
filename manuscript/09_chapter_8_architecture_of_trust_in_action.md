@@ -33,6 +33,14 @@ Built isn't enough. Operations prove trust.
 
 ---
 
+**Figure 8.0: Echo's Transformation: Week 0 to Week 12**
+
+
+![Figure 8.0: Echo's Transformation: Week 0 to Week 12](figures/figure-8-0.png)
+> **Key Takeaway:** *"You've answered my question, and built something we can trust."* – Dr. Arun Raj, Board Chair
+
+---
+
 ## Part 1: Operations Kickoff
 
 ### Two Hours Earlier
@@ -572,14 +580,6 @@ Now it's your turn.
 | Care Coordination | 1.6s | 97% | ~3% | ~87% |
 | Clinical Documentation | 1.9s | 96% | ~8% | ~87% |
 | Revenue Cycle | 1.4s | 98% | ~6% | ~87% |
-
----
-
-## Echo's Transformation: Week 0 to Week 12
-
-
-![Diagram](figures/09_chapter_8_architecture_of_trust_in_action-diagram-11.png)
-> **Key Takeaway:** *"You've answered my question, and built something we can trust."* – Dr. Arun Raj, Board Chair
 
 ---
 
