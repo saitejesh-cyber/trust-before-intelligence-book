@@ -1,14 +1,14 @@
 graph LR
-    subgraph "<b>Real-Time Inference Path</b>"
+    subgraph RT["<b>Real-Time Inference Path</b>"]
         I1["<b>User Query</b>"]
-        I2["<b>Real-Time CDC</b><br/><b>< 30s lag</b>"]
-        I3["<b>Agent Response</b><br/><b>< 3s total</b>"]
+        I2["<b>Real-Time CDC</b><br/><b>&lt; 30s lag</b>"]
+        I3["<b>Agent Response</b><br/><b>&lt; 3s total</b>"]
     end
     
-    subgraph "<b>Batch Training Path</b>"
+    subgraph BATCH["<b>Batch Training Path</b>"]
         T1["<b>Historical Data</b>"]
         T2["<b>Overnight ETL</b><br/><b>OK for batch</b>"]
-        T3["<b>Model Training</b><br/><b>Hours/days OK</b>"]
+        T3["<b>Model Training</b><br/><b>Hours / days OK</b>"]
     end
     
     STORAGE["<b>Layer 1 Storage</b><br/><b>Serves both paths</b>"]
@@ -17,12 +17,14 @@ graph LR
     
     I1 --> I2 --> STORAGE --> I3
     T1 --> T2 --> STORAGE --> T3
-    
-    style I1 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style I2 fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style I3 fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style T1 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style T2 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style T3 fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style STORAGE fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+
+    style RT fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style I1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style I2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style I3 fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style BATCH fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style T1 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style T2 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style T3 fill:#f9f9f9,stroke:none,color:#000000,rx:10,ry:10
+    style STORAGE fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style Copyright fill:none,stroke:none,color:#333333

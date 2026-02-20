@@ -1,7 +1,7 @@
 graph TB
     Query["<b>Agent Request</b><br/><b>Access Needed</b>"]
     
-    subgraph "<b>ABAC EVALUATION</b>"
+    subgraph ABAC_EVAL["<b>ABAC EVALUATION</b>"]
         S["<b>SUBJECT</b><br/><b>Who is asking?</b><br/><b>Role, Dept, Credentials</b>"]
         R["<b>RESOURCE</b><br/><b>What data?</b><br/><b>Classification, Sensitivity</b>"]
         A["<b>ACTION</b><br/><b>What operation?</b><br/><b>Read, Write, Export</b>"]
@@ -21,10 +21,11 @@ graph TB
     A --> Policy
     C --> Policy
     
-    style Query fill:#f9f9f9,stroke:#666666,stroke-width:2px,color:#000000
-    style S fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style R fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style A fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style C fill:#e0f2f1,stroke:#00897b,stroke-width:2px,color:#004d40
-    style Policy fill:#00695c,color:#ffffff,stroke:#004d40,stroke-width:3px
-    style Copyright fill:#ffffff,stroke:none,color:#666666
+    style Query fill:#ffffff,stroke:#e0e0e0,stroke-width:1px,color:#000000,rx:20,ry:20
+    style S fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style R fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style A fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style C fill:#30838C,stroke:none,color:#ffffff,rx:10,ry:10
+    style Policy fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style ABAC_EVAL fill:#e6f3f6,stroke:#c7e3ea,stroke-width:1px,color:#004d40,rx:20,ry:20
+    style Copyright fill:none,stroke:none,color:#333333
