@@ -351,6 +351,12 @@ Figure 3.3 maps the complete transformation path:
 | **Gap 6: Reasoning observability** | Transparent (T), Adaptive (A) | 6 | Distributed tracing |
 | **Gap 7: Multi-agent coordination** | All needs at scale | 7 | Orchestration framework |
 
+**Figure 3.4: The Complete 7-Layer Agent-Ready Architecture**
+
+
+![Figure 3.4: The Complete 7-Layer Agent-Ready Architecture](figures/figure-3-4.png)
+> **Key Takeaway:** Seven layers working together fulfill all six INPACT™ needs. Each layer builds on the ones below it.
+
 ### Echo's Four-Phase Roadmap
 
 The transformation follows four phases across 12 weeks:
