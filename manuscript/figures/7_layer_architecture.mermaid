@@ -1,0 +1,51 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1a1a2e', 'primaryTextColor': '#ffffff', 'primaryBorderColor': '#4a4a6a', 'lineColor': '#6c63ff', 'secondaryColor': '#16213e', 'tertiaryColor': '#0f3460'}}}%%
+
+flowchart TB
+    subgraph AGENTS["<b>AGENTS</b>"]
+        L7["<b>ORCHESTRATION LAYER</b><br/>Multi-Agent Coordination • Workflow Engine • Human-in-the-Loop"]
+    end
+
+    subgraph OPERATIONS["<b>OPERATIONS</b>"]
+        L6["<b>OBSERVABILITY LAYER</b><br/>Performance Monitoring • Audit Trails • Alerting"]
+        L5["<b>GOVERNANCE LAYER</b><br/>Policy Engine • Access Control • Compliance"]
+    end
+
+    subgraph INTELLIGENCE["<b>INTELLIGENCE</b>"]
+        L4["<b>INTELLIGENCE LAYER</b><br/>LLM Gateway • RAG Pipeline • Prompt Management"]
+        L3["<b>SEMANTIC LAYER</b><br/>Knowledge Graphs • Entity Resolution • Business Glossary"]
+    end
+
+    subgraph FOUNDATION["<b>FOUNDATION</b>"]
+        L2["<b>REAL-TIME DATA FABRIC</b><br/>CDC Streams • Event Processing • Cache Layer"]
+        L1["<b>MULTI-MODAL STORAGE</b><br/>Vector DB • Graph DB • Document Store • Time Series"]
+    end
+
+    subgraph ENTERPRISE["<b>YOUR ENTERPRISE SYSTEMS</b>"]
+        ES["ERP • CRM • Data Warehouse • Legacy Systems • APIs"]
+    end
+
+    L7 --> L6
+    L6 --> L5
+    L5 --> L4
+    L4 --> L3
+    L3 --> L2
+    L2 --> L1
+    L1 -.-> ES
+
+    TRUST["<b>INPACT™<br/>TRUST<br/>FRAMEWORK</b><br/><br/>Instant<br/>Natural<br/>Permitted<br/>Adaptive<br/>Contextual<br/>Transparent"]
+
+    style AGENTS fill:#ff6b35,stroke:#ff6b35,color:#fff
+    style OPERATIONS fill:#f7931e,stroke:#f7931e,color:#fff
+    style INTELLIGENCE fill:#4ecdc4,stroke:#4ecdc4,color:#1a1a2e
+    style FOUNDATION fill:#45b7d1,stroke:#45b7d1,color:#1a1a2e
+    style ENTERPRISE fill:none,stroke:#6c757d,stroke-dasharray: 5 5,color:#adb5bd
+    style TRUST fill:#6c63ff,stroke:#6c63ff,color:#fff
+
+    style L7 fill:#ff6b35,stroke:#cc5529,color:#fff
+    style L6 fill:#f7931e,stroke:#c67518,color:#fff
+    style L5 fill:#f7931e,stroke:#c67518,color:#fff
+    style L4 fill:#4ecdc4,stroke:#3da49d,color:#1a1a2e
+    style L3 fill:#4ecdc4,stroke:#3da49d,color:#1a1a2e
+    style L2 fill:#45b7d1,stroke:#3792a7,color:#1a1a2e
+    style L1 fill:#45b7d1,stroke:#3792a7,color:#1a1a2e
+    style ES fill:#2d3436,stroke:#6c757d,stroke-dasharray: 5 5,color:#adb5bd
