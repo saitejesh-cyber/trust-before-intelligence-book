@@ -130,6 +130,11 @@ By Friday, Governance stood at 4/5. Audit coverage complete. HITL escalation: 28
 
 The Trust Flywheel was turning. Faster HITL resolution built clinician trust. Trust drove engagement. Engagement improved quality. Quality reinforced the value of human oversight.
 
+**Figure 8.3: End-to-End Observability with Trace IDs**
+
+
+![Figure 8.3: End-to-End Observability with Trace IDs](figures/figure-8-3.png)
+
 ### Observability: Seeing Through the Blackbox
 
 Observability presented different challenges. Mean time to detection was running at 8 minutes, above their 5-minute target. And explainability wasn't fully enabled.
@@ -150,10 +155,6 @@ He adjusted thresholds based on baseline data. By Wednesday, false positives dro
 
 Explainability required surfacing the reasoning chain across all seven layers.
 
-**Figure 8.3: End-to-End Observability with Trace IDs**
-
-
-![Figure 8.3: End-to-End Observability with Trace IDs](figures/figure-8-3.png)
 The implementation had three components: source tracking (every fact linked to its source), reasoning chain (logical steps documented), and confidence scoring (numerical confidence visible to reviewers).
 
 By Thursday, every response included a collapsible "reasoning" section. "I can see the agent's homework," one physician commented. "It's not a black box."
@@ -190,13 +191,13 @@ Availability was already at 4/5. Week 11's task was validation: proving the syst
 
 The stakes were real. Healthcare organizations face unpredictable demand spikes: flu season, public health announcements, holiday coverage. If Echo's agents couldn't scale, they would fail precisely when needed most.
 
-The 10x scale test began Tuesday at 6 AM. Jamie's team generated synthetic queries mirroring actual usage patterns across all three agents.
+The 10x scale test began Tuesday at 6 AM. Jamie's team generated synthetic queries mirroring actual usage patterns across all three agents. The results validated the architecture. Under 10x load, response time p95 held at 2.1 seconds, within the 3-second target. Cache hit rate actually improved under load as common patterns became more likely.
 
 **Figure 8.4: Multi-Level Cache Performance Under Load**
 
 
 ![Figure 8.4: Multi-Level Cache Performance Under Load](figures/figure-8-4.png)
-The results validated the architecture. Under 10x load, response time p95 held at 2.1 seconds, within the 3-second target. Cache hit rate actually improved under load as common patterns became more likely.
+
 
 The cold path remained the bottleneck, but only 10% of queries took it, and those still completed in 2.1 seconds.
 
@@ -214,14 +215,16 @@ At 2/5, the 30% clarification rate meant nearly one in three queries required th
 
 "The primary issue is ambiguity in entity references," Marcus explained. "When someone says 'my doctor,' we don't always know if they mean their PCP, their specialist, or the physician they saw last week."
 
-The problem ran deeper. Healthcare language is inherently contextual. "My appointment" could mean the next visit or the one just completed. "My results" could mean lab work, imaging, or pathology.
-
-Swapna identified three categories: entity ambiguity ("my doctor" with multiple providers), temporal ambiguity ("my appointment" without timing), and domain ambiguity ("my results" without type).
-
 **Figure 8.5: Lexicon Disambiguation Flow**
 
 
 ![Figure 8.5: Lexicon Disambiguation Flow](figures/figure-8-5.png)
+
+
+The problem ran deeper. Healthcare language is inherently contextual. "My appointment" could mean the next visit or the one just completed. "My results" could mean lab work, imaging, or pathology.
+
+Swapna identified three categories: entity ambiguity ("my doctor" with multiple providers), temporal ambiguity ("my appointment" without timing), and domain ambiguity ("my results" without type).
+
 The team implemented smart disambiguation. When confidence dropped below 0.90, the system would ask a clarifying question with the most likely options: "Do you mean your PCP Dr. Nguyen or your cardiologist Dr. Patel?"
 
 The implementation required coordination across layers: Layer 3 for confidence scoring, Layer 4 for context retrieval, Layer 7 for dialogue management.
@@ -238,18 +241,19 @@ Lexicon moved to 4/5.
 
 ### Solid: One Truth, Four Systems
 
-Solid was the foundation everything else depended upon. At 3/5, the 3% cross-system inconsistency for primary care provider data was causing problems.
-
-"A patient asks 'who is my doctor?'" Swapna explained Monday. "The EHR says Dr. Nguyen. The scheduling system shows Dr. Martinez, their previous PCP who retired three months ago. The agent gives different answers depending on which system it queries first."
-
-Marcus framed the stakes. "If a patient gets conflicting information, they lose trust. If a clinician gets conflicting data about a care team, it could affect clinical decisions."
-
-Swapna mapped the data flows. The EHR was source of truth, but the scheduling system updated nightly via batch extract. When a PCP changed, it could take 24 hours for scheduling to reflect it.
+Solid was the foundation everything else depended upon. At 3/5, the 3% cross-system inconsistency for primary care provider data was causing problems. "A patient asks 'who is my doctor?'" Swapna explained Monday. "The EHR says Dr. Nguyen. The scheduling system shows Dr. Martinez, their previous PCP who retired three months ago. The agent gives different answers depending on which system it queries first."
 
 **Figure 8.6: Quality Gates in Production**
 
 
 ![Figure 8.6: Quality Gates in Production](figures/figure-8-6.png)
+
+
+
+Marcus framed the stakes. "If a patient gets conflicting information, they lose trust. If a clinician gets conflicting data about a care team, it could affect clinical decisions."
+
+Swapna mapped the data flows. The EHR was source of truth, but the scheduling system updated nightly via batch extract. When a PCP changed, it could take 24 hours for scheduling to reflect it.
+
 The solution was real-time synchronization. When a provider assignment changed in the EHR, the change would propagate to scheduling within 30 seconds.
 
 "We're implementing event-driven sync," Swapna explained. "The EHR publishes a change event. Our integration layer catches it and updates downstream systems immediately."
@@ -348,10 +352,6 @@ Sarah held up her hand. "We're not done. We still need to validate the three age
 
 The next three hours were the most comprehensive validation Echo's team had ever conducted.
 
-**Figure 8.7: Three Agents Architecture**
-
-
-![Figure 8.7: Three Agents Architecture](figures/figure-8-7.png)
 ### Agent 1: Care Coordination
 
 **Agent Profile:**
@@ -359,6 +359,12 @@ The next three hours were the most comprehensive validation Echo's team had ever
 - **Primary Users:** Care coordinators, nurses, case managers
 - **Data Sources:** EHR, scheduling, insurance, pharmacy
 - **Average Daily Queries:** 800
+
+
+**Figure 8.7: Three Agents Architecture**
+
+
+![Figure 8.7: Three Agents Architecture](figures/figure-8-7.png)
 
 | Metric | Result | Target | Status |
 |--------|--------|--------|--------|
@@ -379,6 +385,8 @@ The next three hours were the most comprehensive validation Echo's team had ever
 - **INPACT™:** **I**nstant (1.6s), **N**atural (patient language understood), **P**ermitted (verified patient access), **A**daptive (learns from ~87% satisfaction feedback), **C**ontextual (5 systems unified), **T**ransparent (three citations + audit trail)
 - **7-Layer:** Layer 1 unified scheduling data. Layer 2 delivered data in 0.8s. Layer 3 resolved "heart doctor" → cardiologist. Layer 4 retrieved care history. Layer 5 verified permissions. Layer 6 logged trace. Layer 7 orchestrated routing.
 - **GOALS™:** **G**overnance (audit complete, ~3% HITL), **O**bservability (full trace visible), **A**vailability (97% under 2s), **L**exicon (97% accuracy), **S**olid (data consistent)
+
+---
 
 ### Agent 2: Clinical Documentation
 
@@ -411,6 +419,8 @@ Dr. Chen reviewed the validation personally. "The agent correctly escalated a po
 - **INPACT™:** **I**nstant (1.9s), **N**atural (clinical terminology), **P**ermitted (HIPAA-compliant), **A**daptive (current guidelines + feedback), **C**ontextual (synthesized labs, meds, notes), **T**ransparent (reasoning chain with citations)
 - **7-Layer:** Layer 1 provided EHR data. Layer 2 streamed lab results. Layer 3 mapped clinical terminology. Layer 4 RAG retrieved notes and guidelines. Layer 5 enforced HIPAA controls. Layer 6 logged reasoning chain. Layer 7 coordinated multi-source retrieval.
 - **GOALS™:** **G**overnance (~8% HITL for clinical decisions), **O**bservability (full explainability), **A**vailability (supports workflow), **L**exicon (ICD-10/CPT mapped), **S**olid (lab values verified)
+
+---
 
 ### Agent 3: Revenue Cycle
 
@@ -498,12 +508,15 @@ Dr. Raj leaned forward. "You've built something that measures itself. That prove
 
 "That's the answer to your question," Sarah said. "We know it stays trustworthy because the three pillars validate each other continuously."
 
+<!-- pagebreak -->
+
 ### The Journey
 
 **Figure 8.10: Echo's 90-Day Journey**
 
 
 ![Figure 8.10: Echo's 90-Day Journey](figures/figure-8-10.png)
+
 | Phase | Timeline | Pillar Focus | Achievement |
 |-------|----------|--------------|-------------|
 | Assessment | Day 0 | INPACT™ | 28/100 baseline |
@@ -513,7 +526,11 @@ Dr. Raj leaned forward. "You've built something that measures itself. That prove
 | Operations | Weeks 11-12 | GOALS™ | 21/25 achieved |
 | **Production** | Week 12 | **All 3 Validated** | 89/100 INPACT™, 7/7 Layers, 21/25 GOALS™ |
 
+<!-- pagebreak -->
+
 ### Final Score Card
+
+---
 
 | Metric | Day 0 | Week 12 | Change |
 |--------|-------|---------|--------|
@@ -558,11 +575,13 @@ Now it's your turn.
 
 5. **The pattern is repeatable.** Assess, build, measure, improve. Echo's journey isn't unique to healthcare. It's the Architecture of Trust applied to a specific context.
 
----
+<!-- pagebreak -->
 
 ## Operational Metrics Summary
 
 **Final GOALS™ Status:**
+
+---
 
 | Dimension | Week 10 | Week 12 | Key Achievement |
 |-----------|---------|---------|-----------------|
@@ -572,6 +591,8 @@ Now it's your turn.
 | Lexicon | 2/5 | 4/5 | ~5% clarification rate |
 | Solid | 3/5 | 4/5 | 98% cross-system consistency |
 | **Total** | **15/25** | **21/25** | **Threshold achieved** |
+
+---
 
 **Agent Performance Summary:**
 

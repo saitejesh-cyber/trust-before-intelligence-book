@@ -80,6 +80,12 @@ Tony Robbins built an empire on one insight: humans have six core needs - signif
 
 **Agents cannot advocate for themselves.** They depend entirely on infrastructure to fulfill their needs. An agent can't request real-time data when batch ETL is all that's available. It can't negotiate for dynamic permissions when RBAC alone is all that exists.
 
+
+**Figure 2.3: Six INPACT™ Needs Fulfilled**
+
+
+![Figure 2.3: Six INPACT™ Needs Fulfilled](figures/figure-2-3.png)
+
 ### Trust = Earned Outcome, Not Built Component
 
 Traditional enterprise software could require trust: "You must use this ERP system." Users had no alternative. Distrust meant workarounds, but the system remained in use because it was mandated.
@@ -88,10 +94,6 @@ Traditional enterprise software could require trust: "You must use this ERP syst
 
 **Trust emerges when infrastructure consistently fulfills needs:**
 
-**Figure 2.3: Six INPACT™ Needs Fulfilled**
-
-
-![Figure 2.3: Six INPACT™ Needs Fulfilled](figures/figure-2-3.png)
 **When even one need fails, trust collapses across all dimensions.** Agents operate on binary trust. Users either trust enough to delegate, or they don't trust at all. Echo's scheduling agent achieved 95% accuracy but took 9-13 seconds to respond. Users abandoned it. Accuracy didn't matter when speed destroyed conversational experience.
 
 ### INPACT™ as Requirements Definition
@@ -137,7 +139,11 @@ INPACT™ assessment quantifies infrastructure readiness using a 1-6 scoring sys
 
 **86/100 Threshold:** Industry analysis shows 86/100 (~31/36 points) as minimum for production readiness [15,16]. Below 86: high abandonment risk. Above 86: sustainable adoption, manageable risk, continuous improvement foundation.
 
-**Practical Application:** INPACT™ assessment takes 2-4 hours with infrastructure and data teams. Output: current score per dimension, gap analysis, prioritized roadmap. Tool available at trustbeforeintelligence.ai/assessment.
+**Figure 2.5: Echo Health's INPACT™ Transformation - 28/100 to 86/100 in 10 Weeks**
+
+![Figure 2.5: Echo Health's INPACT™ Transformation - 28/100 to 86/100 in 10 Weeks](figures/figure-2-5.png)
+
+**Practical Application:** INPACT™ assessment takes 30 mins to 4 hours with infrastructure and data teams. Output: current score per dimension, gap analysis, prioritized roadmap. Tool available at trustbeforeintelligence.ai/assessment.
 
 ### Echo Health's Reality Check
 
@@ -155,12 +161,6 @@ Sarah's dashboard revealed the brutal truth - dimension by dimension:
 Five critical gaps. One moderate strength. A 21-point climb to reach the 86/100 production threshold.
 
 The transformation roadmap began there.
-
-**Figure 2.5: Echo Health's INPACT™ Transformation - 28/100 to 86/100 in 10 Weeks**
-
-
-![Figure 2.5: Echo Health's INPACT™ Transformation - 28/100 to 86/100 in 10 Weeks](figures/figure-2-5.png)
----
 
 ## PART 2: ECHO'S DISCOVERY AND PRIORITIZATION
 
@@ -310,14 +310,14 @@ Complex queries: 31% → 78%.
 
 Healthcare faces regulations where inability to prove proper authorization results in penalties. HIPAA audits require demonstrating that every data access was authorized, attributable to a specific human, and auditable with complete justification [2].
 
-Role-based access control (RBAC) operates at table level: grant all patient records or none. Modern agents require contextual ABAC layered on this RBAC foundation: Patient 10243's appointment can be viewed by Patient 10243 themselves, physicians assigned to their case, schedulers in their region, and administrators with auditable justification [3].
-
 **The Infrastructure Gap**
 
 **Figure 2.8: RBAC Only vs. RBAC + ABAC**
 
 
 ![Figure 2.8: RBAC Only vs. RBAC + ABAC](figures/figure-2-8.png)
+Role-based access control (RBAC) operates at table level: grant all patient records or none. Modern agents require contextual ABAC layered on this RBAC foundation: Patient 10243's appointment can be viewed by Patient 10243 themselves, physicians assigned to their case, schedulers in their region, and administrators with auditable justification [3].
+
 Echo used four RBAC roles: reader (view only), writer (edit appointments), admin (configuration), app_service (agent). The agent used app_service credentials with table-level SELECT permissions across all patient tables. 
 First test query: scheduling agent accessed Patient 10243's mental health diagnoses while booking an appointment. 
 Authorization system: no context awareness of "why" or "what data needed." 
@@ -359,6 +359,8 @@ Zero compliance violations in 90-day monitoring period.
 AI models degrade over time. Research shows 91% of (model, dataset) pairs experience temporal degradation [12]. Symptoms: accuracy drops from 87% to 73% over 3 months, query patterns change (summer flu vs. winter flu), new medical codes added without retraining, terminology evolves ("COVID" → "Long COVID" → "Post-COVID Syndrome").
 
 Manual quarterly retraining creates 3-month windows where agents operate with degraded models. Agents must adapt continuously through feedback loops detecting drift, automated retraining triggered by performance thresholds, and human-in-the-loop correction workflows [10].
+
+<!-- pagebreak -->
 
 **The Infrastructure Gap**
 
@@ -407,14 +409,14 @@ Model improvement: 240 daily human corrections incorporated weekly, improving ed
 
 Healthcare data spans multiple systems: EHR for clinical records, scheduling system for appointments, billing system for insurance, lab system for test results, pharmacy system for medications. When a patient asks "What appointments do I have?", the answer requires integrating: appointment schedules, provider availability, insurance eligibility, outstanding lab orders, medication refill timing.
 
-Agents operating on single-system data provide incomplete answers: "You have an appointment Tuesday at 2 PM with Dr. Martinez" (missing: you need to fast 12 hours before because there's a lab order, and you're due for medication refill, so bring your prescription).
-
 **The Infrastructure Gap**
 
 **Figure 2.10: Single-System vs. Cross-System Integration**
 
-
 ![Figure 2.10: Single-System vs. Cross-System Integration](figures/figure-2-10.png)
+
+Agents operating on single-system data provide incomplete answers: "You have an appointment Tuesday at 2 PM with Dr. Martinez" (missing: you need to fast 12 hours before because there's a lab order, and you're due for medication refill, so bring your prescription).
+
 Echo's initial agent had partial integration. EHR connected to scheduling, with read-only lab access. But billing, pharmacy, and patient portal remained siloed. Query: "What do I need to know about my Tuesday appointment?" Agent response: "You have an appointment Tuesday at 2 PM with Dr. Martinez for annual physical. Labs ordered: comprehensive metabolic panel." Missing context: Lab requires 12-hour fasting (instruction not surfaced). Insurance needs prior auth for specific tests (billing not connected). Pharmacy flagged medication interaction (pharmacy not connected). Two outstanding forms (patient portal not connected).
 
 Patient arrived unfasted, insurance rejected claim, medication interaction discovered during visit, forms caused delays. A complete answer required all 5 systems working together. Echo had 2 partially connected.
@@ -574,7 +576,8 @@ Your organization's journey follows the same pattern. The specifics differ, your
 
 **Ready to assess your infrastructure?** Visit trustbeforeintelligence.ai/assessment for the complete INPACT™ diagnostic tool and implementation guidance.
 
----
+<!-- pagebreak -->
+
 
 ## Chapter Summary
 

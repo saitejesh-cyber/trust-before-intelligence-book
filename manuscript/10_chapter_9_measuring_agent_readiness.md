@@ -142,11 +142,14 @@ INPACT™ covers the full architecture. Each dimension doesn't exist in isolatio
 ![Figure 9.4: INPACT™ Dimension to Layer Mapping](figures/figure-9-4.png)
 **Coverage Verification**: This mapping touches all seven layers. L7 (Orchestration) emerges when multiple dimensions reach production thresholds simultaneously. When you discover a low score in a particular dimension, you immediately know which layers require investment.
 
----
+
+<!-- pagebreak -->
 
 ### INPACT™ & GOALS™: The Connection
 
 The INPACT™ assessment measures infrastructure readiness: can you *build* agents? The GOALS™ framework measures operational readiness: can you *run* agents? These are different questions, but they're connected.
+
+---
 
 **INPACT™ → GOALS™ Indicators**
 
@@ -186,6 +189,8 @@ The assessment is free for book readers.
 ### What You'll Be Measuring
 
 The assessment evaluates six questions per INPACT dimension. Each question scores your infrastructure from 1 (critical gap) to 6 (production-ready). Here's a sample question from each dimension to illustrate the methodology:
+
+<!-- pagebreak -->
 
 **I (Instant) - Sample Question:**
 *How quickly can your data infrastructure return query results for typical agent workloads?*
@@ -435,6 +440,7 @@ If several dimensions score 1-2, prioritize based on dependencies: I and C first
 4. Proceed to Chapter 10 with clear focus
 
 ---
+<!-- pagebreak -->
 
 ## Bridge to Chapter 10
 

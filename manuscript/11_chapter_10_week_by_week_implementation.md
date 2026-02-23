@@ -123,10 +123,7 @@ The transformation follows four distinct phases, each building on the previous. 
 
 ### Phase 1: Foundation (Weeks 1-4)
 
-**Figure 10.3: Foundation Layer Stack**
 
-
-![Figure 10.3: Foundation Layer Stack](figures/figure-10-3.png)
 | Attribute | Detail |
 |-----------|--------|
 | **Weeks** | 1-4 |
@@ -135,6 +132,11 @@ The transformation follows four distinct phases, each building on the previous. 
 | **Budget Range** | $80K-$550K (see Part 3: The Investment Approach) |
 | **Team** | 2 senior data engineers, 1 cloud architect, 1 DBA, 2 CDC specialists (consulting) |
 | **Primary Focus** | Data freshness (<30 seconds), query performance |
+
+**Figure 10.3: Foundation Layer Stack**
+
+
+![Figure 10.3: Foundation Layer Stack](figures/figure-10-3.png)
 
 **What Gets Built**
 
@@ -165,15 +167,11 @@ For Layer 1 and Layer 2 technology details, see Chapter 4. For vendor selection 
 
 **→ For complete week-by-week detail: Chapter 4 (Foundation Layers)**
 
----
+<!-- pagebreak -->
 
 ### Phase 2: Intelligence (Weeks 5-7)
 
-**Figure 10.4: Intelligence Layer Stack**
 
-
-![Figure 10.4: Intelligence Layer Stack](figures/figure-10-4.png)
-*For RAG pipeline architecture details, see Chapter 5, Figure 5.7: Layer 4 - Complete Intelligence Pipeline.*
 
 | Attribute | Detail |
 |-----------|--------|
@@ -183,6 +181,12 @@ For Layer 1 and Layer 2 technology details, see Chapter 4. For vendor selection 
 | **Budget Range** | $60K-$450K (see Part 3: The Investment Approach) |
 | **Team** | 2 ML engineers, 1 domain SME, semantic layer specialists |
 | **Primary Focus** | NLU accuracy (target: 85%), semantic layer coverage, RAG pipeline |
+
+**Figure 10.4: Intelligence Layer Stack**
+
+![Figure 10.4: Intelligence Layer Stack](figures/figure-10-4.png)
+<!-- *For RAG pipeline architecture details, see Chapter 5, Figure 5.7: Layer 4 - Complete Intelligence Pipeline.* -->
+
 
 **What Gets Built**
 
@@ -200,9 +204,7 @@ Phase 2 gives agents the ability to understand and reason. Build layer-by-layer:
 
 **Common Risk:** Accuracy often plateaus at 80-82% before hitting the 85% target. Solutions include adding reranking, hybrid search (combining vector and keyword retrieval), or expanding the semantic layer. Don't proceed with gaps - they compound in Phase 3.
 
-**Technology Options**
-
-For Layer 3 and Layer 4 technology details, see Chapter 5. For vendor selection guidance, see Chapter 11.
+**Technology Options:** For Layer 3 and Layer 4 technology details, see Chapter 5. For vendor selection guidance, see Chapter 11.
 
 **Phase Gate Checkpoint**
 
@@ -217,10 +219,7 @@ For Layer 3 and Layer 4 technology details, see Chapter 5. For vendor selection 
 
 ### Phase 3: Trust & Orchestration (Weeks 8-10)
 
-**Figure 10.5: Trust Layer Stack**
 
-
-![Figure 10.5: Trust Layer Stack](figures/figure-10-5.png)
 | Attribute | Detail |
 |-----------|--------|
 | **Weeks** | 8-10 |
@@ -229,6 +228,11 @@ For Layer 3 and Layer 4 technology details, see Chapter 5. For vendor selection 
 | **Budget Range** | $30K-$400K (see Part 3: The Investment Approach) |
 | **Team** | 2 security engineers, 2 DevOps engineers, 1 compliance officer, 1 ML engineer |
 | **Primary Focus** | ABAC policies, HITL workflows, audit trails, multi-agent coordination |
+
+**Figure 10.5: Trust Layer Stack**
+
+![Figure 10.5: Trust Layer Stack](figures/figure-10-5.png)
+
 
 **What Gets Built**
 
@@ -245,9 +249,7 @@ Phase 3 makes agents trustworthy:
 
 Phase 3 offers the largest budget variance potential. Open-source choices (OPA vs. commercial Styra, leveraging existing monitoring licenses, retrofitting pilot agents vs. rebuilding) can reduce costs by 50-80%. Evaluate build-vs-buy carefully - see Chapter 11.
 
-**Technology Options**
-
-For Layer 5, 6, and 7 technology details, see Chapter 6. For vendor selection guidance, see Chapter 11, Section 3.
+**Technology Options:** For Layer 5, 6, and 7 technology details, see Chapter 6. For vendor selection guidance, see Chapter 11, Section 3.
 
 
 **Phase Gate Checkpoint**
@@ -309,7 +311,9 @@ Phase 4 validates everything works together:
 
 ### Budget Framework
 
-Your investment depends on your technology strategy. Three tracks reflect different build-vs-buy decisions:
+Your investment depends on your technology strategy. Three tracks (Commerical, Open Source, Hybrid) reflect different build-vs-buy decisions:
+
+<!-- pagebreak -->
 
 **Commercial Track** (Speed priority, smaller technical teams)
 
@@ -407,17 +411,17 @@ ROI sources vary by industry but typically include: operational efficiency gains
 
 > **Note:** Budget and timeline figures in this chapter reflect typical ranges for mid-size enterprise implementations based on the 7-Layer Architecture methodology.
 
----
+<!-- pagebreak -->
 
 ## Part 4: Your Path
 
 ### Receiving Your Chapter 9 Results
 
-You arrived with:
+You arrived with
 - **Trust band** → Your timeline and budget envelope (from Chapter 9)
 - **Priority layers** → Where to focus (from Chapter 9's Gap Prioritization Matrix)
 
-This section shows how to adapt each phase based on your priority layers.
+<!--This section shows how to adapt each phase based on your priority layers. -->
 
 ### Phase Compression vs. Full Investment
 
@@ -452,9 +456,7 @@ If Chapter 9 identified priority layers spanning multiple phases (e.g., C dimens
 | Regulated industry (healthcare, finance, government) | Add 1 week to Phase 3 | Additional compliance validation needed |
 | Multi-cloud environment | Add 1 week to Phase 1 | Cross-cloud data fabric complexity |
 
-### Scaling Considerations
-
-The baseline roadmap scales for a mid-size organization (1,000-15,000 employees). Adjust timelines for your scale:
+**Scaling Considerations:** The baseline roadmap scales for a mid-size organization (1,000-15,000 employees). Adjust timelines for your scale:
 
 | Organization Size | Timeline Adjustment | Budget Adjustment |
 |-------------------|---------------------|-------------------|
@@ -465,7 +467,7 @@ The baseline roadmap scales for a mid-size organization (1,000-15,000 employees)
 
 Larger organizations require more stakeholder alignment, broader testing, and phased rollout across business units.
 
----
+<!-- pagebreak -->
 
 ## Part 5: Managing Risk
 
@@ -514,28 +516,8 @@ Most transformations encounter 1-3 yellow weeks. Common patterns and mitigations
 
 The weekly health check discipline catches issues before they become blockers.
 
----
 
 ## Part 6: The AI Agent Readiness Tracker
-
-### Eight-Tab Overview
-
-**Figure 10.7: Eight-Tab Tracker System**
-
-
-![Figure 10.7: Eight-Tab Tracker System](figures/figure-10-7.png)
-### How the Tabs Work Together
-
-| Tab | Purpose | Primary User | Update Frequency |
-|-----|---------|--------------|------------------|
-| **Tab 0: Day Zero Readiness** | Pre-transformation gate - 15-35 items by org size | Project Manager | Before Week 1 |
-| **Tab 1: Weekly Progress** | Executive dashboard - overall status | Project Manager | Weekly (Friday) |
-| **Tab 2: INPACT™ Tracker** | Six dimensions, week-by-week scores | Data Architect | Weekly |
-| **Tab 3: GOALS™ Dashboard** | Five operational metrics | Operations Lead | Weekly (Phase 3+) |
-| **Tab 4: 7-Layer Status** | Layer-by-layer build progress | Technical Lead | Weekly |
-| **Tab 5: Risk & Blocker Log** | Issue tracking and mitigation | Project Manager | As needed |
-| **Tab 6: Communication Log** | Meetings, decisions, action items | Project Manager | Per meeting |
-| **Tab 7: Budget Tracker** | Spend vs. plan by category | Finance | Weekly |
 
 ### Inside the Eight Tabs
 
@@ -571,6 +553,27 @@ Documents every meeting, decision, and action item. Critical for maintaining ali
 
 Monitors spend by category (Technology, Services, Staff) against plan. Weekly actuals with variance tracking and percentage spent. Threshold alerts: Green (within ±5%), Yellow (±5-10%), Red (>±10%).
 
+
+**Figure 10.7: Eight-Tab Tracker System**
+
+
+![Figure 10.7: Eight-Tab Tracker System](figures/figure-10-7.png)
+
+<!-- pagebreak -->
+
+### How the Tabs Work Together
+
+| Tab | Purpose | Primary User | Update Frequency |
+|-----|---------|--------------|------------------|
+| **Tab 0: Day Zero Readiness** | Pre-transformation gate - 15-35 items by org size | Project Manager | Before Week 1 |
+| **Tab 1: Weekly Progress** | Executive dashboard - overall status | Project Manager | Weekly (Friday) |
+| **Tab 2: INPACT™ Tracker** | Six dimensions, week-by-week scores | Data Architect | Weekly |
+| **Tab 3: GOALS™ Dashboard** | Five operational metrics | Operations Lead | Weekly (Phase 3+) |
+| **Tab 4: 7-Layer Status** | Layer-by-layer build progress | Technical Lead | Weekly |
+| **Tab 5: Risk & Blocker Log** | Issue tracking and mitigation | Project Manager | As needed |
+| **Tab 6: Communication Log** | Meetings, decisions, action items | Project Manager | Per meeting |
+| **Tab 7: Budget Tracker** | Spend vs. plan by category | Finance | Weekly |
+
 ### Getting Started with the Tracker
 
 **Day Zero: Pre-Transformation Readiness**
@@ -603,7 +606,7 @@ Critical blockers (items like Executive Sponsor, Steering Committee, Budget Appr
 - Chapter 12 provides operations detail for GOALS™ metrics in Tab 3
 - The tracker connects planning (Chapter 10) to execution (Chapters 11-12)
 
----
+<!-- pagebreak -->
 
 ## Part 7: Bridge to Chapters 11-12
 
@@ -657,7 +660,7 @@ The frameworks are proven. The tracker is ready. Complete Day Zero at trustbefor
 
 **The 90-day clock starts when Day Zero is complete.**
 
----
+<!-- pagebreak -->
 
 ## Chapter Summary
 

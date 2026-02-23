@@ -30,7 +30,6 @@ Marcus paused. "I didn't ask."
 
 > **📚 Online Tools:** For interactive vendor evaluation scorecards, assessment templates, and current vendor comparisons, see the **Online Tools** section at the end of this chapter.
 
----
 
 ## Part 1: Selection Framework
 
@@ -209,7 +208,7 @@ Partnering makes sense when:
 - ⚠️ Variable costs based on scope
 - ⚠️ Dependency on partner availability
 
----
+<!-- pagebreak -->
 
 ## Part 2: Layer-by-Layer Selection Criteria
 

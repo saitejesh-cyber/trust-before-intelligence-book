@@ -124,6 +124,8 @@ Natural Language → Direct SQL Generation (GPT-4)
      →  
 SELECT * FROM providers WHERE name LIKE '%Martinez%'
      →
+```
+```
 Hits 3 systems independently:
   - EHR: 312 records with provider_id containing 'Martinez'
   - Credentialing: 245 records with physician_name containing 'Martinez'
@@ -253,12 +255,14 @@ Without semantic understanding, a clinician asks: "Which of my diabetic patients
 
 With Layer 3, the semantic parser extracts intent, condition, filter, and scope. The business glossary resolves "diabetes" → ICD-10 codes E08-E13[4], "my patients" → provider_npi=current_user[7]. Entity resolution links dx_code (claims) + problem_list (EHR) + lab_flag (lab). The agent executes a precise query and returns: "You have 23 diabetic patients without appointments in 90+ days. Here are the top 5 by risk score..."
 
-The difference is transformational. Research benchmarks show that direct natural language-to-SQL conversion achieves only 40-55% accuracy on complex cross-domain queries; adding semantic layer context, business glossaries, entity resolution, and schema understanding improves accuracy to 75-90%.[23][24]
 
 **Figure 5.6: Before/After - Keyword Search vs. Semantic Search**
 
 
 ![Figure 5.6: Before/After - Keyword Search vs. Semantic Search](figures/figure-5-6.png)
+
+The difference is transformational. Research benchmarks show that direct natural language-to-SQL conversion achieves only 40-55% accuracy on complex cross-domain queries; adding semantic layer context, business glossaries, entity resolution, and schema understanding improves accuracy to 75-90%.[23][24]
+
 ### Key Technologies
 
 Echo evaluated tools across five categories, prioritizing healthcare compliance, existing team expertise, and integration with their Databricks lakehouse. The following options represent the market landscape:
@@ -731,9 +735,8 @@ The room was silent for a moment. Then applause.
 
 
 ![Figure 5.11: Echo's Week 5-7 Timeline](figures/figure-5-11.png)
-### INPACT™ Score: Week 4 → Week 7
 
-**Figure 5.12: INPACT™ Transformation (42 → 67)**
+**Figure 5.12: INPACT™ Score Transformation (Week 4:42 → Week 7:67)**
 
 
 ![Figure 5.12: INPACT™ Transformation (42 → 67)](figures/figure-5-12.png)
@@ -766,6 +769,8 @@ Krish nodded. "Lesson for Phase 3?"
 "The overage is manageable," Sarah added. "We're now at $2,300 per month for LLM costs, 84% below baseline. The operational savings will recover the implementation variance within sixty days."
 
 Krish made a note. "Phase 3 has the same $380,000 allocation. Apply the lesson."
+
+<!-- pagebreak -->
 
 ### What We Built
 
@@ -886,30 +891,7 @@ Without Layer 5 (Governance), the intelligent response creates a compliance viol
 
 ---
 
-## ACRONYMS
 
-- **ABAC:** Attribute-Based Access Control
-- **API:** Application Programming Interface
-- **BI:** Business Intelligence
-- **CDC:** Change Data Capture
-- **EHR:** Electronic Health Record
-- **ETL:** Extract, Transform, Load
-- **FHIR:** Fast Healthcare Interoperability Resources[6]
-- **HIPAA:** Health Insurance Portability and Accountability Act
-- **HNSW:** Hierarchical Navigable Small World (vector index algorithm)[10]
-- **ICD-10:** International Classification of Diseases, 10th Revision[4]
-- **LLM:** Large Language Model
-- **LOINC:** Logical Observation Identifiers Names and Codes[5]
-- **MRN:** Medical Record Number
-- **NDCG:** Normalized Discounted Cumulative Gain[12]
-- **NPI:** National Provider Identifier[7]
-- **RAG:** Retrieval-Augmented Generation[8]
-- **RRF:** Reciprocal Rank Fusion[11]
-- **SNOMED CT:** Systematized Nomenclature of Medicine Clinical Terms[3]
-- **SQL:** Structured Query Language
-- **TTL:** Time To Live[18]
-
----
 
 ## REFERENCES
 

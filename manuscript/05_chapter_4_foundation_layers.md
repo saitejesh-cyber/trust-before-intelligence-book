@@ -1,13 +1,11 @@
 # Chapter 4: THE 95% SOLUTION - PART 1
 ## The Architecture of Trust: Foundation Layers
 
----
 
 ## The Monday That Changed Everything
 
 *Monday, 7:47 AM  
-Echo Health Systems, Executive Conference Room  
-Floor 12, Building A*
+Echo Health Systems, Executive Conference Room, Floor 12, Building A*
 
 Sarah Cedao arrived thirteen minutes early. She'd learned that trick from her first CTO mentor: whoever controls the whiteboard controls the meeting. By 7:52, she had the agenda mapped in blue marker, the constraints in red, and the timeline in green.
 
@@ -23,6 +21,12 @@ She tapped the whiteboard. "Week 1 starts now. Foundation first."
 
 Marcus raised an eyebrow. "You want to rebuild storage before touching intelligence? The board wants to see agents working, not databases."
 
+
+**Figure 4.0: Foundation Layers - Why Layers 1-2 Are Prerequisites**
+
+![Figure 4.0: Foundation Layers - Why Layers 1-2 Are Prerequisites](figures/figure-4-0.png)
+> **Key Takeaway:** Foundation first. Without Layers 1-2, nothing else works.
+
 "The board wants agents that *work*," Sarah corrected. "The scheduling agent failed because it couldn't see real-time data. The clinical assistant failed because it couldn't search semantically. The referral agent failed because it couldn't traverse relationships. Same root cause every time: infrastructure can't deliver what agents need."
 
 She circled FOUNDATION in green. "We fix that first. Layers 1 and 2. Four weeks. Then and only then we build intelligence on top."
@@ -30,14 +34,6 @@ She circled FOUNDATION in green. "We fix that first. Layers 1 and 2. Four weeks.
 The room was quiet. Then Swapna nodded. "Show me the storage gaps."
 
 Sarah pulled up the architecture diagram. "Let me show you what we're building."
-
----
-
-**Figure 4.0: Foundation Layers - Why Layers 1-2 Are Prerequisites**
-
-
-![Figure 4.0: Foundation Layers - Why Layers 1-2 Are Prerequisites](figures/figure-4-0.png)
-> **Key Takeaway:** Foundation first. Without Layers 1-2, nothing else works.
 
 ---
 
@@ -65,13 +61,7 @@ Foundation equals data availability and accessibility. Before agents can underst
 
 **Figure 4.2: 7-Layer Agent-Ready Architecture - Foundation Highlighted**
 
-
 ![Figure 4.2: 7-Layer Agent-Ready Architecture - Foundation Highlighted](figures/figure-4-2.png)
-These foundation layers directly address specific gaps from Chapter 3:
-
-### The Seven Infrastructure Gaps
-
-Chapter 3 identified seven infrastructure gaps preventing agent deployment. Chapter 4 addresses the foundation: **Gaps 1-2**.
 
 | Gap | Infrastructure Need | Addressed By | Coverage |
 |-----|---------------------|--------------|----------|
@@ -83,6 +73,12 @@ Chapter 3 identified seven infrastructure gaps preventing agent deployment. Chap
 | **Gap 6** | Reasoning Observability | Layer 6: Observability | Chapter 6 |
 | **Gap 7** | Multi-Agent Coordination | Layer 7: Orchestration | Chapter 6 |
 
+These foundation layers directly address specific gaps from Chapter 3:
+
+### The Seven Infrastructure Gaps
+
+Chapter 3 identified seven infrastructure gaps preventing agent deployment. Chapter 4 addresses the foundation: **Gaps 1-2**.
+
 **This Chapter's Scope:** Layers 1-2 build the foundation that enables intelligence (Chapter 5), governance (Chapter 6), and orchestration (Chapter 6).
 
 **Specific Solutions:**
@@ -93,6 +89,21 @@ Chapter 3 identified seven infrastructure gaps preventing agent deployment. Chap
 Without foundation, intelligence layers fail: semantic models (Layer 3) query stale data and return outdated answers, the intelligence layer (Layer 4) searches limited storage and misses critical context, and the governance layer (Layer 5) operates on incomplete data with poor access control.
 
 **Build the foundation first. Build it right. Everything else depends on it.**
+
+### Foundation Layer Impact on INPACT™ (Chapter 4 Scope)
+
+| Dimension | Week 0 | Week 4<br/>(This Chapter) | Chapters 5-6 Target | Foundation Contribution |
+|-----------|--------|---------------------------|---------------------|------------------------|
+| **Instant (I)** | 1/6 | **4/6** | 5/6 | Cache layer + optimized storage + real-time data |
+| **Natural (N)** | 2/6 | 2/6 | 5/6 | *Requires semantic layer (Chapter 5)* |
+| **Permitted (P)** | 1/6 | 1/6 | 5/6 | *Requires governance layer (Chapter 6)* |
+| **Adaptive (A)** | 2/6 | **3/6** | 5/6 | Model registry + lakehouse infrastructure |
+| **Contextual (C)** | 3/6 | **4/6** | 6/6 | Multi-modal storage + real-time freshness |
+| **Transparent (T)** | 1/6 | 1/6 | 5/6 | *Requires observability layer (Chapter 6)* |
+| **TOTAL** | **10/36** | **15/36** | **31/36** | **+5 points from foundation** |
+| **Percentage** | **28%** | **42%** | **86%** | **+14% (this chapter)** |
+
+**Key Insight:** Foundation layers (1-2) directly improve three dimensions: Instant, Adaptive, and Contextual. Natural, Permitted, and Transparent require intelligence and governance layers built in Chapters 5-6. Foundation provides the infrastructure that enables those improvements.
 
 ### Echo's 10-Week Transformation Journey
 
@@ -120,20 +131,6 @@ Echo Health Systems started from a familiar position: strong BI infrastructure f
 
 **Total transformation: 28 → 85 in 10 weeks (57-point improvement).** For Week 7 (67/100) and Week 10 (85/100) progression details, see Chapters 5 and 6 respectively.
 
-### Foundation Layer Impact on INPACT™ (Chapter 4 Scope)
-
-| Dimension | Week 0 | Week 4<br/>(This Chapter) | Chapters 5-6 Target | Foundation Contribution |
-|-----------|--------|---------------------------|---------------------|------------------------|
-| **Instant (I)** | 1/6 | **4/6** | 5/6 | Cache layer + optimized storage + real-time data |
-| **Natural (N)** | 2/6 | 2/6 | 5/6 | *Requires semantic layer (Chapter 5)* |
-| **Permitted (P)** | 1/6 | 1/6 | 5/6 | *Requires governance layer (Chapter 6)* |
-| **Adaptive (A)** | 2/6 | **3/6** | 5/6 | Model registry + lakehouse infrastructure |
-| **Contextual (C)** | 3/6 | **4/6** | 6/6 | Multi-modal storage + real-time freshness |
-| **Transparent (T)** | 1/6 | 1/6 | 5/6 | *Requires observability layer (Chapter 6)* |
-| **TOTAL** | **10/36** | **15/36** | **31/36** | **+5 points from foundation** |
-| **Percentage** | **28%** | **42%** | **86%** | **+14% (this chapter)** |
-
-**Key Insight:** Foundation layers (1-2) directly improve three dimensions: Instant, Adaptive, and Contextual. Natural, Permitted, and Transparent require intelligence and governance layers built in Chapters 5-6. Foundation provides the infrastructure that enables those improvements.
 
 ### Bridge from Chapter 3
 
@@ -182,7 +179,6 @@ Sarah turned to the next concern. "Data freshness. Show me the ETL timeline."
 Swapna pulled up the pipeline diagram. "Overnight batch. Operational databases, Epic for EHR, Workday for HR, Cerner for labs run continuously. Our reporting database refreshes at 2 AM via ETL. During business hours, data lags 8-24 hours behind operational reality."
 
 **Figure 4.3: Batch ETL Creates Patient Safety Risk**
-
 
 ![Figure 4.3: Batch ETL Creates Patient Safety Risk](figures/figure-4-3.png)
 "Concrete example," Sarah requested.
@@ -443,6 +439,8 @@ No single storage technology handles all these patterns efficiently. Multi-modal
 
 **Phase 2 Enhancement (Chapter 5):** Semantic caching using vector similarity on LLM prompts enables 85% cache hit rate and $12,200/month LLM cost savings. This intelligence-layer optimization builds on the Redis infrastructure established here.
 
+<!-- pagebreak -->
+
 ### Storage Selection Decision Framework
 
 **Phase 1 Categories (Foundation - This Chapter):**
@@ -513,13 +511,14 @@ Echo started with SQL Server only. Here's what failed:
 
 Layer 2 provides sub-30 second data freshness through change data capture (CDC), event streaming, and stream processing. Replaces overnight batch ETL with continuous real-time synchronization.
 
+Traditional BI refreshes overnight (2 AM ETL). Agents querying at 3 PM see data 13 hours stale. For clinical decision support, this creates patient safety risks. Medication orders placed at 10 AM won't trigger drug interaction alerts until midnight.
+
+Layer 2 solves this with three integrated components.
+
 **Figure 4.6: Layer 2 Real-Time Data Fabric - CDC to Agents**
 
 
 ![Figure 4.6: Layer 2 Real-Time Data Fabric - CDC to Agents](figures/figure-4-6.png)
-Traditional BI refreshes overnight (2 AM ETL). Agents querying at 3 PM see data 13 hours stale. For clinical decision support, this creates patient safety risks. Medication orders placed at 10 AM won't trigger drug interaction alerts until midnight.
-
-Layer 2 solves this with three integrated components:
 
 ### Component 1: Change Data Capture (CDC)
 
@@ -593,13 +592,15 @@ workday.providers.credentials
 - Eliminates multi-table joins at query time
 - **INPACT™ Impact:** Contextual +0.5 (enriched context improves search relevance)
 
+
 ### Training vs. Inference: Different Latency Requirements
+
+**Critical distinction:** Agent inference requires real-time data (<30 second lag). Model training tolerates batch data (overnight ETL acceptable). Layer 2 serves both needs:
 
 **Figure 4.7: Real-Time Inference vs. Batch Training Paths**
 
 
 ![Figure 4.7: Real-Time Inference vs. Batch Training Paths](figures/figure-4-7.png)
-**Critical distinction:** Agent inference requires real-time data (<30 second lag). Model training tolerates batch data (overnight ETL acceptable). Layer 2 serves both needs:
 
 **Real-Time Inference (Critical Path):**
 - Physician queries agent: "Any drug interactions for this patient?"
@@ -641,7 +642,6 @@ workday.providers.credentials
 
 **Progress Check:** Layer 2 complete, CDC replacing overnight batch, streaming pipelines processing over 6 million daily events, sub-30 second freshness. Foundation layers improved Echo's score from 28/100 to 42/100.
 
----
 
 ## PART 5: BUILDING THE FOUNDATION
 
@@ -657,9 +657,8 @@ workday.providers.credentials
 - **Week 1-2 (Layer 1):** Eight storage categories deployed in parallel by three teams. Databricks (8 days) is the critical path. All categories operational by end of Week 2.
 - **Week 3-4 (Layer 2):** Real-time data fabric components deployed sequentially. CDC connectors first (enable change capture), then Kafka (message streaming), then Flink (stream processing).
 
-### INPACT™ Score: Week 0 → Week 4
 
-**Figure 4.9: INPACT™ Transformation (28 → 42)**
+**Figure 4.9: INPACT™ Score Transformation (Week 0: 28 → Week 4: 42)**
 
 
 ![Figure 4.9: INPACT™ Transformation (28 → 42)](figures/figure-4-9.png)

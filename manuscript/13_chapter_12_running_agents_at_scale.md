@@ -68,10 +68,6 @@ Production readiness isn't a feeling. It's a measurable state. Validate against 
 
 Throughout this chapter, reference benchmarks are drawn from Echo Health Systems, the pedagogical case study used in this book. Adjust these numbers based on your industry, use case, and risk tolerance. Part 6 consolidates Echo's complete results for easy reference.
 
-**Figure 12.2: The 15-Criteria Production Readiness Framework**
-
-
-![Figure 12.2: The 15-Criteria Production Readiness Framework](figures/figure-12-2.png)
 **Pillar 1: INPACT™ Readiness (5 Criteria)**
 
 | # | Criterion | INPACT™ Need | How to Measure | Generic Target | High-Stakes Target |
@@ -99,6 +95,12 @@ Criterion 3 often sparks debate. If you're near threshold with a clear improveme
 | 8 | Multi-Agent Orchestration | L7 | Coordination testing | <5s latency | <3s latency |
 | 9 | Vendor Agreements Signed | All | Contract audit | 100% | 100% + compliance addenda |
 | 10 | Data Residency Confirmed | L1-L2 | Cloud region audit | Documented | Per regulatory requirements |
+
+
+**Figure 12.2: The 15-Criteria Production Readiness Framework**
+
+
+![Figure 12.2: The 15-Criteria Production Readiness Framework](figures/figure-12-2.png)
 
 Architecture criteria are typically pass/fail. If you've followed the 90-day roadmap, these should pass cleanly. High-stakes environments may require additional compliance documentation for Criterion 9 (such as BAAs, SOC 2 attestations, or PCI-DSS certifications depending on your industry).
 
@@ -135,6 +137,8 @@ Aim for 15/15, but recognize that some criteria may require judgment calls rathe
 
 Production operations require ongoing monitoring across all three pillars. Here's what to track:
 
+---
+
 **INPACT™ Operational Metrics**
 
 | Dimension | What to Monitor | Generic Target | High-Stakes Target | Check Frequency |
@@ -148,6 +152,7 @@ Production operations require ongoing monitoring across all three pillars. Here'
 
 Select targets based on your industry requirements and risk tolerance. High-stakes environments should use the stricter targets.
 
+<!-- pagebreak -->
 **GOALS™ Operational Metrics**
 
 | Dimension | What to Monitor | Generic Target | High-Stakes Target | Check Frequency |
@@ -190,6 +195,8 @@ Production readiness enables launch, but it doesn't guarantee success. Phased ro
 | Decision Gate | Proceed only if criteria met | All green to advance | All green to advance |
 
 Phase 1 validates with friendly users who provide detailed feedback. Intensive monitoring catches issues before they propagate. Success at Phase 1 builds confidence for expansion.
+
+<!-- pagebreak -->
 
 **Phase 2: Department Pilot (Week 12)**
 
@@ -273,6 +280,8 @@ Adopt semantic versioning (MAJOR.MINOR.PATCH) with agent-specific interpretation
 
 **Example progression:** v1.0.0 → v1.0.1 (prompt fix) → v1.1.0 (new retrieval source) → v2.0.0 (multi-agent orchestration)
 
+<!-- pagebreak -->
+
 **What to Version**
 
 Every configuration affecting agent behavior requires version control:
@@ -322,6 +331,8 @@ Every A/B test should measure impact across the Architecture of Trust:
 | INPACT™ | Accuracy, latency, escalation rate | >2% improvement |
 | GOALS™ | SLA compliance, error rate | No regression |
 | User | Satisfaction score, task completion | >5% improvement |
+
+<!-- pagebreak -->
 
 **Example A/B Test**
 
@@ -448,6 +459,7 @@ Aggregate non-urgent queries for batch API pricing:
 
 **Reference benchmark:** 20% of queries (scheduled reports, daily summaries) processed in batch mode.
 
+
 **Combined Result**
 
 | Metric | Before Optimization | After Optimization |
@@ -492,6 +504,7 @@ Not all agents require the same SLAs. Classify by user impact and error conseque
 
 Classify your agents by user impact. An external-facing agent typically warrants Tier 1, while an internal documentation assistant may use Tier 3.
 
+
 **SLA Breach Consequences**
 
 Define what happens when SLAs are missed:
@@ -531,6 +544,8 @@ Effective alerting balances sensitivity with noise. Too few alerts miss problems
 | C (Contextual) | CDC lag > 10 min | Lag > 5 min | Lag > 2 min |
 | T (Transparent) | Audit gap detected | Coverage < 99% | Any audit error |
 
+<!-- pagebreak -->
+
 **Architecture Alerts:**
 
 | Layer | P1 Trigger | P2 Trigger |
@@ -542,6 +557,7 @@ Effective alerting balances sensitivity with noise. Too few alerts miss problems
 | L5 Governance | ABAC evaluation failure | Policy load error |
 | L6 Observability | Trace collection stopped | Dashboard data stale |
 | L7 Orchestration | Agent coordination failure | Handoff latency > 5s |
+
 
 **GOALS™ Alerts:**
 
@@ -574,6 +590,9 @@ When alerts fire, structured response prevents chaos. Adopt a six-phase incident
 
 
 ![Figure 12.4: Six-Phase Incident Response](figures/figure-12-4.png)
+
+<!-- pagebreak -->
+
 **Phase 1: DETECT**
 
 Automated monitoring triggers alert. On-call engineer acknowledges within response time SLA.
@@ -679,6 +698,7 @@ Post-mortems prevent repeat incidents. Conduct post-mortems within 48 hours of P
 | Why wasn't it caught earlier? | [Detection gaps] |
 | What layer owns this component? | [Clear ownership] |
 
+<!-- pagebreak -->
 **5. Action Items**
 
 | Action | Owner | Due Date | Status |
@@ -776,6 +796,8 @@ Metrics monitored
 | Abandonment | Session analysis | Medium | Fully automated |
 | Escalation patterns | Support tickets | Low | Manual review |
 
+<!-- pagebreak -->
+
 **From Feedback to Improvement**
 
 **Example Improvement Cycle:**
@@ -825,6 +847,7 @@ Response:
 Early detection prevented user-visible degradation. At Echo Health Systems, this same pattern occurred when their EHR system introduced new documentation templates. The universal response process applied regardless of the specific source system.
 
 ---
+<!-- pagebreak -->
 
 ## Part 5: AIXcelerator Platform
 
@@ -840,6 +863,8 @@ AIXcelerator is a complete platform that accelerates agent infrastructure deploy
 
 
 ![Figure 12.6: AIXcelerator Five-Component Platform](figures/figure-12-6.png)
+
+
 **Five Core Components**
 
 | Component | INPACT™ Coverage | Layers Addressed | Key Benefit |
@@ -926,6 +951,7 @@ Hands-on validation:
 **Access:** Visit aiXcelerator.ai or contact Colaberry for consultation.
 
 ---
+<!-- pagebreak -->
 
 ## Part 6: Echo Health Systems Results
 
@@ -968,6 +994,8 @@ This section consolidates Echo's results for easy reference.
 | Accuracy Improvement | 85% → 88% (+3%) |
 | Cost per Query | $0.12 → $0.04 (67% reduction) |
 | Annual LLM Savings | $1.44M |
+
+<!-- pagebreak -->
 
 **Investment Summary**
 

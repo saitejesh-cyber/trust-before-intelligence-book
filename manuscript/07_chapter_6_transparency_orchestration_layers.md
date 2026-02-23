@@ -1,12 +1,10 @@
 # Chapter 6: THE 95% SOLUTION - PART 3
 ## The Architecture of Trust: Transparency + Orchestration Layers
 
----
 
 ## The Warfarin Question
 
-*Monday, 7:32 AM  
-Echo Health Systems, Clinical Informatics Office  
+*Monday, 7:32 AM  Echo Health Systems, Clinical Informatics Office  
 Week 8, Day 1*
 
 Sarah Cedao stared at the incident report from Friday afternoon. A near-miss that kept her up all weekend.
@@ -31,7 +29,6 @@ Fast and accurate isn't enough. Ungoverned AI is dangerous AI.
 
 **This chapter builds Trust Layers 5, 6, and 7.**
 
----
 
 **Figure 6.1: Transparency + Orchestration Layers - Why Layers 5-6-7 Complete Trust**
 
@@ -56,7 +53,6 @@ These final three layers would complete the architecture.
 
 **Figure 6.2: The Architecture of Trust - Completing Pillar 2**
 
-
 ![Figure 6.2: The Architecture of Trust - Completing Pillar 2](figures/figure-6-2.png)
 ### Architectural Context
 
@@ -64,22 +60,23 @@ Chapters 4-5 built the foundation and intelligence layers. Chapter 4 delivered d
 
 Chapter 6 completes the architecture with three final layers:
 
+**Figure 6.3: 7-Layer Agent-Ready Architecture - Transparency + Orchestration Highlighted**
+
+![Figure 6.3: 7-Layer Agent-Ready Architecture - Transparency + Orchestration Highlighted](figures/figure-6-3.png)
+
 **Layer 5 (Governance):** Policy-based authorization controlling what agents can do. ABAC (Attribute-Based Access Control) evaluates every request against four dimensions: who is asking, what they're accessing, when they're accessing it, and where they're accessing it from. OPA (Open Policy Agent) enforces policies. HITL (Human-in-the-Loop) workflows escalate high-risk decisions to human experts.
 
 **Layer 6 (Observability):** Complete visibility into what agents did. Distributed tracing with OpenTelemetry tracks every request across all seven layers. MLOps monitoring detects model drift. LLM cost tracking gives granular visibility into the $26,000 monthly API spend that would otherwise be a black box.
 
 **Layer 7 (Orchestration):** Multi-agent coordination enabling how agents work together. LangGraph provides the framework for supervisor patterns, shared state management, and conditional routing. Three specialized agents (Care Coordination, Clinical Documentation, and Revenue Cycle) collaborate on complex queries that span multiple domains.
 
-**A Note on Agent Development:** These three agents are the same ones from Echo's failed $2M pilot (Chapter 1), now retrofitted to the complete infrastructure. The Layer 7 cost covers orchestration integration only. Agent logic was already built. **The agents were never the problem. The infrastructure was.**
-
 Why cover three layers in one chapter? Because trust and orchestration are interdependent. Orchestration without governance means uncontrolled agents collaborating on decisions they shouldn't make. Orchestration without observability means invisible coordination failures. All three layers must be operational together for production deployment.
 
 The three-week build timeline (Week 8 Governance, Week 9 Observability, Week 10 Orchestration) is detailed in Part 2.
 
-**Figure 6.3: 7-Layer Agent-Ready Architecture - Transparency + Orchestration Highlighted**
+**The agents were never the problem. The infrastructure was.**
 
 
-![Figure 6.3: 7-Layer Agent-Ready Architecture - Transparency + Orchestration Highlighted](figures/figure-6-3.png)
 ### The Remaining Gaps
 
 Chapter 3 identified seven infrastructure gaps preventing agent deployment. Chapters 4-5 addressed Gaps 1-4. Three gaps remain:
@@ -109,6 +106,8 @@ Each layer directly drives specific INPACT™ dimensions:
 These three layers will take Echo's INPACT™ score from 67/100 to 86/100, the production readiness threshold. (See Part 7 for complete dimension-by-dimension progression.)
 
 The 86/100 threshold represents production readiness, the point at which agent infrastructure can reliably support clinical workflows with appropriate safeguards. This threshold aligns with NIST AI Risk Management Framework guidance on deploying AI systems in high-stakes environments.[1]
+
+**A Note on Agent Development:** These three agents are the same ones from Echo's failed $2M pilot (Chapter 1), now retrofitted to the complete infrastructure. The Layer 7 cost covers orchestration integration only. Agent logic was already built. 
 
 ---
 
@@ -222,6 +221,12 @@ allow {
 }
 ```
 
+**Figure 6.5: ABAC Four-Factor Authorization Model**
+
+
+![Figure 6.5: ABAC Four-Factor Authorization Model](figures/figure-6-5.png)
+### Echo's Gap Before Layer 5
+
 **ABAC Implementation:** NIST SP 800-162 defines the standard.[3] The four-factor model extends role-based permissions with contextual evaluation:
 
 - **Subject:** Role, department, credentials, license validity, patient assignments
@@ -239,11 +244,6 @@ NIST guidance recognizes that RBAC and ABAC are complementary, and organizations
 
 Pattern selection depends on reversibility, urgency, and risk magnitude.
 
-**Figure 6.5: ABAC Four-Factor Authorization Model**
-
-
-![Figure 6.5: ABAC Four-Factor Authorization Model](figures/figure-6-5.png)
-### Echo's Gap Before Layer 5
 
 Echo's pre-transformation authorization relied on Epic's native RBAC, a solid foundation that defined role-based permissions: physicians access patient records, nurses view orders, administrators have department scope. This RBAC baseline remains in place. What was missing was the contextual layer to evaluate when, where, and why.
 
@@ -389,12 +389,13 @@ The most frustrating gap appeared during the Week 6 accuracy regression. Respons
 
 ### Echo's Implementation
 
-Echo deployed OpenTelemetry instrumentation across all seven layers during Week 9, with Datadog APM providing visualization and alerting.
 
 **Figure 6.8: Echo's Seven-Layer Service Map**
 
 ![Figure 6.8: Echo's Seven-Layer Service Map](figures/figure-6-8.png)
 **© 2025-2026 Colaberry Inc.**
+
+Echo deployed OpenTelemetry instrumentation across all seven layers during Week 9, with Datadog APM providing visualization and alerting.
 
 The service map reveals latency distribution: Layer 4 (RAG + LLM) dominates at 2.8 seconds P95, representing 67% of total request time. This visibility enabled Echo to focus optimization on LLM generation rather than infrastructure layers.
 
@@ -559,14 +560,15 @@ Sarah watched the terminal as Jamie Rodriguez submitted the test query:
 
 The orchestration layer activated. Intent classification identified three domains: Care (follow-up scheduling), Clinical (medication review), Revenue (insurance verification). The supervisor delegated the request to all three agents in parallel.
 
-**Figure 6.10: Multi-Agent Query Flow - Maria Santos Discharge**
-
-
-![Figure 6.10: Multi-Agent Query Flow - Maria Santos Discharge](figures/figure-6-10.png)
 **Care Coordination Agent (2.1s):**
 - Scheduled follow-up: Orthopedics, Dr. Kim, next Tuesday 10:00 AM
 - Scheduled physical therapy evaluation: Thursday 2:00 PM
 - Confirmed patient transportation preferences
+
+**Figure 6.10: Multi-Agent Query Flow - Maria Santos Discharge**
+
+
+![Figure 6.10: Multi-Agent Query Flow - Maria Santos Discharge](figures/figure-6-10.png)
 
 **Clinical Documentation Agent (1.8s):**
 - Medication summary: 3 active prescriptions post-surgery
@@ -680,9 +682,8 @@ Friday, 4:47 PM. The Maria Santos discharge query succeeded. Three agents. One r
 ![Figure 6.11: Echo's Week 8-10 Timeline](figures/figure-6-11.png)
 **© 2025-2026 Colaberry Inc.**
 
-### INPACT™ Score: Week 7 → Week 10
 
-**Figure 6.12: INPACT™ Transformation (67 → 86)**
+**Figure 6.12: INPACT™ Score Transformation (Week 7: 67 → Week 10: 86)**
 
 
 ![Figure 6.12: INPACT™ Transformation (67 → 86)](figures/figure-6-12.png)
@@ -710,6 +711,8 @@ Friday, 4:47 PM. The Maria Santos discharge query succeeded. Three agents. One r
 | Orchestration Success | 95% | 96% |
 | HITL Resolution Time | <2 min | 47s average |
 | Multi-Agent Latency | <5s | 4.2s average |
+
+<!-- pagebreak -->
 
 ### Investment Summary: Phase 3
 
@@ -756,6 +759,7 @@ Friday, 4:47 PM. The Maria Santos discharge query succeeded. Three agents. One r
 
 *Use the Stack Builder at trustbeforeintelligence.ai/tools for investment planning and ROI estimation.*
 ---
+<!-- pagebreak -->
 
 ## PART 8: THE FINISH LINE
 
@@ -781,20 +785,22 @@ Krish studied the numbers. "So the original pilots weren't a wasted investment."
 
 ### The Seven-Layer Achievement
 
+
+**Figure 6.13: Complete 7-Layer Agent-Ready Architecture**
+
+
+![Figure 6.13: Complete 7-Layer Agent-Ready Architecture](figures/figure-6-13.png)
+
+<!-- pagebreak -->
+
 Week 10, Friday, 5:15 PM.
 
 Sarah Cedao stood at the whiteboard one final time. The three words from Week 8 Monday remained: **GOVERNANCE. OBSERVABILITY. ORCHESTRATION.** Each now had a checkmark beside it.
 
 Seventy days. Seven layers. From 28/100 to 86/100.
 
-**Figure 6.13: Complete 7-Layer Agent-Ready Architecture**
+**The Architecture of Trust - Two Pillars Complete**
 
-
-![Figure 6.13: Complete 7-Layer Agent-Ready Architecture](figures/figure-6-13.png)
-**Figure 6.14: The Architecture of Trust - Two Pillars Complete**
-
-
-![Figure 6.14: The Architecture of Trust - Two Pillars Complete](figures/figure-6-14.png)
 ### What Echo Achieved
 
 The journey started with a simple question: Why do 95% of agent projects fail? The answer was TRUST. The infrastructure gap between what agents could theoretically do and what organizations could safely let them do.
@@ -844,6 +850,8 @@ The remaining two weeks, Weeks 11-12, would validate these projections through o
 4. **The 7-Layer Architecture is complete:** Foundation (Layers 1-2), Intelligence (Layers 3-4), and Trust + Orchestration (Layers 5-6-7) together create production-ready infrastructure.
 
 5. **Architecture is a milestone, not a destination:** The 86/100 INPACT™ score represents capability. The GOALS™ framework in Chapter 7 measures operational reality.
+
+<!-- pagebreak -->
 
 ### What Changed from Week 0 to Week 10
 
