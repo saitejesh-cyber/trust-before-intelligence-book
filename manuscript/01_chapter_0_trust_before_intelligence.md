@@ -31,12 +31,11 @@ Something fundamental is missing, and it's not in the AI.
 ---
 ## What Trust Means in This Book
 
-<i>
-This isn't a book about whether society should trust AI. It's not about bias, ethics, or existential risk - important topics covered elsewhere.
+*This isn't a book about whether society should trust AI. It's not about bias, ethics, or existential risk - important topics covered elsewhere.*
 
-This book is about **operational trust**: the confidence that an AI agent will access the right data, understand the question, respect permissions, explain its reasoning, and perform consistently at scale. It's the trust a physician needs before accepting an agent's recommendation. The trust a CFO needs before letting an agent process claims. The trust that turns a pilot into production.
+*This book is about **operational trust**: the confidence that an AI agent will access the right data, understand the question, respect permissions, explain its reasoning, and perform consistently at scale. It's the trust a physician needs before accepting an agent's recommendation. The trust a CFO needs before letting an agent process claims. The trust that turns a pilot into production.*
 
-More specifically, this book answers five questions:
+*More specifically, this book answers five questions:*
 
 - **What is trust?** What do agents need to earn user confidence?
 - **How do you earn it?** By fulfilling those needs not once, but every interaction
@@ -44,8 +43,7 @@ More specifically, this book answers five questions:
 - **How do you measure it?** With operational targets that validate trust continuously
 - **How do you sustain it?** By monitoring, adapting, and reinforcing trust as systems scale
 
-Operational trust isn't earned through promises or policies. It's earned through architecture, systems designed from the ground up to deliver what agents need. That architecture is what 95% of organizations lack.
-</i>
+*Operational trust isn't earned through promises or policies. It's earned through architecture, systems designed from the ground up to deliver what agents need. That architecture is what 95% of organizations lack.*
 ---
 
 Users abandon agents they can't understand regardless of technical sophistication. July 2025 research confirms it: transparency and design are the mediators of trust.[2] A global study of 48,000 people across 47 countries reinforces this reality: only 46% are willing to trust AI systems, reflecting deep tension between AI's benefits and perceived risks.[6] When users can't see how agents make decisions, research shows distrust commonly spreads to both the AI and the company behind it.[3] Technical excellence means nothing without earned trust.
@@ -220,10 +218,10 @@ This integration creates what we call "The Architecture of Trust" - not three se
 - **GOALS™ → INPACT™:** Measurement validates trust. Governance (G) confirms Permitted (P) fulfillment. Observability (O) validates Transparent (T) compliance.
 
 
+This architecture rests on three pillars working in harmony. Each pillar supports and validates the others. INPACT™ defines what agents need. Those needs drive 7-Layer architecture decisions. The 7-Layer Architecture shows how to build infrastructure that delivers INPACT™ needs. GOALS™ validates that both pillars remain structurally sound as the system scales to production.
+
 ![Diagram](figures/01_chapter_0_trust_before_intelligence-diagram-04.png)
 **Figure 0.3: The Architecture of Trust Triad - Three Pillars Working Together**
-
-This architecture rests on three pillars working in harmony. Each pillar supports and validates the others. INPACT™ defines what agents need. Those needs drive 7-Layer architecture decisions. The 7-Layer Architecture shows how to build infrastructure that delivers INPACT™ needs. GOALS™ validates that both pillars remain structurally sound as the system scales to production.
 
 **The Trust Equation:**
 
