@@ -2,7 +2,7 @@
 
 ## ABOUT THE AUTHOR
 
-**Ram Dhan Yadav Katamaraja** brings twenty-five years of enterprise architecture experience to the challenge of AI agent infrastructure. He is founder and CEO of Colaberry, an Inc. 5000 company, and creator of the INPACT™ Framework, GOALS™ Framework, and 7-Layer Architecture presented in this book.
+**Ram Dhan Yadav Katamaraja** brings twenty-five years of enterprise architecture experience to the challenge of AI agent infrastructure. He is founder and CEO of Colaberry, an Inc. 5000 company, and creator of the INPACT Framework™, GOALS Framework™, and 7-Layer Architecture presented in this book.
 
 Before writing about AI infrastructure, Ram built it. He architected systems serving millions of users for a major wireless carrier, established BPM/SOA Centers of Excellence at Fortune 500 financial institutions, insurance companies and healthcare organizations, deployed big data systems at scale, and led enterprise integration initiatives across telecom, healthcare, financial services, technology, and pharmaceutical industries. His work on FDA, SOX, HIPAA, and PCI compliance systems and infrastructure supporting 2x-10x growth shaped his understanding of what regulated enterprises need before deploying autonomous systems.
 
@@ -18,15 +18,15 @@ Scan the QR code or visit: **trustbeforeintelligence.ai**
 
 The digital companion includes:
 - **Chapters 10-12:** Implementation Roadmap, Technology Selection Guide, Running Agents at Scale
-- **Interactive Tools:** INPACT™ Assessment, GOALS™ Readiness Checker, Stack Builder, Vendor Advisor, 90-Day Tracker, Compliance Navigator
+- **Interactive Tools:** INPACT Assessment, GOALS Readiness Checker, Stack Builder, Vendor Advisor, 90-Day Tracker, Compliance Navigator
 - **Downloadable Templates:** All tracking spreadsheets and checklists from the book
 - **Figures Gallery:** High-resolution versions of all 112 figures at trustbeforeintelligence.ai/figures
 
 <!-- pagebreak -->
 
-## INPACT™ PRACTITIONER REFERENCE
+## INPACT PRACTITIONER REFERENCE
 
-*See Appendix: INPACT™ Practitioner Reference for scoring rubrics, anti-patterns, and quick reference materials.*
+*See Appendix: INPACT Practitioner Reference for scoring rubrics, anti-patterns, and quick reference materials.*
 
 <!-- pagebreak -->
 
@@ -40,7 +40,7 @@ ABAC (Attribute-Based Access Control), Ch 1, Ch 2, Ch 3, Ch 4, Ch 5, Ch 6, Ch 7,
 Access Control, dynamic, Ch 0, Ch 1, Ch 2, Ch 3, Ch 4, Ch 5, Ch 6
 A/B Testing, Ch 2, Ch 4, Ch 11, DC
 Accuracy Metrics, Ch 7
-Adaptive (INPACT™ dimension), Ch 0, Ch 2, Ch 9
+Adaptive (INPACT dimension), Ch 0, Ch 2, Ch 9
 Agent Failure Patterns, Ch 1, Ch 7, DC
 Agent Orchestration. *See* Orchestration Layer
 Agno, DC
@@ -98,7 +98,7 @@ Compliance Navigator Tool, Ch 7, DC
 Confidence Scoring, Ch 2, Ch 3, Ch 5, Ch 7, Ch 8
 Confluent Cloud, Ch 4
 Context Types, Seven, Ch 1
-Contextual (INPACT™ dimension), Ch 0, Ch 2, Ch 9
+Contextual (INPACT dimension), Ch 0, Ch 2, Ch 9
 Cost Savings, LLM, Ch 4, Ch 5, DC
 CPT Codes, Ch 5, Ch 8
 Cube (Semantic Layer), Ch 5, DC
@@ -131,7 +131,7 @@ DMBOK (Data Management Body of Knowledge), Ch 7
 Echo Health Systems Case Study
   - Introduction, Ch 0
   - Failure analysis, Ch 1
-  - INPACT™ scoring, Ch 2
+  - INPACT scoring, Ch 2
   - Infrastructure gaps, Ch 3
   - Foundation build, Ch 4
   - Intelligence build, Ch 5
@@ -165,12 +165,12 @@ Freshness SLA, Ch 5, Ch 8
 
 **G**
 
-GOALS™ Framework, Ch 0, Ch 7, Ch 8, Ch 9
-GOALS™ Framework - Availability, Ch 7, Ch 8, Ch 9, DC
-GOALS™ Framework - Governance, Ch 0, Ch 7, Ch 8, Ch 9, DC
-GOALS™ Framework - Lexicon, Ch 7, Ch 8, Ch 9, DC
-GOALS™ Framework - Observability, Ch 0, Ch 7, Ch 8, Ch 9, DC
-GOALS™ Framework - Solid, Ch 7, Ch 8, Ch 9, DC
+GOALS Framework™, Ch 0, Ch 7, Ch 8, Ch 9
+GOALS Framework™ - Availability, Ch 7, Ch 8, Ch 9, DC
+GOALS Framework™ - Governance, Ch 0, Ch 7, Ch 8, Ch 9, DC
+GOALS Framework™ - Lexicon, Ch 7, Ch 8, Ch 9, DC
+GOALS Framework™ - Observability, Ch 0, Ch 7, Ch 8, Ch 9, DC
+GOALS Framework™ - Solid, Ch 7, Ch 8, Ch 9, DC
 GDPR (General Data Protection Regulation), Ch 7
 Governance Layer (Layer 5), Ch 0, Ch 4, Ch 5, Ch 6
 GPT-4, Ch 0, Ch 1, Ch 2, Ch 5, Ch 6, DC
@@ -204,16 +204,16 @@ ISO/IEC 27001 (Information Security), Ch 7, DC
 Implementation Roadmap, Ch 8, Ch 9, DC
 InfluxDB Cloud, Ch 4
 Infrastructure Gap (vs AI quality gap), Ch 0, Ch 1, Ch 2, Ch 3, Ch 4, Ch 5, Ch 6, Ch 7, Ch 9, DC
-INPACT™ Assessment Tool, Ch 2, Ch 9, DC
-INPACT™ Framework, Ch 0, Ch 1, Ch 2, Ch 9
-INPACT™ Framework - Adaptive, Ch 0, Ch 2, Ch 9
-INPACT™ Framework - Contextual, Ch 0, Ch 2, Ch 9
-INPACT™ Framework - Instant, Ch 0, Ch 2, Ch 9
-INPACT™ Framework - Natural, Ch 0, Ch 2, Ch 9
-INPACT™ Framework - Permitted, Ch 0, Ch 2, Ch 9
-INPACT™ Framework - Transparent, Ch 0, Ch 2, Ch 9
-INPACT™ Scoring (0-100 scale), Ch 0, Ch 2, Ch 9
-Instant (INPACT™ dimension), Ch 0, Ch 2, Ch 9
+INPACT Assessment Tool, Ch 2, Ch 9, DC
+INPACT Framework™, Ch 0, Ch 1, Ch 2, Ch 9
+INPACT Framework™ - Adaptive, Ch 0, Ch 2, Ch 9
+INPACT Framework™ - Contextual, Ch 0, Ch 2, Ch 9
+INPACT Framework™ - Instant, Ch 0, Ch 2, Ch 9
+INPACT Framework™ - Natural, Ch 0, Ch 2, Ch 9
+INPACT Framework™ - Permitted, Ch 0, Ch 2, Ch 9
+INPACT Framework™ - Transparent, Ch 0, Ch 2, Ch 9
+INPACT Scoring (0-100 scale), Ch 0, Ch 2, Ch 9
+Instant (INPACT dimension), Ch 0, Ch 2, Ch 9
 Intelligence Layer (Layer 4), Ch 0, Ch 4, Ch 5, Ch 6, DC
 Intelligence Pipeline, 7-stage, Ch 3, Ch 5, DC
 
@@ -239,7 +239,7 @@ Layer 5 (Governance Layer), Ch 6
 Layer 6 (Observability Layer), Ch 6
 Layer 7 (Orchestration Layer), Ch 6, Ch 7
 Legacy Systems, Ch 0, Ch 1, DC
-Lexicon (GOALS™ dimension), Ch 7, Ch 8, Ch 9, DC
+Lexicon (GOALS dimension), Ch 7, Ch 8, Ch 9, DC
 Llama 3.1 70B, Ch 5, Ch 6
 LlamaIndex, Ch 5
 LLM (Large Language Model), Ch 5
@@ -276,7 +276,7 @@ Multi-Modal Storage (11 categories), Ch 0, Ch 3, Ch 4, Ch 5, Ch 6, DC
 
 **N**
 
-Natural (INPACT™ dimension), Ch 0, Ch 2, Ch 9
+Natural (INPACT dimension), Ch 0, Ch 2, Ch 9
 NDC (National Drug Code), Ch 5, Ch 7
 New Relic, DC
 Neo4j, Ch 4, Ch 5, Ch 7
@@ -288,7 +288,7 @@ NPI (National Provider Identifier), Ch 5
 
 **O**
 
-Observability (GOALS™ dimension), Ch 0, Ch 7, Ch 8, Ch 9, DC
+Observability (GOALS dimension), Ch 0, Ch 7, Ch 8, Ch 9, DC
 Observability Layer (Layer 6), Ch 0, Ch 1, Ch 2, Ch 3, Ch 4, Ch 5, Ch 6, Ch 7, Ch 8, Ch 9, DC
 OLAP Cubes, Ch 3
 1Password Annual Report, Ch 1
@@ -305,7 +305,7 @@ Orchestration Layer (Layer 7), Ch 0, Ch 2, Ch 3, Ch 4, Ch 5, Ch 6, Ch 7, Ch 8, D
 
 Patient Matching. *See* Entity Resolution
 PCI-DSS Compliance, DC
-Permitted (INPACT™ dimension), Ch 0, Ch 2, Ch 9
+Permitted (INPACT dimension), Ch 0, Ch 2, Ch 9
 PHI (Protected Health Information), Ch 6, Ch 7, DC
 Phase Gate Checkpoints, Ch 10, DC
 Phoenix, DC
@@ -367,7 +367,7 @@ SNOMED CT, Ch 5
 Snowflake, DC
 SOX (Sarbanes-Oxley Act), Ch 7
 Software 1.0/2.0/3.0 paradigms, Ch 1, Ch 3
-Solid (GOALS™ dimension), Ch 7, Ch 8, Ch 9, DC
+Solid (GOALS dimension), Ch 7, Ch 8, Ch 9, DC
 Spark, Ch 4
 SQL Server, Ch 0, Ch 1, Ch 2, Ch 3, Ch 4
 Stack Builder Tool, Ch 1, Ch 4, Ch 6, Ch 7, Ch 11, DC
@@ -388,7 +388,7 @@ Time-Series Database, Ch 4
 TopBraid, Ch 5
 Traceability, Ch 7
 Training Data, Ch 4, Ch 5, DC
-Transparent (INPACT™ dimension), Ch 0, Ch 2, Ch 9
+Transparent (INPACT dimension), Ch 0, Ch 2, Ch 9
 Tray.ai Enterprise Survey, Ch 1
 Trust Bands (scoring levels), Ch 9
 Trust Collapse (2025), Ch 0, Ch 1, Ch 2, Ch 7

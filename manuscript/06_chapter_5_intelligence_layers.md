@@ -78,11 +78,11 @@ Chapter 3 identified seven infrastructure gaps preventing agent deployment. Chap
 
 Sarah's team would close these gaps in three weeks.
 
-### INPACT™ Dimension Focus: Natural (N)
+### INPACT Dimension Focus: Natural (N)
 
-Chapter 5 primarily addresses the **Natural (N)** dimension of INPACT™, the need for agents to understand and respond in natural language. This dimension had the largest gap at Echo Health Systems after foundation completion.
+Chapter 5 primarily addresses the **Natural (N)** dimension of INPACT, the need for agents to understand and respond in natural language. This dimension had the largest gap at Echo Health Systems after foundation completion.
 
-At Week 4 (end of Chapter 4), Echo's INPACT™ score was 42/100:
+At Week 4 (end of Chapter 4), Echo's INPACT score was 42/100:
 
 | Dimension | Score | Status |
 |-----------|-------|--------|
@@ -144,7 +144,7 @@ Krish Yadav's face on screen showed careful attention. "What's the cost of intel
 
 "Tight but workable," Sarah replied. "The Largest costs are LLM APIs and vector databases. We've architected for efficiency. Semantic caching will reduce LLM costs by 80-85% once operational."
 
-Sarah walked to the whiteboard. "The business problem: We promised the board agent-ready infrastructure by Week 10. INPACT™ score of 86/100 or higher. We're at 42. The gap is 43 points."
+Sarah walked to the whiteboard. "The business problem: We promised the board agent-ready infrastructure by Week 10. INPACT score of 86/100 or higher. We're at 42. The gap is 43 points."
 
 She drew a simple progression:
 
@@ -325,7 +325,7 @@ For data cataloging, Echo implemented [Alation](https://www.alation.com) to prov
 | **dbt Semantic Models** | 156 metrics, 89 dimensions | Complete |
 
 
-### INPACT™ Contribution
+### INPACT Contribution
 
 **Layer 3 primarily fulfills Natural (N):** Enabling business language understanding, "diabetes follow-up patients" translates to precise queries without SQL knowledge.
 
@@ -431,7 +431,7 @@ Echo deployed seven Pinecone namespaces, one per context type, with specialized 
 
 Echo's synthesis engine orchestrates retrieval within <400ms through parallel retrieval across seven namespaces, relevance scoring, deduplication, and token optimization. Echo's median: 312ms.
 
-**INPACT™ Impact:** Universal context enables Natural (N) through business language translation, Contextual (C) through complete situational awareness, and Adaptive (A) through automatic response adjustment.
+**INPACT Impact:** Universal context enables Natural (N) through business language translation, Contextual (C) through complete situational awareness, and Adaptive (A) through automatic response adjustment.
 
 ### Confidence Handling and Hallucination Prevention
 
@@ -546,7 +546,7 @@ Agent responses were slow (3-8 seconds), frequently wrong (53% error rate), and 
 
 
 
-### INPACT™ Contribution
+### INPACT Contribution
 
 Layer 4 fulfills:
 
@@ -729,17 +729,17 @@ The room was silent for a moment. Then applause.
 - End-to-end latency: 1.8s average (23ms cached)
 - Cache hit rate: 84%
 - LLM cost reduction: 84% (from baseline)
-- INPACT™ score: 67/100
+- INPACT score: 67/100
 
 **Figure 5.11: Echo's Week 5-7 Timeline**
 
 
 ![Figure 5.11: Echo's Week 5-7 Timeline](figures/figure-5-11.png)
 
-**Figure 5.12: INPACT™ Score Transformation (Week 4:42 → Week 7:67)**
+**Figure 5.12: INPACT Score™ Transformation (Week 4:42 → Week 7:67)**
 
 
-![Figure 5.12: INPACT™ Transformation (42 → 67)](figures/figure-5-12.png)
+![Figure 5.12: INPACT Transformation (42 → 67)](figures/figure-5-12.png)
 | Dimension | Week 4 | Week 7 | Change | Driver |
 |-----------|--------|--------|--------|--------|
 | **I (Instant)** | 4/6 | 5/6 | **+1** | Semantic caching |
@@ -750,7 +750,7 @@ The room was silent for a moment. Then applause.
 | **T (Transparent)** | 1/6 | 3/6 | **+2** | Citations link sources |
 | **TOTAL** | 42/100 | 67/100 | **+25** | Intelligence operational |
 
-*Note: INPACT™ scores incorporate weighted factors for production readiness assessment. See the INPACT™ Practitioner Reference for complete scoring methodology.*
+*Note: INPACT scores incorporate weighted factors for production readiness assessment. See the INPACT Practitioner Reference for complete scoring methodology.*
 
 ---
 
@@ -782,7 +782,7 @@ Krish made a note. "Phase 3 has the same $380,000 allocation. Apply the lesson."
 
 | Metric | Week 4 | Week 7 | Improvement |
 |--------|--------|--------|-------------|
-| **INPACT™ Score** | 42/100 | 67/100 | +25 points |
+| **INPACT Score™** | 42/100 | 67/100 | +25 points |
 | **Query Accuracy** | 47% | 96% | 2× improvement |
 | **Response Latency** | 9-13s | 1.8s (23ms cached) | 5-400× faster |
 | **LLM Cost** | Uncontrolled | $2,300/month | 84% reduction |
@@ -872,13 +872,13 @@ Without Layer 5 (Governance), the intelligent response creates a compliance viol
 
 **Semantic caching transforms economics:** 84% cache hit rate reduced Echo's LLM costs from $14,500/month to $2,300/month, a $12,200/month savings.
 
-**Natural (N) is the primary gain:** INPACT™ Natural dimension improved from 2/6 to 5/6, enabling true natural language interaction.
+**Natural (N) is the primary gain:** INPACT Natural dimension improved from 2/6 to 5/6, enabling true natural language interaction.
 
 ### Echo Health Systems: Week 7 Status
 
 | Metric | Week 0 | Week 7 | Improvement |
 |--------|--------|--------|-------------|
-| **INPACT™ Score** | 28/100 | 67/100 | +39 points |
+| **INPACT Score™** | 28/100 | 67/100 | +39 points |
 | **Query Accuracy** | 47% | 96% | 2× improvement |
 | **Response Latency** | 9-13s | 1.8s (23ms cached) | 5-400× faster |
 | **Investment** | $0 | $860,000 | Phase 1-2 complete |
@@ -946,6 +946,5 @@ Without Layer 5 (Governance), the intelligent response creates a compliance viol
 ---
 
 **© 2025-2026 Colaberry Inc. All Rights Reserved.**
-INPACT™ and GOALS™ are trademarks of Colaberry Inc.
 
 *Acronyms and key terms are defined in the Glossary.*

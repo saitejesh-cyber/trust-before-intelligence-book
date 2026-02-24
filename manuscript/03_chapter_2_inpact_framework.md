@@ -1,4 +1,4 @@
-# Chapter 2: The INPACT™ Framework
+# Chapter 2: The INPACT Framework™
 
 **The Six Needs Chapter**
 
@@ -18,10 +18,10 @@ This chapter explains what those six things are.
 
 ---
 
-**Figure 2.0: The INPACT™ Framework - Six Infrastructure Needs for Agent Trust**
+**Figure 2.0: The INPACT Framework™ - Six Infrastructure Needs for Agent Trust**
 
 
-![Figure 2.0: The INPACT™ Framework - Six Infrastructure Needs for Agent Trust](figures/figure-2-0.png)
+![Figure 2.0: The INPACT Framework™ - Six Infrastructure Needs for Agent Trust](figures/figure-2-0.png)
 > **Key Takeaway:** Six infrastructure needs. One framework. Trust.
 
 ## PART 1: FRAMEWORK INTRODUCTION
@@ -38,7 +38,7 @@ Chapter 1 revealed why 95% of enterprise AI agent projects fail not from inadequ
 
 ### The Origin: Pattern Recognition Across Industry Deployments
 
-INPACT™ emerged from analyzing patterns across production agent deployments in healthcare, life sciences, utility, finance, retail, and manufacturing. Chapter 1 showed you **why** agents fail by infrastructure gaps, not AI quality. But **which** gaps matter most? How do you diagnose them systematically?
+INPACT emerged from analyzing patterns across production agent deployments in healthcare, life sciences, utility, finance, retail, and manufacturing. Chapter 1 showed you **why** agents fail by infrastructure gaps, not AI quality. But **which** gaps matter most? How do you diagnose them systematically?
 
 Three patterns emerged consistently:
 
@@ -48,7 +48,7 @@ Three patterns emerged consistently:
 
 **The Trust Paradox:** Recommendation engines providing evidence-based guidance, yet overridden 70% of the time. Why? Opaque reasoning gave physicians no basis for trust.
 
-When we analyzed these failures, six needs emerged. When any single need went unfulfilled, trust collapsed. When all six were addressed systematically, adoption soared. These six needs became INPACT™.
+When we analyzed these failures, six needs emerged. When any single need went unfulfilled, trust collapsed. When all six were addressed systematically, adoption soared. These six needs became INPACT.
 
 ---
 
@@ -81,10 +81,10 @@ Tony Robbins built an empire on one insight: humans have six core needs - signif
 **Agents cannot advocate for themselves.** They depend entirely on infrastructure to fulfill their needs. An agent can't request real-time data when batch ETL is all that's available. It can't negotiate for dynamic permissions when RBAC alone is all that exists.
 
 
-**Figure 2.3: Six INPACT™ Needs Fulfilled**
+**Figure 2.3: Six INPACT Needs Fulfilled**
 
 
-![Figure 2.3: Six INPACT™ Needs Fulfilled](figures/figure-2-3.png)
+![Figure 2.3: Six INPACT Needs Fulfilled](figures/figure-2-3.png)
 
 ### Trust = Earned Outcome, Not Built Component
 
@@ -96,9 +96,9 @@ Traditional enterprise software could require trust: "You must use this ERP syst
 
 **When even one need fails, trust collapses across all dimensions.** Agents operate on binary trust. Users either trust enough to delegate, or they don't trust at all. Echo's scheduling agent achieved 95% accuracy but took 9-13 seconds to respond. Users abandoned it. Accuracy didn't matter when speed destroyed conversational experience.
 
-### INPACT™ as Requirements Definition
+### INPACT as Requirements Definition
 
-This chapter establishes INPACT™ as the first and foundational pillar of the Architecture of Trust. Every architectural decision in Chapters 4-6 flows from these six needs.
+This chapter establishes INPACT as the first and foundational pillar of the Architecture of Trust. Every architectural decision in Chapters 4-6 flows from these six needs.
 
 **The framework provides:**
 
@@ -112,15 +112,15 @@ This chapter establishes INPACT™ as the first and foundational pillar of the A
 
 Every one of the six needs is interconnected through multiple layers of architecture. For example, Instant (I) requires real-time streaming, query optimization, and caching, Natural (N) demands semantic layers, embedding models, and vector databases. No layer solves any need alone.
 
-### How INPACT™ Assessment Works
+### How INPACT Assessment Works
 
-INPACT™ assessment quantifies infrastructure readiness using a 1-6 scoring system per dimension, creating a 36-point maximum (6 dimensions × 6 points). Convert to 100-point scale: (score/36) × 100.
+INPACT assessment quantifies infrastructure readiness using a 1-6 scoring system per dimension, creating a 36-point maximum (6 dimensions × 6 points). Convert to 100-point scale: (score/36) × 100.
 
-**Figure 2.4: INPACT™ Assessment Methodology - From Dimensions to Decision**
+**Figure 2.4: INPACT Assessment Methodology - From Dimensions to Decision**
 
 
-![Figure 2.4: INPACT™ Assessment Methodology - From Dimensions to Decision](figures/figure-2-4.png)
-**The six INPACT™ dimensions assessed:**
+![Figure 2.4: INPACT Assessment Methodology - From Dimensions to Decision](figures/figure-2-4.png)
+**The six INPACT dimensions assessed:**
 
 - **I (Instant):** Real-time data delivery, sub-2-second response times
 - **N (Natural):** Semantic understanding of business language
@@ -139,11 +139,11 @@ INPACT™ assessment quantifies infrastructure readiness using a 1-6 scoring sys
 
 **86/100 Threshold:** Industry analysis shows 86/100 (~31/36 points) as minimum for production readiness [15,16]. Below 86: high abandonment risk. Above 86: sustainable adoption, manageable risk, continuous improvement foundation.
 
-**Figure 2.5: Echo Health's INPACT™ Transformation - 28/100 to 86/100 in 10 Weeks**
+**Figure 2.5: Echo Health's INPACT Transformation - 28/100 to 86/100 in 10 Weeks**
 
-![Figure 2.5: Echo Health's INPACT™ Transformation - 28/100 to 86/100 in 10 Weeks](figures/figure-2-5.png)
+![Figure 2.5: Echo Health's INPACT Transformation - 28/100 to 86/100 in 10 Weeks](figures/figure-2-5.png)
 
-**Practical Application:** INPACT™ assessment takes 30 mins to 4 hours with infrastructure and data teams. Output: current score per dimension, gap analysis, prioritized roadmap. Tool available at trustbeforeintelligence.ai/assessment.
+**Practical Application:** INPACT assessment takes 30 mins to 4 hours with infrastructure and data teams. Output: current score per dimension, gap analysis, prioritized roadmap. Tool available at trustbeforeintelligence.ai/assessment.
 
 ### Echo Health's Reality Check
 
@@ -498,7 +498,7 @@ The question now: how do you assess your own readiness?
 
 ### Aggregate Scoring
 
-INPACT™ assessment produces actionable insights across six dimensions. Each dimension scored 1-6 creates 36-point maximum, converted to 100-point scale for executive communication.
+INPACT assessment produces actionable insights across six dimensions. Each dimension scored 1-6 creates 36-point maximum, converted to 100-point scale for executive communication.
 
 **Practical Use:** Assessment identifies specific infrastructure gaps preventing agent readiness. Echo's 28/100 revealed five critical dimensions (scores 1-2/6), one moderate strength (Contextual at 3/6), and a clear roadmap: prioritize Instant, Natural, Permitted first (highest impact, foundational dependencies).
 
@@ -528,7 +528,7 @@ The 87% not yet ready face a choice: invest now in systematic infrastructure upg
 
 ## PART 5: KEY TAKEAWAYS
 
-### The INPACT™ Principles
+### The INPACT Principles
 
 **1. Trust is architectural, not algorithmic.** Agents achieve 95% accuracy but fail from 9-13 second responses. Infrastructure readiness determines success.
 
@@ -542,39 +542,39 @@ The 87% not yet ready face a choice: invest now in systematic infrastructure upg
 
 **6. Human-in-the-loop scales trust.** 240 escalations daily (8% of interactions) maintained quality while expanding autonomy. Goal: right-sized human judgment, not zero human judgment.
 
-### What Makes INPACT™ Different
+### What Makes INPACT Different
 
-Traditional frameworks focus on AI model quality, prompt engineering, or RAG optimization. INPACT™ focuses on **infrastructure readiness**, the capabilities agents need from architecture, not the capabilities agents provide to users.
+Traditional frameworks focus on AI model quality, prompt engineering, or RAG optimization. INPACT focuses on **infrastructure readiness**, the capabilities agents need from architecture, not the capabilities agents provide to users.
 
-**INPACT™ is:**
+**INPACT is:**
 - **Diagnostic:** Reveals where infrastructure fails agent needs
 - **Prioritized:** Dependencies determine optimal sequence
 - **Measurable:** 1-6 scoring enables gap tracking
 - **Actionable:** Maps to 7-layer architecture (Chapters 4-6)
 
-**INPACT™ is not:**
+**INPACT is not:**
 - Model selection guidance (choose GPT-4 vs Claude vs Llama)
 - Prompt engineering techniques (few-shot vs chain-of-thought)
 - RAG optimization methods (retrieval strategies, reranking)
 - Application-specific patterns (customer service vs coding vs research)
 
-Those topics matter. But they assume infrastructure readiness. INPACT™ establishes the foundation enabling AI capabilities to deliver business value.
+Those topics matter. But they assume infrastructure readiness. INPACT establishes the foundation enabling AI capabilities to deliver business value.
 
 ### Next Steps: From Needs to Architecture
 
-**Chapter 2 established Pillar 1:** What agents need (INPACT™ six needs).
+**Chapter 2 established Pillar 1:** What agents need (INPACT six needs).
 
 **Chapters 4-6 establish Pillar 2:** How to build infrastructure fulfilling those needs (7-layer architecture built across three chapters).
 
-**Chapter 7 establishes Pillar 3:** How to measure operational success (GOALS™ operational framework).
+**Chapter 7 establishes Pillar 3:** How to measure operational success (the GOALS Framework™ for operational excellence).
 
 **Together, the three pillars form The Architecture of Trust**, an integrated system ensuring agents operate reliably, compliantly, and effectively in production environments.
 
-**Echo Health's transformation demonstrates the pattern:** Diagnose readiness (INPACT™ assessment), prioritize gaps (dependencies and business impact), implement systematically (phased layered approach), measure progress (scoring discipline), deploy confidently (86/100 threshold).
+**Echo Health's transformation demonstrates the pattern:** Diagnose readiness (INPACT assessment), prioritize gaps (dependencies and business impact), implement systematically (phased layered approach), measure progress (scoring discipline), deploy confidently (86/100 threshold).
 
 Your organization's journey follows the same pattern. The specifics differ, your data systems, your regulatory requirements, your user needs, but the six architectural needs remain universal.
 
-**Ready to assess your infrastructure?** Visit trustbeforeintelligence.ai/assessment for the complete INPACT™ diagnostic tool and implementation guidance.
+**Ready to assess your infrastructure?** Visit trustbeforeintelligence.ai/assessment for the complete INPACT diagnostic tool and implementation guidance.
 
 <!-- pagebreak -->
 
@@ -585,7 +585,7 @@ Your organization's journey follows the same pattern. The specifics differ, your
 |------|---------|--------------|
 | **Part 1** | Framework Introduction | Trust is architectural. Six needs must be fulfilled for agents to earn user trust |
 | **Part 2** | Echo's Discovery | The 86/100 threshold determines production readiness; Echo started at 28/100 |
-| **Part 3** | The Six Needs | Deep dive into all six INPACT™ needs: Instant, Natural, Permitted, Adaptive, Contextual, Transparent |
+| **Part 3** | The Six Needs | Deep dive into all six INPACT needs: Instant, Natural, Permitted, Adaptive, Contextual, Transparent |
 | **Part 4** | Assessment and Scoring | Dependencies force sequence; only 13% of enterprises are agent-ready |
 | **Part 5** | Key Takeaways | Infrastructure readiness determines success, not AI quality |
 
@@ -636,6 +636,5 @@ Your organization's journey follows the same pattern. The specifics differ, your
 ---
 
 **© 2025-2026 Colaberry Inc. All Rights Reserved.**
-INPACT™ and GOALS™ are trademarks of Colaberry Inc.
 
 *Acronyms and key terms are defined in the Glossary.*

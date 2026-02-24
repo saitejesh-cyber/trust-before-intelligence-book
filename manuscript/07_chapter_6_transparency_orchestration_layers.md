@@ -93,9 +93,9 @@ Chapter 3 identified seven infrastructure gaps preventing agent deployment. Chap
 
 This chapter closes all remaining gaps. By Week 10, Echo's architecture will be complete.
 
-### INPACT™ Dimensions Enabled
+### INPACT Dimensions Enabled
 
-Each layer directly drives specific INPACT™ dimensions:
+Each layer directly drives specific INPACT dimensions:
 
 **Layer 5 delivers Permitted (P):** Dynamic authorization that considers context, not just role-based yes/no decisions, but attribute-based evaluation of who, what, when, and where. A physician accessing their own patient's records during a scheduled appointment receives immediate authorization. The same physician accessing a celebrity patient's records from a home IP address at 2 AM triggers HITL review.
 
@@ -103,7 +103,7 @@ Each layer directly drives specific INPACT™ dimensions:
 
 **Layer 7 powers orchestration across all dimensions:** Multi-agent coordination makes Instant (I) practical for complex queries, Natural (N) seamless for multi-domain questions, and Contextual (C) coherent across agent handoffs.
 
-These three layers will take Echo's INPACT™ score from 67/100 to 86/100, the production readiness threshold. (See Part 7 for complete dimension-by-dimension progression.)
+These three layers will take Echo's INPACT score from 67/100 to 86/100, the production readiness threshold. (See Part 7 for complete dimension-by-dimension progression.)
 
 The 86/100 threshold represents production readiness, the point at which agent infrastructure can reliably support clinical workflows with appropriate safeguards. This threshold aligns with NIST AI Risk Management Framework guidance on deploying AI systems in high-stakes environments.[1]
 
@@ -155,7 +155,7 @@ The room was quiet.
 - State management and routing
 - Target: Multi-agent queries working
 
-"By Week 10, we hit 86/100 INPACT™," Sarah continued. "Governance gets Permitted from 2 to 6. Observability gets Transparent from 3 to 6. Orchestration ties it together for production."
+"By Week 10, we hit 86/100 INPACT," Sarah continued. "Governance gets Permitted from 2 to 6. Observability gets Transparent from 3 to 6. Orchestration ties it together for production."
 
 Jamie nodded. "What about the Warfarin scenario specifically? That's the test case."
 
@@ -310,7 +310,7 @@ Dr. Chen approved the recommendation with one modification: adding a specific IN
 
 "That's exactly what we needed," she told Sarah later. "The agent did the work: gathering data, identifying the interaction, drafting the recommendation. But a human made the final call on a high-risk medication. That's trustworthy AI."
 
-### INPACT™ Contribution
+### INPACT Contribution
 
 Layer 5 directly delivers **Permitted (P)**: from 2/6 to 6/6.
 
@@ -431,7 +431,7 @@ Monthly LLM spend of $26,000 now decomposed:
 
 This visibility revealed optimization opportunity: 34% of clinical reasoning queries were cache-eligible but cache-missing due to minor prompt variations. Normalizing prompts increased cache hit rate from 85% to 91%, saving $3,100 monthly.
 
-### INPACT™ Contribution
+### INPACT Contribution
 
 Layer 6 directly delivers **Transparent (T)**: from 3/6 to 6/6.
 
@@ -594,9 +594,9 @@ The room was silent for a moment. Then Jamie grinned. "**The Architecture of Tru
 
 
 
-### INPACT™ Contribution
+### INPACT Contribution
 
-Layer 7 doesn't directly add points to the INPACT™ score. The 86/100 score is achieved through Layers 5-6 improvements to Permitted and Transparent. But orchestration enables INPACT™ dimensions at scale:
+Layer 7 doesn't directly add points to the INPACT score. The 86/100 score is achieved through Layers 5-6 improvements to Permitted and Transparent. But orchestration enables INPACT dimensions at scale:
 
 **Instant (I):** Multi-agent workflows complete in seconds through parallel execution. Without orchestration, the same tasks would require sequential human navigation across systems in minutes instead of seconds.
 
@@ -683,11 +683,11 @@ Friday, 4:47 PM. The Maria Santos discharge query succeeded. Three agents. One r
 **© 2025-2026 Colaberry Inc.**
 
 
-**Figure 6.12: INPACT™ Score Transformation (Week 7: 67 → Week 10: 86)**
+**Figure 6.12: INPACT Score™ Transformation (Week 7: 67 → Week 10: 86)**
 
 
-![Figure 6.12: INPACT™ Transformation (67 → 86)](figures/figure-6-12.png)
-**INPACT™ Dimension Changes:**
+![Figure 6.12: INPACT Transformation (67 → 86)](figures/figure-6-12.png)
+**INPACT Dimension Changes:**
 
 | Dimension | Week 7 | Week 10 | Change | Enabling Layer |
 |-----------|--------|---------|--------|----------------|
@@ -705,7 +705,7 @@ Friday, 4:47 PM. The Maria Santos discharge query succeeded. Three agents. One r
 
 | Metric | Target | Achieved |
 |--------|--------|----------|
-| INPACT™ Score | 86/100 | 86/100 |
+| INPACT Score™ | 86/100 | 86/100 |
 | Policy Coverage | 95% | 98% (242/247 policies) |
 | Trace Completeness | 99% | 99% |
 | Orchestration Success | 95% | 96% |
@@ -836,7 +836,7 @@ The remaining two weeks, Weeks 11-12, would validate these projections through o
 | **Part 4** | The Warfarin Scenario | AI drafts recommendations, humans approve high-risk decisions |
 | **Part 5** | Layer 6 - Observability | Distributed tracing, MLOps monitoring, LLM cost tracking |
 | **Part 6** | Layer 7 - Orchestration | Multi-agent coordination via LangGraph supervisor pattern |
-| **Part 7** | Echo's Week 8-10 Build | Three-week implementation achieving 86/100 INPACT™ |
+| **Part 7** | Echo's Week 8-10 Build | Three-week implementation achieving 86/100 INPACT |
 | **Part 8** | Architecture Complete | All 7 gaps closed, $942K invested, production ready |
 
 ### Key Takeaways
@@ -849,7 +849,7 @@ The remaining two weeks, Weeks 11-12, would validate these projections through o
 
 4. **The 7-Layer Architecture is complete:** Foundation (Layers 1-2), Intelligence (Layers 3-4), and Trust + Orchestration (Layers 5-6-7) together create production-ready infrastructure.
 
-5. **Architecture is a milestone, not a destination:** The 86/100 INPACT™ score represents capability. The GOALS™ framework in Chapter 7 measures operational reality.
+5. **Architecture is a milestone, not a destination:** The 86/100 INPACT score represents capability. The GOALS Framework™ in Chapter 7 measures operational reality.
 
 <!-- pagebreak -->
 
@@ -857,7 +857,7 @@ The remaining two weeks, Weeks 11-12, would validate these projections through o
 
 The complete transformation closed all seven gaps across three phases:
 
-| Phase | Weeks | Layers | INPACT™ | Investment |
+| Phase | Weeks | Layers | INPACT | Investment |
 |-------|-------|--------|---------|------------|
 | Foundation (Ch 4) | 1-4 | 1-2 | 28→42 | $468K |
 | Intelligence (Ch 5) | 5-7 | 3-4 | 42→67 | $392K |
@@ -870,7 +870,7 @@ The complete transformation closed all seven gaps across three phases:
 
 | Metric | Week 0 | Week 10 | Improvement |
 |--------|--------|---------|-------------|
-| **INPACT™ Score** | 28/100 | 86/100 | +58 points |
+| **INPACT Score™** | 28/100 | 86/100 | +58 points |
 | **Total Investment** | $0 | $942,000 | 23% under budget |
 | **Architecture Layers** | 0/7 | 7/7 | Complete |
 | **Gaps Remaining** | 7 | 0 | All resolved |
@@ -885,7 +885,7 @@ The complete transformation closed all seven gaps across three phases:
 
 ### What's Next
 
-**Chapter 7:** GOALS™ Framework
+**Chapter 7:** GOALS Framework™
 - Operational excellence methodology
 - Five measurement dimensions
 - Echo Weeks 11-12: Validation and optimization
@@ -930,6 +930,5 @@ The complete transformation closed all seven gaps across three phases:
 ---
 
 **© 2025-2026 Colaberry Inc. All Rights Reserved.**
-INPACT™ and GOALS™ are trademarks of Colaberry Inc.
 
 *Acronyms and key terms are defined in the Glossary.*

@@ -32,7 +32,7 @@ This chapter is that presentation.
 
 ### Your 90-Day Journey
 
-Chapter 9 gave you the diagnosis: your INPACT™ score, trust band, and priority layers. This chapter gives you the treatment plan - a week-by-week playbook for transforming your infrastructure from assessment to production-ready. The playbook is universal; where specific numbers help, we reference real implementations as evidence.
+Chapter 9 gave you the diagnosis: your INPACT score, trust band, and priority layers. This chapter gives you the treatment plan - a week-by-week playbook for transforming your infrastructure from assessment to production-ready. The playbook is universal; where specific numbers help, we reference real implementations as evidence.
 
 **Why 90 Days?**
 
@@ -58,7 +58,7 @@ By the end of this chapter, you will have:
 **How to Use This Roadmap**
 
 Chapter 9 gave you four things:
-1. Your **INPACT™ score** (overall readiness)
+1. Your **INPACT score** (overall readiness)
 2. Your **trust band** (timeline and budget estimate)
 3. Your **priority dimensions** (your two lowest-scoring dimensions)
 4. Your **priority layers** (from the Gap Prioritization Matrix)
@@ -78,7 +78,7 @@ The phase sequence never changes: Foundation → Intelligence → Trust → Oper
 
 This chapter focuses on *when* to build. Other chapters provide complementary guidance:
 
-- For *how to assess* your current state → Chapter 9 (INPACT™ methodology)
+- For *how to assess* your current state → Chapter 9 (INPACT methodology)
 - For *what technologies* to select → Chapter 11 (vendor evaluation)
 - For *how to operate* at scale → Chapter 12 (production operations)
 - For *week-by-week layer detail* → Chapters 4-6
@@ -128,7 +128,7 @@ The transformation follows four distinct phases, each building on the previous. 
 |-----------|--------|
 | **Weeks** | 1-4 |
 | **Layers** | L1 (Multi-Modal Storage) → L2 (Real-Time Data Fabric) |
-| **INPACT™ Target** | +10-15 points |
+| **INPACT Target** | +10-15 points |
 | **Budget Range** | $80K-$550K (see Part 3: The Investment Approach) |
 | **Team** | 2 senior data engineers, 1 cloud architect, 1 DBA, 2 CDC specialists (consulting) |
 | **Primary Focus** | Data freshness (<30 seconds), query performance |
@@ -160,7 +160,7 @@ For Layer 1 and Layer 2 technology details, see Chapter 4. For vendor selection 
 
 **Phase Gate Checkpoint**
 
-- INPACT™ score ≥40 (±5% tolerance)
+- INPACT score ≥40 (±5% tolerance)
 - CDC operational for critical tables (e.g., customers, transactions, core entities)
 - Storage infrastructure provisioned and tested
 - If behind: Add 1-2 weeks to Phase 1; never skip ahead to Phase 2
@@ -177,7 +177,7 @@ For Layer 1 and Layer 2 technology details, see Chapter 4. For vendor selection 
 |-----------|--------|
 | **Weeks** | 5-7 |
 | **Layers** | L3 (Semantic Layer) → L4 (Intelligent Retrieval) |
-| **INPACT™ Target** | +20-25 points |
+| **INPACT Target** | +20-25 points |
 | **Budget Range** | $60K-$450K (see Part 3: The Investment Approach) |
 | **Team** | 2 ML engineers, 1 domain SME, semantic layer specialists |
 | **Primary Focus** | NLU accuracy (target: 85%), semantic layer coverage, RAG pipeline |
@@ -208,7 +208,7 @@ Phase 2 gives agents the ability to understand and reason. Build layer-by-layer:
 
 **Phase Gate Checkpoint**
 
-- INPACT™ score ≥65 (±5% tolerance)
+- INPACT score ≥65 (±5% tolerance)
 - Query accuracy ≥85% on test set (500 queries across all domains)
 - Semantic layer operational with entity resolution
 - If behind: Tune RAG pipeline; add reranking; extend Phase 2 by 1 week
@@ -224,7 +224,7 @@ Phase 2 gives agents the ability to understand and reason. Build layer-by-layer:
 |-----------|--------|
 | **Weeks** | 8-10 |
 | **Layers** | L5 (Agent-Aware Governance) + L6 (Observability complete) + L7 (Orchestration) |
-| **INPACT™ Target** | +15-20 points |
+| **INPACT Target** | +15-20 points |
 | **Budget Range** | $30K-$400K (see Part 3: The Investment Approach) |
 | **Team** | 2 security engineers, 2 DevOps engineers, 1 compliance officer, 1 ML engineer |
 | **Primary Focus** | ABAC policies, HITL workflows, audit trails, multi-agent coordination |
@@ -254,7 +254,7 @@ Phase 3 offers the largest budget variance potential. Open-source choices (OPA v
 
 **Phase Gate Checkpoint**
 
-- INPACT™ score ≥80 (±5% tolerance)
+- INPACT score ≥80 (±5% tolerance)
 - All 7 layers operational
 - HITL escalation rate <15%
 - Audit trail 100% complete
@@ -270,7 +270,7 @@ Phase 3 offers the largest budget variance potential. Open-source choices (OPA v
 |-----------|--------|
 | **Weeks** | 11-12 |
 | **Focus** | Validation, UAT, Production Readiness |
-| **INPACT™ Target** | +2-5 points (refinement) |
+| **INPACT Target** | +2-5 points (refinement) |
 | **Budget Range** | $20K-$80K (see Part 3: The Investment Approach) |
 | **Team** | UAT facilitators, compliance sign-off, training staff |
 | **Primary Focus** | User Acceptance Testing, production cutover |
@@ -282,7 +282,7 @@ Phase 4 validates everything works together:
 - **UAT with real users**: Representative user group tests real scenarios over 2 weeks
 - **Edge case resolution**: Identify and resolve edge cases before production (expect 30-60)
 - **Production readiness**: 15-criteria checklist verified (see Chapter 12)
-- **GOALS™ operational targets**: All five metrics at target levels
+- **GOALS operational targets**: All five metrics at target levels
 
 **Success Criteria**
 
@@ -317,7 +317,7 @@ Your investment depends on your technology strategy. Three tracks (Commerical, O
 
 **Commercial Track** (Speed priority, smaller technical teams)
 
-| Phase | Weeks | Budget Range | INPACT™ Gain |
+| Phase | Weeks | Budget Range | INPACT Gain |
 |-------|-------|--------------|--------------|
 | Foundation | 1-4 | $350K-$550K | +10-15 points |
 | Intelligence | 5-7 | $300K-$450K | +20-25 points |
@@ -327,7 +327,7 @@ Your investment depends on your technology strategy. Three tracks (Commerical, O
 
 **Hybrid Track** (Balanced approach, selective open-source)
 
-| Phase | Weeks | Budget Range | INPACT™ Gain |
+| Phase | Weeks | Budget Range | INPACT Gain |
 |-------|-------|--------------|--------------|
 | Foundation | 1-4 | $200K-$350K | +10-15 points |
 | Intelligence | 5-8 | $150K-$300K | +20-25 points |
@@ -337,7 +337,7 @@ Your investment depends on your technology strategy. Three tracks (Commerical, O
 
 **Pure Open-Source Track** (Budget priority, strong engineering team)
 
-| Phase | Weeks | Budget Range | INPACT™ Gain |
+| Phase | Weeks | Budget Range | INPACT Gain |
 |-------|-------|--------------|--------------|
 | Foundation | 1-5 | $80K-$150K | +10-15 points |
 | Intelligence | 6-10 | $60K-$120K | +20-25 points |
@@ -374,7 +374,7 @@ Open-source shifts cost from software licenses to staff time and cloud infrastru
 
 **Track Selection Drives Total Cost**
 
-The same transformation can cost $190K or $1.5M depending on your technology choices. The INPACT™ outcome is the same - what differs is timeline, operational burden, and where the money goes.
+The same transformation can cost $190K or $1.5M depending on your technology choices. The INPACT outcome is the same - what differs is timeline, operational burden, and where the money goes.
 
 **Phase 3 Has Highest Variance Within Each Track**
 
@@ -527,15 +527,15 @@ The pre-transformation gate ensuring organizational readiness. Select your tier 
 
 **Tab 1: Weekly Progress Dashboard**
 
-The executive view showing overall status at a glance. Columns include Week, Phase, Primary Layer Focus, INPACT™ Status, GOALS™ Progress (Phase 3+), Top Risk, Status (🟢/🟡/🔴), Key Deliverable, and Notes. Update every Friday; review in Monday leadership standup.
+The executive view showing overall status at a glance. Columns include Week, Phase, Primary Layer Focus, INPACT Status, GOALS Progress (Phase 3+), Top Risk, Status (🟢/🟡/🔴), Key Deliverable, and Notes. Update every Friday; review in Monday leadership standup.
 
-**Tab 2: INPACT™ Progress Tracker**
+**Tab 2: INPACT Progress Tracker**
 
-Tracks the six INPACT™ dimensions (I, N, P, A, C, T) week by week on a 1-6 scale. Your two lowest dimensions from Chapter 9 identify your priority layers. Use this tab to track whether those dimensions are improving as you execute the corresponding phases.
+Tracks the six INPACT dimensions (I, N, P, A, C, T) week by week on a 1-6 scale. Your two lowest dimensions from Chapter 9 identify your priority layers. Use this tab to track whether those dimensions are improving as you execute the corresponding phases.
 
-**Tab 3: GOALS™ Health Dashboard**
+**Tab 3: GOALS Health Dashboard**
 
-Monitors the five GOALS™ operational metrics: Governance, Observability, Availability, Lexicon, and Soundness. Activates in Phase 3 when operational concerns become primary. Target: all five metrics at ≥80% by Week 12.
+Monitors the five GOALS operational metrics: Governance, Observability, Availability, Lexicon, and Soundness. Activates in Phase 3 when operational concerns become primary. Target: all five metrics at ≥80% by Week 12.
 
 **Tab 4: 7-Layer Build Status**
 
@@ -567,8 +567,8 @@ Monitors spend by category (Technology, Services, Staff) against plan. Weekly ac
 |-----|---------|--------------|------------------|
 | **Tab 0: Day Zero Readiness** | Pre-transformation gate - 15-35 items by org size | Project Manager | Before Week 1 |
 | **Tab 1: Weekly Progress** | Executive dashboard - overall status | Project Manager | Weekly (Friday) |
-| **Tab 2: INPACT™ Tracker** | Six dimensions, week-by-week scores | Data Architect | Weekly |
-| **Tab 3: GOALS™ Dashboard** | Five operational metrics | Operations Lead | Weekly (Phase 3+) |
+| **Tab 2: INPACT Tracker** | Six dimensions, week-by-week scores | Data Architect | Weekly |
+| **Tab 3: GOALS Dashboard** | Five operational metrics | Operations Lead | Weekly (Phase 3+) |
 | **Tab 4: 7-Layer Status** | Layer-by-layer build progress | Technical Lead | Weekly |
 | **Tab 5: Risk & Blocker Log** | Issue tracking and mitigation | Project Manager | As needed |
 | **Tab 6: Communication Log** | Meetings, decisions, action items | Project Manager | Per meeting |
@@ -585,12 +585,12 @@ Day Zero items scale by organization size:
 - **Standard** (25 items): Mid-size organizations (1,000-15,000 employees), baseline 12 weeks
 - **Comprehensive** (35 items): Large/Enterprise (15,000+ employees), +2-4 weeks timeline
 
-Critical blockers (items like Executive Sponsor, Steering Committee, Budget Approved, INPACT™ Assessment Complete) must be "Ready" before Week 1 unlocks.
+Critical blockers (items like Executive Sponsor, Steering Committee, Budget Approved, INPACT Assessment Complete) must be "Ready" before Week 1 unlocks.
 
 **Before Week 1:**
 1. Access the online tracker at trustbeforeintelligence.ai/tracker
 2. Select your organization tier and complete Day Zero checklist (Tab 0)
-3. Complete your INPACT™ assessment (Chapter 9) to establish baseline scores
+3. Complete your INPACT assessment (Chapter 9) to establish baseline scores
 4. Customize phase focus based on your priority layers (Part 4)
 5. Confirm team allocation (see Tab-by-Tab guidance for recommended owners)
 
@@ -603,7 +603,7 @@ Critical blockers (items like Executive Sponsor, Steering Committee, Budget Appr
 **Integration with Other Chapters**
 
 - Chapter 11 provides technology selection guidance for each layer tracked in Tab 4
-- Chapter 12 provides operations detail for GOALS™ metrics in Tab 3
+- Chapter 12 provides operations detail for GOALS Metrics™ in Tab 3
 - The tracker connects planning (Chapter 10) to execution (Chapters 11-12)
 
 <!-- pagebreak -->
@@ -644,7 +644,7 @@ Deployment is not the finish line. Chapter 12 covers everything after go-live:
 Week 1 starts with Layer 1 storage provisioning, but only after Day Zero is complete. Before that first Monday:
 
 **Day Zero Complete (Prerequisites):**
-- INPACT™ assessment complete with baseline score
+- INPACT assessment complete with baseline score
 - Priority layers identified from assessment
 - Executive sponsor identified and steering committee formed
 - Budget approved and resources allocated
@@ -686,6 +686,5 @@ The frameworks are proven. The tracker is ready. Complete Day Zero at trustbefor
 ---
 
 **© 2025-2026 Colaberry Inc. All Rights Reserved.**
-INPACT™ and GOALS™ are trademarks of Colaberry Inc.
 
 *Acronyms and key terms are defined in the Glossary.*

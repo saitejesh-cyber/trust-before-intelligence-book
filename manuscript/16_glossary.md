@@ -54,7 +54,7 @@ This glossary provides definitions for acronyms and key terms used throughout *T
 
 - **GDPR:** General Data Protection Regulation:European Union regulation on data protection and privacy, establishing requirements for consent, data minimization, and the right to be forgotten. Often applies to global organizations processing EU citizen data.
 
-- **GOALS™:** Governance, Observability, Availability, Lexicon, Solid:Colaberry's operational measurement framework for sustaining agent trust in production, measuring five dimensions of operational excellence.
+- **GOALS:** Governance, Observability, Availability, Lexicon, Solid:Colaberry's operational measurement framework for sustaining agent trust in production, measuring five dimensions of operational excellence.
 
 - **GPT:** Generative Pre-trained Transformer:A type of large language model architecture developed by OpenAI, trained on vast text datasets to generate human-like text.
 
@@ -72,7 +72,7 @@ This glossary provides definitions for acronyms and key terms used throughout *T
 
 - **IDC:** International Data Corporation:A global market intelligence and advisory firm specializing in information technology, telecommunications, and consumer technology research.
 
-- **INPACT™:** Instant, Natural, Permitted, Adaptive, Contextual, Transparent:Colaberry's six-dimension framework for measuring infrastructure readiness to support AI agents, scored 0-100.
+- **INPACT Framework™:** Instant, Natural, Permitted, Adaptive, Contextual, Transparent:Colaberry's six-dimension framework for measuring infrastructure readiness to support AI agents, scored 0-100.
 
 - **LLM:** Large Language Model:AI models trained on vast text datasets capable of understanding and generating human-like text. Examples include GPT-4, Claude, and Gemini.
 
@@ -144,5 +144,4 @@ This glossary provides definitions for acronyms and key terms used throughout *T
 
 ---
 
-**© 2025-2026 Colaberry Inc. All Rights Reserved.**  
-INPACT™ and GOALS™ are trademarks of Colaberry Inc.
+**© 2025-2026 Colaberry Inc. All Rights Reserved.**

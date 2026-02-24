@@ -61,11 +61,11 @@ This $650,000 failure was just the beginning.
 
 ## PART 1: THE HUMAN-AI TRUST GAP
 
-### Six Systematic Failure Patterns: The INPACT™ Diagnostic
+### Six Systematic Failure Patterns: The INPACT Diagnostic
 
 As Chapter 0 established, 95% of enterprise AI pilots fail to deliver measurable business value despite $30-40 billion in investment. Understanding the failure rate isn't enough. We need to understand **why** these projects fail and identify the systematic patterns driving trust collapse.
 
-Analysis of failed enterprise AI deployments reveals six recurring infrastructure gaps. These patterns are so consistent across industries, vendors, and use cases that they form a diagnostic framework: **INPACT™** - six fundamental needs that agents require from infrastructure to earn user trust.
+Analysis of failed enterprise AI deployments reveals six recurring infrastructure gaps. These patterns are so consistent across industries, vendors, and use cases that they form a diagnostic framework: **INPACT** - six fundamental needs that agents require from infrastructure to earn user trust.
 
 **I - Instant: Sub-2-Second Response**  
 Agents need real-time answers to maintain conversational flow. When Maria Rodriguez's scheduling agent took 9-13 seconds to respond, users abandoned it not because the AI was wrong, but because slow responses break trust. Batch ETL systems that refresh overnight cannot fulfill the Instant need.
@@ -86,7 +86,7 @@ Agents need unified access across all relevant systems. When Dr. Chen's document
 Agents need to explain their reasoning for audit and validation. When Echo's legal team couldn't determine which data sources an agent accessed or why it made specific recommendations, compliance blocked production deployment. Black-box LLMs without reasoning traces cannot fulfill the Transparent need.
 
 **The Diagnostic Pattern:**  
-When infrastructure fails to fulfill even one INPACT™ need, trust collapses regardless of how sophisticated the AI model is. Maria's experience demonstrates this: the scheduling agent's AI was excellent, but infrastructure's failure to fulfill the Instant need drove abandonment to 8% within three weeks.
+When infrastructure fails to fulfill even one INPACT need, trust collapses regardless of how sophisticated the AI model is. Maria's experience demonstrates this: the scheduling agent's AI was excellent, but infrastructure's failure to fulfill the Instant need drove abandonment to 8% within three weeks.
 
 The pattern repeats across every failed pilot: **infrastructure gaps drive the 95% failure rate, not AI limitations.**
 
@@ -94,7 +94,7 @@ These six needs aren't arbitrary. They emerge from analyzing what users require 
 
 The research validates this thesis.
 
-### How Unfulfilled INPACT™ Needs Destroy Trust
+### How Unfulfilled INPACT Needs Destroy Trust
 
 Deloitte's TrustID® Workforce AI Report Q3 2025 provides compelling evidence that infrastructure failures translate directly to trust collapse.[1]
 
@@ -109,7 +109,7 @@ The data is stark:
 ![Figure 1.1: Trust Collapse Timeline (February-July 2025)](figures/figure-1-1.png)
 *Source: Deloitte TrustID® Workforce AI Report Q3 2025. Trust levels tracked monthly Feb-July 2025, showing accelerated decline for agentic AI (autonomous decision-making) vs general GenAI (human-supervised generation).*
 
-Deloitte's research tracked trust collapse month-over-month, revealing an accelerating decline between May and July as enterprises rushed agents into production without addressing INPACT™ readiness. The 2x faster collapse for autonomous agents (compared to general GenAI) validates that autonomy amplifies infrastructure failure consequences.
+Deloitte's research tracked trust collapse month-over-month, revealing an accelerating decline between May and July as enterprises rushed agents into production without addressing INPACT readiness. The 2x faster collapse for autonomous agents (compared to general GenAI) validates that autonomy amplifies infrastructure failure consequences.
 
 This trust collapse drives concrete behaviors. Research from 1Password's 2025 Annual Report reveals that **27% of knowledge workers use unauthorized AI tools** despite enterprise policies prohibiting them, while **73% of IT leaders actively encourage experimentation with AI tools** to maintain competitive innovation.[3]
 
@@ -126,7 +126,7 @@ Because autonomy amplifies the consequences of infrastructure failures. When a G
 **Contextual failures** → Incomplete answers, missing critical information  
 **Transparent failures** → Black box decisions, no auditability, legal exposure
 
-Deloitte identified two trust dimensions that map directly to INPACT™ needs:
+Deloitte identified two trust dimensions that map directly to INPACT needs:
 
 **Communicative Trust: "Can I trust what it says?"**
 - Fulfilled by: **Natural** (understands queries), **Contextual** (complete answers), **Transparent** (explains reasoning)
@@ -136,7 +136,7 @@ Deloitte identified two trust dimensions that map directly to INPACT™ needs:
 - Fulfilled by: **Instant** (fast responses), **Permitted** (safe access), **Adaptive** (continuous improvement)
 - Infrastructure requirements: Real-time data fabric, dynamic authorization, feedback loops
 
-When communicative trust fails, users question individual responses. When experiential trust fails, users abandon the entire system. **Both require infrastructure that fulfills INPACT™ needs.**
+When communicative trust fails, users question individual responses. When experiential trust fails, users abandon the entire system. **Both require infrastructure that fulfills INPACT needs.**
 
 Trust doesn't emerge from access to AI tools. It's earned when infrastructure consistently fulfills all six needs, not through better marketing or training programs.
 
@@ -150,7 +150,7 @@ And yet only 23% of companies can tie their AI investments to actual revenue gai
 
 This is the infrastructure gap in one statistic. Pilots succeed. Production stalls. ROI vanishes.
 
-One additional finding matters for understanding INPACT™: companies using AI for agentic workflow automation were twice as likely to exceed goals as those using AI as a simple assistant. Agents outperform assistants, but only when the infrastructure supports them.
+One additional finding matters for understanding INPACT: companies using AI for agentic workflow automation were twice as likely to exceed goals as those using AI as a simple assistant. Agents outperform assistants, but only when the infrastructure supports them.
 
 The problem isn't AI. The problem is what AI runs on.
 
@@ -172,9 +172,9 @@ KPMG data shows what happens when infrastructure can't keep pace with deployment
 
 Anthropic's Economic Index research reinforces this finding: enterprises struggle most when required context is "not already centralized or digitized," requiring firms to "restructure how they organize and maintain information" and "invest in new data infrastructure" before agents can operate effectively.[7]
 
-**These infrastructure barriers map directly to INPACT™ need failures:**
+**These infrastructure barriers map directly to INPACT need failures:**
 
-| Research Finding | Infrastructure Gap | INPACT™ Need | Required Capability |
+| Research Finding | Infrastructure Gap | INPACT Need | Required Capability |
 |-----------------|-------------------|--------------|-------------------|
 | 57% cite security/compliance concerns | Agents access data without contextual controls | **Permitted (P)** | Dynamic ABAC layered on RBAC |
 | Integration complexity affects 38% | Agents can't access real-time data across systems | **Instant (I)** | Streaming data fabric, CDC pipelines, API orchestration |
@@ -184,23 +184,23 @@ Anthropic's Economic Index research reinforces this finding: enterprises struggl
 | 54% rush from prototype to production in <3 weeks | No feedback/improvement infrastructure | **Adaptive (A)** | Feedback loops, continuous learning, human-in-loop validation |
 | Only 1% report AI maturity despite 92% increasing spend | Organizational readiness gaps | **Multiple** | Agent-ready architecture across all layers |
 
-**These aren't random problems requiring bespoke solutions. They're systematic INPACT™ need fulfillment gaps requiring architectural transformation.** 
+**These aren't random problems requiring bespoke solutions. They're systematic INPACT need fulfillment gaps requiring architectural transformation.** 
 
-The pattern is consistent across research: Lyzr's State of AI Agents Report found that 62% of enterprises exploring AI agents "lack a clear starting point," while 64% of successful deployments focus on business process automation use cases where infrastructure already fulfills enough INPACT™ needs to enable trust.[8]
+The pattern is consistent across research: Lyzr's State of AI Agents Report found that 62% of enterprises exploring AI agents "lack a clear starting point," while 64% of successful deployments focus on business process automation use cases where infrastructure already fulfills enough INPACT needs to enable trust.[8]
 
-When infrastructure systematically fails to fulfill INPACT™ needs, trust collapses and pilots fail at the 95% rate we established in Chapter 0. The INPACT™ framework both diagnoses why failures happen and prescribes what successful organizations must build.
+When infrastructure systematically fails to fulfill INPACT needs, trust collapses and pilots fail at the 95% rate we established in Chapter 0. The INPACT Framework™ both diagnoses why failures happen and prescribes what successful organizations must build.
 
 ### Three Forces Accelerating the Crisis
 
-Three convergent forces make addressing INPACT™ need fulfillment urgent:
+Three convergent forces make addressing INPACT need fulfillment urgent:
 
-**1. Competitive Pressure:** Early movers achieving 200%+ ROI have infrastructure that fulfills INPACT™ needs. The gap between leaders (INPACT score 85+) and laggards (INPACT score <70) widens monthly.
+**1. Competitive Pressure:** Early movers achieving 200%+ ROI have infrastructure that fulfills INPACT needs. The gap between leaders (INPACT score 85+) and laggards (INPACT score <70) widens monthly.
 
 **2. User Expectations:** Post-ChatGPT, stakeholders expect natural language interaction at conversation speed. Infrastructure that fails the **Instant** or **Natural** needs feels broken, not modern.
 
-**3. Talent Implications:** Top talent gravitates to organizations with agent-ready infrastructure. Engineers evaluate companies by their INPACT™ readiness scores. Losing key talent to competitors with higher scores compounds the infrastructure gap.
+**3. Talent Implications:** Top talent gravitates to organizations with agent-ready infrastructure. Engineers evaluate companies by their INPACT readiness scores. Losing key talent to competitors with higher scores compounds the infrastructure gap.
 
-The window for transformation is measured in quarters, not years. Organizations that wait for infrastructure to "stabilize" will find themselves unable to compete with those who've already built INPACT™-ready foundations.
+The window for transformation is measured in quarters, not years. Organizations that wait for infrastructure to "stabilize" will find themselves unable to compete with those who've already built INPACT-ready foundations.
 
 ### Trust is Earned, Not Given
 
@@ -280,23 +280,23 @@ She advanced through slides detailing the clinical documentation pilot. 45% accu
 
 Dr. Raj stopped her on slide 14. "I need you to be honest with me, Sarah. Can this be fixed?"
 
-"Yes," Sarah said. "But not by upgrading what we have. We need to build agent-ready infrastructure. There's a framework, INPACT™, that defines the six needs agents must have for users to trust them. Instant responses, Natural language understanding, Permitted access, Adaptive learning, Contextual synthesis, Transparent reasoning. We're failing on all six because our infrastructure was built for humans analyzing reports, not agents taking autonomous action."
+"Yes," Sarah said. "But not by upgrading what we have. We need to build agent-ready infrastructure. There's a framework, INPACT, that defines the six needs agents must have for users to trust them. Instant responses, Natural language understanding, Permitted access, Adaptive learning, Contextual synthesis, Transparent reasoning. We're failing on all six because our infrastructure was built for humans analyzing reports, not agents taking autonomous action."
 
 "What's that cost?" Krish asked.
 
-Sarah had rehearsed this moment. "$1.23 million. Ten weeks. We start with a complete infrastructure assessment measuring exactly where we fall short on each INPACT™ dimension. Then we transform the architecture, layer by layer. Real-time data fabric for Instant responses. Semantic understanding for Natural queries. Dynamic authorization for Permitted access. Observable reasoning for Transparency. By week ten, we will deploy our first production agent with the foundation in place to support it."
+Sarah had rehearsed this moment. "$1.23 million. Ten weeks. We start with a complete infrastructure assessment measuring exactly where we fall short on each INPACT dimension. Then we transform the architecture, layer by layer. Real-time data fabric for Instant responses. Semantic understanding for Natural queries. Dynamic authorization for Permitted access. Observable reasoning for Transparency. By week ten, we will deploy our first production agent with the foundation in place to support it."
 
 "You want us to spend another $1.23 million after we just spent $2 million on pilots that don't work?" A board member's voice carried frustration.
 
-"I'm asking you to invest in the infrastructure those pilots needed to succeed," Sarah said. "The alternative is continuing to fail, spending millions more on agents that will never work on BI-era foundations that weren't designed to fulfill INPACT™ needs without augmentation."
+"I'm asking you to invest in the infrastructure those pilots needed to succeed," Sarah said. "The alternative is continuing to fail, spending millions more on agents that will never work on BI-era foundations that weren't designed to fulfill INPACT needs without augmentation."
 
 Dr. Raj looked at Sarah for a long moment. "Ninety days," he said finally. "Weekly progress metrics. If we don't see measurable improvement in infrastructure readiness by week four, we're canceling all AI initiatives and you'll need to explain to the staff why Echo is pulling back while our competitors move forward."
 
-Sarah closed her laptop. Ninety days. Ten weeks to transform fifteen years of infrastructure decisions. She knew the first thing she needed to do: stop treating agents like a feature to add to existing systems and start building architecture that fulfilled INPACT™ needs.
+Sarah closed her laptop. Ninety days. Ten weeks to transform fifteen years of infrastructure decisions. She knew the first thing she needed to do: stop treating agents like a feature to add to existing systems and start building architecture that fulfilled INPACT needs.
 
 As the board members filed out, Marcus Williams, Echo's Chief Data Officer, caught her arm. "You did the right thing," he said quietly. "I've been saying for months that our data warehouse can't support agents. But I need you to be right about this. Because if you're not, both our careers are over."
 
-Sarah nodded. She'd spent the weekend studying frameworks, reading case studies, analyzing what separated the 5% who succeeded from the 95% who failed. The answer was consistent: **INPACT™ readiness.** Not better models. Not more training. Infrastructure that fulfilled the six needs agents require.
+Sarah nodded. She'd spent the weekend studying frameworks, reading case studies, analyzing what separated the 5% who succeeded from the 95% who failed. The answer was consistent: **INPACT readiness.** Not better models. Not more training. Infrastructure that fulfilled the six needs agents require.
 
 She had ten weeks to prove it.
 
@@ -304,11 +304,11 @@ She had ten weeks to prove it.
 
 ## PART 3: THE INFRASTRUCTURE READINESS GAP
 
-### PART 3A: The Paradigm Shift - Why Software 3.0 Agents Require INPACT™ Ready Infrastructure
+### PART 3A: The Paradigm Shift - Why Software 3.0 Agents Require INPACT Ready Infrastructure
 
 When enterprises deploy AI agents on existing infrastructure and watch them fail, the instinct is to blame the models, the data quality, or the implementation team. But the failure runs deeper. Andrej Karpathy, former Director of AI at Tesla and co-founder of OpenAI, explains why in his June 2025 keynote at Y Combinator AI Startup School.[9] His thesis: "Software is changing quite fundamentally again. LLMs are a new kind of computer, and you program them in English."
 
-This paradigm shift explains why the 95% pilot failure rate isn't about insufficient technology, it's about fundamental architectural mismatch. **Software 3.0 agents require infrastructure that fulfills INPACT™ needs. Software 1.0 infrastructure cannot fulfill these needs without augmentation.** The databases, warehouses, and governance systems remain essential, but they need new layers for semantic understanding, real-time access, and dynamic permissions that enable agent operation.
+This paradigm shift explains why the 95% pilot failure rate isn't about insufficient technology, it's about fundamental architectural mismatch. **Software 3.0 agents require infrastructure that fulfills INPACT needs. Software 1.0 infrastructure cannot fulfill these needs without augmentation.** The databases, warehouses, and governance systems remain essential, but they need new layers for semantic understanding, real-time access, and dynamic permissions that enable agent operation.
 
 **The Three Paradigms of Software Development**
 
@@ -320,9 +320,9 @@ Karpathy identifies three distinct eras requiring different infrastructure:
 
 **Software 3.0 (2023-present):** Large Language Models programmable in natural language. Unlike narrow task-specific models, LLMs are general-purpose reasoning engines. Karpathy observes that Software 3.0 is "eating" Software 1.0/2.0 over time, many user-facing applications will be rewritten for natural language interaction.[9] In the near term, all three paradigms coexist: enterprises maintain Software 1.0 databases and business logic, leverage Software 2.0 ML models where specialized, while adding Software 3.0 agent layers. The long-term trajectory favors agents replacing traditional interfaces, but the transformation takes years, not months.
 
-**The INPACT™ connection:** Software 3.0 agents need infrastructure that fulfills all six INPACT™ needs. Software 1.0 infrastructure wasn't designed for these capabilities and requires augmentation across all six dimensions:
+**The INPACT connection:** Software 3.0 agents need infrastructure that fulfills all six INPACT needs. Software 1.0 infrastructure wasn't designed for these capabilities and requires augmentation across all six dimensions:
 
-| INPACT™ Need | Software 1.0 Infrastructure | Software 3.0 Requirement |
+| INPACT Need | Software 1.0 Infrastructure | Software 3.0 Requirement |
 |--------------|---------------------------|-------------------------|
 | **Instant (I)** | Batch ETL, 8-24 hour lag | Real-time streaming, <2s responses |
 | **Natural (N)** | Fixed SQL schemas | Semantic layers, business language |
@@ -331,13 +331,13 @@ Karpathy identifies three distinct eras requiring different infrastructure:
 | **Contextual (C)** | Siloed databases | Unified multi-modal platform |
 | **Transparent (T)** | Basic query logs | Reasoning chain observability |
 
-The enterprise challenge: attempting to run Software 3.0 agents on unaugmented Software 1.0 infrastructure is like running cloud-native microservices on mainframe batch processing systems without middleware. **The architectural assumptions don't align because INPACT™ needs cannot be fulfilled by legacy systems alone.** Enterprises must add agent-ready layers while preserving proven data platforms, creating a hybrid architecture where agents orchestrate across all three paradigms.
+The enterprise challenge: attempting to run Software 3.0 agents on unaugmented Software 1.0 infrastructure is like running cloud-native microservices on mainframe batch processing systems without middleware. **The architectural assumptions don't align because INPACT needs cannot be fulfilled by legacy systems alone.** Enterprises must add agent-ready layers while preserving proven data platforms, creating a hybrid architecture where agents orchestrate across all three paradigms.
 
-**Figure 1.2: Software Evolution and INPACT™ Needs**
+**Figure 1.2: Software Evolution and INPACT Needs**
 
 
-![Figure 1.2: Software Evolution and INPACT™ Needs](figures/figure-1-2.png)
-Karpathy's framework shows why Software 3.0 requires fundamentally new infrastructure. **Each paradigm demands different architectural foundations because the operational requirements shifted from human-mediated to agent-autonomous. INPACT™ defines those new requirements.**[9]
+![Figure 1.2: Software Evolution and INPACT Needs](figures/figure-1-2.png)
+Karpathy's framework shows why Software 3.0 requires fundamentally new infrastructure. **Each paradigm demands different architectural foundations because the operational requirements shifted from human-mediated to agent-autonomous. INPACT defines those new requirements.**[9]
 
 ---
 
@@ -345,11 +345,11 @@ Software 3.0 agents require fundamentally different infrastructure. The paradigm
 
 ---
 
-### PART 3B: Six Infrastructure Mismatches - The INPACT™ Readiness Gap
+### PART 3B: Six Infrastructure Mismatches - The INPACT Readiness Gap
 
-The paradigm shift Karpathy describes manifests as concrete architectural differences between BI-era and Agent-era infrastructure. Understanding these differences through the INPACT™ lens explains why incremental upgrades fail and transformation is required.
+The paradigm shift Karpathy describes manifests as concrete architectural differences between BI-era and Agent-era infrastructure. Understanding these differences through the INPACT lens explains why incremental upgrades fail and transformation is required.
 
-When enterprises attempt agent deployments on BI-era infrastructure, critical mismatches emerge **across all six INPACT™ dimensions:**
+When enterprises attempt agent deployments on BI-era infrastructure, critical mismatches emerge **across all six INPACT dimensions:**
 
 **Instant (I) - Data access patterns diverge.** Agents need sub-second semantic search. Traditional systems provide overnight batch ETL and rigid schemas. Maria Rodriguez's 9-13 second scheduling agent failed because of this mismatch.
 
@@ -363,11 +363,11 @@ When enterprises attempt agent deployments on BI-era infrastructure, critical mi
 
 **Transparent (T) - Failure modes differ.** Traditional systems fail with exceptions and stack traces. Agents fail probabilistically retrieving irrelevant context or generating plausible but incorrect responses. Infrastructure must support reasoning chain observability, not just query logs.
 
-**Figure 1.3: INPACT™ Need Failures Drive 95% Failure Rate**
+**Figure 1.3: INPACT Need Failures Drive 95% Failure Rate**
 
 
-![Figure 1.3: INPACT™ Need Failures Drive 95% Failure Rate](figures/figure-1-3.png)
-Most enterprises attempt to deploy Software 3.0 agents on unaugmented Software 1.0 infrastructure, creating the INPACT™ gap that drives the 95% pilot failure rate. The solution isn't replacing existing systems, it's augmenting them with agent-ready layers.
+![Figure 1.3: INPACT Need Failures Drive 95% Failure Rate](figures/figure-1-3.png)
+Most enterprises attempt to deploy Software 3.0 agents on unaugmented Software 1.0 infrastructure, creating the INPACT gap that drives the 95% pilot failure rate. The solution isn't replacing existing systems, it's augmenting them with agent-ready layers.
 
 ### PART 3C: The Technology Works - Infrastructure Doesn't
 
@@ -379,15 +379,15 @@ The models work. This cannot be overstated.
 
 **So why the failures?**
 
-**Because LLMs and RAG stacks don't solve INPACT™ readiness.** A brilliant reasoning engine can't overcome infrastructure that wasn't designed to fulfill the six needs agents require. The gap isn't in model capability, **it's in infrastructure's ability to fulfill INPACT™ needs.**
+**Because LLMs and RAG stacks don't solve INPACT readiness.** A brilliant reasoning engine can't overcome infrastructure that wasn't designed to fulfill the six needs agents require. The gap isn't in model capability, **it's in infrastructure's ability to fulfill INPACT needs.**
 
 For enterprises, "building for agents" requires implementation at two layers:
 
 **Interface Layer (Karpathy's focus):** How agents discover and understand available systems - llm.txt documentation, actionable API specs, clear error messages.
 
-**Infrastructure Layer (INPACT™'s focus):** What underlying capabilities systems must provide once agents attempt to operate - real-time data access, semantic understanding, dynamic permissions, continuous learning, cross-system context, observable reasoning.
+**Infrastructure Layer (INPACT's focus):** What underlying capabilities systems must provide once agents attempt to operate - real-time data access, semantic understanding, dynamic permissions, continuous learning, cross-system context, observable reasoning.
 
-Both layers are essential. Agents need discoverability (Karpathy) AND operational infrastructure (INPACT™). The INPACT™ framework addresses the six infrastructure needs enterprises must systematically fulfill:
+Both layers are essential. Agents need discoverability (Karpathy) AND operational infrastructure (INPACT). The INPACT Framework™ addresses the six infrastructure needs enterprises must systematically fulfill:
 
 **I - Instant:** Semantic data layers agents can query in <2 seconds  
 **N - Natural:** Business glossaries mapping "diabetes follow-up" to diagnostic codes  
@@ -396,19 +396,19 @@ Both layers are essential. Agents need discoverability (Karpathy) AND operationa
 **C - Contextual:** Cross-system integration providing universal context  
 **T - Transparent:** Reasoning chain observability enabling validation
 
-This isn't about replacing data warehouses or abandoning BI dashboards. It's about adding the semantic understanding, dynamic access, real-time retrieval, and observable reasoning layers that fulfill INPACT™ needs, while preserving the data quality, governance controls, and audit trails that enterprises demand.
+This isn't about replacing data warehouses or abandoning BI dashboards. It's about adding the semantic understanding, dynamic access, real-time retrieval, and observable reasoning layers that fulfill INPACT needs, while preserving the data quality, governance controls, and audit trails that enterprises demand.
 
-**Software 3.0 agents require INPACT™ ready infrastructure. Attempting to avoid that transformation is why 95% fail.**
+**Software 3.0 agents require INPACT ready infrastructure. Attempting to avoid that transformation is why 95% fail.**
 
-**BI-Era vs. Agent-Era: INPACT™ Need Fulfillment**
+**BI-Era vs. Agent-Era: INPACT Need Fulfillment**
 
-**Figure 1.4: Human Era vs INPACT™Ready Agent Era**
+**Figure 1.4: Human Era vs INPACT Ready Agent Era**
 
 
-![Figure 1.4: Human Era vs INPACT™Ready Agent Era](figures/figure-1-4.png)
-**INPACT™ Need Fulfillment: BI Era vs Agent Era**
+![Figure 1.4: Human Era vs INPACTReady Agent Era](figures/figure-1-4.png)
+**INPACT Need Fulfillment: BI Era vs Agent Era**
 
-| INPACT™ Need | BI Era Infrastructure | Agent Era Infrastructure | Failure When Unfulfilled |
+| INPACT Need | BI Era Infrastructure | Agent Era Infrastructure | Failure When Unfulfilled |
 |--------------|----------------------|-------------------------|-------------------------|
 | **Instant (I)** | Daily batch (8-24hr lag) | Real-time streaming (<2s) | User abandonment (9-13s = death) |
 | **Natural (N)** | Fixed SQL, cryptic schemas | Semantic layer, business language | 40-60% accuracy, user frustration |
@@ -417,21 +417,21 @@ This isn't about replacing data warehouses or abandoning BI dashboards. It's abo
 | **Contextual (C)** | Siloed databases | Unified multi-modal platform | Incomplete answers, low trust |
 | **Transparent (T)** | Basic query logs | Reasoning chain observability | Audit failures, legal exposure |
 
-The gap between what BI-era infrastructure delivers and what Agent-era applications need **is precisely the INPACT™ fulfillment gap.** Incremental improvements keep organizations in the failing majority. **INPACT™-focused transformation** moves them to the successful 5%.
+The gap between what BI-era infrastructure delivers and what Agent-era applications need **is precisely the INPACT fulfillment gap.** Incremental improvements keep organizations in the failing majority. **INPACT-focused transformation** moves them to the successful 5%.
 
 ---
 
 ## PART 4: SARAH'S $2M WAKE-UP CALL
 
-### Three Pilots, Six INPACT™ Need Failures
+### Three Pilots, Six INPACT Need Failures
 
-After the board meeting, Sarah Cedao sat in her office reviewing the forensic analysis Marcus Williams had compiled. Three pilots. Three different vendors. Three distinct failure modes. But when Sarah looked at the root causes through the INPACT™ lens, a pattern emerged: **every failure traced to infrastructure's inability to fulfill specific INPACT™ needs.**
+After the board meeting, Sarah Cedao sat in her office reviewing the forensic analysis Marcus Williams had compiled. Three pilots. Three different vendors. Three distinct failure modes. But when Sarah looked at the root causes through the INPACT lens, a pattern emerged: **every failure traced to infrastructure's inability to fulfill specific INPACT needs.**
 
 **Figure 1.5: Echo's Three Failing Pilots - The $2M Wake-Up Call**
 
 
 ![Figure 1.5: Echo's Three Failing Pilots - The $2M Wake-Up Call](figures/figure-1-5.png)
-The visual pattern was unmistakable: three independent failures, three different vendors, but one systematic cause - infrastructure's inability to fulfill INPACT™ needs across all six dimensions. Each pilot's detailed analysis would reveal the specific need failures that drove abandonment.
+The visual pattern was unmistakable: three independent failures, three different vendors, but one systematic cause - infrastructure's inability to fulfill INPACT needs across all six dimensions. Each pilot's detailed analysis would reveal the specific need failures that drove abandonment.
 
 ### Pilot 1: Patient Scheduling Agent -Instant (I) Need Failure (Detailed Analysis)
 
@@ -446,7 +446,7 @@ Care coordinators could simply type "Schedule Mrs. Johnson with Dr. Martinez for
 **The Reality:**  
 9-13 second response times. Users abandoned the interface before seeing results. Maria Rodriguez's experience with the 9:47 AM cancellation was typical, not exceptional.
 
-**INPACT™ Analysis: Instant (I) Need Failure**
+**INPACT Analysis: Instant (I) Need Failure**
 
 Sarah and Marcus traced every millisecond:
 - Query parsing: 100ms (acceptable)
@@ -471,7 +471,7 @@ The database was cold, no indexes optimized for agent query patterns, no caching
 - **Adoption:** 8% after 6 months (target was 60%)
 - **User Feedback:** "Faster to just call the scheduling desk"
 - **Pilot Status:** Suspended
-- **INPACT™ Score for Instant (I):** 2/6 (overnight ETL = 8-24 hour lag)
+- **INPACT Score™ for Instant (I):** 2/6 (overnight ETL = 8-24 hour lag)
 
 **The Infrastructure Gap:** Echo's BI-era batch ETL architecture **wasn't designed to fulfill the Instant (I) need** that agents require. Real-time data fabric (Layer 2 of the 7-Layer Architecture) must be added to achieve sub-2-second responses.
 
@@ -489,7 +489,7 @@ Pilot 1's failure wasn't about the AI, it was about eight-hour-old data in a non
 
 **The Reality:** 40-60% accuracy on diagnosis codes. Physicians didn't trust the output and spent more time correcting notes than writing them manually.
 
-**INPACT™ Analysis: Three Simultaneous Need Failures**
+**INPACT Analysis: Three Simultaneous Need Failures**
 
 **Natural (N) Need Failure:**  
 Echo's data warehouse used cryptic table names: `FCT_PTNT_ENCT`, `DIM_PRVDR_SPCLT`, `BRIDGE_DIAG_ICD10`. The agent had no semantic layer mapping "diabetes follow-up" to diagnosis codes E11.9, E11.65, E11.22. When physicians used shorthand like "uncontrolled DM2," the agent misinterpreted or missed it entirely. No business glossary. No entity resolution. No natural language mapping to technical schemas. (See the Vendor Advisor at trustbeforeintelligence.ai/tools for semantic layer product recommendations.)
@@ -516,7 +516,7 @@ Legal reviewed 50 AI-generated notes and couldn't determine which data sources t
 **Failure Impact:**
 - **Adoption:** 12% of physicians (most rejected after initial trial)
 - **Pilot Status:** Legal review pending (effectively dead)
-- **INPACT™ Scores:** Natural (N): 3/6 | Contextual (C): 2/6 | Transparent (T): 2/6
+- **INPACT Score™ Values:** Natural (N): 3/6 | Contextual (C): 2/6 | Transparent (T): 2/6
 
 **Infrastructure Gaps:** No semantic layer (Layer 3), no intelligence orchestration for cross-system context (Layer 4), no observable reasoning (Layer 6).
 
@@ -559,7 +559,7 @@ BI-era infrastructure assumed humans would apply judgment. **Agents need infrast
 - **ROI:** Negative 15% (legal fees, audit costs, remediation)
 - **Regulatory:** CMS warning letter, corrective action plan required
 - **Pilot Status:** Terminated, rolled back to manual processing
-- **INPACT™ Score for Permitted (P):** 1/6 (RBAC only, no contextual ABAC layer)
+- **INPACT Score™ for Permitted (P):** 1/6 (RBAC only, no contextual ABAC layer)
 
 **Infrastructure Gap:** Echo's RBAC alone **wasn't designed to fulfill the Permitted (P) need** for context-aware access control. Contextual ABAC (Layer 5) must be layered on existing RBAC to enforce "minimum necessary" dynamically.
 
@@ -569,29 +569,29 @@ Three pilots. Three vendors. One systematic cause: infrastructure that couldn't 
 
 ---
 
-### The Realization: INPACT™ Assessment Reveals Systematic Failures
+### The Realization: INPACT Assessment Reveals Systematic Failures
 
-Sarah stared at the failure analysis spread across three monitors. Three different failure modes. Three different vendors. But when analyzed through the INPACT™ framework, one pattern emerged: **infrastructure systematically failed to fulfill the six needs across all pilots.**
+Sarah stared at the failure analysis spread across three monitors. Three different failure modes. Three different vendors. But when analyzed through the INPACT Framework™, one pattern emerged: **infrastructure systematically failed to fulfill the six needs across all pilots.**
 
 The scheduling pilot failed because infrastructure couldn't fulfill **Instant (I)**.  
 The documentation pilot failed because infrastructure couldn't fulfill **Natural (N), Contextual (C), or Transparent (T)**.  
 The revenue pilot failed because infrastructure couldn't fulfill **Permitted (P)**.
 
-No amount of model tuning, prompt engineering, or vendor changes would fix problems that originated in infrastructure's inability to fulfill INPACT™ needs. Sarah had been treating infrastructure readiness as a binary checkbox: "Yes, we have a data warehouse." But readiness wasn't binary, **it was dimensional, measurable through INPACT™, and Echo scored catastrophically low.**
+No amount of model tuning, prompt engineering, or vendor changes would fix problems that originated in infrastructure's inability to fulfill INPACT needs. Sarah had been treating infrastructure readiness as a binary checkbox: "Yes, we have a data warehouse." But readiness wasn't binary, **it was dimensional, measurable through INPACT, and Echo scored catastrophically low.**
 
-Sarah anxiously loaded the INPACT™ assessment tool results:
+Sarah anxiously loaded the INPACT assessment tool results:
 
-**Echo Health INPACT™ Score: 28/100**
+**Echo Health INPACT Score™: 28/100**
 
 Their dimension breakdown (detailed in Chapter 2) revealed five critical gaps: Instant, Natural, Permitted, Adaptive, and Transparent all scored 1-2/6. Only Contextual reached 3/6.
 
 **10/36 = 28 out of 100.** Not even close to the 86+ required for agent deployments to succeed.
 
-But the assessment also showed the path forward: **a 7-layer architecture that systematically delivers all six INPACT™ needs.** Real-time data fabric for Instant. Semantic layers for Natural. Dynamic authorization for Permitted. Feedback loops for Adaptive. Intelligence orchestration for Contextual. Observable reasoning for Transparent.
+But the assessment also showed the path forward: **a 7-layer architecture that systematically delivers all six INPACT needs.** Real-time data fabric for Instant. Semantic layers for Natural. Dynamic authorization for Permitted. Feedback loops for Adaptive. Intelligence orchestration for Contextual. Observable reasoning for Transparent.
 
-Sarah knew what she had to tell the board: **We need to build INPACT™-ready infrastructure before we deploy more agents.** Not as separate IT modernization. Not as optional improvement. As the foundation that makes agent deployments actually succeed.
+Sarah knew what she had to tell the board: **We need to build INPACT-ready infrastructure before we deploy more agents.** Not as separate IT modernization. Not as optional improvement. As the foundation that makes agent deployments actually succeed.
 
-The $2 million in failed pilots? That was the cost of learning that **agents require infrastructure that fulfills INPACT™ needs.** The question now was whether Echo's board would invest in the transformation before competitors with higher INPACT™ scores captured the market.
+The $2 million in failed pilots? That was the cost of learning that **agents require infrastructure that fulfills INPACT needs.** The question now was whether Echo's board would invest in the transformation before competitors with higher INPACT scores captured the market.
 
 ---
 
@@ -599,25 +599,25 @@ The $2 million in failed pilots? That was the cost of learning that **agents req
 
 ### Three Critical Insights
 
-**Insight 1: Trust Requires INPACT™ Need Fulfillment, Not Better AI Models**
+**Insight 1: Trust Requires INPACT Need Fulfillment, Not Better AI Models**
 
-The 95% failure rate isn't about model quality, regulatory compliance, or talent gaps. It's about **infrastructure's failure to fulfill INPACT™ needs.** Deloitte's Q3 2025 data proves it: **agentic AI trust collapsed 64% in five months** because infrastructure couldn't deliver on the six needs agents require.
+The 95% failure rate isn't about model quality, regulatory compliance, or talent gaps. It's about **infrastructure's failure to fulfill INPACT needs.** Deloitte's Q3 2025 data proves it: **agentic AI trust collapsed 64% in five months** because infrastructure couldn't deliver on the six needs agents require.
 
-Users abandon agents that don't respond instantly, understand naturally, access only permitted data, learn from feedback, synthesize complete context, and explain reasoning transparently. **No amount of model sophistication compensates for INPACT™ need failures.**
+Users abandon agents that don't respond instantly, understand naturally, access only permitted data, learn from feedback, synthesize complete context, and explain reasoning transparently. **No amount of model sophistication compensates for INPACT need failures.**
 
-Trust isn't something you require or declare. **Trust is earned when infrastructure consistently fulfills all six INPACT™ needs.** Miss even one dimension, and join the 95% who fail.
+Trust isn't something you require or declare. **Trust is earned when infrastructure consistently fulfills all six INPACT needs.** Miss even one dimension, and join the 95% who fail.
 
-**Insight 2: Technology Works - Infrastructure Isn't INPACT™ Ready**
+**Insight 2: Technology Works - Infrastructure Isn't INPACT Ready**
 
 GPT-4 achieves 90th percentile on the Bar Exam. Claude Sonnet 4.5 demonstrates superhuman coding ability. Pinecone handles 50+ billion monthly queries. RAG implementations achieve 85%+ retrieval accuracy.
 
-**The models are production-ready. The infrastructure isn't INPACT™-ready.**
+**The models are production-ready. The infrastructure isn't INPACT-ready.**
 
-Attempting to run Software 3.0 agents on Software 1.0 infrastructure, batch ETL, cryptic schemas, RBAC without contextual layers, siloed systems, creates the INPACT™ gap that drives failure. Karpathy's paradigm shift is real: LLMs are fundamentally different computers that **require infrastructure fulfilling INPACT™ needs.**
+Attempting to run Software 3.0 agents on Software 1.0 infrastructure, batch ETL, cryptic schemas, RBAC without contextual layers, siloed systems, creates the INPACT gap that drives failure. Karpathy's paradigm shift is real: LLMs are fundamentally different computers that **require infrastructure fulfilling INPACT needs.**
 
-**Insight 3: Six INPACT™ Need Failures Map to Six Failure Patterns**
+**Insight 3: Six INPACT Need Failures Map to Six Failure Patterns**
 
-Every failed pilot follows predictable patterns that map to INPACT™ dimensions:
+Every failed pilot follows predictable patterns that map to INPACT dimensions:
 
 **Instant failures** (9-13 second responses) → No real-time data fabric  
 **Natural failures** (40-60% query precision) → No semantic layer  
@@ -626,7 +626,7 @@ Every failed pilot follows predictable patterns that map to INPACT™ dimensions
 **Contextual failures** (partial answers) → No cross-system synthesis; agents missing 6 of 7 context types (user, task, environmental, business, tooling, history)  
 **Transparent failures** (black box reasoning) → No reasoning chain observability
 
-These aren't random problems requiring bespoke solutions. They're systematic INPACT™ need fulfillment gaps requiring architectural transformation. **The INPACT™ framework diagnoses the needs. The 7-Layer Architecture delivers them.**
+These aren't random problems requiring bespoke solutions. They're systematic INPACT need fulfillment gaps requiring architectural transformation. **The INPACT Framework™ diagnoses the needs. The 7-Layer Architecture delivers them.**
 
 ### Where Does Your Infrastructure Stand?
 
@@ -634,26 +634,26 @@ Echo scored 28/100. Most enterprises scoring between 25-45 are firmly in the "hi
 
 The assessment at **trustbeforeintelligence.ai/assessment** measures your readiness across all six dimensions in 15 minutes. Chapter 2 provides the detailed scoring rubrics.
 
-### Bridge to Chapter 2: INPACT™ Deep Dive
+### Bridge to Chapter 2: INPACT Deep Dive
 
 Sarah Cedao left that board meeting with a directive and a deadline: 90 days to show measurable infrastructure improvement or Echo would cancel all AI initiatives.
 
-She spent the weekend researching frameworks, reading case studies, analyzing what separated the 5% who succeeded from the 95% who failed. By Monday morning, she had her answer: **INPACT™, the framework that defines what agents need from infrastructure and how to systematically fulfill those needs.**
+She spent the weekend researching frameworks, reading case studies, analyzing what separated the 5% who succeeded from the 95% who failed. By Monday morning, she had her answer: **INPACT, the framework that defines what agents need from infrastructure and how to systematically fulfill those needs.**
 
 Not generic "AI readiness." Not checklist compliance. **A systematic approach to fulfilling the six needs that earn user trust.**
 
-**Chapter 2 shows you the same INPACT™ framework Sarah used to transform Echo from 28/100 to 86/100 in 10 weeks.**
+**Chapter 2 shows you the same INPACT Framework™ Sarah used to transform Echo from 28/100 to 86/100 in 10 weeks.**
 
 You'll learn:
-- How to assess your current state across all six INPACT™ dimensions
+- How to assess your current state across all six INPACT dimensions
 - What infrastructure capabilities fulfill each need
 - How to prioritize investments for maximum impact
 - Why all six needs must be addressed (not just the easy ones)
-- How INPACT™ drives requirements for the 7-Layer Architecture
+- How INPACT drives requirements for the 7-Layer Architecture
 
 If Sarah could do it under board pressure with a 90-day deadline and $2 million in failed pilots behind her, so can you.
 
-**The transformation starts with understanding INPACT™ needs. Chapter 2 builds that foundation.**
+**The transformation starts with understanding INPACT needs. Chapter 2 builds that foundation.**
 
 ---
 
@@ -661,10 +661,10 @@ If Sarah could do it under board pressure with a 90-day deadline and $2 million 
 
 | Part | Content | Key Takeaway |
 |------|---------|--------------|
-| **Part 1** | The Human-AI Trust Gap | Six INPACT™ needs define what agents require; 64% trust collapse proves infrastructure gaps drive failure |
+| **Part 1** | The Human-AI Trust Gap | Six INPACT needs define what agents require; 64% trust collapse proves infrastructure gaps drive failure |
 | **Part 2** | Sarah's Moment of Crisis | $2M in failed pilots, 90-day ultimatum, technology worked, infrastructure didn't |
-| **Part 3** | The Infrastructure Readiness Gap | Software 3.0 requires INPACT™-ready infrastructure; BI-era systems cannot fulfill agent needs |
-| **Part 4** | Sarah's $2M Wake-Up Call | Three pilots failed across different INPACT™ dimensions; Echo scored 28/100 |
+| **Part 3** | The Infrastructure Readiness Gap | Software 3.0 requires INPACT-ready infrastructure; BI-era systems cannot fulfill agent needs |
+| **Part 4** | Sarah's $2M Wake-Up Call | Three pilots failed across different INPACT dimensions; Echo scored 28/100 |
 | **Part 5** | Key Takeaways | Trust is earned through need fulfillment; the path forward requires architectural transformation |
 
 ---
@@ -696,6 +696,5 @@ If Sarah could do it under board pressure with a 90-day deadline and $2 million 
 ---
 
 **© 2025-2026 Colaberry Inc. All Rights Reserved.**
-INPACT™ and GOALS™ are trademarks of Colaberry Inc.
 
 *Acronyms and key terms are defined in the Glossary.*

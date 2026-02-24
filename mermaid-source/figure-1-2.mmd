@@ -3,23 +3,23 @@ graph LR
     subgraph sw1["SOFTWARE 1.0"]
         direction TB
         prog1["Programming<br/>(1950s-2010s)<br/>Explicit instructions<br/>C++, Java, Python"]
-        infra1["Infrastructure<br/>Data warehouses<br/>Batch ETL, BI dashboards<br/><br/><b>Cannot fulfill INPACT™"</b>]
+        infra1["Infrastructure<br/>Data warehouses<br/>Batch ETL, BI dashboards<br/><br/><b>Cannot fulfill INPACT"</b>]
         prog1 --> infra1
     end
     subgraph sw2["SOFTWARE 2.0"]
         direction TB
         prog2["Programming<br/>(2010s-2023)<br/>Curate datasets<br/>Train ML models"]
-        infra2["Infrastructure<br/>Added ML layers<br/>MLOps, registries<br/><br/><b>Partial INPACT™"</b>]
+        infra2["Infrastructure<br/>Added ML layers<br/>MLOps, registries<br/><br/><b>Partial INPACT"</b>]
         prog2 --> infra2
     end
     subgraph sw3["SOFTWARE 3.0"]
         direction TB
         prog3["Programming<br/>(2023-Present)<br/>Natural language<br/>In-context learning"]
-        infra3["NEW Infrastructure<br/>Vector DBs, real-time<br/>Semantic layers, ABAC<br/><br/><b>INPACT™-Ready</b>"]
+        infra3["NEW Infrastructure<br/>Vector DBs, real-time<br/>Semantic layers, ABAC<br/><br/><b>INPACT-Ready</b>"]
         prog3 --> infra3
     end
     sw1 -.->|"Added ML"| sw2
-    sw2 -.->|"PARADIGM SHIFT<br/>Requires INPACT™"| sw3
+    sw2 -.->|"PARADIGM SHIFT<br/>Requires INPACT"| sw3
     
     Copyright["© 2025 Colaberry Inc."]
 

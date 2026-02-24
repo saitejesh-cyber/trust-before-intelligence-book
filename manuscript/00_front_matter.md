@@ -1,16 +1,8 @@
-<!-- pagebreak -->
-
-## HALF TITLE PAGE
-
-# Trust Before Intelligence
-
-<!-- pagebreak -->
-
 ## TITLE PAGE
 
 # Trust Before Intelligence
 
-### Why 95% of AI Pilots Fail, and How 5% Succeed
+### Why 95% of AI Pilots Fail, How 5% Succeed
 
 **Ram Dhan Yadav Katamaraja**
 
@@ -23,7 +15,7 @@ Harvard Business School OPM 60
 
 ## COPYRIGHT PAGE
 
-**Trust Before Intelligence: Why 95% of AI Pilots Fail, and How 5% Succeed**
+**Trust Before Intelligence: Why 95% of AI Pilots Fail, How 5% Succeed**
 
 Copyright © 2025-2026 Ram Dhan Yadav Katamaraja
 
@@ -31,7 +23,7 @@ All rights reserved. No part of this publication may be reproduced, distributed,
 
 **Trademarks**
 
-INPACT™ and GOALS™ are trademarks of Colaberry Inc.
+INPACT Framework™, INPACT Score™, GOALS Framework™, and GOALS Metrics™ are trademarks of Colaberry Inc.
 
 All other trademarks are the property of their respective owners.
 
@@ -77,7 +69,7 @@ Printed in the United States of America
 
 - **Chapter 0:** Trust Before Intelligence
 - **Chapter 1:** Why 95% of Agent Pilots Fail
-- **Chapter 2:** The INPACT™ Framework
+- **Chapter 2:** The INPACT Framework™
 - **Chapter 3:** From BI-Era to Agent-Era
 
 **PART II: THE 95% SOLUTION**
@@ -88,7 +80,7 @@ Printed in the United States of America
 
 **PART III: TRUST IN PRACTICE**
 
-- **Chapter 7:** The GOALS™ Framework
+- **Chapter 7:** The GOALS Framework™
 - **Chapter 8:** The Architecture of Trust in Action
 - **Chapter 9:** What's Your Score?
 
@@ -100,7 +92,7 @@ Printed in the United States of America
 
 **BACK MATTER**
 
-- INPACT™ Practitioner Reference
+- INPACT Practitioner Reference
 - Glossary
 - Index
 - About the Author

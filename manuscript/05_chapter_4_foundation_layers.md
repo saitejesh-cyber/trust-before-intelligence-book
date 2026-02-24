@@ -90,7 +90,7 @@ Without foundation, intelligence layers fail: semantic models (Layer 3) query st
 
 **Build the foundation first. Build it right. Everything else depends on it.**
 
-### Foundation Layer Impact on INPACT™ (Chapter 4 Scope)
+### Foundation Layer Impact on INPACT (Chapter 4 Scope)
 
 | Dimension | Week 0 | Week 4<br/>(This Chapter) | Chapters 5-6 Target | Foundation Contribution |
 |-----------|--------|---------------------------|---------------------|------------------------|
@@ -115,7 +115,7 @@ Echo Health Systems started from a familiar position: strong BI infrastructure f
 
 *Data Freshness:* 24-hour batch ETL. Operational data changes continuously, but the reporting database refreshes overnight at 2 AM. Agents querying at 3 PM see data 13 hours stale. Unacceptable for clinical decision support.
 
-*INPACT™ Score:* 28/100 (10 out of 36 points)
+*INPACT Score™:* 28/100 (10 out of 36 points)
 - **I=1/6** | **N=2/6** | **P=1/6** | **A=2/6** | **C=3/6** | **T=1/6**
 
 #### **Week 4: Foundation Complete (42/100)** - Phase 1: $470K
@@ -124,7 +124,7 @@ Echo Health Systems started from a familiar position: strong BI infrastructure f
 
 *Data Freshness:* Sub-30 second CDC and streaming. Change data capture from 3 operational systems feeds real-time pipelines. Agents query current state with <30 second lag.
 
-*INPACT™ Score:* 42/100 (15 out of 36 points)
+*INPACT Score™:* 42/100 (15 out of 36 points)
 - **I=4/6** (+3 from cache + real-time) | **N=2/6** (±0) | **P=1/6** (±0) | **A=3/6** (+1 from registries) | **C=4/6** (+1 from multi-modal) | **T=1/6** (±0)
 
 **Gap closed: 14 points.** Foundation enables intelligence layers in Phase 2.
@@ -248,13 +248,13 @@ The team documented their constraints and boundaries within which technology dec
 
 "These constraints eliminate 80% of technology options before we even evaluate," Sarah observed. "That's good. Decision paralysis kills projects. Clear constraints accelerate decisions."
 
-**For detailed technology selection criteria, product comparisons with INPACT™ + GOALS™ scoring, healthcare-specific guidance, and budget-tier recommendations, use the Vendor Advisor at trustbeforeintelligence.ai/tools.**
+**For detailed technology selection criteria, product comparisons with INPACT + GOALS scoring, healthcare-specific guidance, and budget-tier recommendations, use the Vendor Advisor at trustbeforeintelligence.ai/tools.**
 
 The team was ready to build.
 
 ---
 
-**Progress Check:** Echo's baseline: 28/100 INPACT™ score, SQL Server only, 24-hour batch ETL. Sarah's team committed to Layers 1-2 first, $470K investment across Weeks 1-4 with parallel workstreams.
+**Progress Check:** Echo's baseline: 28/100 INPACT score, SQL Server only, 24-hour batch ETL. Sarah's team committed to Layers 1-2 first, $470K investment across Weeks 1-4 with parallel workstreams.
 
 ---
 
@@ -283,7 +283,7 @@ No single storage technology handles all these patterns efficiently. Multi-modal
 **Echo's Implementation:**
 - Existing SQL Server: 2.4TB patient data, billing, scheduling (no changes)
 - New Azure SQL Hyperscale: 840GB agent-specific tables (conversation history, audit logs, permission mappings)
-- **INPACT™ Impact:** Permitted +0.5 (RBAC tables for fine-grained authorization)
+- **INPACT Impact:** Permitted +0.5 (RBAC tables for fine-grained authorization)
 
 **Deployment Details:**
 - Setup: 3 days (schema design, migration scripts, testing)
@@ -299,7 +299,7 @@ No single storage technology handles all these patterns efficiently. Multi-modal
 **Echo's Implementation:**
 - Clinical notes: Over 2 million documents
 - Medication histories: Hundreds of thousands of documents with nested arrays
-- **INPACT™ Impact:** Contextual +0.5 (flexible schema enables multi-specialty synthesis)
+- **INPACT Impact:** Contextual +0.5 (flexible schema enables multi-specialty synthesis)
 
 **Deployment Details:**
 - Setup: 5 days (MongoDB Atlas cluster, data migration from SQL varchar fields)
@@ -324,7 +324,7 @@ No single storage technology handles all these patterns efficiently. Multi-modal
 **Echo's Implementation:**
 - Nearly 3,000 provider nodes (physicians, nurses, specialists)
 - Over 8,000 relationship edges (reports_to, refers_to, consults_with)
-- **INPACT™ Impact:** Contextual +0.5 (relationship queries enable referral network insights)
+- **INPACT Impact:** Contextual +0.5 (relationship queries enable referral network insights)
 
 **Deployment Details:**
 - Setup: 6 days (graph modeling, data migration from SQL foreign keys, Cypher query development)
@@ -341,7 +341,7 @@ No single storage technology handles all these patterns efficiently. Multi-modal
 **Echo's Implementation:**
 - 47 models registered (sepsis detection, readmission risk, medication interaction)
 - 230 model versions (average 4.9 versions per model)
-- **INPACT™ Impact:** Adaptive +1.0 (model versioning enables drift detection and rollback)
+- **INPACT Impact:** Adaptive +1.0 (model versioning enables drift detection and rollback)
 
 **Deployment Details:**
 - Setup: 5 days (MLflow deployment, model migration, CI/CD integration)
@@ -365,7 +365,7 @@ No single storage technology handles all these patterns efficiently. Multi-modal
 **Echo's Implementation:**
 - DICOM images: 420TB (radiology, cardiology)
 - Training datasets: 87TB (historical EHR exports for model training)
-- **INPACT™ Impact:** Adaptive +0.5 (training data enables model improvement cycles)
+- **INPACT Impact:** Adaptive +0.5 (training data enables model improvement cycles)
 
 **Deployment Details:**
 - Setup: 3 days (blob containers, lifecycle policies, access controls)
@@ -381,7 +381,7 @@ No single storage technology handles all these patterns efficiently. Multi-modal
 **Echo's Implementation:**
 - 43 ICU beds × 12 vital signs × 86,400 measurements/day = 44.6M data points daily
 - 90-day retention (full resolution), 2-year retention (downsampled to 1-minute intervals)
-- **INPACT™ Impact:** Instant +0.5 (real-time vitals enable sub-second alerting)
+- **INPACT Impact:** Instant +0.5 (real-time vitals enable sub-second alerting)
 
 **Deployment Details:**
 - Setup: 5 days (InfluxDB setup, HL7 integration for monitor data, downsampling policies)
@@ -397,7 +397,7 @@ No single storage technology handles all these patterns efficiently. Multi-modal
 **Echo's Implementation:**
 - Over 2 million clinical notes indexed
 - 24K clinical guidelines (UpToDate, Lexicomp)
-- **INPACT™ Impact:** Contextual +0.5 (full-text search finds exact matches vector search misses)
+- **INPACT Impact:** Contextual +0.5 (full-text search finds exact matches vector search misses)
 
 **Deployment Details:**
 - Setup: 4 days (index creation, analyzer configuration, integration with MongoDB)
@@ -413,7 +413,7 @@ No single storage technology handles all these patterns efficiently. Multi-modal
 **Echo's Implementation:**
 - 840GB Delta tables (patient encounters, lab results, medications)
 - 30-day time travel enabled (reproducible training datasets)
-- **INPACT™ Impact:** Transparent +1.0 (time travel provides complete lineage)
+- **INPACT Impact:** Transparent +1.0 (time travel provides complete lineage)
 
 **Deployment Details:**
 - Setup: 8 days (Databricks workspace, Synapse migration, Delta table conversion)
@@ -430,7 +430,7 @@ No single storage technology handles all these patterns efficiently. Multi-modal
 - Redis cluster for query result caching
 - Session state management
 - Real-time data buffering
-- **INPACT™ Impact:** Instant +1.0 (cache reduces query latency)
+- **INPACT Impact:** Instant +1.0 (cache reduces query latency)
 
 **Deployment Details:**
 - Setup: 4 days (MemoryDB cluster, integration with data pipelines)
@@ -497,7 +497,7 @@ Echo started with SQL Server only. Here's what failed:
 - 2 weeks deployment time (Week 1-2)
 - 6-8 hours deployment per category average
 
-**Technology Selection Note:** Echo's vendor selections (Pinecone, Neo4j, MongoDB, Tecton, etc.) reflect their specific constraints (Azure-first, HIPAA compliance, 4-week timeline). Your organization's optimal choices may differ based on cloud platform, budget tier, team expertise, and compliance requirements. For comprehensive vendor comparisons with INPACT™ + GOALS™ scoring, use the **Vendor Advisor at trustbeforeintelligence.ai/tools.**
+**Technology Selection Note:** Echo's vendor selections (Pinecone, Neo4j, MongoDB, Tecton, etc.) reflect their specific constraints (Azure-first, HIPAA compliance, 4-week timeline). Your organization's optimal choices may differ based on cloud platform, budget tier, team expertise, and compliance requirements. For comprehensive vendor comparisons with INPACT + GOALS scoring, use the **Vendor Advisor at trustbeforeintelligence.ai/tools.**
 
 ---
 
@@ -538,7 +538,7 @@ Layer 2 solves this with three integrated components.
 3. Connector transforms database row into JSON event
 4. Event published to Kafka topic "medications.orders" within 850ms total
 
-**INPACT™ Impact:** Instant +0.5 (real-time event capture eliminates batch lag)
+**INPACT Impact:** Instant +0.5 (real-time event capture eliminates batch lag)
 
 ### Component 2: Event Streaming (Apache Kafka)
 
@@ -564,7 +564,7 @@ workday.providers.schedules
 workday.providers.credentials
 ```
 
-**INPACT™ Impact:** Transparent +0.5 (event log provides complete audit trail)
+**INPACT Impact:** Transparent +0.5 (event log provides complete audit trail)
 
 ### Component 3: Stream Processing (Apache Flink)
 
@@ -578,19 +578,19 @@ workday.providers.credentials
 - Raw vital signs (1Hz from ICU monitors) → 5-minute averages stored in InfluxDB
 - Reduces storage 300x (1 data point/second → 1 data point/5 minutes)
 - Retains sub-second data in 24-hour sliding window for anomaly detection
-- **INPACT™ Impact:** Instant +0.5 (windowing reduces query times)
+- **INPACT Impact:** Instant +0.5 (windowing reduces query times)
 
 **Use Case 2: Complex Event Processing**
 - Sepsis detection pattern: Fever (>100.4°F) + Elevated WBC (>12K) + Hypotension (SBP <90) within 2-hour window
 - Flink maintains stateful session per patient
 - Triggers alert 4.2 hours earlier than overnight batch (Week 4 actual measurement)
-- **INPACT™ Impact:** Instant +0.5 (real-time alerts enable early intervention)
+- **INPACT Impact:** Instant +0.5 (real-time alerts enable early intervention)
 
 **Use Case 3: Stream Enrichment**
 - Lab result event (patient_id, test_code, value) joined with patient demographics (age, gender, comorbidities)
 - Enriched event stored in vector database for semantic search
 - Eliminates multi-table joins at query time
-- **INPACT™ Impact:** Contextual +0.5 (enriched context improves search relevance)
+- **INPACT Impact:** Contextual +0.5 (enriched context improves search relevance)
 
 
 ### Training vs. Inference: Different Latency Requirements
@@ -658,13 +658,13 @@ workday.providers.credentials
 - **Week 3-4 (Layer 2):** Real-time data fabric components deployed sequentially. CDC connectors first (enable change capture), then Kafka (message streaming), then Flink (stream processing).
 
 
-**Figure 4.9: INPACT™ Score Transformation (Week 0: 28 → Week 4: 42)**
+**Figure 4.9: INPACT Score™ Transformation (Week 0: 28 → Week 4: 42)**
 
 
-![Figure 4.9: INPACT™ Transformation (28 → 42)](figures/figure-4-9.png)
+![Figure 4.9: INPACT Transformation (28 → 42)](figures/figure-4-9.png)
 *© 2025-2026 Colaberry Inc.*
 
-**Foundation Impact on INPACT™ Dimensions:**
+**Foundation Impact on INPACT Dimensions:**
 - **Instant (I):** 1→4 (+3) Cache layer + real-time data fabric eliminate latency
 - **Natural (N):** 2→2 (±0) Requires semantic layer (Chapter 5)
 - **Permitted (P):** 1→1 (±0) Requires governance layer (Chapter 6)
@@ -729,7 +729,7 @@ Stream system (Week 4): Real-time vitals monitored. ICU patient met sepsis crite
 
 Medical director's reaction: "This is why we're building agents. Not to replace clinicians. To give them superhuman awareness of deteriorating patients."
 
-### INPACT™ Score Progression
+### INPACT Score™ Progression
 
 **Figure 4.10: Foundation Impact - Week 0 to Week 4**
 
@@ -758,7 +758,7 @@ Sarah smiled. "We committed to phase-wise discipline. Foundation delivered. Inte
 | **Storage (Layer 1)** | 8 foundation categories operational, graph database with about 850 relationships, time-series processing 450+K vitals/hour, lakehouse with Delta Lake |
 | **Real-Time (Layer 2)** | 40+ CDC tables, 6+M daily events, ~28s average freshness, ~8.2s alert latency |
 | **Foundation Economics** | $4K/month warehouse consolidation savings, infrastructure ready for intelligence layer optimizations |
-| **INPACT™ Progress** | 28/100 → 42/100 (+14 points) |
+| **INPACT Progress** | 28/100 → 42/100 (+14 points) |
 
 *Note: Additional storage categories (vector database, semantic search index) and LLM cache savings are Phase 2 deliverables covered in Chapter 5.*
 
@@ -853,6 +853,5 @@ The infrastructure built in Weeks 1-4 directly enables intelligence deployment:
 ---
 
 **© 2025-2026 Colaberry Inc. All Rights Reserved.**
-INPACT™ and GOALS™ are trademarks of Colaberry Inc.
 
 *Acronyms and key terms are defined in the Glossary.*

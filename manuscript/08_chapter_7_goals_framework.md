@@ -1,4 +1,4 @@
-# Chapter 7: The GOALS™ Framework
+# Chapter 7: The GOALS Framework™
 ## The Five Dimensions of Operational Excellence
 
 ---
@@ -19,20 +19,20 @@ Sarah had answered with architecture. Layers, integrations, security controls. D
 
 She didn't have an answer.
 
-All seven layers operational. Every infrastructure gap closed. INPACT™ score: 86/100. $992K invested, 19% under the $1.23M budget. Ten weeks of focused execution. The architecture was complete.
+All seven layers operational. Every infrastructure gap closed. INPACT score: 86/100. $992K invested, 19% under the $1.23M budget. Ten weeks of focused execution. The architecture was complete.
 
 But Dr. Raj was right. They'd built a hospital. Now they needed to run it.
 
 Built isn't enough. Operational excellence is what sustains trust.
 
-**This chapter builds the third pillar: GOALS™.**
+**This chapter builds the third pillar: GOALS.**
 
 ---
 
-**Figure 7.1: GOALS™ Framework - From Build Complete to Operate Continuously**
+**Figure 7.1: GOALS Framework™ - From Build Complete to Operate Continuously**
 
 
-![Figure 7.1: GOALS™ Framework - From Build Complete to Operate Continuously](figures/figure-7-1.png)
+![Figure 7.1: GOALS Framework™ - From Build Complete to Operate Continuously](figures/figure-7-1.png)
 > **Key Takeaway:** *"Building is a 90-day project. Operating is forever."* - Dr. Arun Raj
 
 ## Part 1: The Architecture Is Complete. Now What?
@@ -41,9 +41,14 @@ Built isn't enough. Operational excellence is what sustains trust.
 
 Six chapters brought us here.
 
-Chapter 0 introduced the Architecture of Trust: three pillars working together to transform infrastructure into agent-ready systems. Chapters 1-2 built the first pillar: INPACT™, defining the six needs agents require for trusted operation. Chapters 4-6 built the second pillar: the 7-Layer Architecture, the technical blueprint that fulfills those needs.
+Chapter 0 introduced the Architecture of Trust: three pillars working together to transform infrastructure into agent-ready systems. Chapters 1-2 built the first pillar: INPACT, defining the six needs agents require for trusted operation. Chapters 4-6 built the second pillar: the 7-Layer Architecture, the technical blueprint that fulfills those needs.
 
 Last week, Echo Health completed that second pillar. Layer 7 orchestration went live. All seven layers are operational. The architecture, beautifully designed and expertly constructed, stood complete.
+
+**Figure 7.2: Echo's 90-Day Journey-Architecture Complete**
+
+
+![Figure 7.2: Echo's 90-Day Journey-Architecture Complete](figures/figure-7-2.png)
 
 But architecture alone doesn't create trust. Buildings need maintenance. Vehicles need service. Infrastructure needs operational discipline.
 
@@ -81,9 +86,9 @@ The metaphor crystallized what Sarah had been feeling. The 7-layer architecture 
 
 "The board will want to see that we can sustain this," Sarah said. "Dr. Raj will ask again at the Week 12 presentation."
 
-"Then we need a framework for thinking about operational excellence," Marcus replied. "Something as rigorous as INPACT™ was for defining agent needs, but focused on sustainability rather than capability."
+"Then we need a framework for thinking about operational excellence," Marcus replied. "Something as rigorous as INPACT was for defining agent needs, but focused on sustainability rather than capability."
 
-### From INPACT™ to GOALS™
+### From INPACT to GOALS
 
 Sarah turned to face him. "You've been thinking about this."
 
@@ -91,39 +96,39 @@ Sarah turned to face him. "You've been thinking about this."
 
 He walked to the whiteboard and sketched five interconnected circles.
 
-"INPACT™ defines what agents *need*: the six requirements for trusted operation. The 7-layer architecture defines what you *build*: the technical infrastructure that fulfills those needs. GOALS™ defines what you *maintain*: the five dimensions of operational excellence that keep the architecture trustworthy over time."
+"INPACT defines what agents *need*: the six requirements for trusted operation. The 7-layer architecture defines what you *build*: the technical infrastructure that fulfills those needs. GOALS defines what you *maintain*: the five dimensions of operational excellence that keep the architecture trustworthy over time."
 
 Sarah nodded. The construction metaphor made sense. They'd built a hospital. Now they needed to run it.
 
 **The Architecture of Trust: Three Pillars**
 
-**Figure 7.2: The Architecture of Trust-Three Integrated Pillars**
-
-
-![Figure 7.2: The Architecture of Trust-Three Integrated Pillars](figures/figure-7-2.png)
 | Pillar | Framework | Purpose | When Applied |
 |--------|-----------|---------|--------------|
-| **Pillar 1** | INPACT™ | What agents NEED (6 trust requirements) | Assessment & Design |
+| **Pillar 1** | INPACT | What agents NEED (6 trust requirements) | Assessment & Design |
 | **Pillar 2** | 7-Layer Architecture | What you BUILD (technical infrastructure) | Construction |
-| **Pillar 3** | GOALS™ | What you MAINTAIN (operational excellence) | Operations |
+| **Pillar 3** | GOALS | What you MAINTAIN (operational excellence) | Operations |
+
+**Figure 7.3: The Architecture of Trust-Three Integrated Pillars**
+
+![Figure 7.3: The Architecture of Trust-Three Integrated Pillars](figures/figure-7-3.png)
 
 ### Why Three Pillars, Not Two?
 
-Dr. Chen raised the question many would ask: "Why do we need GOALS™ separately? Isn't observability already built into Layer 6? Isn't governance already in Layer 5?"
+Dr. Chen raised the question many would ask: "Why do we need GOALS separately? Isn't observability already built into Layer 6? Isn't governance already in Layer 5?"
 
-Marcus nodded. He'd anticipated this. "Layer 6 gives you the *capability* to observe. GOALS™ gives you the *targets* for what good looks like. A hospital can have monitoring equipment in every room. That's capability. But without target vital signs, nurses don't know when to intervene."
+Marcus nodded. He'd anticipated this. "Layer 6 gives you the *capability* to observe. GOALS gives you the *targets* for what good looks like. A hospital can have monitoring equipment in every room. That's capability. But without target vital signs, nurses don't know when to intervene."
 
-He pointed to the architecture diagram. "The 7-Layer Architecture tells you *what* to build. GOALS™ tells you *how well* it's working. They're complementary, not redundant."
+He pointed to the architecture diagram. "The 7-Layer Architecture tells you *what* to build. GOALS tells you *how well* it's working. They're complementary, not redundant."
 
-Sarah added the business perspective: "We can have all seven layers operational and still fail in production if we're not measuring the right things. INPACT™ defines success. The architecture enables success. GOALS™ *validates* success."
+Sarah added the business perspective: "We can have all seven layers operational and still fail in production if we're not measuring the right things. INPACT defines success. The architecture enables success. GOALS *validates* success."
 
 ### The Cross-Pillar Connection
 
-Marcus expanded on the integration. "Each GOALS™ dimension validates specific INPACT™ needs by measuring specific 7-Layer components."
+Marcus expanded on the integration. "Each GOALS dimension validates specific INPACT needs by measuring specific 7-Layer components."
 
 **Table: Cross-Pillar Mapping-How the Three Pillars Connect**
 
-| GOALS™ Dimension | Validates INPACT™ Need | Measures 7-Layer Component |
+| GOALS Dimension | Validates INPACT Need | Measures 7-Layer Component |
 |------------------|------------------------|---------------------------|
 | **G** (Governance) | **P** (Permitted) | Layer 5: Policy Engine |
 | **O** (Observability) | **T** (Transparent) | Layer 6: Observability |
@@ -131,9 +136,9 @@ Marcus expanded on the integration. "Each GOALS™ dimension validates specific 
 | **L** (Lexicon) | **N** (Natural), **C** (Contextual) | Layer 3: Semantic Layer |
 | **S** (Solid) | **A** (Adaptive) | Layer 1: Storage Foundation |
 
-"When Governance scores drop," Marcus explained, "it signals the Permitted need is degrading and points to Layer 5 as the problem area. When Lexicon scores drop, Natural language understanding is failing. Check Layer 3. GOALS™ isn't just measurement. It's a diagnostic framework that traces operational issues back to their architectural roots."
+"When Governance scores drop," Marcus explained, "it signals the Permitted need is degrading and points to Layer 5 as the problem area. When Lexicon scores drop, Natural language understanding is failing. Check Layer 3. GOALS isn't just measurement. It's a diagnostic framework that traces operational issues back to their architectural roots."
 
-Dr. Chen saw the elegance. "So GOALS™ closes the loop. INPACT™ defines what users need. The architecture fulfills those needs. GOALS™ proves the fulfillment is working and tells us where to look when it isn't."
+Dr. Chen saw the elegance. "So GOALS closes the loop. INPACT defines what users need. The architecture fulfills those needs. GOALS proves the fulfillment is working and tells us where to look when it isn't."
 
 "Exactly," Marcus confirmed. "Three pillars, one Architecture of Trust."
 
@@ -141,18 +146,18 @@ Dr. Chen saw the elegance. "So GOALS™ closes the loop. INPACT™ defines what 
 
 Sarah synthesized what she was hearing into a formula:
 
-> **TRUSTED AGENTS = INPACT™ (What They Need) + 7-Layer (How You Build) + GOALS™ (How You Sustain)**
+> **TRUSTED AGENTS = INPACT (What They Need) + 7-Layer (How You Build) + GOALS (How You Sustain)**
 
 "For Echo, that means:"
-- **INPACT™:** 86/100 capability achieved
+- **INPACT:** 86/100 capability achieved
 - **7-Layer:** 7/7 layers operational  
-- **GOALS™:** Target 21/25 for sustainability
+- **GOALS:** Target 21/25 for sustainability
 
 "All three must be in place," she said. "Capability without sustainability degrades. Infrastructure without measurement is blind. Measurement without architecture has nothing to measure."
 
-Sarah studied the diagram. "So our 86/100 INPACT™ score measures *capability*, what our infrastructure can do. But we need a different metric for *sustainability*, our ability to maintain that capability."
+Sarah studied the diagram. "So our 86/100 INPACT score measures *capability*, what our infrastructure can do. But we need a different metric for *sustainability*, our ability to maintain that capability."
 
-"Exactly. And that's what GOALS™ provides."
+"Exactly. And that's what GOALS provides."
 
 ### The Scoring Philosophy
 
@@ -170,11 +175,12 @@ He sketched the progression:
 
 "Healthcare specifically requires 4/5 minimum in all dimensions and 5/5 in Governance for clinical AI," Marcus added. "These aren't arbitrary thresholds. They're mandated by regulation. Below these operational thresholds, you're not just risking failure. You're risking non-compliance."
 
+
 ### The Interdependence Principle
 
 Marcus drew connecting lines between the five circles on the whiteboard.
 
-"Here's what makes GOALS™ different from a simple checklist. These aren't five independent dimensions. They're interconnected like vital organs. Weakness in one cascades to the others."
+"Here's what makes GOALS different from a simple checklist. These aren't five independent dimensions. They're interconnected like vital organs. Weakness in one cascades to the others."
 
 He traced the connections:
 
@@ -196,18 +202,12 @@ He traced the connections:
 
 "This interconnection means you can't optimize one GOAL in isolation," Marcus explained. "Improving Lexicon might require investments in Solid. Enhancing Availability might surface Governance gaps. Maintaining all five requires holistic thinking."
 
----
-
 ## Part 2: Echo's Operational Challenge
 
 Sarah gathered her extended team in the large conference room. Marcus Williams, CDO. Dr. Chen, clinical liaison. The engineering leads from each layer team. The compliance officer. The data quality manager.
 
-"We built something remarkable," Sarah began. "In ten weeks, we went from a 28/100 INPACT™ score to 86/100. We constructed all seven layers of agent-ready infrastructure. We came in at $942K through Week 10, 23% under our $1.23M budget."
+"We built something remarkable," Sarah began. "In ten weeks, we went from a 28/100 INPACT score to 86/100. We constructed all seven layers of agent-ready infrastructure. We came in at $942K through Week 10, 23% under our $1.23M budget."
 
-**Figure 7.3: Echo's 90-Day Journey-Architecture Complete**
-
-
-![Figure 7.3: Echo's 90-Day Journey-Architecture Complete](figures/figure-7-3.png)
 Nods around the room. Tired but satisfied faces.
 
 "But Dr. Raj asked a question that we need to answer before the Week 12 board presentation: How do we know it *stays* trustworthy?"
@@ -216,15 +216,15 @@ The room grew quiet.
 
 "Building infrastructure and operating infrastructure require different disciplines," Sarah continued. "For ten weeks, we've been construction workers. Starting today, we become operators. And that requires a framework for operational excellence."
 
-She turned to Marcus. "Walk us through GOALS™."
+She turned to Marcus. "Walk us through GOALS."
 
-### The Five GOALS™
+### The Five GOALS
 
 Marcus stood and displayed the framework on the conference room screen.
 
-"GOALS™ defines five dimensions of operational excellence for agent-ready infrastructure. Like vital organs in a body, each supports the others. Weakness in one cascades throughout the system."
+"GOALS defines five dimensions of operational excellence for agent-ready infrastructure. Like vital organs in a body, each supports the others. Weakness in one cascades throughout the system."
 
-**Table 1: The Five GOALS™ Dimensions**
+**Table 1: The Five GOALS Dimensions**
 
 | Dimension | Full Name | What It Covers |
 |-----------|-----------|----------------|
@@ -234,26 +234,26 @@ Marcus stood and displayed the framework on the conference room screen.
 | **L** | Lexicon: Semantic Understanding & Accuracy | Entity resolution, terminology mapping, query interpretation, ontology, disambiguation |
 | **S** | Solid: Data Quality & Integrity | Accuracy, completeness, consistency, timeliness, schema validation |
 
-"Each dimension has measurable targets," Marcus continued. "And each dimension connects to our INPACT™ requirements."
+"Each dimension has measurable targets," Marcus continued. "And each dimension connects to our INPACT requirements."
 
 ### Understanding the Gap
 
-"What's our current GOALS™ health?" Dr. Chen asked, leaning forward. As clinical liaison, she needed to translate operational metrics into language the clinical staff would understand.
+"What's our current GOALS Metrics™ health?" Dr. Chen asked, leaning forward. As clinical liaison, she needed to translate operational metrics into language the clinical staff would understand.
 
-Marcus pulled up preliminary numbers. "Based on our Week 10 status, I'd estimate we're at about 75% GOALS™ health, that's 15 out of 25 possible points."
+Marcus pulled up preliminary numbers. "Based on our Week 10 status, I'd estimate we're at about 75% GOALS Metrics™ health, that's 15 out of 25 possible points."
 
-Sarah frowned. "But we just said INPACT™ is 86/100. Why the gap?"
+Sarah frowned. "But we just said INPACT is 86/100. Why the gap?"
 
-"Different measurements for different purposes," Marcus explained. "INPACT™ measures whether infrastructure *can* fulfill agent needs: the capability we've built. GOALS™ measures whether we can *sustain* that capability over time: operational excellence. Think of it this way: we built a great car, but we haven't yet proven we can maintain it."
+"Different measurements for different purposes," Marcus explained. "INPACT measures whether infrastructure *can* fulfill agent needs: the capability we've built. GOALS measures whether we can *sustain* that capability over time: operational excellence. Think of it this way: we built a great car, but we haven't yet proven we can maintain it."
 
 He pulled up a validation chart. "Colaberry's research is clear: proficiency across all five regulatory categories correlates with production success. Gaps lead to degraded outcomes. Major gaps lead to failure. We're at 15, below the 21-point threshold for proficiency across all five. That's why Weeks 11-12 matter so much."
 
-"So the 86/100 INPACT™ score means we *can* support trusted agents," Dr. Chen said. "But the 15/25 GOALS™ score means we haven't proven we can *keep* them trusted."
+"So the 86/100 INPACT score means we *can* support trusted agents," Dr. Chen said. "But the 15/25 GOALS Metrics™ score means we haven't proven we can *keep* them trusted."
 
-"Exactly. The 10-point gap represents operational discipline we haven't yet established. By Week 12, we need GOALS™ at 21 or above."
+"Exactly. The 10-point gap represents operational discipline we haven't yet established. By Week 12, we need GOALS at 21 or above."
 
-**Table 2: Echo's GOALS™ Operational Health Baseline (Week 10)**
-*Note: GOALS™ (max 25 points) measures operational sustainability, distinct from INPACT™ (max 100) capability score. Healthcare production requires 21+ GOALS™ points.*
+**Table 2: Echo's GOALS Operational Health Baseline (Week 10)**
+*Note: GOALS (max 25 points) measures operational sustainability, distinct from INPACT (max 100) capability score. Healthcare production requires 21+ GOALS points.*
 
 **Figure 7.4: Echo's GOALS Health Dashboard (Week 10 Baseline)**
 
@@ -298,6 +298,11 @@ He displayed Echo's governance architecture.
 
 **The Five W's of ABAC Authorization:**
 
+**Figure 7.5: RBAC vs ABAC Authorization Flow**
+
+
+![Figure 7.5: RBAC vs ABAC Authorization Flow](figures/figure-7-5.png)
+
 Traditional RBAC asks one question: "What role does this user have?"
 
 Dynamic ABAC asks five questions simultaneously:
@@ -310,10 +315,6 @@ Dynamic ABAC asks five questions simultaneously:
 
 These five dimensions enable policies that are dynamically evaluated in real-time, achieving the sub-10ms latency agents require while maintaining HIPAA's "minimum necessary" compliance standard. [1]
 
-**Figure 7.5: RBAC vs ABAC Authorization Flow**
-
-
-![Figure 7.5: RBAC vs ABAC Authorization Flow](figures/figure-7-5.png)
 ### The Authentication Challenge
 
 When a patient asks Echo's agent: "Show me my recent lab results," the agent must:
@@ -334,6 +335,11 @@ Governance isn't just about what agents *can* do. It's also about what they *sho
 
 Human-in-the-loop (HITL) patterns enable agents to escalate high-stakes decisions to humans while maintaining autonomy for routine operations. This isn't a limitation. It's a strategic boundary that enables enterprise adoption. [3]
 
+**Figure 7.6: Human-in-the-Loop Autonomy Spectrum**
+
+
+![Figure 7.6: Human-in-the-Loop Autonomy Spectrum](figures/figure-7-6.png)
+
 **The Autonomy Spectrum:**
 
 Agents operate across a spectrum from fully automated to fully supervised:
@@ -346,10 +352,6 @@ Agents operate across a spectrum from fully automated to fully supervised:
 
 The art is positioning decisions correctly on this spectrum. Too much autonomy creates risk; too little negates agent value.
 
-**Figure 7.6: Human-in-the-Loop Autonomy Spectrum**
-
-
-![Figure 7.6: Human-in-the-Loop Autonomy Spectrum](figures/figure-7-6.png)
 **Echo Health's HITL Decision Matrix:**
 
 | Decision Type | Risk Level | Autonomy | Approval Required? |
@@ -486,12 +488,6 @@ User query → semantic translation → retrieval → policy evaluation → data
 
 This enables root cause analysis impossible with infrastructure metrics alone.
 
-**Figure 7.7: End-to-End Observability with Trace IDs (All 7 Layers)**
-
-
-![Figure 7.7: End-to-End Observability with Trace IDs (All 7 Layers)](figures/figure-7-7.png)
-**Echo's Observability Improvement Targets:**
-
 *Targets informed by Google SRE principles and industry observability benchmarks:* [5]
 
 | Metric | Before (Week 10) | Target (Week 12) | Industry Reference |
@@ -501,7 +497,12 @@ This enables root cause analysis impossible with infrastructure metrics alone.
 | False positive alerts | High volume | 87% reduction | Reduces alert fatigue [19] |
 | Human investigation required | ~95% | <40% | Enables team scaling |
 
-*Note: Pre-implementation estimates based on initial observability assessment. Targets validated through proof-of-concept testing.*
+**Figure 7.7: End-to-End Observability with Trace IDs (All 7 Layers)**
+
+
+![Figure 7.7: End-to-End Observability with Trace IDs (All 7 Layers)](figures/figure-7-7.png)
+**Echo's Observability Improvement Targets:**
+
 
 ### The Explainability Requirement
 
@@ -617,7 +618,7 @@ Data freshness matters equally. When a patient's medication list updates at 2:00
 
 Echo's transformation from 9-second to 1.8-second responses required coordinated improvements across multiple layers: real-time data fabric for freshness (Layer 2), query-optimized vector storage (Layer 1), parallel retrieval orchestration (Layer 4), and intelligent caching. The technical implementation is detailed in Chapters 4-5.
 
-What matters for GOALS™ is measuring and sustaining this performance over time.
+What matters for GOALS is measuring and sustaining this performance over time.
 
 ### Measuring Availability
 
@@ -677,13 +678,13 @@ The multi-level caching strategy is what enables sub-2-second responses. *The fo
 
 This hierarchy explains why the vast majority of queries return in under 2 seconds. Only a small fraction hit the expensive cold path. [7]
 
+The caching hierarchy explains why Echo achieved sub-2-second response times for 97% of queries, critical for user adoption.
+
 **Figure 7.9: Multi-Level Caching Strategy for Sub-2-Second Performance**
 
 
 ![Figure 7.9: Multi-Level Caching Strategy for Sub-2-Second Performance](figures/figure-7-9.png)
-The caching hierarchy explains why Echo achieved sub-2-second response times for 97% of queries, critical for user adoption.
 
----
 
 ## Part 6: GOAL 4 - Lexicon (Semantic Understanding & Accuracy)
 
@@ -696,7 +697,7 @@ Lexicon answers: *Does the agent understand what users are actually asking, and 
 
 ### Why Agents Need Lexicon
 
-Entity resolution failure is particularly dangerous. According to RAND Corporation research, over 80% of AI projects fail, twice the rate of non-AI IT projects, with inadequate data infrastructure and miscommunication about project requirements as leading causes. [8] MIT's Project NANDA confirms this pattern for generative AI specifically: 95% of enterprise GenAI pilots yield no measurable business return, with the primary cause being "lack of learning, memory, and adaptation in deployed systems." This is precisely what the Lexicon dimension addresses. [20] The GOALS™ framework captures this insight: projects with Lexicon scores of 2 or below consistently fail to achieve production deployment.
+Entity resolution failure is particularly dangerous. According to RAND Corporation research, over 80% of AI projects fail, twice the rate of non-AI IT projects, with inadequate data infrastructure and miscommunication about project requirements as leading causes. [8] MIT's Project NANDA confirms this pattern for generative AI specifically: 95% of enterprise GenAI pilots yield no measurable business return, with the primary cause being "lack of learning, memory, and adaptation in deployed systems." This is precisely what the Lexicon dimension addresses. [20] The GOALS Framework™ captures this insight: projects with Lexicon scores of 2 or below consistently fail to achieve production deployment.
 
 "Think about clinical terminology," Dr. Chen said. "Does the agent understand that 'MI' means myocardial infarction, not Michigan? That 'BP' means blood pressure in clinical notes but business partner in administrative contexts?"
 
@@ -736,18 +737,20 @@ Entity resolution failure is particularly dangerous. According to RAND Corporati
 - Verifies user authorized to see requested data
 
 **Stage 7: Natural Language Response + Feedback**
+
 - Translates results back to conversational language
 - Logs translation for accuracy tracking
 - Updates entity resolution confidence scores
-
-**Key Insight:** The 0.90 confidence threshold is critical. Below 90%, the system asks for clarification rather than guessing. This prevents the "confident but wrong" answers that destroy user trust.
-
-**The Golden ID Connection:** Entity resolution in Stage 2 depends on the **Golden IDs** established during Layer 3 implementation (see Chapter 5). Golden IDs create canonical identifiers that unify entities across systems. For example, `patient_master_id` resolves the same patient across EHR, billing, and portal. Lexicon operational health measures whether this entity resolution continues working correctly over time. When Golden ID accuracy degrades (e.g., duplicate records created, matching rules drift), Lexicon scores drop correspondingly. This is why Lexicon and Solid are interdependent: data quality issues in Layer 1 corrupt the Golden IDs in Layer 3, which degrades Lexicon scores in operations.
 
 **Figure 7.10: Natural Language → Data Operation Pipeline**
 
 
 ![Figure 7.10: Natural Language → Data Operation Pipeline](figures/figure-7-10.png)
+
+**Key Insight:** The 0.90 confidence threshold is critical. Below 90%, the system asks for clarification rather than guessing. This prevents the "confident but wrong" answers that destroy user trust.
+
+**The Golden ID Connection:** Entity resolution in Stage 2 depends on the **Golden IDs** established during Layer 3 implementation (see Chapter 5). Golden IDs create canonical identifiers that unify entities across systems. For example, `patient_master_id` resolves the same patient across EHR, billing, and portal. Lexicon operational health measures whether this entity resolution continues working correctly over time. When Golden ID accuracy degrades (e.g., duplicate records created, matching rules drift), Lexicon scores drop correspondingly. This is why Lexicon and Solid are interdependent: data quality issues in Layer 1 corrupt the Golden IDs in Layer 3, which degrades Lexicon scores in operations.
+
 ### The Multi-Agent Challenge
 
 Multi-agent systems amplify lexicon challenges.
@@ -913,6 +916,8 @@ Silent data corruption is the most dangerous failure mode. When data becomes inc
 
 *Note: Echo's current values are assessment estimates; precise measurement requires Week 11 monitoring implementation.*
 
+<!-- pagebreak -->
+
 ### Solid Scoring Calibration
 
 | Score | What It Looks Like |
@@ -930,22 +935,22 @@ Silent data corruption is the most dangerous failure mode. When data becomes inc
 
 *For detailed vendor recommendations including data observability platforms and quality monitoring tools, use the Vendor Advisor at trustbeforeintelligence.ai/tools.*
 
+**Figure 7.11: The Quality Gate Architecture**
+
+![Figure 7.11: The Quality Gate Architecture](figures/figure-7-11.png)
+
 ### The Quality Gate Architecture
 
 Echo validates all five dimensions at a central gate in the data pipeline. Data flows from source systems through Change Data Capture, passes through all five checks simultaneously, and only validated data reaches agents.
 
-**Figure 7.11: The Quality Gate Architecture**
-
-
-![Figure 7.11: The Quality Gate Architecture](figures/figure-7-11.png)
 "Each dimension catches different failure modes," Marcus explained. "Anomaly detection using ML monitors all five continuously. Data that fails any dimension goes to quarantine, triggers a ticket, and gets fixed at source before re-entering the pipeline."
 
 "The cross-system consistency gap at 92% is our focus for Week 11," Marcus said. "Every patient should have consistent PCP information across all systems before we go to production."
 
----
 
+<!-- pagebreak -->
 
-## Part 8: GOALS™ Complete - The Interdependence Principle
+## Part 8: GOALS Complete - The Interdependence Principle
 
 ### Vital Organs, Not Independent Systems
 
@@ -965,6 +970,9 @@ The most dangerous cascade is **S→L→G**: bad data gets cached in the semanti
 
 
 ![Figure 7.12: GOALS Interdependencies](figures/figure-7-12.png)
+
+<!-- pagebreak -->
+
 ### The Trust Flywheel
 
 Marcus stepped back from the whiteboard. "There's one more concept that makes the three pillars truly powerful. They don't just stack. They cycle."
@@ -975,19 +983,19 @@ He drew a circular arrows connecting all three pillars:
 
 
 ![Figure 7.13: The Trust Flywheel-Three Pillars in Motion](figures/figure-7-13.png)
-"GOALS™ measurements reveal whether INPACT™ needs are truly being met," Marcus explained. "When Lexicon scores drop, it signals the Natural (N) need is degrading. When Availability drops, Instant (I) is at risk. This feedback drives architecture improvements: which layers need attention, what upgrades are needed."
+"GOALS measurements reveal whether INPACT needs are truly being met," Marcus explained. "When Lexicon scores drop, it signals the Natural (N) need is degrading. When Availability drops, Instant (I) is at risk. This feedback drives architecture improvements: which layers need attention, what upgrades are needed."
 
-Sarah saw the elegance. "So the cycle continues: better architecture leads to better GOALS™ scores, which validates more INPACT™ fulfillment, which builds more user trust, which generates usage patterns that inform better need definitions."
+Sarah saw the elegance. "So the cycle continues: better architecture leads to better GOALS Metrics™ scores, which validates more INPACT fulfillment, which builds more user trust, which generates usage patterns that inform better need definitions."
 
 "Exactly. The three pillars create a flywheel. Each revolution builds more trust, not linearly, but exponentially. The first turns are hard. Once momentum builds, trust compounds."
 
-Dr. Chen added the clinical perspective: "Our physicians started skeptical. When the agents consistently delivered accurate, fast, compliant responses, when they saw the GOALS™ dashboard proving it, they started relying on them. That reliance generated feedback that made the agents better. The flywheel turned."
+Dr. Chen added the clinical perspective: "Our physicians started skeptical. When the agents consistently delivered accurate, fast, compliant responses, when they saw the GOALS dashboard proving it, they started relying on them. That reliance generated feedback that made the agents better. The flywheel turned."
 
-"That's why this isn't a one-time implementation," Marcus concluded. "It's a continuous system. Build the architecture. Measure with GOALS™. Improve based on what you learn. The three pillars don't just create trust. They *sustain* it."
+"That's why this isn't a one-time implementation," Marcus concluded. "It's a continuous system. Build the architecture. Measure with GOALS. Improve based on what you learn. The three pillars don't just create trust. They *sustain* it."
 
-Each GOALS™ dimension has documented failure patterns. Critically, each failure mode traces back through all three pillars, indicating which INPACT™ need is violated and which 7-Layer component requires attention:
+Each GOALS dimension has documented failure patterns. Critically, each failure mode traces back through all three pillars, indicating which INPACT need is violated and which 7-Layer component requires attention:
 
-| Code | Failure Mode | Severity | INPACT™ Violated | 7-Layer Root | Real-World Example |
+| Code | Failure Mode | Severity | INPACT Violated | 7-Layer Root | Real-World Example |
 |------|--------------|----------|------------------|--------------|-------------------|
 | G1 | ABAC Policy Bypass | Critical | Permitted (P) | Layer 5 | Montefiore paid $4.75M in 2024 |
 | G2 | HITL Escalation Failure | High | Permitted (P) | Layer 5 | Critical decisions without human review |
@@ -1006,15 +1014,16 @@ Each GOALS™ dimension has documented failure patterns. Critically, each failur
 | S2 | Completeness Degradation | High | Contextual (C) | Layer 1 | Missing fields cause failures |
 | S3 | Cross-System Inconsistency | High | Contextual (C) | Layer 1 | Different answers per system |
 
-"This is the diagnostic power of three pillars working together," Marcus explained. "When we detect a GOALS™ failure, we immediately know which INPACT™ need is at risk and which layer to investigate. L1 failure? Check Layer 3 semantic infrastructure. Natural language understanding is degrading. S1 failure? Check Layer 1 storage. Adaptive capability is compromised by bad data."
+"This is the diagnostic power of three pillars working together," Marcus explained. "When we detect a GOALS failure, we immediately know which INPACT need is at risk and which layer to investigate. L1 failure? Check Layer 3 semantic infrastructure. Natural language understanding is degrading. S1 failure? Check Layer 1 storage. Adaptive capability is compromised by bad data."
 
 *Use the Trust Patterns tool at trustbeforeintelligence.ai/tools for failure mode detection and prevention strategies.*
 
-### GOALS™ and Industry Standards
+<!-- pagebreak -->
+### GOALS and Industry Standards
 
-The GOALS™ framework synthesizes operational concerns from established standards:
+The GOALS Framework™ synthesizes operational concerns from established standards:
 
-| Standard | Publication | Primary GOALS™ Alignment | Key Requirement |
+| Standard | Publication | Primary GOALS Alignment | Key Requirement |
 |----------|-------------|-------------------------|-----------------|
 | NIST AI RMF 1.0 | January 2023 | Governance, Observability, Lexicon, Solid | US de facto AI governance standard [13] |
 | NIST AI 600-1 (GenAI Profile) | July 2024 | Governance, Observability | GenAI-specific risk management [14] |
@@ -1024,7 +1033,7 @@ The GOALS™ framework synthesizes operational concerns from established standar
 | ISO/IEC 27001:2022 | Transition deadline: October 2025 | Governance, Observability | Information security certification [15] |
 | Google SRE | 2016, 2018 | Observability, Availability | Site reliability engineering principles [5] |
 
-"These aren't competing frameworks," Marcus explained. "GOALS™ integrates their operational requirements into a unified model specifically designed for AI agent infrastructure. For data quality specifically, ISO/IEC 5259 extends traditional DMBOK principles for AI/ML contexts."
+"These aren't competing frameworks," Marcus explained. "GOALS integrates their operational requirements into a unified model specifically designed for AI agent infrastructure. For data quality specifically, ISO/IEC 5259 extends traditional DMBOK principles for AI/ML contexts."
 
 ### Critical Compliance Dates
 
@@ -1042,13 +1051,13 @@ Marcus highlighted the key dates:
 
 "Even though we're US-based, EU AI Act matters if we serve EU patients or use EU patient data," Marcus noted. "And US regulations are increasingly aligned with EU standards."
 
-### The GOALS™ Dashboard
+### The GOALS Dashboard
 
 Marcus displayed the operational dashboard they'd designed.
 
-"This is how we'll track GOALS™ health daily."
+"This is how we'll track GOALS Metrics™ health daily."
 
-**GOALS™ Health Dashboard Components:**
+**GOALS Health Dashboard Components:**
 
 1. **Summary Score:** Overall 5-dimension average with trend indicator
 2. **Dimension Drill-Down:** Each GOAL with sub-metrics and status
@@ -1057,13 +1066,15 @@ Marcus displayed the operational dashboard they'd designed.
 5. **Incident Log:** Recent failures with root cause analysis
 6. **Compliance Calendar:** Upcoming audits and deadlines
 
-"The dashboard becomes our operational nerve center," Sarah said. "Every morning standup starts with GOALS™ health."
+"The dashboard becomes our operational nerve center," Sarah said. "Every morning standup starts with GOALS Metrics™ health."
+
+<!-- pagebreak -->
 
 ### The Week 12 Target
 
 Sarah summarized the path forward. "We need to move from 15/25 to 21/25 in the next two weeks. That means:"
 
-**Week 11-12 GOALS™ Improvement Plan:**
+**Week 11-12 GOALS Improvement Plan:**
 
 | GOAL | Current | Target | Key Actions |
 |------|---------|--------|-------------|
@@ -1073,20 +1084,20 @@ Sarah summarized the path forward. "We need to move from 15/25 to 21/25 in the n
 | L | 2 → 4 | Implement disambiguation, start correction feedback loop |
 | S | 4 | Maintain-fix cross-system consistency for PCP data |
 
-**Figure 7.14: GOALS™ Healthcare Threshold**
+**Figure 7.14: GOALS Healthcare Threshold**
 
-![Figure 7.14: GOALS™ Healthcare Threshold](figures/figure-7-14.png)
-"When we present to the board at Week 12," Sarah said, "we won't just show them what we built. We'll show them how we're operating it. We'll show them GOALS™ health at 21+. We'll answer Dr. Raj's question: *This is how we know it stays trustworthy.*"
+![Figure 7.14: GOALS Healthcare Threshold](figures/figure-7-14.png)
+"When we present to the board at Week 12," Sarah said, "we won't just show them what we built. We'll show them how we're operating it. We'll show them GOALS Metrics™ health at 21+. We'll answer Dr. Raj's question: *This is how we know it stays trustworthy.*"
 
 ---
 
 ## Key Takeaways
 
-1. **The Architecture of Trust requires all three pillars.** INPACT™ defines what agents need (capability). The 7-Layer Architecture fulfills those needs (infrastructure). GOALS™ validates fulfillment is sustained (operations). Missing any pillar means missing trust.
+1. **The Architecture of Trust requires all three pillars.** INPACT defines what agents need (capability). The 7-Layer Architecture fulfills those needs (infrastructure). GOALS validates fulfillment is sustained (operations). Missing any pillar means missing trust.
 
-2. **INPACT™ measures capability; GOALS™ measures sustainability.** An 86/100 INPACT™ score means your infrastructure *can* support trusted agents. A 21/25 GOALS™ score means you can *sustain* that capability over time.
+2. **INPACT measures capability; GOALS measures sustainability.** An 86/100 INPACT score means your infrastructure *can* support trusted agents. A 21/25 GOALS Metrics™ score means you can *sustain* that capability over time.
 
-3. **The five GOALS™ are interdependent.** Governance, Observability, Availability, Lexicon, and Solid work together like vital organs. Weakness in one cascades to the others.
+3. **The five GOALS are interdependent.** Governance, Observability, Availability, Lexicon, and Solid work together like vital organs. Weakness in one cascades to the others.
 
 4. **Healthcare requires specific thresholds.** Governance 5/5 for clinical decisions. All other dimensions at 4/5 minimum. Total score 21+ for production deployment.
 
@@ -1096,9 +1107,9 @@ Sarah summarized the path forward. "We need to move from 15/25 to 21/25 in the n
 
 7. **The S→L→G cascade is the most dangerous failure pattern.** Bad data cached in semantic layers causes entity resolution failures that constitute governance violations. This can persist silently for weeks.
 
-8. **Each GOALS™ failure traces to a specific pillar.** Use the Cross-Pillar Mapping to diagnose: GOALS™ gap → INPACT™ need violated → 7-Layer component to fix.
+8. **Each GOALS failure traces to a specific pillar.** Use the Cross-Pillar Mapping to diagnose: GOALS gap → INPACT need violated → 7-Layer component to fix.
 
-9. **The Trust Flywheel creates compound growth.** INPACT™ → 7-Layer → GOALS™ → User Trust → better INPACT™ understanding. Each revolution builds momentum; trust compounds over time.
+9. **The Trust Flywheel creates compound growth.** INPACT → 7-Layer → GOALS → User Trust → better INPACT understanding. Each revolution builds momentum; trust compounds over time.
 
 10. **Operational excellence requires continuous investment.** Expect 4 hours/week for semantic curation, daily dashboard review, weekly trend analysis, and quarterly deep assessments.
 
@@ -1107,7 +1118,7 @@ Sarah summarized the path forward. "We need to move from 15/25 to 21/25 in the n
 ## Operational Cadence Summary
 
 **Daily Operations:**
-- Morning GOALS™ dashboard review
+- Morning GOALS dashboard review
 - Alert queue triage
 - Critical incident response
 
@@ -1124,14 +1135,14 @@ Sarah summarized the path forward. "We need to move from 15/25 to 21/25 in the n
 - Technology stack review
 
 **Quarterly Operations:**
-- Comprehensive GOALS™ assessment
+- Comprehensive GOALS assessment
 - Compliance audit preparation
 - Failure mode detection validation
 - Training and process updates
 
 ---
 
-## Quick Reference: GOALS™ Minimum Thresholds
+## Quick Reference: GOALS Minimum Thresholds
 
 **For Healthcare AI Production:**
 
@@ -1144,14 +1155,14 @@ Sarah summarized the path forward. "We need to move from 15/25 to 21/25 in the n
 | Solid | 4/5 | Foundation for all others |
 | **Total** | **21/25** | Below this = high failure risk |
 
----
+<!-- pagebreak -->
 
 ## Online Resources
 
 Visit **trustbeforeintelligence.ai/tools** for:
-- **GOALS™ Readiness Checker** - Interactive 30-question assessment based on the checklist below, with PDF report and healthcare threshold validation
+- **GOALS Readiness Checker** - Interactive 30-question assessment based on the checklist below, with PDF report and healthcare threshold validation
 - **Vendor Advisor** - Personalized vendor recommendations for each layer
-- **Compliance Navigator** - HIPAA and regulatory requirements mapped to GOALS™ dimensions
+- **Compliance Navigator** - HIPAA and regulatory requirements mapped to GOALS dimensions
 - **Trust Patterns** - Failure mode detection and prevention strategies
 - **Figures Gallery** - High-resolution versions of all figures at trustbeforeintelligence.ai/figures
 
@@ -1159,7 +1170,7 @@ Visit **trustbeforeintelligence.ai/tools** for:
 
 ## Self-Assessment Checklist
 
-Use this checklist to evaluate your organization's GOALS™ readiness. An interactive version is available at **trustbeforeintelligence.ai/goals-assessment**.
+Use this checklist to evaluate your organization's GOALS readiness. An interactive version is available at **trustbeforeintelligence.ai/goals-assessment**.
 
 ### Governance Self-Assessment
 
@@ -1267,6 +1278,5 @@ Use this checklist to evaluate your organization's GOALS™ readiness. An intera
 ---
 
 **© 2025-2026 Colaberry Inc. All Rights Reserved.**
-**INPACT™ and GOALS™ are trademarks of Colaberry Inc.**
 
 *Acronyms and key terms are defined in the Glossary.*

@@ -14,7 +14,7 @@
 
 Marcus didn't hesitate. "LLM provider goes down. Agents start hallucinating. A nurse gets bad information about a patient's medication."
 
-Sarah nodded. They'd spent 10 weeks building the architecture. Seven layers. Three agents. Eighty-six on the INPACT™ scale. All the checkboxes checked.
+Sarah nodded. They'd spent 10 weeks building the architecture. Seven layers. Three agents. Eighty-six on the INPACT scale. All the checkboxes checked.
 
 But checkboxes don't answer phones at 2 AM.
 
@@ -42,7 +42,7 @@ Marcus pulled up a document. It was three pages long. By Monday morning, it woul
 
 ### 1.1 The Production Readiness Decision
 
-You've completed the hardest part. Chapters 4-6 built the architecture layer by layer. Chapter 10 executed the 90-day roadmap. Chapter 11 selected technologies for each layer. Your INPACT™ score has climbed from wherever you started toward the threshold that signals agent-readiness: typically 80+ for standard enterprise deployments, 86+ for high-stakes environments.
+You've completed the hardest part. Chapters 4-6 built the architecture layer by layer. Chapter 10 executed the 90-day roadmap. Chapter 11 selected technologies for each layer. Your INPACT score has climbed from wherever you started toward the threshold that signals agent-readiness: typically 80+ for standard enterprise deployments, 86+ for high-stakes environments.
 
 But building isn't operating. The gap between "architecture complete" and "production ready" has derailed more agent initiatives than infrastructure gaps ever did. Organizations celebrate Week 10 architecture milestones only to stumble in Week 11 pilots. The Architecture of Trust needs operational discipline to deliver sustained value.
 
@@ -68,11 +68,11 @@ Production readiness isn't a feeling. It's a measurable state. Validate against 
 
 Throughout this chapter, reference benchmarks are drawn from Echo Health Systems, the pedagogical case study used in this book. Adjust these numbers based on your industry, use case, and risk tolerance. Part 6 consolidates Echo's complete results for easy reference.
 
-**Pillar 1: INPACT™ Readiness (5 Criteria)**
+**Pillar 1: INPACT Readiness (5 Criteria)**
 
-| # | Criterion | INPACT™ Need | How to Measure | Generic Target | High-Stakes Target |
+| # | Criterion | INPACT Need | How to Measure | Generic Target | High-Stakes Target |
 |---|-----------|--------------|----------------|----------------|-------------------|
-| 1 | INPACT™ Score | All 6 | Chapter 9 assessment | ≥80/100 | ≥86/100 |
+| 1 | INPACT Score™ | All 6 | Chapter 9 assessment | ≥80/100 | ≥86/100 |
 | 2 | Response Time | I (Instant) | Load testing, APM traces | <10s P95 | <5s P95 |
 | 3 | NLU Accuracy | N (Natural) | Validation set testing | ≥80% | ≥85% |
 | 4 | HITL Escalation | P (Permitted) | Governance logs | <20% | <15% |
@@ -106,9 +106,9 @@ Architecture criteria are typically pass/fail. If you've followed the 90-day roa
 
 ---
 
-**Pillar 3: GOALS™ Readiness (5 Criteria)**
+**Pillar 3: GOALS Readiness (5 Criteria)**
 
-| # | Criterion | GOALS™ | How to Measure | Generic Target | High-Stakes Target |
+| # | Criterion | GOALS | How to Measure | Generic Target | High-Stakes Target |
 |---|-----------|--------|----------------|----------------|-------------------|
 | 11 | Access Control + Audit | G (Governance) | Policy testing | <50ms eval | <10ms eval |
 | 12 | Dashboards Active | O (Observability) | Dashboard review | Near real-time | Real-time |
@@ -139,7 +139,7 @@ Production operations require ongoing monitoring across all three pillars. Here'
 
 ---
 
-**INPACT™ Operational Metrics**
+**INPACT Operational Metrics**
 
 | Dimension | What to Monitor | Generic Target | High-Stakes Target | Check Frequency |
 |-----------|-----------------|----------------|-------------------|-----------------|
@@ -153,7 +153,7 @@ Production operations require ongoing monitoring across all three pillars. Here'
 Select targets based on your industry requirements and risk tolerance. High-stakes environments should use the stricter targets.
 
 <!-- pagebreak -->
-**GOALS™ Operational Metrics**
+**GOALS Operational Metrics**
 
 | Dimension | What to Monitor | Generic Target | High-Stakes Target | Check Frequency |
 |-----------|-----------------|----------------|-------------------|-----------------|
@@ -319,7 +319,7 @@ Agent improvements require validation against real user behavior. A/B testing co
 |---------|---------------|
 | Traffic split | 50/50 between versions |
 | Duration | Minimum 1 week (statistical significance) |
-| Metrics | All INPACT™ dimensions + user satisfaction |
+| Metrics | All INPACT dimensions + user satisfaction |
 | Rollback | Automatic if challenger shows >5% regression |
 
 **Metrics to Track**
@@ -328,8 +328,8 @@ Every A/B test should measure impact across the Architecture of Trust:
 
 | Pillar | Metrics | Threshold for Winner |
 |--------|---------|---------------------|
-| INPACT™ | Accuracy, latency, escalation rate | >2% improvement |
-| GOALS™ | SLA compliance, error rate | No regression |
+| INPACT | Accuracy, latency, escalation rate | >2% improvement |
+| GOALS | SLA compliance, error rate | No regression |
 | User | Satisfaction score, task completion | >5% improvement |
 
 <!-- pagebreak -->
@@ -354,7 +354,7 @@ A prompt refinement test (v1.1 vs v1.2) for a scheduling agent:
 |---------|-------------|------------|
 | Insufficient duration | False positives | Minimum 1 week, 1,000+ queries |
 | Ignoring user segments | Hidden regressions | Segment analysis by role, shift |
-| Single metric focus | Unbalanced optimization | Track all INPACT™ dimensions |
+| Single metric focus | Unbalanced optimization | Track all INPACT dimensions |
 | No rollback plan | Extended exposure to bugs | Automatic rollback triggers |
 
 ---
@@ -484,7 +484,7 @@ Service Level Agreements define your commitments to users. Without explicit SLAs
 
 **Three-Pillar SLA Framework**
 
-| SLA | Target | INPACT™ | GOALS™ | Measurement |
+| SLA | Target | INPACT | GOALS | Measurement |
 |-----|--------|---------|--------|-------------|
 | Availability | 99.5% uptime | I | A | Monthly uptime calculation |
 | Performance | <5s P95 response | I | A | APM percentile tracking |
@@ -527,13 +527,13 @@ Effective alerting balances sensitivity with noise. Too few alerts miss problems
 | Priority | Impact | Response Time | Example |
 |----------|--------|---------------|---------|
 | P0 | All agents down, data breach | <5 minutes | LLM API complete failure |
-| P1 | Major INPACT™ degradation | <30 minutes | Accuracy below 80% |
+| P1 | Major INPACT degradation | <30 minutes | Accuracy below 80% |
 | P2 | Single layer or agent affected | <4 hours | CDC lag exceeding 5 minutes |
 | P3 | No immediate user impact | Next business day | Non-critical log errors |
 
 **Alert Configuration by Pillar**
 
-**INPACT™ Alerts:**
+**INPACT Alerts:**
 
 | Need | P1 Threshold | P2 Threshold | P3 Threshold |
 |------|--------------|--------------|--------------|
@@ -559,7 +559,7 @@ Effective alerting balances sensitivity with noise. Too few alerts miss problems
 | L7 Orchestration | Agent coordination failure | Handoff latency > 5s |
 
 
-**GOALS™ Alerts:**
+**GOALS Alerts:**
 
 | Dimension | P1 Trigger | P2 Trigger |
 |-----------|------------|------------|
@@ -609,13 +609,13 @@ Map incident to affected pillars and layers:
 
 | Question | Purpose |
 |----------|---------|
-| Which INPACT™ needs affected? | Scope user impact |
+| Which INPACT needs affected? | Scope user impact |
 | Which layers involved? | Identify root cause area |
-| Which GOALS™ dimensions degraded? | Assess operational impact |
+| Which GOALS dimensions degraded? | Assess operational impact |
 
 **Three-Pillar Incident Mapping**
 
-| Incident Type | INPACT™ | Layer | GOALS™ | Initial Response |
+| Incident Type | INPACT | Layer | GOALS | Initial Response |
 |---------------|---------|-------|--------|------------------|
 | LLM API outage | I, N | L4 | A | Failover to backup |
 | Database failure | I, C | L1-L2 | A, S | Promote replica |
@@ -674,7 +674,7 @@ Post-mortems prevent repeat incidents. Conduct post-mortems within 48 hours of P
 **1. Summary**
 - Incident description (1-2 sentences)
 - Duration (detection to resolution)
-- Pillars affected: INPACT™ [which], Layers [which], GOALS™ [which]
+- Pillars affected: INPACT [which], Layers [which], GOALS [which]
 
 **2. Timeline**
 - Detection time and method
@@ -685,9 +685,9 @@ Post-mortems prevent repeat incidents. Conduct post-mortems within 48 hours of P
 
 | Pillar | Impact | Metrics |
 |--------|--------|---------|
-| INPACT™ | Which needs degraded, by how much | Accuracy dropped to X%, latency increased to Y |
+| INPACT | Which needs degraded, by how much | Accuracy dropped to X%, latency increased to Y |
 | Architecture | Which layers failed | L4 offline for 18 minutes |
-| GOALS™ | Operational impact | Availability at 99.2% for incident period |
+| GOALS | Operational impact | Availability at 99.2% for incident period |
 
 **4. Root Cause Analysis**
 
@@ -709,7 +709,7 @@ Post-mortems prevent repeat incidents. Conduct post-mortems within 48 hours of P
 
 **Example P1 Post-Mortem**
 
-**Summary:** LLM API degradation caused 18-minute accuracy drop to 72%. Pillars affected: INPACT™ (I, N), Layer 4, GOALS™ (A, S).
+**Summary:** LLM API degradation caused 18-minute accuracy drop to 72%. Pillars affected: INPACT (I, N), Layer 4, GOALS (A, S).
 
 **Root Cause:** LLM provider experienced regional degradation. Backup region not configured for automatic failover.
 
@@ -721,7 +721,7 @@ Post-mortems prevent repeat incidents. Conduct post-mortems within 48 hours of P
 
 ## Part 4: Continuous Improvement
 
-The Architecture of Trust isn't a destination. It's a foundation for continuous improvement. Your INPACT™ score shouldn't stop at 86/100. Through systematic weekly improvement cycles, organizations can achieve 3-5% accuracy gains in the first month. This section provides the processes that drive ongoing improvement.
+The Architecture of Trust isn't a destination. It's a foundation for continuous improvement. Your INPACT score shouldn't stop at 86/100. Through systematic weekly improvement cycles, organizations can achieve 3-5% accuracy gains in the first month. This section provides the processes that drive ongoing improvement.
 
 ---
 
@@ -735,7 +735,7 @@ Structured weekly cycles transform operational data into agent improvements. A f
 ![Figure 12.5: Five-Day Improvement Cycle](figures/figure-12-5.png)
 **The Five-Day Cycle**
 
-| Day | Activity | INPACT™ Focus | Layer Focus | GOALS™ Focus |
+| Day | Activity | INPACT Focus | Layer Focus | GOALS Focus |
 |-----|----------|---------------|-------------|--------------|
 | Monday | Review metrics | All 6 dimensions | Health checks | O (Observability) |
 | Tuesday | Analyze failures | N (Natural) | L3-L4 | S (Solid) |
@@ -744,7 +744,7 @@ Structured weekly cycles transform operational data into agent improvements. A f
 | Friday | A/B test launch | Compare versions | Monitor | All |
 
 **Key Activities by Day:**
-- **Monday:** Review INPACT™ scores, error logs, user feedback, cost metrics
+- **Monday:** Review INPACT scores, error logs, user feedback, cost metrics
 - **Tuesday:** Cluster failures, categorize by root cause, map to layers, estimate complexity
 - **Wednesday:** Propose fixes (prompt refinement, few-shot additions, retrieval tuning, semantic updates)
 - **Thursday:** Implement with appropriate review (1-2 reviewers based on change type)
@@ -818,11 +818,11 @@ Agent performance degrades over time. Data distributions shift. User expectation
 
 | Pillar | Drift Type | Detection Method | Prevention |
 |--------|-----------|------------------|------------|
-| INPACT™ | Accuracy drift | Weekly validation testing | Monthly retraining |
+| INPACT | Accuracy drift | Weekly validation testing | Monthly retraining |
 | Architecture | Performance drift | Daily metrics baselines | Auto-scaling, alerts |
-| GOALS™ | Operational drift | Weekly score tracking | Monthly audit |
+| GOALS | Operational drift | Weekly score tracking | Monthly audit |
 
-**INPACT™ Drift Detection**
+**INPACT Drift Detection**
 
 | Dimension | Baseline | Warning | Action Trigger |
 |-----------|----------|---------|----------------|
@@ -867,13 +867,13 @@ AIXcelerator is a complete platform that accelerates agent infrastructure deploy
 
 **Five Core Components**
 
-| Component | INPACT™ Coverage | Layers Addressed | Key Benefit |
+| Component | INPACT Coverage | Layers Addressed | Key Benefit |
 |-----------|------------------|-----------------|-------------|
 | Multi-Agent Core | All 6 needs | L4, L7 | Production-validated orchestration |
 | MCP Server | C (Contextual) | L1-L2 |  Pre-built connectors |
 | Agent Syndication Hub | N (Natural) | L7 | Reusable agent patterns |
 | Governance Engine | P, T | L5 | Compliance-ready from day one |
-| Assessment Platform | All 6 | L6 | Continuous INPACT™ measurement |
+| Assessment Platform | All 6 | L6 | Continuous INPACT measurement |
 
 **Multi-Agent Core**
 
@@ -910,8 +910,8 @@ Enterprise-grade access control:
 **Assessment Platform**
 
 Continuous measurement:
-- Automated INPACT™ scoring
-- Real-time GOALS™ dashboards
+- Automated INPACT scoring
+- Real-time GOALS dashboards
 - Drift detection
 - Improvement recommendations
 
@@ -924,7 +924,7 @@ Three paths to evaluate and adopt AIXcelerator:
 
 **Option 1: Self-Assessment**
 
-Start with free INPACT™ assessment:
+Start with free INPACT assessment:
 - 30-minute online assessment
 - Automated scoring and gap analysis
 - Personalized recommendations
@@ -970,16 +970,16 @@ This section consolidates Echo's results for easy reference.
 
 | Criterion Category | Result |
 |-------------------|--------|
-| INPACT™ Criteria (5) | 5/5 passed |
+| INPACT Criteria (5) | 5/5 passed |
 | Architecture Criteria (5) | 5/5 passed |
-| GOALS™ Criteria (5) | 5/5 passed |
+| GOALS Criteria (5) | 5/5 passed |
 | **Total Score** | **15/15** |
 
 **Key Metrics at Launch**
 
 | Metric | Week 10 Value |
 |--------|---------------|
-| INPACT™ Score | 86/100 |
+| INPACT Score™ | 86/100 |
 | Response Time (P95) | 2.2 seconds |
 | NLU Accuracy | 83% (reached 85% Week 11) |
 | HITL Escalation Rate | 8% |
@@ -1007,7 +1007,7 @@ This section consolidates Echo's results for easy reference.
 | First-Year ROI | 209% |
 | 18-Month ROI | 477% |
 
-*Use the INPACT™ Assessment at trustbeforeintelligence.ai/assessment to benchmark your organization against Echo's results.*
+*Use the INPACT Assessment at trustbeforeintelligence.ai/assessment to benchmark your organization against Echo's results.*
 
 ---
 
@@ -1015,7 +1015,7 @@ This section consolidates Echo's results for easy reference.
 
 You've completed the journey.
 
-The INPACT™ framework defines what agents need. The 7-Layer Architecture delivers those needs. The GOALS™ framework sustains success. Together, they form the Architecture of Trust that separates the 5% who succeed from the 95% who fail.
+The INPACT Framework™ defines what agents need. The 7-Layer Architecture delivers those needs. The GOALS Framework™ sustains success. Together, they form the Architecture of Trust that separates the 5% who succeed from the 95% who fail.
 
 Whether you build from scratch following the patterns in Chapters 4-12 or accelerate with AIXcelerator, you now have the knowledge to join the 5% who succeed with enterprise AI agents.
 
@@ -1089,6 +1089,5 @@ Trust before intelligence. Architecture before agents. The three pillars are you
 ---
 
 **© 2025-2026 Colaberry Inc. All Rights Reserved.**
-INPACT™ and GOALS™ are trademarks of Colaberry Inc.
 
 *Acronyms and key terms are defined in the Glossary.*

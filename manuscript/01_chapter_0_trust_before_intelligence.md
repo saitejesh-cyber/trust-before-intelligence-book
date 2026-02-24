@@ -74,13 +74,13 @@ MIT's recommendation was clear: *"Create a strong data foundation. Prioritize lo
 
 Before we can answer that, you need to meet someone who faced this crisis head-on.
 
-> **Your Turn:** Where does your infrastructure stand? The 15-minute INPACT™ assessment at **trustbeforeintelligence.ai/assessment** measures your readiness across six dimensions and generates a personalized gap analysis. Consider taking it now, your results will make the frameworks ahead immediately actionable.
+> **Your Turn:** Where does your infrastructure stand? The 15-minute INPACT assessment at **trustbeforeintelligence.ai/assessment** measures your readiness across six dimensions and generates a personalized gap analysis. Consider taking it now, your results will make the frameworks ahead immediately actionable.
 
 ---
 
 ## Meet Echo Health Systems: The $2M Wake-Up Call
 
-Sarah Cedao stared at her screen. The INPACT™ assessment had finished processing.
+Sarah Cedao stared at her screen. The INPACT assessment had finished processing.
 
 28 out of 100.
 
@@ -145,15 +145,15 @@ Sarah didn't need another framework. She needed an **architecture**, a blueprint
 
 The Architecture of Trust provides that blueprint through three integrated pillars:
 
-1. **INPACT™** - What agents need (trust requirements)
+1. **INPACT** - What agents need (trust requirements)
 2. **7-Layer Architecture** - How to build it (technical blueprint)
-3. **GOALS™** - How to measure success (operational targets)
+3. **GOALS** - How to measure success (operational targets)
 
-These pillars aren't implemented independently. They reinforce each other: INPACT™ defines needs that drive trust and architecture decisions. The 7-Layer Architecture delivers infrastructure that fulfills those needs. GOALS™ validates that both remain structurally sound as the system scales to continuously reinforce trust.
+These pillars aren't implemented independently. They reinforce each other: INPACT defines needs that drive trust and architecture decisions. The 7-Layer Architecture delivers infrastructure that fulfills those needs. GOALS validates that both remain structurally sound as the system scales to continuously reinforce trust.
 
 Let's explore each pillar of the architecture.
 
-### Pillar 1: INPACT™ - What Agents Need
+### Pillar 1: INPACT - What Agents Need
 
 The first pillar answers the fundamental question: What does infrastructure need to deliver for agents to earn user trust?
 
@@ -161,11 +161,11 @@ You just saw what happens when these needs go unmet. Echo's 28/100 score measure
 
 Six needs. All six must be fulfilled for agents to earn trust. When any single need goes unmet, users abandon the agent, regardless of how sophisticated the AI model is.
 
-Chapter 2 details each INPACT™ dimension and shows how to assess your own infrastructure against them.
+Chapter 2 details each INPACT dimension and shows how to assess your own infrastructure against them.
 
 
 ![Diagram](figures/01_chapter_0_trust_before_intelligence-diagram-03.png)
-**Figure 0.2: INPACT™ Framework - Six Agent Needs Leading to Trust**
+**Figure 0.2: INPACT Framework™ - Six Agent Needs Leading to Trust**
 
 **Scoring:** Each dimension scores 0-6, yielding a 0-36 raw score, then normalized to 0-100 total score. Below 50 means not ready for production agents. Echo's 28 told Sarah exactly where to focus.
 
@@ -185,11 +185,11 @@ Seven layers, each serving a distinct function:
 6. **Observability Layer**: Distributed tracing, cost tracking, audit logging
 7. **Agent Orchestration**: Multi-agent coordination, feedback loops, continuous learning
 
-Each layer maps to INPACT™ needs. Skip a layer, and the architecture collapses. Chapters 4-6 construct each layer in detail, showing exactly how Echo built theirs in 90 days.
+Each layer maps to INPACT needs. Skip a layer, and the architecture collapses. Chapters 4-6 construct each layer in detail, showing exactly how Echo built theirs in 90 days.
 
 This is the second pillar of the Architecture of Trust - the technical blueprint for fulfilling agent needs.
 
-### Pillar 3: GOALS™ - How to Measure Success
+### Pillar 3: GOALS - How to Measure Success
 
 The third pillar answers: How do you validate that the architecture remains structurally sound in production?
 
@@ -201,7 +201,7 @@ Infrastructure isn't built once and forgotten. It requires continuous validation
 - **L - Lexicon:** Semantic interoperability, shared ontologies, consistent terminology
 - **S - Solid:** Data quality validation, schema enforcement, consistency checks
 
-GOALS™ isn't just implemented once, it's measured continuously. Chapter 7 details each dimension and shows how Echo used them to validate their transformation.
+GOALS isn't just implemented once, it's measured continuously. Chapter 7 details each dimension and shows how Echo used them to validate their transformation.
 
 This is the third pillar of the Architecture of Trust - the operational framework ensuring the architecture remains sound as it scales.
 
@@ -211,23 +211,23 @@ This is the third pillar of the Architecture of Trust - the operational framewor
 
 This integration creates what we call "The Architecture of Trust" - not three separate frameworks, but three pillars of a unified structure, each reinforcing the others:
 
-- **INPACT™ → 7-Layer:** Needs drive architecture decisions. "Instant" (I) requires Layer 2 real-time fabric. "Natural" (N) requires Layers 3-4 semantic and graph layers.
+- **INPACT → 7-Layer:** Needs drive architecture decisions. "Instant" (I) requires Layer 2 real-time fabric. "Natural" (N) requires Layers 3-4 semantic and graph layers.
 
-- **7-Layer → GOALS™:** Infrastructure fulfills measurement. Layer 6 observability fulfills GOALS™ monitoring. Layer 2 data fabric fulfills GOALS™ soundness validation.
+- **7-Layer → GOALS:** Infrastructure fulfills measurement. Layer 6 observability fulfills GOALS monitoring. Layer 2 data fabric fulfills GOALS soundness validation.
 
-- **GOALS™ → INPACT™:** Measurement validates trust. Governance (G) confirms Permitted (P) fulfillment. Observability (O) validates Transparent (T) compliance.
+- **GOALS → INPACT:** Measurement validates trust. Governance (G) confirms Permitted (P) fulfillment. Observability (O) validates Transparent (T) compliance.
 
 
-This architecture rests on three pillars working in harmony. Each pillar supports and validates the others. INPACT™ defines what agents need. Those needs drive 7-Layer architecture decisions. The 7-Layer Architecture shows how to build infrastructure that delivers INPACT™ needs. GOALS™ validates that both pillars remain structurally sound as the system scales to production.
+This architecture rests on three pillars working in harmony. Each pillar supports and validates the others. INPACT defines what agents need. Those needs drive 7-Layer architecture decisions. The 7-Layer Architecture shows how to build infrastructure that delivers INPACT needs. GOALS validates that both pillars remain structurally sound as the system scales to production.
 
 ![Diagram](figures/01_chapter_0_trust_before_intelligence-diagram-04.png)
 **Figure 0.3: The Architecture of Trust Triad - Three Pillars Working Together**
 
 **The Trust Equation:**
 
-> **TRUSTED AGENTS = INPACT™ + 7-Layer Architecture + GOALS™**
+> **TRUSTED AGENTS = INPACT + 7-Layer Architecture + GOALS**
 
-This equation captures the book's thesis. Chapters 1-2 define INPACT™ - what agents need. Chapters 4-6 construct the 7-Layer Architecture - how to build it. Chapter 7 establishes GOALS™ - how to sustain it. By Chapter 8, Echo proves all three.
+This equation captures the book's thesis. Chapters 1-2 define INPACT - what agents need. Chapters 4-6 construct the 7-Layer Architecture - how to build it. Chapter 7 establishes GOALS - how to sustain it. By Chapter 8, Echo proves all three.
 
 **Echo's transformation proves the architecture works:**
 
@@ -244,9 +244,9 @@ From infrastructure chaos to agent-ready in 10 weeks. Not because they found a m
 
 The remainder of this book builds this architecture, pillar by pillar:
 
-- **Chapters 1-3** establish the foundation - why infrastructure readiness matters, what INPACT™ measures, how the BI→Agent transformation unfolds
+- **Chapters 1-3** establish the foundation - why infrastructure readiness matters, what INPACT measures, how the BI→Agent transformation unfolds
 - **Chapters 4-6** construct the second pillar layer by layer - the complete 7-Layer Architecture from storage to orchestration
-- **Chapter 7** builds the third pillar - GOALS™ operational framework; **Chapters 8-10** provide assessment methodology and the 90-day execution roadmap
+- **Chapter 7** builds the third pillar - the GOALS Framework™ for operational excellence; **Chapters 8-10** provide assessment methodology and the 90-day execution roadmap
 - **Chapters 11-12** complete the architecture - technology selection and production operations
 
 Sarah Cedao needed an architecture. Chapter 1 shows you why infrastructure isn't ready, setting up the need for the Architecture of Trust that transforms chaos into agent-ready infrastructure in 90 days.
@@ -270,6 +270,5 @@ Sarah Cedao needed an architecture. Chapter 1 shows you why infrastructure isn't
 ---
 
 **© 2025-2026 Colaberry Inc. All Rights Reserved.**
-INPACT™ and GOALS™ are trademarks of Colaberry Inc.
 
 *Acronyms and key terms are defined in the Glossary.*

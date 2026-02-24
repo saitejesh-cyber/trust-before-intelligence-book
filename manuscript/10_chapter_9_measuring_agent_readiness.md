@@ -47,21 +47,21 @@ There's a simpler path. A single assessment can measure everything that matters.
 
 The Architecture of Trust integrates three frameworks into one coherent system. Understanding this integration reveals why one assessment delivers comprehensive insight:
 
-**INPACT™ defines what agents need.** The six dimensions (Instant, Natural, Permitted, Adaptive, Contextual, and Transparent) capture the fundamental requirements any AI agent must have to operate reliably in an enterprise environment. For complete framework details, see Chapters 2 and 3.
+**INPACT defines what agents need.** The six dimensions (Instant, Natural, Permitted, Adaptive, Contextual, and Transparent) capture the fundamental requirements any AI agent must have to operate reliably in an enterprise environment. For complete framework details, see Chapters 2 and 3.
 
-**The 7-Layer Architecture delivers those needs.** Each layer addresses specific INPACT™ dimensions. For complete 7-Layer details, see Chapters 4, 5, and 6.
+**The 7-Layer Architecture delivers those needs.** Each layer addresses specific INPACT dimensions. For complete 7-Layer details, see Chapters 4, 5, and 6.
 
-**GOALS™ ensures sustainable operation.** Five operational targets (Governance, Observability, Availability, Lexicon, and Solid) translate infrastructure capability into organizational outcomes. *For complete GOALS™ framework detail, see Chapter 7.*
+**GOALS ensures sustainable operation.** Five operational targets (Governance, Observability, Availability, Lexicon, and Solid) translate infrastructure capability into organizational outcomes. *For complete GOALS Framework™ detail, see Chapter 7.*
 
-These three frameworks form a chain of dependency. INPACT™ requirements drive architecture decisions. Architecture capabilities enable operational excellence. Operational excellence delivers the trust that makes agent adoption successful.
+These three frameworks form a chain of dependency. INPACT requirements drive architecture decisions. Architecture capabilities enable operational excellence. Operational excellence delivers the trust that makes agent adoption successful.
 
 **Figure 9.2: Architecture of Trust Assessment Flow**
 
 
 ![Figure 9.2: Architecture of Trust Assessment Flow](figures/figure-9-2.png)
-The integration principle is simple: **if you assess INPACT™ comprehensively, you've assessed everything.**
+The integration principle is simple: **if you assess INPACT comprehensively, you've assessed everything.**
 
-When you measure whether your infrastructure delivers *Instant* responses, you're simultaneously assessing Layer 1 (storage performance), Layer 2 (data freshness), and Layer 4 (caching efficiency). When you evaluate *Permitted* access control, you're measuring Layer 5 (governance) and Layer 6 (audit trails). Every INPACT™ dimension maps to specific layers and indicates GOALS™ readiness.
+When you measure whether your infrastructure delivers *Instant* responses, you're simultaneously assessing Layer 1 (storage performance), Layer 2 (data freshness), and Layer 4 (caching efficiency). When you evaluate *Permitted* access control, you're measuring Layer 5 (governance) and Layer 6 (audit trails). Every INPACT dimension maps to specific layers and indicates GOALS readiness.
 
 This is why 36 questions can measure your entire agent readiness posture. Not because the assessment is shallow, but because the questions target root causes that ripple through the entire system.
 
@@ -69,7 +69,7 @@ This is why 36 questions can measure your entire agent readiness posture. Not be
 
 By the end of this chapter, you will have:
 
-1. **Your INPACT™ score (0-100)**: A single number capturing your current agent readiness
+1. **Your INPACT score (0-100)**: A single number capturing your current agent readiness
 2. **Dimension-by-dimension breakdown**: Which of the six needs your infrastructure fulfills and which remain gaps
 3. **Layer priorities**: Which of the seven architecture layers need the most investment
 4. **Timeline guidance**: How long your transformation will take based on your starting point
@@ -83,11 +83,11 @@ With the assessment's structure established, you need to understand what the num
 
 ### 36 Questions, One Answer
 
-The INPACT™ scoring system provides a standardized, repeatable method for measuring agent readiness. Every organization, regardless of industry, size, or current technology stack, can apply the same scale and achieve comparable results.
+The INPACT scoring system provides a standardized, repeatable method for measuring agent readiness. Every organization, regardless of industry, size, or current technology stack, can apply the same scale and achieve comparable results.
 
 **Scoring Scale (1-6 per dimension)**
 
-Each INPACT™ dimension is scored on a six-point scale:
+Each INPACT dimension is scored on a six-point scale:
 
 | Score | Label | Description | Infrastructure State |
 |-------|-------|-------------|---------------------|
@@ -102,11 +102,11 @@ This scale captures meaningful distinctions. The difference between a 3 and a 4 
 
 **Calculation Method**
 
-The INPACT™ score calculation is simple:
+The INPACT score calculation is simple:
 
 1. **Score each dimension**: Rate your infrastructure 1-6 on each of the six dimensions (I, N, P, A, C, T)
 2. **Sum the raw scores**: Total = I + N + P + A + C + T (range: 6-36)
-3. **Calculate percentage**: INPACT™ Score = (Total ÷ 36) × 100
+3. **Calculate percentage**: INPACT Score™ = (Total ÷ 36) × 100
 
 For example, Echo Health Systems' Week 0 assessment scored 10/36 points (28/100), with five dimensions at critical levels (1-2/6) and only Contextual reaching moderate (3/6). Chapter 2 details the full breakdown.
 
@@ -134,26 +134,26 @@ These thresholds aren't arbitrary. They emerge from Colaberry's pattern recognit
 
 ### Six Dimensions & Seven Layers
 
-INPACT™ covers the full architecture. Each dimension doesn't exist in isolation. It requires specific infrastructure layers to be fulfilled. When you score an INPACT™ dimension, you're simultaneously assessing the health of those underlying layers.
+INPACT covers the full architecture. Each dimension doesn't exist in isolation. It requires specific infrastructure layers to be fulfilled. When you score an INPACT dimension, you're simultaneously assessing the health of those underlying layers.
 
-**Figure 9.4: INPACT™ Dimension to Layer Mapping**
+**Figure 9.4: INPACT Dimension to Layer Mapping**
 
 
-![Figure 9.4: INPACT™ Dimension to Layer Mapping](figures/figure-9-4.png)
+![Figure 9.4: INPACT Dimension to Layer Mapping](figures/figure-9-4.png)
 **Coverage Verification**: This mapping touches all seven layers. L7 (Orchestration) emerges when multiple dimensions reach production thresholds simultaneously. When you discover a low score in a particular dimension, you immediately know which layers require investment.
 
 
 <!-- pagebreak -->
 
-### INPACT™ & GOALS™: The Connection
+### INPACT & GOALS: The Connection
 
-The INPACT™ assessment measures infrastructure readiness: can you *build* agents? The GOALS™ framework measures operational readiness: can you *run* agents? These are different questions, but they're connected.
+The INPACT assessment measures infrastructure readiness: can you *build* agents? The GOALS Framework™ measures operational readiness: can you *run* agents? These are different questions, but they're connected.
 
 ---
 
-**INPACT™ → GOALS™ Indicators**
+**INPACT → GOALS Indicators**
 
-| INPACT™ Dimension | GOALS™ Indicator | The Connection |
+| INPACT Dimension | GOALS Indicator | The Connection |
 |-------------------|------------------|----------------|
 | **P - Permitted** | G - Governance | ABAC policies, HITL workflows, and compliance controls constitute your governance capability |
 | **T - Transparent** | O - Observability | Audit trails, trace infrastructure, and monitoring dashboards enable organizational visibility |
@@ -161,7 +161,7 @@ The INPACT™ assessment measures infrastructure readiness: can you *build* agen
 | **N - Natural** | L - Language | Semantic accuracy and NLU quality define whether users and agents speak the same language |
 | **A + C + T** | S - Solid | Learning, context, and transparency combine to ensure reliable, trustworthy output |
 
-This mapping is *indicative*, not deterministic. A high INPACT™ score means your infrastructure *foundation* is strong, but operational excellence requires policies, procedures, training, and accountability structures that go beyond infrastructure. Chapter 8 detailed Echo's GOALS™ journey; Chapter 12 provides the operational playbook.
+This mapping is *indicative*, not deterministic. A high INPACT score means your infrastructure *foundation* is strong, but operational excellence requires policies, procedures, training, and accountability structures that go beyond infrastructure. Chapter 8 detailed Echo's GOALS journey; Chapter 12 provides the operational playbook.
 
 With the methodology clear, it's time to take the assessment.
 
@@ -284,7 +284,7 @@ Echo Health scored 28/100 on their initial assessment. That painful number told 
 
 ## Part 3: 28 to 89: Echo's Path
 
-Your INPACT™ score gains meaning through comparison. Echo Health Systems' transformation from 28/100 to 89/100 provides the definitive benchmark: a real progression through real infrastructure challenges with real investment decisions.
+Your INPACT score gains meaning through comparison. Echo Health Systems' transformation from 28/100 to 89/100 provides the definitive benchmark: a real progression through real infrastructure challenges with real investment decisions.
 
 This section establishes Echo's journey as your reference point. Whether you're starting higher or lower, Echo's experience illuminates what each score means in practice.
 
@@ -306,11 +306,11 @@ The score exposed painful truth: five dimensions at critical gaps (1-2), only C 
 
 Echo's progression from 28/100 to 89/100 followed a deliberate sequence. Each phase addressed specific dimensions, building capability that enabled subsequent phases.
 
-**Figure 9.5: Echo's 90-Day INPACT™ Transformation**
+**Figure 9.5: Echo's 90-Day INPACT Transformation**
 
 
-![Figure 9.5: Echo's 90-Day INPACT™ Transformation](figures/figure-9-5.png)
-**Echo's INPACT™ Progression: Milestone View**
+![Figure 9.5: Echo's 90-Day INPACT Transformation](figures/figure-9-5.png)
+**Echo's INPACT Progression: Milestone View**
 
 | Milestone | Week | Score | Key Achievement | Trust Band |
 |-----------|------|-------|-----------------|------------|
@@ -318,7 +318,7 @@ Echo's progression from 28/100 to 89/100 followed a deliberate sequence. Each ph
 | **Foundation** | 4 | 42/100 | L1-L2 operational, real-time data flowing | 🔴 Low Trust |
 | **Intelligence** | 7 | 67/100 | L3-L4 operational, semantic layer live | 🟠 Moderate Trust |
 | **Trust** | 10 | 86/100 | L5-L7 operational, governance complete | 🟢 High Trust |
-| **Operations** | 12 | 89/100 | GOALS™ validated, production stable | 🟢 High Trust |
+| **Operations** | 12 | 89/100 | GOALS validated, production stable | 🟢 High Trust |
 
 *For complete dimension-by-dimension progression and what drove each jump, see Chapter 8.*
 
@@ -368,7 +368,7 @@ Consider extended timeline (16+ weeks), AIXcelerator acceleration, or phased app
 
 ## Part 4: Breaking Down Your Score
 
-You have your INPACT™ score. You've seen how Echo progressed from 28 to 89. Now translate your specific results into action.
+You have your INPACT score. You've seen how Echo progressed from 28 to 89. Now translate your specific results into action.
 
 ---
 
@@ -426,7 +426,7 @@ Regardless of your overall score, your lowest-scoring dimensions reveal which la
 | **C (Contextual)** | L1, L2, L3 | Phase 1-2 |
 | **T (Transparent)** | L5, L6 | Phase 3 |
 
-*For detailed INPACT™-to-Layer mapping with technology recommendations, see Chapter 11, Section 1.1.*
+*For detailed INPACT-to-Layer mapping with technology recommendations, see Chapter 11, Section 1.1.*
 
 **Interpreting Multiple Low Dimensions**
 
@@ -445,7 +445,7 @@ If several dimensions score 1-2, prioritize based on dependencies: I and C first
 ## Bridge to Chapter 10
 
 You now have:
-- Your **INPACT™ score** (overall readiness)
+- Your **INPACT score** (overall readiness)
 - Your **trust band** (timeline and budget estimate)
 - Your **priority dimensions** (where to focus)
 - Your **priority layers** (from the Gap Prioritization Matrix)
@@ -462,12 +462,12 @@ Turn the page to build your plan.
 
 | Section | Key Takeaway |
 |---------|--------------|
-| **Part 1: Methodology** | One INPACT™ assessment measures all three pillars: needs, architecture, and operations |
+| **Part 1: Methodology** | One INPACT assessment measures all three pillars: needs, architecture, and operations |
 | **Part 2: The 36 Questions** | Complete self-assessment tool covering six dimensions with 1-6 scoring |
 | **Part 3: Echo's Benchmark** | 28→89 progression provides calibration for your own journey |
 | **Part 4: Interpretation** | Trust bands estimate timeline and budget; lowest dimensions determine focus |
 
-**Your INPACT™ Score**: ___/100
+**Your INPACT Score™**: ___/100
 
 **Your Trust Band**: _______________
 
@@ -478,6 +478,5 @@ Turn the page to build your plan.
 ---
 
 **© 2025-2026 Colaberry Inc. All Rights Reserved.**
-INPACT™ and GOALS™ are trademarks of Colaberry Inc.
 
 *Acronyms and key terms are defined in the Glossary.*

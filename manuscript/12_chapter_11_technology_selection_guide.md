@@ -14,7 +14,7 @@ Marcus asked about Pinecone's impressive demo: sub-50ms retrieval, slick UI.
 
 Marcus paused. "I didn't ask."
 
-"Then they're not on the list." She'd learned this lesson the hard way: INPACT™ first, GOALS™ second, verify integration. Impressive demos don't mean production-ready.
+"Then they're not on the list." She'd learned this lesson the hard way: INPACT first, GOALS second, verify integration. Impressive demos don't mean production-ready.
 
 ---
 
@@ -35,7 +35,7 @@ Marcus paused. "I didn't ask."
 
 ### 1.1 Your Assessment Drives Your Stack
 
-Your INPACT™ score from Chapter 9 determines your technology priorities. The mapping is direct:
+Your INPACT score from Chapter 9 determines your technology priorities. The mapping is direct:
 
 | Low Score | Priority Layers | Selection Focus |
 |-----------|-----------------|-----------------|
@@ -45,14 +45,14 @@ Your INPACT™ score from Chapter 9 determines your technology priorities. The m
 | **T (Transparent)** | L6 | LLM tracing, citation tracking, explainability |
 | **A or C** | L2, L4, L7 | Feedback loops, cross-system integration |
 
-*For complete INPACT™-to-Layer mapping, see Chapter 9, Part 1.3.*
+*For complete INPACT-to-Layer mapping, see Chapter 9, Part 1.3.*
 
 **Three Selection Principles**
 
 Every vendor evaluation follows three principles:
 
-1. **INPACT™-First**: Does the technology help agents meet the six fundamental needs?
-2. **GOALS™-Ready**: Can your team operate this technology with excellence?
+1. **INPACT-First**: Does the technology help agents meet the six fundamental needs?
+2. **GOALS-Ready**: Can your team operate this technology with excellence?
 3. **Layer-Aligned**: Does it fit the 7-Layer Architecture without gaps or overlaps?
 
 **Chapter Structure**
@@ -74,11 +74,11 @@ Every technology in a production stack must pass the same evaluation. Three pill
 
 
 ![Figure 11.2: The Three-Pillar Vendor Evaluation Framework](figures/figure-11-2.png)
-**Pillar 1: INPACT™ Agent Needs (Score Separately)**
+**Pillar 1: INPACT Agent Needs (Score Separately)**
 
-The first pillar asks: does this technology help agents meet the six fundamental needs? Each INPACT™ dimension translates into specific vendor evaluation questions:
+The first pillar asks: does this technology help agents meet the six fundamental needs? Each INPACT dimension translates into specific vendor evaluation questions:
 
-| INPACT™ Need | Vendor Evaluation Question | What to Look For |
+| INPACT Need | Vendor Evaluation Question | What to Look For |
 |--------------|---------------------------|------------------|
 | **I (Instant)** | Does it support <100ms queries? Real-time data access? | Sub-50ms response times, efficient caching, streaming support |
 | **N (Natural)** | Does it support NLU, semantic capabilities? | Vector embeddings, semantic search, terminology mapping |
@@ -87,9 +87,9 @@ The first pillar asks: does this technology help agents meet the six fundamental
 | **C (Contextual)** | Does it integrate with multiple sources? | API breadth, connector ecosystem, data federation |
 | **T (Transparent)** | Does it provide explainability, citations, compliance? | Audit trails, decision traces, regulatory support |
 
-Score each relevant dimension 1-6. Not every dimension applies to every vendor category. A vector database primarily addresses I (speed) and N (semantic), while a policy engine focuses on P (permitted) and T (transparent). Score only the dimensions relevant to that technology's purpose. *(For complete scoring rubrics, see the INPACT™ Practitioner Reference.)*
+Score each relevant dimension 1-6. Not every dimension applies to every vendor category. A vector database primarily addresses I (speed) and N (semantic), while a policy engine focuses on P (permitted) and T (transparent). Score only the dimensions relevant to that technology's purpose. *(For complete scoring rubrics, see the INPACT Practitioner Reference.)*
 
-**INPACT™ Vendor Score**: Sum of relevant dimensions (maximum 36 if all apply)
+**INPACT Vendor Score**: Sum of relevant dimensions (maximum 36 if all apply)
 
 **Pillar 2: Architecture Fit (Qualitative Check)**
 
@@ -102,11 +102,11 @@ The second pillar ensures the technology integrates cleanly into the 7-Layer Arc
 
 **Architecture Fit**: Pass/Fail based on layer alignment and integration quality
 
-**Pillar 3: GOALS™ Operations (Score Separately)**
+**Pillar 3: GOALS Operations (Score Separately)**
 
-The third pillar measures operational readiness. A technology might score perfectly on INPACT™ but fail if your team can't operate it effectively:
+The third pillar measures operational readiness. A technology might score perfectly on INPACT but fail if your team can't operate it effectively:
 
-| GOALS™ Dimension | Vendor Evaluation Question | What to Look For |
+| GOALS Dimension | Vendor Evaluation Question | What to Look For |
 |------------------|---------------------------|------------------|
 | **G (Governance)** | Does it support policy enforcement, compliance? | Industry certifications (SOC2, ISO27001, etc.), audit features |
 | **O (Observability)** | Does it provide monitoring, tracing, dashboards? | Built-in metrics, logging quality, alerting integration |
@@ -114,13 +114,13 @@ The third pillar measures operational readiness. A technology might score perfec
 | **L (Lexicon)** | Does it support semantic accuracy, terminology? | API quality, SDK maturity, integration breadth |
 | **S (Solid)** | Is it reliable, consistent, high-quality? | Production track record, error handling, data integrity |
 
-Score each dimension 1-5 (GOALS™ uses 5-point scale).
+Score each dimension 1-5 (GOALS uses 5-point scale).
 
-**GOALS™ Vendor Score**: Sum of relevant dimensions (maximum 25)
+**GOALS Vendor Score**: Sum of relevant dimensions (maximum 25)
 
 **Why Separate Scores Matter**
 
-INPACT™ measures what infrastructure must *provide* to agents. GOALS™ measures how you *operate* that infrastructure. A vendor scoring high on INPACT™ but low on GOALS™ delivers impressive technology your team can't sustain. Both scores must exceed minimum thresholds independently.
+INPACT measures what infrastructure must *provide* to agents. GOALS measures how you *operate* that infrastructure. A vendor scoring high on INPACT but low on GOALS delivers impressive technology your team can't sustain. Both scores must exceed minimum thresholds independently.
 
 
 **What This Means for Your Vendor Search**
@@ -128,8 +128,8 @@ INPACT™ measures what infrastructure must *provide* to agents. GOALS™ measur
 Your three-pillar scores become your vendor conversation framework. When evaluating any technology:
 
 1. **Filter first**: Compliance requirements eliminate vendors before technical evaluation
-2. **Score INPACT™**: Does it meet agent needs for its layer?
-3. **Score GOALS™**: Can your team operate it?
+2. **Score INPACT**: Does it meet agent needs for its layer?
+3. **Score GOALS**: Can your team operate it?
 4. **Verify architecture fit**: Does it integrate with adjacent layers?
 
 This methodology applies regardless of which specific vendors you evaluate. The vendor landscape changes; the evaluation criteria remain constant.
@@ -212,7 +212,7 @@ Partnering makes sense when:
 
 ## Part 2: Layer-by-Layer Selection Criteria
 
-This section provides selection criteria for each of the seven architecture layers. For each layer, you'll find: the purpose and INPACT™ dimensions to prioritize, minimum requirements and questions to ask vendors, red flags that eliminate vendors, and subcategories to evaluate.
+This section provides selection criteria for each of the seven architecture layers. For each layer, you'll find: the purpose and INPACT dimensions to prioritize, minimum requirements and questions to ask vendors, red flags that eliminate vendors, and subcategories to evaluate.
 
 > **📚 For specific vendor comparisons:** Use the **Vendor Advisor at trustbeforeintelligence.ai/tools** for personalized recommendations based on your context.
 
@@ -226,7 +226,7 @@ This section provides selection criteria for each of the seven architecture laye
 
 **Purpose:** Store vectors, structured data, and graph relationships for agent retrieval
 
-**INPACT™ Dimensions to Prioritize:** I (speed), C (integration), N (vectors)
+**INPACT Dimensions to Prioritize:** I (speed), C (integration), N (vectors)
 
 **Implementation Timing:** Weeks 1-4 (Foundation Phase)
 
@@ -265,7 +265,7 @@ Without performant multi-modal storage, agents can't retrieve context quickly en
 
 **Purpose:** Keep data fresh (<30 seconds), enable streaming for agents
 
-**INPACT™ Dimensions to Prioritize:** I (freshness), C (CDC), A (streaming)
+**INPACT Dimensions to Prioritize:** I (freshness), C (CDC), A (streaming)
 
 **Implementation Timing:** Weeks 1-4 (Foundation Phase)
 
@@ -303,7 +303,7 @@ Without real-time data, agents make decisions on stale context. In healthcare, t
 
 **Purpose:** Translate business language to data structures
 
-**INPACT™ Dimensions to Prioritize:** N (natural language), C (context), T (transparency)
+**INPACT Dimensions to Prioritize:** N (natural language), C (context), T (transparency)
 
 **Implementation Timing:** Weeks 5-7 (Intelligence Phase)
 
@@ -341,7 +341,7 @@ When a user asks a domain-specific question, the semantic layer resolves this to
 
 **Purpose:** Transform queries into grounded, accurate responses through RAG
 
-**INPACT™ Dimensions to Prioritize:** N (NLU), A (adaptive), T (citations)
+**INPACT Dimensions to Prioritize:** N (NLU), A (adaptive), T (citations)
 
 **Implementation Timing:** Weeks 5-7 (Intelligence Phase)
 
@@ -380,7 +380,7 @@ The intelligence pipeline includes query understanding, embedding generation, hy
 
 **Purpose:** Control what agents can do based on context
 
-**INPACT™ Dimensions to Prioritize:** P (permitted), T (transparent)
+**INPACT Dimensions to Prioritize:** P (permitted), T (transparent)
 
 **Implementation Timing:** Weeks 8-10 (Trust Phase)
 
@@ -418,7 +418,7 @@ Agents make thousands of decisions daily and can't rely on human review for ever
 
 **Purpose:** See what agents are doing, detect issues, optimize performance
 
-**INPACT™ Dimensions to Prioritize:** T (transparent), A (adaptive)
+**INPACT Dimensions to Prioritize:** T (transparent), A (adaptive)
 
 **Implementation Timing:** Weeks 8-10 (Trust Phase)
 
@@ -456,7 +456,7 @@ Without observability, agents are black boxes. You can't debug failures, optimiz
 
 **Purpose:** Coordinate multiple agents working together on complex queries
 
-**INPACT™ Dimensions to Prioritize:** A (adaptive), C (contextual), all dimensions at integration
+**INPACT Dimensions to Prioritize:** A (adaptive), C (contextual), all dimensions at integration
 
 **Implementation Timing:** Weeks 8-10 (Trust Phase)
 
@@ -506,15 +506,15 @@ Selecting vendors requires more than scoring spreadsheets. This section provides
 
 ### 3.1 Three-Pillar RFP Template
 
-Structure your vendor requests around the Architecture of Trust: INPACT™ requirements, Architecture fit, and GOALS™ operations.
+Structure your vendor requests around the Architecture of Trust: INPACT requirements, Architecture fit, and GOALS operations.
 
 | Section | Scoring | Focus Areas |
 |---------|---------|-------------|
-| INPACT™ | X/36 (per Section 1.2) | Latency, semantic support, ABAC/HITL, feedback loops, connectors, explainability |
+| INPACT | X/36 (per Section 1.2) | Latency, semantic support, ABAC/HITL, feedback loops, connectors, explainability |
 | Architecture | Pass/Fail | Layer alignment, adjacent integration, gap/overlap analysis |
-| GOALS™ | X/25 (per Section 1.2) | Compliance certs, monitoring, SLA/support, API quality, production track record |
+| GOALS | X/25 (per Section 1.2) | Compliance certs, monitoring, SLA/support, API quality, production track record |
 
-Score each pillar separately. Suggested minimum thresholds: INPACT™ ≥67% and GOALS™ ≥70%. Adjust based on your risk tolerance and operational capacity.
+Score each pillar separately. Suggested minimum thresholds: INPACT ≥67% and GOALS ≥70%. Adjust based on your risk tolerance and operational capacity.
 
 *See Online Tools section for downloadable RFP template with question banks.*
 
@@ -524,9 +524,9 @@ Score each pillar separately. Suggested minimum thresholds: INPACT™ ≥67% and
 
 Run 2-week POCs for shortlisted vendors using representative data, not demo environments.
 
-**Week 1 (INPACT™ Validation):** Test latency with 1,000 queries, accuracy with 100 business-language queries, policy evaluation speed, feedback loop responsiveness, multi-source connectivity, and audit log completeness.
+**Week 1 (INPACT Validation):** Test latency with 1,000 queries, accuracy with 100 business-language queries, policy evaluation speed, feedback loop responsiveness, multi-source connectivity, and audit log completeness.
 
-**Week 2 (GOALS™ + Integration):** Validate layer integration latency, monitoring dashboards, support responsiveness, documentation quality, and failure recovery.
+**Week 2 (GOALS + Integration):** Validate layer integration latency, monitoring dashboards, support responsiveness, documentation quality, and failure recovery.
 
 **POC Failure Patterns:** Latency degradation under realistic load, data volume limitations, integration complexity requiring professional services, documentation gaps requiring support tickets.
 
@@ -575,8 +575,8 @@ Echo began with constraints, not vendor lists. Their context (healthcare/PHI, $1
 **How Filters Narrowed the Field**
 
 1. **BAA filter**: Vendors without healthcare BAA capability eliminated before technical review
-2. **INPACT™ threshold**: Vendors below 67% eliminated after paper evaluation
-3. **GOALS™ threshold**: Vendors below 70% on operations eliminated
+2. **INPACT threshold**: Vendors below 67% eliminated after paper evaluation
+3. **GOALS threshold**: Vendors below 70% on operations eliminated
 4. **POC validation**: Remaining vendors validated against real workloads
 
 The filters did the work. By the time Echo ran POCs, they were choosing between good options, not eliminating bad ones.
@@ -626,12 +626,12 @@ Structured methodology prevents common selection failures:
 
 | Failure Mode | How Methodology Prevents It |
 |--------------|----------------------------|
-| "Shiny object" syndrome | GOALS™ scoring exposes operational gaps behind impressive demos |
+| "Shiny object" syndrome | GOALS scoring exposes operational gaps behind impressive demos |
 | Compliance gaps | Regulatory filter applied before technical evaluation |
 | Vendor lock-in | Exit clause required in contract terms checklist |
 | Budget overruns | Three-pillar test aligns selection to actual budget tier |
 | Integration failures | POC Week 2 validates layer integration before commitment |
-| Operational burden | GOALS™ Availability and Solid dimensions expose hidden complexity |
+| Operational burden | GOALS Availability and Solid dimensions expose hidden complexity |
 
 The methodology doesn't guarantee perfect selections. It prevents predictable mistakes.
 
@@ -649,7 +649,7 @@ Echo's final technology choices demonstrate the methodology in action. Every ven
 ![Figure 11.5: Echo's Complete Technology Stack](figures/figure-11-5.png)
 **Echo's Selection Principles:** (1) Managed over self-hosted, (2) Healthcare-first (BAA required), (3) Integration-proven over best-in-class, (4) Cost-optimized for Growth tier.
 
-**Echo's Results:** Completed under budget ($992K of $1.23M), achieved INPACT™ 89/100 and GOALS™ 21/25, went live in 12 weeks. *(Use the Stack Builder and Vendor Advisor at trustbeforeintelligence.ai/tools to plan your investment and select vendors.)*
+**Echo's Results:** Completed under budget ($992K of $1.23M), achieved INPACT 89/100 and GOALS 21/25, went live in 12 weeks. *(Use the Stack Builder and Vendor Advisor at trustbeforeintelligence.ai/tools to plan your investment and select vendors.)*
 
 ---
 
@@ -697,6 +697,5 @@ Interactive tools and downloadable templates supporting this chapter are availab
 ---
 
 **© 2025-2026 Colaberry Inc. All Rights Reserved.**
-INPACT™ and GOALS™ are trademarks of Colaberry Inc.
 
 *Acronyms and key terms are defined in the Glossary.*

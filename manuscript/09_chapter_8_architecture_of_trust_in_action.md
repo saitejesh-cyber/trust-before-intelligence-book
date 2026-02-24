@@ -51,12 +51,12 @@ The conference room felt different. For ten weeks, whiteboards had been covered 
 
 "We built it," Sarah said to the team. "Now we prove it works."
 
-Marcus pulled up the GOALS™ dashboard. Five gauges, fifteen out of twenty-five points total. Six points short of production threshold.
+Marcus pulled up the GOALS dashboard. Five gauges, fifteen out of twenty-five points total. Six points short of production threshold.
 
-**Figure 8.1: Echo's GOALS™ Baseline (Week 10)**
+**Figure 8.1: Echo's GOALS Baseline (Week 10)**
 
 
-![Figure 8.1: Echo's GOALS™ Baseline (Week 10)](figures/figure-8-1.png)
+![Figure 8.1: Echo's GOALS Baseline (Week 10)](figures/figure-8-1.png)
 "We need twenty-one to deploy clinical AI in production," Marcus said. "Six points in two weeks."
 
 Dr. Chen studied the Governance gauge. "Healthcare requires Governance at five out of five. Non-negotiable."
@@ -270,7 +270,7 @@ Solid improved to 4/5.
 
 ---
 
-End of Week 11. All five GOALS™ dimensions at production-ready levels: 20 out of 25 points. One gap remained: healthcare required Governance at 5/5.
+End of Week 11. All five GOALS dimensions at production-ready levels: 20 out of 25 points. One gap remained: healthcare required Governance at 5/5.
 
 ---
 
@@ -327,7 +327,7 @@ The compliance team confirmed the audit trail was complete. Every pattern learne
 
 **Governance reached 5/5.**
 
-### GOALS™: Mission Accomplished
+### GOALS: Mission Accomplished
 
 Friday morning. Sarah called an all-hands meeting.
 
@@ -382,9 +382,9 @@ The next three hours were the most comprehensive validation Echo's team had ever
 > *[1.4s response, full audit trail, three citations]*
 
 **Three-Pillar Validation:**
-- **INPACT™:** **I**nstant (1.6s), **N**atural (patient language understood), **P**ermitted (verified patient access), **A**daptive (learns from ~87% satisfaction feedback), **C**ontextual (5 systems unified), **T**ransparent (three citations + audit trail)
+- **INPACT:** **I**nstant (1.6s), **N**atural (patient language understood), **P**ermitted (verified patient access), **A**daptive (learns from ~87% satisfaction feedback), **C**ontextual (5 systems unified), **T**ransparent (three citations + audit trail)
 - **7-Layer:** Layer 1 unified scheduling data. Layer 2 delivered data in 0.8s. Layer 3 resolved "heart doctor" → cardiologist. Layer 4 retrieved care history. Layer 5 verified permissions. Layer 6 logged trace. Layer 7 orchestrated routing.
-- **GOALS™:** **G**overnance (audit complete, ~3% HITL), **O**bservability (full trace visible), **A**vailability (97% under 2s), **L**exicon (97% accuracy), **S**olid (data consistent)
+- **GOALS:** **G**overnance (audit complete, ~3% HITL), **O**bservability (full trace visible), **A**vailability (97% under 2s), **L**exicon (97% accuracy), **S**olid (data consistent)
 
 ---
 
@@ -416,9 +416,9 @@ The ~8% HITL rate was intentional, escalating medication recommendations, diagno
 Dr. Chen reviewed the validation personally. "The agent correctly escalated a potential medication interaction for pharmacist review. That's exactly the behavior we want."
 
 **Three-Pillar Validation:**
-- **INPACT™:** **I**nstant (1.9s), **N**atural (clinical terminology), **P**ermitted (HIPAA-compliant), **A**daptive (current guidelines + feedback), **C**ontextual (synthesized labs, meds, notes), **T**ransparent (reasoning chain with citations)
+- **INPACT:** **I**nstant (1.9s), **N**atural (clinical terminology), **P**ermitted (HIPAA-compliant), **A**daptive (current guidelines + feedback), **C**ontextual (synthesized labs, meds, notes), **T**ransparent (reasoning chain with citations)
 - **7-Layer:** Layer 1 provided EHR data. Layer 2 streamed lab results. Layer 3 mapped clinical terminology. Layer 4 RAG retrieved notes and guidelines. Layer 5 enforced HIPAA controls. Layer 6 logged reasoning chain. Layer 7 coordinated multi-source retrieval.
-- **GOALS™:** **G**overnance (~8% HITL for clinical decisions), **O**bservability (full explainability), **A**vailability (supports workflow), **L**exicon (ICD-10/CPT mapped), **S**olid (lab values verified)
+- **GOALS:** **G**overnance (~8% HITL for clinical decisions), **O**bservability (full explainability), **A**vailability (supports workflow), **L**exicon (ICD-10/CPT mapped), **S**olid (lab values verified)
 
 ---
 
@@ -448,9 +448,9 @@ The 12% denial rate reduction was the most compelling ROI metric. By catching is
 > *[HITL not required, routine administrative action. Full audit trail logged.]*
 
 **Three-Pillar Validation:**
-- **INPACT™:** **I**nstant (1.4s), **N**atural (billing terminology), **P**ermitted (role-based access), **A**daptive (denial pattern recognition), **C**ontextual (linked auth to claim), **T**ransparent (root cause + audit trail)
+- **INPACT:** **I**nstant (1.4s), **N**atural (billing terminology), **P**ermitted (role-based access), **A**daptive (denial pattern recognition), **C**ontextual (linked auth to claim), **T**ransparent (root cause + audit trail)
 - **7-Layer:** Layer 1 provided consistent claim data. Layer 2 delivered real-time status. Layer 3 resolved CPT codes. Layer 4 retrieved authorization history. Layer 5 enforced role-based access. Layer 6 logged audit trail. Layer 7 orchestrated claim-to-auth matching.
-- **GOALS™:** **G**overnance (~6% HITL for high-value), **O**bservability (end-to-end traceable), **A**vailability (supports high-volume), **L**exicon (98% CPT/ICD accuracy), **S**olid (12% denial reduction validates accuracy)
+- **GOALS:** **G**overnance (~6% HITL for high-value), **O**bservability (end-to-end traceable), **A**vailability (supports high-volume), **L**exicon (98% CPT/ICD accuracy), **S**olid (12% denial reduction validates accuracy)
 
 ### Results
 
@@ -470,19 +470,19 @@ Friday, 4:00 PM. The executive conference room.
 
 Dr. Raj sat at the head of the table, the same seat he'd occupied twelve weeks ago when he set the 90-day deadline.
 
-Sarah stood at the front of the room, the GOALS™ dashboard behind her showing all five gauges green.
+Sarah stood at the front of the room, the GOALS dashboard behind her showing all five gauges green.
 
 "Dr. Raj, twelve weeks ago you asked how we would know our AI agents stay trustworthy. We answered by building three integrated pillars."
 
-**Figure 8.8: Echo's GOALS™ Final Dashboard (Week 12)**
+**Figure 8.8: Echo's GOALS Final Dashboard (Week 12)**
 
 
-![Figure 8.8: Echo's GOALS™ Final Dashboard (Week 12)](figures/figure-8-8.png)
+![Figure 8.8: Echo's GOALS Final Dashboard (Week 12)](figures/figure-8-8.png)
 She walked through each pillar:
 
-"**Pillar 1, INPACT™:** Our agents meet all six needs. Instant response under 2 seconds. Natural language that speaks clinicians' language. Permitted access with human-in-the-loop. Adaptive learning from feedback. Contextual awareness across systems. Transparent reasoning with citations."
+"**Pillar 1, INPACT:** Our agents meet all six needs. Instant response under 2 seconds. Natural language that speaks clinicians' language. Permitted access with human-in-the-loop. Adaptive learning from feedback. Contextual awareness across systems. Transparent reasoning with citations."
 
-| INPACT™ Dimension | Week 0 | Week 12 | Status |
+| INPACT Dimension | Week 0 | Week 12 | Status |
 |-------------------|--------|---------|--------|
 | **I** - Instant | 1/6 | 5/6 | ✅ Strong |
 | **N** - Natural | 2/6 | 5/6 | ✅ Strong |
@@ -494,7 +494,7 @@ She walked through each pillar:
 
 "**Pillar 2, 7-Layer Architecture:** All seven layers operational. Multi-modal storage with 28-second freshness. Real-time fabric delivering sub-second queries. Semantic layer translating natural language. RAG intelligence with our complete knowledge base. Policy engine evaluating every access. Observability tracing every request. Orchestration coordinating all three agents."
 
-"**Pillar 3, GOALS™:** All five dimensions at or above threshold. Governance at 5/5. Observability at 4/5. Availability at 4/5. Lexicon at 4/5. Solid at 4/5. Total: 21 out of 25."
+"**Pillar 3, GOALS:** All five dimensions at or above threshold. Governance at 5/5. Observability at 4/5. Availability at 4/5. Lexicon at 4/5. Solid at 4/5. Total: 21 out of 25."
 
 She paused.
 
@@ -519,12 +519,12 @@ Dr. Raj leaned forward. "You've built something that measures itself. That prove
 
 | Phase | Timeline | Pillar Focus | Achievement |
 |-------|----------|--------------|-------------|
-| Assessment | Day 0 | INPACT™ | 28/100 baseline |
+| Assessment | Day 0 | INPACT | 28/100 baseline |
 | Foundation | Weeks 1-4 | 7-Layer (1-2) | Storage + Real-Time |
 | Intelligence | Weeks 5-7 | 7-Layer (3-4) | Semantic + RAG |
 | Trust | Weeks 8-10 | 7-Layer (5-7) | Governance + Observability + Orchestration |
-| Operations | Weeks 11-12 | GOALS™ | 21/25 achieved |
-| **Production** | Week 12 | **All 3 Validated** | 89/100 INPACT™, 7/7 Layers, 21/25 GOALS™ |
+| Operations | Weeks 11-12 | GOALS | 21/25 achieved |
+| **Production** | Week 12 | **All 3 Validated** | 89/100 INPACT, 7/7 Layers, 21/25 GOALS |
 
 <!-- pagebreak -->
 
@@ -534,8 +534,8 @@ Dr. Raj leaned forward. "You've built something that measures itself. That prove
 
 | Metric | Day 0 | Week 12 | Change |
 |--------|-------|---------|--------|
-| INPACT™ Score | 28/100 | 89/100 | +61 points |
-| GOALS™ Score | N/A | 21/25 | Production ready |
+| INPACT Score™ | 28/100 | 89/100 | +61 points |
+| GOALS Metrics™ Score | N/A | 21/25 | Production ready |
 | Investment | - | $992K | 19% under budget |
 | ROI | - | 477% | Validated |
 | Agents Live | 0 | 3 | Production |
@@ -567,11 +567,11 @@ Now it's your turn.
 
 1. **Operations prove the architecture.** The infrastructure was complete at Week 10, but trust required operational proof. Week 11-12 validated that Echo's seven-layer architecture could sustain production workloads.
 
-2. **GOALS™ dimensions work as a system.** Observability enabled faster governance response. Governance improvements increased user confidence. The Trust Flywheel builds momentum: each improvement enables the next.
+2. **GOALS dimensions work as a system.** Observability enabled faster governance response. Governance improvements increased user confidence. The Trust Flywheel builds momentum: each improvement enables the next.
 
 3. **Healthcare requires Governance 5/5.** The mandatory threshold reflects the stakes of clinical decision support. Echo achieved it through continuous improvement, not just comprehensive controls.
 
-4. **Three pillars validate together.** Every operational win connected back to INPACT™ needs and 7-Layer components. Measurement enables improvement: Echo moved from 15/25 to 21/25 because they could measure precisely where they stood.
+4. **Three pillars validate together.** Every operational win connected back to INPACT needs and 7-Layer components. Measurement enables improvement: Echo moved from 15/25 to 21/25 because they could measure precisely where they stood.
 
 5. **The pattern is repeatable.** Assess, build, measure, improve. Echo's journey isn't unique to healthcare. It's the Architecture of Trust applied to a specific context.
 
@@ -579,7 +579,7 @@ Now it's your turn.
 
 ## Operational Metrics Summary
 
-**Final GOALS™ Status:**
+**Final GOALS Status:**
 
 ---
 
@@ -615,6 +615,5 @@ Now it's your turn.
 ---
 
 **© 2025-2026 Colaberry Inc. All Rights Reserved.**
-INPACT™ and GOALS™ are trademarks of Colaberry Inc.
 
 *Acronyms and key terms are defined in the Glossary.*

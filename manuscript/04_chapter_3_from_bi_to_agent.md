@@ -32,7 +32,7 @@ Gap 7: Agents that couldn't coordinate.
 
 ## When Excellence Became Inadequate
 
-Chapter 2 established what agents need: INPACT™ six needs requirements for infrastructure to earn user trust. Echo Health scored 28 out of 100, failing five of six dimensions.
+Chapter 2 established what agents need: INPACT six needs requirements for infrastructure to earn user trust. Echo Health scored 28 out of 100, failing five of six dimensions.
 
 **But why did Echo's infrastructure fail?**
 
@@ -158,7 +158,7 @@ BI thinking is batch, human-mediated, report-oriented. Agent thinking is real-ti
 
 ### What Sarah Found
 
-Monday morning Sarah Cedao reviewed Echo's INPACT™ assessment: 28 out of 100. Five dimensions critical or weak. One moderate.
+Monday morning Sarah Cedao reviewed Echo's INPACT assessment: 28 out of 100. Five dimensions critical or weak. One moderate.
 
 But **which specific infrastructure gaps caused each failure?** And why couldn't middleware bridge them?
 
@@ -278,7 +278,7 @@ Single cohesive system eliminates dual maintenance. Optimal performance because 
 **Transform when:**
 - Production agents required (not just pilots)
 - Scale exceeds 1,000 queries/day
-- INPACT™ score below 50/100
+- INPACT score below 50/100
 - Long-term agent strategy exists
 
 
@@ -328,20 +328,22 @@ Sarah's private thought: **"We didn't fail. The world changed. BI-era infrastruc
 
 ### Seven Gaps Map to Seven Layers
 
-Each infrastructure gap requires a specific architectural layer:
+Each infrastructure gap requires a specific architectural layer.
+
+Figure 3.3 maps the complete transformation path:
+- **Left :** Seven infrastructure gaps from BI-era systems
+- **Middle :** INPACT needs that each gap violates  
+- **Right :** Seven architectural layers that solve each gap
+
+**Key insight:** Miss one layer, agents fail. Build all seven, fulfill all six INPACT needs.
 
 **Figure 3.3: Seven Gaps --> Six Needs --> Seven Layers**
 
 
 ![Figure 3.3: Seven Gaps --> Six Needs --> Seven Layers](figures/figure-3-3.png)
-Figure 3.3 maps the complete transformation path:
-- **Left :** Seven infrastructure gaps from BI-era systems
-- **Middle :** INPACT™ needs that each gap violates  
-- **Right :** Seven architectural layers that solve each gap
 
-**Key insight:** Miss one layer, agents fail. Build all seven, fulfill all six INPACT™ needs.
 
-| Gap | INPACT™ Need | Layer | Solution |
+| Gap | INPACT Need | Layer | Solution |
 |-----|--------------|-------|----------|
 | **Gap 1: Multi-modal storage** | Contextual (C) | 1 | Vector + Graph + SQL |
 | **Gap 2: Real-time data** | Instant (I), Contextual (C) | 2 | CDC + Streaming |
@@ -355,7 +357,7 @@ Figure 3.3 maps the complete transformation path:
 
 
 ![Figure 3.4: The Complete 7-Layer Agent-Ready Architecture](figures/figure-3-4.png)
-> **Key Takeaway:** Seven layers working together fulfill all six INPACT™ needs. Each layer builds on the ones below it.
+> **Key Takeaway:** Seven layers working together fulfill all six INPACT needs. Each layer builds on the ones below it.
 
 ### Echo's Four-Phase Roadmap
 
@@ -393,7 +395,7 @@ Sarah's team had the blueprint. Seven gaps mapped to seven layers. Four phases s
 
 - **Chapters 4-6** build the seven layers systematically from overnight batch to sub-second streaming, from 40% query accuracy to 87%, from HIPAA violations to zero incidents, from isolated pilots to production deployment.
 
-- **Chapter 7** introduces GOALS™ - how to measure operational success.
+- **Chapter 7** introduces GOALS - how to measure operational success.
 
 - **Chapters 9-10** provide the 90-day implementation roadmap.
 
@@ -429,6 +431,5 @@ Seven gaps require seven layers. The next three chapters show exactly how Sarah 
 ---
 
 **© 2025-2026 Colaberry Inc. All Rights Reserved.**
-INPACT™ and GOALS™ are trademarks of Colaberry Inc.
 
 *Acronyms and key terms are defined in the Glossary.*
