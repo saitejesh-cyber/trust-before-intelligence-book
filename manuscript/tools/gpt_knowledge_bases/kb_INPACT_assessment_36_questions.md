@@ -3,7 +3,6 @@
 **Book:** Trust Before Intelligence: Why 95% of Agent Projects Fail -and the Architecture Blueprint That Fixes Infrastructure in 90 Days  
 **Author:** Ram Katamaraja, CEO, Colaberry Inc.  
 **Appendix:** G of H  
-**Version:** 1.0  
 **Date:** December 2025  
 **Target:** 10-12 pages | Complete assessment methodology
 
@@ -11,13 +10,13 @@
 
 ## Purpose
 
-This appendix provides the complete INPACT™ assessment methodology, including all 36 questions, detailed scoring rubrics, gap identification patterns, and prioritization guidance. Use this appendix to conduct your own readiness assessment before beginning your transformation journey.
+This appendix provides the complete INPACT assessment methodology, including all 36 questions, detailed scoring rubrics, gap identification patterns, and prioritization guidance. Use this appendix to conduct your own readiness assessment before beginning your transformation journey.
 
 **How to Use This Appendix:**
 
 1. **Prepare:** Gather stakeholders from data engineering, security, architecture, and business domains
 2. **Assess:** Complete all 36 questions with evidence-based scoring
-3. **Calculate:** Compute your INPACT™ score using the methodology provided
+3. **Calculate:** Compute your INPACT score using the methodology provided
 4. **Analyze:** Identify gap patterns and prioritize improvements
 5. **Plan:** Map gaps to Chapter 10 phases for implementation roadmap
 
@@ -788,13 +787,13 @@ For each dimension, average the 6 question scores:
 **C:** (___ + ___ + ___ + ___ + ___ + ___) ÷ 6 = ___
 **T:** (___ + ___ + ___ + ___ + ___ + ___) ÷ 6 = ___
 
-### Step 2: Calculate Total INPACT™ Score (6-36)
+### Step 2: Calculate Total INPACT Score (6-36)
 
-**Total INPACT™ Score:** Sum of 6 dimension scores = ___/36
+**Total INPACT Score:** Sum of 6 dimension scores = ___/36
 
 ### Step 3: Convert to Percentage
 
-**INPACT™ Percentage = (Total Score ÷ 36) × 100**
+**INPACT Percentage = (Total Score ÷ 36) × 100**
 
 Example: Echo Week 0 = (10 ÷ 36) × 100 = 28%
 
@@ -875,13 +874,3 @@ The 90-Day Tracker (Tab 10) provides:
 ---
 
 **Pedagogical Disclaimer:** Echo Health Systems is a fictional teaching case. Scoring examples are illustrative of real assessment patterns observed across multiple enterprises.
-
----
-
-© 2025 Colaberry Inc. All Rights Reserved.
-
-INPACT™ and GOALS™ are trademarks of Colaberry Inc.
-
----
-
-**END OF APPENDIX G**

@@ -293,8 +293,6 @@ Upload this file:
 ## Legal Footer
 
 ```
-© 2026 Colaberry Inc. All rights reserved.
-INPACT™ and GOALS™ are trademarks of Colaberry Inc.
 From "Trust Before Intelligence" by Ram Katamaraja
 
 DISCLAIMER: This information is for educational purposes only and does not

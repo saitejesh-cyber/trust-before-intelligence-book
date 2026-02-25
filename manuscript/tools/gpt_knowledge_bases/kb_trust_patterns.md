@@ -2,7 +2,6 @@
 
 **Book:** Trust Before Intelligence: Why 95% of Agent Projects Fail -and the Architecture Blueprint That Fixes Infrastructure in 90 Days
 **Author:** Ram Katamaraja, CEO, Colaberry Inc.
-**Version:** 2.0
 **Date:** January 2026
 **Target:** Comprehensive reference for diagnosing failures and implementing solutions
 
@@ -12,8 +11,8 @@
 
 This appendix is the **single comprehensive reference** for understanding what can go wrong with enterprise AI agents and how to fix it. It consolidates:
 
-1. **15 INPACT™ Trust Patterns**  - Architectural solutions for agent trust failures
-2. **16 GOALS™ Failure Modes**  - What breaks when operational foundations fail
+1. **15 INPACT Trust Patterns**  - Architectural solutions for agent trust failures
+2. **16 GOALS Failure Modes**  - What breaks when operational foundations fail
 3. **16 Consolidated Anti-Patterns**  - Common mistakes to avoid
 
 **How to Use This Catalog:**
@@ -25,9 +24,9 @@ This appendix is the **single comprehensive reference** for understanding what c
 
 ---
 
-# Part 1: INPACT™ Trust Patterns
+# Part 1: INPACT Trust Patterns
 
-These 15 patterns address specific trust challenges organized by INPACT™ dimension.
+These 15 patterns address specific trust challenges organized by INPACT dimension.
 
 ## INSTANT Dimension Patterns
 
@@ -371,9 +370,9 @@ These 15 patterns address specific trust challenges organized by INPACT™ dimen
 
 ---
 
-# Part 2: GOALS™ Failure Modes
+# Part 2: GOALS Failure Modes
 
-These 16 failure modes describe what breaks when each GOALS™ dimension fails. The "vital organs" metaphor is predictive -when one dimension fails, effects cascade through the system.
+These 16 failure modes describe what breaks when each GOALS dimension fails. The "vital organs" metaphor is predictive -when one dimension fails, effects cascade through the system.
 
 ## G - Governance Failure Modes
 
@@ -772,7 +771,7 @@ These 16 failure modes describe what breaks when each GOALS™ dimension fails. 
 
 These 16 anti-patterns are common mistakes observed across enterprise AI agent implementations. They're organized by source framework.
 
-## INPACT™ Anti-Patterns
+## INPACT Anti-Patterns
 
 ### ❌ AP-01: "We Have a Vector DB, So We're Agent-Ready"
 
@@ -814,7 +813,7 @@ These 16 anti-patterns are common mistakes observed across enterprise AI agent i
 
 ---
 
-## GOALS™ Anti-Patterns
+## GOALS Anti-Patterns
 
 ### ❌ AP-06: "We Have Good Governance, So We're Ready"
 
@@ -920,7 +919,7 @@ These 16 anti-patterns are common mistakes observed across enterprise AI agent i
 
 # Part 4: Quick Reference Tables
 
-## INPACT™ Trust Patterns Summary
+## INPACT Trust Patterns Summary
 
 | ID | Anti-Pattern | Trust Pattern | Dimension | Layer(s) |
 |----|--------------|---------------|-----------|----------|
@@ -940,7 +939,7 @@ These 16 anti-patterns are common mistakes observed across enterprise AI agent i
 | TP-14 | Unexplainable decisions | Decision Audit Trail | Transparent | L5, L6 |
 | TP-15 | Overconfident responses | Uncertainty Communication | Transparent | L4, L7 |
 
-## GOALS™ Failure Modes Summary
+## GOALS Failure Modes Summary
 
 | ID | Failure Mode | Dimension | Severity | Cascade Risk |
 |----|--------------|-----------|----------|--------------|
@@ -965,16 +964,16 @@ These 16 anti-patterns are common mistakes observed across enterprise AI agent i
 
 | ID | Anti-Pattern | Source | Fix Reference |
 |----|--------------|--------|---------------|
-| AP-01 | Vector DB = Agent-Ready | INPACT™ | Build all 7 layers |
-| AP-02 | Add HITL Later | INPACT™ | TP-07 |
-| AP-03 | Accuracy Improves Without Feedback | INPACT™ | TP-09 |
-| AP-04 | Batch ETL is Fine | INPACT™ | TP-02 |
-| AP-05 | Users Don't Need Sources | INPACT™ | TP-13 |
-| AP-06 | Good Governance = Ready | GOALS™ | Build all 5 GOALS |
-| AP-07 | Add Observability After Launch | GOALS™ | O1-O3 prevention |
-| AP-08 | Fast = Production-Ready | GOALS™ | Balance A with S |
-| AP-09 | Semantic Layer Understands All | GOALS™ | L1-L3 prevention |
-| AP-10 | Quarterly Data Quality | GOALS™ | S1-S3 prevention |
+| AP-01 | Vector DB = Agent-Ready | INPACT | Build all 7 layers |
+| AP-02 | Add HITL Later | INPACT | TP-07 |
+| AP-03 | Accuracy Improves Without Feedback | INPACT | TP-09 |
+| AP-04 | Batch ETL is Fine | INPACT | TP-02 |
+| AP-05 | Users Don't Need Sources | INPACT | TP-13 |
+| AP-06 | Good Governance = Ready | GOALS | Build all 5 GOALS |
+| AP-07 | Add Observability After Launch | GOALS | O1-O3 prevention |
+| AP-08 | Fast = Production-Ready | GOALS | Balance A with S |
+| AP-09 | Semantic Layer Understands All | GOALS | L1-L3 prevention |
+| AP-10 | Quarterly Data Quality | GOALS | S1-S3 prevention |
 | AP-11 | No HITL for Clinical | Healthcare | TP-07, G2 |
 | AP-12 | Shared Patient Database | Healthcare | L1, G1 |
 | AP-13 | No Purpose-of-Use | Healthcare | TP-06, G1 |
@@ -1004,9 +1003,3 @@ These 16 anti-patterns are common mistakes observed across enterprise AI agent i
 ---
 
 **Pedagogical Disclaimer:** Echo Health Systems is a fictional teaching case. Pattern examples are illustrative of real implementation patterns observed across multiple deployments.
-
----
-
-© 2026 Colaberry Inc. All Rights Reserved.
-
-INPACT™ and GOALS™ are trademarks of Colaberry Inc.

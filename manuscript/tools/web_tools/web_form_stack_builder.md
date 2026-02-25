@@ -26,7 +26,7 @@ Required fields:
 
 Optional fields:
 - Industry (dropdown: Healthcare, Financial Services, Manufacturing, Retail, Technology, Government, Other)
-- Current INPACT™ score (if known)
+- Current INPACT score (if known)
 
 ### Step 3: Context Questions (Page 1)
 
@@ -478,7 +478,7 @@ After all selections are complete, show the **complete built stack**:
 │  ─────────────────────────────────────────────────────────────────────── │
 │  NEXT STEPS:                                                              │
 │  • Use Vendor Advisor to deep-dive any product before purchasing          │
-│  • Take INPACT™ Assessment to measure your current readiness baseline     │
+│  • Take INPACT Assessment to measure your current readiness baseline     │
 │  • Use Implementation Guide for week-by-week build plan                   │
 │  • Schedule a consultation to review your stack with an expert            │
 └───────────────────────────────────────────────────────────────────────────┘
@@ -536,14 +536,12 @@ The PDF report now includes the **user's specific product selections**, not just
 
 6. **Next Steps** (1 page)
    - "Use Vendor Advisor to select specific products"
-   - "Take the INPACT™ Assessment to measure readiness"
+   - "Take the INPACT Assessment to measure readiness"
    - Link to book chapters by gap area
    - Consultation CTA
 
 **PDF footer:**
 ```
-© 2026 Colaberry Inc. All rights reserved.
-INPACT™ and GOALS™ are trademarks of Colaberry Inc.
 From "Trust Before Intelligence" by Ram Katamaraja
 ```
 
@@ -1003,7 +1001,7 @@ def calculate_budget(gaps, tier, industry):
 
 | Tool | Relationship |
 |------|--------------|
-| **INPACT™ Assessment** | "Not sure about readiness? Take the INPACT™ Assessment first" |
+| **INPACT Assessment** | "Not sure about readiness? Take the INPACT Assessment first" |
 | **Vendor Advisor** | "Now select specific products for each gap" → Deep link with context |
 | **Compliance Navigator** | "Need compliance details?" → Link based on detected requirements |
 | **Implementation Guide** | "Ready to build?" → Week-by-week guidance |
@@ -2708,8 +2706,3 @@ stack-builder/
 9. **Test the flow:**
    - Lead capture → Context → Inventory (7 layers) → Interactive Builder → Summary
 ```
-
----
-
-**© 2026 Colaberry Inc. All rights reserved.**
-**From "Trust Before Intelligence" by Ram Katamaraja**

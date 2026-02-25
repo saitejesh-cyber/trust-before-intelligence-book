@@ -1,13 +1,11 @@
 # Appendix DA-1: Technology Selection Guide
-## Comprehensive Product Evaluation Using INPACT™ and GOALS™ Frameworks
+## Comprehensive Product Evaluation Using INPACT and GOALS Frameworks
 
 **Purpose:** Support Chapter 11 (Technology Selection Guide) and Chapter 10 (90-Day Implementation Roadmap) with detailed technology recommendations
-**Product Count:** 90+ products with detailed INPACT™/GOALS™ analysis across 7 layers
-**Evaluation Frameworks:** INPACT™ (Agent Needs) + GOALS™ (Operational Readiness)
+**Product Count:** 90+ products with detailed INPACT/GOALS analysis across 7 layers
+**Evaluation Frameworks:** INPACT (Agent Needs) + GOALS (Operational Readiness)
 **Date:** February 2026
-**Version:** 2.1
-
-> **Important:** INPACT™ and GOALS™ scores are evaluated **separately**, not combined. A vendor must meet minimum thresholds on both frameworks independently. See Chapter 11, Part 1 for the three-pillar evaluation methodology.
+> **Important:** INPACT and GOALS scores are evaluated **separately**, not combined. A vendor must meet minimum thresholds on both frameworks independently. See Chapter 11, Part 1 for the three-pillar evaluation methodology.
 
 ---
 
@@ -26,8 +24,8 @@ When Chapter 10 says:
 
 ...you come here to find:
 - **Technology options** with verified URLs
-- **INPACT™ scores** (trust framework from Chapter 7)
-- **GOALS™ scores** (operational readiness from Chapter 7)
+- **INPACT scores** (trust framework from Chapter 7)
+- **GOALS scores** (operational readiness from Chapter 7)
 - **Budget-tier recommendations** ($30K, $150K, $300K+)
 - **Healthcare-specific guidance** (HIPAA-eligible products)
 - **Decision criteria** to select the right option for your context
@@ -37,7 +35,7 @@ When Chapter 10 says:
 ## Table of Contents
 
 ### Part 1: Executive Summary & Quick Reference
-- 1.1 How INPACT™ + GOALS™ Scoring Works
+- 1.1 How INPACT + GOALS Scoring Works
 - 1.2 Healthcare Stack Recommendation
 - 1.3 Budget-Tier Guidance ($30K, $150K, $300K+)
 - 1.4 Cloud Platform Comparison (AWS vs GCP vs Azure)
@@ -66,8 +64,8 @@ When Chapter 10 says:
 - 4.4 Open-Source vs Commercial Trade-offs
 
 ### Part 5: Quick Reference Tables
-- 5.1 Top 20 Products by INPACT™ Score
-- 5.1b Top 20 Products by GOALS™ Score
+- 5.1 Top 20 Products by INPACT Score
+- 5.1b Top 20 Products by GOALS Score
 - 5.2 Layer-by-Layer Winners by Budget Tier
 - 5.3 Technology Maturity Matrix
 - 5.4 Integration Complexity Map
@@ -76,17 +74,17 @@ When Chapter 10 says:
 
 # PART 1: EXECUTIVE SUMMARY & QUICK REFERENCE
 
-## 1.1 How INPACT™ + GOALS™ Scoring Works
+## 1.1 How INPACT + GOALS Scoring Works
 
 ### Why Separate Scoring Matters
 
-INPACT™ measures what infrastructure must *provide* to agents. GOALS™ measures how you *operate* that infrastructure. These are different evaluation dimensions that must be assessed independently:
+INPACT measures what infrastructure must *provide* to agents. GOALS measures how you *operate* that infrastructure. These are different evaluation dimensions that must be assessed independently:
 
-- A vendor with high INPACT™ but low GOALS™ delivers impressive technology your team can't sustain
-- A vendor with high GOALS™ but low INPACT™ is easy to operate but can't meet agent requirements
+- A vendor with high INPACT but low GOALS delivers impressive technology your team can't sustain
+- A vendor with high GOALS but low INPACT is easy to operate but can't meet agent requirements
 - **Both scores must exceed minimum thresholds independently**
 
-### INPACT™ Framework (Chapter 2 - Agent Needs)
+### INPACT Framework (Chapter 2 - Agent Needs)
 
 **Measures:** How well the product helps agents meet the six fundamental needs
 
@@ -99,7 +97,7 @@ INPACT™ measures what infrastructure must *provide* to agents. GOALS™ measur
 | **C** - Contextual | 1-6 | Multi-source integration, context assembly | 1=single source, 6=universal |
 | **T** - Transparent | 1-6 | Explainability, audit trails, reliability | 1=black box, 6=full transparency |
 
-**Total INPACT™ Score:** 6-36 points
+**Total INPACT Score:** 6-36 points
 - **High Trust (30-36):** Production-ready for healthcare
 - **Good Trust (24-29):** Suitable for most enterprise use
 - **Moderate Trust (18-23):** Acceptable for internal tools
@@ -111,7 +109,7 @@ INPACT™ measures what infrastructure must *provide* to agents. GOALS™ measur
 graph TD
     PRODUCT["<b>Technology Product</b><br/>Vector DB, LLM, ABAC, etc."]
     
-    subgraph INPACT["<b>INPACT™ Scoring (Agent Needs)</b><br/>6 dimensions × 6 points = 36 max"]
+    subgraph INPACT["<b>INPACT Scoring (Agent Needs)</b><br/>6 dimensions × 6 points = 36 max"]
         I["<b>I - Instant</b><br/>Latency: 1-6"]
         N["<b>N - Natural</b><br/>NLU support: 1-6"]
         P["<b>P - Permitted</b><br/>Security: 1-6"]
@@ -120,7 +118,7 @@ graph TD
         T["<b>T - Transparent</b><br/>Transparency: 1-6"]
     end
     
-    subgraph GOALS["<b>GOALS™ Scoring (Operations)</b><br/>5 dimensions × 5 points = 25 max"]
+    subgraph GOALS["<b>GOALS Scoring (Operations)</b><br/>5 dimensions × 5 points = 25 max"]
         G["<b>G - Governance</b><br/>Compliance: 1-5"]
         O["<b>O - Observability</b><br/>Monitoring: 1-5"]
         AA["<b>A - Availability</b><br/>Uptime/Support: 1-5"]
@@ -131,13 +129,13 @@ graph TD
     PRODUCT --> INPACT
     PRODUCT --> GOALS
     
-    EVAL_I["<b>INPACT™ Evaluation</b><br/>Score: X/36<br/>Healthcare: ≥28/36<br/>Enterprise: ≥24/36"]
-    EVAL_G["<b>GOALS™ Evaluation</b><br/>Score: X/25<br/>Healthcare: ≥20/25<br/>Enterprise: ≥18/25"]
+    EVAL_I["<b>INPACT Evaluation</b><br/>Score: X/36<br/>Healthcare: ≥28/36<br/>Enterprise: ≥24/36"]
+    EVAL_G["<b>GOALS Evaluation</b><br/>Score: X/25<br/>Healthcare: ≥20/25<br/>Enterprise: ≥18/25"]
     
     INPACT --> EVAL_I
     GOALS --> EVAL_G
     
-    DECISION["<b>Selection Decision</b><br/><br/>BOTH thresholds must pass independently<br/>Healthcare: INPACT ≥28 AND GOALS™ ≥20<br/>Enterprise: INPACT ≥24 AND GOALS™ ≥18"]
+    DECISION["<b>Selection Decision</b><br/><br/>BOTH thresholds must pass independently<br/>Healthcare: INPACT ≥28 AND GOALS ≥20<br/>Enterprise: INPACT ≥24 AND GOALS ≥18"]
     
     EVAL_I --> DECISION
     EVAL_G --> DECISION
@@ -153,13 +151,13 @@ graph TD
     class DECISION decision
 ```
 
-**Figure 1: INPACT™ and GOALS™ Separate Scoring Methodology**
+**Figure 1: INPACT and GOALS Separate Scoring Methodology**
 
-Every technology product in this appendix is evaluated using both frameworks. INPACT™ measures agent needs (how well it helps agents meet the six fundamental requirements), while GOALS™ measures operational readiness (how mature and production-ready it is). **Both scores must meet minimum thresholds independently**  - a vendor must pass on INPACT™ AND on GOALS™ to be recommended.
+Every technology product in this appendix is evaluated using both frameworks. INPACT measures agent needs (how well it helps agents meet the six fundamental requirements), while GOALS measures operational readiness (how mature and production-ready it is). **Both scores must meet minimum thresholds independently**  - a vendor must pass on INPACT AND on GOALS to be recommended.
 
 ---
 
-### GOALS™ Framework (Chapter 7 - Operations)
+### GOALS Framework (Chapter 7 - Operations)
 
 **Measures:** How operationally mature and production-ready the product is
 
@@ -171,7 +169,7 @@ Every technology product in this appendix is evaluated using both frameworks. IN
 | **L** - Lexicon | 1-5 | API quality, SDK maturity, integrations | 1=limited, 5=universal |
 | **S** - Solid | 1-5 | Reliability, data quality, error handling | 1=unstable, 5=production-grade |
 
-**Total GOALS™ Score:** 5-25 points
+**Total GOALS Score:** 5-25 points
 - **Production-Grade (21-25):** Enterprise-ready, mature ecosystem
 - **Adoption-Ready (16-20):** Stable, suitable for most workloads
 - **Emerging (11-15):** Growing maturity, proceed with caution
@@ -185,15 +183,15 @@ Every technology product in this appendix is evaluated using both frameworks. IN
 
 | Framework | I | N | P | A | C | T | Total |
 |-----------|---|---|---|---|---|---|-------|
-| **INPACT™** | 6 | 5 | 6 | 5 | 5 | 6 | **33/36** (High Trust) ✅ |
+| **INPACT** | 6 | 5 | 6 | 5 | 5 | 6 | **33/36** (High Trust) ✅ |
 
 | Framework | G | O | A | L | S | Total |
 |-----------|---|---|---|---|---|-------|
-| **GOALS™** | 5 | 4 | 4 | 5 | 4 | **22/25** (Production-Grade) ✅ |
+| **GOALS** | 5 | 4 | 4 | 5 | 4 | **22/25** (Production-Grade) ✅ |
 
 **Evaluation:**
-- INPACT™: 33/36 ≥ 28/36 healthcare threshold ✅
-- GOALS™: 22/25 ≥ 20/25 healthcare threshold ✅
+- INPACT: 33/36 ≥ 28/36 healthcare threshold ✅
+- GOALS: 22/25 ≥ 20/25 healthcare threshold ✅
 - **Verdict:** Recommended for healthcare  - passes both thresholds independently
 
 ---
@@ -204,7 +202,7 @@ Every technology product in this appendix is evaluated using both frameworks. IN
 
 ### Healthcare Stack (Echo Health Systems - 477% ROI)
 
-| Layer | Product | INPACT™ | GOALS™ | Why Healthcare? |
+| Layer | Product | INPACT | GOALS | Why Healthcare? |
 |-------|---------|---------|-------|-----------------|
 | **Layer 1** | Azure AI Search | 33 | 22 | HIPAA BAA, sub-50ms, $500/mo |
 | **Layer 1** | Snowflake | 29 | 23 | HIPAA certified, row-level security |
@@ -229,8 +227,8 @@ Every technology product in this appendix is evaluated using both frameworks. IN
 
 **Why This Stack Works:**
 - ✅ Every product HIPAA-eligible with BAA
-- ✅ INPACT™ ≥26 (Good Trust minimum)
-- ✅ GOALS™ ≥21 (Production-Grade minimum)
+- ✅ INPACT ≥26 (Good Trust minimum)
+- ✅ GOALS ≥21 (Production-Grade minimum)
 - ✅ Proven at scale (50K+ daily interactions)
 - ✅ All Azure-centric (unified governance, billing, support)
 
@@ -291,7 +289,7 @@ Budget tiers represent different approaches to building agent-ready infrastructu
 ### Tier 1: Lean Budget ($30K-$50K Total, $3-5K/month)
 **Best for:** Proof of concept, internal tools, <1K users
 
-| Layer | Recommended | INPACT™ | GOALS™ | Cost |
+| Layer | Recommended | INPACT | GOALS | Cost |
 |-------|-------------|---------|-------|------|
 | **L1** | pgvector + PostgreSQL | 23 | 19 | Free (infra only) |
 | **L1** | Neo4j Community | 26 | 18 | Free |
@@ -330,7 +328,7 @@ Budget tiers represent different approaches to building agent-ready infrastructu
 ### Tier 3: Well-Funded Budget ($300K+ Total, $25-40K/month)
 **Best for:** Enterprise-scale, multi-region, >50K users
 
-| Layer | Recommended | INPACT™ | GOALS™ | Cost |
+| Layer | Recommended | INPACT | GOALS | Cost |
 |-------|-------------|---------|-------|------|
 | **L1** | Pinecone Enterprise | 31 | 23 | $5K+/mo |
 | **L1** | Snowflake Enterprise | 29 | 23 | $8K+/mo |
@@ -509,7 +507,7 @@ This decision tree guides cloud platform selection based on your specific requir
 
 **On-Prem Stack Recommendation:**
 
-| Layer | On-Prem Product | INPACT™ | GOALS™ | Notes |
+| Layer | On-Prem Product | INPACT | GOALS | Notes |
 |-------|-----------------|---------|--------|-------|
 | **L1** | Milvus (self-hosted) | 27 | 19 | Open-source vector DB, Kubernetes-ready |
 | **L1** | PostgreSQL + pgvector | 23 | 19 | Familiar, HIPAA-auditable |
@@ -572,8 +570,8 @@ This decision tree guides cloud platform selection based on your specific requir
 
 #### 🏆 Top Recommendation: Azure AI Search
 **URL:** https://azure.microsoft.com/en-us/products/ai-services/ai-search  
-**INPACT™:** 33/36 (I=6, N=5, P=6, A=5, C=5, T=6)  
-**GOALS™:** 22/25 (G=5, O=4, A=4, L=5, S=4)  
+**INPACT:** 33/36 (I=6, N=5, P=6, A=5, C=5, T=6)  
+**GOALS:** 22/25 (G=5, O=4, A=4, L=5, S=4)  
 
 
 **Why It's #1:**
@@ -594,8 +592,8 @@ This decision tree guides cloud platform selection based on your specific requir
 
 #### 🥈 Runner-Up: Pinecone
 **URL:** https://www.pinecone.io/  
-**INPACT™:** 31/36 (I=6, N=5, P=5, A=5, C=5, T=5)  
-**GOALS™:** 23/25 (G=5, O=5, A=4, L=5, S=4)  
+**INPACT:** 31/36 (I=6, N=5, P=5, A=5, C=5, T=5)  
+**GOALS:** 23/25 (G=5, O=5, A=4, L=5, S=4)  
 
 
 **Why It's Strong:**
@@ -615,8 +613,8 @@ This decision tree guides cloud platform selection based on your specific requir
 
 #### 🥉 Budget Pick: Weaviate
 **URL:** https://weaviate.io/  
-**INPACT™:** 29/36 (I=5, N=5, P=5, A=5, C=5, T=4)  
-**GOALS™:** 20/25 (G=4, O=4, A=3, L=4, S=5)  
+**INPACT:** 29/36 (I=5, N=5, P=5, A=5, C=5, T=4)  
+**GOALS:** 20/25 (G=4, O=4, A=3, L=4, S=5)  
 
 
 **Why Consider:**
@@ -637,8 +635,8 @@ This decision tree guides cloud platform selection based on your specific requir
 
 #### Ultra-Budget: pgvector (PostgreSQL Extension)
 **URL:** https://github.com/pgvector/pgvector  
-**INPACT™:** 23/36 (I=4, N=3, P=4, A=3, C=4, T=5)  
-**GOALS™:** 19/25 (G=4, O=3, A=4, L=4, S=4)  
+**INPACT:** 23/36 (I=4, N=3, P=4, A=3, C=4, T=5)  
+**GOALS:** 19/25 (G=4, O=3, A=4, L=4, S=4)  
 
 
 **Why Consider:**
@@ -683,8 +681,8 @@ RESULT: Vector database selected
 
 #### 🏆 Top Recommendation: Snowflake
 **URL:** https://www.snowflake.com/  
-**INPACT™:** 29/36 (I=5, N=5, P=5, A=5, C=5, T=4)  
-**GOALS™:** 23/25 (G=5, O=5, A=4, L=5, S=4)  
+**INPACT:** 29/36 (I=5, N=5, P=5, A=5, C=5, T=4)  
+**GOALS:** 23/25 (G=5, O=5, A=4, L=5, S=4)  
 
 
 **Why It's #1:**
@@ -705,8 +703,8 @@ RESULT: Vector database selected
 
 #### 🥈 Runner-Up: Google BigQuery
 **URL:** https://cloud.google.com/bigquery  
-**INPACT™:** 30/36 (I=6, N=5, P=5, A=5, C=5, T=4)  
-**GOALS™:** 22/25 (G=5, O=4, A=5, L=4, S=4)  
+**INPACT:** 30/36 (I=6, N=5, P=5, A=5, C=5, T=4)  
+**GOALS:** 22/25 (G=5, O=4, A=5, L=4, S=4)  
 
 
 **Why It's Strong:**
@@ -726,8 +724,8 @@ RESULT: Vector database selected
 
 #### 🥉 AWS Pick: Amazon Redshift
 **URL:** https://aws.amazon.com/redshift/  
-**INPACT™:** 27/36 (I=5, N=4, P=5, A=4, C=5, T=4)  
-**GOALS™:** 21/25 (G=5, O=4, A=3, L=4, S=5)  
+**INPACT:** 27/36 (I=5, N=4, P=5, A=4, C=5, T=4)  
+**GOALS:** 21/25 (G=5, O=4, A=3, L=4, S=5)  
 
 
 **Why Consider:**
@@ -751,8 +749,8 @@ RESULT: Vector database selected
 
 #### 🏆 Top Recommendation: Neo4j Enterprise
 **URL:** https://neo4j.com/  
-**INPACT™:** 30/36 (I=6, N=5, P=5, A=5, C=5, T=4)  
-**GOALS™:** 22/25 (G=5, O=4, A=3, L=5, S=5)  
+**INPACT:** 30/36 (I=6, N=5, P=5, A=5, C=5, T=4)  
+**GOALS:** 22/25 (G=5, O=4, A=3, L=5, S=5)  
 
 
 **Why It's #1:**
@@ -773,8 +771,8 @@ RESULT: Vector database selected
 
 #### 🥈 Cloud-Native: Amazon Neptune
 **URL:** https://aws.amazon.com/neptune/  
-**INPACT™:** 29/36 (I=6, N=4, P=5, A=5, C=5, T=4)  
-**GOALS™:** 21/25 (G=5, O=4, A=3, L=4, S=5)  
+**INPACT:** 29/36 (I=6, N=4, P=5, A=5, C=5, T=4)  
+**GOALS:** 21/25 (G=5, O=4, A=3, L=4, S=5)  
 
 
 **Why Consider:**
@@ -797,7 +795,7 @@ RESULT: Vector database selected
 
 **Purpose:** Monitor data quality dimensions (accuracy, completeness, consistency, currentness, traceability), detect anomalies, track lineage
 
-**GOALS™ Alignment:** Solid (S) - Data Quality & Integrity
+**GOALS Alignment:** Solid (S) - Data Quality & Integrity
 
 **ISO/IEC 5259 Context:** These tools help monitor the five data quality dimensions defined in ISO/IEC 5259-2:2024 for AI/ML systems: accuracy, completeness, consistency, currentness, and traceability.
 
@@ -805,8 +803,8 @@ RESULT: Vector database selected
 
 #### 🏆 Top Recommendation: Monte Carlo
 **URL:** https://www.montecarlodata.com  
-**INPACT™:** 28/36 (I=5, N=4, P=5, A=5, C=5, T=4)  
-**GOALS™:** 23/25 (G=4, O=5, A=4, L=5, S=5)  
+**INPACT:** 28/36 (I=5, N=4, P=5, A=5, C=5, T=4)  
+**GOALS:** 23/25 (G=4, O=5, A=4, L=5, S=5)  
 
 
 **Why It's #1:**
@@ -826,8 +824,8 @@ RESULT: Vector database selected
 
 #### 🥈 Open-Source Leader: Great Expectations
 **URL:** https://greatexpectations.io  
-**INPACT™:** 24/36 (I=4, N=4, P=4, A=4, C=5, T=3)  
-**GOALS™:** 20/25 (G=4, O=4, A=4, L=4, S=4)  
+**INPACT:** 24/36 (I=4, N=4, P=4, A=4, C=5, T=3)  
+**GOALS:** 20/25 (G=4, O=4, A=4, L=4, S=4)  
 
 
 **Why Consider:**
@@ -848,8 +846,8 @@ RESULT: Vector database selected
 
 #### 🥉 Best Value: Soda
 **URL:** https://www.soda.io  
-**INPACT™:** 26/36 (I=5, N=4, P=4, A=5, C=5, T=3)  
-**GOALS™:** 21/25 (G=4, O=5, A=4, L=4, S=4)  
+**INPACT:** 26/36 (I=5, N=4, P=4, A=5, C=5, T=3)  
+**GOALS:** 21/25 (G=4, O=5, A=4, L=4, S=4)  
 
 
 **Why Consider:**
@@ -869,8 +867,8 @@ RESULT: Vector database selected
 
 #### Budget-Friendly: Bigeye
 **URL:** https://www.bigeye.com  
-**INPACT™:** 25/36 (I=5, N=4, P=4, A=4, C=5, T=3)  
-**GOALS™:** 20/25 (G=4, O=5, A=4, L=4, S=3)  
+**INPACT:** 25/36 (I=5, N=4, P=4, A=4, C=5, T=3)  
+**GOALS:** 20/25 (G=4, O=5, A=4, L=4, S=3)  
 
 
 **Why Consider:**
@@ -889,8 +887,8 @@ RESULT: Vector database selected
 
 #### ML-Native: Metaplane
 **URL:** https://www.metaplane.dev  
-**INPACT™:** 25/36 (I=5, N=4, P=4, A=4, C=5, T=3)  
-**GOALS™:** 20/25 (G=4, O=5, A=4, L=4, S=3)  
+**INPACT:** 25/36 (I=5, N=4, P=4, A=4, C=5, T=3)  
+**GOALS:** 20/25 (G=4, O=5, A=4, L=4, S=3)  
 
 
 **Why Consider:**
@@ -909,8 +907,8 @@ RESULT: Vector database selected
 
 #### Spark-Native: Apache Deequ
 **URL:** https://github.com/awslabs/deequ  
-**INPACT™:** 21/36 (I=4, N=3, P=3, A=4, C=4, T=3)  
-**GOALS™:** 18/25 (G=3, O=4, A=4, L=4, S=3)  
+**INPACT:** 21/36 (I=4, N=3, P=3, A=4, C=4, T=3)  
+**GOALS:** 18/25 (G=3, O=4, A=4, L=4, S=3)  
 
 
 **Why Consider:**
@@ -960,8 +958,8 @@ RESULT: Vector database selected
 
 #### 🏆 Top Recommendation: Fivetran
 **URL:** https://www.fivetran.com/  
-**INPACT™:** 29/36 (I=6, N=4, P=5, A=5, C=6, T=3)  
-**GOALS™:** 23/25 (G=5, O=5, A=5, L=4, S=4)  
+**INPACT:** 29/36 (I=6, N=4, P=5, A=5, C=6, T=3)  
+**GOALS:** 23/25 (G=5, O=5, A=5, L=4, S=4)  
 
 
 **Why It's #1:**
@@ -982,8 +980,8 @@ RESULT: Vector database selected
 
 #### 🥈 Cloud-Native: AWS DMS (Database Migration Service)
 **URL:** https://aws.amazon.com/dms/  
-**INPACT™:** 25/36 (I=5, N=3, P=5, A=4, C=5, T=3)  
-**GOALS™:** 21/25 (G=5, O=4, A=3, L=4, S=5)  
+**INPACT:** 25/36 (I=5, N=3, P=5, A=4, C=5, T=3)  
+**GOALS:** 21/25 (G=5, O=4, A=3, L=4, S=5)  
 
 
 **Why Consider:**
@@ -1003,8 +1001,8 @@ RESULT: Vector database selected
 
 #### 🥉 Open-Source: Debezium
 **URL:** https://debezium.io/  
-**INPACT™:** 22/36 (I=4, N=3, P=4, A=3, C=5, T=4)  
-**GOALS™:** 18/25 (G=3, O=3, A=2, L=4, S=6)  
+**INPACT:** 22/36 (I=4, N=3, P=4, A=3, C=5, T=4)  
+**GOALS:** 18/25 (G=3, O=3, A=2, L=4, S=6)  
 
 
 **Why Consider:**
@@ -1027,8 +1025,8 @@ RESULT: Vector database selected
 
 #### 🏆 Top Recommendation: Confluent Cloud
 **URL:** https://www.confluent.io/confluent-cloud/  
-**INPACT™:** 30/36 (I=6, N=4, P=5, A=5, C=6, T=4)  
-**GOALS™:** 24/25 (G=5, O=5, A=4, L=5, S=5)  
+**INPACT:** 30/36 (I=6, N=4, P=5, A=5, C=6, T=4)  
+**GOALS:** 24/25 (G=5, O=5, A=4, L=5, S=5)  
 
 
 **Why It's #1:**
@@ -1049,8 +1047,8 @@ RESULT: Vector database selected
 
 #### 🥈 Azure Pick: Azure Event Hubs
 **URL:** https://azure.microsoft.com/en-us/products/event-hubs  
-**INPACT™:** 30/36 (I=6, N=4, P=6, A=5, C=5, T=4)  
-**GOALS™:** 23/25 (G=5, O=4, A=4, L=5, S=5)  
+**INPACT:** 30/36 (I=6, N=4, P=6, A=5, C=5, T=4)  
+**GOALS:** 23/25 (G=5, O=4, A=4, L=5, S=5)  
 
 
 **Why It's Strong:**
@@ -1071,8 +1069,8 @@ RESULT: Vector database selected
 
 #### 🥉 AWS Pick: Amazon Kinesis
 **URL:** https://aws.amazon.com/kinesis/  
-**INPACT™:** 28/36 (I=6, N=3, P=5, A=5, C=5, T=4)  
-**GOALS™:** 22/25 (G=5, O=4, A=3, L=5, S=5)  
+**INPACT:** 28/36 (I=6, N=3, P=5, A=5, C=5, T=4)  
+**GOALS:** 22/25 (G=5, O=4, A=3, L=5, S=5)  
 
 
 **Why Consider:**
@@ -1104,8 +1102,8 @@ RESULT: Vector database selected
 
 #### 🏆 Top Recommendation: dbt Cloud
 **URL:** https://www.getdbt.com/  
-**INPACT™:** 28/36 (I=5, N=6, P=5, A=5, C=5, T=2)  
-**GOALS™:** 22/25 (G=4, O=5, A=4, L=5, S=4)  
+**INPACT:** 28/36 (I=5, N=6, P=5, A=5, C=5, T=2)  
+**GOALS:** 22/25 (G=4, O=5, A=4, L=5, S=4)  
 
 
 **Why It's #1:**
@@ -1126,8 +1124,8 @@ RESULT: Vector database selected
 
 #### 🥈 API-First: Cube
 **URL:** https://cube.dev/  
-**INPACT™:** 26/36 (I=6, N=5, P=4, A=5, C=5, T=1)  
-**GOALS™:** 20/25 (G=3, O=4, A=4, L=5, S=4)  
+**INPACT:** 26/36 (I=6, N=5, P=4, A=5, C=5, T=1)  
+**GOALS:** 20/25 (G=3, O=4, A=4, L=5, S=4)  
 
 
 **Why Consider:**
@@ -1149,8 +1147,8 @@ RESULT: Vector database selected
 
 #### 🏆 Top Recommendation: Atlan
 **URL:** https://www.atlan.com/  
-**INPACT™:** 29/36 (I=5, N=5, P=5, A=5, C=6, T=3)  
-**GOALS™:** 21/25 (G=4, O=4, A=4, L=5, S=4)  
+**INPACT:** 29/36 (I=5, N=5, P=5, A=5, C=6, T=3)  
+**GOALS:** 21/25 (G=4, O=4, A=4, L=5, S=4)  
 
 
 **Why It's #1:**
@@ -1171,8 +1169,8 @@ RESULT: Vector database selected
 
 #### 🥈 Enterprise: Collibra
 **URL:** https://www.collibra.com/  
-**INPACT™:** 28/36 (I=4, N=5, P=5, A=4, C=6, T=4)  
-**GOALS™:** 21/25 (G=5, O=4, A=3, L=4, S=5)  
+**INPACT:** 28/36 (I=4, N=5, P=5, A=4, C=6, T=4)  
+**GOALS:** 21/25 (G=5, O=4, A=3, L=4, S=5)  
 
 
 **Why Consider:**
@@ -1194,7 +1192,7 @@ RESULT: Vector database selected
 
 **Purpose:** Match, merge, and deduplicate entities (patients, providers, products) across systems
 
-**GOALS™ Alignment:** Lexicon (L) - Semantic Understanding & Accuracy
+**GOALS Alignment:** Lexicon (L) - Semantic Understanding & Accuracy
 
 **Why It Matters for Agents:** When a user asks "Show my appointments with Dr. Martinez," the agent must resolve "Dr. Martinez" to a unique provider ID that works across EHR, scheduling, and billing systems. Entity resolution failures cause agents to serve wrong data or miss relevant information.
 
@@ -1202,8 +1200,8 @@ RESULT: Vector database selected
 
 #### 🏆 Top Recommendation: Tamr
 **URL:** https://www.tamr.com  
-**INPACT™:** 27/36 (I=4, N=5, P=5, A=5, C=5, T=3)  
-**GOALS™:** 21/25 (G=4, O=4, A=4, L=5, S=4)  
+**INPACT:** 27/36 (I=4, N=5, P=5, A=5, C=5, T=3)  
+**GOALS:** 21/25 (G=4, O=4, A=4, L=5, S=4)  
 
 
 **Why It's #1:**
@@ -1223,8 +1221,8 @@ RESULT: Vector database selected
 
 #### 🥈 Cloud-Native: AWS Entity Resolution
 **URL:** https://aws.amazon.com/entity-resolution/  
-**INPACT™:** 25/36 (I=5, N=4, P=5, A=4, C=5, T=2)  
-**GOALS™:** 20/25 (G=4, O=4, A=4, L=4, S=4)  
+**INPACT:** 25/36 (I=5, N=4, P=5, A=4, C=5, T=2)  
+**GOALS:** 20/25 (G=4, O=4, A=4, L=4, S=4)  
 
 
 **Why Consider:**
@@ -1244,8 +1242,8 @@ RESULT: Vector database selected
 
 #### 🥉 Open-Source: Zingg
 **URL:** https://www.zingg.ai  
-**INPACT™:** 22/36 (I=4, N=4, P=3, A=4, C=4, T=3)  
-**GOALS™:** 18/25 (G=3, O=3, A=4, L=4, S=4)  
+**INPACT:** 22/36 (I=4, N=4, P=3, A=4, C=4, T=3)  
+**GOALS:** 18/25 (G=3, O=3, A=4, L=4, S=4)  
 
 
 **Why Consider:**
@@ -1266,8 +1264,8 @@ RESULT: Vector database selected
 
 #### Budget Alternative: Splink
 **URL:** https://github.com/moj-analytical-services/splink  
-**INPACT™:** 21/36 (I=4, N=4, P=3, A=4, C=4, T=2)  
-**GOALS™:** 17/25 (G=3, O=3, A=4, L=4, S=3)  
+**INPACT:** 21/36 (I=4, N=4, P=3, A=4, C=4, T=2)  
+**GOALS:** 17/25 (G=3, O=3, A=4, L=4, S=3)  
 
 
 **Why Consider:**
@@ -1314,8 +1312,8 @@ RESULT: Vector database selected
 
 #### 🏆 Top Recommendation: OpenAI API (GPT-4, GPT-4o)
 **URL:** https://platform.openai.com/  
-**INPACT™:** 29/36 (I=6, N=6, P=5, A=5, C=5, T=2)  
-**GOALS™:** 24/25 (G=5, O=5, A=5, L=5, S=4)  
+**INPACT:** 29/36 (I=6, N=6, P=5, A=5, C=5, T=2)  
+**GOALS:** 24/25 (G=5, O=5, A=5, L=5, S=4)  
 
 
 **Why It's #1:**
@@ -1336,8 +1334,8 @@ RESULT: Vector database selected
 
 #### 🥈 Cost-Effective: Anthropic Claude
 **URL:** https://www.anthropic.com/  
-**INPACT™:** 29/36 (I=6, N=6, P=5, A=5, C=5, T=2)  
-**GOALS™:** 23/25 (G=5, O=4, A=5, L=5, S=4)  
+**INPACT:** 29/36 (I=6, N=6, P=5, A=5, C=5, T=2)  
+**GOALS:** 23/25 (G=5, O=4, A=5, L=5, S=4)  
 
 
 **Why Consider:**
@@ -1359,8 +1357,8 @@ RESULT: Vector database selected
 
 #### 🏆 Top Recommendation: OpenAI text-embedding-3-large
 **URL:** https://platform.openai.com/docs/guides/embeddings  
-**INPACT™:** 28/36 (I=6, N=6, P=5, A=4, C=5, T=2)  
-**GOALS™:** 22/25 (G=4, O=4, A=5, L=5, S=4)  
+**INPACT:** 28/36 (I=6, N=6, P=5, A=4, C=5, T=2)  
+**GOALS:** 22/25 (G=4, O=4, A=5, L=5, S=4)  
 
 
 **Why It's #1:**
@@ -1380,8 +1378,8 @@ RESULT: Vector database selected
 
 #### 🥈 Cost-Effective: OpenAI text-embedding-3-small
 **URL:** https://platform.openai.com/docs/guides/embeddings  
-**INPACT™:** 26/36 (I=6, N=5, P=5, A=4, C=5, T=1)  
-**GOALS™:** 21/25 (G=4, O=4, A=5, L=5, S=3)  
+**INPACT:** 26/36 (I=6, N=5, P=5, A=4, C=5, T=1)  
+**GOALS:** 21/25 (G=4, O=4, A=5, L=5, S=3)  
 
 
 **Why Consider:**
@@ -1402,8 +1400,8 @@ RESULT: Vector database selected
 
 #### 🏆 Top Recommendation: Cohere Rerank
 **URL:** https://cohere.com/rerank  
-**INPACT™:** 27/36 (I=6, N=5, P=5, A=5, C=5, T=1)  
-**GOALS™:** 22/25 (G=4, O=4, A=5, L=5, S=4)  
+**INPACT:** 27/36 (I=6, N=5, P=5, A=5, C=5, T=1)  
+**GOALS:** 22/25 (G=4, O=4, A=5, L=5, S=4)  
 
 
 **Why It's #1:**
@@ -1425,8 +1423,8 @@ RESULT: Vector database selected
 
 #### 🏆 Top Recommendation: Redis Stack
 **URL:** https://redis.io/  
-**INPACT™:** 26/36 (I=6, N=4, P=4, A=5, C=5, T=2)  
-**GOALS™:** 21/25 (G=4, O=4, A=4, L=5, S=4)  
+**INPACT:** 26/36 (I=6, N=4, P=4, A=5, C=5, T=2)  
+**GOALS:** 21/25 (G=4, O=4, A=4, L=5, S=4)  
 
 
 **Why It's #1:**
@@ -1459,8 +1457,8 @@ RESULT: Vector database selected
 
 #### 🏆 Top Recommendation: Azure AD + Entra Permissions Management
 **URL:** https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-permissions-management  
-**INPACT™:** 28/36 (I=5, N=4, P=6, A=5, C=5, T=3)  
-**GOALS™:** 22/25 (G=5, O=4, A=4, L=5, S=4)  
+**INPACT:** 28/36 (I=5, N=4, P=6, A=5, C=5, T=3)  
+**GOALS:** 22/25 (G=5, O=4, A=4, L=5, S=4)  
 
 
 **Why It's #1:**
@@ -1480,8 +1478,8 @@ RESULT: Vector database selected
 
 #### 🥈 Cloud-Agnostic: Open Policy Agent (OPA)
 **URL:** https://www.openpolicyagent.org/  
-**INPACT™:** 22/36 (I=4, N=3, P=5, A=4, C=4, T=2)  
-**GOALS™:** 22/25 (G=5, O=4, A=3, L=5, S=5)  
+**INPACT:** 22/36 (I=4, N=3, P=5, A=4, C=4, T=2)  
+**GOALS:** 22/25 (G=5, O=4, A=3, L=5, S=5)  
 
 
 **Why Consider:**
@@ -1503,8 +1501,8 @@ RESULT: Vector database selected
 
 #### 🏆 Top Recommendation: Azure Monitor
 **URL:** https://azure.microsoft.com/en-us/products/monitor/  
-**INPACT™:** 27/36 (I=5, N=4, P=5, A=5, C=5, T=3)  
-**GOALS™:** 22/25 (G=5, O=5, A=4, L=4, S=4)  
+**INPACT:** 27/36 (I=5, N=4, P=5, A=5, C=5, T=3)  
+**GOALS:** 22/25 (G=5, O=5, A=4, L=4, S=4)  
 
 
 **Why It's #1:**
@@ -1524,8 +1522,8 @@ RESULT: Vector database selected
 
 #### 🥈 Enterprise: Splunk
 **URL:** https://www.splunk.com/  
-**INPACT™:** 28/36 (I=5, N=4, P=5, A=5, C=6, T=3)  
-**GOALS™:** 23/25 (G=5, O=5, A=3, L=5, S=5)  
+**INPACT:** 28/36 (I=5, N=4, P=5, A=5, C=6, T=3)  
+**GOALS:** 23/25 (G=5, O=5, A=3, L=5, S=5)  
 
 
 **Why Consider:**
@@ -1547,8 +1545,8 @@ RESULT: Vector database selected
 
 #### 🏆 Top Recommendation: Azure Key Vault
 **URL:** https://azure.microsoft.com/en-us/products/key-vault/  
-**INPACT™:** 27/36 (I=5, N=3, P=6, A=4, C=5, T=4)  
-**GOALS™:** 22/25 (G=5, O=4, A=4, L=5, S=4)  
+**INPACT:** 27/36 (I=5, N=3, P=6, A=4, C=5, T=4)  
+**GOALS:** 22/25 (G=5, O=4, A=4, L=5, S=4)  
 
 
 **Why It's #1:**
@@ -1580,8 +1578,8 @@ RESULT: Vector database selected
 
 #### 🏆 Top Recommendation: Datadog
 **URL:** https://www.datadoghq.com/  
-**INPACT™:** 28/36 (I=6, N=4, P=5, A=5, C=6, T=2)  
-**GOALS™:** 23/25 (G=5, O=5, A=4, L=5, S=4)  
+**INPACT:** 28/36 (I=6, N=4, P=5, A=5, C=6, T=2)  
+**GOALS:** 23/25 (G=5, O=5, A=4, L=5, S=4)  
 
 
 **Why It's #1:**
@@ -1603,8 +1601,8 @@ RESULT: Vector database selected
 
 #### 🏆 Top Recommendation: LangSmith
 **URL:** https://www.langchain.com/langsmith  
-**INPACT™:** 26/36 (I=5, N=4, P=4, A=5, C=5, T=3)  
-**GOALS™:** 21/25 (G=4, O=5, A=4, L=4, S=4)  
+**INPACT:** 26/36 (I=5, N=4, P=4, A=5, C=5, T=3)  
+**GOALS:** 21/25 (G=4, O=5, A=4, L=4, S=4)  
 
 
 **Why It's #1:**
@@ -1623,8 +1621,8 @@ RESULT: Vector database selected
 
 #### 🥈 Best Open-Source Alternative: Langfuse
 **URL:** https://langfuse.com/  
-**INPACT™:** 25/36 (I=5, N=4, P=4, A=4, C=5, T=3)  
-**GOALS™:** 20/25 (G=4, O=5, A=4, L=4, S=3)  
+**INPACT:** 25/36 (I=5, N=4, P=4, A=4, C=5, T=3)  
+**GOALS:** 20/25 (G=4, O=5, A=4, L=4, S=3)  
 
 
 **Why Consider:**
@@ -1646,8 +1644,8 @@ RESULT: Vector database selected
 
 #### 🥉 Budget-Friendly: Arize Phoenix
 **URL:** https://phoenix.arize.com/  
-**INPACT™:** 24/36 (I=5, N=4, P=3, A=4, C=5, T=3)  
-**GOALS™:** 19/25 (G=3, O=5, A=4, L=4, S=3)  
+**INPACT:** 24/36 (I=5, N=4, P=3, A=4, C=5, T=3)  
+**GOALS:** 19/25 (G=3, O=5, A=4, L=4, S=3)  
 
 
 **Why Consider:**
@@ -1668,8 +1666,8 @@ RESULT: Vector database selected
 
 #### Budget Alternative: Lunary
 **URL:** https://lunary.ai/  
-**INPACT™:** 23/36 (I=4, N=4, P=3, A=4, C=5, T=3)  
-**GOALS™:** 18/25 (G=3, O=4, A=4, L=4, S=3)  
+**INPACT:** 23/36 (I=4, N=4, P=3, A=4, C=5, T=3)  
+**GOALS:** 18/25 (G=3, O=4, A=4, L=4, S=3)  
 
 
 **Why Consider:**
@@ -1690,8 +1688,8 @@ RESULT: Vector database selected
 
 #### Proxy-Based: Helicone
 **URL:** https://www.helicone.ai/  
-**INPACT™:** 24/36 (I=5, N=4, P=3, A=4, C=5, T=3)  
-**GOALS™:** 18/25 (G=3, O=4, A=4, L=4, S=3)  
+**INPACT:** 24/36 (I=5, N=4, P=3, A=4, C=5, T=3)  
+**GOALS:** 18/25 (G=3, O=4, A=4, L=4, S=3)  
 
 
 **Why Consider:**
@@ -1739,8 +1737,8 @@ RESULT: Vector database selected
 
 #### 🏆 Top Recommendation: LangGraph
 **URL:** https://www.langchain.com/langgraph  
-**INPACT™:** 27/36 (I=5, N=5, P=4, A=5, C=6, T=2)  
-**GOALS™:** 21/25 (G=4, O=4, A=4, L=5, S=4)  
+**INPACT:** 27/36 (I=5, N=5, P=4, A=5, C=6, T=2)  
+**GOALS:** 21/25 (G=4, O=4, A=4, L=5, S=4)  
 
 
 **Why It's #1:**
@@ -1760,8 +1758,8 @@ RESULT: Vector database selected
 
 #### 🥈 Best for Production Deployment: Agno
 **URL:** https://www.agno.com/  
-**INPACT™:** 26/36 (I=5, N=5, P=4, A=5, C=5, T=2)  
-**GOALS™:** 21/25 (G=4, O=4, A=5, L=4, S=4)  
+**INPACT:** 26/36 (I=5, N=5, P=4, A=5, C=5, T=2)  
+**GOALS:** 21/25 (G=4, O=4, A=5, L=4, S=4)  
 
 
 **Why Consider:**
@@ -1788,8 +1786,8 @@ RESULT: Vector database selected
 
 #### 🏆 Top Recommendation: Azure API Management
 **URL:** https://azure.microsoft.com/en-us/products/api-management/  
-**INPACT™:** 28/36 (I=5, N=4, P=6, A=5, C=5, T=3)  
-**GOALS™:** 22/25 (G=5, O=4, A=4, L=5, S=4)  
+**INPACT:** 28/36 (I=5, N=4, P=6, A=5, C=5, T=3)  
+**GOALS:** 22/25 (G=5, O=4, A=4, L=5, S=4)  
 
 
 **Why It's #1:**
@@ -1810,7 +1808,7 @@ RESULT: Vector database selected
 
 **Purpose:** Enable human review, approval, and override of agent decisions
 
-**GOALS™ Alignment:** Governance (G) - Security, Compliance & Control
+**GOALS Alignment:** Governance (G) - Security, Compliance & Control
 
 **Why It Matters for Agents:** High-risk decisions (clinical recommendations, financial approvals, compliance actions) require human oversight. HITL platforms provide the workflow infrastructure to route decisions to qualified reviewers, track approvals, and maintain audit trails.
 
@@ -1818,8 +1816,8 @@ RESULT: Vector database selected
 
 #### 🏆 Top Recommendation: Labelbox
 **URL:** https://www.labelbox.com  
-**INPACT™:** 26/36 (I=5, N=4, P=5, A=5, C=4, T=3)  
-**GOALS™:** 21/25 (G=5, O=4, A=4, L=4, S=4)  
+**INPACT:** 26/36 (I=5, N=4, P=5, A=5, C=4, T=3)  
+**GOALS:** 21/25 (G=5, O=4, A=4, L=4, S=4)  
 
 
 **Why It's #1:**
@@ -1839,8 +1837,8 @@ RESULT: Vector database selected
 
 #### 🥈 LLM-Native: Humanloop
 **URL:** https://humanloop.com  
-**INPACT™:** 25/36 (I=5, N=5, P=4, A=5, C=4, T=2)  
-**GOALS™:** 20/25 (G=4, O=5, A=4, L=4, S=3)  
+**INPACT:** 25/36 (I=5, N=5, P=4, A=5, C=4, T=2)  
+**GOALS:** 20/25 (G=4, O=5, A=4, L=4, S=3)  
 
 
 **Why Consider:**
@@ -1860,8 +1858,8 @@ RESULT: Vector database selected
 
 #### 🥉 Open-Source: Argilla
 **URL:** https://argilla.io  
-**INPACT™:** 23/36 (I=4, N=4, P=4, A=4, C=4, T=3)  
-**GOALS™:** 19/25 (G=4, O=4, A=4, L=4, S=3)  
+**INPACT:** 23/36 (I=4, N=4, P=4, A=4, C=4, T=3)  
+**GOALS:** 19/25 (G=4, O=4, A=4, L=4, S=3)  
 
 
 **Why Consider:**
@@ -1881,8 +1879,8 @@ RESULT: Vector database selected
 
 #### Budget Alternative: Custom LangGraph HITL
 **URL:** https://www.langchain.com/langgraph  
-**INPACT™:** 22/36 (I=4, N=4, P=4, A=4, C=4, T=2)  
-**GOALS™:** 18/25 (G=3, O=4, A=4, L=4, S=3)  
+**INPACT:** 22/36 (I=4, N=4, P=4, A=4, C=4, T=2)  
+**GOALS:** 18/25 (G=3, O=4, A=4, L=4, S=3)  
 
 
 **Why Consider:**
@@ -1930,9 +1928,9 @@ RESULT: Vector database selected
 | **Retail/E-commerce** | PCI-DSS, GDPR, CCPA | Customer PII, Payment Data | Privacy by design, Consent mgmt |
 | **Public Sector** | FedRAMP, FISMA | CUI (Controlled Unclassified Info) | NIST 800-171, Authority to Operate |
 
-**INPACT™/GOALS™ Thresholds by Industry:**
+**INPACT/GOALS Thresholds by Industry:**
 
-| Industry | Min INPACT™ | Min GOALS™ | Rationale |
+| Industry | Min INPACT | Min GOALS | Rationale |
 |----------|-------------|------------|-----------|
 | Healthcare | ≥28/36 | ≥20/25 | Regulatory risk, patient safety |
 | Financial Services | ≥28/36 | ≥21/25 | Regulatory risk, financial loss |
@@ -2232,7 +2230,7 @@ RESULT: Vector database selected
 
 **Based on Tier-1 Bank Implementation (ROI: 340%, 14-week payback)**
 
-| Layer | Product | INPACT™ | GOALS™ | Why Financial? |
+| Layer | Product | INPACT | GOALS | Why Financial? |
 |-------|---------|---------|-------|----------------|
 | **L1** | Azure AI Search | 33 | 22 | SOC2 Type II, tokenization support |
 | **L1** | Snowflake | 29 | 23 | PCI-DSS compliant, row-level security |
@@ -2327,7 +2325,7 @@ RESULT: Vector database selected
 
 **Based on Aerospace OEM Implementation (ROI: 280%, 18-week payback)**
 
-| Layer | Product | INPACT™ | GOALS™ | Why Manufacturing? |
+| Layer | Product | INPACT | GOALS | Why Manufacturing? |
 |-------|---------|---------|-------|-------------------|
 | **L1** | Snowflake (Gov) | 29 | 23 | ITAR region, export control |
 | **L1** | Neo4j Enterprise | 30 | 22 | Supply chain traceability |
@@ -2416,7 +2414,7 @@ RESULT: Vector database selected
 
 **Based on E-commerce Platform Implementation (ROI: 420%, 8-week payback)**
 
-| Layer | Product | INPACT™ | GOALS™ | Why Retail? |
+| Layer | Product | INPACT | GOALS | Why Retail? |
 |-------|---------|---------|-------|-------------|
 | **L1** | Azure AI Search | 33 | 22 | Product search, personalization |
 | **L1** | Snowflake | 29 | 23 | Customer 360, purchase history |
@@ -2504,7 +2502,7 @@ RESULT: Vector database selected
 
 **Based on Federal Agency Implementation (12-month ATO)**
 
-| Layer | Product | INPACT™ | GOALS™ | Why Public Sector? |
+| Layer | Product | INPACT | GOALS | Why Public Sector? |
 |-------|---------|---------|-------|-------------------|
 | **L1** | Azure AI Search | 33 | 22 | FedRAMP High, US regions |
 | **L1** | Snowflake Gov | 29 | 23 | FedRAMP Moderate, CUI capable |
@@ -2586,7 +2584,7 @@ graph TD
     GCP_PATH["<b>GCP-Native</b><br/>Prefer GCP services"]
     MULTI["<b>Multi-Cloud</b><br/>Cloud-agnostic tools"]
     
-    SCORES["<b>Evaluate Scores</b><br/><br/>Healthcare: INPACT ≥28, GOALS™ ≥20<br/>Enterprise: INPACT ≥24, GOALS™ ≥16<br/>Internal: INPACT ≥18, GOALS™ ≥11"]
+    SCORES["<b>Evaluate Scores</b><br/><br/>Healthcare: INPACT ≥28, GOALS ≥20<br/>Enterprise: INPACT ≥24, GOALS ≥16<br/>Internal: INPACT ≥18, GOALS ≥11"]
     
     PREREQS["<b>Check Prerequisites</b><br/><br/>✓ Team expertise (A score)<br/>✓ Integrations exist (C score)<br/>✓ Budget approved"]
     
@@ -2630,7 +2628,7 @@ graph TD
 
 **Figure 4: Technology Selection Decision Tree**
 
-Follow this decision tree when selecting any technology product from this appendix. Healthcare deployments must filter to HIPAA-eligible products first. Then choose based on budget tier. Evaluate INPACT™ + GOALS™ scores against your requirements. Finally, verify prerequisites before finalizing selection.
+Follow this decision tree when selecting any technology product from this appendix. Healthcare deployments must filter to HIPAA-eligible products first. Then choose based on budget tier. Evaluate INPACT + GOALS scores against your requirements. Finally, verify prerequisites before finalizing selection.
 
 ---
 
@@ -2826,9 +2824,9 @@ else:
 
 # PART 5: QUICK REFERENCE TABLES
 
-## 5.1 Top 20 Products by INPACT™ Score
+## 5.1 Top 20 Products by INPACT Score
 
-| Rank | Product | Layer | INPACT™ | Trust Level | Healthcare Ready |
+| Rank | Product | Layer | INPACT | Trust Level | Healthcare Ready |
 |------|---------|-------|---------|-------------|------------------|
 | 1 | **Azure AI Search** | L1 | 33/36 | High Trust | ✅ Yes (≥28) |
 | 2 | **Pinecone** | L1 | 31/36 | High Trust | ✅ Yes |
@@ -2851,9 +2849,9 @@ else:
 | 19 | **Azure AD** | L5 | 28/36 | Good Trust | ✅ Yes |
 | 20 | **Amazon Kinesis** | L2 | 28/36 | Good Trust | ✅ Yes |
 
-## 5.1b Top 20 Products by GOALS™ Score
+## 5.1b Top 20 Products by GOALS Score
 
-| Rank | Product | Layer | GOALS™ | Maturity Level | Healthcare Ready |
+| Rank | Product | Layer | GOALS | Maturity Level | Healthcare Ready |
 |------|---------|-------|--------|----------------|------------------|
 | 1 | **Confluent Cloud** | L2 | 24/25 | Production-Grade | ✅ Yes (≥20) |
 | 2 | **OpenAI API** | L4 | 24/25 | Production-Grade | ✅ Yes |
@@ -2907,7 +2905,7 @@ else:
 
 **Use this to understand risk vs reward:**
 
-| Maturity | Description | GOALS™ Score | Examples | Risk |
+| Maturity | Description | GOALS Score | Examples | Risk |
 |----------|-------------|-------------|----------|------|
 | **Mature** | Production-proven 5+ years | 22-25 | Snowflake, Neo4j, Kafka, Datadog | Low |
 | **Stable** | Production-proven 2-5 years | 19-21 | dbt, Atlan, LangChain, Fivetran | Medium |
@@ -2960,10 +2958,10 @@ else:
 5. **Quick reference:** Use Part 5 (Tables) for at-a-glance comparisons
 
 **Remember:**
-- INPACT™ measures agent needs (Chapter 2)
-- GOALS™ measures operational readiness (Chapter 7)
+- INPACT measures agent needs (Chapter 2)
+- GOALS measures operational readiness (Chapter 7)
 - **Both scores must pass thresholds independently**
-- Healthcare requires: INPACT™ ≥28/36 AND GOALS™ ≥20/25
+- Healthcare requires: INPACT ≥28/36 AND GOALS ≥20/25
 
 **Questions?**
 - Technology not listed? See Chapter 11's process for evaluating new tools
@@ -2974,19 +2972,18 @@ else:
 
 ## Document Metadata
 
-**Version:** 2.1
 **Date:** February 2026
-**Products Analyzed:** 90+ with detailed INPACT™/GOALS™ scores across 23 categories
-**Frameworks Used:** INPACT™ (Chapter 2) + GOALS™ (Chapter 7)
+**Products Analyzed:** 90+ with detailed INPACT/GOALS scores across 23 categories
+**Frameworks Used:** INPACT (Chapter 2) + GOALS (Chapter 7)
 **Primary Use Case:** Healthcare agent-ready data infrastructure
 **Target Audience:** Enterprise architects, CTOs, CDOs
 
 **Supporting Documents:**
-- Chapter 2: INPACT™ Framework (Agent Needs)
-- Chapter 7: GOALS™ Framework (Operational Excellence)
+- Chapter 2: INPACT Framework (Agent Needs)
+- Chapter 7: GOALS Framework (Operational Excellence)
 - Chapter 10: 90-Day Implementation Roadmap
 - Chapter 11: Technology Selection Guide (Methodology)
-- INPACT™ Practitioner Reference (scoring rubrics, trust bands)
+- INPACT Practitioner Reference (scoring rubrics, trust bands)
 
 **Online Tools:**
 - trustbeforeintelligence.ai/tools  - Interactive assessments and scorecards
@@ -2996,16 +2993,3 @@ else:
 - All HIPAA claims verified against vendor documentation
 - All scores assigned by Ram Katamaraja (Colaberry CEO, AIXcelerator architect)
 - Echo Health Systems case study validated (477% ROI, 10-week payback, 12-week total timeline)
-
----
-
-**© 2025 Colaberry Inc. All rights reserved.**  
-**INPACT™ and GOALS™ are trademarks of Colaberry Inc.**
-
----
-
-**END OF APPENDIX DA-1**
-
----
-
-**[← Back to Appendix Matrix](appendix_00_navigation.md) | [Continue to Appendix DA-2 →](appendix_da2_goals_framework_reference.md)**

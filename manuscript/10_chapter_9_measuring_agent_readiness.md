@@ -147,7 +147,7 @@ INPACT covers the full architecture. Each dimension doesn't exist in isolation. 
 
 ### INPACT & GOALS: The Connection
 
-The INPACT assessment measures infrastructure readiness: can you *build* agents? The GOALS Framework™ measures operational readiness: can you *run* agents? These are different questions, but they're connected.
+The INPACT assessment measures infrastructure readiness: can you *build* agents? The GOALS Framework measures operational readiness: can you *run* agents? These are different questions, but they're connected.
 
 ---
 
@@ -467,7 +467,7 @@ Turn the page to build your plan.
 | **Part 3: Echo's Benchmark** | 28→89 progression provides calibration for your own journey |
 | **Part 4: Interpretation** | Trust bands estimate timeline and budget; lowest dimensions determine focus |
 
-**Your INPACT Score™**: ___/100
+**Your INPACT Score**: ___/100
 
 **Your Trust Band**: _______________
 

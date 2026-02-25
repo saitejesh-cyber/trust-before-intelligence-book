@@ -2,7 +2,6 @@
 
 **Book:** Trust Before Intelligence
 **Purpose:** Comprehensive taxonomy of context types required for trustworthy AI agent outputs
-**Version:** 2.0
 **Date:** January 2026
 
 ---
@@ -583,8 +582,3 @@ Verification requirements.
 | **Quick (Core 7)** | 7 contexts | Executive summary, initial assessment |
 | **Standard (Domains)** | 10 domains | Planning, architecture review |
 | **Comprehensive (Types)** | 40+ types | Deep dive, implementation planning |
-
----
-
-© 2026 Colaberry Inc. All Rights Reserved.
-INPACT™ and GOALS™ are trademarks of Colaberry Inc.

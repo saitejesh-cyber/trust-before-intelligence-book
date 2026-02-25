@@ -1,13 +1,13 @@
-# INPACT™ Practitioner Reference
+# INPACT Practitioner Reference
 ## Scoring Rubrics, Anti-Patterns, and Quick Reference
 
-**Purpose:** Quick reference for scoring and implementing INPACT™
+**Purpose:** Quick reference for scoring and implementing INPACT
 **Use:** Look up scoring criteria and avoid common mistakes during implementation
 **For full framework details:** See Chapter 2
 
 ---
 
-## INPACT™ at a Glance
+## INPACT at a Glance
 
 | Need | What It Means | Target |
 |------|---------------|--------|
@@ -102,9 +102,9 @@
 
 ---
 
-## INPACT™ Scoring System
+## INPACT Scoring System
 
-### Overall INPACT™ Score
+### Overall INPACT Score
 
 **Total Score:** Sum of 6 dimensions (1-6 each) = **6 to 36 points**
 
@@ -117,7 +117,7 @@
 
 ---
 
-## INPACT™ Scoring Template
+## INPACT Scoring Template
 
 **Use this template to track progress:**
 
@@ -140,11 +140,11 @@
 
 ---
 
-## How INPACT™ Maps to Architecture
+## How INPACT Maps to Architecture
 
-**The 7-layer architecture (Chapters 4-6) delivers the 6 INPACT™ needs:**
+**The 7-layer architecture (Chapters 4-6) delivers the 6 INPACT needs:**
 
-| INPACT™ Need | Primary Layers | Infrastructure Capability |
+| INPACT Need | Primary Layers | Infrastructure Capability |
 |--------------|----------------|---------------------------|
 | **I** - Instant | L2, L1, L4, L7 | Sub-Second Response Architecture |
 | **N** - Natural | L3, L4, L1 | Semantic Understanding |
@@ -153,11 +153,11 @@
 | **C** - Contextual | L2, L3, L1, L4 | Cross-Domain Integration |
 | **T** - Transparent | L5, L6, L4, L3 | Auditability & Explainability |
 
-**Key Insight:** Every INPACT™ need requires **multiple layers working together**. No single layer solves any need alone.
+**Key Insight:** Every INPACT need requires **multiple layers working together**. No single layer solves any need alone.
 
 ---
 
-## Common INPACT™ Anti-Patterns
+## Common INPACT Anti-Patterns
 
 ### ❌ Anti-Pattern 1: "We Have a Vector DB, So We're Agent-Ready"
 
@@ -201,17 +201,17 @@
 
 ## Reference
 
-**For complete details on INPACT™, see Chapter 2.**
+**For complete details on INPACT, see Chapter 2.**
 
-**For architecture that delivers INPACT™, see Chapters 4-6.**
+**For architecture that delivers INPACT, see Chapters 4-6.**
 
 **For implementation guidance, see Chapter 10.**
 
 ---
 
 **© 2025-2026 Colaberry Inc. All rights reserved.**  
-**INPACT™ is a trademark of Colaberry Inc.**
+**INPACT is a trademark of Colaberry Inc.**
 
 ---
 
-**END OF INPACT™ PRACTITIONER REFERENCE**
+**END OF INPACT PRACTITIONER REFERENCE**

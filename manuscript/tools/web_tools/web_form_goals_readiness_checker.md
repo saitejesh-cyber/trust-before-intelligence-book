@@ -1,16 +1,14 @@
-# GOALS™ Readiness Checker
+# GOALS Readiness Checker
 ## Tool Specification
 
 **Purpose:** Interactive 30-question assessment to evaluate organization's operational readiness for sustaining AI agent deployments.
 **URL:** trustbeforeintelligence.ai/goals-assessment
 **Source:** Chapter 7 Self-Assessment Checklist (lines 1734-1788)
-**Status:** Specification (Pre-Development)
-
 ---
 
-## Relationship to INPACT™ Assessment
+## Relationship to INPACT Assessment
 
-| Aspect | INPACT™ Assessment | GOALS™ Readiness Checker |
+| Aspect | INPACT Assessment | GOALS Readiness Checker |
 |--------|-------------------|--------------------------|
 | **Measures** | Infrastructure capability | Operational sustainability |
 | **When Used** | BEFORE transformation | DURING/AFTER transformation |
@@ -27,7 +25,7 @@
 
 1. **Landing page** with value proposition:
    - "Evaluate your operational readiness in 10 minutes"
-   - "Complement your INPACT™ score with operational sustainability assessment"
+   - "Complement your INPACT score with operational sustainability assessment"
 
 2. **Lead capture:** User enters email, name, company, role
 
@@ -128,7 +126,7 @@ Yes answers per dimension → Dimension score:
 Total GOALS Score = G + O + A + L + S (range: 5-25)
 Percentage = (Total / 25) × 100 = 20-100%
 
-PRIMARY DISPLAY: "Your GOALS™ Score: X/25 (Y%)"
+PRIMARY DISPLAY: "Your GOALS Score: X/25 (Y%)"
 ```
 
 ### Readiness Bands
@@ -219,7 +217,7 @@ PDF report includes comparison to Echo's journey:
 
 | Tool | Integration |
 |------|-------------|
-| **INPACT™ Assessment** | "You've assessed capability (INPACT). Now assess sustainability (GOALS)." |
+| **INPACT Assessment** | "You've assessed capability (INPACT). Now assess sustainability (GOALS)." |
 | **90-Day Tracker** | GOALS scores feed into Tab 3 (GOALS Tracking) |
 | **Compliance Navigator** | Deep dive on regulatory requirements per dimension |
 

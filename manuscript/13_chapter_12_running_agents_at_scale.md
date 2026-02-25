@@ -979,7 +979,7 @@ This section consolidates Echo's results for easy reference.
 
 | Metric | Week 10 Value |
 |--------|---------------|
-| INPACT Score™ | 86/100 |
+| INPACT Score | 86/100 |
 | Response Time (P95) | 2.2 seconds |
 | NLU Accuracy | 83% (reached 85% Week 11) |
 | HITL Escalation Rate | 8% |

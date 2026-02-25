@@ -1,4 +1,4 @@
-# INPACT™ Assessment  - Web Form Specification
+# INPACT Assessment  - Web Form Specification
 
 ## Overview
 
@@ -12,7 +12,7 @@
 
 ### Step 1: Landing Page
 - Value proposition: "Discover your AI agent readiness score in 15 minutes"
-- Brief explanation of INPACT™ (6 dimensions)
+- Brief explanation of INPACT (6 dimensions)
 - Echo Health benchmark teaser: "See how you compare to a healthcare org that went from 28% to 89% in 90 days"
 - **CTA Button:** "Start Assessment"
 
@@ -87,8 +87,6 @@ Optional fields:
 
 **PDF footer:**
 ```
-© 2026 Colaberry Inc. All rights reserved.
-INPACT™ is a trademark of Colaberry Inc.
 From "Trust Before Intelligence" by Ram Katamaraja
 ```
 
@@ -110,7 +108,7 @@ From "Trust Before Intelligence" by Ram Katamaraja
 - **Overall percentage: (total / 36) × 100**
 - Example: Dimension scores [4, 5, 3, 4, 3, 5] = 24 → 24/36 × 100 = **67%**
 
-**Display:** The primary display should be the **percentage** (e.g., "Your INPACT™ Score: 67%"). The 6-36 point value is secondary/optional.
+**Display:** The primary display should be the **percentage** (e.g., "Your INPACT Score: 67%"). The 6-36 point value is secondary/optional.
 
 ### Trust Bands
 | Band | Percentage | Score Range |
@@ -192,7 +190,7 @@ The web form uses the same knowledge bases as the GPT:
 
 > **For AI-Assisted Development (Claude Code, Cursor, Windsurf, etc.)**
 >
-> This section provides the technical specifications needed to build the INPACT™ Assessment tool. It includes data models, API endpoints, component architecture, scoring algorithms, and chart generation.
+> This section provides the technical specifications needed to build the INPACT Assessment tool. It includes data models, API endpoints, component architecture, scoring algorithms, and chart generation.
 
 ---
 
@@ -291,7 +289,7 @@ interface TrustBand {
   name: string;
   minPercentage: number;
   maxPercentage: number;
-  minScore: number;           // INPACT™ score (6-36)
+  minScore: number;           // INPACT score (6-36)
   maxScore: number;
   color: string;
   bgColor: string;
@@ -695,7 +693,7 @@ function calculateResults(
     };
   }
 
-  // Calculate total INPACT™ score (sum of 6 dimension scores, each 1-6)
+  // Calculate total INPACT score (sum of 6 dimension scores, each 1-6)
   const totalScore = Object.values(dimensionScores).reduce(
     (sum, d) => sum + d.score,
     0
@@ -1442,7 +1440,7 @@ export function ResultsPage({ session }: Props) {
         animate={{ opacity: 1, y: 0 }}
       >
         <h1 className="text-3xl font-bold text-gray-900 mb-2">
-          Your INPACT™ Assessment Results
+          Your INPACT Assessment Results
         </h1>
         <p className="text-gray-600">
           {session.lead.organization} • Completed {formatDate(session.completedAt)}
@@ -1467,9 +1465,9 @@ export function ResultsPage({ session }: Props) {
           {results.trustBand.description}
         </p>
 
-        {/* INPACT™ score (6-36 scale) */}
+        {/* INPACT score (6-36 scale) */}
         <div className="mt-4 text-sm text-gray-500">
-          INPACT™ Score: {results.totalScore.toFixed(1)}/36
+          INPACT Score: {results.totalScore.toFixed(1)}/36
         </div>
       </motion.div>
 
@@ -2028,7 +2026,7 @@ export function AssessmentReport({ session, radarChartImage }: Props) {
       {/* Cover Page */}
       <Page size="A4" style={styles.page}>
         <View style={styles.header}>
-          <Text style={styles.title}>INPACT™ Assessment Report</Text>
+          <Text style={styles.title}>INPACT Assessment Report</Text>
           <Text style={styles.subtitle}>
             {lead.organization} • {formatDate(session.completedAt)}
           </Text>
@@ -2043,7 +2041,6 @@ export function AssessmentReport({ session, radarChartImage }: Props) {
         <Image src={radarChartImage} style={{ width: 300, height: 300, alignSelf: "center" }} />
 
         <View style={styles.footer}>
-          <Text>© 2026 Colaberry Inc. INPACT™ is a trademark of Colaberry Inc.</Text>
         </View>
       </Page>
 
@@ -2072,9 +2069,3 @@ export function AssessmentReport({ session, radarChartImage }: Props) {
   );
 }
 ```
-
----
-
-**© 2026 Colaberry Inc. All rights reserved.**
-**INPACT™ is a trademark of Colaberry Inc.**
-**From "Trust Before Intelligence" by Ram Katamaraja**

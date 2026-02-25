@@ -3,7 +3,6 @@
 **Book:** Trust Before Intelligence: Enterprise AI Fails Without Trust. Fix It in 90 Days.
 **Author:** Ram Katamaraja, CEO, Colaberry Inc.
 **Appendix:** DA-8 (Digital)
-**Version:** 2.0
 **Date:** January 2026
 **Target:** Pre-transformation readiness criteria aligned with Chapter 10
 
@@ -16,7 +15,7 @@ This appendix provides the Day Zero checklist ensuring your organization is read
 **67% of agent deployments fail in Week 1, not because of bad AI, but because of missing Day Zero preparation.**
 
 **Integration Points:**
-- **Chapter 9:** INPACT™ assessment must be complete before Day Zero
+- **Chapter 9:** INPACT assessment must be complete before Day Zero
 - **Chapter 10:** Week 1 activities assume Day Zero complete
 - **90-Day Tracker:** Day Zero is Tab 0, gates access to Week 1
 
@@ -63,20 +62,19 @@ These items directly map to Chapter 10's explicit prerequisites for Week 1.
 
 ### Domain: Assessment & Planning
 
-#### E-01: INPACT™ Assessment Complete ✅ Critical
+#### E-01: INPACT Assessment Complete ✅ Critical
 
-**Requirement:** Chapter 9 INPACT™ assessment completed with baseline score.
+**Requirement:** Chapter 9 INPACT assessment completed with baseline score.
 
-**Chapter 10 Reference:** "Complete your INPACT™ assessment (Chapter 9) to establish baseline scores"
+**Chapter 10 Reference:** "Complete your INPACT assessment (Chapter 9) to establish baseline scores"
 
 **Evidence Required:**
 - [ ] 36-question assessment completed
-- [ ] Baseline INPACT™ score recorded (X/36 = Y%)
+- [ ] Baseline INPACT score recorded (X/36 = Y%)
 - [ ] Trust band identified
 - [ ] Results reviewed with stakeholders
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
 - Baseline Score: ___/36 (___%)
 - Trust Band: High / Good / Moderate / Low / Very Low
 
@@ -89,12 +87,11 @@ These items directly map to Chapter 10's explicit prerequisites for Week 1.
 **Chapter 10 Reference:** "Your priority layers tell you where to focus in this playbook"
 
 **Evidence Required:**
-- [ ] Two lowest-scoring INPACT™ dimensions identified
+- [ ] Two lowest-scoring INPACT dimensions identified
 - [ ] Priority layers mapped from dimensions
 - [ ] Focus areas for each phase determined
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
 - Priority Dimensions: ___, ___
 - Priority Layers: L___, L___
 
@@ -113,7 +110,6 @@ These items directly map to Chapter 10's explicit prerequisites for Week 1.
 - [ ] Timeline adjustment calculated for organization size
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
 - Phase 1: Full / Standard / Validate
 - Phase 2: Full / Standard / Validate
 - Phase 3: Full / Standard / Validate
@@ -133,8 +129,6 @@ These items directly map to Chapter 10's explicit prerequisites for Week 1.
 - [ ] Dependencies identified
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
-
 ---
 
 ### Domain: Stakeholder Alignment
@@ -151,7 +145,6 @@ These items directly map to Chapter 10's explicit prerequisites for Week 1.
 - [ ] Sponsor will attend phase gate reviews
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
 - Sponsor Name: ___
 - Sponsor Title: ___
 
@@ -169,7 +162,6 @@ These items directly map to Chapter 10's explicit prerequisites for Week 1.
 - [ ] First meeting scheduled
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
 - Committee Size: ___
 - Meeting Cadence: ___
 
@@ -188,7 +180,6 @@ These items directly map to Chapter 10's explicit prerequisites for Week 1.
 - [ ] Finance signoff obtained
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
 - Total Budget: $___
 - Track: Commercial ($890K-$1.5M) / Hybrid ($460K-$910K) / Open-Source ($190K-$400K)
 
@@ -196,17 +187,16 @@ These items directly map to Chapter 10's explicit prerequisites for Week 1.
 
 #### E-08: Success Criteria Agreed ✅ Critical
 
-**Requirement:** INPACT™ target scores and success criteria agreed with stakeholders.
+**Requirement:** INPACT target scores and success criteria agreed with stakeholders.
 
 **Chapter 10 Reference:** Phase gate targets (40/65/80/85+ points)
 
 **Evidence Required:**
-- [ ] Target INPACT™ score defined
+- [ ] Target INPACT score defined
 - [ ] Phase gate thresholds accepted
 - [ ] Success metrics documented
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
 - Target Score: ___/36 (___%)
 
 ---
@@ -225,7 +215,6 @@ These items directly map to Chapter 10's explicit prerequisites for Week 1.
 - [ ] Start dates confirmed
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
 - Team Size: ___
 
 ---
@@ -242,8 +231,6 @@ These items directly map to Chapter 10's explicit prerequisites for Week 1.
 - [ ] Team availability confirmed for 90-day duration
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
-
 ---
 
 #### E-11: Technology Track Selected ✅ Critical
@@ -258,7 +245,6 @@ These items directly map to Chapter 10's explicit prerequisites for Week 1.
 - [ ] Ongoing operational burden accepted
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
 - Track: Commercial / Hybrid / Open-Source
 
 ---
@@ -278,8 +264,6 @@ These items directly map to Chapter 10's explicit prerequisites for Week 1.
 - [ ] Gaps identified per layer
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
-
 ---
 
 #### E-13: Cloud Environment Access 📋 Standard
@@ -294,7 +278,6 @@ These items directly map to Chapter 10's explicit prerequisites for Week 1.
 - [ ] Team access confirmed
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
 - Platform: AWS / Azure / GCP / Other
 
 ---
@@ -311,7 +294,6 @@ These items directly map to Chapter 10's explicit prerequisites for Week 1.
 - [ ] Source system experts identified
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
 - Systems: ___
 
 ---
@@ -330,8 +312,6 @@ These items directly map to Chapter 10's explicit prerequisites for Week 1.
 - [ ] Priority tables/entities listed
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
-
 ---
 
 ## TIER 2: STANDARD (+10 Items = 25 Total)
@@ -355,7 +335,6 @@ Includes all ESSENTIAL items plus these additional items for broader stakeholder
 - [ ] Budget adjustment calculated
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
 - Size Category: Small / Mid-size / Large / Enterprise
 
 ---
@@ -373,7 +352,6 @@ Includes all ESSENTIAL items plus these additional items for broader stakeholder
 - [ ] Single agent pilot transitioning? (focus L7)
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
 - Adjustments: ___
 
 ---
@@ -393,8 +371,6 @@ Includes all ESSENTIAL items plus these additional items for broader stakeholder
 - [ ] Monthly board updates planned
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
-
 ---
 
 #### S-04: Stakeholder Groups Identified 📋 Standard
@@ -410,8 +386,6 @@ Includes all ESSENTIAL items plus these additional items for broader stakeholder
 - [ ] Finance engaged (costs, benefits, payback)
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
-
 ---
 
 #### S-05: UAT Users Identified 📋 Standard
@@ -426,7 +400,6 @@ Includes all ESSENTIAL items plus these additional items for broader stakeholder
 - [ ] Workflow scenarios documented
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
 - UAT Group Size: ___
 
 ---
@@ -445,7 +418,6 @@ Includes all ESSENTIAL items plus these additional items for broader stakeholder
 - [ ] Buffer time planned if needed
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
 - Complexity: Low / Medium / High
 
 ---
@@ -462,7 +434,6 @@ Includes all ESSENTIAL items plus these additional items for broader stakeholder
 - [ ] Rate limits understood
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
 - Provider: OpenAI / Anthropic / Azure OpenAI / Other
 
 ---
@@ -479,7 +450,6 @@ Includes all ESSENTIAL items plus these additional items for broader stakeholder
 - [ ] Capacity requirements estimated
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
 - Database: Pinecone / Weaviate / pgvector / Other
 
 ---
@@ -498,7 +468,6 @@ Includes all ESSENTIAL items plus these additional items for broader stakeholder
 - [ ] Compliance officer identified
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
 - Regulations: ___
 
 ---
@@ -510,13 +479,11 @@ Includes all ESSENTIAL items plus these additional items for broader stakeholder
 **Chapter 10 Reference:** "Never skip a phase gate... Never proceed with gaps"
 
 **Evidence Required:**
-- [ ] Phase gate thresholds understood (40/65/80 INPACT™)
+- [ ] Phase gate thresholds understood (40/65/80 INPACT)
 - [ ] "Never skip a gate" principle accepted
 - [ ] Escalation path for blockers defined (24-hour rule)
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
-
 ---
 
 ## TIER 3: COMPREHENSIVE (+10 Items = 35 Total)
@@ -538,8 +505,6 @@ Includes all ESSENTIAL and STANDARD items plus these additional items for full g
 - [ ] Board approval for investment (if required)
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
-
 ---
 
 #### C-02: Legal Review Complete 📋 Standard
@@ -552,8 +517,6 @@ Includes all ESSENTIAL and STANDARD items plus these additional items for full g
 - [ ] IP ownership clarified
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
-
 ---
 
 #### C-03: Change Management Plan 📋 Standard
@@ -567,8 +530,6 @@ Includes all ESSENTIAL and STANDARD items plus these additional items for full g
 - [ ] Champions identified
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
-
 ---
 
 ### Domain: Team & Resources (continued)
@@ -585,8 +546,6 @@ Includes all ESSENTIAL and STANDARD items plus these additional items for full g
 - [ ] SOWs with deliverables defined
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
-
 ---
 
 ### Domain: Technical Prerequisites (continued)
@@ -603,8 +562,6 @@ Includes all ESSENTIAL and STANDARD items plus these additional items for full g
 - [ ] Cross-cloud data fabric complexity addressed
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
-
 ---
 
 #### C-06: Authentication Integration Documented 📋 Standard
@@ -617,8 +574,6 @@ Includes all ESSENTIAL and STANDARD items plus these additional items for full g
 - [ ] Service account process understood
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
-
 ---
 
 #### C-07: Monitoring Infrastructure Available 📋 Standard
@@ -631,8 +586,6 @@ Includes all ESSENTIAL and STANDARD items plus these additional items for full g
 - [ ] Baseline metrics being captured
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
-
 ---
 
 ### Domain: Compliance & Risk (continued)
@@ -649,8 +602,6 @@ Includes all ESSENTIAL and STANDARD items plus these additional items for full g
 - [ ] Additional compliance validation planned
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
-
 ---
 
 #### C-09: Data Classification Complete 📋 Standard
@@ -663,8 +614,6 @@ Includes all ESSENTIAL and STANDARD items plus these additional items for full g
 - [ ] Classification impacts ABAC design understood
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
-
 ---
 
 #### C-10: HITL Authority Defined 📋 Standard
@@ -679,8 +628,6 @@ Includes all ESSENTIAL and STANDARD items plus these additional items for full g
 - [ ] Response time SLAs defined
 
 **Data Collected:**
-- Status: Ready / In Progress / Not Ready / N/A
-
 ---
 
 ## Day Zero Readiness Score
@@ -713,7 +660,7 @@ Includes all ESSENTIAL and STANDARD items plus these additional items for full g
 
 | Chapter 10 Requirement | Day Zero Item |
 |------------------------|---------------|
-| "Complete your INPACT™ assessment" | E-01 |
+| "Complete your INPACT assessment" | E-01 |
 | "Customize phase focus based on priority layers" | E-02, E-03 |
 | "Steering committee formed" | E-06 |
 | "Budget approved and resources allocated" | E-07, E-09, E-10 |
@@ -736,12 +683,12 @@ The 90-day transformation follows four distinct phases, each building on the pre
 
 ### Phase Overview
 
-| Phase | Weeks | Focus | Layers | INPACT™ Target | Budget Range |
+| Phase | Weeks | Focus | Layers | INPACT Target | Budget Range |
 |-------|-------|-------|--------|----------------|--------------|
 | **1: Foundation** | 1-4 | Storage + Data Fabric | L1, L2 | ~42% (15/36) | $80K-550K |
 | **2: Intelligence** | 5-7 | Semantic + Retrieval | L3, L4 | ~67% (24/36) | $60K-450K |
 | **3: Trust** | 8-10 | Governance + Orchestration | L5, L6, L7 | ~86% (31/36) | $30K-400K |
-| **4: Operations** | 11-12 | Validation + GOALS™ | All | ~89% (32/36) | $20K-80K |
+| **4: Operations** | 11-12 | Validation + GOALS | All | ~89% (32/36) | $20K-80K |
 
 **Why 90 Days?**
 
@@ -774,14 +721,14 @@ The 90-day transformation follows four distinct phases, each building on the pre
 - **Milestone:** <1 hour data freshness achieved
 
 ### Week 4: Phase 1 Validation
-- [ ] INPACT™ re-assessment (target: 42%)
-- [ ] GOALS™ baseline assessment
+- [ ] INPACT re-assessment (target: 42%)
+- [ ] GOALS baseline assessment
 - [ ] Phase 1 retrospective
 - [ ] Phase 2 planning
 - **Milestone:** Foundation complete, ready for intelligence
 
 ### Phase 1 Gate Checkpoint
-- INPACT™ score ≥40 (±5% tolerance)
+- INPACT score ≥40 (±5% tolerance)
 - L1 + L2 operational
 - Data freshness <1 hour achieved
 - **Decision:** CTO/CDO makes go/no-go call with steering committee input
@@ -805,14 +752,14 @@ The 90-day transformation follows four distinct phases, each building on the pre
 - **Milestone:** First agent answering questions
 
 ### Week 7: Phase 2 Validation
-- [ ] INPACT™ re-assessment (target: 67%)
+- [ ] INPACT re-assessment (target: 67%)
 - [ ] Agent accuracy testing (target: >85%)
 - [ ] Phase 2 retrospective
 - [ ] Phase 3 planning
 - **Milestone:** Intelligence live, ready for production
 
 ### Phase 2 Gate Checkpoint
-- INPACT™ score ≥65 (±5% tolerance)
+- INPACT score ≥65 (±5% tolerance)
 - L3 + L4 operational
 - Agent accuracy >85%
 - Cache hit rate >60%
@@ -844,7 +791,7 @@ The 90-day transformation follows four distinct phases, each building on the pre
 - **Milestone:** Production-ready
 
 ### Phase 3 Gate Checkpoint
-- INPACT™ score ≥80 (±5% tolerance)
+- INPACT score ≥80 (±5% tolerance)
 - All layers operational
 - Load testing passed
 - Security review complete
@@ -870,8 +817,8 @@ The 90-day transformation follows four distinct phases, each building on the pre
 
 ### Phase 4 Gate Checkpoint
 - UAT success rate ≥90%
-- INPACT™ score ≥85
-- GOALS™ score ≥21/25
+- INPACT score ≥85
+- GOALS score ≥21/25
 - Operations team trained and accepting ownership
 
 ---
@@ -882,10 +829,10 @@ The 90-day transformation follows four distinct phases, each building on the pre
 
 | Gate | Minimum Requirements | Decision Maker |
 |------|---------------------|----------------|
-| Phase 1 → 2 | INPACT™ ≥40, L1+L2 operational | CTO/CDO |
-| Phase 2 → 3 | INPACT™ ≥65, Agent accuracy >85% | Executive sponsor |
-| Phase 3 → 4 | INPACT™ ≥80, Security approved | Steering committee |
-| Phase 4 → Production | UAT ≥90%, GOALS™ ≥21/25 | Full sign-off |
+| Phase 1 → 2 | INPACT ≥40, L1+L2 operational | CTO/CDO |
+| Phase 2 → 3 | INPACT ≥65, Agent accuracy >85% | Executive sponsor |
+| Phase 3 → 4 | INPACT ≥80, Security approved | Steering committee |
+| Phase 4 → Production | UAT ≥90%, GOALS ≥21/25 | Full sign-off |
 
 ---
 
@@ -963,7 +910,7 @@ Any blocker not resolved within 24 hours must escalate to the steering committee
 
 Echo Health Systems completed their 90-day transformation with these results:
 
-| Week | INPACT™ Score | GOALS™ Score | Key Milestone |
+| Week | INPACT Score | GOALS Score | Key Milestone |
 |------|---------------|--------------|---------------|
 | 0 (Baseline) | 28% | 12/25 | Assessment complete |
 | 4 (Phase 1) | 42% | 14/25 | Foundation operational |
@@ -975,14 +922,14 @@ Echo Health Systems completed their 90-day transformation with these results:
 - Day Zero complete before Week 1
 - Never skipped a phase gate
 - 24-hour escalation discipline
-- Weekly INPACT™ re-assessment
+- Weekly INPACT re-assessment
 - Executive sponsor attended every bi-weekly steering
 
 ---
 
 ## Quick Reference: Week-by-Week Focus
 
-| Week | Phase | Primary Focus | INPACT™ Target |
+| Week | Phase | Primary Focus | INPACT Target |
 |------|-------|---------------|----------------|
 | 1 | Foundation | Governance + ABAC | 32% |
 | 2 | Foundation | Storage + Vector DB | 35% |
@@ -996,8 +943,3 @@ Echo Health Systems completed their 90-day transformation with these results:
 | 10 | Trust | Production Hardening | 86% |
 | 11 | Operations | Go-Live | 87% |
 | 12 | Operations | Stabilization | 89% |
-
----
-
-**© 2026 Colaberry Inc. All Rights Reserved.**
-INPACT™ and GOALS™ are trademarks of Colaberry Inc.

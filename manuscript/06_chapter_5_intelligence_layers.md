@@ -782,7 +782,7 @@ Krish made a note. "Phase 3 has the same $380,000 allocation. Apply the lesson."
 
 | Metric | Week 4 | Week 7 | Improvement |
 |--------|--------|--------|-------------|
-| **INPACT Score™** | 42/100 | 67/100 | +25 points |
+| **INPACT Score** | 42/100 | 67/100 | +25 points |
 | **Query Accuracy** | 47% | 96% | 2× improvement |
 | **Response Latency** | 9-13s | 1.8s (23ms cached) | 5-400× faster |
 | **LLM Cost** | Uncontrolled | $2,300/month | 84% reduction |
@@ -878,7 +878,7 @@ Without Layer 5 (Governance), the intelligent response creates a compliance viol
 
 | Metric | Week 0 | Week 7 | Improvement |
 |--------|--------|--------|-------------|
-| **INPACT Score™** | 28/100 | 67/100 | +39 points |
+| **INPACT Score** | 28/100 | 67/100 | +39 points |
 | **Query Accuracy** | 47% | 96% | 2× improvement |
 | **Response Latency** | 9-13s | 1.8s (23ms cached) | 5-400× faster |
 | **Investment** | $0 | $860,000 | Phase 1-2 complete |

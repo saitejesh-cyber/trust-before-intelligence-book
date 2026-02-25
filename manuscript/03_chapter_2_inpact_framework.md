@@ -18,10 +18,10 @@ This chapter explains what those six things are.
 
 ---
 
-**Figure 2.0: The INPACT Framework™ - Six Infrastructure Needs for Agent Trust**
+**Figure 2.0: The INPACT Framework - Six Infrastructure Needs for Agent Trust**
 
 
-![Figure 2.0: The INPACT Framework™ - Six Infrastructure Needs for Agent Trust](figures/figure-2-0.png)
+![Figure 2.0: The INPACT Framework - Six Infrastructure Needs for Agent Trust](figures/figure-2-0.png)
 > **Key Takeaway:** Six infrastructure needs. One framework. Trust.
 
 ## PART 1: FRAMEWORK INTRODUCTION
@@ -566,7 +566,7 @@ Those topics matter. But they assume infrastructure readiness. INPACT establishe
 
 **Chapters 4-6 establish Pillar 2:** How to build infrastructure fulfilling those needs (7-layer architecture built across three chapters).
 
-**Chapter 7 establishes Pillar 3:** How to measure operational success (the GOALS Framework™ for operational excellence).
+**Chapter 7 establishes Pillar 3:** How to measure operational success (the GOALS Framework for operational excellence).
 
 **Together, the three pillars form The Architecture of Trust**, an integrated system ensuring agents operate reliably, compliantly, and effectively in production environments.
 

@@ -2,10 +2,7 @@
 ## trustbeforeintelligence.ai/tools
 
 **Purpose:** Interactive digital companions to book content
-**Version:** 5.0
 **Date:** January 2026
-**Status:** Specification (Pre-Development)
-
 ---
 
 ## Relationship to Book Content
@@ -13,12 +10,12 @@
 ### Print Book Appendix
 | Appendix | Title |
 |----------|-------|
-| **INPACT™ Practitioner Reference** | Scoring rubrics, trust bands, anti-patterns |
+| **INPACT Practitioner Reference** | Scoring rubrics, trust bands, anti-patterns |
 
 ### Interactive Tools (This Specification)
 | Tool | Source | Type |
 |------|--------|------|
-| **INPACT™ Assessment** | 36-question assessment | Interactive scoring |
+| **INPACT Assessment** | 36-question assessment | Interactive scoring |
 | **Stack Builder** | Layer gap analysis | Interactive web app |
 | **Vendor Advisor** | Vendor knowledge base | Conversational AI |
 | **90-Day Tracker** | Chapter 10 + Day Zero | Web app with 8 tabs |
@@ -38,8 +35,8 @@
 
 | Priority | Tool | Format | Lead Capture |
 |----------|------|--------|--------------|
-| **1** | INPACT™ Assessment (36-Q) | Web form → PDF | Required |
-| **2** | GOALS™ Readiness Checker (30-Q) | Web form → PDF | Required |
+| **1** | INPACT Assessment (36-Q) | Web form → PDF | Required |
+| **2** | GOALS Readiness Checker (30-Q) | Web form → PDF | Required |
 | **3** | Stack Builder | Interactive web app | Required |
 | **4** | Vendor Advisor | Conversational AI | Required |
 | **5** | 90-Day Implementation Tracker | Web app (8 tabs: Day Zero + Weeks 1-12) | Required |
@@ -48,18 +45,18 @@
 
 **Note:** Day Zero Readiness Checklist is now integrated into the 90-Day Tracker as Tab 0 (gate for Week 1).
 
-**Note:** INPACT™ measures infrastructure capability (BEFORE). GOALS™ measures operational sustainability (DURING/AFTER).
+**Note:** INPACT measures infrastructure capability (BEFORE). GOALS measures operational sustainability (DURING/AFTER).
 
 ---
 
-## Tool 1: INPACT™ Assessment (PRIORITY #1)
+## Tool 1: INPACT Assessment (PRIORITY #1)
 
 ### Purpose
-Interactive 36-question assessment to calculate organization's INPACT™ readiness score. This is the **primary lead generation tool**.
+Interactive 36-question assessment to calculate organization's INPACT readiness score. This is the **primary lead generation tool**.
 
 ### Source Content
 - **36-Question Assessment file** (in Tools folder)
-- **INPACT™ Practitioner Reference** (INPACT™ Practitioner Reference) for scoring rubrics and trust bands
+- **INPACT Practitioner Reference** (INPACT Practitioner Reference) for scoring rubrics and trust bands
 
 ### User Flow
 1. Landing page with value proposition ("Discover your agent readiness score in 10 minutes")
@@ -78,10 +75,10 @@ Interactive 36-question assessment to calculate organization's INPACT™ readine
 ### Score Calculation (Book-Consistent 6-36 System)
 ```
 Per Dimension = Average of 6 questions (range: 1-6) → Normalize to %
-Total INPACT™ Score = Sum of 6 dimension scores (range: 6-36) → Normalize to %
+Total INPACT Score = Sum of 6 dimension scores (range: 6-36) → Normalize to %
 Overall Percentage = (Total / 36) × 100 = 0-100%
 
-PRIMARY DISPLAY: Percentage (e.g., "Your INPACT™ Score: 67%")
+PRIMARY DISPLAY: Percentage (e.g., "Your INPACT Score: 67%")
 
 Trust Bands (percentage-based):
 - 86-100%: High Trust (production-ready for healthcare)
@@ -93,18 +90,18 @@ Trust Bands (percentage-based):
 
 ---
 
-## Tool 2: GOALS™ Readiness Checker (PRIORITY #2)
+## Tool 2: GOALS Readiness Checker (PRIORITY #2)
 
 ### Purpose
-Interactive 30-question assessment to evaluate operational readiness for sustaining AI agent deployments. Complements INPACT™ Assessment.
+Interactive 30-question assessment to evaluate operational readiness for sustaining AI agent deployments. Complements INPACT Assessment.
 
 ### Source Content
 - **Chapter 7 Self-Assessment Checklist** (lines 1734-1788)
-- **GOALS™ Minimum Thresholds** (Chapter 7, lines 1714-1721)
+- **GOALS Minimum Thresholds** (Chapter 7, lines 1714-1721)
 
-### Relationship to INPACT™
-- **INPACT™** = "Can we support agents?" (infrastructure capability, BEFORE)
-- **GOALS™** = "Can we sustain agent operations?" (operational sustainability, DURING/AFTER)
+### Relationship to INPACT
+- **INPACT** = "Can we support agents?" (infrastructure capability, BEFORE)
+- **GOALS** = "Can we sustain agent operations?" (operational sustainability, DURING/AFTER)
 
 ### User Flow
 1. Landing page: "Evaluate your operational readiness in 10 minutes"
@@ -213,8 +210,8 @@ Living advisory tool that helps users select vendors for each layer. Unlike stat
 
 ### Output: Vendor Evaluation Scorecard
 Users can request a PDF scorecard comparing their shortlisted vendors:
-- Side-by-side INPACT™ scores (dimensions relevant to that layer)
-- GOALS™ operational readiness scores (25 points)
+- Side-by-side INPACT scores (dimensions relevant to that layer)
+- GOALS operational readiness scores (25 points)
 - Weighted total based on user's priorities
 - Pros/cons summary for each vendor
 - Recommended selection with rationale
@@ -232,8 +229,8 @@ Complete implementation tracking from Day Zero readiness through 90-day transfor
 Web-based application with 8 tabs:
 1. **Tab 0: Day Zero Readiness** ⭐ -50-item checklist across 5 domains (GATE for Week 1)
 2. **Tab 1: Weekly Progress** -Status by week (1-12)
-3. **Tab 2: INPACT™ Tracking** -Score progression week-over-week
-4. **Tab 3: GOALS™ Tracking** -Score progression week-over-week
+3. **Tab 2: INPACT Tracking** -Score progression week-over-week
+4. **Tab 3: GOALS Tracking** -Score progression week-over-week
 5. **Tab 4: Layer Status** -Which of 7 layers complete
 6. **Tab 5: Risks** -Risk register with mitigations
 7. **Tab 6: Communications** -Stakeholder communication log
@@ -289,7 +286,7 @@ Expanded from healthcare-only to universal coverage:
 
 ### Source
 - Healthcare compliance content expanded to 30 universal categories
-- INPACT™ Practitioner Reference for scoring rubrics
+- INPACT Practitioner Reference for scoring rubrics
 
 ---
 
@@ -299,15 +296,15 @@ In addition to interactive tools, the following templates are available for down
 
 ### Template 1: Three-Pillar RFP Template
 
-**Purpose:** Structure vendor evaluation requests using the INPACT™ + Architecture Fit + GOALS™ methodology from Chapter 11.
+**Purpose:** Structure vendor evaluation requests using the INPACT + Architecture Fit + GOALS methodology from Chapter 11.
 
 **Format:** Word document (.docx)
 
 **Contents:**
 1. **Introduction section** -Project context, timeline, budget tier
-2. **Pillar 1: INPACT™ Questions** -Questions per dimension (I, N, P, A, C, T) relevant to the layer being evaluated
+2. **Pillar 1: INPACT Questions** -Questions per dimension (I, N, P, A, C, T) relevant to the layer being evaluated
 3. **Pillar 2: Architecture Fit Questions** -Layer integration, cloud compatibility, existing stack alignment
-4. **Pillar 3: GOALS™ Questions** -Operational readiness (G, O, A, L, S) for production deployment
+4. **Pillar 3: GOALS Questions** -Operational readiness (G, O, A, L, S) for production deployment
 5. **Response format requirements** -Scoring rubric explanation, demo request, reference requirements
 6. **Evaluation criteria** -How responses will be scored and weighted
 
@@ -323,7 +320,7 @@ In addition to interactive tools, the following templates are available for down
 
 **Contents:**
 
-**Week 1: INPACT™ Validation**
+**Week 1: INPACT Validation**
 | Day | Focus | Success Criteria |
 |-----|-------|------------------|
 | 1-2 | Instant (I) | Response time <2s under load |
@@ -331,7 +328,7 @@ In addition to interactive tools, the following templates are available for down
 | 4 | Permitted (P) | ABAC policies enforce correctly |
 | 5 | Adaptive (A) | Feedback loop captures corrections |
 
-**Week 2: GOALS™ Validation**
+**Week 2: GOALS Validation**
 | Day | Focus | Success Criteria |
 |-----|-------|------------------|
 | 6 | Governance (G) | Audit logs capture all decisions |
@@ -352,7 +349,7 @@ In addition to interactive tools, the following templates are available for down
 
 ### Required Fields by Tool Type
 
-**Assessments (INPACT™):**
+**Assessments (INPACT):**
 - Email (required)
 - Name (required)
 - Company (required)
@@ -377,7 +374,7 @@ In addition to interactive tools, the following templates are available for down
 ## Launch Plan
 
 ### Phase 1: Core Assessment (Month 1-2)
-- **INPACT™ Assessment** ← PRIORITY #1
+- **INPACT Assessment** ← PRIORITY #1
 - Landing page with email capture
 - Basic analytics
 
@@ -401,7 +398,7 @@ In addition to interactive tools, the following templates are available for down
 
 | Metric | Target (6 months) |
 |--------|-------------------|
-| INPACT™ Assessment completions | 1,000 |
+| INPACT Assessment completions | 1,000 |
 | Stack Builder analyses | 500 |
 | Vendor Chatbot conversations | 2,000 |
 | Email captures (total) | 3,000 |
@@ -416,21 +413,13 @@ In addition to interactive tools, the following templates are available for down
 - Book cover colors (teal, white, dark gray)
 - Colaberry logo
 - "Trust Before Intelligence" wordmark
-- INPACT™ and GOALS™ trademark symbols (™)
-
 ### Footer
 ```
-© 2025-2026 Colaberry Inc. All rights reserved.
-INPACT™ and GOALS™ are trademarks of Colaberry Inc.
 From "Trust Before Intelligence" by Ram Katamaraja
 ```
 
 ### Cross-References
 Each tool should reference its companion content:
-- "For INPACT™ scoring details, see the INPACT™ Practitioner Reference appendix"
+- "For INPACT scoring details, see the INPACT Practitioner Reference appendix"
 - "For implementation guidance, see Chapters 4-6 (Architecture) and Chapter 10 (90-Day Roadmap)"
 - "For vendor selection methodology, see Chapter 11"
-
----
-
-**© 2025-2026 Colaberry Inc. All rights reserved.**

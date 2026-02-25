@@ -25,12 +25,12 @@
 |---------|-------|--------------|----------|
 | Chapter 0: Trust Before Intelligence | 4 | 0.0 - 0.3 | Yes |
 | Chapter 1: Why Agents Fail | 6 | 1.0 - 1.5 | Yes |
-| Chapter 2: INPACT™ Framework | 12 | 2.0 - 2.11 | Yes |
+| Chapter 2: INPACT Framework | 12 | 2.0 - 2.11 | Yes |
 | Chapter 3: From BI to Agent | 4 | 3.0 - 3.3 | Yes |
 | Chapter 4: Foundation Layers | 11 | 4.0 - 4.10 | Yes |
 | Chapter 5: Intelligence Layers | 13 | 5.1 - 5.13 | Yes |
 | Chapter 6: Transparency & Orchestration | 14 | 6.1 - 6.14 | Yes |
-| Chapter 7: GOALS™ Framework | 14 | 7.1 - 7.14 | Yes |
+| Chapter 7: GOALS Framework | 14 | 7.1 - 7.14 | Yes |
 | Chapter 8: Architecture in Action | 10 | 8.1 - 8.10 | Yes |
 | Chapter 9: Measuring Readiness | 6 | 9.1 - 9.6 | Yes |
 | Chapter 10: Week-by-Week Implementation | 7 | 10.1 - 10.7 | Digital |
@@ -50,7 +50,7 @@
 
 **2. Browse by Category**
 - Architecture Diagrams
-- Framework Visualizations (INPACT™, GOALS™)
+- Framework Visualizations (INPACT, GOALS)
 - Transformation Timelines
 - Before/After Comparisons
 - Data Flow Diagrams
@@ -125,7 +125,7 @@ For filtering and organization:
 | Category | Description | Example Figures |
 |----------|-------------|-----------------|
 | **Architecture** | System architecture diagrams | 4.2, 5.3, 6.13 |
-| **Framework** | INPACT™ and GOALS™ visuals | 2.0, 7.1, 7.12 |
+| **Framework** | INPACT and GOALS visuals | 2.0, 7.1, 7.12 |
 | **Transformation** | Before/after, journey maps | 0.0, 2.5, 8.10 |
 | **Timeline** | Implementation timelines | 4.8, 5.11, 6.11 |
 | **Data Flow** | Process and data flows | 6.10, 7.7, 8.3 |
@@ -230,9 +230,3 @@ All 112 figures follow this format and can be programmatically extracted.
 - Consistent naming convention
 - Hosting for image files
 - Integration with main book website
-
----
-
-**Document Version:** 1.0
-**Created:** February 2026
-**Last Updated:** February 2026

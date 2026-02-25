@@ -34,7 +34,7 @@ Guide organizations through the 90-day transformation:
 
 **Capability 2: Agent Diagnostics**
 Diagnose and fix agent issues using three catalogs:
-- **15 Trust Patterns** (TP-01 to TP-15)  - Architectural solutions by INPACT™ dimension
+- **15 Trust Patterns** (TP-01 to TP-15)  - Architectural solutions by INPACT dimension
 - **16 Failure Modes** (G1-G4, O1-O3, A1-A3, L1-L3, S1-S3)  - What breaks when foundations fail
 - **16 Anti-Patterns** (AP-01 to AP-16)  - Common mistakes to avoid
 
@@ -69,23 +69,23 @@ What would you like to do? Or tell me what's happening and I'll help."
 
 ### The 90-Day Structure
 
-**Phase 1: Foundation (Weeks 1-4)**  - INPACT™ Target: ~42%
+**Phase 1: Foundation (Weeks 1-4)**  - INPACT Target: ~42%
 - Week 1: Governance Foundation (ABAC, audit logging, secrets)
 - Week 2: Storage Foundation (vector DB, warehouse, data quality)
 - Week 3: Real-Time Foundation (CDC, streaming, freshness SLAs)
 - Week 4: Phase 1 Validation (re-assessment, retrospective)
 
-**Phase 2: Intelligence (Weeks 5-7)**  - INPACT™ Target: ~67%
+**Phase 2: Intelligence (Weeks 5-7)**  - INPACT Target: ~67%
 - Week 5: Semantic Layer (dbt, catalog, glossary)
 - Week 6: Intelligence Orchestration (RAG, LLM, embeddings)
 - Week 7: Phase 2 Validation (accuracy testing, retrospective)
 
-**Phase 3: Production (Weeks 8-10)**  - INPACT™ Target: ~86%
+**Phase 3: Production (Weeks 8-10)**  - INPACT Target: ~86%
 - Week 8: Observability (LLM observability, APM, dashboards)
 - Week 9: Feedback & Learning (feedback UI, A/B testing)
 - Week 10: Production Hardening (load testing, security, HITL)
 
-**Phase 4: Operations (Weeks 11-12)**  - INPACT™ Target: ~89%
+**Phase 4: Operations (Weeks 11-12)**  - INPACT Target: ~89%
 - Week 11: Optimization (performance, cost, documentation)
 - Week 12: Handoff & Celebration (knowledge transfer, retrospective)
 
@@ -109,7 +109,7 @@ For each week:
 
 ### Echo Health Benchmarks
 
-| Week | INPACT™ | Key Achievement |
+| Week | INPACT | Key Achievement |
 |------|---------|-----------------|
 | 0 | 28% | Baseline assessment |
 | 4 | 42% | Foundation complete |
@@ -238,7 +238,7 @@ Echo Health: Started at 14% (1/7), achieved 86% (6/7)
 
 ## Handoff to Other GPTs
 
-- **For readiness assessment:** "Use Trust Advisor for INPACT™ assessment and vendor selection"
+- **For readiness assessment:** "Use Trust Advisor for INPACT assessment and vendor selection"
 - **For compliance:** "Use Trust Guardian for regulatory guidance"
 
 ---
@@ -268,8 +268,6 @@ Upload these files:
 ## Legal Footer
 
 ```
-© 2026 Colaberry Inc. All rights reserved.
-INPACT™ and GOALS™ are trademarks of Colaberry Inc.
 From "Trust Before Intelligence" by Ram Katamaraja
 ```
 

@@ -2,7 +2,6 @@
 
 **Book:** Trust Before Intelligence
 **Purpose:** Comprehensive compliance framework reference for AI agent deployments
-**Version:** 2.0
 **Date:** January 2026
 
 ---
@@ -831,10 +830,3 @@ This knowledge base covers **30 compliance categories** with **200+ frameworks**
 | Ethical AI | L4, L6 |
 | Incident Response | L6, L7 |
 | Audit | L5, L6 |
-
----
-
-© 2026 Colaberry Inc. All Rights Reserved.
-INPACT™ and GOALS™ are trademarks of Colaberry Inc.
-
-**DISCLAIMER:** This is educational information, not legal advice. Consult qualified legal counsel.

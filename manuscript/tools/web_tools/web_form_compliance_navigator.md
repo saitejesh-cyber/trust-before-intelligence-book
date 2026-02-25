@@ -215,7 +215,6 @@ Select planned AI agent use cases:
 │ ☐ Encryption in Transit (TLS 1.2+)                            │
 │ ☐ Emergency Access Procedures                                  │
 │                                                                │
-│ Status: ○ Compliant  ○ Partial  ○ Non-Compliant  ○ N/A        │
 │                                                                │
 │ Evidence Notes: [________________________]                     │
 │                                                                │
@@ -512,7 +511,6 @@ interface ApplicableFramework {
 
 interface FrameworkResponse {
   frameworkId: string;
-  status: ComplianceStatus;
   requirementChecks: Record<string, boolean>;
   evidenceNotes?: string;
   owner?: string;
@@ -1002,7 +1000,6 @@ interface GetSessionResponse {
 // POST /api/compliance/:id/responses - Save response
 interface SaveResponseRequest {
   frameworkId: string;
-  status: ComplianceStatus;
   requirementChecks?: Record<string, boolean>;
   evidenceNotes?: string;
   owner?: string;
@@ -1123,7 +1120,6 @@ export function FrameworkCard({
 
           <StatusSelector
             value={status}
-            onChange={(newStatus) => onUpdate({ status: newStatus })}
           />
         </div>
 
@@ -1594,9 +1590,3 @@ compliance-checker/
 8. **Test the flow:**
    - Lead capture → Profile setup → Assess frameworks → View results → Export
 ```
-
----
-
-**© 2026 Colaberry Inc. All rights reserved.**
-**INPACT™ and GOALS™ are trademarks of Colaberry Inc.**
-**From "Trust Before Intelligence" by Ram Katamaraja**

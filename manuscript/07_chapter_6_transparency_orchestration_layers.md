@@ -705,7 +705,7 @@ Friday, 4:47 PM. The Maria Santos discharge query succeeded. Three agents. One r
 
 | Metric | Target | Achieved |
 |--------|--------|----------|
-| INPACT Score™ | 86/100 | 86/100 |
+| INPACT Score | 86/100 | 86/100 |
 | Policy Coverage | 95% | 98% (242/247 policies) |
 | Trace Completeness | 99% | 99% |
 | Orchestration Success | 95% | 96% |
@@ -870,7 +870,7 @@ The complete transformation closed all seven gaps across three phases:
 
 | Metric | Week 0 | Week 10 | Improvement |
 |--------|--------|---------|-------------|
-| **INPACT Score™** | 28/100 | 86/100 | +58 points |
+| **INPACT Score** | 28/100 | 86/100 | +58 points |
 | **Total Investment** | $0 | $942,000 | 23% under budget |
 | **Architecture Layers** | 0/7 | 7/7 | Complete |
 | **Gaps Remaining** | 7 | 0 | All resolved |
@@ -885,7 +885,7 @@ The complete transformation closed all seven gaps across three phases:
 
 ### What's Next
 
-**Chapter 7:** GOALS Framework™
+**Chapter 7:** GOALS Framework
 - Operational excellence methodology
 - Five measurement dimensions
 - Echo Weeks 11-12: Validation and optimization

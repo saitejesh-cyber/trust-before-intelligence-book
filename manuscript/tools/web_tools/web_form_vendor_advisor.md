@@ -5,7 +5,7 @@
 **URL:** trustbeforeintelligence.ai/vendors
 **Purpose:** Conversational AI chatbot for personalized vendor recommendations across the 7-layer architecture
 **Lead Capture:** Email required to start conversation
-**Knowledge Base:** 90+ products with detailed INPACT™/GOALS™ analysis from `kb_vendor_advisor.md`
+**Knowledge Base:** 90+ products with detailed INPACT/GOALS analysis from `kb_vendor_advisor.md`
 
 ---
 
@@ -14,7 +14,7 @@
 ### Step 1: Landing Page
 - Value proposition: "Get personalized technology recommendations for your AI agent stack"
 - Key benefits:
-  - "90+ products evaluated with INPACT™ and GOALS™ scores"
+  - "90+ products evaluated with INPACT and GOALS scores"
   - "Healthcare, finance, and enterprise expertise"
   - "Budget-tier recommendations ($30K, $150K, $300K+)"
 - Echo Health teaser: "See how Echo Health built a 477% ROI stack"
@@ -79,8 +79,8 @@ After conversation, offer:
 **[Product Name]**  - [Vendor]
 
 📊 Scores:
-- INPACT™: [X]/36 ([Trust Level])
-- GOALS™: [X]/25 ([Maturity Level])
+- INPACT: [X]/36 ([Trust Level])
+- GOALS: [X]/25 ([Maturity Level])
 
 💰 Pricing: [Tier]  - [Pricing Details]
 
@@ -104,8 +104,8 @@ After conversation, offer:
 
 | Criteria | [Product A] | [Product B] |
 |----------|-------------|-------------|
-| INPACT™ Score | [X]/36 | [Y]/36 |
-| GOALS™ Score | [X]/25 | [Y]/25 |
+| INPACT Score | [X]/36 | [Y]/36 |
+| GOALS Score | [X]/25 | [Y]/25 |
 | Pricing | [Tier] | [Tier] |
 | HIPAA BAA | ✅/❌ | ✅/❌ |
 | Best For | [Use Case] | [Use Case] |
@@ -162,7 +162,7 @@ For SOC 2 users:
 
 **Cross-Reference:**
 - After recommending products, suggest: "Want to see how these fit in your stack? Try the Stack Builder tool."
-- After INPACT™ questions, suggest: "Want to assess your current readiness? Try the INPACT™ Assessment."
+- After INPACT questions, suggest: "Want to assess your current readiness? Try the INPACT Assessment."
 
 ---
 
@@ -575,7 +575,7 @@ function formatOverview(product: VendorProduct): string {
 
 ## Layer ${product.layer}: ${product.category}
 
-**INPACT™ Score: ${product.inpactScore.total}/36 (${product.inpactScore.trustLevel})**
+**INPACT Score: ${product.inpactScore.total}/36 (${product.inpactScore.trustLevel})**
 - Instant: ${product.inpactScore.I}/6
 - Natural: ${product.inpactScore.N}/6
 - Permitted: ${product.inpactScore.P}/6
@@ -583,7 +583,7 @@ function formatOverview(product: VendorProduct): string {
 - Contextual: ${product.inpactScore.C}/6
 - Transparent: ${product.inpactScore.T}/6
 
-**GOALS™ Score: ${product.goalsScore.total}/25 (${product.goalsScore.maturityLevel})**
+**GOALS Score: ${product.goalsScore.total}/25 (${product.goalsScore.maturityLevel})**
 
 ## Description
 ${product.description}
@@ -750,7 +750,7 @@ export const SYSTEM_PROMPT = `You are the Vendor Selection Advisor from "Trust B
 
 ## Your Role
 - Recommend products from the 7-layer architecture based on user needs
-- Compare products objectively using INPACT™ and GOALS™ scores
+- Compare products objectively using INPACT and GOALS scores
 - Filter recommendations by budget tier, cloud platform, and compliance
 - Reference the book's frameworks when explaining recommendations
 
@@ -766,7 +766,7 @@ You have access to 90+ products with detailed analysis across 7 layers:
 
 ## Scoring Frameworks
 
-**INPACT™ (Agent Trust Needs)  - 6-36 points:**
+**INPACT (Agent Trust Needs)  - 6-36 points:**
 - I = Instant (1-6): Sub-second response times
 - N = Natural (1-6): Business language understanding
 - P = Permitted (1-6): Dynamic authorization
@@ -780,7 +780,7 @@ Trust Levels:
 - 18-23: Moderate Trust (internal tools)
 - <18: Low Trust (not recommended)
 
-**GOALS™ (Operational Readiness)  - 5-25 points:**
+**GOALS (Operational Readiness)  - 5-25 points:**
 - G = Governance (1-5)
 - O = Observability (1-5)
 - A = Availability (1-5)
@@ -1294,7 +1294,7 @@ export function ContextPanel({ context, productsDiscussed }: Props) {
             href="/assessment"
             className="block text-sm text-teal-600 hover:text-teal-700"
           >
-            📊 INPACT™ Assessment →
+            📊 INPACT Assessment →
           </a>
           <a
             href="/book"
@@ -1408,9 +1408,3 @@ vendor-chatbot/
    - Lead capture → Start chat → Ask questions → Get recommendations
    - Verify streaming, markdown rendering, product references
 ```
-
----
-
-**© 2026 Colaberry Inc. All rights reserved.**
-**INPACT™ and GOALS™ are trademarks of Colaberry Inc.**
-**From "Trust Before Intelligence" by Ram Katamaraja**

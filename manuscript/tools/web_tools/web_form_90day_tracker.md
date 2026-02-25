@@ -18,7 +18,7 @@
 - Key features:
   - "Day Zero readiness checklist (15-35 items based on organization size)"
   - "Week-by-week progress tracking (Weeks 1-12)"
-  - "INPACT™ and GOALS™ score visualization"
+  - "INPACT and GOALS score visualization"
   - "7-Layer build status monitoring"
   - "Team collaboration with shareable dashboards"
 - Echo benchmark teaser: "Echo completed Day Zero in 2 weeks, then went from 28% to 89% in 90 days."
@@ -70,17 +70,16 @@ User completes the Day Zero checklist for their selected tier across 6 domains:
 
 ### Step 4: Baseline Setup (After Day Zero Complete)
 
-**Step 4a: Initial INPACT™ Assessment**
+**Step 4a: Initial INPACT Assessment**
 Either:
-- Import from INPACT™ Assessment tool (if completed)
+- Import from INPACT Assessment tool (if completed)
 - Quick self-assessment (6 sliders, 1-6 each)
 
-**Step 4b: Initial GOALS™ Assessment**
+**Step 4b: Initial GOALS Assessment**
 - Quick self-assessment (5 sliders, 1-5 each)
 
 **Step 4c: Current Architecture Status**
 For each of 7 layers:
-- Status: 🔴 Not Started | 🟡 In Progress | 🟢 Operational
 - Current tools (optional text)
 - Planned tools (optional text)
 
@@ -113,7 +112,7 @@ For each of 7 layers:
 #### Domain 1: Assessment & Planning
 | ID | Item | Tier | Critical? |
 |----|------|------|-----------|
-| E-01 | INPACT™ Assessment Complete | Essential | ✅ |
+| E-01 | INPACT Assessment Complete | Essential | ✅ |
 | E-02 | Priority Layers Identified | Essential | ✅ |
 | E-03 | Phase Strategy Decided | Essential | ✅ |
 | E-04 | Week 2 Plan Drafted | Essential | 📋 |
@@ -171,7 +170,7 @@ For each of 7 layers:
 
 **Per Checklist Item:**
 - Item ID (e.g., E-01, S-03, C-07)
-- Title (e.g., "INPACT™ Assessment Complete")
+- Title (e.g., "INPACT Assessment Complete")
 - Tier badge (Essential / Standard / Comprehensive)
 - Critical indicator (✅ Critical or 📋 Standard)
 - Requirement description
@@ -218,8 +217,8 @@ For each of 7 layers:
 - Week number (1-12)
 - Phase indicator (Foundation / Intelligence / Trust / Operations)
 - Primary layer focus (L1-L7)
-- INPACT™ snapshot (score + mini radar)
-- GOALS™ snapshot (score + mini bar)
+- INPACT snapshot (score + mini radar)
+- GOALS snapshot (score + mini bar)
 - Top risk (text + severity color)
 - Key deliverable (text + status)
 - Status badge (On Track / At Risk / Blocked / Complete)
@@ -238,7 +237,7 @@ For each of 7 layers:
 
 ---
 
-### Tab 2: INPACT™ Progress Tracker
+### Tab 2: INPACT Progress Tracker
 
 **Layout:** Radar chart + dimension cards
 
@@ -269,7 +268,7 @@ Each shows:
 
 ---
 
-### Tab 3: GOALS™ Health Dashboard
+### Tab 3: GOALS Health Dashboard
 
 **Layout:** Bar chart + dimension cards
 
@@ -300,7 +299,6 @@ Each shows:
 
 **Architecture Diagram:**
 - Stacked 7-layer visual (like book diagrams)
-- Each layer color-coded by status:
   - 🔴 Red = Not Started
   - 🟡 Yellow = In Progress
   - 🟢 Green = Operational
@@ -418,7 +416,7 @@ Each shows:
 ### Echo Health Benchmark Overlay
 - Toggle to show Echo's progression
 - Side-by-side or overlay comparison
-- Available on INPACT™, GOALS™, and Weekly tabs
+- Available on INPACT, GOALS, and Weekly tabs
 
 ### Team Collaboration
 - Invite team members by email
@@ -443,7 +441,6 @@ Each shows:
 
 ### Brand Colors
 - Primary: Teal (from book cover)
-- Status: Green (good), Yellow (warning), Red (critical), Blue (info)
 - Background: Light gray, White cards
 
 ### Charts
@@ -528,7 +525,6 @@ interface Project {
 
   // Day Zero status (GATE for Week 1)
   dayZeroTier: TierId;                // Essential / Standard / Comprehensive
-  dayZeroStatus: DayZeroStatus;
   dayZeroCompletedAt?: Date;
   dayZeroResults?: DayZeroResults;
 
@@ -585,7 +581,7 @@ const DOMAINS: Domain[] = [
     id: "AP",
     name: "Assessment & Planning",
     fullName: "Domain 1: Assessment & Planning",
-    description: "INPACT™ assessment, layer prioritization, phase strategy",
+    description: "INPACT assessment, layer prioritization, phase strategy",
     itemCounts: { essential: 4, standard: 2, comprehensive: 0 }
   },
   {
@@ -678,7 +674,6 @@ type ItemStatus = "ready" | "in-progress" | "not-ready" | "na";
 
 interface ItemResponse {
   itemId: string;
-  status: ItemStatus;
   evidenceNotes?: string;
   owner?: string;
   targetDate?: Date;
@@ -908,7 +903,7 @@ export function canUnlockWeek1(results: DayZeroResults): boolean {
 }
 ```
 
-### 4. INPACT™ & GOALS™ Tracking
+### 4. INPACT & GOALS Tracking
 
 ```typescript
 // types/scores.ts
@@ -982,7 +977,6 @@ interface WeekProgress {
 
   // Status
   phase: Phase;
-  status: WeekStatus;
   primaryLayerFocus: LayerId;
 
   // Scores (references to ScoreEntry)
@@ -1029,7 +1023,6 @@ interface LayerStatus {
   layer: LayerId;
 
   // Status
-  status: BuildStatus;
   targetWeek?: number;
 
   // Tools
@@ -1079,7 +1072,6 @@ interface Risk {
   owner?: string;
 
   // Status
-  status: RiskStatus;
   dateAdded: Date;
   resolutionDate?: Date;
 
@@ -1135,7 +1127,6 @@ interface BudgetLineItem {
   actualAmount: number;
 
   // Status
-  paymentStatus: PaymentStatus;
   notes?: string;
 
   createdAt: Date;
@@ -1226,7 +1217,7 @@ CREATE TABLE project_members (
   UNIQUE(project_id, email)
 );
 
--- Score entries (INPACT™ and GOALS™)
+-- Score entries (INPACT and GOALS)
 CREATE TABLE score_entries (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   project_id UUID REFERENCES projects(id) ON DELETE CASCADE,
@@ -1537,7 +1528,6 @@ export function ChecklistItem({ item, response, onUpdate }: Props) {
 
           <StatusSelector
             value={status}
-            onChange={(newStatus) => onUpdate({ status: newStatus })}
           />
         </div>
 
@@ -1725,7 +1715,7 @@ export function VerdictCard({ verdict, percentage, criticalBlockers, onProceed }
 }
 ```
 
-### 4. INPACT™ Radar Chart Component
+### 4. INPACT Radar Chart Component
 
 ```tsx
 // components/charts/INPACTRadar.tsx
@@ -2029,13 +2019,13 @@ export function WeekCard({ week, isCurrentWeek, scores, onClick }: Props) {
       {scores && (
         <div className="flex gap-4 mb-3">
           <div className="text-sm">
-            <span className="text-gray-500">INPACT™:</span>{" "}
+            <span className="text-gray-500">INPACT:</span>{" "}
             <span className="font-semibold text-teal-600">
               {scores.inpact}%
             </span>
           </div>
           <div className="text-sm">
-            <span className="text-gray-500">GOALS™:</span>{" "}
+            <span className="text-gray-500">GOALS:</span>{" "}
             <span className="font-semibold text-blue-600">
               {scores.goals}/25
             </span>
@@ -2465,11 +2455,5 @@ export const useTrackerStore = create<TrackerState>()(
 12. **Test the complete flow:**
     - Create project → Select Day Zero tier (Essential/Standard/Comprehensive) →
       Complete Day Zero (15/25/35 items) → Unlock Week 1 →
-      Setup INPACT™/GOALS™ baseline → Update weekly → View charts → Export
+      Setup INPACT/GOALS baseline → Update weekly → View charts → Export
 ```
-
----
-
-**© 2026 Colaberry Inc. All rights reserved.**
-**INPACT™ and GOALS™ are trademarks of Colaberry Inc.**
-**From "Trust Before Intelligence" by Ram Katamaraja**

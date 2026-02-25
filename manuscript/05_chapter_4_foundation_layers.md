@@ -124,7 +124,7 @@ Echo Health Systems started from a familiar position: strong BI infrastructure f
 
 *Data Freshness:* Sub-30 second CDC and streaming. Change data capture from 3 operational systems feeds real-time pipelines. Agents query current state with <30 second lag.
 
-*INPACT Score™:* 42/100 (15 out of 36 points)
+*INPACT Score:* 42/100 (15 out of 36 points)
 - **I=4/6** (+3 from cache + real-time) | **N=2/6** (±0) | **P=1/6** (±0) | **A=3/6** (+1 from registries) | **C=4/6** (+1 from multi-modal) | **T=1/6** (±0)
 
 **Gap closed: 14 points.** Foundation enables intelligence layers in Phase 2.
@@ -658,7 +658,7 @@ workday.providers.credentials
 - **Week 3-4 (Layer 2):** Real-time data fabric components deployed sequentially. CDC connectors first (enable change capture), then Kafka (message streaming), then Flink (stream processing).
 
 
-**Figure 4.9: INPACT Score™ Transformation (Week 0: 28 → Week 4: 42)**
+**Figure 4.9: INPACT Score Transformation (Week 0: 28 → Week 4: 42)**
 
 
 ![Figure 4.9: INPACT Transformation (28 → 42)](figures/figure-4-9.png)
@@ -729,7 +729,7 @@ Stream system (Week 4): Real-time vitals monitored. ICU patient met sepsis crite
 
 Medical director's reaction: "This is why we're building agents. Not to replace clinicians. To give them superhuman awareness of deteriorating patients."
 
-### INPACT Score™ Progression
+### INPACT Score Progression
 
 **Figure 4.10: Foundation Impact - Week 0 to Week 4**
 

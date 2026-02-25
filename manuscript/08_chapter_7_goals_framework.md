@@ -29,10 +29,10 @@ Built isn't enough. Operational excellence is what sustains trust.
 
 ---
 
-**Figure 7.1: GOALS Framework™ - From Build Complete to Operate Continuously**
+**Figure 7.1: GOALS Framework - From Build Complete to Operate Continuously**
 
 
-![Figure 7.1: GOALS Framework™ - From Build Complete to Operate Continuously](figures/figure-7-1.png)
+![Figure 7.1: GOALS Framework - From Build Complete to Operate Continuously](figures/figure-7-1.png)
 > **Key Takeaway:** *"Building is a 90-day project. Operating is forever."* - Dr. Arun Raj
 
 ## Part 1: The Architecture Is Complete. Now What?
@@ -240,7 +240,7 @@ Marcus stood and displayed the framework on the conference room screen.
 
 "What's our current GOALS Metrics™ health?" Dr. Chen asked, leaning forward. As clinical liaison, she needed to translate operational metrics into language the clinical staff would understand.
 
-Marcus pulled up preliminary numbers. "Based on our Week 10 status, I'd estimate we're at about 75% GOALS Metrics™ health, that's 15 out of 25 possible points."
+Marcus pulled up preliminary numbers. "Based on our Week 10 status, I'd estimate we're at about 75% GOALS Metrics health, that's 15 out of 25 possible points."
 
 Sarah frowned. "But we just said INPACT is 86/100. Why the gap?"
 
@@ -248,7 +248,7 @@ Sarah frowned. "But we just said INPACT is 86/100. Why the gap?"
 
 He pulled up a validation chart. "Colaberry's research is clear: proficiency across all five regulatory categories correlates with production success. Gaps lead to degraded outcomes. Major gaps lead to failure. We're at 15, below the 21-point threshold for proficiency across all five. That's why Weeks 11-12 matter so much."
 
-"So the 86/100 INPACT score means we *can* support trusted agents," Dr. Chen said. "But the 15/25 GOALS Metrics™ score means we haven't proven we can *keep* them trusted."
+"So the 86/100 INPACT score means we *can* support trusted agents," Dr. Chen said. "But the 15/25 GOALS Metrics score means we haven't proven we can *keep* them trusted."
 
 "Exactly. The 10-point gap represents operational discipline we haven't yet established. By Week 12, we need GOALS at 21 or above."
 
@@ -697,7 +697,7 @@ Lexicon answers: *Does the agent understand what users are actually asking, and 
 
 ### Why Agents Need Lexicon
 
-Entity resolution failure is particularly dangerous. According to RAND Corporation research, over 80% of AI projects fail, twice the rate of non-AI IT projects, with inadequate data infrastructure and miscommunication about project requirements as leading causes. [8] MIT's Project NANDA confirms this pattern for generative AI specifically: 95% of enterprise GenAI pilots yield no measurable business return, with the primary cause being "lack of learning, memory, and adaptation in deployed systems." This is precisely what the Lexicon dimension addresses. [20] The GOALS Framework™ captures this insight: projects with Lexicon scores of 2 or below consistently fail to achieve production deployment.
+Entity resolution failure is particularly dangerous. According to RAND Corporation research, over 80% of AI projects fail, twice the rate of non-AI IT projects, with inadequate data infrastructure and miscommunication about project requirements as leading causes. [8] MIT's Project NANDA confirms this pattern for generative AI specifically: 95% of enterprise GenAI pilots yield no measurable business return, with the primary cause being "lack of learning, memory, and adaptation in deployed systems." This is precisely what the Lexicon dimension addresses. [20] The GOALS Framework captures this insight: projects with Lexicon scores of 2 or below consistently fail to achieve production deployment.
 
 "Think about clinical terminology," Dr. Chen said. "Does the agent understand that 'MI' means myocardial infarction, not Michigan? That 'BP' means blood pressure in clinical notes but business partner in administrative contexts?"
 
@@ -985,7 +985,7 @@ He drew a circular arrows connecting all three pillars:
 ![Figure 7.13: The Trust Flywheel-Three Pillars in Motion](figures/figure-7-13.png)
 "GOALS measurements reveal whether INPACT needs are truly being met," Marcus explained. "When Lexicon scores drop, it signals the Natural (N) need is degrading. When Availability drops, Instant (I) is at risk. This feedback drives architecture improvements: which layers need attention, what upgrades are needed."
 
-Sarah saw the elegance. "So the cycle continues: better architecture leads to better GOALS Metrics™ scores, which validates more INPACT fulfillment, which builds more user trust, which generates usage patterns that inform better need definitions."
+Sarah saw the elegance. "So the cycle continues: better architecture leads to better GOALS Metrics scores, which validates more INPACT fulfillment, which builds more user trust, which generates usage patterns that inform better need definitions."
 
 "Exactly. The three pillars create a flywheel. Each revolution builds more trust, not linearly, but exponentially. The first turns are hard. Once momentum builds, trust compounds."
 
@@ -1021,7 +1021,7 @@ Each GOALS dimension has documented failure patterns. Critically, each failure m
 <!-- pagebreak -->
 ### GOALS and Industry Standards
 
-The GOALS Framework™ synthesizes operational concerns from established standards:
+The GOALS Framework synthesizes operational concerns from established standards:
 
 | Standard | Publication | Primary GOALS Alignment | Key Requirement |
 |----------|-------------|-------------------------|-----------------|
@@ -1055,7 +1055,7 @@ Marcus highlighted the key dates:
 
 Marcus displayed the operational dashboard they'd designed.
 
-"This is how we'll track GOALS Metrics™ health daily."
+"This is how we'll track GOALS Metrics health daily."
 
 **GOALS Health Dashboard Components:**
 
@@ -1066,7 +1066,7 @@ Marcus displayed the operational dashboard they'd designed.
 5. **Incident Log:** Recent failures with root cause analysis
 6. **Compliance Calendar:** Upcoming audits and deadlines
 
-"The dashboard becomes our operational nerve center," Sarah said. "Every morning standup starts with GOALS Metrics™ health."
+"The dashboard becomes our operational nerve center," Sarah said. "Every morning standup starts with GOALS Metrics health."
 
 <!-- pagebreak -->
 
@@ -1087,7 +1087,7 @@ Sarah summarized the path forward. "We need to move from 15/25 to 21/25 in the n
 **Figure 7.14: GOALS Healthcare Threshold**
 
 ![Figure 7.14: GOALS Healthcare Threshold](figures/figure-7-14.png)
-"When we present to the board at Week 12," Sarah said, "we won't just show them what we built. We'll show them how we're operating it. We'll show them GOALS Metrics™ health at 21+. We'll answer Dr. Raj's question: *This is how we know it stays trustworthy.*"
+"When we present to the board at Week 12," Sarah said, "we won't just show them what we built. We'll show them how we're operating it. We'll show them GOALS Metrics health at 21+. We'll answer Dr. Raj's question: *This is how we know it stays trustworthy.*"
 
 ---
 
@@ -1095,7 +1095,7 @@ Sarah summarized the path forward. "We need to move from 15/25 to 21/25 in the n
 
 1. **The Architecture of Trust requires all three pillars.** INPACT defines what agents need (capability). The 7-Layer Architecture fulfills those needs (infrastructure). GOALS validates fulfillment is sustained (operations). Missing any pillar means missing trust.
 
-2. **INPACT measures capability; GOALS measures sustainability.** An 86/100 INPACT score means your infrastructure *can* support trusted agents. A 21/25 GOALS Metrics™ score means you can *sustain* that capability over time.
+2. **INPACT measures capability; GOALS measures sustainability.** An 86/100 INPACT score means your infrastructure *can* support trusted agents. A 21/25 GOALS Metrics score means you can *sustain* that capability over time.
 
 3. **The five GOALS are interdependent.** Governance, Observability, Availability, Lexicon, and Solid work together like vital organs. Weakness in one cascades to the others.
 

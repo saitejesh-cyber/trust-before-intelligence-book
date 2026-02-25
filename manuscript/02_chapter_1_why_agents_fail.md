@@ -387,7 +387,7 @@ For enterprises, "building for agents" requires implementation at two layers:
 
 **Infrastructure Layer (INPACT's focus):** What underlying capabilities systems must provide once agents attempt to operate - real-time data access, semantic understanding, dynamic permissions, continuous learning, cross-system context, observable reasoning.
 
-Both layers are essential. Agents need discoverability (Karpathy) AND operational infrastructure (INPACT). The INPACT Framework™ addresses the six infrastructure needs enterprises must systematically fulfill:
+Both layers are essential. Agents need discoverability (Karpathy) AND operational infrastructure (INPACT). The INPACT Framework addresses the six infrastructure needs enterprises must systematically fulfill:
 
 **I - Instant:** Semantic data layers agents can query in <2 seconds  
 **N - Natural:** Business glossaries mapping "diabetes follow-up" to diagnostic codes  
@@ -516,7 +516,7 @@ Legal reviewed 50 AI-generated notes and couldn't determine which data sources t
 **Failure Impact:**
 - **Adoption:** 12% of physicians (most rejected after initial trial)
 - **Pilot Status:** Legal review pending (effectively dead)
-- **INPACT Score™ Values:** Natural (N): 3/6 | Contextual (C): 2/6 | Transparent (T): 2/6
+- **INPACT Score Values:** Natural (N): 3/6 | Contextual (C): 2/6 | Transparent (T): 2/6
 
 **Infrastructure Gaps:** No semantic layer (Layer 3), no intelligence orchestration for cross-system context (Layer 4), no observable reasoning (Layer 6).
 
@@ -559,7 +559,7 @@ BI-era infrastructure assumed humans would apply judgment. **Agents need infrast
 - **ROI:** Negative 15% (legal fees, audit costs, remediation)
 - **Regulatory:** CMS warning letter, corrective action plan required
 - **Pilot Status:** Terminated, rolled back to manual processing
-- **INPACT Score™ for Permitted (P):** 1/6 (RBAC only, no contextual ABAC layer)
+- **INPACT Score for Permitted (P):** 1/6 (RBAC only, no contextual ABAC layer)
 
 **Infrastructure Gap:** Echo's RBAC alone **wasn't designed to fulfill the Permitted (P) need** for context-aware access control. Contextual ABAC (Layer 5) must be layered on existing RBAC to enforce "minimum necessary" dynamically.
 
@@ -571,7 +571,7 @@ Three pilots. Three vendors. One systematic cause: infrastructure that couldn't 
 
 ### The Realization: INPACT Assessment Reveals Systematic Failures
 
-Sarah stared at the failure analysis spread across three monitors. Three different failure modes. Three different vendors. But when analyzed through the INPACT Framework™, one pattern emerged: **infrastructure systematically failed to fulfill the six needs across all pilots.**
+Sarah stared at the failure analysis spread across three monitors. Three different failure modes. Three different vendors. But when analyzed through the INPACT Framework, one pattern emerged: **infrastructure systematically failed to fulfill the six needs across all pilots.**
 
 The scheduling pilot failed because infrastructure couldn't fulfill **Instant (I)**.  
 The documentation pilot failed because infrastructure couldn't fulfill **Natural (N), Contextual (C), or Transparent (T)**.  
@@ -581,7 +581,7 @@ No amount of model tuning, prompt engineering, or vendor changes would fix probl
 
 Sarah anxiously loaded the INPACT assessment tool results:
 
-**Echo Health INPACT Score™: 28/100**
+**Echo Health INPACT Score: 28/100**
 
 Their dimension breakdown (detailed in Chapter 2) revealed five critical gaps: Instant, Natural, Permitted, Adaptive, and Transparent all scored 1-2/6. Only Contextual reached 3/6.
 
@@ -626,7 +626,7 @@ Every failed pilot follows predictable patterns that map to INPACT dimensions:
 **Contextual failures** (partial answers) → No cross-system synthesis; agents missing 6 of 7 context types (user, task, environmental, business, tooling, history)  
 **Transparent failures** (black box reasoning) → No reasoning chain observability
 
-These aren't random problems requiring bespoke solutions. They're systematic INPACT need fulfillment gaps requiring architectural transformation. **The INPACT Framework™ diagnoses the needs. The 7-Layer Architecture delivers them.**
+These aren't random problems requiring bespoke solutions. They're systematic INPACT need fulfillment gaps requiring architectural transformation. **The INPACT Framework diagnoses the needs. The 7-Layer Architecture delivers them.**
 
 ### Where Does Your Infrastructure Stand?
 
@@ -642,7 +642,7 @@ She spent the weekend researching frameworks, reading case studies, analyzing wh
 
 Not generic "AI readiness." Not checklist compliance. **A systematic approach to fulfilling the six needs that earn user trust.**
 
-**Chapter 2 shows you the same INPACT Framework™ Sarah used to transform Echo from 28/100 to 86/100 in 10 weeks.**
+**Chapter 2 shows you the same INPACT Framework Sarah used to transform Echo from 28/100 to 86/100 in 10 weeks.**
 
 You'll learn:
 - How to assess your current state across all six INPACT dimensions
